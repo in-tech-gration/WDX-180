@@ -63,6 +63,10 @@ This is a list of Software you must have installed on your system in order to ge
 
 - **Git:** Mandatory [Version Control](https://www.atlassian.com/git/tutorials/what-is-version-control) software for the professional developer: [download here](https://git-scm.com/downloads)
 
+- **Productivity:**
+  - [**Wikiwand**: the Wikipedia Reader](https://www.wikiwand.com/) _(Install as a Browser extension)_
+    - As you will be reading **a lot** (and we mean it) of Wikipedia articles throughout the course, we highly recommend that you use this awesome Browser extension to enhance the Wikipedia experience. In a sentence, this is Wikipedia on steroids!
+
 ## Accounts
 
 In order to attend the course (and become a professional web developer) you will need to open an account in the following services:
@@ -74,5 +78,23 @@ In order to attend the course (and become a professional web developer) you will
 
 ## Syllabus
 
+_(Work in progress)_
+
 ## How to Study / Productivity tips
 
+- **I'm stuck!** Don't worry. Here are some tips to help you overcome what's blocking you:
+  - ___I don't really understand this concept. What should I do?___
+    - Search for extra information and resources online. (Found something useful that helped you? Make sure to share it!)
+    - Give yourself a break and try it again in a few minutes, hours, days.
+    - Reach out to other students on [Slack]()
+    - Keep notes in order to discuss this during an upcoming support/Q&A session
+  - My code is not working (as expected). What should I do?
+    - Use the [rubber duck technique](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+
+## Contribute
+
+- Spotted a broken link?
+- Found a typo?
+- Have an idea on how to improve the course? 
+
+[**Reach out to us!**](https://github.com/in-tech-gration/WDX-Intro/discussions)
