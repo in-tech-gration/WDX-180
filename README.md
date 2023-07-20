@@ -1,4 +1,7 @@
 # WDX Intro
+
+![Web Development X - A Course made with love by intechgration.io](/assets/WDX.Header.jpg)
+
 ## Web Development X - Introductory Course
 
 ### About
