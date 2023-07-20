@@ -53,10 +53,15 @@ This is a list of Software you must have installed on your system in order to ge
     - Mac: 115MB
     - Linux: 76MB
 
+    **Note:** During the course, we recommend using `Chrome` for developing and debugging Frontend web applications. For daily, normal usage we recommend using browsers that respect the privacy of their users, such as `Firefox` and [Brave](https://brave.com/download/). 
+
 - **Code Editor:** Download and install [Visual Studio Code](https://code.visualstudio.com/)
   - Windows: 88MB
   - Mac: 203MB
   - Linux: 82MB
+  - **Extensions for VSCode:** Throughout the course we will be recommending  a variety of VSCode extensions that can be installed and extend the functionality of the code editor and boost our productivity. One of the first extensions that **must be installed** is the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). More to follow. 🙂
+
+- **Git:** Mandatory [Version Control](https://www.atlassian.com/git/tutorials/what-is-version-control) software for the professional developer: [download here](https://git-scm.com/downloads)
 
 ## Accounts
 
