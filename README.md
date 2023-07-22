@@ -14,7 +14,7 @@ The first thing you want to do, is to [fork](https://docs.github.com/en/get-star
 
 ### Communication
 
-Our main channel of communication is [Slack](intechgration.slack.com). If you haven't received an invitation to the Intechgration Slack team, please inform us via email. 
+Our main channel of communication is [Slack](https://intechgration.slack.com). If you haven't received an invitation to the Intechgration Slack team, please inform us via email. 
 
 We encourage you to use the [Web version](https://slack.com/signin#/signin) of Slack on your PC/laptop and also have it installed on your smartphone. It's available for both [Android](https://play.google.com/store/apps/details?id=com.Slack) and [iOS](https://apps.apple.com/app/slack-app/id618783545?ls=1) devices.
 
@@ -70,12 +70,19 @@ This is a list of Software you must have installed on your system in order to ge
   - Windows: 88MB
   - Mac: 203MB
   - Linux: 82MB
-  - **Extensions for VSCode:** Throughout the course we will be recommending  a variety of VSCode extensions that can be installed and extend the functionality of the code editor and boost our productivity. One of the first extensions that **must be installed** is the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). More to follow. 🙂
+  - **Extensions for VSCode:** Throughout the course we will be recommending  a variety of VSCode extensions that can be installed and extend the functionality of the code editor and boost our productivity. 
+    - One of the first extensions that **must be installed** is the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). 
+    - Another one is the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) which allows for real-time collaboration. More to follow. 🙂
 
 - **Git:** Mandatory [Version Control](https://www.atlassian.com/git/tutorials/what-is-version-control) software for the professional developer. [**Download here**](https://git-scm.com/downloads)
   - **Windows** users will also need to run the following command after installing git: `git config --global core.autocrlf true` as mentioned [here](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings?platform=windows#global-settings-for-line-endings)
+  - In order to check that `git` has been installed on your system, you will need to run one of the following commands in the terminal: 
+  - `git --version`
+  - `git -v` (for short)
 
-- **Node.js:** Download the `LTS` version of the powerful and popular JavaScript running environment [here](https://nodejs.org/en). You are going to be using `Node.js` **a lot** during this course. 🙂
+- **Node.js:** Download the `LTS` version of the powerful and popular JavaScript running environment [here](https://nodejs.org/en). You are going to be using `Node.js` **a lot** during this course 🙂. In order to check that `Node.js` has been installed on your system, you will need to run one of the following commands in the terminal: 
+  - `node --version`
+  - `node -v` (for short)
 
 - **Productivity:**
   - [**Wikiwand**: the Wikipedia Reader](https://www.wikiwand.com/) _(Install as a Browser extension)_
@@ -117,3 +124,5 @@ _(Work in progress)_
 - Have an idea on how to improve the course? 
 
 [**Reach out to us!**](https://github.com/in-tech-gration/WDX-Intro/discussions)
+
+## [**➡️ LET'S GET STARTED**](/syllabus/README.md).
