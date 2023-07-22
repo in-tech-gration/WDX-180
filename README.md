@@ -116,6 +116,8 @@ _(Work in progress)_
     - Keep notes in order to discuss this during an upcoming support/Q&A session
   - My code is not working (as expected). What should I do?
     - Use the [rubber duck technique](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+  
+  Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md).
 
 ## Contribute
 
@@ -125,4 +127,4 @@ _(Work in progress)_
 
 [**Reach out to us!**](https://github.com/in-tech-gration/WDX-Intro/discussions)
 
-## [**➡️ LET'S GET STARTED**](/syllabus/README.md).
+## [**➡️ LET'S GET STARTED**](/curriculum/README.md).
