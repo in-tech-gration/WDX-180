@@ -6,16 +6,7 @@ The `Intechgration.io` WDX-Intro curriculum consists of several lessons spread o
 
 This course will help students:
 
-- STUDY: https://github.com/IDMNYU/DM2193SP2015#course-goals
-- STUDY: https://github.com/microsoft/Web-Dev-For-Beginners
-- STUDY: https://github.com/HackYourFuture/curriculum
-- STUDY: https://github.com/IDMNYU/DM2193SP2015#course-weeks
-- STUDY: https://github.com/comp426-2023-spring/syllabus/tree/main
-- STUDY: https://github.com/comp426-2023-spring/assignments/
-
 Learning outcomes:
-
-- STUDY: https://github.com/IDMNYU/DM2193SP2015#learning-outcomes
 
 ## Tracking your progress
 
