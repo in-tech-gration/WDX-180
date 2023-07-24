@@ -6,11 +6,16 @@ The `Intechgration.io` WDX-Intro curriculum consists of several lessons spread o
 
 This course will help students:
 
-- Work in progress...
+- STUDY: https://github.com/IDMNYU/DM2193SP2015#course-goals
+- STUDY: https://github.com/microsoft/Web-Dev-For-Beginners
+- STUDY: https://github.com/HackYourFuture/curriculum
+- STUDY: https://github.com/IDMNYU/DM2193SP2015#course-weeks
+- STUDY: https://github.com/comp426-2023-spring/syllabus/tree/main
+- STUDY: https://github.com/comp426-2023-spring/assignments/
 
 Learning outcomes:
 
-- Work in progress...
+- STUDY: https://github.com/IDMNYU/DM2193SP2015#learning-outcomes
 
 ## Tracking your progress
 
@@ -18,42 +23,37 @@ Once you've joined the course, you will be given access to a Google Spreadsheet 
 
 ## Syllabus
 
-<!-- Month 1 -->
+| **Week** | **Day** | **Topic**                           |
+| :---     |:---     |:---                                 |
+| 1        | 1       | [How the Internet Works](week1.md#) |
+| 1        | 2       | HTML & HTTP                         |
+| 1        | 3       | CSS                                 |
+| 1        | 4       | JavaScript                          |
+| 1        | 5       | Git                                 |
 
-## Week 1
+| **Week** | **Day** | **Topic**                           |
+| :---     |:---     |:---                                 |
+| 2        | 1       | [](week2.md#)                       |
+| 2        | 2       | [](week2.md#)                       |
+| 2        | 3       | [](week2.md#)                       |
+| 2        | 4       | [](week2.md#)                       |
+| 2        | 5       | [](week2.md#)                       |
 
-### Week 1 - Day 1
+| **Week** | **Day** | **Topic**                           |
+| :---     |:---     |:---                                 |
+| 3        | 1       | [](week3.md#)                       |
+| 3        | 2       | [](week3.md#)                       |
+| 3        | 3       | [](week3.md#)                       |
+| 3        | 4       | [](week3.md#)                       |
+| 3        | 5       | [](week3.md#)                       |
 
-### Week 1 - Day 2
+| **Week** | **Day** | **Topic**                           |
+| :---     |:---     |:---                                 |
+| 4        | 1       | [](week4.md#)                       |
+| 4        | 2       | [](week4.md#)                       |
+| 4        | 3       | [](week4.md#)                       |
+| 4        | 4       | [](week4.md#)                       |
+| 4        | 5       | [](week4.md#)                       |
 
-### Week 1 - Day 3
 
-### Week 1 - Day 4
 
-### Week 1 - Day 5
-
-## Week 2
-
-## Week 3
-
-## Week 4
-
-<!-- Month 2 -->
-
-## Week 5
-
-## Week 6
-
-## Week 7
-
-## Week 8
-
-<!-- Month 3 -->
-
-## Week 9
-
-## Week 10
-
-## Week 11
-
-## Week 12
