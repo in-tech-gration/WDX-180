@@ -127,8 +127,8 @@ _(Work in progress)_
 
 [**Reach out to us!**](https://github.com/in-tech-gration/WDX-Intro/discussions)
 
-Our lovely contributors:
+Our lovely contributors _(feel free to give them a follow/subscribe/like as a gesture of appreciation)_:
 
-- [**Shariar Shakhawat**](https://github.com/Sha-Shak)
+- **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
 
 ## [**➡️ LET'S GET STARTED**](/curriculum/README.md).
