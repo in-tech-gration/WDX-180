@@ -15,22 +15,27 @@ For every single resources, make sure to keep notes, write down questions about 
 - [Watch: **What is the Internet?**](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
   - Duration: 4min
   - Level: Beginner
+  - Captions: Yes
 
 - [Watch: **The Internet: Wires, Cables & Wifi**](https://www.youtube.com/watch?v=ZhEf7e4kopM)
   - Duration: 7min
   - Level: Beginner
+  - Captions: Yes
 
 - [Watch: **The Internet: IP Addresses & DNS**](https://www.youtube.com/watch?v=5o8CwafCxnU)
   - Duration: 7min
   - Level: Beginner
+  - Captions: Yes
 
 - [Watch: **The Internet: Packets, Routing & Reliability**](https://www.youtube.com/watch?v=AYdF7b3nMto)
   - Duration: 7min
   - Level: Beginner
+  - Captions: Yes
 
 - [Watch: **The Internet: HTTP & HTML**](https://www.youtube.com/watch?v=kBXQZMmiA4s)
   - Duration: 7min
   - Level: Beginner
+  - Captions: Yes
 
 - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
   - Duration: 10min
@@ -38,9 +43,11 @@ For every single resources, make sure to keep notes, write down questions about 
 
 - [Watch: **The Internet: Encryption & Public Keys**](https://www.youtube.com/watch?v=ZghMPWGXexs)
   - Duration: 7min
+  - Captions: Yes
 
 - [Watch: **The Internet: Cybersecurity & Crime**](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
   - Duration: 5min
+  - Captions: Yes
 
 - [Watch: **The Internet: How Search Works**](https://www.youtube.com/watch?v=LVV_93mBfSU)
   - Duration: 5min
