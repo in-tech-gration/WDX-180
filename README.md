@@ -1,12 +1,12 @@
-# WDX Intro
+# WDX 180°
 
 ![Web Development X - A Course made with love by intechgration.io](/assets/WDX.Header.jpg)
 
-## Web Development X - Introductory Course
+## Web Development X - 180°
 
 ### About
 
-This is Web Development X. An introductory course to the web and related technologies such as HTML, CSS and JavaScript.
+This is Web Development X 180°. An introductory course to the web and related technologies such as HTML, CSS and JavaScript, split into 180 days.
 
 ### Setup
 
