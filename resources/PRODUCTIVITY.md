@@ -31,5 +31,9 @@ YouTube video, 8min
 
 - [**Excalidraw**](https://excalidraw.com/): Virtual whiteboard for sketching hand-drawn like diagrams
 - [**SummifyYT:** Summarize YouTube Comments (Chrome Extension)](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco)
+- [**Git Bash**](https://git-scm.com/downloads). List of available commands:
+  - `ping` / `cURL` / `ftp` / `nslookup.exe` / `vim` / `python` (not available. Will launch the installer)
+- [**WSL:** Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install). List of available commands:
+  - `ping` / `cURL` / `ftp` / `telnet` / `rsync` / `tracepath` / `python` / `vim` / `nslookup` / `nc`
 
 ---
