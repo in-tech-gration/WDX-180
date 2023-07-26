@@ -102,7 +102,7 @@ In order to attend the course (and become a professional web developer) you will
 
 ## Syllabus
 
-_(Work in progress)_
+You can find the [Syllabus here](curriculum/README.md#syllabus).
 
 ## Exercises
 
