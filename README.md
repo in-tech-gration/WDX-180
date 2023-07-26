@@ -8,6 +8,8 @@
 
 This is Web Development X 180°. An introductory course to the web and related technologies such as HTML, CSS and JavaScript, split into 180 days.
 
+The WDX 180° curriculum, along with all related material (exercises, code, etc.), **is and will always be free and open-source** under the GPLv3 license.
+
 ### Setup
 
 The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository) this repository under your GitHub account.
