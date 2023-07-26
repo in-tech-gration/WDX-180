@@ -1,18 +1,50 @@
 {
   "$schema": "./resources.schema.json",
   "resources": {
-    "example": {
-      "title": "",
-      "creator": "",
+    "how-computers-work-binary-data": {
+      "title": "How Computers Work: Binary & Data",
+      "creator": ["code.org"],
       "subject": "",
-      "description": "",
-      "publisher": "",
-      "date": "26/07/2023",
-      "type": "Web Page",
-      "format": "text/html",
-      "identifier": "https://www.example.com",
-      "language": "en",
-      "rights": "All Rights Reserved"
+      "description": "You'll hear that everything's \"1s and 0s\" in a computer, but what does that mean? Find out how computers represent numbers, words, images, and sound.",
+      "publisher": "code.org",
+      "date": "30/01/2018",
+      "type": "YouTube",
+      "vid": "USCBCmwMCDA",
+      "identifier": "https://www.youtube.com/watch?v=USCBCmwMCDA",
+      "language": ["en"],
+      "rights": "Standard YouTube License",
+      "terms": [ "bit", "binary", "pixel", "RGB", "waveform" ],
+      "duration": 6,
+      "concepts": [
+        "Representing text, images and sound with zeroes and ones (bits).",
+        "Bits are how computer input, store, process and output information"
+      ]
+    },
+    "images-pixels-and-rgb" : {
+      "type" : "YouTube",
+      "vid": "15aqFQQVBWU",
+      "identifier": "https://www.youtube.com/watch?v=15aqFQQVBWU",
+      "duration": 6,
+      "terms": ["resolution", "density", "RGB", "pixel", "JPEG", "GIF", "PNG", "bit", "binary", "byte", "function"],
+      "concepts": [ "With 8 bits we can store 256 numbers from 0 up to 255." ]
+    },
+    "digital-compression-explained-by-aloe-blacc" : {
+      "type" : "YouTube",
+      "vid" : "MijmeoH9LT4",
+      "terms": [ "lossy", "lossless", "compression" ],
+      "concepts": [ "compression", "algorithm" ]
+    },
+    "characters-symbols-and-the-unicode-miracle-computerphile":{
+      "type": "YouTube",
+      "vid": "MijmeoH9LT4",
+      "duration": 10,
+      "terms": [ "binary", "hexadecimal", "encoding" ]
+    },
+    "tutorial-1-about-bits-bytes": {
+      "vid": "H2kTzmJJ79E",
+      "duration": 5,
+      "terms": ["kilobyte", "kibibyte", "SI", "IEC" ],
+      "concepts": [ "How storage space is calculated in computers" ]
     }
   },
   "creators": {

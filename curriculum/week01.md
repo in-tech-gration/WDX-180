@@ -2,7 +2,62 @@
 
 ### Week 1 - Day 1 - Onboarding & Basics of Computing
 
+  #### Schedule
+
+  - Setting up and getting to know each other
+  - Study
+  - Exercises
+
+  #### Study Plan
+
+  Watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
+
+  What you'll learn:
+
+  - Binary digits (bits)
+  - How we represent text, images, video and audio using binary
+  - ASCII, Unicode & UTF-8
+  - Pixels (picture elements)
+  - Digital file compression
+  - How we calculate storage in computers 
+  - Hexadecimal number system
+
+  Some of the questions you'll be able to answer:
+
+  - How many numbers can you store with 8 bits?
+  - What is Lossy and Lossless Compression?
+  - How is color stored and represented in computers?
+  - What is the difference between a Kilobyte and a Kibibyte?
+
+  - [Watch: **How Computers Work: Binary & Data**](https://www.youtube.com/watch?v=USCBCmwMCDA)
+    - Duration: 6min
+    - Level: Beginner 
+    - Captions: Yes
+
+  - [Watch: **Images, Pixels and RGB**](https://www.youtube.com/watch?v=15aqFQQVBWU)
+    - Duration: 6min
+    - Level: Beginner
+    - Captions: Yes
+
+  - [Watch: **Digital Compression explained by Aloe Blacc**](https://www.youtube.com/watch?v=By30SCp-Tsw)
+    - Duration: 4min
+    - Level: Beginner
+    - Captions: Yes
+
+  - [Watch: **Characters, Symbols and the Unicode Miracle - Computerphile**](https://www.youtube.com/watch?v=MijmeoH9LT4)
+    - Duration: 10min
+    - Level: Beginner
+
+  - [Watch: **Tutorial 1 About Bits & Bytes**](https://www.youtube.com/watch?v=H2kTzmJJ79E)
+    - Duration: 5min
+    - Level: Beginner
+
 ### Week 1 - Day 2 - How the Internet & the World Wide Web works
+
+#### Schedule
+
+- [Study](#study-plan-1)
+- Exercises
 
 #### Study Plan
 
