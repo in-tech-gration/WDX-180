@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$comment": "Understanding JSON Schema: https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf",
+  "type": "object",
+  "properties": {
+    "resources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "$comment": "The Dublin Core Metadata Element Set is an ISO Standard (ISO 15836) well known in the Web and library worlds as a cross domain standard that defines 15 data elements for resource description. Spec: https://www.dublincore.org/specifications/dublin-core/usageguide/elements/. More about the properties: https://guides.library.ucsc.edu/c.php?g=618773&p=4306386. Video: https://www.youtube.com/watch?v=5HJVfp5c0kE. RFC: https://www.ietf.org/rfc/rfc5013.txt",
+        "properties": {
+          "title": { "type": "string" },
+          "creator": { "type": "string" },
+          "subject": { "type": "string" },
+          "description": { "type": "string" },
+          "publisher": {  "type": "string" },
+          "contributors": { "type": "array" },
+          "date": { 
+            "type": "string",
+            "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/\\d{4}$"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["Video", "Audio", "Web Page", "Blog Post"]
+          },
+          "format": {
+            "type": "string",
+            "$comment": "MIME Types: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types. Word Documents are application/msword. Docx are application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "enum": [
+              "application/msword",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "audio/aac",
+              "text/css",
+              "text/csv",
+              "text/html",
+              "image/jpeg",
+              "image/gif",
+              "text/javascript",
+              "application/json",
+              "audio/mpeg",
+              "video/mp4",
+              "video/mpeg",
+              "audio/ogg",
+              "video/ogg",
+              "image/png",
+              "application/pdf",
+              "application/vnd.ms-powerpoint",
+              "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+              "application/rtf",
+              "text/plain",
+              "image/webp",
+              "video/webm",
+              "application/xml",
+              "application/zip"
+            ]
+          },
+          "identifier": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "enum": ["en", "de", "it", "ar", "fr", "gr"]
+          },
+          "relation": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "string"
+          },
+          "rights": {
+            "type": "string",
+            "enum": ["CC", "MIT", "GPL v3", "All Rights Reserved"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "creators" : {
+
+    }
+  },
+  "required": [
+    "resources",
+    "creators"
+  ]
+}

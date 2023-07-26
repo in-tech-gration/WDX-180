@@ -1,0 +1,21 @@
+{
+  "$schema": "./resources.schema.json",
+  "resources": {
+    "example": {
+      "title": "",
+      "creator": "",
+      "subject": "",
+      "description": "",
+      "publisher": "",
+      "date": "26/07/2023",
+      "type": "Web Page",
+      "format": "text/html",
+      "identifier": "https://www.example.com",
+      "language": "en",
+      "rights": "All Rights Reserved"
+    }
+  },
+  "creators": {
+
+  }
+}
