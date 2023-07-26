@@ -1,4 +1,4 @@
-## Week 2
+## Week 2 | HTML, Accessibility & Git
 
 ### Week 2 - Day 1
 

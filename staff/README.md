@@ -29,4 +29,6 @@ First task of the team: find out why this group is named <TEAM_NAME>. ;)
   5. Next, they will have to click the `Share` button, go to the `General access` area at the bottom, click `Restricted` and change it to `Anyone with the link`. Then, change the permissions to the right from `Viewer` to `Commenter`.
   6. Lastly, click the `Copy link` button, and share the link with their instructor(s) and/or mentor(s). 
 
-  
+## Graduation Tasks  
+
+### Issuing Certificates of Completion
