@@ -28,6 +28,8 @@
   - What is Lossy and Lossless Compression?
   - How is color stored and represented in computers?
   - What is the difference between a Kilobyte and a Kibibyte?
+  - What is ASCII?
+  - What is the standard text encoding for the Web?
 
   **Here's the watch list:**
 
@@ -68,6 +70,35 @@
   In total, the duration of these videos is around 58min, which means that it will probably take you 1.5x to 2x times the time (90min~120min) to go through them, keep notes and questions and re-watch parts that were hard to grasp.
 
   For every single resources, make sure to keep notes, write down questions about parts of the content that seem unclear or difficult to grasp and update the progress Google Sheet accordingly.
+
+  **What you'll learn:**
+
+  - What is the Internet and how it works
+  - What is the World Wide Web (web for short)
+  - Internet Protocols
+  - Internet communication
+  - Public Key Cryptography
+  - Internet Protocol (IPv4, IPv6)
+  - DNS
+  - Packets
+  - Search engine crawlers (spiders)
+
+  **Some of the questions you'll be able to answer:**
+
+  - What is the Internet and who owns it?
+  - How does the Internet share information?
+  - What are the shortcomings of wireless communication?
+  - Why is IPv6 better than IPv4?
+  - What is DNS and how does the DNS servers work?
+  - What are packets?
+  - How can a single image be sent through the internet?
+  - How to prevent hackers from snooping and tampering websites?
+	- What are security protocols?
+  - What is public key and private key?
+  - What is a spider program?
+	- What is the use of AI/ML to search a page?
+
+  **Here's the watch list:**
 
   - [Watch: **What is the Internet?**](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
     - Duration: 4min
@@ -110,13 +141,13 @@
     - Duration: 5min
     - Captions: Yes
 
-### Week 1 - Day 3 
+### Week 1 - Day 3 - HTML & Markdown
 
-### Week 1 - Day 4
+### Week 1 - Day 4 - CSS
 
-### Week 1 - Day 5
+### Week 1 - Day 5 - JavaScript
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to send your **mandatory** feedback form before the day ends. Thanks you! 
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
 ---
 

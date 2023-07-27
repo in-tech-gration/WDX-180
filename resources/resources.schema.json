@@ -87,13 +87,23 @@
             "type": "string",
             "pattern": "^(.{11})$"
           },
+          "captions": {
+            "type": "boolean"
+          },
           "terms": {
             "type": "array"
           },
           "concepts": {
+            "$comment": "Concepts can either be a string or an array if it's a pair of Q&A",
             "type": "array",
             "items": {
-              "type": "string"
+              "type": ["string", "array"]
+            }
+          },
+          "reviewers": {
+            "type": "array",
+            "items": {
+              "type": "object"
             }
           }
         },

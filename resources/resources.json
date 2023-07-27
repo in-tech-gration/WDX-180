@@ -21,6 +21,7 @@
       ]
     },
     "images-pixels-and-rgb" : {
+      "title": "Images, Pixels and RGB",
       "type" : "YouTube",
       "vid": "15aqFQQVBWU",
       "identifier": "https://www.youtube.com/watch?v=15aqFQQVBWU",
@@ -29,22 +30,51 @@
       "concepts": [ "With 8 bits we can store 256 numbers from 0 up to 255." ]
     },
     "digital-compression-explained-by-aloe-blacc" : {
+      "title": "",
       "type" : "YouTube",
       "vid" : "MijmeoH9LT4",
       "terms": [ "lossy", "lossless", "compression" ],
       "concepts": [ "compression", "algorithm" ]
     },
     "characters-symbols-and-the-unicode-miracle-computerphile":{
+      "title": "Characters, Symbols and the Unicode Miracle - Computerphile",
       "type": "YouTube",
       "vid": "MijmeoH9LT4",
+      "identifier": "https://www.youtube.com/watch?v=MijmeoH9LT4",
       "duration": 10,
-      "terms": [ "binary", "hexadecimal", "encoding" ]
+      "terms": [ "ASCII", "binary", "hexadecimal", "encoding" ],
+      "concepts": [ 
+        [ 
+          "What is ASCII",
+          "A way to represent characters of the english alphabet using binary digits" 
+        ], 
+        [
+          "What is the standard text encoding for the Web",
+          "UTF-8"
+        ]
+      ]
     },
     "tutorial-1-about-bits-bytes": {
+      "title": "Tutorial 1 About Bits & Bytes",
       "vid": "H2kTzmJJ79E",
+      "identifier": "https://www.youtube.com/watch?v=H2kTzmJJ79E",
       "duration": 5,
       "terms": ["kilobyte", "kibibyte", "SI", "IEC" ],
       "concepts": [ "How storage space is calculated in computers" ]
+    },
+    "the-internet-encryption-public-keys" : {
+      "title": "The Internet: Encryption & Public Keys",
+      "vid": "ZghMPWGXexs",
+      "identifier": "https://www.youtube.com/watch?v=ZghMPWGXexs",
+      "duration": 7,
+      "captions": true,
+      "terms": [ "public key", "caesar cipher"],
+      "reviewers": [
+        {
+          "name": "Shariar Shakhawat",
+          "github": "https://github.com/Sha-Shak"
+        }
+      ]
     }
   },
   "creators": {
