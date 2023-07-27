@@ -18,6 +18,10 @@ YouTube video, 17min
 
 ---
 
+## Browser
+
+- [Create and save Chrome tab groups](https://www.theverge.com/23384844/chrome-google-tab-groups-create-save-how-to)
+
 ## ChatGPT
 
 Use `ChatGPT` with extreme caution!
@@ -30,10 +34,13 @@ YouTube video, 8min
 ## Tools
 
 - [**Excalidraw**](https://excalidraw.com/): Virtual whiteboard for sketching hand-drawn like diagrams
+- [**Adblock Plus - free ad blocker**](https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb/)
+- [**Screenshot YouTube:** Take a screenshot of any YouTube video with one click](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk)
 - [**SummifyYT:** Summarize YouTube Comments (Chrome Extension)](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco)
+- [**Wikiwand:** Wikipedia Modernized](https://chrome.google.com/webstore/detail/wikiwand-wikipedia-modern/emffkefkbkpkgpdeeooapgaicgmcbolj)
+- [**CodeGrepper:** The Query & Answer System for the Coder Community
+](https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco)
 - [**Git Bash**](https://git-scm.com/downloads). List of available commands:
   - `ping` / `cURL` / `ftp` / `nslookup.exe` / `vim` / `python` (not available. Will launch the installer)
 - [**WSL:** Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install). List of available commands:
   - `ping` / `cURL` / `ftp` / `telnet` / `rsync` / `tracepath` / `python` / `vim` / `nslookup` / `nc`
-
----
