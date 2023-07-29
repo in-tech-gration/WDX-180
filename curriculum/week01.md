@@ -7,6 +7,7 @@
   - Setting up and getting to know each other
   - [Study](#study-plan)
   - Exercises
+  - [Extra Resources](#extra-resources)
 
   #### Study Plan
 
@@ -56,12 +57,15 @@
     - Duration: 5min
     - Level: Beginner
 
+  #### Extra Resources
+
 ### Week 1 - Day 2 - How the Internet & the World Wide Web works
 
   #### Schedule
 
   - [Study](#study-plan-1)
   - Exercises
+  - [Extra Resources](#extra-resources-1)
 
   #### Study Plan
 
@@ -145,7 +149,7 @@
     - Duration: 5min
     - Captions: Yes
 
-  #### Extra Resources
+  #### [Extra Resources](week1/EXTRAS.md)
 
 ### Week 1 - Day 3 - HTML & Markdown
 

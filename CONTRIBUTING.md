@@ -4,6 +4,8 @@
 
 Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on the [Contributors](README.md#contribute) :sparkles:.
 
+The WDX180 is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) license. The source code of the tutorial is hosted on [GitHub](https://github.com/in-tech-gration/WDX-180). 
+
 Read our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
 In this guide you will get an overview of the contribution workflow.
