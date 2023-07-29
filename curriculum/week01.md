@@ -125,6 +125,10 @@
     - Level: Beginner
     - Captions: Yes
 
+  - [Read: **How the Internet works**](week1/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
+    - Reading time: 5min
+    - Level: Beginner
+
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
     - Duration: 10min
     - Level: Beginner
@@ -140,6 +144,8 @@
   - [Watch: **The Internet: How Search Works**](https://www.youtube.com/watch?v=LVV_93mBfSU)
     - Duration: 5min
     - Captions: Yes
+
+  #### Extra Resources
 
 ### Week 1 - Day 3 - HTML & Markdown
 

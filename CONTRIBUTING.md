@@ -35,3 +35,9 @@ Before evaluating or reviewing any content or online resource, ensure that you h
   - In [this really nice introduction to the browser](https://www.youtube.com/watch?v=DuSURHrZG6I) the `http` protocol is mentioned along with the default port `80`. These days the default protocol is `https` and the default port is `443`. We've left a comment reminding the viewers about this important distinction.
 
 - **Always check the comments section** for more information and feedback from the community. For example, you can use a Chrome extension like [SummifyYT](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco) to get a summary of all the submitted comments in a YouTube video.
+
+## Making a Pull Request
+
+Here are some things to keep in mind before making a PR:
+
+- **Compress those images:** If you are including images or photos in your PR, make sure that you have used a compression tool like [TinyPNG*](https://tinypng.com/) or [ImageOptim (Mac)](https://imageoptim.com/mac) to minimize the file size. *_(works with all types of images)_
