@@ -24,7 +24,7 @@
           },
           "type": {
             "type": "string",
-            "enum": ["Video", "Audio", "Web Page", "Blog Post", "YouTube", "Podcast"]
+            "enum": ["Video", "Audio", "Web Page", "Blog Post", "YouTube", "Podcast", "Quora", "StackOverflow"]
           },
           "format": {
             "type": "string",

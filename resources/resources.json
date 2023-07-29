@@ -75,6 +75,11 @@
           "github": "https://github.com/Sha-Shak"
         }
       ]
+    },
+    "why-do-computers-understand-only-0-1-logic" : {
+      "title": "Why do computers understand only 0 & 1 logic?",
+      "identifier": "https://www.quora.com/Why-do-computers-understand-only-0-1-logic/answers/92646682",
+      "type" : "Quora"
     }
   },
   "creators": {

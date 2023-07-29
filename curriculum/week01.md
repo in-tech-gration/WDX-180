@@ -53,6 +53,9 @@
     - Duration: 10min
     - Level: Beginner
 
+  - [Read: **Why do computers understand only 0 & 1 logic?**](https://www.quora.com/Why-do-computers-understand-only-0-1-logic/answers/92646682) to understand why digital computers* are limited to and revolve around the binary system.
+    - _(*[Quantum computers](https://www.youtube.com/watch?v=OWJCfOvochA) on the other hand, work in a much different way.)_
+
   - [Watch: **Tutorial 1 About Bits & Bytes**](https://www.youtube.com/watch?v=H2kTzmJJ79E)
     - Duration: 5min
     - Level: Beginner
