@@ -32,7 +32,7 @@ Once you've joined the course, you will be given access to a Google Spreadsheet 
 - [**Week 13**: JavaScript Intermediate 1 & Git](week13.md)
 - [**Week 14**: Data Structures](week14.md)
 - [**Week 15**: Algorithms](week15.md)
-- [**Week 16**: Web APIs 3](week16.md)
+- [**Week 16**: Web APIs 3: Geolocation, Canvas, Web Workers & more](week16.md)
 - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](week17.md)
 - [**Week 18**: Node.js 1](week18.md)
 - [**Week 19**: NoSQL Databases & Docker](week19.md)

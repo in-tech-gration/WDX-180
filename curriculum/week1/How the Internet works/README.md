@@ -19,35 +19,35 @@ OK, but you want to know how the Internet looks, right?
 
 Here's what the Internet (also called the ARPANet) looked in the early days:
 
-![Arpanet](images/Arpanet_in_the_1970s.png)
+![Arpanet](assets/Arpanet_in_the_1970s.png)
 
 
 And, here's how the Internet looked like in 2005!
 
-[![The Internet circa 2005](images/Internet_map_4096.png)](images/Internet_map_4096.png)
+[![The Internet circa 2005](assets/Internet_map_4096.png)](assets/Internet_map_4096.png)
 _(click the image to see a full-size version)_ / [_source_](https://commons.wikimedia.org/wiki/File:Internet_map_4096.png)
 
 Each line is drawn between two ***nodes*** (computers connected to the network), representing two IP addresses.
 
 And, here's a closeup of that map where each node is accompanied by its IP address.
 
-[![Closeup of the 2005 Internet map](images/Internet_map_4096.closeup.png)](images/Internet_map_4096.closeup.png)
+[![Closeup of the 2005 Internet map](assets/Internet_map_4096.closeup.png)](assets/Internet_map_4096.closeup.png)
 
 Looks like a mess, right? In fact **it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines!** Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
-![Figure 1.2](images/internet_3.png)
+![Figure 1.2](assets/internet_3.png)
 
 It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 It looks like this:
 
-![Figure 1.3](images/internet_2.png)
+![Figure 1.3](assets/internet_2.png)
 
 Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
 Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (***data packets***) to the same place, they could go through totally different post offices (***routers***). This depends on how they are distributed at each office.
 
-![Figure 1.4](images/internet_4.png)
+![Figure 1.4](assets/internet_4.png)
 
 That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 

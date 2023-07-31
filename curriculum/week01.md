@@ -31,6 +31,9 @@
   - What is the difference between a Kilobyte and a Kibibyte?
   - What is ASCII?
   - What is the standard text encoding for the Web?
+  - How do computers deal with large numbers?
+  - How do computers deal with negative numbers?
+  - How do computers deal with floating point numbers?
 
   **Here's the watch list:**
 
@@ -38,6 +41,15 @@
     - Duration: 6min
     - Level: Beginner 
     - Captions: Yes
+
+  - [Watch: **Representing Numbers and Letters with Binary: Crash Course Computer Science #4**](https://www.youtube.com/watch?v=1GSjbWt0c9M)
+    - Duration: 11min
+    - Level: Beginner
+    - Captions: EN
+
+  - [Watch: **Characters, Symbols and the Unicode Miracle - Computerphile**](https://www.youtube.com/watch?v=MijmeoH9LT4)
+    - Duration: 10min
+    - Level: Beginner
 
   - [Watch: **Images, Pixels and RGB**](https://www.youtube.com/watch?v=15aqFQQVBWU)
     - Duration: 6min
@@ -49,16 +61,16 @@
     - Level: Beginner
     - Captions: Yes
 
-  - [Watch: **Characters, Symbols and the Unicode Miracle - Computerphile**](https://www.youtube.com/watch?v=MijmeoH9LT4)
-    - Duration: 10min
-    - Level: Beginner
-
   - [Read: **Why do computers understand only 0 & 1 logic?**](https://www.quora.com/Why-do-computers-understand-only-0-1-logic/answers/92646682) to understand why digital computers* are limited to and revolve around the binary system.
     - _(*[Quantum computers](https://www.youtube.com/watch?v=OWJCfOvochA) on the other hand, work in a much different way.)_
 
   - [Watch: **Tutorial 1 About Bits & Bytes**](https://www.youtube.com/watch?v=H2kTzmJJ79E)
     - Duration: 5min
     - Level: Beginner
+
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](week1/Hexadecimal/README.md)
+
+  #### Exercises
 
   #### Extra Resources
 
@@ -152,7 +164,7 @@
     - Duration: 5min
     - Captions: Yes
 
-  #### [Extra Resources](week1/EXTRAS.md)
+  #### [Extra Resources](week1/EXTRAS.md#the-internet)
 
 ### Week 1 - Day 3 - HTML & Markdown
 

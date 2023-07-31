@@ -1,6 +1,12 @@
 # EXTRA RESOURCES
 
-**The Internet**
+## Computing
+
+  - [**Computer Science Crash Course**](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo). 
+    - Description: A YouTube playlist that provides an introduction to the history of computers, the basic elements of programming and the basic components of computer hardware.
+    - Duration: 8h (40 videos)
+
+## The Internet
 
 - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps)
 

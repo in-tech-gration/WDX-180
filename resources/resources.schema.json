@@ -1,6 +1,64 @@
 {
   "$schema": "http://json-schema.org/schema",
   "$comment": "Understanding JSON Schema: https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf",
+  "definitions": {
+    "level": {
+      "type": "string",
+      "enum": ["Beginner", "Intermediate", "Advanced"]
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Video", "Audio", "Web Page", "Blog Post", "YouTube", "YouTube Playlist", "Coursera Course", "Udacity Course", "edX Course",  "Podcast", "Quora", "StackOverflow"]
+    },
+    "languages": {
+      "$comment": "TODO: Add list of 2 character ISO country codes as enum",
+      "type": "string",
+      "enum": [ "EN"," BG", "EL", "FR" ]
+    },
+    "terms": {
+      "$comment": "TODO: Import the terms from an external JSON file",
+      "type": "string",
+      "enum": [
+        "ALU",
+        "AND",
+        "ASCII",
+        "Binary",
+        "Bit",
+        "Byte",
+        "Caesar Cipher",
+        "Compression",
+        "Density",
+        "Encoding",
+        "Full Adder",
+        "Function",
+        "GIF",
+        "Half Adder",
+        "Hexadecimal",
+        "IEC",
+        "IEEE 754",
+        "IEEE", 
+        "Interoperability",
+        "JPEG",
+        "Kibibyte",
+        "Kilobyte",
+        "Logic Gates",
+        "Logic Unit",
+        "Lossless",
+        "Lossy",
+        "NOT",
+        "Overflow",
+        "Picture Element",
+        "Pixel",
+        "PNG",
+        "Public Key",
+        "Resolution",
+        "RGB",
+        "SI",
+        "Waveform",
+        "XOR"
+      ]
+    }
+  },
   "type": "object",
   "properties": {
     "resources": {
@@ -23,8 +81,7 @@
             "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/\\d{4}$"
           },
           "type": {
-            "type": "string",
-            "enum": ["Video", "Audio", "Web Page", "Blog Post", "YouTube", "Podcast", "Quora", "StackOverflow"]
+            "$ref": "#/definitions/type"
           },
           "format": {
             "type": "string",
@@ -80,18 +137,23 @@
             "type": "string",
             "enum": ["CC", "MIT", "GPL v3", "All Rights Reserved", "Standard YouTube License"]
           },
+          "level": {
+            "$ref": "#/definitions/level"
+          },
           "meta": {
             "type": "object"
           },
           "vid": {
-            "type": "string",
-            "pattern": "^(.{11})$"
+            "type": "string"
           },
           "captions": {
             "type": "boolean"
           },
           "terms": {
-            "type": "array"
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/terms"
+            }
           },
           "concepts": {
             "$comment": "Concepts can either be a string or an array if it's a pair of Q&A",
@@ -100,6 +162,25 @@
               "type": ["string", "array"]
             }
           },
+          "youtube": {
+            "type" : "object",
+            "properties" : {
+              "id": {
+                "type": "string",
+                "pattern": "^(.{11})$"
+              },
+              "captions": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/languages"
+                }
+              },
+              "playlist_id" : { "type": "string" },
+              "playlist_index": { "type": "number" },
+              "playlist_title": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
           "reviewers": {
             "type": "array",
             "items": {
@@ -107,14 +188,31 @@
             }
           }
         },
-        "if": {
-          "properties": {
-            "type": { "const": "YouTube" }
+        "required": ["type"],
+        "dependencies": {
+          "type": {
+            "oneOf": [
+              {
+                "properties": {
+                  "type": {
+                    "const": "YouTube"
+                  }
+                },
+                "required": ["youtube"]
+              },
+              {
+                "properties": {
+                  "type": {
+                    "not": {
+                      "const": "YouTube"
+                    }
+                  }
+                }
+              }
+            ]
           }
         },
-        "then": {
-          "required": ["vid"]
-        },
+      
         "additionalProperties": false
       }
     },
