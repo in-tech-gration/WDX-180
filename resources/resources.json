@@ -133,6 +133,24 @@
         "id": "b6xeOLjeKs0"
       },
       "terms": [ "Audio Fingerprinting" ]
+    },
+    "how-spotify-s-ai-driven-recommendations-work-wsj-tech-behind": {
+      "title": "How Spotify’s AI-Driven Recommendations Work | WSJ Tech Behind",
+      "type": "YouTube",
+      "duration": 7,
+      "identifier": "https://www.youtube.com/watch?v=pGntmcy_HX8",
+      "youtube": {
+        "id": "pGntmcy_HX8"
+      }
+    },
+    "why-tap-to-pay-is-safer-than-a-credit-card-swipe-wsj-tech-behind" : {
+      "title": "Why Tap-to-Pay Is Safer Than a Credit Card Swipe | WSJ Tech Behind",
+      "type": "YouTube",
+      "identifier": "https://www.youtube.com/watch?v=S7dWigI7Soc",
+      "youtube": {
+        "id": "S7dWigI7Soc"
+      },
+      "terms": [ "RFID", "NFC" ]
     }
   },
   "creators": {

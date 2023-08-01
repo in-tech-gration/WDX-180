@@ -15,3 +15,11 @@
 
 - [**How the hyperlink changed everything | TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI)
   - Duration: 4min
+
+## Public Key Cryptography
+
+- [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do)
+  - Duration: 9min
+
+- [Watch: **How does public key cryptography work – Gary explains**](https://www.youtube.com/watch?v=rLiEA06Bcic)
+  - Duration: 16min
