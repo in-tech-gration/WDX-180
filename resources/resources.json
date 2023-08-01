@@ -124,6 +124,15 @@
         "How do computers deal with negative numbers?",
         "How do computers deal with floating point numbers?"
       ]
+    },
+    "how-shazam-i-ds-over-23-000-songs-each-minute-wsj-tech-behind": {
+      "title": "How Shazam IDs Over 23,000 Songs Each Minute | WSJ Tech Behind",
+      "type": "YouTube",
+      "duration": 7,
+      "youtube": {
+        "id": "b6xeOLjeKs0"
+      },
+      "terms": [ "Audio Fingerprinting" ]
     }
   },
   "creators": {

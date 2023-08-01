@@ -11,6 +11,14 @@
   [![](assets/Chrome.Extension.SummifyΥΤ.jpg)](assets/Chrome.Extension.SummifyΥΤ.jpg)
   
 
+### Where to look for information
+
+- [The **Mozilla Developer Network** website](https://developer.mozilla.org/en-US/) _(probably one of the best sites to look for information related to web technologies)_
+
+- [**Wikipedia**](https://www.wikipedia.org/)
+
+- [The **PCMag Encyclopedia**](https://www.pcmag.com/encyclopedia)
+
 ### How to draw to remember more
 
 [How to draw to remember more | Graham Shaw | TEDxVienna](https://www.youtube.com/watch?v=gj3ZnKlHqxI)
