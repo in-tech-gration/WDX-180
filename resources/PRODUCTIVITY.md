@@ -17,6 +17,10 @@
 
 - [**Wikipedia**](https://www.wikipedia.org/)
 
+- [**YouTube**](https://www.youtube.com/)
+
+- [**StackOverflow**](https://stackoverflow.com/)
+
 - [The **PCMag Encyclopedia**](https://www.pcmag.com/encyclopedia)
 
 ### How to draw to remember more
