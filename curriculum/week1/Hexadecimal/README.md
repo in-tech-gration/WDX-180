@@ -20,4 +20,4 @@ Hexadecimal, decimal, octal, and a wide variety of other bases have been used fo
 
 ---
 
-Source: [Wikipedia: ](https://en.wikipedia.org/wiki/Positional_notation)
+Source: [Wikipedia: Positional notation](https://en.wikipedia.org/wiki/Positional_notation)

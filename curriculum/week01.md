@@ -4,6 +4,7 @@
 
   #### Schedule
 
+  - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
   - [Study](#study-plan)
   - Exercises
