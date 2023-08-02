@@ -169,9 +169,41 @@
 
 ### Week 1 - Day 3 - HTML & Markdown
 
+  #### Schedule
+
+  - [Study](#study-plan-2)
+
+  #### Study Plan
+
+  - [Read: **HTML Basics**](week01/HTML_Basics/README.md)
+
+  #### Exercises
+
+  #### Extra Resources
+
 ### Week 1 - Day 4 - CSS
 
+  #### Schedule
+
+  - [Study](#study-plan-3)
+
+  #### Study Plan
+
+  #### Exercises
+
+  #### Extra Resources
+
 ### Week 1 - Day 5 - JavaScript
+
+  #### Schedule
+
+  - [Study](#study-plan-4)
+
+  #### Study Plan
+
+  #### Exercises
+
+  #### Extra Resources
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 

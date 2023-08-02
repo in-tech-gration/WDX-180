@@ -43,3 +43,60 @@ Before evaluating or reviewing any content or online resource, ensure that you h
 Here are some things to keep in mind before making a PR:
 
 - **Compress those images:** If you are including images or photos in your PR, make sure that you have used a compression tool like [TinyPNG*](https://tinypng.com/) or [ImageOptim (Mac)](https://imageoptim.com/mac) to minimize the file size. *_(works with all types of images)_
+
+---
+
+## Integrating Content from MDN 
+
+1) We find the article on MDN (e.g. [HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics))
+
+2) We scroll down to the bottom to find the `View the source on GitHub` link and click it.
+
+3) We click the `More file actions button` (the ... three dots at the top right) and select `Copy permalink`.
+
+4) We download the raw file and insert an extra field inside the Frontmatter called `permalink`. We paste the link we copied on step 3:
+
+```markdown
+---
+title: HTML basics
+slug: Learn/Getting_started_with_the_web/HTML_basics
+page-type: learn-module-chapter
+permalink: https://github.com/mdn/content/blob/9f27a13036d9a0367a500c853648cc3b02da779a/files/en-us/learn/getting_started_with_the_web/html_basics/index.md
+---
+```
+
+This helps us track our content sources and be able to check whether they are up-to-date.
+
+5) We remove all the dynamic template content (e.g. sidebar, footer, etc.) from the markdown file. For example:
+
+```
+{{LearnSidebar}}{{PreviousMenuNext("Learn/Getting_started_with_the_web/Dealing_with_files", "Learn/Getting_started_with_the_web/CSS_basics", "Learn/Getting_started_with_the_web")}}
+```
+
+6) Replace relative path links with absolute links, for example:
+
+Before:
+
+```markdown
+[`required`](/en-US/docs/Web/HTML/Attributes/required)
+```
+
+After:
+
+```markdown  
+[`required`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required)
+```
+
+7) Replace dynamic template content with static content. For example:
+
+Before:
+
+```markdown
+**{{glossary("void element", "void elements")}}**
+```
+
+After:
+
+```markdown
+**[void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)**
+```
