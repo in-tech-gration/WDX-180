@@ -6,7 +6,7 @@
     - Description: A YouTube playlist that provides an introduction to the history of computers, the basic elements of programming and the basic components of computer hardware.
     - Duration: 8h (40 videos)
 
-## The Internet
+## The Internet & the World Wide Web
 
 - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps)
 
@@ -15,6 +15,10 @@
 
 - [**How the hyperlink changed everything | TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI)
   - Duration: 4min
+
+- [Listen: **#6 How does the Web work?** (Kopec Explains Software Podcast)](http://kopec.live/episode/faffaffb63e34c2c/how-does-the-web-work-)
+  - Duration: 22min
+  - Level: Beginner
 
 ## Public Key Cryptography
 

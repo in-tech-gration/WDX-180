@@ -23,6 +23,8 @@
 
 - [The **PCMag Encyclopedia**](https://www.pcmag.com/encyclopedia)
 
+- [The **Kopec Explains Software** Podcast](http://kopec.live/)
+
 ### How to draw to remember more
 
 [How to draw to remember more | Graham Shaw | TEDxVienna](https://www.youtube.com/watch?v=gj3ZnKlHqxI)
