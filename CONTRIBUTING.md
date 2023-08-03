@@ -30,6 +30,8 @@ To get an overview of the project, please read the [README](README.md).
 
 Before evaluating or reviewing any content or online resource, ensure that you have made a copy of the [Review Google Document](https://docs.google.com/document/d/1CRaejbYTLorucBXauv2Z-FEqXtYB5K1hdsZu7496YEc/copy). Once you've made a copy, update the title then click the `Share` button, change the `General Access` to `Anyone with the link` and select `Commenter` as the role. Once the review is finished, update the document and share the link with the `integration.io` staff. 
 
+In general, we try to evaluate each resource carefully and given a rough estimation of its educational value, **rate it on a scale from 0 to 5**. When a resource gets **a rating higher than 3** (out of 5) it **can be accepted**, otherwise we will be sharing the resource only if a specific part of it has some high value and only if it is accompanied by detailed instructions on which parts to focus on and which parts should be disregarded or considered of no value (e.g. outdated or misleading content). 
+
 ### Videos
 
 - **Check for outdated content**. When reviewing videos, it's important to check whether the concepts explained or the content itself is outdated. If that's the case, make sure to accompany the video with relevant notes. Here's some examples:
