@@ -50,7 +50,7 @@ Once you've joined the course, you will be given access to a Google Spreadsheet 
 - [**Week 28**: Express.js, REST APIs & GraphQL](week28.md)
 - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](week29.md)
 - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](week30.md)
-- [**Week 31**: Content Management Systems, WordPress, Eleventy & Jamstack](week31.md)
+- [**Week 31**: Content Management Systems, WordPress, Eleventy & Serverless Architecture](week31.md)
 - [**Week 32**: Introduction to AI, Machine Learning & Tensorflow.js](week32.md)
 - [**Week 33**: Introduction to Data Science & Danfo.js](week33.md)
 - [**Week 34**: Blockchain](week34.md)

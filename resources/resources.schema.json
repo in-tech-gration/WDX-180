@@ -117,6 +117,9 @@
               "application/zip"
             ]
           },
+          "download": {
+            "type": "string"
+          },
           "size": {
             "type": "number",
             "$comment": "Size in bytes"
@@ -165,6 +168,20 @@
               "type": ["string", "array"]
             }
           },
+          "transcripts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "URL": {
+                  "type": "string"
+                },
+                "language" : {
+                  "$ref": "#/definitions/languages"
+                }
+              }              
+            }
+          },
           "youtube": {
             "type" : "object",
             "properties" : {
@@ -206,8 +223,16 @@
               {
                 "properties": {
                   "type": {
+                    "const": "Podcast"
+                  }
+                },
+                "required": ["transcripts", "download"]
+              },
+              {
+                "properties": {
+                  "type": {
                     "not": {
-                      "const": "YouTube"
+                      "enum": [ "YouTube", "Podcast" ]
                     }
                   }
                 }

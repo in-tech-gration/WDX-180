@@ -155,7 +155,19 @@
     "6-how-does-the-web-work": {
       "title": "#6 How does the Web work? Kopec Explains Software",
       "type": "Podcast",
-      "duration": 22
+      "transcripts": [],
+      "download": "https://pdcn.co/e/pinecast.com/listen/faffaffb-63e3-4c2c-a0fb-72c11fed390c.mp3?source=direct&download&ext=asset.mp3",
+      "duration": 22,
+      "identifier": "http://kopec.live/episode/faffaffb63e34c2c/how-does-the-web-work-"
+    },
+    "how-have-uis-evolved-":{
+      "title": "#21 How have UIs Evolved? Kopec Explains Software",
+      "type": "Podcast",
+      "duration": 24,
+      "transcripts": [],
+      "download": "https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3",
+      "identifier": "http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-",
+      "description": "Through the history of computing, user interfaces (UIs) have evolved from punch cards to voice interaction. In this episode we track that evolution, discussing each paradigm and the machine that popularized it. We primarily focus on personal computer UIs, covering command-line interfaces (CLIs), graphical user interfaces (GUIs), touch-screen interaction, and voice interfaces. We also imagine the future, including neural interfaces, virtual reality, and augmented reality. This episode is an introductory guide to the interfaces available and a short history, not a comprehensive tour."
     }
   },
   "creators": {

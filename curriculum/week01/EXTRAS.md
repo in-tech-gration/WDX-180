@@ -6,6 +6,13 @@
     - Description: A YouTube playlist that provides an introduction to the history of computers, the basic elements of programming and the basic components of computer hardware.
     - Duration: 8h (40 videos)
 
+  - [Listen: **How have User Interfaces Evolved?**](http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-)
+    - Description: Through the history of computing, user interfaces (UIs) have evolved from punch cards to voice interaction. In this episode we track that evolution, discussing each paradigm and the machine that popularized it. 
+    - Duration: 24min
+    - Level: Beginner
+    - [Download in .mp3 format](https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3)
+
+
 ## The Internet & the World Wide Web
 
 - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps)
