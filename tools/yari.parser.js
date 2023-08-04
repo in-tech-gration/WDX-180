@@ -25,7 +25,7 @@ try {
       return output;
     }
     
-    const regex = /\{\{glossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
+    const regex = /\{\{[Gg]lossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
     const updatedContents = file.replace(regex, replaceGlossary);
     return updatedContents;
 

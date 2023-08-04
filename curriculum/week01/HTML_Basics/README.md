@@ -19,7 +19,7 @@ An **element** is a part of a webpage. In [XML](https://developer.mozilla.org/en
 ![Example: in <p class="nice">Hello world!</p>, '<p class="nice">' is an opening tag, 'class="nice"' is an attribute and its value, 'Hello world!' is enclosed text content, and '</p>' is a closing tag.](assets/anatomy-of-an-html-element.png)
 
 
-In short, in {{Glossary("HTML")}}, a **tag** is used for creating an {{Glossary("element")}}.
+In short, in [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML), a **tag** is used for creating an [element](https://developer.mozilla.org/en-US/docs/Glossary/Element).
 
 The enclosing **tags** can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
 
@@ -35,7 +35,7 @@ If we wanted the line to stand by itself, we could specify that it is a paragrap
 
 The name of an HTML element is the name that appears at the beginning of the element's start tag and at the end of the element's end tag (if the element has an end tag). For example, the `p` in the `<p>` start tag and `</p>` end tag is the name of the HTML paragraph element. Note that an element name in an end tag is preceded by a slash character: `</p>`, and that for [void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element), the end tag is neither required nor allowed.
 
-Elements and [tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag) are _not_ the same things. Tags begin or end an element in source code, whereas elements are part of the {{Glossary("DOM")}}, the document model for displaying the page in the [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser).
+Elements and [tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag) are _not_ the same things. Tags begin or end an element in source code, whereas elements are part of the [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), the document model for displaying the page in the [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser).
 
 ### Anatomy of an HTML element
 
@@ -67,7 +67,7 @@ Attributes that set a value always have:
 
 ### Attributes
 
-An **attribute** extends an HTML or XML {{Glossary("element")}}, changing its behavior or providing metadata.
+An **attribute** extends an HTML or XML [element](https://developer.mozilla.org/en-US/docs/Glossary/Element), changing its behavior or providing metadata.
 
 An attribute always has the form `name="value"` (the attribute's identifier followed by its associated value).
 

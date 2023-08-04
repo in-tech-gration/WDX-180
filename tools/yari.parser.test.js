@@ -27,13 +27,13 @@ test("Test #4", () => {
 });
 
 test("Test #5", () => {
-  const input = `{{glossary("tag", "tags")}}`;
+  const input = `{{Glossary("tag", "tags")}}`;
   const output = parseYariDynamicContent(input);
   equal(output, "[tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag)");
 });
 
 test("Test #6", () => {
-  const input = `{{glossary("browser")}}`;
+  const input = `{{Glossary("browser")}}`;
   const output = parseYariDynamicContent(input);
   equal(output, "[browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser)");
 });
