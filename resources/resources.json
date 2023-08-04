@@ -203,6 +203,15 @@
           "rating": 0.6
         }
       ]
+    },
+    "77-what-is-a-memory-leak":{
+      "title": "#77 What is a Memory Leak?",
+      "description": "Memory leaks occur when a program allocates memory and fails to free it when the memory is no longer being used. They can cause the memory use of a program to balloon over time, eventually leading to performance problems or a crash. They are a common programmer error, that has been alleviated, although not eliminated, by modern programming languages. Programming languages like C and C++ use manual memory management, which requires the programmer to do some book-keeping. The programmer must keep track of all of the memory they allocated and must remember to free it. Programming languages with garbage collectors automatically free unused memory. In this episode we explain memory leaks and look at a recent case of a major memory leak in macOS Monterey as an example.",
+      "identifier": "http://kopec.live/episode/3aa2ed3f/what-is-a-memory-leak-",
+      "type": "Podcast",
+      "transcripts": [],
+      "download": "https://pdcn.co/e/pinecast.com/listen/3aa2ed3f-6078-49cf-83a0-c70dfd4ff128.mp3?source=direct&download&ext=asset.mp3",
+      "terms": ["Garbage Collection", "Memory Leak", "Memory Protection"]
     }
   },
   "creators": {
