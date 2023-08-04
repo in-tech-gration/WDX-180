@@ -156,14 +156,16 @@
       "title": "#6 How does the Web work? Kopec Explains Software",
       "type": "Podcast",
       "transcripts": [],
+      "publisher": "http://kopec.live",
       "download": "https://pdcn.co/e/pinecast.com/listen/faffaffb-63e3-4c2c-a0fb-72c11fed390c.mp3?source=direct&download&ext=asset.mp3",
       "duration": 22,
       "identifier": "http://kopec.live/episode/faffaffb63e34c2c/how-does-the-web-work-"
     },
-    "how-have-uis-evolved-":{
+    "21-how-have-u-is-evolved":{
       "title": "#21 How have UIs Evolved? Kopec Explains Software",
       "type": "Podcast",
       "duration": 24,
+      "publisher": "http://kopec.live",
       "transcripts": [],
       "download": "https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3",
       "identifier": "http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-",
@@ -211,7 +213,21 @@
       "type": "Podcast",
       "transcripts": [],
       "download": "https://pdcn.co/e/pinecast.com/listen/3aa2ed3f-6078-49cf-83a0-c70dfd4ff128.mp3?source=direct&download&ext=asset.mp3",
+      "publisher": "http://kopec.live",
       "terms": ["Garbage Collection", "Memory Leak", "Memory Protection"]
+    },
+    "7-what-is-a-character-encoding":{
+      "type": "Podcast",
+      "transcripts": [],
+      "title": "#7 What is a Character Encoding?",
+      "download": "https://pdcn.co/e/pinecast.com/listen/d8ae81cf-7d31-4abe-baf6-0da95eecdcfe.mp3?source=direct&download&ext=asset.mp3",
+      "publisher": "http://kopec.live",
+      "reviewers": [
+        {
+          "github": "kostasx",
+          "rating": 1
+        }
+      ]
     }
   },
   "creators": {
