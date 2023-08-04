@@ -152,9 +152,17 @@
       },
       "terms": [ "RFID", "NFC" ]
     },
+    "5-how-does-the-internet-work": {
+      "title": "#5 How does the Internet work?",
+      "type": "Podcast",
+      "transcripts": [],
+      "download": "https://pdcn.co/e/pinecast.com/listen/5a9a3bbb-4411-493a-9fe3-30336c4abf3c.mp3?source=direct&download&ext=asset.mp3",
+      "publisher": "http://kopec.live"
+    },
     "6-how-does-the-web-work": {
       "title": "#6 How does the Web work? Kopec Explains Software",
       "type": "Podcast",
+      "description": "What are the technologies that underly the Web? We discuss Web Browsers and Web Servers. We touch on: the protocols they use to communicate (HTTP and HTTPS), the languages they use to render web pages (HTML, CSS, JavaScript), and server-side technologies like databases and server-side programming languages.",
       "transcripts": [],
       "publisher": "http://kopec.live",
       "download": "https://pdcn.co/e/pinecast.com/listen/faffaffb-63e3-4c2c-a0fb-72c11fed390c.mp3?source=direct&download&ext=asset.mp3",

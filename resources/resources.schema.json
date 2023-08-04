@@ -80,7 +80,7 @@
           "creator": { "type": "array", "items": { "type": "string" } },
           "subject": { "type": "string" },
           "description": { "type": "string" },
-          "publisher": {  "type": "string" },
+          "publisher": { "type": "string" },
           "contributors": { "type": "array" },
           "date": { 
             "$comment": "This is the creation date",
