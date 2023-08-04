@@ -80,6 +80,11 @@
           "publisher": {  "type": "string" },
           "contributors": { "type": "array" },
           "date": { 
+            "$comment": "This is the creation date",
+            "type": "string",
+            "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/\\d{4}$"
+          },
+          "date_of_last_update": { 
             "type": "string",
             "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/\\d{4}$"
           },
@@ -204,7 +209,16 @@
           "reviewers": {
             "type": "array",
             "items": {
-              "type": "object"
+              "type": "object",
+              "properties":{
+                "github":{
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "number",
+                  "enum": [0, 0.2, 0.4, 0.6, 0.8, 1]
+                }
+              }
             }
           }
         },

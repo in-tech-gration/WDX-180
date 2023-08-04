@@ -168,6 +168,41 @@
       "download": "https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3",
       "identifier": "http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-",
       "description": "Through the history of computing, user interfaces (UIs) have evolved from punch cards to voice interaction. In this episode we track that evolution, discussing each paradigm and the machine that popularized it. We primarily focus on personal computer UIs, covering command-line interfaces (CLIs), graphical user interfaces (GUIs), touch-screen interaction, and voice interfaces. We also imagine the future, including neural interfaces, virtual reality, and augmented reality. This episode is an introductory guide to the interfaces available and a short history, not a comprehensive tour."
+    },
+    "silicon-semiconductors-solar-cells-crash-course-engineering-22":{
+      "title": "Silicon, Semiconductors, & Solar Cells: Crash Course Engineering #22",
+      "type": "YouTube",
+      "identifier": "",
+      "youtube": {
+        "id": "ivWXuOd5SrI",
+        "playlist_id": "PL8dPuuaLjXtO4A_tL6DLZRotxEb114cMR",
+        "playlist_index": 25,
+        "playlist_title": "Engineering"
+      },
+      "concepts": ["SINCE TRANSISTORS USE SMALLER CURRENTS TO INFLUENCE THE ON OR OFF STATES OF THE LARGER CURRENTS FLOWING THROUGH THE WIRE, THEY FORM THE BASIS OF THE BINARY SYSTEM OF ONES AND ZEROES THAT COMPUTERS RELY ON."],
+      "reviewers": [
+        {
+          "github": "kostasx",
+          "rating": 0.4
+        }
+      ]
+    },
+    "electrical-power-conductors-your-dream-home-crash-course-engineering-21":{
+      "title": "Electrical Power, Conductors, & Your Dream Home: Crash Course Engineering #21",
+      "type": "YouTube",
+      "identifier": "https://www.youtube.com/watch?v=uTWHMchUlws",
+      "youtube": {
+        "id": "uTWHMchUlws",
+        "playlist_id": "PL8dPuuaLjXtO4A_tL6DLZRotxEb114cMR",
+        "playlist_index": 24,
+        "playlist_title": "Engineering"
+      },
+      "reviewers": [
+        {
+          "github": "kostasx",
+          "rating": 0.6
+        }
+      ]
     }
   },
   "creators": {
