@@ -52,6 +52,10 @@
     - Duration: 10min
     - Level: Beginner
 
+  - [Download: **Primer on Character Encodings** Guide](https://roadmap.sh/guides/character-encodings)
+
+  ![""](https://roadmap.sh/guides/character-encodings.png)
+
   - [Watch: **Images, Pixels and RGB**](https://www.youtube.com/watch?v=15aqFQQVBWU)
     - Duration: 6min
     - Level: Beginner
@@ -73,7 +77,7 @@
 
   #### Exercises
 
-  #### Extra Resources
+  #### [Extra Resources](week01/EXTRAS.md#day-01)
 
 ### Week 1 - Day 2 - How the Internet & the World Wide Web works
 
@@ -165,7 +169,7 @@
     - Duration: 5min
     - Captions: Yes
 
-  #### [Extra Resources](week1/EXTRAS.md#the-internet)
+  #### [Extra Resources](week01/EXTRAS.md#day-02)
 
 ### Week 1 - Day 3 - HTML & Markdown
 
@@ -179,7 +183,7 @@
 
   #### Exercises
 
-  #### Extra Resources
+  #### [Extra Resources](week01/EXTRAS.md#day-03)
 
 ### Week 1 - Day 4 - CSS
 
@@ -191,7 +195,7 @@
 
   #### Exercises
 
-  #### Extra Resources
+  #### [Extra Resources](week01/EXTRAS.md#day-04)
 
 ### Week 1 - Day 5 - JavaScript
 
@@ -203,7 +207,7 @@
 
   #### Exercises
 
-  #### Extra Resources
+  #### [Extra Resources](week01/EXTRAS.md#day-05)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
