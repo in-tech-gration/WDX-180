@@ -2,16 +2,26 @@
 title: HTML basics
 slug: Learn/Getting_started_with_the_web/HTML_basics
 page-type: learn-module-chapter
-permalink: https://github.com/mdn/content/blob/9f27a13036d9a0367a500c853648cc3b02da779a/files/en-us/learn/getting_started_with_the_web/html_basics/index.md
 ---
 
 # HTML Basics
+
+_(Updated: 05/08/2023)_
 
 HTML (**H**yper**T**ext **M**arkup **L**anguage) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.
 
 ## So what is HTML?
 
-HTML is a _markup language_ that defines the structure of your content. HTML consists of a series of [elements](https://developer.mozilla.org/en-US/docs/Glossary/Element), which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing [tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag) can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
+HTML is a _markup language_ that defines the structure of your content. HTML consists of a series of **elements**, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. 
+
+An **element** is a part of a webpage. In {{glossary("XML")}} and {{glossary("HTML")}}, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some {{glossary("attribute", "attributes")}}, enclosed text content, and a closing tag.
+
+![Example: in <p class="nice">Hello world!</p>, '<p class="nice">' is an opening tag, 'class="nice"' is an attribute and its value, 'Hello world!' is enclosed text content, and '</p>' is a closing tag.](assets/anatomy-of-an-html-element.png)
+
+
+In short, in {{Glossary("HTML")}}, a **tag** is used for creating an {{Glossary("element")}}.
+
+The enclosing **tags** can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
 
 ```
 My cat is very grumpy
@@ -22,6 +32,10 @@ If we wanted the line to stand by itself, we could specify that it is a paragrap
 ```html
 <p>My cat is very grumpy</p>
 ```
+
+The name of an HTML element is the name that appears at the beginning of the element's start tag and at the end of the element's end tag (if the element has an end tag). For example, the `p` in the `<p>` start tag and `</p>` end tag is the name of the HTML paragraph element. Note that an element name in an end tag is preceded by a slash character: `</p>`, and that for {{glossary("void element", "void elements")}}, the end tag is neither required nor allowed.
+
+Elements and {{glossary("tag", "tags")}} are _not_ the same things. Tags begin or end an element in source code, whereas elements are part of the {{Glossary("DOM")}}, the document model for displaying the page in the {{glossary("browser")}}.
 
 ### Anatomy of an HTML element
 
@@ -50,6 +64,22 @@ Attributes that set a value always have:
 3. The attribute value wrapped by opening and closing quotation marks.
 
 > **Note:** Simple attribute values that don't contain ASCII whitespace (or any of the characters `"` `'` `` ` `` `=` `<` `>`) can remain unquoted, but it is recommended that you quote all attribute values, as it makes the code more consistent and understandable.
+
+### Attributes
+
+An **attribute** extends an HTML or XML {{Glossary("element")}}, changing its behavior or providing metadata.
+
+An attribute always has the form `name="value"` (the attribute's identifier followed by its associated value).
+
+You may see attributes without the equals sign or a value. That is a shorthand for providing the empty string in HTML, or the attribute's name in XML.
+
+```html
+<input required />
+<!-- is the same as… -->
+<input required="" />
+<!-- or -->
+<input required="required" />
+```
 
 ### Nesting elements
 
@@ -232,3 +262,14 @@ If you have followed all the instructions in this article, you should end up wit
 ![A web page screenshot showing a Firefox logo, a heading saying Mozilla is cool, and two paragraphs of filler text](assets/finished-test-page-small.png)
 
 If you get stuck, you can always compare your work with our [finished example code](https://github.com/mdn/beginner-html-site/blob/gh-pages/index.html) on GitHub.
+
+---
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/learn/getting_started_with_the_web/html_basics/index.md)
+  - [Element](https://developer.mozilla.org/en-US/docs/Glossary/Element) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/element/index.md)
+  - [Tag](https://developer.mozilla.org/en-US/docs/Glossary/Tag) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/tag/index.md)
+  - [Attribute](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/attribute/index.md)
+  - [Void Element](https://developer.mozilla.org/en-US/docs/Glossary/Void_element) [(Permalink)](https://github.com/mdn/content/edit/main/files/en-us/glossary/void_element/index.md)
