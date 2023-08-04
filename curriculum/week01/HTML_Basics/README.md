@@ -14,7 +14,7 @@ HTML (**H**yper**T**ext **M**arkup **L**anguage) is the code that is used to str
 
 HTML is a _markup language_ that defines the structure of your content. HTML consists of a series of **elements**, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. 
 
-An **element** is a part of a webpage. In {{glossary("XML")}} and {{glossary("HTML")}}, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some {{glossary("attribute", "attributes")}}, enclosed text content, and a closing tag.
+An **element** is a part of a webpage. In [XML](https://developer.mozilla.org/en-US/docs/Glossary/XML) and [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML), an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute), enclosed text content, and a closing tag.
 
 ![Example: in <p class="nice">Hello world!</p>, '<p class="nice">' is an opening tag, 'class="nice"' is an attribute and its value, 'Hello world!' is enclosed text content, and '</p>' is a closing tag.](assets/anatomy-of-an-html-element.png)
 
@@ -33,9 +33,9 @@ If we wanted the line to stand by itself, we could specify that it is a paragrap
 <p>My cat is very grumpy</p>
 ```
 
-The name of an HTML element is the name that appears at the beginning of the element's start tag and at the end of the element's end tag (if the element has an end tag). For example, the `p` in the `<p>` start tag and `</p>` end tag is the name of the HTML paragraph element. Note that an element name in an end tag is preceded by a slash character: `</p>`, and that for {{glossary("void element", "void elements")}}, the end tag is neither required nor allowed.
+The name of an HTML element is the name that appears at the beginning of the element's start tag and at the end of the element's end tag (if the element has an end tag). For example, the `p` in the `<p>` start tag and `</p>` end tag is the name of the HTML paragraph element. Note that an element name in an end tag is preceded by a slash character: `</p>`, and that for [void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element), the end tag is neither required nor allowed.
 
-Elements and {{glossary("tag", "tags")}} are _not_ the same things. Tags begin or end an element in source code, whereas elements are part of the {{Glossary("DOM")}}, the document model for displaying the page in the {{glossary("browser")}}.
+Elements and [tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag) are _not_ the same things. Tags begin or end an element in source code, whereas elements are part of the {{Glossary("DOM")}}, the document model for displaying the page in the [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser).
 
 ### Anatomy of an HTML element
 
