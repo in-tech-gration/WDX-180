@@ -18,10 +18,9 @@ An **element** is a part of a webpage. In [XML](https://developer.mozilla.org/en
 
 ![Example: in <p class="nice">Hello world!</p>, '<p class="nice">' is an opening tag, 'class="nice"' is an attribute and its value, 'Hello world!' is enclosed text content, and '</p>' is a closing tag.](assets/anatomy-of-an-html-element.png)
 
+In short, **in [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) a **tag** is used for creating an [element](https://developer.mozilla.org/en-US/docs/Glossary/Element)**.
 
-In short, in [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML), a **tag** is used for creating an [element](https://developer.mozilla.org/en-US/docs/Glossary/Element).
-
-The enclosing **tags** can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
+The enclosing **tags** can turn a word or an image into a [**hyperlink**](#links) _(more on this later)_, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
 
 ```
 My cat is very grumpy
@@ -35,7 +34,7 @@ If we wanted the line to stand by itself, we could specify that it is a paragrap
 
 The name of an HTML element is the name that appears at the beginning of the element's start tag and at the end of the element's end tag (if the element has an end tag). For example, the `p` in the `<p>` start tag and `</p>` end tag is the name of the HTML paragraph element. Note that an element name in an end tag is preceded by a slash character: `</p>`, and that for [void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element), the end tag is neither required nor allowed.
 
-Elements and [tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag) are _not_ the same things. Tags begin or end an element in source code, whereas elements are part of the [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), the document model for displaying the page in the [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser).
+**Elements and [tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag) are _not_ the same things**. Tags begin or end an element in source code, whereas elements are part of the [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), the document model for displaying the page in the [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser).
 
 ### Anatomy of an HTML element
 
@@ -46,9 +45,11 @@ Let's explore this paragraph element a bit further.
 The main parts of our element are as follows:
 
 1. **The opening tag:** This consists of the name of the element (in this case, p), wrapped in opening and closing **angle brackets**. This states where the element begins or starts to take effect — in this case where the paragraph begins.
-2. **The closing tag:** This is the same as the opening tag, except that it includes a _forward slash_ before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.
+2. **The closing tag:** This is the same as the opening tag, except that it includes a _forward slash_ before the element name. This states where the element ends — in this case where the paragraph ends. **Failing to add a closing tag is one of the standard beginner errors and can lead to strange results**.
 3. **The content:** This is the content of the element, which in this case, is just text.
 4. **The element:** The opening tag, the closing tag, and the content together comprise the element.
+
+### Attributes
 
 Elements can also have attributes that look like the following:
 
@@ -63,9 +64,7 @@ Attributes that set a value always have:
 2. The attribute name followed by an equal sign.
 3. The attribute value wrapped by opening and closing quotation marks.
 
-> **Note:** Simple attribute values that don't contain ASCII whitespace (or any of the characters `"` `'` `` ` `` `=` `<` `>`) can remain unquoted, but it is recommended that you quote all attribute values, as it makes the code more consistent and understandable.
-
-### Attributes
+> **Note:** Simple attribute values that don't contain ASCII whitespace (or any of the characters `"` `'` `` ` `` `=` `<` `>`) can remain unquoted, but **it is recommended that you quote all attribute values**, as it makes the code more consistent and understandable.
 
 An **attribute** extends an HTML or XML [element](https://developer.mozilla.org/en-US/docs/Glossary/Element), changing its behavior or providing metadata.
 
@@ -89,13 +88,13 @@ You can put elements inside other elements too — this is called **nesting**. I
 <p>My cat is <strong>very</strong> grumpy.</p>
 ```
 
-You do however need to make sure that your elements are properly nested. In the example above, we opened the [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element first, then the [strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element; therefore, we have to close the [strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element first, then the [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element. The following is incorrect:
+You do however need to **make sure that your elements are properly nested**. In the example above, we opened the [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element first, then the [strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element; therefore, we have to close the [strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element first, then the [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element. The following is incorrect:
 
 ```html-nolint example-bad
 <p>My cat is <strong>very grumpy.</p></strong>
 ```
 
-The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. So don't do it!
+The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. **So don't do it!**
 
 ### Void elements
 
@@ -109,7 +108,7 @@ This contains two attributes, but there is no closing `</img>` tag and no inner 
 
 ### Anatomy of an HTML document
 
-That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page. Let's revisit the code we put into our `index.html` example (which we first met in the [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) article):
+That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page:
 
 ```html
 <!doctype html>
@@ -130,7 +129,7 @@ Here, we have the following:
 - `<!DOCTYPE html>` — [doctype](https://developer.mozilla.org/en-US/docs/Glossary/Doctype). It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days, they don't do much and are basically just needed to make sure your document behaves correctly. That's all you need to know for now.
 - `<html></html>` — the [html](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) element. This element wraps all the content on the entire page and is sometimes known as the root element. It also includes the `lang` attribute, setting the primary language of the document.
 - `<head></head>` — the [head](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) element. This element acts as a container for all the stuff you want to include on the HTML page that _isn't_ the content you are showing to your page's viewers. This includes things like [keywords](https://developer.mozilla.org/en-US/docs/Glossary/Keyword) and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.
-- `<meta charset="utf-8">` — This element sets the character set your document should use to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
+- `<meta charset="utf-8">` — This element sets the character set your document should use to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. **There is no reason not to set this**, and it can help avoid some problems later on.
 - `<meta name="viewport" content="width=device-width">` — This [viewport element](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts#mobile_viewports) ensures the page renders at the width of viewport, preventing mobile browsers from rendering pages wider than the viewport and then shrinking them down.
 - `<title></title>` — the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favorite it.
 - `<body></body>` — the [body](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body) element. This contains _all_ the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
@@ -145,18 +144,16 @@ Let's turn our attention to the [img](https://developer.mozilla.org/en-US/docs/W
 
 As we said before, it embeds an image into our page in the position it appears. It does this via the `src` (source) attribute, which contains the path to our image file.
 
-We have also included an `alt` (alternative) attribute. In the [`alt` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions), you specify descriptive text for users who cannot see the image, possibly because of the following reasons:
+**We have also included an `alt` (alternative) attribute**. In the [`alt` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions), you specify descriptive text for users who cannot see the image, possibly because of the following reasons:
 
 1. They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.
-2. Something has gone wrong causing the image not to display. For example, try deliberately changing the path inside your `src` attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:
+2. Something has gone wrong causing the image not to display. For example, **try deliberately changing the path inside your `src` attribute to make it incorrect.** If you save and reload the page, you should see something like this in place of the image:
 
 ![The words: my test image](assets/alt-text-example.png)
 
-The keywords for alt text are "descriptive text". The alt text you write should provide the reader with enough information to have a good idea of what the image conveys. In this example, our current text of "My test image" is no good at all. A much better alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."
+The keywords for alt text are "descriptive text". **The alt text you write should provide the reader with enough information to have a good idea of what the image conveys.** In this example, our current text of "My test image" is **no good at all**. A much better alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."
 
 Try coming up with some better alt text for your image now.
-
-> **Note:** Find out more about accessibility in our [accessibility learning module](https://developer.mozilla.org/en-US/docs/Learn/Accessibility).
 
 ## Marking up text
 
@@ -176,9 +173,9 @@ Heading elements allow you to specify that certain parts of your content are hea
 
 > **Note:** Anything in HTML between `<!--` and `-->` is an **HTML comment**. The browser ignores comments as it renders the code. In other words, they are not visible on the page - just in the code. HTML comments are a way for you to write helpful notes about your code or logic.
 
-Now try adding a suitable title to your HTML page just above your [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element.
+> **Note:** You'll see that your heading level 1 has an implicit style. **Don't use heading elements to make text bigger or bold**, because they are used for **accessibility** and other reasons such as **SEO***. Try to create a meaningful sequence of headings on your pages, **without skipping levels**.
 
-> **Note:** You'll see that your heading level 1 has an implicit style. Don't use heading elements to make text bigger or bold, because they are used for [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#text_content) and [other reasons such as SEO](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#why_do_we_need_structure). Try to create a meaningful sequence of headings on your pages, without skipping levels.
+*_**SEO (Search Engine Optimization)** is the process of making a website more visible in search results, also termed improving search rankings._
 
 ### Paragraphs
 
@@ -187,8 +184,6 @@ As explained above, [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 ```html
 <p>This is a single paragraph</p>
 ```
-
-Add your sample text (you should have it from [_What will your website look like?_](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like)) into one or a few paragraphs, placed directly below your [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element.
 
 ### Lists
 
@@ -222,11 +217,9 @@ We could modify the markup to this
 <p>working together…</p>
 ```
 
-Try adding an ordered or unordered list to your example page.
-
 ## Links
 
-Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — [a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:
+Links are [**very important**](https://www.youtube.com/watch?v=3Va3oY8pfSI) — they are what makes the web a web! To add a link, we need to use a simple element — [a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:
 
 1. Choose some text. We chose the text "Mozilla Manifesto".
 2. Wrap the text in an [a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) element, as shown below:
@@ -252,16 +245,6 @@ Links are very important — they are what makes the web a web! To add a link, w
 You might get unexpected results if you omit the `https://` or `http://` part, called the _protocol_, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.
 
 > **Note:** `href` might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for _**h**ypertext **ref**erence_.
-
-Add a link to your page now, if you haven't already done so.
-
-## Conclusion
-
-If you have followed all the instructions in this article, you should end up with a page that looks like the one below (you can also [view it here](https://mdn.github.io/beginner-html-site/)):
-
-![A web page screenshot showing a Firefox logo, a heading saying Mozilla is cool, and two paragraphs of filler text](assets/finished-test-page-small.png)
-
-If you get stuck, you can always compare your work with our [finished example code](https://github.com/mdn/beginner-html-site/blob/gh-pages/index.html) on GitHub.
 
 ---
 

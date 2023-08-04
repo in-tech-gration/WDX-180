@@ -8,29 +8,28 @@ if ( !fileName ){
   process.exit();
 }
 
+function parseYariDynamicContent( textContent ){
+
+  function replaceGlossary(match, p1, p2) {
+    const baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
+    const link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
+    const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
+    // console.log(match, p1, p2);
+    console.log(output);
+    return output;
+  }
+  
+  const regex = /\{\{[Gg]lossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
+  const updatedContents = file.replace(regex, replaceGlossary);
+  return updatedContents;
+
+}
+
 try {
 
   console.log(`Processing ${fileName}`);
   
   const file = fs.readFileSync(fileName, "utf-8");
-  
-  function parseYariDynamicContent( textContent ){
-
-    function replaceGlossary(match, p1, p2) {
-      const baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
-      const link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
-      const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
-      // console.log(match, p1, p2);
-      console.log(output);
-      return output;
-    }
-    
-    const regex = /\{\{[Gg]lossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
-    const updatedContents = file.replace(regex, replaceGlossary);
-    return updatedContents;
-
-  }
-
   fs.writeFileSync( fileName, parseYariDynamicContent(file), "utf8" );
 
 } catch(e){
