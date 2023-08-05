@@ -4,6 +4,8 @@
 
 - **YouTube Videos:** 
 
+  - **Switch to a different playback speed:** if you feel the default speed (1x) is either too fast or too slow for you. You can configure the playback speed by clicking the `Settings` icon and then selecting a `Playback Speed`. Speeds over 1 (1.25, 1.5, etc.) will accelerate the playback rate, while speed values under 0 (0.75, 0.5, etc.) will slow down the video and audio.
+
   - **Use an AdBlocker:** you are probably going to need an AdBlocker while watching YouTube videos, as it can become really distracting (not to mention annoying and time consuming) watching ads popping up all of the time. You can install something like [Adblock Plus - free ad blocker](https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb) for Chrome.
 
   - **Check the comments section**: for additional feedback, outdated content, errata and extra information that might be helpful. Look for comments that mention that the content is outdated or contains misleading information. **Tip:** you can install the Chrome extension [SummifyYT](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco) which does a pretty good job reading all the comments and summarizing the overall feedback _(see screenshot below)_.
