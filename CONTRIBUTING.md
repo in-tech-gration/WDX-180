@@ -40,6 +40,10 @@ In general, we try to evaluate each resource carefully and given a rough estimat
 
 - **Always check the comments section** for more information and feedback from the community. For example, you can use a Chrome extension like [SummifyYT](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco) to get a summary of all the submitted comments in a YouTube video.
 
+## Teaching & Mentoring
+
+Don't forget to consult the [Teaching Resources](/teaching/README.md) for additional information and useful resources related to education.
+
 ## Making a Pull Request
 
 Here are some things to keep in mind before making a PR:

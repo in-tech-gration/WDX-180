@@ -2,6 +2,12 @@
 
 ## Study
 
+- When learning new concepts, ensure that you **always accompany them with imagery**. For example, when learning about `closures` in JavaScript, google for `closure javascript` and switch to `Images` search mode to find useful diagrams, images, charts or any other type of imagery that will help you "connect" with the concept you are trying to learn and get a visual representation that will help you build a strong mental model behind each concept. There is a great deal of scientific research and studies that confirm [the important role of visual input in processing and retaining information](../teaching/README.md#dual-coding-theory--picture-superiority-effect).
+
+![A Venn diagram consisting of two intersecting circles. The circle on the left is labelled Functions whereas the circle on the right is labelled Variable Scope. Their intersection is labelled Closure](assets/Closure.JS.png)
+
+_(A quick Google image search for "closure javascript" results in this nice visual diagram by [Edward Huangabout](https://edward-huang.com/about/))_
+
 - **YouTube Videos:** 
 
   - **Switch to a different playback speed:** if you feel the default speed (1x) is either too fast or too slow for you. You can configure the playback speed by clicking the `Settings` icon and then selecting a `Playback Speed`. Speeds over 1 (1.25, 1.5, etc.) will accelerate the playback rate, while speed values under 0 (0.75, 0.5, etc.) will slow down the video and audio.
