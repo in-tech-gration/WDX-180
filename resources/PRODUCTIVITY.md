@@ -1,6 +1,11 @@
 # Learning and Productivity Tips
 
-## Study
+___"Truth flourishes where the student's lamp has shone,<br>
+And there alone,"___, W.B. Yeats
+
+## Study*
+
+_*from latin **Studium**, meaning **zeal, painstaking application, dedication**._
 
 - When learning new concepts, ensure that you **always accompany them with imagery**. For example, when learning about `closures` in JavaScript, google for `closure javascript` and switch to `Images` search mode to find useful diagrams, images, charts or any other type of imagery that will help you "connect" with the concept you are trying to learn and get a visual representation that will help you build a strong mental model behind each concept. There is a great deal of scientific research and studies that confirm [the important role of visual input in processing and retaining information](../teaching/README.md#dual-coding-theory--picture-superiority-effect).
 
