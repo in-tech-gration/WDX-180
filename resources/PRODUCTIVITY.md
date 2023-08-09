@@ -65,6 +65,8 @@ YouTube video, 8min
 - [**Screenshot YouTube:** Take a screenshot of any YouTube video with one click](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk)
 - [**SummifyYT:** Summarize YouTube Comments (Chrome Extension)](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco)
 - [**Wikiwand:** Wikipedia Modernized](https://chrome.google.com/webstore/detail/wikiwand-wikipedia-modern/emffkefkbkpkgpdeeooapgaicgmcbolj)
+- [**Just Read** Chrome Extension for ](https://chrome.google.com/webstore/detail/just-read/dgmanlpmmkibanfdgjocnabmcaclkmod) Read articles in a customizable, simplified format - like a read mode but better!
+  - [Click here](assets/Just.Read.jpg) to see a comparison between an old web page and the `Just Read` version.
 - [**CodeGrepper:** The Query & Answer System for the Coder Community
 ](https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco)
 - [**Git Bash**](https://git-scm.com/downloads). List of available commands:
