@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseYariDynamicContent, parseMDNLinks } = require("./yari.parser");
+const { parseYariDynamicContent, parseMDNLinks, parseImages } = require("./yari.parser");
 
 test("Test #1", () => {
   const input = `{{glossary("XML")}}`;
@@ -45,3 +45,10 @@ test("Replacing MDN relative links with absolute URLs", () => {
   equal(output, "lorem ipsum [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) lorem ipsum");
   
 });
+
+test("Replacing MDN image links with local assets/ folder", ()=>{
+  // parseImages()
+  const input = `lorem ipsum ![Three boxes sat inside one another. From outside to in they are labelled margin, border and padding](box-model.png) lorem ipsum`;
+  const output = parseImages(input);
+  equal(output, "lorem ipsum ![Three boxes sat inside one another. From outside to in they are labelled margin, border and padding](assets/box-model.png) lorem ipsum");
+})

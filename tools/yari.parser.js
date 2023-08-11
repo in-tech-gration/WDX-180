@@ -87,6 +87,22 @@ function parseMDNLinks( textContent ){
   return textContent;
 }
 
+function parseImages( textContent ){
+
+  const regex = /!\[([^\]]*)]\(((?!https?:\/\/)[^\)]+)\)/g;
+  
+  const matches = textContent.match(regex);
+  
+  if (matches) {
+    // console.log(matches);
+    return textContent.replace( regex, (match, altText, imgSrc)=>{
+      return `![${altText}](assets/${imgSrc})`
+    })
+  }
+  
+  return textContent;
+}
+
 function parseYariDynamicContent( textContent ){
 
   let updatedContents = textContent;
@@ -94,6 +110,7 @@ function parseYariDynamicContent( textContent ){
   updatedContents = replaceGlossaryLinks(updatedContents);
   updatedContents = removeTemplateContent(updatedContents);
   updatedContents = parseMDNLinks(updatedContents);
+  updatedContents = parseImages(updatedContents);
 
   return updatedContents;
 
@@ -133,5 +150,6 @@ function init(){
 
 module.exports = {
   parseYariDynamicContent,
-  parseMDNLinks
+  parseMDNLinks,
+  parseImages
 };

@@ -8,7 +8,11 @@ page-type: learn-module-chapter
 
 _(Updated: 11/08/2023)_
 
-CSS (Cascading Style Sheets) is the code that styles web content. _CSS basics_ walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+**CSS (Cascading Style Sheets)** is the code that styles web content. _CSS basics_ walks through what you need to get started. We'll answer questions like: 
+
+- How do I make text red? 
+- How do I make content display at a certain location in the (webpage) layout?
+- How do I decorate my webpage with background images and colors?
 
 ## What is CSS?
 
@@ -32,13 +36,13 @@ To make the code work, we still need to apply this CSS (above) to your HTML docu
 
 2. Save `index.html` and load it in your browser. You should see something like this:
 
-![A Mozilla logo and some paragraphs. The paragraph text has been styled red by our css.](website-screenshot-styled.png)If your paragraph text is red, congratulations! Your CSS is working.
+![A Mozilla logo and some paragraphs. The paragraph text has been styled red by our css.](assets/website-screenshot-styled.png)If your paragraph text is red, congratulations! Your CSS is working.
 
 ### Anatomy of a CSS ruleset
 
 Let's dissect the CSS code for red paragraph text to understand how it works:
 
-![CSS p declaration color red](css-declaration-small.png)
+![CSS p declaration color red](assets/css-declaration-small.png)
 
 The whole structure is called a **ruleset**. (The term _ruleset_ is often referred to as just _rule_.) Note the names of the individual parts:
 
@@ -189,13 +193,13 @@ Now that we've explored some CSS fundamentals, let's improve the appearance of t
 
 Adjust the `px` values as you like. Your work-in-progress should look similar to this:
 
-![A Mozilla logo and some paragraphs. A sans-serif font has been set, the font sizes, line height and letter spacing are adjusted, and the main page heading has been centered](website-screenshot-font-small.png)
+![A Mozilla logo and some paragraphs. A sans-serif font has been set, the font sizes, line height and letter spacing are adjusted, and the main page heading has been centered](assets/website-screenshot-font-small.png)
 
 ## CSS: all about boxes
 
 Something you'll notice about writing CSS: a lot of it is about boxes. This includes setting size, color, and position. Most HTML elements on your page can be thought of as boxes sitting on top of other boxes.
 
-![A big stack of boxes or crates sat on top of one another](boxes.jpg)
+![A big stack of boxes or crates sat on top of one another](assets/boxes.jpg)
 
 Photo from [https://www.geograph.org.uk/photo/3418115](https://www.geograph.org.uk/photo/3418115) Copyright © [Jim Barton](https://www.geograph.org.uk/profile/26362) [cc-by-sa/2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 
@@ -205,7 +209,7 @@ CSS layout is mostly based on the _box model._ Each box taking up space on your 
 - `border`, the solid line that is just outside the padding.
 - `margin`, the space around the outside of the border.
 
-![Three boxes sat inside one another. From outside to in they are labelled margin, border and padding](box-model.png)
+![Three boxes sat inside one another. From outside to in they are labelled margin, border and padding](assets/box-model.png)
 
 In this section we also use:
 
@@ -294,7 +298,7 @@ The {{htmlelement("body")}} is a **block** element, meaning it takes up space on
 
 If you followed all the instructions in this article, you should have a page that looks similar to this one:
 
-![A Mozilla logo, centered, and a header and paragraphs. It now looks nicely styled, with a blue background for the whole page and orange background for the centered main content strip.](website-screenshot-final.png)
+![A Mozilla logo, centered, and a header and paragraphs. It now looks nicely styled, with a blue background for the whole page and orange background for the centered main content strip.](assets/website-screenshot-final.png)
 
 (You can [view our version here](https://mdn.github.io/beginner-html-site-styled/).) If you get stuck, you can always compare your work with our [finished example code on GitHub](https://github.com/mdn/beginner-html-site-styled/blob/gh-pages/styles/style.css).
 
