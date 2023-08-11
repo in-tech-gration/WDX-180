@@ -180,6 +180,10 @@
 
   #### Study Plan
 
+  **What you'll learn:**
+
+  - [WORK IN PROGRESS]
+
   - [Read: **HTML Basics**](week01/HTML_Basics/README.md)
 
   #### Exercises
@@ -193,6 +197,12 @@
   - [Study](#study-plan-3)
 
   #### Study Plan
+
+  **What you'll learn:**
+
+  - [WORK IN PROGRESS]
+
+  - [Read: **CSS Basics**](week01/CSS_Basics/README.md)
 
   #### Exercises
 
