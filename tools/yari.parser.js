@@ -36,7 +36,7 @@ function parseYariDynamicContent( textContent ){
 
   // const templateRegex = /{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}/g
 
-  const templateRegex = /{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}/g;
+  const templateRegex = /{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
   const templateMatches = updatedContents.match(templateRegex); 
 
   if ( templateMatches ){
