@@ -16,7 +16,7 @@
       "language": ["en"],
       "rights": "Standard YouTube License",
       "terms": [ "Bit", "Binary", "Pixel", "RGB", "Waveform" ],
-      "duration": 6,
+      "duration": 360,
       "concepts": [
         "Representing text, images and sound with zeroes and ones (bits).",
         "Bits are how computer input, store, process and output information"
@@ -26,10 +26,11 @@
       "title": "Images, Pixels and RGB",
       "type" : "YouTube",
       "youtube": {
-        "id": "15aqFQQVBWU"
+        "id": "15aqFQQVBWU",
+        "thumbnail_url": "https://i.ytimg.com/vi/USCBCmwMCDA/maxresdefault.jpg"
       },
       "identifier": "https://www.youtube.com/watch?v=15aqFQQVBWU",
-      "duration": 6,
+      "duration": 360,
       "terms": ["Resolution", "Density", "RGB", "Pixel", "JPEG", "GIF", "PNG", "Bit", "Binary", "Byte", "Function"],
       "concepts": [ "With 8 bits we can store 256 numbers from 0 up to 255." ]
     },
@@ -49,7 +50,7 @@
         "id": "MijmeoH9LT4"
       },
       "identifier": "https://www.youtube.com/watch?v=MijmeoH9LT4",
-      "duration": 10,
+      "duration": 600,
       "terms": [ "ASCII", "Binary", "Hexadecimal", "Encoding" ],
       "concepts": [ 
         [ 
@@ -69,7 +70,7 @@
         "id": "H2kTzmJJ79E"
       },
       "identifier": "https://www.youtube.com/watch?v=H2kTzmJJ79E",
-      "duration": 5,
+      "duration": 300,
       "terms": ["Kilobyte", "Kibibyte", "SI", "IEC" ],
       "concepts": [ "How storage space is calculated in computers" ]
     },
@@ -80,7 +81,7 @@
         "id": "ZghMPWGXexs"
       },
       "identifier": "https://www.youtube.com/watch?v=ZghMPWGXexs",
-      "duration": 7,
+      "duration": 420,
       "captions": true,
       "terms": [ "Public Key", "Caesar Cipher"],
       "reviewers": [
@@ -109,7 +110,7 @@
     "representing-numbers-and-letters-with-binary-crash-course-computer-science-4": {
       "title": "Representing Numbers and Letters with Binary: Crash Course Computer Science #4",
       "type": "YouTube",
-      "duration": 11,
+      "duration": 660,
       "identifier": "https://www.youtube.com/watch?v=1GSjbWt0c9M",
       "youtube": {
           "captions": [ "EN" ],
@@ -128,7 +129,7 @@
     "how-shazam-i-ds-over-23-000-songs-each-minute-wsj-tech-behind": {
       "title": "How Shazam IDs Over 23,000 Songs Each Minute | WSJ Tech Behind",
       "type": "YouTube",
-      "duration": 7,
+      "duration": 420,
       "youtube": {
         "id": "b6xeOLjeKs0"
       },
@@ -137,7 +138,7 @@
     "how-spotify-s-ai-driven-recommendations-work-wsj-tech-behind": {
       "title": "How Spotify’s AI-Driven Recommendations Work | WSJ Tech Behind",
       "type": "YouTube",
-      "duration": 7,
+      "duration": 420,
       "identifier": "https://www.youtube.com/watch?v=pGntmcy_HX8",
       "youtube": {
         "id": "pGntmcy_HX8"
@@ -166,13 +167,13 @@
       "transcripts": [],
       "publisher": "http://kopec.live",
       "download": "https://pdcn.co/e/pinecast.com/listen/faffaffb-63e3-4c2c-a0fb-72c11fed390c.mp3?source=direct&download&ext=asset.mp3",
-      "duration": 22,
+      "duration": 1320,
       "identifier": "http://kopec.live/episode/faffaffb63e34c2c/how-does-the-web-work-"
     },
     "21-how-have-u-is-evolved":{
       "title": "#21 How have UIs Evolved? Kopec Explains Software",
       "type": "Podcast",
-      "duration": 24,
+      "duration": 1440,
       "publisher": "http://kopec.live",
       "transcripts": [],
       "download": "https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3",

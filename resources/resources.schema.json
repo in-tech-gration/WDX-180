@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$comment": "Understanding JSON Schema: https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf",
+  "$comment": "Understanding JSON Schema: https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf / Inspiration: https://github.com/pyvideo/data/blob/main/writethedocs-na-2018/videos/audience-market-product-bob-watson-write-the-docs-portland-2018.json",
   "definitions": {
     "level": {
       "type": "string",
@@ -76,6 +76,7 @@
         "type": "object",
         "$comment": "The Dublin Core Metadata Element Set is an ISO Standard (ISO 15836) well known in the Web and library worlds as a cross domain standard that defines 15 data elements for resource description. Spec: https://www.dublincore.org/specifications/dublin-core/usageguide/elements/. More about the properties: https://guides.library.ucsc.edu/c.php?g=618773&p=4306386. Video: https://www.youtube.com/watch?v=5HJVfp5c0kE. RFC: https://www.ietf.org/rfc/rfc5013.txt",
         "properties": {
+          "copyright_text": { "type": "string" },
           "title": { "type": "string" },
           "creator": { "type": "array", "items": { "type": "string" } },
           "subject": { "type": "string" },
@@ -134,7 +135,7 @@
           },
           "duration": {
             "type": "number",
-            "$comment": "Duration in minutes"
+            "$comment": "Duration in seconds"
           },
           "identifier": { "type": "string" },
           "source": { "type": "string" },
@@ -169,11 +170,33 @@
               "$ref": "#/definitions/terms"
             }
           },
+          "tags":{
+            "type":"array",
+            "items": {
+              "type": "string"
+            }
+          },
           "concepts": {
             "$comment": "Concepts can either be a string or an array if it's a pair of Q&A",
             "type": "array",
             "items": {
               "type": ["string", "array"]
+            }
+          },
+          "speakers": {
+            "type": "array",
+            "items": {
+              "type":"string"
+            }
+          },
+          "related_urls": {
+            "type": "array",
+            "items": {
+              "type":"object",
+              "properties": {
+                "label":{ "type": "string"},
+                "url":{ "type": "string"}
+              }
             }
           },
           "transcripts": {
@@ -205,7 +228,8 @@
               },
               "playlist_id" : { "type": "string" },
               "playlist_index": { "type": "number" },
-              "playlist_title": { "type": "string" }
+              "playlist_title": { "type": "string" },
+              "thumbnail_url": { "type": "string" }
             },
             "additionalProperties": false
           },
