@@ -10,7 +10,9 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "chalk": "^4.1.2",
+    "dotenv": "^16.3.1",
     "markdown-it": "^13.0.1",
+    "octokit": "^3.1.0",
     "yaml": "^2.3.1"
   }
 }

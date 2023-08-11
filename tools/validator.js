@@ -2,10 +2,7 @@
 const fs = require("node:fs");
 const MarkdownIt = require('markdown-it');
 const yaml = require('yaml');
-const chalk = require('chalk'); 
-
-const warn = (text)=> console.log(chalk.bold.red("WARNING:"), chalk.bold.red(text));
-const ok = (text)=> console.log(chalk.bold.green(text));
+const { warn, ok } = require("./utils");
 
 // Parsing input
 const markdownFilePath = process.argv[2];

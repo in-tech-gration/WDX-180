@@ -1,10 +1,13 @@
 const fs = require("node:fs");
 const { parseArgs } = require("node:util");
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
+const { warn, ok } = require("./utils");
+
 
 const fileName = process.argv[2];
 
 if ( !fileName ){
+  warn("No filename.")
   process.exit();
 }
 
@@ -34,7 +37,7 @@ try {
 
 } catch(e){
 
-  console.log(e);
+  warn(e.message);
 
 }
 

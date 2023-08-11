@@ -175,7 +175,7 @@ Heading elements allow you to specify that certain parts of your content are hea
 
 > **Note:** You'll see that your heading level 1 has an implicit style. **Don't use heading elements to make text bigger or bold**, because they are used for **accessibility** and other reasons such as **SEO***. Try to create a meaningful sequence of headings on your pages, **without skipping levels**.
 
-*_**SEO (Search Engine Optimization)** is the process of making a website more visible in search results, also termed improving search rankings._
+*_**SEO (Search Engine Optimization)** is the process of making a website more visible in search results, also termed improving search rankings. Search engines crawl the web, following links from page to page, and index the content found. When you search, the search engine displays the indexed content. Crawlers follow rules. If you follow those rules closely when doing SEO for a website, you give the site the best chances of showing up among the first results, increasing traffic and possibly revenue (for e-commerce and ads)._
 
 ### Paragraphs
 
@@ -256,3 +256,4 @@ You might get unexpected results if you omit the `https://` or `http://` part, c
   - [Tag](https://developer.mozilla.org/en-US/docs/Glossary/Tag) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/tag/index.md)
   - [Attribute](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/attribute/index.md)
   - [Void Element](https://developer.mozilla.org/en-US/docs/Glossary/Void_element) [(Permalink)](https://github.com/mdn/content/edit/main/files/en-us/glossary/void_element/index.md)
+  - [SEO](https://developer.mozilla.org/en-US/docs/Glossary/SEO)
