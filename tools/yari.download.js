@@ -45,10 +45,16 @@ if ( !GITHUB_PATH || !TARGET_FOLDER ){
   .forEach((resource, index ) => {
     
     console.log( index, resource.download_url );
+    const targetPath = `${TARGET_FOLDER}/${resource.name}`;
 
-    const file = fs.createWriteStream(`${TARGET_FOLDER}/${resource.name}`);
+    if ( fs.existsSync(targetPath) ){
+      return;
+    }
+
+    const file = fs.createWriteStream(targetPath);
     const request = https.get(resource.download_url, function(response) {
       response.pipe(file);
+      
       // after download completed close file stream
       file.on("finish", () => {
           file.close();
