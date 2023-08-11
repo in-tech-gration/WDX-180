@@ -8,10 +8,6 @@ page-type: learn-module-chapter
 
 _(Updated: 11/08/2023)_
 
-{{LearnSidebar}}{{PreviousMenuNext("Learn/Getting_started_with_the_web/HTML_basics", "Learn/Getting_started_with_the_web/JavaScript_basics", "Learn/Getting_started_with_the_web")}}
-
-{{PreviousMenuNext("Learn/Getting_started_with_the_web/HTML_basics", "Learn/Getting_started_with_the_web/JavaScript_basics", "Learn/Getting_started_with_the_web")}}
-
 CSS (Cascading Style Sheets) is the code that styles web content. _CSS basics_ walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
 
 ## What is CSS?
@@ -26,7 +22,7 @@ p {
 
 Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save the file as `style.css` in a directory named `styles`.
 
-To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML. (If you haven't been following our project, pause here to read [Dealing with files](/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) and [HTML basics](/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).)
+To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML. (If you haven't been following our project, pause here to read [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) and [HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).)
 
 1. Open your `index.html` file. Paste the following line in the head (between the {{HTMLElement("head")}} and `</head>` tags):
 
@@ -147,13 +143,13 @@ There are many different types of selectors. The examples above use **element se
   </tbody>
 </table>
 
-There are many more selectors to discover. To learn more, see the MDN [Selectors guide](/en-US/docs/Learn/CSS/Building_blocks/Selectors).
+There are many more selectors to discover. To learn more, see the MDN [Selectors guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
 ## Fonts and text
 
 Now that we've explored some CSS fundamentals, let's improve the appearance of the example by adding more rules and information to the `style.css` file.
 
-1. First, find the [output from Google Fonts](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) that you previously saved from [What will your website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like). Add the {{htmlelement("link")}} element somewhere inside your `index.html`'s head (anywhere between the {{HTMLElement("head")}} and `</head>` tags). It looks something like this:
+1. First, find the [output from Google Fonts](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) that you previously saved from [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like). Add the {{htmlelement("link")}} element somewhere inside your `index.html`'s head (anywhere between the {{HTMLElement("head")}} and `</head>` tags). It looks something like this:
 
    ```html
    <link
@@ -164,7 +160,7 @@ Now that we've explored some CSS fundamentals, let's improve the appearance of t
    This code links your page to a style sheet that loads the Open Sans font family with your webpage.
 
 2. Next, delete the existing rule you have in your `style.css` file. It was a good test, but let's not continue with lots of red text.
-3. Add the following lines (shown below), replacing the `font-family` assignment with your `font-family` selection from [What will your website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font). The property `font-family` refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since {{HTMLElement("html")}} is the parent element of the whole page, all elements inside it inherit the same `font-size` and `font-family`.
+3. Add the following lines (shown below), replacing the `font-family` assignment with your `font-family` selection from [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font). The property `font-family` refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since {{HTMLElement("html")}} is the parent element of the whole page, all elements inside it inherit the same `font-size` and `font-family`.
 
    ```css
    html {
@@ -229,7 +225,7 @@ html {
 }
 ```
 
-This rule sets a background color for the entire page. Change the color code to [the color you chose in What will my website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#theme_color).
+This rule sets a background color for the entire page. Change the color code to [the color you chose in What will my website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#theme_color).
 
 ### Styling the body
 
@@ -246,9 +242,9 @@ body {
 There are several declarations for the {{htmlelement("body")}} element. Let's go through these line-by-line:
 
 - `width: 600px;` This forces the body to always be 600 pixels wide.
-- `margin: 0 auto;` When you set two values on a property like `margin` or `padding`, the first value affects the element's top _and_ bottom side (setting it to `0` in this case); the second value affects the left _and_ right side. (Here, `auto` is a special value that divides the available horizontal space evenly between left and right). You can also use one, two, three, or four values, as documented in [Margin Syntax](/en-US/docs/Web/CSS/margin#syntax).
+- `margin: 0 auto;` When you set two values on a property like `margin` or `padding`, the first value affects the element's top _and_ bottom side (setting it to `0` in this case); the second value affects the left _and_ right side. (Here, `auto` is a special value that divides the available horizontal space evenly between left and right). You can also use one, two, three, or four values, as documented in [Margin Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/margin#syntax).
 - `background-color: #FF9500;` This sets the element's background color. This project uses a reddish orange for the body background color, as opposed to dark blue for the {{htmlelement("html")}} element. (Feel free to experiment.)
-- `padding: 0 20px 20px 20px;` This sets four values for padding. The goal is to put some space around the content. In this example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, bottom, left, in that order. As with `margin`, you can use one, two, three, or four values, as documented in [Padding Syntax](/en-US/docs/Web/CSS/padding#syntax).
+- `padding: 0 20px 20px 20px;` This sets four values for padding. The goal is to put some space around the content. In this example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, bottom, left, in that order. As with `margin`, you can use one, two, three, or four values, as documented in [Padding Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax).
 - `border: 5px solid black;` This sets values for the width, style and color of the border. In this case, it's a five-pixel–wide, solid black border, on all sides of the body.
 
 ### Positioning and styling the main page title
@@ -292,7 +288,7 @@ The {{htmlelement("body")}} is a **block** element, meaning it takes up space on
 
 > **Note:** The instructions above assume that you're using an image smaller than the width set on the body. (600 pixels) If your image is larger, it will overflow the body, spilling into the rest of the page. To fix this, you can either: 1) reduce the image width using a [graphics editor](https://en.wikipedia.org/wiki/Raster_graphics_editor), or 2) use CSS to size the image by setting the {{cssxref("width")}} property on the `<img>` element with a smaller value.
 
-> **Note:** Don't be too concerned if you don't completely understand `display: block;` or the differences between a block element and an inline element. It will make more sense as you continue your study of CSS. You can find more information about different display values on MDN's [display reference page](/en-US/docs/Web/CSS/display).
+> **Note:** Don't be too concerned if you don't completely understand `display: block;` or the differences between a block element and an inline element. It will make more sense as you continue your study of CSS. You can find more information about different display values on MDN's [display reference page](https://developer.mozilla.org/en-US/docs/Web/CSS/display).
 
 ## Conclusion
 
@@ -302,9 +298,7 @@ If you followed all the instructions in this article, you should have a page tha
 
 (You can [view our version here](https://mdn.github.io/beginner-html-site-styled/).) If you get stuck, you can always compare your work with our [finished example code on GitHub](https://github.com/mdn/beginner-html-site-styled/blob/gh-pages/styles/style.css).
 
-In this exercise, we have just scratched the surface of CSS. To go further, see [Learning to style HTML using CSS](/en-US/docs/Learn/CSS).
-
-{{PreviousMenuNext("Learn/Getting_started_with_the_web/HTML_basics", "Learn/Getting_started_with_the_web/JavaScript_basics", "Learn/Getting_started_with_the_web")}}
+In this exercise, we have just scratched the surface of CSS. To go further, see [Learning to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS).
 
 ---
 

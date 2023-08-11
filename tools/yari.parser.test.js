@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const parseYariDynamicContent = require("./yari.parser");
+const { parseYariDynamicContent, parseMDNLinks } = require("./yari.parser");
 
 test("Test #1", () => {
   const input = `{{glossary("XML")}}`;
@@ -36,4 +36,12 @@ test("Test #6", () => {
   const input = `{{Glossary("browser")}}`;
   const output = parseYariDynamicContent(input);
   equal(output, "[browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser)");
+});
+
+test("Replacing MDN relative links with absolute URLs", () => {
+
+  const input = `lorem ipsum [What will your website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) lorem ipsum`;
+  const output = parseMDNLinks(input);
+  equal(output, "lorem ipsum [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) lorem ipsum");
+  
 });

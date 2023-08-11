@@ -4,7 +4,8 @@
   "description": "Tools and utilities for the WDX curriculum toolkit",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:yari.parser",
+    "test:yari.parser" : "node yari.parser.test.js"
   },
   "author": "kostasx",
   "license": "GPL-3.0",
