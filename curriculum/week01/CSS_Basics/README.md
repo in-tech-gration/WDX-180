@@ -28,7 +28,7 @@ Let's try it out! Using a text editor, paste the three lines of CSS (above) into
 
 To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML. (If you haven't been following our project, pause here to read [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) and [HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).)
 
-1. Open your `index.html` file. Paste the following line in the head (between the {{HTMLElement("head")}} and `</head>` tags):
+1. Open your `index.html` file. Paste the following line in the head (between the [<head>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) and `</head>` tags):
 
    ```html
    <link href="styles/style.css" rel="stylesheet" />
@@ -47,11 +47,11 @@ Let's dissect the CSS code for red paragraph text to understand how it works:
 The whole structure is called a **ruleset**. (The term _ruleset_ is often referred to as just _rule_.) Note the names of the individual parts:
 
 - Selector
-  - : This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, {{HTMLElement("p")}} elements). To style a different element, change the selector.
+  - : This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, [<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) elements). To style a different element, change the selector.
 - Declaration
   - : This is a single rule like `color: red;`. It specifies which of the element's **properties** you want to style.
 - Properties
-  - : These are ways in which you can style an HTML element. (In this example, `color` is a property of the {{htmlelement("p")}} elements.) In CSS, you choose which properties you want to affect in the rule.
+  - : These are ways in which you can style an HTML element. (In this example, `color` is a property of the [<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) elements.) In CSS, you choose which properties you want to affect in the rule.
 - Property value
   - : To the right of the property—after the colon—there is the **property value**. This chooses one out of many possible appearances for a given property. (For example, there are many `color` values in addition to `red`.)
 
@@ -153,7 +153,7 @@ There are many more selectors to discover. To learn more, see the MDN [Selectors
 
 Now that we've explored some CSS fundamentals, let's improve the appearance of the example by adding more rules and information to the `style.css` file.
 
-1. First, find the [output from Google Fonts](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) that you previously saved from [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like). Add the {{htmlelement("link")}} element somewhere inside your `index.html`'s head (anywhere between the {{HTMLElement("head")}} and `</head>` tags). It looks something like this:
+1. First, find the [output from Google Fonts](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) that you previously saved from [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like). Add the [<link>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) element somewhere inside your `index.html`'s head (anywhere between the [<head>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) and `</head>` tags). It looks something like this:
 
    ```html
    <link
@@ -164,7 +164,7 @@ Now that we've explored some CSS fundamentals, let's improve the appearance of t
    This code links your page to a style sheet that loads the Open Sans font family with your webpage.
 
 2. Next, delete the existing rule you have in your `style.css` file. It was a good test, but let's not continue with lots of red text.
-3. Add the following lines (shown below), replacing the `font-family` assignment with your `font-family` selection from [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font). The property `font-family` refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since {{HTMLElement("html")}} is the parent element of the whole page, all elements inside it inherit the same `font-size` and `font-family`.
+3. Add the following lines (shown below), replacing the `font-family` assignment with your `font-family` selection from [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font). The property `font-family` refers to the font(s) you want to use for text. This rule defines a global base font and font size for the whole page. Since [<html>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) is the parent element of the whole page, all elements inside it inherit the same `font-size` and `font-family`.
 
    ```css
    html {
@@ -175,7 +175,7 @@ Now that we've explored some CSS fundamentals, let's improve the appearance of t
 
    > **Note:** Anything in CSS between `/*` and `*/` is a **CSS comment**. The browser ignores comments as it renders the code. CSS comments are a way for you to write helpful notes about your code or logic.
 
-4. Now let's set font sizes for elements that will have text inside the HTML body ({{htmlelement("Heading_Elements", "h1")}}, {{htmlelement("li")}}, and {{htmlelement("p")}}). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.
+4. Now let's set font sizes for elements that will have text inside the HTML body ([<h1>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1), [<li>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li), and [<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)). We'll also center the heading. Finally, let's expand the second ruleset (below) with settings for line height and letter spacing to make body content more readable.
 
    ```css
    h1 {
@@ -243,11 +243,11 @@ body {
 }
 ```
 
-There are several declarations for the {{htmlelement("body")}} element. Let's go through these line-by-line:
+There are several declarations for the [<body>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body) element. Let's go through these line-by-line:
 
 - `width: 600px;` This forces the body to always be 600 pixels wide.
 - `margin: 0 auto;` When you set two values on a property like `margin` or `padding`, the first value affects the element's top _and_ bottom side (setting it to `0` in this case); the second value affects the left _and_ right side. (Here, `auto` is a special value that divides the available horizontal space evenly between left and right). You can also use one, two, three, or four values, as documented in [Margin Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/margin#syntax).
-- `background-color: #FF9500;` This sets the element's background color. This project uses a reddish orange for the body background color, as opposed to dark blue for the {{htmlelement("html")}} element. (Feel free to experiment.)
+- `background-color: #FF9500;` This sets the element's background color. This project uses a reddish orange for the body background color, as opposed to dark blue for the [<html>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) element. (Feel free to experiment.)
 - `padding: 0 20px 20px 20px;` This sets four values for padding. The goal is to put some space around the content. In this example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, bottom, left, in that order. As with `margin`, you can use one, two, three, or four values, as documented in [Padding Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/padding#syntax).
 - `border: 5px solid black;` This sets values for the width, style and color of the border. In this case, it's a five-pixel–wide, solid black border, on all sides of the body.
 
@@ -262,7 +262,7 @@ h1 {
 }
 ```
 
-You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply default styling to the {{htmlelement("Heading_Elements", "h1")}} element (among others). That might seem like a bad idea, but the intent is to provide basic readability for unstyled pages. To eliminate the gap, we overwrite the browser's default styling with the setting `margin: 0;`.
+You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply default styling to the [<h1>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1) element (among others). That might seem like a bad idea, but the intent is to provide basic readability for unstyled pages. To eliminate the gap, we overwrite the browser's default styling with the setting `margin: 0;`.
 
 Next, we set the heading's top and bottom padding to 20 pixels.
 
@@ -288,7 +288,7 @@ img {
 
 Next, we center the image to make it look better. We could use the `margin: 0 auto` trick again as we did for the body. But there are differences that require an additional setting to make the CSS work.
 
-The {{htmlelement("body")}} is a **block** element, meaning it takes up space on the page. The margin applied to a block element will be respected by other elements on the page. In contrast, images are **inline** elements, for the auto margin trick to work on this image, we must give it block-level behavior using `display: block;`.
+The [<body>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body) is a **block** element, meaning it takes up space on the page. The margin applied to a block element will be respected by other elements on the page. In contrast, images are **inline** elements, for the auto margin trick to work on this image, we must give it block-level behavior using `display: block;`.
 
 > **Note:** The instructions above assume that you're using an image smaller than the width set on the body. (600 pixels) If your image is larger, it will overflow the body, spilling into the rest of the page. To fix this, you can either: 1) reduce the image width using a [graphics editor](https://en.wikipedia.org/wiki/Raster_graphics_editor), or 2) use CSS to size the image by setting the {{cssxref("width")}} property on the `<img>` element with a smaller value.
 

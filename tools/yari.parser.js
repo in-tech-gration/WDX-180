@@ -94,8 +94,10 @@ function parseImages( textContent ){
   const matches = textContent.match(regex);
   
   if (matches) {
-    // console.log(matches);
     return textContent.replace( regex, (match, altText, imgSrc)=>{
+      if ( imgSrc.startsWith("assets") ){
+        return match;
+      }
       return `![${altText}](assets/${imgSrc})`
     })
   }
@@ -103,6 +105,17 @@ function parseImages( textContent ){
   return textContent;
 }
 
+function parseElementTerm( textContent ){
+
+  const URL = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/";
+  const pattern = /{{(htmlelement|HTMLElement)\("(.*?)"(?:, "(.*?)")?\)}}/g;
+  return textContent.replace(pattern, ( match, _, termA, termB )=>{
+    const link = `${URL}${termB ? termB : termA}`;
+    return `[<${termB ? termB : termA}>](${link})`;
+  })
+}
+
+// Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent ){
 
   let updatedContents = textContent;
@@ -111,6 +124,7 @@ function parseYariDynamicContent( textContent ){
   updatedContents = removeTemplateContent(updatedContents);
   updatedContents = parseMDNLinks(updatedContents);
   updatedContents = parseImages(updatedContents);
+  updatedContents = parseElementTerm(updatedContents);
 
   return updatedContents;
 
@@ -151,5 +165,6 @@ function init(){
 module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
-  parseImages
+  parseImages,
+  parseElementTerm
 };

@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseYariDynamicContent, parseMDNLinks, parseImages } = require("./yari.parser");
+const { parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm } = require("./yari.parser");
 
 test("Test #1", () => {
   const input = `{{glossary("XML")}}`;
@@ -51,4 +51,27 @@ test("Replacing MDN image links with local assets/ folder", ()=>{
   const input = `lorem ipsum ![Three boxes sat inside one another. From outside to in they are labelled margin, border and padding](box-model.png) lorem ipsum`;
   const output = parseImages(input);
   equal(output, "lorem ipsum ![Three boxes sat inside one another. From outside to in they are labelled margin, border and padding](assets/box-model.png) lorem ipsum");
+})
+
+test("Replacing {{htmlelement}} with links", ()=>{
+
+  // INPUT
+  const input1 = `{{htmlelement("Heading_Elements", "h1")}}`
+  const input2 = `{{htmlelement("body")}}`
+  const input3 = `{{HTMLElement("head")}}`
+  const input4 = `{{HTMLElement("p")}}`
+  const input5 = `{{htmlelement("p")}}`
+
+  const output1 = `[<h1>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)`
+  const output2 = `[<body>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)`
+  const output3 = `[<head>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)`
+  const output4 = `[<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)`
+  const output5 = `[<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)`
+
+  equal(parseElementTerm(input1), output1);
+  equal(parseElementTerm(input2), output2);
+  equal(parseElementTerm(input3), output3);
+  equal(parseElementTerm(input4), output4);
+  equal(parseElementTerm(input5), output5);
+
 })
