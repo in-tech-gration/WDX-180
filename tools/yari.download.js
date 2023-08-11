@@ -14,6 +14,7 @@ const TARGET_FOLDER = process.argv[3];
 
 if ( !GITHUB_PATH || !TARGET_FOLDER ){
   warn("No GITHUB_PATH supplied.")
+  console.log(`\n Usage: node ${path.basename(process.argv[1])} files/en-us/ /local/assets`)
   process.exit();
 }
 
@@ -54,7 +55,7 @@ if ( !GITHUB_PATH || !TARGET_FOLDER ){
     const file = fs.createWriteStream(targetPath);
     const request = https.get(resource.download_url, function(response) {
       response.pipe(file);
-      
+
       // after download completed close file stream
       file.on("finish", () => {
           file.close();

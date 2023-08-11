@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const { parseArgs } = require("node:util");
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
-const { warn, ok } = require("./utils");
+const { warn, ok, info } = require("./utils");
 
 
 const fileName = process.argv[2];
@@ -21,9 +21,29 @@ function parseYariDynamicContent( textContent ){
     console.log(output);
     return output;
   }
+
+  let updatedContents = textContent;
   
-  const regex = /\{\{[Gg]lossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
-  const updatedContents = file.replace(regex, replaceGlossary);
+  // Thank you ChatGPT! 
+  const glossaryRegex = /\{\{[Gg]lossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
+
+  if ( textContent.match(glossaryRegex) ){
+    updatedContents = updatedContents.replace(glossaryRegex, replaceGlossary);
+    ok("Substituted {{Glossary}} matches successfully");
+  } else {
+    info("\n No {{Glossary}} matches found on this file");
+  }
+
+  // const templateRegex = /{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}/g
+
+  const templateRegex = /{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}/g;
+
+
+  if ( updatedContents.match(templateRegex) ){
+    updatedContents = updatedContents.replace(templateRegex, "");
+    ok("Substituted {{Template}} matches successfully");
+  }
+
   return updatedContents;
 
 }
