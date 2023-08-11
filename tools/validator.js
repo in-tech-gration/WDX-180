@@ -83,3 +83,4 @@ headings.forEach((heading, index) => {
 // 3) Check if intermediary Headings are skipped, e.g. going from H1 to H3
 // 4) Check if frontmatter is present and contains necessary key/value pairs
 // 5) Husky script to ensure that UPDATED section has been updated
+// 6) Check if _(Updated: 11/08/2023)_ is present right after the first Heading
