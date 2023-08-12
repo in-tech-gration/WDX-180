@@ -111,7 +111,7 @@ function parseElementTerm( textContent ){
   const pattern = /{{(htmlelement|HTMLElement)\("(.*?)"(?:, "(.*?)")?\)}}/g;
   return textContent.replace(pattern, ( match, _, termA, termB )=>{
     const link = `${URL}${termB ? termB : termA}`;
-    return `[<${termB ? termB : termA}>](${link})`;
+    return `[<\`${termB ? termB : termA}\`>](${link})`;
   })
 }
 

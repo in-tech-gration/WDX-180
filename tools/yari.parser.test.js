@@ -62,11 +62,11 @@ test("Replacing {{htmlelement}} with links", ()=>{
   const input4 = `{{HTMLElement("p")}}`
   const input5 = `{{htmlelement("p")}}`
 
-  const output1 = `[<h1>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)`
-  const output2 = `[<body>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)`
-  const output3 = `[<head>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)`
-  const output4 = `[<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)`
-  const output5 = `[<p>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)`
+  const output1 = "[`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1)"
+  const output2 = "[`<body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)"
+  const output3 = "[`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)"
+  const output4 = "[`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)"
+  const output5 = "[`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)"
 
   equal(parseElementTerm(input1), output1);
   equal(parseElementTerm(input2), output2);

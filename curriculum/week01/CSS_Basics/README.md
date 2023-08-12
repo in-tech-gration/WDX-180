@@ -24,9 +24,9 @@ p {
 }
 ```
 
-Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save the file as `style.css` in a directory named `styles`.
+**Let's try it out!** Using your code editor, paste the three lines of CSS (above) into a new file. Save the file as `style.css` in a directory named `styles`.
 
-To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML. (If you haven't been following our project, pause here to read [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) and [HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).)
+To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML.
 
 1. Open your `index.html` file. Paste the following line in the head (between the [<head>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) and `</head>` tags):
 
