@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm } = require("./yari.parser");
+const { parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm } = require("./yari.parser");
 
 test("Test #1", () => {
   const input = `{{glossary("XML")}}`;
@@ -74,4 +74,10 @@ test("Replacing {{htmlelement}} with links", ()=>{
   equal(parseElementTerm(input4), output4);
   equal(parseElementTerm(input5), output5);
 
+})
+
+test("Replacing {{cssxref}} with links", ()=>{
+  const input = `lorem ipsum {{cssxref("width")}} lorem ipsum`;
+  const output = "lorem ipsum [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) lorem ipsum";
+  equal(parseCSSTerm(input), output);
 })

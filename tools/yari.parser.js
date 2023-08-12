@@ -115,6 +115,16 @@ function parseElementTerm( textContent ){
   })
 }
 
+function parseCSSTerm( textContent ){
+  // {{cssxref("width")}}
+  //=> https://developer.mozilla.org/en-US/docs/Web/CSS/width
+  const domain = "https://developer.mozilla.org/en-US/docs/Web/CSS/";
+  const regex = /{{cssxref\("([^"]+)"\)}}/g;
+  return textContent.replace( regex, (match, cssTerm)=>{
+    return `[\`${cssTerm}\`](${domain}${cssTerm})`
+  })
+}
+
 // Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent ){
 
@@ -125,6 +135,7 @@ function parseYariDynamicContent( textContent ){
   updatedContents = parseMDNLinks(updatedContents);
   updatedContents = parseImages(updatedContents);
   updatedContents = parseElementTerm(updatedContents);
+  updatedContents = parseCSSTerm(updatedContents);
 
   return updatedContents;
 
@@ -166,5 +177,6 @@ module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
   parseImages,
-  parseElementTerm
+  parseElementTerm,
+  parseCSSTerm
 };
