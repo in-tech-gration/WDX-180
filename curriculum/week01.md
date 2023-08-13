@@ -213,6 +213,7 @@
   - Publishing your website
 
   - [Read: **CSS Basics**](week01/CSS_Basics/README.md)
+  - [Read: **Publishing your website**](week01/Publishing%20your%20website/README.md)
 
   #### Exercises
 
