@@ -186,6 +186,7 @@
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
+  - [Read: **What will your website look like?**](week01/What%20will%20your%20website%20look%20like/README.md)
   - [Read: **HTML Basics**](week01/HTML_Basics/README.md)
 
   #### Exercises
