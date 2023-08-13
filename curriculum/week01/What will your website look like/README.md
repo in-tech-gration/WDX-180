@@ -51,6 +51,10 @@ To choose a color, go to [the Color Picker](https://mdn.github.io/css-examples/t
 
 ![Color-Picker-Tool on MDN Docs website with RGB, HSL, and HEX colors ](assets/color-picker.png)
 
+This tool makes it easy to create, adjust, and experiment with custom colors for the web. It also makes it easy to convert between various [color formats](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) supported by [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), including: HEXA colors, RGB (Red/Green/Blue) and HSL (Hue/Saturation/Lightness). Control over the alpha channel is also supported.
+
+As you adjust the parameters that define the color, it gets displayed in all three standard Web CSS formats. In addition, based on the currently-selected color, a palette for HSL and HSV, as well as alpha, is generated. 
+
 ### Images
 
 To choose an image, go to [Google Images](https://www.google.com/imghp?gws_rd=ssl) and search for something suitable.
