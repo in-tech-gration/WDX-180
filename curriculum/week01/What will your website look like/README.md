@@ -32,7 +32,10 @@ Next, grab pen and paper and sketch out roughly how you want your site to look. 
 
 > **Note:** Even on real, complex websites, the design teams usually start out with rough sketches on paper and later on build digital mockups using a graphics editor or web technologies.
 >
-> Web teams often include both a graphic designer and a [user experience](https://developer.mozilla.org/en-US/docs/Glossary/UX) (UX) designer. Graphic designers put together the visuals of the website. UX designers have a somewhat more abstract role in addressing how users will experience and interact with the website.
+> Web teams often include both a graphic designer and a [user experience](https://developer.mozilla.org/en-US/docs/Glossary/UX) (UX*) designer. Graphic designers put together the visuals of the website. UX designers have a somewhat more abstract role in addressing how users will experience and interact with the website.
+> 
+> ---
+> ***UX** is an acronym that stands for User eXperience. It is the study of the interaction between users and a system. Its goal is to make a system easy to interact with from the user's point of view. The system can be any kind of product or application that an end user is meant to interact with. UX studies undertaken on a web page for example can demonstrate whether it is easy for users to understand the page, navigate to different areas, and complete common tasks, and where such processes could have less friction. See also [User experience](https://en.wikipedia.org/wiki/User_experience) on Wikipedia
 
 ## Choosing your assets
 
@@ -44,7 +47,7 @@ You should still have your paragraphs and title from earlier. Keep these close b
 
 ### Theme color
 
-To choose a color, go to [the Color Picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool) and find a color you like. When you click on a color, you'll see a strange six-character code like `#660066`. That's called a _hex code_ (short for hexadecimal), and represents your color. Copy the code down somewhere safe for now.
+To choose a color, go to [the Color Picker](https://mdn.github.io/css-examples/tools/color-picker/) and find a color you like. When you click on a color, you'll see a strange six-character code like `#660066`. That's called a _hex code_ (short for hexadecimal), and represents your color. Copy the code down somewhere safe for now.
 
 ![Color-Picker-Tool on MDN Docs website with RGB, HSL, and HEX colors ](assets/color-picker.png)
 
@@ -80,3 +83,6 @@ Alternatively you can use [safe web fonts](https://web.mit.edu/jmorzins/www/font
 
 - **MDN**
     - [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/learn/getting_started_with_the_web/what_will_your_website_look_like/index.md)
+    - [UX](https://developer.mozilla.org/en-US/docs/Glossary/UX) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/glossary/ux/index.md)
+    - [Color Picker](https://mdn.github.io/css-examples/tools/color-picker/) [(Permalink)](https://github.com/mdn/css-examples/tree/acc8830db5ab5ff54fc42976cb69ef8cffd76a63/tools/color-picker)
+    
