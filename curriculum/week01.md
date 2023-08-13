@@ -180,15 +180,24 @@
 
   #### Study Plan
 
-  **What you'll learn:**
+  **What you'll learn: Getting started with the web: HTML**
 
-  - [WORK IN PROGRESS]
+  It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to make your own simple website online, so we'll start there.
+
+  By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
   - [Read: **HTML Basics**](week01/HTML_Basics/README.md)
 
   #### Exercises
 
   #### [Extra Resources](week01/EXTRAS.md#day-03)
+
+  ---
+
+  **Content is based on the following sources:**
+
+  - **MDN:**
+    - [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
 ### Week 1 - Day 4 - CSS
 
@@ -200,7 +209,8 @@
 
   **What you'll learn:**
 
-  - [WORK IN PROGRESS]
+  - Introduction to CSS
+  - Publishing your website
 
   - [Read: **CSS Basics**](week01/CSS_Basics/README.md)
 

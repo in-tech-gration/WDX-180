@@ -10,6 +10,7 @@ _(Updated: 11/08/2023)_
 
 **CSS (Cascading Style Sheets)** is the code that styles web content. _CSS basics_ walks through what you need to get started. We'll answer questions like: 
 
+- What is CSS?
 - How do I make text red? 
 - How do I make content display at a certain location in the (webpage) layout?
 - How do I decorate my webpage with background images and colors?
@@ -306,6 +307,8 @@ If you followed all the instructions in this article, you should have a page tha
 In this exercise, we have just scratched the surface of CSS. To go further, see [Learning to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS).
 
 ---
+
+**Content is based on the following sources:**
 
 - **MDN**
   - [CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) [(Permalink)](https://github.com/mdn/content/blob/4cde062811797861f056a19e25e7e59bc557f193/files/en-us/learn/getting_started_with_the_web/css_basics/index.md)

@@ -13,10 +13,16 @@ const GITHUB_PATH = process.argv[2];
 const TARGET_FOLDER = process.argv[3];
 
 if ( !GITHUB_PATH || !TARGET_FOLDER ){
-  warn("No GITHUB_PATH supplied.")
+  warn("No GITHUB_PATH or TARGET_FOLDER supplied.")
   console.log(`\n Usage: node ${path.basename(process.argv[1])} files/en-us/ /local/assets`)
   process.exit();
 }
+
+// CHECK WHETHER SUPPLIED DESTINATION PATH ENDS IN assets/ (STICK TO THE SPECS)
+if ( !TARGET_FOLDER.endsWith("assets/") ) {
+  console.log( 'Invalid path. Path must end in assets/' );
+  process.exit();
+} 
 
 (async function getRepoFile(){
 
