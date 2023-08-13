@@ -87,7 +87,7 @@ Alternatively you can use [safe web fonts](https://web.mit.edu/jmorzins/www/font
 
 # Website file structure
 
-A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure on your local computer, make sure they can talk to one another, and get all your content looking right before you eventually [upload them to a server](/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website). _Dealing with files_ discusses some issues you should be aware of so you can set up a sensible file structure for your website.
+A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure on your local computer, make sure they can talk to one another, and get all your content looking right before you eventually upload them to a server. This section discusses some issues you should be aware of so you can set up a sensible file structure for your website.
 
 ## Where should your website live on your computer?
 
@@ -118,7 +118,7 @@ Next, let's look at what structure our test site should have. The most common th
 
 ## File paths
 
-To make files talk to one another, you have to provide a file path between them — basically a route, so one file knows where another one is. To demonstrate this, we will insert a little bit of HTML into our `index.html` file, and make it display the image you chose in the article ["What will your website look like?"](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like) Alternatively, you can choose an existing image at your disposal, on your computer or from the Web, and use it in the following steps:
+To make files talk to one another, you have to provide a file path between them — basically a route, so one file knows where another one is. To demonstrate this, we will insert a little bit of HTML into our `index.html` file, and make it display the image you have previously chosen. Alternatively, you can choose an existing image at your disposal, on your computer or from the Web, and use it in the following steps:
 
 1. Copy the image you chose earlier into your `images` folder.
 2. Open up your `index.html` file, and insert the following code into the file exactly as shown. Don't worry about what it all means for now — we'll look at the structures in more detail later in the series.
@@ -139,10 +139,27 @@ To make files talk to one another, you have to provide a file path between them 
 
 3. The line `<img src="" alt="My test image">` is the HTML code that inserts an image into the page. We need to tell the HTML where the image is. The image is inside the _images_ directory, which is in the same directory as `index.html`. To walk down the file structure from `index.html` to our image, the file path we'd need is `images/your-image-filename`. For example, our image is called `firefox-icon.png`, so the file path is `images/firefox-icon.png`.
 4. Insert the file path into your HTML code between the double quote marks of the `src=""` code.
-5. Change the contents of the `alt` attribute to a [description of the image](/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions) you are including. In this case, `alt="Firefox logo: flaming fox wrapping the world"`.
+5. Change the contents of the `alt` attribute to a description (_see below_) of the image you are including. In this case, `alt="Firefox logo: flaming fox wrapping the world"`.
+
+> **Accessibility concerns:** Authoring meaningful alternate descriptions
+>
+> An `alt` attribute's value should clearly and concisely describe the image's content. It should not describe the presence of the image itself or the file name of the image. If the `alt` attribute is purposefully left off because the image has no textual equivalent, consider alternate methods to present what the image is trying to communicate.
+>
+> **Don't**
+>
+> ```html example-bad 
+> <img alt="image" src="penguin.jpg" />
+> ```
+>
+> *Do*
+> ```html example-good
+> <img alt="A Rockhopper Penguin standing on a beach." src="penguin.jpg" />
+> ```
+> When an `alt` attribute is not present on an image, some screen readers may announce the image's file name instead. This can be a confusing experience if the file name isn't representative of the image's contents. [_Source_](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions)
+
 6. Save your HTML file, then load it in your web browser (double-click the file). You should see your new webpage displaying your image!
 
-![A screenshot of our basic website showing just the Firefox logo - a flaming fox wrapping the world](website-screenshot.png)
+![A screenshot of our basic website showing just the Firefox logo - a flaming fox wrapping the world](assets/website-screenshot.png)
 
 Some general rules for file paths:
 
@@ -159,7 +176,7 @@ For now, this is about all you need to know.
 
 That is about it for now. Your folder structure should look something like this:
 
-![A file structure in macOS finder, showing an images folder with an image in, empty scripts and styles folders, and an index.html file](file-structure.png)
+![A file structure in macOS finder, showing an images folder with an image in, empty scripts and styles folders, and an index.html file](assets/file-structure.png)
 
 ---
 
@@ -170,3 +187,4 @@ That is about it for now. Your folder structure should look something like this:
     - [UX](https://developer.mozilla.org/en-US/docs/Glossary/UX) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/glossary/ux/index.md)
     - [Color Picker](https://mdn.github.io/css-examples/tools/color-picker/) [(Permalink)](https://github.com/mdn/css-examples/tree/acc8830db5ab5ff54fc42976cb69ef8cffd76a63/tools/color-picker)
     - [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) [(Permalink)](https://github.com/mdn/content/blob/5ce6d5b38ec46374bbbf50b84b6105b5d1750911/files/en-us/learn/getting_started_with_the_web/dealing_with_files/index.md)
+    - [`<img>`: The Image Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions) [(Permalink)](https://github.com/mdn/content/blob/5ce6d5b38ec46374bbbf50b84b6105b5d1750911/files/en-us/web/html/element/img/index.md)
