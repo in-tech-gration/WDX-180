@@ -128,7 +128,9 @@ Here are some things you need to know about hosting and hosting providers:
 
 ### Understanding bandwidth
 
-Hosting providers charge you according to how much {{Glossary("Bandwidth", "bandwidth")}} your website consumes. This depends on how many people, and Web crawling robots, access your content during a given time, and how much server space your content takes up. This is why people usually store their videos on dedicated services such as YouTube, Dailymotion, and Vimeo. For example, your provider may have a plan that includes up to several thousand visitors per day, for "reasonable" bandwidth usage. Be careful, however as this is defined differently from one hosting provider to another. Keep in mind that reliable, paid, personal hosting can cost around ten to fifteen dollars per month.
+Hosting providers charge you according to how much _`bandwidth`_* your website consumes. This depends on how many people, and Web crawling robots, access your content during a given time, and how much server space your content takes up. This is why people usually store their videos on dedicated services such as YouTube, Dailymotion, and Vimeo. For example, your provider may have a plan that includes up to several thousand visitors per day, for "reasonable" bandwidth usage. Be careful, however as this is defined differently from one hosting provider to another. Keep in mind that reliable, paid, personal hosting can cost around ten to fifteen dollars per month.
+
+> **Bandwidth** is the measure of how much information can pass through a data connection in a given amount of time. It is usually measured in multiples of bits-per-second (bps), for example megabits-per-second (Mbps) or gigabits-per-second (Gbps).
 
 > **Note:** There is no such thing as "unlimited" bandwidth. If you consume a huge amount of bandwidth, expect to pay a huge amount of money.
 
@@ -141,7 +143,9 @@ Your domain name has to be purchased through a domain name provider (a registrar
 
 ### Do-it-yourself hosting vs. "packaged" hosting
 
-When you want to publish a website, you could do everything by yourself: set up a database (if needed), Content Management System, or {{Glossary("CMS")}} (like [Wordpress](https://wordpress.org/), [Dotclear](https://dotclear.org/), [spip](https://www.spip.net/en_rubrique25.html), etc.), upload pre-made or your own templates.
+When you want to publish a website, you could do everything by yourself: set up a database (if needed), Content Management System, or `CMS*` (like [Wordpress](https://wordpress.org/), [Dotclear](https://dotclear.org/), [spip](https://www.spip.net/en_rubrique25.html), etc.), upload pre-made or your own templates.
+
+> A **CMS** (Content Management System) is software that allows users to publish, organize, change, or remove various kinds of content, not only text but also embedded images, video, audio, and interactive code. 
 
 You could use your hosting provider's environment, for roughly ten to fifteen dollars per month, or subscribe directly to a dedicated hosting service with pre-packaged CMSs (e.g., [Wordpress](https://wordpress.com/), [Tumblr](https://www.tumblr.com/), [Blogger](https://www.blogger.com/)). For the latter, you won't have to pay anything, but you may have less control over templating and other options.
 
@@ -150,7 +154,10 @@ You could use your hosting provider's environment, for roughly ten to fifteen do
 You might ask, why should I pay for my hosting when there are so many free services?
 
 - You have more freedom when you pay. Your website is yours, and you can migrate seamlessly from one hosting provider to the next.
+
 - Free hosting providers may add advertising to your content, beyond your control.
+
+- Paid hosting will get you constant (24/7) and reliable support from a well-respected hosting provider.
 
 It is better to go for paid hosting rather than relying on free hosting, as it is possible to move your files easily and uptime is guaranteed by most paid sites. Most hosting providers give you a huge discount to start with.
 
@@ -164,3 +171,5 @@ Some people opt for a mixed approach. For example, their main blog on a paid hos
     - [What is a web server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/learn/common_questions/web_mechanics/what_is_a_web_server/index.md)
     - [ISP](https://developer.mozilla.org/en-US/docs/Glossary/ISP) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/glossary/isp/index.md)
     - [How much does it cost to do something on the Web?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost#hosting) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/learn/common_questions/tools_and_setup/how_much_does_it_cost/index.md)
+    - [CMS](https://developer.mozilla.org/en-US/docs/Glossary/CMS) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/glossary/cms/index.md)
+    - [Bandwidth](https://developer.mozilla.org/en-US/docs/Glossary/Bandwidth) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/glossary/bandwidth/index.md)
