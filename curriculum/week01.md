@@ -145,13 +145,16 @@
     - Level: Beginner
     - Captions: Yes
 
+  - [Read: **How the Internet works**](week01/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
+    - Reading time: 5min
+    - Level: Beginner
+
   - [Watch: **The Internet: HTTP & HTML**](https://www.youtube.com/watch?v=kBXQZMmiA4s)
     - Duration: 7min
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](week1/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
-    - Reading time: 5min
+  - [Read: **What is a web server?**](week01/What%20is%20a%20web%20server/README.md)
     - Level: Beginner
 
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)

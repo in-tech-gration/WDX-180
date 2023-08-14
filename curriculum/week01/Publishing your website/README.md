@@ -1,18 +1,14 @@
-[WORK IN PROGRESS]
-
-[Publishing your website](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website)
-
-Source: https://github.com/mdn/content/tree/main/files/en-us/learn/getting_started_with_the_web/publishing_your_website
-
-Permalink: https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/learn/getting_started_with_the_web/publishing_your_website/index.md
-
 ---
 title: Publishing your website
 slug: Learn/Getting_started_with_the_web/Publishing_your_website
 page-type: learn-module-chapter
 ---
 
-{{LearnSidebar}}{{PreviousMenuNext("Learn/Getting_started_with_the_web/JavaScript_basics", "Learn/Getting_started_with_the_web/How_the_Web_works", "Learn/Getting_started_with_the_web")}}
+TODO: W1D4 [WORK IN PROGRESS]
+
+# Publishing your website
+
+_(Updated: 14/08/2023)_
 
 Once you finish writing the code and organizing the files that make up your website, you need to put it all online so people can find it. This article explains how to get your simple sample code online with little effort.
 
@@ -24,19 +20,19 @@ Publishing a website is a complex topic because there are many ways to go about 
 
 To have more control over content and website appearance, most people choose to buy web hosting and a domain name:
 
-- Web hosting is rented file space on a hosting company's [web server](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server). You put website files on the web server. The web server provides website content to website visitors.
-- A [domain name](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name) is the unique address where people find your website, such as `https://www.mozilla.org` or `https://www.bbc.co.uk`. You can rent your domain name for as many years as you want from a **domain registrar**.
+- Web hosting is rented file space on a hosting company's [web server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server). You put website files on the web server. The web server provides website content to website visitors.
+- A [domain name](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name) is the unique address where people find your website, such as `https://www.mozilla.org` or `https://www.bbc.co.uk`. You can rent your domain name for as many years as you want from a **domain registrar**.
 
 Many professional websites go online this way.
 
-In addition, you will need a {{Glossary("FTP", "File Transfer Protocol (FTP)")}} program (see [How much does it cost: software](/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost#software) for more details) to actually transfer the website files over to the server. FTP programs vary widely, but generally, you have to connect to your web server using details provided by your hosting company (typically username, password, hostname). Then the program shows you your local files and the web server's files in two windows, and provides a way for you to transfer files back and forth.
+In addition, you will need a [File Transfer Protocol (FTP)](https://developer.mozilla.org/en-US/docs/Glossary/FTP) program (see [How much does it cost: software](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost#software) for more details) to actually transfer the website files over to the server. FTP programs vary widely, but generally, you have to connect to your web server using details provided by your hosting company (typically username, password, hostname). Then the program shows you your local files and the web server's files in two windows, and provides a way for you to transfer files back and forth.
 
-![An FTP client showing all files and folders of a website and uploading them to a server](ftp.jpg)
+![An FTP client showing all files and folders of a website and uploading them to a server](assets/ftp.jpg)
 
 #### Tips for finding hosting and domains
 
 - MDN does not promote specific commercial hosting companies or domain name registrars. To find hosting companies and registrars, just search for "web hosting" and "domain names". All registrars will have a feature to allow you to check if the domain name you want is available.
-- Your home or office {{Glossary("ISP", "internet service provider")}} may provide some limited hosting for a small website. The available feature set will be limited, but it might be perfect for your first experiments.
+- Your home or office [internet service provider](https://developer.mozilla.org/en-US/docs/Glossary/ISP) may provide some limited hosting for a small website. The available feature set will be limited, but it might be perfect for your first experiments.
 - There are also free services available like [Neocities](https://neocities.org/), [Google Sites](https://sites.google.com/), [Blogger](https://www.blogger.com), and [WordPress](https://wordpress.com/). Sometimes you get what you pay for, but sometimes these resources are good enough for your initial experiments.
 - Many companies provide hosting and domains.
 
@@ -44,8 +40,17 @@ In addition, you will need a {{Glossary("FTP", "File Transfer Protocol (FTP)")}}
 
 Some tools let you publish your website online:
 
-- [GitHub](https://github.com/) is a "social coding" site. It allows you to upload code repositories for storage in the [Git](https://git-scm.com/) **version control system.** You can then collaborate on code projects, and the system is open-source by default, meaning that anyone in the world can find your GitHub code, use it, learn from it, and improve on it. GitHub has a very useful feature called [GitHub Pages](https://pages.github.com/), which allows you to expose website code live on the web.
-- [Google App Engine](https://cloud.google.com/appengine/) is a powerful platform that lets you build and run applications on Google's infrastructure — whether you need to build a multi-tiered web application from scratch or host a static website. See [How do you host your website on Google App Engine?](/en-US/docs/Learn/Common_questions/Tools_and_setup/How_do_you_host_your_website_on_Google_App_Engine) for more information.
+- [GitHub](https://github.com/) is a "social coding" site. It allows you to upload code repositories for storage in the [Git](https://git-scm.com/) **version control system.** You can then collaborate on code projects, and the system is open-source by default, meaning that anyone in the world can find your GitHub code, use it, learn from it, and improve on it. GitHub has a very useful feature called [**GitHub Pages**](https://pages.github.com/), which allows you to expose website code live on the web.
+
+- [Netlify](https://www.netlify.com/)
+
+- [Google Firebase](https://firebase.google.com/docs/hosting)
+
+- [Vercel](https://vercel.com/)
+
+- [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/host-static-website/)
+
+- [Google App Engine](https://cloud.google.com/appengine/) is a powerful platform that lets you build and run applications on Google's infrastructure — whether you need to build a multi-tiered web application from scratch or host a static website. See [How do you host your website on Google App Engine?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_do_you_host_your_website_on_Google_App_Engine) for more information.
 
 These options are usually free, but you may outgrow the limited feature-set.
 
@@ -60,16 +65,19 @@ Try playing with some of these examples to find out which one works best for you
 - [JS Bin](https://jsbin.com/)
 - [CodePen](https://codepen.io/)
 
-![Screenshot of JS Bin web based IDE](jsbin-screen.png)
+![Screenshot of JS Bin web based IDE](assets/jsbin-screen.png)
 
 ## Publishing via GitHub
 
 Now let's examine how to easily publish your site via GitHub Pages.
 
 1. First of all, [sign up for GitHub](https://github.com/) and verify your email address.
+
 2. Next, you need to [create a repository](https://github.com/new) to store files.
+
 3. On this page, in the _Repository name_ box, enter _username_.github.io, where _username_ is your username. For example, our friend Bob Smith would enter _bobsmith.github.io_.
-   Check the "_Initialize this repository with a README"_ box. Then click _Create repository_.![A sample of a GitHub repository page](github-create-repo.png)
+   Check the "_Initialize this repository with a README"_ box. Then click _Create repository_.![A sample of a GitHub repository page](assets/github-create-repo.png)
+
 4. Drag and drop the content of your website folder into your repository. Then click _Commit changes_.
 
    > **Note:** Make sure your folder has an `index.html` file.
@@ -82,9 +90,14 @@ To learn more, see [GitHub Pages Help](https://docs.github.com/en/pages/getting-
 
 ## Further reading
 
-- [What is a web server](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
-- [Understanding domain names](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name)
-- [How much does it cost to do something on the web?](/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost)
+- [What is a web server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
+- [Understanding domain names](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name)
+- [How much does it cost to do something on the web?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost)
 - [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website): A nice tutorial from Codecademy that goes a bit further and shows some additional techniques.
 
-{{PreviousMenuNext("Learn/Getting_started_with_the_web/JavaScript_basics", "Learn/Getting_started_with_the_web/How_the_Web_works", "Learn/Getting_started_with_the_web")}}
+---
+
+**Content is based on the following sources:**
+
+- **MDN**
+   - [Publishing your website](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/learn/getting_started_with_the_web/publishing_your_website/index.md)
