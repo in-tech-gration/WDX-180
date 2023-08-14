@@ -157,6 +157,9 @@
   - [Read: **What is a web server?**](week01/What%20is%20a%20web%20server/README.md)
     - Level: Beginner
 
+  - [Read: **What is a URL?**](week01/What%20is%20a%20URL/README.md)
+    - Level: Beginner
+
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
     - Duration: 10min
     - Level: Beginner

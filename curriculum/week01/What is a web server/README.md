@@ -42,7 +42,13 @@ The term _web server_ can refer to hardware or software, or both of them working
 
 1. On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web.
 
-2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an _HTTP server_. An HTTP server is software that understands [URLs](https://developer.mozilla.org/en-US/docs/Glossary/URL) (web addresses) and [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.
+2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an _HTTP server_. An HTTP server is software that understands _`URLs*`_ (web addresses) and [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.
+
+> **Uniform Resource Locator** (**URL**) is a text string that specifies where a resource (such as a web page, image, or video) can be found on the Internet.
+> 
+> In the context of [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP), URLs are called "Web address" or "link". Your [browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser) displays URLs in its address bar, for example: `https://developer.mozilla.org` Some browsers display only the part of a URL after the "//", that is, the [Domain name](https://developer.mozilla.org/en-US/docs/Glossary/Domain_name).
+>
+> URLs can also be used for file transfer ([FTP](https://developer.mozilla.org/en-US/docs/Glossary/FTP)), emails ([SMTP](https://developer.mozilla.org/en-US/docs/Glossary/SMTP)), and other applications.
 
 **At the most basic level**, whenever a browser needs a file that is hosted on a web server, the browser requests the file via HTTP. When the request reaches the correct (hardware) web server, the (software) _HTTP server_ accepts the request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't find the requested document, it returns a [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) response instead.)
 
@@ -173,3 +179,4 @@ Some people opt for a mixed approach. For example, their main blog on a paid hos
     - [How much does it cost to do something on the Web?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost#hosting) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/learn/common_questions/tools_and_setup/how_much_does_it_cost/index.md)
     - [CMS](https://developer.mozilla.org/en-US/docs/Glossary/CMS) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/glossary/cms/index.md)
     - [Bandwidth](https://developer.mozilla.org/en-US/docs/Glossary/Bandwidth) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/glossary/bandwidth/index.md)
+    - [URL](https://developer.mozilla.org/en-US/docs/Glossary/URL) [(Permalink)](https://github.com/mdn/content/blob/3c7e928f332191b153c40a6ade88fb5815c92b99/files/en-us/glossary/url/index.md)
