@@ -30,7 +30,7 @@ const { warn, ok, info } = require("./utils");
 function removeTemplateContent( textContent ){
 
   // Thank you ChatGPT! 
-  const templateRegex = /{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
+  const templateRegex = /{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
 
   const templateMatches = textContent.match(templateRegex); 
 
