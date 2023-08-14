@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm } = require("./yari.parser");
+const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm } = require("./yari.parser");
 
 test("Test #1", () => {
   const input = `{{glossary("XML")}}`;
@@ -77,7 +77,17 @@ test("Replacing {{htmlelement}} with links", ()=>{
 })
 
 test("Replacing {{cssxref}} with links", ()=>{
+
   const input = `lorem ipsum {{cssxref("width")}} lorem ipsum`;
   const output = "lorem ipsum [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) lorem ipsum";
   equal(parseCSSTerm(input), output);
+
+})
+
+test("Replacing {{HTTPStatus}} with links", ()=>{
+
+  const input = `lorem ipsum {{HTTPStatus("404", "404 Not Found")}} lorem ipsum`;
+  const output = "lorem ipsum [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) lorem ipsum";
+  equal(parseHTTPStatus(input), output);
+
 })

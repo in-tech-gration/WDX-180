@@ -30,7 +30,7 @@ const { warn, ok, info } = require("./utils");
 function removeTemplateContent( textContent ){
 
   // Thank you ChatGPT! 
-  const templateRegex = /{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
+  const templateRegex = /{{QuicklinksWithSubPages\("[A-Za-z_\/]+"\)}}\s*\n|{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
 
   const templateMatches = textContent.match(templateRegex); 
 
@@ -47,9 +47,10 @@ function removeTemplateContent( textContent ){
 function replaceGlossaryLinks( textContent ){
 
     // Thank you ChatGPT! 
-    const glossaryRegex = /\{\{[Gg]lossary\("([^"]+)"(?:, "([^"]+)")?\)\}\}/g;
+    const glossaryRegex = /\{\{[Gg]lossary\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}/g;
 
     function replaceGlossary(match, p1, p2) {
+      // TODO: Replace MDN domain with local resources/glossary path if available
       const baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
       const link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
       const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
@@ -125,6 +126,17 @@ function parseCSSTerm( textContent ){
   })
 }
 
+function parseHTTPStatus( textContent ){
+  const URL = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/";
+  const pattern = /{{(HTTPStatus)\("(.*?)"(?:, "(.*?)")?\)}}/g;
+  return textContent.replace(pattern, ( match, _, termA, termB )=>{
+    const link = `${URL}${termA}`;
+    const output = `[${termB ? termB : termA}](${link})`;
+    // console.log({ output }); 
+    return output;
+  })
+}
+
 // Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent ){
 
@@ -136,6 +148,7 @@ function parseYariDynamicContent( textContent ){
   updatedContents = parseImages(updatedContents);
   updatedContents = parseElementTerm(updatedContents);
   updatedContents = parseCSSTerm(updatedContents);
+  updatedContents = parseHTTPStatus(updatedContents);
 
   return updatedContents;
 
@@ -176,6 +189,7 @@ function init(){
 module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
+  parseHTTPStatus,
   parseImages,
   parseElementTerm,
   parseCSSTerm

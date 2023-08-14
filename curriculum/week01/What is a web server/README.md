@@ -8,8 +8,6 @@ page-type: learn-faq
 
 _(Updated: 14/08/2023)_
 
-{{QuicklinksWithSubPages("Learn/Common_questions")}}
-
 In this article, we explain what web servers are, how web servers work, and why they are important.
 
 <table>
@@ -44,7 +42,7 @@ The term _web server_ can refer to hardware or software, or both of them working
 
 1. On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web.
 
-2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an _HTTP server_. An HTTP server is software that understands {{Glossary("URL","URLs")}} (web addresses) and [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.
+2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an _HTTP server_. An HTTP server is software that understands [URLs](https://developer.mozilla.org/en-US/docs/Glossary/URL) (web addresses) and [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.
 
 At the most basic level, whenever a browser needs a file that is hosted on a web server, the browser requests the file via HTTP. When the request reaches the correct (hardware) web server, the (software) _HTTP server_ accepts the request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't find the requested document, it returns a [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) response instead.)
 
@@ -101,7 +99,7 @@ On a web server, the HTTP server is responsible for processing and answering inc
 
 1. Upon receiving a request, an HTTP server checks if the requested URL matches an existing file.
 2. If so, the web server sends the file content back to the browser. If not, the server will check if it should generate a file dynamically for the request (see [Static vs. dynamic content](#static_vs._dynamic_content)).
-3. If neither of these options are possible, the web server returns an error message to the browser, most commonly {{HTTPStatus("404", "404 Not Found")}}.
+3. If neither of these options are possible, the web server returns an error message to the browser, most commonly [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404).
    The 404 error is so common that some web designers devote considerable time and effort to designing 404 error pages.
    [![The MDN 404 page as an example of such error page](assets/mdn-404.jpg)](/en-US/docs/Web/HTTP/Status/404)
 
