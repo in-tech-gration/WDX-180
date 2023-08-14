@@ -1,3 +1,4 @@
+const path = require("node:path");
 const fs = require("node:fs");
 const { parseArgs } = require("node:util");
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
@@ -44,18 +45,30 @@ function removeTemplateContent( textContent ){
 
 }
 
-function replaceGlossaryLinks( textContent ){
+function replaceGlossaryLinks( textContent, fileName ){
 
     // Thank you ChatGPT! 
     const glossaryRegex = /\{\{[Gg]lossary\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}/g;
 
     function replaceGlossary(match, p1, p2) {
       // TODO: Replace MDN domain with local resources/glossary path if available
-      const baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
-      const link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
+      let baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
+      let link = "";
+
+      const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
+
+      if (fs.existsSync(glossaryDirectory)){
+        // Count the number of remaining path segments
+        const subfolderCount = fileName.split(path.sep).length - 1;
+        const parentPaths = Array.from({ length: subfolderCount}).fill( "../" ).join("");
+        link = `${parentPaths}resources/glossary/${p1}.md`
+        console.log(`Local glossary entry for ${p1} exists.`); 
+      } else {
+        link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
+      }
+  
       const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
       // console.log(match, p1, p2);
-      console.log(output);
       return output;
     }
 
@@ -138,11 +151,11 @@ function parseHTTPStatus( textContent ){
 }
 
 // Orchestrate Parsing & Modifications
-function parseYariDynamicContent( textContent ){
+function parseYariDynamicContent( textContent, fileName ){
 
   let updatedContents = textContent;
   
-  updatedContents = replaceGlossaryLinks(updatedContents);
+  updatedContents = replaceGlossaryLinks(updatedContents, fileName);
   updatedContents = removeTemplateContent(updatedContents);
   updatedContents = parseMDNLinks(updatedContents);
   updatedContents = parseImages(updatedContents);
@@ -175,7 +188,7 @@ function init(){
     console.log(`Processing ${fileName}`);
     
     const file = fs.readFileSync(fileName, "utf-8");
-    fs.writeFileSync( fileName, parseYariDynamicContent(file), "utf8" );
+    fs.writeFileSync( fileName, parseYariDynamicContent(file, fileName), "utf8" );
   
   } catch(e){
   
