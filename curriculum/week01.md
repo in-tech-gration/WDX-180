@@ -157,10 +157,10 @@
   - [Read: **What is a web server?**](week01/resources/What%20is%20a%20web%20server/README.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](week01/resources/What%20is%20a%20Domain%20Name/README.md)
+  - [Read: **What is a URL?**](week01/resources/What%20is%20a%20URL/README.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](week01/resources/What%20is%20a%20URL/README.md)
+  - [Read: **What is a Domain Name?**](week01/resources/What%20is%20a%20Domain%20Name/README.md)
     - Level: Beginner
 
   - [Take the test: **Absolute vs Relative URLs**](week01/exercises/Absolute%20vs%20Relative%20URLs/README.md)
