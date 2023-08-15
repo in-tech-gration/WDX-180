@@ -163,7 +163,7 @@
   - [Read: **What is a URL?**](week01/resources/What%20is%20a%20URL/README.md)
     - Level: Beginner
 
-  - [Take the test: **Absolute vs Relative URLs**]()
+  - [Take the test: **Absolute vs Relative URLs**](week01/exercises/Absolute%20vs%20Relative%20URLs/README.md)
     - Level: Beginner
 
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
