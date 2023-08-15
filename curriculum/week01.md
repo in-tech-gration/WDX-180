@@ -73,7 +73,7 @@
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](week1/Hexadecimal/README.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](week01/resources/Hexadecimal/README.md)
 
   #### Exercises
 
@@ -145,7 +145,7 @@
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](week01/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](week01/resources/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
@@ -154,13 +154,16 @@
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **What is a web server?**](week01/What%20is%20a%20web%20server/README.md)
+  - [Read: **What is a web server?**](week01/resources/What%20is%20a%20web%20server/README.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**]()
+  - [Read: **What is a Domain Name?**](week01/resources/What%20is%20a%20Domain%20Name/README.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](week01/What%20is%20a%20URL/README.md)
+  - [Read: **What is a URL?**](week01/resources/What%20is%20a%20URL/README.md)
+    - Level: Beginner
+
+  - [Take the test: **Absolute vs Relative URLs**]()
     - Level: Beginner
 
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
@@ -195,8 +198,8 @@
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
-  - [Read: **What will your website look like?**](week01/What%20will%20your%20website%20look%20like/README.md)
-  - [Read: **HTML Basics**](week01/HTML_Basics/README.md)
+  - [Read: **What will your website look like?**](week01/resources/What%20will%20your%20website%20look%20like/README.md)
+  - [Read: **HTML Basics**](week01/resources/HTML_Basics/README.md)
 
   #### Exercises
 
@@ -222,8 +225,8 @@
   - Introduction to CSS
   - Publishing your website
 
-  - [Read: **CSS Basics**](week01/CSS_Basics/README.md)
-  - [Read: **Publishing your website**](week01/Publishing%20your%20website/README.md)
+  - [Read: **CSS Basics**](week01/resources/CSS_Basics/README.md)
+  - [Read: **Publishing your website**](week01/resources/Publishing%20your%20website/README.md)
 
   #### Exercises
 
@@ -236,6 +239,8 @@
   - [Study](#study-plan-4)
 
   #### Study Plan
+
+  - [Read: **JS Basics**](week01/resources/JS_Basics/README.md)
 
   #### Exercises
 

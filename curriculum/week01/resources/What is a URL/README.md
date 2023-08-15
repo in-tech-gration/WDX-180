@@ -149,6 +149,13 @@ Let's look at some examples to make this clearer.
       <td>Full URL (the same as the one we used before)</td>
       <td><pre>https://developer.mozilla.org/en-US/docs/Learn</pre></td>
     </tr>
+  </tbody>
+</table>
+
+### Examples of relative URLs
+
+<table>
+  <tbody>
     <tr>
       <td>Implicit protocol</td>
       <td>
@@ -178,9 +185,7 @@ Let's look at some examples to make this clearer.
   </tbody>
 </table>
 
-### Examples of relative URLs
-
-To better understand the following examples, let's assume that the URLs are called from within the document located at the following URL: `https://developer.mozilla.org/en-US/docs/Learn`
+To better understand the next examples, let's assume that the URLs are called from within the document located at the following URL: `https://developer.mozilla.org/en-US/docs/Learn`
 
 <table>
   <tbody>
