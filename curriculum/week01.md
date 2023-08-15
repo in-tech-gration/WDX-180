@@ -157,6 +157,9 @@
   - [Read: **What is a web server?**](week01/What%20is%20a%20web%20server/README.md)
     - Level: Beginner
 
+  - [Read: **What is a Domain Name?**]()
+    - Level: Beginner
+
   - [Read: **What is a URL?**](week01/What%20is%20a%20URL/README.md)
     - Level: Beginner
 

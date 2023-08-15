@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "npm run test:yari.parser",
-    "test:yari.parser" : "node yari.parser.test.js"
+    "test:yari.parser" : "node yari.parser.test.js",
+    "parse": "node yari.parser.js",
+    "download": "node yari.download.js"
   },
   "author": "kostasx",
   "license": "GPL-3.0",
