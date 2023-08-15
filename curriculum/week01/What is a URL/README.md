@@ -9,6 +9,7 @@ page-type: learn-faq
 _(Updated: 14/08/2023)_
 
 [DOWNLOAD] files/en-us/learn/common_questions/web_mechanics/what_is_a_url -> assets
+[RUN YARI PARSER]
 
 {{QuicklinksWithSubPages("Learn/Common_questions")}}
 
