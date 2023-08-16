@@ -1,8 +1,33 @@
 import WelcomeBanner from './welcome-banner'
 import SearchForm from '@/components/search-form'
 import PaginationNumeric from '@/components/pagination-numeric'
+import Link from 'next/link'
+import Image from 'next/image'
+import MeetupsThumb01 from '@/public/images/meetups-thumb-01.jpg'
+import MeetupsThumb02 from '@/public/images/meetups-thumb-02.jpg'
+import UserImage01 from '@/public/images/avatar-01.jpg'
+import UserImage02 from '@/public/images/avatar-02.jpg'
+import UserImage03 from '@/public/images/avatar-03.jpg'
+import UserImage04 from '@/public/images/avatar-04.jpg'
+import UserImage05 from '@/public/images/avatar-05.jpg'
+import MeetupImage from '@/public/images/meetup-image.jpg'
+import UserImage07 from '@/public/images/user-32-07.jpg'
 
 // TODO: Add E-Commerce > Shop2
+// TODO: Community > Users Tabs (YouTubers?) or Users Tiles
+// TODO: Community > Forum + Forum Post (FAQ, Q&A?)
+// TODO: Jobs > Listing
+// TODO: Tasks > Kanban or List (Progress?)
+// TODO: Inbox > Messages from Headquarters? e.g. Updated Parent repo, need to sync?
+// TODO: Calendar
+// TODO: Campaigns (Tips?)
+// TODO: Settings > My Account, Notifications, Connected Apps, Feedback
+// TODO: Utility > Changelog
+// TODO: Utility > Roadmap
+// TODO: Utility > FAQ
+// TODO: Utility > Knowledge base
+// TODO: Authentication > Sign in, Sign up, Reset Password
+// TODO: Onboarding
 
 function RecentActivity() {
     return(
@@ -110,28 +135,6 @@ function RecentActivity() {
       </div>
     )
 }
-
-import Link from 'next/link'
-import Image from 'next/image'
-import MeetupsThumb01 from '@/public/images/meetups-thumb-01.jpg'
-import MeetupsThumb02 from '@/public/images/meetups-thumb-02.jpg'
-import UserImage01 from '@/public/images/avatar-01.jpg'
-import UserImage02 from '@/public/images/avatar-02.jpg'
-import UserImage03 from '@/public/images/avatar-03.jpg'
-import UserImage04 from '@/public/images/avatar-04.jpg'
-import UserImage05 from '@/public/images/avatar-05.jpg'
-
-import MeetupImage from '@/public/images/meetup-image.jpg'
-import MeetupPhoto01 from '@/public/images/meetup-photo-01.jpg'
-import MeetupPhoto02 from '@/public/images/meetup-photo-02.jpg'
-import MeetupPhoto03 from '@/public/images/meetup-photo-03.jpg'
-import MeetupThumb from '@/public/images/meetups-thumb-02.jpg'
-import UserImage06 from '@/public/images/user-32-06.jpg'
-import UserImage07 from '@/public/images/user-32-07.jpg'
-import UserImage08 from '@/public/images/user-32-08.jpg'
-import Avatar02 from '@/public/images/avatar-02.jpg'
-import Avatar03 from '@/public/images/avatar-03.jpg'
-import Avatar04 from '@/public/images/avatar-04.jpg'
 
 function MeetupsPosts() {
   return (
