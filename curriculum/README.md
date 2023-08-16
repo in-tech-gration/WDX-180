@@ -15,7 +15,7 @@ Once you've joined the course, you will be given access to a Google Spreadsheet 
 ## Syllabus
 
 - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/README.md)
-- [**Week 02**: HTML, Accessibility & Git](week02.md)
+- [**Week 02**: HTML, Accessibility & Git](week02/README.md)
 - [**Week 03**: CSS, Accessibility & more Git](week03/README.md) 
 - [**Week 04**: JavaScript Core 1](week04/README.md)
 - [**Week 05**: JavaScript Core 2](week05/README.md)
