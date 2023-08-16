@@ -1,8 +1,11 @@
+import fs from "node:fs";
+
+import Link from 'next/link'
+import Image from 'next/image'
+
 import WelcomeBanner from './welcome-banner'
 import SearchForm from '@/components/search-form'
 import PaginationNumeric from '@/components/pagination-numeric'
-import Link from 'next/link'
-import Image from 'next/image'
 import MeetupsThumb01 from '@/public/images/meetups-thumb-01.jpg'
 import MeetupsThumb02 from '@/public/images/meetups-thumb-02.jpg'
 import UserImage01 from '@/public/images/avatar-01.jpg'
@@ -290,9 +293,9 @@ function MeetupsPosts() {
   )
 }
 
-function MeetupPost() {
+function Post() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-8 DISABLEDw-full w-3/5 m-auto">
+    <div className="px-4 sm:px-6 lg:px-8 py-8 m-auto max-w-3xl">
 
       {/* Page content */}
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row lg:space-x-8 xl:space-x-16">
@@ -373,15 +376,38 @@ function MeetupPost() {
   )
 }
 
+const getPostMetaData = function(){
+    const folder = "curriculum/";
+    const files = fs.readdirSync(folder);
+    const markdownPosts = files.filter( file => file.endsWith(".md") );
+    const slugs = markdownPosts.map( file => file.replace(".md", "") );
+    return slugs;
+}
+
+function Curriculum(){
+    const postMetaData = getPostMetaData();
+    return (
+        <ul>
+            {postMetaData.map( file =>{
+                return (
+                    <li>
+                        <Link href={`/posts/${file}`} className="btn-xs bg-indigo-500 hover:bg-indigo-600 text-white">{ file }</Link>
+                    </li>
+                );
+            })}
+        </ul>
+    )
+}
+
 export default function Home() {
     return (
         <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
 
             <WelcomeBanner />
 
-            <Survey />
+            <Curriculum />
 
-            <MeetupPost />
+            <Post />
 
             {/* Page header */}
             <div className="sm:flex sm:justify-between sm:items-center mb-5">
@@ -457,6 +483,11 @@ export default function Home() {
             <div className="grid grid-cols-12 gap-6">
                 <RecentActivity />
             </div>
+
+            <hr className="my-6 border-t border-slate-200 dark:border-slate-700" />
+
+            {/* EXERCISES / QUIZZES */}
+            <Survey />
 
         </div>
     )
