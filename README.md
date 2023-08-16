@@ -136,6 +136,12 @@ _(Work in progress)_
   
   Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md).
 
+## Who's Involved
+
+- [**Kostas Minaidis** / Technical Curriculum Developer](https://www.linkedin.com/in/kostas-minaidis/)
+- [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
+- [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
+
 ## Contribute
 
 - Spotted a broken link?
