@@ -40,6 +40,8 @@ In general, we try to evaluate each resource carefully and given a rough estimat
 
 - **Always check the comments section** for more information and feedback from the community. For example, you can use a Chrome extension like [SummifyYT](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco) to get a summary of all the submitted comments in a YouTube video.
 
+**YouTube:** Learn how to share or embed a part of a video using custom start and end timestamps by following [this guide](https://www.coolfundas.com/youtube-videos-how-to-set-start-and-end-time-easily/). An embed URL with start and end times, looks like this: `https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176`. In this example, `7_LPdttKXPc` is the YouTube video unique ID.
+
 ## Teaching & Mentoring
 
 Don't forget to consult the [Teaching Resources](/teaching/README.md) for additional information and useful resources related to education.

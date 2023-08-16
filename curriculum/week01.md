@@ -149,6 +149,12 @@
     - Reading time: 5min
     - Level: Beginner
 
+  Before we dive into a more detailed description of the Internet's most interesting part, the Web, let's do a quick recap on how the Internet works by [**watching this short video**](https://www.youtube.com/embed/7_LPdttKXPc?start=29&end=272) that summarizes the concepts you've learned so far and contains some really nice visuals that will help you create a mental model of the Internet backbone. 
+  
+  The nice diagrams that show how devices on the Internet are connected and communicate with each other, along with the [cool animation](https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176) showing how various media files are moved across the Internet as small packets, are a great way to keep these concepts in your mind.
+
+  After you've watched the video, **make sure to take a short break**, stretch your legs, arms and neck, give your eyes a break by looking at a distance for at least 20 seconds and briefly describe the main concepts that you've learned to yourself.
+
   - [Watch: **The Internet: HTTP & HTML**](https://www.youtube.com/watch?v=kBXQZMmiA4s)
     - Duration: 7min
     - Level: Beginner

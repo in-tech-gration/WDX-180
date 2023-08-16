@@ -237,6 +237,26 @@
           "rating": 1
         }
       ]
+    },
+    "how-the-internet-works-in-5-minutes": {
+      "title": "How the Internet Works in 5 Minutes",
+      "type": "YouTube",
+      "duration": 288,
+      "partials": [
+        {
+          "$comment": "Shortened version",
+          "label": "How the Internet Works",
+          "youtube_embed": "https://www.youtube.com/embed/7_LPdttKXPc?start=29&end=272"
+        },
+        {
+          "label": "Internet Packets",
+          "youtube_embed": "https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176"
+        }
+      ],
+      "identifier": "https://www.youtube.com/watch?v=7_LPdttKXPc",
+      "youtube": {
+        "id": "7_LPdttKXPc"
+      }
     }
   },
   "creators": {
