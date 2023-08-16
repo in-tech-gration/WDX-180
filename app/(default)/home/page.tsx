@@ -13,6 +13,8 @@ import UserImage05 from '@/public/images/avatar-05.jpg'
 import MeetupImage from '@/public/images/meetup-image.jpg'
 import UserImage07 from '@/public/images/user-32-07.jpg'
 
+import Survey from "../../../components/surveyjs/Survey";
+
 // TODO: Add E-Commerce > Shop2
 // TODO: Community > Users Tabs (YouTubers?) or Users Tiles
 // TODO: Community > Forum + Forum Post (FAQ, Q&A?)
@@ -376,6 +378,8 @@ export default function Home() {
         <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
 
             <WelcomeBanner />
+
+            <Survey />
 
             <MeetupPost />
 
