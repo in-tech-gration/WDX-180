@@ -73,11 +73,11 @@
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](week01/resources/Hexadecimal/README.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/README.md)
 
   #### Exercises
 
-  #### [Extra Resources](week01/EXTRAS.md#day-01)
+  #### [Extra Resources](EXTRAS.md#day-01)
 
 ### Week 1 - Day 2 - How the Internet & the World Wide Web works
 
@@ -145,7 +145,7 @@
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](week01/resources/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](resources/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
@@ -160,16 +160,16 @@
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **What is a web server?**](week01/resources/What%20is%20a%20web%20server/README.md)
+  - [Read: **What is a web server?**](resources/What%20is%20a%20web%20server/README.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](week01/resources/What%20is%20a%20URL/README.md)
+  - [Read: **What is a URL?**](resources/What%20is%20a%20URL/README.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](week01/resources/What%20is%20a%20Domain%20Name/README.md)
+  - [Read: **What is a Domain Name?**](resources/What%20is%20a%20Domain%20Name/README.md)
     - Level: Beginner
 
-  - [Take the test: **Absolute vs Relative URLs**](week01/exercises/Absolute%20vs%20Relative%20URLs/README.md)
+  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute%20vs%20Relative%20URLs/README.md)
     - Level: Beginner
 
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
@@ -188,7 +188,7 @@
     - Duration: 5min
     - Captions: Yes
 
-  #### [Extra Resources](week01/EXTRAS.md#day-02)
+  #### [Extra Resources](EXTRAS.md#day-02)
 
 ### Week 1 - Day 3 - HTML & Markdown
 
@@ -204,8 +204,8 @@
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
-  - [Read: **What will your website look like?**](week01/resources/What%20will%20your%20website%20look%20like/README.md)
-  - [Read: **HTML Basics**](week01/resources/HTML_Basics/README.md)
+  - [Read: **What will your website look like?**](resources/What%20will%20your%20website%20look%20like/README.md)
+  - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
   
   Now, that we have a good grasp of HTML, let's learn a little bit about another markup language called **Markdown**, that is going to come in handy in a lot of situations.
 
@@ -220,7 +220,7 @@
 
   #### Exercises
 
-  #### [Extra Resources](week01/EXTRAS.md#day-03)
+  #### [Extra Resources](EXTRAS.md#day-03)
 
   ---
 
@@ -257,11 +257,11 @@
 
   #### Study Plan
 
-  - [Read: **JS Basics**](week01/resources/JS_Basics/README.md)
+  - [Read: **JS Basics**](resources/JS_Basics/README.md)
 
   #### Exercises
 
-  #### [Extra Resources](week01/EXTRAS.md#day-05)
+  #### [Extra Resources](EXTRAS.md#day-05)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
