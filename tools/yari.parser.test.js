@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm } = require("./yari.parser");
+const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks } = require("./yari.parser");
 
 test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
@@ -32,6 +32,14 @@ test('Parsing {{glossary("1", "2")}}', () => {
   const input3 = `{{Glossary("tag", "tags")}}`;
   const output3 = parseYariDynamicContent(input3);
   equal(output3, "[tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag)");
+
+});
+
+test("Parsing <tag>{{Glossary()}}</tag>", ()=>{
+
+  const input = `<tr><th scope="row">{{Glossary("String")}}</th></tr>`;
+  const output = `<tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></th></tr>`;
+  equal( output, replaceHTMLGlossaryLinks(input) );
 
 });
 

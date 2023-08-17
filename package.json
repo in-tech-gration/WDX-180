@@ -11,7 +11,8 @@
     "yari:download": "node tools/yari.download.js",
     "yari:parse": "node tools/yari.parser.js",
     "validate": "node tools/validator.js",
-    "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'"
+    "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
+    "yari:test": "node tools/yari.parser.test.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",

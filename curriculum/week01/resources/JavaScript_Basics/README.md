@@ -127,7 +127,7 @@ Note that variables may hold values that have different [data types](https://dev
   </thead>
   <tbody>
     <tr>
-      <th scope="row">{{Glossary("String")}}</th>
+      <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></th>
       <td>
         This is a sequence of text known as a string. To signify that the value
         is a string, enclose it in single or double quote marks.
@@ -135,12 +135,12 @@ Note that variables may hold values that have different [data types](https://dev
       <td><code>let myVariable = 'Bob';</code> or <br/><code>let myVariable = "Bob";</code></td>
     </tr>
     <tr>
-      <th scope="row">{{Glossary("Number")}}</th>
+      <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a></th>
       <td>This is a number. Numbers don't have quotes around them.</td>
       <td><code>let myVariable = 10;</code></td>
     </tr>
     <tr>
-      <th scope="row">{{Glossary("Boolean")}}</th>
+      <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></th>
       <td>
         This is a True/False value. The words <code>true</code> and
         <code>false</code> are special keywords that don't need quote marks.
@@ -148,7 +148,7 @@ Note that variables may hold values that have different [data types](https://dev
       <td><code>let myVariable = true;</code></td>
     </tr>
     <tr>
-      <th scope="row">{{Glossary("Array")}}</th>
+      <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Array">Array</a></th>
       <td>
         This is a structure that allows you to store multiple values in a single
         reference.
@@ -160,7 +160,7 @@ Note that variables may hold values that have different [data types](https://dev
       </td>
     </tr>
     <tr>
-      <th scope="row">{{Glossary("Object")}}</th>
+      <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Object">Object</a></th>
       <td>
         This can be anything. Everything in JavaScript is an object and can be
         stored in a variable. Keep this in mind as you learn.

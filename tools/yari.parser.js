@@ -49,6 +49,45 @@ function removeTemplateContent( textContent ){
 
 }
 
+function replaceHTMLGlossaryLinks( textContent, fileName ){
+
+  // Thank you ChatGPT! 
+  const glossaryRegex = /(<[^>]*>)\{\{[Gg]lossary\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}(<\/[^>]*>)/g;
+
+  function replaceGlossary(match, openingTag, p1, p2, closingTag) {
+    // console.log({ p1, p2, openingTag, closingTag });
+    // TODO: Replace MDN domain with local resources/glossary path if available
+    let baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
+    let link = "";
+
+    const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
+
+    if (fs.existsSync(glossaryDirectory)){
+      // Count the number of remaining path segments
+      const subfolderCount = fileName.split(path.sep).length - 1;
+      const parentPaths = Array.from({ length: subfolderCount}).fill( "../" ).join("");
+      link = `${parentPaths}resources/glossary/${p1}.md`
+      console.log(`Local glossary entry for ${p1} exists.`); 
+    } else {
+      link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
+    }
+
+    const output = `${openingTag}<a href="${link}">${ p2 ? p2 : p1}</a>${closingTag}`;
+    // console.log({ match, output });
+    // console.log(match, p1, p2);
+    return output;
+  }
+
+  if ( textContent.match(glossaryRegex) ){
+    ok("Substituted {{Glossary}} matches successfully");
+    return textContent.replace(glossaryRegex, replaceGlossary);
+  } 
+
+  info("\n No HTML {{Glossary}} matches found on this file");
+  return textContent;
+
+}
+
 function replaceGlossaryLinks( textContent, fileName ){
 
     // Thank you ChatGPT! 
@@ -158,7 +197,10 @@ function parseHTTPStatus( textContent ){
 function parseYariDynamicContent( textContent, fileName ){
 
   let updatedContents = textContent;
-  
+
+  // Run this first:
+  updatedContents = replaceHTMLGlossaryLinks(updatedContents, fileName);
+  // Then run this one:
   updatedContents = replaceGlossaryLinks(updatedContents, fileName);
   updatedContents = removeTemplateContent(updatedContents);
   updatedContents = parseMDNLinks(updatedContents);
@@ -209,5 +251,6 @@ module.exports = {
   parseHTTPStatus,
   parseImages,
   parseElementTerm,
-  parseCSSTerm
+  parseCSSTerm,
+  replaceHTMLGlossaryLinks
 };
