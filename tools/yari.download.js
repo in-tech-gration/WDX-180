@@ -24,6 +24,11 @@ if ( !TARGET_FOLDER.endsWith("assets/") ) {
   process.exit();
 } 
 
+if ( !fs.existsSync(TARGET_FOLDER) ) {
+  warn(`${TARGET_FOLDER} does not exist.`);
+  process.exit();
+}
+
 (async function getRepoFile(){
 
   // Octokit.js

@@ -145,16 +145,17 @@ headingTokens.forEach((heading, index) => {
       `Heading ${index + 1}: Level ${heading.level}, Title: EMPTY
     `);
   }
-  ok(
-    `Heading ${index + 1}: Level ${heading.level}, Title: ${heading.title}
-  `);
+  // ok(`Heading ${index + 1}: Level ${heading.level}, Title: ${heading.title}`);
 });
 
 // CHECK: HAS AT LEAST ONE LEVEL 1 HEADING
-const hasHeadingLevel1 = headingTokens.some( h => h.level === "1" );
-if ( !hasHeadingLevel1 ){
+const hasHeadingLevel1 = headingTokens.filter( h => h.level === "1" );
+if ( hasHeadingLevel1.length === 0 ){
   warn("A Heading of level 1 must be present on the document");
-}
+} 
+if ( hasHeadingLevel1.length > 1 ){
+  warn("Only one Heading of level 1 must be present on the document");
+} 
 
 // CHECK: HAS ATTRIBUTIONS SECTION
 const hasAttributionSection = hasAttributions( headingTokens );
@@ -177,8 +178,6 @@ if ( !hasUpdated ){
 }
 
 // TODO: TASKS
-// 1) Check if a Heading 1 is present
-// 2) Check if there's only 1 Heading 1 present
 // 3) Check if intermediary Headings are skipped, e.g. going from H1 to H3
 // 4) Check if frontmatter is present and contains necessary key/value pairs
 // 5) Husky script to ensure that UPDATED section has been updated
