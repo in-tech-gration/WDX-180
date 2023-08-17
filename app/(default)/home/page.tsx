@@ -305,7 +305,9 @@ type IPost = {
     children: React.ReactNode
 }
 
-// TODO: Read Creation/Update Date from Frontmatter
+// TODO: Read Creation/Update Date from Frontmatter < https://youtu.be/Hiabp1GY8fA?t=1208
+// TODO: STUDY: https://github.com/remarkjs/remark-gfm
+// TODO: STUDY: https://github.com/remarkjs/react-markdown
 function Post({ author, title, subtitle, children }: IPost) {
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-8 m-auto max-w-3xl">
