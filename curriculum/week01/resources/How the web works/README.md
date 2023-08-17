@@ -8,8 +8,6 @@ page-type: learn-module-chapter
 
 _(Updated: 17/08/2023)_
 
-{{LearnSidebar}}{{PreviousMenu("Learn/Getting_started_with_the_web/Publishing_your_website", "Learn/Getting_started_with_the_web")}}
-
 _How the web works_ provides a simplified view of what happens when you view a webpage in a web browser on your computer or phone.
 
 This theory is not essential to writing web code in the short term, but before long you'll really start to benefit from understanding what's happening in the background.
@@ -35,13 +33,13 @@ In addition to the client and the server, we also need to say hello to:
 
 - **Your internet connection**: Allows you to send and receive data on the web. It's basically like the street between your house and the shop.
 
-- **TCP/IP**: Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the internet. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).
+- **TCP/IP**: Transmission Control Protocol and Internet Protocol are communication _`protocols*`_ that define how data should travel across the internet. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).
+
+> A **protocol** is a system (or set) of rules that define how data is exchanged within or between computers. Communications between devices require that the devices agree on the format of the data that is being exchanged. 
 
 - **DNS**: Domain Name System is like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the website's IP address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.
 
-- **HTTP**: Hypertext Transfer Protocol is an application _`protocol*`_ that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.
-
-> A **protocol** is a system (or set) of rules that define how data is exchanged within or between computers. Communications between devices require that the devices agree on the format of the data that is being exchanged. 
+- **HTTP**: Hypertext Transfer Protocol is yet another (application) _`protocol`_ that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods. Clients that speak HTTP are called `web clients` and server that speak HTTP are called `web servers`.
 
 - **Component files**: A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:
 
@@ -85,11 +83,13 @@ Websites can be reached directly via their IP addresses. You can use a [DNS look
 
 Earlier we used the term "packets" to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the web, it is sent in thousands of small chunks. There are multiple reasons why data is sent in small packets. They are sometimes dropped or corrupted, and it's easier to replace small chunks when this happens. Additionally, the packets can be routed along different paths, making the exchange faster and allowing many different users to download the same website at the same time. If each website was sent as a single big chunk, only one user could download it at a time, which obviously would make the web very inefficient and not much fun to use.
 
+Here's a nice visual representation of how an image will be split in packets, send across the Internet to a client that requested the image and then reassembled back into a full image:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176&controls=0">
+
 ## Credit
 
 Street photo: [Street composing](https://www.pinterest.com/pin/400538960580676851/), by [kevin digga](https://www.pinterest.com/kevindigga/).
-
-{{PreviousMenu("Learn/Getting_started_with_the_web/Publishing_your_website", "Learn/Getting_started_with_the_web")}}
 
 ---
 

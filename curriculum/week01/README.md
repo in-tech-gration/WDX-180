@@ -160,7 +160,7 @@
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:****]()
+  - [Read:**How the web works**](resources/How%20the%20web%20works/README.md)
     - Level: Beginner
 
   - [Read: **What is a web server?**](resources/What%20is%20a%20web%20server/README.md)

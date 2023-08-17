@@ -43,6 +43,7 @@ In general, we try to evaluate each resource carefully and given a rough estimat
   - _"A few comments highlighted technical errors within the video, such as typos, inconsistencies, and inaccuracies."_ In this case, we should carefully go through the comments, find the inconsistencies and inform about them whenever we share the selected resource. 
 
 - **YouTube:** Learn how to share or embed a part of a video using custom start and end timestamps by following [this guide](https://www.coolfundas.com/youtube-videos-how-to-set-start-and-end-time-easily/). An embed URL with start and end times, looks like this: `https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176`. In this example, `7_LPdttKXPc` is the YouTube video unique ID.
+  - In case you want to hide the video controls (play, pause, etc.) in order to prevent the user from looking at other parts of a video, you can append the `controls=0` query string to the URL: `https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176&controls=0`.
 
 ## Teaching & Mentoring
 
