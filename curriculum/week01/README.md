@@ -206,6 +206,17 @@
 
   - [Read: **What will your website look like?**](week01/resources/What%20will%20your%20website%20look%20like/README.md)
   - [Read: **HTML Basics**](week01/resources/HTML_Basics/README.md)
+  
+  Now, that we have a good grasp of HTML, let's learn a little bit about another markup language called **Markdown**, that is going to come in handy in a lot of situations.
+
+  [WiP]
+
+  - https://www.markdownguide.org/getting-started/
+  > https://github.com/mattcone/markdown-guide [STAR]
+  > By Matt Cone https://github.com/mattcone [FOLLOW]
+  - https://commonmark.org/help/
+  > https://github.com/commonmark/commonmark-web [STAR]
+  > ? https://github.com/commonmark/commonmark.js  
 
   #### Exercises
 

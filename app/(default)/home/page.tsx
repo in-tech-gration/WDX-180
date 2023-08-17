@@ -1,7 +1,12 @@
 import fs from "node:fs";
+import path from "node:path";
+import fse from 'fs-extra';
 
 import Link from 'next/link'
 import Image from 'next/image'
+
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 import WelcomeBanner from './welcome-banner'
 import SearchForm from '@/components/search-form'
@@ -293,7 +298,15 @@ function MeetupsPosts() {
   )
 }
 
-function Post() {
+type IPost = {
+    author?: string
+    title?: string
+    subtitle?: string
+    children: React.ReactNode
+}
+
+// TODO: Read Creation/Update Date from Frontmatter
+function Post({ author, title, subtitle, children }: IPost) {
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-8 m-auto max-w-3xl">
 
@@ -313,8 +326,8 @@ function Post() {
           <div className="text-sm font-semibold text-indigo-500 uppercase mb-2">Mon 27 Dec, 2021 - 9:00 PM -&gt; 10:00 PM</div>
           <header className="mb-4">
             {/* Title */}
-            <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-2">The World of AI and Machine Learning — Open Chat</h1>
-            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.</p>
+            <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-2">{ title }</h1>
+            <p>{ subtitle }</p>
           </header>
 
           {/* Meta */}
@@ -327,7 +340,7 @@ function Post() {
               <div className="text-sm whitespace-nowrap">
                 Hosted by{' '}
                 <a className="font-semibold text-slate-800 dark:text-slate-100" href="#0">
-                  Monica Fishkin
+                  { author }
                 </a>
               </div>
             </div>
@@ -353,19 +366,7 @@ function Post() {
 
           {/* Post content */}
           <div>
-            <h2 className="text-xl leading-snug text-slate-800 dark:text-slate-100 font-bold mb-2">Meetup Details</h2>
-            <p className="mb-6">In the world of AI, behavioural predictions are leading the charge to better machine learning.</p>
-            <p className="mb-6">
-              There is so much happening in the AI space. Advances in the economic sectors have seen automated business practices rapidly
-              increasing economic value. While the realm of the human sciences has used the power afforded by computational capabilities to
-              solve many human based dilemmas. Even the art scene has adopted carefully selected ML applications to usher in the technological
-              movement.
-            </p>
-            <p className="mb-6">
-              Join us every second Wednesday as we host an open discussion about the amazing things happening in the world of AI and machine
-              learning. Feel free to share your experiences, ask questions, ponder the possibilities, or just listen as we explore new topics
-              and revisit old ones.
-            </p>
+            { children }
           </div>
           <hr className="my-6 border-t border-slate-200 dark:border-slate-700" />
 
@@ -376,6 +377,7 @@ function Post() {
   )
 }
 
+// TODO: WiP > Loading Markdown Content
 const getPostMetaData = function(){
     const folder = "curriculum/";
     const files = fs.readdirSync(folder);
@@ -383,19 +385,94 @@ const getPostMetaData = function(){
     const slugs = markdownPosts.map( file => file.replace(".md", "") );
     return slugs;
 }
+const getPostContentFromFolder = (folder:string)=>{
 
+    const destinationFolderBase = path.join( process.cwd(), "public", "images", folder );
+
+    function byImage( file:string ){
+        return /\.(jpg|jpeg|png|gif)$/i.test(file);
+    }
+
+    try {
+
+        // process.cwd() => /Users/kostasx/WebServer/plethoralabs/GITHUB/WDX-180
+        const files = fs.readdirSync(folder);
+        const markdownPosts = files.filter( file => file.endsWith(".md") );
+        // console.log(markdownPosts[0]);
+        const tmpFolder = markdownPosts[0];
+        const content = fs.readFileSync(path.join(folder,tmpFolder), "utf8");
+        const assetsFolder = path.join(folder,"assets");
+        const assets = fs.readdirSync(assetsFolder, "utf8");
+        // console.log({ assets });
+
+        assets.filter(byImage).forEach( asset =>{
+            const srcFolder = path.join( process.cwd(), assetsFolder, asset );
+            const dstFolder = path.join( destinationFolderBase, asset );
+
+             console.log({ 
+                vscode: "file://" + srcFolder.replaceAll(" ", "%20"), // VSCode manual debugging
+                srcFolder,
+                dstFolder 
+            });
+
+            // DOCS: https://github.com/jprichardson/node-fs-extra/blob/master/docs/copy.md
+            fse.copy(srcFolder, dstFolder, { overwrite: false }, (err:any) => {
+                if (err) return console.error("Error: while trying to copy " + srcFolder + " to " + dstFolder );
+
+                // console.log( "Successfully copied " + srcFolder + " to " + dstFolder )
+              })
+        })
+        return content;
+
+    } catch(e){
+
+        // @ts-ignore
+        throw new Error("Error with reading folder. Message: " +  e.message);
+
+    }
+}
+
+// TODO: Hide Frontmatter data when using ReactMarkdown
 function Curriculum(){
     const postMetaData = getPostMetaData();
+    const folder = path.join("curriculum", "week01", "resources", "How the Internet works");
+    const markdown = getPostContentFromFolder(folder);
     return (
-        <ul>
-            {postMetaData.map( file =>{
-                return (
-                    <li>
-                        <Link href={`/posts/${file}`} className="btn-xs bg-indigo-500 hover:bg-indigo-600 text-white">{ file }</Link>
-                    </li>
-                );
-            })}
-        </ul>
+        <section>
+            <Post>
+                <ReactMarkdown 
+                    // components={{
+                    //     img: (props) => {
+                    //         return (
+                    //             <Image src={require(path.join(process.cwd(), props.src))} alt={props.alt} width={1200} height={200} />
+                    //         )}
+                    //   }}
+                    transformImageUri={(src, alt, title) => {
+                        console.log(src,alt,title);
+                        // src: assets/internet-schema-2.png 
+                        // alt: Ten computers all together 
+                        // title: null
+                        return path.join( "/", folder, src );
+                        
+                        // process.cwd() => /Users/kostasx/WebServer/plethoralabs/GITHUB/WDX-180
+                        // __dirname => /Users/kostasx/WebServer/plethoralabs/GITHUB/WDX-180/.next/server/app/(default)/home
+                        
+                        // return "DEBUG";
+                    }} 
+                    children={markdown} 
+                    remarkPlugins={[remarkGfm]} 
+                    />
+            </Post>
+            <ul>
+                {postMetaData.map( file =>{
+                    return (
+                        <li>
+                            <Link href={`/posts/${file}`} className="btn-xs bg-indigo-500 hover:bg-indigo-600 text-white">{ file }</Link>
+                        </li>
+                    );
+                })}
+            </ul>
+        </section>
     )
 }
 
@@ -405,9 +482,28 @@ export default function Home() {
 
             <WelcomeBanner />
 
-            <Curriculum />
+            {/* TODO: WORK IN PROGRESS: Import Static Images from Markdown curriculum/ folder into public and then into .next/ */}
+            {/* <Curriculum /> */}
 
-            <Post />
+            <Post
+                author={"Kostas Minaidis"}
+                title={"The World of AI and Machine Learning — Open Chat"}
+                subtitle={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts."}
+            >
+                <h2 className="text-xl leading-snug text-slate-800 dark:text-slate-100 font-bold mb-2">Meetup Details</h2>
+                <p className="mb-6">In the world of AI, behavioural predictions are leading the charge to better machine learning.</p>
+                <p className="mb-6">
+                There is so much happening in the AI space. Advances in the economic sectors have seen automated business practices rapidly
+                increasing economic value. While the realm of the human sciences has used the power afforded by computational capabilities to
+                solve many human based dilemmas. Even the art scene has adopted carefully selected ML applications to usher in the technological
+                movement.
+                </p>
+                <p className="mb-6">
+                Join us every second Wednesday as we host an open discussion about the amazing things happening in the world of AI and machine
+                learning. Feel free to share your experiences, ask questions, ponder the possibilities, or just listen as we explore new topics
+                and revisit old ones.
+                </p>
+            </Post>
 
             {/* Page header */}
             <div className="sm:flex sm:justify-between sm:items-center mb-5">
@@ -487,7 +583,7 @@ export default function Home() {
             <hr className="my-6 border-t border-slate-200 dark:border-slate-700" />
 
             {/* EXERCISES / QUIZZES */}
-            <Survey />
+            {/* <Survey /> */}
 
         </div>
     )

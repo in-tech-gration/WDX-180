@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "learn": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,11 +16,14 @@
     "@types/react-dom": "^18.2.4",
     "chart.js": "^4.3.0",
     "chartjs-adapter-moment": "^1.0.1",
+    "fs-extra": "^11.1.1",
     "next": "^13.4.4",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-flatpickr": "^3.10.13",
+    "react-markdown": "^8.0.7",
+    "remark-gfm": "^3.0.1",
     "survey-react-ui": "^1.9.103",
     "typescript": "^5.0.4"
   },
