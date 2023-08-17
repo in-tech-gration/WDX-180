@@ -17,6 +17,18 @@ const markdownContent = fs.readFileSync(markdownFilePath, 'utf8');
 // Initialize markdown-it parser
 const md = new MarkdownIt();
 
+const headingTokens = [];
+
+md.use(require('markdown-it-anchor'), {
+  level: 1, // Extract headings starting from level 1
+  callback: (token, anchor) => {
+    headingTokens.push({
+      level: token.tag.slice(1), 
+      title: anchor.title 
+    });
+  }
+});
+
 function splitMarkdownIntoFrontmatterAndContent( markdown ){
 
     // Find the index of the second "---" to detect the end of frontmatter
@@ -53,6 +65,23 @@ function getMarkdownBody( markdown ){
 
 }
 
+function hasUpdatedTokenInList( tokens ){
+
+  const hasUpdated = inlineTokens.some( token =>{
+    const tokenHasLevel1 = token.level === 1;
+    const tokenPassesRegex = updatedRegex.test(token.content)
+    return tokenHasLevel1 && tokenPassesRegex;
+  });
+
+  return hasUpdated;
+}
+
+function hasAttributions( headingTokens ){
+  const isLevel3 = heading => heading.level === "3";
+  const hasTitle = heading => heading.title === "Sources and Attributions"; 
+  return headingTokens.some( h => isLevel3(h) && hasTitle(h) );
+}
+
 const frontmatter = getFrontmatterFromMarkdown( markdownContent );
 const markdownBody = getMarkdownBody( markdownContent );
 
@@ -86,29 +115,31 @@ const tokens = md.parse(markdownBody, {});
 const inlineTokens = tokens.filter( token => token.type === "inline" );
 
 // console.log({ tokens });
+// console.log({ headingTokens });
 
-// Process the parsed tokens to extract headings
+// Process the parsed tokens to extract headings [DEPRECATED]
+/* 
 const headings = [];
 let currentLevel = 0;
+tokens.forEach((token, index, array) => {
 
-// console.log({ tokens });
-
-tokens.forEach(token => {
     if (token.type === 'heading_open') {
         currentLevel = token.tag.slice(1); // Extract heading level from the tag
     } else if (token.type === 'inline') {
         const text = token.content;
         headings.push({ level: currentLevel, title: text });
     }
-});
 
-if ( headings.length === 0 ){
+  });
+*/
+
+if ( headingTokens.length === 0 ){
   console.log(`WARNING: No headings found in the file: ${markdownFilePath}`)
   process.exit();
 }
 
 // Print the extracted headings
-headings.forEach((heading, index) => {
+headingTokens.forEach((heading, index) => {
   if ( heading.title.trim().length === 0 ){
     return warn(
       `Heading ${index + 1}: Level ${heading.level}, Title: EMPTY
@@ -119,26 +150,21 @@ headings.forEach((heading, index) => {
   `);
 });
 
-function hasUpdatedTokenInList( tokens ){
-
-  const hasUpdated = inlineTokens.some( token =>{
-    const tokenHasLevel1 = token.level === 1;
-    const tokenPassesRegex = updatedRegex.test(token.content)
-    return tokenHasLevel1 && tokenPassesRegex;
-  });
-
-  return hasUpdated;
-}
-
-function hasAttributions( headingTokens ){
-  const isLevel3 = heading => heading.level === "3";
-  const hasTitle = heading => heading.title === "Sources and Attributions"; 
-  return headingTokens.some( h => isLevel3(h) && hasTitle(h) );
+// CHECK: HAS AT LEAST ONE LEVEL 1 HEADING
+const hasHeadingLevel1 = headingTokens.some( h => h.level === "1" );
+if ( !hasHeadingLevel1 ){
+  warn("A Heading of level 1 must be present on the document");
 }
 
 // CHECK: HAS ATTRIBUTIONS SECTION
-const hasAttributionSection = hasAttributions( headings );
-console.log({ hasAttributionSection });
+const hasAttributionSection = hasAttributions( headingTokens );
+
+if ( !hasAttributionSection ){
+  warn(`No attributions section found:
+  
+  ### Sources and Attributions
+  `)
+}
 
 // CHECK: UPDATED SECTION
 const updatedRegex = /_\(Updated: (\d{2}\/\d{2}\/\d{4})\)_/;
