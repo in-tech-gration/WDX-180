@@ -3,6 +3,7 @@ const fs = require("node:fs");
 const MarkdownIt = require('markdown-it');
 const yaml = require('yaml');
 const { warn, ok } = require("./utils");
+const checkmark = "\u2713";
 
 // Parsing input
 const markdownFilePath = process.argv[2];
@@ -88,7 +89,9 @@ const markdownBody = getMarkdownBody( markdownContent );
 // console.log({ frontmatter, markdownBody })
 
 if (frontmatter) {
-  console.log("Frontmatter detected:");
+
+  ok(`${checkmark} Frontmatter detected.`);
+
   // Parse frontmatter based on YAML format
   if ( !frontmatter.title || frontmatter.title.trim().length === "" ){
     warn(`
@@ -156,6 +159,9 @@ if ( hasHeadingLevel1.length === 0 ){
 if ( hasHeadingLevel1.length > 1 ){
   warn("Only one Heading of level 1 must be present on the document");
 } 
+if ( hasHeadingLevel1.length === 1 ){
+  ok(`${checkmark} Found a single Heading Level 1.`);
+}
 
 // CHECK: HAS ATTRIBUTIONS SECTION
 const hasAttributionSection = hasAttributions( headingTokens );
@@ -165,6 +171,8 @@ if ( !hasAttributionSection ){
   
   ### Sources and Attributions
   `)
+} else {
+  ok(`${checkmark} Sources and Attributions section found.`)
 }
 
 // CHECK: UPDATED SECTION
@@ -182,6 +190,7 @@ if ( !hasUpdated ){
 // 4) Check if frontmatter is present and contains necessary key/value pairs
 // 5) Husky script to ensure that UPDATED section has been updated
 // 6) Check if _(Updated: 11/08/2023)_ is present right after the first Heading
+// 7) Check if Sources and Attributions section contains MDN Permalinks for version control and bi-annual review
 
 module.exports = {
   hasUpdatedTokenInList
