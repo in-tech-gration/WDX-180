@@ -135,6 +135,8 @@ They can therefore be accessed by authorized members from different physical loc
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - [How the Internet works](https://tutorial.djangogirls.org/en/how_the_internet_works/) tutorial, created and maintained by [Django Girls](https://djangogirls.org/en/). The original source code can be found [here](https://github.com/DjangoGirls/tutorial/tree/master/en/how_the_internet_works). If you found this resource helpful, **please consider adding a star** on these 2 GitHub repositories as a token of your appreciation: [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial/tree/master) / [WDX-180](https://github.com/in-tech-gration/WDX-180).

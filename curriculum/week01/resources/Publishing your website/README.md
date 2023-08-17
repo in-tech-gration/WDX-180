@@ -97,6 +97,8 @@ To learn more, see [GitHub Pages Help](https://docs.github.com/en/pages/getting-
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

@@ -171,6 +171,8 @@ Some people opt for a mixed approach. For example, their main blog on a paid hos
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

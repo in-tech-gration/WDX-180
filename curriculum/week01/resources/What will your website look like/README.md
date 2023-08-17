@@ -187,6 +187,8 @@ That is about it for now. Your folder structure should look something like this:
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

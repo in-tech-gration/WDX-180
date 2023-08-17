@@ -93,6 +93,8 @@ Street photo: [Street composing](https://www.pinterest.com/pin/40053896058067685
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

@@ -227,6 +227,8 @@
 
   ---
 
+  ### Sources and Attributions
+
   **Content is based on the following sources:**
 
   - **MDN:**
@@ -260,7 +262,7 @@
 
   #### Study Plan
 
-  - [Read: **JS Basics**](resources/JS_Basics/README.md)
+  - [Read: **JS Basics**](resources/JavaScript_Basics/README.md)
 
   #### Exercises
 

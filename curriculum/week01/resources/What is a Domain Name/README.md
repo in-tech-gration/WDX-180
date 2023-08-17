@@ -178,6 +178,8 @@ As we already saw, when you want to display a webpage in your browser it's easie
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

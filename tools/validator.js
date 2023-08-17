@@ -7,7 +7,8 @@ const { warn, ok } = require("./utils");
 // Parsing input
 const markdownFilePath = process.argv[2];
 
-if ( !markdownFilePath ){
+if ( !markdownFilePath || !markdownFilePath.endsWith(".md") ){
+  warn("No markdown file passed as argument.")
   process.exit();
 }
 
@@ -16,37 +17,81 @@ const markdownContent = fs.readFileSync(markdownFilePath, 'utf8');
 // Initialize markdown-it parser
 const md = new MarkdownIt();
 
-// Find the index of the second "---" to detect the end of frontmatter
-const frontmatterEndIndex = markdownContent.indexOf('---', 3); // Start searching from index 3
-let frontmatter = '';
-let markdownBody = markdownContent;
+function splitMarkdownIntoFrontmatterAndContent( markdown ){
 
-if (frontmatterEndIndex !== -1) {
-    frontmatter = markdownContent.substring(0, frontmatterEndIndex).trim();
-    markdownBody = markdownContent.substring(frontmatterEndIndex + 3).trim();
+    // Find the index of the second "---" to detect the end of frontmatter
+    const frontmatterEndIndex = markdownContent.indexOf('---', 3); // Start searching from index 3
+    let frontmatter = null;
+    let markdownBody = markdownContent;
+    
+    if (frontmatterEndIndex !== -1) {
+        frontmatter = markdownContent.substring(0, frontmatterEndIndex).trim();
+        markdownBody = markdownContent.substring(frontmatterEndIndex + 3).trim();
+    }
+  
+    return {
+      frontmatter, markdownBody
+    };
+  
 }
 
-console.log({ frontmatter, markdownBody })
+function getFrontmatterFromMarkdown( markdown ){
+
+  const { frontmatter } = splitMarkdownIntoFrontmatterAndContent( markdown );
+  if ( !frontmatter ){
+    return null;
+  }
+  const parsedFrontmatter = yaml.parse(frontmatter)
+  return parsedFrontmatter;
+
+}
+
+function getMarkdownBody( markdown ){
+
+  const { markdownBody } = splitMarkdownIntoFrontmatterAndContent( markdown );
+  return markdownBody;
+
+}
+
+const frontmatter = getFrontmatterFromMarkdown( markdownContent );
+const markdownBody = getMarkdownBody( markdownContent );
+
+// console.log({ frontmatter, markdownBody })
 
 if (frontmatter) {
   console.log("Frontmatter detected:");
   // Parse frontmatter based on YAML format
-  const parsedFrontmatter = yaml.parse(frontmatter);
-  console.log(parsedFrontmatter);
+  if ( !frontmatter.title || frontmatter.title.trim().length === "" ){
+    warn(`
+    Frontmatter sections requires a title: property:
+
+    ---
+    title: Some Title Here
+    ---
+    `)
+  }
+} else {
+  warn("No frontmatter detected. A simple frontmatter section with at least a title: property is required.");
 }
 
 if ( !markdownBody ){
-  warn(`WARNING: No content found in the file ${markdownFilePath}`);
+  warn(`No content found in the file ${markdownFilePath}`);
   process.exit();``
 }
 
 
 // Parse the markdown content
 const tokens = md.parse(markdownBody, {});
+// Group them tokens:
+const inlineTokens = tokens.filter( token => token.type === "inline" );
+
+// console.log({ tokens });
 
 // Process the parsed tokens to extract headings
 const headings = [];
 let currentLevel = 0;
+
+// console.log({ tokens });
 
 tokens.forEach(token => {
     if (token.type === 'heading_open') {
@@ -74,6 +119,37 @@ headings.forEach((heading, index) => {
   `);
 });
 
+function hasUpdatedTokenInList( tokens ){
+
+  const hasUpdated = inlineTokens.some( token =>{
+    const tokenHasLevel1 = token.level === 1;
+    const tokenPassesRegex = updatedRegex.test(token.content)
+    return tokenHasLevel1 && tokenPassesRegex;
+  });
+
+  return hasUpdated;
+}
+
+function hasAttributions( headingTokens ){
+  const isLevel3 = heading => heading.level === "3";
+  const hasTitle = heading => heading.title === "Sources and Attributions"; 
+  return headingTokens.some( h => isLevel3(h) && hasTitle(h) );
+}
+
+// CHECK: HAS ATTRIBUTIONS SECTION
+const hasAttributionSection = hasAttributions( headings );
+console.log({ hasAttributionSection });
+
+// CHECK: UPDATED SECTION
+const updatedRegex = /_\(Updated: (\d{2}\/\d{2}\/\d{4})\)_/;
+const hasUpdated = hasUpdatedTokenInList( inlineTokens );
+
+if ( !hasUpdated ){
+  warn("No Updated: section found.");
+  warn("Syntax: _(Updated: DD/MM/YYYY)_")
+  warn("Usage: must be placed right after the top most Heading 1");
+}
+
 // TODO: TASKS
 // 1) Check if a Heading 1 is present
 // 2) Check if there's only 1 Heading 1 present
@@ -81,3 +157,7 @@ headings.forEach((heading, index) => {
 // 4) Check if frontmatter is present and contains necessary key/value pairs
 // 5) Husky script to ensure that UPDATED section has been updated
 // 6) Check if _(Updated: 11/08/2023)_ is present right after the first Heading
+
+module.exports = {
+  hasUpdatedTokenInList
+}

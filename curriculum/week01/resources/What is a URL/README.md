@@ -231,6 +231,8 @@ Linguistic semantics are of course irrelevant to computers. You've probably ofte
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

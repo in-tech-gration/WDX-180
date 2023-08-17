@@ -18,6 +18,8 @@ URLs can also be used for file transfer ([FTP](https://developer.mozilla.org/en-
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**

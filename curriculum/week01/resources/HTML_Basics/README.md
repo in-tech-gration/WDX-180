@@ -246,7 +246,9 @@ You might get unexpected results if you omit the `https://` or `http://` part, c
 
 > **Note:** `href` might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for _**h**ypertext **ref**erence_.
 
----
+----
+
+### Sources and Attributions
 
 **Content is based on the following sources:**
 

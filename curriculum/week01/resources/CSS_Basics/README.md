@@ -308,6 +308,8 @@ In this exercise, we have just scratched the surface of CSS.
 
 ---
 
+### Sources and Attributions
+
 **Content is based on the following sources:**
 
 - **MDN**
