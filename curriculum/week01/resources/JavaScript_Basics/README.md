@@ -13,7 +13,7 @@ This article helps you get started with JavaScript and furthers your understandi
 
 ## What is JavaScript?
 
-{{Glossary("JavaScript")}} is a powerful programming language that can add interactivity to a website.
+[JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) is a powerful programming language that can add interactivity to a website.
 It was invented by Brendan Eich.
 
 JavaScript is versatile and beginner-friendly.
@@ -21,11 +21,13 @@ With more experience, you'll be able to create games, animated 2D and 3D graphic
 
 JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
 
-- Browser Application Programming Interfaces ({{Glossary("API","APIs")}}) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.
+- Browser Application Programming Interfaces ([APIs](https://developer.mozilla.org/en-US/docs/Glossary/API)) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.
+
 - Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.
+
 - Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.
 
-It's outside the scope of this article—as a light introduction to JavaScript—to present the details of how the core JavaScript language is different from the tools listed above. You can learn more in MDN's [JavaScript learning area](/en-US/docs/Learn/JavaScript), as well as in other parts of MDN.
+It's outside the scope of this article—as a light introduction to JavaScript—to present the details of how the core JavaScript language is different from the tools listed above. You can learn more in MDN's [JavaScript learning area](https://developer.mozilla.org/en-US/docs/Learn/JavaScript), as well as in other parts of MDN.
 
 The section below introduces some aspects of the core language and offers an opportunity to play with a few browser API features too. Have fun!
 
@@ -44,7 +46,7 @@ However, getting comfortable with JavaScript is more challenging than getting co
    <script src="scripts/main.js"></script>
    ```
 
-3. This is doing the same job as the {{htmlelement("link")}} element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).
+3. This is doing the same job as the [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).
 4. Add this code to the `main.js` file:
 
    ```js
@@ -54,11 +56,11 @@ However, getting comfortable with JavaScript is more challenging than getting co
 
 5. Make sure the HTML and JavaScript files are saved. Then load `index.html` in your browser. You should see something like this:
 
-![Heading "hello world" above a firefox logo](hello-world.png)
+![Heading "hello world" above a firefox logo](assets/hello-world.png)
 
-> **Note:** The reason the instructions (above) place the {{htmlelement("script")}} element near the bottom of the HTML file is that **the browser reads code in the order it appears in the file**.
+> **Note:** The reason the instructions (above) place the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element near the bottom of the HTML file is that **the browser reads code in the order it appears in the file**.
 >
-> If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. To learn more about alternative approaches, see [Script loading strategies](/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies).
+> If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. To learn more about alternative approaches, see [Script loading strategies](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies).
 
 ### What happened?
 
@@ -66,17 +68,17 @@ The heading text changed to _Hello world!_ using JavaScript. You did this by usi
 
 Following that, the code set the value of the `myHeading` variable's {{domxref("Node.textContent", "textContent")}} property (which represents the content of the heading) to _Hello world!_.
 
-> **Note:** Both of the features you used in this exercise are parts of the [Document Object Model (DOM) API](/en-US/docs/Web/API/Document_Object_Model), which has the capability to manipulate documents.
+> **Note:** Both of the features you used in this exercise are parts of the [Document Object Model (DOM) API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), which has the capability to manipulate documents.
 
 ## Language basics crash course
 
 To give you a better understanding of how JavaScript works, let's explain some of the core features of the language. It's worth noting that these features are common to all programming languages. If you master these fundamentals, you have a head start on coding in other languages too!
 
-> **Warning:** In this article, try entering the example code lines into your JavaScript console to see what happens. For more details on JavaScript consoles, see [Discover browser developer tools](/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
+> **Warning:** In this article, try entering the example code lines into your JavaScript console to see what happens. For more details on JavaScript consoles, see [Discover browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools).
 
 ### Variables
 
-{{Glossary("Variable", "Variables")}} are containers that store values. You start by declaring a variable with the [`let`](/en-US/docs/Web/JavaScript/Reference/Statements/let) keyword, followed by the name you give to the variable:
+[Variables](https://developer.mozilla.org/en-US/docs/Glossary/Variable) are containers that store values. You start by declaring a variable with the [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) keyword, followed by the name you give to the variable:
 
 ```js
 let myVariable;
@@ -84,7 +86,7 @@ let myVariable;
 
 A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons. For more details, see [Your Guide to Semicolons in JavaScript](https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/).
 
-You can name a variable nearly anything, but there are some restrictions. (See [this section about naming rules](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables).) If you are unsure, you can [check your variable name](https://mothereff.in/js-variables) to see if it's valid.
+You can name a variable nearly anything, but there are some restrictions. (See [this section about naming rules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables).) If you are unsure, you can [check your variable name](https://mothereff.in/js-variables) to see if it's valid.
 
 JavaScript is case sensitive. This means `myVariable` is not the same as `myvariable`. If you have problems in your code, check the case!
 
@@ -113,7 +115,7 @@ let myVariable = "Bob";
 myVariable = "Steve";
 ```
 
-Note that variables may hold values that have different [data types](/en-US/docs/Web/JavaScript/Data_structures):
+Note that variables may hold values that have different [data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures):
 
 <table class="standard-table">
   <thead>
@@ -191,7 +193,7 @@ If your comment contains no line breaks, it's an option to put it behind two sla
 
 ### Operators
 
-An `{{Glossary("operator")}}` is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.
+An `[operator](https://developer.mozilla.org/en-US/docs/Glossary/Operator)` is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.
 
 <table class="standard-table">
   <thead>
@@ -269,7 +271,7 @@ An `{{Glossary("operator")}}` is a mathematical symbol that produces a result ba
   </tbody>
 </table>
 
-There are a lot more operators to explore, but this is enough for now. See [Expressions and operators](/en-US/docs/Web/JavaScript/Reference/Operators) for a complete list.
+There are a lot more operators to explore, but this is enough for now. See [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators) for a complete list.
 
 > **Note:** Mixing data types can lead to some strange results when performing calculations. Be careful that you are referring to your variables correctly, and getting the results you expect. For example, enter `'35' + '25'` into your console. Why don't you get the result you expected? Because the quote marks turn the numbers into strings, so you've ended up concatenating strings rather than adding numbers. If you enter `35 + 25` you'll get the total of the two numbers.
 
@@ -290,7 +292,7 @@ The expression inside the `if ()` is the test. This uses the strict equality ope
 
 ### Functions
 
-{{Glossary("Function", "Functions")}} are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions. For example:
+[Functions](https://developer.mozilla.org/en-US/docs/Glossary/Function) are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions. For example:
 
 ```js
 let myVariable = document.querySelector("h1");
@@ -302,7 +304,7 @@ alert("hello!");
 
 These functions, `document.querySelector` and `alert`, are built into the browser.
 
-If you see something which looks like a variable name, but it's followed by parentheses— `()` —it is likely a function. Functions often take {{Glossary("Argument", "arguments")}}: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
+If you see something which looks like a variable name, but it's followed by parentheses— `()` —it is likely a function. Functions often take [arguments](https://developer.mozilla.org/en-US/docs/Glossary/Argument): bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
 
 For example, the `alert()` function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.
 
@@ -323,11 +325,11 @@ multiply(20, 20);
 multiply(0.5, 3);
 ```
 
-> **Note:** The [`return`](/en-US/docs/Web/JavaScript/Reference/Statements/return) statement tells the browser to return the `result` variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable {{Glossary("Scope", "scoping")}}. (Read more about [variable scoping](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope).)
+> **Note:** The [`return`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return) statement tells the browser to return the `result` variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable [scoping](https://developer.mozilla.org/en-US/docs/Glossary/Scope). (Read more about [variable scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope).)
 
 ### Events
 
-Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the [click event](/en-US/docs/Web/API/Element/click_event), which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
+Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the [click event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event), which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
 
 ```js
 document.querySelector("html").addEventListener("click", function () {
@@ -336,7 +338,7 @@ document.querySelector("html").addEventListener("click", function () {
 ```
 
 There are a number of ways to attach an event handler to an element.
-Here we select the {{htmlelement("html")}} element. We then call its [`addEventListener()`](/en-US/docs/Web/API/EventTarget/addEventListener) function, passing in the name of the event to listen to (`'click'`) and a function to run when the event happens.
+Here we select the [`<html>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) element. We then call its [`addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) function, passing in the name of the event to listen to (`'click'`) and a function to run when the event happens.
 
 The function we just passed to `addEventListener()` here is called an _anonymous function_, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an _arrow function_.
 An arrow function uses `() =>` instead of `function ()`:
@@ -377,19 +379,19 @@ In this section, you will learn how to use JavaScript and DOM API features to al
 
 5. Save all files and load `index.html` in the browser. Now when you click the image, it should change to the other one.
 
-This is what happened. You stored a reference to your {{htmlelement("img")}} element in `myImage`. Next, you made its `onclick` event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:
+This is what happened. You stored a reference to your [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element in `myImage`. Next, you made its `onclick` event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:
 
 1. The code retrieves the value of the image's `src` attribute.
 2. The code uses a conditional to check if the `src` value is equal to the path of the original image:
 
-   1. If it is, the code changes the `src` value to the path of the second image, forcing the other image to be loaded inside the {{htmlelement("img")}} element.
+   1. If it is, the code changes the `src` value to the path of the second image, forcing the other image to be loaded inside the [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element.
    2. If it isn't (meaning it must already have changed), the `src` value swaps back to the original image path, to the original state.
 
 ### Adding a personalized welcome message
 
 Next, let's change the page title to a personalized welcome message when the user first visits the site. This welcome message will persist. Should the user leave the site and return later, we will save the message using the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API). We will also include an option to change the user, and therefore, the welcome message.
 
-1. In `index.html`, add the following line just before the {{htmlelement("script")}} element:
+1. In `index.html`, add the following line just before the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element:
 
    ```html
    <button>Change user</button>
@@ -437,7 +439,7 @@ Next, let's change the page title to a personalized welcome message when the use
 
 ### A user name of null?
 
-When you run the example and get the dialog box that prompts you to enter your user name, try pressing the _Cancel_ button. You should end up with a title that reads _Mozilla is cool, null_. This happens because—when you cancel the prompt—the value is set as [`null`](/en-US/docs/Web/JavaScript/Reference/Operators/null). _Null_ is a special value in JavaScript that refers to the absence of a value.
+When you run the example and get the dialog box that prompts you to enter your user name, try pressing the _Cancel_ button. You should end up with a title that reads _Mozilla is cool, null_. This happens because—when you cancel the prompt—the value is set as [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null). _Null_ is a special value in JavaScript that refers to the absence of a value.
 
 Also, try clicking _OK_ without entering a name. You should end up with a title that reads _Mozilla is cool,_ for fairly obvious reasons.
 
@@ -461,18 +463,11 @@ In human language, this means: If `myName` has no value, run `setUserName()` aga
 
 If you have followed all the instructions in this article, you should end up with a page that looks something like the image below. You can also [view our version](https://mdn.github.io/beginner-html-site-scripted/).
 
-![Final look of HTML page after creating elements: a header, large centered logo, content, and a button](website-screen-scripted.png)
+![Final look of HTML page after creating elements: a header, large centered logo, content, and a button](assets/website-screen-scripted.png)
 
 If you get stuck, you can compare your work with our [finished example code on GitHub](https://github.com/mdn/beginner-html-site-scripted/blob/gh-pages/scripts/main.js).
 
 We have just scratched the surface of JavaScript. If you enjoyed playing, and wish to go further, take advantage of the resources listed below.
-
-## See also
-
-- [Dynamic client-side scripting with JavaScript](/en-US/docs/Learn/JavaScript)
-  - : Dive into JavaScript in much more detail.
-- [Learn JavaScript](https://learnjavascript.online/)
-  - : This is an excellent resource for aspiring web developers! Learn JavaScript in an interactive environment, with short lessons and interactive tests, guided by an automated assessment. The first 40 lessons are free. The complete course is available for a small one-time payment.
 
 ### Sources and Attributions
 
