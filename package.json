@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "yari:download": "node tools/yari.download.js"
+    "yari:download": "node tools/yari.download.js",
+    "yari:parse": "node tools/yari.parser.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
