@@ -1,6 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks } = require("./yari.parser");
+const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
 
 test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
@@ -94,5 +94,16 @@ test("Replacing {{HTTPStatus}} with links", ()=>{
   const input = `lorem ipsum {{HTTPStatus("404", "404 Not Found")}} lorem ipsum`;
   const output = "lorem ipsum [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) lorem ipsum";
   equal(parseHTTPStatus(input), output);
+
+})
+
+test("Replacing {{domxref}}", ()=>{
+
+  const input1 = `lorem ipsum {{domxref("Document.querySelector", "querySelector()")}} lorem ipsum`;
+  const input2 = `lorem ipsum {{domxref("Node.textContent", "textContent")}} lorem ipsum`; 
+  const output1 = `lorem ipsum [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) lorem ipsum`;
+  const output2 = `lorem ipsum [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) lorem ipsum`; 
+  equal( output1, replaceDOMXrefLinks(input1) );
+  equal( output2, replaceDOMXrefLinks(input2) );
 
 })
