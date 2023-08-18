@@ -1,41 +1,46 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
-const { parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm } = require("./yari.parser");
+const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
 
-test("Test #1", () => {
+test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
   const output = parseYariDynamicContent(input);
   equal(output, "[XML](https://developer.mozilla.org/en-US/docs/Glossary/XML)");
 });
 
-test("Test #2", () => {
+test('Parsing {{glossary("term")}}', () => {
+  
   const input = `{{glossary("HTML")}}`;
   const output = parseYariDynamicContent(input);
   equal(output, "[HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)");
+
+  const input2 = `{{Glossary("browser")}}`;
+  const output2 = parseYariDynamicContent(input2);
+  equal(output2, "[browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser)");
+
 });
 
-test("Test #3", () => {
+test('Parsing {{glossary("1", "2")}}', () => {
   const input = `{{glossary("attribute", "attributes")}}`;
   const output = parseYariDynamicContent(input);
   equal(output, "[attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute)");
+
+  const input2 = `{{glossary("void element", "void elements")}}`;
+  const output2 = parseYariDynamicContent(input2);
+  equal(output2, "[void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)");
+
+  const input3 = `{{Glossary("tag", "tags")}}`;
+  const output3 = parseYariDynamicContent(input3);
+  equal(output3, "[tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag)");
+
 });
 
-test("Test #4", () => {
-  const input = `{{glossary("void element", "void elements")}}`;
-  const output = parseYariDynamicContent(input);
-  equal(output, "[void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)");
-});
+test("Parsing <tag>{{Glossary()}}</tag>", ()=>{
 
-test("Test #5", () => {
-  const input = `{{Glossary("tag", "tags")}}`;
-  const output = parseYariDynamicContent(input);
-  equal(output, "[tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag)");
-});
+  const input = `<tr><th scope="row">{{Glossary("String")}}</th></tr>`;
+  const output = `<tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></th></tr>`;
+  equal( output, replaceHTMLGlossaryLinks(input) );
 
-test("Test #6", () => {
-  const input = `{{Glossary("browser")}}`;
-  const output = parseYariDynamicContent(input);
-  equal(output, "[browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser)");
 });
 
 test("Replacing MDN relative links with absolute URLs", () => {
@@ -77,7 +82,28 @@ test("Replacing {{htmlelement}} with links", ()=>{
 })
 
 test("Replacing {{cssxref}} with links", ()=>{
+
   const input = `lorem ipsum {{cssxref("width")}} lorem ipsum`;
   const output = "lorem ipsum [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) lorem ipsum";
   equal(parseCSSTerm(input), output);
+
+})
+
+test("Replacing {{HTTPStatus}} with links", ()=>{
+
+  const input = `lorem ipsum {{HTTPStatus("404", "404 Not Found")}} lorem ipsum`;
+  const output = "lorem ipsum [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) lorem ipsum";
+  equal(parseHTTPStatus(input), output);
+
+})
+
+test("Replacing {{domxref}}", ()=>{
+
+  const input1 = `lorem ipsum {{domxref("Document.querySelector", "querySelector()")}} lorem ipsum`;
+  const input2 = `lorem ipsum {{domxref("Node.textContent", "textContent")}} lorem ipsum`; 
+  const output1 = `lorem ipsum [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) lorem ipsum`;
+  const output2 = `lorem ipsum [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) lorem ipsum`; 
+  equal( output1, replaceDOMXrefLinks(input1) );
+  equal( output2, replaceDOMXrefLinks(input2) );
+
 })

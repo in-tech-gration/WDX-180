@@ -31,7 +31,7 @@ Our main channel of communication is [Slack](https://intechgration.slack.com). I
 
 We encourage you to use the [Web version](https://slack.com/signin#/signin) of Slack on your PC/laptop and also have it installed on your smartphone. It's available for both [Android](https://play.google.com/store/apps/details?id=com.Slack) and [iOS](https://apps.apple.com/app/slack-app/id618783545?ls=1) devices.
 
-In order to learn more about Slack and the various versions (mobile, desktop, web), scroll down to the [Software](#Software) section.
+In order to learn more about Slack and the various versions (mobile, desktop, web), scroll down to the [Software](#software) section.
 
 **Registered students** also have the opportunity to schedule one 30~45min call each week with an instructor.
 
@@ -135,6 +135,13 @@ _(Work in progress)_
     - Use the [rubber duck technique](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
   
   Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md).
+
+## Who's Involved
+
+- [**Kostas Minaidis** / Technical Curriculum Developer](https://www.linkedin.com/in/kostas-minaidis/)
+- [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
+- [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)
+- [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
 
 ## Contribute
 
