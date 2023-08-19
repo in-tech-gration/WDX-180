@@ -4,6 +4,15 @@ title: What is JavaScript?
 
 # What is JavaScript 
 
+**Prerequisites:**
+
+- Basic computer literacy, a basic understanding of HTML and CSS.
+
+**Objective:**
+
+- To gain familiarity with what JavaScript is, what it can do, and how it
+        fits into a website.
+
 _(Updated: 19/08/2023)_
 
 JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.
@@ -29,116 +38,45 @@ The section below introduces some aspects of the core language and offers an opp
 
 ---
 
-JavaScript (or "JS") is a programming language used most often for dynamic client-side scripts on webpages, but it is also often used on the [server](https://developer.mozilla.org/en-US/docs/Glossary/Server)-side, using a runtime such as [Node.js](https://nodejs.org/).
+JavaScript (or "JS") is a programming language used most often for dynamic and interactive content on webpages, but it is also often used on the **server***-side, using software such as [Node.js](https://nodejs.org/).
 
-> A server is a software or hardware offering a service to a user, usually referred to as client. A hardware server is a shared computer on a network, usually powerful and housed in a data center. A software server (often running on a hardware server) is a program that provides services to client programs or a {{glossary("UI","user interface")}} to human clients.
-> 
-> Services are provided generally over local area networks or wide area networks such as the internet. A client program and server program traditionally connect by passing messages encoded using a {{glossary("protocol")}} over an {{glossary("API")}}.
+> A [**server**](../../../../resources/glossary/Server.md) is a software or hardware offering a service to a user, usually referred to as client. Services are provided generally over local area networks or wide area networks such as the internet.
 > 
 > For example:
 > 
-> An Internet-connected Web server is sending a {{glossary("HTML")}} file to your browser software so that you can read this page
-Local area network server for file, name, mail, print, and fax
-Minicomputers, mainframes, and super computers at data centers
-
+> An Internet-connected Web server is sending a [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) file to your browser software so that you can read this page
 
 JavaScript **should not** be confused with the [Java programming language](<https://en.wikipedia.org/wiki/Java_(programming_language)>). Although _"Java"_ and _"JavaScript"_ are trademarks (or registered trademarks) of Oracle in the U.S. and other countries, the two programming languages are significantly different in their syntax, semantics, and use cases.
 
-JavaScript is primarily used in the browser, enabling developers to manipulate webpage content through the [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), manipulate data with [AJAX](https://developer.mozilla.org/en-US/docs/Glossary/AJAX) and [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB), draw graphics with [canvas](https://developer.mozilla.org/en-US/docs/Glossary/Canvas), interact with the device running the browser through various [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API), and more. JavaScript is one of the world's most commonly-used languages, owing to the recent growth and performance improvement of [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API) available in browsers.
+JavaScript is primarily used in the browser, enabling developers to manipulate webpage content and data, draw graphics, interact with the device running the browser through various [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API), and more. JavaScript is one of the world's most commonly-used languages, owing to the recent growth and performance improvement of [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API) available in browsers.
 
 ## Origins and History
 
 Conceived as a server-side language by Brendan Eich (then employed by the Netscape Corporation), JavaScript soon came to Netscape Navigator 2.0 in September 1995. JavaScript enjoyed immediate success and [Internet Explorer 3.0](https://developer.mozilla.org/en-US/docs/Glossary/Microsoft_Internet_Explorer) introduced JavaScript support under the name JScript in August 1996.
 
-In November 1996, Netscape began working with Ecma International to make JavaScript an industry standard. Since then, the standardized JavaScript is called ECMAScript and specified under ECMA-262, whose latest (twelfth, ES2021) edition is available as of June 2021.
+In November 1996, Netscape began working with [Ecma International](https://www.ecma-international.org/) to make JavaScript an industry standard. Since then, the standardized JavaScript is called ECMAScript and specified under ECMA-262, whose latest (twelfth, ES2021) edition is available as of June 2021.
 
-Recently, JavaScript's popularity has expanded even further through the successful [Node.js](https://nodejs.org/) platform—the most popular cross-platform JavaScript runtime environment outside the browser. Node.js - built using [Chrome's V8 JavaScript Engine](<https://en.wikipedia.org/wiki/V8_(JavaScript_engine)>) - allows developers to use JavaScript as a scripting language to automate things on a computer and build fully functional [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) and [WebSockets](https://developer.mozilla.org/en-US/docs/Glossary/WebSockets) servers.
-
----
-
-Welcome to the MDN beginner's JavaScript course!
-In this article we will look at JavaScript from a high level, answering questions such as "What is it?" and "What can you do with it?", and making sure you are comfortable with JavaScript's purpose.
-
-<table>
-  <tbody>
-    <tr>
-      <th scope="row">Prerequisites:</th>
-      <td>Basic computer literacy, a basic understanding of HTML and CSS.</td>
-    </tr>
-    <tr>
-      <th scope="row">Objective:</th>
-      <td>
-        To gain familiarity with what JavaScript is, what it can do, and how it
-        fits into a website.
-      </td>
-    </tr>
-  </tbody>
-</table>
+Recently, JavaScript's popularity has expanded even further through the successful [Node.js](https://nodejs.org/) platform—the most popular cross-platform JavaScript runtime environment outside the browser. Node.js - built using [Chrome's V8 JavaScript Engine](<https://en.wikipedia.org/wiki/V8_(JavaScript_engine)>) - allows developers to use JavaScript as a scripting language to automate things on a computer and build fully functional servers.
 
 ## A high-level definition
 
 JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
-It is the third layer of the layer cake of standard web technologies, two of which ([HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)) we have covered in much more detail in other parts of the Learning Area.
-
-![The three layers of standard web technologies; HTML, CSS and JavaScript](assets/cake.png)
+It is the third pillar of the standard web technologies, along with ([HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)).
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.
+
 - [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS) is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.
+
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
-The three layers build on top of one another nicely. Let's take a simple text label as an example. We can mark it up using HTML to give it structure and purpose:
-
-```html
-<p>Player 1: Chris</p>
-```
-
-![Paragraph of Player 1: Chris as plain text](assets/just-html.png)
-
-Then we can add some CSS into the mix to get it looking nice:
-
-```css
-p {
-  font-family: "helvetica neue", helvetica, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  border: 2px solid rgb(0 0 200 / 0.6);
-  background: rgb(0 0 200 / 0.6);
-  color: rgb(255 255 255 / 1);
-  box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
-  border-radius: 10px;
-  padding: 3px 10px;
-  display: inline-block;
-  cursor: pointer;
-}
-```
-
-![Styled paragraph of Player 1: Chris](assets/html-and-css.png)
-
-And finally, we can add some JavaScript to implement dynamic behavior:
-
-```js
-const para = document.querySelector("p");
-
-para.addEventListener("click", updateName);
-
-function updateName() {
-  const name = prompt("Enter a new name");
-  para.textContent = `Player 1: ${name}`;
-}
-```
-
-{{ EmbedLiveSample('A_high-level_definition', '100%', 80) }}
-
-Try clicking on this last version of the text label to see what happens (note also that you can find this demo on GitHub — see the [source code](https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/what-is-js/javascript-label.html), or [run it live](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/what-is-js/javascript-label.html))!
-
-JavaScript can do a lot more than that — let's explore what in more detail.
+The three layers build on top of one another nicely. 
 
 ## So what can it really do?
 
-The core client-side JavaScript language consists of some common programming features that allow you to do things like:
+The **core client-side JavaScript language** consists of some common programming features that allow you to do things like:
 
-- Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called `name`.
+- Store useful values inside variables. 
+
 - Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the `name` variable to create the complete text label, e.g. "Player 1: Chris".
 - Running code in response to certain events occurring on a web page. We used a [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event/undefined) event in our example above to detect when the label is clicked and then run the code that updates the text label.
 - And much more!

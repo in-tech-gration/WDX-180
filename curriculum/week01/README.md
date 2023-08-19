@@ -1,8 +1,8 @@
-## Week 1
+# Week 1
 
-### Week 1 - Day 1 - Onboarding & Basics of Computing
+## Week 1 - Day 1 - Onboarding & Basics of Computing
 
-  #### Schedule
+  ### Schedule
 
   - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
@@ -10,7 +10,7 @@
   - Exercises
   - [Extra Resources](#extra-resources)
 
-  #### Study Plan
+  ### Study Plan
 
   Watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
 
@@ -75,19 +75,19 @@
 
   - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/README.md)
 
-  #### Exercises
+  ### Exercises
 
-  #### [Extra Resources](EXTRAS.md#day-01)
+  ### [Extra Resources](EXTRAS.md#day-01)
 
-### Week 1 - Day 2 - How the Internet & the World Wide Web works
+## Week 1 - Day 2 - How the Internet & the World Wide Web works
 
-  #### Schedule
+  ### Schedule
 
   - [Study](#study-plan-1)
   - Exercises
   - [Extra Resources](#extra-resources-1)
 
-  #### Study Plan
+  ### Study Plan
 
   Watch the following videos from the [How the Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7) YouTube Playlist.
 
@@ -191,15 +191,15 @@
     - Duration: 5min
     - Captions: Yes
 
-  #### [Extra Resources](EXTRAS.md#day-02)
+  ### [Extra Resources](EXTRAS.md#day-02)
 
-### Week 1 - Day 3 - HTML & Markdown
+## Week 1 - Day 3 - HTML & Markdown
 
-  #### Schedule
+  ### Schedule
 
   - [Study](#study-plan-2)
 
-  #### Study Plan
+  ### Study Plan
 
   **What you'll learn: Getting started with the web: HTML**
 
@@ -221,9 +221,9 @@
   > https://github.com/commonmark/commonmark-web [STAR]
   > ? https://github.com/commonmark/commonmark.js  
 
-  #### Exercises
+  ### Exercises
 
-  #### [Extra Resources](EXTRAS.md#day-03)
+  ### [Extra Resources](EXTRAS.md#day-03)
 
   ---
 
@@ -234,13 +234,13 @@
   - **MDN:**
     - [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
-### Week 1 - Day 4 - CSS
+## Week 1 - Day 4 - CSS
 
-  #### Schedule
+  ### Schedule
 
   - [Study](#study-plan-3)
 
-  #### Study Plan
+  ### Study Plan
 
   **What you'll learn:**
 
@@ -250,30 +250,41 @@
   - [Read: **CSS Basics**](week01/resources/CSS_Basics/README.md)
   - [Read: **Publishing your website**](week01/resources/Publishing%20your%20website/README.md)
 
-  #### Exercises
+  ### Exercises
 
-  #### [Extra Resources](week01/EXTRAS.md#day-04)
+  ### [Extra Resources](week01/EXTRAS.md#day-04)
 
-### Week 1 - Day 5 - JavaScript
+## Week 1 - Day 5 - JavaScript
 
-  #### Schedule
+  ### Schedule
 
   - [Study](#study-plan-4)
 
-  #### Study Plan
+  ### Study Plan
 
   - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
   <!-- - [Read: **JS Basics**](resources/JavaScript_Basics/README.md) -->
 
-  #### Exercises
+  ### Summary
 
-  #### [Extra Resources](EXTRAS.md#day-05)
+  As you are embarking on your journey to harness the power of computers through programming and become a software developer, you must carry the following things along your journey and always remind to yourself that:
+
+  - ***"The best part of programming is finding mistakes."***
+  - ***"You will fail often, and it will be frustrating."***
+  - ***"Never be afraid to mess around and experiment."***
+
+  ### Exercises
+
+  ### [Extra Resources](EXTRAS.md#day-05)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
----
+## Sources and Attributions
 
-### Weekend Suggestions
+- [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
 
----
+## Week 1 - Weekend Suggestions
+
+If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
 

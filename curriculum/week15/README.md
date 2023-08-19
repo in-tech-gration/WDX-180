@@ -1,40 +1,37 @@
-## Week 15 | Algorithms
+# Week 15 | Algorithms
 
-### Week 15 - Day 1 
+## Week 15 - Day 1 
 
-  #### Schedule
+  ### Schedule
 
-  #### Extra Resources
+  ### Extra Resources
 
-### Week 15 - Day 2 
+## Week 15 - Day 2 
 
-  #### Schedule
+  ### Schedule
 
-  #### Extra Resources
+  ### Extra Resources
 
-### Week 15 - Day 3 
+## Week 15 - Day 3 
 
-  #### Schedule
+  ### Schedule
 
-  #### Extra Resources
+  ### Extra Resources
 
-### Week 15 - Day 4 
+## Week 15 - Day 4 
 
-  #### Schedule
+  ### Schedule
 
-  #### Extra Resources
+  ### Extra Resources
 
-### Week 15 - Day 5 
+## Week 15 - Day 5 
 
-  #### Schedule
+  ### Schedule
 
   - [Extra Resources](#extra-resources-4)
 
-  #### [Extra Resources](week15/EXTRAS.md)
+  ### [Extra Resources](week15/EXTRAS.md)
 
----
+## Week 15 - Weekend Suggestions
 
-### Weekend Suggestions
-
----
-
+If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
