@@ -106,6 +106,25 @@ export default function Sidebar() {
               <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">Pages</span>
             </h3>
             <ul className="mt-3">
+              
+              {/* Calendar */}
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${segments.includes('calendar') && 'bg-slate-900'}`}>
+                <SidebarLink href="/calendar">
+                  <div className="flex items-center">
+                    <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                      <path className={`fill-current ${segments.includes('calendar') ? 'text-indigo-500' : 'text-slate-600'}`} d="M1 3h22v20H1z" />
+                      <path
+                        className={`fill-current ${segments.includes('calendar') ? 'text-indigo-300' : 'text-slate-400'}`}
+                        d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z"
+                      />
+                    </svg>
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Calendar
+                    </span>
+                  </div>
+                </SidebarLink>
+              </li>
+
               {/* Dashboard */}
               <SidebarLinkGroup open={segments.includes('dashboard')}>
                 {(handleClick, open) => {
@@ -654,23 +673,6 @@ export default function Sidebar() {
                       />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Inbox</span>
-                  </div>
-                </SidebarLink>
-              </li>
-              {/* Calendar */}
-              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${segments.includes('calendar') && 'bg-slate-900'}`}>
-                <SidebarLink href="/calendar">
-                  <div className="flex items-center">
-                    <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                      <path className={`fill-current ${segments.includes('calendar') ? 'text-indigo-500' : 'text-slate-600'}`} d="M1 3h22v20H1z" />
-                      <path
-                        className={`fill-current ${segments.includes('calendar') ? 'text-indigo-300' : 'text-slate-400'}`}
-                        d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z"
-                      />
-                    </svg>
-                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Calendar
-                    </span>
                   </div>
                 </SidebarLink>
               </li>

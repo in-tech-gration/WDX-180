@@ -10,6 +10,134 @@ import CalendarTitle from './title'
 
 import Title from "@/components/ui/title";
 
+const progressSteps = [
+  {
+    icon: "calendar",
+    title: "Day 1",
+    subtitle: "Computing",
+    content: "Lorem Ipsum",
+    terms: ["Computing", "Binary", "Hexadecimal", "Compression"]
+  },
+  {
+    icon: "calendar",
+    title: "Day 2",
+    subtitle: "Internet & the Web",
+    content: "Lorem Ipsum",
+    terms: ["Internet", "LAN", "WAN", "WWW"]
+  },
+  {
+    icon: "calendar",
+    title: "Day 3",
+    subtitle: "HTML",
+    content: "Lorem Ipsum",
+    terms: ["HTML", "HTTP", "Elements", "Tags"]
+  },
+  {
+    icon: "calendar",
+    title: "Day 4",
+    subtitle: "CSS",
+    content: "Lorem Ipsum",
+    terms: [ "One", "Two", "Three", "Four" ]
+  },
+  {
+    icon: "calendar",
+    title: "Day 5",
+    subtitle: "JavaScript",
+    content: "Lorem Ipsum",
+    terms: [ "One", "Two", "Three", "Four" ]
+  }
+]
+
+type ProgressStep = {
+  icon: string
+  title: string
+  subtitle: string
+  content: string,
+  terms?: string[]
+}
+
+type IProgress = {
+  data: ProgressStep[]
+}
+
+type IProgressIcons = {
+  [key: string]: JSX.Element
+}
+
+type ITermBadge = {
+  term: string
+}
+
+function TermBadge({ term }: ITermBadge) {
+  return (
+    <div className="text-sm inline-flex font-medium bg-indigo-100 dark:bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 rounded-full text-center px-4 py-1 m-1 cursor-pointer dark:hover:bg-indigo-500 dark:hover:text-white">{term}</div>
+  )
+}
+
+/**
+ * Source: https://flowbite.com/docs/components/timeline/#stepper-timeline
+ * @param data 
+ * @returns JSX.Element
+ */
+function Progress({ data }: IProgress) {
+
+  const icons: IProgressIcons = {
+    calendar: (
+      <svg
+        className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+      </svg>
+    )
+  }
+
+  return (
+    <section className="wdx-progress">
+      <Title level={2}>Student Progress</Title>
+      <Title level={3}>Week 1</Title>
+      <ol className="items-center sm:flex">
+        {data.map(step => {
+          return (
+            <li className="relative mb-6 sm:mb-0 flex-1">
+              <div className="flex items-center">
+                <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                  {icons[step.icon]}
+                </div>
+                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+              </div>
+              <div className="mt-3 sm:pr-8">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  {step.title}
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  {step.subtitle}
+                </time>
+                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                  {step.content}
+                </p>
+                {step.terms && (
+                  <p className="mt-2 -ml-2">
+                    {
+                      step.terms.map(term => {
+                        return (<TermBadge term={term} />)
+                      })
+                    }
+                  </p>
+                )}
+              </div>
+            </li>
+          )
+        })}
+      </ol>
+    </section>
+
+  )
+}
+
 export default function Calendar() {
 
   // Some dummy events data
@@ -173,92 +301,7 @@ export default function Calendar() {
     <CalendarProvider>
       <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
 
-        <div className="wdx-progress">
-          <Title>Student Progress</Title>
-          <ol className="items-center sm:flex">
-            <li className="relative mb-6 sm:mb-0">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <svg
-                    className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                  </svg>
-                </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
-              </div>
-              <div className="mt-3 sm:pr-8">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Library v1.0.0
-                </h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  Released on December 2, 2021
-                </time>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                  Get started with dozens of web components and interactive elements.
-                </p>
-              </div>
-            </li>
-            <li className="relative mb-6 sm:mb-0">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <svg
-                    className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                  </svg>
-                </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
-              </div>
-              <div className="mt-3 sm:pr-8">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Library v1.2.0
-                </h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  Released on December 23, 2021
-                </time>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                  Get started with dozens of web components and interactive elements.
-                </p>
-              </div>
-            </li>
-            <li className="relative mb-6 sm:mb-0">
-              <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                  <svg
-                    className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                  </svg>
-                </div>
-                <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
-              </div>
-              <div className="mt-3 sm:pr-8">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  Flowbite Library v1.3.0
-                </h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  Released on January 5, 2022
-                </time>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                  Get started with dozens of web components and interactive elements.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
+        <Progress data={progressSteps} />
 
         <hr className="my-6 border-t border-slate-200 dark:border-slate-700" />
 
