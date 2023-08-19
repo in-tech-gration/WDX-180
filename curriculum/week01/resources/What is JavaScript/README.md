@@ -77,8 +77,10 @@ The **core client-side JavaScript language** consists of some common programming
 
 - Store useful values inside variables. 
 
-- Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the `name` variable to create the complete text label, e.g. "Player 1: Chris".
-- Running code in response to certain events occurring on a web page. We used a [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event/undefined) event in our example above to detect when the label is clicked and then run the code that updates the text label.
+- Operations on pieces of text (known as "strings" in programming). For example, turning lowercase `text` into uppercase `TEXT`, replacing specific characters or series of characters, and more.
+
+- Running code in response to certain events occurring on a web page. For example, we can run some code when the user has clicked on a button or a specific part of the web page.
+
 - And much more!
 
 What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called **Application Programming Interfaces** (**APIs**) provide you with extra superpowers to use in your JavaScript code.

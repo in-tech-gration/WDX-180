@@ -100,10 +100,17 @@ test("Replacing {{HTTPStatus}} with links", ()=>{
 test("Replacing {{domxref}}", ()=>{
 
   const input1 = `lorem ipsum {{domxref("Document.querySelector", "querySelector()")}} lorem ipsum`;
-  const input2 = `lorem ipsum {{domxref("Node.textContent", "textContent")}} lorem ipsum`; 
   const output1 = `lorem ipsum [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) lorem ipsum`;
-  const output2 = `lorem ipsum [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) lorem ipsum`; 
   equal( output1, replaceDOMXrefLinks(input1) );
+  
+  const input2 = `lorem ipsum {{domxref("Node.textContent", "textContent")}} lorem ipsum`; 
+  const output2 = `lorem ipsum [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) lorem ipsum`; 
+
   equal( output2, replaceDOMXrefLinks(input2) );
+
+  const input3 = `lorem ipsum {{domxref("Element/click_event", "click")}} lorem ipsum`;
+  const output3 = `lorem ipsum [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) lorem ipsum`; 
+
+  equal( output3, replaceDOMXrefLinks(input3) );
 
 })
