@@ -55,7 +55,7 @@ JavaScript is primarily used in the browser, enabling developers to manipulate w
 
 Conceived as a server-side language by Brendan Eich (then employed by the Netscape Corporation), JavaScript soon came to Netscape Navigator 2.0 in September 1995. JavaScript enjoyed immediate success and [Internet Explorer 3.0](https://developer.mozilla.org/en-US/docs/Glossary/Microsoft_Internet_Explorer) introduced JavaScript support under the name JScript in August 1996.
 
-In November 1996, Netscape began working with [Ecma International](https://www.ecma-international.org/) to make JavaScript an industry standard. Since then, the standardized JavaScript is called ECMAScript and specified under ECMA-262, whose latest (twelfth, ES2021) edition is available as of June 2021.
+In November 1996, Netscape began working with [Ecma International](https://www.ecma-international.org/) to make JavaScript an industry standard. Since then, the standardized JavaScript is called **ECMAScript** and specified under ECMA-262, whose latest (twelfth, ES2021) edition is available as of June 2021.
 
 Recently, JavaScript's popularity has expanded even further through the successful [Node.js](https://nodejs.org/) platform—the most popular cross-platform JavaScript runtime environment outside the browser. Node.js - built using [Chrome's V8 JavaScript Engine](<https://en.wikipedia.org/wiki/V8_(JavaScript_engine)>) - allows developers to use JavaScript as a scripting language to automate things on a computer and build fully functional servers.
 
@@ -160,6 +160,44 @@ The meaning is slightly different in the two contexts, but related, and both app
 
 A web page with no dynamically updating content is referred to as **static** — it just shows the same content all the time.
 
+## Getting started with JavaScript
+
+A very useful tool for exploring JavaScript is the JavaScript Console (sometimes called the Web Console, or just the console): this is a tool which enables you to enter JavaScript and run it in the current page.
+
+The screenshots here show the [Firefox Web Console](https://firefox-source-docs.mozilla.org/devtools-user/web_console/), but all modern browsers ship with a console that works in a similar way.
+
+### Opening the console
+
+The exact instructions for opening the console vary from one browser to another:
+
+- [Opening the console in Firefox](https://firefox-source-docs.mozilla.org/devtools-user/web_console/#opening-the-web-console)
+- [Opening the console in Chrome](https://developer.chrome.com/docs/devtools/open)
+- [Opening the console in Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
+
+### Entering and running JavaScript
+
+The console appears at the bottom of the browser window. Along the bottom of the console is an input line that you can use to enter JavaScript, and the output appears in the panel above:
+
+![A browser window with the web console open at the bottom, containing two lines of input and output. Text can be entered below that.](assets/2019-04-04_00-15-29.png)
+
+### Multi-line input in the console
+
+By default, if you press <kbd>Enter</kbd> (or <kbd>Return</kbd>, depending on your keyboard) after entering a line of code, then the string you typed is executed. To enter multi-line input:
+
+- If the string you typed was incomplete (for example, you typed `function foo() {`) then the console will treat <kbd>Enter</kbd> as a line break, and let you type another line.
+
+- If you hold down <kbd>Shift</kbd> while pressing <kbd>Enter</kbd>, then the console will treat this as a line break, and let you type another line.
+
+- In Firefox only, you can activate [multi-line input mode](https://firefox-source-docs.mozilla.org/devtools-user/web_console/the_command_line_interpreter/index.html#multi-line-mode), in which you can enter multiple lines in a mini-editor, then run the whole thing when you are ready.
+
+To get started with writing JavaScript, open the console, copy the following code, and paste it in at the prompt:
+
+```js
+alert(`Hello World!`);
+```
+
+Press <kbd>Enter</kbd> to watch it unfold in your browser!
+
 ## How do you add JavaScript to your page?
 
 JavaScript is applied to your HTML page in a similar manner to CSS.
@@ -205,87 +243,6 @@ There are two types:
 > **Note:** In general more comments are usually better than less, but you should be careful if you find yourself adding lots of comments to explain what variables are (your variable names perhaps should be more intuitive), or to explain very simple operations (maybe your code is overcomplicated).
 
 ## Summary
-
----
-
-This chapter introduces JavaScript and discusses some of its fundamental concepts.
-
-## What is JavaScript?
-
-JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
-
-JavaScript contains a standard library of objects, such as `Array`, `Date`, and `Math`, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-
-- _Client-side JavaScript_ extends the core language by supplying objects to control a browser and its _Document Object Model_ (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
-- _Server-side JavaScript_ extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
-
-This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests sent by code executed in the browser.
-
-## JavaScript and the ECMAScript specification
-
-JavaScript is standardized at [Ecma International](https://www.ecma-international.org/) — the European association for standardizing information and communication systems (ECMA was formerly an acronym for the European Computer Manufacturers Association) to deliver a standardized, international programming language based on JavaScript. This standardized version of JavaScript, called ECMAScript, behaves the same way in all applications that support the standard. Companies can use the open standard language to develop their implementation of JavaScript. The ECMAScript standard is documented in the ECMA-262 specification.
-
-## Getting started with JavaScript
-
-To get started with JavaScript, all you need is a modern web browser. Recent versions of [Firefox](https://www.mozilla.org/en-CA/firefox/new/), [Chrome](https://www.google.com/chrome/index.html), [Microsoft Edge](https://www.microsoft.com/en-us/edge), and [Safari](https://www.apple.com/safari/) all support the features discussed in this guide.
-
-A very useful tool for exploring JavaScript is the JavaScript Console (sometimes called the Web Console, or just the console): this is a tool which enables you to enter JavaScript and run it in the current page.
-
-The screenshots here show the [Firefox Web Console](https://firefox-source-docs.mozilla.org/devtools-user/web_console/), but all modern browsers ship with a console that works in a similar way.
-
-### Opening the console
-
-The exact instructions for opening the console vary from one browser to another:
-
-- [Opening the console in Firefox](https://firefox-source-docs.mozilla.org/devtools-user/web_console/#opening-the-web-console)
-- [Opening the console in Chrome](https://developer.chrome.com/docs/devtools/open)
-- [Opening the console in Microsoft Edge](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
-
-### Entering and running JavaScript
-
-The console appears at the bottom of the browser window. Along the bottom of the console is an input line that you can use to enter JavaScript, and the output appears in the panel above:
-
-![A browser window with the web console open at the bottom, containing two lines of input and output. Text can be entered below that.](assets/2019-04-04_00-15-29.png)
-
-The console works the exact same way as `eval`: the last expression entered is returned. For the sake of simplicity, it can be imagined that every time something is entered into the console, it is actually surrounded by `console.log` around `eval`, like so:
-
-```js
-console.log(eval("3 + 5"));
-```
-
-### Multi-line input in the console
-
-By default, if you press <kbd>Enter</kbd> (or <kbd>Return</kbd>, depending on your keyboard) after entering a line of code, then the string you typed is executed. To enter multi-line input:
-
-- If the string you typed was incomplete (for example, you typed `function foo() {`) then the console will treat <kbd>Enter</kbd> as a line break, and let you type another line.
-- If you hold down <kbd>Shift</kbd> while pressing <kbd>Enter</kbd>, then the console will treat this as a line break, and let you type another line.
-- In Firefox only, you can activate [multi-line input mode](https://firefox-source-docs.mozilla.org/devtools-user/web_console/the_command_line_interpreter/index.html#multi-line-mode), in which you can enter multiple lines in a mini-editor, then run the whole thing when you are ready.
-
-To get started with writing JavaScript, open the console, copy the following code, and paste it in at the prompt:
-
-```js
-"use strict";
-/* Start of your code */
-function greetMe(yourName) {
-  alert(`Hello ${yourName}`);
-}
-
-greetMe("World");
-/* End of your code */
-```
-
-Press <kbd>Enter</kbd> to watch it unfold in your browser!
-
-## What's next
-
-In the following pages, this guide introduces you to the JavaScript syntax and language features, so that you will be able to write more complex applications.
-
-But for now, remember to always include the `(function(){"use strict";` before your code, and add `})();` to the end of your code. The [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) and [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) articles explain what those do, but for now they can be thought of as doing the following:
-
-1. Prevent semantics in JavaScript that trip up beginners.
-2. Prevent code snippets executed in the console from interacting with one another (e.g., having something created in one console execution being used for a different console execution).
-
-{{PreviousNext("Web/JavaScript/Guide", "Web/JavaScript/Guide/Grammar_and_types")}}
 
 ### Sources and Attributions
 
