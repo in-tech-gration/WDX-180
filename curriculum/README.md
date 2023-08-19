@@ -35,7 +35,7 @@ Once you've joined the course, you will be given access to a Google Spreadsheet 
 - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more](week16/README.md)
 - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](week17/README.md)
 - [**Week 18**: Node.js 1](week18/README.md)
-- [**Week 19**: NoSQL Databases & Docker](week19/README.md)
+- [**Week 19**: Node.js 2, NoSQL Databases & Docker](week19/README.md)
 - [**Week 20**: React 1](week20/README.md)
 - [**Week 21**: React 2, Firebase](week21/README.md)
 - [**Week 22**: React 3, Redux & Tech Interview](week22/README.md)
@@ -46,7 +46,7 @@ Once you've joined the course, you will be given access to a Google Spreadsheet 
 
 - [**Week 25**: JavaScript Advanced 1](week25/README.md)
 - [**Week 26**: JavaScript Advanced 2, TypeScript Advanced](week26/README.md)
-- [**Week 27**: Node.js 2 & Relational Databases](week27/README.md)
+- [**Week 27**: Node.js 3 & Relational Databases](week27/README.md)
 - [**Week 28**: Express.js, REST APIs & GraphQL](week28/README.md)
 - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](week29/README.md)
 - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](week30/README.md)

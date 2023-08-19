@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
+    "@types/fs-extra": "^11.0.1",
     "@types/react-flatpickr": "^3.8.8",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",

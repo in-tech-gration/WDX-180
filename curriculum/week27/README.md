@@ -1,4 +1,4 @@
-## Week 27 | Node.js 2 & Relational Databases
+## Week 27 | Node.js 3 & Relational Databases
 
 ### Week 27 - Day 1
 

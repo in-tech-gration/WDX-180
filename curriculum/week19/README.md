@@ -1,4 +1,4 @@
-## Week 19 | NoSQL Databases & Docker
+## Week 19 | Node.js 2, NoSQL Databases & Docker
 
 ### Week 19 - Day 1
 
