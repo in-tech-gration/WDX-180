@@ -29,19 +29,30 @@ The section below introduces some aspects of the core language and offers an opp
 
 ---
 
-JavaScript (or "JS") is a programming language used most often for dynamic client-side scripts on webpages, but it is also often used on the {{Glossary("Server","server")}}-side, using a runtime such as [Node.js](https://nodejs.org/).
+JavaScript (or "JS") is a programming language used most often for dynamic client-side scripts on webpages, but it is also often used on the [server](https://developer.mozilla.org/en-US/docs/Glossary/Server)-side, using a runtime such as [Node.js](https://nodejs.org/).
+
+> A server is a software or hardware offering a service to a user, usually referred to as client. A hardware server is a shared computer on a network, usually powerful and housed in a data center. A software server (often running on a hardware server) is a program that provides services to client programs or a {{glossary("UI","user interface")}} to human clients.
+> 
+> Services are provided generally over local area networks or wide area networks such as the internet. A client program and server program traditionally connect by passing messages encoded using a {{glossary("protocol")}} over an {{glossary("API")}}.
+> 
+> For example:
+> 
+> An Internet-connected Web server is sending a {{glossary("HTML")}} file to your browser software so that you can read this page
+Local area network server for file, name, mail, print, and fax
+Minicomputers, mainframes, and super computers at data centers
+
 
 JavaScript **should not** be confused with the [Java programming language](<https://en.wikipedia.org/wiki/Java_(programming_language)>). Although _"Java"_ and _"JavaScript"_ are trademarks (or registered trademarks) of Oracle in the U.S. and other countries, the two programming languages are significantly different in their syntax, semantics, and use cases.
 
-JavaScript is primarily used in the browser, enabling developers to manipulate webpage content through the {{Glossary("DOM")}}, manipulate data with {{Glossary("AJAX")}} and {{Glossary("IndexedDB")}}, draw graphics with {{Glossary("canvas")}}, interact with the device running the browser through various {{Glossary("API","APIs")}}, and more. JavaScript is one of the world's most commonly-used languages, owing to the recent growth and performance improvement of {{Glossary("API","APIs")}} available in browsers.
+JavaScript is primarily used in the browser, enabling developers to manipulate webpage content through the [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), manipulate data with [AJAX](https://developer.mozilla.org/en-US/docs/Glossary/AJAX) and [IndexedDB](https://developer.mozilla.org/en-US/docs/Glossary/IndexedDB), draw graphics with [canvas](https://developer.mozilla.org/en-US/docs/Glossary/Canvas), interact with the device running the browser through various [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API), and more. JavaScript is one of the world's most commonly-used languages, owing to the recent growth and performance improvement of [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API) available in browsers.
 
 ## Origins and History
 
-Conceived as a server-side language by Brendan Eich (then employed by the Netscape Corporation), JavaScript soon came to Netscape Navigator 2.0 in September 1995. JavaScript enjoyed immediate success and {{glossary("Microsoft Internet Explorer", "Internet Explorer 3.0")}} introduced JavaScript support under the name JScript in August 1996.
+Conceived as a server-side language by Brendan Eich (then employed by the Netscape Corporation), JavaScript soon came to Netscape Navigator 2.0 in September 1995. JavaScript enjoyed immediate success and [Internet Explorer 3.0](https://developer.mozilla.org/en-US/docs/Glossary/Microsoft_Internet_Explorer) introduced JavaScript support under the name JScript in August 1996.
 
 In November 1996, Netscape began working with Ecma International to make JavaScript an industry standard. Since then, the standardized JavaScript is called ECMAScript and specified under ECMA-262, whose latest (twelfth, ES2021) edition is available as of June 2021.
 
-Recently, JavaScript's popularity has expanded even further through the successful [Node.js](https://nodejs.org/) platform—the most popular cross-platform JavaScript runtime environment outside the browser. Node.js - built using [Chrome's V8 JavaScript Engine](<https://en.wikipedia.org/wiki/V8_(JavaScript_engine)>) - allows developers to use JavaScript as a scripting language to automate things on a computer and build fully functional {{Glossary("HTTP")}} and {{Glossary("WebSockets")}} servers.
+Recently, JavaScript's popularity has expanded even further through the successful [Node.js](https://nodejs.org/) platform—the most popular cross-platform JavaScript runtime environment outside the browser. Node.js - built using [Chrome's V8 JavaScript Engine](<https://en.wikipedia.org/wiki/V8_(JavaScript_engine)>) - allows developers to use JavaScript as a scripting language to automate things on a computer and build fully functional [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) and [WebSockets](https://developer.mozilla.org/en-US/docs/Glossary/WebSockets) servers.
 
 ---
 
@@ -67,13 +78,13 @@ In this article we will look at JavaScript from a high level, answering question
 ## A high-level definition
 
 JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
-It is the third layer of the layer cake of standard web technologies, two of which ([HTML](/en-US/docs/Learn/HTML) and [CSS](/en-US/docs/Learn/CSS)) we have covered in much more detail in other parts of the Learning Area.
+It is the third layer of the layer cake of standard web technologies, two of which ([HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)) we have covered in much more detail in other parts of the Learning Area.
 
-![The three layers of standard web technologies; HTML, CSS and JavaScript](cake.png)
+![The three layers of standard web technologies; HTML, CSS and JavaScript](assets/cake.png)
 
-- {{glossary("HTML")}} is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.
-- {{glossary("CSS")}} is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.
-- {{glossary("JavaScript")}} is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
+- [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.
+- [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS) is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
 The three layers build on top of one another nicely. Let's take a simple text label as an example. We can mark it up using HTML to give it structure and purpose:
 
@@ -81,7 +92,7 @@ The three layers build on top of one another nicely. Let's take a simple text la
 <p>Player 1: Chris</p>
 ```
 
-![Paragraph of Player 1: Chris as plain text](just-html.png)
+![Paragraph of Player 1: Chris as plain text](assets/just-html.png)
 
 Then we can add some CSS into the mix to get it looking nice:
 
@@ -102,7 +113,7 @@ p {
 }
 ```
 
-![Styled paragraph of Player 1: Chris](html-and-css.png)
+![Styled paragraph of Player 1: Chris](assets/html-and-css.png)
 
 And finally, we can add some JavaScript to implement dynamic behavior:
 
@@ -129,7 +140,7 @@ The core client-side JavaScript language consists of some common programming fea
 
 - Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called `name`.
 - Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the `name` variable to create the complete text label, e.g. "Player 1: Chris".
-- Running code in response to certain events occurring on a web page. We used a {{domxref("Element/click_event", "click")}} event in our example above to detect when the label is clicked and then run the code that updates the text label.
+- Running code in response to certain events occurring on a web page. We used a [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event/undefined) event in our example above to detect when the label is clicked and then run the code that updates the text label.
 - And much more!
 
 What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called **Application Programming Interfaces** (**APIs**) provide you with extra superpowers to use in your JavaScript code.
@@ -139,27 +150,27 @@ They do the same thing for programming that ready-made furniture kits do for hom
 
 They generally fall into two categories.
 
-![Two categories of API; 3rd party APIs are shown to the side of the browser and browser APIs are in the browser](browser.png)
+![Two categories of API; 3rd party APIs are shown to the side of the browser and browser APIs are in the browser](assets/browser.png)
 
 **Browser APIs** are built into your web browser, and are able to expose data from the surrounding computer environment, or do useful complex things. For example:
 
-- The {{domxref("Document_Object_Model","DOM (Document Object Model) API")}} allows you to manipulate HTML and CSS, creating, removing and changing HTML, dynamically applying new styles to your page, etc.
+- The [DOM (Document Object Model) API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/undefined) allows you to manipulate HTML and CSS, creating, removing and changing HTML, dynamically applying new styles to your page, etc.
   Every time you see a popup window appear on a page, or some new content displayed (as we saw above in our simple demo) for example, that's the DOM in action.
-- The {{domxref("Geolocation","Geolocation API")}} retrieves geographical information.
+- The [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/undefined) retrieves geographical information.
   This is how [Google Maps](https://www.google.com/maps) is able to find your location and plot it on a map.
-- The {{domxref("Canvas_API","Canvas")}} and {{domxref("WebGL_API","WebGL")}} APIs allow you to create animated 2D and 3D graphics.
+- The [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/undefined) and [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/undefined) APIs allow you to create animated 2D and 3D graphics.
   People are doing some amazing things using these web technologies — see [Chrome Experiments](https://experiments.withgoogle.com/collection/chrome) and [webglsamples](https://webglsamples.org/).
-- [Audio and Video APIs](/en-US/docs/Web/Guide/Audio_and_video_delivery) like {{domxref("HTMLMediaElement")}} and {{domxref("WebRTC API", "WebRTC")}} allow you to do really interesting things with multimedia, such as play audio and video right in a web page, or grab video from your web camera and display it on someone else's computer (try our simple [Snapshot demo](https://chrisdavidmills.github.io/snapshot/) to get the idea).
+- [Audio and Video APIs](https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery) like [HTMLMediaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/undefined) and [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC API/undefined) allow you to do really interesting things with multimedia, such as play audio and video right in a web page, or grab video from your web camera and display it on someone else's computer (try our simple [Snapshot demo](https://chrisdavidmills.github.io/snapshot/) to get the idea).
 
 > **Note:** Many of the above demos won't work in an older browser — when experimenting, it's a good idea to use a modern browser like Firefox, Chrome, Edge or Opera to run your code in.
-> You will need to consider [cross browser testing](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing) in more detail when you get closer to delivering production code (i.e. real code that real customers will use).
+> You will need to consider [cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing) in more detail when you get closer to delivering production code (i.e. real code that real customers will use).
 
 **Third party APIs** are not built into the browser by default, and you generally have to grab their code and information from somewhere on the Web. For example:
 
 - The [Twitter API](https://developer.twitter.com/en/docs) allows you to do things like displaying your latest tweets on your website.
 - The [Google Maps API](https://developers.google.com/maps/) and [OpenStreetMap API](https://wiki.openstreetmap.org/wiki/API) allows you to embed custom maps into your website, and other such functionality.
 
-> **Note:** These APIs are advanced, and we'll not be covering any of these in this module. You can find out much more about these in our [Client-side web APIs module](/en-US/docs/Learn/JavaScript/Client-side_web_APIs).
+> **Note:** These APIs are advanced, and we'll not be covering any of these in this module. You can find out much more about these in our [Client-side web APIs module](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs).
 
 There's a lot more available, too! However, don't get over excited just yet. You won't be able to build the next Facebook, Google Maps, or Instagram after studying JavaScript for 24 hours — there are a lot of basics to cover first. And that's why you're here — let's move on!
 
@@ -167,9 +178,9 @@ There's a lot more available, too! However, don't get over excited just yet. You
 
 Here we'll actually start looking at some code, and while doing so, explore what actually happens when you run some JavaScript in your page.
 
-Let's briefly recap the story of what happens when you load a web page in a browser (first talked about in our [How CSS works](/en-US/docs/Learn/CSS/First_steps/How_CSS_works#how_does_css_actually_work) article). When you load a web page in your browser, you are running your code (the HTML, CSS, and JavaScript) inside an execution environment (the browser tab). This is like a factory that takes in raw materials (the code) and outputs a product (the web page).
+Let's briefly recap the story of what happens when you load a web page in a browser (first talked about in our [How CSS works](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works#how_does_css_actually_work) article). When you load a web page in your browser, you are running your code (the HTML, CSS, and JavaScript) inside an execution environment (the browser tab). This is like a factory that takes in raw materials (the code) and outputs a product (the web page).
 
-![HTML, CSS and JavaScript code come together to create the content in the browser tab when the page is loaded](execution.png)
+![HTML, CSS and JavaScript code come together to create the content in the browser tab when the page is loaded](assets/execution.png)
 
 A very common use of JavaScript is to dynamically modify HTML and CSS to update a user interface, via the Document Object Model API (as mentioned above).
 Note that the code in your web documents is generally loaded and executed in the order it appears on the page.
@@ -202,7 +213,7 @@ function updateName() {
 
 Here we are selecting a text paragraph (line 1), then attaching an event listener to it (line 3) so that when the paragraph is clicked, the `updateName()` code block (lines 5–8) is run. The `updateName()` code block (these types of reusable code blocks are called "functions") asks the user for a new name, and then inserts that name into the paragraph to update the display.
 
-If you swapped the order of the first two lines of code, it would no longer work — instead, you'd get an error returned in the [browser developer console](/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) — `TypeError: para is undefined`.
+If you swapped the order of the first two lines of code, it would no longer work — instead, you'd get an error returned in the [browser developer console](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) — `TypeError: para is undefined`.
 This means that the `para` object does not exist yet, so we can't add an event listener to it.
 
 > **Note:** This is a very common error — you need to be careful that the objects referenced in your code exist before you try to do stuff to them.
@@ -233,7 +244,7 @@ In this module we are explicitly talking about **client-side JavaScript**.
 
 Server-side code on the other hand is run on the server, then its results are downloaded and displayed in the browser.
 Examples of popular server-side web languages include PHP, Python, Ruby, ASP.NET, and even JavaScript!
-JavaScript can also be used as a server-side language, for example in the popular Node.js environment — you can find out more about server-side JavaScript in our [Dynamic Websites – Server-side programming](/en-US/docs/Learn/Server-side) topic.
+JavaScript can also be used as a server-side language, for example in the popular Node.js environment — you can find out more about server-side JavaScript in our [Dynamic Websites – Server-side programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side) topic.
 
 ### Dynamic versus static code
 
@@ -246,7 +257,7 @@ A web page with no dynamically updating content is referred to as **static** —
 ## How do you add JavaScript to your page?
 
 JavaScript is applied to your HTML page in a similar manner to CSS.
-Whereas CSS uses {{htmlelement("link")}} elements to apply external stylesheets and {{htmlelement("style")}} elements to apply internal stylesheets to HTML, JavaScript only needs one friend in the world of HTML — the {{htmlelement("script")}} element. Let's learn how this works.
+Whereas CSS uses [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) elements to apply external stylesheets and [`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style) elements to apply internal stylesheets to HTML, JavaScript only needs one friend in the world of HTML — the [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element. Let's learn how this works.
 
 ### Internal JavaScript
 
@@ -260,7 +271,7 @@ Whereas CSS uses {{htmlelement("link")}} elements to apply external stylesheets 
    </script>
    ```
 
-4. Now we'll add some JavaScript inside our {{htmlelement("script")}} element to make the page do something more interesting — add the following code just below the "// JavaScript goes here" line:
+4. Now we'll add some JavaScript inside our [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element to make the page do something more interesting — add the following code just below the "// JavaScript goes here" line:
 
    ```js
    document.addEventListener("DOMContentLoaded", () => {
@@ -282,7 +293,7 @@ Whereas CSS uses {{htmlelement("link")}} elements to apply external stylesheets 
 
 > **Note:** If your example doesn't seem to work, go through the steps again and check that you did everything right.
 > Did you save your local copy of the starting code as a `.html` file?
-> Did you add your {{htmlelement("script")}} element just before the `</head>` tag?
+> Did you add your [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element just before the `</head>` tag?
 > Did you enter the JavaScript exactly as shown? **JavaScript is case sensitive, and very fussy, so you need to enter the syntax exactly as shown, otherwise it may not work.**
 
 > **Note:** You can see this version on GitHub as [apply-javascript-internal.html](https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/what-is-js/apply-javascript-internal.html) ([see it live too](https://mdn.github.io/learning-area/javascript/introduction-to-js-1/what-is-js/apply-javascript-internal.html)).
@@ -292,7 +303,7 @@ Whereas CSS uses {{htmlelement("link")}} elements to apply external stylesheets 
 This works great, but what if we wanted to put our JavaScript in an external file? Let's explore this now.
 
 1. First, create a new file in the same directory as your sample HTML file. Call it `script.js` — make sure it has that .js filename extension, as that's how it is recognized as JavaScript.
-2. Replace your current {{htmlelement("script")}} element with the following:
+2. Replace your current [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) element with the following:
 
    ```html
    <script src="script.js" defer></script>
@@ -342,7 +353,7 @@ You can try this version of our demo below.
 
 {{ EmbedLiveSample('Inline_JavaScript_handlers', '100%', 150) }}
 
-This demo has exactly the same functionality as in the previous two sections, except that the {{htmlelement("button")}} element includes an inline `onclick` handler to make the function run when the button is pressed.
+This demo has exactly the same functionality as in the previous two sections, except that the [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element includes an inline `onclick` handler to make the function run when the button is pressed.
 
 **Please don't do this, however.** It is bad practice to pollute your HTML with JavaScript, and it is inefficient — you'd have to include the `onclick="createParagraph()"` attribute on every button you want the JavaScript to apply to.
 
@@ -372,7 +383,7 @@ The JavaScript does not need to be changed.
 
 There are a number of issues involved with getting scripts to load at the right time. Nothing is as simple as it seems!
 A common problem is that all the HTML on a page is loaded in the order in which it appears.
-If you are using JavaScript to manipulate elements on the page (or more accurately, the [Document Object Model](/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#the_document_object_model)), your code won't work if the JavaScript is loaded and parsed before the HTML you are trying to do something to.
+If you are using JavaScript to manipulate elements on the page (or more accurately, the [Document Object Model](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#the_document_object_model)), your code won't work if the JavaScript is loaded and parsed before the HTML you are trying to do something to.
 
 In the above code examples, in the internal and external examples the JavaScript is loaded and run in the head of the document, before the HTML body is parsed.
 This could cause an error, so we've used some constructs to get around it.
@@ -386,7 +397,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ```
 
 This is an event listener, which listens for the browser's `DOMContentLoaded` event, which signifies that the HTML body is completely loaded and parsed.
-The JavaScript inside this block will not run until after that event is fired, therefore the error is avoided (you'll [learn about events](/en-US/docs/Learn/JavaScript/Building_blocks/Events) later in the course).
+The JavaScript inside this block will not run until after that event is fired, therefore the error is avoided (you'll [learn about events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events) later in the course).
 
 In the external example, we use a more modern JavaScript feature to solve the problem, the `defer` attribute, which tells the browser to continue downloading the HTML content once the `<script>` tag element has been reached.
 
@@ -418,7 +429,7 @@ They won't run until the page content has all loaded, which is useful if your sc
 
 Here is a visual representation of the different script loading methods and what that means for your page:
 
-![How the three script loading method work: default has parsing blocked while JavaScript is fetched and executed. With async, the parsing pauses for execution only. With defer, parsing isn't paused, but execution on happens after everything is else is parsed.](async-defer.jpg)
+![How the three script loading method work: default has parsing blocked while JavaScript is fetched and executed. With async, the parsing pauses for execution only. With defer, parsing isn't paused, but execution on happens after everything is else is parsed.](assets/async-defer.jpg)
 
 _This image is from the [HTML spec](https://html.spec.whatwg.org/images/asyncdefer.svg), copied and cropped to a reduced version, under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license terms._
 
@@ -515,7 +526,7 @@ We've begun with just theory, to start getting you used to why you'd use JavaScr
 Along the way, you saw a few code examples and learned how JavaScript fits in with the rest of the code on your website, amongst other things.
 
 JavaScript may seem a bit daunting right now, but don't worry — in this course, we will take you through it in simple steps that will make sense going forward.
-In the next article, we will [plunge straight into the practical](/en-US/docs/Learn/JavaScript/First_steps/A_first_splash), getting you to jump straight in and build your own JavaScript examples.
+In the next article, we will [plunge straight into the practical](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash), getting you to jump straight in and build your own JavaScript examples.
 
 {{NextMenu("Learn/JavaScript/First_steps/A_first_splash", "Learn/JavaScript/First_steps")}}
 
@@ -527,19 +538,19 @@ This chapter introduces JavaScript and discusses some of its fundamental concept
 
 This guide assumes you have the following basic background:
 
-- A general understanding of the Internet and the World Wide Web ([WWW](/en-US/docs/Glossary/World_Wide_Web)).
-- Good working knowledge of HyperText Markup Language ([HTML](/en-US/docs/Glossary/HTML)).
-- Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about [JavaScript](/en-US/docs/Web/JavaScript).
+- A general understanding of the Internet and the World Wide Web ([WWW](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web)).
+- Good working knowledge of HyperText Markup Language ([HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)).
+- Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 ## Where to find JavaScript information
 
 The JavaScript documentation on MDN includes the following:
 
-- [Learn Web Development](/en-US/docs/Learn) provides information for beginners and introduces basic concepts of programming and the Internet.
-- [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide) (this guide) provides an overview about the JavaScript language and its objects.
-- [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference) provides detailed reference material for JavaScript.
+- [Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn) provides information for beginners and introduces basic concepts of programming and the Internet.
+- [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) (this guide) provides an overview about the JavaScript language and its objects.
+- [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) provides detailed reference material for JavaScript.
 
-If you are new to JavaScript, start with the articles in the [learning area](/en-US/docs/Learn) and the [JavaScript Guide](/en-US/docs/Web/JavaScript/Guide). Once you have a firm grasp of the fundamentals, you can use the [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference) to get more details on individual objects and statements.
+If you are new to JavaScript, start with the articles in the [learning area](https://developer.mozilla.org/en-US/docs/Learn) and the [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). Once you have a firm grasp of the fundamentals, you can use the [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) to get more details on individual objects and statements.
 
 ## What is JavaScript?
 
@@ -574,7 +585,7 @@ In contrast, JavaScript descends in spirit from a line of smaller, dynamically t
 
 JavaScript is standardized at [Ecma International](https://www.ecma-international.org/) — the European association for standardizing information and communication systems (ECMA was formerly an acronym for the European Computer Manufacturers Association) to deliver a standardized, international programming language based on JavaScript. This standardized version of JavaScript, called ECMAScript, behaves the same way in all applications that support the standard. Companies can use the open standard language to develop their implementation of JavaScript. The ECMAScript standard is documented in the ECMA-262 specification.
 
-The ECMA-262 standard is also approved by the [ISO](https://www.iso.org/home.html) (International Organization for Standardization) as ISO-16262. You can also find the specification on [the Ecma International website](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/). The ECMAScript specification does not describe the Document Object Model (DOM), which is standardized by the [World Wide Web Consortium (W3C)](https://www.w3.org/) and/or [WHATWG (Web Hypertext Application Technology Working Group)](https://whatwg.org). The DOM defines the way in which HTML document objects are exposed to your script. To get a better idea about the different technologies that are used when programming with JavaScript, consult the article [JavaScript technologies overview](/en-US/docs/Web/JavaScript/JavaScript_technologies_overview).
+The ECMA-262 standard is also approved by the [ISO](https://www.iso.org/home.html) (International Organization for Standardization) as ISO-16262. You can also find the specification on [the Ecma International website](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/). The ECMAScript specification does not describe the Document Object Model (DOM), which is standardized by the [World Wide Web Consortium (W3C)](https://www.w3.org/) and/or [WHATWG (Web Hypertext Application Technology Working Group)](https://whatwg.org). The DOM defines the way in which HTML document objects are exposed to your script. To get a better idea about the different technologies that are used when programming with JavaScript, consult the article [JavaScript technologies overview](https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview).
 
 ### JavaScript documentation versus the ECMAScript specification
 
@@ -606,7 +617,7 @@ The exact instructions for opening the console vary from one browser to another:
 
 The console appears at the bottom of the browser window. Along the bottom of the console is an input line that you can use to enter JavaScript, and the output appears in the panel above:
 
-![A browser window with the web console open at the bottom, containing two lines of input and output. Text can be entered below that.](2019-04-04_00-15-29.png)
+![A browser window with the web console open at the bottom, containing two lines of input and output. Text can be entered below that.](assets/2019-04-04_00-15-29.png)
 
 The console works the exact same way as `eval`: the last expression entered is returned. For the sake of simplicity, it can be imagined that every time something is entered into the console, it is actually surrounded by `console.log` around `eval`, like so:
 
@@ -643,7 +654,7 @@ Press <kbd>Enter</kbd> to watch it unfold in your browser!
 
 In the following pages, this guide introduces you to the JavaScript syntax and language features, so that you will be able to write more complex applications.
 
-But for now, remember to always include the `(function(){"use strict";` before your code, and add `})();` to the end of your code. The [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode) and [IIFE](/en-US/docs/Glossary/IIFE) articles explain what those do, but for now they can be thought of as doing the following:
+But for now, remember to always include the `(function(){"use strict";` before your code, and add `})();` to the end of your code. The [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) and [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) articles explain what those do, but for now they can be thought of as doing the following:
 
 1. Prevent semantics in JavaScript that trip up beginners.
 2. Prevent code snippets executed in the console from interacting with one another (e.g., having something created in one console execution being used for a different console execution).
@@ -660,3 +671,5 @@ But for now, remember to always include the `(function(){"use strict";` before y
     - [What_is_JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) [(Permalink)](https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/first_steps/what_is_javascript/index.md)
 
     - [Introduction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction) [(Permalink)](https://github.com/mdn/content/blob/b96d97e59de4ad4194060f9d41ac009c7a96a18d/files/en-us/web/javascript/guide/introduction/index.md)
+
+    - [Server](https://developer.mozilla.org/en-US/docs/Glossary/Server) [(Permalink)](https://github.com/mdn/content/blob/33d5043bcdf26f6ab99389f21260ab35476e4fb6/files/en-us/glossary/server/index.md)
