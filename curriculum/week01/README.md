@@ -262,7 +262,8 @@
 
   #### Study Plan
 
-  - [Read: **JS Basics**](resources/JavaScript_Basics/README.md)
+  - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
+  <!-- - [Read: **JS Basics**](resources/JavaScript_Basics/README.md) -->
 
   #### Exercises
 
