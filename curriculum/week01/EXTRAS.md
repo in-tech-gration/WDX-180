@@ -1,6 +1,6 @@
 # EXTRA RESOURCES
 
-## Day 01
+## Day 01 - Computing
 
   ### Computing
 
@@ -20,7 +20,7 @@
     - Level: Beginner
     - Download: [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/d8ae81cf-7d31-4abe-baf6-0da95eecdcfe.mp3?source=direct&download&ext=asset.mp3)
 
-## Day 02
+## Day 02 - Internet & the Web
 
   ### The Internet & the World Wide Web
 
@@ -52,11 +52,34 @@
   - [Watch: **How does public key cryptography work – Gary explains**](https://www.youtube.com/watch?v=rLiEA06Bcic)
     - Duration: 16min
 
-## Day 02
+## Day 03 - HTML
 
-## Day 03
+## Day 04 - CSS
 
-## Day 04
+## Day 05 - JavaScript
 
-## Day 05
+  In case you want to give JavaScript another go, here is another great introductory playlist by the amazing [Mosh Hamedani](https://codewithmosh.com/):
 
+  - [Mosh: JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk)
+    - Duration: 48min
+    - Description: An introductory JS screencast that covers the following concepts: 
+      - 00:00 What is JavaScript
+      - 04:41 Setting Up the Development Environment 
+      - 07:52 JavaScript in Browsers
+      - 11:41 Separation of Concerns
+      - 13:47 JavaScript in Node
+      - 16:11 Variables
+      - 21:49 Constants
+      - 23:35 Primitive Types 
+      - 26:47 Dynamic Typing 
+      - 30:06 Objects
+      - 35:22 Arrays
+      - 39:41 Functions
+      - 44:22 Types of Functions 
+
+  - [Mosh: JavaScript if else (tutorial)](https://www.youtube.com/watch?v=IsG4Xd6LlsM)
+    - Duration: 7min
+    
+  - [Mosh: JavaScript Loops](https://www.youtube.com/watch?v=s9wW2PpJsmQ)
+    - Duration: 7min
+    - Description: Here's one comment that should give you an idea about the educational quality of the video: _"Wow, I never thought I could understand loops this easily. I've struggled to understand this concept for 7 months. Thanks, Mosh!"_

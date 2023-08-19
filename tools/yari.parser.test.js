@@ -113,4 +113,9 @@ test("Replacing {{domxref}}", ()=>{
 
   equal( output3, replaceDOMXrefLinks(input3) );
 
+  const input4 = `lorem ipsum {{domxref("WebRTC API", "WebRTC")}} lorem ipsum`
+  const output4 = `lorem ipsum [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) lorem ipsum`
+
+  equal( output4, replaceDOMXrefLinks(input4) );
+
 })

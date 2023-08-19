@@ -164,7 +164,18 @@ function replaceDOMXrefLinks( textContent, fileName ){
 
       }
 
-      link = `${baseLink}${base}/${term}`;
+      if ( p1.includes(" ") ){
+
+        [ base, term ] = p1.split(" ");
+
+        console.log({ base, term });
+
+        base = `${base}_${term}`;
+        term = null;
+
+      }
+
+      link = term ? `${baseLink}${base}/${term}` : `${baseLink}${base}`;
     
     }
 

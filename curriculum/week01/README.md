@@ -77,7 +77,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](EXTRAS.md#day-01)
+  ### [Extra Resources](EXTRAS.md#day-01---computing)
 
 ## Week 1 - Day 2 - How the Internet & the World Wide Web works
 
@@ -191,7 +191,7 @@
     - Duration: 5min
     - Captions: Yes
 
-  ### [Extra Resources](EXTRAS.md#day-02)
+  ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
 ## Week 1 - Day 3 - HTML & Markdown
 
@@ -223,7 +223,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](EXTRAS.md#day-03)
+  ### [Extra Resources](EXTRAS.md#day-03---html)
 
   ---
 
@@ -247,12 +247,12 @@
   - Introduction to CSS
   - Publishing your website
 
-  - [Read: **CSS Basics**](week01/resources/CSS_Basics/README.md)
-  - [Read: **Publishing your website**](week01/resources/Publishing%20your%20website/README.md)
+  - [Read: **CSS Basics**](resources/CSS_Basics/README.md)
+  - [Read: **Publishing your website**](resources/Publishing%20your%20website/README.md)
 
   ### Exercises
 
-  ### [Extra Resources](week01/EXTRAS.md#day-04)
+  ### [Extra Resources](EXTRAS.md#day-04---css)
 
 ## Week 1 - Day 5 - JavaScript
 
@@ -264,6 +264,12 @@
 
   - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
 
+  - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE)
+    - Duration: 8min
+
+  - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM)
+    - Duration: 8min
+
   ### Summary
 
   As you are embarking on your journey to harness the power of computers through programming and become a software developer, you must carry the following things along your journey and always remind to yourself that:
@@ -274,7 +280,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](EXTRAS.md#day-05)
+  ### [Extra Resources](EXTRAS.md#day-05---javascript)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
