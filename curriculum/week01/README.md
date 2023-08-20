@@ -172,6 +172,31 @@
   - [Read: **What is a Domain Name?**](resources/What%20is%20a%20Domain%20Name/README.md)
     - Level: Beginner
 
+  - [Watch: **What is Localhost? | Explained**](https://www.youtube.com/watch?v=m98GX51T5dI)
+  - Duration: 4min
+  - Level: Beginner
+  - <details>
+      <summary>What you'll learn:</summary>
+        <ul>
+          <li>00:00 - Introduction</li>
+          <li>00:09 - What is localhost</li>
+          <li>01:15 - What is localhost used for</li>
+          <li>02:58 - Outro</li>
+        </ul>
+    </details>
+
+  ---
+  **Practice time!**
+
+  Let's take a few minutes to learn more about what `Site Blocking` through localhost really means.
+
+  Follow the instructions found in the following posts and try to block the [https://budgetsaresexy.com/](https://budgetsaresexy.com/) domain on your machine by **carefully** manipulating the `hosts` file.
+
+  - [How to Block Certain Websites From the /etc/hosts File](https://www.baeldung.com/linux/etc-hosts-block-specific-websites) 
+  - [How to Edit Hosts File in Linux, Windows, or Mac](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux)
+
+  ---
+
   - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute%20vs%20Relative%20URLs/README.md)
     - Level: Beginner
 
@@ -262,13 +287,90 @@
 
   ### Study Plan
 
+  **What you'll learn:**
+
+  - How to install the **Live Server** VSCode extension and develop using a local web server
+
   - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
 
   - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE)
     - Duration: 8min
+    - <details>
+      <summary>What you'll learn</summary>
+      <ul>
+        <li>How to open Chrome Dev Tools</li>
+        <li>How to put Chrome Dev Tools into dark mode</li>
+        <li>How to use the console tab in Chrome Dev Tools to enter JavaScript statements</li>
+        <li>Four JS data types: 1) String 2) Number 3) Boolean 4) Undefined</li>
+        <li>How to check data types with the keyword `typeof`</li>
+        <li>How to create variable with the keyword `let`</li>
+        <li>How to name variables with `camelCase`</li>
+        <li>How to use basic mathematical operators to perform mathematic operations, to concatenate string data, and to compare data types</li>
+        <li>How to compare data</li>
+      </ul>
+    </details>
 
   - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM)
     - Duration: 8min
+    - <details>
+      <summary>What you'll learn</summary>
+      <ul>
+        <li>(0:15) Setting up your DEV environment</li>
+        <li>(0:20) Where to find and install Visual Studio Code</li>
+        <li>(0:50) Create a directory (aka folder) for your files</li>
+        <li>(1:28) Opening a folder in VS Code</li>
+        <li>(1:45) Create an HTML document in VS Code</li>
+        <li>(1:55) Emmett abbreviation to quickly code basic HTML</li>
+        <li>(2:07) Add semantic elements to your HTML code</li>
+        <li>(2:23) Save your HTML document in VS Code (Ctrl+S)</li>
+        <li>(2:38) The style element for adding CSS to your HTML</li>
+        <li>(3:00) Creating a new folder from within VS Code</li>
+        <li>(3:05) Creating a CSS file</li>
+        <li>(3:15) Adding styles to your CSS file</li>
+        <li>(3:38) Linking to a CSS file from your HTML document</li>
+        <li>(4:00) Where to put your JavaScript: script tags</li>
+        <li>(4:05) How to link your JavaScript file to your HTML file: src attribute</li>
+        <li>(4:20) Or put your JavaScript inside of the script element</li>
+        <li>(4:30) How to print to the Chrome Dev Tools console window from your JS file</li>
+        <li>(4:50) How to open up Chrome Dev Tools to see the console window</li>
+        <li>(5:25) How to open your HTML file in Chrome</li>
+        <li>(5:40) Creating a folder for your JavaScript file</li>
+        <li>(5:50) Creating a Javascript file</li>
+        <li>(6:20) Linking to your JavaScript file </li>
+        <li>(7:00) Adding more JavaScript code to your file</li>
+         </ul>  
+    </details>
+
+  - [Watch: **JavaScript String Methods and Properties | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo)
+    - Duration: Xmin
+    - Level: Beginner
+    - <details>
+      <summary>What you'll learn</summary>
+        <ul>
+          <li>(00:00) Intro</li> 
+          <li>(0:12) Dev Environment</li>
+          <li>(0:43) VS Code Live Server Extension</li>
+          <li>(1:48) Starting with a string variable</li>
+          <li>(2:08) The string length property</li>
+          <li>(2:10) Dot notation</li>
+          <li>(2:55) String Methods</li>
+          <li>(3:00) charAt() method</li>
+          <li>(3:30) indexOf() method</li>
+          <li>(4:13) lastIndexOf() method</li>
+          <li>(4:30) slice() method</li>
+          <li>(5:18) toUpperCase method</li>
+          <li>(5:30) toLowerCase method</li>
+          <li>(5:35) includes() method</li>
+          <li>(5:53) split() method</li>
+          <li>(6:47) Where to find more string methods</li>
+        </ul>
+    </details>
+
+    ---
+
+    **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview) and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
+
+    ---
 
   ### Summary
 

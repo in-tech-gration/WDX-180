@@ -258,9 +258,97 @@
         "id": "7_LPdttKXPc"
       }
     },
-    "": {
-      "title": "",
-      "temp": "https://www.youtube.com/watch?v=SajRjc9KKUE&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT&index=3"
+    "java-script-tutorial-for-beginners-quick-start": {
+      "title": "JavaScript Tutorial for Beginners: Quick Start",
+      "type": "YouTube",
+      "level": "Beginner",
+      "identifier": "https://www.youtube.com/watch?v=SajRjc9KKUE",
+      "concepts": [
+        "How to open Chrome Dev Tools",
+        "How to put Chrome Dev Tools into dark mode",
+        "How to use the console tab in Chrome Dev Tools to enter JavaScript statements",
+        "Four data types: 1) String 2) Number 3) Boolean 4) Undefined",
+        "How to check data types with the keyword typeof",
+        "How to create variable with the keyword let",
+        "How to name variables with camelCase",
+        "How to use basic mathematical operators to perform mathematic operations, to concatenate string data, and to compare data types",
+        "When we compared data, we received Boolean data in return"
+      ],
+      "youtube": {
+        "id": "SajRjc9KKUE",
+        "playlist_id": "PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT",
+        "playlist_title": "Javascript Tutorials for Beginners"
+      }
+    },
+    "where-do-i-put-my-java-script-how-to-link-javascript-to-html":{
+      "title": "Where do I put my JavaScript? How to link Javascript to HTML",
+      "type": "YouTube",
+      "identifier": "https://www.youtube.com/watch?v=JMy6z1GricM",
+      "youtube": {
+        "id": "JMy6z1GricM"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:15) Setting up your DEV environment",
+        "(0:20) Where to find and install Visual Studio Code",
+        "(0:50) Create a directory (aka folder) for your files",
+        "(1:28) Opening a folder in VS Code",
+        "(1:45) Create an HTML document in VS Code",
+        "(1:55) Emmett abbreviation to quickly code basic HTML",
+        "(2:07) Add semantic elements to your HTML code",
+        "(2:23) Save your HTML document in VS Code (Ctrl+S)",
+        "(2:38) The style element for adding CSS to your HTML",
+        "(3:00) Creating a new folder from within VS Code",
+        "(3:05) Creating a CSS file",
+        "(3:15) Adding styles to your CSS file",
+        "(3:38) Linking to a CSS file from your HTML document",
+        "(4:00) Where to put your JavaScript: script tags",
+        "(4:05) How to link your JavaScript file to your HTML file: src attribute",
+        "(4:20) Or put your JavaScript inside of the script element",
+        "(4:30) How to print to the Chrome Dev Tools console window from your JS file",
+        "(4:50) How to open up Chrome Dev Tools to see the console window",
+        "(5:25) How to open your HTML file in Chrome",
+        "(5:40) Creating a folder for your JavaScript file",
+        "(5:50) Creating a Javascript file",
+        "(6:20) Linking to your JavaScript file",
+        "(7:00) Adding more JavaScript code to your file"
+      ] 
+    },
+    "java-script-string-methods-and-properties-java-script-tutorial-for-beginners":{
+      "title": "JavaScript String Methods and Properties | JavaScript Tutorial for Beginners",
+      "type": "YouTube",
+      "youtube": {
+        "id": "LiuzigJldNo"
+      },
+      "related_urls": [
+        {
+        "label": "String (MDN)",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+        },
+        {
+        "label": "Useful string methods (MDN)",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods"
+        }
+      ],
+      "concepts": [
+        "(00:00) Intro", 
+        "(0:12) Dev Environment",
+        "(0:43) VS Code Live Server Extension",
+        "(1:48) Starting with a string variable",
+        "(2:08) The string length property",
+        "(2:10) Dot notation",
+        "(2:55) String Methods",
+        "(3:00) charAt() method",
+        "(3:30) indexOf() method",
+        "(4:13) lastIndexOf() method",
+        "(4:30) slice() method",
+        "(5:18) toUpperCase method",
+        "(5:30) toLowerCase method",
+        "(5:35) includes() method",
+        "(5:53) split() method",
+        "(6:47) Where to find more string methods"
+      ],
+     "identifier": "https://www.youtube.com/watch?v=LiuzigJldNo" 
     }
   },
   "creators": {

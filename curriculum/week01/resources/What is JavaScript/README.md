@@ -244,6 +244,28 @@ There are two types:
 
 ## Summary
 
+- JavaScript is a popular high-level programming language
+
+- JavaScript can run on various `host` environments, but most commonly it is found inside the Browser or running on a server through the popular `Node.js`
+
+- **ECMAScript** is the standardized version of JavaScript
+
+- JavaScript contains a standard library of objects, such as `Array`, `Date`, and `Math`, and a **core set of language elements** such as operators, control structures, and statements
+
+- **Core JavaScript can be extended** through various APIs for a variety of purposes by supplementing it with additional objects; for example:
+
+ - **Client-side JavaScript** extends the core language by supplying objects to control a browser and its _Document Object Model_ (DOM). Through the DOM API, JavaScript is able to manipulate HTML content, change the CSS of various elements, respond to user events such as mouse clicks, etc. Other Browser APIs, such as the Geolocation, Canvas and other, further extend the core language allowing JavaScript to retrieve information about the user's location on the world, draw on the page and much more.    
+ 
+  - **Server-side JavaScript** extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, receive network requests from browsers, perform file manipulations on a server and more.
+
+- **Dynamic vs Static Content**
+
+  - A web page with no dynamically updating content is referred to as `static` — it just shows the same content all the time.
+  
+  - Content generated on the fly (when requested) through code is called `dynamic` content.
+
+- When developing web pages and web applications, careful **cross-browser testing** must take place to ensure that the code runs smoothly and consistently across different browsers. 
+
 ### Sources and Attributions
 
 - **MDN**:
