@@ -185,6 +185,9 @@
         </ul>
     </details>
 
+
+  If you want another take on the localhost subject, take a look at the `Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?` video found in the [Extras](EXTRAS.md#day-02---internet--the-web)
+
   ---
   **Practice time!**
 
@@ -342,7 +345,7 @@
     </details>
 
   - [Watch: **JavaScript String Methods and Properties | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo)
-    - Duration: Xmin
+    - Duration: 8min
     - Level: Beginner
     - <details>
       <summary>What you'll learn</summary>
@@ -369,6 +372,16 @@
     ---
 
     **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview) and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
+
+  - [Watch: ****]()
+  - Duration: min
+  - Level: 
+  - <details>
+    <summary>
+      <ul>
+      </ul>
+    </summary>
+  </details>
 
     ---
 

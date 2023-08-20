@@ -3,7 +3,9 @@
   "resources": {
     "how-computers-work-binary-data": {
       "title": "How Computers Work: Binary & Data",
-      "creator": ["code.org"],
+      "creator": [
+        "code.org"
+      ],
       "subject": "",
       "description": "You'll hear that everything's \"1s and 0s\" in a computer, but what does that mean? Find out how computers represent numbers, words, images, and sound.",
       "publisher": "code.org",
@@ -13,37 +15,66 @@
         "id": "USCBCmwMCDA"
       },
       "identifier": "https://www.youtube.com/watch?v=USCBCmwMCDA",
-      "language": ["en"],
+      "language": [
+        "en"
+      ],
       "rights": "Standard YouTube License",
-      "terms": [ "Bit", "Binary", "Pixel", "RGB", "Waveform" ],
+      "terms": [
+        "Bit",
+        "Binary",
+        "Pixel",
+        "RGB",
+        "Waveform"
+      ],
       "duration": 360,
       "concepts": [
         "Representing text, images and sound with zeroes and ones (bits).",
         "Bits are how computer input, store, process and output information"
       ]
     },
-    "images-pixels-and-rgb" : {
+    "images-pixels-and-rgb": {
       "title": "Images, Pixels and RGB",
-      "type" : "YouTube",
+      "type": "YouTube",
       "youtube": {
         "id": "15aqFQQVBWU",
         "thumbnail_url": "https://i.ytimg.com/vi/USCBCmwMCDA/maxresdefault.jpg"
       },
       "identifier": "https://www.youtube.com/watch?v=15aqFQQVBWU",
       "duration": 360,
-      "terms": ["Resolution", "Density", "RGB", "Pixel", "JPEG", "GIF", "PNG", "Bit", "Binary", "Byte", "Function"],
-      "concepts": [ "With 8 bits we can store 256 numbers from 0 up to 255." ]
+      "terms": [
+        "Resolution",
+        "Density",
+        "RGB",
+        "Pixel",
+        "JPEG",
+        "GIF",
+        "PNG",
+        "Bit",
+        "Binary",
+        "Byte",
+        "Function"
+      ],
+      "concepts": [
+        "With 8 bits we can store 256 numbers from 0 up to 255."
+      ]
     },
-    "digital-compression-explained-by-aloe-blacc" : {
+    "digital-compression-explained-by-aloe-blacc": {
       "title": "",
-      "type" : "YouTube",
+      "type": "YouTube",
       "youtube": {
-        "id" : "MijmeoH9LT4"
+        "id": "MijmeoH9LT4"
       },
-      "terms": [ "Lossy", "Lossless", "Compression" ],
-      "concepts": [ "compression", "algorithm" ]
+      "terms": [
+        "Lossy",
+        "Lossless",
+        "Compression"
+      ],
+      "concepts": [
+        "compression",
+        "algorithm"
+      ]
     },
-    "characters-symbols-and-the-unicode-miracle-computerphile":{
+    "characters-symbols-and-the-unicode-miracle-computerphile": {
       "title": "Characters, Symbols and the Unicode Miracle - Computerphile",
       "type": "YouTube",
       "youtube": {
@@ -51,12 +82,17 @@
       },
       "identifier": "https://www.youtube.com/watch?v=MijmeoH9LT4",
       "duration": 600,
-      "terms": [ "ASCII", "Binary", "Hexadecimal", "Encoding" ],
-      "concepts": [ 
-        [ 
+      "terms": [
+        "ASCII",
+        "Binary",
+        "Hexadecimal",
+        "Encoding"
+      ],
+      "concepts": [
+        [
           "What is ASCII",
-          "A way to represent characters of the english alphabet using binary digits" 
-        ], 
+          "A way to represent characters of the english alphabet using binary digits"
+        ],
         [
           "What is the standard text encoding for the Web",
           "UTF-8"
@@ -71,10 +107,17 @@
       },
       "identifier": "https://www.youtube.com/watch?v=H2kTzmJJ79E",
       "duration": 300,
-      "terms": ["Kilobyte", "Kibibyte", "SI", "IEC" ],
-      "concepts": [ "How storage space is calculated in computers" ]
+      "terms": [
+        "Kilobyte",
+        "Kibibyte",
+        "SI",
+        "IEC"
+      ],
+      "concepts": [
+        "How storage space is calculated in computers"
+      ]
     },
-    "the-internet-encryption-public-keys" : {
+    "the-internet-encryption-public-keys": {
       "title": "The Internet: Encryption & Public Keys",
       "type": "YouTube",
       "youtube": {
@@ -83,7 +126,10 @@
       "identifier": "https://www.youtube.com/watch?v=ZghMPWGXexs",
       "duration": 420,
       "captions": true,
-      "terms": [ "Public Key", "Caesar Cipher"],
+      "terms": [
+        "Public Key",
+        "Caesar Cipher"
+      ],
       "reviewers": [
         {
           "name": "Shariar Shakhawat",
@@ -91,10 +137,10 @@
         }
       ]
     },
-    "why-do-computers-understand-only-0-1-logic" : {
+    "why-do-computers-understand-only-0-1-logic": {
       "title": "Why do computers understand only 0 & 1 logic?",
       "identifier": "https://www.quora.com/Why-do-computers-understand-only-0-1-logic/answers/92646682",
-      "type" : "Quora"
+      "type": "Quora"
     },
     "how-computers-calculate-the-alu-crash-course-computer-science-5": {
       "title": "How Computers Calculate - the ALU: Crash Course Computer Science #5",
@@ -105,7 +151,17 @@
         "playlist_index": 7,
         "playlist_title": "Computer Science"
       },
-      "terms": ["ALU", "Logic Gates", "Half Adder", "Full Adder", "Overflow", "XOR", "NOT", "AND", "Logic Unit"]
+      "terms": [
+        "ALU",
+        "Logic Gates",
+        "Half Adder",
+        "Full Adder",
+        "Overflow",
+        "XOR",
+        "NOT",
+        "AND",
+        "Logic Unit"
+      ]
     },
     "representing-numbers-and-letters-with-binary-crash-course-computer-science-4": {
       "title": "Representing Numbers and Letters with Binary: Crash Course Computer Science #4",
@@ -113,13 +169,20 @@
       "duration": 660,
       "identifier": "https://www.youtube.com/watch?v=1GSjbWt0c9M",
       "youtube": {
-          "captions": [ "EN" ],
-          "id": "1GSjbWt0c9M",
-          "playlist_id": "PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
-          "playlist_index": 5
+        "captions": [
+          "EN"
+        ],
+        "id": "1GSjbWt0c9M",
+        "playlist_id": "PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
+        "playlist_index": 5
       },
       "level": "Beginner",
-      "terms": [ "IEEE", "IEEE 754", "ASCII", "Interoperability" ],
+      "terms": [
+        "IEEE",
+        "IEEE 754",
+        "ASCII",
+        "Interoperability"
+      ],
       "concepts": [
         "How do computers deal with large numbers?",
         "How do computers deal with negative numbers?",
@@ -133,7 +196,9 @@
       "youtube": {
         "id": "b6xeOLjeKs0"
       },
-      "terms": [ "Audio Fingerprinting" ]
+      "terms": [
+        "Audio Fingerprinting"
+      ]
     },
     "how-spotify-s-ai-driven-recommendations-work-wsj-tech-behind": {
       "title": "How Spotify’s AI-Driven Recommendations Work | WSJ Tech Behind",
@@ -144,14 +209,17 @@
         "id": "pGntmcy_HX8"
       }
     },
-    "why-tap-to-pay-is-safer-than-a-credit-card-swipe-wsj-tech-behind" : {
+    "why-tap-to-pay-is-safer-than-a-credit-card-swipe-wsj-tech-behind": {
       "title": "Why Tap-to-Pay Is Safer Than a Credit Card Swipe | WSJ Tech Behind",
       "type": "YouTube",
       "identifier": "https://www.youtube.com/watch?v=S7dWigI7Soc",
       "youtube": {
         "id": "S7dWigI7Soc"
       },
-      "terms": [ "RFID", "NFC" ]
+      "terms": [
+        "RFID",
+        "NFC"
+      ]
     },
     "5-how-does-the-internet-work": {
       "title": "#5 How does the Internet work?",
@@ -170,7 +238,7 @@
       "duration": 1320,
       "identifier": "http://kopec.live/episode/faffaffb63e34c2c/how-does-the-web-work-"
     },
-    "21-how-have-u-is-evolved":{
+    "21-how-have-u-is-evolved": {
       "title": "#21 How have UIs Evolved? Kopec Explains Software",
       "type": "Podcast",
       "duration": 1440,
@@ -180,7 +248,7 @@
       "identifier": "http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-",
       "description": "Through the history of computing, user interfaces (UIs) have evolved from punch cards to voice interaction. In this episode we track that evolution, discussing each paradigm and the machine that popularized it. We primarily focus on personal computer UIs, covering command-line interfaces (CLIs), graphical user interfaces (GUIs), touch-screen interaction, and voice interfaces. We also imagine the future, including neural interfaces, virtual reality, and augmented reality. This episode is an introductory guide to the interfaces available and a short history, not a comprehensive tour."
     },
-    "silicon-semiconductors-solar-cells-crash-course-engineering-22":{
+    "silicon-semiconductors-solar-cells-crash-course-engineering-22": {
       "title": "Silicon, Semiconductors, & Solar Cells: Crash Course Engineering #22",
       "type": "YouTube",
       "identifier": "",
@@ -190,7 +258,9 @@
         "playlist_index": 25,
         "playlist_title": "Engineering"
       },
-      "concepts": ["SINCE TRANSISTORS USE SMALLER CURRENTS TO INFLUENCE THE ON OR OFF STATES OF THE LARGER CURRENTS FLOWING THROUGH THE WIRE, THEY FORM THE BASIS OF THE BINARY SYSTEM OF ONES AND ZEROES THAT COMPUTERS RELY ON."],
+      "concepts": [
+        "SINCE TRANSISTORS USE SMALLER CURRENTS TO INFLUENCE THE ON OR OFF STATES OF THE LARGER CURRENTS FLOWING THROUGH THE WIRE, THEY FORM THE BASIS OF THE BINARY SYSTEM OF ONES AND ZEROES THAT COMPUTERS RELY ON."
+      ],
       "reviewers": [
         {
           "github": "kostasx",
@@ -198,7 +268,7 @@
         }
       ]
     },
-    "electrical-power-conductors-your-dream-home-crash-course-engineering-21":{
+    "electrical-power-conductors-your-dream-home-crash-course-engineering-21": {
       "title": "Electrical Power, Conductors, & Your Dream Home: Crash Course Engineering #21",
       "type": "YouTube",
       "identifier": "https://www.youtube.com/watch?v=uTWHMchUlws",
@@ -215,7 +285,7 @@
         }
       ]
     },
-    "77-what-is-a-memory-leak":{
+    "77-what-is-a-memory-leak": {
       "title": "#77 What is a Memory Leak?",
       "description": "Memory leaks occur when a program allocates memory and fails to free it when the memory is no longer being used. They can cause the memory use of a program to balloon over time, eventually leading to performance problems or a crash. They are a common programmer error, that has been alleviated, although not eliminated, by modern programming languages. Programming languages like C and C++ use manual memory management, which requires the programmer to do some book-keeping. The programmer must keep track of all of the memory they allocated and must remember to free it. Programming languages with garbage collectors automatically free unused memory. In this episode we explain memory leaks and look at a recent case of a major memory leak in macOS Monterey as an example.",
       "identifier": "http://kopec.live/episode/3aa2ed3f/what-is-a-memory-leak-",
@@ -223,9 +293,13 @@
       "transcripts": [],
       "download": "https://pdcn.co/e/pinecast.com/listen/3aa2ed3f-6078-49cf-83a0-c70dfd4ff128.mp3?source=direct&download&ext=asset.mp3",
       "publisher": "http://kopec.live",
-      "terms": ["Garbage Collection", "Memory Leak", "Memory Protection"]
+      "terms": [
+        "Garbage Collection",
+        "Memory Leak",
+        "Memory Protection"
+      ]
     },
-    "7-what-is-a-character-encoding":{
+    "7-what-is-a-character-encoding": {
       "type": "Podcast",
       "transcripts": [],
       "title": "#7 What is a Character Encoding?",
@@ -280,7 +354,7 @@
         "playlist_title": "Javascript Tutorials for Beginners"
       }
     },
-    "where-do-i-put-my-java-script-how-to-link-javascript-to-html":{
+    "where-do-i-put-my-java-script-how-to-link-javascript-to-html": {
       "title": "Where do I put my JavaScript? How to link Javascript to HTML",
       "type": "YouTube",
       "identifier": "https://www.youtube.com/watch?v=JMy6z1GricM",
@@ -312,9 +386,9 @@
         "(5:50) Creating a Javascript file",
         "(6:20) Linking to your JavaScript file",
         "(7:00) Adding more JavaScript code to your file"
-      ] 
+      ]
     },
-    "java-script-string-methods-and-properties-java-script-tutorial-for-beginners":{
+    "java-script-string-methods-and-properties-java-script-tutorial-for-beginners": {
       "title": "JavaScript String Methods and Properties | JavaScript Tutorial for Beginners",
       "type": "YouTube",
       "youtube": {
@@ -322,16 +396,16 @@
       },
       "related_urls": [
         {
-        "label": "String (MDN)",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+          "label": "String (MDN)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
         },
         {
-        "label": "Useful string methods (MDN)",
-        "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods"
+          "label": "Useful string methods (MDN)",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods"
         }
       ],
       "concepts": [
-        "(00:00) Intro", 
+        "(00:00) Intro",
         "(0:12) Dev Environment",
         "(0:43) VS Code Live Server Extension",
         "(1:48) Starting with a string variable",
@@ -348,10 +422,33 @@
         "(5:53) split() method",
         "(6:47) Where to find more string methods"
       ],
-     "identifier": "https://www.youtube.com/watch?v=LiuzigJldNo" 
+      "identifier": "https://www.youtube.com/watch?v=LiuzigJldNo"
+    },
+    "javascript-numbers-number-methods-isnan-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 362,
+      "title": "JavaScript Numbers, Number Methods, isNaN | JavaScript Tutorial for Beginners",
+      "date": "29/07/2020",
+      "youtube": {
+        "id": "3Ul9gYweEPs",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/3Ul9gYweEPs/sddefault.jpg"
+      },
+      "tags": [
+        "javascript tutorial",
+        "beginners javascript",
+        "javascript methods",
+        "javascript",
+        "tutorial",
+        "beginners",
+        "javascript numbers",
+        "isNaN"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
-  "creators": {
-
-  }
+  "creators": {}
 }

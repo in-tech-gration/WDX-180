@@ -313,6 +313,12 @@
                   "$ref": "#/definitions/languages"
                 }
               },
+              "channel_id": {
+                "type": "string"
+              },
+              "channel_title": {
+                "type": "string"
+              },
               "playlist_id": {
                 "type": "string"
               },

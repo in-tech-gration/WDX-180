@@ -44,6 +44,9 @@
     - Level: Beginner
     - Download: [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/faffaffb-63e3-4c2c-a0fb-72c11fed390c.mp3?source=direct&download&ext=asset.mp3)
 
+  - [Watch: **Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?**](https://www.youtube.com/watch?v=MDu6hWknk70)
+    - Duration: 5min
+
   ### Public Key Cryptography
 
   - [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do)
