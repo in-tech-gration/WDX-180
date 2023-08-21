@@ -1,6 +1,6 @@
 # Week 1
 
-## Week 1 - Day 1 - Onboarding & Basics of Computing
+## Week 1 - Day 1 | Onboarding & Basics of Computing
 
   ### Schedule
 
@@ -83,7 +83,7 @@
 
   ### [Extra Resources](EXTRAS.md#day-01---computing)
 
-## Week 1 - Day 2 - How the Internet & the World Wide Web works
+## Week 1 - Day 2 | How the Internet & the World Wide Web works
 
   ### Schedule
 
@@ -225,7 +225,7 @@
 
   ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
-## Week 1 - Day 3 - HTML & Markdown
+## Week 1 - Day 3 | HTML & Markdown
 
   ### Schedule
 
@@ -266,7 +266,7 @@
   - **MDN:**
     - [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
-## Week 1 - Day 4 - CSS
+## Week 1 - Day 4 | CSS
 
   ### Schedule
 
@@ -286,7 +286,7 @@
 
   ### [Extra Resources](EXTRAS.md#day-04---css)
 
-## Week 1 - Day 5 - JavaScript
+## Week 1 - Day 5 | JavaScript
 
   ### Schedule
 
@@ -294,7 +294,7 @@
 
   ### Study Plan
 
-  This is one of the toughest modules on the curriculum, so make sure to arm yourself with lots of coffee and concentration!
+  This is one of the toughest modules on the curriculum, so make sure to arm yourself with plenty of coffee and concentration!
 
   **What you'll learn:**
 
@@ -594,7 +594,55 @@
         </ul>
     </details>
 
+  - [Watch: **Functions in Javascript | Javascript Functions Tutorial**](https://www.youtube.com/watch?v=u_lLNH38n5E)
+  - Duration: 13min
+  - Level: Beginner
+  - <details>
+      <summary></summary>
+        <ul>
+          <li>(00:00) Intro</li>
+          <li>(0:15) Built-in Functions</li>
+          <li>(0:55) Functions are reusable code blocks</li>
+          <li>(1:12) Function Declaration Syntax</li>
+          <li>(1:20) Creating a Basic Function: sum()</li>
+          <li>(2:09) Calling a Function into action</li>
+          <li>(2:50) Passing Parameters to a Function</li>
+          <li>(3:30) Creating Reusable Code with Functions</li>
+          <li>(3:50) Missing Parameters</li>
+          <li>(4:30) Handling Missing Parameters</li>
+          <li>(5:20) Another Function Example: getUserNameFromEmail()</li>
+          <li>(7:10) Is it reusable? Yes!</li>
+          <li>(7:30) Anonymous Functions</li>
+          <li>(8:30) Arrow Functions</li>
+          <li>(9:05) Creating One More Function: toProperCase()</li>
+        </ul>
+    </details>
+
   ### Summary
+
+  - The JavaScript programming language can be found running on several environments (e.g. inside a browser, on an operating system via Node.js, etc.)
+
+  - The core features of the language covered in this brief introduction were:
+    - Data and data types (string, number, boolean, undefined)
+    - Defining, accessing and modifying variables
+    - Conditionals: if/else/switch create a logical branching in our code, directing our program to different code paths depending on some or several conditions.
+    - Working with numbers
+    - The null coalescing operator (??)
+    - Defining, accessing and manipulating Strings through:
+      - The `.length` property
+      - The `charAt()` method
+      - The `indexOf()` method
+      - The `slice()` method
+      - The `toLowerCase()` method
+      - The `toUpperCase()` method
+      - The `trim()` method
+    - Looping over some code using do/while/for loops
+      - BE CAREFUL NOT TO CREATE an endless/infinite loop
+    - Functions
+    - Some Browser technologies (APIs) were also introduced:
+      - The `alert()` method
+      - The `confirm()` method
+      - The `prompt()` method
 
   As you are embarking on your journey to harness the power of computers through programming and become a software developer, you must always remind to yourself that:
 

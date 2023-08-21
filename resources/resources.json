@@ -697,6 +697,148 @@
       "language": [
         "en"
       ]
+    },
+    "functions-in-javascript-javascript-functions-tutorial": {
+      "type": "YouTube",
+      "duration": 738,
+      "description": "In this video we'll look at examples of Functions in Javascript and learn how to create our own functions that are blocks of reusable code!",
+      "title": "Functions in Javascript | Javascript Functions Tutorial",
+      "date": "04/09/2020",
+      "youtube": {
+        "id": "u_lLNH38n5E",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/u_lLNH38n5E/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:15) Built-in Functions",
+        "(0:55) Functions are reusable code blocks",
+        "(1:12) Function Declaration Syntax",
+        "(1:20) Creating a Basic Function: sum()",
+        "(2:09) Calling a Function into action",
+        "(2:50) Passing Parameters to a Function",
+        "(3:30) Creating Reusable Code with Functions",
+        "(3:50) Missing Parameters",
+        "(4:30) Handling Missing Parameters",
+        "(5:20) Another Function Example: getUserNameFromEmail()",
+        "(7:10) Is it reusable? Yes!",
+        "(7:30) Anonymous Functions",
+        "(8:30) Arrow Functions",
+        "(9:05) Creating One More Function: toProperCase()"
+      ],
+      "tags": [
+        "functions",
+        "functions in javascript",
+        "javascript functions tutorial",
+        "javascript functions",
+        "javascript"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "arrays-in-javascript-arrays-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 1727,
+      "description": "An Introduction to Arrays in JavaScript that shows examples of how to create new arrays, modify array elements, and delete array elements as well  as exploring examples of array methods and multidimensional arrays.",
+      "title": "Arrays in Javascript | Arrays Tutorial for Beginners",
+      "date": "14/09/2020",
+      "youtube": {
+        "id": "0SyTDl4pb4w",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/0SyTDl4pb4w/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:14) Arrays are Data Structures",
+        "(0:20) How to create an array",
+        "(1:00) How to add elements to an array",
+        "(2:00) Reference an array and view it in the console",
+        "(2:35) Length property of an array",
+        "(2:55) Reference the last element in an array",
+        "(3:55) Reference any item in an array by position",
+        "(4:20) Using the push() method to add elements to an array",
+        "(5:00) Using the pop() method to remove elements from an array",
+        "(6:00) Using the unshift() method to add elements to an array",
+        "(7:15) Using the shift() method to remove elements from an array",
+        "(8:15) Do the element positions change in the array?",
+        "(9:15) Referencing an element that does not exist",
+        "(9:35) How to remove an element from the middle of an array",
+        "(9:50) What happens when you delete an element from an array",
+        "(10:55) Using the splice() method to remove, replace, and insert elements",
+        "(13:45) The slice() method",
+        "(15:00) The reverse() method",
+        "(15:30) The join() method",
+        "(16:15) The split() method is a string method that creates a new array",
+        "(18:00) The concat() method",
+        "(18:55) Using the spread operator to combine arrays",
+        "(20:55) Multidimensional arrays / Nested arrays: Sports Store example",
+        "(21:45) Referencing an element in a single dimension array",
+        "(22:50) Referencing an element in a two dimensional array",
+        "(25:25) Referencing an element in a three dimensional array"
+      ],
+      "tags": [
+        "arrays",
+        "arrays in javascript",
+        "javascript",
+        "tutorial",
+        "array tutorial",
+        "javascript arrays",
+        "javascript array tutorial"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "javascript-objects-explained-javascript-objects-tutorial": {
+      "type": "YouTube",
+      "description": "A Javascript Objects Tutorial that explains objects, methods, and properties as well as walking through many examples of how to create objects, add object properties and methods, remove object properties and methods, object inheritance, and destructuring objects.",
+      "duration": 1397,
+      "title": "Javascript Objects Explained | Javascript Objects Tutorial",
+      "date": "21/09/2020",
+      "youtube": {
+        "id": "rLPwCAqyCAE",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/rLPwCAqyCAE/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:10) Objects have key-value pairs",
+        "(0:20) How to create an object",
+        "(1:00) How to access a property of an object",
+        "(1:15) What data goes inside of an object?",
+        "(1:20) How to create object properties",
+        "(2:30) How to access the different properties of an object",
+        "(3:20) Objects allow dot notation and bracket notation",
+        "(4:35) How to create object methods",
+        "(5:40) How to call an object method",
+        "(5:50) The keyword this inside of a method",
+        "(7:30) Object.create()",
+        "(7:45) Using an object as a constructor for another object",
+        "(8:30) Object Inheritance and examples of inheritance",
+        "(13:00) Object.keys()",
+        "(13:30) Object.values()",
+        "(13:45) Using a for in loop to loop through an object",
+        "(17:00) Deleting a property or method",
+        "(17:15) hasOwnProperty() method",
+        "(18:00) Destructuring Objects as variables",
+        "(19:45) Simplify destructuring by naming variables the same as object keys",
+        "(20:50) Destructuring Objects as parameters"
+      ],
+      "tags": [
+        "objects",
+        "javascript objects",
+        "javascript objects explained",
+        "javascript objects tutorial",
+        "objects in javascript",
+        "javascript objects and methods"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
