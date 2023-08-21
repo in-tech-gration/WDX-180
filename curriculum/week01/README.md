@@ -572,6 +572,28 @@
         </ul>
     </details>
 
+  - [Watch: **For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT&index=13)
+  - Duration: 17min
+  - Level: Beginner
+  - <details>
+      <summary>What you'll learn</summary>
+        <ul>
+          <li>(00:00) Intro</li>
+          <li>(0:13) While Loops</li>
+          <li>(3:28) Do not create an endless loop (but don't feel bad if you do..it happens)</li>
+          <li>(4:33) Do While Loops</li>
+          <li>(5:07) The difference of a Do While Loop</li>
+          <li>(6:35) For Loops</li>
+          <li>(6:52) Initialize the counter variable</li>
+          <li>(7:10) Conditional statement</li>
+          <li>(7:18) Increment the counter</li>
+          <li>(9:15) Using the length property of a variable in a for loop</li>
+          <li>(9:45) While (true)</li>
+          <li>(12:20) Break Statements</li>
+          <li>(14:15) Continue Statements</li>
+        </ul>
+    </details>
+
   ### Summary
 
   As you are embarking on your journey to harness the power of computers through programming and become a software developer, you must always remind to yourself that:

@@ -657,6 +657,46 @@
       "language": [
         "en"
       ]
+    },
+    "for-loops-while-loops-do-while-loops-javascript-loop-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 980,
+      "title": "For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners",
+      "date": "31/08/2020",
+      "youtube": {
+        "id": "zO5-OnRA5lA",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/zO5-OnRA5lA/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:13) While Loops",
+        "(3:28) Do not create an endless loop (but don't feel bad if you do..it happens)",
+        "(4:33) Do While Loops",
+        "(5:07) The difference of a Do While Loop",
+        "(6:35) For Loops",
+        "(6:52) Initialize the counter variable",
+        "(7:10) Conditional statement",
+        "(7:18) Increment the counter",
+        "(9:15) Using the length property of a variable in a for loop",
+        "(9:45) While (true)",
+        "(12:20) Break Statements",
+        "(14:15) Continue Statements"
+      ],
+      "tags": [
+        "javascript loop tutorial",
+        "javascript loops",
+        "loop tutorial for beginners",
+        "for loops",
+        "while loops",
+        "do while loops",
+        "loops in javascript",
+        "loop tutorial for javascript"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
