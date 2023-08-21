@@ -6,9 +6,8 @@ const { parseArgs } = require("node:util");
 const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate } = require("./utils");
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
 
-
-
 // --get-video-info
+// USAGE: node tools/yt.js --get-video-info 3Ul9gYweEPs
 
 const { YOUTUBE_API_KEY } = process.env;
 
@@ -24,6 +23,46 @@ const args = parseArgs({
 const vid = args.values["get-video-info"];
 
 getYouTubeVideoInfo({ vid });
+
+const IVideoInfo = {
+  kind: 'string',
+  etag: 'string',
+  id: 'string',
+  snippet: {
+    publishedAt: 'Date',
+    channelId: 'string',
+    title: 'string',
+    description: 'string',
+    thumbnails: {
+      default: "object",
+      medium: "object",
+      high: "object",
+      standard: "object",
+      maxres: "object"
+    },
+    channelTitle: 'string',
+    tags: [
+      'string',
+      'string'
+    ],
+    categoryId: "number",
+    liveBroadcastContent: 'string',
+    localized: {
+      title: 'string',
+      description: 'string'
+    },
+    defaultAudioLanguage: 'string'
+  },
+  contentDetails: {
+    duration: 'string',
+    dimension: 'string',
+    definition: 'string',
+    caption: 'boolean',
+    licensedContent: "boolean",
+    contentRating: "object",
+    projection: 'string'
+  }
+}
 
 async function getYouTubeVideoInfo({ vid }){
 
@@ -53,6 +92,7 @@ async function getYouTubeVideoInfo({ vid }){
         defaultAudioLanguage = defaultAudioLanguage.split("-")[0];
 
         // videoInfo.contentDetails.caption // BOOLEAN
+        console.log(videoInfo.snippet.description);
 
         resourceJSON[convertToKebabCase(videoInfo.snippet.title)] = {
           type: "YouTube",

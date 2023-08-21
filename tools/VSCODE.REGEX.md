@@ -6,6 +6,7 @@
   or
   - Find: (\(\d?\d:\d\d\))(.*)
   - Replace: <li>$1$2</li>
+  - Replace: "$1$2"
 
   Example: the following text...
 

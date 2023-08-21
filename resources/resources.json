@@ -448,6 +448,215 @@
       "language": [
         "en"
       ]
+    },
+    "math-methods-and-how-to-generate-a-random-number-with-javascript-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 324,
+      "title": "Math Methods and How to Generate a Random Number with JavaScript | JavaScript Tutorial for Beginners",
+      "date": "04/08/2020",
+      "youtube": {
+        "id": "vzLdq3b0w3Y",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/vzLdq3b0w3Y/sddefault.jpg"
+      },
+      "tags": [
+        "javascript math random",
+        "javascript math",
+        "javascript random",
+        "javascript",
+        "javascript tutorial for beginners",
+        "beginners javascript tutorial"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "problem-solving-with-code-your-first-coding-challenge-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 453,
+      "title": "Problem Solving with Code | Your First Coding Challenge | JavaScript Tutorial for Beginners",
+      "date": "07/08/2020",
+      "youtube": {
+        "id": "gLt1KJPmjXA",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/gLt1KJPmjXA/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:20) Define the overall problem",
+        "(0:34) Break the large problem into smaller problems",
+        "(0:45) Solving the first small problem",
+        "(1:30) Solving the second small problem",
+        "(2:30) Bring the solutions together to solve the large problem",
+        "(3:25) Finding a bug in our solution!",
+        "(4:25) Fixing the bug in the solution",
+        "(4:50) The solution to the problem works!",
+        "(4:55) Level up the solution to make it work for any name",
+        "(6:45) Now our solution works for any name!"
+      ],
+      "tags": [
+        "javascript",
+        "problem solving",
+        "code challenge",
+        "javascript tutorial for beginners",
+        "beginners javascript",
+        "beginners javascript tutorial",
+        "problem solving with code",
+        "coding challenge"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "if-statements-in-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 394,
+      "title": "If Statements in Javascript | Tutorial for Beginners",
+      "date": "14/08/2020",
+      "youtube": {
+        "id": "9Ykz2_PhdfE",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/9Ykz2_PhdfE/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:11) If Statements are Conditionals",
+        "(0:19) Basic Syntax",
+        "(0:35) Else clauses",
+        "(0:45) Example If Statement #1",
+        "(2:15) Else If clauses",
+        "(2:30) Consider the Logical Order",
+        "(2:55) Checking for Two Conditions at Once",
+        "(3:25) Example If Statement #2",
+        "(3:55) \"Waterfall\" Logical Order",
+        "(4:45) Nested If Statements",
+        "(5:10) Decision Tree Thinking: Rock - Paper - Scissors"
+      ],
+      "tags": [
+        "if statements in javascript",
+        "if statements",
+        "if then statements",
+        "if else statements",
+        "javascript",
+        "javascript tutorial for beginners",
+        "beginners tutorial"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "switch-statements-in-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 238,
+      "title": "Switch Statements in Javascript | Tutorial for Beginners",
+      "date": "18/08/2020",
+      "youtube": {
+        "id": "3q7sk03ehOs",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/3q7sk03ehOs/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:13) Switch Statements are Conditionals",
+        "(0:17) Basic Syntax",
+        "(0:20) Value or Expression followed by Case evaluation",
+        "(0:28) Logical Order is important",
+        "(0:33) Use break keyword",
+        "(0:38) Default option",
+        "(0:50) Example #1",
+        "(1:20) Switch statements use strict equality matches",
+        "(1:32) Example #2: Evaluate numbers",
+        "(2:12) Example #3: Rock - Paper - Scissors Decision Tree"
+      ],
+      "tags": [
+        "switch statements",
+        "switch statements in javascript",
+        "javascript switch statements",
+        "javascript tutorial for beginners",
+        "beginners javascript",
+        "beginners tutorial"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "ternary-operator-in-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 328,
+      "title": "Ternary Operator in Javascript | Tutorial for Beginners",
+      "date": "25/08/2020",
+      "youtube": {
+        "id": "ib8MHSMwtYg",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/ib8MHSMwtYg/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:13) What is a Ternary Operator?",
+        "(0:18) Ternary Operator Statement Syntax",
+        "(0:48) Example Ternary Statement",
+        "(1:50) Example of Chaining Ternary Operator Statements",
+        "(3:05) A Grading Scale Example with Chained Ternary Statements",
+        "(4:10) Rock - Paper - Scissors with Ternary Operator Statements"
+      ],
+      "tags": [
+        "ternary operator",
+        "ternary operator javascript",
+        "ternary operator js",
+        "ternary operators",
+        "ternary operator for beginners",
+        "ternary operator tutorial",
+        "javascript"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "user-input-in-javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 629,
+      "title": "User Input in Javascript | Tutorial for Beginners",
+      "date": "27/08/2020",
+      "youtube": {
+        "id": "94UM0Ss3uoU",
+        "channel_id": "UCY38RvRIxYODO4penyxUwTg",
+        "channel_title": "Dave Gray",
+        "thumbnail_url": "https://i.ytimg.com/vi/94UM0Ss3uoU/sddefault.jpg"
+      },
+      "concepts": [
+        "(00:00) Intro",
+        "(0:15) Dev Environment",
+        "(0:45) alert notifications",
+        "(1:45) confirm notifications with boolean data",
+        "(2:35) Receiving data input from the user ",
+        "(3:10) prompt notifications with string data",
+        "(4:05) Possible null values returned",
+        "(4:43) Nullish Coalescing Operator",
+        "(6:10) How to check for an empty string",
+        "(7:15) An easy mistake to make!",
+        "(7:20) How to check data before accessing properties and methods",
+        "(8:50) Eliminating extra white space from user input"
+      ],
+      "tags": [
+        "user input",
+        "javascript",
+        "javascript user input",
+        "null values in javascript",
+        "null values",
+        "javascript alert",
+        "javascript confirm",
+        "javascript prompt",
+        "nullish coalescing",
+        "javascript nullish coalescing"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

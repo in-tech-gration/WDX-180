@@ -143,6 +143,13 @@ _(Work in progress)_
 - [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
 
+The curriculum draws heavily on the following amazing resources:
+
+- [**Mozilla Developer Network**](https://developer.mozilla.org/en-US/)
+- [**javascript.info** by Ilya Kantor](https://www.linkedin.com/in/iliakan/)
+- [**Kyle Simpson** aka getify, author of `You Don't know JS`](https://www.linkedin.com/in/getify/)
+- [**Dave Gray**](https://www.linkedin.com/in/davidagray/)
+
 ## Contribute
 
 - Spotted a broken link?
