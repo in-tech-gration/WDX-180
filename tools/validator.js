@@ -1,5 +1,6 @@
 // Script to validate Markdown structure for educational material
 const fs = require("node:fs");
+const path = require("node:path");
 const MarkdownIt = require('markdown-it');
 const yaml = require('yaml');
 const { warn, ok } = require("./utils");
@@ -12,6 +13,28 @@ if ( !markdownFilePath || !markdownFilePath.endsWith(".md") ){
   warn("No markdown file passed as argument.")
   process.exit();
 }
+
+/**
+ * Description: checks whether a file is inside the curriculum/week* folder
+ * @returns {boolean} 
+ */
+function isCurriculumFolder( filePath ){
+
+  const fullPath = path.resolve(filePath);
+  const parentFolder = path.dirname(fullPath);
+  const grandParentFolder = path.dirname(parentFolder);
+  const grandParentAndParentFolder = path.join(
+    path.basename(grandParentFolder),
+    path.basename(parentFolder)
+  );
+  const isCurriculumFolderBool = grandParentAndParentFolder.indexOf("curriculum/week") === 0;
+  return isCurriculumFolderBool;
+
+}
+
+const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
+// console.log({ isInCurriculumFolder });
+
 
 const markdownContent = fs.readFileSync(markdownFilePath, 'utf8');
 
@@ -80,13 +103,15 @@ function hasUpdatedTokenInList( tokens ){
 function hasAttributions( headingTokens ){
   const isLevel3 = heading => heading.level === "3";
   const hasTitle = heading => heading.title === "Sources and Attributions"; 
+  // If we are inside a curriculum/week* folder:
+  if ( isInCurriculumFolder ) {
+    return headingTokens.filter( h => isLevel3(h) && hasTitle(h) ).length === 5; 
+  }
   return headingTokens.some( h => isLevel3(h) && hasTitle(h) );
 }
 
 const frontmatter = getFrontmatterFromMarkdown( markdownContent );
 const markdownBody = getMarkdownBody( markdownContent );
-
-// console.log({ frontmatter, markdownBody })
 
 if (frontmatter) {
 
@@ -114,6 +139,9 @@ if ( !markdownBody ){
 
 // Parse the markdown content
 const tokens = md.parse(markdownBody, {});
+// console.log({ tokens });
+// console.log({ headingTokens });
+
 // Group them tokens:
 const inlineTokens = tokens.filter( token => token.type === "inline" );
 
@@ -170,7 +198,10 @@ if ( !hasAttributionSection ){
   warn(`No attributions section found:
   
   ### Sources and Attributions
-  `)
+  `);
+  if ( isInCurriculumFolder ){
+    warn(`It looks like you are on a markdown file describing a Weekly schedule. Weekly README.md files should contain one 'Sources and Attributions' section per day, so in total 5. There were fewer sections found on this file.`)
+  }
 } else {
   ok(`${checkmark} Sources and Attributions section found.`)
 }

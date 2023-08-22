@@ -231,6 +231,8 @@ _(Updated: 22/08/2023)_
 
   ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
+  ### Sources and Attributions
+
 ## Week 1 - Day 3 | HTML & Markdown
 
   ### Schedule
@@ -291,6 +293,8 @@ _(Updated: 22/08/2023)_
   ### Exercises
 
   ### [Extra Resources](EXTRAS.md#day-04---css)
+
+  ### Sources and Attributions
 
 ## Week 1 - Day 5 | JavaScript
 
