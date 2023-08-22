@@ -660,11 +660,11 @@ _(Updated: 22/08/2023)_
 
   ### [Extra Resources](EXTRAS.md#day-05---javascript)
 
+  ### Sources and Attributions
+
+  - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
+
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
-
-## Sources and Attributions
-
-- [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
 
 ## Week 1 - Weekend Suggestions
 
