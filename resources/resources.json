@@ -839,6 +839,18 @@
       "language": [
         "en"
       ]
+    },
+    "https-mothereff-in-js-variables" : {
+      "type": "Web Page",
+      "description": "Wondering if you can use a given string as a variable name in JavaScript? Use this tool to find out.",
+      "identifier": "https://mothereff.in/js-variables",
+      "related_urls": [
+        {
+          "label": "Source Code",
+          "url": "https://github.com/mathiasbynens/mothereff.in"
+        }
+      ],
+      "title": "JavaScript variable name validator"
     }
   },
   "creators": {}

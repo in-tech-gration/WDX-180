@@ -54,6 +54,8 @@ _(Updated: 22/08/2023)_
     - Level: Beginner
     - Captions: EN
 
+  **Demo time:** take a short break before the next video and play around with this cool [ASCII-to-Binary](https://mothereff.in/binary-ascii) tool! _(Don't forget to star the [GitHub repo](https://github.com/mathiasbynens/mothereff.in) if you found this tool helpful.)_
+
   - [Watch: **Characters, Symbols and the Unicode Miracle - Computerphile**](https://www.youtube.com/watch?v=MijmeoH9LT4)
     - Duration: 10min
     - Level: Beginner
@@ -338,6 +340,36 @@ _(Updated: 22/08/2023)_
   > _"When we learn to program, thinking of a variable like a box that holds a value is helpful. However, after a while, we realize that a variable cannot hold more than one value, so alternatively, you might think of a variable like a name tag or label you attach to a value."_
   > 
   > Even though, the author also points out that _"Both mental models can exist at the same time and might have benefits in different situations."_ it is recommended to stick with the notion that "a variable in JS is a label that references a value in memory somewhere". This notion also coincides with how programming languages actually work under the hood.
+
+  > **TIP #2:** Wondering if you can use a given string as a variable name in JavaScript? Use [this tool](https://mothereff.in/js-variables) to find out! 
+  >
+  > _(Don't forget to star the [GitHub repo](https://github.com/mathiasbynens/mothereff.in) if you found this tool helpful.)_
+  >
+  > Some names you thought couldn't be used but are valid names:
+  >
+  > `const το_όνομά_μου = "My name in greek";`
+  >
+  > `const こんにちは = "Hello in Japanese";`
+  >
+  > `const _______ = "WTF?";`
+  >
+  > Names you thought were valid, but aren't:
+  >
+  > `const 123vroom = "Nope`;
+  >
+  > `const delete = "Nope`;
+  >
+  > `const continue = false`;
+  >
+  > `const default = 10`;
+  >
+  > `const package = "Delivered"`;
+  >
+  > `const protected = "Area"`;
+  >
+  > `const private = "Area"`;
+  >
+  > `const ¯\_(ツ)_/¯ = "Nope`;
 
   ---
 
