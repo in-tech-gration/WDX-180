@@ -1,6 +1,9 @@
+// cSpell:ignore clipboardy
 const path          = require("node:path");
 const https         = require('node:https'); // or 'https' for https:// URLs
 const { parseArgs } = require("node:util");
+const clipboardy    = require('clipboardy');
+
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
 
 const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate } = require("./utils");
@@ -93,13 +96,20 @@ async function getYouTubeVideoInfo({ vid }){
 
         const videoInfo = json.items[0];
 
-        let defaultAudioLanguage = videoInfo.snippet.defaultAudioLanguage;
-        defaultAudioLanguage = defaultAudioLanguage.split("-")[0];
+        let defaultAudioLanguage = null;
+
+        if ( videoInfo.snippet.defaultAudioLanguage ){
+
+          defaultAudioLanguage = videoInfo.snippet.defaultAudioLanguage.split("-")[0];
+
+        }
 
         // videoInfo.contentDetails.caption // BOOLEAN
         console.log(videoInfo.snippet.description);
 
-        resourceJSON[convertToKebabCase(videoInfo.snippet.title)] = {
+        const entrySlug = convertToKebabCase(videoInfo.snippet.title);
+
+        resourceJSON[entrySlug] = {
           type: "YouTube",
           duration: iso8601ToSeconds(videoInfo.contentDetails.duration),
           title: videoInfo.snippet.title,
@@ -110,11 +120,29 @@ async function getYouTubeVideoInfo({ vid }){
             channel_title: videoInfo.snippet.channelTitle,
             thumbnail_url: videoInfo.snippet.thumbnails.standard.url
           },
-          tags: videoInfo.snippet.tags,
-          language: [ defaultAudioLanguage ]
+          tags: videoInfo.snippet.tags
         }
 
-        ok( JSON.stringify(resourceJSON, null, "\t"));
+        if ( defaultAudioLanguage ){
+          resourceJSON[entrySlug].language = [ defaultAudioLanguage ]
+        }
+
+        // ok( JSON.stringify(resourceJSON, null, "\t"));
+        const removeFirstTabs = /^\s{1}/gm;
+        const output = JSON.stringify(resourceJSON, null, "\t")
+        .split("\n")
+        .map( line =>{
+          return line.replace(removeFirstTabs, "");
+        })
+        .slice(1)
+        .slice(0, -1)
+        .join("\n")
+
+        clipboardy.writeSync( output );
+        console.log();
+        ok( output );
+        console.log();
+        ok( "Content copied to clipboard. Just use Ctrl+V to paste." );
 
       });
     
