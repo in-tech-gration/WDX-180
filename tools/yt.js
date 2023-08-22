@@ -85,7 +85,12 @@ async function getYouTubeVideoInfo({ vid }){
       .on("error", e => console.log(e) )
       .on("end", ()=> {
 
-       const json = JSON.parse(data);
+        const json = JSON.parse(data);
+        
+        if ( json.error ){
+          return warn(json.error.message);
+        }
+
         const videoInfo = json.items[0];
 
         let defaultAudioLanguage = videoInfo.snippet.defaultAudioLanguage;
@@ -119,7 +124,7 @@ async function getYouTubeVideoInfo({ vid }){
 
   } catch (error) {
 
-    console.log({ error });
+    console.log("Ops!", { error });
     
   } 
 

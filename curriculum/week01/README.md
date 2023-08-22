@@ -1,4 +1,10 @@
+---
+title: Week 1
+---
+
 # Week 1
+
+_(Updated: 22/08/2023)_
 
 ## Week 1 - Day 1 | Onboarding & Basics of Computing
 
