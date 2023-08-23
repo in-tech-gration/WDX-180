@@ -21,7 +21,7 @@ Watch the following videos which give an introduction to the basic functionality
 
 **Here's the watch list**
 
-- [Watch **Introduction to NodeJS**](https://www.youtube.com/watch?v=JZXQ455OT3A&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=1&pp=iAQB)
+- [Watch **Introduction to NodeJS**](https://www.youtube.com/watch?v=JZXQ455OT3A)
 
   - Duration: 17min
   - Level: Beginner
@@ -38,7 +38,7 @@ Watch the following videos which give an introduction to the basic functionality
       </ul>
     </details>
 
-- [Watch **Reading and Writing files with NodeJS**](https://www.youtube.com/watch?v=yQBw8skBdZU&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=2&pp=iAQB)
+- [Watch **Reading and Writing files with NodeJS**](https://www.youtube.com/watch?v=yQBw8skBdZU)
   - Duration: 28min
   - Level: Beginner
   - Caption: Yes
@@ -82,7 +82,7 @@ Watch the following videos which give an introduction to the Node Package Manage
 
 **Here's the watch list**
 
-- [Watch **NPM Node Package Manager Modules**](https://www.youtube.com/watch?v=oGO_-DWTmKA&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=3&pp=iAQB)
+- [Watch **NPM Node Package Manager Modules**](https://www.youtube.com/watch?v=oGO_-DWTmKA)
   - Duration: 23min
   - Level: Beginner
   - Captions: Yes
@@ -103,7 +103,7 @@ Watch the following videos which give an introduction to the Node Package Manage
       </ul>
     </details>
 
-- [Watch **Node Events Tutorial**](https://www.youtube.com/watch?v=2vaTy4dkbJM&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=4&pp=iAQB)
+- [Watch **Node Events Tutorial**](https://www.youtube.com/watch?v=2vaTy4dkbJM)
   - Duration: 15min
   - Level: Beginner
   - Captions: Yes
@@ -142,7 +142,7 @@ Watch the following videos which explain how to build a Web Server with NodeJS a
 
 **Here's the watch list**
 
-- [Watch **How to build a Web Server with NodeJS**](https://www.youtube.com/watch?v=3ZAKY-CDKog&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=5&pp=iAQB)
+- [Watch **How to build a Web Server with NodeJS**](https://www.youtube.com/watch?v=3ZAKY-CDKog)
   - Duration: 39min
   - Level: Beginner
   - Captions: Yes
@@ -162,7 +162,7 @@ Watch the following videos which explain how to build a Web Server with NodeJS a
       </ul>
     </details>
 
-- [Watch **Introduction to ExpressJS**](https://www.youtube.com/watch?v=jivyItmsu18&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=6&pp=iAQB)
+- [Watch **Introduction to ExpressJS**](https://www.youtube.com/watch?v=jivyItmsu18)
   - Duration: 22min
   - Level: Beginner
   - Captions: Yes
@@ -210,7 +210,7 @@ Watch the following videos which focus on what is Middleware in ExpressJS and th
 
 **Here's the watch list**
 
-- [Watch **Middleware in ExpressJS**](https://www.youtube.com/watch?v=y18ubz7gOsQ&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=7&pp=iAQB)
+- [Watch **Middleware in ExpressJS**](https://www.youtube.com/watch?v=y18ubz7gOsQ)
   - Duration: 35min
   - Level: Beginner
   - Captions: Yes
@@ -225,7 +225,7 @@ Watch the following videos which focus on what is Middleware in ExpressJS and th
       </ul>
     </details>
 
-- [Watch **Express Router**](https://www.youtube.com/watch?v=Zh7psmf1KAA&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=8&pp=iAQB)
+- [Watch **Express Router**](https://www.youtube.com/watch?v=Zh7psmf1KAA)
   - Duration: 25min
   - Level: Beginner
   - Captions: Yes
@@ -267,7 +267,7 @@ Watch the following videos which give an example on the MVC (Model View Controll
 
 **Here's the watch list**
 
-- [Watch **MVC Example**](https://www.youtube.com/watch?v=Dco1gzVZKVk&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=9&pp=iAQB)
+- [Watch **MVC Example**](https://www.youtube.com/watch?v=Dco1gzVZKVk)
   - Duration: 20min
   - Level: Beginner
   - Captions: Yes
@@ -281,7 +281,7 @@ Watch the following videos which give an example on the MVC (Model View Controll
       </ul>
     </details>
 
-- [Watch **User Password Authentication**](https://www.youtube.com/watch?v=Nlg0JrUt0qg&list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw&index=10&pp=iAQB)
+- [Watch **User Password Authentication**](https://www.youtube.com/watch?v=Nlg0JrUt0qg)
   - Duration: 26min
   - Level: Beginner
   - Captions: Yes
