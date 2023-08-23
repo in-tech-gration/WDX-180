@@ -63,14 +63,66 @@ function formatDate(iso8601String) {
   const formattedDate = `${day}/${month}/${year}`;
   return formattedDate;
 }
+/**
+ * Description: accepts a markdown text as input and returns an array of **bold text** sections found in the file
+ * @param {string} fileContent 
+ * @returns {Array}
+ */
+function findBoldTextMatches( fileContent ){
+
+  const regex = /\*\*(.*?)\*\*/g;
+  const boldTextMatches = fileContent.match( regex );
+  return boldTextMatches
+
+}
+/**
+ * Description: accepts a markdown text as input and returns an array of **YouTube URLs** found in the file
+ * @param {string} fileContent 
+ * @returns {Array}
+ */
+function findYouTubeMarkdownLinks( fileContent ){
+
+  // Regular Expression Source: https://stackoverflow.com/a/37704433/4861760
+  const ytRegex = /((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?/g;
+  const ytLinks = fileContent.match( ytRegex );
+  return ytLinks ?? [];
+
+}
+function findMarkdownLinks( fileContent ){
+
+  throw new Error("Not implemented yet");
+  // const regex = /\*\*(.*?)\*\*/g;
+  // const boldTextMatches = fileContent.match( regex );
+  // return boldTextMatches
+  return fileContent;
+
+}
+function getYouTubeListIdParts( ytURL ){
+
+  const playListQueryString = ytURL.match(/[&?]list=([^&]+)/i);
+
+  if ( playListQueryString ){
+    const [ firstPart, secondPart ] = ytURL.split(playListQueryString[0]);
+    const output = [ firstPart, playListQueryString[0] ]
+    if ( secondPart.trim().length > 0 ){
+      output.push( secondPart );
+    }
+    return output;
+  }
+
+  return [];
+}
 
 module.exports = {
   getFile,
+  getYouTubeListIdParts,
+  findYouTubeMarkdownLinks,
   getImageFile,
   getExtensionFromUrl,
   convertToKebabCase,
   formatDate,
   iso8601ToSeconds,
+  findBoldTextMatches,
   warn,
   info,
   ok

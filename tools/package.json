@@ -4,8 +4,9 @@
   "description": "Tools and utilities for the WDX curriculum toolkit",
   "main": "app.js",
   "scripts": {
-    "test": "npm run test:yari.parser",
+    "test": "npm run test:yari.parser && npm run test:utils",
     "test:yari.parser": "node yari.parser.test.js",
+    "test:utils": "node ./utils/index.test.js",
     "parse": "node yari.parser.js",
     "download": "node yari.download.js"
   },

@@ -8,6 +8,7 @@
 */ 
 
 const fs = require("node:fs");
+const { findBoldTextMatches, findYouTubeMarkdownLinks } = require("./utils");
 
 const fileName = process.argv[2];
 
@@ -16,7 +17,12 @@ if ( !fileName ){
 }
 
 const file = fs.readFileSync(fileName, "utf-8");
-const regex = /\*\*(.*?)\*\*/g;
-const matches = file.match( regex );
 
-console.log( matches );
+const boldTextMatches = findBoldTextMatches(file);
+const ytLinks = findYouTubeMarkdownLinks(file);
+
+console.log(
+  { ytLinks },
+  `${boldTextMatches.length} sections in bold found:`,
+  // { boldTextMatches }
+);

@@ -1,10 +1,16 @@
 // Script to validate Markdown structure for educational material
 const fs = require("node:fs");
 const path = require("node:path");
+
+const chalk      = require('chalk'); 
 const MarkdownIt = require('markdown-it');
-const yaml = require('yaml');
-const { warn, ok } = require("./utils");
+const yaml       = require('yaml');
+
+const { warn, ok, findYouTubeMarkdownLinks, getYouTubeListIdParts } = require("./utils");
+
+// UNICODE CHARACTERS:
 const checkmark = "\u2713";
+const xmark = "\u274C";
 
 // Parsing input
 const markdownFilePath = process.argv[2];
@@ -136,6 +142,16 @@ if ( !markdownBody ){
   process.exit();``
 }
 
+function getYouTubePlaylistURLs( markdownBody ){
+
+  return findYouTubeMarkdownLinks(markdownBody)
+  .filter( URL =>{
+    // console.log(URL);
+    return URL.includes("&list=") && URL.includes("watch?v=");
+  })
+
+}
+
 
 // Parse the markdown content
 const tokens = md.parse(markdownBody, {});
@@ -189,6 +205,21 @@ if ( hasHeadingLevel1.length > 1 ){
 } 
 if ( hasHeadingLevel1.length === 1 ){
   ok(`${checkmark} Found a single Heading Level 1.`);
+}
+
+// CHECK: HAS YOUTUBE URLs CONTAINING &list QUERY STRING
+const ytLinks = getYouTubePlaylistURLs(markdownBody);
+
+if ( ytLinks.length > 0 ){
+
+  warn(`Found the following YouTube link(s) containing a '&list=' query string. Please remove it, unless the link redirects to a Playlist page.`);
+
+  ytLinks.forEach( URL =>{
+    const ytListParts = getYouTubeListIdParts(URL);
+    if ( ytListParts.length > 0 ){
+      console.log(`${ytListParts[0]}${chalk.cyan(ytListParts[1])}${ytListParts[2]}`);
+    }
+  })
 }
 
 // CHECK: HAS ATTRIBUTIONS SECTION
