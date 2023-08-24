@@ -62,6 +62,10 @@ YouTube video, 8min
 
 - [**Excalidraw**](https://excalidraw.com/): Virtual whiteboard for sketching hand-drawn like diagrams
 - [**Adblock Plus - free ad blocker**](https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb/)
+- [**Youtube Playlist Duration Calculator**](https://chrome.google.com/webstore/detail/youtube-playlist-duration/pijbakhgmhhadeakaocjfockpndcpobk): An extension to calculate & display the total duration of a youtube playlist.
+
+[![](assets/chrome_extension_youtube_playlist_duration_calculation.jpg)](https://chrome.google.com/webstore/detail/youtube-playlist-duration/pijbakhgmhhadeakaocjfockpndcpobk)
+
 - [**Screenshot YouTube:** Take a screenshot of any YouTube video with one click](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk)
 - [**SummifyYT:** Summarize YouTube Comments (Chrome Extension)](https://chrome.google.com/webstore/detail/summifyyt-summarize-youtu/mcjgidambippeaajehcfimmephgholco)
 - [**Wikiwand:** Wikipedia Modernized](https://chrome.google.com/webstore/detail/wikiwand-wikipedia-modern/emffkefkbkpkgpdeeooapgaicgmcbolj)
