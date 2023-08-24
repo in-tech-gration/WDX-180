@@ -20,6 +20,14 @@ _(Updated: 22/08/2023)_
 
   Watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
 
+  **YouTube Tips - (1) grabbing screenshots and (2) customizing the playback speed:** 
+  
+  (1) Sometimes you want to easily grab screenshots from particular segments of a video, e.g. a nice diagram, a frame that contains a code sample or a part that contains links. You can install and use [this Chrome extension](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk) to easily grab a screenshot at any point.  
+  
+  (2) When watching YouTube videos that are either too slow or too fast for you to follow along, remember these speed shortcuts:
+
+  ![](assets/youtube.speed.shortcuts.jpg)
+
   **What you'll learn:**
 
   - Binary digits (bits)
