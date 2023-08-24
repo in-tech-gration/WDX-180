@@ -89,6 +89,8 @@ _(Updated: 22/08/2023)_
 
   ### Exercises
 
+  - **Decode the secret message**: watch this [video](https://www.youtube.com/watch?v=OSZOf9pyepc) from an episode of [Silicon Valley](https://www.imdb.com/title/tt2575988/) series and try to find and decode the hidden geeky message.
+
   ### [Extra Resources](EXTRAS.md#day-01---computing)
 
 ## Week 1 - Day 2 | How the Internet & the World Wide Web works
