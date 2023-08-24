@@ -15,15 +15,20 @@
 
 ## MISC
 
-### Complete unit testing and documentation pages for the tools
+  ### Complete unit testing and documentation pages for the tools
 
-  Scripts found in `tools/` folder must be accompanied by several unit tests.
+    Scripts found in `tools/` folder must be accompanied by several unit tests.
 
-  At this point, only a handful of scripts contain unit tests. Check [the relevant file](../tools/README.md) to get more information about the tools and their testing status.
+    At this point, only a handful of scripts contain unit tests. Check [the relevant file](../tools/README.md) to get more information about the tools and their testing status.
 
-  If you feel ready to contribute, and it's the first time you are working on the testing of a tool, please reach out to the corresponding Project Manager for the tool before starting to work on the tests.
+    If you feel ready to contribute, and it's the first time you are working on the testing of a tool, please reach out to the corresponding Project Manager for the tool before starting to work on the tests.
 
-### Set up GitHub Actions to run housekeeping scripts (linting, etc.)
+  ### Set up GitHub Actions to run housekeeping scripts (linting, etc.)
 
-  For more information reach out to: Kostas Minaidis (@kostasx)
+    For more information reach out to: Kostas Minaidis (@kostasx)
 
+## TOOLS
+
+  ### Complete open tasks for the validator.js tool
+
+  See the [README.md](../tools/README.md#toolsvalidatorjs) file `Tasks` section for more details. 
