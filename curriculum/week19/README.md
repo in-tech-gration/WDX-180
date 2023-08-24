@@ -91,7 +91,7 @@ Watch the following videos which give a thorough explanation on what JWT (Jason 
 
 ### Study Plan
 
-Watch the following videos which give an introduction to the MongoDB NoSQL database, the MongooseJS package and how to eventually create a fully fledged Web App with Async CRUD(Create-Read-Update-Delete) operations. 
+Watch the following videos which give an introduction to the MongoDB NoSQL database and the MongooseJS package. 
 
 **What you'll learn:**
 
@@ -100,7 +100,6 @@ Watch the following videos which give an introduction to the MongoDB NoSQL datab
 - How to create a MongoDB database on the cloud.
 - How to use an actual database on your app's endpoints.
 - How to use the MongooseJS package to interact with MongoDB.
-- How to deploy your Web App on glitch (a hosting web service).
 
 **Here's the watch list**
 
@@ -135,6 +134,46 @@ Watch the following videos which give an introduction to the MongoDB NoSQL datab
       </ul>
     </details>
 
+### Exercises
+
+- Create a working version of each video's code structure and push them to your corresponding GitHub repository.
+- Complete any assignment suggested by the instructor on each video.
+
+### Sources and Attributions
+- [NodeJS Official Site](https://nodejs.org/)
+- [NPM Official Site](https://www.npmjs.com/)
+- [ExpressJS Official Site](https://expressjs.com/)
+- [NPM: CORS package](https://www.npmjs.com/package/cors)
+- [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [Thunder Client Official Site](https://www.thunderclient.com/)
+- [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
+- [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
+- [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
+- [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
+- [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+- [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
+- [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+- [Intro to JWT](https://jwt.io/introduction)
+- [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
+- [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
+- [MongoDB Official Site](https://www.mongodb.com/)
+- [MongooseJS Official Site](https://mongoosejs.com/)
+- [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+
+## Week 19 - Day 3
+
+### Study Plan
+
+Watch the following video which demonstrates how to eventually create a fully fledged Web App with Async CRUD(Create-Read-Update-Delete) operations and deploy it on a web hosting service (Glitch).
+
+**What you'll learn:**
+
+- How to properly configure all CRUD operations for every entity on your app.
+- How to deploy your app on Glitch.
+
+**Here's the watch list**
+
 - [Watch **MongoDB Async CRUD Operations**](https://www.youtube.com/watch?v=AWlLhRQJvtw)
   - Duration: 35min
   - Level: Beginner
@@ -144,7 +183,7 @@ Watch the following videos which give an introduction to the MongoDB NoSQL datab
       <ul>
         <li>Replace the old database simulation with MongoDB schemas and models on all routes</li>
         <li>Create a new employee</li>
-        <li>Read (get) a employee or all employees</li>
+        <li>Read (get) an employee or all employees</li>
         <li>Update an employee</li>
         <li>Delete an employee</li>
         <li>Create User Admin routes</li>
@@ -180,19 +219,9 @@ Watch the following videos which give an introduction to the MongoDB NoSQL datab
 - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
 - [Glitch Official Site](https://glitch.com/)
 
-## Week 19 - Day 3
-
-### Study Plan
-
-**What you'll learn:**
-
-**Here's the watch list**
-
-### Exercises
-
-### Sources and Attributions
-
 ## Week 19 - Day 4
+
+[//]: # (TODO Docker Tutorial)
 
 ### Study Plan
 
@@ -205,6 +234,8 @@ Watch the following videos which give an introduction to the MongoDB NoSQL datab
 ### Sources and Attributions
 
 ## Week 19 - Day 5
+
+[//]: # (TODO Recap lesson)
 
 ### Study Plan
 
