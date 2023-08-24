@@ -4,7 +4,7 @@ title: Week 18
 
 # Week 18 | Node.js 1
 
-_(Updated: 23/08/2023)_
+_(Updated: 24/08/2023)_
 
 ## Week 18 - Day 1
 
@@ -251,6 +251,7 @@ Watch the following videos which focus on what is Middleware in ExpressJS and th
 - [ExpressJS Official Site](https://expressjs.com/)
 - [NPM: CORS package](https://www.npmjs.com/package/cors)
 - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [Thunder Client Official Site](https://www.thunderclient.com/)
 
 ## Week 18 - Day 5
 
@@ -309,6 +310,7 @@ Watch the following videos which give an example on the MVC (Model View Controll
 - [ExpressJS Official Site](https://expressjs.com/)
 - [NPM: CORS package](https://www.npmjs.com/package/cors)
 - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [Thunder Client Official Site](https://www.thunderclient.com/)
 - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
 - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
 - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
