@@ -13,7 +13,8 @@
     "validate": "node tools/validator.js",
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
-    "yari:test": "node tools/yari.parser.test.js"
+    "yari:test": "node tools/yari.parser.test.js",
+    "tools:git-gud" : "serve -L -p 9000 resources/tools/git-gud/docs/"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
@@ -30,6 +31,7 @@
     "react-flatpickr": "^3.10.13",
     "react-markdown": "^8.0.7",
     "remark-gfm": "^3.0.1",
+    "serve": "^14.2.1",
     "survey-react-ui": "^1.9.103",
     "typescript": "^5.0.4"
   },

@@ -1,0 +1,60 @@
+body, html, #input-box-cmd {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: #FFB000;
+  font-family: monospace; 
+  font-size: 19px;
+}
+
+#input-box-cmd, #locked-text, #history, #githist, #histories {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#textenter, #histories, #controls {
+  width: 100%;
+}
+
+#githist, #history, #locked-text, #input-cmd-box {
+  display: inline-block;
+  line-height: 20px;
+}
+
+#githist, #locked-text {
+  width: 4em;
+  text-align: right;
+}
+#input-box-cmd, #history {
+  border: none;
+  height: 20px;
+	text-align: left;
+  width: calc(100% - 4em);
+}
+
+#githist, #history {
+  height: calc(5 * 20px);
+  line-height: 20px;
+  display: inline-block;
+}
+#history li, #githist li {
+  list-style-type: none;
+}
+
+input:focus {
+  outline: none;
+}
+#canvas {
+  clear: both;
+  background-color: black;
+}
+
+#controls {
+  border-top: 1px solid #FFB000;
+  padding-bottom: 0.25em;
+}
+
+#canvas, #controls {
+  display: block;
+}

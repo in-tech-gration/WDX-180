@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Git Gud</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <canvas id="canvas" width="640" height="480">
+      Get a real browser!
+    </canvas>
+    <div id="controls">
+      <div id="histories">
+        <ul id="githist">
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul><ul id="history">
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+      <div id="textenter">
+        <span id="locked-text">&gt;&nbsp;git&nbsp;</span><input id="input-box-cmd" autocomplete="off" spellcheck="false" autofocus="autofocus" type="text" maxlength="32" placeholder="commit, branch, checkout <id>, merge <id>, init" />
+      </div>
+    </div>
+    
+    <script src="./git-gud.js"></script>
+    <script src="./api.js"></script>
+
+    <script>
+      const HISTORY = document.getElementById("history");
+      const GIT_PREF = document.getElementById("githist");
+      const PROMPT = document.getElementById("locked-text");
+      const INPUT = document.getElementById("input-box-cmd");
+      const CANVAS = document.getElementById("canvas");
+      const CONTROLS = document.getElementById("controls");
+
+      HISTORY.onclick = _ => INPUT.focus();
+
+      window.addEventListener('resize', _ => {
+        CANVAS.width = window.innerWidth;
+        CANVAS.height = window.innerHeight - CONTROLS.offsetHeight;
+      });
+      window.dispatchEvent(new FocusEvent("resize"));
+
+      function addToHistory(text, prefix) {
+        let hLI = document.createElement("LI");
+        hLI.innerHTML = text;
+        HISTORY.appendChild(hLI);
+        let gLI = document.createElement("LI");
+        gLI.innerHTML = prefix || "&nbsp;";
+        GIT_PREF.appendChild(gLI);
+        if (HISTORY.children.length > 5) {
+          HISTORY.removeChild(HISTORY.children[0]);
+          GIT_PREF.removeChild(GIT_PREF.children[0]);
+        }
+      }
+
+      let initConfirm = false;
+      INPUT.onkeydown = e => {
+        if (e.keyCode !== 13) return true;
+        let command = INPUT.value.trim().toLowerCase();
+        INPUT.value = "";
+        if (command === "") return true;
+        addToHistory(command, initConfirm ? false : "git&nbsp;");
+
+        let split = command.split(' ');
+        if (initConfirm) {
+          if (command == 'y') {
+            init();
+            PROMPT.innerHTML = "> git&nbsp;";
+            initConfirm = false;
+          } else if (command == 'n') {
+            PROMPT.innerHTML = "> git&nbsp;";
+            initConfirm = false;
+          } else {
+            addToHistory("<span style='color:white'>Please enter either 'y' or 'n'.</span>", "y/n&nbsp;");
+          }
+        } else if (split[0] == "init") {
+          addToHistory("<span style='color:white'>This will reset your tree. Are you sure?</span>", "y/n&nbsp;");
+          PROMPT.innerHTML = "[y/n]&nbsp;";
+          initConfirm = true;
+        } else if (split[0] == "commit") {
+          commit();
+        } else if (split[0] == "branch") {
+          branch();
+        } else if (split[0] == "merge") {
+          merge(split[1]);
+        } else if (split[0] == "checkout") {
+          checkout(split[1]);
+        } else {
+          addToHistory("<span style='color:red'>Invalid command!</span>");
+        }
+
+        e.preventDefault(); return false;
+      }
+    </script>
+  </body>
+</html>
