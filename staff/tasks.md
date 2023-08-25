@@ -41,7 +41,15 @@
 
 ## MISC
 
+  ### Convert `Awesome Developer Dictionary` to JSON Format and integrate into resources
+
+    - Project Manager: Kostas Minaidis (@kostasx)
+
+  - [Source](https://github.com/dephraiim/awesome-developer-dictionary)
+
   ### Complete unit testing and documentation pages for the tools
+
+    - Project Manager: Kostas Minaidis (@kostasx)
 
     Scripts found in `tools/` folder must be accompanied by several unit tests.
 
@@ -51,9 +59,13 @@
 
   ### Set up GitHub Actions to run housekeeping scripts (linting, etc.)
 
+    - Project Manager: Kostas Minaidis (@kostasx)
+
     For more information reach out to: Kostas Minaidis (@kostasx)
 
   ### Implement Digital Certificates Issuing (Next.js)
+
+    - Project Manager: Kostas Minaidis (@kostasx)
 
     A special certificate HTML template, along with a unique address on our website will be used to certify the attendance and completion of the various parts of our curriculum (60°, 120°, 180°).
 
@@ -66,6 +78,8 @@
 
   ### Implement Weekly Feedback/Follow-up form
 
+    - Project Manager: Kostas Minaidis (@kostasx)
+
     At the end of each week, we ask students to submit a feedback form in order to check on their progress and get some valuable feedback on how things are going.
 
     **Specifications:**
@@ -73,6 +87,8 @@
     - Must be anonymous
 
   ### Implement a tool to estimate reading time for markdown files
+
+    - Project Manager: Kostas Minaidis (@kostasx)
 
     > **IMPORTANT:** If you are up to the challenge, please create a branch named `tasks-markdown-reading-time` and work on that branch. Try to implement as many unit tests as possible to ensure the reliability of your code.
 
@@ -82,7 +98,9 @@
 
   ### Complete open tasks for the validator.js tool
 
-  See the [README.md](../tools/README.md#toolsvalidatorjs) file `Tasks` section for more details. 
+    - Project Manager: Kostas Minaidis (@kostasx)
+
+    See the [README.md](../tools/README.md#toolsvalidatorjs) file `Tasks` section for more details. 
 
 ## PLATFORM (npm run learn)  
 
