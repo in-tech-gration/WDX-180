@@ -197,10 +197,11 @@ function getDailyContent( lines ){
   let weekDayRegex = /^## Week \d\d? \- Day \d\d?/
   
   for ( const line of lines ) {
-  
+
     if ( line.match(weekDayRegex) ) {
       day++;
       isInSection = true;
+      // console.log(line);
       continue; // Skip the heading itself
     }
   
