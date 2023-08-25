@@ -158,24 +158,6 @@ function checkForYouTubePlaylistLinks( markdownBody ){
 
 }
 
-function checkForAttributionsSection( headingTokens, isInCurriculumFolder ){
-
-  const hasAttributionSection = hasAttributions( headingTokens, isInCurriculumFolder );
-  
-  if ( !hasAttributionSection ){
-    warn(`No attributions section found:
-    
-    ### Sources and Attributions
-    `);
-    if ( isInCurriculumFolder ){
-      warn(`It looks like you are on a markdown file describing a Weekly schedule. Weekly README.md files should contain one 'Sources and Attributions' section per day, so in total 5. There were fewer sections found on this file.`)
-    }
-  } else {
-    ok(`${checkmark} Sources and Attributions section found.`)
-  }
-
-}
-
 function checkForUpdatedSection( inlineTokens ){
 
   const hasUpdated = hasUpdatedTokenInList( inlineTokens );
@@ -208,7 +190,7 @@ function getDailyContent( lines ){
     // If already in the desired section
     if ( isInSection ) {
       // Check if a new section is starting
-      if ( line.startsWith("##") && !line.match(weekDayRegex) ) {
+      if ( line.startsWith("## ") && !line.match(weekDayRegex) ) {
         break; // Exit the loop if a new section starts
       }
   
@@ -218,9 +200,9 @@ function getDailyContent( lines ){
   
       // Add the line to the section content
       if ( sectionContent[day] ){
-        sectionContent[day] += line + "\n"
+        sectionContent[day].push(line.trim());
       } else {
-        sectionContent[day] = line + "\n";
+        sectionContent[day] = [line.trim()];
       }
     }
   }
@@ -228,6 +210,70 @@ function getDailyContent( lines ){
   return sectionContent;
 
 }
+
+function checkForDailyContent( dailyContentLength ){
+  if ( dailyContentLength < 5 ){
+    warn("Daily Content (## Week X - Day Y) requires 5 sections. Found: " + dailyContentLength );
+    process.exit();
+  }
+}
+
+function checkForAttributionsSection( headingTokens, isInCurriculumFolder ){
+
+  const hasAttributionSection = hasAttributions( headingTokens, isInCurriculumFolder );
+  
+  if ( !hasAttributionSection ){
+    warn(`No attributions section found:
+    
+    ### Sources and Attributions
+    `);
+    if ( isInCurriculumFolder ){
+      warn(`It looks like you are on a markdown file describing a Weekly schedule. Weekly README.md files should contain one 'Sources and Attributions' section per day, so in total 5. There were fewer sections found on this file.`)
+    }
+  } else {
+    ok(`${checkmark} Sources and Attributions section found.`)
+  }
+
+}
+
+function getHeadingsFromDailyContent( dailyContent ){
+  return dailyContent.map( day =>{
+    return day.filter( line =>{
+      const heading = line.startsWith("### ");
+      if ( heading ){
+        return dailySections.some( dailySection =>{
+          return line.startsWith( dailySection );
+        });
+      }
+      return false;
+    });
+  })
+}
+
+function checkForDailyStructure( dailyHeadings ){
+
+  // console.log({ dailyHeadings });
+
+  dailyHeadings.forEach(( headings, idx ) =>{
+    if ( headings.length < dailySections.length ){
+
+      console.log("");
+      warn("Daily structure for day " + (idx + 1) + " is missing some sections.")
+      warn(dailySections.length + " required. Found " + headings.length + ".", false);
+      console.log("");
+      warn("Required sections:", false);
+      console.log("");
+      dailySections.forEach( d => warn(d, false) )
+      process.exit();
+
+    } else {
+
+      ok(`${checkmark} Daily structure check: day ${idx + 1} looks good.`)
+
+    }
+  });  
+}
+
 
 // 2) OUR VARIABLES: ===========================================================
 
@@ -239,6 +285,15 @@ const xmark                = "\u274C"; // ❌
 const updatedRegex         = /_\(Updated: (\d{2}\/\d{2}\/\d{4})\)_/;
 const md                   = new MarkdownIt();
 const headingTokens        = [];
+
+const dailySections = [
+  "### Schedule",
+  "### Study Plan",
+  "### Summary",
+  "### Exercises",
+  "### [Extra Resources]",
+  "### Sources and Attributions"
+];
 
 // 3) ACTION!!! ================================================================
 
@@ -312,18 +367,19 @@ function initializeChecks(){
   // ✅ CHECK: HAS YOUTUBE URLs CONTAINING &list QUERY STRING
   checkForYouTubePlaylistLinks( markdownBody );
   
-  // ✅ CHECK: HAS ATTRIBUTIONS SECTION
-  checkForAttributionsSection( headingTokens, isInCurriculumFolder );
-  
   // ✅ CHECK: HAS AN UPDATED SECTION
   checkForUpdatedSection( inlineTokens );
   
-  // CHECK: THAT EACH DAY HAS THE BOILERPLATE SKELETON
+  // ✅ CHECK: THAT EACH DAY HAS THE BOILERPLATE SKELETON
   const dailyContent = getDailyContent( lines );
-  
-  // console.log(dailyContent);
-  // console.log(dailyContent.length);
+  checkForDailyContent( dailyContent.length );
 
+  // ✅ CHECK: HAS ATTRIBUTIONS SECTION [ DEPRECATED DUE TO NEXT CHECK ]
+  // checkForAttributionsSection( headingTokens, isInCurriculumFolder );
+
+  // ✅ CHECK: THAT ALL DAYS CONTAIN THE SAME STRUCTURE
+  const dailyHeadings = getHeadingsFromDailyContent(dailyContent);
+  checkForDailyStructure( dailyHeadings );
 }
 
 if (require.main === module) {

@@ -23,19 +23,67 @@ _(Updated: 25/08/2023)_
   ### Sources and Attributions
 
 ## Week 2 - Day 2 | HTML
-  
+
+  ### Schedule
+
+  ### Study Plan
+
+  **What you'll learn:**
+
+  ### Summary
+
+  ### Exercises
+
+  ### [Extra Resources](EXTRAS.md)
+
   ### Sources and Attributions
 
 ## Week 2 - Day 3 | Tables
-  
+
+  ### Schedule
+
+  ### Study Plan
+
+  **What you'll learn:**
+
+  ### Summary
+
+  ### Exercises
+
+  ### [Extra Resources](EXTRAS.md)
+
   ### Sources and Attributions
 
 ## Week 2 - Day 4 | Forms
-  
+
+  ### Schedule
+
+  ### Study Plan
+
+  **What you'll learn:**
+
+  ### Summary
+
+  ### Exercises
+
+  ### [Extra Resources](EXTRAS.md)
+
   ### Sources and Attributions
 
 ## Week 2 - Day 5 | SVG & MathML
-  
+
+  ### Schedule
+
+  ### Study Plan
+
+  **What you'll learn:**
+
+  ### Summary
+
+  ### Exercises
+
+  ### [Extra Resources](EXTRAS.md)
+    
   ### Sources and Attributions
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 

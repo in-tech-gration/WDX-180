@@ -245,6 +245,10 @@ _(Updated: 22/08/2023)_
     - Duration: 5min
     - Captions: Yes
 
+  ### Summary
+
+  ### Exercises
+
   ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
   ### Sources and Attributions
@@ -277,6 +281,8 @@ _(Updated: 22/08/2023)_
   > https://github.com/commonmark/commonmark-web [STAR]
   > ? https://github.com/commonmark/commonmark.js  
 
+  ### Summary
+
   ### Exercises
 
   ### [Extra Resources](EXTRAS.md#day-03---html)
@@ -305,6 +311,8 @@ _(Updated: 22/08/2023)_
 
   - [Read: **CSS Basics**](resources/CSS_Basics/README.md)
   - [Read: **Publishing your website**](resources/Publishing%20your%20website/README.md)
+
+  ### Summary
 
   ### Exercises
 

@@ -2,7 +2,7 @@ const { URL } = require("node:url");
 const path    = require("node:path");
 const chalk   = require('chalk'); 
 
-const warn = (text)=> console.log(chalk.bold.red("WARNING:"), chalk.bold.red(text));
+const warn = (text, hasWARNING = true)=> console.log(chalk.bold.red( hasWARNING ? "WARNING:" : ""), chalk.bold.red(text));
 const ok = (text)=> console.log(chalk.bold.green(text));
 const info = (text)=> console.log(chalk.bold.blue(text));
 
