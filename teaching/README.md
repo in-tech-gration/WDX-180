@@ -2,6 +2,12 @@
 
 ## About
 
+## Going Live: How to prepare for webinars and YouTube videos
+
+  Create a Chrome Bookmark, name it something like "Clear Browser Data" and attach the following URL: `chrome://settings/clearBrowserData` to it. 
+  
+  This quick link can come in handy before running a live lecture or starting to record a YouTube video, as it will clear the browsing history that can sometimes reveal sensitive and personal links via the address bar auto-suggest.
+
 ## Important Concepts
 
 ### Dual-coding Theory & Picture Superiority Effect
@@ -21,10 +27,9 @@ Paivio's work has implications for literacy, visual mnemonics, idea generation, 
 - [Eitel & Scheiter, 2015](https://link.springer.com/article/10.1007/s10648-014-9264-4)
 - [Salmerón, Baccino, Cañas, Madrid, & Fajardo, 2009](https://www.sciencedirect.com/science/article/abs/pii/S0360131509001602?via%3Dihub)
 
----
+**Terminology:**
 
-## Terminology
+- [**Dual-Coding Theory**](#dual-coding-theory--the-picture-superiority-effect)
+- [**Picture Superiority Effect**](#dual-coding-theory--the-picture-superiority-effect)
 
-[**Dual-Coding Theory**](#dual-coding-theory--the-picture-superiority-effect)
 
-[**Picture Superiority Effect**](#dual-coding-theory--the-picture-superiority-effect)
