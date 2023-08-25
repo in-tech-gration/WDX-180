@@ -18,6 +18,14 @@ _(Updated: 22/08/2023)_
   - Exercises
   - [Extra Resources](#extra-resources)
 
+  ### Setting up
+
+  **Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack). 
+  
+  This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
+
+  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack). 🙏
+
   ### Study Plan
 
   Watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.

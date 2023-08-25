@@ -5,6 +5,7 @@
   - Find: (\(\d?\d:\d\d\))(.*)
   or
   - Find: (\(\d?\d:\d\d\))(.*)
+  or: ? (1:07:55)
   - Replace: <li>$1$2</li>
   - Replace: "$1$2"
 
