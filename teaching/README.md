@@ -17,7 +17,7 @@ Paivio's work has implications for literacy, visual mnemonics, idea generation, 
 **Sources:**
 
 - [Dual-coding Theory (Wikipedia)](https://en.wikipedia.org/wiki/Dual-coding_theory) 
-- [Picture Superioerity Effect (Wikipedia)](https://en.wikipedia.org/wiki/Picture_superiority_effect)
+- [Picture Superiority Effect (Wikipedia)](https://en.wikipedia.org/wiki/Picture_superiority_effect)
 - [Eitel & Scheiter, 2015](https://link.springer.com/article/10.1007/s10648-014-9264-4)
 - [Salmerón, Baccino, Cañas, Madrid, & Fajardo, 2009](https://www.sciencedirect.com/science/article/abs/pii/S0360131509001602?via%3Dihub)
 

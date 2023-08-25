@@ -38,6 +38,14 @@
 
 ## TOOLS
 
+  ### Implement Weekly Feedback/Follow-up form
+
+    At the end of each week, we ask students to submit a feedback form in order to check on their progress and get some valuable feedback on how things are going.
+
+    **Specifications:**
+
+    - Must be anonymous
+
   ### Implement a tool to estimate reading time for markdown files
 
     The tool should be able to read and parse a markdown file, estimate the reading time and possibly have the ability to automatically update the file with a section containing the reading time, ideally somewhere at the top of the file.

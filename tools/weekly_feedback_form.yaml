@@ -1,0 +1,18 @@
+---
+"$comment": Weekly Follow-up Form
+form_data:
+  student_details:
+    name: ''
+    date: ''
+    class: ''
+  feedback:
+  - question: 'SHA: What did you do to improve your non-technical skill sets?'
+    placeholder: 'SHA: e.g. presented a topic to my friend, mock interview with a
+      friend, nothing, etc'
+  - question: 'SHA: What did you learn recently? Why?'
+    placeholder: 'SHA: e.g. React because I want to improve my self there, Python-
+      for a task'
+  - question: 'SHA: Did you apply for jobs this week?'
+    placeholder: ''
+  - question: 'SHA: Let us know if you need any Help, write below please!'
+    placeholder: ''
