@@ -1,5 +1,7 @@
 # Week 25 | JavaScript Advanced 1
 
+    Welcome to the third and final part of our curriculum, WDX 180°.
+
 ## Week 25 - Day 1
 
 ## Week 25 - Day 2

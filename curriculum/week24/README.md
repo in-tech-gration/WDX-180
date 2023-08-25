@@ -28,3 +28,11 @@
 ## Week 24 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+## 🏆 WDX 120° COMPLETION CERTIFICATE
+
+    Enrolled students receive their digital certification for attending and completing the second part of the WDX curriculum.
+
+    In order to receive this certificate, the student must have completed the first part of the curriculum (WDX 60°).

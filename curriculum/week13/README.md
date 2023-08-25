@@ -1,5 +1,7 @@
 # Week 13 | JavaScript Intermediate 1 & Git
 
+    Welcome to the second part of our curriculum, WDX 120°.
+
 ## Week 13 - Day 1
 
 ## Week 13 - Day 2

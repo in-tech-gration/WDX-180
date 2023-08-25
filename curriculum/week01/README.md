@@ -6,6 +6,8 @@ title: Week 1
 
 _(Updated: 22/08/2023)_
 
+  Welcome to the first part of our curriculum, WDX 60°.
+
 ## Week 1 - Day 1 | Onboarding & Basics of Computing
 
   ### Schedule

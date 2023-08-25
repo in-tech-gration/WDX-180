@@ -27,7 +27,22 @@
 
     For more information reach out to: Kostas Minaidis (@kostasx)
 
+  ### Implement Digital Certificates Issuing (Next.js)
+
+    A special certificate HTML template, along with a unique address on our website will be used to certify the attendance and completion of the various parts of our curriculum (60°, 120°, 180°).
+
+    **Specifications:**
+
+    - Must be built on top of `Next.js`
+    - Must have a unique (hashed) shareable URL
+
 ## TOOLS
+
+  ### Implement a tool to estimate reading time for markdown files
+
+    The tool should be able to read and parse a markdown file, estimate the reading time and possibly have the ability to automatically update the file with a section containing the reading time, ideally somewhere at the top of the file.
+
+    - Possible (library) candidates: [reading-time](https://github.com/ngryman/reading-time)
 
   ### Complete open tasks for the validator.js tool
 
