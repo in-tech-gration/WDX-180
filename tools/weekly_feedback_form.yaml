@@ -2,17 +2,55 @@
 "$comment": Weekly Follow-up Form
 form_data:
   student_details:
-    name: ''
-    date: ''
-    class: ''
+    name: ""
+    date: ""
+    class: ""
   feedback:
-  - question: 'SHA: What did you do to improve your non-technical skill sets?'
-    placeholder: 'SHA: e.g. presented a topic to my friend, mock interview with a
-      friend, nothing, etc'
-  - question: 'SHA: What did you learn recently? Why?'
-    placeholder: 'SHA: e.g. React because I want to improve my self there, Python-
-      for a task'
-  - question: 'SHA: Did you apply for jobs this week?'
-    placeholder: ''
-  - question: 'SHA: Let us know if you need any Help, write below please!'
-    placeholder: ''
+  - question: "What did you learn this week?"
+    placeholder: ""
+    required: true
+  - question: "SHA: What did you do to improve your non-technical skill sets?"
+    placeholder: "SHA: e.g. presented a topic to my friend, mock interview with a
+      friend, nothing, etc"
+  - question: "SHA: What did you learn recently? Why?"
+    placeholder: "SHA: e.g. React because I want to improve my self there, Python-
+      for a task"
+  - question: "SHA: Did you apply for jobs this week?"
+    placeholder: ""
+  - question: "SHA: Let us know if you need any Help, write below please!"
+    placeholder: ""
+  - question: "Do you feel you have enough opportunities to practice what you've learned through coding exercises and projects?"
+    placeholder: ""
+  - question: "Were the objectives and expectations for the week clear to you? If not, how can they be improved?"
+    placeholder: ""
+  - question: "Did you collaborate with your peers on any assignments or projects this week? If so, how was the experience?"
+    placeholder: ""
+  - question: "Did you feel engaged during the live sessions (lectures, Q&A, etc.)? If not, how could they be made more engaging?"
+    placeholder: ""
+  - question: "How effective was the interaction with the instructors and teaching assistants this week?"
+    placeholder: ""
+  - question: "Did you encounter any technical issues or difficulties while working on assignments? If so, please describe them."
+    placeholder: ""
+  - question: "Were the provided learning resources (lectures, readings, exercises) helpful? If not, what could be improved?"
+    placeholder: ""
+  - question: "Did the pace of the lessons feel appropriate? Too fast, too slow, or just right?"
+    placeholder: "On a scale of 1 to 10, how comfortable do you feel with the material covered this week?"
+    required: true
+  - question: "Were there any concepts that you feel you need more clarification on?"
+    placeholder: ""
+  - question: "What was the most challenging part of this week's curriculum?"
+    placeholder: ""
+    required: true
+  - question: "Which topic or concept did you find most interesting?"
+    placeholder: ""
+    required: true
+  - question: "Is there anything specific you'd like to learn or discuss that hasn't been covered yet?"
+    placeholder: ""
+  - question: "What suggestions do you have for improving the overall learning experience in the bootcamp?"
+    placeholder: ""
+  - question: "On a personal note, how confident do you feel in your progress and skills since the start of the bootcamp?"
+    placeholder: ""
+  - question: "Are there any external factors (time constraints, personal commitments, etc.) that are impacting your learning experience?"
+    placeholder: ""
+  - question: "Do you have any additional comments, concerns, or feedback you'd like to share?"   
+    placeholder: ""
