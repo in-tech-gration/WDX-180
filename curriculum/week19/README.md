@@ -221,14 +221,27 @@ Watch the following video which demonstrates how to eventually create a fully fl
 
 ## Week 19 - Day 4
 
-[//]: # (TODO Docker Tutorial)
-
 ### Study Plan
+
+Read the following document which gives an introduction to Containers and Docker.
 
 **What you'll learn:**
 
-**Here's the watch list**
+- What are containers
+- What is Docker
+- Why is it so widely used
+- How to 'dockerize' your first NodeJS app
 
+**Some of the questions you'll be able to answer:**
+
+- Are containers Virtual Machines (VMs)?
+- What are the benefits of using containerized applications?
+- What's the difference between containers and images?
+- Is Docker platform agnostic?
+
+**Here's the document**
+
+[Containers and Docker](resources/Containers_and_Docker/README.md)
 ### Exercises
 
 ### Sources and Attributions
