@@ -8,6 +8,10 @@ _(Updated: 25/08/2023)_
 
 ## Week 2 - Day 1 | Git
 
+  **Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack). 
+  
+  This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
+
   ### Schedule
 
   ### Study Plan
@@ -83,7 +87,7 @@ _(Updated: 25/08/2023)_
   ### Exercises
 
   ### [Extra Resources](EXTRAS.md)
-    
+
   ### Sources and Attributions
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
