@@ -8,6 +8,18 @@ _(Updated: 25/08/2023)_
 
 ## Week 2 - Day 1 | Git
 
+  ### Schedule
+
+  ### Study Plan
+
+  **What you'll learn:**
+
+  ### Summary
+
+  ### Exercises
+
+  ### [Extra Resources](EXTRAS.md)
+
   ### Sources and Attributions
 
 ## Week 2 - Day 2 | HTML

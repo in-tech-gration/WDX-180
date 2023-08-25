@@ -103,6 +103,8 @@ _(Updated: 22/08/2023)_
 
   ### [Extra Resources](EXTRAS.md#day-01---computing)
 
+  ### Sources and Attributions
+
 ## Week 1 - Day 2 | How the Internet & the World Wide Web works
 
   ### Schedule
