@@ -12,6 +12,8 @@ _(Updated: 25/08/2023)_
   
   This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
 
+  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack). 🙏
+
   ### Schedule
 
   ### Study Plan

@@ -17,9 +17,23 @@
 
   **Specifications:**
 
-  - Based on [MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary)
+  - Based on [MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary). [Source](https://github.com/mdn/content/tree/ac9555df73c8d2825c886fa94aac13f87295e74c/files/en-us/glossary)
+
+  > **IMPORTANT:** If you are up to the challenge, please create a branch named `tasks-glossary` and work on that branch. Try to implement as many unit tests as possible to ensure the reliability of your code.
 
   - Glossary terms should be placed in `resources/glossary/` as Markdown files (`.md`).
+
+  - Markdown files should be parsed using the `tools/yari.parser.js` script.
+
+  - (New) glossary terms should also be appended to the `resources/terms.json` file in alphabetical order.
+
+  ### Create local/offline version of MDN HTTP Status Codes
+
+  - [Source](https://github.com/mdn/content/tree/ac9555df73c8d2825c886fa94aac13f87295e74c/files/en-us/web/http/status)
+
+  > **IMPORTANT:** If you are up to the challenge, please create a branch named `tasks-glossary-http` and work on that branch. Try to implement as many unit tests as possible to ensure the reliability of your code.
+
+  - Destination folder: `resources/HTTP/`
 
   - Markdown files should be parsed using the `tools/yari.parser.js` script.
 
@@ -60,6 +74,8 @@
 
   ### Implement a tool to estimate reading time for markdown files
 
+    > **IMPORTANT:** If you are up to the challenge, please create a branch named `tasks-markdown-reading-time` and work on that branch. Try to implement as many unit tests as possible to ensure the reliability of your code.
+
     The tool should be able to read and parse a markdown file, estimate the reading time and possibly have the ability to automatically update the file with a section containing the reading time, ideally somewhere at the top of the file.
 
     - Possible (library) candidates: [reading-time](https://github.com/ngryman/reading-time)
@@ -67,3 +83,7 @@
   ### Complete open tasks for the validator.js tool
 
   See the [README.md](../tools/README.md#toolsvalidatorjs) file `Tasks` section for more details. 
+
+## PLATFORM (npm run learn)  
+
+### Read, parse and display markdown content from `curriculum` folder in Next.js
