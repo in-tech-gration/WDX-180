@@ -1,5 +1,6 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
+
 const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
 
 test('Parsing {{glossary("XML")}}', () => {

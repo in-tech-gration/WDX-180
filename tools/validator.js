@@ -35,7 +35,7 @@ function isCurriculumFolder( filePath ){
 
 }
 
-function splitMarkdownIntoFrontmatterAndContent( markdown ){
+function splitMarkdownIntoFrontmatterAndContent( markdownContent ){
 
     // Find the index of the second "---" to detect the end of frontmatter
     const frontmatterEndIndex = markdownContent.indexOf('---', 3); // Start searching from index 3
@@ -71,7 +71,7 @@ function getMarkdownBody( markdown ){
 
 }
 
-function hasUpdatedTokenInList( tokens ){
+function hasUpdatedTokenInList( inlineTokens ){
 
   const hasUpdated = inlineTokens.some( token =>{
     const tokenHasLevel1 = token.level === 1;
@@ -82,7 +82,7 @@ function hasUpdatedTokenInList( tokens ){
   return hasUpdated;
 }
 
-function hasAttributions( headingTokens ){
+function hasAttributions( headingTokens, isInCurriculumFolder ){
   const isLevel3 = heading => heading.level === "3";
   const hasTitle = heading => heading.title === "Sources and Attributions"; 
   // If we are inside a curriculum/week* folder:
@@ -160,7 +160,7 @@ function checkForYouTubePlaylistLinks( markdownBody ){
 
 function checkForAttributionsSection( headingTokens, isInCurriculumFolder ){
 
-  const hasAttributionSection = hasAttributions( headingTokens );
+  const hasAttributionSection = hasAttributions( headingTokens, isInCurriculumFolder );
   
   if ( !hasAttributionSection ){
     warn(`No attributions section found:
@@ -189,6 +189,44 @@ function checkForUpdatedSection( inlineTokens ){
 
 }
 
+function getDailyContent( lines ){
+  
+  let isInSection = false;
+  let sectionContent = [];
+  let day = -1;
+  let weekDayRegex = /^## Week \d\d? \- Day \d\d?/
+  
+  for ( const line of lines ) {
+  
+    if ( line.match(weekDayRegex) ) {
+      day++;
+      isInSection = true;
+      continue; // Skip the heading itself
+    }
+  
+    // If already in the desired section
+    if ( isInSection ) {
+      // Check if a new section is starting
+      if ( line.startsWith("##") && !line.match(weekDayRegex) ) {
+        break; // Exit the loop if a new section starts
+      }
+  
+      if ( line.trim().length === 0 ){
+        continue;
+      }
+  
+      // Add the line to the section content
+      if ( sectionContent[day] ){
+        sectionContent[day] += line + "\n"
+      } else {
+        sectionContent[day] = line + "\n";
+      }
+    }
+  }
+
+  return sectionContent;
+
+}
 
 // 2) OUR VARIABLES: ===========================================================
 
@@ -203,80 +241,98 @@ const headingTokens        = [];
 
 // 3) ACTION!!! ================================================================
 
-// Parsing input
-if ( !markdownFilePath || !markdownFilePath.endsWith(".md") ){
-  warn("No markdown file passed as argument.")
-  process.exit();
-}
+function initializeChecks(){
 
-const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
-// console.log({ isInCurriculumFolder });
-const markdownContent      = fs.readFileSync(markdownFilePath, 'utf8');
-const frontmatter          = getFrontmatterFromMarkdown( markdownContent );
-const markdownBody         = getMarkdownBody( markdownContent );
-
-// Get all Headings from Markdown AST:
-md.use(require('markdown-it-anchor'), {
-  level: 1, // Extract headings starting from level 1
-  callback: (token, anchor) => {
-    headingTokens.push({
-      level: token.tag.slice(1), 
-      title: anchor.title 
-    });
+  // Parsing input
+  if ( !markdownFilePath || !markdownFilePath.endsWith(".md") ){
+    warn("No markdown file passed as argument.")
+    process.exit();
   }
-});
-
-// ✅ CHECK IF FRONTMATTER EXISTS AND IF ITS VALID:
-if (frontmatter) {
-
-  ok(`${checkmark} Frontmatter detected.`);
-
-  // Parse frontmatter based on YAML format
-  if ( !frontmatter.title || frontmatter.title.trim().length === "" ){
-    warn(`
-    Frontmatter sections requires a title: property:
-
-    ---
-    title: Some Title Here
-    ---
-    `)
+  
+  const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
+  // console.log({ isInCurriculumFolder });
+  const markdownContent      = fs.readFileSync(markdownFilePath, 'utf8');
+  const frontmatter          = getFrontmatterFromMarkdown( markdownContent );
+  const markdownBody         = getMarkdownBody( markdownContent );
+  
+  // Get all Headings from Markdown AST:
+  md.use(require('markdown-it-anchor'), {
+    level: 1, // Extract headings starting from level 1
+    callback: (token, anchor) => {
+      headingTokens.push({
+        level: token.tag.slice(1), 
+        title: anchor.title 
+      });
+    }
+  });
+  
+  // ✅ CHECK IF FRONTMATTER EXISTS AND IF ITS VALID:
+  if (frontmatter) {
+  
+    ok(`${checkmark} Frontmatter detected.`);
+  
+    // Parse frontmatter based on YAML format
+    if ( !frontmatter.title || frontmatter.title.trim().length === "" ){
+      warn(`
+      Frontmatter sections requires a title: property:
+  
+      ---
+      title: Some Title Here
+      ---
+      `)
+    }
+  } else {
+    warn("No frontmatter detected. A simple frontmatter section with at least a title: property is required.");
   }
-} else {
-  warn("No frontmatter detected. A simple frontmatter section with at least a title: property is required.");
+  
+  if ( !markdownBody ){
+    warn(`No content found in the file ${markdownFilePath}`);
+    process.exit();``
+  }
+  
+  // Parse the markdown content
+  const tokens = md.parse(markdownBody, {});
+  
+  // Group them tokens:
+  const inlineTokens = tokens.filter( token => token.type === "inline" );
+  
+  // Split markdown content by lines
+  const lines = markdownContent.split('\n');
+  
+  // ✅ CHECK: FOR NO HEADINGS
+  checkForHeadings( headingTokens );
+  
+  // ✅ CHECK: PRINT THE EXTRACTED HEADINGS AND WARN FOR EMPTY TITLES
+  checkForEmptyHeadings( headingTokens );
+  
+  // ✅ CHECK: HAS AT LEAST ONE LEVEL 1 HEADING
+  checkForHeadingLevel1(headingTokens);
+  
+  // ✅ CHECK: HAS YOUTUBE URLs CONTAINING &list QUERY STRING
+  checkForYouTubePlaylistLinks( markdownBody );
+  
+  // ✅ CHECK: HAS ATTRIBUTIONS SECTION
+  checkForAttributionsSection( headingTokens, isInCurriculumFolder );
+  
+  // ✅ CHECK: HAS AN UPDATED SECTION
+  checkForUpdatedSection( inlineTokens );
+  
+  // CHECK: THAT EACH DAY HAS THE BOILERPLATE SKELETON
+  const dailyContent = getDailyContent( lines );
+  
+  // console.log(dailyContent);
+  // console.log(dailyContent.length);
+
 }
 
-if ( !markdownBody ){
-  warn(`No content found in the file ${markdownFilePath}`);
-  process.exit();``
-}
-
-// Parse the markdown content
-const tokens = md.parse(markdownBody, {});
-
-// Group them tokens:
-const inlineTokens = tokens.filter( token => token.type === "inline" );
-
-// ✅ CHECK: FOR NO HEADINGS
-checkForHeadings( headingTokens );
-
-// ✅ CHECK: PRINT THE EXTRACTED HEADINGS AND WARN FOR EMPTY TITLES
-checkForEmptyHeadings( headingTokens );
-
-// ✅ CHECK: HAS AT LEAST ONE LEVEL 1 HEADING
-checkForHeadingLevel1(headingTokens);
-
-// ✅ CHECK: HAS YOUTUBE URLs CONTAINING &list QUERY STRING
-checkForYouTubePlaylistLinks( markdownBody );
-
-// ✅ CHECK: HAS ATTRIBUTIONS SECTION
-checkForAttributionsSection( headingTokens, isInCurriculumFolder );
-
-// ✅ CHECK: HAS AN UPDATED SECTION
-checkForUpdatedSection( inlineTokens );
-
+if (require.main === module) {
+  // console.log("This script was executed directly.");
+  initializeChecks();
+} 
 
 // 4) EXPORT SECTION: ==========================================================
 
 module.exports = {
-  hasUpdatedTokenInList
+  hasUpdatedTokenInList,
+  getDailyContent
 }
