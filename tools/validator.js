@@ -102,6 +102,94 @@ function getYouTubePlaylistURLs( markdownBody ){
 
 }
 
+function checkForHeadings( headingTokens ){
+  if ( headingTokens.length === 0 ){
+    console.log(`WARNING: No headings found in the file: ${markdownFilePath}`)
+    process.exit();
+  }
+}
+
+function checkForEmptyHeadings( headingTokens ){
+
+  headingTokens.forEach((heading, index) => {
+    if ( heading.title.trim().length === 0 ){
+      return warn(
+        `Heading ${index + 1}: Level ${heading.level}, Title: EMPTY
+      `);
+    }
+    // ok(`Heading ${index + 1}: Level ${heading.level}, Title: ${heading.title}`);
+  });
+
+}
+
+function checkForHeadingLevel1( headingTokens ){
+
+  const hasHeadingLevel1 = headingTokens.filter( h => h.level === "1" );
+
+  if ( hasHeadingLevel1.length === 0 ){
+    warn("A Heading of level 1 must be present on the document");
+    process.exit();
+  } 
+  if ( hasHeadingLevel1.length > 1 ){
+    warn("Only one Heading of level 1 must be present on the document");
+    process.exit();
+  } 
+  if ( hasHeadingLevel1.length === 1 ){
+    ok(`${checkmark} Found a single Heading Level 1.`);
+  }
+
+}
+
+function checkForYouTubePlaylistLinks( markdownBody ){
+
+  const ytLinks = getYouTubePlaylistURLs(markdownBody);
+  
+  if ( ytLinks.length > 0 ){
+  
+    warn(`Found the following YouTube link(s) containing a '&list=' query string. Please remove it, unless the link redirects to a Playlist page.`);
+  
+    ytLinks.forEach( URL =>{
+      const ytListParts = getYouTubeListIdParts(URL);
+      if ( ytListParts.length > 0 ){
+        console.log(`${ytListParts[0]}${chalk.cyan(ytListParts[1])}${ytListParts[2]}`);
+      }
+    })
+  }
+
+}
+
+function checkForAttributionsSection( headingTokens, isInCurriculumFolder ){
+
+  const hasAttributionSection = hasAttributions( headingTokens );
+  
+  if ( !hasAttributionSection ){
+    warn(`No attributions section found:
+    
+    ### Sources and Attributions
+    `);
+    if ( isInCurriculumFolder ){
+      warn(`It looks like you are on a markdown file describing a Weekly schedule. Weekly README.md files should contain one 'Sources and Attributions' section per day, so in total 5. There were fewer sections found on this file.`)
+    }
+  } else {
+    ok(`${checkmark} Sources and Attributions section found.`)
+  }
+
+}
+
+function checkForUpdatedSection( inlineTokens ){
+
+  const hasUpdated = hasUpdatedTokenInList( inlineTokens );
+  
+  if ( !hasUpdated ){
+    warn("No Updated: section found.");
+    warn("Syntax: _(Updated: DD/MM/YYYY)_")
+    warn("Usage: must be placed right after the top most Heading 1");
+    process.exit();
+  }
+
+}
+
+
 // 2) OUR VARIABLES: ===========================================================
 
 const markdownFilePath     = process.argv[2];
@@ -169,73 +257,25 @@ const tokens = md.parse(markdownBody, {});
 const inlineTokens = tokens.filter( token => token.type === "inline" );
 
 // ✅ CHECK: FOR NO HEADINGS
-if ( headingTokens.length === 0 ){
-  console.log(`WARNING: No headings found in the file: ${markdownFilePath}`)
-  process.exit();
-}
+checkForHeadings( headingTokens );
 
 // ✅ CHECK: PRINT THE EXTRACTED HEADINGS AND WARN FOR EMPTY TITLES
-headingTokens.forEach((heading, index) => {
-  if ( heading.title.trim().length === 0 ){
-    return warn(
-      `Heading ${index + 1}: Level ${heading.level}, Title: EMPTY
-    `);
-  }
-  // ok(`Heading ${index + 1}: Level ${heading.level}, Title: ${heading.title}`);
-});
+checkForEmptyHeadings( headingTokens );
 
 // ✅ CHECK: HAS AT LEAST ONE LEVEL 1 HEADING
-const hasHeadingLevel1 = headingTokens.filter( h => h.level === "1" );
-if ( hasHeadingLevel1.length === 0 ){
-  warn("A Heading of level 1 must be present on the document");
-} 
-if ( hasHeadingLevel1.length > 1 ){
-  warn("Only one Heading of level 1 must be present on the document");
-} 
-if ( hasHeadingLevel1.length === 1 ){
-  ok(`${checkmark} Found a single Heading Level 1.`);
-}
+checkForHeadingLevel1(headingTokens);
 
 // ✅ CHECK: HAS YOUTUBE URLs CONTAINING &list QUERY STRING
-const ytLinks = getYouTubePlaylistURLs(markdownBody);
-
-if ( ytLinks.length > 0 ){
-
-  warn(`Found the following YouTube link(s) containing a '&list=' query string. Please remove it, unless the link redirects to a Playlist page.`);
-
-  ytLinks.forEach( URL =>{
-    const ytListParts = getYouTubeListIdParts(URL);
-    if ( ytListParts.length > 0 ){
-      console.log(`${ytListParts[0]}${chalk.cyan(ytListParts[1])}${ytListParts[2]}`);
-    }
-  })
-}
+checkForYouTubePlaylistLinks( markdownBody );
 
 // ✅ CHECK: HAS ATTRIBUTIONS SECTION
-const hasAttributionSection = hasAttributions( headingTokens );
-
-if ( !hasAttributionSection ){
-  warn(`No attributions section found:
-  
-  ### Sources and Attributions
-  `);
-  if ( isInCurriculumFolder ){
-    warn(`It looks like you are on a markdown file describing a Weekly schedule. Weekly README.md files should contain one 'Sources and Attributions' section per day, so in total 5. There were fewer sections found on this file.`)
-  }
-} else {
-  ok(`${checkmark} Sources and Attributions section found.`)
-}
+checkForAttributionsSection( headingTokens, isInCurriculumFolder );
 
 // ✅ CHECK: HAS AN UPDATED SECTION
-const hasUpdated = hasUpdatedTokenInList( inlineTokens );
+checkForUpdatedSection( inlineTokens );
 
-if ( !hasUpdated ){
-  warn("No Updated: section found.");
-  warn("Syntax: _(Updated: DD/MM/YYYY)_")
-  warn("Usage: must be placed right after the top most Heading 1");
-}
 
-// EXPORT SECTION:
+// 4) EXPORT SECTION: ==========================================================
 
 module.exports = {
   hasUpdatedTokenInList
