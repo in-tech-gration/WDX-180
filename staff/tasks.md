@@ -13,6 +13,18 @@
 
   - Videos: 1 - 12. 14 - 15. 19 - 22. 25.
 
+  ### Create Searchable Glossary based on MDN
+
+  **Specifications:**
+
+  - Based on [MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary)
+
+  - Glossary terms should be placed in `resources/glossary/` as Markdown files (`.md`).
+
+  - Markdown files should be parsed using the `tools/yari.parser.js` script.
+
+  - (New) glossary terms should also be appended to the `resources/terms.json` file in alphabetical order.
+
 ## MISC
 
   ### Complete unit testing and documentation pages for the tools
