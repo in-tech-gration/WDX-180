@@ -13,18 +13,19 @@
     "type": {
       "type": "string",
       "enum": [
-        "Video",
         "Audio",
-        "Web Page",
         "Blog Post",
-        "YouTube",
-        "YouTube Playlist",
         "Coursera Course",
-        "Udacity Course",
         "edX Course",
         "Podcast",
         "Quora",
-        "StackOverflow"
+        "StackOverflow",
+        "Tool",
+        "Udacity Course",
+        "Video",
+        "Web Page",
+        "YouTube Playlist",
+        "YouTube"
       ]
     },
     "languages": {
