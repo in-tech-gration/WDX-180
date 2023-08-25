@@ -108,14 +108,9 @@ const markdownFilePath     = process.argv[2];
 // UNICODE CHARACTERS:
 const checkmark            = "\u2713"; // ✅ 
 const xmark                = "\u274C"; // ❌
-const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
-// console.log({ isInCurriculumFolder });
-const markdownContent      = fs.readFileSync(markdownFilePath, 'utf8');
 // Initialize markdown-it parser
 const updatedRegex         = /_\(Updated: (\d{2}\/\d{2}\/\d{4})\)_/;
 const md                   = new MarkdownIt();
-const frontmatter          = getFrontmatterFromMarkdown( markdownContent );
-const markdownBody         = getMarkdownBody( markdownContent );
 const headingTokens        = [];
 
 // 3) ACTION!!! ================================================================
@@ -125,6 +120,12 @@ if ( !markdownFilePath || !markdownFilePath.endsWith(".md") ){
   warn("No markdown file passed as argument.")
   process.exit();
 }
+
+const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
+// console.log({ isInCurriculumFolder });
+const markdownContent      = fs.readFileSync(markdownFilePath, 'utf8');
+const frontmatter          = getFrontmatterFromMarkdown( markdownContent );
+const markdownBody         = getMarkdownBody( markdownContent );
 
 // Get all Headings from Markdown AST:
 md.use(require('markdown-it-anchor'), {
