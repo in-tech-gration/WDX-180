@@ -76,6 +76,10 @@
 
 ## TOOLS
 
+  ### Develop script that validates the progress sheets (user/*.csv) before committing
+
+    - Project Manager: Kostas Minaidis (@kostasx)
+
   ### Implement Weekly Feedback/Follow-up form
 
     - Project Manager: Kostas Minaidis (@kostasx)
