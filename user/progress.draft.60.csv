@@ -17,6 +17,7 @@ Week, Day, Concept, Task, Level, Confidence, Completed, Submitted Links
 2, 1, Version Control: Git & GitHub, Sign up with GitHub, Beginner, 0-10, FALSE, Paste GitHub username
 2, 1, Version Control: Git & GitHub, Setup SSH keys for GitHub, Beginner, 0-10, FALSE, (not required)
 2, 1, Version Control: Git & GitHub, Create a (demo-repo) GitHub repository, Beginner, 0-10, FALSE, Paste GitHub repository URL
+2, 1, Version Control: Git & GitHub, Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme, Beginner, 0-10, FALSE, Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx
 
 2, 2, -, -, -, 0-10, FALSE, -
 2, 3, -, -, -, 0-10, FALSE, -
