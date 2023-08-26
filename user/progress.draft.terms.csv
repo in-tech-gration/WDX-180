@@ -1,13 +1,23 @@
 Term, Category, Subcategory, Level of confidence, Resources that helped
+
 Branches, Software Version Control, Git, 0-5, -
+Conflict, Software Version Control, Git, 0-5, -
 git add, Software Version Control, Git, 0-5, -
+git checkout, Software Version Control, Git, 0-5, -
 git commit, Software Version Control, Git, 0-5, -
+git diff, Software Version Control, Git, 0-5, -
+git log, Software Version Control, Git, 0-5, -
+git merge, Software Version Control, Git, 0-5, -
 git pull, Software Version Control, Git, 0-5, -
 git push, Software Version Control, Git, 0-5, -
 git push, Software Version Control, Git, 0-5, -
 git reset, Software Version Control, Git, 0-5, -
 git restore, Software Version Control, Git, 0-5, -
+git stash, Software Version Control, Git, 0-5, -
+git status, Software Version Control, Git, 0-5, -
 git, Software Version Control, Git, 0-5, -
 GitHub, Software Version Control, GitHub, 0-5, -
+origin, Software Version Control, GitHub, 0-5, -
 Pull Request, Software Version Control, GitHub, 0-5, -
+Remote repository, Software Version Control, GitHub, 0-5, -
 staging, Software Version Control, Git, 0-5, -
