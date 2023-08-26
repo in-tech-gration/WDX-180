@@ -50,6 +50,9 @@ _(Updated: 25/08/2023)_
 
   ### Summary
 
+  - **What is Version Control?** The management of changes to documents, computer programs, large web sites, and other collections of information.
+  - **What is Git?** A free and open source version control system.
+
   ### Exercises
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
