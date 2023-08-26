@@ -46,6 +46,7 @@ _(Updated: 25/08/2023)_
         </ul>
       </details>
 
+  - You can find a nice reference to the git commands mentioned in the video [here](resources/git-commands.md)
 
   ### Summary
 
