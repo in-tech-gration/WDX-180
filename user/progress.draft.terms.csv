@@ -1,22 +1,34 @@
-Term, Category, Subcategory, Level of confidence, Resources that helped
-Branches, Software Version Control, Git, 0-5, -
-Conflict, Software Version Control, Git, 0-5, -
-git add, Software Version Control, Git, 0-5, -
-git checkout, Software Version Control, Git, 0-5, -
-git commit, Software Version Control, Git, 0-5, -
-git diff, Software Version Control, Git, 0-5, -
-git log, Software Version Control, Git, 0-5, -
-git merge, Software Version Control, Git, 0-5, -
-git pull, Software Version Control, Git, 0-5, -
-git push, Software Version Control, Git, 0-5, -
-git push, Software Version Control, Git, 0-5, -
-git reset, Software Version Control, Git, 0-5, -
-git restore, Software Version Control, Git, 0-5, -
-git stash, Software Version Control, Git, 0-5, -
-git status, Software Version Control, Git, 0-5, -
-git, Software Version Control, Git, 0-5, -
-GitHub, Software Version Control, GitHub, 0-5, -
-origin, Software Version Control, GitHub, 0-5, -
-Pull Request, Software Version Control, GitHub, 0-5, -
-Remote repository, Software Version Control, GitHub, 0-5, -
-staging, Software Version Control, Git, 0-5, -
+Term, Category, Subcategory, Level of confidence, Reference,slug
+Branches, Software Version Control, Git, 0-5, -, git_branches
+Conflict, Software Version Control, Git, 0-5, -, git_conflict
+-,-,-,-,-,-
+git add, Software Version Control, Git, 0-5, -, git_add
+git branch, Software Version Control, Git, 0-5, -, git_branch
+git checkout, Software Version Control, Git, 0-5, -, git_checkout
+git commit, Software Version Control, Git, 0-5, -, git_commit
+git diff, Software Version Control, Git, 0-5, -, git_diff
+git init, Software Version Control, Git, 0-5, -, git_init
+git log, Software Version Control, Git, 0-5, -, git_log
+git merge, Software Version Control, Git, 0-5, -, git_merge
+git pull, Software Version Control, Git, 0-5, -, git_pull
+git push, Software Version Control, Git, 0-5, -, git_push
+git push, Software Version Control, Git, 0-5, -, git_push
+git reset, Software Version Control, Git, 0-5, -, git_reset
+git remote, Software Version Control, Git, 0-5, -, git_remote
+git restore, Software Version Control, Git, 0-5, -, git_restore
+git stash, Software Version Control, Git, 0-5, -, git_stash
+git status, Software Version Control, Git, 0-5, -, git_status
+git switch, Software Version Control, Git, 0-5, -, git_switch
+git, Software Version Control, Git, 0-5, -, git
+-,-,-,-,-,-
+GitHub, Software Version Control, GitHub, 0-5, -, github
+origin, Software Version Control, GitHub, 0-5, -, github_origin
+Pull Request, Software Version Control, GitHub, 0-5, -, github_pull_request
+Remote repository, Software Version Control, GitHub, 0-5, -, github_remote
+staging, Software Version Control, Git, 0-5, -, github_stating
+-,-,-,-,-,-
+ls, Operating System, Command-line, 0-5, -, cli_ls
+cd, Operating System, Command-line, 0-5, -, cli_cd
+mkdir, Operating System, Command-line, 0-5, -, cli_mkdir
+rm, Operating System, Command-line, 0-5, -, cli_rm
+touch, Operating System, Command-line, 0-5, -, cli_touch

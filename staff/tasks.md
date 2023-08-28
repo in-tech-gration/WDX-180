@@ -76,6 +76,16 @@
 
 ## TOOLS
 
+  ### Create linter for the /user/progress.draft.terms.csv file
+
+  - Project Manager: Kostas Minaidis (@kostasx)
+
+  - Requirements:
+    - Check that all entries have a slug
+    - Check that no duplicate slugs are found
+    - Check that no empty lines are found
+    - Run linter on commit
+
   ### Develop script that validates the progress sheets (user/*.csv) before committing
 
     - Project Manager: Kostas Minaidis (@kostasx)
