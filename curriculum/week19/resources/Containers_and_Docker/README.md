@@ -92,7 +92,7 @@ Every Docker container starts with a simple text file containing instructions fo
 
 _(Source: [Docker tools and terms](https://www.ibm.com/topics/docker#Docker+tools+and+terms))_
 
-## How to set up Docker on your machine and
+## How to set up Docker on your machine
 
 As mentioned before, Docker has been very popular over the past few years. There are a lot of guides and tutorials on how to set up Docker on your machine, but there is nothing better than the Official Documentation of Docker Desktop.
 
