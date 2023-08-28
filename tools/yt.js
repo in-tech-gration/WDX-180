@@ -5,6 +5,7 @@ const { parseArgs } = require("node:util");
 const clipboardy    = require('clipboardy');
 
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
+console.log("Running yt.s...");
 
 const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate } = require("./utils");
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
@@ -15,6 +16,7 @@ require("dotenv").config({ path: path.resolve(__dirname, '.env') });
 const { YOUTUBE_API_KEY } = process.env;
 
 const args = parseArgs({
+  strict: false,
   options: {
     "get-video-info": {
       type: "string",
@@ -22,6 +24,11 @@ const args = parseArgs({
     }
   },
 });
+
+// HANDLE MISSING PARAMETERS:
+if ( Object.keys(args.values).length === 0 ){
+  return warn("Missing arguments. Maybe you wanted to run with `--get-video-info <ID> or -i <ID>?`")
+}
 
 const vid = args.values["get-video-info"];
 
@@ -105,7 +112,13 @@ async function getYouTubeVideoInfo({ vid }){
         }
 
         // videoInfo.contentDetails.caption // BOOLEAN
+        ok("YouTube video description below:");
+        ok("================================");
+        console.log();
         console.log(videoInfo.snippet.description);
+        console.log();
+        ok("================================");
+        ok("End of YouTube video description");
 
         const entrySlug = convertToKebabCase(videoInfo.snippet.title);
 

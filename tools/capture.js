@@ -8,7 +8,7 @@
 */ 
 
 const fs = require("node:fs");
-const { findBoldTextMatches, findYouTubeMarkdownLinks } = require("./utils");
+const { findBoldTextMatches, decodeYouTubeURL } = require("./utils");
 
 const fileName = process.argv[2];
 
@@ -18,8 +18,12 @@ if ( !fileName ){
 
 const file = fs.readFileSync(fileName, "utf-8");
 
+/**
+ * @param {string}
+ * @returns {Array}
+ */
 const boldTextMatches = findBoldTextMatches(file);
-const ytLinks = findYouTubeMarkdownLinks(file);
+const ytLinks = decodeYouTubeURL(file);
 
 console.log(
   { ytLinks },

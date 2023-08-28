@@ -6,6 +6,37 @@ const warn = (text, hasWARNING = true)=> console.log(chalk.bold.red( hasWARNING 
 const ok = (text)=> console.log(chalk.bold.green(text));
 const info = (text)=> console.log(chalk.bold.blue(text));
 
+/**
+ * @param {string}
+ * @return {Array}
+ * The captured groups are:
+  - protocol
+  - subdomain
+  - domain
+  - path
+  - video code
+  - query string
+ */
+const ytRegex = text => {
+
+  const regex = /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?$/;
+  const match = text.match(regex);
+
+  if ( match ){
+    return {
+      url: match[0],
+      protocol: match[1],
+      subdomain: match[2],
+      domain: match[3],
+      path: match[5],
+      vid: match[6]
+    }
+  }
+
+  return null;
+
+}
+
 function getExtensionFromUrl( url ){
 
   const extension = path.extname(new URL(url).pathname).slice(1);
@@ -80,11 +111,12 @@ function findBoldTextMatches( fileContent ){
  * @param {string} fileContent 
  * @returns {Array}
  */
-function findYouTubeMarkdownLinks( fileContent ){
+function decodeYouTubeURL( fileContent ){
 
   // Regular Expression Source: https://stackoverflow.com/a/37704433/4861760
-  const ytRegex = /((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?/g;
-  const ytLinks = fileContent.match( ytRegex );
+  const ytRegexNoCapture = /((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?/g;
+
+  const ytLinks = fileContent.match( ytRegexNoCapture );
   return ytLinks ?? [];
 
 }
@@ -114,9 +146,10 @@ function getYouTubeListIdParts( ytURL ){
 }
 
 module.exports = {
+  ytRegex,
   getFile,
   getYouTubeListIdParts,
-  findYouTubeMarkdownLinks,
+  decodeYouTubeURL,
   getImageFile,
   getExtensionFromUrl,
   convertToKebabCase,

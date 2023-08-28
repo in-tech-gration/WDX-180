@@ -11,7 +11,9 @@ const yaml       = require('yaml');
 const { 
   warn, 
   ok, 
-  findYouTubeMarkdownLinks, 
+  info,
+  ytRegex,
+  decodeYouTubeURL, 
   getYouTubeListIdParts 
 } = require("./utils");
 
@@ -94,7 +96,7 @@ function hasAttributions( headingTokens, isInCurriculumFolder ){
 
 function getYouTubePlaylistURLs( markdownBody ){
 
-  return findYouTubeMarkdownLinks(markdownBody)
+  return decodeYouTubeURL(markdownBody)
   .filter( URL =>{
     // console.log(URL);
     return URL.includes("&list=") && URL.includes("watch?v=");
@@ -274,6 +276,45 @@ function checkForDailyStructure( dailyHeadings ){
   });  
 }
 
+function checkYouTubeVideosInResources( markdownBody ){
+
+  const resourcesDir = path.join( __dirname, "..", "resources/" );
+  const resourcesPath = path.join( resourcesDir, "resources.json");
+  const resourcesText = fs.readFileSync(resourcesPath, "utf8");
+  const { resources } = JSON.parse(resourcesText)
+
+  const ytLinks = decodeYouTubeURL(markdownBody).map( link => ytRegex(link).vid );
+  const found   = Array.from({ length: ytLinks.length }, ()=> false);
+
+  Object.entries(resources).forEach(([slug, value]) =>{
+    if (value.type !== "YouTube"){
+      return false;
+    } 
+    const idx = ytLinks.indexOf(value.youtube.id);
+    if ( idx > -1 ){
+      console.log(idx);
+    } 
+    
+    return found[idx] = true;
+  });
+
+  found.forEach(( status, i) =>{
+    if ( !status ){
+      console.log();
+      warn(`YouTube link with videoID: ${ytLinks[i]} was not found in ther 'resources.json'`
+      );
+      info(`Consider running: node tools/yt.js -i ${ytLinks[i]} to get video metadata.\n`)
+    }
+  })
+
+  if ( ytLinks.length !== found.filter(Boolean).length ){
+    warn("Mismatch between YouTube videos found in the file and resource.json.");
+  } else {
+    ok("All YouTube videos are found in the resources.json")
+  }
+
+}
+
 
 // 2) OUR VARIABLES: ===========================================================
 
@@ -380,6 +421,10 @@ function initializeChecks(){
   // ✅ CHECK: THAT ALL DAYS CONTAIN THE SAME STRUCTURE
   const dailyHeadings = getHeadingsFromDailyContent(dailyContent);
   checkForDailyStructure( dailyHeadings );
+
+  // ✅ CHECK: YOUTUBE LINKS THAT ARE NOT FOUND IN THE RESOURCES
+  checkYouTubeVideosInResources( markdownBody );
+  
 }
 
 if (require.main === module) {
