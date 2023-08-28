@@ -19,6 +19,29 @@ _(Updated: 25/08/2023)_
   - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
     - Duration: 20min 
     - Level: Beginner
+    - <details>
+        <summary>What you'll learn:</summary>
+        <ul>
+          <li>mkdir</li>
+          <li>cd</li>
+          <li>rm</li>
+          <li>ls</li>
+          <li>touch</li>
+          <li>git init</li>
+          <li>git add .</li>
+          <li>git add index.html</li>
+          <li>git commit -m "MESSAGE"</li>
+          <li>git log</li>
+          <li>git checkout BRANCH_NAME</li>
+          <li>git checkout -b NEW_BRANCH_NAME</li>
+          <li>git checkout COMMIT_HASH</li>
+          <li>git, detached state</li>
+          <li>git switch</li>
+          <li>git branch</li>
+          <li>git remote add origin GITHUB_URL</li>
+          <li>git push origin master</li>
+        </ul>
+      </details>
 
   **One important point to remember** is that the main branch in a git repository these days is called, ...well `main`. A few years back, the main branch used to be called `master`, so expect to see this term in various videos and tutorials. You should stick with `main`, by the way. There are no masters here. 🙂
 
@@ -58,7 +81,7 @@ _(Updated: 25/08/2023)_
         </ul>
       </details>
 
-  - You can find a nice reference to the git commands mentioned in the video [here](resources/git-commands.md)
+  - You can find a nice reference to the git commands mentioned in the videos [here](resources/git-commands.html). _(Also, in [markdown format](resources/git-commands.md))_
 
   ### Summary
 
