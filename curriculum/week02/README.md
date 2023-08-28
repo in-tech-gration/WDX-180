@@ -14,6 +14,18 @@ _(Updated: 25/08/2023)_
 
   **What you'll learn:**
 
+  Make sure to **follow along** and run the git commands on your own repo.
+
+  - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
+    - Duration: 20min 
+    - Level: Beginner
+
+  **One important point to remember** is that the main branch in a git repository these days is called, ...well `main`. A few years back, the main branch used to be called `master`, so expect to see this term in various videos and tutorials. You should stick with `main`, by the way. There are no masters here. 🙂
+
+  - **⏰ Time for a short break** (~5-10min) before the next longer video.
+
+  **Repetitio est mater studiorum:** "Repetition is the mother of learning". Let's recap those git concepts by revisiting them through another (longer) and more in-depth video about Git. 
+
   - [Watch: **Git and GitHub for Beginners - Crash Course**](https://www.youtube.com/watch?v=RGOj5yH7evk)
     - Duration: 69min
     - Level: Beginner
@@ -51,6 +63,8 @@ _(Updated: 25/08/2023)_
   - **⏰ Time for a short break** (~5-10min) before the next resource.
 
   **Repetitio est mater studiorum:** "Repetition is the mother of learning". Let's recap those git concepts by revisiting them through another (shorter) video. Make sure to **follow along** and run the git commands on your own repo.
+
+  One important point to remember, is that the main branch in a git repository these days is named, ...well `main`. A few years back, the main branch used to be called `master`, so expect to see this term in various videos and tutorials. You should stick with `main`, by the way. There are no masters here. 🙂
 
   - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
     - Duration: 20min 
