@@ -60,16 +60,6 @@ _(Updated: 25/08/2023)_
 
   - You can find a nice reference to the git commands mentioned in the video [here](resources/git-commands.md)
 
-  - **⏰ Time for a short break** (~5-10min) before the next resource.
-
-  **Repetitio est mater studiorum:** "Repetition is the mother of learning". Let's recap those git concepts by revisiting them through another (shorter) video. Make sure to **follow along** and run the git commands on your own repo.
-
-  One important point to remember, is that the main branch in a git repository these days is named, ...well `main`. A few years back, the main branch used to be called `master`, so expect to see this term in various videos and tutorials. You should stick with `main`, by the way. There are no masters here. 🙂
-
-  - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
-    - Duration: 20min 
-    - Level: Beginner
-
   ### Summary
 
   - **What is Version Control?** The management of changes to documents, computer programs, large web sites, and other collections of information.
