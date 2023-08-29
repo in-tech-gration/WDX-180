@@ -32,6 +32,16 @@ Let's take a look a the repository's folder structure:
 ├── postcss.config.js
 ├── 📂 public/
 ├── 📂 resources/
+    ├── 📂 HTTP/
+    ├── PRODUCTIVITY.md
+    ├── WDX.md
+    ├── 📂 assets/
+    ├── 📂 codecademy/
+    ├── 📂 glossary/
+    ├── resources.json
+    ├── resources.schema.json
+    ├── terms.json
+    └── 📂 tools/
 ├── 📂 staff/
 ├── tailwind.config.js
 ├── 📂 teaching/
