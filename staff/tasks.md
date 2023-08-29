@@ -84,6 +84,9 @@
 
   - Requirements:
     - Ensure that the level column is set to the appropriate values (Beginner, Intermediate, Advanced)
+    - Ensure that the COMPLETED columns has either FALSE or TRUE, in all uppercase and no other value or missing
+    - Check for unintended commas (,) inside the field values. Commas should be included inside "double quotes" if they are intended as values
+    - Ensure there are no discrepancies in the week and day columns, e.g. they are all in ascending order, no days or weeks are skipped, they are 2 digit numbers, etc. 
     - Two modes: lint the boilerplate files and lint the students' updated files and check for errors
 
   ### Create linter for the /user/progress.draft.terms.csv file

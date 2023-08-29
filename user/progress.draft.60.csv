@@ -1,20 +1,21 @@
 Week, Day, Concept, Task, Level, Confidence, Completed, Submitted Links
 1, 1, Setting up: Connect, Connect on Slack: https://intechgration.slack.com, Beginner, 0-10, FALSE, Say hello to us on Slack!
 1, 1, Setting up: WDX, Fork WDX repository, Beginner, 0-10, FALSE, Paste forked repo URL
-1, 1, Setting up: Code editor, Install VSCode, Beginner, 0-10, FALSE, (not required)
-1, 1, Setting up: Code editor, Install VSCode WDX Extension Pack, Beginner, 0-10, FALSE, (not required)
-1, 1, Setting up: Node, Install Node.js (LTS), Beginner, 0-10, FALSE, (not required)
+1, 1, Setting up: Code editor, Install VSCode, Beginner, 0-10, FALSE, Updated FALSE to TRUE in the COMPLETED column
+1, 1, Setting up: Code editor, Install VSCode WDX Extension Pack, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+1, 1, Setting up: Node, Install Node.js (LTS), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 1, 1, Setting up: Version Control, Install Git, Beginner, 0-10, FALSE, Run git --version and paste the output of the command here
 1, 1, Setting up: Productivity, Install Wikiwand Browser Extension: https://www.wikiwand.com/, Beginner, 0-10, FALSE, (not required)
-1, 1, Computing Basics, Complete the "Decode the secret message" challenge, -, 0-10, FALSE, Paste the secret message here
+1, 1, Computing Basics, Complete the "Decode the secret message" challenge, Beginner, 0-10, FALSE, Paste the secret message here
 1, 2, -, -, -, 0-10, FALSE, (not required)
 1, 3, -, -, -, 0-10, FALSE, (not required)
 1, 4, -, -, -, 0-10, FALSE, (not required)
 1, 5, -, -, -, 0-10, FALSE, (not required)
 -,-,-,-,-,-,-,-
-2, 1, Version Control: Git & GitHub, Watch "Git and GitHub for Beginners - Crash Course", Beginner, 0-10, FALSE, (not required)
+2, 1, Version Control: Git & GitHub, Watch "Git Tutorial For Dummies", Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 1, Version Control: Git & GitHub, Watch "Git and GitHub for Beginners - Crash Course", Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 2, 1, Version Control: Git & GitHub, Sign up with GitHub, Beginner, 0-10, FALSE, Paste GitHub username
-2, 1, Version Control: Git & GitHub, Setup SSH keys for GitHub, Beginner, 0-10, FALSE, (not required)
+2, 1, Version Control: Git & GitHub, Setup SSH keys for GitHub, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 2, 1, Version Control: Git & GitHub, Create a (demo-repo) GitHub repository, Beginner, 0-10, FALSE, Paste GitHub repository URL
 2, 1, Version Control: Git & GitHub, Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme, Beginner, 0-10, FALSE, Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx
 2, 1, Version Control: Git & GitHub, Update the terms sheet (/user/progress.draft.terms.csv) by giving 1 point to each of the git and CLI terms you've learned through this module, - , 0-10, FALSE, "Make sure to stage, commit and push your changes"
