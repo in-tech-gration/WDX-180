@@ -48,6 +48,7 @@
     - URL: https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192
     - FAQ: https://bellard.org/jslinux/faq.html
     - Resources: https://copy.sh/v86/
+    - Easy to install precompiled JSLinux demo: https://bellard.org/tinyemu/jslinux-2019-12-21.tar.gz
 
   ### Convert `Awesome Developer Dictionary` to JSON Format and integrate into resources
 
