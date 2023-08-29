@@ -76,9 +76,21 @@
 
 ## TOOLS
 
+  ### Create linter for the /user/progress.draft.*.csv files
+
+  - Project Manager: Kostas Minaidis (@kostasx)
+
+  - File: tools/progress.linter.js
+
+  - Requirements:
+    - Ensure that the level column is set to the appropriate values (Beginner, Intermediate, Advanced)
+    - Two modes: lint the boilerplate files and lint the students' updated files and check for errors
+
   ### Create linter for the /user/progress.draft.terms.csv file
 
   - Project Manager: Kostas Minaidis (@kostasx)
+
+  - File: tools/progress.linter.js
 
   - Requirements:
     - Check that all entries have a slug
