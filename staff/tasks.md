@@ -41,6 +41,14 @@
 
 ## MISC
 
+  ### Create a local/offline version of JS Linux
+
+    - Project Manager: Kostas Minaidis (@kostasx)
+
+    - URL: https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192
+    - FAQ: https://bellard.org/jslinux/faq.html
+    - Resources: https://copy.sh/v86/
+
   ### Convert `Awesome Developer Dictionary` to JSON Format and integrate into resources
 
     - Project Manager: Kostas Minaidis (@kostasx)
