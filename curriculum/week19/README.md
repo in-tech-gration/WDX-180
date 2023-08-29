@@ -287,6 +287,7 @@ _(Updated: 28/08/2023)_
   - What is docker compose
   - How to use docker compose
   - How to run multiple docker containers
+  - How to dockerize an app
 
   **Here's the document**
 
@@ -297,6 +298,8 @@ _(Updated: 28/08/2023)_
   ### Exercises
 
   Fully containerize the app that you've built the past two weeks and push on your GitHub the required configurations files along with instructions (e.g. in README.md file) on how to properly run the app using only Docker.
+
+  [A guide to the exercise](resources/Docker_Excercise/README.md)
 
   ### [Extra Resources](EXTRAS.md)
   
