@@ -14,7 +14,9 @@ _(Updated: 25/08/2023)_
 
   **What you'll learn:**
 
-  Make sure to **follow along** and run the git commands on your own repo.
+  Make sure to **follow along** and run the git commands on your own repo. 
+  
+  ⚠️ **IMPORTANT:** The repository you will create under your GitHub account, **must be named: `gitVideo`**.
 
   - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
     - Duration: 20min 
