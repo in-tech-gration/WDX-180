@@ -4,9 +4,17 @@
 
 The `Intechgration.io` WDX curriculum consists of several lessons spread over 9 months, covering concepts such as the Internet, World Wide Web, HTML, CSS, JavaScript, Node.js, React and more.
 
-This course will help students:
+This course will guide and support students towards the following goals:
 
-Learning outcomes:
+- Gain a firm understanding of computing and basic computer science concepts
+- Understand how the Internet and the Web are working
+- Learn how web clients and web servers work
+- Build websites using web technologies such as HTML, CSS and JavaScript
+- Become frontend developers
+- Get to know how to develop backend web applications
+- Work and interact with databases
+- Get a basic introduction to AI and Machine Learning
+- Become responsible and ethical professionals 
 
 ## Tracking your progress
 
