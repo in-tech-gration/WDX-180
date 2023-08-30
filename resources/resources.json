@@ -917,6 +917,18 @@
       "language": [
         "en"
       ]
+    },
+    "html" : {
+      "title": "HTML",
+      "identifier": "https://webapps-for-beginners.rubymonstas.org/html.html",
+      "type": "Web Page",
+      "creator": ["https://rubymonstas.org/"]
+    },
+    "http" : {
+      "title": "HTTP",
+      "identifier": "https://webapps-for-beginners.rubymonstas.org/http.html",
+      "creator": ["https://rubymonstas.org/"],
+      "type": "Web Page"
     }
   },
   "creators": {}
