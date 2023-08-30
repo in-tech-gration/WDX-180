@@ -10,6 +10,8 @@ This is Web Development X 180°. An introductory course to the web and related t
 
 The WDX 180° curriculum, along with all related material (exercises, code, etc.), **is and will always be free and open-source** under the GPLv3 license.
 
+You can find the [Syllabus here](curriculum/README.md).
+
 ### Setup
 
 The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository) this repository under your GitHub account.
@@ -142,6 +144,7 @@ _(Work in progress)_
 - [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
 - [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
+- **How about you?** 😉
 
 The curriculum draws heavily on the following amazing resources:
 
