@@ -10,6 +10,7 @@ import SidebarLink from './sidebar-link'
 import Logo from './logo'
 import DashboardIcon from '@/components/ui/icons/dashboard'
 import CalendarIcon from '@/components/ui/icons/calendar'
+import UtilityIcon from '@/components/ui/icons/utility'
 
 export default function Sidebar() {
   const sidebar = useRef<HTMLDivElement>(null)
@@ -131,6 +132,18 @@ export default function Sidebar() {
                     <DashboardIcon isActive={segments.includes("dashboard")}/>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                       Dashboard
+                    </span>
+                  </div>
+                </SidebarLink>
+              </li>
+
+              {/* Resources */}
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${segments.includes('resources') && 'bg-slate-900'}`}>
+                <SidebarLink href="/resources">
+                  <div className="flex items-center">
+                    <UtilityIcon isActive={segments.includes('resources')} />
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Resources
                     </span>
                   </div>
                 </SidebarLink>
@@ -755,32 +768,7 @@ export default function Sidebar() {
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                              <circle
-                                className={`fill-current ${segments.includes('utility') ? 'text-indigo-300' : 'text-slate-400'}`}
-                                cx="18.5"
-                                cy="5.5"
-                                r="4.5"
-                              />
-                              <circle
-                                className={`fill-current ${segments.includes('utility') ? 'text-indigo-500' : 'text-slate-600'}`}
-                                cx="5.5"
-                                cy="5.5"
-                                r="4.5"
-                              />
-                              <circle
-                                className={`fill-current ${segments.includes('utility') ? 'text-indigo-500' : 'text-slate-600'}`}
-                                cx="18.5"
-                                cy="18.5"
-                                r="4.5"
-                              />
-                              <circle
-                                className={`fill-current ${segments.includes('utility') ? 'text-indigo-300' : 'text-slate-400'}`}
-                                cx="5.5"
-                                cy="18.5"
-                                r="4.5"
-                              />
-                            </svg>
+                            <UtilityIcon isActive={segments.includes('utility')} />
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                               Utility
                             </span>

@@ -21,24 +21,6 @@ import UserImage05 from '@/public/images/avatar-05.jpg'
 
 import Post from "@/components/post/post"
 
-import Survey from "../../../components/surveyjs/Survey";
-
-// TODO: Add E-Commerce > Shop2
-// TODO: Community > Users Tabs (YouTubers?) or Users Tiles
-// TODO: Community > Forum + Forum Post (FAQ, Q&A?)
-// TODO: Jobs > Listing
-// TODO: Tasks > Kanban or List (Progress?)
-// TODO: Inbox > Messages from Headquarters? e.g. Updated Parent repo, need to sync?
-// TODO: Calendar
-// TODO: Campaigns (Tips?)
-// TODO: Settings > My Account, Notifications, Connected Apps, Feedback
-// TODO: Utility > Changelog
-// TODO: Utility > Roadmap
-// TODO: Utility > FAQ
-// TODO: Utility > Knowledge base
-// TODO: Authentication > Sign in, Sign up, Reset Password
-// TODO: Onboarding
-
 function RecentActivity() {
     return(
       <div className="col-span-full xl:col-span-6 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
