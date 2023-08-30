@@ -16,6 +16,34 @@ import AnalyticsCard09 from './analytics-card-09'
 import AnalyticsCard10 from './analytics-card-10'
 import AnalyticsCard11 from './analytics-card-11'
 
+import DashboardCard01 from '../dashboard-card-01'
+import DashboardCard02 from '../dashboard-card-02'
+import DashboardCard03 from '../dashboard-card-03'
+import DashboardCard04 from '../dashboard-card-04'
+import DashboardCard05 from '../dashboard-card-05'
+import DashboardCard06 from '../dashboard-card-06'
+import DashboardCard07 from '../dashboard-card-07'
+import DashboardCard08 from '../dashboard-card-08'
+import DashboardCard09 from '../dashboard-card-09'
+import DashboardCard10 from '../dashboard-card-10'
+import DashboardCard11 from '../dashboard-card-11'
+
+import FintechIntro from '../fintech/fintech-intro'
+import FintechCard01 from '../fintech/fintech-card-01'
+import FintechCard02 from '../fintech/fintech-card-02'
+import FintechCard03 from '../fintech/fintech-card-03'
+import FintechCard04 from '../fintech/fintech-card-04'
+import FintechCard05 from '../fintech/fintech-card-05'
+import FintechCard06 from '../fintech/fintech-card-06'
+import FintechCard07 from '../fintech/fintech-card-07'
+import FintechCard08 from '../fintech/fintech-card-08'
+import FintechCard09 from '../fintech/fintech-card-09'
+import FintechCard10 from '../fintech/fintech-card-10'
+import FintechCard11 from '../fintech/fintech-card-11'
+import FintechCard12 from '../fintech/fintech-card-12'
+import FintechCard13 from '../fintech/fintech-card-13'
+import FintechCard14 from '../fintech/fintech-card-14'
+
 export default function Analytics() {
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
@@ -35,6 +63,66 @@ export default function Analytics() {
           <Datepicker align="right" />
 
         </div>
+
+      </div>
+      {/* Cards */}
+      <div className="grid grid-cols-12 gap-6">
+
+        {/* Page Intro */}
+        <FintechIntro />
+        {/* Line chart (Portfolio Returns) */}
+        <FintechCard01 />
+        {/* Credit Card */}
+        <FintechCard02 />
+        {/* Bar chart (Cash Flow) */}
+        <FintechCard03 />
+        {/* Horizontal bar chart (Cash Flow by Account) */}
+        <FintechCard04 />
+        {/* Table (Recent Expenses) */}
+        <FintechCard05 />
+        {/* Table (Recent Earnings) */}
+        <FintechCard06 />
+        {/* Line chart (Saving Goals) */}
+        <FintechCard07 />
+        {/* Line chart (Growth Portfolio) */}
+        <FintechCard08 />
+        {/* Pie chart (Portfolio Value) */}
+        <FintechCard09 />
+        {/* Line charts (Stock graphs) */}
+        <FintechCard10 />
+        <FintechCard11 />
+        <FintechCard12 />
+        <FintechCard13 />
+        {/* Table (Market Trends) */}
+        <FintechCard14 />
+
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-12 gap-6">
+
+        {/* Line chart (Acme Plus) */}
+        <DashboardCard01 />
+        {/* Line chart (Acme Advanced) */}
+        <DashboardCard02 />
+        {/* Line chart (Acme Professional) */}
+        <DashboardCard03 />
+        {/* Bar chart (Direct vs Indirect) */}
+        <DashboardCard04 />
+        {/* Line chart (Real Time Value) */}
+        <DashboardCard05 />
+        {/* Doughnut chart (Top Countries) */}
+        <DashboardCard06 />
+        {/* Table (Top Channels) */}
+        <DashboardCard07 />
+        {/* Line chart (Sales Over Time) */}
+        <DashboardCard08 />
+        {/* Stacked bar chart (Sales VS Refunds) */}
+        <DashboardCard09 />
+        {/* Card (Recent Activity) */}
+        <DashboardCard10 />
+        {/* Card (Income/Expenses) */}
+        <DashboardCard11 />
 
       </div>
 

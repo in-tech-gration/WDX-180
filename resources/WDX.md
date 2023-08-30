@@ -67,4 +67,4 @@ Now, let's briefly explain what each file and folder contains:
 
   1) Open `/components/ui/sidebar.tsx`
 
-  2) Find the `/* Links */` section and update the links.
+  2) Find the `/* Links */` section and update the links. There's a `/* New Link: Title */` commented section that will help you get started.
