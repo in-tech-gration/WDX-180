@@ -1,5 +1,7 @@
 # Web Development X - 180°
 
+![](assets/syllabus.jpg)
+
 ## Overview 
 
 The `Intechgration.io` WDX curriculum consists of several lessons spread over 9 months, covering concepts such as the Internet, World Wide Web, HTML, CSS, JavaScript, Node.js, React and more.
