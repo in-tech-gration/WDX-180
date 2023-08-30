@@ -1,10 +1,12 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import MeetupImage from '@/public/images/meetup-image.jpg'
 import UserImage07 from '@/public/images/user-32-07.jpg'
 
 type IPost = {
   author?: string
+  avatar?: StaticImageData | string
+  headerImage?: StaticImageData | string
   title?: string
   subtitle?: string
   children: React.ReactNode
@@ -13,9 +15,9 @@ type IPost = {
 // TODO: Read Creation/Update Date from Frontmatter < https://youtu.be/Hiabp1GY8fA?t=1208
 // TODO: STUDY: https://github.com/remarkjs/remark-gfm
 // TODO: STUDY: https://github.com/remarkjs/react-markdown
-export default function Post({ author, title, subtitle, children }: IPost) {
+export default function Post({ avatar, headerImage, author, title, subtitle, children }: IPost) {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-8 m-auto max-w-3xl">
+    <div className="post-component px-4 sm:px-6 lg:px-8 py-8 m-auto max-w-3xl">
 
       {/* Page content */}
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row lg:space-x-8 xl:space-x-16">
@@ -34,16 +36,18 @@ export default function Post({ author, title, subtitle, children }: IPost) {
           <header className="mb-4">
             {/* Title */}
             <h1 className="text-2xl md:text-3xl text-slate-800 dark:text-slate-100 font-bold mb-2">{ title }</h1>
-            <p>{ subtitle }</p>
+            <p className="text-xl">{ subtitle }</p>
           </header>
 
           {/* Meta */}
           <div className="space-y-3 sm:flex sm:items-center sm:justify-between sm:space-y-0 mb-6">
             {/* Author */}
             <div className="flex items-center sm:mr-4">
-              <a className="block mr-2 shrink-0" href="#0">
-                <Image className="rounded-full" src={UserImage07} width={32} height={32} alt="User 04" />
-              </a>
+              { avatar && (
+                <a className="block mr-2 shrink-0" href="#0">
+                  <Image className="rounded-full" src={avatar} width={32} height={32} alt="User 04" />
+                </a>
+              )}
               <div className="text-sm whitespace-nowrap">
                 Hosted by{' '}
                 <a className="font-semibold text-slate-800 dark:text-slate-100" href="#0">
@@ -67,9 +71,11 @@ export default function Post({ author, title, subtitle, children }: IPost) {
           </div>
 
           {/* Image */}
-          <figure className="mb-6">
-            <Image className="w-full rounded-sm" src={MeetupImage} width={640} height={360} alt="Meetup" />
-          </figure>
+          { headerImage && (
+            <figure className="mb-6">
+              <Image className="w-full rounded-sm" src={headerImage} width={640} height={360} alt="Meetup" />
+            </figure>
+          )}
 
           {/* Post content */}
           <div>
