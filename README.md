@@ -154,6 +154,10 @@ The curriculum draws heavily on the following amazing resources:
 - [**Kyle Simpson** aka getify, author of `You Don't know JS`](https://www.linkedin.com/in/getify/)
 - [**Dave Gray**](https://www.linkedin.com/in/davidagray/)
 
+## Side Projects
+
+- [**VSCode WDX Extension Pack**](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack): A VSCode extension that comes packed with recommended extensions and snippets that will help students study and code better.
+
 ## Contribute
 
 - Spotted a broken link?

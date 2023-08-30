@@ -63,6 +63,12 @@ Now, let's briefly explain what each file and folder contains:
 
 ### How to do X?
 
+#### How to launch the platform?
+
+  1) While inside the root folder, run the following command:
+
+  `npm run learn`
+
 #### How to update the side menu?
 
   1) Open `/components/ui/sidebar.tsx`
