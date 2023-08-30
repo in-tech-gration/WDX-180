@@ -47,6 +47,8 @@
   - [Watch: **Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?**](https://www.youtube.com/watch?v=MDu6hWknk70)
     - Duration: 5min
 
+  - [Read: **HTTP**](resources/HTTP.md), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/).
+
   ### Public Key Cryptography
 
   - [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do)

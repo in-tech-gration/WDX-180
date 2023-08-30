@@ -279,6 +279,7 @@ _(Updated: 22/08/2023)_
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
+  - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
   - [Read: **What will your website look like?**](resources/What%20will%20your%20website%20look%20like/README.md)
   - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
   

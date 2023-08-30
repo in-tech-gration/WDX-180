@@ -1,5 +1,10 @@
 # EXTRAS
 
+## Git & GitHub
+
+- Check out the [Codecademy Git](https://www.codecademy.com/resources/docs/git) resources which contain pages describing some of the most basic concepts such as the [git add](https://www.codecademy.com/resources/docs/git/add), [git commit](https://www.codecademy.com/resources/docs/git/commit) commands, etc.
+  - The WDX retains an offline version of these files. You can find them in the [`/resources/codecademy/git/concepts/`](../../resources/codecademy/git/concepts/) folder.
+
 ## Accessibility
 
 - [Listen: **Accessibility** Kopec Explains Software Podcast](http://kopec.live/episode/184aa586/accessibility)
