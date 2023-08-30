@@ -58,3 +58,13 @@ Now, let's briefly explain what each file and folder contains:
 ...
 - **LICENSE**: This is the GNU General Public License (v3) under which the content of this repository operates.
 - **user/**: This is the student's personal folder. This is where the student will store all of their personal progress data, code submissions and other related resources.
+
+## The WDX Platform (Next.js)
+
+### How to do X?
+
+#### How to update the side menu?
+
+  1) Open `/components/ui/sidebar.tsx`
+
+  2) Find the `/* Links */` section and update the links.

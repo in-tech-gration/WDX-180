@@ -8,6 +8,8 @@ import { getBreakpoint } from '../utils/utils'
 import SidebarLinkGroup from './sidebar-link-group'
 import SidebarLink from './sidebar-link'
 import Logo from './logo'
+import DashboardIcon from '@/components/ui/icons/dashboard'
+import CalendarIcon from '@/components/ui/icons/calendar'
 
 export default function Sidebar() {
   const sidebar = useRef<HTMLDivElement>(null)
@@ -106,24 +108,21 @@ export default function Sidebar() {
               <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">Pages</span>
             </h3>
             <ul className="mt-3">
-              
-              {/* Calendar */}
-              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${segments.includes('calendar') && 'bg-slate-900'}`}>
-                <SidebarLink href="/calendar">
+
+              {/* New Link: Title */}
+              { false && ( <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${segments.includes('LINK_NAME') && 'bg-slate-900'}`}>
+                <SidebarLink href="/LINK_NAME">
                   <div className="flex items-center">
-                    <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                      <path className={`fill-current ${segments.includes('calendar') ? 'text-indigo-500' : 'text-slate-600'}`} d="M1 3h22v20H1z" />
-                      <path
-                        className={`fill-current ${segments.includes('calendar') ? 'text-indigo-300' : 'text-slate-400'}`}
-                        d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z"
-                      />
-                    </svg>
+                    {/* ICON: */}
+                    <CalendarIcon isActive={segments.includes('LINK_NAME')}/>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Calendar
+                      LINK_NAME
                     </span>
                   </div>
                 </SidebarLink>
               </li>
+              )}
+              {/* New Link: Title */}
 
               {/* Dashboard */}
               <SidebarLinkGroup open={segments.includes('dashboard')}>
@@ -141,23 +140,7 @@ export default function Sidebar() {
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
-                            <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                              <path
-                                className={`fill-current ${segments.includes('dashboard') ? 'text-indigo-500' : 'text-slate-400'
-                                  }`}
-                                d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z"
-                              />
-                              <path
-                                className={`fill-current ${segments.includes('dashboard') ? 'text-indigo-600' : 'text-slate-600'
-                                  }`}
-                                d="M12 3c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9z"
-                              />
-                              <path
-                                className={`fill-current ${segments.includes('dashboard') ? 'text-indigo-200' : 'text-slate-400'
-                                  }`}
-                                d="M12 15c-1.654 0-3-1.346-3-3 0-.462.113-.894.3-1.285L6 6l4.714 3.301A2.973 2.973 0 0112 9c1.654 0 3 1.346 3 3s-1.346 3-3 3z"
-                              />
-                            </svg>
+                            <DashboardIcon isActive={segments.includes('dashboard')} />
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                               Dashboard
                             </span>
