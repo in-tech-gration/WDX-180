@@ -14,13 +14,30 @@ _(Updated: 25/08/2023)_
 
   **What you'll learn:**
 
-  Make sure to **follow along** and run the git commands on your own repo. 
-  
-  ⚠️ **IMPORTANT:** The repository you will create under your GitHub account, **must be named: `gitVideo`**.
+  - Basic Git concepts
+  - Basic Git commands
+  - Create a GitHub repository
+
+  ---
+
+  - **Set up SSH keys for GitHub.** Complete the following 4 steps in order to be able to access GitHub without using a username and password.
+
+    1. [**Set up SSH keys for GitHub**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+    2. [**Check for SSH keys**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+
+    3. [**Add SSH keys to your GitHub account**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+    4. [**Test your SSH connection**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+
+    5. Once you have successfully completed all 4 steps, make sure to update your [progress sheet](../../user/progress.draft.60.csv) and mark the ` Setup SSH keys for GitHub` task as completed by switching the COMPLETED column from `FALSE` to `TRUE`.
+
+  > [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh): "Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit."
 
   - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
-    - Duration: 20min 
-    - Level: Beginner
+    - **Notes**: Make sure to **follow along** and run the git commands on your own repo. ⚠️ **IMPORTANT:** The repository you will create under your GitHub account, **must be named: `gitVideo`**.
+    - **Duration**: 20min 
+    - **Level**: Beginner
     - <details>
         <summary>What you'll learn:</summary>
         <ul>
@@ -52,8 +69,8 @@ _(Updated: 25/08/2023)_
   **Repetitio est mater studiorum:** "Repetition is the mother of learning". Let's recap those git concepts by revisiting them through another (longer) and more in-depth video about Git. 
 
   - [Watch: **Git and GitHub for Beginners - Crash Course**](https://www.youtube.com/watch?v=RGOj5yH7evk)
-    - Duration: 69min
-    - Level: Beginner
+    - **Duration**: 69min
+    - **Level**: Beginner
     - <details>
         <summary>What you'll learn:</summary>
         <ul>
