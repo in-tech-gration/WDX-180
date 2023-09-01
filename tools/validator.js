@@ -10,6 +10,7 @@ const yaml       = require('yaml');
 
 const { 
   warn, 
+  getYouTubeResources,
   ok, 
   info,
   ytRegex,
@@ -278,29 +279,20 @@ function checkForDailyStructure( dailyHeadings ){
 
 function checkYouTubeVideosInResources( markdownBody ){
 
-  const resourcesDir = path.join( __dirname, "..", "resources/" );
-  const resourcesPath = path.join( resourcesDir, "resources.json");
-  const resourcesText = fs.readFileSync(resourcesPath, "utf8");
-  const { resources } = JSON.parse(resourcesText)
-
   const ytLinks = decodeYouTubeURL(markdownBody).map( link => ytRegex(link).vid );
   const found   = Array.from({ length: ytLinks.length }, ()=> false);
 
-  Object.entries(resources).forEach(([slug, value]) =>{
-    if (value.type !== "YouTube"){
-      return false;
-    } 
+  getYouTubeResources().forEach(([slug, value]) =>{
     const idx = ytLinks.indexOf(value.youtube.id);
     if ( idx > -1 ){
-      console.log(idx);
+      // console.log(ytLinks[idx]);
+      return found[idx] = true;
     } 
     
-    return found[idx] = true;
   });
 
   found.forEach(( status, i) =>{
     if ( !status ){
-      console.log();
       warn(`YouTube link with videoID: ${ytLinks[i]} was not found in ther 'resources.json'`
       );
       info(`Consider running: node tools/yt.js -i ${ytLinks[i]} to get video metadata.\n`)

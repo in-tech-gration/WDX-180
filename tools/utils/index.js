@@ -1,4 +1,5 @@
 const { URL } = require("node:url");
+const fs      = require("node:fs");
 const path    = require("node:path");
 const chalk   = require('chalk'); 
 
@@ -36,7 +37,6 @@ const ytRegex = text => {
   return null;
 
 }
-
 function getExtensionFromUrl( url ){
 
   const extension = path.extname(new URL(url).pathname).slice(1);
@@ -144,10 +144,34 @@ function getYouTubeListIdParts( ytURL ){
 
   return [];
 }
+/**
+ * Description: read resource.json and return the contents in JSON format
+ */
+function getResources(){
+
+  const resourcesDir = path.join( __dirname, "..", "..", "resources/" );
+  const resourcesPath = path.join( resourcesDir, "resources.json");
+  const resourcesText = fs.readFileSync(resourcesPath, "utf8");
+  const { resources } = JSON.parse(resourcesText)
+  return resources;
+
+}
+function getYouTubeResources(){
+
+  const resources = getResources();
+  const youTubeResources = Object
+  .entries(resources)
+  .filter(([slug, value])=>{
+    return value.type === "YouTube";
+  });
+  return youTubeResources;
+}
 
 module.exports = {
   ytRegex,
   getFile,
+  getResources,
+  getYouTubeResources,
   getYouTubeListIdParts,
   decodeYouTubeURL,
   getImageFile,
