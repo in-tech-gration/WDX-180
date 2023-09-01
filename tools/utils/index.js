@@ -23,12 +23,20 @@ const ytRegex = text => {
   const regex = /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?$/;
   const match = text.match(regex);
 
+  let playlist = null;
+  if ( match[6] === "playlist" ){
+    if (match[7].indexOf("?list=") === 0 ){
+      playlist = match[7].split("?list=")[1];
+    }
+  }
+
   if ( match ){
     return {
       url: match[0],
       protocol: match[1],
       subdomain: match[2],
       domain: match[3],
+      playlist: playlist ? playlist : undefined,
       path: match[5],
       vid: match[6]
     }
@@ -114,7 +122,7 @@ function findBoldTextMatches( fileContent ){
 function decodeYouTubeURL( fileContent ){
 
   // Regular Expression Source: https://stackoverflow.com/a/37704433/4861760
-  const ytRegexNoCapture = /((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?/g;
+  const ytRegexNoCapture = /((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)([^\s)]+)?/g;
 
   const ytLinks = fileContent.match( ytRegexNoCapture );
   return ytLinks ?? [];

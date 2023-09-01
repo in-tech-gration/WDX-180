@@ -279,12 +279,23 @@ function checkForDailyStructure( dailyHeadings ){
 
 function checkYouTubeVideosInResources( markdownBody ){
 
-  const ytLinks = decodeYouTubeURL(markdownBody).map( link => ytRegex(link).vid );
+  const found = {}
+  const foundPlaylists = {}
+  const ytLinks = decodeYouTubeURL(markdownBody)
+  .reduce((acc, link)=>{
 
-  const found   = ytLinks.reduce((acc,value,idx)=>{
-    acc[value] = false;
+    const yt = ytRegex(link);
+    if ( yt.playlist ){
+      foundPlaylists[yt.playlist] = false;
+      return acc;
+    } else {
+      const { vid } = yt;
+      found[vid] = false;
+      acc.push(vid);
+    }
     return acc;
-  }, {});
+
+  }, []);
 
   getYouTubeResources().forEach(([slug, value]) =>{
     const idx = ytLinks.indexOf(value.youtube.id);
@@ -293,20 +304,31 @@ function checkYouTubeVideosInResources( markdownBody ){
     } 
   });
 
+  // WARN ABOUT MISSING YOUTUBE LINKS
   Object.entries(found).forEach(( [slug, status], i) =>{
     if ( !status ){
-      warn(`YouTube link with videoID: ${slug} was not found in ther 'resources.json'`
+      warn(`YouTube link with videoID: ${slug} was not found in the 'resources.json'`
       );
       info(`Consider running: node tools/yt.js -i ${slug} to get video metadata.\n`)
     }
   })
 
-  console.log(ytLinks.length, Object.keys(found).length);
-  if ( ytLinks.length !== Object.keys(found).length ){
-    warn("Mismatch between YouTube videos found in the file and resource.json.");
-  } else {
-    ok("All YouTube videos are found in the resources.json")
-  }
+  // WARN ABOUT MISSING YOUTUBE PLAYLISTS
+  Object.entries(foundPlaylists).forEach(( [slug, status], i) =>{
+    if ( !status ){
+      warn(`YouTube playlist with ID: ${slug} was not found in the 'resources.json'`
+      );
+      // TODO: Update yt.js to parse playlist URLs also.
+      // info(`Consider running: node tools/yt.js -i ${slug} to get video metadata.\n`)
+    }
+  })
+
+  // TODO: Fix
+  // if ( ytLinks.length !== Object.keys(found).length ){
+  //   warn("Mismatch between YouTube videos found in the file and resource.json.");
+  // } else {
+  //   ok("All YouTube videos are found in the resources.json")
+  // }
 
 }
 
