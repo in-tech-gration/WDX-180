@@ -61,8 +61,9 @@
     "digital-compression-explained-by-aloe-blacc": {
       "title": "",
       "type": "YouTube",
+      "identifier": "https://www.youtube.com/watch?v=By30SCp-Tsw",
       "youtube": {
-        "id": "MijmeoH9LT4"
+        "id": "By30SCp-Tsw"
       },
       "terms": [
         "Lossy",
