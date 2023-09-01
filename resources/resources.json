@@ -329,8 +329,21 @@
       ],
       "identifier": "https://www.youtube.com/watch?v=7_LPdttKXPc",
       "youtube": {
-        "id": "7_LPdttKXPc"
-      }
+        "id": "7_LPdttKXPc",
+        "channel_id": "UCo_81kKe5qkF0JVsUaJ6fYQ",
+        "channel_title": "Aaron",
+        "thumbnail_url": "https://i.ytimg.com/vi/7_LPdttKXPc/hqdefault.jpg"
+      },
+      "date": "19/02/2009",
+      "tags": [
+        "Internet",
+        "5 minutes",
+        "cloud computing",
+        "servers",
+        "clients",
+        "packets",
+        "routers"
+      ]
     },
     "java-script-tutorial-for-beginners-quick-start": {
       "title": "JavaScript Tutorial for Beginners: Quick Start",
