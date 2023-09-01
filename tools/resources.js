@@ -2,7 +2,7 @@ const path          = require("node:path");
 const fs            = require("node:fs");
 const https         = require('node:https'); 
 const { parseArgs } = require("node:util");
-const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate } = require("./utils");
+const { getYouTubeResources, warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate } = require("./utils");
 
 console.log("resources.js")
 
@@ -22,10 +22,17 @@ return warn("Missing arguments. Maybe you wanted to run with `--search-for-youtu
 }
 
 const vid = args.values["search-for-youtube"];
-// console.log({ vid });
 
-const resourcesFilePath = path.join( __dirname, "..","resources","resources.json");
-// console.log({ resourcesFilePath });
-const resourcesJSON = fs.readFileSync( resourcesFilePath, "utf8");
-const resources = JSON.parse(resourcesJSON).resources;
-console.log({ resources });
+if ( vid ){
+
+    const youTubeResources = getYouTubeResources();
+    const found = youTubeResources.some(([slug, value])=>{
+        return ( value.youtube.id === vid );
+    });
+    if ( found ){
+        ok(`YouTube video with id ${vid} was found in the resources.json.`);
+    }  else {
+        warn(`YouTube video with id ${vid} was not found in the resources.json.`);
+    }
+
+}
