@@ -280,26 +280,29 @@ function checkForDailyStructure( dailyHeadings ){
 function checkYouTubeVideosInResources( markdownBody ){
 
   const ytLinks = decodeYouTubeURL(markdownBody).map( link => ytRegex(link).vid );
-  const found   = Array.from({ length: ytLinks.length }, ()=> false);
+
+  const found   = ytLinks.reduce((acc,value,idx)=>{
+    acc[value] = false;
+    return acc;
+  }, {});
 
   getYouTubeResources().forEach(([slug, value]) =>{
     const idx = ytLinks.indexOf(value.youtube.id);
     if ( idx > -1 ){
-      // console.log(ytLinks[idx]);
-      return found[idx] = true;
+      found[value.youtube.id] = true;
     } 
-    
   });
 
-  found.forEach(( status, i) =>{
+  Object.entries(found).forEach(( [slug, status], i) =>{
     if ( !status ){
-      warn(`YouTube link with videoID: ${ytLinks[i]} was not found in ther 'resources.json'`
+      warn(`YouTube link with videoID: ${slug} was not found in ther 'resources.json'`
       );
-      info(`Consider running: node tools/yt.js -i ${ytLinks[i]} to get video metadata.\n`)
+      info(`Consider running: node tools/yt.js -i ${slug} to get video metadata.\n`)
     }
   })
 
-  if ( ytLinks.length !== found.filter(Boolean).length ){
+  console.log(ytLinks.length, Object.keys(found).length);
+  if ( ytLinks.length !== Object.keys(found).length ){
     warn("Mismatch between YouTube videos found in the file and resource.json.");
   } else {
     ok("All YouTube videos are found in the resources.json")
