@@ -122,6 +122,10 @@ async function getYouTubeVideoInfo({ vid }){
 
         const entrySlug = convertToKebabCase(videoInfo.snippet.title);
 
+        // console.log("THUMBNAILS:", videoInfo.snippet.thumbnails);
+
+        const thumbnail_url = videoInfo.snippet.thumbnails.standard ? videoInfo.snippet.thumbnails.standard.url : videoInfo.snippet.thumbnails.high.url;
+
         resourceJSON[entrySlug] = {
           type: "YouTube",
           duration: iso8601ToSeconds(videoInfo.contentDetails.duration),
@@ -131,7 +135,7 @@ async function getYouTubeVideoInfo({ vid }){
             id : videoInfo.id,
             channel_id: videoInfo.snippet.channelId,
             channel_title: videoInfo.snippet.channelTitle,
-            thumbnail_url: videoInfo.snippet.thumbnails.standard.url
+            thumbnail_url
           },
           tags: videoInfo.snippet.tags
         }
