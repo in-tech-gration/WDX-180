@@ -918,17 +918,40 @@
         "en"
       ]
     },
-    "html" : {
+    "html": {
       "title": "HTML",
       "identifier": "https://webapps-for-beginners.rubymonstas.org/html.html",
       "type": "Web Page",
-      "creator": ["https://rubymonstas.org/"]
+      "creator": [
+        "https://rubymonstas.org/"
+      ]
     },
-    "http" : {
+    "http": {
       "title": "HTTP",
       "identifier": "https://webapps-for-beginners.rubymonstas.org/http.html",
-      "creator": ["https://rubymonstas.org/"],
+      "creator": [
+        "https://rubymonstas.org/"
+      ],
       "type": "Web Page"
+    },
+    "how-do-web-browsers-work-web-demystified-episode-5": {
+      "type": "YouTube",
+      "duration": 437,
+      "title": "How do web browsers work? | Web Demystified, Episode 5",
+      "date": "10/07/2018",
+      "youtube": {
+        "id": "uE3UPEK26U0",
+        "channel_id": "UCijjo5gfAscWgNCKFHWm1EA",
+        "channel_title": "Mozilla Hacks",
+        "thumbnail_url": "https://i.ytimg.com/vi/uE3UPEK26U0/sddefault.jpg"
+      },
+      "tags": [
+        "web",
+        "Mozilla"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

@@ -585,7 +585,7 @@ _(Updated: 22/08/2023)_
         </ul>
     </details>
 
-  - [Watch: **Ternary Operator in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT&index=10)
+  - [Watch: **Ternary Operator in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg)
   - Duration: 6min
   - Level: Beginner
   - <details>
@@ -628,7 +628,7 @@ _(Updated: 22/08/2023)_
   - All test scores above 97 should be graded "A+"
   - All test scores above 80 should be graded "B+"
  
-   - [Watch: **User Input in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT&index=11)
+   - [Watch: **User Input in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU)
   - Duration: 11min
   - Level: Beginner
   - <details>
@@ -649,7 +649,7 @@ _(Updated: 22/08/2023)_
         </ul>
     </details>
 
-  - [Watch: **For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT&index=13)
+  - [Watch: **For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA)
   - Duration: 17min
   - Level: Beginner
   - <details>

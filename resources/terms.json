@@ -9,6 +9,7 @@
             "Audio Fingerprinting",
             "Binary",
             "Bit",
+            "Browser",
             "Byte",
             "Caesar Cipher",
             "Client-Server",
@@ -62,6 +63,13 @@
             "Waveform",
             "Web Standards",
             "XOR"
+        ]
+    },
+    "references":{
+        "Browser": [
+            {
+                "resource": "how-do-web-browsers-work-web-demystified-episode-5"
+            }
         ]
     }
 }
