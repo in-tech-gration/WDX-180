@@ -8,6 +8,8 @@ Welcome to the third and final part of our curriculum, WDX 180°.
 
   ### Schedule
 
+  - [Study](#study-plan)
+
   ### Study Plan
 
   ### Summary
@@ -19,7 +21,7 @@ Welcome to the third and final part of our curriculum, WDX 180°.
   ### [Extra Resources](EXTRAS.md#)
 
   ### Sources and Attributions
-  
+
 ## Week 25 - Day 2
 
   ### Schedule
@@ -68,11 +70,19 @@ Welcome to the third and final part of our curriculum, WDX 180°.
 
   ### Sources and Attributions
 
-## Week 25 - Day 5 | Git
+## Week 25 - Day 5 | Git+
 
   ### Schedule
 
+  - [Study](#study-plan-4)
+
   ### Study Plan
+
+  It's time to dive a bit more deeply into how Git actually works under the hood.
+
+  - [Watch: **How GIT works UNDER the HOOD?**](https://www.youtube.com/watch?v=RxHJdapz2p0)
+    - Duration: 16min
+    - Level: Advanced
 
   ### Summary
 
