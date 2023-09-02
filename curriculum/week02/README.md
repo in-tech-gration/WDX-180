@@ -123,6 +123,37 @@ _(Updated: 25/08/2023)_
 
   **What you'll learn:**
 
+  During Week 1, we covered some of the [basics of HTML](../week01/resources/HTML_Basics/README.md). Now, it's time to dive deeper into HTML. Let's start with some additional...
+
+  [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+  > [What's in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+  > [HTML text fundamentals](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)
+  > [Creating hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
+  > [Advanced text formatting](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)
+  > [Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+  > [Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
+  > W3C Validator
+  > [Tables](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables)
+  - Basics:
+  - Advanced:
+  - Assessments:
+  > [Multimedia and embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding)
+    > Images
+    > Video/Audio
+    > Object/Iframe
+    > Vector
+    > Responsive Images
+    > Assessments:
+    - Splash Page:
+    > Extras:
+    - Hitmap
+    - Web literacy
+
+  Assessments:
+
+  > [Marking up a letter](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter)
+  > [Structuring a page of content](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content)
+
   ### Summary
 
   ### Exercises

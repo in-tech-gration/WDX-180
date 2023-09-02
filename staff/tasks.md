@@ -85,6 +85,22 @@
 
 ## TOOLS
 
+  ### Improve the Yari parser tool
+
+  - Project Manager: Kostas Minaidis (@kostasx)
+
+  - File: tools/yari.parser.js
+
+  - Make sure that the parser handles the following content:
+
+  ```
+  {{ EmbedLiveSample('Omitting_quotes_around_attribute_values', 700, 100, "", "") }}
+  ```
+
+  - Make sure that the parser handles the following sections:
+
+  `html-nolint example-bad`
+
   ### Create linter for the /user/progress.draft.*.csv files
 
   - Project Manager: Kostas Minaidis (@kostasx)

@@ -56,7 +56,11 @@ Elements can also have attributes that look like the following:
 ![Paragraph opening tag with a class attribute highlighted: class=editor-note](assets/grumpy-cat-attribute-small.png)
 
 Attributes contain extra information about the element that you don't want to appear in the actual content. Here, `class` is the attribute _name_ and `editor-note` is the attribute _value_. The `class` attribute allows you to give the element a non-unique identifier that can be used to target it (and any other elements with the same `class` value) with style information and other things.
-Some attributes have no value, such as [`required`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required).
+Some attributes have no value, such as [`required`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required):
+
+```html
+<input required type="password">
+```
 
 Attributes that set a value always have:
 
@@ -70,7 +74,25 @@ An **attribute** extends an HTML or XML [element](https://developer.mozilla.org/
 
 An attribute always has the form `name="value"` (the attribute's identifier followed by its associated value).
 
-You may see attributes without the equals sign or a value. That is a shorthand for providing the empty string in HTML, or the attribute's name in XML.
+### Boolean attributes
+
+Sometimes you will see attributes written without values. This is entirely acceptable. These are called Boolean attributes. Boolean attributes can only have one value, which is generally the same as the attribute name. For example, consider the [`disabled`](/en-US/docs/Web/HTML/Element/input#disabled) attribute, which you can assign to form input elements. (You use this to _disable_ the form input elements so the user can't make entries. The disabled elements typically have a grayed-out appearance.) For example:
+
+```html
+<input type="text" disabled="disabled" />
+```
+
+As shorthand, it is acceptable to write this as follows:
+
+```html
+<!-- using the disabled attribute prevents the end user from entering text into the input box -->
+<input type="text" disabled />
+
+<!-- text input is allowed, as it doesn't contain the disabled attribute -->
+<input type="text" />
+```
+
+More examples, using the `required` boolean attribute:
 
 ```html
 <input required />
@@ -78,6 +100,60 @@ You may see attributes without the equals sign or a value. That is a shorthand f
 <input required="" />
 <!-- or -->
 <input required="required" />
+```
+
+### Omitting quotes around attribute values
+
+If you look at code for a lot of other sites, you might come across a number of strange markup styles, including attribute values without quotes. This is permitted in certain circumstances, but it can also break your markup in other circumstances. For example we could write something like this:
+
+```html
+<a href=https://www.mozilla.org/>favorite website</a>
+```
+
+However, as soon as we add the `title` attribute in this way, there are problems:
+
+```html
+<a href=https://www.mozilla.org/ title=The Mozilla homepage>favorite website</a>
+```
+
+As written above, the browser misinterprets the markup, mistaking the `title` attribute for three attributes: a title attribute with the value `The`, and two Boolean attributes, `Mozilla` and `homepage`. Obviously, this is not intended! It will cause errors or unexpected behavior. If you hover over the link, you will only see the word "The" being displayed after a few seconds.
+
+**Always include the attribute quotes. It avoids such problems, and results in more readable code.**
+
+### Single or double quotes?
+
+In this article, you will also notice that the attributes are wrapped in double quotes. However, you might see single quotes in some HTML code. This is a matter of style. You can feel free to choose which one you prefer. Both of these lines are equivalent:
+
+```html-nolint
+<a href='https://www.example.com'>A link to my example.</a>
+
+<a href="https://www.example.com">A link to my example.</a>
+```
+
+Make sure you **don't mix single quotes and double quotes**. This example (below) shows a kind of mixing of quotes that will go wrong:
+
+```html
+<a href="https://www.example.com'>A link to my example.</a>
+```
+
+However, if you use one type of quote, you can include the other type of quote _inside_ your attribute values:
+
+```html
+<a href="https://www.example.com" title="Isn't this fun?">
+  A link to my example.
+</a>
+```
+
+To use quote marks inside other quote marks of the same type (single quote or double quote), use [HTML entities](#entity_references_including_special_characters_in_html). For example, this will break:
+
+```html
+<a href="https://www.example.com" title="An "interesting" reference">A link to my example.</a>
+```
+
+Instead, you need to do this:
+
+```html
+<a href="https://www.example.com" title="An &quot;interesting&quot; reference">A link to my example.</a>
 ```
 
 ### Nesting elements
@@ -90,7 +166,7 @@ You can put elements inside other elements too — this is called **nesting**. I
 
 You do however need to **make sure that your elements are properly nested**. In the example above, we opened the [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element first, then the [strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element; therefore, we have to close the [strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) element first, then the [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element. The following is incorrect:
 
-```html-nolint example-bad
+```html
 <p>My cat is <strong>very grumpy.</p></strong>
 ```
 
@@ -185,6 +261,30 @@ As explained above, [p](https://developer.mozilla.org/en-US/docs/Web/HTML/Elemen
 <p>This is a single paragraph</p>
 ```
 
+### Whitespace in HTML
+
+No matter how much whitespace you use inside HTML element content (which can include one or more space characters, but also line breaks), the HTML parser reduces each sequence of whitespace to a single space when rendering the code. For example, these two code snippets are equivalent:
+
+```html
+<p id="noWhitespace">Dogs are silly.</p>
+
+<p id="whitespace">Dogs
+    are
+        silly.</p>
+```
+
+Both of them will be rendered the same way in the browser:
+
+```
+Dogs are silly.
+
+Dogs are silly.
+```
+
+So why use so much whitespace? The answer is readability.
+
+It can be easier to understand what is going on in your code if you have it nicely formatted. 
+
 ### Lists
 
 A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements. The most common list types are ordered and unordered lists:
@@ -246,6 +346,42 @@ You might get unexpected results if you omit the `https://` or `http://` part, c
 
 > **Note:** `href` might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for _**h**ypertext **ref**erence_.
 
+Anchors can take a number of attributes, but several are as follows:
+
+- `href`: This attribute's value specifies the web address for the link. For example: `href="https://www.mozilla.org/"`.
+
+- `title`: The `title` attribute specifies extra information about the link, such as a description of the page that is being linked to. For example, `title="The Mozilla homepage"`. This appears as a tooltip when a cursor hovers over the element.
+
+- `target`: The `target` attribute specifies the browsing context used to display the link. For example, `target="_blank"` will display the link in a new tab. If you want to display the linked content in the current tab, just omit this attribute.
+
+## Entity references: Including special characters in HTML
+
+In HTML, the characters `<`, `>`,`"`,`'`, and `&` are special characters. They are parts of the HTML syntax itself. So how do you include one of these special characters in your text? For example, if you want to use an ampersand or less-than sign, and not have it interpreted as code.
+
+You do this with character references. These are special codes that represent characters, to be used in these exact circumstances. Each character reference starts with an ampersand (&), and ends with a semicolon (;).
+
+| Literal character | Character reference equivalent |
+| ----------------- | ------------------------------ |
+| <                 | `&lt;`                         |
+| >                 | `&gt;`                         |
+| "                 | `&quot;`                       |
+| '                 | `&apos;`                       |
+| &                 | `&amp;`                        |
+
+The character reference equivalent could be easily remembered because the text it uses can be seen as less than for '\&lt;', quotation for ' \&quot; ' and similarly for others. To find more about entity references, see [List of XML and HTML character entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references) (Wikipedia).
+
+In the example below, there are two paragraphs:
+
+```html
+<p>In HTML, you define a paragraph using the <p> element.</p>
+
+<p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+```
+
+In the example above, you can see that the first paragraph has gone wrong. The browser interprets the second instance of `<p>` as starting a new paragraph. The second paragraph looks fine because it has angle brackets with character references.
+
+> **Note:** You don't need to use entity references for any other symbols, as modern browsers will handle the actual symbols just fine as long as your HTML's [character encoding is set to UTF-8](/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#specifying_your_documents_character_encoding).
+
 ----
 
 ### Sources and Attributions
@@ -254,6 +390,7 @@ You might get unexpected results if you omit the `https://` or `http://` part, c
 
 - **MDN**
   - [HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/learn/getting_started_with_the_web/html_basics/index.md)
+  - [Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started) [(Permalink)](https://github.com/mdn/content/tree/81fc9ae4093636637e4ea7356edf9c3807594d42/files/en-us/learn/html/introduction_to_html/getting_started)
   - [Element](https://developer.mozilla.org/en-US/docs/Glossary/Element) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/element/index.md)
   - [Tag](https://developer.mozilla.org/en-US/docs/Glossary/Tag) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/tag/index.md)
   - [Attribute](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) [(Permalink)](https://github.com/mdn/content/blob/8fb5853ceee5db8ac6e1c564c6dda4b3f5ec86c5/files/en-us/glossary/attribute/index.md)

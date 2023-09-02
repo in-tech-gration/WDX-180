@@ -2,6 +2,10 @@
 
 ## Week 4 - Day 1 | Scope & Arrays
 
+  STUDY: https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer#interactivity_with_javascript
+  - First steps: ...
+  - ...
+
   ??? node validate
 
   ??? - [Watch: **var let const in Javascript Scope | Understanding Global Local Function Block Scope**](https://www.youtube.com/watch?v=_E96W6ivHng&list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT&index=15)
