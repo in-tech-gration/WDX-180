@@ -280,8 +280,38 @@ _(Updated: 22/08/2023)_
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
   - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
+
   - [Read: **What will your website look like?**](resources/What%20will%20your%20website%20look%20like/README.md)
+
   - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
+    - <details>
+      <summary>What you'll learn</summary>
+      <ul>
+        <li>What is HTML?</li>
+        <li>What is an Element?</li>
+        <li>What is a Tag?</li>
+        <li>What is the difference between a Tag and an Element?</li>
+        <li>Anatomy of an HTML Element</li>
+        <li>Attributes</li>
+        <li>Nesting Elements</li>
+        <li>Void Elements</li>
+        <li>Anatomy of an HTML document
+          <ul>
+            <li>DOCTYPE</li>
+            <li>html</li>
+            <li>head</li>
+            <li>meta</li>
+            <li>title</li>
+            <li>body</li>
+          </ul>
+        </li>
+        <li>Images</li>
+        <li>Headings</li>
+        <li>Paragraphs</li>
+        <li>Lists</li>
+        <li>Links</li>
+      </ul>
+    </details>
   
   Now, that we have a good grasp of HTML, let's learn a little bit about another markup language called **Markdown**, that is going to come in handy in a lot of situations.
 
