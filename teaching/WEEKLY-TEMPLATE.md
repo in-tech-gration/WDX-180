@@ -10,7 +10,9 @@ _(Updated: DD/DD/YYYY)_
 
   ### Schedule
 
-  ### [Study Plan](#study-plan)
+  - [Study](#study-plan)
+
+  ### Study Plan
 
   ### Summary
 
@@ -26,7 +28,9 @@ _(Updated: DD/DD/YYYY)_
 
   ### Schedule
 
-  ### [Study Plan](#study-plan-1)
+  - [Study](#study-plan-1)
+
+  ### Study Plan
 
   ### Summary
 

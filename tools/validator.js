@@ -217,6 +217,7 @@ function getDailyContent( lines ){
 function checkForDailyContent( dailyContentLength ){
   if ( dailyContentLength < 5 ){
     warn("Daily Content (## Week X - Day Y) requires 5 sections. Found: " + dailyContentLength );
+    info("See /teaching/WEEKLY-TEMPLATE.md file for the required structure.")
     process.exit();
   }
 }
@@ -239,6 +240,10 @@ function checkForAttributionsSection( headingTokens, isInCurriculumFolder ){
 
 }
 
+/**
+ * Description: Parses a week's content structure and checks whether the correct daily structure (appropriate headings) is in place.
+ * @param {Array} Array of length (5) for each day, which in turn contains an array of all the section headings.
+ */
 function getHeadingsFromDailyContent( dailyContent ){
   return dailyContent.map( day =>{
     return day.filter( line =>{

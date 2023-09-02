@@ -70,6 +70,8 @@ If you intend to create, update or maintain a tool, please reach out to the proj
 
   > **IMPORTANT:** If you are up to the challenge, please create a branch named `tasks-tools-validator-005` and work on that branch. Try to implement as many unit tests as possible to ensure the reliability of your code.
 
+  - (006) If a Day is missing All the required headings (e.g. Study Plan, Summary, Exercises, etc.), then the test for that particular day is ignored. It should display a message that the daily structure check has failed.
+
 ## YARI MARKDOWN PARSER
 
   ### tools/yari.parser.js
