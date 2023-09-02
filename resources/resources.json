@@ -1295,6 +1295,36 @@
       "language": [
         "en"
       ]
+    },
+    "how-git-works-under-the-hood": {
+      "type": "YouTube",
+      "duration": 961,
+      "title": "How GIT works UNDER the HOOD?",
+      "date": "04/08/2023",
+      "youtube": {
+        "id": "RxHJdapz2p0",
+        "channel_id": "UCHvDhwNuq-h2hZQRR6BwbLQ",
+        "channel_title": "Tech With Nikola",
+        "thumbnail_url": "https://i.ytimg.com/vi/RxHJdapz2p0/sddefault.jpg"
+      },
+      "tags": [
+        "git",
+        "version control",
+        "programming",
+        "software engineer",
+        "computer science",
+        "git internals",
+        "how git works",
+        "git commits",
+        "git branches",
+        "commit",
+        "cherry picking",
+        "rebase",
+        "merge"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
