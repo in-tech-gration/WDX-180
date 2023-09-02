@@ -261,6 +261,8 @@ _(Updated: 22/08/2023)_
 
   ### Exercises
 
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
   ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
   ### Sources and Attributions
@@ -330,6 +332,8 @@ _(Updated: 22/08/2023)_
 
   ### Exercises
 
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
   ### [Extra Resources](EXTRAS.md#day-03---html)
 
   ---
@@ -360,6 +364,8 @@ _(Updated: 22/08/2023)_
   ### Summary
 
   ### Exercises
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources](EXTRAS.md#day-04---css)
 
@@ -761,6 +767,8 @@ _(Updated: 22/08/2023)_
 
   ### Exercises
 
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  
   ### [Extra Resources](EXTRAS.md#day-05---javascript)
 
   ### Sources and Attributions

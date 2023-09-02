@@ -337,6 +337,45 @@ function checkYouTubeVideosInResources( markdownBody ){
 
 }
 
+function checkProgressRefs( markdown, filePath ){
+
+  const progressRegex = /progress\.draft\.(60|120|180)\.csv/g;
+  const progressMatch = markdown.match(progressRegex);
+  if ( !progressMatch ){
+    warn("No references to 'progress.draft.60|120|180.csv' found. Each week needs at least 5 references in the Exercises section.");
+  } else {
+    if ( progressMatch.length < 5 ){
+      warn( `${progressMatch.length} references to a 'progress.draft.60|120|180.csv' file found. Each week needs at least 5 references in the Exercises section.` )
+    }
+    if ( progressMatch && progressMatch.length >= 5 ){
+      ok(`${checkmark} Found (at least) 5 references to the 'progress.draft.60|120|180.csv' file.`)
+      // CHECK: IF PROGRESS NUMBER IS CORRECT
+      const dirname = path.dirname(filePath);
+      const filename = path.basename(filePath);
+      const match = dirname.match(/curriculum\/week(\d\d)$/);
+      if ( filename === "README.md" && match ){
+        const week = parseInt(match[1]);
+        let csvNumber;
+        const hasMismatch = progressMatch.some( m =>{
+          const match = m.match(/progress\.draft\.(60|120|180)\.csv/); 
+          csvNumber = parseInt(match[1]); 
+          if ( csvNumber === 60 ){
+            return week > 12;
+          }
+          if ( csvNumber === 120 ){
+            return ( week < 13 || week > 24 );
+          }
+          if ( csvNumber === 180 ){
+            return week < 25;      
+          }
+        });
+        if ( hasMismatch ){
+          warn(`Found mismatch between week ${week} and progress.draft.${csvNumber}.csv`);
+        }
+      }
+    }
+  }
+}
 
 // 2) OUR VARIABLES: ===========================================================
 
@@ -446,6 +485,10 @@ function initializeChecks(){
 
   // ✅ CHECK: YOUTUBE LINKS THAT ARE NOT FOUND IN THE RESOURCES
   checkYouTubeVideosInResources( markdownBody );
+
+  // ✅ CHECK: FOR CORRECT PROGRESS SHEET SYNTAX
+  // progress.draft.[60|120|180].csv
+  checkProgressRefs( markdownBody, markdownFilePath );
   
 }
 
