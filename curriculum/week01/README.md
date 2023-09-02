@@ -308,8 +308,10 @@ _(Updated: 22/08/2023)_
         <li>Images</li>
         <li>Headings</li>
         <li>Paragraphs</li>
+        <li>Whitespace in HTML</li>
         <li>Lists</li>
         <li>Links</li>
+        <li>HTML Entities</li>
       </ul>
     </details>
   
