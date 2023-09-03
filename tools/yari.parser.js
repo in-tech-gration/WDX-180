@@ -261,6 +261,19 @@ function parseHTTPStatus( textContent ){
   })
 }
 
+function parseHTTPHeader( textContent ){
+  const URL = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/";
+  const pattern = /{{(HTTPHeader)\("(.*?)"(?:, "(.*?)")?\)}}/g;
+  return textContent.replace(pattern, ( match, _, termA, termB )=>{
+    const link = `${URL}${termA}`;
+    const output = `[${termB ? termB : termA}](${link})`;
+    console.log();
+    info(`Found: ${match}`); 
+    console.log();
+    return output;
+  })
+}
+
 // Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent, fileName ){
 
@@ -277,6 +290,7 @@ function parseYariDynamicContent( textContent, fileName ){
   updatedContents = parseCSSTerm(updatedContents);
   updatedContents = parseHTTPStatus(updatedContents);
   updatedContents = replaceDOMXrefLinks(updatedContents);
+  updatedContents = parseHTTPHeader(updatedContents);
 
   return updatedContents;
 
@@ -318,6 +332,7 @@ module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
   parseHTTPStatus,
+  parseHTTPHeader,
   parseImages,
   parseElementTerm,
   parseCSSTerm,

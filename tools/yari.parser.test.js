@@ -1,7 +1,7 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
 
-const { parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
+const { parseHTTPHeader, parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
 
 test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
@@ -118,5 +118,13 @@ test("Replacing {{domxref}}", ()=>{
   const output4 = `lorem ipsum [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) lorem ipsum`
 
   equal( output4, replaceDOMXrefLinks(input4) );
+
+})
+
+test("Replacing {{HTTPHeader}} with links", ()=>{
+
+  const input = `lorem ipsum {{HTTPHeader("Content-Security-Policy")}} lorem ipsum`;
+  const output = "lorem ipsum [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) lorem ipsum";
+  equal(parseHTTPHeader(input), output);
 
 })
