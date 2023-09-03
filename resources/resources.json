@@ -1325,6 +1325,11 @@
       "language": [
         "en"
       ]
+    },
+    "what-s-in-the-head-metadata-in-html": {
+      "title": "What's in the head? Metadata in HTML",
+      "type": "MDN",
+      "identifier": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML"
     }
   },
   "creators": {}
