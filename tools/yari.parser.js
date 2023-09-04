@@ -285,6 +285,32 @@ function parseHTTPHeader( textContent ){
   })
 }
 
+function parseEmbedYouTube( textContent ){
+  
+  const youtubeRegex = /\{\{EmbedYouTube\("([a-zA-Z0-9-_]{11})"\)\}\}/g;
+
+  const matches = textContent.matchAll( youtubeRegex );
+  const iframe = (vid)=> `
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube-nocookie.com/embed/${vid}" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen="" 
+      loading="lazy"></iframe>
+  `.trim()
+
+  if ( matches ){
+    for ( const match of matches ){
+      info( "Found: " + match[0] );
+      textContent = textContent.replace(match[0], iframe(match[1]))
+    }
+  }
+
+  return textContent;
+
+}
+
 // Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent, fileName ){
 
@@ -302,6 +328,7 @@ function parseYariDynamicContent( textContent, fileName ){
   updatedContents = parseHTTPStatus(updatedContents);
   updatedContents = replaceDOMXrefLinks(updatedContents);
   updatedContents = parseHTTPHeader(updatedContents);
+  updatedContents = parseEmbedYouTube(updatedContents);
 
   return updatedContents;
 
