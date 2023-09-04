@@ -33,8 +33,9 @@ function removeTemplateContent( textContent ){
   // Thank you ChatGPT! 
   // const templateRegex = /{{QuicklinksWithSubPages\("[A-Za-z_\/]+"\)}}\s*\n|{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|PreviousMenu|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
 
-  const templateRegex = /{{QuicklinksWithSubPages\("[A-Za-z_\/]+"\)}}\s*\n|{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|PreviousMenu|NextMenuPrevious)\([^)]+\)}}\s*\n/g;
+  const templateRegex = /{{QuicklinksWithSubPages\("[A-Za-z_\/]+"\)}}\s*\n|{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|NextMenu|PreviousMenu|NextMenuPrevious)\([^)]+\)}}\s*\n/g;
 
+  const nextMenuSingleRegex = /{{NextMenu\("[^"]+", "[^"]+"\)}}/g;
   // const templateRegex = /{{PreviousMenu\([^)]+\)}}\s*\n/g
 
   const templateMatches = textContent.match(templateRegex); 
@@ -42,7 +43,17 @@ function removeTemplateContent( textContent ){
   if ( templateMatches ){
     console.log( templateMatches )
     ok("Substituted {{Template}} matches successfully");
-    return textContent.replace(templateRegex, "");
+    textContent = textContent.replace(templateRegex, "");
+  }
+
+  const nextMenuMatches = textContent.match(nextMenuSingleRegex);
+
+  if ( nextMenuMatches ){
+
+    console.log( nextMenuMatches )
+    ok("Substituted {{Template}} matches successfully");
+    textContent = textContent.replace(nextMenuMatches, "");
+
   }
 
   return textContent;
