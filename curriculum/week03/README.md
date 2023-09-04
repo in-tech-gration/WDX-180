@@ -1,18 +1,26 @@
+---
+title: Week 3
+---
+
 # Week 3 | CSS, Accessibility & Git
 
 _(Updated: 04/09/2023)_
 
-## Week 3 - Day 1
+## Week 3 - Day 1 | More Git
 
-  Start here: https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer#styling_and_layout_with_css
-  Modules:
-  - First steps...
-  - ...
+  ### Schedule
+  ### Study Plan
+  ### Summary
+  ### Exercises
+  ### [Extra Resources]
+  ### Sources and Attributions
+    
+## Week 3 - Day 2 | What is CSS?
 
   ### Schedule
   ### Study Plan
 
-  - [Read: **What is CSS?**](resources/what_is_css/README.md)
+  - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/README.md)
     - Level: Beginner
 
   - [Read: **How CSS works?**]()
@@ -21,14 +29,33 @@ _(Updated: 04/09/2023)_
   ### Exercises
   ### [Extra Resources]
   ### Sources and Attributions
-    
-## Week 3 - Day 2 | What is CSS?
 
 ## Week 3 - Day 3
 
+  ### Schedule
+  ### Study Plan
+  ### Summary
+  ### Exercises
+  ### [Extra Resources]
+  ### Sources and Attributions
+
 ## Week 3 - Day 4
 
+  ### Schedule
+  ### Study Plan
+  ### Summary
+  ### Exercises
+  ### [Extra Resources]
+  ### Sources and Attributions
+
 ## Week 3 - Day 5
+
+  ### Schedule
+  ### Study Plan
+  ### Summary
+  ### Exercises
+  ### [Extra Resources]
+  ### Sources and Attributions
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
