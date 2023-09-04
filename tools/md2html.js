@@ -1,25 +1,24 @@
 const fs                 = require("node:fs");
 const { warn, ok, info } = require("./utils");
 const showdown           = require('showdown');
+const marked             = require("marked");
+const matter             = require('gray-matter');
 
-const classMap = {
-  h1: 'ui large header',
-  h2: 'ui medium header',
-  ul: 'ui list',
-  li: 'ui item'
-}
-
-const bindings = Object.keys(classMap)
-  .map(key => ({
-    type: 'output',
-    regex: new RegExp(`<${key}(.*)>`, 'g'),
-    replace: `<${key} class="${classMap[key]}" $1>`
-  }));
-
-// const converter          = new showdown.Converter();
-const converter = new showdown.Converter({
-  // extensions: [...bindings]
-});
+/* Running showdown with extensions: */
+// const classMap = {
+//   h1: 'ui large header',
+//   h2: 'ui medium header',
+//   ul: 'ui list',
+//   li: 'ui item'
+// }
+// const bindings = Object.keys(classMap)
+//   .map(key => ({
+//     type: 'output',
+//     regex: new RegExp(`<${key}(.*)>`, 'g'),
+//     replace: `<${key} class="${classMap[key]}" $1>`
+//   }));
+const converter          = new showdown.Converter();
+// const converter = new showdown.Converter({ extensions: [...bindings] });
 
 
 if (require.main === module) {
@@ -32,33 +31,51 @@ if (require.main === module) {
 function init(){
 
   const fileName = process.argv[2];
-  const htmlBoilerplate = (html)=> `
+  const htmlBoilerplate = ({ html, title })=> `
     <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-        <title>Document</title>
+        <title>${title}</title>
       </head>
       <body>${html}</body>
   </html>
   `
 
   if ( !fileName ){
-    warn("No filename.")
+    warn("No input filename. Run with: node md2html.js README.md");
     process.exit();
   }
 
   try {
   
-    console.log(`Processing ${fileName}`);
+    info(`Processing ${fileName}`);
     
     const fileContents = fs.readFileSync(fileName, "utf-8");
+    const { content, data: fm } = matter( fileContents );
+    let title = fm.title;
 
-    const html         = converter.makeHtml(fileContents);
+    // marked.use({ gfm: true });
+    // const html = marked.parse(content);
+    const tokens = marked.lexer(content);
+
+    if ( !title ){
+      tokens.some( token =>{
+        if ( token.type === "heading" && token.depth === 1 ){
+          title = token.text;
+          return true;
+        }
+      })
+    }
+
+    const html         = converter.makeHtml(content);
     const output       = process.argv[3] ?? fileName.replace(/\.md$/, ".html");
-    fs.writeFileSync( output, htmlBoilerplate(html), "utf8" );
+    fs.writeFileSync( output, htmlBoilerplate({
+      html,
+      title
+    }), "utf8" );
   
   } catch(e){
   
