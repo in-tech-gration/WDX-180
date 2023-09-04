@@ -8,13 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "md2html": "node tools/md2html.js",
     "yari:download": "node tools/yari.download.js",
     "yari:parse": "node tools/yari.parser.js",
     "validate": "node tools/validator.js",
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
-    "tools:git-gud" : "serve -L -p 9000 resources/tools/git-gud/docs/"
+    "tools:git-gud": "serve -L -p 9000 resources/tools/git-gud/docs/"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",

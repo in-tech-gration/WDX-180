@@ -4,6 +4,14 @@ If you intend to create, update or maintain a tool, please reach out to the proj
 
 ## GENERAL UTILITIES
 
+  ### Create a generic curriculum linting tool
+
+  **Project manager:** Kostas Minaidis (@kostasx)
+
+  - Requirements: scans all files and folders and lints them according to the following rules:
+    - Ensures that all folders under resources/ are in `all_lowercase_underscore`
+    - Ensures that all spacing is based on 2 space characters
+
   ### tools/utils/index.js
 
   **Project manager:** Kostas Minaidis (@kostasx)
@@ -71,6 +79,16 @@ If you intend to create, update or maintain a tool, please reach out to the proj
   > **IMPORTANT:** If you are up to the challenge, please create a branch named `tasks-tools-validator-005` and work on that branch. Try to implement as many unit tests as possible to ensure the reliability of your code.
 
   - (006) If a Day is missing All the required headings (e.g. Study Plan, Summary, Exercises, etc.), then the test for that particular day is ignored. It should display a message that the daily structure check has failed.
+
+  - (007) script should be able to validate non-weekly content.
+  Right now, it gives warnings such as the following:
+
+  "WARNING: Daily Content (## Week X - Day Y) requires 5 sections. Found: 0"
+
+  - (008) Fix bug that reports daily structure error on Day 5, when only Day 1 is correctly structure. Expected behavior: It should warn us about Day 2, 3, 4, 5 instead of skipping to 5. Example current output:
+
+  "WARNING: Daily structure for day 5 is missing some sections.
+   6 required. Found 0."
 
 ## YARI MARKDOWN PARSER
 

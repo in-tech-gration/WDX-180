@@ -19,6 +19,7 @@
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
     "octokit": "^3.1.0",
+    "showdown": "^2.1.0",
     "yaml": "^2.3.1"
   }
 }

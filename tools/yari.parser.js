@@ -56,6 +56,16 @@ function removeTemplateContent( textContent ){
 
   }
 
+  const previousMenuNextRegex = /\{\{PreviousMenuNext\((?:"[^"]+"(?:,\s*)?)+\)\}\}\n/g;
+  const previousMenuNextRegexMatches = textContent.matchAll(previousMenuNextRegex);
+
+  if ( previousMenuNextRegexMatches ){
+    for ( const match of previousMenuNextRegexMatches ){
+      ok( "\nFound: " + match[0] );      
+      textContent = textContent.replace( match[0], "" );
+    }
+  }
+
   return textContent;
 
 }
@@ -311,6 +321,11 @@ function parseEmbedYouTube( textContent ){
 
 }
 
+function parseEmbedLiveSample( textContent ){
+  // {{EmbedGHLiveSample("css-examples/learn/getting-started/started1.html", '100%', 900)}}
+  return textContent;
+}
+
 // Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent, fileName ){
 
@@ -329,6 +344,7 @@ function parseYariDynamicContent( textContent, fileName ){
   updatedContents = replaceDOMXrefLinks(updatedContents);
   updatedContents = parseHTTPHeader(updatedContents);
   updatedContents = parseEmbedYouTube(updatedContents);
+  updatedContents = parseEmbedLiveSample(updatedContents);
 
   return updatedContents;
 
