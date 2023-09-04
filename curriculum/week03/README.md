@@ -12,8 +12,10 @@ _(Updated: 04/09/2023)_
   ### Schedule
   ### Study Plan
 
-  - [Read: *What is CSS?*](resources/what_is_css/README.md)
+  - [Read: **What is CSS?**](resources/what_is_css/README.md)
     - Level: Beginner
+
+  - [Read: **How CSS works?**]()
 
   ### Summary
   ### Exercises

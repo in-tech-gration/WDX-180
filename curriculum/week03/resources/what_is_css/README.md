@@ -4,35 +4,24 @@ slug: Learn/CSS/First_steps/What_is_CSS
 page-type: learn-module-chapter
 ---
 
+# What is CSS?
+
+_(Updated: 04/09/2023)_
+
 **[CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)** (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.
 
-<table>
-  <tbody>
-    <tr>
-      <th scope="row">Prerequisites:</th>
-      <td>
-        Basic computer literacy,
-        <a
-          href="/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software"
-          >basic software installed</a
-        >, basic knowledge of
-        <a
-          href="/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files"
-          >working with files</a
-        >, and HTML basics (study
-        <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML"
-          >Introduction to HTML</a
-        >.)
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Objective:</th>
-      <td>To learn what CSS is.</td>
-    </tr>
-  </tbody>
-</table>
+**Prerequisites:**
 
-In the [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) module, we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text. What you are seeing are the browser's default styles — very basic styles — that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page.
+- Basic computer literacy
+- Basic software installed
+- Basic knowledge of working with files
+- HTML basics
+
+**Objective:**
+
+- To learn what CSS is
+
+In Week 2 we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text. What you are seeing are the browser's default styles — very basic styles — that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page.
 
 ![The default styles used by a browser](assets/html-example.png)
 
@@ -111,7 +100,7 @@ As a newcomer to CSS, it is likely that you will find the CSS specs overwhelming
 
 ## Browser support information
 
-After a CSS feature has been specified, then it is only useful for us in developing web pages if one or more browsers have implemented the feature. This means that the code has been written to turn the instruction in our CSS file into something that can be output to the screen. We'll look at this process more in the lesson [How CSS works](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works). It is unusual for all browsers to implement a feature at the same time, and so there is usually a gap where you can use some part of CSS in some browsers and not in others. For this reason, being able to check implementation status is useful.
+After a CSS feature has been specified, then it is only useful for us in developing web pages if one or more browsers have implemented the feature. This means that the code has been written to turn the instruction in our CSS file into something that can be output to the screen. It is unusual for all browsers to implement a feature at the same time, and so there is usually a gap where you can use some part of CSS in some browsers and not in others. For this reason, being able to check implementation status is useful.
 
 The browser support status is shown on every MDN CSS property page in a table named "Browser compatibility". Consult the information in that table to check if the property can be used on your website. For an example, see the [browser compatibility table for the CSS `font-family` property](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#browser_compatibility).
 
@@ -120,3 +109,12 @@ Based on your requirements, you can use the browser compatibility table to check
 ## Summary
 
 You made it to the end of the article! Now that you have some understanding of what CSS is, let's move on to [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started), where you can start to write some CSS yourself.
+
+---
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [What is CSS?](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS) [(Permalink)](https://github.com/mdn/content/blob/2af896c63290d37fead789d870a52a15be8d7c00/files/en-us/learn/css/first_steps/what_is_css/index.md)
