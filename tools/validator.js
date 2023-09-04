@@ -62,8 +62,16 @@ function getFrontmatterFromMarkdown( markdown ){
   if ( !frontmatter ){
     return null;
   }
-  const parsedFrontmatter = yaml.parse(frontmatter)
-  return parsedFrontmatter;
+  try {
+    
+    const parsedFrontmatter = yaml.parse(frontmatter)
+    return parsedFrontmatter;
+
+  } catch (error) {
+
+    return null;
+    
+  }
 
 }
 
@@ -337,14 +345,18 @@ function checkYouTubeVideosInResources( markdownBody ){
 
 }
 
-function checkProgressRefs( markdown, filePath ){
+function checkProgressRefs( markdown, filePath, isWeeklyREADME ){
 
   const progressRegex = /progress\.draft\.(60|120|180)\.csv/g;
   const progressMatch = markdown.match(progressRegex);
   if ( !progressMatch ){
-    warn("No references to 'progress.draft.60|120|180.csv' found. Each week needs at least 5 references in the Exercises section.");
+    if ( isWeeklyREADME ){
+      warn("No references to 'progress.draft.60|120|180.csv' found. Each week needs at least 5 references in the Exercises section.");
+    } else {
+      warn("No references to 'progress.draft.60|120|180.csv' found. Perhaps you need to remind the student to update their progress sheet?");
+    }
   } else {
-    if ( progressMatch.length < 5 ){
+    if ( progressMatch.length < 5 && isWeeklyREADME ){
       warn( `${progressMatch.length} references to a 'progress.draft.60|120|180.csv' file found. Each week needs at least 5 references in the Exercises section.` )
     }
     if ( progressMatch && progressMatch.length >= 5 ){
@@ -408,7 +420,7 @@ function initializeChecks(){
   }
   
   const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
-  // console.log({ isInCurriculumFolder });
+  console.log({ isInCurriculumFolder });
   const markdownContent      = fs.readFileSync(markdownFilePath, 'utf8');
   const frontmatter          = getFrontmatterFromMarkdown( markdownContent );
   const markdownBody         = getMarkdownBody( markdownContent );
@@ -473,22 +485,27 @@ function initializeChecks(){
   checkForUpdatedSection( inlineTokens );
   
   // ✅ CHECK: THAT EACH DAY HAS THE BOILERPLATE SKELETON
-  const dailyContent = getDailyContent( lines );
-  checkForDailyContent( dailyContent.length );
+  let dailyContent;
+  if ( isInCurriculumFolder ){
+    dailyContent = getDailyContent( lines );
+    checkForDailyContent( dailyContent.length );
+  }
 
   // ✅ CHECK: HAS ATTRIBUTIONS SECTION [ DEPRECATED DUE TO NEXT CHECK ]
   // checkForAttributionsSection( headingTokens, isInCurriculumFolder );
 
   // ✅ CHECK: THAT ALL DAYS CONTAIN THE SAME STRUCTURE
-  const dailyHeadings = getHeadingsFromDailyContent(dailyContent);
-  checkForDailyStructure( dailyHeadings );
+  if ( isInCurriculumFolder ){
+    const dailyHeadings = getHeadingsFromDailyContent(dailyContent);
+    checkForDailyStructure( dailyHeadings );
+  }
 
   // ✅ CHECK: YOUTUBE LINKS THAT ARE NOT FOUND IN THE RESOURCES
   checkYouTubeVideosInResources( markdownBody );
 
   // ✅ CHECK: FOR CORRECT PROGRESS SHEET SYNTAX
   // progress.draft.[60|120|180].csv
-  checkProgressRefs( markdownBody, markdownFilePath );
+  checkProgressRefs( markdownBody, markdownFilePath, isInCurriculumFolder );
   
 }
 

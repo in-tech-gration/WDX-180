@@ -4,6 +4,10 @@ slug: Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
 page-type: learn-module-chapter
 ---
 
+# What's in the head? Metadata in HTML
+
+_(Updated: 04/09/2023)_
+
 The [head](https://developer.mozilla.org/en-US/docs/Glossary/Head) of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title), links to [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS) (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document). Web browsers use information contained in the [head](https://developer.mozilla.org/en-US/docs/Glossary/Head) to render the HTML document correctly. In this article we'll cover all of the above and more, in order to give you a good basis for working with markup.
 
 <table>
