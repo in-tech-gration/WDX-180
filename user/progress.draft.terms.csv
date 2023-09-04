@@ -27,6 +27,8 @@ Pull Request, Software Version Control, GitHub, 0-5, -, github_pull_request
 Remote repository, Software Version Control, GitHub, 0-5, -, github_remote
 staging, Software Version Control, Git, 0-5, -, github_stating
 -,-,-,-,-,-
+head,HTML,metadata,0-5, -, html_head
+-,-,-,-,-,-
 ls, Operating System, Command-line, 0-5, -, cli_ls
 cd, Operating System, Command-line, 0-5, -, cli_cd
 mkdir, Operating System, Command-line, 0-5, -, cli_mkdir
