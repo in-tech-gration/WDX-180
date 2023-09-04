@@ -1,7 +1,7 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
 
-const { parseHTTPHeader, parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
+const { parseEmbedLiveSample, parseHTTPHeader, parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
 
 test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
@@ -128,3 +128,7 @@ test("Replacing {{HTTPHeader}} with links", ()=>{
   equal(parseHTTPHeader(input), output);
 
 })
+
+// TODO: Test: parseEmbedLiveSample()
+// Input:  {{EmbedGHLiveSample("css-examples/learn/getting-started/started1.html", '100%', 900)}}
+// Output:

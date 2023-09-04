@@ -322,7 +322,31 @@ function parseEmbedYouTube( textContent ){
 }
 
 function parseEmbedLiveSample( textContent ){
-  // {{EmbedGHLiveSample("css-examples/learn/getting-started/started1.html", '100%', 900)}}
+  const regex = /\{\{EmbedGHLiveSample\((['"])(?<first>.*)\1(,\s?(['"])(?<second>.*)\4)?(,\s?(?<third>.*))?\)\}\}/gm
+  const matches = textContent.matchAll(regex);
+  const domain = "https://mdn.github.io/";
+  if ( matches ){
+    for ( const match of matches ){
+      // PARSE css-examples:
+      if ( match.groups.first.indexOf("css-examples/") === 0 ){
+        // console.log( match[0] ); // <- Replace this
+        // console.log( match.groups.first );
+        // console.log( match.groups.second );
+        // console.log( match.groups.third );
+        const iframe = `
+          <iframe 
+            class="EmbedGHLiveSample" 
+            loading="lazy"
+            src="${domain}${match.groups.first}" 
+            width="${match.groups.second}" 
+            height="${match.groups.third}"></iframe>
+        `.trim();
+
+        textContent = textContent.replace( match[0], iframe );
+
+      }
+    }
+  }
   return textContent;
 }
 
@@ -386,6 +410,7 @@ module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
   parseHTTPStatus,
+  parseEmbedLiveSample,
   parseHTTPHeader,
   parseImages,
   parseElementTerm,

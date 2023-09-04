@@ -39,6 +39,12 @@ function init(){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
         <title>${title}</title>
+        <style>
+        iframe.EmbedGHLiveSample {
+          border: 1px solid lightgray;
+          box-shadow: 0px 16px 16px rgba(0,0,0,0.2);
+        }
+        </style>
       </head>
       <body>${html}</body>
   </html>
