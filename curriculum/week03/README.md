@@ -4,7 +4,7 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 04/09/2023)_
+_(Updated: 06/09/2023)_
 
 ## Week 3 - Day 1 | More Git
 
@@ -23,12 +23,27 @@ _(Updated: 04/09/2023)_
   - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/README.md)
     - Level: Beginner
 
-  - [Read: **How CSS works?**]()
+  - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/README.md)
+    - Level: Beginner
+
+  - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/README.md)
+    - Level: Beginner
+
+  - [Read: **How CSS works**](resources/css_first_steps/how_css_works/README.md)
+    - Level: Beginner
 
   ### Summary
   ### Exercises
+
+  - [MDN Assessment: **Styling a biography page**]()
+
   ### [Extra Resources]
   ### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - **MDN:**
+    - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
 
 ## Week 3 - Day 3
 

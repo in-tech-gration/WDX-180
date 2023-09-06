@@ -6,7 +6,7 @@ page-type: learn-module-chapter
 
 # Getting Started with CSS
 
-_(Updated: 04/09/2023)_
+_(Updated: 06/09/2023)_
 
 In this article, we will take a simple HTML document and apply CSS to it, learning some practical things about the language along the way.
 
@@ -100,7 +100,14 @@ li {
 }
 ```
 
-Try this out in your local CSS document.
+Try this out in the interactive editor below (edit the code boxes) or in your local CSS document.
+
+<iframe 
+            class="EmbedGHLiveSample" 
+            loading="lazy"
+            src="https://mdn.github.io/css-examples/learn/getting-started/started1.html" 
+            width="100%" 
+            height="900"></iframe>
 
 ## Changing the default behavior of elements
 
@@ -192,7 +199,14 @@ h1 + p {
 }
 ```
 
-Try adding a rule to make a span red if it is inside a paragraph. You will know if you have it right because the span in the first paragraph will be red, but the one in the first list item will not change color.
+The live example below includes the two rules above. Try adding a rule to make a span red if it is inside a paragraph. You will know if you have it right because the span in the first paragraph will be red, but the one in the first list item will not change color.
+
+<iframe 
+            class="EmbedGHLiveSample" 
+            loading="lazy"
+            src="https://mdn.github.io/css-examples/learn/getting-started/started2.html" 
+            width="100%" 
+            height="1100"></iframe>
 
 > **Note:** As you can see, CSS gives us several ways to target elements, and we've only scratched the surface so far! We will be taking a proper look at all of these selectors and many more in our [Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) articles later on in the course.
 
@@ -218,7 +232,14 @@ a:hover {
 }
 ```
 
-You can play with different values for the various states of a link. We have added the rules above, and now realize that the pink color is quite light and hard to read — why not change that to a better color? Can you make the links bold? Give it a try at your local CSS document!
+In the live example below, you can play with different values for the various states of a link. We have added the rules above to it, and now realize that the pink color is quite light and hard to read — why not change that to a better color? Can you make the links bold?
+
+<iframe 
+            class="EmbedGHLiveSample" 
+            loading="lazy"
+            src="https://mdn.github.io/css-examples/learn/getting-started/started3.html" 
+            width="100%" 
+            height="1000"></iframe>
 
 We have removed the underline on our link on hover. You could remove the underline from all states of a link. It is worth remembering however that in a real site, you want to ensure that visitors know that a link is a link. Leaving the underline in place can be an important clue for people to realize that some text inside a paragraph can be clicked on — this is the behavior they are used to. As with everything in CSS, there is the potential to make the document less accessible with your changes — we will aim to highlight potential pitfalls in appropriate places.
 
@@ -262,11 +283,9 @@ Don't worry if this seems complicated at the moment — you'll soon start to get
 
 In this article, we have taken a look at a number of ways in which you can style a document using CSS. We will be developing this knowledge as we move through the rest of the lessons. However, you now already know enough to style text, apply CSS based on different ways of targeting elements in the document, and look up properties and values in the MDN documentation.
 
-In the next lesson, we'll be taking a look at [how CSS is structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured).
-
 ### Sources and Attributions
 
 **Content is based on the following sources:**
 
 - **MDN**
-  - [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started) [(Permalink)](https://github.com/mdn/content/blob/eb6b8b17d8e160de1f2b752b3dea806c74a6ff4e/files/en-us/learn/css/first_steps/getting_started/index.md)
+  - [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started) [(Permalink)](https://github.com/mdn/content/blob/4785cd825d3e74ffdd11740d19473cb3ae63832c/files/en-us/learn/css/first_steps/getting_started/index.md)

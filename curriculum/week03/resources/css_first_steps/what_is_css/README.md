@@ -29,7 +29,13 @@ However, the web would be a boring place if all websites looked like that. Using
 
 For more on browser/default styles, check out the following video:
 
-{{EmbedYouTube("spK_S0HfzFw")}}
+<iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube-nocookie.com/embed/spK_S0HfzFw" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen="" 
+      loading="lazy"></iframe>
 
 ## What is CSS for?
 
@@ -108,7 +114,7 @@ Based on your requirements, you can use the browser compatibility table to check
 
 ## Summary
 
-You made it to the end of the article! Now that you have some understanding of what CSS is, let's move on to [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started), where you can start to write some CSS yourself.
+You made it to the end of the article! Now that you have some understanding of what CSS is, it's time to apply some CSS to a simple HTML document.
 
 ---
 
