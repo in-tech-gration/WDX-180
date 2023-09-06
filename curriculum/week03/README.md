@@ -4,7 +4,7 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 06/09/2023)_
+_(Updated: 07/09/2023)_
 
 ## Week 3 - Day 1 | More Git
 
@@ -18,6 +18,11 @@ _(Updated: 06/09/2023)_
 ## Week 3 - Day 2 | What is CSS?
 
   ### Schedule
+
+  - [Study](#study-plan-1)
+  - [Exercises](#exercises-1)
+  - [Extra Resources](#extra-resources-1)
+
   ### Study Plan
 
   - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/README.md)
@@ -33,6 +38,9 @@ _(Updated: 06/09/2023)_
     - Level: Beginner
 
   ### Summary
+
+  Now that you've finished studying today's content, you've gained familiarity with the language and its syntax. Move on to the exercise to get some basic experience using it.
+
   ### Exercises
 
   - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/README.md)
@@ -45,16 +53,58 @@ _(Updated: 06/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN:**
-    - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+    - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/index.md)
+    - [Exercise: Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md)
 
 ## Week 3 - Day 3
 
   ### Schedule
+
+  - [Study](#study-plan-2)
+  - [Exercises](#exercises-2)
+  - [Extra Resources](#extra-resources-2)
+
   ### Study Plan
+
+  Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper.
+
+  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/README.md)
+    - Level: Beginner
+  
+  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/README.md)
+    - Level: Beginner
+  
+  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/README.md)
+    - Level: Beginner
+  
+  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/README.md)
+    - Level: Beginner
+  
+  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/README.md)
+    - Level: Beginner
+
   ### Summary
+
+  Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercise!
+
   ### Exercises
+
+  - [MDN's Assessment: **Test your skills: Selectors**](exercises/test_your_skils_selectors/README.md)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
   ### [Extra Resources]
   ### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - **MDN:**
+    - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+    - [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+    - [Attribute Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
+    - [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
+    - [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
+    - [Exercise: Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md)
 
 ## Week 3 - Day 4
 
