@@ -168,8 +168,6 @@
 
   ### Evaluate VSCode extensions to be added to the WDX Extension Pack
 
-    The following extensions have been suggested by 
-
     https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
     https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
     https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils
