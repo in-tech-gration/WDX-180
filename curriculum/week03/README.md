@@ -35,7 +35,9 @@ _(Updated: 06/09/2023)_
   ### Summary
   ### Exercises
 
-  - [MDN Assessment: **Styling a biography page**]()
+  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/README.md)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources]
   ### Sources and Attributions
