@@ -89,7 +89,7 @@ _(Updated: 07/09/2023)_
 
   ### Exercises
 
-  - [MDN's Assessment: **Test your skills: Selectors**](exercises/test_your_skils_selectors/README.md)
+  - [MDN's Assessment: **Test your skills: Selectors**](exercises/test_your_skills_selectors/README.md)
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
