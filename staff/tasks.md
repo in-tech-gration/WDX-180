@@ -2,6 +2,16 @@
 
 ## CONTENT
 
+  ### How to deal with MDN
+
+  - Handle sections such as one found here: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured#properties_and_values
+  (Look for `This renders as: ...` section)
+
+  ### Provide details about the user/ and .user/ folders
+
+  - Project Manager: Kostas Minaidis (@kostasx)
+  - Resources: .user/ and user/ directories
+
   ### Content Review & curriculum selection: [Machine Learning for Web Developers (Web ML)](https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui)
 
   - Total duration: 07:53:45
@@ -87,44 +97,44 @@
 
   ### Improve the Yari parser tool
 
-  - Project Manager: Kostas Minaidis (@kostasx)
+    - Project Manager: Kostas Minaidis (@kostasx)
 
-  - File: tools/yari.parser.js
+    - File: tools/yari.parser.js
 
-  - Make sure that the parser handles the following content:
+    - Make sure that the parser handles the following content:
 
-  ```
-  {{ EmbedLiveSample('Omitting_quotes_around_attribute_values', 700, 100, "", "") }}
-  ```
+    ```
+    {{ EmbedLiveSample('Omitting_quotes_around_attribute_values', 700, 100, "", "") }}
+    ```
 
-  - Make sure that the parser handles the following sections:
+    - Make sure that the parser handles the following sections:
 
-  `html-nolint example-bad`
+    `html-nolint example-bad`
 
   ### Create linter for the /user/progress.draft.*.csv files
 
-  - Project Manager: Kostas Minaidis (@kostasx)
+    - Project Manager: Kostas Minaidis (@kostasx)
 
-  - File: tools/progress.linter.js
+    - File: tools/progress.linter.js
 
-  - Requirements:
-    - Ensure that the level column is set to the appropriate values (Beginner, Intermediate, Advanced)
-    - Ensure that the COMPLETED columns has either FALSE or TRUE, in all uppercase and no other value or missing
-    - Check for unintended commas (,) inside the field values. Commas should be included inside "double quotes" if they are intended as values
-    - Ensure there are no discrepancies in the week and day columns, e.g. they are all in ascending order, no days or weeks are skipped, they are 2 digit numbers, etc. 
-    - Two modes: lint the boilerplate files and lint the students' updated files and check for errors
+    - Requirements:
+      - Ensure that the level column is set to the appropriate values (Beginner, Intermediate, Advanced)
+      - Ensure that the COMPLETED columns has either FALSE or TRUE, in all uppercase and no other value or missing
+      - Check for unintended commas (,) inside the field values. Commas should be included inside "double quotes" if they are intended as values
+      - Ensure there are no discrepancies in the week and day columns, e.g. they are all in ascending order, no days or weeks are skipped, they are 2 digit numbers, etc. 
+      - Two modes: lint the boilerplate files and lint the students' updated files and check for errors
 
   ### Create linter for the /user/progress.draft.terms.csv file
 
-  - Project Manager: Kostas Minaidis (@kostasx)
+    - Project Manager: Kostas Minaidis (@kostasx)
 
-  - File: tools/progress.linter.js
+    - File: tools/progress.linter.js
 
-  - Requirements:
-    - Check that all entries have a slug
-    - Check that no duplicate slugs are found
-    - Check that no empty lines are found
-    - Run linter on commit
+    - Requirements:
+      - Check that all entries have a slug
+      - Check that no duplicate slugs are found
+      - Check that no empty lines are found
+      - Run linter on commit
 
   ### Develop script that validates the progress sheets (user/*.csv) before committing
 
@@ -155,6 +165,13 @@
     - Project Manager: Kostas Minaidis (@kostasx)
 
     See the [README.md](../tools/README.md#toolsvalidatorjs) file `Tasks` section for more details. 
+
+  ### Evaluate VSCode extensions to be added to the WDX Extension Pack
+
+    https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
+    https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+    https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils
+    https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager
 
 ## PLATFORM (npm run learn)  
 
