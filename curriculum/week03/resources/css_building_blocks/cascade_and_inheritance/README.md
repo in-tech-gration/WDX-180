@@ -6,6 +6,8 @@ page-type: learn-module-chapter
 
 # Cascade, specificity and Inheritance
 
+_(Updated: 07/09/2023)_
+
 The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts between style declarations are resolved.
 
 While working through this lesson may seem less relevant immediately and a little more academic than some other parts of the course, an understanding of these concepts will save you from a lot of pain later on! We encourage you to work through this section carefully and check that you understand the concepts before moving on.
