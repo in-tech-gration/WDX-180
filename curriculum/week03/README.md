@@ -109,11 +109,36 @@ _(Updated: 07/09/2023)_
 ## Week 3 - Day 4
 
   ### Schedule
+
+  - [Study](#study-plan-3)
+  - [Exercises](#exercises-3)
+  - [Extra Resources](#extra-resources-3)
+
   ### Study Plan
+
+  The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts are resolved.
+
+  - [Read: **Cascade and Inheritance**](resources/css_building_blocks/cascade_and_inheritance/README.md)
+    - Level: Beginner
+
   ### Summary
+
+  Now that you've finished studying today's content, you have a better understanding of the most fundamental concepts of CSS. It's time to put this information to the test with the following exercise!
+  
   ### Exercises
+
+  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/test_your_skills_cascade/README.md)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
   ### [Extra Resources]
   ### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - **MDN**
+    - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md)
+    - [Exercise: Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md)
 
 ## Week 3 - Day 5
 
