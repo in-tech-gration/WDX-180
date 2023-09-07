@@ -300,16 +300,28 @@ function parseEmbedYouTube( textContent ){
   const youtubeRegex = /\{\{EmbedYouTube\("([a-zA-Z0-9-_]{11})"\)\}\}/g;
 
   const matches = textContent.matchAll( youtubeRegex );
-  const iframe = (vid)=> `
+  const iframe = (vid)=> {
+
+    const iframe = `
     <iframe 
       width="560" 
       height="315" 
       src="https://www.youtube-nocookie.com/embed/${vid}" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen="" 
-      loading="lazy"></iframe>
-  `.trim()
+      loading="lazy">
+    </iframe>`.trim();
 
+    const externalLink = `
+    <p><a href="https://www.youtube.com/watch?v=${vid}" target="_blank">
+        [ Watch on <strong>YouTube</strong> ]
+      </a>
+    </p>`.split("\n").map( s => s.trim() ).join("\n");
+
+    return iframe + "\n" + externalLink;
+
+  }
+  
   if ( matches ){
     for ( const match of matches ){
       info( "Found: " + match[0] );
