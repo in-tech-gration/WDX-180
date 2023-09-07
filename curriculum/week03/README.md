@@ -143,11 +143,29 @@ _(Updated: 07/09/2023)_
 ## Week 3 - Day 5
 
   ### Schedule
+
+  - [Study](#study-plan-4)
+  - [Exercises](#exercises-4)
+  - [Extra Resources](#extra-resources-4)
+
   ### Study Plan
+
+  - [Read: **The box model**](resources/css_building_blocks/the_box_model/README.md)
+    - Level: Beginner
+
   ### Summary
   ### Exercises
+
+  - [MDN's Assessment: **Test your skills: The box model**](exercises/test_your_skills_the_box_model/README.md)
+
   ### [Extra Resources]
   ### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - **MDN**
+    - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md)
+    - [Exercise: Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
