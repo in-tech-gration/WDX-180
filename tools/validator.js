@@ -5,7 +5,9 @@ const fs         = require("node:fs");
 const path       = require("node:path");
 
 const chalk      = require('chalk'); 
-const MarkdownIt = require('markdown-it');
+const MarkdownIt = require('markdown-it'); // TODO: Deprecate `markdown-it` and replace it with `marked` module
+const marked     = require("marked");
+const matter     = require('gray-matter');
 const yaml       = require('yaml');
 
 const { 
@@ -389,6 +391,25 @@ function checkProgressRefs( markdown, filePath, isWeeklyREADME ){
   }
 }
 
+function checkHeadingStructure( markdownHeadings ){
+  const regex = /Week \d{1,2} - Day \d/;
+  const weeklyHeadings = markdownHeadings.filter( heading =>{
+    return ( heading.depth === 2 && regex.test(heading.text) )
+  });
+  const regexCheck = /Week \d{1,2} - Day \d \| .*/;
+  let foundErrors = false;
+  weeklyHeadings.map( h =>{
+    const passTheTest = regexCheck.test(h.text);
+    if ( !passTheTest ){
+      foundErrors = true;
+      warn(`Found a daily title that does not include proper description: ${h.text}`);
+    }
+  })
+  if ( foundErrors ){
+    info("Proper daily title syntax is as follows: Week WW Day DD | Title Here")
+  }
+}
+
 // 2) OUR VARIABLES: ===========================================================
 
 const markdownFilePath     = process.argv[2];
@@ -399,7 +420,6 @@ const xmark                = "\u274C"; // ❌
 const updatedRegex         = /_\(Updated: (\d{2}\/\d{2}\/\d{4})\)_/;
 const md                   = new MarkdownIt();
 const headingTokens        = [];
-
 const dailySections = [
   "### Schedule",
   "### Study Plan",
@@ -419,12 +439,25 @@ function initializeChecks(){
     process.exit();
   }
   
-  const isInCurriculumFolder = isCurriculumFolder( markdownFilePath );
+  const isInCurriculumFolder  = isCurriculumFolder( markdownFilePath );
   console.log({ isInCurriculumFolder });
-  const markdownContent      = fs.readFileSync(markdownFilePath, 'utf8');
-  const frontmatter          = getFrontmatterFromMarkdown( markdownContent );
-  const markdownBody         = getMarkdownBody( markdownContent );
-  
+  const markdownContent       = fs.readFileSync(markdownFilePath, 'utf8');
+  const frontmatter           = getFrontmatterFromMarkdown( markdownContent );
+  const markdownBody          = getMarkdownBody( markdownContent );
+  // TODO: This line should replace `markdownBody` with `content` and `frontmatter` with `fm`
+  const { content, data: fm } = matter( markdownContent );
+  // TODO: replace `headingTokens` with `markdownHeadings`
+  const markdownTokens       = marked.lexer(content);
+  const markdownHeadings     = markdownTokens
+  .filter( token => token.type === "heading" )
+  .map( token =>{
+    return {
+      type: token.type,
+      text: token.text,
+      depth: token.depth
+    }
+  });
+
   // Get all Headings from Markdown AST:
   md.use(require('markdown-it-anchor'), {
     level: 1, // Extract headings starting from level 1
@@ -474,6 +507,9 @@ function initializeChecks(){
   
   // ✅ CHECK: PRINT THE EXTRACTED HEADINGS AND WARN FOR EMPTY TITLES
   checkForEmptyHeadings( headingTokens );
+
+  // ✅ CHECK: FOR PROPER HEADING STRUCTURE
+  checkHeadingStructure( markdownHeadings );
   
   // ✅ CHECK: HAS AT LEAST ONE LEVEL 1 HEADING
   checkForHeadingLevel1(headingTokens);
