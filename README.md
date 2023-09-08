@@ -144,6 +144,7 @@ _(Work in progress)_
 - [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
 - [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
+- [**Vangelis Chirmpilidis**  / Content Curator & Passionate Contributor](https://github.com/vagelisx)
 - **How about you?** 😉
 
 The curriculum draws heavily on the following amazing resources:
