@@ -52,9 +52,14 @@ In the example below, we have used various color values to add a background colo
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/color.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/color.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/color.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Background images
 
@@ -65,9 +70,14 @@ This example demonstrates two things about background images. By default, the la
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/background-image.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/background-image.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/background-image.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 **If you specify a background color in addition to a background image then the image displays on top of the color. Try adding a `background-color` property to the example above to see that in action.**
 
@@ -85,9 +95,14 @@ The [`background-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/backg
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/repeat.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/repeat.html" 
             width="100%" 
             height="600"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/repeat.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 #### Sizing the background image
 
@@ -109,9 +124,14 @@ Try the following.
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/size.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/size.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/size.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 #### Positioning the background image
 
@@ -166,9 +186,14 @@ Finally, you can also use a 4-value syntax in order to indicate a distance from 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/position.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/position.html" 
             width="100%" 
             height="600"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/position.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 > **Note:** `background-position` is a shorthand for [`background-position-x`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x) and [`background-position-y`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y), which allow you to set the different axis position values individually.
 
@@ -183,9 +208,14 @@ Try some different gradients in the example below. In the two boxes respectively
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/gradients.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/gradients.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/gradients.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Multiple background images
 
@@ -213,9 +243,14 @@ Each value of the different properties will match up to the values in the same p
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/multiple-background-image.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/multiple-background-image.html" 
             width="100%" 
             height="600"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/multiple-background-image.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Background attachment
 
@@ -243,9 +278,14 @@ Take a look at the MDN page for [`background`](https://developer.mozilla.org/en-
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/background.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/background.html" 
             width="100%" 
             height="900"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/background.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Accessibility considerations with backgrounds
 
@@ -300,9 +340,14 @@ There are a variety of styles that you can use for borders. In the example below
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/borders.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/borders.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/borders.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Rounded corners
 
@@ -329,9 +374,14 @@ We have set all four corners in the example below and then changed the values fo
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/backgrounds-borders/corners.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/corners.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/backgrounds-borders/corners.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Summary
 

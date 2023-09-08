@@ -68,9 +68,14 @@ In the live example below try combining the two selectors which have identical d
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/selector-list.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/selector-list.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/selector-list.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 When you group selectors in this way, if any selector is syntactically invalid, the whole rule will be ignored.
 

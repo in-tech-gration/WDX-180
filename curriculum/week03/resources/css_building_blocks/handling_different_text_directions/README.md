@@ -33,9 +33,14 @@ In the example below we have a heading displayed using `writing-mode: vertical-r
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/writing-modes/simple-vertical.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/writing-modes/simple-vertical.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/writing-modes/simple-vertical.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 The three possible values for the [`writing-mode`](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode) property are:
 
@@ -54,9 +59,14 @@ If we look at an example this will become clearer. In this next example I have t
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/writing-modes/block-inline.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/writing-modes/block-inline.html" 
             width="100%" 
             height="1200"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/writing-modes/block-inline.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 When we switch the writing mode, we are changing which direction is block and which is inline. In a `horizontal-tb` writing mode the block direction runs from top to bottom; in a `vertical-rl` writing mode the block direction runs right-to-left horizontally. So the **block dimension** is always the direction blocks are displayed on the page in the writing mode in use. The **inline dimension** is always the direction a sentence flows.
 
@@ -83,9 +93,14 @@ Let's take a look at our two boxes again — one with a `horizontal-tb` writing 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/writing-modes/width.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/writing-modes/width.html" 
             width="100%" 
             height="1200"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/writing-modes/width.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 What we really want in this scenario is to essentially swap height with width in accordance to the writing mode. When we're in a vertical writing mode we want the box to expand in the block dimension just like it does in the horizontal mode.
 
@@ -96,9 +111,14 @@ The property mapped to `width` when in a horizontal writing mode is called [`inl
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/writing-modes/inline-size.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/writing-modes/inline-size.html" 
             width="100%" 
             height="1000"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/writing-modes/inline-size.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Logical margin, border, and padding properties
 
@@ -117,9 +137,14 @@ You can see a comparison between physical and logical properties below.
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/writing-modes/logical-mbp.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/writing-modes/logical-mbp.html" 
             width="100%" 
             height="1300"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/writing-modes/logical-mbp.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 There are a huge number of properties when you consider all of the individual border longhands, and you can see all of the mapped properties on the MDN page for [Logical Properties and Values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
 
@@ -134,9 +159,14 @@ For example, you can float an image left to cause text to wrap round the image. 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/writing-modes/float.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/writing-modes/float.html" 
             width="100%" 
             height="1000"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/writing-modes/float.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Here we are also using logical margin values to ensure the margin is in the correct place no matter what the writing mode is.
 

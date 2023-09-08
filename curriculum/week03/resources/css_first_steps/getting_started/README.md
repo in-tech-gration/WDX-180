@@ -105,9 +105,14 @@ Try this out in the interactive editor below (edit the code boxes) or in your lo
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/getting-started/started1.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/getting-started/started1.html" 
             width="100%" 
             height="900"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/getting-started/started1.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Changing the default behavior of elements
 
@@ -204,9 +209,14 @@ The live example below includes the two rules above. Try adding a rule to make a
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/getting-started/started2.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/getting-started/started2.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/getting-started/started2.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 > **Note:** As you can see, CSS gives us several ways to target elements, and we've only scratched the surface so far! We will be taking a proper look at all of these selectors and many more in our [Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) articles later on in the course.
 
@@ -237,9 +247,14 @@ In the live example below, you can play with different values for the various st
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/getting-started/started3.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/getting-started/started3.html" 
             width="100%" 
             height="1000"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/getting-started/started3.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 We have removed the underline on our link on hover. You could remove the underline from all states of a link. It is worth remembering however that in a real site, you want to ensure that visitors know that a link is a link. Leaving the underline in place can be an important clue for people to realize that some text inside a paragraph can be clicked on — this is the behavior they are used to. As with everything in CSS, there is the potential to make the document less accessible with your changes — we will aim to highlight potential pitfalls in appropriate places.
 

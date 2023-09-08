@@ -73,9 +73,14 @@ The example below has three different HTML elements, all of which have an outer 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/block.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/block.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/block.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 In the next example, we can see how `inline` elements behave.
 
@@ -90,9 +95,14 @@ In the next example, we can see how `inline` elements behave.
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/inline.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/inline.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/inline.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 The key thing to remember for now is: Changing the value of the `display` property can change whether the outer display type of a box is block or inline. This changes the way it displays alongside other elements in the layout.
 
@@ -191,9 +201,14 @@ In the example below, you can see two boxes. Both have a class of `.box`, which 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/box-models.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/box-models.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/box-models.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 > **Note:** You can find a solution for this task [here](https://github.com/mdn/css-examples/blob/main/learn/solutions.md#the-box-model).
 
@@ -225,9 +240,14 @@ We can control all margins of an element at once using the [`margin`](https://de
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/margin.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/margin.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/margin.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 #### Margin collapsing
 
@@ -244,9 +264,14 @@ In the example below, we have two paragraphs. The top paragraph has a `margin-bo
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/margin-collapse.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/margin-collapse.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/margin-collapse.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 A number of rules dictate when margins do and do not collapse. For further information see the detailed page on [mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing). The main thing to remember is that margin collapsing is a thing that happens if you are creating space with margins and don't get the space you expect.
 
@@ -291,9 +316,14 @@ In the example below, we have used various shorthands and longhands to create bo
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/border.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/border.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/border.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Padding
 
@@ -311,9 +341,14 @@ In the example below, you can change the values for padding on the class `.box` 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/padding.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/padding.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/padding.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## The box model and inline boxes
 
@@ -324,9 +359,14 @@ In the example below, we have a `<span>` inside a paragraph. We have applied a `
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/inline-box-model.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/inline-box-model.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/inline-box-model.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Using display: inline-block
 
@@ -344,9 +384,14 @@ It does not, however, break onto a new line, and will only become larger than it
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/inline-block.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/inline-block.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/inline-block.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Where this can be useful is when you want to give a link a larger hit area by adding `padding`. `<a>` is an inline element like `<span>`; you can use `display: inline-block` to allow padding to be set on it, making it easier for a user to click the link.
 
@@ -357,9 +402,14 @@ You see this fairly frequently in navigation bars. The navigation below is displ
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/box-model/inline-block-nav.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/box-model/inline-block-nav.html" 
             width="100%" 
             height="700"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/box-model/inline-block-nav.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Summary
 

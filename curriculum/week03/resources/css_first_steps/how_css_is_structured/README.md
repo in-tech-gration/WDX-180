@@ -170,9 +170,14 @@ As an alternative, you can also use the interactive editor below.
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/getting-started/experiment-sandbox.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/getting-started/experiment-sandbox.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/getting-started/experiment-sandbox.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Read on and have fun!
 

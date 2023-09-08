@@ -35,9 +35,14 @@ In the example below, we are matching only the `<p>` element which is inside an 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/descendant.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/descendant.html" 
             width="100%" 
             height="500"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/descendant.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Child combinator
 
@@ -54,9 +59,14 @@ If you remove the `>` that designates this as a child combinator, you end up wit
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/child.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/child.html" 
             width="100%" 
             height="600"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/child.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Adjacent sibling combinator
 
@@ -73,9 +83,14 @@ If you insert some other element such as a `<h2>` in between the `<h1>` and the 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/adjacent.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/adjacent.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/adjacent.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## General sibling combinator
 
@@ -90,9 +105,14 @@ In the example below we are selecting all `<p>` elements that come after the `<h
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/general.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/general.html" 
             width="100%" 
             height="600"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/general.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Using combinators
 

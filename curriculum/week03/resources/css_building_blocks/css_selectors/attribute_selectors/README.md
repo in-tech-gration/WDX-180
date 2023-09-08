@@ -83,9 +83,14 @@ In the example below you can see these selectors being used.
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/attribute.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/attribute.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/attribute.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Substring matching selectors
 
@@ -108,9 +113,14 @@ The next example shows usage of these selectors:
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/attribute-substring.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/attribute-substring.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/attribute-substring.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## Case-sensitivity
 
@@ -121,9 +131,14 @@ In the example below, the first selector will match a value that begins with `a`
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/attribute-case.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/attribute-case.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/attribute-case.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 > **Note:** There is also a newer value `s`, which will force case-sensitive matching in contexts where matching is normally case-insensitive, however this is less well supported in browsers and isn't very useful in an HTML context.
 

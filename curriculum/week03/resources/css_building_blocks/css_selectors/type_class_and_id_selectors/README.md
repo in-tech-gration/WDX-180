@@ -31,9 +31,14 @@ A **type selector** is sometimes referred to as a _tag name selector_ or _elemen
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/type.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/type.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/type.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## The universal selector
 
@@ -42,9 +47,14 @@ The universal selector is indicated by an asterisk (`*`). It selects everything 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/universal.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/universal.html" 
             width="100%" 
             height="750"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/universal.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 This kind of behavior can sometimes be seen in "reset stylesheets", which strip out all of the browser styling. Since the universal selector makes global changes, we use it for very specific situations, such as the one described below.
 
@@ -77,9 +87,14 @@ The class selector starts with a dot (`.`) character. It will select everything 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/class.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/class.html" 
             width="100%" 
             height="750"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/class.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Targeting classes on particular elements
 
@@ -88,9 +103,14 @@ You can create a selector that will target specific elements with the class appl
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/class-type.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/class-type.html" 
             width="100%" 
             height="750"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/class-type.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 This approach reduces the scope of a rule. The rule will only apply to that particular element and class combination. You would need to add another selector if you decided the rule should apply to other elements too.
 
@@ -105,9 +125,14 @@ We can tell the browser that we only want to match the element if it has two cla
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/class-many.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/class-many.html" 
             width="100%" 
             height="900"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/class-many.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ## ID selectors
 
@@ -116,9 +141,14 @@ An ID selector begins with a `#` rather than a dot character, but is used in the
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/selectors/id.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/selectors/id.html" 
             width="100%" 
             height="750"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/selectors/id.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 > **Warning:** Using the same ID multiple times in a document may appear to work for styling purposes, but don't do this. It results in invalid code, and will cause strange behavior in many places.
 

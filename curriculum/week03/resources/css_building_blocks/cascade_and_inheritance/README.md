@@ -43,9 +43,14 @@ In the below example, we have two rules that could apply to the `<h1>` element. 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/cascade-simple.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/cascade-simple.html" 
             width="100%" 
             height="500"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/cascade-simple.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Specificity
 
@@ -59,9 +64,14 @@ Below, we again have two rules that could apply to the `<h1>` element. The `<h1>
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/specificity-simple.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/specificity-simple.html" 
             width="100%" 
             height="600"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/specificity-simple.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 We'll explain the specificity algorithm later on.
 
@@ -74,9 +84,14 @@ For example, if you set a `color` and `font-family` on an element, every element
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/inheritance-simple.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/inheritance-simple.html" 
             width="100%" 
             height="650"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/inheritance-simple.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Some properties do not inherit — for example, if you set a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) of 50% on an element, all of its descendants do not get a width of 50% of their parent's width. If this was the case, CSS would be very frustrating to use!
 
@@ -111,9 +126,14 @@ The `color` property is an inherited property. So, the `color` property value is
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/inheritance.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/inheritance.html" 
             width="100%" 
             height="1100"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/inheritance.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Properties like `width` (as mentioned earlier), `margin`, `padding`, and `border` are not inherited properties. If a border were to be inherited by the children in this list example, every single list and list item would gain a border — probably not an effect we would ever want!
 
@@ -148,9 +168,14 @@ For example:
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/keywords.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/keywords.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/keywords.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 ### Resetting all property values
 
@@ -161,9 +186,14 @@ In the below example, we have two blockquotes. The first has styling applied to 
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/all.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/all.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/all.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Try setting the value of `all` to some of the other available values and observe what the difference is.
 
@@ -198,9 +228,14 @@ This behavior helps avoid repetition in your CSS. A common practice is to define
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/mixing-rules.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/mixing-rules.html" 
             width="100%" 
             height="1000"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/mixing-rules.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Let's now have a look at how the browser will calculate specificity. We already know that an element selector has low specificity and can be overwritten by a class. Essentially a value in points is awarded to different types of selectors, and adding these up gives you the weight of that particular selector, which can then be assessed against other potential matches.
 
@@ -229,9 +264,14 @@ Before we move on, let's look at an example in action.
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/specificity-boxes.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/specificity-boxes.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/specificity-boxes.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 So what's going on here? First of all, we are only interested in the first seven rules of this example, and as you'll notice, we have included their specificity values in a comment before each one.
 
@@ -258,9 +298,14 @@ Take a look at this example where we have two paragraphs, one of which has an ID
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/important.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/important.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/important.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Let's walk through this to see what's happening — try removing some of the properties to see what happens if you are finding it hard to understand:
 
@@ -305,9 +350,14 @@ When you have multiple style blocks in different layers providing competing valu
 <iframe 
             class="EmbedGHLiveSample" 
             loading="lazy"
-            src="https://mdn.github.io/css-examples/learn/cascade/cascade-layers.html" 
+            src="https://in-tech-gration.github.io/css-examples/learn/cascade/cascade-layers.html" 
             width="100%" 
             height="800"></iframe>
+<p>
+  <a href="https://in-tech-gration.github.io/css-examples/learn/cascade/cascade-layers.html" target="_blank">
+    [ External link ]
+  </a>
+</p>
 
 Let's discuss a few things from the above example to understand what's happening. Two layers have been declared, `firstLayer` and `secondLayer`, in that order. Even though the specificity in `secondLayer` is the highest, no properties from that declaration are used. Why? Because non-layered normal styles take precedence over layered normal styles, no matter the specificity, and important layered styles take precedence over important styles declared in later layers, again, no matter the specificity.
 
