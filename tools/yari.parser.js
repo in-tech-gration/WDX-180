@@ -1,27 +1,13 @@
-const path = require("node:path");
-const fs = require("node:fs");
-const { parseArgs } = require("node:util");
+// DESCRIPTION: Script to parse MDN markdown content. Looks for patterns such as {{LearnSidebar}}, {{Glossary}}, etc.
+
+// 0) IMPORTS: =================================================================
+const path               = require("node:path");
+const fs                 = require("node:fs");
+const { parseArgs }      = require("node:util");
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
 const { warn, ok, info } = require("./utils");
 
-/* 
-  Description: this script parses MDN markdown files and replaces the following patterns:
-
-  Search and remove:
-
-  {{LearnSidebar}}
-
-  {{PreviousMenuNext("Learn/Getting_started_with_the_web/HTML_basics", "Learn/Getting_started_with_the_web/JavaScript_basics", "Learn/Getting_started_with_the_web")}}
-
-  Search and replace {{Glossary}} links:
-
-  ...
-
-  Search and replace links:
-
-  ...
-
-*/
+// 1) OUR FUNCTIONS: ===========================================================
 
 /**
  * TODO: ADD TESTS
@@ -336,7 +322,8 @@ function parseEmbedYouTube( textContent ){
 function parseEmbedLiveSample( textContent ){
   const regex = /\{\{EmbedGHLiveSample\((['"])(?<first>.*)\1(,\s?(['"])(?<second>.*)\4)?(,\s?(?<third>.*))?\)\}\}/gm
   const matches = textContent.matchAll(regex);
-  const domain = "https://mdn.github.io/";
+  const domainMDN = "https://mdn.github.io/";
+  const domain = "https://in-tech-gration.github.io/";
   if ( matches ){
     for ( const match of matches ){
       // PARSE css-examples:
@@ -354,13 +341,24 @@ function parseEmbedLiveSample( textContent ){
             height="${match.groups.third}"></iframe>
         `.trim();
 
-        textContent = textContent.replace( match[0], iframe );
+        const externalLink = `
+        <p><a href="${domain}${match.groups.first}" target="_blank">
+            [ External link ]
+          </a>
+        </p>`.split("\n").map( s => s.trim() ).join("\n");
+
+        textContent = textContent.replace(
+          match[0], 
+          iframe + "\n" + externalLink 
+        );
 
       }
     }
   }
   return textContent;
 }
+
+// 3) ACTION!!! ================================================================
 
 // Orchestrate Parsing & Modifications
 function parseYariDynamicContent( textContent, fileName ){
@@ -417,6 +415,7 @@ function init(){
 
 }
 
+// 4) EXPORT SECTION: ==========================================================
 
 module.exports = {
   parseYariDynamicContent,
