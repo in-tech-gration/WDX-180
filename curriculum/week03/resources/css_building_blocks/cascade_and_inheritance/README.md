@@ -89,12 +89,18 @@ These three concepts (cascade, specificity, and inheritance) together control wh
 The following video shows how you can use the Firefox DevTools to inspect a page's cascade, specificity, and more:
 
 <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube-nocookie.com/embed/Sp9ZfSvpf7A" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen="" 
-      loading="lazy"></iframe>
+  width="560" 
+  height="315" 
+  src="https://www.youtube-nocookie.com/embed/Sp9ZfSvpf7A" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+<p>
+  <a href="https://www.youtube.com/watch?v=Sp9ZfSvpf7A" target="_blank">
+    [ Watch on <strong>YouTube</strong> ]
+  </a>
+</p>
 
 ## Understanding inheritance
 

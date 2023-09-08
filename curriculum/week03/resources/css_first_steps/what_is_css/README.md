@@ -30,12 +30,18 @@ However, the web would be a boring place if all websites looked like that. Using
 For more on browser/default styles, check out the following video:
 
 <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube-nocookie.com/embed/spK_S0HfzFw" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen="" 
-      loading="lazy"></iframe>
+  width="560" 
+  height="315" 
+  src="https://www.youtube-nocookie.com/embed/spK_S0HfzFw" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+<p>
+  <a href="https://www.youtube.com/watch?v=spK_S0HfzFw" target="_blank">
+    [ Watch on <strong>YouTube</strong> ]
+  </a>
+</p>
 
 ## What is CSS for?
 
