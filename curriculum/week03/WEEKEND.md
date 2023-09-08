@@ -4,6 +4,8 @@ title: Week 3 Weekend
 
 # Week 3 Weekend | CSS, Accessibility & Git
 
+ _(Updated: 08/09/2023)_
+
   ## Handling different text directions
 
   Throughout this week, we have learned quite a lot about CSS, however it's just a small percentage of what CSS has to offer.
