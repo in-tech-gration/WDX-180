@@ -17,7 +17,7 @@
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
-    "tools:git-gud": "http-server -o -p 9000 resources/tools/git-gud/docs/"
+    "git:gud": "http-server -o -p 9000 resources/tools/git-gud/docs/"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
