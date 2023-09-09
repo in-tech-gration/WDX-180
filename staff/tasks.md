@@ -102,6 +102,7 @@
     - File: tools/csv.tools.js
 
     - Tasks:
+      - Fix: https://github.com/shystruk/csv-file-validator/issues/70
       - Lint progress DRAFTS CSV
       - Lint terms DRAFTS CSV
 
