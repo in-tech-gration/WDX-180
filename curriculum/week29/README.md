@@ -1,6 +1,8 @@
 # Week 29 | Thinking out-of-the-box: Browser Extensions & ElectronJS
 
-## Week 29 - Day 1
+## Week 29 - Day 1 | Bookmarklets, ...
+
+  STUDY: https://github.com/shystruk/search-bookmarklet
 
 ## Week 29 - Day 2
 
