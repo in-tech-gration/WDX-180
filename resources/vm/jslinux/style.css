@@ -76,24 +76,60 @@ label {
 }
 
 /* CUSTOM */
-/* System Fonts as used by GitHub */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-.term_scrollbar {
-  display: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: lightgray;
 }
 .term {
-  box-sizing: border-box;
-  width: calc(60rem) !important;
-  height: 26rem !important;
-  font-size: 1.4rem !important;
-  border-radius: 1rem;
-  box-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.4);
   color: #a5ff3c;
-  padding: 1rem;
-  margin: 1rem auto;
 }
+.term_cursor {
+  background-color: #a5ff3c;
+}
+#term_container {
+  font-family: courier, fixed, swiss, monospace, sans-serif;
+  font-size: 22px;
+  width: calc(80ch + 16px);
+  padding: 1rem;
+  background: black;
+  border-radius: 12px;
+  box-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.4);
+  margin: 2rem auto 0 auto;
+}
+.term_scrollbar {
+  visibility: hidden;
+}
+#copyright {
+  text-align: center;
+}
+#net_progress {
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+.minimize {
+  margin-bottom: 1rem;
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+.minimize .btn {
+  height: 16px;
+  width: 16px;
+  background: transparent;
+  display: inline-block;
+  border-radius: 50%;
+}
+.minimize .close-btn {
+  background: #ff615b;
+}
+.minimize .min-btn {
+  background: #ffbe2f;
+}
+.minimize .full-btn {
+  background-color: #2bca3d;
+}
+/*
 .term_content {
   width: 100% !important;
   height: 100%;
@@ -108,11 +144,5 @@ body {
   border-radius: 50%;
   margin-bottom: 0.5rem;
 }
-#copyright {
-  text-align: center;
-}
-#net_progress {
-  margin: 0 auto 1rem auto;
-  display: block;
-}
+*/
 /* CUSTOM */

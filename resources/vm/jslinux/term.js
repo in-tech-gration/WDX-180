@@ -23,8 +23,7 @@
  */
 "use strict";
 
-function Term(width, height, handler, tot_height)
-{
+function Term(width, height, handler, tot_height){
     this.w = width;
     this.h = height;
 
@@ -87,8 +86,7 @@ function Term(width, height, handler, tot_height)
     this.linux_console = true;
 }
 
-Term.prototype.open = function(parent_el, textarea_el)
-{
+Term.prototype.open = function(parent_el, textarea_el){
     var y, line, i, term, c, row_el;
 
     /* set initial content */
@@ -394,18 +392,16 @@ Term.prototype.scroll_disp = function(n)
     this.refresh(0, this.h - 1);
 };
 
-Term.prototype.write = function(str)
-{
+Term.prototype.write = function(str){
+    // console.log("Term::write(str)", str);
     var s, ymin, ymax;
     
-    function update(y) 
-    {
+    function update(y){
         ymin = Math.min(ymin, y);
         ymax = Math.max(ymax, y);
     }
 
-    function get_erase_char()
-    {
+    function get_erase_char(){
         var bg_mask, attr;
         bg_mask = 0xf;
         attr = (s.def_attr & ~bg_mask) | (s.cur_attr & bg_mask);
@@ -936,13 +932,12 @@ Term.prototype.write = function(str)
         s.refresh(ymin, ymax);
 };
 
-Term.prototype.writeln = function (str)
-{
+Term.prototype.writeln = function (str){
+    console.log("Term::writeln(str)", str);
     this.write(str + '\r\n');
 };
 
-Term.prototype.interceptBrowserExit = function (ev)
-{
+Term.prototype.interceptBrowserExit = function (ev){
     /* At least avoid exiting the navigator if Ctrl-Q or Ctrl-W are
      * pressed */
     if (ev.ctrlKey) {
@@ -1111,8 +1106,7 @@ Term.prototype.to_utf8 = function(s)
     return r;
 }
 
-Term.prototype.keyPressHandler = function (ev)
-{
+Term.prototype.keyPressHandler = function (ev){
     var str, char_code;
 
     if (ev.stopPropagation)
@@ -1230,22 +1224,20 @@ Term.prototype.textAreaReset = function(ev)
 }
 
 /* output queue to send back asynchronous responses */
-Term.prototype.queue_chars = function (str)
-{
+Term.prototype.queue_chars = function (str){
     this.output_queue += str;
-    if (this.output_queue)
+    if (this.output_queue){
         setTimeout(this.outputHandler.bind(this), 0);
+    }
 };
 
-Term.prototype.outputHandler = function ()
-{
+Term.prototype.outputHandler = function (){
     if (this.output_queue) {
         this.handler(this.output_queue);
         this.output_queue = "";
     }
 };
 
-Term.prototype.getSize = function ()
-{
+Term.prototype.getSize = function (){
     return [this.w, this.h];
 };

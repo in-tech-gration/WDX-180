@@ -37,8 +37,8 @@ const defaultCPUArchitecture = "x86"; // Original code: "riscv64"
 const defaultMemoryInMB = 256;        // Original code: 128
 // CONFIGURATION: TERMINAL OPTIONS
 const termDefaultCols     = 80;
-const termDefaultRows     = 30;
-const termDefaultFontSize = 15;
+const termDefaultRows     = 15;
+const termDefaultFontSize = 22;
 const termDefaultWidth    = 1024;
 const termDefaultHeight   = 640;
 
@@ -57,8 +57,7 @@ function on_update_file(f){
     reader.readAsArrayBuffer(f);
 }
 
-function on_update_files(files)
-{
+function on_update_files(files){
     var i, n;
     n = files.length;
     for(i = 0; i < n; i++) {
@@ -67,8 +66,7 @@ function on_update_files(files)
 }
 
 function term_handler(str){
-    var i;
-    for(i = 0; i < str.length; i++) {
+    for(let i = 0; i < str.length; i++) {
         console_write1(str.charCodeAt(i));
     }
 }
@@ -80,9 +78,8 @@ function downloading_timer_cb()
     downloading_timer_pending = false;
 }
 
-function update_downloading(flag)
-{
-    var el;
+function update_downloading(flag){
+    let el;
     if (flag) {
         if (downloading_timer_pending) {
             clearTimeout(downloading_timer);
@@ -127,8 +124,9 @@ function get_absolute_url(fname){
     return window.location.origin + path.slice(0, p + 1) + fname;
 }
 
-function GraphicDisplay(parent_el, width, height)
-{
+/* Graphic Display */
+
+function GraphicDisplay(parent_el, width, height){
     this.width = width;
     this.height = height;
     
@@ -421,8 +419,7 @@ GraphicDisplay.prototype.onContextMenuHandler = function (ev)
 
 /* Network support */
 
-function Ethernet(url)
-{
+function Ethernet(url){
     try {
         this.socket = new WebSocket(url);
     } catch(err) {
@@ -437,23 +434,19 @@ function Ethernet(url)
     this.socket.onerror = this.errorHandler.bind(this);
 }
 
-Ethernet.prototype.openHandler = function(e)
-{
+Ethernet.prototype.openHandler = function(e){
     net_set_carrier(1);
 }
 
-Ethernet.prototype.closeHandler = function(e)
-{
+Ethernet.prototype.closeHandler = function(e){
     net_set_carrier(0);
 }
 
-Ethernet.prototype.errorHandler = function(e)
-{
+Ethernet.prototype.errorHandler = function(e){
     console.log("Websocket error=" + e);
 }
 
-Ethernet.prototype.messageHandler = function(e)
-{
+Ethernet.prototype.messageHandler = function(e){
     var str, buf_len, buf_addr, buf;
     if (e.data instanceof ArrayBuffer) {
         buf_len = e.data.byteLength;
@@ -473,8 +466,7 @@ Ethernet.prototype.messageHandler = function(e)
     }
 }
 
-Ethernet.prototype.recv_packet = function(buf)
-{
+Ethernet.prototype.recv_packet = function(buf){
     if (this.socket) {
         try {
             this.socket.send(buf);
@@ -526,7 +518,12 @@ function start_vm(user, pwd){
             net_state = new Ethernet(net_url);
         }
 
-        Module.ccall("vm_start", null, ["string", "number", "string", "string", "number", "number", "number", "string"], [url, mem_size, cmdline, pwd, width, height, (net_state != null) | 0, drive_url]);
+        Module.ccall(
+            "vm_start", 
+            null, 
+            ["string", "number", "string", "string", "number", "number", "number", "string"], 
+            [url, mem_size, cmdline, pwd, width, height, (net_state != null) | 0, drive_url]
+        );
         pwd = null;
     }
 
@@ -552,10 +549,7 @@ function start_vm(user, pwd){
     guest_url      = params["guest_url"] || "";
     width          = (params["w"] | 0) || termDefaultWidth;
     height         = (params["h"] | 0) || termDefaultHeight;
-    font_size      = (params["font_size"] | 0) || 15;
     guest_url      = params["guest_url"] || "";
-    width          = (params["w"] | 0) || 1024;
-    height         = (params["h"] | 0) || 640;
     graphic_enable = params["graphic"] | 0;
     net_url        = params["net_url"] || ""; /* empty string == no network */
     if (typeof net_url == "undefined")

@@ -35,12 +35,10 @@ NOTES
 
   Testing the following configuration: http://localhost:3000/?cpu=x86&url=root-x86.cfg&mem=192
 
-  Check (+practice):
-  - rmdir
-
   What worked:
 
   - alias
+  - cat
   - cd
   - clear
   - echo
@@ -48,6 +46,7 @@ NOTES
   - ping 127.0.0.1
   - pwd
   - rm
+  - rmdir
   - touch
   - vi
 

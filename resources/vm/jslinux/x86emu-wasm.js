@@ -1397,6 +1397,7 @@ function _console_get_size(pw, ph) {
 function _console_write(opaque, buf, len) {
   var str;
   str = String.fromCharCode.apply(String, HEAPU8.subarray(buf, buf + len));
+  // console.log("_console_write()", str);
   term.write(str);
 }
 function _emscripten_set_main_loop_timing(mode, value) {
