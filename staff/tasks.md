@@ -95,6 +95,17 @@
 
 ## TOOLS
 
+  ### CSV Linter
+
+    - Project Manager: Kostas Minaidis (@kostasx)
+
+    - File: tools/csv.tools.js
+
+    - Tasks:
+      - Lint progress DRAFTS CSV
+      - Lint terms DRAFTS CSV
+
+
   ### Improve the Yari parser tool
 
     - Project Manager: Kostas Minaidis (@kostasx)

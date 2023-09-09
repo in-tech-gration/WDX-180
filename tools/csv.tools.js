@@ -5,7 +5,8 @@ const path = require("node:path");
 const fs = require("node:fs");
 const { parseArgs } = require("node:util");
 const { warn, ok, info } = require("./utils");
-const CSVFileValidator = require("csv-file-validator");
+// const CSVFileValidator = require("csv-file-validator"); // Temporarily disabling original library due to local bug fixing 
+const CSVFileValidator = require("./libs/csv-file-validator/src/csv-file-validator");
 
 // 1) OUR FUNCTIONS: ===========================================================
 
@@ -88,6 +89,7 @@ function init() {
           },
           validate: function (level) {
             // console.log("Level::validate()", level);
+            // TODO: full row text is required here, e.g. -,-,-,-,-,-,-,-
             return ( level === "Beginner" | level === "Intermediate" | level === "Advanced" );
           },
           validateError: function (headerName, rowNumber, columnNumber) {

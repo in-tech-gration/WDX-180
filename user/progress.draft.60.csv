@@ -1,135 +1,80 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
-1, 1,HTML, Connect on Slack: https://intechgration.slack.com, Beginner, 0-10, FALSE, Say hello to us on Slack!
-1, 1, Setting up: WDX, Fork WDX repository, Beginner, 0-10, FALSE, Paste forked repo URL
-1, 1, Setting up: Code editor, Install VSCode, Beginner, 0-10, FALSE, Updated FALSE to TRUE in the COMPLETED column
-1, 1, Setting up: Code editor, Install VSCode WDX Extension Pack, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-1, 1, Setting up: Node, Install Node.js (LTS), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-1, 1, Setting up: Version Control, Install Git, Beginner, 0-10, FALSE, Run git --version and paste the output of the command here
-1, 1, Setting up: Productivity, Install Wikiwand Browser Extension: https://www.wikiwand.com/, Beginner, 0-10, FALSE, (not required)
-1, 1, Computing Basics, Complete the "Decode the secret message" challenge, Beginner, 0-10, FALSE, Paste the secret message here
-1, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-1, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-1, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-1, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-2, 1, Version Control: Git & GitHub, Watch "Git Tutorial For Dummies" and code along, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-2, 1, Version Control: Git & GitHub, Follow the steps mentioned in the "Git Tutorial For Dummies" video and recreate the repository under your GitHub account, Beginner, 0-10, FALSE, Paste the full GitHub URL of the gitVideo repository
-2, 1, Version Control: Git & GitHub, Watch "Git and GitHub for Beginners - Crash Course", Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-2, 1, Version Control: Git & GitHub, Sign up with GitHub, Beginner, 0-10, FALSE, Paste GitHub username
-2, 1, Version Control: Git & GitHub, Set up SSH keys for GitHub, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-2, 1, Version Control: Git & GitHub, Create a (demo-repo) GitHub repository, Beginner, 0-10, FALSE, Paste GitHub repository URL
-2, 1, Version Control: Git & GitHub, Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme, Beginner, 0-10, FALSE, Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx
-2, 1, Version Control: Git & GitHub, Update the terms sheet (/user/progress.draft.terms.csv) by giving 1 point to each of the git and CLI terms you've learned through this module, Beginner , 0-10, FALSE, "Make sure to stage, commit and push your changes"
--,-,-,-,-,-,-,-
+1, 1,Setting up: Slack, Connect on Slack: https://intechgration.slack.com,Beginner, 0-10, FALSE, Say hello to us on Slack!
+1, 1, Setting up: WDX, Fork WDX repository,Beginner, 0-10, FALSE, Paste forked repo URL
+1, 1, Setting up: Code editor, Install VSCode,Beginner, 0-10, FALSE, Updated FALSE to TRUE in the COMPLETED column
+1, 1, Setting up: Code editor, Install VSCode WDX Extension Pack,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+1, 1, Setting up: Node, Install Node.js (LTS),Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+1, 1, Setting up: Version Control, Install Git,Beginner, 0-10, FALSE, Run git --version and paste the output of the command here
+1, 1, Setting up: Productivity, Install Wikiwand Browser Extension: https://www.wikiwand.com/,Beginner, 0-10, FALSE, (not required)
+1, 1, Computing Basics, Complete the "Decode the secret message" challenge,Beginner, 0-10, FALSE, Paste the secret message here
+1, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+1, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+1, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+1, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 1, Version Control: Git & GitHub, Watch "Git Tutorial For Dummies" and code along,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 1, Version Control: Git & GitHub, Follow the steps mentioned in the "Git Tutorial For Dummies" video and recreate the repository under your GitHub account,Beginner, 0-10, FALSE, Paste the full GitHub URL of the gitVideo repository
+2, 1, Version Control: Git & GitHub, Watch "Git and GitHub for Beginners - Crash Course",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 1, Version Control: Git & GitHub, Sign up withGitHub,Beginner, 0-10, FALSE, Paste GitHub username
+2, 1, Version Control: Git & GitHub, Set up SSH keys for GitHub,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 1, Version Control: Git & GitHub, Create a (demo-repo) GitHub repository,Beginner, 0-10, FALSE, Paste GitHub repository URL
+2, 1, Version Control: Git & GitHub, Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme,Beginner, 0-10, FALSE, Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx
+2, 1, Version Control: Git & GitHub, Update the terms sheet (/user/progress.draft.terms.csv) by giving 1 point to each of the git and CLI terms you've learned through this module,Beginner, 0-10, FALSE, "Make sure to stage, commit and push your changes"
 2, 2,HTML,Update 'head' in the terms sheet (/user/progress.draft.terms.csv),Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 2, 2,HTML,Active learning: Inspecting a simple example,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-2, 2,HTML,Active learning: Experiment with character encoding, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 2,HTML,Active learning: Experiment with character encoding,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 2, 2,HTML,Active learning: The description's use in search engines,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-2, 2,HTML,Active learning: applying CSS and JavaScript to a page, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-2, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-2, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-2, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-2, 5 ,-, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-3, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-3, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-3, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-3, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-3, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-4, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-4, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-4, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-4, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-4, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-5, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-5, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-5, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-5, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-5, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-6, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-6, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-6, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-6, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-6, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-7, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-7, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-7, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-7, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-7, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-8, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-8, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-8, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-8, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-8, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-9, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-9, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-9, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-9, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-9, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-10, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-10, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-10, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-10, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-10, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-11, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-11, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-11, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-11, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-11, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-12, 1, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-12, 2, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-12, 3, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-12, 4, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
--,-,-,-,-,-,-,-
-12, 5, -, -, -, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 2,HTML,Active learning: applying CSS and JavaScript to a page,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+2, 5 ,-, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+4, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+4, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+4, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+4, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+4, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+5, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+5, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+5, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+5, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+5, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+6, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+6, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+6, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+6, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+6, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+7, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+7, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+7, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+7, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+7, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+8, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+8, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+8, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+8, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+8, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+9, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+9, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+9, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+9, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+9, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+10, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+10, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+10, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+10, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+10, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+11, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+11, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+11, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+11, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+11, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+12, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+12, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+12, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+12, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+12, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
