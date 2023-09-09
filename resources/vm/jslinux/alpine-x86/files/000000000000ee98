@@ -1,0 +1,80 @@
+#!/bin/sh
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
+export HOME=/root
+export TERM=linux
+
+hostname localhost
+
+mount -a
+mount -o remount,rw /
+
+mkdir /dev/pts
+mount -t devpts devpts /dev/pts
+mkdir /dev/shm
+mount -t tmpfs none /dev/shm
+
+ifconfig lo 127.0.0.1
+
+cpu=`uname -m`
+
+# synchronize the VM time to the host time
+settime -d /
+
+# network: start dhcpcd in background
+if [ -d /sys/class/net/eth0 ] ; then
+    dhcpcd -q
+fi
+
+#/usr/sbin/sshd
+
+cd $HOME
+
+set_import_dir "$HOME"
+
+ttyname=`cat /sys/class/tty/console/active`
+
+if [ -n "$GUEST_URL" ]; then
+    vflogin -g guest "$GUEST_URL"
+else
+    
+echo
+echo "Welcome to JS/Linux ($cpu)"
+echo
+if [ -z "$LOGIN_USER" ]; then
+echo "Use 'vflogin username' to connect to your account."
+echo "You can create a new account at https://vfsync.org/signup ."
+fi
+echo "Use 'export_file filename' to export a file to your computer."
+echo "Imported files are written to the home directory."
+echo
+
+if [ -n "$LOGIN_USER" ]; then
+    vflogin -P "$LOGIN_USER" < /dev/$ttyname > /dev/$ttyname 2>&1
+fi
+
+fi # !GUEST_URL
+
+if [ $ttyname = "tty0" ] ; then
+    # graphical VM
+    ttyname="tty1"
+    
+    # load keymap if specified in the kernel command line
+    if [ -n "$KBMAP" ] ; then
+        loadkeys $KBMAP
+    fi
+
+    if [ "$APP" = "console" ] ; then
+        gpm -m /dev/input/event1 -t evdev_abs
+    elif [ "$APP" = "win2k" ] ; then
+        win2k
+    else
+        startx # start the X11 server
+    fi
+fi
+
+while /bin/true; do
+
+  setsid sh -c "exec sh -l < /dev/$ttyname > /dev/$ttyname 2>&1"
+
+done

@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "linux": "npx serve resources/vm/jslinux/",
+    "wordpress": "echo 'coming soon...'",
     "md2html": "node tools/md2html.js",
     "yari:download": "node tools/yari.download.js",
     "yari:parse": "node tools/yari.parser.js",

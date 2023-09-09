@@ -1,0 +1,339 @@
+
+sbin/init :
+  @.preload2/init0
+
+usr/bin/gcc :
+  @.preload2/gcc0
+  usr/libexec/gcc/i586-alpine-linux-musl/9.3.0/cc1 20910568
+  @.preload2/gcc1
+  @.preload2/gcc2
+
+usr/bin/python3.8 :
+  @.preload2/python3.80
+
+usr/bin/startx :
+  @.preload2/startx0
+  @.preload2/startx1
+  @.preload2/startx2
+  @.preload2/startx3
+  @.preload2/startx4
+
+@.preload2/init0 :
+  sbin/init 1480 5208
+  bin/busybox 799836 51f8
+  lib/ld-musl-i386.so.1 575184 5217
+  etc/fstab 200 62
+  sbin/dhcpcd 300604 5209
+  etc/dhcpcd.conf 1259 89
+  usr/lib/dhcpcd/dhcpcd-run-hooks 8123 2b2c
+  usr/lib/dhcpcd/dhcpcd-hooks/01-test 300 2b2b
+  usr/lib/dhcpcd/dhcpcd-hooks/02-dump 120 2b29
+  usr/lib/dhcpcd/dhcpcd-hooks/20-resolv.conf 5426 2b27
+  usr/lib/dhcpcd/dhcpcd-hooks/30-hostname 3736 2b28
+  usr/lib/dhcpcd/dhcpcd-hooks/50-ntp.conf 3457 2b2a
+  usr/local/bin/export_file 42500 1cc
+  var/lib/dhcpcd/duid 42 5515
+  var/lib/dhcpcd/secret 192 5516
+  etc/profile 238 82
+  etc/passwd 1393 33
+
+@.preload2/gcc0 :
+  usr/bin/gcc 949344 375
+  usr/lib/libisl.so.15.3.0 1818436 2b42
+  usr/lib/libmpc.so.3.1.0 107564 bf7
+  usr/lib/libmpfr.so.6.0.2 455872 c05
+  usr/lib/libgmp.so.10.4.0 398512 c3c
+  lib/libz.so.1.2.11 99532 5216
+  root/hello.c 76 5264
+  usr/include/stdc-predef.h 174 50ec
+  usr/include/stdio.h 5831 50d6
+  usr/include/features.h 815 5188
+  usr/include/bits/alltypes.h 11593 5166
+  usr/i586-alpine-linux-musl/bin/as 387648 1df
+
+@.preload2/gcc1 :
+  usr/lib/libopcodes-2.34.so 805596 c2f
+  usr/lib/libbfd-2.34.so 1074008 c6c
+  usr/libexec/gcc/i586-alpine-linux-musl/9.3.0/collect2 534112 1be
+  usr/i586-alpine-linux-musl/bin/ld 1423812 1e4
+  usr/lib/libctf.so.0.0.0 120156 2b26
+  usr/libexec/gcc/i586-alpine-linux-musl/9.3.0/liblto_plugin.so.0.0.0 87152 1bd
+  usr/lib/Scrt1.o 4276 c39
+  usr/lib/crti.o 1676 c66
+  usr/lib/gcc/i586-alpine-linux-musl/9.3.0/crtbeginS.o 3144 eab
+  usr/lib/libssp_nonshared.a 2576 1c9a
+  usr/lib/gcc/i586-alpine-linux-musl/9.3.0/libgcc.a 3040272 ead
+
+@.preload2/gcc2 :
+  usr/lib/libgcc_s.so 132 2b15
+  usr/lib/libgcc_s.so.1 95396 c2b
+  usr/lib/gcc/i586-alpine-linux-musl/9.3.0/crtendS.o 1528 eae
+  usr/lib/crtn.o 1632 be4
+
+@.preload2/python3.80 :
+  usr/bin/python3.8 13432 3c1
+  usr/lib/libpython3.8.so.1.0 2666920 c29
+  usr/lib/python3.8/encodings/__pycache__/__init__.cpython-38.pyc 3903 1ffc
+  usr/lib/python3.8/encodings/__init__.py 5588 1e5a
+  usr/lib/python3.8/__pycache__/codecs.cpython-38.pyc 33956 2611
+  usr/lib/python3.8/codecs.py 36667 28e9
+  usr/lib/python3.8/encodings/__pycache__/aliases.cpython-38.pyc 6330 200a
+  usr/lib/python3.8/encodings/aliases.py 15693 1eab
+  usr/lib/python3.8/encodings/__pycache__/utf_8.cpython-38.pyc 1630 1f3d
+  usr/lib/python3.8/encodings/utf_8.py 1005 1e6c
+  usr/lib/python3.8/encodings/__pycache__/latin_1.cpython-38.pyc 1893 1fad
+  usr/lib/python3.8/encodings/latin_1.py 1264 1e63
+  usr/lib/python3.8/__pycache__/io.cpython-38.pyc 3454 25c9
+  usr/lib/python3.8/io.py 3541 20cc
+  usr/lib/python3.8/__pycache__/abc.cpython-38.pyc 5334 2486
+  usr/lib/python3.8/abc.py 4489 1d4e
+  usr/lib/python3.8/__pycache__/site.cpython-38.pyc 16696 2506
+  usr/lib/python3.8/site.py 21338 1cd6
+  usr/lib/python3.8/__pycache__/os.cpython-38.pyc 31397 2459
+  usr/lib/python3.8/os.py 38995 2228
+  usr/lib/python3.8/__pycache__/stat.cpython-38.pyc 4372 2525
+  usr/lib/python3.8/stat.py 5485 1cdc
+  usr/lib/python3.8/__pycache__/_collections_abc.cpython-38.pyc 28741 24a1
+  usr/lib/python3.8/_collections_abc.py 26100 243e
+  usr/lib/python3.8/__pycache__/posixpath.cpython-38.pyc 10428 24c8
+  usr/lib/python3.8/posixpath.py 15627 2441
+  usr/lib/python3.8/__pycache__/genericpath.cpython-38.pyc 4001 2468
+  usr/lib/python3.8/genericpath.py 4975 21ab
+  usr/lib/python3.8/__pycache__/_sitebuiltins.cpython-38.pyc 3481 25ae
+  usr/lib/python3.8/_sitebuiltins.py 3115 1d4f
+  usr/lib/python3.8/lib-dynload/readline.cpython-38-i386-linux-gnu.so 34468 28ff
+  usr/lib/libreadline.so.8.0 261916 2b16
+  usr/lib/libncursesw.so.6.2 358320 ecb
+  etc/terminfo/l/linux 1730 d8
+  etc/inputrc 1748 8c
+  usr/lib/python3.8/__pycache__/rlcompleter.cpython-38.pyc 5755 2533
+  usr/lib/python3.8/rlcompleter.py 7097 2958
+
+@.preload2/startx0 :
+  usr/bin/startx 5498 289
+  etc/hosts 79 f6
+  usr/bin/mcookie 29844 2c2
+  usr/bin/xauth 46700 4be
+  usr/lib/libXau.so.6.0.0 13356 29ed
+  usr/lib/libXext.so.6.4.0 79720 4df
+  usr/lib/libXmuu.so.1.0.0 13408 bf8
+  usr/lib/libX11.so.6.3.0 1241148 2ae2
+  usr/lib/libxcb.so.1.1.0 169088 2976
+  usr/lib/libXdmcp.so.6.0.0 21656 c25
+  usr/lib/libbsd.so.0.10.0 103928 2b20
+  usr/bin/xinit 17596 3c6
+  etc/X11/xinit/xserverrc 45 aa
+  usr/bin/Xorg 2152780 450
+  usr/lib/libpixman-1.so.0.40.0 628012 2afd
+
+@.preload2/startx1 :
+  usr/lib/libpciaccess.so.0.11.1 42080 2bfe
+  usr/lib/libnettle.so.7.0 234700 4e0
+  usr/lib/libXfont2.so.2.0.0 211952 c7d
+  usr/lib/libxshmfence.so.1.0.0 13356 2b10
+  lib/libudev.so.1.6.3 144740 5218
+  usr/lib/libdrm.so.2.4.0 74924 edb
+  usr/lib/libfontenc.so.1.0.0 27848 c28
+  usr/lib/libfreetype.so.6.17.2 759140 c4d
+  usr/lib/libbz2.so.1.0.8 53372 c70
+  usr/lib/libpng16.so.16.37.0 214224 c08
+  usr/lib/libbrotlidec.so.1.0.7 46124 c1a
+  usr/lib/libbrotlicommon.so.1.0.7 136452 c3b
+  usr/share/X11/xorg.conf.d/10-evdev.conf 1099 4617
+  usr/share/X11/xorg.conf.d/10-quirks.conf 1350 4616
+  etc/X11/xorg.conf 440 af
+  usr/lib/xorg/modules/extensions/libglx.so 286520 eb3
+  usr/lib/libGL.so.1.2.0 538320 2b14
+  usr/lib/libglapi.so.0.0.0 210120 c0b
+  usr/lib/libxcb-glx.so.0.0.0 111720 4dc
+  usr/lib/libX11-xcb.so.1.0.0 13264 c44
+  usr/lib/libxcb-dri2.so.0.0.0 21608 c1d
+  usr/lib/libXfixes.so.3.1.0 25604 29c4
+  usr/lib/libXdamage.so.1.1.0 13356 c27
+  usr/lib/libXxf86vm.so.1.0.0 25720 c17
+  usr/lib/libexpat.so.1.6.11 132192 c42
+  usr/lib/libxcb-dri3.so.0.0.0 17512 c3e
+  usr/lib/libxcb-present.so.0.0.0 13416 c40
+  usr/lib/libxcb-sync.so.1.0.0 29800 2b05
+  usr/lib/xorg/modules/drivers/modesetting_drv.so 101088 ebe
+  usr/lib/libgbm.so.1.0.0 58808 c2c
+  usr/lib/libwayland-server.so.0.1.0 67176 2b67
+  usr/lib/libffi.so.7.1.0 30024 2aef
+  usr/lib/xorg/modules/drivers/fbdev_drv.so 26332 ebf
+  usr/lib/xorg/modules/input/evdev_drv.so 59716 eb1
+  usr/lib/libmtdev.so.1.0.0 21548 2ae7
+  usr/lib/libevdev.so.2.3.0 74972 4f7
+  usr/lib/xorg/modules/libfbdevhw.so 21920 ec4
+  usr/lib/xorg/modules/libfb.so 91920 ec0
+  usr/lib/xorg/modules/libshadow.so 34176 ec5
+  usr/share/fonts/misc/fonts.dir 26643 4910
+  usr/share/fonts/misc/fonts.alias 6270 48c9
+  usr/share/fonts/100dpi/fonts.dir 2 496d
+  usr/share/fonts/100dpi/fonts.alias 3154 496c
+  usr/share/fonts/75dpi/fonts.dir 2 49d6
+  usr/share/fonts/75dpi/fonts.alias 3066 49d5
+  usr/share/fonts/Type1/fonts.dir 2 496f
+  usr/share/fonts/misc/6x13-ISO8859-1.pcf.gz 4594 48f7
+  usr/share/fonts/misc/cursor.pcf.gz 5219 487a
+  usr/share/X11/xkb/rules/base 48482 4673
+  usr/bin/xkbcomp 205380 37a
+
+@.preload2/startx2 :
+  usr/lib/libxkbfile.so.1.0.2 140968 2b23
+  usr/share/X11/xkb/keycodes/xfree86 8634 465e
+  usr/share/X11/xkb/keycodes/aliases 2176 466a
+  usr/share/X11/xkb/geometry/pc 40560 4635
+  usr/share/X11/xkb/types/complete 179 461b
+  usr/share/X11/xkb/types/basic 607 4621
+  usr/share/X11/xkb/types/mousekeys 214 461c
+  usr/share/X11/xkb/types/pc 3353 4620
+  usr/share/X11/xkb/types/iso9995 429 4627
+  usr/share/X11/xkb/types/level5 8219 4622
+  usr/share/X11/xkb/types/extra 5437 4623
+  usr/share/X11/xkb/types/numpad 1955 4624
+  usr/share/X11/xkb/compat/complete 228 4648
+  usr/share/X11/xkb/compat/basic 1054 4653
+  usr/share/X11/xkb/compat/ledcaps 469 464b
+  usr/share/X11/xkb/compat/lednum 466 464d
+  usr/share/X11/xkb/compat/iso9995 1644 4659
+  usr/share/X11/xkb/compat/mousekeys 4604 4649
+  usr/share/X11/xkb/compat/accessx 1121 4652
+  usr/share/X11/xkb/compat/misc 2724 464c
+  usr/share/X11/xkb/compat/ledscroll 486 464f
+  usr/share/X11/xkb/compat/xfree86 1842 464e
+  usr/share/X11/xkb/compat/level5 1396 4655
+  usr/share/X11/xkb/compat/caps 507 4656
+  usr/share/X11/xkb/symbols/pc 2389 46bb
+  usr/share/X11/xkb/symbols/srvr_ctrl 2331 46e5
+  usr/share/X11/xkb/symbols/keypad 23758 46d9
+  usr/share/X11/xkb/symbols/altwin 3486 46b8
+  usr/share/X11/xkb/symbols/us 92422 4691
+  usr/share/X11/xkb/symbols/inet 63920 46d3
+  usr/share/X11/xkb/rules/evdev 43497 4671
+  usr/share/X11/xkb/keycodes/evdev 8928 4661
+  etc/X11/xinit/xinitrc 860 ab
+  usr/bin/fluxbox 984564 35f
+  usr/lib/libfontconfig.so.1.12.0 300244 553d
+  usr/lib/libImlib2.so.1.6.1 296056 2b11
+  usr/lib/libXrandr.so.2.2.0 46196 ed3
+  usr/lib/libXft.so.2.3.3 83244 c1e
+  usr/lib/libXinerama.so.1.0.0 13432 c33
+  usr/lib/libXpm.so.4.11.0 70876 2af0
+  usr/lib/libXrender.so.1.3.0 42244 2afe
+  usr/lib/libstdc++.so.6.0.28 1644132 c18
+  lib/libuuid.so.1.3.0 29852 5214
+  usr/lib/libxcb-shm.so.0.0.0 13416 c41
+  usr/share/fluxbox/init 280 3006
+  usr/share/fluxbox/keys 3733 3004
+  usr/share/fluxbox/menu 2046 3001
+  usr/share/fluxbox/apps 70 3005
+  usr/share/fluxbox/overlay 89 3003
+  usr/share/fluxbox/windowmenu 168 3002
+  usr/share/X11/locale/locale.alias 82285 4760
+  usr/share/X11/locale/locale.dir 37124 47bd
+  usr/share/X11/locale/C/XLC_LOCALE 658 47e8
+  usr/share/X11/locale/en_US.UTF-8/XLC_LOCALE 4216 4740
+  usr/share/fluxbox/styles/bloe/theme.cfg 7131 3000
+  usr/share/fluxbox/styles/bloe/pixmaps/tbarufcs.xpm 723 2ffe
+  usr/share/X11/Xcms.txt 1723 47f3
+  usr/share/fluxbox/styles/bloe/pixmaps/tbarfcs.xpm 722 2feb
+  etc/fonts/fonts.conf 2532 b6
+  usr/share/fontconfig/conf.avail/10-hinting-slight.conf 696 49e8
+  usr/share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf 2228 49fd
+  usr/share/fontconfig/conf.avail/20-unhint-small-vera.conf 1537 49f8
+  usr/share/fontconfig/conf.avail/30-metric-aliases.conf 13274 49fa
+  usr/share/fontconfig/conf.avail/40-nonlatin.conf 5424 49ef
+  etc/fonts/conf.avail/45-dejavu.conf 445 bb
+  usr/share/fontconfig/conf.avail/45-generic.conf 3543 49f4
+  usr/share/fontconfig/conf.avail/45-latin.conf 6600 49f2
+  usr/share/fontconfig/conf.avail/49-sansserif.conf 799 49ea
+  usr/share/fontconfig/conf.avail/50-user.conf 911 49f5
+  usr/share/fontconfig/conf.avail/51-local.conf 423 49e7
+  usr/share/fontconfig/conf.avail/60-generic.conf 2041 49e6
+  usr/share/fontconfig/conf.avail/60-latin.conf 2068 49fe
+  usr/share/fontconfig/conf.avail/65-fonts-persian.conf 10293 49eb
+  usr/share/fontconfig/conf.avail/65-nonlatin.conf 8170 4a01
+
+@.preload2/startx3 :
+  usr/share/fontconfig/conf.avail/69-unifont.conf 847 4a05
+  usr/share/fontconfig/conf.avail/80-delicious.conf 597 49f9
+  usr/share/fontconfig/conf.avail/90-synthetic.conf 1917 4a06
+  etc/fonts/conf.avail/90-tt-dejavu.conf 5468 bc
+  usr/share/fontconfig/conf.avail/10-autohint.conf 706 49ee
+  usr/share/fontconfig/conf.avail/10-hinting-full.conf 692 49ff
+  usr/share/fontconfig/conf.avail/10-hinting-medium.conf 696 49fc
+  usr/share/fontconfig/conf.avail/10-hinting-none.conf 692 4a03
+  usr/share/fontconfig/conf.avail/10-no-sub-pixel.conf 723 49ed
+  usr/share/fontconfig/conf.avail/10-sub-pixel-bgr.conf 748 49f7
+  usr/share/fontconfig/conf.avail/10-sub-pixel-rgb.conf 748 49f3
+  usr/share/fontconfig/conf.avail/10-sub-pixel-vbgr.conf 758 49e9
+  usr/share/fontconfig/conf.avail/10-sub-pixel-vrgb.conf 758 49fb
+  usr/share/fontconfig/conf.avail/10-unhinted.conf 701 49f6
+  usr/share/fontconfig/conf.avail/11-lcdfilter-default.conf 771 49ec
+  usr/share/fontconfig/conf.avail/11-lcdfilter-legacy.conf 768 4a00
+  usr/share/fontconfig/conf.avail/11-lcdfilter-light.conf 765 49f0
+  usr/share/fontconfig/conf.avail/25-unhint-nonlatin.conf 3489 49f1
+  usr/share/fontconfig/conf.avail/65-khmer.conf 464 4a02
+  usr/share/fontconfig/conf.avail/70-no-bitmaps.conf 487 49e5
+  usr/share/fontconfig/conf.avail/70-yes-bitmaps.conf 487 4a04
+  var/cache/fontconfig/3830d5c3ddfd5cd38a049b759396e72e-le32d4.cache-7 328 5545
+  var/cache/fontconfig/df311e82a1a24c41a75c2c930223552e-le32d4.cache-7 80 5546
+  var/cache/fontconfig/17090aa38d5c6f09fb8c5c354938f1d7-le32d4.cache-7 80 554b
+  var/cache/fontconfig/d62e99ef547d1d24cdb1bd22ec1a2976-le32d4.cache-7 80 554c
+  var/cache/fontconfig/2d31a572ce6667f6a0da9c8dc611898b-le32d4.cache-7 88 554d
+  var/cache/fontconfig/a1c95d6dfc9a7b34f44445cf81166004-le32d4.cache-7 136 554a
+  var/cache/fontconfig/8d4af663993b81a124ee82e610bb31f9-le32d4.cache-7 65224 554e
+  var/cache/fontconfig/923e285e415b1073c8df160bee08820f-le32d4.cache-7 80 5548
+  var/cache/fontconfig/386ad34c5eaeb46f7db63aa04756d58d-le32d4.cache-7 64760 5547
+  var/cache/fontconfig/5ca8086aeacc9c68e81a71e7ef846b3b-le32d4.cache-7 96 5544
+  usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf 340712 49a8
+  usr/share/fluxbox/styles/bloe/pixmaps/windowlabelfcs.xpm 850 2ffa
+  usr/share/fonts/ttf-dejavu/DejaVuSans.ttf 757076 49b8
+  usr/lib/libXcursor.so.1.0.2 42028 c3d
+  usr/share/fluxbox/styles/bloe/pixmaps/windowlabelufcs.xpm 820 2fe5
+  usr/share/fluxbox/styles/bloe/pixmaps/closefcs.xpm 3097 2ff5
+  usr/share/fluxbox/styles/bloe/pixmaps/maxfcs.xpm 3015 2fea
+  usr/share/fluxbox/styles/bloe/pixmaps/minfcs.xpm 2871 2fef
+  usr/share/fluxbox/styles/bloe/pixmaps/shadefcs.xpm 2873 2ffd
+  usr/share/fluxbox/styles/bloe/pixmaps/unshadefcs.xpm 2907 2fe8
+  usr/share/fluxbox/styles/bloe/pixmaps/menuiconfcs.xpm 3100 2ff0
+  usr/share/fluxbox/styles/bloe/pixmaps/stickfcs.xpm 3017 2ff3
+  usr/share/fluxbox/styles/bloe/pixmaps/stuckfcs.xpm 2937 2ff1
+  usr/share/fluxbox/styles/bloe/pixmaps/closeufcs.xpm 3082 2fe4
+  usr/share/fluxbox/styles/bloe/pixmaps/maxufcs.xpm 3032 2fff
+  usr/share/fluxbox/styles/bloe/pixmaps/minufcs.xpm 2856 2fe3
+  usr/share/fluxbox/styles/bloe/pixmaps/shadeufcs.xpm 2858 2fec
+  usr/share/fluxbox/styles/bloe/pixmaps/unshadeufcs.xpm 2924 2ff2
+  usr/share/fluxbox/styles/bloe/pixmaps/menuiconufcs.xpm 3037 2fe7
+  usr/share/fluxbox/styles/bloe/pixmaps/stickufcs.xpm 2986 2ff9
+  usr/share/fluxbox/styles/bloe/pixmaps/stuckufcs.xpm 2890 2fe6
+  usr/share/fluxbox/styles/bloe/pixmaps/closepr.xpm 3208 2ff7
+  usr/share/fluxbox/styles/bloe/pixmaps/maxpr.xpm 3286 2fe1
+  usr/share/fluxbox/styles/bloe/pixmaps/minpr.xpm 3062 2ff4
+  usr/share/fluxbox/styles/bloe/pixmaps/shadepr.xpm 3048 2ffb
+  usr/share/fluxbox/styles/bloe/pixmaps/unshadepr.xpm 3018 2fe2
+  usr/share/fluxbox/styles/bloe/pixmaps/menuiconpr.xpm 3179 2fe9
+  usr/share/fluxbox/styles/bloe/pixmaps/stickpr.xpm 3096 2ffc
+  usr/share/fonts/ttf-dejavu/DejaVuSans-Bold.ttf 705684 49ae
+  usr/bin/fbsetbg 17014 306
+  usr/bin/fbsetroot 132488 2ac
+  usr/bin/xterm 645980 371
+  usr/lib/libXaw7.so.7.0.0 401472 c79
+  usr/lib/libXmu.so.6.2.0 100008 29a6
+  usr/lib/libXt.so.6.0.0 365936 29ce
+  usr/lib/libICE.so.6.3.0 91728 2b6d
+  usr/lib/libSM.so.6.0.1 33976 1c96
+  usr/lib/X11/app-defaults/XTerm 10269 29d5
+  usr/share/fonts/misc/nil2.pcf.gz 2509 4822
+  usr/share/fonts/misc/6x13B-ISO8859-1.pcf.gz 4562 486b
+  usr/share/fonts/misc/12x13ja.pcf.gz 353016 48e9
+
+@.preload2/startx4 :
+  usr/share/fonts/misc/8x13B.pcf.gz 21974 493c
+  usr/share/fonts/misc/6x13.pcf.gz 70427 4864
+  usr/share/fonts/misc/6x13B.pcf.gz 22590 4934
+  usr/share/X11/locale/compose.dir 32857 4795
+  usr/share/X11/locale/en_US.UTF-8/Compose 573910 4741
+  etc/terminfo/x/xterm 3716 d5
+  etc/group 759 6d
+  etc/shells 57 f9
