@@ -35,9 +35,14 @@ var downloading_timer;
 // CONFIGURATION:
 const defaultCPUArchitecture = "x86"; // Original code: "riscv64" 
 const defaultMemoryInMB = 256;        // Original code: 128
+// CONFIGURATION: TERMINAL OPTIONS
+const termDefaultCols     = 80;
+const termDefaultRows     = 30;
+const termDefaultFontSize = 15;
+const termDefaultWidth    = 1024;
+const termDefaultHeight   = 640;
 
-function on_update_file(f)
-{
+function on_update_file(f){
     var f, reader;
     reader = new FileReader();
     reader.onload = function (ev) {
@@ -61,8 +66,7 @@ function on_update_files(files)
     }
 }
 
-function term_handler(str)
-{
+function term_handler(str){
     var i;
     for(i = 0; i < str.length; i++) {
         console_write1(str.charCodeAt(i));
@@ -111,8 +115,7 @@ function get_params(){
     return params;
 }
 
-function get_absolute_url(fname)
-{
+function get_absolute_url(fname){
     var path, p;
     
     if (fname.indexOf(":") >= 0)
@@ -489,10 +492,10 @@ function start_vm(user, pwd){
     let drive_url, vm_file;
     
     function loadScript(src, f) {
-        var head = document.getElementsByTagName("head")[0];
-        var script = document.createElement("script");
+        const head = document.getElementsByTagName("head")[0];
+        const script = document.createElement("script");
         script.src = src;
-        var done = false;
+        let done = false;
         script.onload = script.onreadystatechange = function() { 
             // attach to both events for cross browser finish detection:
             if ( !done && (!this.readyState ||
@@ -533,22 +536,28 @@ function start_vm(user, pwd){
     cpu = params["cpu"] || defaultCPUArchitecture;
     url = params["url"];
     if (!url) {
-        if (cpu == "x86")
+        if (cpu == "x86"){
             url = "root-x86.cfg";
-        else
+        } else {
             url = "root-riscv64.cfg";
+        }
     }
-    url = get_absolute_url(url);
-    mem_size = (params["mem"] | 0) || defaultMemoryInMB; 
-    cmdline = params["cmdline"] || "";
-    cols = (params["cols"] | 0) || 80;
-    rows = (params["rows"] | 0) || 30;
-    font_size = (params["font_size"] | 0) || 15;
-    guest_url = params["guest_url"] || "";
-    width = (params["w"] | 0) || 1024;
-    height = (params["h"] | 0) || 640;
+    url            = get_absolute_url(url);
+    // | 0 => force integer
+    mem_size       = (params["mem"] | 0) || defaultMemoryInMB; 
+    cmdline        = params["cmdline"] || "";
+    cols           = (params["cols"] | 0) || termDefaultCols;
+    rows           = (params["rows"] | 0) || termDefaultRows;    
+    font_size      = (params["font_size"] | 0) || termDefaultFontSize;
+    guest_url      = params["guest_url"] || "";
+    width          = (params["w"] | 0) || termDefaultWidth;
+    height         = (params["h"] | 0) || termDefaultHeight;
+    font_size      = (params["font_size"] | 0) || 15;
+    guest_url      = params["guest_url"] || "";
+    width          = (params["w"] | 0) || 1024;
+    height         = (params["h"] | 0) || 640;
     graphic_enable = params["graphic"] | 0;
-    net_url = params["net_url"] || ""; /* empty string means no network */
+    net_url        = params["net_url"] || ""; /* empty string == no network */
     if (typeof net_url == "undefined")
         net_url = "wss://relay.widgetry.org/";
     drive_url = params["drive_url"] || "";
@@ -572,7 +581,7 @@ function start_vm(user, pwd){
         term.write("Loading...\r\n");
     }
 
-//    console.log("cpu=" + cpu + " url=" + url + " mem=" + mem_size);
+    console.log("cpu=" + cpu + " url=" + url + " mem=" + mem_size);
 
     switch(cpu) {
     case "x86":
@@ -635,7 +644,7 @@ function on_login(){
     return false;
 }
 
-(function() {
+(function initialize() {
 
     const params = get_params();
     let login = params["login"] || 0;
