@@ -358,6 +358,8 @@ function parseEmbedLiveSample( textContent ){
   return textContent;
 }
 
+// 2) OUR VARIABLES: ===========================================================
+
 // 3) ACTION!!! ================================================================
 
 // Orchestrate Parsing & Modifications
