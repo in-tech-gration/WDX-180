@@ -29,10 +29,25 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
 2, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 2, 5 ,-, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 4, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 5, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 2, CSS, Read "What is CSS",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 2, CSS, Read "Getting started with CSS",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 2, CSS, Read "How CSS is structured",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 2, CSS, Read "How CSS works",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 2, CSS, Complete the exercise "Styling a biography page",Beginner, 0-10, FALSE, Upload your version of the html file to the repository <FILE_PATH>
+3, 3, CSS, Read "CSS Selectors",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 3, CSS, Read "Type, class, and ID selectors",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 3, CSS, Read "Attribute Selectors",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 3, CSS, Read "Pseudo-classes and Pseudo-elements",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 3, CSS, Read "Combinators",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 3, CSS, Complete the exercise "Test your skills: Selectors",Beginner, 0-10, FALSE, Upload your version of the html file to the repository <FILE_PATH>
+3, 4, CSS, Read "Cascade and Inheritance",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 4, CSS, Complete the exercise "Test your skills: The Cascase",Beginner, 0-10, FALSE, Upload your version of the html file to the repository <FILE_PATH>
+3, 5, CSS, Read "The box model",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 5, CSS, Read "Backgrounds and borders",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 5, CSS, Complete the exercise "Test your skills: The box model",Beginner, 0-10, FALSE, Upload your version of the html file to the repository <FILE_PATH>
+3, 5, CSS, Complete the exercise "Test your skills: Backgrounds and borders",Beginner, 0-10, FALSE, Upload your version of the html file to the repository <FILE_PATH>
+3, Weekend, CSS, Read "Handling different text directions",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, Weekend, CSS, Complete the exercise "Test your skills: Writing modes and logical properties",Beginner, 0-10, FALSE, Upload your version of the html file to the repository <FILE_PATH>
 4, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 4, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 4, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
