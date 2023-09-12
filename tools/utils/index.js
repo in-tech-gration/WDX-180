@@ -2,6 +2,9 @@ const { URL } = require("node:url");
 const fs      = require("node:fs");
 const path    = require("node:path");
 const chalk   = require('chalk'); 
+// UNICODE CHARACTERS:
+const checkmark = "\u2713"; // ✅ 
+const xmark     = "\u274C"; // ❌
 
 const warn = (text, hasWARNING = true)=> console.log(chalk.bold.red( hasWARNING ? "WARNING:" : ""), chalk.bold.red(text));
 const ok = (text)=> console.log(chalk.bold.green(text));
@@ -176,6 +179,8 @@ function getYouTubeResources(){
 }
 
 module.exports = {
+  checkmark,
+  xmark,
   ytRegex,
   getFile,
   getResources,

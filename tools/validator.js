@@ -10,7 +10,9 @@ const marked     = require("marked");
 const matter     = require('gray-matter');
 const yaml       = require('yaml');
 
-const { 
+const {
+  checkmark,
+  xmark, 
   warn, 
   getYouTubeResources,
   ok, 
@@ -413,9 +415,6 @@ function checkHeadingStructure( markdownHeadings ){
 // 2) OUR VARIABLES: ===========================================================
 
 const markdownFilePath     = process.argv[2];
-// UNICODE CHARACTERS:
-const checkmark            = "\u2713"; // ✅ 
-const xmark                = "\u274C"; // ❌
 // Initialize markdown-it parser
 const updatedRegex         = /_\(Updated: (\d{2}\/\d{2}\/\d{4})\)_/;
 const md                   = new MarkdownIt();
@@ -543,6 +542,9 @@ function initializeChecks(){
   // progress.draft.[60|120|180].csv
   checkProgressRefs( markdownBody, markdownFilePath, isInCurriculumFolder );
   
+  // TODO: CHECK: LINKS INSIDE TABLES: https://github.com/mdn/content/edit/main/files/en-us/learn/css/building_blocks/values_and_units/index.md
+  // https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+
 }
 
 if (require.main === module) {
