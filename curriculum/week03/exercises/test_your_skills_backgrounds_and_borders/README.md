@@ -4,9 +4,9 @@ slug: Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders
 page-type: learn-module-assessment
 ---
 
-# Test your skills: The Cascade
+# Test your skills: Backgrounds and borders
 
-_(Updated: 07/09/2023)_
+_(Updated: 12/09/2023)_
 
 The aim of this skill test is to assess whether you understand [backgrounds and borders of boxes in CSS](../../resources/css_building_blocks/backgrounds_and_borders/README.md).
 
