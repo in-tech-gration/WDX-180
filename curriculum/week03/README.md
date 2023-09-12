@@ -56,7 +56,7 @@ _(Updated: 07/09/2023)_
     - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/index.md)
     - [Exercise: Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md)
 
-## Week 3 - Day 3
+## Week 3 - Day 3 | CSS Selectors
 
   ### Schedule
 
@@ -106,7 +106,7 @@ _(Updated: 07/09/2023)_
     - [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
     - [Exercise: Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md)
 
-## Week 3 - Day 4
+## Week 3 - Day 4 | Cascade, Inheritance and the box model
 
   ### Schedule
 
@@ -121,6 +121,9 @@ _(Updated: 07/09/2023)_
   - [Read: **Cascade and Inheritance**](resources/css_building_blocks/cascade_and_inheritance/README.md)
     - Level: Beginner
 
+  - [Read: **The box model**](resources/css_building_blocks/the_box_model/README.md)
+    - Level: Beginner
+
   ### Summary
 
   Now that you've finished studying today's content, you have a better understanding of the most fundamental concepts of CSS. It's time to put this information to the test with the following exercise!
@@ -128,6 +131,8 @@ _(Updated: 07/09/2023)_
   ### Exercises
 
   - [MDN's Assessment: **Test your skills: The Cascade**](exercises/test_your_skills_cascade/README.md)
+
+  - [MDN's Assessment: **Test your skills: The box model**](exercises/test_your_skills_the_box_model/README.md)
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -139,8 +144,10 @@ _(Updated: 07/09/2023)_
   - **MDN**
     - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md)
     - [Exercise: Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md)
+    - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md)
+    - [Exercise: Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md)
 
-## Week 3 - Day 5
+## Week 3 - Day 5 | Backgrounds and borders
 
   ### Schedule
 
@@ -150,9 +157,6 @@ _(Updated: 07/09/2023)_
 
   ### Study Plan
 
-  - [Read: **The box model**](resources/css_building_blocks/the_box_model/README.md)
-    - Level: Beginner
-
   - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/README.md)
     - Level: Beginner
 
@@ -161,8 +165,6 @@ _(Updated: 07/09/2023)_
   We've covered quite a lot here. Not only do we have a basic understanding of the infamous box model, but we are able to put different backgrounds and borders to it! Don't miss out on proving your knowledge on both of the exercises below!
 
   ### Exercises
-
-  - [MDN's Assessment: **Test your skills: The box model**](exercises/test_your_skills_the_box_model/README.md)
 
   - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/README.md)
 
@@ -174,8 +176,6 @@ _(Updated: 07/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN**
-    - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md)
-    - [Exercise: Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md)
     - [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/backgrounds_and_borders/index.md)
     - [Exercise: Test your skills: Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/test_your_skills_backgrounds_and_borders/index.md)
 

@@ -23,11 +23,11 @@ title: Week's 3 Exercises
 
   - [Test your skills: The Cascade](../../../curriculum/week03/exercises/test_your_skills_cascade/README.md): `/user/week03/exercises/test_your_skills_cascade/`
 
+  - [Test your skills: The box model](../../../curriculum/week03/exercises/test_your_skills_the_box_model/README.md): `/user/week03/exercises/test_your_skills_the_box_model/`
+
 ## Week 3 - Day 5
 
   Exercises & required assets:
-
-  - [Test your skills: The box model](../../../curriculum/week03/exercises/test_your_skills_the_box_model/README.md): `/user/week03/exercises/test_your_skills_the_box_model/`
 
   - [Test your skills: Backgrounds and borders](../../../curriculum/week03/exercises/test_your_skills_backgrounds_and_borders/README.md): `/user/week03/exercises.test_your_skills_backgrounds_and_borders/`
 

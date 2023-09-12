@@ -42,9 +42,9 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
 3, 3, CSS, Complete the exercise "Test your skills: Selectors",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_selectors/')
 3, 4, CSS, Read "Cascade and Inheritance",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 4, CSS, Complete the exercise "Test your skills: The Cascase",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_cascade/')
-3, 5, CSS, Read "The box model",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 4, CSS, Read "The box model",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+3, 4, CSS, Complete the exercise "Test your skills: The box model",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_the_box_model/')
 3, 5, CSS, Read "Backgrounds and borders",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 5, CSS, Complete the exercise "Test your skills: The box model",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_the_box_model/')
 3, 5, CSS, Complete the exercise "Test your skills: Backgrounds and borders",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_backgrounds_and_borders/')
 3, Weekend, CSS, Read "Handling different text directions",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, Weekend, CSS, Complete the exercise "Test your skills: Writing modes and logical properties",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_writing_modes/')
