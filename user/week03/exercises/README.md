@@ -4,6 +4,8 @@ title: Week's 3 Exercises
 
 # Week 3 | CSS, Accessibility & Git
 
+_(Updated: 12/09/2023)_
+
 ## Week 3 - Day 1
 ## Week 3 - Day 2
 
@@ -29,7 +31,9 @@ title: Week's 3 Exercises
 
   Exercises & required assets:
 
-  - [Test your skills: Backgrounds and borders](../../../curriculum/week03/exercises/test_your_skills_backgrounds_and_borders/README.md): `/user/week03/exercises.test_your_skills_backgrounds_and_borders/`
+  - [Test your skills: Backgrounds and borders](../../../curriculum/week03/exercises/test_your_skills_backgrounds_and_borders/README.md): `/user/week03/exercises/test_your_skills_backgrounds_and_borders/`
+
+  - [Test yours skills: Overflow](../../../curriculum/week03/exercises/test_your_skills_overflow/README.md): `/user/week03/exercises/test_your_skills_overflow/`
 
   ## Week 3 - Weekend Suggestions
 
