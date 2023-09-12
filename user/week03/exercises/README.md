@@ -35,8 +35,10 @@ _(Updated: 12/09/2023)_
 
   - [Test yours skills: Overflow](../../../curriculum/week03/exercises/test_your_skills_overflow/README.md): `/user/week03/exercises/test_your_skills_overflow/`
 
+  - [Test yours skills: Values and units](../../../curriculum/week03/exercises/test_your_skills_values_and_units/README.md): `/user/week03/exercises/test_your_skills_values_and_units/`
+
   ## Week 3 - Weekend Suggestions
 
-    Exercises & required assets:
+  Exercises & required assets:
 
-  - [Test your skills: Writing modes and logical properties](../../../curriculum/week03/exercises/test_your_skills_writing_modes/README.md): ``
+  - [Test your skills: Writing modes and logical properties](../../../curriculum/week03/exercises/test_your_skills_writing_modes/README.md): `/user/week03/exercises/test_your_skills_writing_modes/`
