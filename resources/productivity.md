@@ -3,6 +3,8 @@
 ___"Truth flourishes where the student's lamp has shone,<br>
 And there alone,"___, W.B. Yeats
 
+![](./assets/OpenSourceSyllabus.How-to-code.png)
+
 ## Study*
 
 _*from latin **Studium**, meaning **zeal, painstaking application, dedication**._
