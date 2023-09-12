@@ -128,6 +128,8 @@ _(Updated: 25/08/2023)_
 
   - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/README.md)
 
+  - [Read: **HTML text fundamentals**](resources/HTML_text_fundamentals/README.md)
+
   ### Summary
 
   ### Exercises

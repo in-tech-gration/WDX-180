@@ -128,3 +128,30 @@ If you intend to create, update or maintain a tool, please reach out to the proj
   **Project manager:** Kostas Minaidis (@kostasx)
 
   **Testing:** `NO`
+
+## RESOURCES TOOL
+
+  ### tools/resources.js
+
+  **Project manager:** Kostas Minaidis (@kostasx)
+
+  **Features:**
+
+  - Automate MDN content integration. 
+    - If you want to integrate a new MDN resource, you can start by providing the full URL to the tool using the `--mdn` or `-m` option. 
+    
+    Syntax: `resources.js --mdn <MDN_URL> -o <TARGET_DIR>`
+
+    Example: 
+
+    `node tools/resources.js -m https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#summary -o curriculum/week02/resources`
+
+    The above command will create the following structure:
+    
+    - `curriculum/week02/resources/HTML_text_fundamentals/`  
+      - `assets/`  
+      - `README.md`  
+
+    The command will also download the markdown source and append it to the `README.md` file.
+
+  
