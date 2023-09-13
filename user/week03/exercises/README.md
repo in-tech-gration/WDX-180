@@ -39,6 +39,8 @@ _(Updated: 13/09/2023)_
 
   - [Test yours skills: Sizing](../../../curriculum/week03/exercises/sizing_tasks/README.md): `/user/week03/exercises/sizing_tasks/`
 
+  - [Test yours skills: Images and form elements](../../../curriculum/week03/exercises/images_tasks/README.md): `/user/week03/exercises/images_tasks/`
+
   ## Week 3 - Weekend Suggestions
 
   Exercises & required assets:

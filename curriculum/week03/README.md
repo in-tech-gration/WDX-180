@@ -169,9 +169,12 @@ _(Updated: 13/09/2023)_
   - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/README.md)
     - Level: Beginner
 
+  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/README.md
+    - Level: Beginner
+
   ### Summary
 
-  We've covered quite a lot here. Not only do we have a basic understanding of the infamous box model, but we are able to put different backgrounds and borders to it! Don't miss out on proving your knowledge on both of the exercises below!
+  We've covered quite a lot here. Don't miss out on proving your knowledge on the exercises below!
 
   ### Exercises
 
@@ -182,6 +185,8 @@ _(Updated: 13/09/2023)_
   - [MDN's Assessment: **Test your skills: Values and units**](exercises/test_your_skills_values_and_units/README.md)
 
   - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/README.md)
+
+  - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/README.md)
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -199,6 +204,8 @@ _(Updated: 13/09/2023)_
     - [Exercise: Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md)
     - [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_items_in_css/index.md)
     - [Test your skills: Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_tasks/index.md)
+    - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md)
+    - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
