@@ -319,7 +319,7 @@ function parseEmbedYouTube( textContent ){
 
 }
 
-function parseEmbedLiveSample( textContent ){
+function parseEmbedGHLiveSample( textContent ){
   const regex = /\{\{EmbedGHLiveSample\((['"])(?<first>.*)\1(,\s?(['"])(?<second>.*)\4)?(,\s?(?<third>.*))?\)\}\}/gm
   const matches = textContent.matchAll(regex);
   const domainMDN = "https://mdn.github.io/";
@@ -381,7 +381,7 @@ function parseYariDynamicContent( textContent, fileName ){
   updatedContents = replaceDOMXrefLinks(updatedContents);
   updatedContents = parseHTTPHeader(updatedContents);
   updatedContents = parseEmbedYouTube(updatedContents);
-  updatedContents = parseEmbedLiveSample(updatedContents);
+  updatedContents = parseEmbedGHLiveSample(updatedContents);
 
   return updatedContents;
 
@@ -424,7 +424,7 @@ module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
   parseHTTPStatus,
-  parseEmbedLiveSample,
+  parseEmbedGHLiveSample,
   parseHTTPHeader,
   parseImages,
   parseElementTerm,
