@@ -6,6 +6,8 @@ const fs                 = require("node:fs");
 const { parseArgs }      = require("node:util");
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
 const { warn, ok, info } = require("./utils");
+const marked             = require("marked");
+const matter             = require('gray-matter');
 
 // 1) OUR FUNCTIONS: ===========================================================
 
@@ -347,11 +349,10 @@ function parseEmbedGHLiveSample( textContent ){
           </a>
         </p>`.split("\n").map( s => s.trim() ).join("\n");
 
-        // textContent = textContent.replace(
-        //   match[0], 
-        //   iframe + "\n" + externalLink 
-        // );
-        console.log({ match });
+        textContent = textContent.replace(
+          match[0], 
+          iframe + "\n" + externalLink 
+        );
 
       }
     }
@@ -359,15 +360,21 @@ function parseEmbedGHLiveSample( textContent ){
   return textContent;
 }
 
-function parseEmbedLiveSample( textContent ){
+function getEmbedLiveSampleRegex(){
+
+  //  $4 - (Deprecated) The slug from which to load the sample (optional; current page used if not provided)
+  //  $5 - (Deprecated) The class name of the frame; defaults to "sample-code-frame". If you
+  //       pass this parameter and give it a value other than "sample-code-frame",
+  //       then the "Open in CodePen"/"Open in JSFiddle" buttons will not be displayed.
+  //  $6 - (Deprecated) Allowed features, separated by semicolons (optional)
 
   const optCommaSpace = `(?:,\\s)`;
   const optQuotes     = `(['"])?`;
-  const rxFirstGroup  = `\\{\\{\\s*EmbedLiveSample\\((['"])(?<first>.*)\\1`;
-  const rxSecondGroup = `(?:${optCommaSpace}(?<second>\\d+))?`;
-  const rxThirdGroup  = `(?:${optCommaSpace}(?<third>\\d+))?`;
-  const rxFourthGroup = `(?:${optCommaSpace}${optQuotes}(?<fourth>[^'"]+)\\5)?`;
-  const rxFifthGroup  = `(?:${optCommaSpace}${optQuotes}(?<fifth>[^'"]+)\\7)?`
+  const rxFirstGroup  = `\\{\\{\\s*EmbedLiveSample\\((['"])(?<header_block_id>.*?)\\1`;
+  const rxSecondGroup = `(?:${optCommaSpace}(?<iframe_width>\\d+))?`;
+  const rxThirdGroup  = `(?:${optCommaSpace}(?<iframe_height>\\d+))?`;
+  const rxFourthGroup = `(?:${optCommaSpace}${optQuotes}(?<screenshot_url>[^'"]+)\\5)?`;
+  const rxFifthGroup  = `(?:${optCommaSpace}${optQuotes}(?<slug>[^'"]+)\\7)?`
   const rx = new RegExp(
     rxFirstGroup 
     + rxSecondGroup 
@@ -375,9 +382,17 @@ function parseEmbedLiveSample( textContent ){
     + rxFourthGroup 
     + rxFifthGroup  
     // + `(?:\s+)?\\)\}\}` // TODO
-    , "gm"
+    // , "gm"
   );
-  
+
+  return rx;
+}
+
+function parseEmbedLiveSample( textContent ){
+
+  // Use Global regex pattern
+  const rx = new RegExp( getEmbedLiveSampleRegex().source, "gm" );
+
   const matches = textContent.matchAll(rx);
 
   if ( matches ){
@@ -388,22 +403,22 @@ function parseEmbedLiveSample( textContent ){
 
       info( `Found EmbedLiveSample: ${match[0]}` );
 
-      const { first, second, third, fourth, fifth } = match.groups;
+      const { header_block_id, iframe_width, iframe_height, screenshot_url, slug } = match.groups;
 
-      if ( first ){
-        // console.log({ first });
+      if ( header_block_id ){
+        // console.log({ header_block_id });
       }
-      if ( second ){
-        // console.log({ second });
+      if ( iframe_width ){
+        // console.log({ iframe_width });
       }
-      if ( third ){
-        // console.log({ third });
+      if ( iframe_height ){
+        // console.log({ iframe_height });
       }
-      if ( fourth ){
-        // console.log({ fourth });
+      if ( screenshot_url ){
+        // console.log({ screenshot_url });
       }
-      if ( fifth ){
-        // console.log({ fifth });
+      if ( slug ){
+        // console.log({ slug });
       }
     }
   }
@@ -419,6 +434,43 @@ function parseYariDynamicContent( textContent, fileName ){
 
   let updatedContents = textContent;
 
+  // Parse markdown and separate Frontmatter and main content:
+  const { content, data: fm } = matter( textContent );
+  // Parse markdown tokens:
+  const markdownTokens        = marked.lexer(content);
+
+  // Parsing EmbedLiveSamples
+  // DOCS: https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedLiveSample.ejs
+  let code = {
+    html: null,
+    css: null,
+    js: null,
+  };
+
+  const liveSamples = [];
+
+  markdownTokens.forEach((t,idx) =>{
+    // console.log( t.type, t.lang );
+    if ( t.raw.indexOf("EmbedLiveSample") > -1 ){
+      console.log();
+      const m = t.raw.match( getEmbedLiveSampleRegex() );
+      // console.log( m[0], m.groups, idx );
+      console.log({ header_block_id: m.groups.header_block_id });
+      console.log({ iframe_width: m.groups.iframe_width });
+      console.log( m.groups.iframe_height );
+      console.log( m.groups.screenshot_url );
+      console.log( m.groups.slug );
+      console.log( markdownTokens[idx-1].type, markdownTokens[idx-1].lang );
+      console.log( markdownTokens[idx-2].type, markdownTokens[idx-2].lang );
+      console.log( markdownTokens[idx-3].type, markdownTokens[idx-3].lang );
+      console.log( markdownTokens[idx-4].type, markdownTokens[idx-4].lang );
+      console.log( markdownTokens[idx-5].type, markdownTokens[idx-5].lang );
+      console.log( markdownTokens[idx-6].type, markdownTokens[idx-6].lang );
+    }
+  })
+  // console.log({ markdownTokens });
+  // type: "code" + lang: "js hidden", "css hidden" => type: "space", raw: "\n\n" => type: "paragraph" => EmbedLiveSample
+
   // Run this first:
   updatedContents = replaceHTMLGlossaryLinks(updatedContents, fileName);
   // Then run this one:
@@ -433,7 +485,7 @@ function parseYariDynamicContent( textContent, fileName ){
   updatedContents = parseHTTPHeader(updatedContents);
   updatedContents = parseEmbedYouTube(updatedContents);
   updatedContents = parseEmbedGHLiveSample(updatedContents);
-  updatedContents = parseEmbedLiveSample(updatedContents);
+  // updatedContents = parseEmbedLiveSample(updatedContents);
 
   return updatedContents;
 
