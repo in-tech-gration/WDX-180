@@ -381,7 +381,12 @@ function getEmbedLiveSampleRegex() {
   return rx;
 }
 
-function createCodeSandboxURL({ html, css, js }) {
+/**
+ * DOCS: https://codesandbox.io/docs/learn/sandboxes/cli-api
+ * @param {*}  
+ * @returns {string}
+ */
+function createCodeSandboxURL({ html, css, js, header_block_id }) {
 
   // https://codesandbox.io/docs/learn/sandboxes/cli-api
   let indexHTML = `
@@ -398,6 +403,7 @@ function createCodeSandboxURL({ html, css, js }) {
         </html>
       `
 
+  // Let's fix the indentation issues:
   indexHTML = indexHTML.split("\n")
     .filter(Boolean)
     .map((line, index) => {
@@ -411,6 +417,7 @@ function createCodeSandboxURL({ html, css, js }) {
       return line.replace(rx, "");
     })
     .join("\n");
+
 
   const parameterValues = {
     files: {
@@ -432,6 +439,7 @@ function createCodeSandboxURL({ html, css, js }) {
       content: css
     }
   }
+  const { getParameters } = require("codesandbox/lib/api/define"); 
   const parameters = getParameters(parameterValues);
 
   const url = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters}&query=file=/index.html`;
@@ -463,7 +471,7 @@ function parseEmbedLiveSample(textContent) {
       const m = t.raw.match(getEmbedLiveSampleRegex());
       const liveSample = {
         match: m[0],
-        header_block_id: m.groups.header_block_id,
+        header_block_id: m.groups.header_block_id.split("'")[0],
         iframe_width: m.groups.iframe_width,
         iframe_height: m.groups.iframe_height,
         screenshot_url: m.groups.screenshot_url,
@@ -529,13 +537,14 @@ function parseEmbedLiveSample(textContent) {
     if (markedLiveEmbeds[idx]) {
 
       const { header_block_id } = markedLiveEmbeds[idx];
-      const { html, css, js } = markedLiveEmbeds[idx].code;
-      // console.log(idx, markedLiveEmbeds[idx]);
-      const cbURL = createCodeSandboxURL({ html, css, js });
+      const { html, css, js }   = markedLiveEmbeds[idx].code;
+
+      // EXPERIMENTAL DYNAMIC  CODESANDBOX: 
+      // const cbURL = createCodeSandboxURL({ html, css, js, header_block_id });
 
       return {
         type: "paragraph",
-        raw: `[Practice playground](${cbURL})\n<!-- \n ${markedLiveEmbeds[idx].match} \n -->`,
+        raw: `[Practice playground]()\n<!-- \n ${markedLiveEmbeds[idx].match} \n -->`,
         metadata: markedLiveEmbeds[idx]
       }
     }
