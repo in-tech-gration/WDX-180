@@ -4,13 +4,25 @@
  * 1) Check if a YouTube video is included in the resources: --search-for-youtube <VIDEO_ID>
  * 2) Check if a resource is included based on its URL: --search-by-url <URL>
  */
-const path = require("node:path");
-const fs = require("node:fs");
-const https = require('node:https');
+const path          = require("node:path");
+const fs            = require("node:fs");
+const https         = require('node:https');
 const { parseArgs } = require("node:util");
-const marked = require("marked");
-const matter = require('gray-matter');
-const { getYouTubeResources, getResources, warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate, checkmark, xmark } = require("./utils");
+const marked        = require("marked");
+const matter        = require('gray-matter');
+const { 
+  createFrontMatterMarkdownFromObject,
+  getYouTubeResources,
+  getResources,
+  warn,
+  ok,
+  info,
+  convertToKebabCase,
+  iso8601ToSeconds,
+  formatDate,
+  checkmark,
+  xmark 
+} = require("./utils");
 
 // HELPERS: ====================================================================
 
@@ -159,9 +171,17 @@ if (mdn) {
             }
             return trimmed;
           })
-          .join("\n");
+        .join("\n");
 
-        fs.appendFileSync(finalFilePath, sourcesAndReferencesSection);
+        const fmText = createFrontMatterMarkdownFromObject(fm);
+
+        const FILE_TITLE = `\n# ${fm.title}\n`;
+        const README_FULL_CONTENTS = 
+          fmText + 
+          FILE_TITLE + 
+          content + 
+          sourcesAndReferencesSection;
+        fs.writeFileSync(finalFilePath, README_FULL_CONTENTS, "utf-8");
 
       }).on("error", e => {
 

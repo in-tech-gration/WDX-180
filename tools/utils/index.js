@@ -177,6 +177,27 @@ function getYouTubeResources(){
   });
   return youTubeResources;
 }
+function createFrontMatterMarkdownFromObject( fmObj ){
+
+  let fmText = "";
+  
+  const fmObjEntries = Object.entries(fmObj);
+
+  if (fmObjEntries.length > 0) {
+
+    fmText = [
+      "---",
+      ...fmObjEntries.map(([key, value]) => {
+        return `${key}: ${value}`
+      }),
+      "---"
+    ].join("\n") + "\n";
+
+  }
+
+  return fmText;
+
+}
 
 module.exports = {
   checkmark,
@@ -195,5 +216,6 @@ module.exports = {
   findBoldTextMatches,
   warn,
   info,
-  ok
+  ok,
+  createFrontMatterMarkdownFromObject
 }

@@ -4,10 +4,16 @@
 const path                      = require("node:path");
 const fs                        = require("node:fs");
 const { parseArgs }             = require("node:util");
-const { warn, ok, info, xmark } = require("./utils");
 const marked                    = require("marked");
 const matter                    = require('gray-matter');
 const { assert }                = require("node:console");
+const {
+  warn, 
+  ok, 
+  info, 
+  xmark, 
+  createFrontMatterMarkdownFromObject 
+} = require("./utils");
 
 // 1) OUR FUNCTIONS: ===========================================================
 
@@ -544,7 +550,7 @@ function parseEmbedLiveSample(textContent) {
 
       return {
         type: "paragraph",
-        raw: `[Practice playground]()\n<!-- \n ${markedLiveEmbeds[idx].match} \n -->`,
+        raw: `<!-- \n ${markedLiveEmbeds[idx].match} \n -->\n`,
         metadata: markedLiveEmbeds[idx]
       }
     }
@@ -582,21 +588,8 @@ function parseEmbedLiveSample(textContent) {
     }
   */
 
-  // return textContent;
-
   // Recreate Frontmatter section as plain markdown text:
-  let fmText = "";
-  if (Object.keys(fm).length > 0) {
-
-    fmText = [
-      "---",
-      ...Object.entries(fm).map(([key, value]) => {
-        return `${key}: ${value}`
-      }),
-      "---"
-    ].join("\n") + "\n";
-
-  }
+  const fmText = createFrontMatterMarkdownFromObject(fm);
 
   return fmText + editedTokens.map(token => {
     if (token) {
