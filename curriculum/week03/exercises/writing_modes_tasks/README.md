@@ -41,3 +41,10 @@ In this task, we want you to use logical versions of the margin, border, and pad
 Your final result should look like the image below:
 
 ![Two boxes one horizontal one vertical with different margin, border and padding](assets/mdn-writing-modes3.png)
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [Test your skills: Writing modes and logical properties](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Writing_Modes_Tasks) [(Permalink)](https://github.com/mdn/content/blob/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/writing_modes_tasks/index.md)

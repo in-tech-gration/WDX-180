@@ -48,3 +48,10 @@ In this task, the inline element has a margin, padding and border. However, the 
 Your final result should look like the image below:
 
 ![An inline box with space between it and the text around it.](assets/mdn-box-model3.png)
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md)

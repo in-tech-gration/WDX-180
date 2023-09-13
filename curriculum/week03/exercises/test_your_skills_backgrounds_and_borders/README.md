@@ -39,3 +39,10 @@ In this task, we want you to add background images, a border, and some other sty
 Your final result should look like the image below:
 
 ![Images shows a box with a blue border rounded at the top left and bottom right corners. On the left of the text is a single star, on the right 3 stars.](assets/backgrounds-task2.png)
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [Test your skills: Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/test_your_skills_backgrounds_and_borders/index.md)

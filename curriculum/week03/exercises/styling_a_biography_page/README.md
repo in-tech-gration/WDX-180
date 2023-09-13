@@ -55,3 +55,10 @@ You should end up with something like this image.
 ![Screenshot of how the example should look after completing the assessment.](assets/learn-css-basics-assessment.png)
 
 Make sure to complete all the tasks found in the [Progress Sheet](../../../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet and included the required file(s), don't forget to `commit` and `push`.
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN:**
+  - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md)
