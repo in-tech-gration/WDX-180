@@ -381,9 +381,10 @@ That marks the end of our quickfire tour of the HTML head — there's a lot more
 
 **Content is based on the following sources:**
 
-- [What's in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML) [(Permalink)](https://github.com/mdn/content/blob/b117f457496644b248668463b12d0e0351478093/files/en-us/learn/html/introduction_to_html/the_head_metadata_in_html/index.md)
-- [Metadata](https://developer.mozilla.org/en-US/docs/Glossary/Metadata) [(Permalink)](https://github.com/mdn/content/blob/940b38ca51895641529ea1c72842f1a2d6fe987a/files/en-us/glossary/metadata/index.md)
-- [title-example.html page](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/title-example.html)
-- [meta-example.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/meta-example.html) [(Permalink)](https://github.com/mdn/learning-area/blob/0da39a75ae5e0221798f71d91d51f3b247d3a7c2/html/introduction-to-html/the-html-head/meta-example.html)
-- [script.js](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/script.js) [(Permalink)](https://github.com/mdn/learning-area/blob/0da39a75ae5e0221798f71d91d51f3b247d3a7c2/html/introduction-to-html/the-html-head/script.js)
-- [style.css](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/style.css) [(Permalink)](https://github.com/mdn/learning-area/blob/0da39a75ae5e0221798f71d91d51f3b247d3a7c2/html/introduction-to-html/the-html-head/style.css)
+- **MDN:**
+  - [What's in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML) [(Permalink)](https://github.com/mdn/content/blob/b117f457496644b248668463b12d0e0351478093/files/en-us/learn/html/introduction_to_html/the_head_metadata_in_html/index.md)
+  - [Metadata](https://developer.mozilla.org/en-US/docs/Glossary/Metadata) [(Permalink)](https://github.com/mdn/content/blob/940b38ca51895641529ea1c72842f1a2d6fe987a/files/en-us/glossary/metadata/index.md)
+  - [title-example.html page](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/title-example.html)
+  - [meta-example.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/meta-example.html) [(Permalink)](https://github.com/mdn/learning-area/blob/0da39a75ae5e0221798f71d91d51f3b247d3a7c2/html/introduction-to-html/the-html-head/meta-example.html)
+  - [script.js](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/script.js) [(Permalink)](https://github.com/mdn/learning-area/blob/0da39a75ae5e0221798f71d91d51f3b247d3a7c2/html/introduction-to-html/the-html-head/script.js)
+  - [style.css](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/the-html-head/style.css) [(Permalink)](https://github.com/mdn/learning-area/blob/0da39a75ae5e0221798f71d91d51f3b247d3a7c2/html/introduction-to-html/the-html-head/style.css)

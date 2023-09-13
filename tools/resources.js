@@ -8,6 +8,8 @@ const path          = require("node:path");
 const fs            = require("node:fs");
 const https         = require('node:https'); 
 const { parseArgs } = require("node:util");
+const marked        = require("marked");
+const matter        = require('gray-matter');
 const { getYouTubeResources, getResources, warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate, checkmark, xmark } = require("./utils");
 
 // HELPERS: ====================================================================
@@ -73,7 +75,12 @@ if ( url && typeof url === "string" ){
 }
 
 // PARSE: Create MDN Resource
-if ( mdn && ( typeof mdn === "string" ) ){
+if ( mdn ){
+
+  if ( typeof mdn !== "string" ){
+    warn("Missing options.");
+    process.exit();
+  }
 
   if ( !output || typeof output !== "string" ){
     warn("Target directory not defined. Please use --output or -o options and supply the target directory.");
@@ -95,34 +102,58 @@ if ( mdn && ( typeof mdn === "string" ) ){
   dirs = dirs.map( p => p.toLowerCase() );
   const learnURL = "https://github.com/mdn/content/edit/main/files/en-us/learn/";
   const rawURL = "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/";
-  console.log(path.join( output, lastPathClean ));
-  console.log( learnURL + dirs.join("/"));
-  console.log( learnURL + dirs.join("/") + "/index.md" );
-  console.log( rawURL + dirs.join("/") + "/index.md" );
 
-  // Nice exercise:
-  // FROM THIS => https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#summary
-  // TO THIS => https://github.com/mdn/content/edit/main/files/en-us/learn/html/introduction_to_html/html_text_fundamentals/index.md
-  // AND THIS => https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/html/introduction_to_html/html_text_fundamentals/index.md
+  const dir   = learnURL + dirs.join("/");
+  const index = learnURL + dirs.join("/") + "/index.md";
+  const raw   = rawURL + dirs.join("/") + "/index.md";
+
+  // console.log({ dir, index,raw });
 
   try {
     
     const finalPath = path.join( output, lastPathClean );
     fs.mkdirSync(finalPath);
     fs.mkdirSync(path.join(finalPath, "assets"));
-    // const README = fs.writeFileSync(path.join(finalPath,"README.md"), "", "utf8");
-    const README = fs.createWriteStream(path.join(finalPath,"README.md"));
+    const finalFilePath = path.join(finalPath,"README.md");
+    const README = fs.createWriteStream(finalFilePath);
     
-    https.get(rawURL + dirs.join("/") + "/index.md", function(response) {
+    // Get RAW Markdown Content:
+    https.get(raw, function(response) {
+
+      // Write RAW Markdown Content to fileStream:
       response.pipe(README);
 
       // after download completed close file stream
       README.on("finish", () => {
           README.close();
-          console.log(`Download Completed. File is at file://${finalPath}/README.md`);
-          
+          console.log(`Download Completed. File is at file://${process.cwd()}/${finalPath}/README.md`);
+          const README_CONTENTS = fs.readFileSync(finalFilePath, "utf-8");
+          const { content, data: fm } = matter( README_CONTENTS );
+
+        // Append Sources & References Section to the Markdown file:
+        const sourcesAndReferencesSection = `
+        ### Sources and Attributions
+
+        **Content is based on the following sources:**
+
+        - **MDN:**
+          - [${fm.title}](${mdn}) [(Permalink) - Please fill in]()
+        `.split("\n")
+        .map( s => {
+          let trimmed  = s.trim();
+          if ( trimmed.indexOf("[(Permalink)") > -1 ){
+            trimmed = "  " + trimmed;
+          }
+          return trimmed;
+        })
+        .join("\n");
+
+        fs.appendFileSync(finalFilePath, sourcesAndReferencesSection);
+
       }).on("error", e =>{
+
         console.log(e);
+
       })
 
     });
