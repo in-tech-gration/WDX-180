@@ -381,6 +381,64 @@ function getEmbedLiveSampleRegex() {
   return rx;
 }
 
+function createCodeSandboxURL({ html, css, js }) {
+
+  // https://codesandbox.io/docs/learn/sandboxes/cli-api
+  let indexHTML = `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>${header_block_id.replaceAll("_", " ")}</title>
+        </head>
+        <body>
+          ${html}
+        </body>
+        </html>
+      `
+
+  indexHTML = indexHTML.split("\n")
+    .filter(Boolean)
+    .map((line, index) => {
+      if (index === 0) {
+        prefix = line.length - line.trimStart().length;
+      }
+      return line;
+    })
+    .map(line => {
+      const rx = new RegExp(`^\\s{${prefix}}`);
+      return line.replace(rx, "");
+    })
+    .join("\n");
+
+  const parameterValues = {
+    files: {
+      'index.html': {
+        content: indexHTML
+      },
+      'package.json': {
+        content: { dependencies: {} },
+      },
+    }
+  }
+  if (js) {
+    parameterValues.files['index.js'] = {
+      content: js
+    }
+  }
+  if (css) {
+    parameterValues.files['index.css'] = {
+      content: css
+    }
+  }
+  const parameters = getParameters(parameterValues);
+
+  const url = `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters}&query=file=/index.html`;
+
+  return url;
+}
+
 /**
  * @description: Parsing EmbedLiveSamples
  * DOCS: https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Page_structures/Live_samples
@@ -454,25 +512,31 @@ function parseEmbedLiveSample(textContent) {
 
   const { equal } = require("node:assert");
 
-  markdownTokens.forEach(( m, idx )=>{
+  markdownTokens.forEach((m, idx) => {
     try {
       equal(m, markdownTokensUpdated[idx]);
     } catch (error) {
-      console.log(`${xmark}`, error.actual);    
+      console.log(`${xmark}`, error.actual);
       return textContent;
     }
 
   });
 
-  const editedTokens = markdownTokensUpdated.map((token,idx) =>{
-    if ( markedCodeTokens[idx] ){
+  const editedTokens = markdownTokensUpdated.map((token, idx) => {
+    if (markedCodeTokens[idx]) {
       return null;
     }
-    if ( markedLiveEmbeds[idx] ){
-      return { 
-        type: "paragraph", 
-        raw: `<!-- \n ${markedLiveEmbeds[idx].match} \n -->`, 
-        metadata: markedLiveEmbeds[idx] 
+    if (markedLiveEmbeds[idx]) {
+
+      const { header_block_id } = markedLiveEmbeds[idx];
+      const { html, css, js } = markedLiveEmbeds[idx].code;
+      // console.log(idx, markedLiveEmbeds[idx]);
+      const cbURL = createCodeSandboxURL({ html, css, js });
+
+      return {
+        type: "paragraph",
+        raw: `[Practice playground](${cbURL})\n<!-- \n ${markedLiveEmbeds[idx].match} \n -->`,
+        metadata: markedLiveEmbeds[idx]
       }
     }
     return token;
@@ -509,15 +573,15 @@ function parseEmbedLiveSample(textContent) {
     }
   */
 
-  return textContent;
+  // return textContent;
 
   // Recreate Frontmatter section as plain markdown text:
   let fmText = "";
-  if ( Object.keys(fm).length > 0 ){
+  if (Object.keys(fm).length > 0) {
 
     fmText = [
       "---",
-      ...Object.entries(fm).map(([key,value]) =>{
+      ...Object.entries(fm).map(([key, value]) => {
         return `${key}: ${value}`
       }),
       "---"
@@ -525,11 +589,11 @@ function parseEmbedLiveSample(textContent) {
 
   }
 
-  return fmText + editedTokens.map( token =>{
-    if ( token ){
+  return fmText + editedTokens.map(token => {
+    if (token) {
       // return fmText + markdownTokensUpdated.map( token =>{
 
-        return token.raw;
+      return token.raw;
     }
   }).join("");
 
