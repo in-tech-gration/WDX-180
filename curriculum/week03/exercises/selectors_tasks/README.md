@@ -81,3 +81,10 @@ Your final result should look like the image below:
 [Download the starting point for this task](assets/attribute-links-download.html) to work in your own editor or in an online editor.
 
 ![Four links with different color borders.](assets/selectors-attribute.png)
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN:**
+  - [Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md)  

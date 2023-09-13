@@ -29,3 +29,10 @@ In this task, there is an image in the box that is bigger than the dimensions of
 Your final result should look like the image below:
 
 ![A box with an image which fills the box but does not spill out the edges.](assets/mdn-overflow2.png)
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [Test yours skills: Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks) [(Permalink)](https://github.com/mdn/content/blob/d45f6c3733728f0eefdb7fd4b9a84c4858b35fd1/files/en-us/learn/css/building_blocks/overflow_tasks/index.md)

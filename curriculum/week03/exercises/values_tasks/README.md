@@ -52,3 +52,10 @@ In this task, we want you to move the background image so that it is centered ho
 Your final result should look like the image below:
 
 ![A stat centered horizontally in a box and a short distance from the top of the box.](assets/mdn-value-position.png)
+
+### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - **MDN**
+    - [Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md)

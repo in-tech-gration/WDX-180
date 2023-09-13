@@ -31,3 +31,10 @@ In this task, we want you to make your changes by leveraging the [order of casca
 Your final result should look like the image below:
 
 ![Barely visible yellow links on a white background.](assets/mdn-cascade.png)
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN**
+  - [Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md)
