@@ -4,7 +4,7 @@ title: Week's 3 Exercises
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 12/09/2023)_
+_(Updated: 13/09/2023)_
 
 ## Week 3 - Day 1
 ## Week 3 - Day 2
@@ -36,6 +36,8 @@ _(Updated: 12/09/2023)_
   - [Test yours skills: Overflow](../../../curriculum/week03/exercises/test_your_skills_overflow/README.md): `/user/week03/exercises/test_your_skills_overflow/`
 
   - [Test yours skills: Values and units](../../../curriculum/week03/exercises/test_your_skills_values_and_units/README.md): `/user/week03/exercises/test_your_skills_values_and_units/`
+
+  - [Test yours skills: Sizing](../../../curriculum/week03/exercises/sizing_tasks/README.md): `/user/week03/exercises/sizing_tasks/`
 
   ## Week 3 - Weekend Suggestions
 
