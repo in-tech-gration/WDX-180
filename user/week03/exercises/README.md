@@ -17,15 +17,15 @@ _(Updated: 13/09/2023)_
 
   Exercises & required assets:
 
-  - [Test your skills: Selectors](../../../curriculum/week03/exercises/test_your_skills_selectors/README.md): `/user/week03/exercises/test_your_skills_selectors/`
+  - [Test your skills: Selectors](../../../curriculum/week03/exercises/selectors_tasks/README.md): `/user/week03/exercises/selectors_tasks/`
 
 ## Week 3 - Day 4
 
   Exercises & required assets:
 
-  - [Test your skills: The Cascade](../../../curriculum/week03/exercises/test_your_skills_cascade/README.md): `/user/week03/exercises/test_your_skills_cascade/`
+  - [Test your skills: The Cascade](../../../curriculum/week03/exercises/cascade_tasks/README.md): `/user/week03/exercises/cascade_tasks/`
 
-  - [Test your skills: The box model](../../../curriculum/week03/exercises/test_your_skills_the_box_model/README.md): `/user/week03/exercises/test_your_skills_the_box_model/`
+  - [Test your skills: The box model](../../../curriculum/week03/exercises/box_model_tasks/README.md): `/user/week03/exercises/box_model_tasks/`
 
 ## Week 3 - Day 5
 
@@ -33,9 +33,9 @@ _(Updated: 13/09/2023)_
 
   - [Test your skills: Backgrounds and borders](../../../curriculum/week03/exercises/test_your_skills_backgrounds_and_borders/README.md): `/user/week03/exercises/test_your_skills_backgrounds_and_borders/`
 
-  - [Test yours skills: Overflow](../../../curriculum/week03/exercises/test_your_skills_overflow/README.md): `/user/week03/exercises/test_your_skills_overflow/`
+  - [Test yours skills: Overflow](../../../curriculum/week03/exercises/overflow_tasks/README.md): `/user/week03/exercises/overflow_tasks/`
 
-  - [Test yours skills: Values and units](../../../curriculum/week03/exercises/test_your_skills_values_and_units/README.md): `/user/week03/exercises/test_your_skills_values_and_units/`
+  - [Test yours skills: Values and units](../../../curriculum/week03/exercises/values_tasks/README.md): `/user/week03/exercises/values_tasks/`
 
   - [Test yours skills: Sizing](../../../curriculum/week03/exercises/sizing_tasks/README.md): `/user/week03/exercises/sizing_tasks/`
 
@@ -45,4 +45,4 @@ _(Updated: 13/09/2023)_
 
   Exercises & required assets:
 
-  - [Test your skills: Writing modes and logical properties](../../../curriculum/week03/exercises/test_your_skills_writing_modes/README.md): `/user/week03/exercises/test_your_skills_writing_modes/`
+  - [Test your skills: Writing modes and logical properties](../../../curriculum/week03/exercises/writing_modes_tasks/README.md): `/user/week03/exercises/writing_modes_tasks/`

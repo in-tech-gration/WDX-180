@@ -89,7 +89,7 @@ _(Updated: 13/09/2023)_
 
   ### Exercises
 
-  - [MDN's Assessment: **Test your skills: Selectors**](exercises/test_your_skills_selectors/README.md)
+  - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/README.md)
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -130,9 +130,9 @@ _(Updated: 13/09/2023)_
   
   ### Exercises
 
-  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/test_your_skills_cascade/README.md)
+  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/README.md)
 
-  - [MDN's Assessment: **Test your skills: The box model**](exercises/test_your_skills_the_box_model/README.md)
+  - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/README.md)
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -180,9 +180,9 @@ _(Updated: 13/09/2023)_
 
   - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/README.md)
 
-  - [MDN's Assessment: **Test your skills: Overflow**](exercises/test_your_skills_overflow/README.md)
+  - [MDN's Assessment: **Test your skills: Overflow**](exercises/overflow_tasks/README.md)
 
-  - [MDN's Assessment: **Test your skills: Values and units**](exercises/test_your_skills_values_and_units/README.md)
+  - [MDN's Assessment: **Test your skills: Values and units**](exercises/values_tasks/README.md)
 
   - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/README.md)
 

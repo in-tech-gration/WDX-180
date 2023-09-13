@@ -16,7 +16,7 @@ title: Week 3 Weekend
 
   and after that you can test your knowledge on the subject with the exercise below:
 
-  - [MDN's Assessment: **Test your skills: Writing modes and logical properties**](exercises/test_your_skills_writing_modes/README.md)
+  - [MDN's Assessment: **Test your skills: Writing modes and logical properties**](exercises/writing_modes_tasks/README.md)
 
     ### Sources and Attributions
 

@@ -39,23 +39,23 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
 3, 3, CSS, Read "Attribute Selectors",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 3, CSS, Read "Pseudo-classes and Pseudo-elements",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 3, CSS, Read "Combinators",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 3, CSS, Complete the exercise "Test your skills: Selectors",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_selectors/')
+3, 3, CSS, Complete the exercise "Test your skills: Selectors",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/selectors_tasks/')
 3, 4, CSS, Read "Cascade and Inheritance",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 4, CSS, Complete the exercise "Test your skills: The Cascase",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_cascade/')
+3, 4, CSS, Complete the exercise "Test your skills: The Cascade",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/cascade_tasks/')
 3, 4, CSS, Read "The box model",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 4, CSS, Complete the exercise "Test your skills: The box model",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_the_box_model/')
+3, 4, CSS, Complete the exercise "Test your skills: The box model",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/box_model_tasks/')
 3, 5, CSS, Read "Backgrounds and borders",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 5, CSS, Complete the exercise "Test your skills: Backgrounds and borders",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_backgrounds_and_borders/')
 3, 5, CSS, Read "Overflowing content",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 5, CSS, Complete the exercise "Test your skills: Overflow",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_overflow/')
+3, 5, CSS, Complete the exercise "Test your skills: Overflow",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/overflow_tasks/')
 3, 5, CSS, Read "CSS Values and units",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, 5, CSS, Complete the exercise "Test your skills: Values and units",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_values_and_units/')
+3, 5, CSS, Complete the exercise "Test your skills: Values and units",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/values_tasks/')
 3, 5, CSS, Read "Sizing items in CSS",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 5, CSS, Complete the exercise "Test your skills: Sizing",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/sizing_tasks/')
 3, 5, CSS, Read "Images media and form elements",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 3, 5, CSS, Complete the exercise "Test your skills: Images and form elements",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/images_tasks/')
 3, Weekend, CSS, Read "Handling different text directions",Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-3, Weekend, CSS, Complete the exercise "Test your skills: Writing modes and logical properties",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/test_your_skills_writing_modes/')
+3, Weekend, CSS, Complete the exercise "Test your skills: Writing modes and logical properties",Beginner, 0-10, FALSE, Upload the required assets to the corresponding folder ('/user/week03/exercises/writing_modes_tasks/')
 4, 1, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 4, 2, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 4, 3, -, -,Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
