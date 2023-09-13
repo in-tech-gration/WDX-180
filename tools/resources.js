@@ -123,8 +123,8 @@ if (mdn) {
   // console.log({ dir, index,raw });
 
   try {
-
-    const finalPath = path.join(output, lastPathClean);
+    
+    const finalPath = path.join( output, lastPathClean ).toLowerCase();
     fs.mkdirSync(finalPath);
     fs.mkdirSync(path.join(finalPath, "assets"));
     const finalFilePath = path.join(finalPath, "README.md");
