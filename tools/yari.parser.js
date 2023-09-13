@@ -624,7 +624,9 @@ function parseYariDynamicContent(textContent, fileName) {
   updatedTextContent = parseHTTPHeader(updatedTextContent);
   updatedTextContent = parseEmbedYouTube(updatedTextContent);
   updatedTextContent = parseEmbedGHLiveSample(updatedTextContent);
-  // updatedTextContent = parseEmbedLiveSample(updatedTextContent);
+  if ( process.argv.includes("--rm-embeds") ){
+    updatedTextContent = parseEmbedLiveSample(updatedTextContent);
+  }
 
   return updatedTextContent;
 

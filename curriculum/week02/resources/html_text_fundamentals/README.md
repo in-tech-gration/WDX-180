@@ -8,26 +8,13 @@ page-type: learn-module-chapter
 
 One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
 
-<table>
-  <tbody>
-    <tr>
-      <th scope="row">Prerequisites:</th>
-      <td>
-        Basic HTML familiarity, as covered in
-        <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
-          >Getting started with HTML</a
-        >.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Objective:</th>
-      <td>
-        Learn how to mark up a basic page of text to give it structure and
-        meaning — including paragraphs, headings, lists, emphasis, and quotations.
-      </td>
-    </tr>
-  </tbody>
-</table>
+**Prerequisites:**
+
+- Basic HTML familiarity
+
+**Objective:**
+
+- Learn how to mark up a basic page of text to give it structure and meaning — including paragraphs, headings, lists, emphasis, and quotations.
 
 ## The basics: headings and paragraphs
 
@@ -107,139 +94,10 @@ Let's jump straight in with a live example. In the example below, add elements t
 
 If you make a mistake, you can always reset it using the _Reset_ button. If you get stuck, press the _Show solution_ button to see the answer.
 
-```html hidden
-<h2>Live output</h2>
+<!-- 
+ {{ EmbedLiveSample('Active_learning_Giving_our_content_structure', 700, 400, "", "") }} 
+ -->
 
-<div class="output" style="min-height: 50px;"></div>
-
-<h2>Editable code</h2>
-<p class="a11y-label">
-  Press Esc to move focus away from the code area (Tab inserts a tab character).
-</p>
-
-<textarea id="code" class="input" style="min-height: 100px; width: 95%">
-My short story I am a statistician and my name is Trish.
-
-My legs are made of cardboard and I am married to a fish.
-</textarea>
-
-<div class="playable-buttons">
-  <input id="reset" type="button" value="Reset" />
-  <input id="solution" type="button" value="Show solution" />
-</div>
-```
-
-```css hidden
-html {
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-.a11y-label {
-  margin: 0;
-  text-align: right;
-  font-size: 0.7rem;
-  width: 98%;
-}
-
-body {
-  margin: 10px;
-  background: #f5f9fa;
-}
-```
-
-```js hidden
-const textarea = document.getElementById("code");
-const reset = document.getElementById("reset");
-const solution = document.getElementById("solution");
-const output = document.querySelector(".output");
-const code = textarea.value;
-let userEntry = textarea.value;
-
-function updateCode() {
-  output.innerHTML = textarea.value;
-}
-
-const htmlSolution = `<h1>My short story</h1>
-<p>
-  I am a statistician and my name is Trish.
-</p>
-<p>
-  My legs are made of cardboard and I am married to a fish.
-</p>`;
-
-let solutionEntry = htmlSolution;
-
-reset.addEventListener("click", () => {
-  textarea.value = code;
-  userEntry = textarea.value;
-  solutionEntry = htmlSolution;
-  solution.value = "Show solution";
-  updateCode();
-});
-
-solution.addEventListener("click", () => {
-  if (solution.value === "Show solution") {
-    textarea.value = solutionEntry;
-    solution.value = "Hide solution";
-  } else {
-    textarea.value = userEntry;
-    solution.value = "Show solution";
-  }
-  updateCode();
-});
-
-textarea.addEventListener("input", updateCode);
-window.addEventListener("load", updateCode);
-
-// Stop tab key tabbing out of textarea and
-// make it write a tab at the caret position instead
-textarea.onkeydown = (e) => {
-  if (e.keyCode === 9) {
-    e.preventDefault();
-    insertAtCaret("\t");
-  }
-
-  if (e.keyCode === 27) {
-    textarea.blur();
-  }
-};
-
-function insertAtCaret(text) {
-  const scrollPos = textarea.scrollTop;
-  let caretPos = textarea.selectionStart;
-
-  const front = textarea.value.substring(0, caretPos);
-  const back = textarea.value.substring(
-    textarea.selectionEnd,
-    textarea.value.length,
-  );
-  textarea.value = front + text + back;
-  caretPos += text.length;
-  textarea.selectionStart = caretPos;
-  textarea.selectionEnd = caretPos;
-  textarea.focus();
-  textarea.scrollTop = scrollPos;
-}
-
-// Update the saved userCode every time the user updates the text area code
-textarea.onkeyup = function () {
-  // We only want to save the state when the user code is being shown,
-  // not the solution, so that solution is not saved over the user code
-  if (solution.value === "Show solution") {
-    userEntry = textarea.value;
-  } else {
-    solutionEntry = textarea.value;
-  }
-
-  updateCode();
-};
-```
-
-{{ EmbedLiveSample('Active_learning_Giving_our_content_structure', 700, 400, "", "") }}
 
 ### Why do we need semantics?
 
@@ -304,135 +162,10 @@ The last step is to wrap each list item in a [`<li>`](https://developer.mozilla.
 
 Try editing the live sample below to create your very own HTML unordered list.
 
-```html hidden
-<h2>Live output</h2>
+<!-- 
+ {{ EmbedLiveSample('Active_learning_Marking_up_an_unordered_list', 700, 400, "", "") }} 
+ -->
 
-<div class="output" style="min-height: 50px;"></div>
-
-<h2>Editable code</h2>
-<p class="a11y-label">
-  Press Esc to move focus away from the code area (Tab inserts a tab character).
-</p>
-
-<textarea id="code" class="input" style="min-height: 100px; width: 95%">
-milk
-eggs
-bread
-hummus
-</textarea>
-
-<div class="playable-buttons">
-  <input id="reset" type="button" value="Reset" />
-  <input id="solution" type="button" value="Show solution" />
-</div>
-```
-
-```css hidden
-html {
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-.a11y-label {
-  margin: 0;
-  text-align: right;
-  font-size: 0.7rem;
-  width: 98%;
-}
-
-body {
-  margin: 10px;
-  background: #f5f9fa;
-}
-```
-
-```js hidden
-const textarea = document.getElementById("code");
-const reset = document.getElementById("reset");
-const solution = document.getElementById("solution");
-const output = document.querySelector(".output");
-const code = textarea.value;
-let userEntry = textarea.value;
-
-function updateCode() {
-  output.innerHTML = textarea.value;
-}
-
-const htmlSolution =
-  "<ul>\n<li>milk</li>\n<li>eggs</li>\n<li>bread</li>\n<li>hummus</li>\n</ul>";
-let solutionEntry = htmlSolution;
-
-reset.addEventListener("click", () => {
-  textarea.value = code;
-  userEntry = textarea.value;
-  solutionEntry = htmlSolution;
-  solution.value = "Show solution";
-  updateCode();
-});
-
-solution.addEventListener("click", () => {
-  if (solution.value === "Show solution") {
-    textarea.value = solutionEntry;
-    solution.value = "Hide solution";
-  } else {
-    textarea.value = userEntry;
-    solution.value = "Show solution";
-  }
-  updateCode();
-});
-
-textarea.addEventListener("input", updateCode);
-window.addEventListener("load", updateCode);
-
-// stop tab key tabbing out of textarea and
-// make it write a tab at the caret position instead
-
-textarea.onkeydown = (e) => {
-  if (e.keyCode === 9) {
-    e.preventDefault();
-    insertAtCaret("\t");
-  }
-
-  if (e.keyCode === 27) {
-    textarea.blur();
-  }
-};
-
-function insertAtCaret(text) {
-  const scrollPos = textarea.scrollTop;
-  let caretPos = textarea.selectionStart;
-
-  const front = textarea.value.substring(0, caretPos);
-  const back = textarea.value.substring(
-    textarea.selectionEnd,
-    textarea.value.length,
-  );
-  textarea.value = front + text + back;
-  caretPos += text.length;
-  textarea.selectionStart = caretPos;
-  textarea.selectionEnd = caretPos;
-  textarea.focus();
-  textarea.scrollTop = scrollPos;
-}
-
-// Update the saved userCode every time the user updates the text area code
-textarea.onkeyup = () => {
-  // We only want to save the state when the user code is being shown,
-  // not the solution, so that solution is not saved over the user code
-  if (solution.value === "Show solution") {
-    userEntry = textarea.value;
-  } else {
-    solutionEntry = textarea.value;
-  }
-
-  updateCode();
-};
-```
-
-{{ EmbedLiveSample('Active_learning_Marking_up_an_unordered_list', 700, 400, "", "") }}
 
 ### Ordered
 
@@ -462,298 +195,19 @@ The markup structure is the same as for unordered lists, except that you have to
 
 Try editing the live sample below to create your very own HTML ordered list.
 
-```html hidden
-<h2>Live output</h2>
+<!-- 
+ {{ EmbedLiveSample('Active_learning_Marking_up_an_ordered_list', 700, 500, "", "") }} 
+ -->
 
-<div class="output" style="min-height: 50px;"></div>
-
-<h2>Editable code</h2>
-<p class="a11y-label">
-  Press Esc to move focus away from the code area (Tab inserts a tab character).
-</p>
-
-<textarea id="code" class="input" style="min-height: 200px; width: 95%">
-Drive to the end of the road
-Turn right
-Go straight across the first two roundabouts
-Turn left at the third roundabout
-The school is on your right, 300 meters up the road
-</textarea>
-
-<div class="playable-buttons">
-  <input id="reset" type="button" value="Reset" />
-  <input id="solution" type="button" value="Show solution" />
-</div>
-```
-
-```css hidden
-html {
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-.a11y-label {
-  margin: 0;
-  text-align: right;
-  font-size: 0.7rem;
-  width: 98%;
-}
-
-body {
-  margin: 10px;
-  background: #f5f9fa;
-}
-```
-
-```js hidden
-const textarea = document.getElementById("code");
-const reset = document.getElementById("reset");
-const solution = document.getElementById("solution");
-const output = document.querySelector(".output");
-const code = textarea.value;
-let userEntry = textarea.value;
-
-function updateCode() {
-  output.innerHTML = textarea.value;
-}
-
-const htmlSolution =
-  "<ol>\n<li>Drive to the end of the road</li>\n<li>Turn right</li>\n<li>Go straight across the first two roundabouts</li>\n<li>Turn left at the third roundabout</li>\n<li>The school is on your right, 300 meters up the road</li>\n</ol>";
-let solutionEntry = htmlSolution;
-
-reset.addEventListener("click", () => {
-  textarea.value = code;
-  userEntry = textarea.value;
-  solutionEntry = htmlSolution;
-  solution.value = "Show solution";
-  updateCode();
-});
-
-solution.addEventListener("click", () => {
-  if (solution.value === "Show solution") {
-    textarea.value = solutionEntry;
-    solution.value = "Hide solution";
-  } else {
-    textarea.value = userEntry;
-    solution.value = "Show solution";
-  }
-  updateCode();
-});
-
-textarea.addEventListener("input", updateCode);
-window.addEventListener("load", updateCode);
-
-// stop tab key tabbing out of textarea and
-// make it write a tab at the caret position instead
-
-textarea.onkeydown = (e) => {
-  if (e.keyCode === 9) {
-    e.preventDefault();
-    insertAtCaret("\t");
-  }
-
-  if (e.keyCode === 27) {
-    textarea.blur();
-  }
-};
-
-function insertAtCaret(text) {
-  const scrollPos = textarea.scrollTop;
-  let caretPos = textarea.selectionStart;
-
-  const front = textarea.value.substring(0, caretPos);
-  const back = textarea.value.substring(
-    textarea.selectionEnd,
-    textarea.value.length,
-  );
-  textarea.value = front + text + back;
-  caretPos += text.length;
-  textarea.selectionStart = caretPos;
-  textarea.selectionEnd = caretPos;
-  textarea.focus();
-  textarea.scrollTop = scrollPos;
-}
-
-// Update the saved userCode every time the user updates the text area code
-textarea.onkeyup = () => {
-  // We only want to save the state when the user code is being shown,
-  // not the solution, so that solution is not saved over the user code
-  if (solution.value === "Show solution") {
-    userEntry = textarea.value;
-  } else {
-    solutionEntry = textarea.value;
-  }
-
-  updateCode();
-};
-```
-
-{{ EmbedLiveSample('Active_learning_Marking_up_an_ordered_list', 700, 500, "", "") }}
 
 ### Active learning: Marking up our recipe page
 
 So at this point in the article, you have all the information you need to mark up our recipe page example. You can choose to either save a local copy of our [text-start.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/html-text-formatting/text-start.html) starting file and do the work there or do it in the editable example below. Doing it locally will probably be better, as then you'll get to save the work you are doing, whereas if you fill it in to the editable example, it will be lost the next time you open the page. Both have pros and cons.
 
-```html hidden
-<h2>Live output</h2>
+<!-- 
+ {{ EmbedLiveSample('Active_learning_Marking_up_our_recipe_page', 900, 620, "", "") }} 
+ -->
 
-<div class="output" style="min-height: 50px;"></div>
-
-<h2>Editable code</h2>
-<p class="a11y-label">
-  Press Esc to move focus away from the code area (Tab inserts a tab character).
-</p>
-
-<textarea id="code" class="input" style="min-height: 200px; width: 95%">
-Quick hummus recipe
-
-  This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
-
-  Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.
-
-  Ingredients
-
-  1 can (400g) of chick peas (garbanzo beans)
-  175g of tahini
-  6 sundried tomatoes
-  Half a red pepper
-  A pinch of cayenne pepper
-  1 clove of garlic
-  A dash of olive oil
-
-  Instructions
-
-  Remove the skin from the garlic, and chop coarsely
-  Remove all the seeds and stalk from the pepper, and chop coarsely
-  Add all the ingredients into a food processor
-  Process all the ingredients into a paste
-  If you want a coarse "chunky" hummus, process it for a short time
-  If you want a smooth hummus, process it for a longer time
-
-  For a different flavor, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.
-
-  Storage
-
-  Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.
-
-  Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
-</textarea>
-
-<div class="playable-buttons">
-  <input id="reset" type="button" value="Reset" />
-  <input id="solution" type="button" value="Show solution" />
-</div>
-```
-
-```css hidden
-html {
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-.a11y-label {
-  margin: 0;
-  text-align: right;
-  font-size: 0.7rem;
-  width: 98%;
-}
-
-body {
-  margin: 10px;
-  background: #f5f9fa;
-}
-```
-
-```js hidden
-const textarea = document.getElementById("code");
-const reset = document.getElementById("reset");
-const solution = document.getElementById("solution");
-const output = document.querySelector(".output");
-const code = textarea.value;
-let userEntry = textarea.value;
-
-function updateCode() {
-  output.innerHTML = textarea.value;
-}
-
-const htmlSolution =
-  '<h1>Quick hummus recipe</h1>\n\n<p>This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.</p>\n\n<p>Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.</p>\n\n<h2>Ingredients</h2>\n\n<ul>\n<li>1 can (400g) of chick peas (garbanzo beans)</li>\n<li>175g of tahini</li>\n<li>6 sundried tomatoes</li>\n<li>Half a red pepper</li>\n<li>A pinch of cayenne pepper</li>\n<li>1 clove of garlic</li>\n<li>A dash of olive oil</li>\n</ul>\n\n<h2>Instructions</h2>\n\n<ol>\n<li>Remove the skin from the garlic, and chop coarsely.</li>\n<li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>\n<li>Add all the ingredients into a food processor.</li>\n<li>Process all the ingredients into a paste.</li>\n<li>If you want a coarse "chunky" hummus, process it for a short time.</li>\n<li>If you want a smooth hummus, process it for a longer time.</li>\n</ol>\n\n<p>For a different flavor, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.</p>\n\n<h2>Storage</h2>\n\n<p>Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you\'ve made it. If it starts to become fizzy, you should definitely discard it.</p>\n\n<p>Hummus is suitable for freezing; you should thaw it and use it within a couple of months.</p>';
-let solutionEntry = htmlSolution;
-
-reset.addEventListener("click", () => {
-  textarea.value = code;
-  userEntry = textarea.value;
-  solutionEntry = htmlSolution;
-  solution.value = "Show solution";
-  updateCode();
-});
-
-solution.addEventListener("click", () => {
-  if (solution.value === "Show solution") {
-    textarea.value = solutionEntry;
-    solution.value = "Hide solution";
-  } else {
-    textarea.value = userEntry;
-    solution.value = "Show solution";
-  }
-  updateCode();
-});
-
-textarea.addEventListener("input", updateCode);
-window.addEventListener("load", updateCode);
-
-// stop tab key tabbing out of textarea and
-// make it write a tab at the caret position instead
-
-textarea.onkeydown = (e) => {
-  if (e.keyCode === 9) {
-    e.preventDefault();
-    insertAtCaret("\t");
-  }
-
-  if (e.keyCode === 27) {
-    textarea.blur();
-  }
-};
-
-function insertAtCaret(text) {
-  const scrollPos = textarea.scrollTop;
-  let caretPos = textarea.selectionStart;
-
-  const front = textarea.value.substring(0, caretPos);
-  const back = textarea.value.substring(
-    textarea.selectionEnd,
-    textarea.value.length,
-  );
-  textarea.value = front + text + back;
-  caretPos += text.length;
-  textarea.selectionStart = caretPos;
-  textarea.selectionEnd = caretPos;
-  textarea.focus();
-  textarea.scrollTop = scrollPos;
-}
-
-// Update the saved userCode every time the user updates the text area code
-textarea.onkeyup = () => {
-  // We only want to save the state when the user code is being shown,
-  // not the solution, so that solution is not saved over the user code
-  if (solution.value === "Show solution") {
-    userEntry = textarea.value;
-  } else {
-    solutionEntry = textarea.value;
-  }
-
-  updateCode();
-};
-```
-
-{{ EmbedLiveSample('Active_learning_Marking_up_our_recipe_page', 900, 620, "", "") }}
 
 If you get stuck, you can always press the _Show solution_ button, or check out our [text-complete.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/html-text-formatting/text-complete.html) example on our GitHub repo.
 
@@ -835,144 +289,19 @@ You can nest strong and emphasis inside one another if desired:
 <p>This liquid is <strong>highly toxic</strong> — if you drink it, <strong>you may <em>die</em></strong>.</p>
 ```
 
-{{EmbedLiveSample('Strong importance')}}
+<!-- 
+ {{EmbedLiveSample('Strong importance')}} 
+ -->
+
 
 ### Active learning: Let's be important
 
 In this active learning section, we've provided an editable example. Inside it, we'd like you to try adding emphasis and strong importance to the words you think need them, just to have some practice.
 
-```html hidden
-<h2>Live output</h2>
+<!-- 
+ {{ EmbedLiveSample('Active_learning_Lets_be_important', 700, 520, "", "") }} 
+ -->
 
-<div class="output" style="min-height: 50px;"></div>
-
-<h2>Editable code</h2>
-<p class="a11y-label">
-  Press Esc to move focus away from the code area (Tab inserts a tab character).
-</p>
-
-<textarea id="code" class="input" style="min-height: 200px; width: 95%">
-<h1>Important notice</h1>
-<p>On Sunday January 9th 2010, a gang of goths were
-  spotted stealing several garden gnomes from a
-  shopping center in downtown Milwaukee. They were
-  all wearing green jumpsuits and silly hats, and
-  seemed to be having a whale of a time. If anyone
-   has any information about this incident, please
-    contact the police now.</p>
-</textarea>
-
-<div class="playable-buttons">
-  <input id="reset" type="button" value="Reset" />
-  <input id="solution" type="button" value="Show solution" />
-</div>
-```
-
-```css hidden
-html {
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 16px;
-}
-
-.a11y-label {
-  margin: 0;
-  text-align: right;
-  font-size: 0.7rem;
-  width: 98%;
-}
-
-body {
-  margin: 10px;
-  background: #f5f9fa;
-}
-```
-
-```js hidden
-const textarea = document.getElementById("code");
-const reset = document.getElementById("reset");
-const solution = document.getElementById("solution");
-const output = document.querySelector(".output");
-const code = textarea.value;
-let userEntry = textarea.value;
-
-function updateCode() {
-  output.innerHTML = textarea.value;
-}
-
-const htmlSolution =
-  "<h1>Important notice</h1>\n<p>On <strong>Sunday January 9th 2010</strong>, a gang of <em>goths</em> were spotted stealing <strong><em>several</em> garden gnomes</strong> from a shopping center in downtown <strong>Milwaukee</strong>. They were all wearing <em>green jumpsuits</em> and <em>silly hats</em>, and seemed to be having a whale of a time. If anyone has <strong>any</strong> information about this incident, please contact the police <strong>now</strong>.</p>";
-let solutionEntry = htmlSolution;
-
-reset.addEventListener("click", () => {
-  textarea.value = code;
-  userEntry = textarea.value;
-  solutionEntry = htmlSolution;
-  solution.value = "Show solution";
-  updateCode();
-});
-
-solution.addEventListener("click", () => {
-  if (solution.value === "Show solution") {
-    textarea.value = solutionEntry;
-    solution.value = "Hide solution";
-  } else {
-    textarea.value = userEntry;
-    solution.value = "Show solution";
-  }
-  updateCode();
-});
-
-textarea.addEventListener("input", updateCode);
-window.addEventListener("load", updateCode);
-
-// Stop tab key tabbing out of textarea and
-// make it write a tab at the caret position instead
-textarea.onkeydown = (e) => {
-  if (e.keyCode === 9) {
-    e.preventDefault();
-    insertAtCaret("\t");
-  }
-
-  if (e.keyCode === 27) {
-    textarea.blur();
-  }
-};
-
-function insertAtCaret(text) {
-  const scrollPos = textarea.scrollTop;
-  let caretPos = textarea.selectionStart;
-
-  const front = textarea.value.substring(0, caretPos);
-  const back = textarea.value.substring(
-    textarea.selectionEnd,
-    textarea.value.length,
-  );
-  textarea.value = front + text + back;
-  caretPos += text.length;
-  textarea.selectionStart = caretPos;
-  textarea.selectionEnd = caretPos;
-  textarea.focus();
-  textarea.scrollTop = scrollPos;
-}
-
-// Update the saved userCode every time the user updates the text area code
-textarea.onkeyup = () => {
-  // We only want to save the state when the user code is being shown,
-  // not the solution, so that solution is not saved over the user code
-  if (solution.value === "Show solution") {
-    userEntry = textarea.value;
-  } else {
-    solutionEntry = textarea.value;
-  }
-
-  updateCode();
-};
-```
-
-{{ EmbedLiveSample('Active_learning_Lets_be_important', 700, 520, "", "") }}
 
 ### Italic, bold, underline…
 
@@ -1016,7 +345,10 @@ Always keep an accessibility mindset. The concept of italics isn't very helpful 
 </dl>
 ```
 
-{{EmbedLiveSample('Italic, bold, underline…','100%','270')}}
+<!-- 
+ {{EmbedLiveSample('Italic, bold, underline…','100%','270')}} 
+ -->
+
 
 ## Test your skills!
 
