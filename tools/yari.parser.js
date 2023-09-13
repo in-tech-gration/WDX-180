@@ -1,13 +1,13 @@
 // DESCRIPTION: Script to parse MDN markdown content. Looks for patterns such as {{LearnSidebar}}, {{Glossary}}, etc.
 
 // 0) IMPORTS: =================================================================
-const path               = require("node:path");
-const fs                 = require("node:fs");
-const { parseArgs }      = require("node:util");
-// https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
-const { warn, ok, info } = require("./utils");
-const marked             = require("marked");
-const matter             = require('gray-matter');
+const path                      = require("node:path");
+const fs                        = require("node:fs");
+const { parseArgs }             = require("node:util");
+const { warn, ok, info, xmark } = require("./utils");
+const marked                    = require("marked");
+const matter                    = require('gray-matter');
+const { assert }                = require("node:console");
 
 // 1) OUR FUNCTIONS: ===========================================================
 
@@ -16,7 +16,7 @@ const matter             = require('gray-matter');
  * @param {string} textContent 
  * @returns string
  */
-function removeTemplateContent( textContent ){
+function removeTemplateContent(textContent) {
 
   // Thank you ChatGPT! 
   // const templateRegex = /{{QuicklinksWithSubPages\("[A-Za-z_\/]+"\)}}\s*\n|{{GlossarySidebar}}\s*\n|{{LearnSidebar}}|{{(?:LearnSidebar)?(?:PreviousMenuNext|PreviousMenu|NextMenuPrevious)\(["'][^"']*["'],\s*["'][^"']*["'],\s*["'][^"']*["']\)}}\s*\n/g;
@@ -26,19 +26,19 @@ function removeTemplateContent( textContent ){
   const nextMenuSingleRegex = /{{NextMenu\("[^"]+", "[^"]+"\)}}/g;
   // const templateRegex = /{{PreviousMenu\([^)]+\)}}\s*\n/g
 
-  const templateMatches = textContent.match(templateRegex); 
+  const templateMatches = textContent.match(templateRegex);
 
-  if ( templateMatches ){
-    console.log( templateMatches )
+  if (templateMatches) {
+    console.log(templateMatches)
     ok("Substituted {{Template}} matches successfully");
     textContent = textContent.replace(templateRegex, "");
   }
 
   const nextMenuMatches = textContent.match(nextMenuSingleRegex);
 
-  if ( nextMenuMatches ){
+  if (nextMenuMatches) {
 
-    console.log( nextMenuMatches )
+    console.log(nextMenuMatches)
     ok("Substituted {{Template}} matches successfully");
     textContent = textContent.replace(nextMenuMatches, "");
 
@@ -47,10 +47,10 @@ function removeTemplateContent( textContent ){
   const previousMenuNextRegex = /\{\{PreviousMenuNext\((?:"[^"]+"(?:,\s*)?)+\)\}\}\n/g;
   const previousMenuNextRegexMatches = textContent.matchAll(previousMenuNextRegex);
 
-  if ( previousMenuNextRegexMatches ){
-    for ( const match of previousMenuNextRegexMatches ){
-      ok( "\nFound: " + match[0] );      
-      textContent = textContent.replace( match[0], "" );
+  if (previousMenuNextRegexMatches) {
+    for (const match of previousMenuNextRegexMatches) {
+      ok("\nFound: " + match[0]);
+      textContent = textContent.replace(match[0], "");
     }
   }
 
@@ -58,7 +58,7 @@ function removeTemplateContent( textContent ){
 
 }
 
-function replaceHTMLGlossaryLinks( textContent, fileName ){
+function replaceHTMLGlossaryLinks(textContent, fileName) {
 
   // Thank you ChatGPT! 
   const glossaryRegex = /(<[^>]*>)\{\{[Gg]lossary\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}(<\/[^>]*>)/g;
@@ -71,70 +71,70 @@ function replaceHTMLGlossaryLinks( textContent, fileName ){
 
     const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
 
-    if (fs.existsSync(glossaryDirectory)){
+    if (fs.existsSync(glossaryDirectory)) {
       // Count the number of remaining path segments
       const subfolderCount = fileName.split(path.sep).length - 1;
-      const parentPaths = Array.from({ length: subfolderCount}).fill( "../" ).join("");
+      const parentPaths = Array.from({ length: subfolderCount }).fill("../").join("");
       link = `${parentPaths}resources/glossary/${p1}.md`
-      console.log(`Local glossary entry for ${p1} exists.`); 
+      console.log(`Local glossary entry for ${p1} exists.`);
     } else {
       link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
     }
 
-    const output = `${openingTag}<a href="${link}">${ p2 ? p2 : p1}</a>${closingTag}`;
+    const output = `${openingTag}<a href="${link}">${p2 ? p2 : p1}</a>${closingTag}`;
     // console.log({ match, output });
     // console.log(match, p1, p2);
     return output;
   }
 
-  if ( textContent.match(glossaryRegex) ){
+  if (textContent.match(glossaryRegex)) {
     ok("Substituted {{Glossary}} matches successfully");
     return textContent.replace(glossaryRegex, replaceGlossary);
-  } 
+  }
 
   info("\n No HTML {{Glossary}} matches found on this file");
   return textContent;
 
 }
 
-function replaceGlossaryLinks( textContent, fileName ){
+function replaceGlossaryLinks(textContent, fileName) {
 
-    // Thank you ChatGPT! 
-    const glossaryRegex = /\{\{[Gg]lossary\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}/g;
+  // Thank you ChatGPT! 
+  const glossaryRegex = /\{\{[Gg]lossary\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}/g;
 
-    function replaceGlossary(match, p1, p2) {
-      // TODO: Replace MDN domain with local resources/glossary path if available
-      let baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
-      let link = "";
+  function replaceGlossary(match, p1, p2) {
+    // TODO: Replace MDN domain with local resources/glossary path if available
+    let baseLink = "https://developer.mozilla.org/en-US/docs/Glossary/";
+    let link = "";
 
-      const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
+    const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
 
-      if (fs.existsSync(glossaryDirectory)){
-        // Count the number of remaining path segments
-        const subfolderCount = fileName.split(path.sep).length - 1;
-        const parentPaths = Array.from({ length: subfolderCount}).fill( "../" ).join("");
-        link = `${parentPaths}resources/glossary/${p1}.md`
-        console.log(`Local glossary entry for ${p1} exists.`); 
-      } else {
-        link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
-      }
-  
-      const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
-      // console.log(match, p1, p2);
-      return output;
+    if (fs.existsSync(glossaryDirectory)) {
+      // Count the number of remaining path segments
+      const subfolderCount = fileName.split(path.sep).length - 1;
+      const parentPaths = Array.from({ length: subfolderCount }).fill("../").join("");
+      link = `${parentPaths}resources/glossary/${p1}.md`
+      console.log(`Local glossary entry for ${p1} exists.`);
+    } else {
+      link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
     }
 
-    if ( textContent.match(glossaryRegex) ){
-      ok("Substituted {{Glossary}} matches successfully");
-      return textContent.replace(glossaryRegex, replaceGlossary);
-    } 
+    const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
+    // console.log(match, p1, p2);
+    return output;
+  }
 
-    info("\n No {{Glossary}} matches found on this file");
-    return textContent;
-  
+  if (textContent.match(glossaryRegex)) {
+    ok("Substituted {{Glossary}} matches successfully");
+    return textContent.replace(glossaryRegex, replaceGlossary);
+  }
+
+  info("\n No {{Glossary}} matches found on this file");
+  return textContent;
+
 }
 
-function replaceDOMXrefLinks( textContent, fileName ){
+function replaceDOMXrefLinks(textContent, fileName) {
 
   // Thank you ChatGPT! 
   const glossaryRegex = /\{\{domxref\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}/g;
@@ -148,34 +148,34 @@ function replaceDOMXrefLinks( textContent, fileName ){
     // const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
 
     // TODO: UPDATE TO REFLECT Document/ FOLDER FOR LOCAL OFFLINE FILES
-    if ( false && fs.existsSync(glossaryDirectory) ){
+    if (false && fs.existsSync(glossaryDirectory)) {
 
       // Count the number of remaining path segments
       const subfolderCount = fileName.split(path.sep).length - 1;
-      const parentPaths = Array.from({ length: subfolderCount}).fill( "../" ).join("");
+      const parentPaths = Array.from({ length: subfolderCount }).fill("../").join("");
       link = `${parentPaths}resources/glossary/${p1}.md`
-      console.log(`Local glossary entry for ${p1} exists.`); 
+      console.log(`Local glossary entry for ${p1} exists.`);
 
     } else {
 
       let base = "";
       let term = "";
 
-      if ( p1.includes(".") ){
+      if (p1.includes(".")) {
 
-        [ base, term ] = p1.split(".");
-
-      }
-
-      if ( p1.includes("/") ){
-
-        [ base, term ] = p1.split("/");
+        [base, term] = p1.split(".");
 
       }
 
-      if ( p1.includes(" ") ){
+      if (p1.includes("/")) {
 
-        [ base, term ] = p1.split(" ");
+        [base, term] = p1.split("/");
+
+      }
+
+      if (p1.includes(" ")) {
+
+        [base, term] = p1.split(" ");
 
         console.log({ base, term });
 
@@ -185,29 +185,29 @@ function replaceDOMXrefLinks( textContent, fileName ){
       }
 
       link = term ? `${baseLink}${base}/${term}` : `${baseLink}${base}`;
-    
+
     }
 
     const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
     return output;
   }
 
-  if ( textContent.match(glossaryRegex) ){
+  if (textContent.match(glossaryRegex)) {
     ok("Substituted {{Glossary}} matches successfully");
     return textContent.replace(glossaryRegex, replaceGlossary);
-  } 
+  }
 
   info("\n No {{Glossary}} matches found on this file");
   return textContent;
 
 }
 
-function parseMDNLinks( textContent ){
+function parseMDNLinks(textContent) {
   const domain = "https://developer.mozilla.org"
   const regex = /\[([^\]]+)\]\((\/en-US\/docs\/[^\)]+)\)/g;
   const matches = textContent.match(regex);
-  if ( matches ){
-    console.log( matches );
+  if (matches) {
+    console.log(matches);
     // return textContent.replace( regex )
     return textContent.replace(regex, (match, linkText, url) => {
       // console.log( match ); // [...](...)
@@ -221,48 +221,48 @@ function parseMDNLinks( textContent ){
   return textContent;
 }
 
-function parseImages( textContent ){
+function parseImages(textContent) {
 
   const regex = /!\[([^\]]*)]\(((?!https?:\/\/)[^\)]+)\)/g;
-  
+
   const matches = textContent.match(regex);
-  
+
   if (matches) {
-    return textContent.replace( regex, (match, altText, imgSrc)=>{
-      if ( imgSrc.startsWith("assets") ){
+    return textContent.replace(regex, (match, altText, imgSrc) => {
+      if (imgSrc.startsWith("assets")) {
         return match;
       }
       return `![${altText}](assets/${imgSrc})`
     })
   }
-  
+
   return textContent;
 }
 
-function parseElementTerm( textContent ){
+function parseElementTerm(textContent) {
 
   const URL = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/";
   const pattern = /{{(htmlelement|HTMLElement)\("(.*?)"(?:, "(.*?)")?\)}}/g;
-  return textContent.replace(pattern, ( match, _, termA, termB )=>{
+  return textContent.replace(pattern, (match, _, termA, termB) => {
     const link = `${URL}${termA}`;
     return `[\`<${termB ? termB : termA}>\`](${link})`;
   })
 }
 
-function parseCSSTerm( textContent ){
+function parseCSSTerm(textContent) {
   // {{cssxref("width")}}
   //=> https://developer.mozilla.org/en-US/docs/Web/CSS/width
   const domain = "https://developer.mozilla.org/en-US/docs/Web/CSS/";
   const regex = /{{cssxref\("([^"]+)"\)}}/g;
-  return textContent.replace( regex, (match, cssTerm)=>{
+  return textContent.replace(regex, (match, cssTerm) => {
     return `[\`${cssTerm}\`](${domain}${cssTerm})`
   })
 }
 
-function parseHTTPStatus( textContent ){
+function parseHTTPStatus(textContent) {
   const URL = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/";
   const pattern = /{{(HTTPStatus)\("(.*?)"(?:, "(.*?)")?\)}}/g;
-  return textContent.replace(pattern, ( match, _, termA, termB )=>{
+  return textContent.replace(pattern, (match, _, termA, termB) => {
     const link = `${URL}${termA}`;
     const output = `[${termB ? termB : termA}](${link})`;
     // console.log({ output }); 
@@ -270,25 +270,25 @@ function parseHTTPStatus( textContent ){
   })
 }
 
-function parseHTTPHeader( textContent ){
+function parseHTTPHeader(textContent) {
   const URL = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/";
   const pattern = /{{(HTTPHeader)\("(.*?)"(?:, "(.*?)")?\)}}/g;
-  return textContent.replace(pattern, ( match, _, termA, termB )=>{
+  return textContent.replace(pattern, (match, _, termA, termB) => {
     const link = `${URL}${termA}`;
     const output = `[${termB ? termB : termA}](${link})`;
     console.log();
-    info(`Found: ${match}`); 
+    info(`Found: ${match}`);
     console.log();
     return output;
   })
 }
 
-function parseEmbedYouTube( textContent ){
-  
+function parseEmbedYouTube(textContent) {
+
   const youtubeRegex = /\{\{EmbedYouTube\("([a-zA-Z0-9-_]{11})"\)\}\}/g;
 
-  const matches = textContent.matchAll( youtubeRegex );
-  const iframe = (vid)=> {
+  const matches = textContent.matchAll(youtubeRegex);
+  const iframe = (vid) => {
 
     const iframe = `
     <iframe 
@@ -304,15 +304,15 @@ function parseEmbedYouTube( textContent ){
     <p><a href="https://www.youtube.com/watch?v=${vid}" target="_blank">
         [ Watch on <strong>YouTube</strong> ]
       </a>
-    </p>`.split("\n").map( s => s.trim() ).join("\n");
+    </p>`.split("\n").map(s => s.trim()).join("\n");
 
     return iframe + "\n" + externalLink;
 
   }
-  
-  if ( matches ){
-    for ( const match of matches ){
-      info( "Found: " + match[0] );
+
+  if (matches) {
+    for (const match of matches) {
+      info("Found: " + match[0]);
       textContent = textContent.replace(match[0], iframe(match[1]))
     }
   }
@@ -321,15 +321,15 @@ function parseEmbedYouTube( textContent ){
 
 }
 
-function parseEmbedGHLiveSample( textContent ){
+function parseEmbedGHLiveSample(textContent) {
   const regex = /\{\{EmbedGHLiveSample\((['"])(?<first>.*)\1(,\s?(['"])(?<second>.*)\4)?(,\s?(?<third>.*))?\)\}\}/gm
   const matches = textContent.matchAll(regex);
   const domainMDN = "https://mdn.github.io/";
   const domain = "https://in-tech-gration.github.io/";
-  if ( matches ){
-    for ( const match of matches ){
+  if (matches) {
+    for (const match of matches) {
       // PARSE css-examples:
-      if ( match.groups.first.indexOf("css-examples/") === 0 ){
+      if (match.groups.first.indexOf("css-examples/") === 0) {
         // console.log( match[0] ); // <- Replace this
         // console.log( match.groups.first );
         // console.log( match.groups.second );
@@ -347,11 +347,11 @@ function parseEmbedGHLiveSample( textContent ){
         <p><a href="${domain}${match.groups.first}" target="_blank">
             [ External link ]
           </a>
-        </p>`.split("\n").map( s => s.trim() ).join("\n");
+        </p>`.split("\n").map(s => s.trim()).join("\n");
 
         textContent = textContent.replace(
-          match[0], 
-          iframe + "\n" + externalLink 
+          match[0],
+          iframe + "\n" + externalLink
         );
 
       }
@@ -360,69 +360,179 @@ function parseEmbedGHLiveSample( textContent ){
   return textContent;
 }
 
-function getEmbedLiveSampleRegex(){
-
-  //  $4 - (Deprecated) The slug from which to load the sample (optional; current page used if not provided)
-  //  $5 - (Deprecated) The class name of the frame; defaults to "sample-code-frame". If you
-  //       pass this parameter and give it a value other than "sample-code-frame",
-  //       then the "Open in CodePen"/"Open in JSFiddle" buttons will not be displayed.
-  //  $6 - (Deprecated) Allowed features, separated by semicolons (optional)
+function getEmbedLiveSampleRegex() {
 
   const optCommaSpace = `(?:,\\s)`;
-  const optQuotes     = `(['"])?`;
-  const rxFirstGroup  = `\\{\\{\\s*EmbedLiveSample\\((['"])(?<header_block_id>.*?)\\1`;
+  const optQuotes = `(['"])?`;
+  const rxFirstGroup = `\\{\\{\\s*EmbedLiveSample\\((['"])(?<header_block_id>.*?)\\1`;
   const rxSecondGroup = `(?:${optCommaSpace}(?<iframe_width>\\d+))?`;
-  const rxThirdGroup  = `(?:${optCommaSpace}(?<iframe_height>\\d+))?`;
-  const rxFourthGroup = `(?:${optCommaSpace}${optQuotes}(?<screenshot_url>[^'"]+)\\5)?`;
-  const rxFifthGroup  = `(?:${optCommaSpace}${optQuotes}(?<slug>[^'"]+)\\7)?`
+  const rxThirdGroup = `(?:${optCommaSpace}(?<iframe_height>\\d+))?`;
+  const rxFourthGroup = `(?:${optCommaSpace}${optQuotes}(?<screenshot_url>[^'"]*)\\5)?`;
+  const rxFifthGroup = `(?:${optCommaSpace}${optQuotes}(?<slug>[^'"]*)\\7)?`
   const rx = new RegExp(
-    rxFirstGroup 
-    + rxSecondGroup 
-    + rxThirdGroup  
-    + rxFourthGroup 
-    + rxFifthGroup  
-    // + `(?:\s+)?\\)\}\}` // TODO
+    rxFirstGroup
+    + rxSecondGroup
+    + rxThirdGroup
+    + rxFourthGroup
+    + rxFifthGroup
+    + `?\\)(?:\\s+)?\\}\\}`
     // , "gm"
   );
-
   return rx;
 }
 
-function parseEmbedLiveSample( textContent ){
+/**
+ * @description: Parsing EmbedLiveSamples
+ * DOCS: https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Page_structures/Live_samples
+ * DOCS: https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedLiveSample.ejs
+ * @param {*} textContent 
+ * @returns {string}
+ */
+function parseEmbedLiveSample(textContent) {
 
-  // Use Global regex pattern
-  const rx = new RegExp( getEmbedLiveSampleRegex().source, "gm" );
+  // Parse markdown and separate Frontmatter and main content:
+  const { content, data: fm } = matter(textContent);
+  // Parse markdown tokens:
+  const markdownTokens = marked.lexer(content);
 
-  const matches = textContent.matchAll(rx);
+  const markedLiveEmbeds = {}
+  const markedCodeTokens = {}
+  const markdownTokensUpdated = markdownTokens.map((t, idx) => {
 
-  if ( matches ){
+    // console.log( t.type, t.lang );
+    if (t.raw.indexOf("EmbedLiveSample") > -1) {
 
-    console.log();
-
-    for ( const match of matches ){
-
-      info( `Found EmbedLiveSample: ${match[0]}` );
-
-      const { header_block_id, iframe_width, iframe_height, screenshot_url, slug } = match.groups;
-
-      if ( header_block_id ){
-        // console.log({ header_block_id });
+      const m = t.raw.match(getEmbedLiveSampleRegex());
+      const liveSample = {
+        match: m[0],
+        header_block_id: m.groups.header_block_id,
+        iframe_width: m.groups.iframe_width,
+        iframe_height: m.groups.iframe_height,
+        screenshot_url: m.groups.screenshot_url,
+        url: m.groups.slug,
+        code: {
+          html: null,
+          css: null,
+          js: null
+        }
       }
-      if ( iframe_width ){
-        // console.log({ iframe_width });
+
+      markedLiveEmbeds[idx] = liveSample;
+
+      // console.log( m[0], m.groups, idx );
+      for (let index = 1; index < 7; index++) {
+
+        const isCode = markdownTokens[idx - index].type === "code";
+        const isHTML = markdownTokens[idx - index].lang === "html hidden";
+        // || markdownTokens[idx - index].lang === "html" ?
+        const isCSS  = markdownTokens[idx - index].lang === "css hidden";
+        const isJS   = markdownTokens[idx - index].lang === "js hidden";
+
+        if (isCode) {
+          if (isHTML) {
+            markedCodeTokens[idx - index] = true;
+            markedCodeTokens[idx - index + 1] = true; // Remove previous space also
+            liveSample.code.html = markdownTokens[idx - index].text;
+          }
+          if (isCSS) {
+            markedCodeTokens[idx - index] = true;
+            markedCodeTokens[idx - index + 1] = true; // Remove previous space also
+            liveSample.code.css = markdownTokens[idx - index].text;
+          }
+          if (isJS) {
+            markedCodeTokens[idx - index] = true;
+            markedCodeTokens[idx - index + 1] = true; // Remove previous space also
+            liveSample.code.js = markdownTokens[idx - index].text;
+          }
+
+        }
       }
-      if ( iframe_height ){
-        // console.log({ iframe_height });
-      }
-      if ( screenshot_url ){
-        // console.log({ screenshot_url });
-      }
-      if ( slug ){
-        // console.log({ slug });
+      // console.log({ liveSample });
+    }
+    return t;
+  })
+
+  const { equal } = require("node:assert");
+
+  markdownTokens.forEach(( m, idx )=>{
+    try {
+      equal(m, markdownTokensUpdated[idx]);
+    } catch (error) {
+      console.log(`${xmark}`, error.actual);    
+      return textContent;
+    }
+
+  });
+
+  const editedTokens = markdownTokensUpdated.map((token,idx) =>{
+    if ( markedCodeTokens[idx] ){
+      return null;
+    }
+    if ( markedLiveEmbeds[idx] ){
+      return { 
+        type: "paragraph", 
+        raw: `<!-- \n ${markedLiveEmbeds[idx].match} \n -->`, 
+        metadata: markedLiveEmbeds[idx] 
       }
     }
-  }
+    return token;
+  });
+
+  // Use Global regex pattern
+  /* 
+    const rx = new RegExp(getEmbedLiveSampleRegex().source, "gm");
+    const matches = textContent.matchAll(rx);
+    if (matches) {
+  
+      for (const match of matches) {
+  
+        info(`Found EmbedLiveSample: ${match[0]}`);
+  
+        const { header_block_id, iframe_width, iframe_height, screenshot_url, slug } = match.groups;
+  
+        if (header_block_id) {
+          // console.log({ header_block_id });
+        }
+        if (iframe_width) {
+          // console.log({ iframe_width });
+        }
+        if (iframe_height) {
+          // console.log({ iframe_height });
+        }
+        if (screenshot_url) {
+          // console.log({ screenshot_url });
+        }
+        if (slug) {
+          // console.log({ slug });
+        }
+      }
+    }
+  */
+
   return textContent;
+
+  // Recreate Frontmatter section as plain markdown text:
+  let fmText = "";
+  if ( Object.keys(fm).length > 0 ){
+
+    fmText = [
+      "---",
+      ...Object.entries(fm).map(([key,value]) =>{
+        return `${key}: ${value}`
+      }),
+      "---"
+    ].join("\n") + "\n";
+
+  }
+
+  return fmText + editedTokens.map( token =>{
+    if ( token ){
+      // return fmText + markdownTokensUpdated.map( token =>{
+
+        return token.raw;
+    }
+  }).join("");
+
 }
 
 // 2) OUR VARIABLES: ===========================================================
@@ -430,64 +540,27 @@ function parseEmbedLiveSample( textContent ){
 // 3) ACTION!!! ================================================================
 
 // Orchestrate Parsing & Modifications
-function parseYariDynamicContent( textContent, fileName ){
+function parseYariDynamicContent(textContent, fileName) {
 
-  let updatedContents = textContent;
-
-  // Parse markdown and separate Frontmatter and main content:
-  const { content, data: fm } = matter( textContent );
-  // Parse markdown tokens:
-  const markdownTokens        = marked.lexer(content);
-
-  // Parsing EmbedLiveSamples
-  // DOCS: https://github.com/mdn/yari/blob/main/kumascript/macros/EmbedLiveSample.ejs
-  let code = {
-    html: null,
-    css: null,
-    js: null,
-  };
-
-  const liveSamples = [];
-
-  markdownTokens.forEach((t,idx) =>{
-    // console.log( t.type, t.lang );
-    if ( t.raw.indexOf("EmbedLiveSample") > -1 ){
-      // console.log();
-      const m = t.raw.match( getEmbedLiveSampleRegex() );
-      // console.log( m[0], m.groups, idx );
-      // console.log({ header_block_id: m.groups.header_block_id });
-      // console.log({ iframe_width: m.groups.iframe_width });
-      // console.log( m.groups.iframe_height );
-      // console.log( m.groups.screenshot_url );
-      // console.log( m.groups.slug );
-      // console.log( markdownTokens[idx-1].type, markdownTokens[idx-1].lang );
-      // console.log( markdownTokens[idx-2].type, markdownTokens[idx-2].lang );
-      // console.log( markdownTokens[idx-3].type, markdownTokens[idx-3].lang );
-      // console.log( markdownTokens[idx-4].type, markdownTokens[idx-4].lang );
-      // console.log( markdownTokens[idx-5].type, markdownTokens[idx-5].lang );
-      // console.log( markdownTokens[idx-6].type, markdownTokens[idx-6].lang );
-    }
-  })
-  // console.log({ markdownTokens });
-  // type: "code" + lang: "js hidden", "css hidden" => type: "space", raw: "\n\n" => type: "paragraph" => EmbedLiveSample
+  let updatedTextContent = textContent;
 
   // Run this first:
-  updatedContents = replaceHTMLGlossaryLinks(updatedContents, fileName);
+  updatedTextContent = replaceHTMLGlossaryLinks(updatedTextContent, fileName);
   // Then run this one:
-  updatedContents = replaceGlossaryLinks(updatedContents, fileName);
-  updatedContents = removeTemplateContent(updatedContents);
-  updatedContents = parseMDNLinks(updatedContents);
-  updatedContents = parseImages(updatedContents);
-  updatedContents = parseElementTerm(updatedContents);
-  updatedContents = parseCSSTerm(updatedContents);
-  updatedContents = parseHTTPStatus(updatedContents);
-  updatedContents = replaceDOMXrefLinks(updatedContents);
-  updatedContents = parseHTTPHeader(updatedContents);
-  updatedContents = parseEmbedYouTube(updatedContents);
-  updatedContents = parseEmbedGHLiveSample(updatedContents);
-  // updatedContents = parseEmbedLiveSample(updatedContents);
+  updatedTextContent = replaceGlossaryLinks(updatedTextContent, fileName);
+  updatedTextContent = removeTemplateContent(updatedTextContent);
+  updatedTextContent = parseMDNLinks(updatedTextContent);
+  updatedTextContent = parseImages(updatedTextContent);
+  updatedTextContent = parseElementTerm(updatedTextContent);
+  updatedTextContent = parseCSSTerm(updatedTextContent);
+  updatedTextContent = parseHTTPStatus(updatedTextContent);
+  updatedTextContent = replaceDOMXrefLinks(updatedTextContent);
+  updatedTextContent = parseHTTPHeader(updatedTextContent);
+  updatedTextContent = parseEmbedYouTube(updatedTextContent);
+  updatedTextContent = parseEmbedGHLiveSample(updatedTextContent);
+  // updatedTextContent = parseEmbedLiveSample(updatedTextContent);
 
-  return updatedContents;
+  return updatedTextContent;
 
 }
 
@@ -498,26 +571,26 @@ if (require.main === module) {
   // console.log("This script was imported as a module.");
 }
 
-function init(){
+function init() {
 
   const fileName = process.argv[2];
 
-  if ( !fileName ){
+  if (!fileName) {
     warn("No filename.")
     process.exit();
   }
 
   try {
-  
+
     console.log(`Processing ${fileName}`);
-    
+
     const file = fs.readFileSync(fileName, "utf-8");
-    fs.writeFileSync( fileName, parseYariDynamicContent(file, fileName), "utf8" );
-  
-  } catch(e){
-  
+    fs.writeFileSync(fileName, parseYariDynamicContent(file, fileName), "utf8");
+
+  } catch (e) {
+
     warn(e.message);
-  
+
   }
 
 }
