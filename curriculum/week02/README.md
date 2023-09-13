@@ -123,12 +123,12 @@ _(Updated: 25/08/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/HTML_Basics/README.md). 
+  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/README.md). 
   Now, it's time to dive deeper into HTML. 
 
   - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/README.md)
 
-  - [Read: **HTML text fundamentals**](resources/HTML_text_fundamentals/README.md)
+  - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/README.md)
 
   ### Summary
 

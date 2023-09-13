@@ -359,6 +359,57 @@ function parseEmbedGHLiveSample( textContent ){
   return textContent;
 }
 
+function parseEmbedLiveSample( textContent ){
+
+  const optCommaSpace = `(?:,\\s)`;
+  const optQuotes     = `(['"])?`;
+  const rxFirstGroup  = `\\{\\{\\s*EmbedLiveSample\\((['"])(?<first>.*)\\1`;
+  const rxSecondGroup = `(?:${optCommaSpace}(?<second>\\d+))?`;
+  const rxThirdGroup  = `(?:${optCommaSpace}(?<third>\\d+))?`;
+  const rxFourthGroup = `(?:${optCommaSpace}${optQuotes}(?<fourth>[^'"]+)\\5)?`;
+  const rxFifthGroup  = `(?:${optCommaSpace}${optQuotes}(?<fifth>[^'"]+)\\7)?`
+  const rx = new RegExp(
+    rxFirstGroup 
+    + rxSecondGroup 
+    + rxThirdGroup  
+    + rxFourthGroup 
+    + rxFifthGroup  
+    // + `(?:\s+)?\\)\}\}` // TODO
+    , "gm"
+  );
+  
+  const matches = textContent.matchAll(rx);
+
+  if ( matches ){
+
+    console.log();
+
+    for ( const match of matches ){
+
+      info( `Found EmbedLiveSample: ${match[0]}` );
+
+      const { first, second, third, fourth, fifth } = match.groups;
+
+      if ( first ){
+        // console.log({ first });
+      }
+      if ( second ){
+        // console.log({ second });
+      }
+      if ( third ){
+        // console.log({ third });
+      }
+      if ( fourth ){
+        // console.log({ fourth });
+      }
+      if ( fifth ){
+        // console.log({ fifth });
+      }
+    }
+  }
+  return textContent;
+}
+
 // 2) OUR VARIABLES: ===========================================================
 
 // 3) ACTION!!! ================================================================
@@ -382,6 +433,7 @@ function parseYariDynamicContent( textContent, fileName ){
   updatedContents = parseHTTPHeader(updatedContents);
   updatedContents = parseEmbedYouTube(updatedContents);
   updatedContents = parseEmbedGHLiveSample(updatedContents);
+  updatedContents = parseEmbedLiveSample(updatedContents);
 
   return updatedContents;
 
@@ -424,6 +476,7 @@ module.exports = {
   parseYariDynamicContent,
   parseMDNLinks,
   parseHTTPStatus,
+  parseEmbedLiveSample,
   parseEmbedGHLiveSample,
   parseHTTPHeader,
   parseImages,
