@@ -347,10 +347,11 @@ function parseEmbedLiveSample( textContent ){
           </a>
         </p>`.split("\n").map( s => s.trim() ).join("\n");
 
-        textContent = textContent.replace(
-          match[0], 
-          iframe + "\n" + externalLink 
-        );
+        // textContent = textContent.replace(
+        //   match[0], 
+        //   iframe + "\n" + externalLink 
+        // );
+        console.log({ match });
 
       }
     }
