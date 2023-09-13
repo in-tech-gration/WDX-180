@@ -452,20 +452,20 @@ function parseYariDynamicContent( textContent, fileName ){
   markdownTokens.forEach((t,idx) =>{
     // console.log( t.type, t.lang );
     if ( t.raw.indexOf("EmbedLiveSample") > -1 ){
-      console.log();
+      // console.log();
       const m = t.raw.match( getEmbedLiveSampleRegex() );
       // console.log( m[0], m.groups, idx );
-      console.log({ header_block_id: m.groups.header_block_id });
-      console.log({ iframe_width: m.groups.iframe_width });
-      console.log( m.groups.iframe_height );
-      console.log( m.groups.screenshot_url );
-      console.log( m.groups.slug );
-      console.log( markdownTokens[idx-1].type, markdownTokens[idx-1].lang );
-      console.log( markdownTokens[idx-2].type, markdownTokens[idx-2].lang );
-      console.log( markdownTokens[idx-3].type, markdownTokens[idx-3].lang );
-      console.log( markdownTokens[idx-4].type, markdownTokens[idx-4].lang );
-      console.log( markdownTokens[idx-5].type, markdownTokens[idx-5].lang );
-      console.log( markdownTokens[idx-6].type, markdownTokens[idx-6].lang );
+      // console.log({ header_block_id: m.groups.header_block_id });
+      // console.log({ iframe_width: m.groups.iframe_width });
+      // console.log( m.groups.iframe_height );
+      // console.log( m.groups.screenshot_url );
+      // console.log( m.groups.slug );
+      // console.log( markdownTokens[idx-1].type, markdownTokens[idx-1].lang );
+      // console.log( markdownTokens[idx-2].type, markdownTokens[idx-2].lang );
+      // console.log( markdownTokens[idx-3].type, markdownTokens[idx-3].lang );
+      // console.log( markdownTokens[idx-4].type, markdownTokens[idx-4].lang );
+      // console.log( markdownTokens[idx-5].type, markdownTokens[idx-5].lang );
+      // console.log( markdownTokens[idx-6].type, markdownTokens[idx-6].lang );
     }
   })
   // console.log({ markdownTokens });
