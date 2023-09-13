@@ -4,7 +4,7 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 12/09/2023)_
+_(Updated: 13/09/2023)_
 
 ## Week 3 - Day 1 | More Git
 
@@ -166,6 +166,9 @@ _(Updated: 12/09/2023)_
   - [Read: **CSS values and units**](resources/css_building_blocks/values_and_units/README.md)
     - Level: Beginner
 
+  - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/README.md)
+    - Level: Beginner
+
   ### Summary
 
   We've covered quite a lot here. Not only do we have a basic understanding of the infamous box model, but we are able to put different backgrounds and borders to it! Don't miss out on proving your knowledge on both of the exercises below!
@@ -177,6 +180,8 @@ _(Updated: 12/09/2023)_
   - [MDN's Assessment: **Test your skills: Overflow**](exercises/test_your_skills_overflow/README.md)
 
   - [MDN's Assessment: **Test your skills: Values and units**](exercises/test_your_skills_values_and_units/README.md)
+
+  - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/README.md)
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -192,6 +197,8 @@ _(Updated: 12/09/2023)_
     - [Exercise: Test yours skills: Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks) [(Permalink)](https://github.com/mdn/content/blob/d45f6c3733728f0eefdb7fd4b9a84c4858b35fd1/files/en-us/learn/css/building_blocks/overflow_tasks/index.md)
     - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_and_units/index.md)
     - [Exercise: Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md)
+    - [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_items_in_css/index.md)
+    - [Test your skills: Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_tasks/index.md)
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
