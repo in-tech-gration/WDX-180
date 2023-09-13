@@ -80,6 +80,11 @@ test("Replacing {{htmlelement}} with links", ()=>{
   equal(parseElementTerm(input4), output4);
   equal(parseElementTerm(input5), output5);
 
+  const input6  = `lorem ipsum {{HTMLElement('i')}} lorem ipsum`
+  const output6 = `lorem ipsum [\`<i>\`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i) lorem ipsum`
+
+  equal( parseElementTerm(input6), output6 );
+
 })
 
 test("Replacing {{cssxref}} with links", ()=>{
