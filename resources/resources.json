@@ -1332,11 +1332,171 @@
       "type": "MDN",
       "identifier": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML"
     },
-    "html-text-fundamentals":{
+    "html-text-fundamentals": {
       "title": "HTML text fundamentals",
       "type": "MDN",
       "identifier": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals",
       "description": "This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more."
+    },
+    "quickly-create-an-html5-boilerplate-in-vscode": {
+      "type": "YouTube",
+      "duration": 33,
+      "title": "Quickly create an HTML5 boilerplate in VSCode",
+      "date": "14/09/2023",
+      "youtube": {
+        "id": "99g_BJiiLqk",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/99g_BJiiLqk/sddefault.jpg"
+      },
+      "tags": [
+        "html",
+        "vscode",
+        "visual studio code",
+        "intechgration",
+        "wdx",
+        "wdx180",
+        "frontend",
+        "web developer",
+        "web development",
+        "programmer",
+        "code",
+        "coding",
+        "beginner",
+        "shortcut",
+        "boilerplate",
+        "html5",
+        "emmet",
+        "abbreviations",
+        "abbreviation",
+        "quick"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "vscode---wrap-selected-text-with-html-tags": {
+      "type": "YouTube",
+      "duration": 42,
+      "title": "VSCode - Wrap selected text with HTML tags",
+      "date": "14/09/2023",
+      "youtube": {
+        "id": "V-VrI-s6vXQ",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/V-VrI-s6vXQ/sddefault.jpg"
+      },
+      "tags": [
+        "vscode",
+        "visual studio code",
+        "abbreviation",
+        "emmet",
+        "shortcode",
+        "developer",
+        "web",
+        "frontend",
+        "intechgration.io",
+        "intechgration",
+        "web developer",
+        "software",
+        "coder",
+        "beginner",
+        "programmer",
+        "programming",
+        "learning",
+        "newbie",
+        "quick",
+        "html",
+        "html5",
+        "wdx180"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "creating-unordered-html-lists-in-vscode": {
+      "type": "YouTube",
+      "duration": 119,
+      "title": "Creating unordered HTML lists in VSCode",
+      "date": "14/09/2023",
+      "youtube": {
+        "id": "5iva3_W0q2Y",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/5iva3_W0q2Y/sddefault.jpg"
+      },
+      "tags": [
+        "html",
+        "html5",
+        "beginner",
+        "intechgration",
+        "web development",
+        "web developer",
+        "software",
+        "frontend",
+        "wdx",
+        "wdx180",
+        "intechgration.io",
+        "newbie",
+        "introduction",
+        "vscode",
+        "visual studio code",
+        "tutorial",
+        "quick",
+        "ul",
+        "unordered lists",
+        "li",
+        "software developer",
+        "programmer",
+        "code",
+        "coding",
+        "learning"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "mdn-exercise-marking-up-our-recipe-page-solution-walkthrough": {
+      "type": "YouTube",
+      "duration": 268,
+      "title": "MDN Exercise: Marking up our recipe page (solution walkthrough)",
+      "date": "14/09/2023",
+      "youtube": {
+        "id": "KOJzA1WJvJ8",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/KOJzA1WJvJ8/sddefault.jpg"
+      },
+      "tags": [
+        "html",
+        "html5",
+        "beginner",
+        "intechgration",
+        "web development",
+        "web developer",
+        "software",
+        "frontend",
+        "wdx",
+        "wdx180",
+        "intechgration.io",
+        "newbie",
+        "introduction",
+        "vscode",
+        "visual studio code",
+        "tutorial",
+        "software developer",
+        "programmer",
+        "code",
+        "coding",
+        "learning",
+        "recipe",
+        "mdn",
+        "mozilla",
+        "exercise"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
