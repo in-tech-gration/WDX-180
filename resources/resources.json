@@ -1331,6 +1331,12 @@
       "title": "What's in the head? Metadata in HTML",
       "type": "MDN",
       "identifier": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML"
+    },
+    "html-text-fundamentals":{
+      "title": "HTML text fundamentals",
+      "type": "MDN",
+      "identifier": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals",
+      "description": "This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more."
     }
   },
   "creators": {}

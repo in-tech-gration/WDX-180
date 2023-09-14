@@ -6,6 +6,8 @@ page-type: learn-module-chapter
 
 # HTML text fundamentals
 
+_(Updated: 15/09/2023)_
+
 One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
 
 **Prerequisites:**
@@ -142,7 +144,7 @@ Therefore, we need to give our content structural markup.
 
 ### Active learning: Giving our content structure
 
-Let's jump straight in with an example. Create a basic HTML file (named `short-story.html`) and add the following text inside the `<body>` tags:
+Let's jump straight in with an example. Create a basic HTML file (named `user/week02/exercises/short-story.html`) and add the following text inside the `<body>` tags:
 
 ```
 My short story I am a statistician and my name is Trish.
@@ -221,7 +223,7 @@ The last step is to wrap each list item in a [`<li>`](https://developer.mozilla.
 
 #### Active learning: Marking up an unordered list
 
-Create an HTML file (`shopping-list.html`) and create an unordered list containing the following items:
+Create an HTML file (`user/week02/exercises/shopping-list.html`) and create an unordered list containing the following items:
 
 ```
 milk eggs bread hummus
@@ -260,7 +262,7 @@ The markup structure is the same as for unordered lists, except that you have to
 
 #### Active learning: Marking up an ordered list
 
-Try turning the text content below into an ordered list in a file named `directions.html`.
+Try turning the text content below into an ordered list in a file named `user/week02/exercises/directions.html`.
 
 ```
 Drive to the end of the road
@@ -277,7 +279,7 @@ The school is on your right, 300 meters up the road
 
 ### Active learning: Marking up our recipe page
 
-Create a file named `recipe-page.html` and turn the following text content into an HTML structure that looks like this:
+Create a file named `user/week02/exercises/recipe-page.html` and turn the following text content into an HTML structure that looks like this:
 
 ![](./assets/recipe.output.jpg)
 
@@ -330,7 +332,7 @@ Since the last two bullets are very closely related to the one before them (they
 </ol>
 ```
 
-Try going back to the previous active learning example and updating the second list like this.
+Try going back to the previous active learning example and updating the second list like this. Save the file in `user/week02/exercises/recipe-page2.html`.
 
 ## Emphasis and importance
 
@@ -346,7 +348,7 @@ When we want to add emphasis in spoken language, we _stress_ certain words, subt
 
 The first sentence sounds genuinely relieved that the person wasn't late. In contrast, the second one, with both the words "glad" and "late" in italics, sounds sarcastic or passive-aggressive, expressing annoyance that the person arrived a bit late.
 
-In HTML we use the [`<em>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) (emphasis) element to mark up such instances. As well as making the document more interesting to read, these are recognized by screen readers, which can be configured to speak them in a different tone of voice. Browsers style this as italic by default, but you shouldn't use this tag purely to get italic styling. To do that, you'd use a [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) element and some CSS, or perhaps an [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i) element (see below).
+In HTML we use the [`<em>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) (emphasis) element to mark up such instances. As well as making the document more interesting to read, **these are recognized by screen readers**, which can be configured to **speak them in a different tone of voice**. Browsers style this as italic by default, but you shouldn't use this tag purely to get italic styling. To do that, you'd use a [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) element and some CSS, or perhaps an [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i) element (see below).
 
 ```html
 <p>I am <em>glad</em> you weren't <em>late</em>.</p>
@@ -378,11 +380,6 @@ You can nest strong and emphasis inside one another if desired:
  {{EmbedLiveSample('Strong importance')}} 
  -->
 
-
-### Active learning: Let's be important
-
-In this active learning section, we've provided an editable example. Inside it, we'd like you to try adding emphasis and strong importance to the words you think need them, just to have some practice.
-
 <!-- 
  {{ EmbedLiveSample('Active_learning_Lets_be_important', 700, 520, "", "") }} 
  -->
@@ -396,13 +393,13 @@ HTML5 redefined `<b>`, `<i>`, and `<u>` with new, somewhat confusing, semantic r
 
 Here's the best rule you can remember: It's only appropriate to use `<b>`, `<i>`, or `<u>` to convey a meaning traditionally conveyed with bold, italics, or underline when there isn't a more suitable element; and there usually is. Consider whether `<strong>`, `<em>`, `<mark>`, or `<span>` might be more appropriate.
 
-Always keep an accessibility mindset. The concept of italics isn't very helpful to people using screen readers, or to people using a writing system other than the Latin alphabet.
+**Always keep an accessibility mindset.** The concept of italics isn't very helpful to people using screen readers, or to people using a writing system other than the Latin alphabet.
 
 - [`<i>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i) is used to convey a meaning traditionally conveyed by italic: foreign words, taxonomic designation, technical terms, a thought…
 - [`<b>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b) is used to convey a meaning traditionally conveyed by bold: keywords, product names, lead sentence…
 - [`<u>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u) is used to convey a meaning traditionally conveyed by underline: proper name, misspelling…
 
-> **Note:** People strongly associate underlining with hyperlinks. Therefore, on the web, it's best to only underline links. Use the `<u>` element when it's semantically appropriate, but consider using CSS to change the default underline to something more appropriate on the web. The example below illustrates how it can be done.
+> **Note:** People strongly associate underlining with hyperlinks. Therefore, on the web, **it's best to only underline links**. Use the `<u>` element when it's semantically appropriate, but consider using CSS to change the default underline to something more appropriate on the web. The example below illustrates how it can be done.
 
 ```html
 <!-- scientific names -->
@@ -437,11 +434,208 @@ Always keep an accessibility mindset. The concept of italics isn't very helpful 
 
 ## Test your skills!
 
-You've reached the end of this article, but can you remember the most important information? You can find some further tests to verify that you've retained this information before you move on — see [Test your skills: HTML text basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_HTML_text_basics).
+The aim of this skill test is to assess whether you understand how to mark up text in HTML to give it structure and meaning.
+
+## Task 1
+
+In this task, we want you to mark up the provided HTML using semantic heading and paragraph elements.
+
+Save the provided HTML in `user/week02/exercises/basic-text1.html` and try to make it look like the screenshot below:
+
+HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic HTML text: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+      h2 {
+        font-size: 1.6rem;
+        margin: 0;
+      }
+      h1, h2 {
+        color: purple;
+      }
+      p {
+        color: gray;
+        margin: 0.5em 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+  Basic HTML Animals
+
+  This is the first paragraph in our page. It introduces our animals.
+
+  The Llama
+
+  Our Llama is a big fan of list items. When she spies a patch of them on a web page, she will eat them like sweets, licking her lips as she goes.
+
+  The Anaconda
+
+  The crafty anaconda likes to slither around the page, travelling rapidly by way of anchors to sneak up on his prey.
+
+  </body>
+</html>
+```
+
+The finished example should look like this:
+
+![](./assets/task1.jpg)
+
+## Task 2
+
+In this task, we want you to turn the first un-marked up list into an unordered list, and the second one into an ordered list. Save the code in a file named `user/week02/exercises/basic-text2.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic HTML text: Task 2</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+        margin: 0;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      ol {
+        border: 2px solid purple;
+      }
+
+      ul {
+        border: 2px solid orange;
+      }
+
+      ol, ul {
+        padding: 5px 20px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Looking at lists</h1>
+
+    <p>Turn the following list of my favorite vegetables into an unordered list.</p>
+
+      Cucumber
+      Broccoli
+      Asparagus
+      Pepper
+
+    <p>Turn the following directions into an ordered list.</p>
+
+      First knock on the door
+      When prompted, say the magic word
+      Wait for at least 5 seconds
+      Turn the handle and push
+
+  </body>
+</html>
+```
+
+The finished example should look like this:
+
+![](./assets/task2.jpg)
+
+## Task 3
+
+In this task, you are provided with a paragraph, and your aim is to use some inline elements to mark up a couple of appropriate words with strong importance, and a couple with emphasis. Save the file in `user/week02/exercises/basic-text2.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Basic HTML text: Task 3</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+        margin: 0;
+      }
+
+      h1, h2, strong {
+        color: purple;
+      }
+
+      p, em {
+        color: gray;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+  <h1>Emphasis and importance</h1>
+
+  <p>There are two things I care about — music and friends. Someday I might be able to get my friends interested in each other, and my music!</p>
+
+  </body>
+</html>
+```
+
+The finished example should look like this:
+
+![](./assets/task3.jpg)
 
 ## Summary
 
-That's it for now! This article should have given you a good idea of how to start marking up text in HTML and introduced you to some of the most important elements in this area. There are a lot more semantic elements to cover in this area, and we'll look at a lot more in our [Advanced text formatting](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting) article later on in the course. In the next article, we'll be looking in detail at how to [create hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks), possibly the most important element on the web.
+That's it for now! This article should have given you a good idea of how to start marking up text in HTML and introduced you to some of the most important elements in this area. There are a lot more semantic elements to cover in this area, and we'll look at a lot more in our upcoming Modules. 
 
 ### Sources and Attributions
 
@@ -449,3 +643,4 @@ That's it for now! This article should have given you a good idea of how to star
 
 - **MDN:**
   - [HTML text fundamentals](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#active_learning_lets_be_important) [(Permalink) - Please fill in]()
+  - [Test your skills: HTML text basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_HTML_text_basics) [(Permalink)](https://github.com/mdn/content/blob/fe36fe6e46bc87566759c0f167f315b3779d2ed6/files/en-us/learn/html/introduction_to_html/test_your_skills_colon__html_text_basics/index.md)

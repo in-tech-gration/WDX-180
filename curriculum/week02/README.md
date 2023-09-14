@@ -127,8 +127,10 @@ _(Updated: 25/08/2023)_
   Now, it's time to dive deeper into HTML. 
 
   - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/README.md)
+    - Description: The `<head>` of an HTML document is the part that is not displayed in the web browser when the page is loaded. In this article, you'll learn all about the information it contains.
 
   - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/README.md)
+    - Description: This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
 
   ### Summary
 
