@@ -22,7 +22,7 @@ Most structured text consists of headings and paragraphs, whether you are readin
 
 ![An example of a newspaper front cover, showing use of a top level heading, subheadings and paragraphs.](assets/newspaper_small.jpg)
 
-Structured content makes the reading experience easier and more enjoyable.
+**Structured content makes the reading experience easier and more enjoyable.**
 
 In HTML, each paragraph has to be wrapped in a [`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p) element, like so:
 
@@ -67,13 +67,62 @@ For example, in this story, the `<h1>` element represents the title of the story
 
 It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:
 
-- Preferably, you should use a single `<h1>` per page—this is the top level heading, and all others sit below this in the hierarchy.
-- Make sure you use the headings in the correct order in the hierarchy. Don't use `<h3>` elements to represent subheadings, followed by `<h2>` elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.
-- Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.
+- Preferably, you should **use a single `<h1>` per page** —this is the top level heading, and all others sit below this in the hierarchy.
+- Make sure you **use the headings in the correct order** in the hierarchy. Don't use `<h3>` elements to represent subheadings, followed by `<h2>` elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.
+- Of the six heading levels available, you should **aim to use no more than three per page**, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.
 
 ### Why do we need structure?
 
-To answer this question, let's take a look at [text-start.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/html-text-formatting/text-start.html)—the starting point of our running example for this article (a nice hummus recipe). You should save a copy of this file on your local machine, as you'll need it for the exercises later on. This document's body currently contains multiple pieces of content. They aren't marked up in any way, but they are separated with line breaks (Enter/Return pressed to go onto the next line).
+To answer this question, let's take a look at the following HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quick hummus recipe</title>
+  </head>
+  <body>
+    Quick hummus recipe
+
+    This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
+
+    Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.
+
+    Ingredients
+
+    1 can (400g) of chick peas (garbanzo beans)
+    175g of tahini
+    6 sundried tomatoes
+    Half a red pepper
+    A pinch of cayenne pepper
+    1 clove of garlic
+    A dash of olive oil
+
+    Instructions
+
+    Remove the skin from the garlic, and chop coarsely
+    Remove all the seeds and stalk from the pepper, and chop coarsely
+    Add all the ingredients into a food processor
+    Process all the ingredients into a paste.
+    If you want a coarse "chunky" hummus, process it for a short time
+    If you want a smooth hummus, process it for a longer time
+
+    For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.
+
+    Storage
+
+    Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.
+
+    Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
+
+
+  </body>
+</html>
+```
+
+You should save a copy of this file (`text-start.html`) on your local machine, as you'll need it for the exercises later on. This document's body currently contains multiple pieces of content. They aren't marked up in any way, but they are separated with line breaks (Enter/Return pressed to go onto the next line).
 
 However, when you open the document in your browser, you'll see that the text appears as a big chunk!
 
@@ -81,18 +130,31 @@ However, when you open the document in your browser, you'll see that the text ap
 
 This is because there are no elements to give the content structure, so the browser does not know what is a heading and what is a paragraph. Furthermore:
 
-- Users looking at a web page tend to scan quickly to find relevant content, often just reading the headings, to begin with. (We usually [spend a very short time on a web page](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/).) If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.
-- Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of [SEO](https://developer.mozilla.org/en-US/docs/Glossary/SEO) (Search Engine Optimization).
-- Severely visually impaired people often don't read web pages; they listen to them instead. This is done with software called a [screen reader](https://en.wikipedia.org/wiki/Screen_reader). This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to find the information they need quickly. If headings are not available, they will be forced to listen to the whole document read out loud.
-- To style content with [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS), or make it do interesting things with [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.
+- Users looking at a web page tend to **scan quickly to find relevant content**, often just reading the headings, to begin with. (We usually [spend a very short time on a web page](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/).) If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.
+
+- **Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings.** Without headings, your page will perform poorly in terms of [SEO](https://developer.mozilla.org/en-US/docs/Glossary/SEO) (Search Engine Optimization).
+
+- **Severely visually impaired people** often don't read web pages; they listen to them instead. This is done with software called a [screen reader](https://en.wikipedia.org/wiki/Screen_reader). This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to **find the information they need quickly**. If headings are not available, they will be forced to listen to the whole document read out loud.
+
+- To **style content** with [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS), or make it **do interesting things with [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)**, you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.
 
 Therefore, we need to give our content structural markup.
 
 ### Active learning: Giving our content structure
 
-Let's jump straight in with a live example. In the example below, add elements to the raw text in the _Input_ field so that it appears as a heading and two paragraphs in the _Output_ field.
+Let's jump straight in with an example. Create a basic HTML file (named `short-story.html`) and add the following text inside the `<body>` tags:
 
-If you make a mistake, you can always reset it using the _Reset_ button. If you get stuck, press the _Show solution_ button to see the answer.
+```
+My short story I am a statistician and my name is Trish.
+
+My legs are made of cardboard and I am married to a fish.
+```
+
+> 💡 You can always use the `!` or `html:5` shortcuts in Visual Studio Code to [quickly create an HTML5 boilerplate](https://www.youtube.com/watch?v=99g_BJiiLqk).
+
+Now, go ahead and enclose the title (`My short story`) in a Heading 1 element and separate the two paragraphs using `<p>` tags.
+
+> ▶️ Here's a [**video walkthrough**](https://www.youtube.com/watch?v=V-VrI-s6vXQ) in case you need some help. 🙂
 
 <!-- 
  {{ EmbedLiveSample('Active_learning_Giving_our_content_structure', 700, 400, "", "") }} 
@@ -108,7 +170,7 @@ In a similar way, we need to make sure we are using the correct elements, giving
 <h1>This is a top level heading</h1>
 ```
 
-By default, the browser will give it a large font size to make it look like a heading (although you could style it to look like anything you wanted using CSS). More importantly, its semantic value will be used in multiple ways, for example by search engines and screen readers (as mentioned above).
+By default, the browser will give it a large font size to make it look like a heading (although **you could style it to look like anything you wanted** using CSS). More importantly, **its semantic value will be used in multiple ways, for example by search engines and screen readers** (as mentioned above).
 
 On the other hand, you could make any element _look_ like a top level heading. Consider the following:
 
@@ -118,7 +180,7 @@ On the other hand, you could make any element _look_ like a top level heading. C
 </span>
 ```
 
-This is a [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) element. It has no semantics. You use it to wrap content when you want to apply CSS to it (or do something to it with JavaScript) without giving it any extra meaning. (You'll find out more about these later on in the course.) We've applied some CSS to it to make it look like a top level heading, but since it has no semantic value, it will not get any of the extra benefits described above. It is a good idea to use the relevant HTML element for the job.
+This is a [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) element. It has no semantics. You use it to wrap content when you want to apply CSS to it (or do something to it with JavaScript) without giving it any extra meaning. (You'll find out more about these later on in the course.) We've applied some CSS to it to make it look like a top level heading, but since it has no semantic value, **it will not get any of the extra benefits described above**. It is a good idea to **use the relevant HTML element for the job**.
 
 ## Lists
 
@@ -159,7 +221,13 @@ The last step is to wrap each list item in a [`<li>`](https://developer.mozilla.
 
 #### Active learning: Marking up an unordered list
 
-Try editing the live sample below to create your very own HTML unordered list.
+Create an HTML file (`shopping-list.html`) and create an unordered list containing the following items:
+
+```
+milk eggs bread hummus
+```
+
+> ▶️ Here's a [**video walkthrough**](https://www.youtube.com/watch?v=5iva3_W0q2Y) that demonstrates 3 ways of creating unordered lists in VSCode. 🙂
 
 <!-- 
  {{ EmbedLiveSample('Active_learning_Marking_up_an_unordered_list', 700, 400, "", "") }} 
@@ -192,7 +260,15 @@ The markup structure is the same as for unordered lists, except that you have to
 
 #### Active learning: Marking up an ordered list
 
-Try editing the live sample below to create your very own HTML ordered list.
+Try turning the text content below into an ordered list in a file named `directions.html`.
+
+```
+Drive to the end of the road
+Turn right
+Go straight across the first two roundabouts
+Turn left at the third roundabout
+The school is on your right, 300 meters up the road
+```
 
 <!-- 
  {{ EmbedLiveSample('Active_learning_Marking_up_an_ordered_list', 700, 500, "", "") }} 
@@ -201,14 +277,24 @@ Try editing the live sample below to create your very own HTML ordered list.
 
 ### Active learning: Marking up our recipe page
 
-So at this point in the article, you have all the information you need to mark up our recipe page example. You can choose to either save a local copy of our [text-start.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/html-text-formatting/text-start.html) starting file and do the work there or do it in the editable example below. Doing it locally will probably be better, as then you'll get to save the work you are doing, whereas if you fill it in to the editable example, it will be lost the next time you open the page. Both have pros and cons.
+Create a file named `recipe-page.html` and turn the following text content into an HTML structure that looks like this:
+
+![](./assets/recipe.output.jpg)
+
+Here is the text content:
+
+```
+Quick hummus recipe This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years. Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads. Ingredients 1 can (400g) of chick peas (garbanzo beans) 175g of tahini 6 sundried tomatoes Half a red pepper A pinch of cayenne pepper 1 clove of garlic A dash of olive oil Instructions Remove the skin from the garlic, and chop coarsely Remove all the seeds and stalk from the pepper, and chop coarsely Add all the ingredients into a food processor Process all the ingredients into a paste If you want a coarse "chunky" hummus, process it for a short time If you want a smooth hummus, process it for a longer time For a different flavor, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you. Storage Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it. Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
+```
+
+> ▶️ Here's a [**video walkthrough**](https://www.youtube.com/watch?v=KOJzA1WJvJ8) of solving the exercise, in case you need help. 
+
+> 💡 If you have watched a couple of these video walkthroughs, you've probably realized that VSCode provides **a lot of** shortcuts that make our web developer life easier. You can download a PDF containing the keyboard shortcuts for Visual Studio Code [**for Windows**](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf), [**for Mac**](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) or for [**for Linux**](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf).
+
 
 <!-- 
  {{ EmbedLiveSample('Active_learning_Marking_up_our_recipe_page', 900, 620, "", "") }} 
  -->
-
-
-If you get stuck, you can always press the _Show solution_ button, or check out our [text-complete.html](https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/html-text-formatting/text-complete.html) example on our GitHub repo.
 
 ### Nesting lists
 
