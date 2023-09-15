@@ -187,4 +187,12 @@
 
 ## PLATFORM (npm run learn)  
 
+## HARDWARE / IT
+
+  ![](./assets/IT.Department.jpg)
+
+  - We are looking for Network/System administrators and people familiar with configuring multiple Windows and *nix machines. We want to manage and automate the process of setting up multiple laptops for our students. Ideally, the person(s) involved should be a resident of Athens, nevertheless advice from remote experts is also welcome!  
+
+## SOCIAL WORKERS
+
 ### Read, parse and display markdown content from `curriculum` folder in Next.js
