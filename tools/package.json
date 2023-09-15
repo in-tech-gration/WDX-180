@@ -15,6 +15,7 @@
   "devDependencies": {
     "chalk": "^4.1.2",
     "clipboardy": "^2.3.0",
+    "csv": "^6.3.3",
     "dotenv": "^16.3.1",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",

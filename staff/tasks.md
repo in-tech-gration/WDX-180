@@ -220,6 +220,7 @@
 
   Research: the following libraries are know to provide similar functionality and therefore should be the first step for researching tools that will help the development of this feature.
 
+  - [https://github.com/adaltas/node-csv](https://github.com/adaltas/node-csv)
   - **SheetJS:** [https://github.com/SheetJS/sheetjs](https://github.com/SheetJS/sheetjs) ([Docs](https://docs.sheetjs.com/docs/demos/frontend/react/))
   - [https://github.com/iddan/react-spreadsheet](https://github.com/iddan/react-spreadsheet)
   - [https://handsontable.com/docs/javascript-data-grid/installation/](https://handsontable.com/docs/javascript-data-grid/installation/)
