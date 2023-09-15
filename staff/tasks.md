@@ -187,6 +187,8 @@
 
 ## PLATFORM (npm run learn)  
 
+  - Read, parse and display markdown content from `curriculum` folder in Next.js
+
 ## HARDWARE / IT
 
   ![](./assets/IT.Department.jpg)
@@ -195,4 +197,3 @@
 
 ## SOCIAL WORKERS
 
-### Read, parse and display markdown content from `curriculum` folder in Next.js
