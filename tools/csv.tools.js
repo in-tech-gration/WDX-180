@@ -6,6 +6,7 @@ const fs                 = require("node:fs");
 const { parseArgs }      = require("node:util");
 const { 
   warn,
+  checkmark,
   ok,
   info,
   xmark 
@@ -45,6 +46,7 @@ function lintCSVFile( filePath ){
   try {
 
     parse(fileContent);
+    ok(`${checkmark} CSV Linting looks good!`)
 
   } catch(e){
 
