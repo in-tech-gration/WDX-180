@@ -2,6 +2,15 @@
 
 If you intend to create, update or maintain a tool, please reach out to the project manager first.
 
+**IMPORTANT:** if you intend to contribute and collaborate on the development of the platform 
+and the curriculum, we highly recommend that you have the following 2 VSCode Extensions installed
+on your system:
+
+- [**VSCode WDX Extension Pack**](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack)
+- [**WDX Development Pack**](https://github.com/in-tech-gration/VSCode-WDX-Development-Extension)
+  - You will need to download the `.vsix` file and install it manually via `code --install-extension vscode-wdx-development-extension-0.1.0.vsix` (read more about command line extension management [here](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management
+))
+
 ## GENERAL UTILITIES
 
   ### Create a generic curriculum linting tool
