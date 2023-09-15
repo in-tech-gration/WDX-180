@@ -1497,6 +1497,89 @@
       "language": [
         "en"
       ]
+    },
+    "git-github-tutorial-for-beginners-8---branches": {
+      "type": "YouTube",
+      "duration": 607,
+      "title": "Git & GitHub Tutorial for Beginners #8 - Branches",
+      "date": "14/06/2017",
+      "youtube": {
+        "id": "QV0kVNvkMxc",
+        "channel_id": "UCW5YeuERMmlnqo4oq8vwUpg",
+        "channel_title": "Net Ninja",
+        "thumbnail_url": "https://i.ytimg.com/vi/QV0kVNvkMxc/sddefault.jpg"
+      },
+      "tags": [
+        "git",
+        "github",
+        "git tutorial",
+        "git tutorial for beginners",
+        "github tutorial",
+        "github tutorial for beginners",
+        "what is git",
+        "what is github",
+        "git vs github",
+        "how to use git",
+        "git tutotirals",
+        "github tutorials",
+        "tutorial",
+        "git branches",
+        "git branch",
+        "git branching",
+        "git master branch",
+        "git new branc",
+        "git branches tutorial",
+        "git branching tutorial",
+        "branching in git",
+        "why use git branches",
+        "git checkout",
+        "git checkout branch",
+        "checkout branch",
+        "checkout -b"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "github-pull-request-branching-merging-team-workflow": {
+      "type": "YouTube",
+      "duration": 681,
+      "title": "GITHUB PULL REQUEST, Branching, Merging & Team Workflow",
+      "date": "20/03/2014",
+      "youtube": {
+        "id": "oFYyTZwMyAg",
+        "channel_id": "UCVTlvUkGslCV_h-nSAId8Sw",
+        "channel_title": "LearnCode.academy",
+        "thumbnail_url": "https://i.ytimg.com/vi/oFYyTZwMyAg/sddefault.jpg"
+      },
+      "tags": [
+        "github pull request",
+        "github pull requests",
+        "GitHub (Website)",
+        "Git (Revision Control Software)",
+        "pull request",
+        "pull",
+        "request",
+        "merging",
+        "branching",
+        "branch",
+        "merge",
+        "merge conflict",
+        "merge conflicts",
+        "github branching",
+        "github merging",
+        "github tutorial",
+        "tutorial",
+        "lesson",
+        "github workflow",
+        "workflow",
+        "team",
+        "team workflow",
+        "github team workflow"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

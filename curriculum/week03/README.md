@@ -4,15 +4,87 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 13/09/2023)_
+_(Updated: 15/09/2023)_
 
 ## Week 3 - Day 1 | More Git
 
   ### Schedule
+
+  - [Study](#study-plan)
+  - [Exercises](#exercises)
+  - [Extra Resources](#extra-resources)
+
   ### Study Plan
+
+  About a week ago, you learned about the infamous version control system (VCS) called Git. One of the most important tools in your arsenal! Today, we are gonna remember what we've learned the past week and later on we're going to focus on a much more realistic and everyday scenario that you're gonna encounter as a web developer.
+
+  First things first though. What have learned a week a ago??
+
+  - What is Git
+  - How to initialize a git repository on our local machine
+  - How to commit new changes
+  - How to create new branches
+  - How to push our version to GitHub
+
+  These are some of the basic concepts covered so far. If you feel like you are uncertain about some of the things above, don't worry! It takes time to learn and master git! You can always revisit old lectures and your personal notes! Confident or not, below is a video where in about ten minutes gives a solid explanation on branches and a basic local workflow of creating/deleting branches.  
+  
+  - [Watch: **Git & GitHub Tutorial for Beginners #8 - Branches**](https://www.youtube.com/watch?v=QV0kVNvkMxc)
+    - Duration: 10min
+    - Level: Beginner
+    - Captions: Yes
+  
+  ---
+
+  **Practice time!**
+
+  Now that we freshened up our memory, let's take a few minutes and try to create a step-by-step list of the commands executed on our local repo, when we want to work on a new feature on a project. You're going to create a new Markdown file, named `new-feature-list.md`, containing your list! The structure of your file should be as below:
+
+  ```markdown
+  # Step-by-step list for a new feature
+
+  - command1
+  - action1
+  - command2
+  - action2
+  ```
+
+  > Note: It's a good practice to check the **status** of our repository after any alteration!!
+
+  After you're finished with your list, do not forget to push it your `user` folder in your forked WDX repository!
+  
+  ---
+
+  After you've finished the task above, make sure to **take a short break**, and get ready to dig deeper with the following content!
+
+  - [Read: **Pull Requests and Merges**](resources/more_git/pull_requests_and_merges/README.md)
+
+  In order to make it more clear to you, below you can watch a great video that represents a real-like scenario!
+
+  - [Watch: **GITHUB PULL REQUEST, Branching, Merging & Team Workflow**](https://www.youtube.com/watch?v=oFYyTZwMyAg)
+    - Duration: 11min
+    - Level: Beginner
+    - Captions: Yes
+
   ### Summary
+
+  At the end of the day, you're gonna have a pretty good understanding of the Git VCS. However, with this tool you're gonna get better and better the more you use it and the more you make mistakes! Don't be afraid to fail! Even great mid and senior developers worldwide have serious issues with it. Git is a powerful tool, developed by a genius, who did not plan on sharing this knowledge with us newbies. 
+
   ### Exercises
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
   ### [Extra Resources]
+
+  **Understanding Git == becoming a better developer**
+
+  Keeping that in mind, below you can find some very good articles on git branches and how actually git works under the hood.
+
+  - [Read: **A look under the hood: how branches work in Git**](https://stackoverflow.blog/2021/04/05/a-look-under-the-hood-how-branches-work-in-git/)
+
+  - [Read: **Git Branching - Branches in a Nutshell**](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
+  > **Disclaimer**: These two articles are advanced for someone like you right now. You can always keep them for later and give them a read whenever you feel confident enough with Git, but we do highly recommend to give them a try nonetheless!
+
   ### Sources and Attributions
     
 ## Week 3 - Day 2 | What is CSS?
