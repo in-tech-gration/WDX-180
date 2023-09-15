@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>CSV File Validator Demo</title>
+        <style>
+            .red {
+                color: red;
+                font-size: 16px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+		<div>Semicolon delimiter (demo.csv)</div>
+        <p><input type="file" accept=".csv" id="file" /></p>
+		<div id="invalidMessages"></div>
+
+		<br/><br/>
+
+		<div>Comma delimiter (demo_comma.csv)</div>
+		<p><input type="file" accept=".csv" id="file_1" /></p>
+		<div id="invalidMessages_1"></div>
+
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
