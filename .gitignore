@@ -1,1 +1,4 @@
-node_modules
+.vscode
+.next/
+# kostasx section:
+CURRICULUM.x 
