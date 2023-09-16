@@ -670,7 +670,7 @@ _(Updated: 22/08/2023)_
   - Duration: 11min
   - Level: Beginner
   - <details>
-      <summary></summary>
+      <summary>What you'll learn</summary>
         <ul>
           <li>(00:00) Intro </li>
           <li>(0:15) Dev Environment</li>
@@ -713,7 +713,7 @@ _(Updated: 22/08/2023)_
   - Duration: 13min
   - Level: Beginner
   - <details>
-      <summary></summary>
+      <summary>What you'll learn</summary>
         <ul>
           <li>(00:00) Intro</li>
           <li>(0:15) Built-in Functions</li>
