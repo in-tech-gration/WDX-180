@@ -143,6 +143,7 @@ _(Work in progress)_
 - [**Kostas Minaidis** / Technical Curriculum Developer](https://www.linkedin.com/in/kostas-minaidis/)
 - [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
 - [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)
+- [**Maria Barkouzou** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/mariabarkouzou/)
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
 - [**Vangelis Chirmpilidis**  / Content Curator & Passionate Contributor](https://github.com/vagelisx)
 - **How about you?** 😉
