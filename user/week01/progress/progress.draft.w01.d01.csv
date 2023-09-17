@@ -1,0 +1,10 @@
+Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
+1,1,Setting up: Slack,Connect on Slack: https://intechgration.slack.com,Beginner,0-10,FALSE,Say hello to us on Slack!
+1,1,Setting up: WDX,Fork WDX repository,Beginner,0-10,FALSE,Paste forked repo URL
+1,1,Setting up: WDX,Enable GitHub Pages on forked WDX repository,Beginner,0-10,FALSE,Paste GitHub Page URL here (https://your_username.github.io/WDX-180)
+1,1,Setting up: Code editor,Install VSCode,Beginner,0-10,FALSE,Updated FALSE to TRUE in the COMPLETED column
+1,1,Setting up: Code editor,Install VSCode WDX Extension Pack,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+1,1,Setting up: Node,Install Node.js (LTS),Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+1,1,Setting up: Version Control,Install Git,Beginner,0-10,FALSE,Run git --version and paste the output of the command here
+1,1,Setting up: Productivity,Install Wikiwand Browser Extension: https://www.wikiwand.com/,Beginner,0-10,FALSE,(not required)
+1,1,Computing Basics,Complete the 'Decode the secret message' challenge,Beginner,0-10,FALSE,Paste the secret message here
