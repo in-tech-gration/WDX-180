@@ -15,6 +15,20 @@
   You can find the [Syllabus here](curriculum/README.md).
 </details>
 
+<!-- Where do I start? -->
+<details>
+  <summary><h3>Where do I start?</h3></summary>
+
+  If you are ready and feel committed enough to start the course, you must start by carefully going through the following sections and completing all the necessary tasks:
+
+  - **Setup**  
+  - **Communication**  
+  - **Hardware Requirements**  
+  - **Software**  
+  - **Accounts**  
+  - **How to Study / Productivity Tips**  
+</details>
+
 <!-- Setup -->
 <details>
   <summary><h3>Setup</h3></summary>
@@ -131,10 +145,15 @@
   - [Codesandbox](https://codesandbox.io/)
 </details>
 
-## Syllabus
+<!-- Syllabus -->
+<details>
+  <summary><h3>Syllabus</h3></summary>
 
-You can find the [Syllabus here](curriculum/README.md#syllabus).
+  You can find the [Syllabus here](curriculum/README.md#syllabus).
 
+</details>
+
+<!-- How to Study / Productivity tips -->
 <details>
   <summary><h3>How to Study / Productivity tips</h3></summary>
 
@@ -152,7 +171,6 @@ You can find the [Syllabus here](curriculum/README.md#syllabus).
       - Use the [rubber duck technique](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
     
     Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md).
-
 </details>
 
 ## Who's Involved
