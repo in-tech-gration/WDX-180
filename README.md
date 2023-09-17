@@ -12,20 +12,23 @@ The WDX 180° curriculum, along with all related material (exercises, code, etc.
 
 You can find the [Syllabus here](curriculum/README.md).
 
-### Setup
+<details>
+  <summary><h3>Setup</h3></summary>
 
-The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository) this repository under your GitHub account.
+  The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository) this repository under your GitHub account.
 
-After you've successfully forked the repo, you will need to enable [GitHub Pages](https://pages.github.com/) in order to turn the repo into a website also.
+  After you've successfully forked the repo, you will need to enable [GitHub Pages](https://pages.github.com/) in order to turn the repo into a website also.
 
-Here are the steps:
+  Here are the steps:
 
-1. Go to **Settings**
-2. Click on the **Pages** button
-3. Under **Branch**, select **main** and click **Save**
-4. Wait a few minutes, check that your repo is online and paste the URL on your personal progress sheet.
+  1. Go to **Settings**
+  2. Click on the **Pages** button
+  3. Under **Branch**, select **main** and click **Save**
+  4. Wait a few minutes, check that your repo is online and paste the URL on your personal progress sheet.
 
-The URL should look something like this: `https://your_username.github.io/WDX-180`
+  The URL should look something like this: `https://your_username.github.io/WDX-180`
+
+</details>
 
 ### Communication
 
