@@ -4,6 +4,7 @@
 
 ## Web Development X - 180°
 
+<!-- About -->
 <details open>
   <summary><h3>About</h3></summary>
 
@@ -12,9 +13,8 @@
   The WDX 180° curriculum, along with all related material (exercises, code, etc.), **is and will always be free and open-source** under the GPLv3 license.
 
   You can find the [Syllabus here](curriculum/README.md).
-
 </details>
-
+<!-- Setup -->
 <details>
   <summary><h3>Setup</h3></summary>
 
@@ -30,9 +30,8 @@
   4. Wait a few minutes, check that your repo is online and paste the URL on your personal progress sheet.
 
   The URL should look something like this: `https://your_username.github.io/WDX-180`
-
 </details>
-
+<!-- Communication -->
 <details>
   <summary><h3>Communication</h3></summary>
 
@@ -43,9 +42,8 @@
   In order to learn more about Slack and the various versions (mobile, desktop, web), scroll down to the [Software](#software) section.
 
   **Registered students** also have the opportunity to schedule one 30~45min call each week with an instructor.
-
 </details>
-
+<!-- Hardware Requirements -->
 <details>
   <summary><h3>Hardware Requirements</h3></summary>
 
@@ -57,9 +55,8 @@
   - Attending **remotely**:
     - A computer with camera, microphone and speakers or headphones.
     - Notebook for note taking
-
 </details>
-
+<!-- Software -->
 <details>
   <summary><h3>Software</h3></summary>
 
@@ -116,9 +113,8 @@
     - [**Wikiwand**: the Wikipedia Reader](https://www.wikiwand.com/) _(Install as a Browser extension)_
       - As you will be reading **a lot** (and we mean it) of Wikipedia articles throughout the course, we highly recommend that you use this awesome Browser extension to enhance the Wikipedia experience. In a sentence, this is Wikipedia on steroids!
     - [**Photopea**](https://www.photopea.com/): a free, online image editing software that's pretty similar to `Adobe Photoshop`. You can use this tool to resize, crop or compress images among other things. 
-
 </details>
-
+<!-- Accounts -->
 <details>
   <summary><h3>Accounts</h3></summary>
 
@@ -128,7 +124,6 @@
   - [GitHub](https://github.com/)
   - [StackOverflow](https://stackoverflow.com/)
   - [Codesandbox](https://codesandbox.io/)
-
 </details>
 
 ## Syllabus
