@@ -4,11 +4,13 @@ title: Week 1
 
 # Week 1
 
-_(Updated: 22/08/2023)_
+_(Updated: 18/09/2023)_
 
   Welcome to the first part of our curriculum, WDX 60°.
 
-## Week 1 - Day 1 | Onboarding & Basics of Computing
+<!-- Week 1 - Day 1 | Onboarding & Basics of Computing -->
+<details>
+  <summary><h2>Week 1 - Day 1 | Onboarding & Basics of Computing</h2></summary>
 
   ### Schedule
 
@@ -116,8 +118,11 @@ _(Updated: 22/08/2023)_
   ### [Extra Resources](EXTRAS.md#day-01---computing)
 
   ### Sources and Attributions
+</details>
 
-## Week 1 - Day 2 | How the Internet & the World Wide Web works
+<!-- Week 1 - Day 2 | How the Internet & the World Wide Web works -->
+<details>
+  <summary><h2>Week 1 - Day 2 | How the Internet & the World Wide Web works</h2></summary>
 
   ### Schedule
 
@@ -266,8 +271,12 @@ _(Updated: 22/08/2023)_
   ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
   ### Sources and Attributions
+  
+</details>
 
-## Week 1 - Day 3 | HTML & Markdown
+<!-- Week 1 - Day 3 | HTML & Markdown -->
+<details>
+  <summary><h2>Week 1 - Day 3 | HTML & Markdown</h2></summary>
 
   ### Schedule
 
@@ -287,35 +296,35 @@ _(Updated: 22/08/2023)_
 
   - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
     - <details>
-      <summary>What you'll learn</summary>
-      <ul>
-        <li>What is HTML?</li>
-        <li>What is an Element?</li>
-        <li>What is a Tag?</li>
-        <li>What is the difference between a Tag and an Element?</li>
-        <li>Anatomy of an HTML Element</li>
-        <li>Attributes</li>
-        <li>Nesting Elements</li>
-        <li>Void Elements</li>
-        <li>Anatomy of an HTML document
-          <ul>
-            <li>DOCTYPE</li>
-            <li>html</li>
-            <li>head</li>
-            <li>meta</li>
-            <li>title</li>
-            <li>body</li>
-          </ul>
-        </li>
-        <li>Images</li>
-        <li>Headings</li>
-        <li>Paragraphs</li>
-        <li>Whitespace in HTML</li>
-        <li>Lists</li>
-        <li>Links</li>
-        <li>HTML Entities</li>
-      </ul>
-    </details>
+        <summary>What you'll learn</summary>
+        <ul>
+          <li>What is HTML?</li>
+          <li>What is an Element?</li>
+          <li>What is a Tag?</li>
+          <li>What is the difference between a Tag and an Element?</li>
+          <li>Anatomy of an HTML Element</li>
+          <li>Attributes</li>
+          <li>Nesting Elements</li>
+          <li>Void Elements</li>
+          <li>Anatomy of an HTML document
+            <ul>
+              <li>DOCTYPE</li>
+              <li>html</li>
+              <li>head</li>
+              <li>meta</li>
+              <li>title</li>
+              <li>body</li>
+            </ul>
+          </li>
+          <li>Images</li>
+          <li>Headings</li>
+          <li>Paragraphs</li>
+          <li>Whitespace in HTML</li>
+          <li>Lists</li>
+          <li>Links</li>
+          <li>HTML Entities</li>
+        </ul>
+      </details>
   
   Now, that we have a good grasp of HTML, let's learn a little bit about another markup language called **Markdown**, that is going to come in handy in a lot of situations.
 
@@ -344,8 +353,11 @@ _(Updated: 22/08/2023)_
 
   - **MDN:**
     - [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+</details>
 
-## Week 1 - Day 4 | CSS
+<!-- Week 1 - Day 4 | CSS -->
+<details>
+  <summary><h2>Week 1 - Day 4 | CSS</h2></summary>
 
   ### Schedule
 
@@ -370,8 +382,11 @@ _(Updated: 22/08/2023)_
   ### [Extra Resources](EXTRAS.md#day-04---css)
 
   ### Sources and Attributions
+</details>
 
-## Week 1 - Day 5 | JavaScript
+<!-- Week 1 - Day 5 | JavaScript -->
+<details>
+  <summary><h2>Week 1 - Day 5 | JavaScript</h2></summary>
 
   ### Schedule
 
@@ -390,19 +405,19 @@ _(Updated: 22/08/2023)_
   - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE)
     - Duration: 8min
     - <details>
-      <summary>What you'll learn</summary>
-      <ul>
-        <li>How to open Chrome Dev Tools</li>
-        <li>How to put Chrome Dev Tools into dark mode</li>
-        <li>How to use the console tab in Chrome Dev Tools to enter JavaScript statements</li>
-        <li>Four JS data types: 1) String 2) Number 3) Boolean 4) Undefined</li>
-        <li>How to check data types with the keyword `typeof`</li>
-        <li>How to create variable with the keyword `let`</li>
-        <li>How to name variables with `camelCase`</li>
-        <li>How to use basic mathematical operators to perform mathematic operations, to concatenate string data, and to compare data types</li>
-        <li>How to compare data</li>
-      </ul>
-    </details>
+        <summary>What you'll learn</summary>
+        <ul>
+          <li>How to open Chrome Dev Tools</li>
+          <li>How to put Chrome Dev Tools into dark mode</li>
+          <li>How to use the console tab in Chrome Dev Tools to enter JavaScript statements</li>
+          <li>Four JS data types: 1) String 2) Number 3) Boolean 4) Undefined</li>
+          <li>How to check data types with the keyword `typeof`</li>
+          <li>How to create variable with the keyword `let`</li>
+          <li>How to name variables with `camelCase`</li>
+          <li>How to use basic mathematical operators to perform mathematic operations, to concatenate string data, and to compare data types</li>
+          <li>How to compare data</li>
+        </ul>
+      </details>
 
   > **TIP: Variables are NOT placeholders for values!**
   > 
@@ -449,58 +464,58 @@ _(Updated: 22/08/2023)_
   - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM)
     - Duration: 8min
     - <details>
-      <summary>What you'll learn</summary>
-      <ul>
-        <li>(0:15) Setting up your DEV environment</li>
-        <li>(0:20) Where to find and install Visual Studio Code</li>
-        <li>(0:50) Create a directory (aka folder) for your files</li>
-        <li>(1:28) Opening a folder in VS Code</li>
-        <li>(1:45) Create an HTML document in VS Code</li>
-        <li>(1:55) Emmett abbreviation to quickly code basic HTML</li>
-        <li>(2:07) Add semantic elements to your HTML code</li>
-        <li>(2:23) Save your HTML document in VS Code (Ctrl+S)</li>
-        <li>(2:38) The style element for adding CSS to your HTML</li>
-        <li>(3:00) Creating a new folder from within VS Code</li>
-        <li>(3:05) Creating a CSS file</li>
-        <li>(3:15) Adding styles to your CSS file</li>
-        <li>(3:38) Linking to a CSS file from your HTML document</li>
-        <li>(4:00) Where to put your JavaScript: script tags</li>
-        <li>(4:05) How to link your JavaScript file to your HTML file: src attribute</li>
-        <li>(4:20) Or put your JavaScript inside of the script element</li>
-        <li>(4:30) How to print to the Chrome Dev Tools console window from your JS file</li>
-        <li>(4:50) How to open up Chrome Dev Tools to see the console window</li>
-        <li>(5:25) How to open your HTML file in Chrome</li>
-        <li>(5:40) Creating a folder for your JavaScript file</li>
-        <li>(5:50) Creating a Javascript file</li>
-        <li>(6:20) Linking to your JavaScript file </li>
-        <li>(7:00) Adding more JavaScript code to your file</li>
-         </ul>  
-    </details>
+        <summary>What you'll learn</summary>
+        <ul>
+          <li>(0:15) Setting up your DEV environment</li>
+          <li>(0:20) Where to find and install Visual Studio Code</li>
+          <li>(0:50) Create a directory (aka folder) for your files</li>
+          <li>(1:28) Opening a folder in VS Code</li>
+          <li>(1:45) Create an HTML document in VS Code</li>
+          <li>(1:55) Emmett abbreviation to quickly code basic HTML</li>
+          <li>(2:07) Add semantic elements to your HTML code</li>
+          <li>(2:23) Save your HTML document in VS Code (Ctrl+S)</li>
+          <li>(2:38) The style element for adding CSS to your HTML</li>
+          <li>(3:00) Creating a new folder from within VS Code</li>
+          <li>(3:05) Creating a CSS file</li>
+          <li>(3:15) Adding styles to your CSS file</li>
+          <li>(3:38) Linking to a CSS file from your HTML document</li>
+          <li>(4:00) Where to put your JavaScript: script tags</li>
+          <li>(4:05) How to link your JavaScript file to your HTML file: src attribute</li>
+          <li>(4:20) Or put your JavaScript inside of the script element</li>
+          <li>(4:30) How to print to the Chrome Dev Tools console window from your JS file</li>
+          <li>(4:50) How to open up Chrome Dev Tools to see the console window</li>
+          <li>(5:25) How to open your HTML file in Chrome</li>
+          <li>(5:40) Creating a folder for your JavaScript file</li>
+          <li>(5:50) Creating a Javascript file</li>
+          <li>(6:20) Linking to your JavaScript file </li>
+          <li>(7:00) Adding more JavaScript code to your file</li>
+          </ul>  
+      </details>
 
   - [Watch: **JavaScript String Methods and Properties | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo)
     - Duration: 8min
     - Level: Beginner
     - <details>
-      <summary>What you'll learn</summary>
-        <ul>
-          <li>(00:00) Intro</li> 
-          <li>(0:12) Dev Environment</li>
-          <li>(0:43) VS Code Live Server Extension</li>
-          <li>(1:48) Starting with a string variable</li>
-          <li>(2:08) The string length property</li>
-          <li>(2:10) Dot notation</li>
-          <li>(2:55) String Methods</li>
-          <li>(3:00) charAt() method</li>
-          <li>(3:30) indexOf() method</li>
-          <li>(4:13) lastIndexOf() method</li>
-          <li>(4:30) slice() method</li>
-          <li>(5:18) toUpperCase method</li>
-          <li>(5:30) toLowerCase method</li>
-          <li>(5:35) includes() method</li>
-          <li>(5:53) split() method</li>
-          <li>(6:47) Where to find more string methods</li>
-        </ul>
-    </details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro</li> 
+            <li>(0:12) Dev Environment</li>
+            <li>(0:43) VS Code Live Server Extension</li>
+            <li>(1:48) Starting with a string variable</li>
+            <li>(2:08) The string length property</li>
+            <li>(2:10) Dot notation</li>
+            <li>(2:55) String Methods</li>
+            <li>(3:00) charAt() method</li>
+            <li>(3:30) indexOf() method</li>
+            <li>(4:13) lastIndexOf() method</li>
+            <li>(4:30) slice() method</li>
+            <li>(5:18) toUpperCase method</li>
+            <li>(5:30) toLowerCase method</li>
+            <li>(5:35) includes() method</li>
+            <li>(5:53) split() method</li>
+            <li>(6:47) Where to find more string methods</li>
+          </ul>
+      </details>
 
   ---
 
@@ -521,29 +536,29 @@ _(Updated: 22/08/2023)_
     - Duration: 6min
     - Level: Beginner
     - <details>
-      <summary>What you'll learn</summary>
-        <ul>
-          <li>(00:00) Intro </li>
-          <li>(0:08) Dev Environment</li>
-          <li>(0:30) Integers</li>
-          <li>(0:42) Floats</li>
-          <li>(0:50) When JavaScript shows decimals</li>
-          <li>(1:10) Number data vs String data in the console window</li>
-          <li>(1:20) Comparing Integers and Floats</li>
-          <li>(1:47) Equations with Strings vs Numbers</li>
-          <li>(2:05) The Number() function</li>
-          <li>(2:33) "Not a Number" aka NaN</li>
-          <li>(2:50) Boolean data represented as Numbers</li>
-          <li>(2:58) 0 === false</li>
-          <li>(3:06) isInteger() method</li>
-          <li>(3:21) parseFloat() method</li>
-          <li>(3:47) toFixed() method</li>
-          <li>(4:04) parseInt() method </li>
-          <li>(4:17) toString() method</li>
-          <li>(4:35) Chaining methods using dot notation</li>
-          <li>(5:00) Number.isNaN() method vs global isNaN() function</li>
-        </ul>
-    </details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro </li>
+            <li>(0:08) Dev Environment</li>
+            <li>(0:30) Integers</li>
+            <li>(0:42) Floats</li>
+            <li>(0:50) When JavaScript shows decimals</li>
+            <li>(1:10) Number data vs String data in the console window</li>
+            <li>(1:20) Comparing Integers and Floats</li>
+            <li>(1:47) Equations with Strings vs Numbers</li>
+            <li>(2:05) The Number() function</li>
+            <li>(2:33) "Not a Number" aka NaN</li>
+            <li>(2:50) Boolean data represented as Numbers</li>
+            <li>(2:58) 0 === false</li>
+            <li>(3:06) isInteger() method</li>
+            <li>(3:21) parseFloat() method</li>
+            <li>(3:47) toFixed() method</li>
+            <li>(4:04) parseInt() method </li>
+            <li>(4:17) toString() method</li>
+            <li>(4:35) Chaining methods using dot notation</li>
+            <li>(5:00) Number.isNaN() method vs global isNaN() function</li>
+          </ul>
+      </details>
 
   **Tip:** You are probably a bit confused at this point about the difference between `isNaN` and `Number.isNaN` when checking for equality with the `NaN` value. You will read more about this in upcoming modules. For now, to keep things simple, just remember to stick `Number.isNaN`, as it is safer and more reliable.
 
@@ -583,61 +598,61 @@ _(Updated: 22/08/2023)_
   ![](assets/Math.floor.vs.Math.ceil.png)
 
   - [Watch: **If Statements in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=9Ykz2_PhdfE)
-  - Duration: 7min
-  - Level: Beginner
-  - <details>
-      <summary>What you'll learn</summary>
-        <ul>
-          <li>(00:00) Intro</li>
-          <li>(0:11) If Statements are Conditionals</li>
-          <li>(0:19) Basic Syntax</li>
-          <li>(0:35) Else clauses</li>
-          <li>(0:45) Example If Statement #1</li>
-          <li>(2:15) Else If clauses</li>
-          <li>(2:30) Consider the Logical Order</li>
-          <li>(2:55) Checking for Two Conditions at Once</li>
-          <li>(3:25) Example If Statement #2</li>
-          <li>(3:55) "Waterfall" Logical Order</li>
-          <li>(4:45) Nested If Statements</li>
-          <li>(5:10) Decision Tree Thinking: Rock - Paper - Scissors</li>
-        </ul>
-    </details>
+    - Duration: 7min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro</li>
+            <li>(0:11) If Statements are Conditionals</li>
+            <li>(0:19) Basic Syntax</li>
+            <li>(0:35) Else clauses</li>
+            <li>(0:45) Example If Statement #1</li>
+            <li>(2:15) Else If clauses</li>
+            <li>(2:30) Consider the Logical Order</li>
+            <li>(2:55) Checking for Two Conditions at Once</li>
+            <li>(3:25) Example If Statement #2</li>
+            <li>(3:55) "Waterfall" Logical Order</li>
+            <li>(4:45) Nested If Statements</li>
+            <li>(5:10) Decision Tree Thinking: Rock - Paper - Scissors</li>
+          </ul>
+      </details>
 
   - [Watch: **Switch Statements in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=3q7sk03ehOs)
-  - Duration: 4min
-  - Level: Beginner
-  - <details>
-      <summary>What you'll learn</summary>
-        <ul>
-          <li>(00:00) Intro </li>
-          <li>(0:13) Switch Statements are Conditionals</li>
-          <li>(0:17) Basic Syntax</li>
-          <li>(0:20) Value or Expression followed by Case evaluation</li>
-          <li>(0:28) Logical Order is important</li>
-          <li>(0:33) Use break keyword</li>
-          <li>(0:38) Default option</li>
-          <li>(0:50) Example #1</li>
-          <li>(1:20) Switch statements use strict equality matches</li>
-          <li>(1:32) Example #2: Evaluate numbers</li>
-          <li>(2:12) Example #3: Rock - Paper - Scissors Decision Tree</li>
-        </ul>
-    </details>
+    - Duration: 4min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro </li>
+            <li>(0:13) Switch Statements are Conditionals</li>
+            <li>(0:17) Basic Syntax</li>
+            <li>(0:20) Value or Expression followed by Case evaluation</li>
+            <li>(0:28) Logical Order is important</li>
+            <li>(0:33) Use break keyword</li>
+            <li>(0:38) Default option</li>
+            <li>(0:50) Example #1</li>
+            <li>(1:20) Switch statements use strict equality matches</li>
+            <li>(1:32) Example #2: Evaluate numbers</li>
+            <li>(2:12) Example #3: Rock - Paper - Scissors Decision Tree</li>
+          </ul>
+      </details>
 
   - [Watch: **Ternary Operator in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg)
-  - Duration: 6min
-  - Level: Beginner
-  - <details>
-      <summary>What you'll learn</summary>
-        <ul>
-          <li>(00:00) Intro</li>
-          <li>(0:13) What is a Ternary Operator?</li>
-          <li>(0:18) Ternary Operator Statement Syntax</li>
-          <li>(0:48) Example Ternary Statement</li>
-          <li>(1:50) Example of Chaining Ternary Operator Statements</li>
-          <li>(3:05) A Grading Scale Example with Chained Ternary Statements</li>
-          <li>(4:10) Rock - Paper - Scissors with Ternary Operator Statements</li>
-        </ul>
-    </details>
+    - Duration: 6min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro</li>
+            <li>(0:13) What is a Ternary Operator?</li>
+            <li>(0:18) Ternary Operator Statement Syntax</li>
+            <li>(0:48) Example Ternary Statement</li>
+            <li>(1:50) Example of Chaining Ternary Operator Statements</li>
+            <li>(3:05) A Grading Scale Example with Chained Ternary Statements</li>
+            <li>(4:10) Rock - Paper - Scissors with Ternary Operator Statements</li>
+          </ul>
+      </details>
 
   **Tip:** Nested ternary operators are hard to read and even harder to maintain, so try to avoid them as much as possible.
 
@@ -666,72 +681,72 @@ _(Updated: 22/08/2023)_
   - All test scores above 97 should be graded "A+"
   - All test scores above 80 should be graded "B+"
  
-   - [Watch: **User Input in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU)
-  - Duration: 11min
-  - Level: Beginner
-  - <details>
-      <summary></summary>
-        <ul>
-          <li>(00:00) Intro </li>
-          <li>(0:15) Dev Environment</li>
-          <li>(0:45) alert notifications</li>
-          <li>(1:45) confirm notifications with boolean data</li>
-          <li>(2:35) Receiving data input from the user </li>
-          <li>(3:10) prompt notifications with string data</li>
-          <li>(4:05) Possible null values returned</li>
-          <li>(4:43) Nullish Coalescing Operator</li>
-          <li>(6:10) How to check for an empty string</li>
-          <li>(7:15) An easy mistake to make!</li>
-          <li>(7:20) How to check data before accessing properties and methods</li>
-          <li>(8:50) Eliminating extra white space from user input</li>
-        </ul>
-    </details>
+  - [Watch: **User Input in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU)
+    - Duration: 11min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro </li>
+            <li>(0:15) Dev Environment</li>
+            <li>(0:45) alert notifications</li>
+            <li>(1:45) confirm notifications with boolean data</li>
+            <li>(2:35) Receiving data input from the user </li>
+            <li>(3:10) prompt notifications with string data</li>
+            <li>(4:05) Possible null values returned</li>
+            <li>(4:43) Nullish Coalescing Operator</li>
+            <li>(6:10) How to check for an empty string</li>
+            <li>(7:15) An easy mistake to make!</li>
+            <li>(7:20) How to check data before accessing properties and methods</li>
+            <li>(8:50) Eliminating extra white space from user input</li>
+          </ul>
+      </details>
 
   - [Watch: **For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA)
-  - Duration: 17min
-  - Level: Beginner
-  - <details>
-      <summary>What you'll learn</summary>
-        <ul>
-          <li>(00:00) Intro</li>
-          <li>(0:13) While Loops</li>
-          <li>(3:28) Do not create an endless loop (but don't feel bad if you do..it happens)</li>
-          <li>(4:33) Do While Loops</li>
-          <li>(5:07) The difference of a Do While Loop</li>
-          <li>(6:35) For Loops</li>
-          <li>(6:52) Initialize the counter variable</li>
-          <li>(7:10) Conditional statement</li>
-          <li>(7:18) Increment the counter</li>
-          <li>(9:15) Using the length property of a variable in a for loop</li>
-          <li>(9:45) While (true)</li>
-          <li>(12:20) Break Statements</li>
-          <li>(14:15) Continue Statements</li>
-        </ul>
-    </details>
+    - Duration: 17min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro</li>
+            <li>(0:13) While Loops</li>
+            <li>(3:28) Do not create an endless loop (but don't feel bad if you do..it happens)</li>
+            <li>(4:33) Do While Loops</li>
+            <li>(5:07) The difference of a Do While Loop</li>
+            <li>(6:35) For Loops</li>
+            <li>(6:52) Initialize the counter variable</li>
+            <li>(7:10) Conditional statement</li>
+            <li>(7:18) Increment the counter</li>
+            <li>(9:15) Using the length property of a variable in a for loop</li>
+            <li>(9:45) While (true)</li>
+            <li>(12:20) Break Statements</li>
+            <li>(14:15) Continue Statements</li>
+          </ul>
+      </details>
 
   - [Watch: **Functions in Javascript | Javascript Functions Tutorial**](https://www.youtube.com/watch?v=u_lLNH38n5E)
-  - Duration: 13min
-  - Level: Beginner
-  - <details>
-      <summary></summary>
-        <ul>
-          <li>(00:00) Intro</li>
-          <li>(0:15) Built-in Functions</li>
-          <li>(0:55) Functions are reusable code blocks</li>
-          <li>(1:12) Function Declaration Syntax</li>
-          <li>(1:20) Creating a Basic Function: sum()</li>
-          <li>(2:09) Calling a Function into action</li>
-          <li>(2:50) Passing Parameters to a Function</li>
-          <li>(3:30) Creating Reusable Code with Functions</li>
-          <li>(3:50) Missing Parameters</li>
-          <li>(4:30) Handling Missing Parameters</li>
-          <li>(5:20) Another Function Example: getUserNameFromEmail()</li>
-          <li>(7:10) Is it reusable? Yes!</li>
-          <li>(7:30) Anonymous Functions</li>
-          <li>(8:30) Arrow Functions</li>
-          <li>(9:05) Creating One More Function: toProperCase()</li>
-        </ul>
-    </details>
+    - Duration: 13min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+          <ul>
+            <li>(00:00) Intro</li>
+            <li>(0:15) Built-in Functions</li>
+            <li>(0:55) Functions are reusable code blocks</li>
+            <li>(1:12) Function Declaration Syntax</li>
+            <li>(1:20) Creating a Basic Function: sum()</li>
+            <li>(2:09) Calling a Function into action</li>
+            <li>(2:50) Passing Parameters to a Function</li>
+            <li>(3:30) Creating Reusable Code with Functions</li>
+            <li>(3:50) Missing Parameters</li>
+            <li>(4:30) Handling Missing Parameters</li>
+            <li>(5:20) Another Function Example: getUserNameFromEmail()</li>
+            <li>(7:10) Is it reusable? Yes!</li>
+            <li>(7:30) Anonymous Functions</li>
+            <li>(8:30) Arrow Functions</li>
+            <li>(9:05) Creating One More Function: toProperCase()</li>
+          </ul>
+      </details>
 
   ### Summary
 
@@ -774,6 +789,7 @@ _(Updated: 22/08/2023)_
   ### Sources and Attributions
 
   - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
+</details>
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
