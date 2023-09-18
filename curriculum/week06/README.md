@@ -1,14 +1,186 @@
+---
+  title: Week 6 | CSS 2 & Performance
+---
+
 # Week 6 | CSS 2 & Performance
 
-## Week 6 - Day 1
+_(Updated: 18/09/2023)_
 
-## Week 6 - Day 2
+---
+> **Important**
+> As you'll notice, after finishing a MDN article it has a suggestion on what to study next.
+> We strongly advise you to ignore this part and follow our curriculum's flow that you'll find on this document.
+---
 
-## Week 6 - Day 3
+<!-- Week 6 - Day 1 | Styling Tables, Debugging and Organizing CSS -->
+<details>
+  <summary><h2>Week 6 - Day 1 | Styling Tables, Debugging and Organizing CSS</summary></h2>
 
-## Week 6 - Day 4
+  ### Schedule
 
-## Week 6 - Day 5
+  - [Study](#study-plan)
+
+  ### Study Plan
+
+  - [Read: **Styling tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
+    - Level: Beginner
+  - [Read: **Debugging CSS**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
+    - Level: Beginner
+  - [Read: **Organizing your CSS**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
+    - Level: Beginner
+
+  ### Summary
+
+  ### Exercises
+
+  - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks)
+  - [MDN's Assessment: **Fundamental CSS comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.[60|120|180].csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  
+  ### [Extra Resources](EXTRAS.md#)
+
+  - [MDN's Assessment: **Creating fancy letterheaded paper**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper)
+  - [MDN's Assessment: **A cool-looking box**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box)
+
+  ### Sources and Attributions
+
+</details>
+
+<!-- Week 6 - Day 2 | Styling text -->
+<details>
+  <summary><h2>Week 6 - Day 2 | Styling text</summary></h2>
+
+  ### Schedule
+
+  - [Study](#study-plan-1)
+
+  ### Study Plan
+
+  With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
+
+  - [Read : **Fundamental text and font styling**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
+    - Level: Beginner
+  - [Read : **Styling lists**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists)
+    - Level: Beginner
+  - [Read : **Styling links**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links)
+    - Level: Beginner
+  - [Read : **Web fonts**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
+    - Level: Beginner
+
+  ### Summary
+
+  ### Exercises
+
+  - [MDN's Assessment: **Typesetting a community school homepage**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Typesetting_a_homepage)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.[60|120|180].csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  
+  ### [Extra Resources](EXTRAS.md#)
+
+  ### Sources and Attributions
+
+</details>
+
+<!-- Week 6 - Day 3 | CSS Layout Part 1 -->
+<details>
+  <summary><h2>Week 6 - Day 3 | CSS Layout Part 1</summary></h2>
+
+  ### Schedule
+
+  - [Study](#study-plan-2)
+
+  ### Study Plan
+
+  - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction)
+    - Level: Beginner
+  - [Read: **Normal Flow**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
+    - Level: Beginner
+  - [Read: **Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+    - Level: Beginner
+  - [Read: **Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+    - Level: Beginner
+
+  ### Summary
+
+  ### Exercises
+
+  - [MDN's Assessment: **Test your skills: Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Position_skills)
+  - [MDN's Assessment: **Test your skills: Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.[60|120|180].csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  
+  ### [Extra Resources](EXTRAS.md#)
+
+  ### Sources and Attributions
+
+</details>
+
+<!-- Week 6 - Day 4 | CSS Layout Part 2 -->
+<details>
+  <summary><h2>Week 6 - Day 4 | CSS Layout Part 2</summary></h2>
+
+  ### Schedule
+
+  - [Study](#study-plan-3)
+
+  ### Study Plan
+
+  - [Read: **Responsive Design**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+    - Level: Beginner
+  - [Read: **Beginner's guide to media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
+    - Level: Beginner
+  - [Read: **Legacy layout methods**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods)
+    - Level: Beginner
+  - [Read: **Supporting older browsers**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
+    - Level: Beginner
+
+  ### Summary
+
+  ### Exercises
+
+  - [MDN's Assessment: **Test your skills: Responsive web design and media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/rwd_skills)
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.[60|120|180].csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  
+  ### [Extra Resources](EXTRAS.md#)
+
+  - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension)
+
+  ### Sources and Attributions
+
+</details>
+
+<!-- Week 6 - Day 5 | Web Performance-->
+<details>
+  <summary><h2>Week 6 - Day 5 | Web Performance</summary></h2>
+
+  ### Schedule
+
+  - [Study](#study-plan-4)
+
+  ### Study Plan
+
+  - [Read: **The "why" of web performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance)
+    - Level: Beginner
+  - [Read: **What is web performance?**](https://developer.mozilla.org/en-US/docs/Learn/Performance/What_is_web_performance)
+    - Level: Beginner
+  - [Read: **Perceived performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance)
+    - Level: Beginner
+
+  ### Summary
+
+  ### Exercises
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.[60|120|180].csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  
+  ### [Extra Resources](EXTRAS.md#)
+
+  ### Sources and Attributions
+
+</details>
+
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you!
 
 ## Week 6 - Weekend Suggestions
 
