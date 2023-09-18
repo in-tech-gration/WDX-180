@@ -4,9 +4,11 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 15/09/2023)_
+_(Updated: 18/09/2023)_
 
-## Week 3 - Day 1 | More Git
+<!-- Week 3 - Day 1 | More Git -->
+<details>
+  <summary><h2>Week 3 - Day 1 | More Git</h2></summary>
 
   ### Schedule
 
@@ -86,8 +88,11 @@ _(Updated: 15/09/2023)_
   > **Disclaimer**: These two articles are advanced for someone like you right now. You can always keep them for later and give them a read whenever you feel confident enough with Git, but we do highly recommend to give them a try nonetheless!
 
   ### Sources and Attributions
+</details>
     
-## Week 3 - Day 2 | What is CSS?
+<!-- Week 3 - Day 2 | What is CSS? -->
+<details>
+  <summary><h2>Week 3 - Day 2 | What is CSS?</h2></summary>
 
   ### Schedule
 
@@ -127,8 +132,11 @@ _(Updated: 15/09/2023)_
   - **MDN:**
     - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/index.md)
     - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md)
+</details>
 
-## Week 3 - Day 3 | CSS Selectors
+<!-- Week 3 - Day 3 | CSS Selectors -->
+<details>
+  <summary><h2>Week 3 - Day 3 | CSS Selectors</h2></summary>
 
   ### Schedule
 
@@ -177,8 +185,11 @@ _(Updated: 15/09/2023)_
     - [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
     - [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
     - [Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md)
+</details>
 
-## Week 3 - Day 4 | Cascade, Inheritance and the box model
+<!-- Week 3 - Day 4 | Cascade, Inheritance and the box model -->
+<details>
+  <summary><h2>Week 3 - Day 4 | Cascade, Inheritance and the box model</h2></summary>
 
   ### Schedule
 
@@ -218,8 +229,11 @@ _(Updated: 15/09/2023)_
     - [Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md)
     - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md)
     - [Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md)
+</details>
 
-## Week 3 - Day 5 | Backgrounds and borders
+<!-- Week 3 - Day 5 | Backgrounds and borders -->
+<details>
+  <summary><h2>Week 3 - Day 5 | Backgrounds and borders</h2></summary>
 
   ### Schedule
 
@@ -241,7 +255,7 @@ _(Updated: 15/09/2023)_
   - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/README.md)
     - Level: Beginner
 
-  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/README.md
+  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/README.md)
     - Level: Beginner
 
   ### Summary
@@ -278,6 +292,7 @@ _(Updated: 15/09/2023)_
     - [Test your skills: Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_tasks/index.md)
     - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md)
     - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md)
+</details>
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 

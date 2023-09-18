@@ -4,9 +4,11 @@ title: Week 2
 
 # Week 2 | HTML, Accessibility & Git
 
-_(Updated: 25/08/2023)_
+_(Updated: 18/09/2023)_
 
-## Week 2 - Day 1 | Git
+<!-- Week 2 - Day 1 | Git -->
+<details>
+  <summary><h2>Week 2 - Day 1 | Git</h2></summary>
 
   ### Schedule
 
@@ -114,8 +116,11 @@ _(Updated: 25/08/2023)_
   ### [Extra Resources](EXTRAS.md)
 
   ### Sources and Attributions
+</details>
 
-## Week 2 - Day 2 | HTML
+<!-- Week 2 - Day 2 | HTML -->
+<details>
+  <summary><h2>Week 2 - Day 2 | HTML</h2></summary>
 
   ### Schedule
 
@@ -141,26 +146,11 @@ _(Updated: 25/08/2023)_
   ### [Extra Resources](EXTRAS.md)
 
   ### Sources and Attributions
+</details>
 
-## Week 2 - Day 3 | Tables
-
-  ### Schedule
-
-  ### Study Plan
-
-  **What you'll learn:**
-
-  ### Summary
-
-  ### Exercises
-
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  ### [Extra Resources](EXTRAS.md)
-
-  ### Sources and Attributions
-
-## Week 2 - Day 4 | Forms
+<!-- Week 2 - Day 3 | Tables -->
+<details>
+  <summary><h2>Week 2 - Day 3 | Tables</h2></summary>
 
   ### Schedule
 
@@ -177,8 +167,11 @@ _(Updated: 25/08/2023)_
   ### [Extra Resources](EXTRAS.md)
 
   ### Sources and Attributions
+</details>
 
-## Week 2 - Day 5 | SVG & MathML
+<!-- Week 2 - Day 4 | Forms -->
+<details>
+  <summary><h2>Week 2 - Day 4 | Forms</h2></summary>
 
   ### Schedule
 
@@ -195,6 +188,28 @@ _(Updated: 25/08/2023)_
   ### [Extra Resources](EXTRAS.md)
 
   ### Sources and Attributions
+</details>
+
+<!-- Week 2 - Day 5 | SVG & MathML -->
+<details>
+  <summary><h2>Week 2 - Day 5 | SVG & MathML</h2></summary>
+
+  ### Schedule
+
+  ### Study Plan
+
+  **What you'll learn:**
+
+  ### Summary
+
+  ### Exercises
+
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
+  ### [Extra Resources](EXTRAS.md)
+
+  ### Sources and Attributions
+</details>
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your **mandatory** feedback form before the day ends. Thanks you! 
 
