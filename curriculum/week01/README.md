@@ -216,17 +216,17 @@ _(Updated: 18/09/2023)_
     - Level: Beginner
 
   - [Watch: **What is Localhost? | Explained**](https://www.youtube.com/watch?v=m98GX51T5dI)
-  - Duration: 4min
-  - Level: Beginner
-  - <details>
-      <summary>What you'll learn:</summary>
-        <ul>
-          <li>00:00 - Introduction</li>
-          <li>00:09 - What is localhost</li>
-          <li>01:15 - What is localhost used for</li>
-          <li>02:58 - Outro</li>
-        </ul>
-    </details>
+    - Duration: 4min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn:</summary>
+          <ul>
+            <li>00:00 - Introduction</li>
+            <li>00:09 - What is localhost</li>
+            <li>01:15 - What is localhost used for</li>
+            <li>02:58 - Outro</li>
+          </ul>
+      </details>
 
 
   If you want another take on the localhost subject, take a look at the `Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?` video found in the [Extras](EXTRAS.md#day-02---internet--the-web)
@@ -571,27 +571,27 @@ _(Updated: 18/09/2023)_
   ---
 
   - [Watch: **Math Methods and How to Generate a Random Number with JavaScript | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y)
-  - Duration: 6min
-  - Level: Beginner
-  - <details>
-      <summary>What you'll learn</summary>
-      <ul>
-        <li>(00:00) Intro</li>
-        <li>(0:06) MDN Resources</li>
-        <li>(0:25) Dev Environment</li>
-        <li>(0:48) Math.PI property</li>
-        <li>(1:05) Math.trunc() method</li>
-        <li>(1:25) Math.round() method</li>
-        <li>(1:48) Math.ceil() method</li>
-        <li>(2:02) Math.floor() method</li>
-        <li>(2:15) Math.pow() method</li>
-        <li>(2:36) Math.min() method</li>
-        <li>(2:49) Math.max() method</li>
-        <li>(3:12) Math.random() method</li>
-        <li>(3:28) How to generate a random number with JavaScript</li>
-        <li>(4:21) Choose Math.floor() instead of Math.ceil() in your random number expression and Why!</li>
-      </ul>
-    </details>
+    - Duration: 6min
+    - Level: Beginner
+    - <details>
+        <summary>What you'll learn</summary>
+        <ul>
+          <li>(00:00) Intro</li>
+          <li>(0:06) MDN Resources</li>
+          <li>(0:25) Dev Environment</li>
+          <li>(0:48) Math.PI property</li>
+          <li>(1:05) Math.trunc() method</li>
+          <li>(1:25) Math.round() method</li>
+          <li>(1:48) Math.ceil() method</li>
+          <li>(2:02) Math.floor() method</li>
+          <li>(2:15) Math.pow() method</li>
+          <li>(2:36) Math.min() method</li>
+          <li>(2:49) Math.max() method</li>
+          <li>(3:12) Math.random() method</li>
+          <li>(3:28) How to generate a random number with JavaScript</li>
+          <li>(4:21) Choose Math.floor() instead of Math.ceil() in your random number expression and Why!</li>
+        </ul>
+      </details>
 
   **Tip:** Here's a nice diagram to help you understand the difference between `floor` and `ceiling` when using the corresponding `Math` object methods.
 
