@@ -1,3 +1,6 @@
+node_modules
+.prettierignore
+.DS_Store
 .vscode
 .next/
 # kostasx section:
