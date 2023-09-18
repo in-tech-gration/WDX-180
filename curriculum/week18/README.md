@@ -4,9 +4,11 @@ title: Week 18
 
 # Week 18 | Node.js 1
 
-_(Updated: 24/08/2023)_
+_(Updated: 18/09/2023)_
 
-## Week 18 - Day 1
+<!-- Week 18 - Day 1 -->
+<details>
+  <summary><h2>Week 18 - Day 1</h2></summary>
 
   ### Schedule
 
@@ -71,8 +73,11 @@ _(Updated: 24/08/2023)_
   ### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
+</details>
 
-## Week 18 - Day 2
+<!-- Week 18 - Day 2 -->
+<details>
+  <summary><h2>Week 18 - Day 2</h2></summary>
 
   ### Schedule
 
@@ -136,8 +141,11 @@ _(Updated: 24/08/2023)_
 
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
+</details>
 
-## Week 18 - Day 3
+<!-- Week 18 - Day 3 -->
+<details>
+  <summary><h2>Week 18 - Day 3</h2></summary>
 
   ### Schedule
 
@@ -211,8 +219,11 @@ _(Updated: 24/08/2023)_
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
   - [ExpressJS Official Site](https://expressjs.com/)
+</details>
 
-## Week 18 - Day 4
+<!-- Week 18 - Day 4 -->
+<details>
+  <summary><h2>Week 18 - Day 4</h2></summary>
 
   ### Schedule Plan
 
@@ -276,8 +287,11 @@ _(Updated: 24/08/2023)_
   - [NPM: CORS package](https://www.npmjs.com/package/cors)
   - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
   - [Thunder Client Official Site](https://www.thunderclient.com/)
+</details>
 
-## Week 18 - Day 5
+<!-- Week 18 - Day 5 -->
+<details>
+  <summary><h2>Week 18 - Day 5</h2></summary>
 
   ### Schedule
 
@@ -344,6 +358,7 @@ _(Updated: 24/08/2023)_
   - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
   - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
   - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+</details>
 
 ## Week 18 - Weekend Suggestions
 

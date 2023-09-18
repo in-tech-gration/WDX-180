@@ -4,9 +4,11 @@ title: Week 19
 
 # Week 19 | Node.js 2, NoSQL Databases & Docker
 
-_(Updated: 28/08/2023)_
+_(Updated: 18/09/2023)_
 
-## Week 19 - Day 1
+<!-- Week 19 - Day 1 -->
+<details>
+  <summary><h2>Week 19 - Day 1</h2></summary>
 
   ### Schedule
 
@@ -91,8 +93,11 @@ _(Updated: 28/08/2023)_
   - [Intro to JWT](https://jwt.io/introduction)
   - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
   - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
+</details>
 
-## Week 19 - Day 2
+<!-- Week 19 - Day 2 -->
+<details>
+  <summary><h2>Week 19 - Day 2</h2></summary>
 
   ### Schedule
 
@@ -171,8 +176,11 @@ _(Updated: 28/08/2023)_
   - [MongoDB Official Site](https://www.mongodb.com/)
   - [MongooseJS Official Site](https://mongoosejs.com/)
   - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+</details>
 
-## Week 19 - Day 3
+<!-- Week 19 - Day 3 -->
+<details>
+  <summary><h2>Week 19 - Day 3</h2></summary>
 
   ### Schedule
 
@@ -235,8 +243,11 @@ _(Updated: 28/08/2023)_
   - [MongooseJS Official Site](https://mongoosejs.com/)
   - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
   - [Glitch Official Site](https://glitch.com/)
+</details>
 
-## Week 19 - Day 4
+<!-- Week 19 - Day 4 -->
+<details>
+  <summary><h2>Week 19 - Day 4</h2></summary>
 
   ### Schedule
 
@@ -273,8 +284,11 @@ _(Updated: 28/08/2023)_
   ### Sources and Attributions
 
   [List](resources/Containers_and_Docker/README.md#sources-and-attributions)
+</details>
 
-## Week 19 - Day 5
+<!-- Week 19 - Day 5 -->
+<details>
+  <summary><h2>Week 19 - Day 5</h2></summary>
 
   ### Schedule
 
@@ -304,6 +318,7 @@ _(Updated: 28/08/2023)_
   ### [Extra Resources](EXTRAS.md)
   
   ### Sources and Attributions
+</details>
 
 ## Week 19 - Weekend Suggestions
 
