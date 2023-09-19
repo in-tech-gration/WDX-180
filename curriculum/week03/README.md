@@ -165,11 +165,17 @@ _(Updated: 18/09/2023)_
 
   ### Summary
 
-  Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercise!
+  Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercises!
 
   ### Exercises
 
+  - [Play: **CSS Diner**](https://flukeout.github.io/)
+    - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
+    - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
+
   - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/README.md)
+
+  As for the CSS Diner, if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the [repo](https://github.com/flukeout/css-diner) of this awesome game!
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.draft.w03.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -185,6 +191,8 @@ _(Updated: 18/09/2023)_
     - [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
     - [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
     - [Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md)
+  - **CSS Diner:**
+    - [CSS Diner Github Repo](https://github.com/flukeout/css-diner)
 </details>
 
 <!-- Week 3 - Day 4 | Cascade, Inheritance and the box model -->
