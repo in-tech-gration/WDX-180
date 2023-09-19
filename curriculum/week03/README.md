@@ -73,7 +73,7 @@ _(Updated: 18/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.draft.w03.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources]
 
@@ -122,7 +122,7 @@ _(Updated: 18/09/2023)_
 
   - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/README.md)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.draft.w03.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources]
   ### Sources and Attributions
@@ -171,7 +171,7 @@ _(Updated: 18/09/2023)_
 
   - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/README.md)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.draft.w03.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources]
   ### Sources and Attributions
@@ -217,7 +217,7 @@ _(Updated: 18/09/2023)_
 
   - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/README.md)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.draft.w03.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources]
   ### Sources and Attributions
@@ -274,7 +274,7 @@ _(Updated: 18/09/2023)_
 
   - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/README.md)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.draft.w03.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   ### [Extra Resources]
   ### Sources and Attributions
