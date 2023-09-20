@@ -2,3 +2,13 @@
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# EXCLUDE FILES & FOLDERS FROM BUILD: 
+exclude: [resources/codecademy]
+
+# CUSTOM _SASS FOLDER:
+sass:
+  sass_dir: assets/jekyll/_sass
+
+# CUSTOM _includes FOLDER:
+layouts_dir:  assets/jekyll/_includes
