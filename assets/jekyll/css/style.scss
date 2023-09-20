@@ -3,10 +3,20 @@
 
 @import "jekyll-theme-midnight";
 
+// Side Navigation
 nav#side-toc {
 
   position: fixed;
   left: 0;
   padding-left: 1rem;
   
+}
+
+// <summary> Styling
+summary > h3 {
+  display: inline-block;
+  cursor: pointer;
+}
+summary > h3:hover {
+  color: white;
 }

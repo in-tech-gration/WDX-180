@@ -12,3 +12,5 @@ sass:
 
 # CUSTOM _includes FOLDER: https://jekyllrb.com/docs/configuration/options/#build-command-options
 layouts_dir:  assets/jekyll/_layouts
+
+parse_block_html: true
