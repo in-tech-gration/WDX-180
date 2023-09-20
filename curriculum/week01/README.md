@@ -122,7 +122,7 @@ _(Updated: 18/09/2023)_
 
 <!-- Week 1 - Day 2 | How the Internet & the World Wide Web works -->
 <details markdown="1">
-  <summary><h2>Week 1 - Day 2 | How the Internet & the World Wide Web works</h2></summary>
+  <summary><h2>Week 1 - Day 2 | How the Internet & the WWW works</h2></summary>
 
   ### Schedule
 
