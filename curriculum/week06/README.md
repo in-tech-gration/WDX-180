@@ -106,13 +106,30 @@ _(Updated: 20/09/2023)_
   ### Exercises
 
   - [MDN's Assessment: **Test your skills: Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Position_skills)
+
+  - [Play: **Flexbox Defense**](http://flexboxdefense.com/)
+    - Tower Defense with a twist: all towers must be positioned with CSS Flexbox.
+    - Level: Beginner
+    - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
+
+  - [Play: **Flexbox Froggy**](https://flexboxfroggy.com/)
+    - A game for learning CSS flexbox called Flexbox Froggy. The goal of the game is to help the frogs get to their lily pads by writing CSS code. See if you can beat all the levels!
+    - Level: Beginner, Intermediate, Expert (check settings at the bottom of the page)
+    - Lots of languages available, but we suggest playing it in English.
+    - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
+
   - [MDN's Assessment: **Test your skills: Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills)
+
+  As for the Flexbox Defense(1) and Flexbox Froggy(2), if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the repos ([1](https://github.com/channingallen/tower-defense) & [2](https://github.com/thomaspark/flexboxfroggy)) of these awesome games!
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.draft.w06.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
   
   ### [Extra Resources](EXTRAS.md#)
 
   ### Sources and Attributions
+
+  - [Flexbox Defense](https://github.com/channingallen/tower-defense) [(Last Commit point)](https://github.com/channingallen/tower-defense/tree/8466c0d260aa2a30744a73331cfd6441afefc659)
+  - [Flexbox Froggy](https://github.com/thomaspark/flexboxfroggy) [(Last Commit point)](https://github.com/thomaspark/flexboxfroggy/tree/46274b15502b68f4d36d9377537f14643b16063c)
 
 </details>
 
