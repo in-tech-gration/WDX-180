@@ -38,6 +38,7 @@ Context is passed to other components by wrapping them in a context provider com
 
 The following example shows a single file, `App.js`, and how a background theme could be passed down to all child components via the `useContext()` hook. The `value` prop in this case is the `theme` state:
 
+{% raw %}
 ```jsx
 // App.js
 import { createContext, useContext, useState } from 'react';
@@ -95,6 +96,8 @@ function Container() {
   );
 }
 ```
+{% endraw %}
+
 
 The `useContext()` hook was used to apply a `ThemeContext` to the `<Container>` component to switch the colors of the text and background between black and white.
 
