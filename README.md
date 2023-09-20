@@ -45,6 +45,8 @@
   4. Wait a few minutes, check that your repo is online and paste the URL on your personal progress sheet.
 
   The URL should look something like this: `https://your_username.github.io/WDX-180`
+
+  _(If you are enrolled in one of our cohorts, at this point it might be a good time to update your progress sheet for the 'Fork WDX repository' and 'Enable GitHub Pages on forked WDX repository' tasks.)_
 </details>
 
 <!-- Communication -->
