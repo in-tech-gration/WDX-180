@@ -5,7 +5,7 @@
 ## Web Development X - 180°
 
 <!-- About -->
-<details open>
+<details open markdown="1">
   <summary><h3>About</h3></summary>
 
   This is Web Development X 180°. An introductory course to the web and related technologies such as HTML, CSS and JavaScript, split into 180 days.
@@ -16,7 +16,7 @@
 </details>
 
 <!-- Where do I start? -->
-<details>
+<details markdown="1">
   <summary><h3>Where do I start?</h3></summary>
 
   If you are ready and feel committed enough to start the course, you must start by carefully going through the following sections and completing all the necessary tasks:
@@ -30,7 +30,7 @@
 </details>
 
 <!-- Setup -->
-<details>
+<details markdown="1">
   <summary><h3>Setup</h3></summary>
 
   The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository) this repository under your GitHub account.
@@ -50,7 +50,7 @@
 </details>
 
 <!-- Communication -->
-<details>
+<details markdown="1">
   <summary><h3>Communication</h3></summary>
 
   Our main channel of communication is [Slack](https://intechgration.slack.com). If you haven't received an invitation to the Intechgration Slack team, please inform us via email. 
@@ -63,7 +63,7 @@
 </details>
 
 <!-- Hardware Requirements -->
-<details>
+<details markdown="1">
   <summary><h3>Hardware Requirements</h3></summary>
 
   In order to attend the course you will need the following:
@@ -77,7 +77,7 @@
 </details>
 
 <!-- Software -->
-<details>
+<details markdown="1">
   <summary><h3>Software</h3></summary>
 
   This is a list of Software you must have installed on your system in order to get started with the course:
@@ -136,7 +136,7 @@
 </details>
 
 <!-- Accounts -->
-<details>
+<details markdown="1">
   <summary><h3>Accounts</h3></summary>
 
   In order to attend the course (and become a professional web developer) you will need to open an account in the following services:
@@ -148,15 +148,14 @@
 </details>
 
 <!-- Syllabus -->
-<details>
+<details markdown="1">
   <summary><h3>Syllabus</h3></summary>
 
   You can find the [Syllabus here](curriculum/README.md#syllabus).
-
 </details>
 
 <!-- How to Study / Productivity tips -->
-<details>
+<details markdown="1">
   <summary><h3>How to Study / Productivity tips</h3></summary>
 
   - **AVOID DISTRACTIONS at all costs!** This means, closing all tabs, browser windows and applications that are not related to your daily study plan and practice. Be very vigilant against applications that include notifications (WhatsApp, Messenger, etc.). From time to time, you might even consider **pausing notifications from Slack** itself. Check the [**instructions found here**](https://slack.com/help/articles/214908388-Pause-notifications-with-Do-Not-Disturb) on how to do this. 

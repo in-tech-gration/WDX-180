@@ -13,6 +13,9 @@ nav#side-toc {
 }
 
 // <summary> Styling
+summary {
+  display: list-item;
+}
 summary > h3 {
   display: inline-block;
   cursor: pointer;
