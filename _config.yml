@@ -6,9 +6,9 @@ plugins:
 # EXCLUDE FILES & FOLDERS FROM BUILD: 
 exclude: [resources/codecademy]
 
-# CUSTOM _SASS FOLDER:
+# CUSTOM _SASS FOLDER: https://github.com/jekyll/jekyll-sass-converter#configuration-options, https://jekyllrb.com/docs/configuration/sass/
 sass:
   sass_dir: assets/jekyll/_sass
 
-# CUSTOM _includes FOLDER:
+# CUSTOM _includes FOLDER: https://jekyllrb.com/docs/configuration/options/#build-command-options
 layouts_dir:  assets/jekyll/_includes
