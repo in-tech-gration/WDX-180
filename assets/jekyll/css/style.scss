@@ -2,3 +2,11 @@
 ---
 
 @import "jekyll-theme-midnight";
+
+nav#side-toc {
+
+  position: fixed;
+  left: 0;
+  padding-left: 1rem;
+  
+}
