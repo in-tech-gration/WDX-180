@@ -9,7 +9,6 @@ Tags:
 CatalogContent:
   - 'react-101'
   - 'paths/front-end-engineer-career-path'
-render_with_liquid: false 
 ---
 
 The **`useContext()`** hook subscribes a child [component](https://www.codecademy.com/resources/docs/react/components) to a [context](https://www.codecademy.com/resources/docs/react/context) which includes its `value` [prop](https://www.codecademy.com/resources/docs/react/props) that exists further up the component tree.
