@@ -10,6 +10,7 @@ Tags:
 CatalogContent:
   - 'introduction-to-javascript'
   - 'paths/front-end-engineer-career-path'
+render_with_liquid: false
 ---
 
 Adds one or more elements to beginning of array and returns new length.
