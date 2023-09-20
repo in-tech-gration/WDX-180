@@ -7,7 +7,7 @@ title: Week 2
 _(Updated: 18/09/2023)_
 
 <!-- Week 2 - Day 1 | Git -->
-<details>
+<details markdown="1">
   <summary><h2>Week 2 - Day 1 | Git</h2></summary>
 
   ### Schedule
@@ -119,7 +119,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 2 - Day 2 | HTML -->
-<details>
+<details markdown="1">
   <summary><h2>Week 2 - Day 2 | HTML</h2></summary>
 
   ### Schedule
@@ -149,7 +149,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 2 - Day 3 | Tables -->
-<details>
+<details markdown="1">
   <summary><h2>Week 2 - Day 3 | Tables</h2></summary>
 
   ### Schedule
@@ -170,7 +170,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 2 - Day 4 | Forms -->
-<details>
+<details markdown="1">
   <summary><h2>Week 2 - Day 4 | Forms</h2></summary>
 
   ### Schedule
@@ -191,7 +191,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 2 - Day 5 | SVG & MathML -->
-<details>
+<details markdown="1">
   <summary><h2>Week 2 - Day 5 | SVG & MathML</h2></summary>
 
   ### Schedule

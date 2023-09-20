@@ -7,7 +7,7 @@ title: Week 3
 _(Updated: 18/09/2023)_
 
 <!-- Week 3 - Day 1 | More Git -->
-<details>
+<details markdown="1">
   <summary><h2>Week 3 - Day 1 | More Git</h2></summary>
 
   ### Schedule
@@ -91,7 +91,7 @@ _(Updated: 18/09/2023)_
 </details>
     
 <!-- Week 3 - Day 2 | What is CSS? -->
-<details>
+<details markdown="1">
   <summary><h2>Week 3 - Day 2 | What is CSS?</h2></summary>
 
   ### Schedule
@@ -135,7 +135,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 3 - Day 3 | CSS Selectors -->
-<details>
+<details markdown="1">
   <summary><h2>Week 3 - Day 3 | CSS Selectors</h2></summary>
 
   ### Schedule
@@ -196,7 +196,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 3 - Day 4 | Cascade, Inheritance and the box model -->
-<details>
+<details markdown="1">
   <summary><h2>Week 3 - Day 4 | Cascade, Inheritance and the box model</h2></summary>
 
   ### Schedule
@@ -240,7 +240,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 3 - Day 5 | Backgrounds and borders -->
-<details>
+<details markdown="1">
   <summary><h2>Week 3 - Day 5 | Backgrounds and borders</h2></summary>
 
   ### Schedule

@@ -9,7 +9,7 @@ _(Updated: 18/09/2023)_
   Welcome to the first part of our curriculum, WDX 60°.
 
 <!-- Week 1 - Day 1 | Onboarding & Basics of Computing -->
-<details>
+<details markdown="1">
   <summary><h2>Week 1 - Day 1 | Onboarding & Basics of Computing</h2></summary>
 
   ### Schedule
@@ -121,7 +121,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 1 - Day 2 | How the Internet & the World Wide Web works -->
-<details>
+<details markdown="1">
   <summary><h2>Week 1 - Day 2 | How the Internet & the World Wide Web works</h2></summary>
 
   ### Schedule
@@ -271,11 +271,10 @@ _(Updated: 18/09/2023)_
   ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
   ### Sources and Attributions
-  
 </details>
 
 <!-- Week 1 - Day 3 | HTML & Markdown -->
-<details>
+<details markdown="1">
   <summary><h2>Week 1 - Day 3 | HTML & Markdown</h2></summary>
 
   ### Schedule
@@ -356,7 +355,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 1 - Day 4 | CSS -->
-<details>
+<details markdown="1">
   <summary><h2>Week 1 - Day 4 | CSS</h2></summary>
 
   ### Schedule
@@ -385,7 +384,7 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 1 - Day 5 | JavaScript -->
-<details>
+<details markdown="1">
   <summary><h2>Week 1 - Day 5 | JavaScript</h2></summary>
 
   ### Schedule
