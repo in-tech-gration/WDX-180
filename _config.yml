@@ -11,4 +11,4 @@ sass:
   sass_dir: assets/jekyll/_sass
 
 # CUSTOM _includes FOLDER: https://jekyllrb.com/docs/configuration/options/#build-command-options
-layouts_dir:  assets/jekyll/_includes
+layouts_dir:  assets/jekyll/_layouts

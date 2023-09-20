@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="{{ '/assets/jekyll/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>
+
     <!-- 
       <script src="{{ '/assets/jekyll/js/respond.js' | relative_url }}"></script> 
     -->
@@ -17,22 +19,15 @@
 
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <ul>
-            <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-            {% if site.show_downloads %}
-              <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-              <li class="title">DOWNLOADS</li>
-            {% endif %}
-          </ul>
-        </nav>
-      </div><!-- end header -->
 
     <div class="wrapper">
 
       <section>
+
+        <nav>
+          <ul></ul>
+        </nav>
+  
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -46,5 +41,19 @@
       </section>
 
     </div>
+
+    <div id="header">
+      <nav>
+        <ul>
+          <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          {% if site.show_downloads %}
+            <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
+            <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
+            <li class="title">DOWNLOADS</li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div><!-- end header -->
+    
   </body>
 </html>
