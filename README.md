@@ -47,6 +47,8 @@
 
   The URL should look something like this: `https://your_username.github.io/WDX-180`
 
+  > ▶️ Here is a [YouTube video walkthrough](https://www.youtube.com/watch?v=xqGlWAHjtcM) to help you with this step. 
+
   _(If you are enrolled in one of our cohorts, at this point it might be a good time to update your progress sheet for the 'Fork WDX repository' and 'Enable GitHub Pages on forked WDX repository' tasks.)_
 </details>
 

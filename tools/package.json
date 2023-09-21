@@ -17,11 +17,13 @@
     "clipboardy": "^2.3.0",
     "csv": "^6.3.3",
     "dotenv": "^16.3.1",
+    "famulus": "^2.2.3",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
     "marked": "^8.0.0",
     "octokit": "^3.1.0",
+    "papaparse": "^5.4.1",
     "showdown": "^2.1.0",
     "yaml": "^2.3.1"
   }
