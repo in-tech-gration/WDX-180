@@ -25,6 +25,7 @@
   - **Communication**  
   - **Hardware Requirements**  
   - **Software**  
+  - **Getting familiar with data formats**
   - **Accounts**  
   - **How to Study / Productivity Tips**  
 </details>
@@ -89,7 +90,6 @@
       - [Windows](https://slack.com/downloads/windows) (109MB)
       - [Mac](https://slack.com/downloads/mac) (160MB)
       - [Linux (*_beta_)](https://slack.com/downloads/linux) (81MB)
-
 
   - **Communication:** [Zoom client](https://zoom.us/support/download) is used to attend the live lectures and sessions.
 

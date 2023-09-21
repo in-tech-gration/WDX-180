@@ -1580,6 +1580,60 @@
       "language": [
         "en"
       ]
+    },
+    "understanding-csv-files": {
+      "type": "YouTube",
+      "duration": 321,
+      "title": "Understanding CSV Files",
+      "date": "10/04/2023",
+      "youtube": {
+        "id": "UofTplCVkYI",
+        "channel_id": "UC5ZoLwtjX_7Zs8LoqpiLztQ",
+        "channel_title": "macmostvideo",
+        "thumbnail_url": "https://i.ytimg.com/vi/UofTplCVkYI/sddefault.jpg"
+      },
+      "tags": [
+        "csv files",
+        "comma separated values",
+        "comma-separated values",
+        "what is csv file?",
+        "csv files explained"
+      ],
+      "reviewers": [
+        {
+          "github": "kostasx",
+          "rating": 1
+        }
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "what-is-markdown": {
+      "type": "YouTube",
+      "duration": 450,
+      "title": "What is markdown?",
+      "date": "22/05/2019",
+      "youtube": {
+        "id": "f49LJV1i-_w",
+        "channel_id": "UC5CMtpogD_P3mOoeiDHD5eQ",
+        "channel_title": "Codecademy",
+        "thumbnail_url": "https://i.ytimg.com/vi/f49LJV1i-_w/sddefault.jpg"
+      },
+      "tags": [
+        "codecademy",
+        "coding",
+        "learn to code",
+        "markdown",
+        "markdown definition",
+        "markdown tutorial",
+        "code foundations",
+        "coding basics",
+        "yt:cc=on"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
