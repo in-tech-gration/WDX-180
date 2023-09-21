@@ -12,6 +12,8 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 1 - Day 1 | Onboarding & Basics of Computing</h2></summary>
 
+  #### Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
+
   ### Schedule
 
   - Welcome Session _(*enrolled students)_
