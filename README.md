@@ -120,6 +120,7 @@
     - **Extensions for VSCode:** Throughout the course we will be recommending  a variety of VSCode extensions that can be installed and extend the functionality of the code editor and boost our productivity. 
       - One of the first extensions that **must be installed** is the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). 
       - Another one is the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) which allows for real-time collaboration. More to follow. 🙂
+      - Last, but not least, you want to install our very own [WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack) which comes packed with recommended extensions and snippets that will you study and code better.
 
   - **Git:** Mandatory [Version Control](https://www.atlassian.com/git/tutorials/what-is-version-control) software for the professional developer. [**Download here**](https://git-scm.com/downloads)
     - **Windows** users will also need to run the following command after installing git: `git config --global core.autocrlf true` as mentioned [here](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings?platform=windows#global-settings-for-line-endings)
