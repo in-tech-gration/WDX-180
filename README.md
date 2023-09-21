@@ -109,8 +109,8 @@
 
   - **Command Line Tools (Terminal):**
     - **Windows:** you will use [GitBash](https://www.atlassian.com/git/tutorials/git-bash) as your UNIX-style command line environment.
-    - **Linux:**: _(Already includes built-in Unix command line terminals. No need to install.)_
-    - **MacOS:**: _(Already includes built-in Unix command line terminals. No need to install.)_
+    - **Linux:** _(Already includes built-in Unix command line terminals. No need to install.)_
+    - **MacOS:** _(Already includes built-in Unix command line terminals. No need to install.)_
       - You will need to install [Homebrew](https://brew.sh/)
 
   - **Code Editor:** Download and install [Visual Studio Code](https://code.visualstudio.com/)
@@ -127,6 +127,8 @@
     - In order to check that `git` has been installed on your system, you will need to run one of the following commands in the terminal: 
     - `git --version`
     - `git -v` (for short)
+
+  > ▶️ At this point, it's probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c) and follow along in order to create your SSH keys and connect them with GitHub.  
 
   - **Node.js:** Download the `LTS` version of the powerful and popular JavaScript running environment [here](https://nodejs.org/en). You are going to be using `Node.js` **a lot** during this course 🙂. In order to check that `Node.js` has been installed on your system, you will need to run one of the following commands in the terminal: 
     - `node --version`
