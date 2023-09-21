@@ -113,6 +113,8 @@ _(Updated: 18/09/2023)_
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
+  Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+
   **It is absolutely crucial** at this point to remind you that updating the `Confidence` column in the progress sheets should reflect an honest and accurate self-evaluation score. You should not overestimate nor underestimate your level of confidence. A score that is closer to your real level of confidence will help you and others attend to your real needs and put focus on the parts that need some further knowledge re-enforcement and engagement.
   
   ### [Extra Resources](EXTRAS.md#day-01---computing)
