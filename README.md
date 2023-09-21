@@ -156,6 +156,14 @@
     - Level: Beginner
     - You can find the `sample.csv` file mentioned in the video in the following filepath: [curriculum/week01/resources/sample.csv](./curriculum/week01/resources/sample.csv)
 
+  In short, CSV is a lightweight data format, where:
+  
+  - Each line of text is a single row
+  - Fields (columns) are separated by comma `,` delimiter character  
+  - The file contains just the data itself (along with the delimiter)
+  - Does not need any special software (it's just a plain text file)
+  - All spreadsheet apps (MS Excel, Google Sheets, Numbers, etc.) can read and write CSV
+
 </details>
 
 <!-- Accounts -->
