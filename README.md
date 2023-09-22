@@ -105,7 +105,7 @@
       - Mac: 115MB
       - Linux: 76MB
 
-      **Note:** During the course, we recommend using `Chrome` for developing and debugging Frontend web applications. For daily, normal usage we recommend using browsers that respect the privacy of their users, such as `Firefox` and [Brave](https://brave.com/download/). 
+      **Note:** During the course, we recommend using `Chrome` for developing and debugging Frontend web applications. For daily, normal usage we recommend using browsers that respect the privacy of their users, such as `Firefox` and [Brave](https://brave.com/download/). Likewise, we tend to `Google` a lot for technical issues and searching for resources, but we recommend using an alternative search engine, such as [DuckDuckGo](https://duckduckgo.com/) for personal use.  
 
   - **Command Line Tools (Terminal):**
     - **Windows:** you will use [GitBash](https://www.atlassian.com/git/tutorials/git-bash) as your UNIX-style command line environment.

@@ -1,5 +1,15 @@
 # Tasks
 
+## CURRICULUM
+
+  ### NEW FEATURES
+
+  #### Include Module for learning how to organize one's progress through the curriculum using a GitHub Project
+
+    - Project Manager: Kostas Minaidis (@kostasx)
+
+    Description: This idea came from [HackYourFuture](https://github.com/HackYourFuture-CPH/teacher-curriculum-exercise-tracker/projects/1) which uses GitHub Projects to track student progress. 
+
 ## CONTENT
 
   ### How to deal with MDN
