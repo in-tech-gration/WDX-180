@@ -1,7 +1,0 @@
-.idea
-.nyc_output
-node_modules
-coverage
-.DS_Store
-demo/node_modules
-demo-ts/node_modules

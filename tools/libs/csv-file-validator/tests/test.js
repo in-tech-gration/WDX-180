@@ -1,5 +1,5 @@
 import test from 'ava';
-import CSVFileValidator from './src/csv-file-validator';
+import CSVFileValidator from '../src/csv-file-validator';
 
 const requiredError = (headerName, rowNumber, columnNumber) => (
 	`<div class="red">${headerName} is required in the <strong>${rowNumber} row</strong> / <strong>${columnNumber} column</strong></div>`

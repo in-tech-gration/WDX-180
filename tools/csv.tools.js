@@ -12,7 +12,7 @@ const {
   xmark 
 } = require("./utils");
 // const CSVFileValidator = require("csv-file-validator"); // Temporarily disabling original library due to local bug fixing 
-const CSVFileValidator   = require("./libs/csv-file-validator/src/csv-file-validator");
+// const CSVFileValidator   = require("./libs/csv-file-validator/src/csv-file-validator");
 const { parse }          = require("csv/sync");
 
 // 1) OUR FUNCTIONS: ===========================================================
@@ -199,18 +199,21 @@ function init() {
           // }
         ]
       };
-  
-      CSVFileValidator(file, config)
-        .then((csvData) => {
-          csvData.data; // Array of objects from file
-          csvData.inValidData; // Array of error messages
-          // console.log({ csvData });
-          console.log( csvData.inValidData );
-          // console.log( csvData.data );
-        })
-        .catch((err) => {
-          console.log({ err });
-        });
+
+      warn("Feature currently unavailable.");
+      // TODO: Implement our own bug-free, simpler CSV schema validation
+      // CSVFileValidator(file, config)
+      //   .then((csvData) => {
+      //     csvData.data; // Array of objects from file
+      //     csvData.inValidData; // Array of error messages
+      //     // console.log({ csvData });
+      //     console.log( csvData.inValidData );
+      //     // console.log( csvData.data );
+      //   })
+      //   .catch((err) => {
+      //     console.log({ err });
+      //   });
+
     } catch (e) {
       warn(e.message);
     }
