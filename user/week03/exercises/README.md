@@ -4,45 +4,58 @@ title: Week's 3 Exercises
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 13/09/2023)_
+_(Updated: 22/09/2023)_
 
-## Week 3 - Day 1
-## Week 3 - Day 2
+## Day 01
 
-  Exercises & required assets:
+  Exercises:
 
-  - [Styling a biography pageStyling a biography page](../../../curriculum/week03/exercises/styling_a_biography_page/README.md): `/user/week03/exercises/styling_a_biography_page/`
+## Day 02
 
-## Week 3 - Day 3
+  Exercises:
 
-  Exercises & required assets:
+  - [Styling a biography pageStyling a biography page](../../../curriculum/week03/exercises/styling_a_biography_page/README.md)
+    - Submit your work to folder: `/user/week03/exercises/day02/styling_a_biography_page/`
 
-  - [Test your skills: Selectors](../../../curriculum/week03/exercises/selectors_tasks/README.md): `/user/week03/exercises/selectors_tasks/`
+## Day 03
 
-## Week 3 - Day 4
+  Exercises:
 
-  Exercises & required assets:
+  - [Test your skills: Selectors](../../../curriculum/week03/exercises/selectors_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day03/selectors_tasks/`
 
-  - [Test your skills: The Cascade](../../../curriculum/week03/exercises/cascade_tasks/README.md): `/user/week03/exercises/cascade_tasks/`
+## Day 04
 
-  - [Test your skills: The box model](../../../curriculum/week03/exercises/box_model_tasks/README.md): `/user/week03/exercises/box_model_tasks/`
+  Exercises:
 
-## Week 3 - Day 5
+  - [Test your skills: The Cascade](../../../curriculum/week03/exercises/cascade_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day04/cascade_tasks/`
 
-  Exercises & required assets:
+  - [Test your skills: The box model](../../../curriculum/week03/exercises/box_model_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day04/box_model_tasks/`
 
-  - [Test your skills: Backgrounds and borders](../../../curriculum/week03/exercises/test_your_skills_backgrounds_and_borders/README.md): `/user/week03/exercises/test_your_skills_backgrounds_and_borders/`
+## Day 05
 
-  - [Test yours skills: Overflow](../../../curriculum/week03/exercises/overflow_tasks/README.md): `/user/week03/exercises/overflow_tasks/`
+  Exercises:
 
-  - [Test yours skills: Values and units](../../../curriculum/week03/exercises/values_tasks/README.md): `/user/week03/exercises/values_tasks/`
+  - [Test your skills: Backgrounds and borders](../../../curriculum/week03/exercises/test_your_skills_backgrounds_and_borders/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/`
 
-  - [Test yours skills: Sizing](../../../curriculum/week03/exercises/sizing_tasks/README.md): `/user/week03/exercises/sizing_tasks/`
+  - [Test yours skills: Overflow](../../../curriculum/week03/exercises/overflow_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day05/overflow_tasks/`
 
-  - [Test yours skills: Images and form elements](../../../curriculum/week03/exercises/images_tasks/README.md): `/user/week03/exercises/images_tasks/`
+  - [Test yours skills: Values and units](../../../curriculum/week03/exercises/values_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day05/values_tasks/`
 
-  ## Week 3 - Weekend Suggestions
+  - [Test yours skills: Sizing](../../../curriculum/week03/exercises/sizing_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day05/sizing_tasks/`
 
-  Exercises & required assets:
+  - [Test yours skills: Images and form elements](../../../curriculum/week03/exercises/images_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/day05/images_tasks/`
 
-  - [Test your skills: Writing modes and logical properties](../../../curriculum/week03/exercises/writing_modes_tasks/README.md): `/user/week03/exercises/writing_modes_tasks/`
+  ## Weekend
+
+  Exercises:
+
+  - [Test your skills: Writing modes and logical properties](../../../curriculum/week03/exercises/writing_modes_tasks/README.md):
+    - Submit your work to folder:  `/user/week03/exercises/weekend/writing_modes_tasks/`
