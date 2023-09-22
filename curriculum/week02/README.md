@@ -145,6 +145,25 @@ _(Updated: 18/09/2023)_
 
   - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/README.md)
     - Description: This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
+    - Exercises:
+      - 
+
+  - [Read: **Creating hyperlinks**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
+    - Description: You already know [**how the hyperlink changed everything**](https://www.youtube.com/watch?v=3Va3oY8pfSI). Now it's time to dive into the more technical aspects of it.
+    - What you'll learn:
+      - What is a hyperlink?
+      - Anatomy of a link
+      - Image links
+      - About URLs and paths
+      - Document fragments
+      - Absolute versus relative URLs
+      - Link best practices
+      - The `download` attribute
+      - Email links
+    - Exercises:
+      - [Active learning: creating your own example link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_your_own_example_link)
+      - [Active learning: creating a navigation menu](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_a_navigation_menu)
+      - [Test your skills: Links (3x Tasks)](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links)
 
   ### Summary
 
