@@ -5,3 +5,4 @@ node_modules
 .next/
 # kostasx section:
 CURRICULUM.x 
+.personal/
