@@ -10,7 +10,16 @@
 
     Description: This idea came from [HackYourFuture](https://github.com/HackYourFuture-CPH/teacher-curriculum-exercise-tracker/projects/1) which uses GitHub Projects to track student progress. See more about the idea through [this video](https://www.youtube.com/watch?v=YR0-olyOkQY).
 
+  ### Create GitHub Template for Pull Requests
+
 ## CONTENT
+
+  ### List of MDN articles and resources that must be integrated 
+
+  The following resources must be reviewed, updated and integrated into the platform in order to be available offline:
+
+  - Resource: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks
+  - Module: Week 2 - Day 2 | HTML
 
   ### How to deal with MDN
 
@@ -58,6 +67,10 @@
   - Markdown files should be parsed using the `tools/yari.parser.js` script.
 
   - (New) glossary terms should also be appended to the `resources/terms.json` file in alphabetical order.
+
+  ### Updated resources.json to include references to Modules that reference the resource
+
+    For example, the resource `how-the-hyperlink-changed-everything-small-thing-big-idea-a-ted-series` must include a reference to the `HTML Basics resource` Module (found in Week 01) which references the video.
 
 ## MISC
 
@@ -115,7 +128,6 @@
       - Fix: https://github.com/shystruk/csv-file-validator/issues/70
       - Lint progress DRAFTS CSV
       - Lint terms DRAFTS CSV
-
 
   ### Improve the Yari parser tool
 

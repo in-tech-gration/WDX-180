@@ -10,6 +10,8 @@ const warn = (text, hasWARNING = true)=> console.log(chalk.bold.red( hasWARNING 
 const ok = (text)=> console.log(chalk.bold.green(text));
 const info = (text)=> console.log(chalk.bold.blue(text));
 
+const youTubeIdRegEx = /([a-z0-9_-]{11})/i;
+
 /**
  * @param {string}
  * @return {Array}
@@ -202,6 +204,7 @@ function createFrontMatterMarkdownFromObject( fmObj ){
 module.exports = {
   checkmark,
   xmark,
+  youTubeIdRegEx,
   ytRegex,
   getFile,
   getResources,

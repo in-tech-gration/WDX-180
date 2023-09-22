@@ -7,7 +7,7 @@ const clipboardy    = require('clipboardy');
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
 console.log("Running yt.s...");
 
-const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate } = require("./utils");
+const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate, youTubeIdRegEx } = require("./utils");
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
 
 // --get-video-info
@@ -76,6 +76,10 @@ const IVideoInfo = {
 
 async function getYouTubeVideoInfo({ vid }){
 
+  if( !youTubeIdRegEx.test(vid) ){
+    return warn(`Invalid YouTube ID: ${vid}`);
+  }
+
   const URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails%2C+snippet&id=${vid}&key=${YOUTUBE_API_KEY}`
   
   const resourceJSON = {}
@@ -104,6 +108,10 @@ async function getYouTubeVideoInfo({ vid }){
         const videoInfo = json.items[0];
 
         let defaultAudioLanguage = null;
+
+        if ( !videoInfo ){
+          return warn("Ops! Something went wrong.");
+        }
 
         if ( videoInfo.snippet.defaultAudioLanguage ){
 
