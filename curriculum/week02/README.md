@@ -111,7 +111,11 @@ _(Updated: 18/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w02.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
+  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
+  >
+  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
   ### [Extra Resources](EXTRAS.md)
 
@@ -141,7 +145,11 @@ _(Updated: 18/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w02.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
+  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
+  >
+  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
   ### [Extra Resources](EXTRAS.md)
 
@@ -162,7 +170,11 @@ _(Updated: 18/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w02.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
+  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
+  >
+  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
   ### [Extra Resources](EXTRAS.md)
 
@@ -183,7 +195,11 @@ _(Updated: 18/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w02.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
+  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
+  >
+  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
   ### [Extra Resources](EXTRAS.md)
 
@@ -204,7 +220,11 @@ _(Updated: 18/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/progress.draft.60.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w02.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+
+  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
+  >
+  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
   ### [Extra Resources](EXTRAS.md)
 
