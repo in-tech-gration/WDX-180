@@ -1,4 +1,10 @@
-echo $1;
+# Usage: $ /tools/> ./create_exercises.sh 36
+# Will create 5 folders under ./user/week36/exercises/ and touch an empty README.md file:
+# ./user/week36/exercises/day01/README.md
+# ./user/week36/exercises/day02/README.md
+# ./user/week36/exercises/day03/README.md
+# ./user/week36/exercises/day04/README.md
+# ./user/week36/exercises/day05/README.md
 
 # TODO: Check if we are in the correct directory: /user/
 # echo `pwd`;
