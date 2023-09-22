@@ -8,7 +8,7 @@
 
     - Project Manager: Kostas Minaidis (@kostasx)
 
-    Description: This idea came from [HackYourFuture](https://github.com/HackYourFuture-CPH/teacher-curriculum-exercise-tracker/projects/1) which uses GitHub Projects to track student progress. 
+    Description: This idea came from [HackYourFuture](https://github.com/HackYourFuture-CPH/teacher-curriculum-exercise-tracker/projects/1) which uses GitHub Projects to track student progress. See more about the idea through [this video](https://www.youtube.com/watch?v=YR0-olyOkQY).
 
 ## CONTENT
 
