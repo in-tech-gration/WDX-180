@@ -59,6 +59,10 @@ Now, let's briefly explain what each file and folder contains:
 - **LICENSE**: This is the GNU General Public License (v3) under which the content of this repository operates.
 - **user/**: This is the student's personal folder. This is where the student will store all of their personal progress data, code submissions and other related resources.
 
+**Where can I temporarily store my own files?**
+
+In our `.gitignore` we have an entry for a folder named `.personal` under which you can place any temporary files or folders.
+
 ## The WDX Platform (Next.js)
 
 ### How to do X?

@@ -12,6 +12,8 @@
 
   ### Create GitHub Template for Pull Requests
 
+  ### Translate Content to as many languages as possible
+
 ## CONTENT
 
   ### List of MDN articles and resources that must be integrated 
