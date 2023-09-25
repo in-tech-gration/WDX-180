@@ -36,7 +36,7 @@ _(Updated: 20/09/2023)_
   - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks)
   - [MDN's Assessment: **Fundamental CSS comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w06.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.w06.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   > **Note:** Do not forget to create the Progress Sheet first on your `/user/week06/progress/` folder.
   >
@@ -78,7 +78,7 @@ _(Updated: 20/09/2023)_
 
   - [MDN's Assessment: **Typesetting a community school homepage**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Typesetting_a_homepage)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w06.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.w06.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   > **Note:** Do not forget to create the Progress Sheet first on your `/user/week06/progress/` folder.
   >
@@ -130,7 +130,7 @@ _(Updated: 20/09/2023)_
 
   As for the Flexbox Defense(1) and Flexbox Froggy(2), if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the repos ([1](https://github.com/channingallen/tower-defense) & [2](https://github.com/thomaspark/flexboxfroggy)) of these awesome games!
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w06.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.w06.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   > **Note:** Do not forget to create the Progress Sheet first on your `/user/week06/progress/` folder.
   >
@@ -170,7 +170,7 @@ _(Updated: 20/09/2023)_
 
   - [MDN's Assessment: **Test your skills: Responsive web design and media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/rwd_skills)
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w06.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.w06.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   > **Note:** Do not forget to create the Progress Sheet first on your `/user/week06/progress/` folder.
   >
@@ -205,7 +205,7 @@ _(Updated: 20/09/2023)_
 
   ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w06.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.w06.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
   > **Note:** Do not forget to create the Progress Sheet first on your `/user/week06/progress/` folder.
   >
