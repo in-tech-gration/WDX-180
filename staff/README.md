@@ -2,6 +2,8 @@
 
 ## Staff & Mentors
 
+  - After you've joined our Slack platform, make sure to **update your Slack profile** and add your current role at intechgration.io, so our students are able to easily find the staff members and reach out to them.
+
 ### Useful Tools 
 
 **Scheduling Calls** _(Office Hours)_:
@@ -44,6 +46,8 @@ Copy and paste the following markdown content into the Cohort and self-paced cha
 ```
 :toolbox: Resources:
   - [How to use Slack: your quick start guide](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide)
+  - List of instructors/mentors/volunteers:
+    - Name / Slack username / [email]
 ```
 
 Then, click on the the `More actions` icon (the ... 3 dots) and select [`Pin to channel`](https://slack.com/help/articles/205239997-Pin-messages-and-bookmark-links).
