@@ -11,3 +11,4 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
 1,1,Setting up: Version Control,Install Git,Beginner,0-10,FALSE,Run git --version and paste the output of the command here
 1,1,Setting up: Productivity,Install Wikiwand Browser Extension: https://www.wikiwand.com/,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 1,1,Computing Basics,Complete the 'Decode the secret message' challenge,Beginner,0-10,FALSE,Paste the secret message here
+1,1,Setting up: GitHub,Watched the 'WDX-180: Keeping our forked repository up-to-date and in-sync with the original repo' video,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
