@@ -129,7 +129,7 @@
     - `git --version`
     - `git -v` (for short)
 
-  > ▶️ At this point, it's probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c) and follow along in order to create your SSH keys and connect them with GitHub.  
+  > ▶️ At this point, it's probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c) and follow along in order to create your SSH keys and connect them with GitHub, then follow the rest of the instructions to `clone` (download) the repository to your computer and install all the necessary dependencies.  
 
   - **Node.js:** Download the `LTS` version of the powerful and popular JavaScript running environment [here](https://nodejs.org/en). You are going to be using `Node.js` **a lot** during this course 🙂. In order to check that `Node.js` has been installed on your system, you will need to run one of the following commands in the terminal: 
     - `node --version`
