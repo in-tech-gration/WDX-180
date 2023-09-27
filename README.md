@@ -93,7 +93,8 @@
       - [Mac](https://slack.com/downloads/mac) (160MB)
       - [Linux (*_beta_)](https://slack.com/downloads/linux) (81MB)
 
-  - **Communication:** [Zoom client](https://zoom.us/support/download) is used to attend the live lectures and sessions.
+  - **Communication:** [Zoom client](https://zoom.us/support/download) and [Google Meet](https://meet.google.com/) are used to attend the live lectures and student sessions.
+    - You can do a quick video/audio check following the directions [found here](https://support.google.com/meet/answer/10409699?hl=en). Video is optional, but **audio (good quality microphone) is mandatory**. 
 
   - **Browser(s)**:
     - [Chrome](https://www.google.com/chrome/)

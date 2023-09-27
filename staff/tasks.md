@@ -209,6 +209,10 @@
     https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils
     https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager
 
+  ### Create a nicer, more informative and fancier version of the JSONPlacehoder script
+
+    - The `npm run jsonplaceholder` script is running a simple "JSONPlacehoder listening on ..." message. It would be nice to add some more information and keyboard shortcuts for serving other JSON content, restarting the server, running on different ports and showing a cooler more colorful CLI output. :) 
+
 ## PLATFORM (npm run learn)  
 
   **Project Manager:** Kostas Minaidis (@kostasx)

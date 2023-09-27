@@ -11,7 +11,11 @@ on your system:
   - You will need to download the `.vsix` file and install it manually via `code --install-extension vscode-wdx-development-extension-0.1.0.vsix` (read more about command line extension management [here](https://code.visualstudio.com/docs/editor/extension-marketplace#_command-line-extension-management
 ))
 
-## GENERAL UTILITIES
+## EDUCATIONAL TOOLS
+
+  - [JSON Placeholder](https://jsonplaceholder.typicode.com/): `npm run jsonplaceholder`
+
+## GENERAL TOOLS
 
   ### Create a generic curriculum linting tool
 

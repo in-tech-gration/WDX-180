@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
+    "jsonplaceholder": "node tools/node_modules/jsonplaceholder",
     "wordpress": "echo 'coming soon...'",
     "md2html": "node tools/md2html.js",
     "yari:download": "node tools/yari.download.js",
