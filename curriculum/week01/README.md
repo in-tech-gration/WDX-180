@@ -28,11 +28,13 @@ _(Updated: 18/09/2023)_
   
   This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
 
-  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack). 🙏
+  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack) and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration). 🙏
 
   ### Study Plan
 
-  Watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
+  Watch [this video](https://youtu.be/CAek8fVB70M) that will guide you through the process of keeping your forked WDX-180 repo up-to-date with our latest content and curriculum updates.
+
+  Next, watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
 
   **YouTube Tips - (1) grabbing screenshots and (2) customizing the playback speed:** 
   
