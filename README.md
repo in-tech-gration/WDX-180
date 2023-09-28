@@ -21,20 +21,32 @@
 
   If you are ready and feel committed enough to start the course, you must start by carefully going through the following sections and completing all the necessary tasks:
 
+  - **Accounts**  
   - **Setup**  
   - **Communication**  
   - **Hardware Requirements**  
   - **Software**  
   - **Getting familiar with data formats**
-  - **Accounts**  
   - **How to Study / Productivity Tips**  
+</details>
+
+<!-- Accounts -->
+<details markdown="1">
+  <summary><h3>Accounts</h3></summary>
+
+  In order to attend the course (and become a professional web developer) you will need to open an account in the following services:
+
+  - [Google Gmail](https://www.google.com/gmail/about/)
+  - [GitHub](https://github.com/)
+  - [StackOverflow](https://stackoverflow.com/)
+  - [Codesandbox](https://codesandbox.io/)
 </details>
 
 <!-- Setup -->
 <details markdown="1">
   <summary><h3>Setup</h3></summary>
 
-  The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository){:target="_blank"}  this repository under your GitHub account.
+  The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo){:target="_blank"}  this repository under your GitHub account.
 
   After you've successfully forked the repo, you will need to enable [GitHub Pages](https://pages.github.com/) in order to turn the repo into a website also.
 
@@ -169,19 +181,6 @@
   - The file contains just the data itself (along with the delimiter)
   - Does not need any special software (it's just a plain text file)
   - All spreadsheet apps (MS Excel, Google Sheets, Numbers, etc.) can read and write CSV
-
-</details>
-
-<!-- Accounts -->
-<details markdown="1">
-  <summary><h3>Accounts</h3></summary>
-
-  In order to attend the course (and become a professional web developer) you will need to open an account in the following services:
-
-  - [Google Gmail](https://www.google.com/gmail/about/)
-  - [GitHub](https://github.com/)
-  - [StackOverflow](https://stackoverflow.com/)
-  - [Codesandbox](https://codesandbox.io/)
 </details>
 
 <!-- Syllabus -->
