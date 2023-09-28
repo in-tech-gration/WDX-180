@@ -51,11 +51,16 @@ summary > h3:hover {
   color: white;
 }
 
+// BLOCK QUOTES:
 blockquote {
   font-style: inherit;
-  background: rgba(0,0,0,0.6);
-  padding: 2rem 3rem;
+  background: rgb(0 0 0 / 21%);
+  padding: 1;
   margin: 1rem 0;
+  border-left: 3px solid #3e3c3c;
+}
+blockquote p {
+  margin-bottom: auto;
 }
 
 ul {
@@ -64,4 +69,15 @@ ul {
 
 code {
   font-size: 1rem;
+  color: #ef6200;
+  margin: 0;
+  padding: 4px;
+}
+
+.credits-highlighted {
+  color: #c6a213;
+}
+
+section.main-section {
+  margin-top: 1rem;
 }
