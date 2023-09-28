@@ -51,6 +51,8 @@ YouTube video, 17min
 
 ## Browser
 
+- You can always click and open any link on any website in a new Tab, by holding down the `Ctrl` (Windows) or the `Command` (Mac) keys while clicking. This will help you stay on the page that you are studying, while temporarily opening up any interesting links in a new Tab.
+
 - [Create and save Chrome tab groups](https://www.theverge.com/23384844/chrome-google-tab-groups-create-save-how-to){:target="_blank"}
 
 ## ChatGPT

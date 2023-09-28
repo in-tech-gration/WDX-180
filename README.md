@@ -208,6 +208,8 @@
     Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md){:target="_blank"}.
 </details>
 
+## Finished setting everything up? [**➡️ LET'S GET STARTED**](/curriculum/README.md).
+
 ## Who's Involved
 
 - [**Kostas Minaidis** / Technical Curriculum Developer](https://www.linkedin.com/in/kostas-minaidis/)
@@ -243,5 +245,3 @@ The curriculum draws heavily on the following amazing resources:
 Our lovely contributors _(feel free to give them a follow/subscribe/like as a gesture of appreciation)_:
 
 - **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
-
-## [**➡️ LET'S GET STARTED**](/curriculum/README.md).
