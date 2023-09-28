@@ -4,7 +4,8 @@ var sectionHeight = function() {
 
   if ($section.outerHeight(true) < total) {
     var margin = $section.outerHeight(true) - $section.height();
-    $section.height(total - margin - 20);
+    // $section.height(total - margin - 20); // Lower section fix?
+    $section.height(total - margin);
   } else {
     $section.css('height','auto');
   }

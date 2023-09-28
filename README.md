@@ -208,7 +208,11 @@
     Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md){:target="_blank"}.
 </details>
 
-## Finished setting everything up? [**➡️ LET'S GET STARTED**](/curriculum/README.md).
+### Finished setting everything up? 
+
+[**➡️ LET'S GET STARTED**](/curriculum/README.md)
+
+---
 
 ## Who's Involved
 
