@@ -36,10 +36,10 @@
 
   In order to attend the course (and become a professional web developer) you will need to open an account in the following services:
 
-  - [Google Gmail](https://www.google.com/gmail/about/)
-  - [GitHub](https://github.com/)
-  - [StackOverflow](https://stackoverflow.com/)
-  - [Codesandbox](https://codesandbox.io/)
+  - [Google Gmail](https://www.google.com/gmail/about/){:target="_blank"}
+  - [GitHub](https://github.com/){:target="_blank"}
+  - [StackOverflow](https://stackoverflow.com/){:target="_blank"}
+  - [Codesandbox](https://codesandbox.io/){:target="_blank"}
 </details>
 
 <!-- Setup -->
