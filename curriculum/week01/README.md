@@ -196,7 +196,7 @@ _(Updated: 18/09/2023)_
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](resources/How%20the%20Internet%20works/README.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](resources/How_the_Internet_works/README.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
