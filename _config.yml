@@ -13,3 +13,7 @@ sass:
 # CUSTOM _includes FOLDER: https://jekyllrb.com/docs/configuration/options/#build-command-options
 layouts_dir:  assets/jekyll/_layouts
 includes_dir: assets/jekyll/_includes
+
+# Fix [Link](README.md) => <a href="README.html">Link</a>
+gems:
+  - jekyll-relative-links
