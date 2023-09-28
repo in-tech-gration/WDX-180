@@ -41,4 +41,13 @@ $(function() {
   sectionHeight();
 
   $('img').on('load', sectionHeight);
+
+  // Back/Forward Buttons:
+  $("#ctrl-forward").on("click", function(){
+    history.forward();
+  });
+  $("#ctrl-back").on("click", function(){
+    history.back();
+  });
+
 });
