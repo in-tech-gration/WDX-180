@@ -239,6 +239,7 @@ The curriculum draws heavily on the following amazing resources:
 - Spotted a broken link?
 - Found a typo?
 - Have an idea on how to improve the course? 
+- How about mentoring?
 
 [**Reach out to us!**](https://github.com/in-tech-gration/WDX-Intro/discussions)
 
