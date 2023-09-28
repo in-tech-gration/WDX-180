@@ -348,6 +348,12 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
 ### Summary
 
+  Wow! You've covered quite a lot of ground right there! Through this module you've uncovered one of the most basic building blocks of the Web: HTML. The language that provides the content and gives structure to our web documents.
+
+  You should be able to tell the difference between an HTML element and a tag, understand how HTML attributes are placed within the opening tags to provide extra functionality to the HTML elements and how nesting and hierarchy are important factors for a clean and well-formatted HTML documents.
+
+  On top of HTML, you also learned about a very handy format, called `Markdown` which you are going to be seeing and using a lot in upcoming weeks.
+
 ### Exercises
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
@@ -382,9 +388,15 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   - Publishing your website
 
   - [Read: **CSS Basics**](resources/CSS_Basics/README.md)
-  - [Read: **Publishing your website**](resources/Publishing%20your%20website/README.md)
+  - [Read: **Publishing your website**](resources/Publishing_your_website/README.md)
 
 ### Summary
+
+Congratulations! You now know how to spice up your HTML using CSS. 
+
+You should by now have a good understanding of how CSS uses various selectors to target HTML elements and apply various CSS rules to them and style them.
+
+Apart from creating HTML content and styling it with CSS, you also have some insight on how to publish and deploy your web pages on the Internet.
 
 ### Exercises
 
@@ -414,7 +426,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
 
-  - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE)
+  - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE){:target="_blank"}
     - Duration: 8min
     - <details>
         <summary>What you'll learn</summary>
@@ -473,7 +485,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   ---
 
-  - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM)
+  - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM){:target="_blank"}
     - Duration: 8min
     - <details>
         <summary>What you'll learn</summary>
@@ -504,7 +516,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
           </ul>  
       </details>
 
-  - [Watch: **JavaScript String Methods and Properties | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo)
+  - [Watch: **JavaScript String Methods and Properties \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo){:target="_blank"}
     - Duration: 8min
     - Level: Beginner
     - <details>
@@ -531,7 +543,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   ---
 
-  **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview) and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
+  **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview){:target="_blank"} and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
 
   ---
 
@@ -544,7 +556,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   // Output: "Brendan Eich created JavaScript."
   ``` 
 
-  - [Watch: **JavaScript Numbers, Number Methods, isNaN | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=3Ul9gYweEPs)
+  - [Watch: **JavaScript Numbers, Number Methods, isNaN \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=3Ul9gYweEPs){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - <details>
@@ -582,7 +594,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   ---
 
-  - [Watch: **Math Methods and How to Generate a Random Number with JavaScript | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y)
+  - [Watch: **Math Methods and How to Generate a Random Number with JavaScript \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - <details>
@@ -609,7 +621,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   ![](assets/Math.floor.vs.Math.ceil.png)
 
-  - [Watch: **If Statements in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=9Ykz2_PhdfE)
+  - [Watch: **If Statements in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=9Ykz2_PhdfE){:target="_blank"}
     - Duration: 7min
     - Level: Beginner
     - <details>
@@ -630,7 +642,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
           </ul>
       </details>
 
-  - [Watch: **Switch Statements in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=3q7sk03ehOs)
+  - [Watch: **Switch Statements in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=3q7sk03ehOs){:target="_blank"}
     - Duration: 4min
     - Level: Beginner
     - <details>
@@ -650,7 +662,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
           </ul>
       </details>
 
-  - [Watch: **Ternary Operator in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg)
+  - [Watch: **Ternary Operator in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - <details>
@@ -693,7 +705,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   - All test scores above 97 should be graded "A+"
   - All test scores above 80 should be graded "B+"
  
-  - [Watch: **User Input in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU)
+  - [Watch: **User Input in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU){:target="_blank"}
     - Duration: 11min
     - Level: Beginner
     - <details>
@@ -714,7 +726,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
           </ul>
       </details>
 
-  - [Watch: **For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA)
+  - [Watch: **For Loops, While Loops, Do While Loops \| Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA){:target="_blank"}
     - Duration: 17min
     - Level: Beginner
     - <details>
@@ -736,7 +748,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
           </ul>
       </details>
 
-  - [Watch: **Functions in Javascript | Javascript Functions Tutorial**](https://www.youtube.com/watch?v=u_lLNH38n5E)
+  - [Watch: **Functions in Javascript \| Javascript Functions Tutorial**](https://www.youtube.com/watch?v=u_lLNH38n5E){:target="_blank"}
     - Duration: 13min
     - Level: Beginner
     - <details>

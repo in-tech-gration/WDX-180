@@ -4,8 +4,6 @@ slug: Learn/Getting_started_with_the_web/Publishing_your_website
 page-type: learn-module-chapter
 ---
 
-TODO: W1D4 [WORK IN PROGRESS]
-
 # Publishing your website
 
 _(Updated: 14/08/2023)_
@@ -40,17 +38,17 @@ In addition, you will need a [File Transfer Protocol (FTP)](https://developer.mo
 
 Some tools let you publish your website online:
 
-- [GitHub](https://github.com/) is a "social coding" site. It allows you to upload code repositories for storage in the [Git](https://git-scm.com/) **version control system.** You can then collaborate on code projects, and the system is open-source by default, meaning that anyone in the world can find your GitHub code, use it, learn from it, and improve on it. GitHub has a very useful feature called [**GitHub Pages**](https://pages.github.com/), which allows you to expose website code live on the web.
+- [GitHub](https://github.com/){:target="_blank"} is a "social coding" site. It allows you to upload code repositories for storage in the [Git](https://git-scm.com/){:target="_blank"} **version control system.** You can then collaborate on code projects, and the system is open-source by default, meaning that anyone in the world can find your GitHub code, use it, learn from it, and improve on it. GitHub has a very useful feature called [**GitHub Pages**](https://pages.github.com/){:target="_blank"}, which allows you to expose website code live on the web.
 
-- [Netlify](https://www.netlify.com/)
+- [Netlify](https://www.netlify.com/){:target="_blank"}
 
-- [Google Firebase](https://firebase.google.com/docs/hosting)
+- [Google Firebase](https://firebase.google.com/docs/hosting){:target="_blank"}
 
-- [Vercel](https://vercel.com/)
+- [Vercel](https://vercel.com/){:target="_blank"}
 
-- [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/host-static-website/)
+- [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/host-static-website/){:target="_blank"}
 
-- [Google App Engine](https://cloud.google.com/appengine/) is a powerful platform that lets you build and run applications on Google's infrastructure — whether you need to build a multi-tiered web application from scratch or host a static website. See [How do you host your website on Google App Engine?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_do_you_host_your_website_on_Google_App_Engine) for more information.
+- [Google App Engine](https://cloud.google.com/appengine/){:target="_blank"} is a powerful platform that lets you build and run applications on Google's infrastructure — whether you need to build a multi-tiered web application from scratch or host a static website. See [How do you host your website on Google App Engine?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_do_you_host_your_website_on_Google_App_Engine){:target="_blank"} for more information.
 
 These options are usually free, but you may outgrow the limited feature-set.
 
@@ -60,10 +58,10 @@ There are a number of web apps that emulate a website development environment, a
 
 Try playing with some of these examples to find out which one works best for you:
 
-- [JSFiddle](https://jsfiddle.net/)
-- [Glitch](https://glitch.com/)
-- [JS Bin](https://jsbin.com/)
-- [CodePen](https://codepen.io/)
+- [JSFiddle](https://jsfiddle.net/){:target="_blank"}
+- [Glitch](https://glitch.com/){:target="_blank"}
+- [JS Bin](https://jsbin.com/){:target="_blank"}
+- [CodePen](https://codepen.io/){:target="_blank"}
 
 ![Screenshot of JS Bin web based IDE](assets/jsbin-screen.png)
 
@@ -71,9 +69,9 @@ Try playing with some of these examples to find out which one works best for you
 
 Now let's examine how to easily publish your site via GitHub Pages.
 
-1. First of all, [sign up for GitHub](https://github.com/) and verify your email address.
+1. First of all, [sign up for GitHub](https://github.com/){:target="_blank"} and verify your email address.
 
-2. Next, you need to [create a repository](https://github.com/new) to store files.
+2. Next, you need to [create a repository](https://github.com/new){:target="_blank"} to store files.
 
 3. On this page, in the _Repository name_ box, enter _username_.github.io, where _username_ is your username. For example, our friend Bob Smith would enter _bobsmith.github.io_.
    Check the "_Initialize this repository with a README"_ box. Then click _Create repository_.![A sample of a GitHub repository page](assets/github-create-repo.png)
@@ -82,18 +80,18 @@ Now let's examine how to easily publish your site via GitHub Pages.
 
    > **Note:** Make sure your folder has an `index.html` file.
 
-5. Navigate your browser to _username_.github.io to see your website online. For example, for the username _chrisdavidmills_, go to [_chrisdavidmills_.github.io](https://chrisdavidmills.github.io/).
+5. Navigate your browser to _username_.github.io to see your website online. For example, for the username _chrisdavidmills_, go to [_chrisdavidmills_.github.io](https://chrisdavidmills.github.io/){:target="_blank"}.
 
    > **Note:** It may take a few minutes for your website to go live. If your website does not display immediately, wait a few minutes. Try again.
 
-To learn more, see [GitHub Pages Help](https://docs.github.com/en/pages/getting-started-with-github-pages).
+To learn more, see [GitHub Pages Help](https://docs.github.com/en/pages/getting-started-with-github-pages){:target="_blank"} and/or [watch this video](https://www.youtube.com/watch?v=nERHeT53MIw&t=1146s){:target="_blank"} we've prepared for you.
 
 ## Further reading
 
-- [What is a web server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server)
-- [Understanding domain names](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name)
-- [How much does it cost to do something on the web?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost)
-- [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website): A nice tutorial from Codecademy that goes a bit further and shows some additional techniques.
+- [What is a web server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server){:target="_blank"}
+- [Understanding domain names](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name){:target="_blank"}
+- [How much does it cost to do something on the web?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/How_much_does_it_cost){:target="_blank"}
+- [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website){:target="_blank"}: A nice tutorial from Codecademy that goes a bit further and shows some additional techniques.
 
 ---
 
