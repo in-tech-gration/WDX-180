@@ -32,7 +32,7 @@ _(Updated: 18/09/2023)_
 
   ### Study Plan
 
-  Watch [this video](https://youtu.be/CAek8fVB70M) that will guide you through the process of keeping your forked WDX-180 repo up-to-date with our latest content and curriculum updates.
+  Watch [this video](https://youtu.be/CAek8fVB70M){:target="_blank"} that will guide you through the process of keeping your forked WDX-180 repo up-to-date with our latest content and curriculum updates.
 
   Next, watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
 
