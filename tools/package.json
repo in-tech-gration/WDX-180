@@ -20,7 +20,6 @@
     "dotenv": "^16.3.1",
     "famulus": "^2.2.3",
     "gray-matter": "^4.0.3",
-    "jsonplaceholder": "^0.3.3",
     "markdown-it": "^13.0.2",
     "markdown-it-anchor": "^8.6.7",
     "marked": "^9.0.3",
