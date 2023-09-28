@@ -3,18 +3,14 @@
    original base16 by Chris Kempson (https://github.com/chriskempson/base16)
 */
 
-$highlight-w: #d0d0d0;
-$highlight-err: #151515;
-$highlight-err-bg: #ac4142;
-
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
-  color: $highlight-w;
+  color: #d0d0d0;
 }
 .highlight .err {
-  color: $highlight-err;
-  background-color: $highlight-err-bg;
+  color: #151515;
+  background-color: #ac4142;
 }
 .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
   color: #888;
@@ -26,10 +22,10 @@ $highlight-err-bg: #ac4142;
   color: #f4bf75;
 }
 .highlight .o, .highlight .ow {
-  color: $highlight-w;
+  color: #d0d0d0;
 }
 .highlight .p, .highlight .pi {
-  color: $highlight-w;
+  color: #d0d0d0;
 }
 .highlight .gi {
   color: #90a959;
