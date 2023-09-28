@@ -55,7 +55,7 @@ summary > h3:hover {
 blockquote {
   font-style: inherit;
   background: rgba(0, 0, 0, 0.2);
-  padding: 1;
+  padding: 1rem;
   margin: 1rem 0;
   border-left: 3px solid #3e3c3c;
 }
@@ -75,7 +75,7 @@ code {
 }
 
 .credits-highlighted {
-  color: #c6a213;
+  color: #c6a213 !important;
 }
 
 section.main-section {
