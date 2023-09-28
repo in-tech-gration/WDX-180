@@ -1,51 +1,63 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="{{ site.lang | default: " en-US" }}">
 
-    {% seo %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="{{ '/assets/jekyll/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>
+  {% seo %}
 
-    <!-- 
+  <link rel="stylesheet"
+    href="{{ '/assets/jekyll/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>
+
+  <!-- 
       <script src="{{ '/assets/jekyll/js/respond.js' | relative_url }}"></script> 
     -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    {% include head-custom.html %}
+  {% include head-custom.html %}
 
-  </head>
-  <body>
+</head>
 
-    <div class="wrapper">
+<body>
 
-      <section class="main-section">
+  <div class="wrapper">
 
-        <nav id="side-toc">
-          <!-- Based on leap-day theme: https://github.com/pages-themes/leap-day/tree/master -->
-          <h2>Table of Contents:</h2>
-          <ul></ul>
-        </nav>
-  
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a class="credits credits-highlighted" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a class="credits credits-highlighted" href="https://twitter.com/mattgraham">mattgraham</a></span>
+    <section class="main-section">
+
+      <nav id="side-toc">
+        <!-- Based on leap-day theme: https://github.com/pages-themes/leap-day/tree/master -->
+        <h2>Table of Contents:</h2>
+        <ul></ul>
+      </nav>
+
+      <div id="title">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <div class="ctrl-back-forward">
+          <div>&#8678; Back</div>
+          <div>Forward &#8680;</div>
         </div>
 
-        {{ content }}
+        <hr>
+        <span class="credits left">Project maintained by <a class="credits credits-highlighted"
+            href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+        <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a class="credits credits-highlighted"
+            href="https://twitter.com/mattgraham">mattgraham</a></span>
+      </div>
 
-      </section>
+      {{ content }}
 
-    </div>
+    </section>
 
-    <!-- start header -->
-    <!--
+  </div>
+
+  <!-- start header -->
+  <!--
       <div id="header">
         <nav>
           <ul>
@@ -59,7 +71,8 @@
         </nav>
       </div>
     -->
-    <!-- end header -->
-    
-  </body>
+  <!-- end header -->
+
+</body>
+
 </html>

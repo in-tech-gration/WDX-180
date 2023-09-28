@@ -81,3 +81,17 @@ code {
 section.main-section {
   margin-top: 1rem;
 }
+
+.ctrl-back-forward {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.ctrl-back-forward > div {
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 150ms ease;
+}
+.ctrl-back-forward > div:hover {
+  opacity: 1;
+}
