@@ -4,8 +4,8 @@ var sectionHeight = function() {
 
   if ($section.outerHeight(true) < total) {
     var margin = $section.outerHeight(true) - $section.height();
-    // $section.height(total - margin - 20); // Lower section fix?
-    $section.height(total - margin);
+    // $section.height(total - margin - 20); // TODO: Lower space fix? 
+    $section.height(total - margin); 
   } else {
     $section.css('height','auto');
   }
@@ -38,6 +38,8 @@ $(function() {
   });
 
   $("nav ul li").on("click", "a", function(event) {
+
+    const $this = $(this);
 
     var position = $($this.attr("href")).offset().top - 190;
     $("html, body").animate({scrollTop: position}, 400);
