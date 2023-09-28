@@ -28,11 +28,13 @@ _(Updated: 18/09/2023)_
   
   This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
 
-  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack). 🙏
+  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack) and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration). 🙏
 
   ### Study Plan
 
-  Watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
+  Watch [this video](https://youtu.be/CAek8fVB70M) that will guide you through the process of keeping your forked WDX-180 repo up-to-date with our latest content and curriculum updates.
+
+  Next, watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
 
   **YouTube Tips - (1) grabbing screenshots and (2) customizing the playback speed:** 
   
@@ -269,6 +271,10 @@ _(Updated: 18/09/2023)_
     - Captions: Yes
 
   ### Summary
+
+  You've just uncovered the marvelous world of the Internet and the (World Wide) Web! Pat yourself in the back, as you went through a lot of concepts which are quite hard to grasp. 
+
+  At this point, you should have a high level overview of how Internet and the Web are working and are interrelated. The Internet is basically a way to connect all of the world's computers and digital devices together, whereas the Web allows for some of these devices to share documents (called web pages) with other devices based on some common language and standards.
 
   ### Exercises
 

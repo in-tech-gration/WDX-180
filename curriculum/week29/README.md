@@ -2,8 +2,6 @@
 
 ## Week 29 - Day 1 | Bookmarklets, ...
 
-  STUDY: https://github.com/shystruk/search-bookmarklet
-
 ## Week 29 - Day 2
 
 ## Week 29 - Day 3
