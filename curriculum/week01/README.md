@@ -223,7 +223,7 @@ _(Updated: 18/09/2023)_
   - [Read: **What is a Domain Name?**](resources/What%20is%20a%20Domain%20Name/README.md)
     - Level: Beginner
 
-  - [Watch: **What is Localhost? | Explained**](https://www.youtube.com/watch?v=m98GX51T5dI)
+  - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI)
     - Duration: 4min
     - Level: Beginner
     - <details>
