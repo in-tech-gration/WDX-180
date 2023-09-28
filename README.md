@@ -12,7 +12,7 @@
 
   The WDX 180° curriculum, along with all related material (exercises, code, etc.), **is and will always be free and open-source** under the GPLv3 license.
 
-  You can find the [Syllabus here](curriculum/README.md), but before you jump to that link, you probably need to go through the next sections which will guide you through the preparation process.
+  You can find the [Syllabus here](curriculum/README.md).
 </details>
 
 <!-- Where do I start? -->
@@ -34,7 +34,7 @@
 <details markdown="1">
   <summary><h3>Setup</h3></summary>
 
-  The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository) this repository under your GitHub account.
+  The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui#forking-a-repository){:target="_blank"}  this repository under your GitHub account.
 
   After you've successfully forked the repo, you will need to enable [GitHub Pages](https://pages.github.com/) in order to turn the repo into a website also.
 
