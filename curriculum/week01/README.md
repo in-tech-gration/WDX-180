@@ -272,6 +272,10 @@ _(Updated: 18/09/2023)_
 
   ### Summary
 
+  You've just uncovered the marvelous world of the Internet and the (World Wide) Web! Pat yourself in the back, as you went through a lot of concepts which are quite hard to grasp. 
+
+  At this point, you should have a high level overview of how Internet and the Web are working and are interrelated. The Internet is basically a way to connect all of the world's computers and digital devices together, whereas the Web allows for some of these devices to share documents (called web pages) with other devices based on some common language and standards.
+
   ### Exercises
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w01.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
