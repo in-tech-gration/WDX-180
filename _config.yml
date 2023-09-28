@@ -2,6 +2,9 @@
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+# Fix [Link](README.md) => <a href="README.html">Link</a>
+- jekyll-relative-links
+- jekyll-optional-front-matter
 
 # EXCLUDE FILES & FOLDERS FROM BUILD: 
 exclude: [resources/codecademy, app, components, public, tools]
@@ -14,6 +17,3 @@ sass:
 layouts_dir:  assets/jekyll/_layouts
 includes_dir: assets/jekyll/_includes
 
-# Fix [Link](README.md) => <a href="README.html">Link</a>
-gems:
-  - jekyll-relative-links
