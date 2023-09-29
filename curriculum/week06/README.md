@@ -16,11 +16,11 @@ _(Updated: 20/09/2023)_
 <details markdown="1">
   <summary><h2>Week 6 - Day 1 | Styling Tables, Debugging and Organizing CSS</summary></h2>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan)
 
-  ### Study Plan
+### Study Plan
 
   - [Read: **Styling tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
     - Level: Beginner
@@ -29,9 +29,9 @@ _(Updated: 20/09/2023)_
   - [Read: **Organizing your CSS**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks)
   - [MDN's Assessment: **Fundamental CSS comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension)
@@ -42,12 +42,12 @@ _(Updated: 20/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
   
-  ### [Extra Resources](EXTRAS.md#)
+### [Extra Resources](EXTRAS.md#)
 
   - [MDN's Assessment: **Creating fancy letterheaded paper**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper)
   - [MDN's Assessment: **A cool-looking box**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
 </details>
 
@@ -55,11 +55,11 @@ _(Updated: 20/09/2023)_
 <details markdown="1">
   <summary><h2>Week 6 - Day 2 | Styling text</summary></h2>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-1)
 
-  ### Study Plan
+### Study Plan
 
   With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
 
@@ -72,9 +72,9 @@ _(Updated: 20/09/2023)_
   - [Read : **Web fonts**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Typesetting a community school homepage**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Typesetting_a_homepage)
 
@@ -84,9 +84,9 @@ _(Updated: 20/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
   
-  ### [Extra Resources](EXTRAS.md#)
+### [Extra Resources](EXTRAS.md#)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
 </details>
 
@@ -94,11 +94,11 @@ _(Updated: 20/09/2023)_
 <details markdown="1">
   <summary><h2>Week 6 - Day 3 | CSS Layout Part 1</summary></h2>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-2)
 
-  ### Study Plan
+### Study Plan
 
   - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction)
     - Level: Beginner
@@ -109,9 +109,9 @@ _(Updated: 20/09/2023)_
   - [Read: **Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Test your skills: Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Position_skills)
 
@@ -136,9 +136,9 @@ _(Updated: 20/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
   
-  ### [Extra Resources](EXTRAS.md#)
+### [Extra Resources](EXTRAS.md#)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [Flexbox Defense](https://github.com/channingallen/tower-defense) [(Last Commit point)](https://github.com/channingallen/tower-defense/tree/8466c0d260aa2a30744a73331cfd6441afefc659)
   - [Flexbox Froggy](https://github.com/thomaspark/flexboxfroggy) [(Last Commit point)](https://github.com/thomaspark/flexboxfroggy/tree/46274b15502b68f4d36d9377537f14643b16063c)
@@ -149,11 +149,11 @@ _(Updated: 20/09/2023)_
 <details markdown="1">
   <summary><h2>Week 6 - Day 4 | CSS Layout Part 2</summary></h2>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-3)
 
-  ### Study Plan
+### Study Plan
 
   - [Read: **Responsive Design**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
     - Level: Beginner
@@ -164,9 +164,9 @@ _(Updated: 20/09/2023)_
   - [Read: **Supporting older browsers**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Test your skills: Responsive web design and media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/rwd_skills)
 
@@ -176,11 +176,11 @@ _(Updated: 20/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
   
-  ### [Extra Resources](EXTRAS.md#)
+### [Extra Resources](EXTRAS.md#)
 
   - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
 </details>
 
@@ -188,11 +188,11 @@ _(Updated: 20/09/2023)_
 <details markdown="1">
   <summary><h2>Week 6 - Day 5 | Web Performance</summary></h2>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-4)
 
-  ### Study Plan
+### Study Plan
 
   - [Read: **The "why" of web performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance)
     - Level: Beginner
@@ -201,9 +201,9 @@ _(Updated: 20/09/2023)_
   - [Read: **Perceived performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/week06/progress/progress.w06.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -211,9 +211,9 @@ _(Updated: 20/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
   
-  ### [Extra Resources](EXTRAS.md#)
+### [Extra Resources](EXTRAS.md#)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
 </details>
 

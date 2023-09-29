@@ -10,13 +10,13 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 3 - Day 1 | More Git</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan)
   - [Exercises](#exercises)
   - [Extra Resources](#extra-resources)
 
-  ### Study Plan
+### Study Plan
 
   About a week ago, you learned about the infamous version control system (VCS) called Git. One of the most important tools in your arsenal! Today, we are gonna remember what we've learned the past week and later on we're going to focus on a much more realistic and everyday scenario that you're gonna encounter as a web developer.
 
@@ -67,11 +67,11 @@ _(Updated: 18/09/2023)_
     - Level: Beginner
     - Captions: Yes
 
-  ### Summary
+### Summary
 
   At the end of the day, you're gonna have a pretty good understanding of the Git VCS. However, with this tool you're gonna get better and better the more you use it and the more you make mistakes! Don't be afraid to fail! Even great mid and senior developers worldwide have serious issues with it. Git is a powerful tool, developed by a genius, who did not plan on sharing this knowledge with us newbies. 
 
-  ### Exercises
+### Exercises
 
   Make sure to complete all the tasks found in the [Progress Sheet](../../user/week03/progress/progress.w03.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
 
@@ -79,7 +79,7 @@ _(Updated: 18/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
-  ### [Extra Resources]
+### [Extra Resources]
 
   **Understanding Git == becoming a better developer**
 
@@ -91,20 +91,20 @@ _(Updated: 18/09/2023)_
 
   > **Disclaimer**: These two articles are advanced for someone like you right now. You can always keep them for later and give them a read whenever you feel confident enough with Git, but we do highly recommend to give them a try nonetheless!
 
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
     
 <!-- Week 3 - Day 2 | What is CSS? -->
 <details markdown="1">
   <summary><h2>Week 3 - Day 2 | What is CSS?</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-1)
   - [Exercises](#exercises-1)
   - [Extra Resources](#extra-resources-1)
 
-  ### Study Plan
+### Study Plan
 
   - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/README.md)
     - Level: Beginner
@@ -118,11 +118,11 @@ _(Updated: 18/09/2023)_
   - [Read: **How CSS works**](resources/css_first_steps/how_css_works/README.md)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
   Now that you've finished studying today's content, you've gained familiarity with the language and its syntax. Move on to the exercise to get some basic experience using it.
 
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/README.md)
 
@@ -132,8 +132,8 @@ _(Updated: 18/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
-  ### [Extra Resources]
-  ### Sources and Attributions
+### [Extra Resources]
+### Sources and Attributions
 
   **Content is based on the following sources:**
 
@@ -146,13 +146,13 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 3 - Day 3 | CSS Selectors</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-2)
   - [Exercises](#exercises-2)
   - [Extra Resources](#extra-resources-2)
 
-  ### Study Plan
+### Study Plan
 
   Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper.
 
@@ -171,11 +171,11 @@ _(Updated: 18/09/2023)_
   - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/README.md)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
   Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercises!
 
-  ### Exercises
+### Exercises
 
   - [Play: **CSS Diner**](https://flukeout.github.io/)
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
@@ -191,8 +191,8 @@ _(Updated: 18/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
-  ### [Extra Resources]
-  ### Sources and Attributions
+### [Extra Resources]
+### Sources and Attributions
 
   **Content is based on the following sources:**
 
@@ -211,13 +211,13 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 3 - Day 4 | Cascade, Inheritance and the box model</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-3)
   - [Exercises](#exercises-3)
   - [Extra Resources](#extra-resources-3)
 
-  ### Study Plan
+### Study Plan
 
   The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts are resolved.
 
@@ -227,11 +227,11 @@ _(Updated: 18/09/2023)_
   - [Read: **The box model**](resources/css_building_blocks/the_box_model/README.md)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
   Now that you've finished studying today's content, you have a better understanding of the most fundamental concepts of CSS. It's time to put this information to the test with the following exercise!
   
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/README.md)
 
@@ -243,8 +243,8 @@ _(Updated: 18/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
-  ### [Extra Resources]
-  ### Sources and Attributions
+### [Extra Resources]
+### Sources and Attributions
 
   **Content is based on the following sources:**
 
@@ -259,13 +259,13 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 3 - Day 5 | Backgrounds and borders</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-4)
   - [Exercises](#exercises-4)
   - [Extra Resources](#extra-resources-4)
 
-  ### Study Plan
+### Study Plan
 
   - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/README.md)
     - Level: Beginner
@@ -282,11 +282,11 @@ _(Updated: 18/09/2023)_
   - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/README.md)
     - Level: Beginner
 
-  ### Summary
+### Summary
 
   We've covered quite a lot here. Don't miss out on proving your knowledge on the exercises below!
 
-  ### Exercises
+### Exercises
 
   - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/README.md)
 
@@ -304,8 +304,8 @@ _(Updated: 18/09/2023)_
   >
   > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
 
-  ### [Extra Resources]
-  ### Sources and Attributions
+### [Extra Resources]
+### Sources and Attributions
 
   **Content is based on the following sources:**
 

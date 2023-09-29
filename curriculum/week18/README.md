@@ -7,12 +7,12 @@ title: Week 18
 _(Updated: 18/09/2023)_
 
 <!-- Week 18 - Day 1 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 18 - Day 1</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give an introduction to the basic functionality of NodeJS. The total duration of the these videos is around 45 minutes.
 
@@ -62,26 +62,26 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
 </details>
 
 <!-- Week 18 - Day 2 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 18 - Day 2</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give an introduction to the Node Package Manager (NPM) and how to handle Events in NodeJS.
 
@@ -129,27 +129,27 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
 </details>
 
 <!-- Week 18 - Day 3 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 18 - Day 3</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which explain how to build a Web Server with NodeJS and an introduction to the ExpressJS framework.
 
@@ -205,16 +205,16 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
@@ -222,12 +222,12 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 18 - Day 4 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 18 - Day 4</h2></summary>
 
-  ### Schedule Plan
+### Schedule Plan
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which focus on what is Middleware in ExpressJS and the Express Router.
 
@@ -270,16 +270,16 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
@@ -290,12 +290,12 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 18 - Day 5 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 18 - Day 5</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give an example on the MVC (Model View Controller) design pattern and a simple User Password Authentication system. 
 
@@ -338,16 +338,16 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)

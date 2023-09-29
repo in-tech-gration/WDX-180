@@ -7,12 +7,12 @@ title: Week 19
 _(Updated: 18/09/2023)_
 
 <!-- Week 19 - Day 1 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 1</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give a thorough explanation on what JWT (Jason Web Token) is, how to properly configure it for user authentication and how to authorize users with specific permissions and roles.
 
@@ -66,15 +66,15 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
-  ### Exercises
+### Summary
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
@@ -96,12 +96,12 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 19 - Day 2 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 2</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give an introduction to the MongoDB NoSQL database and the MongooseJS package. 
 
@@ -146,16 +146,16 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
   - [ExpressJS Official Site](https://expressjs.com/)
@@ -179,12 +179,12 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 19 - Day 3 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 3</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following video which demonstrates how to eventually create a fully fledged Web App with Async CRUD(Create-Read-Update-Delete) operations and deploy it on a web hosting service (Glitch).
 
@@ -212,16 +212,16 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
   - [NodeJS Official Site](https://nodejs.org/)
   - [NPM Official Site](https://www.npmjs.com/)
   - [ExpressJS Official Site](https://expressjs.com/)
@@ -246,12 +246,12 @@ _(Updated: 18/09/2023)_
 </details>
 
 <!-- Week 19 - Day 4 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 4</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Read the following document which gives an introduction to Containers and Docker.
 
@@ -273,26 +273,26 @@ _(Updated: 18/09/2023)_
 
   [Containers and Docker](resources/Containers_and_Docker/README.md)
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   Complete the tutorial on the NodeJS official site (link in Containers and Docker document) and push it on your GitHub account
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
 
   [List](resources/Containers_and_Docker/README.md#sources-and-attributions)
 </details>
 
 <!-- Week 19 - Day 5 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 5</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Read the following document which gives an introduction to 'docker-compose' and how to run multiple containers with Docker
 
@@ -307,17 +307,17 @@ _(Updated: 18/09/2023)_
 
   [Docker Compose](resources/Docker_Compose/README.md)
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   Fully containerize the app that you've built the past two weeks and push on your GitHub the required configurations files along with instructions (e.g. in README.md file) on how to properly run the app using only Docker.
 
   [A guide to the exercise](resources/Docker_Excercise/README.md)
 
-  ### [Extra Resources](EXTRAS.md)
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 
