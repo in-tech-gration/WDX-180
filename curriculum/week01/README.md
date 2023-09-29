@@ -4,33 +4,37 @@ title: Week 1
 
 # Week 1
 
-_(Updated: 18/09/2023)_
+_(Updated: 28/09/2023)_
 
-  Welcome to the first part of our curriculum, WDX 60°.
+Welcome to the first part of our curriculum, WDX 60°. The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these 3 building blocks: HTML, CSS and JavaScript. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
+
+Before you dive in, **make sure that you have your notebook** and colored pens besides your computer, in order to pause and take those invaluable notes as you move along the curriculum.
+
+**Let's get started!**
 
 <!-- Week 1 - Day 1 | Onboarding & Basics of Computing -->
 <details markdown="1">
   <summary><h2>Week 1 - Day 1 | Onboarding & Basics of Computing</h2></summary>
 
-  #### Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
+> Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
 
-  ### Schedule
+### Schedule
 
   - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
   - [Study](#study-plan)
-  - Exercises
+  - [Exercises](#exercises)
   - [Extra Resources](#extra-resources)
 
-  ### Setting up
+### Setting up
 
-  **Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack). 
+  **Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack){:target="_blank"}. 
   
   This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
 
-  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack) and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration). 🙏
+  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack){:target="_blank"} and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration){:target="_blank"}. 🙏
 
-  ### Study Plan
+### Study Plan
 
   Watch [this video](https://youtu.be/CAek8fVB70M){:target="_blank"} that will guide you through the process of keeping your forked WDX-180 repo up-to-date with our latest content and curriculum updates.
 
@@ -38,7 +42,7 @@ _(Updated: 18/09/2023)_
 
   **YouTube Tips - (1) grabbing screenshots and (2) customizing the playback speed:** 
   
-  (1) Sometimes you want to easily grab screenshots from particular segments of a video, e.g. a nice diagram, a frame that contains a code sample or a part that contains links. You can install and use [this Chrome extension](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk) to easily grab a screenshot at any point.  
+  (1) Sometimes you want to easily grab screenshots from particular segments of a video, e.g. a nice diagram, a frame that contains a code sample or a part that contains links. You can install and use [this Chrome extension](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk){:target="_blank"} to easily grab a screenshot at any point.  
   
   (2) When watching YouTube videos that are either too slow or too fast for you to follow along, remember these speed shortcuts:
 
@@ -68,77 +72,72 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list:**
 
-  - [Watch: **How Computers Work: Binary & Data**](https://www.youtube.com/watch?v=USCBCmwMCDA)
+  - [Watch: **How Computers Work: Binary & Data**](https://www.youtube.com/watch?v=USCBCmwMCDA){:target="_blank"}
     - Duration: 6min
     - Level: Beginner 
     - Captions: Yes
 
-  - [Watch: **Representing Numbers and Letters with Binary: Crash Course Computer Science #4**](https://www.youtube.com/watch?v=1GSjbWt0c9M)
+  - [Watch: **Representing Numbers and Letters with Binary: Crash Course Computer Science #4**](https://www.youtube.com/watch?v=1GSjbWt0c9M){:target="_blank"}
     - Duration: 11min
     - Level: Beginner
     - Captions: EN
 
-  **Demo time:** take a short break before the next video and play around with this cool [ASCII-to-Binary](https://mothereff.in/binary-ascii) tool! _(Don't forget to star the [GitHub repo](https://github.com/mathiasbynens/mothereff.in) if you found this tool helpful.)_
+  **Demo time:** take a short break before the next video and play around with this cool [ASCII-to-Binary](https://mothereff.in/binary-ascii){:target="_blank"} tool! _(Don't forget to star the [GitHub repo](https://github.com/mathiasbynens/mothereff.in){:target="_blank"} if you found this tool helpful.)_
 
-  - [Watch: **Characters, Symbols and the Unicode Miracle - Computerphile**](https://www.youtube.com/watch?v=MijmeoH9LT4)
+  - [Watch: **Characters, Symbols and the Unicode Miracle - Computerphile**](https://www.youtube.com/watch?v=MijmeoH9LT4){:target="_blank"}
     - Duration: 10min
     - Level: Beginner
 
-  - [Download: **Primer on Character Encodings** Guide](https://roadmap.sh/guides/character-encodings)
+  - [Download: **Primer on Character Encodings** Guide](https://roadmap.sh/guides/character-encodings){:target="_blank"}
 
   ![""](https://roadmap.sh/guides/character-encodings.png)
 
-  - [Watch: **Images, Pixels and RGB**](https://www.youtube.com/watch?v=15aqFQQVBWU)
+  - [Watch: **Images, Pixels and RGB**](https://www.youtube.com/watch?v=15aqFQQVBWU){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - Captions: Yes
 
-  - [Watch: **Digital Compression explained by Aloe Blacc**](https://www.youtube.com/watch?v=By30SCp-Tsw)
+  - [Watch: **Digital Compression explained by Aloe Blacc**](https://www.youtube.com/watch?v=By30SCp-Tsw){:target="_blank"}
     - Duration: 4min
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **Why do computers understand only 0 & 1 logic?**](https://www.quora.com/Why-do-computers-understand-only-0-1-logic/answers/92646682) to understand why digital computers* are limited to and revolve around the binary system.
-    - _(*[Quantum computers](https://www.youtube.com/watch?v=OWJCfOvochA) on the other hand, work in a much different way.)_
+  - [Read: **Why do computers understand only 0 & 1 logic?**](https://www.quora.com/Why-do-computers-understand-only-0-1-logic/answers/92646682){:target="_blank"} to understand why digital computers* are limited to and revolve around the binary system.
+    - _(*[Quantum computers](https://www.youtube.com/watch?v=OWJCfOvochA){:target="_blank"} on the other hand, work in a much different way.)_
 
-  - [Watch: **Tutorial 1 About Bits & Bytes**](https://www.youtube.com/watch?v=H2kTzmJJ79E)
+  - [Watch: **Tutorial 1 About Bits & Bytes**](https://www.youtube.com/watch?v=H2kTzmJJ79E){:target="_blank"}
     - Duration: 5min
     - Level: Beginner
 
   - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/README.md)
 
-  ### Summary
+### Summary
 
   _"There are 10 types of people in this world, those who understand binary and those who don't."_
 
-  ### Exercises
+### Exercises
 
   - **Decode the secret message**: watch this [video](https://www.youtube.com/watch?v=OSZOf9pyepc) from an episode of [Silicon Valley](https://www.imdb.com/title/tt2575988/) series and try to find and decode the hidden geeky message.
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w01.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week01/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
 
   **It is absolutely crucial** at this point to remind you that updating the `Confidence` column in the progress sheets should reflect an honest and accurate self-evaluation score. You should not overestimate nor underestimate your level of confidence. A score that is closer to your real level of confidence will help you and others attend to your real needs and put focus on the parts that need some further knowledge re-enforcement and engagement.
   
-  ### [Extra Resources](EXTRAS.md#day-01---computing)
+### [Extra Resources](EXTRAS.md#day-01---computing)
 
-  ### Sources and Attributions
 </details>
 
 <!-- Week 1 - Day 2 | How the Internet & the World Wide Web works -->
 <details markdown="1">
   <summary><h2>Week 1 - Day 2 | How the Internet & the WWW works</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-1)
-  - Exercises
+  - [Exercises](#exercises-1)
   - [Extra Resources](#extra-resources-1)
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos from the [How the Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7) YouTube Playlist.
 
@@ -176,22 +175,22 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list:**
 
-  - [Watch: **What is the Internet?**](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
+  - [Watch: **What is the Internet?**](https://www.youtube.com/watch?v=Dxcc6ycZ73M){:target="_blank"}
     - Duration: 4min
     - Level: Beginner
     - Captions: Yes
 
-  - [Watch: **The Internet: Wires, Cables & Wifi**](https://www.youtube.com/watch?v=ZhEf7e4kopM)
+  - [Watch: **The Internet: Wires, Cables & Wifi**](https://www.youtube.com/watch?v=ZhEf7e4kopM){:target="_blank"}
     - Duration: 7min
     - Level: Beginner
     - Captions: Yes
 
-  - [Watch: **The Internet: IP Addresses & DNS**](https://www.youtube.com/watch?v=5o8CwafCxnU)
+  - [Watch: **The Internet: IP Addresses & DNS**](https://www.youtube.com/watch?v=5o8CwafCxnU){:target="_blank"}
     - Duration: 7min
     - Level: Beginner
     - Captions: Yes
 
-  - [Watch: **The Internet: Packets, Routing & Reliability**](https://www.youtube.com/watch?v=AYdF7b3nMto)
+  - [Watch: **The Internet: Packets, Routing & Reliability**](https://www.youtube.com/watch?v=AYdF7b3nMto){:target="_blank"}
     - Duration: 7min
     - Level: Beginner
     - Captions: Yes
@@ -200,30 +199,30 @@ _(Updated: 18/09/2023)_
     - Reading time: 5min
     - Level: Beginner
 
-  Before we dive into a more detailed description of the Internet's most interesting part, the Web, let's do a quick recap on how the Internet works by [**watching this short video**](https://www.youtube.com/embed/7_LPdttKXPc?start=29&end=272) that summarizes the concepts you've learned so far and contains some really nice visuals that will help you create a mental model of the Internet backbone. 
+  Before we dive into a more detailed description of the Internet's most interesting part, the Web, let's do a quick recap on how the Internet works by [**watching this short video**](https://www.youtube.com/embed/7_LPdttKXPc?start=29&end=272){:target="_blank"} that summarizes the concepts you've learned so far and contains some really nice visuals that will help you create a mental model of the Internet backbone. 
   
-  The nice diagrams that show how devices on the Internet are connected and communicate with each other, along with the [cool animation](https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176) showing how various media files are moved across the Internet as small packets, are a great way to keep these concepts in your mind.
+  The nice diagrams that show how devices on the Internet are connected and communicate with each other, along with the [cool animation](https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176){:target="_blank"} showing how various media files are moved across the Internet as small packets, are a great way to keep these concepts in your mind.
 
   After you've watched the video, **make sure to take a short break**, stretch your legs, arms and neck, give your eyes a break by looking at a distance for at least 20 seconds and briefly describe the main concepts that you've learned to yourself.
 
-  - [Watch: **The Internet: HTTP & HTML**](https://www.youtube.com/watch?v=kBXQZMmiA4s)
+  - [Watch: **The Internet: HTTP & HTML**](https://www.youtube.com/watch?v=kBXQZMmiA4s){:target="_blank"}
     - Duration: 7min
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:**How the web works**](resources/How%20the%20web%20works/README.md)
+  - [Read:**How the web works**](resources/How_the_web_works/README.md)
     - Level: Beginner
 
-  - [Read: **What is a web server?**](resources/What%20is%20a%20web%20server/README.md)
+  - [Read: **What is a web server?**](resources/What_is_a_web_server/README.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](resources/What%20is%20a%20URL/README.md)
+  - [Read: **What is a URL?**](resources/What_is_a_URL/README.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](resources/What%20is%20a%20Domain%20Name/README.md)
+  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/README.md)
     - Level: Beginner
 
-  - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI)
+  - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI){:target="_blank"}
     - Duration: 4min
     - Level: Beginner
     - <details>
@@ -246,58 +245,55 @@ _(Updated: 18/09/2023)_
 
   Follow the instructions found in the following posts and try to block the [https://budgetsaresexy.com/](https://budgetsaresexy.com/) domain on your machine by **carefully** manipulating the `hosts` file.
 
-  - [How to Block Certain Websites From the /etc/hosts File](https://www.baeldung.com/linux/etc-hosts-block-specific-websites) 
-  - [How to Edit Hosts File in Linux, Windows, or Mac](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux)
+  - [How to Block Certain Websites From the /etc/hosts File](https://www.baeldung.com/linux/etc-hosts-block-specific-websites){:target="_blank"} 
+  - [How to Edit Hosts File in Linux, Windows, or Mac](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux){:target="_blank"}
 
   ---
 
-  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute%20vs%20Relative%20URLs/README.md)
+  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/README.md)
     - Level: Beginner
 
-  - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I)
+  - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I){:target="_blank"}
     - Duration: 10min
     - Level: Beginner
 
-  - [Watch: **The Internet: Encryption & Public Keys**](https://www.youtube.com/watch?v=ZghMPWGXexs)
+  - [Watch: **The Internet: Encryption & Public Keys**](https://www.youtube.com/watch?v=ZghMPWGXexs){:target="_blank"}
     - Duration: 7min
     - Captions: Yes
 
-  - [Watch: **The Internet: Cybersecurity & Crime**](https://www.youtube.com/watch?v=AuYNXgO_f3Y)
+  - [Watch: **The Internet: Cybersecurity & Crime**](https://www.youtube.com/watch?v=AuYNXgO_f3Y){:target="_blank"}
     - Duration: 5min
     - Captions: Yes
 
-  - [Watch: **The Internet: How Search Works**](https://www.youtube.com/watch?v=LVV_93mBfSU)
+  - [Watch: **The Internet: How Search Works**](https://www.youtube.com/watch?v=LVV_93mBfSU){:target="_blank"}
     - Duration: 5min
     - Captions: Yes
 
-  ### Summary
+### Summary
 
   You've just uncovered the marvelous world of the Internet and the (World Wide) Web! Pat yourself in the back, as you went through a lot of concepts which are quite hard to grasp. 
 
   At this point, you should have a high level overview of how Internet and the Web are working and are interrelated. The Internet is basically a way to connect all of the world's computers and digital devices together, whereas the Web allows for some of these devices to share documents (called web pages) with other devices based on some common language and standards.
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w01.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week01/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
 
-  ### [Extra Resources](EXTRAS.md#day-02---internet--the-web)
-
-  ### Sources and Attributions
 </details>
 
 <!-- Week 1 - Day 3 | HTML & Markdown -->
 <details markdown="1">
   <summary><h2>Week 1 - Day 3 | HTML & Markdown</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-2)
+  - [Exercises](#exercises-2)
+  - [Extra Resources](#exercises-2)
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn: Getting started with the web: HTML**
 
@@ -307,7 +303,7 @@ _(Updated: 18/09/2023)_
 
   - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What%20will%20your%20website%20look%20like/README.md)
+  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/README.md)
 
   - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
     - <details>
@@ -343,30 +339,30 @@ _(Updated: 18/09/2023)_
   
   Now, that we have a good grasp of HTML, let's learn a little bit about another markup language called **Markdown**, that is going to come in handy in a lot of situations.
 
-  [WiP]
+  - [Read: **Getting Started with Markdown**](https://www.markdownguide.org/getting-started/){:target="_blank"}
+    - If you found this article helpful, don't forget to give it a [GitHub star](https://github.com/mattcone/markdown-guide){:target="_blank"}.
 
-  - https://www.markdownguide.org/getting-started/
-  > https://github.com/mattcone/markdown-guide [STAR]
-  > By Matt Cone https://github.com/mattcone [FOLLOW]
-  - https://commonmark.org/help/
-  > https://github.com/commonmark/commonmark-web [STAR]
-  > ? https://github.com/commonmark/commonmark.js  
+  - [Take a look at this nice Markdown cheatsheet](https://commonmark.org/help/){:target="_blank"}
+    - Take the [10 Minute Markdown tutorial](https://commonmark.org/help/tutorial/){:target="_blank"}
+    - Don't forget to [give it a star](https://github.com/commonmark/commonmark-web){:target="_blank"}!
 
-  ### Summary
+### Summary
 
-  ### Exercises
+  Wow! You've covered quite a lot of ground right there! Through this module you've uncovered one of the most basic building blocks of the Web: HTML. The language that provides the content and gives structure to our web documents.
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w01.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  You should be able to tell the difference between an HTML element and a tag, understand how HTML attributes are placed within the opening tags to provide extra functionality to the HTML elements and how nesting and hierarchy are important factors for a clean and well-formatted HTML documents.
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week01/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  On top of HTML, you also learned about a very handy format, called `Markdown` which you are going to be seeing and using a lot in upcoming weeks.
 
-  ### [Extra Resources](EXTRAS.md#day-03---html)
+### Exercises
+
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+
+### [Extra Resources](EXTRAS.md#day-03---html)
 
   ---
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   **Content is based on the following sources:**
 
@@ -378,11 +374,13 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 1 - Day 4 | CSS</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-3)
+  - [Exercises](#exercises-3)
+  - [Extra Resources](#exercises-3)
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn:**
 
@@ -390,32 +388,35 @@ _(Updated: 18/09/2023)_
   - Publishing your website
 
   - [Read: **CSS Basics**](resources/CSS_Basics/README.md)
-  - [Read: **Publishing your website**](resources/Publishing%20your%20website/README.md)
+  - [Read: **Publishing your website**](resources/Publishing_your_website/README.md)
 
-  ### Summary
+### Summary
 
-  ### Exercises
+Congratulations! You now know how to spice up your HTML using CSS. 
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w01.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+You should by now have a good understanding of how CSS uses various selectors to target HTML elements and apply various CSS rules to them and style them.
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week01/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+Apart from creating HTML content and styling it with CSS, you also have some insight on how to publish and deploy your web pages on the Internet.
 
-  ### [Extra Resources](EXTRAS.md#day-04---css)
+### Exercises
 
-  ### Sources and Attributions
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+
+### [Extra Resources](EXTRAS.md#day-04---css)
+
 </details>
 
 <!-- Week 1 - Day 5 | JavaScript -->
 <details markdown="1">
   <summary><h2>Week 1 - Day 5 | JavaScript</h2></summary>
 
-  ### Schedule
+### Schedule
 
   - [Study](#study-plan-4)
+  - [Exercises](#exercises-4)
+  - [Extra Resources](#exercises-4)
 
-  ### Study Plan
+### Study Plan
 
   This is one of the toughest modules on the curriculum, so make sure to arm yourself with plenty of coffee and concentration!
 
@@ -425,7 +426,7 @@ _(Updated: 18/09/2023)_
 
   - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
 
-  - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE)
+  - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE){:target="_blank"}
     - Duration: 8min
     - <details>
         <summary>What you'll learn</summary>
@@ -484,7 +485,7 @@ _(Updated: 18/09/2023)_
 
   ---
 
-  - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM)
+  - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM){:target="_blank"}
     - Duration: 8min
     - <details>
         <summary>What you'll learn</summary>
@@ -515,7 +516,7 @@ _(Updated: 18/09/2023)_
           </ul>  
       </details>
 
-  - [Watch: **JavaScript String Methods and Properties | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo)
+  - [Watch: **JavaScript String Methods and Properties \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=LiuzigJldNo){:target="_blank"}
     - Duration: 8min
     - Level: Beginner
     - <details>
@@ -542,7 +543,7 @@ _(Updated: 18/09/2023)_
 
   ---
 
-  **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview) and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
+  **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview){:target="_blank"} and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
 
   ---
 
@@ -555,7 +556,7 @@ _(Updated: 18/09/2023)_
   // Output: "Brendan Eich created JavaScript."
   ``` 
 
-  - [Watch: **JavaScript Numbers, Number Methods, isNaN | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=3Ul9gYweEPs)
+  - [Watch: **JavaScript Numbers, Number Methods, isNaN \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=3Ul9gYweEPs){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - <details>
@@ -593,7 +594,7 @@ _(Updated: 18/09/2023)_
 
   ---
 
-  - [Watch: **Math Methods and How to Generate a Random Number with JavaScript | JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y)
+  - [Watch: **Math Methods and How to Generate a Random Number with JavaScript \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - <details>
@@ -620,7 +621,7 @@ _(Updated: 18/09/2023)_
 
   ![](assets/Math.floor.vs.Math.ceil.png)
 
-  - [Watch: **If Statements in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=9Ykz2_PhdfE)
+  - [Watch: **If Statements in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=9Ykz2_PhdfE){:target="_blank"}
     - Duration: 7min
     - Level: Beginner
     - <details>
@@ -641,7 +642,7 @@ _(Updated: 18/09/2023)_
           </ul>
       </details>
 
-  - [Watch: **Switch Statements in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=3q7sk03ehOs)
+  - [Watch: **Switch Statements in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=3q7sk03ehOs){:target="_blank"}
     - Duration: 4min
     - Level: Beginner
     - <details>
@@ -661,7 +662,7 @@ _(Updated: 18/09/2023)_
           </ul>
       </details>
 
-  - [Watch: **Ternary Operator in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg)
+  - [Watch: **Ternary Operator in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=ib8MHSMwtYg){:target="_blank"}
     - Duration: 6min
     - Level: Beginner
     - <details>
@@ -704,7 +705,7 @@ _(Updated: 18/09/2023)_
   - All test scores above 97 should be graded "A+"
   - All test scores above 80 should be graded "B+"
  
-  - [Watch: **User Input in Javascript | Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU)
+  - [Watch: **User Input in Javascript \| Tutorial for Beginners**](https://www.youtube.com/watch?v=94UM0Ss3uoU){:target="_blank"}
     - Duration: 11min
     - Level: Beginner
     - <details>
@@ -725,7 +726,7 @@ _(Updated: 18/09/2023)_
           </ul>
       </details>
 
-  - [Watch: **For Loops, While Loops, Do While Loops | Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA)
+  - [Watch: **For Loops, While Loops, Do While Loops \| Javascript Loop Tutorial for Beginners**](https://www.youtube.com/watch?v=zO5-OnRA5lA){:target="_blank"}
     - Duration: 17min
     - Level: Beginner
     - <details>
@@ -747,7 +748,7 @@ _(Updated: 18/09/2023)_
           </ul>
       </details>
 
-  - [Watch: **Functions in Javascript | Javascript Functions Tutorial**](https://www.youtube.com/watch?v=u_lLNH38n5E)
+  - [Watch: **Functions in Javascript \| Javascript Functions Tutorial**](https://www.youtube.com/watch?v=u_lLNH38n5E){:target="_blank"}
     - Duration: 13min
     - Level: Beginner
     - <details>
@@ -771,7 +772,7 @@ _(Updated: 18/09/2023)_
           </ul>
       </details>
 
-  ### Summary
+### Summary
 
   - The JavaScript programming language can be found running on several environments (e.g. inside a browser, on an operating system via Node.js, etc.)
 
@@ -803,17 +804,13 @@ _(Updated: 18/09/2023)_
   - ***"You will fail often, and it will be frustrating."***
   - ***"Never be afraid to mess around and experiment."***
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week01/progress/progress.w01.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week01/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
   
-  ### [Extra Resources](EXTRAS.md#day-05---javascript)
+### [Extra Resources](EXTRAS.md#day-05---javascript)
 
-  ### Sources and Attributions
+### Sources and Attributions
 
   - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
 </details>

@@ -26,7 +26,7 @@ To begin, you'll need to answer these questions:
 2. **What information are you presenting on the subject?** Write a title and a few paragraphs and think of an image you'd like to show on your page.
 3. **What does your website look like,** in simple high-level terms? What's the background color? What kind of font is appropriate: formal, cartoony, bold and loud, subtle?
 
-> **Note:** Complex projects need detailed guidelines that go into all the details of colors, fonts, spacing between items on a page, appropriate writing style, and so on. This is sometimes called a design guide, design system, or brand book, and you can see an example at the [Firefox Photon Design System](https://design.firefox.com/photon/).
+> **Note:** Complex projects need detailed guidelines that go into all the details of colors, fonts, spacing between items on a page, appropriate writing style, and so on. This is sometimes called a design guide, design system, or brand book, and you can see an example at the [Firefox Photon Design System](https://design.firefox.com/photon/){:target="_blank"}.
 
 ## Sketching out your design
 
@@ -51,13 +51,13 @@ You should still have your paragraphs and title from earlier. Keep these close b
 
 ### Theme color
 
-To choose a color, go to [the Color Picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool) and find a color you like. When you click on a color, you'll see a strange six-character code like `#660066`. That's called a _hex code_ (short for hexadecimal), and represents your color. Copy the code down somewhere safe for now.
+To choose a color, go to [the Color Picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool){:target="_blank"} and find a color you like. When you click on a color, you'll see a strange six-character code like `#660066`. That's called a _hex code_ (short for hexadecimal), and represents your color. Copy the code down somewhere safe for now.
 
 ![Color-Picker-Tool on MDN Docs website with RGB, HSL, and HEX colors ](assets/color-picker.png)
 
 ### Images
 
-To choose an image, go to [Google Images](https://www.google.com/imghp?gws_rd=ssl) and search for something suitable.
+To choose an image, go to [Google Images](https://www.google.com/imghp?gws_rd=ssl){:target="_blank"} and search for something suitable.
 
 1. When you find the image you want, click on the image to get an enlarged view of it.
 2. Right-click the image (Ctrl + click on a Mac), choose _Save Image As…_, and choose a safe place to save your image. Alternatively, copy the image's web address from your browser's address bar for later use.
@@ -70,16 +70,16 @@ Note that most images on the web, including in Google Images, are copyrighted. T
 
 ### Font
 
-As with images, many fonts are protected by licenses, meaning you cannot freely use them in your site. [Google Fonts](https://developers.google.com/fonts) is a web service owned by Google that provides access to many fonts.
+As with images, many fonts are protected by licenses, meaning you cannot freely use them in your site. [Google Fonts](https://developers.google.com/fonts){:target="_blank"} is a web service owned by Google that provides access to many fonts.
 
 Once you have found a font, there are two main ways of using it:
 
 1. Add a reference in your code to load the font from Google's servers.
 2. Download the font file to your own system, host the font yourself, and use your hosted copy in your website's code.
 
-> **Note:** Serving fonts hosted on Google Fonts may be incompatible with the European Union's data privacy regulation [GDPR](https://gdpr.eu/what-is-gdpr/) as the font service exposes the user's IP address. If this is a potential problem for you, choose the second option.
+> **Note:** Serving fonts hosted on Google Fonts may be incompatible with the European Union's data privacy regulation [GDPR](https://gdpr.eu/what-is-gdpr/){:target="_blank"} as the font service exposes the user's IP address. If this is a potential problem for you, choose the second option.
 
-Alternatively you can use [safe web fonts](https://web.mit.edu/jmorzins/www/fonts.html) such as Arial, Times New Roman, or Courier New.
+Alternatively you can use [safe web fonts](https://web.mit.edu/jmorzins/www/fonts.html){:target="_blank"} such as Arial, Times New Roman, or Courier New.
 
 # Website file structure
 

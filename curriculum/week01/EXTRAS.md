@@ -2,7 +2,7 @@
 
 ## Day 01 - Computing
 
-  ### Computing
+### Computing
 
   - [**Computer Science Crash Course**](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo). 
     - Description: A YouTube playlist that provides an introduction to the history of computers, the basic elements of programming and the basic components of computer hardware.
@@ -22,7 +22,7 @@
 
 ## Day 02 - Internet & the Web
 
-  ### The Internet & the World Wide Web
+### The Internet & the World Wide Web
 
   - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps)
 
@@ -49,7 +49,7 @@
 
   - [Read: **HTTP**](resources/HTTP.md), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/).
 
-  ### Public Key Cryptography
+### Public Key Cryptography
 
   - [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do)
     - Duration: 9min
@@ -59,7 +59,11 @@
 
 ## Day 03 - HTML
 
+_(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
 ## Day 04 - CSS
+
+_(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
 ## Day 05 - JavaScript
 

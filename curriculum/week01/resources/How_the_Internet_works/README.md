@@ -10,11 +10,11 @@ The **Internet** is also the backbone of the World Wide Web (or Web, for short),
 
 # History of the Internet
 
-[The history of the Internet is somewhat obscure](https://en.wikipedia.org/wiki/Internet#History). It began in the 1960s as a US-army-funded research project, then evolved into a public infrastructure in the 1980s with the support of many public universities and private companies. The various technologies that support the Internet have evolved over time, but the way it works hasn't changed that much: Internet is a way to connect computers all together and ensure that, whatever happens, they find a way to stay connected.
+[The history of the Internet is somewhat obscure](https://en.wikipedia.org/wiki/Internet#History){:target="_blank"}. It began in the 1960s as a US-army-funded research project, then evolved into a public infrastructure in the 1980s with the support of many public universities and private companies. The various technologies that support the Internet have evolved over time, but the way it works hasn't changed that much: Internet is a way to connect computers all together and ensure that, whatever happens, they find a way to stay connected.
 
 # How the Internet works
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+We bet you use the Internet every day. But do you actually know what happens when you type an address like `https://djangogirls.org` into your browser and press `enter`?
 
 The first thing you need to understand is that **a website consists of a bunch of files saved on a hard disk** -- just like your movies, music, or pictures.
 However, there is one part that is unique for websites: they include computer code called HTML.
@@ -43,17 +43,17 @@ And, here's a closeup of that map where each node is accompanied by its IP addre
 
 [![Closeup of the 2005 Internet map](assets/Internet_map_4096.closeup.png)](assets/Internet_map_4096.closeup.png)
 
-Looks like a mess, right? In fact **it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines!** Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Looks like a mess, right? In fact **it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines!** Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website ([http://submarinecablemap.com](http://submarinecablemap.com){:target="_blank"}) to see how complicated the net is. Here is a screenshot from the website:
 
 ![Figure 1.2](assets/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where `https://djangogirls.org` is saved) we need to pass a request through many, many different machines.
 
 It looks like this:
 
 ![Figure 1.3](assets/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Imagine that when you type `https://djangogirls.org`, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
 
 Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (***data packets***) to the same place, they could go through totally different post offices (***routers***). This depends on how they are distributed at each office.
 
@@ -71,7 +71,7 @@ So, basically, when you have a website, you need to have a *server* (machine) wh
 
 ### A simple network
 
-When two computers need to communicate, you have to link them, either physically (usually with an [Ethernet cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable)) or wirelessly (for example with [Wi-Fi](https://en.wikipedia.org/wiki/WiFi) or [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) systems). All modern computers can sustain any of those connections.
+When two computers need to communicate, you have to link them, either physically (usually with an [Ethernet cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable){:target="_blank"}) or wirelessly (for example with [Wi-Fi](https://en.wikipedia.org/wiki/WiFi){:target="_blank"} or [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth){:target="_blank"} systems). All modern computers can sustain any of those connections.
 
 > **Note:** For the rest of this article, we will only talk about physical cables, but wireless networks work the same.
 
@@ -115,7 +115,7 @@ That's perfectly fine for computers, but we human beings have a hard time rememb
 
 ### Internet and the web
 
-As you might notice, when we browse the Web with a Web browser, we usually use the domain name to reach a website. Does that mean the Internet and the Web are the same thing? It's not that simple. As we saw, the Internet is a technical infrastructure which allows billions of computers to be connected all together. Among those computers, some computers (called _Web servers_) can send messages intelligible to web browsers. **The _Internet_ is an infrastructure, whereas the _Web_ is a service built on top of the infrastructure**. It is worth noting there are several other services built on top of the Internet, such as email and [IRC](https://developer.mozilla.org/en-US/docs/Glossary/IRC).
+As you might notice, when we browse the Web with a Web browser, we usually use the domain name to reach a website. Does that mean the Internet and the Web are the same thing? It's not that simple. As we saw, the Internet is a technical infrastructure which allows billions of computers to be connected all together. Among those computers, some computers (called _Web servers_) can send messages intelligible to web browsers. **The _Internet_ is an infrastructure, whereas the _Web_ is a service built on top of the infrastructure**. It is worth noting there are several other services built on top of the Internet, such as email and [IRC](https://developer.mozilla.org/en-US/docs/Glossary/IRC){:target="_blank"}.
 
 ### Intranets and Extranets
 
@@ -139,7 +139,7 @@ They can therefore be accessed by authorized members from different physical loc
 
 **Content is based on the following sources:**
 
-- [How the Internet works](https://tutorial.djangogirls.org/en/how_the_internet_works/) tutorial, created and maintained by [Django Girls](https://djangogirls.org/en/). The original source code can be found [here](https://github.com/DjangoGirls/tutorial/tree/master/en/how_the_internet_works). If you found this resource helpful, **please consider adding a star** on these 2 GitHub repositories as a token of your appreciation: [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial/tree/master) / [WDX-180](https://github.com/in-tech-gration/WDX-180).
+- [How the Internet works](https://tutorial.djangogirls.org/en/how_the_internet_works/){:target="_blank"} tutorial, created and maintained by [Django Girls](https://djangogirls.org/en/){:target="_blank"}. The original source code can be found [here](https://github.com/DjangoGirls/tutorial/tree/master/en/how_the_internet_works){:target="_blank"}. If you found this resource helpful, **please consider adding a star** on these 2 GitHub repositories as a token of your appreciation: [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial/tree/master){:target="_blank"} / [WDX-180](https://github.com/in-tech-gration/WDX-180){:target="_blank"}.
 
 - **MDN**
     - [How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work) [(Permalink)](https://github.com/mdn/content/blob/0231ed58f0455cb0a83c5f2c4c9c4f5c69391a70/files/en-us/learn/common_questions/web_mechanics/how_does_the_internet_work/index.md)

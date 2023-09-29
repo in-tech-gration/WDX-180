@@ -8,6 +8,13 @@ body {
   font-size: 16px;
 }
 
+.bold-title {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+
+}
+
 // TYPOGRAPHY
 p, a {
   font-size: 1.2rem;
@@ -51,11 +58,16 @@ summary > h3:hover {
   color: white;
 }
 
+// BLOCK QUOTES:
 blockquote {
   font-style: inherit;
-  background: rgba(0,0,0,0.6);
-  padding: 2rem 3rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
   margin: 1rem 0;
+  border-left: 3px solid #3e3c3c;
+}
+blockquote p {
+  margin-bottom: auto;
 }
 
 ul {
@@ -64,4 +76,29 @@ ul {
 
 code {
   font-size: 1rem;
+  color: #ef6200;
+  margin: 0;
+  padding: 4px;
+}
+
+.credits-highlighted {
+  color: #c6a213 !important;
+}
+
+section.main-section {
+  margin-top: 1rem;
+}
+
+.ctrl-back-forward {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.ctrl-back-forward > div {
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 150ms ease;
+}
+.ctrl-back-forward > div:hover {
+  opacity: 1;
 }
