@@ -111,11 +111,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -169,11 +165,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -194,11 +186,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -219,11 +207,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -244,11 +228,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
-
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 

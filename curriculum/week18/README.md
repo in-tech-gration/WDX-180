@@ -68,6 +68,8 @@ _(Updated: 18/09/2023)_
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
 
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 ### [Extra Resources](EXTRAS.md)
 
 ### Sources and Attributions
@@ -134,6 +136,8 @@ _(Updated: 18/09/2023)_
 ### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
+
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -212,6 +216,8 @@ _(Updated: 18/09/2023)_
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 ### [Extra Resources](EXTRAS.md)
 
 ### Sources and Attributions
@@ -276,6 +282,8 @@ _(Updated: 18/09/2023)_
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
+
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -344,6 +352,8 @@ _(Updated: 18/09/2023)_
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
+
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
 
