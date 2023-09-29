@@ -243,6 +243,10 @@ The comments explain what each icon is used for — these elements cover things 
 
 Don't worry too much about implementing all these types of icon right now — this is a fairly advanced feature, and you won't be expected to have knowledge of this to progress through the course. The main purpose here is to let you know what such things are, in case you come across them while browsing other websites' source code.
 
+Favicons are not used for decoration or branding purposes only. They can also provide a quick indication about what's currently happening in one of those open Tabs on your browser. For example, a favicon with a red bubble icon might remind you that a task is open on one of your pinned browser Tabs or that an email or message just arrived. GitHub changes its favicon's shape and color to reflect the current build status of your web application _(screenshot below)_. 
+
+![](./assets/GitHub.Action.Status.jpg)
+
 > **Note:** If your site uses a Content Security Policy (CSP) to enhance its security, the policy applies to the favicon. If you encounter problems with the favicon not loading, verify that the [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) header's [`img-src` directive](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) is not preventing access to it.
 
 ## Applying CSS and JavaScript to HTML
