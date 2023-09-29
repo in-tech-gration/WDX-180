@@ -81,4 +81,4 @@ In this example:
 
 ### Sources and Attributions
 
-- [Docker Compose](https://docs.docker.com/compose/)
+- [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}

@@ -24,7 +24,7 @@ Containers can run virtually anywhere, greatly easing development and deployment
 
 Containers virtualize CPU, memory, storage, and network resources at the operating system level, providing developers with a view of the OS logically isolated from other applications.
 
-_(Source: [What are the benefits of containers](https://cloud.google.com/learn/what-are-containers#section-3))_
+_(Source: [What are the benefits of containers](https://cloud.google.com/learn/what-are-containers#section-3){:target="_blank"})_
 
 ### Comparing Containers and Virtual Machines
 
@@ -40,7 +40,7 @@ Containers are an abstraction at the app layer that packages code and dependenci
 
 Virtual machines (VMs) are an abstraction of physical hardware turning one server into many servers. The hypervisor allows multiple VMs to run on a single machine. Each VM includes a full copy of an operating system, the application, necessary binaries and libraries – taking up tens of GBs. VMs can also be slow to boot.
 
-_(Source: [What is a container?](https://www.docker.com/resources/what-container/))_
+_(Source: [What is a container?](https://www.docker.com/resources/what-container/){:target="_blank"})_
 
 <img src="../../assets/applications-using-vms.png" alt="Applications using VMs" style="display:block;float:none;margin-left:auto;margin-right:auto;width:60%" />
 
@@ -74,7 +74,7 @@ Docker lets developers access these native containerization capabilities using s
 
 Today Docker containerization also works with Microsoft Windows and Apple MacOS. Developers can run Docker containers on any operating system, and most leading cloud providers, including Amazon Web Services (AWS), Microsoft Azure, and IBM Cloud offer specific services to help developers build, deploy and run applications containerized with Docker.
 
-_(Source: [Why use Docker?](https://www.ibm.com/topics/docker#Why+use+Docker%3F))_
+_(Source: [Why use Docker?](https://www.ibm.com/topics/docker#Why+use+Docker%3F){:target="_blank"})_
 
 ## What are Docker Images and the Dockerfile?
 
@@ -94,7 +94,7 @@ But how can we create an image? How do we specify all the tools, libraries and d
 
 Every Docker container starts with a simple text file containing instructions for how to build the Docker container image. DockerFile automates the process of Docker image creation. It’s essentially a list of command-line interface (CLI) instructions that Docker Engine will run in order to assemble the image. The list of Docker commands is huge, but standardized: Docker operations work the same regardless of contents, infrastructure, or other environment variables.
 
-_(Source: [Docker tools and terms](https://www.ibm.com/topics/docker#Docker+tools+and+terms))_
+_(Source: [Docker tools and terms](https://www.ibm.com/topics/docker#Docker+tools+and+terms){:target="_blank"})_
 
 <img src="../../assets/docker-layers.jpg" alt="Docker Layers" style="display:block;float:none;margin-left:auto;margin-right:auto;width:60%" />
 
@@ -121,7 +121,7 @@ A Docker Registry is a central repository that stores Docker images, making them
 
 As mentioned before, Docker has been very popular over the past few years. There are a lot of guides and tutorials on how to set up Docker on your machine, but there is nothing better than the Official Documentation of Docker Desktop.
 
-So, without any hesitation, visit the [following link](https://docs.docker.com/desktop/) and in less than 5 minutes you'll have successfully installed Docker Desktop!
+So, without any hesitation, visit the [following link](https://docs.docker.com/desktop/){:target="_blank"} and in less than 5 minutes you'll have successfully installed Docker Desktop!
 
 After the installation finishes and you open Docker Desktop, you will be prompted to sign in with your Docker Hub account. Think of Docker Hub just like GitHub, but instead you can pull Docker Images from various users and foundations or even push your own straight to your profile. An extremely useful service that every developer uses nowadays!
 
@@ -131,12 +131,12 @@ Since, you are familiar with NodeJS over the past week, why not try and 'dockeri
 
 As mentioned before, there is no better source than the Official Documentation to follow for any tool you come across. Of course, NodeJS has a very detailed guide on how to dockerize a NodeJS app and will show you the basics and get you ready for applying them to any other project you like. Such as the one you've been learning the past few days!
 
-[Click here](https://nodejs.org/en/docs/guides/nodejs-docker-webapp) and start getting your hands dirty with Docker and NodeJS!
+[Click here](https://nodejs.org/en/docs/guides/nodejs-docker-webapp){:target="_blank"} and start getting your hands dirty with Docker and NodeJS!
 
 ### Sources and Attributions
 
-- [What is a container? | Docker](https://www.docker.com/resources/what-container/)
-- [What are containers? | Google Cloud](https://cloud.google.com/learn/what-are-containers)
-- [What is Docker? | IBM](https://www.ibm.com/topics/docker)
-- [Overview of Docker Desktop](https://docs.docker.com/desktop/)
-- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp)
+- [What is a container? | Docker](https://www.docker.com/resources/what-container/){:target="_blank"}
+- [What are containers? | Google Cloud](https://cloud.google.com/learn/what-are-containers){:target="_blank"}
+- [What is Docker? | IBM](https://www.ibm.com/topics/docker){:target="_blank"}
+- [Overview of Docker Desktop](https://docs.docker.com/desktop/){:target="_blank"}
+- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp){:target="_blank"}

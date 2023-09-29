@@ -44,8 +44,8 @@ In the file provided you will find some CSS already in place. This selects parts
 
 ## Hints and tips
 
-- Use the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to catch unintended mistakes in your CSS — mistakes you might have otherwise missed — so that you can fix them.
-- Afterwards try looking up some properties not mentioned on this page in the [MDN CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) and get adventurous!
+- Use the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/){:target="_blank"} to catch unintended mistakes in your CSS — mistakes you might have otherwise missed — so that you can fix them.
+- Afterwards try looking up some properties not mentioned on this page in the [MDN CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference){:target="_blank"} and get adventurous!
 - Remember that there is no wrong answer here — at this stage in your learning you can afford to have a bit of fun.
 
 ## Example
@@ -59,4 +59,4 @@ You should end up with something like this image.
 **Content is based on the following sources:**
 
 - **MDN:**
-  - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md)
+  - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md){:target="_blank"}

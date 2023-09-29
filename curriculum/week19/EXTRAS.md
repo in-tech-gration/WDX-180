@@ -6,7 +6,7 @@
 ## Day 04 - Docker
 
 The video below is an excellent tutorial from an excellent YouTuber that you can definitely get your hands on! It would be a good revision of what you learned this day and it will be a good hands on experience for you!
-- [Docker Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=pg19Z8LL06w)
+- [Docker Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=pg19Z8LL06w){:target="_blank"}
   - Duration: 1h07min
   - Level: Beginner
   - Captions: Yes

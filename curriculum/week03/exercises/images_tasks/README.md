@@ -42,4 +42,4 @@ Your final result should look like the image below:
 **Content is based on the following sources:**
 
 - **MDN:**
-  - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md)
+  - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md){:target="_blank"}

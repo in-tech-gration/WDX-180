@@ -25,7 +25,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **Introduction to NodeJS**](https://www.youtube.com/watch?v=JZXQ455OT3A)
+  - [Watch **Introduction to NodeJS**](https://www.youtube.com/watch?v=JZXQ455OT3A){:target="_blank"}
 
     - Duration: 17min
     - Level: Beginner
@@ -42,7 +42,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **Reading and Writing files with NodeJS**](https://www.youtube.com/watch?v=yQBw8skBdZU)
+  - [Watch **Reading and Writing files with NodeJS**](https://www.youtube.com/watch?v=yQBw8skBdZU){:target="_blank"}
     - Duration: 28min
     - Level: Beginner
     - Caption: Yes
@@ -74,7 +74,7 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 
-  - [NodeJS Official Site](https://nodejs.org/)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
 </details>
 
 <!-- Week 18 - Day 2 -->
@@ -97,7 +97,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **NPM Node Package Manager Modules**](https://www.youtube.com/watch?v=oGO_-DWTmKA)
+  - [Watch **NPM Node Package Manager Modules**](https://www.youtube.com/watch?v=oGO_-DWTmKA){:target="_blank"}
     - Duration: 23min
     - Level: Beginner
     - Captions: Yes
@@ -118,7 +118,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **Node Events Tutorial**](https://www.youtube.com/watch?v=2vaTy4dkbJM)
+  - [Watch **Node Events Tutorial**](https://www.youtube.com/watch?v=2vaTy4dkbJM){:target="_blank"}
     - Duration: 15min
     - Level: Beginner
     - Captions: Yes
@@ -143,8 +143,8 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
 </details>
 
 <!-- Week 18 - Day 3 -->
@@ -168,7 +168,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **How to build a Web Server with NodeJS**](https://www.youtube.com/watch?v=3ZAKY-CDKog)
+  - [Watch **How to build a Web Server with NodeJS**](https://www.youtube.com/watch?v=3ZAKY-CDKog){:target="_blank"}
     - Duration: 39min
     - Level: Beginner
     - Captions: Yes
@@ -188,7 +188,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **Introduction to ExpressJS**](https://www.youtube.com/watch?v=jivyItmsu18)
+  - [Watch **Introduction to ExpressJS**](https://www.youtube.com/watch?v=jivyItmsu18){:target="_blank"}
     - Duration: 22min
     - Level: Beginner
     - Captions: Yes
@@ -222,9 +222,9 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
 </details>
 
 <!-- Week 18 - Day 4 -->
@@ -247,7 +247,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **Middleware in ExpressJS**](https://www.youtube.com/watch?v=y18ubz7gOsQ)
+  - [Watch **Middleware in ExpressJS**](https://www.youtube.com/watch?v=y18ubz7gOsQ){:target="_blank"}
     - Duration: 35min
     - Level: Beginner
     - Captions: Yes
@@ -262,7 +262,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **Express Router**](https://www.youtube.com/watch?v=Zh7psmf1KAA)
+  - [Watch **Express Router**](https://www.youtube.com/watch?v=Zh7psmf1KAA){:target="_blank"}
     - Duration: 25min
     - Level: Beginner
     - Captions: Yes
@@ -289,12 +289,12 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
 </details>
 
 <!-- Week 18 - Day 5 -->
@@ -316,7 +316,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **MVC Example**](https://www.youtube.com/watch?v=Dco1gzVZKVk)
+  - [Watch **MVC Example**](https://www.youtube.com/watch?v=Dco1gzVZKVk){:target="_blank"}
     - Duration: 20min
     - Level: Beginner
     - Captions: Yes
@@ -330,7 +330,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **User Password Authentication**](https://www.youtube.com/watch?v=Nlg0JrUt0qg)
+  - [Watch **User Password Authentication**](https://www.youtube.com/watch?v=Nlg0JrUt0qg){:target="_blank"}
     - Duration: 26min
     - Level: Beginner
     - Captions: Yes
@@ -359,18 +359,18 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
 </details>
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
 ## Week 18 - Weekend Suggestions
 

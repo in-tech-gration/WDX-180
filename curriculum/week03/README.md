@@ -30,7 +30,7 @@ _(Updated: 18/09/2023)_
 
   These are some of the basic concepts covered so far. If you feel like you are uncertain about some of the things above, don't worry! It takes time to learn and master git! You can always revisit old lectures and your personal notes! Confident or not, below is a video where in about ten minutes gives a solid explanation on branches and a basic local workflow of creating/deleting branches.  
   
-  - [Watch: **Git & GitHub Tutorial for Beginners #8 - Branches**](https://www.youtube.com/watch?v=QV0kVNvkMxc)
+  - [Watch: **Git & GitHub Tutorial for Beginners #8 - Branches**](https://www.youtube.com/watch?v=QV0kVNvkMxc){:target="_blank"}
     - Duration: 10min
     - Level: Beginner
     - Captions: Yes
@@ -62,7 +62,7 @@ _(Updated: 18/09/2023)_
 
   In order to make it more clear to you, below you can watch a great video that represents a real-like scenario!
 
-  - [Watch: **GITHUB PULL REQUEST, Branching, Merging & Team Workflow**](https://www.youtube.com/watch?v=oFYyTZwMyAg)
+  - [Watch: **GITHUB PULL REQUEST, Branching, Merging & Team Workflow**](https://www.youtube.com/watch?v=oFYyTZwMyAg){:target="_blank"}
     - Duration: 11min
     - Level: Beginner
     - Captions: Yes
@@ -81,9 +81,9 @@ _(Updated: 18/09/2023)_
 
   Keeping that in mind, below you can find some very good articles on git branches and how actually git works under the hood.
 
-  - [Read: **A look under the hood: how branches work in Git**](https://stackoverflow.blog/2021/04/05/a-look-under-the-hood-how-branches-work-in-git/)
+  - [Read: **A look under the hood: how branches work in Git**](https://stackoverflow.blog/2021/04/05/a-look-under-the-hood-how-branches-work-in-git/){:target="_blank"}
 
-  - [Read: **Git Branching - Branches in a Nutshell**](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+  - [Read: **Git Branching - Branches in a Nutshell**](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell){:target="_blank"}
 
   > **Disclaimer**: These two articles are advanced for someone like you right now. You can always keep them for later and give them a read whenever you feel confident enough with Git, but we do highly recommend to give them a try nonetheless!
 
@@ -130,8 +130,8 @@ _(Updated: 18/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN:**
-    - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/index.md)
-    - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md)
+    - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/index.md){:target="_blank"}
+    - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md){:target="_blank"}
 </details>
 
 <!-- Week 3 - Day 3 | CSS Selectors -->
@@ -169,13 +169,13 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  - [Play: **CSS Diner**](https://flukeout.github.io/)
+  - [Play: **CSS Diner**](https://flukeout.github.io/){:target="_blank"}
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
     - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
 
   - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/README.md)
 
-  As for the CSS Diner, if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the [repo](https://github.com/flukeout/css-diner) of this awesome game!
+  As for the CSS Diner, if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the [repo](https://github.com/flukeout/css-diner){:target="_blank"} of this awesome game!
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
@@ -185,14 +185,14 @@ _(Updated: 18/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN:**
-    - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
-    - [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
-    - [Attribute Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
-    - [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
-    - [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
-    - [Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks) [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md)
+    - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors){:target="_blank"}
+    - [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors){:target="_blank"}
+    - [Attribute Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors){:target="_blank"}
+    - [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements){:target="_blank"}
+    - [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators){:target="_blank"}
+    - [Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md){:target="_blank"}
   - **CSS Diner:**
-    - [CSS Diner Github Repo](https://github.com/flukeout/css-diner)
+    - [CSS Diner Github Repo](https://github.com/flukeout/css-diner){:target="_blank"}
 </details>
 
 <!-- Week 3 - Day 4 | Cascade, Inheritance and the box model -->
@@ -233,10 +233,10 @@ _(Updated: 18/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN**
-    - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md)
-    - [Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md)
-    - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md)
-    - [Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md)
+    - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md){:target="_blank"}
+    - [Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md){:target="_blank"}
+    - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md){:target="_blank"}
+    - [Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md){:target="_blank"}
 </details>
 
 <!-- Week 3 - Day 5 | Backgrounds and borders -->
@@ -290,19 +290,19 @@ _(Updated: 18/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN**
-    - [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/backgrounds_and_borders/index.md)
-    - [Test your skills: Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/test_your_skills_backgrounds_and_borders/index.md)
-    - [Overflowing Content](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content) [(Permalink)](https://github.com/mdn/content/blob/b2a5f62d66b4e3d71704017d0fab7ad710e68057/files/en-us/learn/css/building_blocks/overflowing_content/index.md)
-    - [Test yours skills: Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks) [(Permalink)](https://github.com/mdn/content/blob/d45f6c3733728f0eefdb7fd4b9a84c4858b35fd1/files/en-us/learn/css/building_blocks/overflow_tasks/index.md)
-    - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_and_units/index.md)
-    - [Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md)
-    - [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_items_in_css/index.md)
-    - [Test your skills: Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_tasks/index.md)
-    - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md)
-    - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md)
+    - [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/backgrounds_and_borders/index.md){:target="_blank"}
+    - [Test your skills: Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/test_your_skills_backgrounds_and_borders/index.md){:target="_blank"}
+    - [Overflowing Content](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/b2a5f62d66b4e3d71704017d0fab7ad710e68057/files/en-us/learn/css/building_blocks/overflowing_content/index.md){:target="_blank"}
+    - [Test yours skills: Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/d45f6c3733728f0eefdb7fd4b9a84c4858b35fd1/files/en-us/learn/css/building_blocks/overflow_tasks/index.md){:target="_blank"}
+    - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_and_units/index.md){:target="_blank"}
+    - [Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md){:target="_blank"}
+    - [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_items_in_css/index.md){:target="_blank"}
+    - [Test your skills: Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_tasks/index.md){:target="_blank"}
+    - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md){:target="_blank"}
+    - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md){:target="_blank"}
 </details>
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
 ## Week 3 - Weekend Suggestions
 

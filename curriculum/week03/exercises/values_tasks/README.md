@@ -20,7 +20,7 @@ In this task, the first list item has been given a background color using a hex 
 - The third should use HSL color.
 - The fourth should use RGB color but with the alpha channel set to `0.6`.
 
-You can find conversions for the hex color at [this link](https://convertingcolors.com/hex-color-86DEFA.html). You need to figure out how to use the values in CSS.
+You can find conversions for the hex color at [this link](https://convertingcolors.com/hex-color-86DEFA.html){:target="_blank"}. You need to figure out how to use the values in CSS.
 
 [Download the starting point for this task](assets/color-download.html) to work in your own editor or in an online editor.
 
@@ -58,4 +58,4 @@ Your final result should look like the image below:
   **Content is based on the following sources:**
 
   - **MDN**
-    - [Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md)
+    - [Test your skills: Values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_tasks/index.md){:target="_blank"}

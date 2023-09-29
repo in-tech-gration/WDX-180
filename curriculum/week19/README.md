@@ -28,7 +28,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **JWT Authentication**](https://www.youtube.com/watch?v=favjC6EKFgw)
+  - [Watch **JWT Authentication**](https://www.youtube.com/watch?v=favjC6EKFgw){:target="_blank"}
     - Duration: 60min
     - Level: Beginner
     - Caption: Yes
@@ -48,7 +48,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **User authorization**](https://www.youtube.com/watch?v=fUWkVxCv4IQ)
+  - [Watch **User authorization**](https://www.youtube.com/watch?v=fUWkVxCv4IQ){:target="_blank"}
     - Duration: 29min
     - Level: Beginner
     - Caption: Yes
@@ -78,23 +78,23 @@ _(Updated: 18/09/2023)_
   
 ### Sources and Attributions
 
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
-  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
-  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Intro to JWT](https://jwt.io/introduction)
-  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
-  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
+  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken){:target="_blank"}
+  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser){:target="_blank"}
+  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
+  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Intro to JWT](https://jwt.io/introduction){:target="_blank"}
+  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id){:target="_blank"}
+  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie){:target="_blank"}
 </details>
 
 <!-- Week 19 - Day 2 -->
@@ -117,7 +117,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **Intro to MongoDB and MongooseJS**](https://www.youtube.com/watch?v=-PdjUx9JZ2E)
+  - [Watch **Intro to MongoDB and MongooseJS**](https://www.youtube.com/watch?v=-PdjUx9JZ2E){:target="_blank"}
     - Duration: 17min
     - Level: Beginner
     - Captions: Yes
@@ -132,7 +132,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **MongoDB Schemas and Data Models**](https://www.youtube.com/watch?v=jZ-dzj6ut54)
+  - [Watch **MongoDB Schemas and Data Models**](https://www.youtube.com/watch?v=jZ-dzj6ut54){:target="_blank"}
     - Duration: 21min
     - Level: Beginner
     - Captions: Yes
@@ -160,26 +160,26 @@ _(Updated: 18/09/2023)_
 ### [Extra Resources](EXTRAS.md)
   
 ### Sources and Attributions
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
-  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
-  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Intro to JWT](https://jwt.io/introduction)
-  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
-  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
-  - [MongoDB Official Site](https://www.mongodb.com/)
-  - [MongooseJS Official Site](https://mongoosejs.com/)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
+  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken){:target="_blank"}
+  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser){:target="_blank"}
+  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
+  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Intro to JWT](https://jwt.io/introduction){:target="_blank"}
+  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id){:target="_blank"}
+  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie){:target="_blank"}
+  - [MongoDB Official Site](https://www.mongodb.com/){:target="_blank"}
+  - [MongooseJS Official Site](https://mongoosejs.com/){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
 </details>
 
 <!-- Week 19 - Day 3 -->
@@ -199,7 +199,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **MongoDB Async CRUD Operations**](https://www.youtube.com/watch?v=AWlLhRQJvtw)
+  - [Watch **MongoDB Async CRUD Operations**](https://www.youtube.com/watch?v=AWlLhRQJvtw){:target="_blank"}
     - Duration: 35min
     - Level: Beginner
     - Captions: Yes
@@ -228,27 +228,27 @@ _(Updated: 18/09/2023)_
 ### [Extra Resources](EXTRAS.md)
   
 ### Sources and Attributions
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
-  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
-  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Intro to JWT](https://jwt.io/introduction)
-  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
-  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
-  - [MongoDB Official Site](https://www.mongodb.com/)
-  - [MongooseJS Official Site](https://mongoosejs.com/)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Glitch Official Site](https://glitch.com/)
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
+  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken){:target="_blank"}
+  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser){:target="_blank"}
+  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
+  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Intro to JWT](https://jwt.io/introduction){:target="_blank"}
+  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id){:target="_blank"}
+  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie){:target="_blank"}
+  - [MongoDB Official Site](https://www.mongodb.com/){:target="_blank"}
+  - [MongooseJS Official Site](https://mongoosejs.com/){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Glitch Official Site](https://glitch.com/){:target="_blank"}
 </details>
 
 <!-- Week 19 - Day 4 -->
@@ -330,7 +330,7 @@ _(Updated: 18/09/2023)_
 ### Sources and Attributions
 </details>
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
 ## Week 19 - Weekend Suggestions
 
