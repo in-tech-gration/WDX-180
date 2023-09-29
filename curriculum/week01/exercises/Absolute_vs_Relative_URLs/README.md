@@ -1,7 +1,10 @@
 ---
 load_script_js: 
 - quiz.js
+exercise_path: user/week01/exercises/day02/Absolute_vs_Relative_URLs
 ---
+
+# Absolute vs Relative URLs
 
 **Question 1:** What is a URL?
 - A) Uniform Resource Locator
