@@ -1,6 +1,6 @@
 # WDX 180°
 
-![Web Development X - A Course made with love by intechgration.io](/assets/WDX.Header.jpg)
+[![Web Development X - A Course made with love by intechgration.io](/assets/WDX.Header.jpg)](https://in-tech-gration.github.io/WDX-180)
 
 ## Web Development X - 180°
 
