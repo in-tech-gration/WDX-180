@@ -79,6 +79,12 @@
     -->
   <!-- end header -->
 
+  {% for js in page.load_script_js %}
+  <script type="text/javascript">
+     {% include {{ js }} %}
+  </script>
+  {% endfor %}
+
 </body>
 
 </html>

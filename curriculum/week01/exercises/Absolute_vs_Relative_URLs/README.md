@@ -1,3 +1,8 @@
+---
+load_script_js: 
+- quiz.js
+---
+
 **Question 1:** What is a URL?
 - A) Uniform Resource Locator
 - B) Universal Rendering Language
