@@ -346,6 +346,12 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Take the [10 Minute Markdown tutorial](https://commonmark.org/help/tutorial/){:target="_blank"}
     - Don't forget to [give it a star](https://github.com/commonmark/commonmark-web){:target="_blank"}!
 
+  Now it's a good time to bookmark this really useful website: [**htmlreference.io**](https://htmlreference.io/) is a free online guide to HTML. 
+  
+  Take a few minutes to browse through some of the available HTML elements, see them in action, check their syntax and the attributes they support. 
+  
+  Yes, they're quite a few of them (113), but don't worry too much though, as most of the times, you are probably going to need only a handful of them. 
+
 ### Summary
 
   Wow! You've covered quite a lot of ground right there! Through this module you've uncovered one of the most basic building blocks of the Web: HTML. The language that provides the content and gives structure to our web documents.
@@ -399,6 +405,14 @@ You should by now have a good understanding of how CSS uses various selectors to
 Apart from creating HTML content and styling it with CSS, you also have some insight on how to publish and deploy your web pages on the Internet.
 
 ### Exercises
+
+  **Styling the world's first website**: Visit this [link](https://info.cern.ch/hypertext/WWW/TheProject.html){:target="_blank"} to see the world's first web page created by the inventor of the Web and HTML, [Tim Berners Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee){:target="_blank"}! 
+  
+  You can use Chrome's `View Source` functionality _(right-click anywhere on the web page to see the option appear)_ to check the source code. As you can see, this is a pretty old HTML standard! 
+  
+  **Your task is to rewrite the code** of this webpage in modern HTML (v5) and style it using CSS! Once everything is ready, make sure that your code lives under the `user/week01/day04/cern/` directory, commit and push to submit your solution to your forked repository.
+
+  ---
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
 
