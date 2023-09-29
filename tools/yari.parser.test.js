@@ -6,40 +6,40 @@ const { parseEmbedGHLiveSample, parseHTTPHeader, parseHTTPStatus, parseYariDynam
 test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
   const output = parseYariDynamicContent(input);
-  equal(output, "[XML](https://developer.mozilla.org/en-US/docs/Glossary/XML)");
+  equal(output, "[XML](https://developer.mozilla.org/en-US/docs/Glossary/XML){:target=\"_blank\"}");
 });
 
 test('Parsing {{glossary("term")}}', () => {
   
   const input = `{{glossary("HTML")}}`;
   const output = parseYariDynamicContent(input);
-  equal(output, "[HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)");
+  equal(output, "[HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML){:target=\"_blank\"}");
 
   const input2 = `{{Glossary("browser")}}`;
   const output2 = parseYariDynamicContent(input2);
-  equal(output2, "[browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser)");
+  equal(output2, "[browser](https://developer.mozilla.org/en-US/docs/Glossary/Browser){:target=\"_blank\"}");
 
 });
 
 test('Parsing {{glossary("1", "2")}}', () => {
   const input = `{{glossary("attribute", "attributes")}}`;
   const output = parseYariDynamicContent(input);
-  equal(output, "[attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute)");
+  equal(output, "[attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute){:target=\"_blank\"}");
 
   const input2 = `{{glossary("void element", "void elements")}}`;
   const output2 = parseYariDynamicContent(input2);
-  equal(output2, "[void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)");
+  equal(output2, "[void elements](https://developer.mozilla.org/en-US/docs/Glossary/Void_element){:target=\"_blank\"}");
 
   const input3 = `{{Glossary("tag", "tags")}}`;
   const output3 = parseYariDynamicContent(input3);
-  equal(output3, "[tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag)");
+  equal(output3, "[tags](https://developer.mozilla.org/en-US/docs/Glossary/Tag){:target=\"_blank\"}");
 
 });
 
 test("Parsing <tag>{{Glossary()}}</tag>", ()=>{
 
   const input = `<tr><th scope="row">{{Glossary("String")}}</th></tr>`;
-  const output = `<tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></th></tr>`;
+  const output = `<tr><th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String" target="_blank">String</a></th></tr>`;
   equal( output, replaceHTMLGlossaryLinks(input) );
 
 });
@@ -48,7 +48,7 @@ test("Replacing MDN relative links with absolute URLs", () => {
 
   const input = `lorem ipsum [What will your website look like?](/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) lorem ipsum`;
   const output = parseMDNLinks(input);
-  equal(output, "lorem ipsum [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font) lorem ipsum");
+  equal(output, "lorem ipsum [What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#font){:target=\"_blank\"} lorem ipsum");
   
 });
 
@@ -68,11 +68,11 @@ test("Replacing {{htmlelement}} with links", ()=>{
   const input4 = `{{HTMLElement("p")}}`
   const input5 = `{{htmlelement("p")}}`
 
-  const output1 = "[`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)"
-  const output2 = "[`<body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)"
-  const output3 = "[`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)"
-  const output4 = "[`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)"
-  const output5 = "[`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)"
+  const output1 = "[`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements){:target=\"_blank\"}"
+  const output2 = "[`<body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body){:target=\"_blank\"}"
+  const output3 = "[`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head){:target=\"_blank\"}"
+  const output4 = "[`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p){:target=\"_blank\"}"
+  const output5 = "[`<p>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p){:target=\"_blank\"}"
 
   equal(parseElementTerm(input1), output1);
   equal(parseElementTerm(input2), output2);
@@ -81,7 +81,7 @@ test("Replacing {{htmlelement}} with links", ()=>{
   equal(parseElementTerm(input5), output5);
 
   const input6  = `lorem ipsum {{HTMLElement('i')}} lorem ipsum`
-  const output6 = `lorem ipsum [\`<i>\`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i) lorem ipsum`
+  const output6 = `lorem ipsum [\`<i>\`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i){:target=\"_blank\"} lorem ipsum`
 
   equal( parseElementTerm(input6), output6 );
 
@@ -90,7 +90,7 @@ test("Replacing {{htmlelement}} with links", ()=>{
 test("Replacing {{cssxref}} with links", ()=>{
 
   const input = `lorem ipsum {{cssxref("width")}} lorem ipsum`;
-  const output = "lorem ipsum [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) lorem ipsum";
+  const output = "lorem ipsum [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target=\"_blank\"} lorem ipsum";
   equal(parseCSSTerm(input), output);
 
 })
@@ -98,7 +98,7 @@ test("Replacing {{cssxref}} with links", ()=>{
 test("Replacing {{HTTPStatus}} with links", ()=>{
 
   const input = `lorem ipsum {{HTTPStatus("404", "404 Not Found")}} lorem ipsum`;
-  const output = "lorem ipsum [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) lorem ipsum";
+  const output = "lorem ipsum [404 Not Found](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404){:target=\"_blank\"} lorem ipsum";
   equal(parseHTTPStatus(input), output);
 
 })
@@ -106,21 +106,21 @@ test("Replacing {{HTTPStatus}} with links", ()=>{
 test("Replacing {{domxref}}", ()=>{
 
   const input1 = `lorem ipsum {{domxref("Document.querySelector", "querySelector()")}} lorem ipsum`;
-  const output1 = `lorem ipsum [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) lorem ipsum`;
+  const output1 = `lorem ipsum [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector){:target=\"_blank\"} lorem ipsum`;
   equal( output1, replaceDOMXrefLinks(input1) );
   
   const input2 = `lorem ipsum {{domxref("Node.textContent", "textContent")}} lorem ipsum`; 
-  const output2 = `lorem ipsum [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) lorem ipsum`; 
+  const output2 = `lorem ipsum [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent){:target=\"_blank\"} lorem ipsum`; 
 
   equal( output2, replaceDOMXrefLinks(input2) );
 
   const input3 = `lorem ipsum {{domxref("Element/click_event", "click")}} lorem ipsum`;
-  const output3 = `lorem ipsum [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) lorem ipsum`; 
+  const output3 = `lorem ipsum [click](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event){:target=\"_blank\"} lorem ipsum`; 
 
   equal( output3, replaceDOMXrefLinks(input3) );
 
   const input4 = `lorem ipsum {{domxref("WebRTC API", "WebRTC")}} lorem ipsum`
-  const output4 = `lorem ipsum [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) lorem ipsum`
+  const output4 = `lorem ipsum [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API){:target=\"_blank\"} lorem ipsum`
 
   equal( output4, replaceDOMXrefLinks(input4) );
 
@@ -129,7 +129,7 @@ test("Replacing {{domxref}}", ()=>{
 test("Replacing {{HTTPHeader}} with links", ()=>{
 
   const input = `lorem ipsum {{HTTPHeader("Content-Security-Policy")}} lorem ipsum`;
-  const output = "lorem ipsum [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) lorem ipsum";
+  const output = "lorem ipsum [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy){:target=\"_blank\"} lorem ipsum";
   equal(parseHTTPHeader(input), output);
 
 })
