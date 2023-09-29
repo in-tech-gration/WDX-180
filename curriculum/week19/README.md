@@ -7,12 +7,12 @@ title: Week 19
 _(Updated: 18/09/2023)_
 
 <!-- Week 19 - Day 1 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 1</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give a thorough explanation on what JWT (Jason Web Token) is, how to properly configure it for user authentication and how to authorize users with specific permissions and roles.
 
@@ -28,7 +28,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **JWT Authentication**](https://www.youtube.com/watch?v=favjC6EKFgw)
+  - [Watch **JWT Authentication**](https://www.youtube.com/watch?v=favjC6EKFgw){:target="_blank"}
     - Duration: 60min
     - Level: Beginner
     - Caption: Yes
@@ -48,7 +48,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **User authorization**](https://www.youtube.com/watch?v=fUWkVxCv4IQ)
+  - [Watch **User authorization**](https://www.youtube.com/watch?v=fUWkVxCv4IQ){:target="_blank"}
     - Duration: 29min
     - Level: Beginner
     - Caption: Yes
@@ -66,42 +66,44 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
-  ### Exercises
+### Summary
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
-  
-  ### Sources and Attributions
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
-  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
-  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Intro to JWT](https://jwt.io/introduction)
-  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
-  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
+### [Extra Resources](EXTRAS.md)
+  
+### Sources and Attributions
+
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
+  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken){:target="_blank"}
+  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser){:target="_blank"}
+  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
+  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Intro to JWT](https://jwt.io/introduction){:target="_blank"}
+  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id){:target="_blank"}
+  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie){:target="_blank"}
 </details>
 
 <!-- Week 19 - Day 2 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 2</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following videos which give an introduction to the MongoDB NoSQL database and the MongooseJS package. 
 
@@ -115,7 +117,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **Intro to MongoDB and MongooseJS**](https://www.youtube.com/watch?v=-PdjUx9JZ2E)
+  - [Watch **Intro to MongoDB and MongooseJS**](https://www.youtube.com/watch?v=-PdjUx9JZ2E){:target="_blank"}
     - Duration: 17min
     - Level: Beginner
     - Captions: Yes
@@ -130,7 +132,7 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  - [Watch **MongoDB Schemas and Data Models**](https://www.youtube.com/watch?v=jZ-dzj6ut54)
+  - [Watch **MongoDB Schemas and Data Models**](https://www.youtube.com/watch?v=jZ-dzj6ut54){:target="_blank"}
     - Duration: 21min
     - Level: Beginner
     - Captions: Yes
@@ -146,45 +148,47 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
-  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
-  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Intro to JWT](https://jwt.io/introduction)
-  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
-  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
-  - [MongoDB Official Site](https://www.mongodb.com/)
-  - [MongooseJS Official Site](https://mongoosejs.com/)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+### Sources and Attributions
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
+  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken){:target="_blank"}
+  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser){:target="_blank"}
+  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
+  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Intro to JWT](https://jwt.io/introduction){:target="_blank"}
+  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id){:target="_blank"}
+  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie){:target="_blank"}
+  - [MongoDB Official Site](https://www.mongodb.com/){:target="_blank"}
+  - [MongooseJS Official Site](https://mongoosejs.com/){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
 </details>
 
 <!-- Week 19 - Day 3 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 3</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Watch the following video which demonstrates how to eventually create a fully fledged Web App with Async CRUD(Create-Read-Update-Delete) operations and deploy it on a web hosting service (Glitch).
 
@@ -195,7 +199,7 @@ _(Updated: 18/09/2023)_
 
   **Here's the watch list**
 
-  - [Watch **MongoDB Async CRUD Operations**](https://www.youtube.com/watch?v=AWlLhRQJvtw)
+  - [Watch **MongoDB Async CRUD Operations**](https://www.youtube.com/watch?v=AWlLhRQJvtw){:target="_blank"}
     - Duration: 35min
     - Level: Beginner
     - Captions: Yes
@@ -212,46 +216,48 @@ _(Updated: 18/09/2023)_
         </ul>
       </details>
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
   - Complete any assignment suggested by the instructor on each video.
 
-  ### [Extra Resources](EXTRAS.md)
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
-  - [NodeJS Official Site](https://nodejs.org/)
-  - [NPM Official Site](https://www.npmjs.com/)
-  - [ExpressJS Official Site](https://expressjs.com/)
-  - [NPM: CORS package](https://www.npmjs.com/package/cors)
-  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-  - [Thunder Client Official Site](https://www.thunderclient.com/)
-  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt)
-  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
-  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken)
-  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser)
-  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Intro to JWT](https://jwt.io/introduction)
-  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id)
-  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie)
-  - [MongoDB Official Site](https://www.mongodb.com/)
-  - [MongooseJS Official Site](https://mongoosejs.com/)
-  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
-  - [Glitch Official Site](https://glitch.com/)
+### Sources and Attributions
+  - [NodeJS Official Site](https://nodejs.org/){:target="_blank"}
+  - [NPM Official Site](https://www.npmjs.com/){:target="_blank"}
+  - [ExpressJS Official Site](https://expressjs.com/){:target="_blank"}
+  - [NPM: CORS package](https://www.npmjs.com/package/cors){:target="_blank"}
+  - [MDN: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}
+  - [Thunder Client Official Site](https://www.thunderclient.com/){:target="_blank"}
+  - [NPM: bcrypt package](https://www.npmjs.com/package/bcrypt){:target="_blank"}
+  - [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/){:target="_blank"}
+  - [MDN: HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status){:target="_blank"}
+  - [NPM: jsonwebtoken package](https://www.npmjs.com/package/jsonwebtoken){:target="_blank"}
+  - [NPM: cookie-parser package](https://www.npmjs.com/package/cookie-parser){:target="_blank"}
+  - [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/){:target="_blank"}
+  - [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Intro to JWT](https://jwt.io/introduction){:target="_blank"}
+  - [All You Need to Know About Storing JWT in the Frontend](https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id){:target="_blank"}
+  - [Deleting Cookies](http://expressjs.com/en/api.html#res.clearCookie){:target="_blank"}
+  - [MongoDB Official Site](https://www.mongodb.com/){:target="_blank"}
+  - [MongooseJS Official Site](https://mongoosejs.com/){:target="_blank"}
+  - [REST Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html){:target="_blank"}
+  - [Glitch Official Site](https://glitch.com/){:target="_blank"}
 </details>
 
 <!-- Week 19 - Day 4 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 4</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Read the following document which gives an introduction to Containers and Docker.
 
@@ -273,26 +279,28 @@ _(Updated: 18/09/2023)_
 
   [Containers and Docker](resources/Containers_and_Docker/README.md)
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   Complete the tutorial on the NodeJS official site (link in Containers and Docker document) and push it on your GitHub account
 
-  ### [Extra Resources](EXTRAS.md)
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
 
   [List](resources/Containers_and_Docker/README.md#sources-and-attributions)
 </details>
 
 <!-- Week 19 - Day 5 -->
-<details>
+<details markdown="1">
   <summary><h2>Week 19 - Day 5</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   Read the following document which gives an introduction to 'docker-compose' and how to run multiple containers with Docker
 
@@ -307,20 +315,22 @@ _(Updated: 18/09/2023)_
 
   [Docker Compose](resources/Docker_Compose/README.md)
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
   Fully containerize the app that you've built the past two weeks and push on your GitHub the required configurations files along with instructions (e.g. in README.md file) on how to properly run the app using only Docker.
 
   [A guide to the exercise](resources/Docker_Excercise/README.md)
 
-  ### [Extra Resources](EXTRAS.md)
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+### [Extra Resources](EXTRAS.md)
   
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
 ## Week 19 - Weekend Suggestions
 

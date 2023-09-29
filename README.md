@@ -40,6 +40,7 @@
   - [GitHub](https://github.com/){:target="_blank"}
   - [StackOverflow](https://stackoverflow.com/){:target="_blank"}
   - [Codesandbox](https://codesandbox.io/){:target="_blank"}
+  - [Sli.do _(used during our Q&As)_](https://www.slido.com/){:target="_blank"}
 </details>
 
 <!-- Setup -->
@@ -59,7 +60,7 @@
 
   The URL should look something like this: `https://your_username.github.io/WDX-180`
 
-  > Here is a [YouTube video walkthrough](https://www.youtube.com/watch?v=xqGlWAHjtcM) to help you with this step. 
+  > Here is a [YouTube video walkthrough](https://www.youtube.com/watch?v=xqGlWAHjtcM){:target="_blank"} to help you with this step. 
 </details>
 
 <!-- Communication -->
@@ -216,6 +217,8 @@
 
 ## Who's Involved
 
+- [**Sohail Haqyar** / Co-founder](https://www.linkedin.com/in/sohail-haqyar/)
+- [**Abed Hamami** / Co-founder, Course Instructor](https://www.linkedin.com/in/abedhamami/) 
 - [**Kostas Minaidis** / Technical Curriculum Developer](https://www.linkedin.com/in/kostas-minaidis/)
 - [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
 - [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)

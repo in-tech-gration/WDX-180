@@ -87,7 +87,7 @@ function replaceHTMLGlossaryLinks(textContent, fileName) {
       link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
     }
 
-    const output = `${openingTag}<a href="${link}">${p2 ? p2 : p1}</a>${closingTag}`;
+    const output = `${openingTag}<a href="${link}" target="_blank">${p2 ? p2 : p1}</a>${closingTag}`;
     // console.log({ match, output });
     // console.log(match, p1, p2);
     return output;
@@ -125,7 +125,7 @@ function replaceGlossaryLinks(textContent, fileName) {
       link = `${baseLink}${p1[0].toUpperCase() + p1.slice(1).replace(/\s+/g, "_")}`;
     }
 
-    const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
+    const output = `[${p2 ? p2 : p1}](${link}){:target="_blank"}`;
     // console.log(match, p1, p2);
     return output;
   }
@@ -194,7 +194,7 @@ function replaceDOMXrefLinks(textContent, fileName) {
 
     }
 
-    const output = p2 ? `[${p2}](${link})` : `[${p1}](${link})`;
+    const output = `[${p2 ? p2 : p1}](${link}){:target="_blank"}`;
     return output;
   }
 
@@ -220,7 +220,7 @@ function parseMDNLinks(textContent) {
       // console.log( linkText); // Link label
       // console.log( url ); // Link URL: /en-us/docs/...
       const newUrl = domain + url;
-      return `[${linkText}](${newUrl})`;
+      return `[${linkText}](${newUrl}){:target="_blank"}`;
     });
   }
 
@@ -251,7 +251,7 @@ function parseElementTerm(textContent) {
   const pattern = /{{(htmlelement|HTMLElement)\(['"](.*?)['"](?:, "(.*?)")?\)}}/g;
   return textContent.replace(pattern, (match, _, termA, termB) => {
     const link = `${URL}${termA}`;
-    return `[\`<${termB ? termB : termA}>\`](${link})`;
+    return `[\`<${termB ? termB : termA}>\`](${link}){:target="_blank"}`;
   })
 }
 
@@ -261,7 +261,7 @@ function parseCSSTerm(textContent) {
   const domain = "https://developer.mozilla.org/en-US/docs/Web/CSS/";
   const regex = /{{cssxref\("([^"]+)"\)}}/g;
   return textContent.replace(regex, (match, cssTerm) => {
-    return `[\`${cssTerm}\`](${domain}${cssTerm})`
+    return `[\`${cssTerm}\`](${domain}${cssTerm}){:target="_blank"}`
   })
 }
 
@@ -270,7 +270,7 @@ function parseHTTPStatus(textContent) {
   const pattern = /{{(HTTPStatus)\("(.*?)"(?:, "(.*?)")?\)}}/g;
   return textContent.replace(pattern, (match, _, termA, termB) => {
     const link = `${URL}${termA}`;
-    const output = `[${termB ? termB : termA}](${link})`;
+    const output = `[${termB ? termB : termA}](${link}){:target="_blank"}`;
     // console.log({ output }); 
     return output;
   })
@@ -281,7 +281,7 @@ function parseHTTPHeader(textContent) {
   const pattern = /{{(HTTPHeader)\("(.*?)"(?:, "(.*?)")?\)}}/g;
   return textContent.replace(pattern, (match, _, termA, termB) => {
     const link = `${URL}${termA}`;
-    const output = `[${termB ? termB : termA}](${link})`;
+    const output = `[${termB ? termB : termA}](${link}){:target="_blank"}`;
     console.log();
     info(`Found: ${match}`);
     console.log();

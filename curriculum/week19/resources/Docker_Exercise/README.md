@@ -63,4 +63,4 @@ While following these steps, this **questions are good to have in mind**:
 
 Since our database is not running on the cloud, as we saw on previous lessons, we require a tool in order to view the contents of it. Mongo provides us a tool called MongodB Compass which is perfect for what we need now! You can find more on the official documentation!
 
-[MongoDB Compass Official Docs](https://www.mongodb.com/docs/compass/current/)
+[MongoDB Compass Official Docs](https://www.mongodb.com/docs/compass/current/){:target="_blank"}

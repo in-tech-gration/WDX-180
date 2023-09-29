@@ -10,9 +10,9 @@ _(Updated: 18/09/2023)_
 <details markdown="1">
   <summary><h2>Week 2 - Day 1 | Git</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn:**
 
@@ -104,31 +104,27 @@ _(Updated: 18/09/2023)_
 
   - You can find a nice reference to the git commands mentioned in the videos [here](resources/git-commands.html). _(Also, in [markdown format](resources/git-commands.md))_
 
-  ### Summary
+### Summary
 
   - **What is Version Control?** The management of changes to documents, computer programs, large web sites, and other collections of information.
   - **What is Git?** A free and open source version control system.
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d01.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+### [Extra Resources](EXTRAS.md)
 
-  ### [Extra Resources](EXTRAS.md)
-
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
 <!-- Week 2 - Day 2 | HTML -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 2 | HTML</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn:**
 
@@ -165,94 +161,78 @@ _(Updated: 18/09/2023)_
       - [Active learning: creating a navigation menu](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_a_navigation_menu)
       - [Test your skills: Links (3x Tasks)](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links)
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d02.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+### [Extra Resources](EXTRAS.md)
 
-  ### [Extra Resources](EXTRAS.md)
-
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
 <!-- Week 2 - Day 3 | Tables -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 3 | Tables</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn:**
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d03.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+### [Extra Resources](EXTRAS.md)
 
-  ### [Extra Resources](EXTRAS.md)
-
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
 <!-- Week 2 - Day 4 | Forms -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 4 | Forms</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn:**
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d04.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+### [Extra Resources](EXTRAS.md)
 
-  ### [Extra Resources](EXTRAS.md)
-
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
 <!-- Week 2 - Day 5 | SVG & MathML -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 5 | SVG & MathML</h2></summary>
 
-  ### Schedule
+### Schedule
 
-  ### Study Plan
+### Study Plan
 
   **What you'll learn:**
 
-  ### Summary
+### Summary
 
-  ### Exercises
+### Exercises
 
-  Make sure to complete all the tasks found in the [Progress Sheet](../../user/week02/progress/progress.w02.d05.csv) that are related to the current week and day and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`.
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-  > **Note:** Do not forget to create the Progress Sheet first on your `/user/week02/progress/` folder.
-  >
-  > Follow the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md) on how to keep track of your progress!
+### [Extra Resources](EXTRAS.md)
 
-  ### [Extra Resources](EXTRAS.md)
-
-  ### Sources and Attributions
+### Sources and Attributions
 </details>
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 

@@ -23,5 +23,5 @@ title: Week 3 Weekend
   **Content is based on the following sources:**
 
   - **MDN**
-    - [Handling different text directions](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions) [(Permalink)](https://github.com/mdn/content/tree/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/handling_different_text_directions)
-    - [Test your skills: Writing modes and logical properties](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Writing_Modes_Tasks) [(Permalink)](https://github.com/mdn/content/blob/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/writing_modes_tasks/index.md)
+    - [Handling different text directions](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions){:target="_blank"} [(Permalink)](https://github.com/mdn/content/tree/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/handling_different_text_directions){:target="_blank"}
+    - [Test your skills: Writing modes and logical properties](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Writing_Modes_Tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/writing_modes_tasks/index.md){:target="_blank"}
