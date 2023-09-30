@@ -26,7 +26,7 @@
 
 ### Beginner: WDX 60°
 
-  - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/README.md)
+  - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/INDEX.md)
   - [**Week 02**: HTML, Accessibility & Git](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 03**: CSS, Accessibility & more Git](#) _(🔒 Stay tuned! This module is on the way.)_ 
   - [**Week 04**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
