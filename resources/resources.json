@@ -1680,6 +1680,10 @@
         "COMPUTERS",
         "EDUCATION"
       ]
+    },
+    "javascript-in-14-minutes" : {
+      "identifier": "https://jgthms.com/javascript-in-14-minutes/",
+      "type": "Interactive Tutorial"
     }
   },
   "creators": {}
