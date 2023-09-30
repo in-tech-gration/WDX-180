@@ -210,16 +210,16 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:**How the web works**](resources/How_the_web_works/README.md)
+  - [Read:**How the web works**](resources/How_the_web_works/INDEX.md)
     - Level: Beginner
 
-  - [Read: **What is a web server?**](resources/What_is_a_web_server/README.md)
+  - [Read: **What is a web server?**](resources/What_is_a_web_server/INDEX.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](resources/What_is_a_URL/README.md)
+  - [Read: **What is a URL?**](resources/What_is_a_URL/INDEX.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/README.md)
+  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/INDEX.md)
     - Level: Beginner
 
   - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI){:target="_blank"}
@@ -250,7 +250,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   ---
 
-  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/README.md)
+  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/INDEX.md)
     - Level: Beginner
 
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I){:target="_blank"}

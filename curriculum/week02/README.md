@@ -228,6 +228,8 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
+  Now it's time to gather all this knowledge around HTML _(and GitHub)_ and build your own Blog and get it online. Follow the instructions found [here](./exercises/lets_create_a_weblog/INDEX.md). You might need to spend a few extra hours during the weekend to improve and finalize your Blog.
+
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md)
