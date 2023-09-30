@@ -15,7 +15,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "chalk": "4.1.2",
-    "clipboardy": "^3.0.0",
+    "clipboardy": "2.3.0",
     "csv": "^6.3.3",
     "dotenv": "^16.3.1",
     "famulus": "^2.2.3",
