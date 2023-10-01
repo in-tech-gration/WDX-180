@@ -362,6 +362,16 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
 ### Exercises
 
+  - Complete the following exercises and update the progress CSV files accordingly:
+
+  - [Complete: **Parent-Child Relationships** exercise](./exercises/1-parent-child/INDEX.md)
+
+  - [Complete: **HTML Attributes** exercise](./exercises/2-html-attributes/INDEX.md)
+
+  - [Complete: **Semantic HTML** exercise](./exercises/3-semantic-html/INDEX.md)
+
+  - [Complete the **Markdown Tutorial** exercise](https://www.markdowntutorial.com/)
+
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
 
 ### [Extra Resources](EXTRAS.md#day-03---html)

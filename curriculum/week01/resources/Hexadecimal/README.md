@@ -18,6 +18,10 @@ Hexadecimal, decimal, octal, and a wide variety of other bases have been used fo
 
 **[3] arbitrary-precision arithmetic** : In computer science, arbitrary-precision arithmetic, also called bignum arithmetic, multiple-precision arithmetic, or sometimes infinite-precision arithmetic, indicates that calculations are performed on numbers whose digits of precision are limited only by the availab&hellip;
 
----
+----
 
-Source: [Wikipedia: Positional notation](https://en.wikipedia.org/wiki/Positional_notation)
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- [Wikipedia: Positional notation](https://en.wikipedia.org/wiki/Positional_notation)

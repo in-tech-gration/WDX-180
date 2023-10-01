@@ -230,6 +230,7 @@
 The curriculum draws heavily on the following amazing resources:
 
 - [**Mozilla Developer Network**](https://developer.mozilla.org/en-US/)
+- [**CodeYourFuture**](https://codeyourfuture.io/about/)
 - [**Codecademy**](https://www.codecademy.com/)
 - [**javascript.info** by Ilya Kantor](https://www.linkedin.com/in/iliakan/)
 - [**Kyle Simpson** aka getify, author of ___You Don't know JS___](https://www.linkedin.com/in/getify/)
