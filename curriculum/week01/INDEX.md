@@ -365,10 +365,13 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   - Complete the following exercises and update the progress CSV files accordingly:
 
   - [Complete: **Parent-Child Relationships** exercise](./exercises/1-parent-child/INDEX.md)
+    - You can find this exercise, in the following path in your forked repository: `curriculum/week01/exercises/1-parent-child/`
 
   - [Complete: **HTML Attributes** exercise](./exercises/2-html-attributes/INDEX.md)
+    - You can find this exercise, in the following path in your forked repository: `curriculum/week01/exercises/2-html-attributes/`
 
   - [Complete: **Semantic HTML** exercise](./exercises/3-semantic-html/INDEX.md)
+    - You can find this exercise, in the following path in your forked repository: `curriculum/week01/exercises/3-semantic-html/`
 
   - [Complete the **Markdown Tutorial** exercise](https://www.markdowntutorial.com/)
 
