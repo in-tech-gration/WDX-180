@@ -14,7 +14,7 @@ _(Updated: 18/09/2023)_
 
 ### Study Plan
 
-  Watch the following videos which give a thorough explanation on what JWT (Jason Web Token) is, how to properly configure it for user authentication and how to authorize users with specific permissions and roles.
+  Watch the following videos which give a thorough explanation on what JWT (JSON Web Token) is, how to properly configure it for user authentication and how to authorize users with specific permissions and roles.
 
   **What you'll learn:**
 
@@ -67,6 +67,7 @@ _(Updated: 18/09/2023)_
       </details>
 
 ### Summary
+
 ### Exercises
 
   - Create a working version of each video's code structure and push them to your corresponding GitHub repository.
