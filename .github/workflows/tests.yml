@@ -7,7 +7,7 @@ on: push
 jobs:
   tests:
     # Success! This job was skipped when the commit message didn't include 'runme'
-    # if: contains(github.event.head_commit.message, 'runme')
+    if: contains(github.event.head_commit.message, 'runme')
     runs-on: ubuntu-latest
 
     steps:
