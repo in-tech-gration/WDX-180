@@ -8,7 +8,7 @@ page-type: learn-module-assessment
 
 _(Updated: 12/09/2023)_
 
-The aim of this skill test is to assess whether you understand [backgrounds and borders of boxes in CSS](../../resources/css_building_blocks/backgrounds_and_borders/README.md).
+The aim of this skill test is to assess whether you understand [backgrounds and borders of boxes in CSS](../../resources/css_building_blocks/backgrounds_and_borders/index.md).
 
 > **Note:** If you get stuck, then ask us for help!
 

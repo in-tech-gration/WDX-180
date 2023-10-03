@@ -8,7 +8,7 @@ page-type: learn-module-assessment
 
 _(Updated: 12/09/2023)_
 
-The aim of this skill test is to assess whether you understand different types of [values and units used in CSS properties](../../resources/css_building_blocks/values_and_units/README.md).
+The aim of this skill test is to assess whether you understand different types of [values and units used in CSS properties](../../resources/css_building_blocks/values_and_units/index.md).
 
 > **Note:** If you get stuck, then ask us for help!
 

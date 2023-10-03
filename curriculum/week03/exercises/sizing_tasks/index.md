@@ -8,7 +8,7 @@ page-type: learn-module-assessment
 
 _(Updated: 13/09/2023)_
 
-The aim of this skill test is to assess whether you understand the different ways of [sizing items in CSS](../../resources/css_building_blocks/sizing_items_in_css/README.md).
+The aim of this skill test is to assess whether you understand the different ways of [sizing items in CSS](../../resources/css_building_blocks/sizing_items_in_css/index.md).
 
 > **Note:**If you get stuck, then ask us for help!
 

@@ -12,11 +12,11 @@ title: Week 3 Weekend
 
   On this weekend, we suggest that you get your hands on the following article:
 
-  - [Read: **Handling different text directions**](resources/css_building_blocks/handling_different_text_directions/README.md)
+  - [Read: **Handling different text directions**](resources/css_building_blocks/handling_different_text_directions/index.md)
 
   and after that you can test your knowledge on the subject with the exercise below:
 
-  - [MDN's Assessment: **Test your skills: Writing modes and logical properties**](exercises/writing_modes_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: Writing modes and logical properties**](exercises/writing_modes_tasks/index.md)
 
   ### Sources and Attributions
 

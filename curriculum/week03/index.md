@@ -58,7 +58,7 @@ _(Updated: 18/09/2023)_
 
   After you've finished the task above, make sure to **take a short break**, and get ready to dig deeper with the following content!
 
-  - [Read: **Pull Requests and Merges**](resources/more_git/pull_requests_and_merges/README.md)
+  - [Read: **Pull Requests and Merges**](resources/more_git/pull_requests_and_merges/index.md)
 
   In order to make it more clear to you, below you can watch a great video that represents a real-like scenario!
 
@@ -102,16 +102,16 @@ _(Updated: 18/09/2023)_
 
 ### Study Plan
 
-  - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/README.md)
+  - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/index.md)
     - Level: Beginner
 
-  - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/README.md)
+  - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/index.md)
     - Level: Beginner
 
-  - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/README.md)
+  - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/index.md)
     - Level: Beginner
 
-  - [Read: **How CSS works**](resources/css_first_steps/how_css_works/README.md)
+  - [Read: **How CSS works**](resources/css_first_steps/how_css_works/index.md)
     - Level: Beginner
 
 ### Summary
@@ -120,7 +120,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/README.md)
+  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/index.md)
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
@@ -148,19 +148,19 @@ _(Updated: 18/09/2023)_
 
   Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper.
 
-  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/README.md)
+  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/index.md)
     - Level: Beginner
   
-  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/README.md)
+  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/index.md)
     - Level: Beginner
   
-  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/README.md)
+  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/index.md)
     - Level: Beginner
   
-  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/README.md)
+  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/index.md)
     - Level: Beginner
   
-  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/README.md)
+  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md)
     - Level: Beginner
 
 ### Summary
@@ -173,7 +173,7 @@ _(Updated: 18/09/2023)_
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
     - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
 
-  - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/index.md)
 
   As for the CSS Diner, if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the [repo](https://github.com/flukeout/css-diner){:target="_blank"} of this awesome game!
 
@@ -209,10 +209,10 @@ _(Updated: 18/09/2023)_
 
   The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts are resolved.
 
-  - [Read: **Cascade and Inheritance**](resources/css_building_blocks/cascade_and_inheritance/README.md)
+  - [Read: **Cascade and Inheritance**](resources/css_building_blocks/cascade_and_inheritance/index.md)
     - Level: Beginner
 
-  - [Read: **The box model**](resources/css_building_blocks/the_box_model/README.md)
+  - [Read: **The box model**](resources/css_building_blocks/the_box_model/index.md)
     - Level: Beginner
 
 ### Summary
@@ -221,9 +221,9 @@ _(Updated: 18/09/2023)_
   
 ### Exercises
 
-  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/index.md)
 
-  - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/index.md)
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
@@ -251,19 +251,19 @@ _(Updated: 18/09/2023)_
 
 ### Study Plan
 
-  - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/README.md)
+  - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/index.md)
     - Level: Beginner
 
-  - [Read: **Overflowing Content**](resources/css_building_blocks/overflowing_content/README.md)
+  - [Read: **Overflowing Content**](resources/css_building_blocks/overflowing_content/index.md)
     - Level: Beginner
 
-  - [Read: **CSS values and units**](resources/css_building_blocks/values_and_units/README.md)
+  - [Read: **CSS values and units**](resources/css_building_blocks/values_and_units/index.md)
     - Level: Beginner
 
-  - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/README.md)
+  - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/index.md)
     - Level: Beginner
 
-  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/README.md)
+  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/index.md)
     - Level: Beginner
 
 ### Summary
@@ -272,15 +272,15 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/README.md)
+  - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/index.md)
 
-  - [MDN's Assessment: **Test your skills: Overflow**](exercises/overflow_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: Overflow**](exercises/overflow_tasks/index.md)
 
-  - [MDN's Assessment: **Test your skills: Values and units**](exercises/values_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: Values and units**](exercises/values_tasks/index.md)
 
-  - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/index.md)
 
-  - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/README.md)
+  - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/index.md)
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 

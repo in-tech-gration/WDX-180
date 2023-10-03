@@ -51,7 +51,7 @@ In the example below we have two boxes, both 200 pixels in size:
 
 So what can we do about the overflowing issue?
 
-As we learned in [our previous lesson](../sizing_items_in_css/README.md), a common technique is to make the [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) of an image 100%. This will enable the image to become smaller in size than the box but not larger. This technique will also work with other replaced elements such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)s, or [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)s.
+As we learned in [our previous lesson](../sizing_items_in_css/index.md), a common technique is to make the [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) of an image 100%. This will enable the image to become smaller in size than the box but not larger. This technique will also work with other replaced elements such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)s, or [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)s.
 
 **Try adding `max-width: 100%` to the `<img>` element in the example above. You will see that the smaller image remains unchanged, but the larger one becomes smaller to fit into the box.**
 
@@ -152,7 +152,7 @@ textarea {
 
 ### Form elements and box-sizing
 
-Across browsers, form elements use different box sizing rules for different widgets. You learned about the `box-sizing` property in [our box model lesson](../the_box_model/README.md) and you can use this knowledge when styling forms to ensure a consistent experience when setting widths and heights on form elements.
+Across browsers, form elements use different box sizing rules for different widgets. You learned about the `box-sizing` property in [our box model lesson](../the_box_model/index.md) and you can use this knowledge when styling forms to ensure a consistent experience when setting widths and heights on form elements.
 
 For consistency, it is a good idea to set margins and padding to `0` on all elements, then add these back in when styling particular controls:
 

@@ -8,7 +8,7 @@ page-type: learn-module-assessment
 
 _(Updated: 13/09/2023)_
 
-The aim of this skill test is to assess whether you understand how special elements like [images, media and form elements are treated in CSS](../../resources/css_building_blocks/images_media_form_elements/README.md).
+The aim of this skill test is to assess whether you understand how special elements like [images, media and form elements are treated in CSS](../../resources/css_building_blocks/images_media_form_elements/index.md).
 
 > **Note:** If you get stuck, then ask us for help!
 

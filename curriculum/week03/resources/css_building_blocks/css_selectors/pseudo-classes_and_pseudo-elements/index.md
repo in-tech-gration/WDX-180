@@ -182,7 +182,7 @@ In this article we've introduced CSS pseudo-classes and pseudo-elements, which a
 
 Pseudo-classes enable you to target an element when it's in a particular state, as if you had added a class for that state to the DOM. Pseudo-elements act as if you had added a whole new element to the DOM, and enable you to style that. The `::before` and `::after` pseudo-elements enable you to insert content into the document using CSS.
 
-In the next article, we'll learn about [combinators](../combinators/README.md).
+In the next article, we'll learn about [combinators](../combinators/index.md).
 
 ## See also
 

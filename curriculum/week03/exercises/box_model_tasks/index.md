@@ -8,7 +8,7 @@ page-type: learn-module-assessment
 
 _(Updated: 07/09/2023)_
 
-The aim of this skill test is to assess whether you understand the [CSS box model](../../resources/css_building_blocks/the_box_model/README.md).
+The aim of this skill test is to assess whether you understand the [CSS box model](../../resources/css_building_blocks/the_box_model/index.md).
 
 > **Note:** If you get stuck, then ask us for help!
 

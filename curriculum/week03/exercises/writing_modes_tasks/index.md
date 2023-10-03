@@ -8,7 +8,7 @@ page-type: learn-module-assessment
 
 _(Updated: 08/09/2023)_
 
-The aim of this skill test is to assess whether you understand how to [handle different text directions using writing modes and logical properties in CSS](../../resources/css_building_blocks/handling_different_text_directions/README.md).
+The aim of this skill test is to assess whether you understand how to [handle different text directions using writing modes and logical properties in CSS](../../resources/css_building_blocks/handling_different_text_directions/index.md).
 
 > **Note:** If you get stuck, then ask us for help!
 

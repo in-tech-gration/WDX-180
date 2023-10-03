@@ -27,7 +27,7 @@ First, let's examine three methods of applying CSS to a document: with an extern
 
 ### External stylesheet
 
-An external stylesheet contains CSS in a separate file with a `.css` extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. In the [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started), we linked an external stylesheet to our web page.
+An external stylesheet contains CSS in a separate file with a `.css` extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. In the [Getting started with CSS](../getting_started/index.md), we linked an external stylesheet to our web page.
 
 You reference an external CSS stylesheet from an HTML `<link>` element:
 
@@ -183,7 +183,7 @@ Read on and have fun!
 
 ## Selectors
 
-A selector targets HTML to apply styles to content. We have already discovered a variety of selectors in the [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started) tutorial. If CSS is not applying to content as expected, your selector may not match the way you think it should match.
+A selector targets HTML to apply styles to content. We have already discovered a variety of selectors in the [Getting started with CSS](../getting_started/index.md) tutorial. If CSS is not applying to content as expected, your selector may not match the way you think it should match.
 
 Each CSS rule starts with a selector — or a list of selectors — in order to tell the browser which element or elements the rules should apply to. All the examples below are valid selectors or lists of selectors.
 
@@ -200,7 +200,7 @@ h1, h2, .intro
 
 Try creating some CSS rules that use the selectors above. Add HTML to be styled by the selectors. If any of the syntax above is not familiar, try searching MDN.
 
-> **Note:** You will learn more about selectors in the next module: [CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
+> **Note:** You will learn more about selectors in the next module: [CSS selectors](../../css_building_blocks/css_selectors/index.md).
 
 ### Specificity
 
@@ -238,7 +238,7 @@ However, in the case of our earlier example with the conflict between the class 
 
 Try this experiment for yourself! Add HTML, then add the two `p { }` rules to your stylesheet. Next, change the first `p` selector to `.special` to see how it changes the styling.
 
-The rules of specificity and the cascade can seem complicated at first. These rules are easier to understand as you become more familiar with CSS. The [Cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) section in the next module explains this in detail, including how to calculate specificity.
+The rules of specificity and the cascade can seem complicated at first. These rules are easier to understand as you become more familiar with CSS. The [Cascade and inheritance](../../css_building_blocks/cascade_and_inheritance/index.md) section in the next module explains this in detail, including how to calculate specificity.
 
 For now, remember that specificity exists. Sometimes, CSS might not apply as you expected because something else in the stylesheet has more specificity. Recognizing that more than one rule could apply to an element is the first step in fixing these kinds of issues.
 
