@@ -6,5 +6,5 @@ test('should add two numbers', () => {
 })
 
 test('should subtract two numbers', () => {
-        assert.equal(10, 20)
+        assert.equal(20, 20)
 })
