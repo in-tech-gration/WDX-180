@@ -1,9 +1,11 @@
+# Hello World GitHub Actions > https://www.youtube.com/watch?v=WW6ZUw9IExA
 name: Run tests
 
 on: push
 
 jobs:
   tests:
+    if: contains(github.event.head_commit.message, 'runme')
     runs-on: ubuntu-latest
 
     steps:
