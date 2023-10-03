@@ -5,7 +5,7 @@ load_script_js:
 
 # Setup Process FAQ
 
-> Do you feel that there's something missing from this FAQ? Please [let us know](https://github.com/in-tech-gration/WDX-180/discussions/categories/q-a)
+**Do you feel that there's something missing from this FAQ? Please [let us know](https://github.com/in-tech-gration/WDX-180/discussions/categories/q-a)**
 
 ---
 
@@ -17,13 +17,13 @@ load_script_js:
 
 Q: **I try to use npm install but i get prompted that the term is not recognized** 
 
-> A: In order to run npm, you need to have node.js installed: https://nodejs.org/en (Prefer the LTS version)
+> A: In order to run npm, you need to have node.js installed: [https://nodejs.org/en](https://nodejs.org/en) (Prefer the LTS version)
 
 ---
 
 **Q: Install npm notice update What about that? npm notice New major version of npm available! 9.8.1 -> 10.1.0 npm notice Run npm install -g npm@10.1.0 to update!** 
 
-> A: Good observation. You can continue using your current npm version or update to the latest one. It's a good thing to keep npm updated by running the command: npm install -g npm@<VERSION>
+> A: Good observation. You can continue using your current npm version or update to the latest one. It's a good thing to keep npm updated by running the command: `npm install -g npm@<VERSION>`
 
 ---
 
@@ -35,7 +35,7 @@ Q: **I try to use npm install but i get prompted that the term is not recognized
 
 **Q: Do windows need ssh config file? Because none mentioned.** 
 
-> A: You should follow the official guide (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows) and make sure that the connection works. If it works and there was no need for messing with a config file, and it should probably be fine.
+> A: You should follow the official guide ([https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows)) and make sure that the connection works. If it works and there was no need for messing with a config file, and it should probably be fine.
 
 ---
 
@@ -59,19 +59,19 @@ Q: **I try to use npm install but i get prompted that the term is not recognized
 
 **Q: On the setup step 4 what is the personal progress sheet and where can i find it to paste the URL?** 
 
-> A: The personal progress sheets are found under the /user folder in the WDX180 repository (your forked version). For the 1st day and week, the progress sheets are found under /user/week01/progress/progress.draft.w01.d01.csv. You must, of course, first make a copy of the draft file and rename it to progress.w01.d01.csv before updating it.
+> A: The personal progress sheets are found under the /user folder in the WDX180 repository (your forked version). For the 1st day and week, the progress sheets are found under `/user/week01/progress/progress.draft.w01.d01.csv`. You must, of course, first make a copy of the draft file and rename it to `progress.w01.d01.csv` before updating it.
 
 ---
 
 **Q: git clone command error. The authenticity of host 'github.com (140.82.121.3)' can't be establishedED key fingerprint is This key is not known by any other names**
 
-> A: Perhaps this can help: https://docs.github.com/en/enterprise-cloud@latest/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection 
+> A: Perhaps this can help: [https://docs.github.com/en/enterprise-cloud@latest/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection](https://docs.github.com/en/enterprise-cloud@latest/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection) 
 
 ---
 
-**Q: Why do you have (main) with a green check on main folder of clone when you go to that folder in video? https://www.youtube.com/watch?v=S9Qg3Ltf__c&t=12m53s**
+**Q: Why do you have (main) with a green check on main folder of clone when you go to that folder in video? [https://www.youtube.com/watch?v=S9Qg3Ltf__c&t=12m53s](https://www.youtube.com/watch?v=S9Qg3Ltf__c&t=12m53s)**
 
-> A: I am currently using a command line "shell" called ZSH. There is a project called OhMyZsh (https://github.com/ohmyzsh/ohmyzsh) that includes some scripts and plugins for this shell, which add extra functionality. I have installed one that shows a green checkmark when there are not commits on git and the working tree is clean. At this point, I think it's an overkill to try and configure zsh on your machine, but we can certainly try this at a later point in the course.
+> A: I am currently using a command line "shell" called ZSH. There is a project called OhMyZsh ([https://github.com/ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)) that includes some scripts and plugins for this shell, which add extra functionality. I have installed one that shows a green checkmark when there are not commits on git and the working tree is clean. At this point, I think it's an overkill to try and configure zsh on your machine, but we can certainly try this at a later point in the course.
 
 ---
 
@@ -80,11 +80,11 @@ Q: **I try to use npm install but i get prompted that the term is not recognized
 **Q (related): I found out that when windows sound service is enabled vscode crashes and doesn't open. Any fixes?** 
 
 > A: Let us know how this goes as it is something we've haven't seen before and it's probably related to either the latest VSCode version and/or some software running on your system, e.g. the Antivirus you mentioned.
-> Perhaps, this might be helpful: https://www.youtube.com/watch?v=YQRoik6lk6c
+> Perhaps, this might be helpful: [https://www.youtube.com/watch?v=YQRoik6lk6c](https://www.youtube.com/watch?v=YQRoik6lk6c)
 >
-> A: Not to our knowledge. It's Google time, we guess. As a temporary alternative, there's always VSCode for the Web (https://vscode.dev/) and Sublime Text (https://www.sublimetext.com/), although we recommend to keep an eye on the updates as we are going to move forward with VSCode in this course.
+> A: Not to our knowledge. It's Google time, we guess. As a temporary alternative, there's always VSCode for the Web ([https://vscode.dev/](https://vscode.dev/)) and Sublime Text ([https://www.sublimetext.com/](https://www.sublimetext.com/)), although we recommend to keep an eye on the updates as we are going to move forward with VSCode in this course.
 > 
-> Another thing you can do, is download the latest insiders release (the upcoming) and check whether the issues persists: https://code.visualstudio.com/insiders/
+> Another thing you can do, is download the latest insiders release (the upcoming) and check whether the issues persists: [https://code.visualstudio.com/insiders/](https://code.visualstudio.com/insiders/)
 
 ---
 
