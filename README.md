@@ -228,6 +228,7 @@
 - [**Maria Barkouzou** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/mariabarkouzou/)
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
 - [**Vangelis Chirmpilidis**  / Content Curator & Passionate Contributor](https://github.com/vagelisx)
+- [**Mary Richelle**  / Content Curator & Passionate Contributor](https://github.com/MaryRichelle)
 - [**How about you?**](#contribute) 😉
 
 The curriculum draws heavily on the following amazing resources:
