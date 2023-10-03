@@ -18,6 +18,12 @@
     -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <!-- Load CSS from Frontmatter 'load_css' property -->
+  {% for css in page.load_css %}
+  <link rel="stylesheet" href="{{ css | prepend: '/assets/jekyll/css/' | relative_url }}">
+  {% endfor %}
+  <!-- Load CSS from Frontmatter 'load_css' property -->
+    
   {% include head-custom.html %}
 
 </head>
@@ -78,6 +84,18 @@
       </div>
     -->
   <!-- end header -->
+
+  <!-- Load JS from Frontmatter 'load_script_js' property -->
+  {% for js in page.load_script_js %}
+  <script type="text/javascript">
+     {% include {{ js }} %}
+  </script>
+  {% endfor %}
+
+  <!-- Quiz -->
+  {% if page.exercise_path %}
+    <script type="text/wdx" id="exercise_path">{{ page.exercise_path }}</script>
+  {% endif %}
 
 </body>
 

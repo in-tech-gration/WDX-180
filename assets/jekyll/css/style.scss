@@ -45,6 +45,32 @@ nav#side-toc {
   
 }
 
+//>> CODE HIGHLIGHT SECTIONS:
+pre.highlight {
+  padding: 15px;
+}
+pre.highlight code {
+  text-wrap: wrap;
+}
+//<< CODE HIGHLIGHT SECTIONS:
+
+//>> SIDE NAVIGATION (ToC) RESPONSIVENESS
+nav#side-toc{
+  width: 20vw;
+  padding-left: 0.75rem
+}
+nav#side-toc > ul{
+  padding-left: 0;
+}
+nav#side-toc > ul > li {
+  padding: 5px ;
+  border-bottom: 1px solid gray;
+}
+nav#side-toc > ul > li > p, a{
+  font-size: 1rem; /* base size */
+}
+//<< SIDE NAVIGATION (ToC) RESPONSIVENESS
+
 // <summary> Styling
 summary {
   display: list-item;

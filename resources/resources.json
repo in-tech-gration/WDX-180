@@ -1660,6 +1660,30 @@
       "language": [
         "en"
       ]
+    },
+    "bbc-documentary-calculating-ada---the-countess-of-computing-2015": {
+      "type": "YouTube",
+      "duration": 3520,
+      "title": "BBC DOCUMENTARY : Calculating Ada - The Countess of Computing 2015",
+      "date": "12/07/2017",
+      "youtube": {
+        "id": "QgUVrzkQgds",
+        "channel_id": "UCpuToFmukYg5fifaI2A6rtg",
+        "channel_title": "ForgottenDairies",
+        "thumbnail_url": "https://i.ytimg.com/vi/QgUVrzkQgds/sddefault.jpg"
+      },
+      "tags": [
+        "Calculating Ada",
+        "The Countess of Computing",
+        "BBC",
+        "DOCUMENTARY",
+        "COMPUTERS",
+        "EDUCATION"
+      ]
+    },
+    "javascript-in-14-minutes" : {
+      "identifier": "https://jgthms.com/javascript-in-14-minutes/",
+      "type": "Interactive Tutorial"
     }
   },
   "creators": {}

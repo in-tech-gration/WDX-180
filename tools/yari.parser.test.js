@@ -1,7 +1,7 @@
 const test = require("node:test");
 const { equal } = require("node:assert");
 
-const { parseEmbedGHLiveSample, parseHTTPHeader, parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks } = require("./yari.parser");
+const { parseEmbedGHLiveSample, parseHTTPHeader, parseHTTPStatus, parseYariDynamicContent, parseMDNLinks, parseImages, parseElementTerm, parseCSSTerm, replaceHTMLGlossaryLinks, replaceDOMXrefLinks, parseExternalLinks } = require("./yari.parser");
 
 test('Parsing {{glossary("XML")}}', () => {
   const input = `{{glossary("XML")}}`;
@@ -132,6 +132,17 @@ test("Replacing {{HTTPHeader}} with links", ()=>{
   const output = "lorem ipsum [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy){:target=\"_blank\"} lorem ipsum";
   equal(parseHTTPHeader(input), output);
 
+})
+
+test("Parse external links", () => {
+
+  const input = "You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) data type. You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target=\"_blank\"} data type. A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as [this one](https://cssgradient.io/). You can create a gradient then copy and paste out the source code that generates it."
+  const output = "You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) data type. You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target=\"_blank\"} data type. A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as [this one](https://cssgradient.io/){:target=\"_blank\"}. You can create a gradient then copy and paste out the source code that generates it."
+  equal(parseExternalLinks(input), output);
+
+  const input2 = "Lorem ipsum [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) dolor amit."
+  const output2 = "Lorem ipsum [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target=\"_blank\"} dolor amit."
+  equal(parseExternalLinks(input2), output2);
 })
 
 // TODO: Test: parseEmbedGHLiveSample()
