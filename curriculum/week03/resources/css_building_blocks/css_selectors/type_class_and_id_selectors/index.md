@@ -60,7 +60,7 @@ This kind of behavior can sometimes be seen in "reset stylesheets", which strip 
 
 ### Using the universal selector to make your selectors easier to read
 
-One use of the universal selector is to make selectors easier to read and more obvious in terms of what they are doing. For example, if we wanted to select any descendant elements of an `<article>` element that are the first child of their parent, including direct children, and make them bold, we could use the [`:first-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) pseudo-class. We will learn more about this in the lesson on [pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements), as a descendant selector along with the `<article>` element selector:
+One use of the universal selector is to make selectors easier to read and more obvious in terms of what they are doing. For example, if we wanted to select any descendant elements of an `<article>` element that are the first child of their parent, including direct children, and make them bold, we could use the [`:first-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) pseudo-class. We will learn more about this in the lesson on **pseudo-classes and pseudo-elements**, as a descendant selector along with the `<article>` element selector:
 
 ```css
 article :first-child {

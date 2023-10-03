@@ -114,7 +114,7 @@ In the example above, we only need to scroll on the `y` axis, however we get scr
 </a>
 </p>
 
-You can also enable scrolling along the x-axis by using [`overflow-x`](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x), although this is not a recommended way to accommodate long words! If you have a long word in a small box, consider using the [`word-break`](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break) or [`overflow-wrap`](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap) property. In addition, some of the methods discussed in [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) may help you create boxes that scale better with varying amounts of content.
+You can also enable scrolling along the x-axis by using [`overflow-x`](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x), although this is not a recommended way to accommodate long words! If you have a long word in a small box, consider using the [`word-break`](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break) or [`overflow-wrap`](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap) property.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -154,7 +154,7 @@ When you use the `<overflow>` values `scroll` and `auto`, you create a [**Block 
 
 ## Unwanted overflow in web design
 
-Modern layout methods (described in [CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout)) manage overflow. They largely work without assumptions or dependencies for how much content there will be on a web page.
+Modern layout methods manage overflow. They largely work without assumptions or dependencies for how much content there will be on a web page.
 
 This was not always the norm. In the past, some sites were built with fixed-height containers to align box bottoms. These boxes may otherwise have had no relationship to each other. This was fragile. If you encounter a box where content is overlaying other content on the page in legacy applications, you will now recognize that this happens with overflow. Ideally, you will refactor the layout to not rely on fixed-height containers.
 

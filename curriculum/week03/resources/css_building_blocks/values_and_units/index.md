@@ -225,7 +225,7 @@ Relative length units are relative to something else, perhaps the size of the pa
 
 In the example below, you can see how some relative and absolute length units behave. The first box has a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) set in pixels. As an absolute unit, this width will remain the same no matter what else changes.
 
-The second box has a width set in `vw` (viewport width) units. This value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. If you change the width of your browser window, the size of the box should change. However this example is embedded into the page using an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), so this won't work. To see this in action you'll have to [try the example after opening it in its own browser tab](https://mdn.github.io/css-examples/learn/values-units/length.html).
+The second box has a width set in `vw` (viewport width) units. This value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. If you change the width of your browser window, the size of the box should change. However this example is embedded into the page using an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), so this won't work.
 
 The third box uses `em` units. These are relative to the font size. I've set a font size of `1em` on the containing [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div), which has a class of `.wrapper`. Change this value to `1.5em` and you will see that the font size of all the elements increases, but only the last item will get wider, as its width is relative to that font size.
 
@@ -245,7 +245,7 @@ After following the instructions above, try playing with the values in other way
 
 #### ems and rems
 
-`em` and `rem` are the two relative lengths you are likely to encounter most frequently when sizing anything from boxes to text. It's worth understanding how these work, and the differences between them, especially when you start getting on to more complex subjects like [styling text](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text) or [CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout). The below example provides a demonstration.
+`em` and `rem` are the two relative lengths you are likely to encounter most frequently when sizing anything from boxes to text. It's worth understanding how these work, and the differences between them, especially when you start getting on to more complex subjects like **styling text** or **CSS layout**. The below example provides a demonstration.
 
 The HTML illustrated below is a set of nested lists — we have two lists in total and both examples have the same HTML. The only difference is that the first has a class of _ems_ and the second a class of _rems_.
 
