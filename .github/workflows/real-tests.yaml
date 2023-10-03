@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 18.x
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
       - name: Run tests
-        uses: npm run test-w01-d05
+        run: npm run test-w01-d05
