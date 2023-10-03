@@ -210,16 +210,16 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:**How the web works**](resources/How_the_web_works/INDEX.md)
+  - [Read:**How the web works**](resources/How_the_web_works/index.md)
     - Level: Beginner
 
-  - [Read: **What is a web server?**](resources/What_is_a_web_server/INDEX.md)
+  - [Read: **What is a web server?**](resources/What_is_a_web_server/index.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](resources/What_is_a_URL/INDEX.md)
+  - [Read: **What is a URL?**](resources/What_is_a_URL/index.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/INDEX.md)
+  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/index.md)
     - Level: Beginner
 
   - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI){:target="_blank"}
