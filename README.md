@@ -28,6 +28,9 @@
   - **Software**  
   - **Getting familiar with data formats**
   - **How to Study / Productivity Tips**  
+
+  Don't forget to open the [FAQ page](./curriculum/FAQ/index.md){:target="_blank"} that accompanies the setup process in a new Tab and check for relevant questions and their respective responses as you go through the next steps.
+
 </details>
 
 <!-- Accounts -->

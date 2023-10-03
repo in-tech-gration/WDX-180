@@ -250,7 +250,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   ---
 
-  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/INDEX.md)
+  - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/index.md)
     - Level: Beginner
 
   - [Watch: **How a web browser builds and displays a web page**](https://www.youtube.com/watch?v=DuSURHrZG6I){:target="_blank"}
