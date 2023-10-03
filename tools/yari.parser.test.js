@@ -139,6 +139,10 @@ test("Parse external links", () => {
   const input = "You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) data type. You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target=\"_blank\"} data type. A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as [this one](https://cssgradient.io/). You can create a gradient then copy and paste out the source code that generates it."
   const output = "You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) data type. You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target=\"_blank\"} data type. A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as [this one](https://cssgradient.io/){:target=\"_blank\"}. You can create a gradient then copy and paste out the source code that generates it."
   equal(parseExternalLinks(input), output);
+
+  const input2 = "Lorem ipsum [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) dolor amit."
+  const output2 = "Lorem ipsum [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target=\"_blank\"} dolor amit."
+  equal(parseExternalLinks(input2), output2);
 })
 
 // TODO: Test: parseEmbedGHLiveSample()
