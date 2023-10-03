@@ -6,7 +6,7 @@ load_script_js:
   - libs/tagify-4.17.9.js
   - libs/tagify-4.17.9.polyfills.min.js
 load_css:
-  - tagify.min.css
+  - libs/tagify.min.css
 ---
 
 # Setup Process FAQ
