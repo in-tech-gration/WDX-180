@@ -156,7 +156,7 @@ An ID selector begins with a `#` rather than a dot character, but is used in the
 
 ## Summary
 
-That wraps up Type, class, and ID selectors. We'll continue exploring selectors by looking at [attribute selectors](../attribute_selectors/README.md).
+That wraps up Type, class, and ID selectors. We'll continue exploring selectors by looking at [attribute selectors](../attribute_selectors/index.md).
 
 ### Sources and Attributions
 

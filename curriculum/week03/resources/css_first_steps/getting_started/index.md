@@ -218,7 +218,7 @@ The live example below includes the two rules above. Try adding a rule to make a
   </a>
 </p>
 
-> **Note:** As you can see, CSS gives us several ways to target elements, and we've only scratched the surface so far! We will be taking a proper look at all of these selectors and many more in our [Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) articles later on in the course.
+> **Note:** As you can see, CSS gives us several ways to target elements, and we've only scratched the surface so far! We will be taking a proper look at all of these selectors and many more in our [Selectors](../../css_building_blocks/css_selectors/index.md) articles later on in the course.
 
 ## Styling things based on state
 

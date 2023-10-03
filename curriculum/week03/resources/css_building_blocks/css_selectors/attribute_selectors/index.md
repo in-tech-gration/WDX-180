@@ -144,7 +144,7 @@ In the example below, the first selector will match a value that begins with `a`
 
 ## Summary
 
-Now that we are done with attribute selectors, you can continue on to the next article and read about [pseudo-class and pseudo-element selectors](../pseudo-classes_and_pseudo-elements/README.md).
+Now that we are done with attribute selectors, you can continue on to the next article and read about [pseudo-class and pseudo-element selectors](../pseudo-classes_and_pseudo-elements/index.md).
 
 ### Sources and Attributions
 

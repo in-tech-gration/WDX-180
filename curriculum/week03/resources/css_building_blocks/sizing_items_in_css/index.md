@@ -58,7 +58,7 @@ In the example above, try adding some text inside the empty element. The border 
 
 ## Setting a specific size
 
-We can, of course, give elements in our design a specific size. When a size is given to an element (the content of which then needs to fit into that size) we refer to it as an **extrinsic size**. Take our `<div>` from the example above — we can give it specific [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height) values, and it will now have that size no matter what content is placed into it. As we discovered in [our lesson on overflow](../overflowing_content/README.md), a set height can cause content to overflow if there is more content than the element has space to fit inside it.
+We can, of course, give elements in our design a specific size. When a size is given to an element (the content of which then needs to fit into that size) we refer to it as an **extrinsic size**. Take our `<div>` from the example above — we can give it specific [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height) values, and it will now have that size no matter what content is placed into it. As we discovered in [our lesson on overflow](../overflowing_content/index.md), a set height can cause content to overflow if there is more content than the element has space to fit inside it.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -76,7 +76,7 @@ Due to this problem of overflow, fixing the height of elements with lengths or p
 
 ### Using percentages
 
-In many ways, percentages act like length units, and as we [discussed in the lesson on values and units](../values_and_units/README.md#percentages), they can often be used interchangeably with lengths. When using a percentage you need to be aware what it is a percentage _of_. In the case of a box inside another container, if you give the child box a percentage width it will be a percentage of the width of the parent container.
+In many ways, percentages act like length units, and as we [discussed in the lesson on values and units](../values_and_units/index.md#percentages), they can often be used interchangeably with lengths. When using a percentage you need to be aware what it is a percentage _of_. In the case of a box inside another container, if you give the child box a percentage width it will be a percentage of the width of the parent container.
 
 <iframe 
             class="EmbedGHLiveSample" 
