@@ -20,7 +20,7 @@
 
   <!-- Load CSS from Frontmatter 'load_css' property -->
   {% for css in page.load_css %}
-  <link rel="stylesheet" href="{{ css | prepend: '/css/' | relative_url }}">
+  <link rel="stylesheet" href="{{ css | prepend: '/assets/jekyll/css/' | relative_url }}">
   {% endfor %}
   <!-- Load CSS from Frontmatter 'load_css' property -->
     
