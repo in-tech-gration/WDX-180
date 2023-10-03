@@ -601,6 +601,23 @@ function parseEmbedLiveSample(textContent) {
 
 }
 
+function parseExternalLinks(textContent) {
+  const regex = /\[(.*?)\]\((https?:\/\/\S+)\)(?!.*\{:target="_blank"\})/g;
+  const matches = textContent.match(regex);
+  if (matches) {
+    console.log(matches);
+    // return textContent.replace( regex )
+    return textContent.replace(regex, (match, linkText, url) => {
+      console.log( match ); // [...](...)
+      console.log( linkText); // Link label
+      console.log( url ); // Link URL: /en-us/docs/...
+      return `${match}{:target="_blank"}`;
+    });
+  }
+
+  return textContent;
+}
+
 // 2) OUR VARIABLES: ===========================================================
 
 // 3) ACTION!!! ================================================================
@@ -624,6 +641,7 @@ function parseYariDynamicContent(textContent, fileName) {
   updatedTextContent = parseHTTPHeader(updatedTextContent);
   updatedTextContent = parseEmbedYouTube(updatedTextContent);
   updatedTextContent = parseEmbedGHLiveSample(updatedTextContent);
+  updatedTextContent = parseExternalLinks(updatedTextContent);
   if ( process.argv.includes("--rm-embeds") ){
     updatedTextContent = parseEmbedLiveSample(updatedTextContent);
   }
@@ -676,5 +694,6 @@ module.exports = {
   parseElementTerm,
   parseCSSTerm,
   replaceHTMLGlossaryLinks,
-  replaceDOMXrefLinks
+  replaceDOMXrefLinks,
+  parseExternalLinks
 };
