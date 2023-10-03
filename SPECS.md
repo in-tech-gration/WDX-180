@@ -36,6 +36,28 @@
 
   The JS files must be placed in the `assets/jekyll/_includes/` folder.
 
+### Jekyll | How to | Create markdown links that open in a new Tab
+
+  Markdown for GitHub Pages (Kramdown) supports links that open in a new Tab:
+
+  ```markdown
+  [Link](URL){:target="_blank"} 
+  ```
+
+  You can create a VSCode snippet:
+
+  ```json
+  "WDX:Kramdown target _blank": {
+    "prefix": "_blank",
+    "body": [
+      "{:target=\"_blank\"}"
+    ],
+    "description": "WDX:Kramdown target _blank"
+  },
+  ```
+
+---
+
 ## About the `npm run learn` platform 
 
   It is based on `Next.js`.
