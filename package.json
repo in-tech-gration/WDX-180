@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "faq-search-dev": "npx live-server ./tools/feature-faq-search/",
     "learn": "next dev -p 9390",
     "build": "next build",
     "start": "next start",
