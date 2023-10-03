@@ -18,6 +18,12 @@
     -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <!-- Load CSS from Frontmatter 'load_css' property -->
+  {% for css in page.load_css %}
+  <link rel="stylesheet" href="{{ css }}">
+  {% endfor %}
+  <!-- Load CSS from Frontmatter 'load_css' property -->
+    
   {% include head-custom.html %}
 
 </head>

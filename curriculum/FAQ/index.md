@@ -1,6 +1,12 @@
 ---
 load_script_js: 
-- setup_faq.js
+  - setup_faq.js
+  - libs/fuse-6.6.2.js
+  # Using CDN version: https://cdn.jsdelivr.net/npm/fuse.js@6.6.2
+  - libs/tagify-4.17.9.js
+  - libs/tagify-4.17.9.polyfills.min.js
+load_css:
+  - libs/tagify.min.css
 ---
 
 # Setup Process FAQ
