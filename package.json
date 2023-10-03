@@ -18,7 +18,8 @@
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
-    "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/"
+    "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/",
+    "test-w01-d05": "node user/week01/exercises/day05/javascript-first-steps/largest-number.test.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
