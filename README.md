@@ -189,7 +189,7 @@
 <details markdown="1">
   <summary><h3>Syllabus</h3></summary>
 
-  You can find the [Syllabus here](curriculum/INDEX.md#syllabus).
+  You can find the [Syllabus here](curriculum/index.md#syllabus).
 </details>
 
 <!-- How to Study / Productivity tips -->
@@ -214,7 +214,7 @@
 
 ### Finished setting everything up? 
 
-[**➡️ LET'S GET STARTED**](/curriculum/INDEX.md)
+[**➡️ LET'S GET STARTED**](/curriculum/index.md)
 
 ---
 
