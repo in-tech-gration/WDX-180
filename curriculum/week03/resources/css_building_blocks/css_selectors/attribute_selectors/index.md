@@ -124,7 +124,7 @@ The next example shows usage of these selectors:
 
 ## Case-sensitivity
 
-If you want to match attribute values case-insensitively you can use the value `i` before the closing bracket. This flag tells the browser to match [ASCII](https://developer.mozilla.org/en-US/docs/Glossary/ASCII) characters case-insensitively. Without the flag the values will be matched according to the case-sensitivity of the document language — in HTML's case it will be case sensitive.
+If you want to match attribute values case-insensitively you can use the value `i` before the closing bracket. This flag tells the browser to match [ASCII](https://developer.mozilla.org/en-US/docs/Glossary/ASCII){:target="_blank"} characters case-insensitively. Without the flag the values will be matched according to the case-sensitivity of the document language — in HTML's case it will be case sensitive.
 
 In the example below, the first selector will match a value that begins with `a` — it only matches the first list item because the other two list items start with an uppercase A. The second selector uses the case-insensitive flag and so matches all of the list items.
 
@@ -151,4 +151,4 @@ Now that we are done with attribute selectors, you can continue on to the next a
 **Content is based on the following sources:**
 
 - **MDN:**
-  - [Attribute Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors) [(Permalink)](https://github.com/mdn/content/blob/da6e9eb84d4020540ab07b43b2be295c73173ffd/files/en-us/learn/css/building_blocks/selectors/attribute_selectors/index.md)
+  - [Attribute Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/da6e9eb84d4020540ab07b43b2be295c73173ffd/files/en-us/learn/css/building_blocks/selectors/attribute_selectors/index.md){:target="_blank"}

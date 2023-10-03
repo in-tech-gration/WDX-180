@@ -26,7 +26,7 @@ In recent years however, CSS has evolved in order to better support different di
 
 ## What are writing modes?
 
-A writing mode in CSS refers to whether the text is running horizontally or vertically. The [`writing-mode`](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode) property lets us switch from one writing mode to another. You don't need to be working in a language which uses a vertical writing mode to want to do this — you could also change the writing mode of parts of your layout for creative purposes.
+A writing mode in CSS refers to whether the text is running horizontally or vertically. The [`writing-mode`](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode){:target="_blank"} property lets us switch from one writing mode to another. You don't need to be working in a language which uses a vertical writing mode to want to do this — you could also change the writing mode of parts of your layout for creative purposes.
 
 In the example below we have a heading displayed using `writing-mode: vertical-rl`. The text now runs vertically. Vertical text is common in graphic design, and can be a way to add a more interesting look and feel to your web design.
 
@@ -42,7 +42,7 @@ In the example below we have a heading displayed using `writing-mode: vertical-r
   </a>
 </p>
 
-The three possible values for the [`writing-mode`](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode) property are:
+The three possible values for the [`writing-mode`](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode){:target="_blank"} property are:
 
 - `horizontal-tb`: Top-to-bottom block flow direction. Sentences run horizontally.
 - `vertical-rl`: Right-to-left block flow direction. Sentences run vertically.
@@ -52,7 +52,7 @@ So the `writing-mode` property is in reality setting the direction in which bloc
 
 ## Writing modes and block and inline layout
 
-We have already discussed [block and inline layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes), and the fact that some things display as block elements and others as inline elements. As we have seen described above, block and inline is tied to the writing mode of the document, and not the physical screen. Blocks are only displayed from the top to the bottom of the page if you are using a writing mode that displays text horizontally, such as English.
+We have already discussed [block and inline layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes){:target="_blank"}, and the fact that some things display as block elements and others as inline elements. As we have seen described above, block and inline is tied to the writing mode of the document, and not the physical screen. Blocks are only displayed from the top to the bottom of the page if you are using a writing mode that displays text horizontally, such as English.
 
 If we look at an example this will become clearer. In this next example I have two boxes that contain a heading and a paragraph. The first uses `writing-mode: horizontal-tb`, a writing mode that is written horizontally and from the top of the page to the bottom. The second uses `writing-mode: vertical-rl`; this is a writing mode that is written vertically and from right to left.
 
@@ -88,7 +88,7 @@ Due to the fact that writing mode and direction of text can change, newer CSS la
 
 The reason to talk about writing modes and direction at this point in your learning is that we have already looked at a lot of properties that are tied to the physical dimensions of the screen, and these make more sense when in a horizontal writing mode.
 
-Let's take a look at our two boxes again — one with a `horizontal-tb` writing mode and one with `vertical-rl`. I have given both of these boxes a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width). You can see that when the box is in the vertical writing mode, it still has a width, and this is causing the text to overflow.
+Let's take a look at our two boxes again — one with a `horizontal-tb` writing mode and one with `vertical-rl`. I have given both of these boxes a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"}. You can see that when the box is in the vertical writing mode, it still has a width, and this is causing the text to overflow.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -106,7 +106,7 @@ What we really want in this scenario is to essentially swap height with width in
 
 To make this easier, CSS has recently developed a set of mapped properties. These essentially replace physical properties — things like `width` and `height` — with **logical**, or **flow relative** versions.
 
-The property mapped to `width` when in a horizontal writing mode is called [`inline-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size) — it refers to the size in the inline dimension. The property for `height` is named [`block-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size) and is the size in the block dimension. You can see how this works in the example below where we have replaced `width` with `inline-size`.
+The property mapped to `width` when in a horizontal writing mode is called [`inline-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size){:target="_blank"} — it refers to the size in the inline dimension. The property for `height` is named [`block-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size){:target="_blank"} and is the size in the block dimension. You can see how this works in the example below where we have replaced `width` with `inline-size`.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -122,17 +122,17 @@ The property mapped to `width` when in a horizontal writing mode is called [`inl
 
 ### Logical margin, border, and padding properties
 
-In the margin, border, and padding properties you will find many instances of physical properties, for example [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top), [`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left), and [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom). In the same way that we have mappings for width and height there are mappings for these properties.
+In the margin, border, and padding properties you will find many instances of physical properties, for example [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top){:target="_blank"}, [`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left){:target="_blank"}, and [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom){:target="_blank"}. In the same way that we have mappings for width and height there are mappings for these properties.
 
-The `margin-top` property is mapped to [`margin-block-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start) — this will always refer to the margin at the start of the block dimension.
+The `margin-top` property is mapped to [`margin-block-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start){:target="_blank"} — this will always refer to the margin at the start of the block dimension.
 
-The [`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left) property maps to [`padding-inline-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start), the padding that is applied to the start of the inline direction. This will be where sentences start in that writing mode. The [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom) property maps to [`border-block-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end), which is the border at the end of the block dimension.
+The [`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left){:target="_blank"} property maps to [`padding-inline-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start){:target="_blank"}, the padding that is applied to the start of the inline direction. This will be where sentences start in that writing mode. The [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom){:target="_blank"} property maps to [`border-block-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-block-end){:target="_blank"}, which is the border at the end of the block dimension.
 
 You can see a comparison between physical and logical properties below.
 
 **If you change the writing mode of the boxes by switching the `writing-mode` property on `.box` to `vertical-rl`, you will see how the physical properties stay tied to their physical direction, whereas the logical properties switch with the writing mode.**
 
-**You can also see that the [`<h2>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) has a black `border-bottom`. Can you work out how to make that bottom border always go below the text in both writing modes?**
+**You can also see that the [`<h2>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements){:target="_blank"} has a black `border-bottom`. Can you work out how to make that bottom border always go below the text in both writing modes?**
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -146,7 +146,7 @@ You can see a comparison between physical and logical properties below.
   </a>
 </p>
 
-There are a huge number of properties when you consider all of the individual border longhands, and you can see all of the mapped properties on the MDN page for [Logical Properties and Values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+There are a huge number of properties when you consider all of the individual border longhands, and you can see all of the mapped properties on the MDN page for [Logical Properties and Values](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values){:target="_blank"}.
 
 ### Logical values
 
@@ -185,4 +185,4 @@ The concepts explained in this lesson are becoming increasingly important in CSS
 **Content is based on the following sources:**
 
 - **MDN**
-  - [Handling different text directions](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions) [(Permalink)](https://github.com/mdn/content/tree/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/handling_different_text_directions)
+  - [Handling different text directions](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions){:target="_blank"} [(Permalink)](https://github.com/mdn/content/tree/f22e72998f4e8f48b18ef358521bfc9ad1ae9446/files/en-us/learn/css/building_blocks/handling_different_text_directions){:target="_blank"}

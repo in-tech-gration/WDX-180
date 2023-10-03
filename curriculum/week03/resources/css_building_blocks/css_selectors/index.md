@@ -8,7 +8,7 @@ page-type: learn-module-chapter
 
 _(Updated: 07/09/2023)_
 
-In [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS), selectors are used to target the [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style.
+In [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS){:target="_blank"}, selectors are used to target the [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML){:target="_blank"} elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style.
 
 **Prerequisites:**
 
@@ -30,7 +30,7 @@ A CSS selector is the first part of a CSS Rule. It is a pattern of elements and 
 
 In other articles you may have met some different selectors, and learned that there are selectors that target the document in different ways — for example by selecting an element such as `h1`, or a class such as `.special`.
 
-In CSS, selectors are defined in the CSS Selectors specification; like any other part of CSS they need to have support in browsers for them to work. The majority of selectors that you will come across are defined in the [Level 3 Selectors specification](https://www.w3.org/TR/selectors-3/) and [Level 4 Selectors specification](https://www.w3.org/TR/selectors-4/), which are both mature specifications, therefore you will find excellent browser support for these selectors.
+In CSS, selectors are defined in the CSS Selectors specification; like any other part of CSS they need to have support in browsers for them to work. The majority of selectors that you will come across are defined in the [Level 3 Selectors specification](https://www.w3.org/TR/selectors-3/){:target="_blank"} and [Level 4 Selectors specification](https://www.w3.org/TR/selectors-4/){:target="_blank"}, which are both mature specifications, therefore you will find excellent browser support for these selectors.
 
 ## Selector lists
 
@@ -172,11 +172,11 @@ There are a few different groupings of selectors, and knowing which type of sele
 
 In this article we've introduced CSS selectors, which enable you to target particular HTML elements.
 
-For a complete list of selectors, see our [CSS selectors reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors).
+For a complete list of selectors, see our [CSS selectors reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors){:target="_blank"}.
 
 ### Sources and Attributions
 
 **Content is based on the following sources:**
 
 - **MDN**
-  - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) [(Permalink)](https://github.com/mdn/content/blob/da6e9eb84d4020540ab07b43b2be295c73173ffd/files/en-us/learn/css/building_blocks/selectors/index.md)
+  - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/da6e9eb84d4020540ab07b43b2be295c73173ffd/files/en-us/learn/css/building_blocks/selectors/index.md){:target="_blank"}

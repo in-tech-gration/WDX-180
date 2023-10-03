@@ -28,15 +28,15 @@ While working through this lesson may seem less relevant immediately and a littl
 
 CSS stands for **Cascading Style Sheets**, and that first word _cascading_ is incredibly important to understand — the way that the cascade behaves is key to understanding CSS.
 
-At some point, you will be working on a project and you will find that the CSS you thought should be applied to an element is not working. Often, the problem is that you create two rules that apply different values of the same property to the same element. [**Cascade**](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) and the closely-related concept of [**specificity**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) are mechanisms that control which rule applies when there is such a conflict. The rule that's styling your element may not be the one you expect, so you need to understand how these mechanisms work.
+At some point, you will be working on a project and you will find that the CSS you thought should be applied to an element is not working. Often, the problem is that you create two rules that apply different values of the same property to the same element. [**Cascade**](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade){:target="_blank"} and the closely-related concept of [**specificity**](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity){:target="_blank"} are mechanisms that control which rule applies when there is such a conflict. The rule that's styling your element may not be the one you expect, so you need to understand how these mechanisms work.
 
-Also significant here is the concept of [**inheritance**](https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance), which means that some CSS properties by default inherit values set on the current element's parent element and some don't. This can also cause some behavior that you might not expect.
+Also significant here is the concept of [**inheritance**](https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance){:target="_blank"}, which means that some CSS properties by default inherit values set on the current element's parent element and some don't. This can also cause some behavior that you might not expect.
 
 Let's start by taking a quick look at the key things we are dealing with, then we'll look at each in turn and see how they interact with each other and your CSS. These can seem like a tricky set of concepts to understand. As you get more practice writing CSS, the way it works will become more obvious to you.
 
 ### Cascade
 
-Stylesheets [**cascade**](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, the one that is defined last in the stylesheet is the one that will be used.
+Stylesheets [**cascade**](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade){:target="_blank"} — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, the one that is defined last in the stylesheet is the one that will be used.
 
 In the below example, we have two rules that could apply to the `<h1>` element. The `<h1>` content ends up being colored blue. This is because both the rules are from the same source, have an identical element selector, and therefore, carry the same specificity, but the last one in the source order wins.
 
@@ -54,7 +54,7 @@ In the below example, we have two rules that could apply to the `<h1>` element. 
 
 ### Specificity
 
-[Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) is the algorithm that the browser uses to decide which property value is applied to an element. If multiple style blocks have different selectors that configure the same property with different values and target the same element, specificity decides the property value that gets applied to the element. Specificity is basically a measure of how specific a selector's selection will be:
+[Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity){:target="_blank"} is the algorithm that the browser uses to decide which property value is applied to an element. If multiple style blocks have different selectors that configure the same property with different values and target the same element, specificity decides the property value that gets applied to the element. Specificity is basically a measure of how specific a selector's selection will be:
 
 - An element selector is less specific; it will select all elements of that type that appear on a page, so it has less weight. Pseudo-element selectors have the same specificity as regular element selectors.
 - A class selector is more specific; it will select only the elements on a page that have a specific `class` attribute value, so it has more weight. Attribute selectors and pseudo-classes have the same weight as a class.
@@ -93,9 +93,9 @@ For example, if you set a `color` and `font-family` on an element, every element
   </a>
 </p>
 
-Some properties do not inherit — for example, if you set a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) of 50% on an element, all of its descendants do not get a width of 50% of their parent's width. If this was the case, CSS would be very frustrating to use!
+Some properties do not inherit — for example, if you set a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} of 50% on an element, all of its descendants do not get a width of 50% of their parent's width. If this was the case, CSS would be very frustrating to use!
 
-> **Note:** On MDN CSS property reference pages, you can find a technical information box called "Formal definition", which lists a number of data points about that property, including whether it is inherited or not. See the [color property Formal definition section](https://developer.mozilla.org/en-US/docs/Web/CSS/color#formal_definition) as an example.
+> **Note:** On MDN CSS property reference pages, you can find a technical information box called "Formal definition", which lists a number of data points about that property, including whether it is inherited or not. See the [color property Formal definition section](https://developer.mozilla.org/en-US/docs/Web/CSS/color#formal_definition){:target="_blank"} as an example.
 
 ## Understanding how the concepts work together
 
@@ -119,7 +119,7 @@ The following video shows how you can use the Firefox DevTools to inspect a page
 
 ## Understanding inheritance
 
-We'll start with inheritance. In the example below, we have a [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) element with two levels of unordered lists nested inside it. We have given the outer `<ul>` a border, padding, and font color.
+We'll start with inheritance. In the example below, we have a [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul){:target="_blank"} element with two levels of unordered lists nested inside it. We have given the outer `<ul>` a border, padding, and font color.
 
 The `color` property is an inherited property. So, the `color` property value is applied to the direct children and also to the indirect children — the immediate child `<li>`s and those inside the first nested list. We have then added the class `special` to the second nested list and applied a different color to it. This then inherits down through its children.
 
@@ -143,18 +143,18 @@ Though every CSS property page lists whether or not the property is inherited, y
 
 CSS provides five special universal property values for controlling inheritance. Every CSS property accepts these values.
 
-- [`inherit`](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
+- [`inherit`](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit){:target="_blank"}
   - : Sets the property value applied to a selected element to be the same as that of its parent element. Effectively, this "turns on inheritance".
-- [`initial`](https://developer.mozilla.org/en-US/docs/Web/CSS/initial)
-  - : Sets the property value applied to a selected element to the [initial value](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value) of that property.
-- [`revert`](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)
-  - : Resets the property value applied to a selected element to the browser's default styling rather than the defaults applied to that property. This value acts like [`unset`](https://developer.mozilla.org/en-US/docs/Web/CSS/unset) in many cases.
-- [`revert-layer`](https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer)
-  - : Resets the property value applied to a selected element to the value established in a previous [cascade layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer).
-- [`unset`](https://developer.mozilla.org/en-US/docs/Web/CSS/unset)
+- [`initial`](https://developer.mozilla.org/en-US/docs/Web/CSS/initial){:target="_blank"}
+  - : Sets the property value applied to a selected element to the [initial value](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value){:target="_blank"} of that property.
+- [`revert`](https://developer.mozilla.org/en-US/docs/Web/CSS/revert){:target="_blank"}
+  - : Resets the property value applied to a selected element to the browser's default styling rather than the defaults applied to that property. This value acts like [`unset`](https://developer.mozilla.org/en-US/docs/Web/CSS/unset){:target="_blank"} in many cases.
+- [`revert-layer`](https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer){:target="_blank"}
+  - : Resets the property value applied to a selected element to the value established in a previous [cascade layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer){:target="_blank"}.
+- [`unset`](https://developer.mozilla.org/en-US/docs/Web/CSS/unset){:target="_blank"}
   - : Resets the property to its natural value, which means that if the property is naturally inherited it acts like `inherit`, otherwise it acts like `initial`.
 
-> **Note:** See [Origin types](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#origin_types) for more information on each of these and how they work.
+> **Note:** See [Origin types](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#origin_types){:target="_blank"} for more information on each of these and how they work.
 
 We can look at a list of links and explore how universal values work. The live example below allows you to play with the CSS and see what happens when you make changes. Playing with code really is the best way to better understand HTML and CSS.
 
@@ -179,7 +179,7 @@ For example:
 
 ### Resetting all property values
 
-The CSS shorthand property [`all`](https://developer.mozilla.org/en-US/docs/Web/CSS/all) can be used to apply one of these inheritance values to (almost) all properties at once. Its value can be any one of the inheritance values (`inherit`, `initial`, `revert`, `revert-layer`, or `unset`). It's a convenient way to undo changes made to styles so that you can get back to a known starting point before beginning new changes.
+The CSS shorthand property [`all`](https://developer.mozilla.org/en-US/docs/Web/CSS/all){:target="_blank"} can be used to apply one of these inheritance values to (almost) all properties at once. Its value can be any one of the inheritance values (`inherit`, `initial`, `revert`, `revert-layer`, or `unset`). It's a convenient way to undo changes made to styles so that you can get back to a known starting point before beginning new changes.
 
 In the below example, we have two blockquotes. The first has styling applied to the blockquote element itself. The second has a class applied to the blockquote, which sets the value of `all` to `unset`.
 
@@ -245,11 +245,11 @@ The amount of specificity a selector has is measured using three different value
 - **Classes**: Score one in this column for each class selector, attribute selector, or pseudo-class contained inside the overall selector.
 - **Elements**: Score one in this column for each element selector or pseudo-element contained inside the overall selector.
 
-> **Note:** The universal selector ([`*`](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)), [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators) (`+`, `>`, `~`, ' '), and specificity adjustment selector ([`:where()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:where)) along with its parameters, have no effect on specificity.
+> **Note:** The universal selector ([`*`](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)){:target="_blank"}, [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators){:target="_blank"} (`+`, `>`, `~`, ' '), and specificity adjustment selector ([`:where()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:where)){:target="_blank"} along with its parameters, have no effect on specificity.
 
-The negation ([`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)), relational selector ([`:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)), and the matches-any ([`:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)) pseudo-classes themselves don't have effect on specificity, but their parameters do. The specificity that each contributes to the specificity algorithm is the specificity of the selector in the parameter that has the greatest weight.
+The negation ([`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)){:target="_blank"}, relational selector ([`:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)){:target="_blank"}, and the matches-any ([`:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is)){:target="_blank"} pseudo-classes themselves don't have effect on specificity, but their parameters do. The specificity that each contributes to the specificity algorithm is the specificity of the selector in the parameter that has the greatest weight.
 
-The following table shows a few isolated examples to get you in the mood. Try going through these, and make sure you understand why they have the specificity that we have given them. We've not covered selectors in detail yet, but you can find details of each selector on the MDN [selectors reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators).
+The following table shows a few isolated examples to get you in the mood. Try going through these, and make sure you understand why they have the specificity that we have given them. We've not covered selectors in detail yet, but you can find details of each selector on the MDN [selectors reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators){:target="_blank"}.
 
 | Selector                                  | Identifiers | Classes | Elements | Total specificity |
 | ----------------------------------------- | ----------- | ------- | -------- | ----------------- |
@@ -285,7 +285,7 @@ So what's going on here? First of all, we are only interested in the first seven
 
 ### Inline styles
 
-Inline styles, that is, the style declaration inside a [`style`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#style) attribute, take precedence over all normal styles, no matter the specificity. Such declarations don't have selectors, but their specificity can be construed as 1-0-0-0; always more than any other specificity weight no matter how many IDs are in the selectors.
+Inline styles, that is, the style declaration inside a [`style`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#style){:target="_blank"} attribute, take precedence over all normal styles, no matter the specificity. Such declarations don't have selectors, but their specificity can be construed as 1-0-0-0; always more than any other specificity weight no matter how many IDs are in the selectors.
 
 ### !important
 
@@ -309,9 +309,9 @@ Take a look at this example where we have two paragraphs, one of which has an ID
 
 Let's walk through this to see what's happening — try removing some of the properties to see what happens if you are finding it hard to understand:
 
-1. You'll see that the third rule's [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) and [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) values have been applied, but the [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color) hasn't. Why? Really, all three should surely apply because rules later in the source order generally override earlier rules.
+1. You'll see that the third rule's [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color){:target="_blank"} and [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding){:target="_blank"} values have been applied, but the [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color){:target="_blank"} hasn't. Why? Really, all three should surely apply because rules later in the source order generally override earlier rules.
 2. However, the rules above it win because class selectors have higher specificity than element selectors.
-3. Both elements have a [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#class) of `better`, but the 2nd one has an [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#id) of `winning` too. Since IDs have an _even higher_ specificity than classes (you can only have one element with each unique ID on a page, but many elements with the same class — ID selectors are _very specific_ in what they target), the red background color and the 1px black border should both be applied to the 2nd element, with the first element getting the gray background color, and no border, as specified by the class.
+3. Both elements have a [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#class){:target="_blank"} of `better`, but the 2nd one has an [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#id){:target="_blank"} of `winning` too. Since IDs have an _even higher_ specificity than classes (you can only have one element with each unique ID on a page, but many elements with the same class — ID selectors are _very specific_ in what they target), the red background color and the 1px black border should both be applied to the 2nd element, with the first element getting the gray background color, and no border, as specified by the class.
 4. The 2nd element _does_ get the red background color, but no border. Why? Because of the `!important` flag in the second rule. Adding the `!important` flag after `border: none` means that this declaration will win over the `border` value in the previous rule, even though the ID selector has higher specificity.
 
 > **Note:** The only way to override an important declaration is to include another important declaration with the _same specificity_ later in the source order, or one with higher specificity, or to include an important declaration in a prior cascade layer (we haven't covered cascade layers yet).
@@ -341,7 +341,7 @@ Conflicting declarations will be applied in the following order, with later ones
 
 ### Order of cascade layers
 
-Even though [cascade layers](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer) is an advanced topic and you may not use this feature right away, it's important to understand how layers cascade.
+Even though [cascade layers](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer){:target="_blank"} is an advanced topic and you may not use this feature right away, it's important to understand how layers cascade.
 
 When you declare CSS in cascade layers, the order of precedence is determined by the order in which the layers are declared. CSS styles declared outside of any layer are combined together, in the order in which those styles are declared, into an unnamed layer, as if it were the last declared layer. With competing normal (not important) styles, later layers take precedence over earlier defined layers. For styles flagged with `!important`, however, the order is reversed, with important styles in earlier layers taking precedence over important styles declared in subsequent layers or outside of any layer. Inline styles take precedence over all author styles, no matter the layer.
 
@@ -376,4 +376,4 @@ Refer back here if you start to come across strange issues with styles not apply
 **Content is based on the following sources:**
 
 - **MDN**
-  - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md)
+  - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md){:target="_blank"}

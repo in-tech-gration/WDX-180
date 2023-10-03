@@ -24,7 +24,7 @@ In this lesson we will take a look at how certain special elements are treated i
 
 ## Replaced elements
 
-Images and video are described as **[replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)**. This means that CSS cannot affect the internal layout of these elements — only their position on the page amongst other elements. As we will see however, there are various things that CSS can do with an image.
+Images and video are described as **[replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element){:target="_blank"}**. This means that CSS cannot affect the internal layout of these elements — only their position on the page amongst other elements. As we will see however, there are various things that CSS can do with an image.
 
 Certain replaced elements, such as images and video, are also described as having an **aspect ratio**. This means that it has a size in both the horizontal (x) and vertical (y) dimensions, and will be displayed using the intrinsic dimensions of the file by default.
 
@@ -51,13 +51,13 @@ In the example below we have two boxes, both 200 pixels in size:
 
 So what can we do about the overflowing issue?
 
-As we learned in [our previous lesson](../sizing_items_in_css/index.md), a common technique is to make the [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) of an image 100%. This will enable the image to become smaller in size than the box but not larger. This technique will also work with other replaced elements such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)s, or [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)s.
+As we learned in [our previous lesson](../sizing_items_in_css/index.md), a common technique is to make the [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width){:target="_blank"} of an image 100%. This will enable the image to become smaller in size than the box but not larger. This technique will also work with other replaced elements such as [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video){:target="_blank"}s, or [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe){:target="_blank"}s.
 
 **Try adding `max-width: 100%` to the `<img>` element in the example above. You will see that the smaller image remains unchanged, but the larger one becomes smaller to fit into the box.**
 
 You can make other choices about images inside containers. For example, you may want to size an image so it completely covers a box.
 
-The [`object-fit`](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) property can help you here. When using `object-fit` the replaced element can be sized to fit a box in a variety of ways.
+The [`object-fit`](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit){:target="_blank"} property can help you here. When using `object-fit` the replaced element can be sized to fit a box in a variety of ways.
 
 Below we have used the value `cover`, which sizes the image down, maintaining the aspect ratio so that it neatly fills the box. As the aspect ratio is maintained, some parts of the image will be cropped by the box.
 
@@ -110,7 +110,7 @@ This would, however, stretch the image, so it's probably not what you'd want to 
 
 ## Form elements
 
-Many form controls are added to your page by way of the [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element — this defines simple form fields such as text inputs, through to more complex fields such as color and date pickers. There are some additional elements, such as [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) for multiline text input, and also elements used to contain and label parts of forms such as [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) and [`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+Many form controls are added to your page by way of the [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input){:target="_blank"} element — this defines simple form fields such as text inputs, through to more complex fields such as color and date pickers. There are some additional elements, such as [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea){:target="_blank"} for multiline text input, and also elements used to contain and label parts of forms such as [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset){:target="_blank"} and [`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend){:target="_blank"}.
 
 HTML also contains attributes that enable web developers to indicate which fields are required, and even the type of content that needs to be entered. If the user enters something unexpected, or leaves a required field blank, the browser can show an error message. Different browsers vary with one another in how much styling and customization they allow for such items.
 
@@ -198,7 +198,7 @@ textarea {
 }
 ```
 
-> **Note:** Normalizing stylesheets are used by many developers to create a set of baseline styles to use on all projects. Typically these do similar things to those described above, making sure that anything different across browsers is set to a consistent default before you do your own work on the CSS. They are not as important as they once were, as browsers are typically more consistent than in the past. However if you want to take a look at one example, check out [Normalize.css](https://necolas.github.io/normalize.css/), which is a very popular stylesheet used as a base by many projects.
+> **Note:** Normalizing stylesheets are used by many developers to create a set of baseline styles to use on all projects. Typically these do similar things to those described above, making sure that anything different across browsers is set to a consistent default before you do your own work on the CSS. They are not as important as they once were, as browsers are typically more consistent than in the past. However if you want to take a look at one example, check out [Normalize.css](https://necolas.github.io/normalize.css/){:target="_blank"}, which is a very popular stylesheet used as a base by many projects.
 
 ## Summary
 
@@ -209,4 +209,4 @@ This lesson has highlighted some of the differences you will encounter when work
 **Content is based on the following sources:**
 
 - **MDN:**
-  - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements) [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md)
+  - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md){:target="_blank"}

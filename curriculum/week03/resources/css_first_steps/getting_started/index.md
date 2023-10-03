@@ -63,13 +63,13 @@ The very first thing we need to do is to tell the HTML document that we have som
 
 Create a file in the same folder as your HTML document and save it as `styles.css`. The `.css` extension shows that this is a CSS file.
 
-To link `styles.css` to `index.html`, add the following line somewhere inside the [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) of the HTML document:
+To link `styles.css` to `index.html`, add the following line somewhere inside the [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head){:target="_blank"} of the HTML document:
 
 ```html
 <link rel="stylesheet" href="styles.css" />
 ```
 
-This [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) element tells the browser that we have a stylesheet, using the `rel` attribute, and the location of that stylesheet as the value of the `href` attribute. You can test that the CSS works by adding a rule to `styles.css`. Using your code editor, add the following to your CSS file:
+This [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link){:target="_blank"} element tells the browser that we have a stylesheet, using the `rel` attribute, and the location of that stylesheet as the value of the `href` attribute. You can test that the CSS works by adding a rule to `styles.css`. Using your code editor, add the following to your CSS file:
 
 ```css
 h1 {
@@ -128,7 +128,7 @@ li {
 
 Try adding this to your CSS now.
 
-The `list-style-type` property is a good property to look at on MDN to see which values are supported. Take a look at the page for [`list-style-type`](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type) and you will find an interactive example at the top of the page to try some different values in, then all allowable values are detailed further down the page.
+The `list-style-type` property is a good property to look at on MDN to see which values are supported. Take a look at the page for [`list-style-type`](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type){:target="_blank"} and you will find an interactive example at the top of the page to try some different values in, then all allowable values are detailed further down the page.
 
 Looking at that page you will discover that in addition to removing the list bullets, you can change them — try changing them to square bullets by using a value of `square`.
 
@@ -136,7 +136,7 @@ Looking at that page you will discover that in addition to removing the list bul
 
 So far, we have styled elements based on their HTML element names. This works as long as you want all of the elements of that type in your document to look the same. To select a subset of the elements without changing the others, you can add a class to your HTML element and target that class in your CSS.
 
-1. In your HTML document, add a [class attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) to the second list item. Your list will now look like this:
+1. In your HTML document, add a [class attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class){:target="_blank"} to the second list item. Your list will now look like this:
 
    ```html
    <ul>
@@ -222,7 +222,7 @@ The live example below includes the two rules above. Try adding a rule to make a
 
 ## Styling things based on state
 
-The final type of styling we shall take a look at in this tutorial is the ability to style things based on their state. A straightforward example of this is when styling links. When we style a link, we need to target the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) (anchor) element. This has different states depending on whether it is unvisited, visited, being hovered over, focused via the keyboard, or in the process of being clicked (activated). You can use CSS to target these different states — the CSS below styles unvisited links pink and visited links green.
+The final type of styling we shall take a look at in this tutorial is the ability to style things based on their state. A straightforward example of this is when styling links. When we style a link, we need to target the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a){:target="_blank"} (anchor) element. This has different states depending on whether it is unvisited, visited, being hovered over, focused via the keyboard, or in the process of being clicked (activated). You can use CSS to target these different states — the CSS below styles unvisited links pink and visited links green.
 
 ```css
 a:link {
@@ -258,7 +258,7 @@ In the live example below, you can play with different values for the various st
 
 We have removed the underline on our link on hover. You could remove the underline from all states of a link. It is worth remembering however that in a real site, you want to ensure that visitors know that a link is a link. Leaving the underline in place can be an important clue for people to realize that some text inside a paragraph can be clicked on — this is the behavior they are used to. As with everything in CSS, there is the potential to make the document less accessible with your changes — we will aim to highlight potential pitfalls in appropriate places.
 
-> **Note:** you will often see mention of [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility) in these lessons and across MDN. When we talk about accessibility we are referring to the requirement for our webpages to be understandable and usable by everyone.
+> **Note:** you will often see mention of [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility){:target="_blank"} in these lessons and across MDN. When we talk about accessibility we are referring to the requirement for our webpages to be understandable and usable by everyone.
 >
 > Your visitor may well be on a computer with a mouse or trackpad, or a phone with a touchscreen. Or they might be using a screen reader, which reads out the content of the document, or they may need to use much larger text, or be navigating the site using the keyboard only.
 >
@@ -303,4 +303,4 @@ In this article, we have taken a look at a number of ways in which you can style
 **Content is based on the following sources:**
 
 - **MDN**
-  - [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started) [(Permalink)](https://github.com/mdn/content/blob/4785cd825d3e74ffdd11740d19473cb3ae63832c/files/en-us/learn/css/first_steps/getting_started/index.md)
+  - [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/4785cd825d3e74ffdd11740d19473cb3ae63832c/files/en-us/learn/css/first_steps/getting_started/index.md){:target="_blank"}

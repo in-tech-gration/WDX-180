@@ -60,7 +60,7 @@ This kind of behavior can sometimes be seen in "reset stylesheets", which strip 
 
 ### Using the universal selector to make your selectors easier to read
 
-One use of the universal selector is to make selectors easier to read and more obvious in terms of what they are doing. For example, if we wanted to select any descendant elements of an `<article>` element that are the first child of their parent, including direct children, and make them bold, we could use the [`:first-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) pseudo-class. We will learn more about this in the lesson on **pseudo-classes and pseudo-elements**, as a descendant selector along with the `<article>` element selector:
+One use of the universal selector is to make selectors easier to read and more obvious in terms of what they are doing. For example, if we wanted to select any descendant elements of an `<article>` element that are the first child of their parent, including direct children, and make them bold, we could use the [`:first-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child){:target="_blank"} pseudo-class. We will learn more about this in the lesson on **pseudo-classes and pseudo-elements**, as a descendant selector along with the `<article>` element selector:
 
 ```css
 article :first-child {
@@ -118,7 +118,7 @@ This approach reduces the scope of a rule. The rule will only apply to that part
 
 You can apply multiple classes to an element and target them individually, or only select the element when all of the classes in the selector are present. This can be helpful when building up components that can be combined in different ways on your site.
 
-In the example below, we have a `<div>` that contains a note. The grey border is applied when the box has a class of `notebox`. If it also has a class of `warning` or `danger`, we change the [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color).
+In the example below, we have a `<div>` that contains a note. The grey border is applied when the box has a class of `notebox`. If it also has a class of `warning` or `danger`, we change the [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color){:target="_blank"}.
 
 We can tell the browser that we only want to match the element if it has two classes applied by chaining them together with no white space between them. You'll see that the last `<div>` doesn't get any styling applied, as it only has the `danger` class; it needs `notebox` as well to get anything applied.
 
@@ -163,4 +163,4 @@ That wraps up Type, class, and ID selectors. We'll continue exploring selectors 
 **Content is based on the following sources:**
 
 - **MDN:**
-  - [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors) [(Permalink)](https://github.com/mdn/content/blob/da6e9eb84d4020540ab07b43b2be295c73173ffd/files/en-us/learn/css/building_blocks/selectors/type_class_and_id_selectors/index.md)
+  - [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/da6e9eb84d4020540ab07b43b2be295c73173ffd/files/en-us/learn/css/building_blocks/selectors/type_class_and_id_selectors/index.md){:target="_blank"}

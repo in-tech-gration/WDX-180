@@ -26,23 +26,23 @@ Everything in CSS has a box around it, and understanding these boxes is key to b
 
 In CSS we have several types of boxes that generally fit into the categories of **block boxes** and **inline boxes**. The type refers to how the box behaves in terms of page flow and in relation to other boxes on the page. Boxes have an **inner display type** and an **outer display type**.
 
-In general, you can set various values for the display type using the [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property, which can have various values.
+In general, you can set various values for the display type using the [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"} property, which can have various values.
 
 ## Outer display type
 
 If a box has an outer display type of `block`, then:
 
 - The box will break onto a new line.
-- The [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties are respected.
+- The [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height){:target="_blank"} properties are respected.
 - Padding, margin and border will cause other elements to be pushed away from the box.
-- If [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) is not specified, the box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.
+- If [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} is not specified, the box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.
 
 Some HTML elements, such as `<h1>` and `<p>`, use `block` as their outer display type by default.
 
 If a box has an outer display type of `inline`, then:
 
 - The box will not break onto a new line.
-- The [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height) properties will not apply.
+- The [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height){:target="_blank"} properties will not apply.
 - Top and bottom padding, margins, and borders will apply but will not cause other inline boxes to move away from the box.
 - Left and right padding, margins, and borders will apply and will cause other inline boxes to move away from the box.
 
@@ -52,13 +52,13 @@ Some HTML elements, such as `<a>`, `<span>`, `<em>` and `<strong>` use `inline` 
 
 Boxes also have an _inner_ display type, which dictates how elements inside that box are laid out.
 
-Block and inline layout is the default way things behave on the web. By default and without any other instruction, the elements inside a box are also laid out in **[normal flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)** and behave as block or inline boxes.
+Block and inline layout is the default way things behave on the web. By default and without any other instruction, the elements inside a box are also laid out in **[normal flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow){:target="_blank"}** and behave as block or inline boxes.
 
-You can change the inner display type for example by setting `display: flex;`. The element will still use the outer display type `block` but this changes the inner display type to `flex`. Any direct children of this box will become flex items and behave according to the [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) specification.
+You can change the inner display type for example by setting `display: flex;`. The element will still use the outer display type `block` but this changes the inner display type to `flex`. Any direct children of this box will become flex items and behave according to the [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"} specification.
 
-When you move on to learn about CSS Layout in more detail, you will encounter [`flex`](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox), and various other inner values that your boxes can have, for example [`grid`](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids).
+When you move on to learn about CSS Layout in more detail, you will encounter [`flex`](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}, and various other inner values that your boxes can have, for example [`grid`](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids){:target="_blank"}.
 
-> **Note:** To read more about the values of display, and how boxes work in block and inline layout, take a look at the MDN guide [Block and Inline Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/Block_and_inline_layout_in_normal_flow).
+> **Note:** To read more about the values of display, and how boxes work in block and inline layout, take a look at the MDN guide [Block and Inline Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/Block_and_inline_layout_in_normal_flow){:target="_blank"}.
 
 ## Examples of different display types
 
@@ -116,10 +116,10 @@ To add complexity, there is a standard and an alternate box model. By default, b
 
 Making up a block box in CSS we have the:
 
-- **Content box**: The area where your content is displayed; size it using properties like [`inline-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size) and [`block-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size) or [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height).
-- **Padding box**: The padding sits around the content as white space; size it using [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) and related properties.
-- **Border box**: The border box wraps the content and any padding; size it using [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border) and related properties.
-- **Margin box**: The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) and related properties.
+- **Content box**: The area where your content is displayed; size it using properties like [`inline-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size){:target="_blank"} and [`block-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size){:target="_blank"} or [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height){:target="_blank"}.
+- **Padding box**: The padding sits around the content as white space; size it using [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding){:target="_blank"} and related properties.
+- **Border box**: The border box wraps the content and any padding; size it using [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border){:target="_blank"} and related properties.
+- **Margin box**: The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"} and related properties.
 
 The below diagram shows these layers:
 
@@ -190,7 +190,7 @@ html {
 }
 ```
 
-To understand the underlying idea, you can read [the CSS Tricks article on box-sizing](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/).
+To understand the underlying idea, you can read [the CSS Tricks article on box-sizing](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/){:target="_blank"}.
 
 ## Playing with box models
 
@@ -210,17 +210,17 @@ In the example below, you can see two boxes. Both have a class of `.box`, which 
   </a>
 </p>
 
-> **Note:** You can find a solution for this task [here](https://github.com/mdn/css-examples/blob/main/learn/solutions.md#the-box-model).
+> **Note:** You can find a solution for this task [here](https://github.com/mdn/css-examples/blob/main/learn/solutions.md#the-box-model){:target="_blank"}.
 
 ### Use browser DevTools to view the box model
 
-Your [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools) can make understanding the box model far easier. If you inspect an element in Firefox's DevTools, you can see the size of the element plus its margin, padding, and border. Inspecting an element in this way is a great way to find out if your box is really the size you think it is!
+Your [browser developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools){:target="_blank"} can make understanding the box model far easier. If you inspect an element in Firefox's DevTools, you can see the size of the element plus its margin, padding, and border. Inspecting an element in this way is a great way to find out if your box is really the size you think it is!
 
 ![Inspecting the box model of an element using Firefox DevTools](assets/box-model-devtools.png)
 
 ## Margins, padding, and borders
 
-You've already seen the [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin), [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding), and [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border) properties at work in the example above. The properties used in that example are **shorthands** and allow us to set all four sides of the box at once. These shorthands also have equivalent longhand properties, which allow control over the different sides of the box individually.
+You've already seen the [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"}, [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding){:target="_blank"}, and [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border){:target="_blank"} properties at work in the example above. The properties used in that example are **shorthands** and allow us to set all four sides of the box at once. These shorthands also have equivalent longhand properties, which allow control over the different sides of the box individually.
 
 Let's explore these properties in more detail.
 
@@ -228,12 +228,12 @@ Let's explore these properties in more detail.
 
 The margin is an invisible space around your box. It pushes other elements away from the box. Margins can have positive or negative values. Setting a negative margin on one side of your box can cause it to overlap other things on the page. Whether you are using the standard or alternative box model, the margin is always added after the size of the visible box has been calculated.
 
-We can control all margins of an element at once using the [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) property, or each side individually using the equivalent longhand properties:
+We can control all margins of an element at once using the [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"} property, or each side individually using the equivalent longhand properties:
 
-- [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top)
-- [`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)
-- [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)
-- [`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)
+- [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top){:target="_blank"}
+- [`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right){:target="_blank"}
+- [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom){:target="_blank"}
+- [`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left){:target="_blank"}
 
 **In the example below, try changing the margin values to see how the box is pushed around due to the margin creating or removing space (if it is a negative margin) between this element and the containing element.**
 
@@ -273,7 +273,7 @@ In the example below, we have two paragraphs. The top paragraph has a `margin-bo
   </a>
 </p>
 
-A number of rules dictate when margins do and do not collapse. For further information see the detailed page on [mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing). The main thing to remember is that margin collapsing is a thing that happens if you are creating space with margins and don't get the space you expect.
+A number of rules dictate when margins do and do not collapse. For further information see the detailed page on [mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing){:target="_blank"}. The main thing to remember is that margin collapsing is a thing that happens if you are creating space with margins and don't get the space you expect.
 
 ### Borders
 
@@ -281,35 +281,35 @@ The border is drawn between the margin and the padding of a box. If you are usin
 
 For styling borders, there are a large number of properties — there are four borders, and each border has a style, width, and color that we might want to manipulate.
 
-You can set the width, style, or color of all four borders at once using the [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border) property.
+You can set the width, style, or color of all four borders at once using the [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border){:target="_blank"} property.
 
 To set the properties of each side individually, use:
 
-- [`border-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top)
-- [`border-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right)
-- [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom)
-- [`border-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left)
+- [`border-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top){:target="_blank"}
+- [`border-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right){:target="_blank"}
+- [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom){:target="_blank"}
+- [`border-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left){:target="_blank"}
 
 To set the width, style, or color of all sides, use:
 
-- [`border-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width)
-- [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)
-- [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color)
+- [`border-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width){:target="_blank"}
+- [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style){:target="_blank"}
+- [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color){:target="_blank"}
 
 To set the width, style, or color of a single side, use one of the more granular longhand properties:
 
-- [`border-top-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width)
-- [`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)
-- [`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)
-- [`border-right-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-width)
-- [`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)
-- [`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)
-- [`border-bottom-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width)
-- [`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)
-- [`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)
-- [`border-left-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width)
-- [`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style)
-- [`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color)
+- [`border-top-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width){:target="_blank"}
+- [`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style){:target="_blank"}
+- [`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color){:target="_blank"}
+- [`border-right-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-width){:target="_blank"}
+- [`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style){:target="_blank"}
+- [`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color){:target="_blank"}
+- [`border-bottom-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width){:target="_blank"}
+- [`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style){:target="_blank"}
+- [`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color){:target="_blank"}
+- [`border-left-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width){:target="_blank"}
+- [`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style){:target="_blank"}
+- [`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color){:target="_blank"}
 
 In the example below, we have used various shorthands and longhands to create borders. Play around with the different properties to check that you understand how they work. The MDN pages for the border properties give you information about the different available border styles.
 
@@ -329,12 +329,12 @@ In the example below, we have used various shorthands and longhands to create bo
 
 The padding sits between the border and the content area and is used to push the content away from the border. Unlike margins, you cannot have a negative padding. Any background applied to your element will display behind the padding.
 
-The [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) property controls the padding on all sides of an element. To control each side individually, use these longhand properties:
+The [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding){:target="_blank"} property controls the padding on all sides of an element. To control each side individually, use these longhand properties:
 
-- [`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top)
-- [`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)
-- [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)
-- [`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)
+- [`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top){:target="_blank"}
+- [`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right){:target="_blank"}
+- [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom){:target="_blank"}
+- [`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left){:target="_blank"}
 
 In the example below, you can change the values for padding on the class `.box` to see that this changes where the text begins in relation to the box. You can also change the padding on the class `.container` to create space between the container and the box. You can change the padding on any element to create space between its border and whatever is inside the element.
 
@@ -420,4 +420,4 @@ That's most of what you need to understand about the box model. You may want to 
 **Content is based on the following sources:**
 
 - **MDN**
-  - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md)
+  - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md){:target="_blank"}

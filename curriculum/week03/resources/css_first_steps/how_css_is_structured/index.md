@@ -60,7 +60,7 @@ p {
 }
 ```
 
-The `href` attribute of the [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path. Here are three examples:
+The `href` attribute of the [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link){:target="_blank"} element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path. Here are three examples:
 
 ```html
 <!-- Inside a subdirectory called styles inside the current directory -->
@@ -75,7 +75,7 @@ The `href` attribute of the [`<link>`](https://developer.mozilla.org/en-US/docs/
 
 ### Internal stylesheet
 
-An internal stylesheet resides within an HTML document. To create an internal stylesheet, you place CSS inside a [`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style) element contained inside the HTML [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
+An internal stylesheet resides within an HTML document. To create an internal stylesheet, you place CSS inside a [`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style){:target="_blank"} element contained inside the HTML [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head){:target="_blank"}.
 
 The HTML for an internal stylesheet might look like this:
 
@@ -246,7 +246,7 @@ For now, remember that specificity exists. Sometimes, CSS might not apply as you
 
 At its most basic level, CSS consists of two components:
 
-- **Properties**: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size), [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width), [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color).
+- **Properties**: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size){:target="_blank"}, [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"}, [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color){:target="_blank"}.
 - **Values**: Each property is assigned a value. This value indicates how to style the property.
 
 The example below highlights a single property and value. The property name is `color` and the value is `blue`.
@@ -267,11 +267,11 @@ CSS properties and values are case-insensitive. The property and value in a prop
 
 **Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:**
 
-- **[`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)**
-- **[`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width)**
-- **[`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)**
-- **[`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)**
-- **[`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)**
+- **[`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size){:target="_blank"}**
+- **[`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"}**
+- **[`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color){:target="_blank"}**
+- **[`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color){:target="_blank"}**
+- **[`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border){:target="_blank"}**
 
 > **Warning:** If a property is unknown, or if a value is not valid for a given property, the declaration is processed as _invalid_. It is completely ignored by the browser's CSS engine.
 
@@ -310,7 +310,7 @@ A function consists of the function name, and parentheses to enclose the values 
 
 #### Transform functions
 
-Another example would be the various values for [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform), such as `rotate()`.
+Another example would be the various values for [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform){:target="_blank"}, such as `rotate()`.
 
 ```html
 <div class="box"></div>
@@ -332,19 +332,19 @@ The output from the above code looks like this:
 
 **Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:**
 
-- **[`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)**
-- **[`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image), in particular gradient values**
-- **[`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color), in particular rgb and hsl values**
+- **[`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform){:target="_blank"}**
+- **[`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image){:target="_blank"}, in particular gradient values**
+- **[`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color){:target="_blank"}, in particular rgb and hsl values**
 
 ## @rules
 
-CSS [@rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) (pronounced "at-rules") provide instruction for what CSS should perform or how it should behave. Some @rules are simple with just a keyword and a value. For example, `@import` imports a stylesheet into another CSS stylesheet:
+CSS [@rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule){:target="_blank"} (pronounced "at-rules") provide instruction for what CSS should perform or how it should behave. Some @rules are simple with just a keyword and a value. For example, `@import` imports a stylesheet into another CSS stylesheet:
 
 ```css
 @import "styles2.css";
 ```
 
-One common @rule that you are likely to encounter is `@media`, which is used to create [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries). Media queries use conditional logic for applying CSS styling.
+One common @rule that you are likely to encounter is `@media`, which is used to create [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries){:target="_blank"}. Media queries use conditional logic for applying CSS styling.
 
 In the example below, the stylesheet defines a default pink background for the `<body>` element. However, a media query follows that defines a blue background if the browser viewport is wider than 30em.
 
@@ -366,7 +366,7 @@ You will encounter other @rules throughout these tutorials.
 
 ## Shorthands
 
-Some properties like [`font`](https://developer.mozilla.org/en-US/docs/Web/CSS/font), [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background), [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding), [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border), and [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) are called **shorthand properties.** This is because shorthand properties set several values in a single line.
+Some properties like [`font`](https://developer.mozilla.org/en-US/docs/Web/CSS/font){:target="_blank"}, [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background){:target="_blank"}, [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding){:target="_blank"}, [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border){:target="_blank"}, and [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"} are called **shorthand properties.** This is because shorthand properties set several values in a single line.
 
 For example, this one line of code:
 
@@ -403,7 +403,7 @@ background-repeat: repeat-x;
 background-attachment: fixed;
 ```
 
-Later in the course, you will encounter many other examples of shorthand properties. MDN's [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) is a good resource for more information about any shorthand property.
+Later in the course, you will encounter many other examples of shorthand properties. MDN's [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference){:target="_blank"} is a good resource for more information about any shorthand property.
 
 **Try using the declarations (above) in your own CSS exercise to become more familiar with how it works. You can also experiment with different values.**
 
@@ -560,4 +560,4 @@ At this point, you should have a better idea about how CSS is structured. It's a
 **Content is based on the following sources:**
 
 - **MDN**
-  - [How css is structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured) [(Permalink)](https://github.com/mdn/content/blob/4785cd825d3e74ffdd11740d19473cb3ae63832c/files/en-us/learn/css/first_steps/how_css_is_structured/index.md)
+  - [How css is structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/4785cd825d3e74ffdd11740d19473cb3ae63832c/files/en-us/learn/css/first_steps/how_css_is_structured/index.md){:target="_blank"}

@@ -24,7 +24,7 @@ In this lesson, we will take a look at some of the creative things you can do wi
 
 ## Styling backgrounds in CSS
 
-The CSS [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) property is a shorthand for a number of background longhand properties that we will meet in this lesson. If you discover a complex background property in a stylesheet, it might seem a little hard to understand as so many values can be passed in at once.
+The CSS [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background){:target="_blank"} property is a shorthand for a number of background longhand properties that we will meet in this lesson. If you discover a complex background property in a stylesheet, it might seem a little hard to understand as so many values can be passed in at once.
 
 ```css
 .box {
@@ -43,11 +43,11 @@ We'll return to how the shorthand works later in the tutorial, but first let's h
 
 ### Background colors
 
-The [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color) property defines the background color on any element in CSS. The property accepts any valid [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value). A `background-color` extends underneath the content and padding box of the element.
+The [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color){:target="_blank"} property defines the background color on any element in CSS. The property accepts any valid [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"}. A `background-color` extends underneath the content and padding box of the element.
 
-In the example below, we have used various color values to add a background color to the box, a heading, and a [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) element.
+In the example below, we have used various color values to add a background color to the box, a heading, and a [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span){:target="_blank"} element.
 
-**Play around with these, using any available [\<color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) value.**
+**Play around with these, using any available [\<color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"} value.**
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -63,7 +63,7 @@ In the example below, we have used various color values to add a background colo
 
 ### Background images
 
-The [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) property enables the display of an image in the background of an element. In the example below, we have two boxes — one has a background image which is larger than the box ([balloons.jpg](https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg)), the other has a small image of a single star ([star.png](https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png)).
+The [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image){:target="_blank"} property enables the display of an image in the background of an element. In the example below, we have two boxes — one has a background image which is larger than the box ([balloons.jpg](https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg)){:target="_blank"}, the other has a small image of a single star ([star.png](https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png)){:target="_blank"}.
 
 This example demonstrates two things about background images. By default, the large image is not scaled down to fit the box, so we only see a small corner of it, whereas the small image is tiled to fill the box.
 
@@ -83,7 +83,7 @@ This example demonstrates two things about background images. By default, the la
 
 #### Controlling background-repeat
 
-The [`background-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat) property is used to control the tiling behavior of images. The available values are:
+The [`background-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat){:target="_blank"} property is used to control the tiling behavior of images. The available values are:
 
 - `no-repeat` — stop the background from repeating altogether.
 - `repeat-x` — repeat horizontally.
@@ -106,7 +106,7 @@ The [`background-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/backg
 
 #### Sizing the background image
 
-The _balloons.jpg_ image used in the initial background images example, is a large image that was cropped due to being larger than the element it is a background of. In this case we could use the [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) property, which can take [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) or [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) values, to size the image to fit inside the background.
+The _balloons.jpg_ image used in the initial background images example, is a large image that was cropped due to being larger than the element it is a background of. In this case we could use the [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size){:target="_blank"} property, which can take [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length){:target="_blank"} or [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage){:target="_blank"} values, to size the image to fit inside the background.
 
 You can also use keywords:
 
@@ -135,13 +135,13 @@ Try the following.
 
 #### Positioning the background image
 
-The [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) property allows you to choose the position in which the background image appears on the box it is applied to. This uses a coordinate system in which the top-left-hand corner of the box is `(0,0)`, and the box is positioned along the horizontal (`x`) and vertical (`y`) axes.
+The [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position){:target="_blank"} property allows you to choose the position in which the background image appears on the box it is applied to. This uses a coordinate system in which the top-left-hand corner of the box is `(0,0)`, and the box is positioned along the horizontal (`x`) and vertical (`y`) axes.
 
 > **Note:** The default `background-position` value is `(0,0)`.
 
 The most common `background-position` values take two individual values — a horizontal value followed by a vertical value.
 
-You can use keywords such as `top` and `right` (look up the others on the [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) page):
+You can use keywords such as `top` and `right` (look up the others on the [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position){:target="_blank"} page):
 
 ```css
 .box {
@@ -151,7 +151,7 @@ You can use keywords such as `top` and `right` (look up the others on the [`back
 }
 ```
 
-And [Lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length), and [percentages](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage):
+And [Lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length){:target="_blank"}, and [percentages](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage){:target="_blank"}:
 
 ```css
 .box {
@@ -195,13 +195,13 @@ Finally, you can also use a 4-value syntax in order to indicate a distance from 
   </a>
 </p>
 
-> **Note:** `background-position` is a shorthand for [`background-position-x`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x) and [`background-position-y`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y), which allow you to set the different axis position values individually.
+> **Note:** `background-position` is a shorthand for [`background-position-x`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-x){:target="_blank"} and [`background-position-y`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position-y){:target="_blank"}, which allow you to set the different axis position values individually.
 
 ### Gradient backgrounds
 
-A gradient — when used for a background — acts just like an image and is also set by using the [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) property.
+A gradient — when used for a background — acts just like an image and is also set by using the [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image){:target="_blank"} property.
 
-You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient) data type. A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as [this one](https://cssgradient.io/). You can create a gradient then copy and paste out the source code that generates it.
+You can read more about the different types of gradients and things you can do with them on the MDN page for the [`<gradient>`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient){:target="_blank"} data type. A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as [this one](https://cssgradient.io/){:target="_blank"}. You can create a gradient then copy and paste out the source code that generates it.
 
 Try some different gradients in the example below. In the two boxes respectively, we have a linear gradient that is stretched over the whole box, and a radial gradient with a set size, which therefore repeats.
 
@@ -254,17 +254,17 @@ Each value of the different properties will match up to the values in the same p
 
 ### Background attachment
 
-Another option we have available for backgrounds is specifying how they scroll when the content scrolls. This is controlled using the [`background-attachment`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment) property, which can take the following values:
+Another option we have available for backgrounds is specifying how they scroll when the content scrolls. This is controlled using the [`background-attachment`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment){:target="_blank"} property, which can take the following values:
 
 - `scroll`: causes the element's background to scroll when the page is scrolled. If the element content is scrolled, the background does not move. In effect, the background is fixed to the same position on the page, so it scrolls as the page scrolls.
 - `fixed`: causes an element's background to be fixed to the viewport so that it doesn't scroll when the page or element content is scrolled. It will always remain in the same position on the screen.
 - `local`: fixes the background to the element it is set on, so when you scroll the element, the background scrolls with it.
 
-The [`background-attachment`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment) property only has an effect when there is content to scroll, so we've made a demo to demonstrate the differences between the three values — have a look at [background-attachment.html](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html) (also [see the source code](https://github.com/mdn/learning-area/tree/main/css/styling-boxes/backgrounds) here).
+The [`background-attachment`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment){:target="_blank"} property only has an effect when there is content to scroll, so we've made a demo to demonstrate the differences between the three values — have a look at [background-attachment.html](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html){:target="_blank"} (also [see the source code](https://github.com/mdn/learning-area/tree/main/css/styling-boxes/backgrounds){:target="_blank"} here).
 
 ### Using the background shorthand property
 
-As I mentioned at the beginning of this lesson, you will often see backgrounds specified using the [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) property. This shorthand lets you set all of the different properties at once.
+As I mentioned at the beginning of this lesson, you will often see backgrounds specified using the [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background){:target="_blank"} property. This shorthand lets you set all of the different properties at once.
 
 If using multiple backgrounds, you need to specify all of the properties for the first background, then add your next background after a comma. In the example below we have a gradient with a size and position, then an image background with `no-repeat` and a position, then a color.
 
@@ -273,7 +273,7 @@ There are a few rules that need to be followed when writing background image sho
 - A `background-color` may only be specified after the final comma.
 - The value of `background-size` may only be included immediately after `background-position`, separated with the '/' character, like this: `center/80%`.
 
-Take a look at the MDN page for [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) to see all of the considerations.
+Take a look at the MDN page for [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background){:target="_blank"} to see all of the considerations.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -297,7 +297,7 @@ Screen readers cannot parse background images; therefore, they should be purely 
 
 When learning about the Box Model, we discovered how borders affect the size of our box. In this lesson we will look at how to use borders creatively. Typically when we add borders to an element with CSS we use a shorthand property that sets the color, width, and style of the border in one line of CSS.
 
-We can set a border for all four sides of a box with [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border):
+We can set a border for all four sides of a box with [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border){:target="_blank"}:
 
 ```css
 .box {
@@ -351,7 +351,7 @@ There are a variety of styles that you can use for borders. In the example below
 
 ### Rounded corners
 
-Rounding corners on a box is achieved by using the [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) property and associated longhands which relate to each corner of the box. Two lengths or percentages may be used as a value, the first value defining the horizontal radius, and the second the vertical radius. In a lot of cases, you will only pass in one value, which will be used for both.
+Rounding corners on a box is achieved by using the [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius){:target="_blank"} property and associated longhands which relate to each corner of the box. Two lengths or percentages may be used as a value, the first value defining the horizontal radius, and the second the vertical radius. In a lot of cases, you will only pass in one value, which will be used for both.
 
 For example, to make all four corners of a box have a 10px radius:
 
@@ -369,7 +369,7 @@ Or to make the top right corner have a horizontal radius of 1em, and a vertical 
 }
 ```
 
-We have set all four corners in the example below and then changed the values for the top right corner to make it different. You can play with the values to change the corners. Take a look at the property page for [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) to see the available syntax options.
+We have set all four corners in the example below and then changed the values for the top right corner to make it different. You can play with the values to change the corners. Take a look at the property page for [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius){:target="_blank"} to see the available syntax options.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -392,4 +392,4 @@ We have covered quite a lot here, and you can see that there is quite a lot to a
 **Content is based on the following sources:**
 
 - **MDN**
-  - [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/backgrounds_and_borders/index.md)
+  - [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/backgrounds_and_borders/index.md){:target="_blank"}

@@ -8,11 +8,11 @@ page-type: learn-module-chapter
 
 _(Updated: 12/09/2023)_
 
-CSS rules contain [declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_declarations), which in turn are composed of properties and values.
+CSS rules contain [declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_declarations){:target="_blank"}, which in turn are composed of properties and values.
 Each property used in CSS has a **value type** that describes what kind of values it is allowed to have.
 In this lesson, we will take a look at some of the most frequently used value types, what they are, and how they work.
 
-> **Note:** Each [CSS property page](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) has a syntax section that lists the value types you can use with that property.
+> **Note:** Each [CSS property page](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index){:target="_blank"} has a syntax section that lists the value types you can use with that property.
 
 **Prerequisites:**
 
@@ -28,12 +28,12 @@ In this lesson, we will take a look at some of the most frequently used value ty
 
 ## What is a CSS value?
 
-In CSS specifications and on the property pages here on MDN you will be able to spot value types as they will be surrounded by angle brackets, such as [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) or [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length). When you see the value type `<color>` as valid for a particular property, that means you can use any valid color as a value for that property, as listed on the [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) reference page.
+In CSS specifications and on the property pages here on MDN you will be able to spot value types as they will be surrounded by angle brackets, such as [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"} or [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length){:target="_blank"}. When you see the value type `<color>` as valid for a particular property, that means you can use any valid color as a value for that property, as listed on the [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"} reference page.
 
 > **Note:** You'll see CSS value types referred to as _data types_. The terms are basically interchangeable — when you see something in CSS referred to as a data type, it is really just a fancy way of saying value type. The term _value_ refers to any particular expression supported by a value type that you choose to use.
 
 > **Note:** CSS value types tend to be enclosed in angle brackets (`<`, `>`) to differentiate them from CSS properties.
-> For example there is a [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) property and a [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) data type.
+> For example there is a [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color){:target="_blank"} property and a [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"} data type.
 > This is not to be confused with HTML elements, as they also use angle brackets, but this is something to keep in mind that the context should make clear.
 
 In the following example, we have set the color of our heading using a keyword, and the background using the `rgb()` function:
@@ -45,7 +45,7 @@ h1 {
 }
 ```
 
-A value type in CSS is a way to define a collection of allowable values. This means that if you see `<color>` as valid you don't need to wonder which of the different types of color value can be used — keywords, hex values, `rgb()` functions, etc. You can use _any_ available `<color>` values, assuming they are supported by your browser. The page on MDN for each value will give you information about browser support. For example, if you look at the page for [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) you will see that the browser compatibility section lists different types of color values and support for them.
+A value type in CSS is a way to define a collection of allowable values. This means that if you see `<color>` as valid you don't need to wonder which of the different types of color value can be used — keywords, hex values, `rgb()` functions, etc. You can use _any_ available `<color>` values, assuming they are supported by your browser. The page on MDN for each value will give you information about browser support. For example, if you look at the page for [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"} you will see that the browser compatibility section lists different types of color values and support for them.
 
 Let's have a look at some of the types of values and units you may frequently encounter, with examples so that you can try out different possible values.
 
@@ -119,7 +119,7 @@ There are various numeric value types that you might find yourself using in CSS.
 
 ### Lengths
 
-The numeric type you will come across most frequently is [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length). For example, `10px` (pixels) or `30em`. There are two types of lengths used in CSS — relative and absolute. It's important to know the difference in order to understand how big things will become.
+The numeric type you will come across most frequently is [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length){:target="_blank"}. For example, `10px` (pixels) or `30em`. There are two types of lengths used in CSS — relative and absolute. It's important to know the difference in order to understand how big things will become.
 
 #### Absolute length units
 
@@ -223,11 +223,11 @@ Relative length units are relative to something else, perhaps the size of the pa
 
 #### Exploring an example
 
-In the example below, you can see how some relative and absolute length units behave. The first box has a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) set in pixels. As an absolute unit, this width will remain the same no matter what else changes.
+In the example below, you can see how some relative and absolute length units behave. The first box has a [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} set in pixels. As an absolute unit, this width will remain the same no matter what else changes.
 
-The second box has a width set in `vw` (viewport width) units. This value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. If you change the width of your browser window, the size of the box should change. However this example is embedded into the page using an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), so this won't work.
+The second box has a width set in `vw` (viewport width) units. This value is relative to the viewport width, and so 10vw is 10 percent of the width of the viewport. If you change the width of your browser window, the size of the box should change. However this example is embedded into the page using an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe){:target="_blank"}, so this won't work.
 
-The third box uses `em` units. These are relative to the font size. I've set a font size of `1em` on the containing [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div), which has a class of `.wrapper`. Change this value to `1.5em` and you will see that the font size of all the elements increases, but only the last item will get wider, as its width is relative to that font size.
+The third box uses `em` units. These are relative to the font size. I've set a font size of `1em` on the containing [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"}, which has a class of `.wrapper`. Change this value to `1.5em` and you will see that the font size of all the elements increases, but only the last item will get wider, as its width is relative to that font size.
 
 After following the instructions above, try playing with the values in other ways, to see what you get.
 
@@ -251,9 +251,9 @@ The HTML illustrated below is a set of nested lists — we have two lists in tot
 
 To start with, we set 16px as the font size on the `<html>` element.
 
-**To recap, the em unit means "my parent element's font-size"** in the case of typography. The [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li) elements inside the [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) with a `class` of `ems` take their sizing from their parent. So each successive level of nesting gets progressively larger, as each has its font size set to `1.3em` — 1.3 times its parent's font size.
+**To recap, the em unit means "my parent element's font-size"** in the case of typography. The [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li){:target="_blank"} elements inside the [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul){:target="_blank"} with a `class` of `ems` take their sizing from their parent. So each successive level of nesting gets progressively larger, as each has its font size set to `1.3em` — 1.3 times its parent's font size.
 
-**To recap, the rem unit means "The root element's font-size"** (rem stands for "root em"). The [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li) elements inside the [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) with a `class` of `rems` take their sizing from the root element (`<html>`). This means that each successive level of nesting does not keep getting larger.
+**To recap, the rem unit means "The root element's font-size"** (rem stands for "root em"). The [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li){:target="_blank"} elements inside the [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul){:target="_blank"} with a `class` of `rems` take their sizing from the root element (`<html>`). This means that each successive level of nesting does not keep getting larger.
 
 However, if you change the `<html>` element's `font-size` in the CSS you will see that everything else changes relative to it — both `rem`- and `em`-sized text.
 
@@ -305,7 +305,7 @@ The next example has font sizes set in percentages. Each `<li>` has a `font-size
 </a>
 </p>
 
-Note that, while many value types accept a length or a percentage, there are some that only accept length. You can see which values are accepted on the MDN property reference pages. If the allowed value includes [`<length-percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage) then you can use a length or a percentage. If the allowed value only includes `<length>`, it is not possible to use a percentage.
+Note that, while many value types accept a length or a percentage, there are some that only accept length. You can see which values are accepted on the MDN property reference pages. If the allowed value includes [`<length-percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage){:target="_blank"} then you can use a length or a percentage. If the allowed value only includes `<length>`, it is not possible to use a percentage.
 
 ### Numbers
 
@@ -337,7 +337,7 @@ The standard color system available in modern computers supports 24-bit colors, 
 
 ### Color keywords
 
-Quite often in examples here in the learn section or elsewhere on MDN you will see the color keywords used, as they are an intuitive way of specifying color. There are a number of these keywords, some of which have fairly entertaining names! You can see a full list on the page for the [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) value type.
+Quite often in examples here in the learn section or elsewhere on MDN you will see the color keywords used, as they are an intuitive way of specifying color. There are a number of these keywords, some of which have fairly entertaining names! You can see a full list on the page for the [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"} value type.
 
 **Try playing with different color values in the live examples below, to get more of an idea how they work.**
 
@@ -393,7 +393,7 @@ Let's rewrite our last example to use RGB colors:
 
 You can pass a fourth parameter to `rgb()`, which represents the alpha channel of the color, which controls opacity. If you set this value to `0` it will make the color fully transparent, whereas `1` will make it fully opaque. Values in between give you different levels of transparency.
 
-> **Note:** Setting an alpha channel on a color has one key difference to using the [`opacity`](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) property we looked at earlier. When you use opacity you make the element and everything inside it opaque, whereas using RGB with an alpha parameter colors only makes the color you are specifying opaque.
+> **Note:** Setting an alpha channel on a color has one key difference to using the [`opacity`](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity){:target="_blank"} property we looked at earlier. When you use opacity you make the element and everything inside it opaque, whereas using RGB with an alpha parameter colors only makes the color you are specifying opaque.
 
 In the example below, we have added a background image to the containing block of our colored boxes. We have then set the boxes to have different opacity values — notice how the background shows through more when the alpha channel value is smaller.
 
@@ -417,7 +417,7 @@ In the example below, we have added a background image to the containing block o
 
 An alternative way to specify colors is the HSL color model. Instead of red, green, and blue values, the `hsl()` function accepts hue, saturation, and lightness values, which are used to distinguish between the 16.7 million colors, but in a different way:
 
-- **Hue**: The base shade of the color. This takes a value between 0 and 360, representing the angles around a [color wheel](https://developer.mozilla.org/en-US/docs/Glossary/Color_wheel).
+- **Hue**: The base shade of the color. This takes a value between 0 and 360, representing the angles around a [color wheel](https://developer.mozilla.org/en-US/docs/Glossary/Color_wheel){:target="_blank"}.
 - **Saturation**: How saturated is the color? This takes a value from 0–100%, where 0 is no color (it will appear as a shade of grey), and 100% is full color saturation
 - **Lightness**: How light or bright is the color? This takes a value from 0–100%, where 0 is no light (it will appear completely black) and 100% is full light (it will appear completely white)
 
@@ -455,7 +455,7 @@ You can use any of these color values in your projects. It is likely that for mo
 
 ## Images
 
-The [`<image>`](https://developer.mozilla.org/en-US/docs/Web/CSS/image) value type is used wherever an image is a valid value. This can be an actual image file pointed to via a `url()` function, or a gradient.
+The [`<image>`](https://developer.mozilla.org/en-US/docs/Web/CSS/image){:target="_blank"} value type is used wherever an image is a valid value. This can be an actual image file pointed to via a `url()` function, or a gradient.
 
 In the example below, we have demonstrated an image and a gradient in use as a value for the CSS `background-image` property.
 
@@ -471,11 +471,11 @@ In the example below, we have demonstrated an image and a gradient in use as a v
 </a>
 </p>
 
-> **Note:** There are some other possible values for `<image>`, however these are newer and currently have poor browser support. Check out the page on MDN for the [`<image>`](https://developer.mozilla.org/en-US/docs/Web/CSS/image) data type if you want to read about them.
+> **Note:** There are some other possible values for `<image>`, however these are newer and currently have poor browser support. Check out the page on MDN for the [`<image>`](https://developer.mozilla.org/en-US/docs/Web/CSS/image){:target="_blank"} data type if you want to read about them.
 
 ## Position
 
-The [`<position>`](https://developer.mozilla.org/en-US/docs/Web/CSS/position_value) value type represents a set of 2D coordinates, used to position an item such as a background image (via [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)). It can take keywords such as `top`, `left`, `bottom`, `right`, and `center` to align items with specific bounds of a 2D box, along with lengths, which represent offsets from the top and left-hand edges of the box.
+The [`<position>`](https://developer.mozilla.org/en-US/docs/Web/CSS/position_value){:target="_blank"} value type represents a set of 2D coordinates, used to position an item such as a background image (via [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)){:target="_blank"}. It can take keywords such as `top`, `left`, `bottom`, `right`, and `center` to align items with specific bounds of a 2D box, along with lengths, which represent offsets from the top and left-hand edges of the box.
 
 A typical position value consists of two values — the first sets the position horizontally, the second vertically. If you only specify values for one axis the other will default to `center`.
 
@@ -499,7 +499,7 @@ In the following example we have positioned a background image 40px from the top
 
 Throughout the examples above, we've seen places where keywords are used as a value (for example `<color>` keywords like `red`, `black`, `rebeccapurple`, and `goldenrod`). These keywords are more accurately described as _identifiers_, a special value that CSS understands. As such they are not quoted — they are not treated as strings.
 
-There are places where you use strings in CSS. For example, [when specifying generated content](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#generating_content_with_before_and_after). In this case, the value is quoted to demonstrate that it is a string. In the example below, we use unquoted color keywords along with a quoted generated content string.
+There are places where you use strings in CSS. For example, [when specifying generated content](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#generating_content_with_before_and_after){:target="_blank"}. In this case, the value is quoted to demonstrate that it is a string. In the example below, we use unquoted color keywords along with a quoted generated content string.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -519,12 +519,12 @@ In programming, a function is a piece of code that does a specific task.
 Functions are useful because you can write code once, then reuse it many times instead of writing the same logic over and over.
 Most programming languages not only support functions but also come with convenient built-in functions for common tasks so you don't have to write them yourself from scratch.
 
-CSS also has [functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions), which work in a similar way to functions in other languages.
-In fact, we've already seen CSS functions in the [Color](#color) section above with [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb_function) and [`hsl()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#hsl_function) functions.
+CSS also has [functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions){:target="_blank"}, which work in a similar way to functions in other languages.
+In fact, we've already seen CSS functions in the [Color](#color) section above with [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb_function){:target="_blank"} and [`hsl()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#hsl_function){:target="_blank"} functions.
 
 Aside from applying colors, you can use functions in CSS to do a lot of other things.
-For example [Transform functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#transform_functions) are a common way to move, rotate, and scale elements on a page.
-You might see [`translate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate) for moving something horizontally or vertically, [`rotate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate) to rotate something, or [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale) to make something bigger or smaller.
+For example [Transform functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#transform_functions){:target="_blank"} are a common way to move, rotate, and scale elements on a page.
+You might see [`translate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate){:target="_blank"} for moving something horizontally or vertically, [`rotate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate){:target="_blank"} to rotate something, or [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale){:target="_blank"} to make something bigger or smaller.
 
 ### Math functions
 
@@ -532,8 +532,8 @@ When you are creating styles for a project, you will probably start off with num
 If you want to have these values change based on other values, you will need to do some math.
 You could calculate the percentage of a value or add a number to another number, then update your CSS with the result.
 
-CSS has support for [Math functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#math_functions), which allow us to perform calculations instead of relying on static values or doing the math in JavaScript.
-One of the most common math functions is [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) which lets you do operations like addition, subtraction, multiplication, and division.
+CSS has support for [Math functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#math_functions){:target="_blank"}, which allow us to perform calculations instead of relying on static values or doing the math in JavaScript.
+One of the most common math functions is [`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc){:target="_blank"} which lets you do operations like addition, subtraction, multiplication, and division.
 
 For example, let's say we want to set the width of an element to be 20% of its parent container plus 100px.
 We can't specify this width with a static value — if the parent uses a percentage width (or a relative unit like `em` or `rem`) then it will vary depending on the context it is used in, and other factors such as the user's device or browser window width.
@@ -552,21 +552,21 @@ The 20% is based on the width of the parent container (`.wrapper`) and if that w
 </a>
 </p>
 
-There are many other math functions that you can use in CSS, such as [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min), [`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max), and [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp); respectively these let you pick the smallest, largest, or middle value from a set of values.
-You can also use [Trigonometric functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#trigonometric_functions) like [`sin()`](https://developer.mozilla.org/en-US/docs/Web/CSS/sin), [`cos()`](https://developer.mozilla.org/en-US/docs/Web/CSS/cos), and [`tan()`](https://developer.mozilla.org/en-US/docs/Web/CSS/tan) to calculate angles for rotating elements around a point, or choose colors that take a [hue angle](https://developer.mozilla.org/en-US/docs/Web/CSS/hue) as a parameter.
-[Exponential functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#exponential_functions) might also be used for animations and transitions, when you require very specific control over how something moves and looks.
+There are many other math functions that you can use in CSS, such as [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min){:target="_blank"}, [`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max){:target="_blank"}, and [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp){:target="_blank"}; respectively these let you pick the smallest, largest, or middle value from a set of values.
+You can also use [Trigonometric functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#trigonometric_functions){:target="_blank"} like [`sin()`](https://developer.mozilla.org/en-US/docs/Web/CSS/sin){:target="_blank"}, [`cos()`](https://developer.mozilla.org/en-US/docs/Web/CSS/cos){:target="_blank"}, and [`tan()`](https://developer.mozilla.org/en-US/docs/Web/CSS/tan){:target="_blank"} to calculate angles for rotating elements around a point, or choose colors that take a [hue angle](https://developer.mozilla.org/en-US/docs/Web/CSS/hue){:target="_blank"} as a parameter.
+[Exponential functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#exponential_functions){:target="_blank"} might also be used for animations and transitions, when you require very specific control over how something moves and looks.
 
 Knowing about CSS functions is useful so you recognize them when you see them. You should start experimenting with them in your projects — they will help you avoid writing custom or repetitive code to achieve results that you can get with regular CSS.
 
 ## Summary
 
-This has been a quick run-through of the most common types of values and units you might encounter. You can have a look at all of the different types on the [CSS Values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) reference page — you will encounter many of these in use as you work through these lessons.
+This has been a quick run-through of the most common types of values and units you might encounter. You can have a look at all of the different types on the [CSS Values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units){:target="_blank"} reference page — you will encounter many of these in use as you work through these lessons.
 
-The key thing to remember is that each property has a defined list of allowed value types, and each value type has a definition explaining what the values are. You can then look up the specifics here on MDN. For example, understanding that [`<image>`](https://developer.mozilla.org/en-US/docs/Web/CSS/image) also allows you to create a color gradient is useful but perhaps non-obvious knowledge to have!
+The key thing to remember is that each property has a defined list of allowed value types, and each value type has a definition explaining what the values are. You can then look up the specifics here on MDN. For example, understanding that [`<image>`](https://developer.mozilla.org/en-US/docs/Web/CSS/image){:target="_blank"} also allows you to create a color gradient is useful but perhaps non-obvious knowledge to have!
 
 ### Sources and Attributions
 
 **Content is based on the following sources:**
 
 - **MDN**
-  - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_and_units/index.md)
+  - [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/6dc60c265c35440871208490fa8924e4696f5610/files/en-us/learn/css/building_blocks/values_and_units/index.md){:target="_blank"}

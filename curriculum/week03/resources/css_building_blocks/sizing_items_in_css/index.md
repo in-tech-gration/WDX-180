@@ -40,7 +40,7 @@ If you place an image on a page and do not change its height or width, either by
 </a>
 </p>
 
-An empty [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div), on the other hand, has no size of its own. If you add a [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) to your HTML with no content, then give it a border as we did with the image, you will see a line on the page. This is the collapsed border on the element — there is no content to hold it open. In our example below, that border stretches to the width of the container, because it is a block level element, a behavior that should be starting to become familiar to you. It has no height (or size in the block dimension) because there is no content.
+An empty [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"}, on the other hand, has no size of its own. If you add a [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"} to your HTML with no content, then give it a border as we did with the image, you will see a line on the page. This is the collapsed border on the element — there is no content to hold it open. In our example below, that border stretches to the width of the container, because it is a block level element, a behavior that should be starting to become familiar to you. It has no height (or size in the block dimension) because there is no content.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -58,7 +58,7 @@ In the example above, try adding some text inside the empty element. The border 
 
 ## Setting a specific size
 
-We can, of course, give elements in our design a specific size. When a size is given to an element (the content of which then needs to fit into that size) we refer to it as an **extrinsic size**. Take our `<div>` from the example above — we can give it specific [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height) values, and it will now have that size no matter what content is placed into it. As we discovered in [our lesson on overflow](../overflowing_content/index.md), a set height can cause content to overflow if there is more content than the element has space to fit inside it.
+We can, of course, give elements in our design a specific size. When a size is given to an element (the content of which then needs to fit into that size) we refer to it as an **extrinsic size**. Take our `<div>` from the example above — we can give it specific [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width){:target="_blank"} and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height){:target="_blank"} values, and it will now have that size no matter what content is placed into it. As we discovered in [our lesson on overflow](../overflowing_content/index.md), a set height can cause content to overflow if there is more content than the element has space to fit inside it.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -94,7 +94,7 @@ This is because percentages resolve against the size of the containing block. Wi
 
 ### Percentage margins and padding
 
-If you set `margins` and `padding` as a percentage, you may notice some strange behavior. In the below example we have a box. We have given the inner box a [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) of 10% and a [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) of 10%. The padding and margin on the top and bottom of the box are the same size as the padding and margin on the left and right.
+If you set `margins` and `padding` as a percentage, you may notice some strange behavior. In the below example we have a box. We have given the inner box a [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"} of 10% and a [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding){:target="_blank"} of 10%. The padding and margin on the top and bottom of the box are the same size as the padding and margin on the left and right.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -114,7 +114,7 @@ When you use margin and padding set in percentages, the value is calculated from
 
 ## min- and max- sizes
 
-In addition to giving things a fixed size, we can ask CSS to give an element a minimum or a maximum size. If you have a box that might contain a variable amount of content, and you always want it to be _at least_ a certain height, you could set the [`min-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height) property on it. The box will always be at least this height, but will then grow taller if there is more content than the box has space for at its minimum height.
+In addition to giving things a fixed size, we can ask CSS to give an element a minimum or a maximum size. If you have a box that might contain a variable amount of content, and you always want it to be _at least_ a certain height, you could set the [`min-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height){:target="_blank"} property on it. The box will always be at least this height, but will then grow taller if there is more content than the box has space for at its minimum height.
 
 In the example below you can see two boxes, both with a defined `min-height` of 150 pixels. The box on the left is 150 pixels tall; the box on the right has content that needs more room, and so it has grown taller than 150 pixels.
 
@@ -132,7 +132,7 @@ In the example below you can see two boxes, both with a defined `min-height` of 
 
 This is very useful for dealing with variable amounts of content while avoiding overflow.
 
-A common use of [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) is to cause images to scale down if there is not enough space to display them at their intrinsic width while making sure they don't become larger than that width.
+A common use of [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width){:target="_blank"} is to cause images to scale down if there is not enough space to display them at their intrinsic width while making sure they don't become larger than that width.
 
 As an example, if you were to set `width: 100%` on an image, and its intrinsic width was smaller than its container, the image would be forced to stretch and become larger, causing it to look pixelated.
 
@@ -158,7 +158,7 @@ This technique is used to make images _responsive_, so that when viewed on a sma
 
 The viewport — which is the visible area of your page in the browser you are using to view a site — also has a size. In CSS we have units which relate to the size of the viewport — the `vw` unit for viewport width, and `vh` for viewport height. Using these units you can size something relative to the viewport of the user.
 
-`1vh` is equal to 1% of the viewport height, and `1vw` is equal to 1% of the viewport width. You can use these units to size boxes, but also text. In the example below we have a box which is sized as 20vh and 20vw. The box contains a letter `A`, which has been given a [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) of 10vh.
+`1vh` is equal to 1% of the viewport height, and `1vw` is equal to 1% of the viewport width. You can use these units to size boxes, but also text. In the example below we have a box which is sized as 20vh and 20vw. The box contains a letter `A`, which has been given a [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size){:target="_blank"} of 10vh.
 
 <iframe 
             class="EmbedGHLiveSample" 
@@ -172,7 +172,7 @@ The viewport — which is the visible area of your page in the browser you are u
 </a>
 </p>
 
-**If you change the `vh` and `vw` values this will change the size of the box or font; changing the viewport size will also change their sizes because they are sized relative to the viewport. To see the example change when you change the viewport size you will need to load the example in a new browser window that you can resize (as the embedded `<iframe>` that contains the example shown above is its viewport). [Open the example](https://in-tech-gration.github.io/css-examples/learn/sizing/vw-vh.html), resize the browser window, and observe what happens to the size of the box and text.**
+**If you change the `vh` and `vw` values this will change the size of the box or font; changing the viewport size will also change their sizes because they are sized relative to the viewport. To see the example change when you change the viewport size you will need to load the example in a new browser window that you can resize (as the embedded `<iframe>` that contains the example shown above is its viewport). [Open the example](https://in-tech-gration.github.io/css-examples/learn/sizing/vw-vh.html){:target="_blank"}, resize the browser window, and observe what happens to the size of the box and text.**
 
 Sizing things according to the viewport can be useful in your designs. For example, if you want a full-page hero section to show before the rest of your content, making that part of your page 100vh high will push the rest of the content below the viewport, meaning that it will only appear once the document is scrolled.
 
@@ -185,4 +185,4 @@ This lesson has given you a rundown of some key issues that you might run into w
 **Content is based on the following sources:**
 
 - **MDN:**
-  - [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_items_in_css/index.md)
+  - [Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_items_in_css/index.md){:target="_blank"}
