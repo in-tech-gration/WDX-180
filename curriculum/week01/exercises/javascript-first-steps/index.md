@@ -80,11 +80,11 @@
   **landscape-mode.js**:
 
   ```js
-  // YOUR CODE HERE >>
   function isLandscape(width, height){
-    return (width > height);
-  }
+  // YOUR CODE HERE >>
+
   // << YOUR CODE HERE
+  }
 
   // Don't worry about the code below. It's just there to test your code above.
 
@@ -159,15 +159,12 @@
   ```js
   // YOUR CODE HERE >>
   // << YOUR CODE HERE
-
-  // Don't worry about the code below. It's just there to test your code above.
-  // RUNNING & TESTING OUR isLandscape() FUNCTION:
   ```
 
   When you're ready, move the files in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:
 
   - `git add user/week01/exercises/day05/javascript-first-steps/`
-  - `git commit -m "simple_quiz"`
+  - `git commit -m "javascript-simple_quiz"`
   - `git push`
 
 ## 3) Schnick-Schnack-Schnuck: Create a simple Rock-Paper-Scissors Game
@@ -237,7 +234,7 @@
   When you're ready, move the files in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:
 
   - `git add user/week01/exercises/day05/javascript-first-steps/`
-  - `git commit -m "rock-paper-scissors"`
+  - `git commit -m "javascript-rock-paper-scissors"`
   - `git push`
 
 ----

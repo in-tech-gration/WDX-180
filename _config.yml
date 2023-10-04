@@ -7,8 +7,13 @@ plugins:
 # - jekyll-optional-front-matter
 
 # EXCLUDE FILES & FOLDERS FROM BUILD: 
-exclude: [resources/codecademy, app, components, public, tools]
-
+exclude: 
+  - resources/codecademy
+  - app
+  - components
+  - public
+  - tools
+  
 # CUSTOM _SASS FOLDER: https://github.com/jekyll/jekyll-sass-converter#configuration-options, https://jekyllrb.com/docs/configuration/sass/
 sass:
   sass_dir: assets/jekyll/_sass
