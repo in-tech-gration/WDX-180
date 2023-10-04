@@ -10,8 +10,17 @@ Complete the following steps in the `index.html` file:
 
 3. When you are finished, use git to add, commit and push your changes.
 
-```
-git add <ADD_APPROPRIATE_FOLDER_HERE>
+4. You'll have to copy the files existing in the folder and place them in the corresponding folder inside your `user/` folder.
+
+For example:
+
+- Copy all files in folder `2-html-attributes`
+- Paste them inside folder `user/week01/exercises/day03/2-html-attributes/`
+- Work on the copied files and complete the exercise.
+- Upload (push) to your repo.
+
+```bash
+git add user/week01/exercises/day03/2-html-attributes/
 git commit -m "Completed 2-html-attributes exercise"
 git push
 ```

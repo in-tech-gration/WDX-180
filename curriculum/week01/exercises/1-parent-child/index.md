@@ -6,8 +6,17 @@ There are two messages in this example. The time that the message was sent is di
 
 2. Use git to add, commit and push your changes.
 
-```
-git add <ADD_APPROPRIATE_FOLDER_HERE>
+3. You'll have to copy the files existing in the folder and place them in the corresponding folder inside your `user/` folder.
+
+For example:
+
+- Copy all files in folder `1-parent-child`
+- Paste them inside folder `user/week01/exercises/day03/1-parent-child/`
+- Work on the copied files and complete the exercise.
+- Upload (push) to your repo.
+
+```bash
+git add user/week01/exercises/day03/1-parent-child/
 git commit -m "Completed 1-parent-child exercise"
 git push
 ```

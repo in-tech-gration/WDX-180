@@ -15,7 +15,22 @@ Complete the following changes in the `index.html` file:
 
 4. Extra challenge: read [this article about the `<time>` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) and the `datetime=""` attribute. Use this to specify the time of each message.
 
-5. When you are finished, use git to add, commit and push your changes.
+5. You'll have to copy the files existing in the folder and place them in the corresponding folder inside your `user/` folder.
+
+6. When you are finished, use git to add, commit and push your changes.
+
+For example:
+
+- Copy all files in folder `3-semantic-html`
+- Paste them inside folder `user/week01/exercises/day03/3-semantic-html/`
+- Work on the copied files and complete the exercise.
+- Upload (push) to your repo.
+
+```bash
+git add user/week01/exercises/day03/3-semantic-html/
+git commit -m "Completed 1-parent-child exercise"
+git push
+```
 
 _Hint: To complete this exercise, you should modify the HTML tags without removing the attributes that are already there. For example, if you wanted to change `<div class="article></div>` to an `<article>` tag, you would use `<article class="article"></article>`. The `class` attribute should not be removed._
 
