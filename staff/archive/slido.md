@@ -8,6 +8,10 @@
 
   A: Our main tools are the browser (through which you'll be accessing the curriculum -https://in-tech-gration.github.io/WDX-180/- and study material), our code editor (VSCode) and a few other tools (Node, git, etc.)
 
+  Q: I think I was confused. I meant are you using something like Webex or Google for when lectures are live? Or do we not have live lectures. I forgot to ask earlier today.
+
+  A: We use Google Meet.
+
 ## Week 01 - Day 02
 
   Q: Why did we use git add . instead of git add user/week01/progress/progress.w01.d01.csv?
