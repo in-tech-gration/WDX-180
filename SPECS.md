@@ -2,6 +2,20 @@
 
   Website: https://in-tech-gration.github.io/WDX-180/
 
+  The following files and folders are part of the **Jekyll** static site generator used by GitHub Pages to build our main [website](https://in-tech-gration.github.io/WDX-180/):
+
+  ```
+  .
+  ├── curriculum
+  ├── README.md
+  ├── _config.yml
+  └── assets
+      ├── WDX.Header.Alternative.jpg
+      ├── WDX.Header.jpg
+      ├── css
+      └── jekyll
+  ```
+
 ### Jekyll | How to | Include CSS & JS in a markdown file
 
   **Q: How do I load a CSS file in a particular markdown file?**
