@@ -26,6 +26,17 @@
 
   **MOVED TO `/curriculum/FAQ/index.md`**
 
+  Q: Hello !How can i do to see on window10 pro open terminal ? but i can only Open Git Bash ?Thanks
+
+  A: Hello! Git Bash it just fine. Do you mean, how do you access Git Bash via VSCode?
+
+  Q: But i have visual studio code already in my machine
+
+  A: They wrote only 1.Open Git Bash.
+  Paste the text below, substituting in your GitHub email address.
+
+  ---
+
   Q: Sorry, I forgot to ask what platform we'll be using for class in case I need to download something?
 
   A: Our main tools are the browser (through which you'll be accessing the curriculum -https://in-tech-gration.github.io/WDX-180/- and study material), our code editor (VSCode) and a few other tools (Node, git, etc.)
@@ -33,6 +44,21 @@
   Q: I think I was confused. I meant are you using something like Webex or Google for when lectures are live? Or do we not have live lectures. I forgot to ask earlier today.
 
   A: We use Google Meet.
+
+  ---
+
+  Q: I'm doing the first exercise in the folder: exercise/1-parent-child and opened index.html, so here we have to make these changes and save or as usual to create copy and then commit and push?
+
+  A: You'll have to copy the files existing in the folder and place them in the corresponding folder inside your user folder.
+
+  For example:
+
+  - Copy all files in folder 1-parent-child.
+  - Paste them inside folder user/week01/exercises/day03/1-parent-child/ .
+  - Work on the copied files and complete the exercise.
+  - Upload to your repo.
+
+  Q: got it thnx)
 
 ## Week 01 - Day 02
 
