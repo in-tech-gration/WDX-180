@@ -70,6 +70,10 @@
   },
   ```
 
+### Jekyll | How to | Prevent build on GitHub Pages
+
+  Just include a `.nojekyll` file in the repo.
+
 ---
 
 ## About the `npm run learn` platform 

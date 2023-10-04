@@ -1,8 +1,0 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-
-/* Additional styles */
-@import 'additional-styles/utility-patterns.css';
-@import 'additional-styles/flatpickr.css';
-
-@import 'tailwindcss/utilities';
