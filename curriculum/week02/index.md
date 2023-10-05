@@ -25,7 +25,7 @@ _(Updated: 18/09/2023)_
   💡 **TIP OF THE DAY:** How to display hidden (system) files and folders?
 
   - **Windows (Powershell):** Run `ls -Force` to show hidden files and folders
-  - **Windows (Command Prompt):** Run `dir -h` to show hidden files and folders
+  - **Windows (Command Prompt):** Run `dir /a:h` to show hidden files and folders
   - **Mac:** Press `Cmd + Shift + .` to toggle system files/folders view on and off
   - **Linux/Unix:** Run `ls -a` to list all files and folders (including hidden ones) 
   - **VSCode:** How to show particular hidden folders: File > Preferences > Settings: type "exclude" > Hover over the `**/.git` and click X to delete
