@@ -1,4 +1,5 @@
-name: Tests for Week01 Day05
+# name: "Tests: for WeekXX DayXX"
+name: "Tests: for Week01 Day05"
 
 on: push
 
