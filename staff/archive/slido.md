@@ -22,9 +22,43 @@
 
 --- 
 
-## Week 01 - Day 01 (+Setup Week)
+## Week 01 (Day 01-05)
 
   **MOVED TO `/curriculum/FAQ/index.md`**
+
+  Q: I'm doing the css assignment and can't find the correct index.html file I need. Was this something you guys did in previous classes? I started late so I'm not sure what to do here.
+
+  A :Are you referring to the "Styling the world’s first website" exercise?
+
+  Q: CSS basics
+
+  A: Oh, I see. The index.html refers to a web page that you created during the previous days.
+
+  Q: ah, that would make more sense
+
+  ---
+
+  Q: Sorry, Kosta, one more question. I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
+
+  A: Try removing the - at the end: https://in-tech-gration.github.io/WDX-180/
+
+  Q: Cool. It works. Thanks a bunch! :slightly_smiling_face:
+
+  ---
+
+  Q: I have a question) we have to stylish only the page  "world's first Website"? And in the way as we want or how? 
+
+  A: You can style it as you like. There is no restriction in that. Use what you've learned today and make it look as pleasing as you see fit! 
+
+  ---
+
+  Q: Is there a video you recommend for better understanding VS Code? I'm struggling a bit.
+
+  A: You can definitely check out the official YT playlist: https://www.youtube.com/playlist?list=PLj6YeMhvp2S5UgiQnBfvD7XgOMKs3O_G6
+
+  A: And also share the "struggling" parts with us so we can help. 
+  
+  ---
 
   Q: Hello !How can i do to see on window10 pro open terminal ? but i can only Open Git Bash ?Thanks
 
@@ -60,7 +94,7 @@
 
   Q: got it thnx)
 
-## Week 01 - Day 02
+  ---
 
   Q: Why did we use git add . instead of git add user/week01/progress/progress.w01.d01.csv?
 
@@ -69,10 +103,3 @@
   ---
   
   Q: Could someone provide me an advice please?:) I don't receive notifications from the slack, I need from time to time to open the app in order to check if some information arrives. But obviously it's not convenient..
-
-## Week 01 - Day 03
-
-## Week 01 - Day 04
-
-## Week 01 - Day 05
-
