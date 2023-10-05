@@ -22,6 +22,25 @@ _(Updated: 18/09/2023)_
 
   ---
 
+  💡 **TIP OF THE DAY:** How to display hidden (system) files and folders?
+
+  - **Windows (Powershell):** Run `ls -Force` to show hidden files and folders
+  - **Windows (Command Prompt):** Run `dir -h` to show hidden files and folders
+  - **Mac:** Press `Cmd + Shift + .` to toggle system files/folders view on and off
+  - **Linux/Unix:** Run `ls -a` to list all files and folders (including hidden ones) 
+  - **VSCode:** How to show particular hidden folders: File > Preferences > Settings: type "exclude" > Hover over the `**/.git` and click X to delete
+  - **Windows 11 (File Explorer):**
+    - Open `File Explorer` from the taskbar
+    - Select `View > Show > Hidden items` 
+  - **Windows 10 (File Explorer):** 
+    - Open `File Explorer` from the taskbar 
+    - Select `View > Options > Change folder and search options`
+    - Select the `View` tab and, in `Advanced settings`, select `Show hidden files, folders, and drives` and OK.
+  - **References:**
+    - [View hidden files and folders in Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5)
+
+  ---
+
   - **Set up SSH keys for GitHub.** Complete the following 4 steps in order to be able to access GitHub without using a username and password.
 
   > [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh): "Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit."
