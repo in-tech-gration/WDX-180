@@ -35,15 +35,20 @@
   // Don't worry about the code below. It's just there to test your code above.
   const checkMax1 = findMaxNumber(10, 5);
   console.log('Max Number 1:',checkMax1);
-  console.assert( checkMax1 === 10, "Ops, was expecting 10, got ", checkMax1);
 
   const checkMax2 = findMaxNumber(10, 15);
   console.log('Max Number 2:',checkMax2);
-  console.assert( checkMax2 === 15, "Ops, was expecting 15, got ", checkMax2);
 
   const checkMax3 = findMaxNumber(100, 100);
   console.log('Max Number 3:',checkMax3);
+
+  console.assert( checkMax1 === 10, "Ops, was expecting 10, got ", checkMax1);
+  console.assert( checkMax2 === 15, "Ops, was expecting 15, got ", checkMax2);
   console.assert( checkMax3 === 100, "Ops, was expecting 100, got ", checkMax3);
+
+  try {
+    if ( global ){ global.findMaxNumber = findMaxNumber; }
+  } catch(e){}
   ```
 
   When you're ready, move the 2 files (`largest-number.html`, `largest-number.js`) in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:
@@ -93,16 +98,21 @@
   console.assert( typeof isLandscape === "function", "Expecting isLandscape to be a function" );
 
   const checkWidthHeight1 = isLandscape(800, 600);
-  console.log('Landscape:',checkWidthHeight1); 
-  console.assert( checkWidthHeight1 === true, "Ops! Was expecting true.")
+  console.log('Landscape:',checkWidthHeight1); // Should be true
 
   const checkWidthHeight2 = isLandscape(600, 800);
-  console.log('Landscape:',checkWidthHeight2); // Should be true
-  console.assert( checkWidthHeight2 === false, "Ops! Was expecting false.")
+  console.log('Landscape:',checkWidthHeight2); // Should be false
 
   const checkWidthHeight3 = isLandscape(1024, 768);
   console.log('Landscape:',checkWidthHeight3); // Should be true
+
+  console.assert( checkWidthHeight1 === true, "Ops! Was expecting true.")
+  console.assert( checkWidthHeight2 === false, "Ops! Was expecting false.")
   console.assert( checkWidthHeight3 === true, "Ops! Was expecting true.")
+
+  try {
+    if ( global ){ global.isLandscape = isLandscape; }
+  } catch(e){}
   ```
 
   When you're ready, move the files in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:

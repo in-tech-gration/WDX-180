@@ -303,9 +303,9 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/README.md)
+  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/index.md)
 
-  - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
+  - [Read: **HTML Basics**](resources/HTML_Basics/index.md)
     - <details>
         <summary>What you'll learn</summary>
         <ul>
@@ -423,7 +423,7 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
   
   You can use Chrome's `View Source` functionality _(right-click anywhere on the web page to see the option appear)_ to check the source code. As you can see, this is a pretty old HTML standard! 
   
-  **Your task is to rewrite the code** of this webpage in modern HTML (v5) and style it using CSS! Once everything is ready, make sure that your code lives under the `user/week01/day04/cern/` directory, commit and push to submit your solution to your forked repository.
+  **Your task is to rewrite the code** of this webpage in modern HTML (v5) and style it using CSS! Once everything is ready, make sure that your code lives under the `user/week01/exercises/day04/cern/` directory, commit and push to submit your solution to your forked repository.
 
   ---
 

@@ -22,6 +22,25 @@ _(Updated: 18/09/2023)_
 
   ---
 
+  💡 **TIP OF THE DAY:** How to display hidden (system) files and folders?
+
+  - **Windows (Powershell):** Run `ls -Force` to show hidden files and folders
+  - **Windows (Command Prompt):** Run `dir /a:h` to show hidden files and folders
+  - **Mac:** Press `Cmd + Shift + .` to toggle system files/folders view on and off
+  - **Linux/Unix:** Run `ls -a` to list all files and folders (including hidden ones) 
+  - **VSCode:** How to show particular hidden folders: File > Preferences > Settings: type "exclude" > Hover over the `**/.git` and click X to delete
+  - **Windows 11 (File Explorer):**
+    - Open `File Explorer` from the taskbar
+    - Select `View > Show > Hidden items` 
+  - **Windows 10 (File Explorer):** 
+    - Open `File Explorer` from the taskbar 
+    - Select `View > Options > Change folder and search options`
+    - Select the `View` tab and, in `Advanced settings`, select `Show hidden files, folders, and drives` and OK.
+  - **References:**
+    - [View hidden files and folders in Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5)
+
+  ---
+
   - **Set up SSH keys for GitHub.** Complete the following 4 steps in order to be able to access GitHub without using a username and password.
 
   > [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh): "Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit."
@@ -128,16 +147,16 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/README.md). 
+  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/index.md). 
   Now, it's time to dive deeper into HTML. 
 
-  - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/README.md)
+  - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/index.md)
     - Description: The `<head>` of an HTML document is the part that is not displayed in the web browser when the page is loaded. In this article, you'll learn all about the information it contains.
     - Exercises:
-      - [Active learning: Inspecting a simple example](./resources/the_head_metadata_in_html/README.md#active-learning-inspecting-a-simple-example)
-      - [Active learning: Experiment with character encoding](./resources/the_head_metadata_in_html/README.md#active-learning-experiment-with-character-encoding)
-      - [Active learning: The description's use in search engines](./resources/the_head_metadata_in_html/README.md#active-learning-the-descriptions-use-in-search-engines)
-      - [Active learning: applying CSS and JavaScript to a page](./resources/the_head_metadata_in_html/README.md#active-learning-applying-css-and-javascript-to-a-page)
+      - [Active learning: Inspecting a simple example](./resources/the_head_metadata_in_html/index.md#active-learning-inspecting-a-simple-example)
+      - [Active learning: Experiment with character encoding](./resources/the_head_metadata_in_html/index.md#active-learning-experiment-with-character-encoding)
+      - [Active learning: The description's use in search engines](./resources/the_head_metadata_in_html/index.md#active-learning-the-descriptions-use-in-search-engines)
+      - [Active learning: applying CSS and JavaScript to a page](./resources/the_head_metadata_in_html/index.md#active-learning-applying-css-and-javascript-to-a-page)
 
   - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/README.md)
     - Description: This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
