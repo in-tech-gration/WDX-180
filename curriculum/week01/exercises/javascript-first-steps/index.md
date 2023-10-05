@@ -102,13 +102,17 @@
 
   const checkWidthHeight2 = isLandscape(600, 800);
   console.log('Landscape:',checkWidthHeight2); // Should be false
+  
+  const checkWidthHeight3 = isLandscape(600, 600);
+  console.log('Landscape:',checkWidthHeight3); // Should be false
 
-  const checkWidthHeight3 = isLandscape(1024, 768);
-  console.log('Landscape:',checkWidthHeight3); // Should be true
+  const checkWidthHeight4 = isLandscape(1024, 768);
+  console.log('Landscape:',checkWidthHeight4); // Should be true
 
   console.assert( checkWidthHeight1 === true, "Ops! Was expecting true.")
   console.assert( checkWidthHeight2 === false, "Ops! Was expecting false.")
-  console.assert( checkWidthHeight3 === true, "Ops! Was expecting true.")
+  console.assert( checkWidthHeight3 === false, "Ops! Was expecting false.")
+  console.assert( checkWidthHeight4 === true, "Ops! Was expecting true.")
 
   try {
     if ( global ){ global.isLandscape = isLandscape; }
@@ -147,7 +151,7 @@
 
   Caution: be careful when dealing with user input. In this case we want to leverage the power of the String methods (e.g. trim, toLowerCase, etc.) and make sure to handle appropriately input that contains leading or trailing spaces and also accept an answer regardless the casing, e.g. "A", "a ", " B ", " b", are all valid answers.
 
-  Copy and paste the code below in a file named `simple_quiz.html`, and try to update the JS part:
+  Copy and paste the code below in a file named `simple-quiz.html`, and try to update the JS part:
 
   ```html
   <!DOCTYPE html>
@@ -164,7 +168,7 @@
   </html>
   ```
 
-  **simple_quiz.js**:
+  **simple-quiz.js**:
 
   ```js
   // YOUR CODE HERE >>
@@ -174,10 +178,10 @@
   When you're ready, move the files in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:
 
   - `git add user/week01/exercises/day05/javascript-first-steps/`
-  - `git commit -m "javascript-simple_quiz"`
+  - `git commit -m "javascript-simple-quiz"`
   - `git push`
 
-## 3) Schnick-Schnack-Schnuck: Create a simple Rock-Paper-Scissors Game
+## 4) Schnick-Schnack-Schnuck: Create a simple Rock-Paper-Scissors Game
 
   For this exercise, we want you to recreate a simple game of [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors).
 
@@ -216,8 +220,8 @@
 
   }
 
-  // Given a move, e.g. rock, paper, scissors, returns the result which must be strictly one of the following: "won", "lost", "draw"
-  function checkMove( move ){
+  // Given a move, (e.g. rock, paper, scissors) and a random computer move. Returns the result which must be strictly one of the following: "won", "lost", "draw"
+  function checkMove( move, computerMove ){
 
   }
 
@@ -239,6 +243,36 @@
   if ( !drawn.has("rock") || !drawn.has("paper") || !drawn.has("scissors") ){
     throw new Error("Ops! Did not find all three moves in the results!");
   }
+
+  const gameResult1 = checkMove("rock", "rock");
+  console.log("Game Result 1: ", gameResult1); // Should be draw
+
+  const gameResult2 = checkMove("rock", "paper");
+  console.log("Game Result 2: ", gameResult2); // Should be lost
+
+  const gameResult3 = checkMove("rock", "scissors");
+  console.log("Game Result 3: ", gameResult3); // Should be won
+  
+  const gameResult4 = checkMove("paper", "paper");
+  console.log("Game Result 4: ", gameResult4); // Should be draw
+
+  const gameResult5 = checkMove("paper", "scissors");
+  console.log("Game Result 5: ", gameResult5); // Should be lost
+
+  const gameResult6 = checkMove("paper", "rock");
+  console.log("Game Result 6: ", gameResult6); // Should be won
+
+  const gameResult7 = checkMove("scissors", "scissors");
+  console.log("Game Result 7: ", gameResult7); // Should be draw
+
+  const gameResult8 = checkMove("scissors", "rock");
+  console.log("Game Result 8: ", gameResult8); // Should be lost
+
+  const gameResult9 = checkMove("scissors", "paper");
+  console.log("Game Result 9: ", gameResult9); // Should be won
+
+  const gameResult10 = checkMove("pencil", "rock");
+  console.log("Game Result 10: ", gameResult10); // Should be invalid move
   ```
 
   When you're ready, move the files in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:
