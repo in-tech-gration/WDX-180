@@ -20,7 +20,7 @@ The [head](https://developer.mozilla.org/en-US/docs/Glossary/Head) of an HTML do
 
 ## What is the HTML head?
 
-Let's revisit the simple HTML document we covered [previously](../../../week01/resources/HTML_Basics/README.md):
+Let's revisit the simple HTML document we covered [previously](../../../week01/resources/HTML_Basics/index.md):
 
 ```html
 <!doctype html>

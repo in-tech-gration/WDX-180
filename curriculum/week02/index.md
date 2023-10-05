@@ -128,16 +128,16 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/README.md). 
+  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/index.md). 
   Now, it's time to dive deeper into HTML. 
 
-  - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/README.md)
+  - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/index.md)
     - Description: The `<head>` of an HTML document is the part that is not displayed in the web browser when the page is loaded. In this article, you'll learn all about the information it contains.
     - Exercises:
-      - [Active learning: Inspecting a simple example](./resources/the_head_metadata_in_html/README.md#active-learning-inspecting-a-simple-example)
-      - [Active learning: Experiment with character encoding](./resources/the_head_metadata_in_html/README.md#active-learning-experiment-with-character-encoding)
-      - [Active learning: The description's use in search engines](./resources/the_head_metadata_in_html/README.md#active-learning-the-descriptions-use-in-search-engines)
-      - [Active learning: applying CSS and JavaScript to a page](./resources/the_head_metadata_in_html/README.md#active-learning-applying-css-and-javascript-to-a-page)
+      - [Active learning: Inspecting a simple example](./resources/the_head_metadata_in_html/index.md#active-learning-inspecting-a-simple-example)
+      - [Active learning: Experiment with character encoding](./resources/the_head_metadata_in_html/index.md#active-learning-experiment-with-character-encoding)
+      - [Active learning: The description's use in search engines](./resources/the_head_metadata_in_html/index.md#active-learning-the-descriptions-use-in-search-engines)
+      - [Active learning: applying CSS and JavaScript to a page](./resources/the_head_metadata_in_html/index.md#active-learning-applying-css-and-javascript-to-a-page)
 
   - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/README.md)
     - Description: This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.

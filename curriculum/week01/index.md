@@ -303,9 +303,9 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
 
   - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/README.md)
+  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/index.md)
 
-  - [Read: **HTML Basics**](resources/HTML_Basics/README.md)
+  - [Read: **HTML Basics**](resources/HTML_Basics/index.md)
     - <details>
         <summary>What you'll learn</summary>
         <ul>
