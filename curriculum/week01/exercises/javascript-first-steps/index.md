@@ -101,7 +101,7 @@
   console.log('Landscape:',checkWidthHeight1); 
 
   const checkWidthHeight2 = isLandscape(600, 800);
-  console.log('Landscape:',checkWidthHeight2); // Should be true
+  console.log('Landscape:',checkWidthHeight2); // Should be false
 
   const checkWidthHeight3 = isLandscape(1024, 768);
   console.log('Landscape:',checkWidthHeight3); // Should be true
