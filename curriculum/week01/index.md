@@ -451,7 +451,7 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
   - How to install the **Live Server** VSCode extension and develop using a local web server
 
-  - [Read: **What is JavaScript?**](resources/What%20is%20JavaScript/README.md)
+  - [Read: **What is JavaScript?**](resources/What_is_JavaScript/index.md)
 
   - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE){:target="_blank"}
     - Duration: 8min
