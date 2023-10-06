@@ -2,6 +2,8 @@ const test = require('node:test');
 const assert = require('assert')
 
 const solutionPath = "user/week01/exercises/day05/javascript-first-steps/simple-quiz"
+global.prompt = () => {};
+global.alert = () => {};
 
 try {
 
