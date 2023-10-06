@@ -4,13 +4,13 @@ name: "Tests: for Week01 Day05"
 on: push
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-
+  test1:
     # Trigger word 'javascript-largest-number'
     if: contains(github.event.head_commit.message, 'javascript-largest-number')
     # CHANGE [[TRIGGER-COMMIT-KEYWORD]]
     # if: contains(github.event.head_commit.message, '[[TRIGGER-COMMIT-KEYWORD]]')
+    
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -21,7 +21,64 @@ jobs:
           node-version: 18.x
       - name: Install dependencies
         run: npm ci
-      - name: Run tests
+      - name: Run Largest Number Test
         run: node curriculum/week01/exercises/javascript-first-steps/tests/largest-number.test.js
         # CHANGE PATH:
         # run: node curriculum/weekXX/exercises/[[EXERCISE-SLUG]]/tests/[[EXERCISE]].test.js
+  test2:
+    # Trigger word 'javascript-landscape-mode'
+    if: contains(github.event.head_commit.message, 'javascript-landscape-mode')
+    # CHANGE [[TRIGGER-COMMIT-KEYWORD]]
+    # if: contains(github.event.head_commit.message, '[[TRIGGER-COMMIT-KEYWORD]]')
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Landscape Mode Test
+        run: node curriculum/week01/exercises/javascript-first-steps/tests/landscape-mode.test.js
+  test3:
+    # Trigger word 'javascript-simple-quiz'
+    if: contains(github.event.head_commit.message, 'javascript-simple-quiz')
+    # CHANGE [[TRIGGER-COMMIT-KEYWORD]]
+    # if: contains(github.event.head_commit.message, '[[TRIGGER-COMMIT-KEYWORD]]')
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Simple Quiz Test
+        run: node curriculum/week01/exercises/javascript-first-steps/tests/simple-quiz.test.js
+  test4:
+    # Trigger word 'javascript-rock-paper-scissors'
+    if: contains(github.event.head_commit.message, 'javascript-rock-paper-scissors')
+    # CHANGE [[TRIGGER-COMMIT-KEYWORD]]
+    # if: contains(github.event.head_commit.message, '[[TRIGGER-COMMIT-KEYWORD]]')
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Rock Paper Scissors Test
+        run: node curriculum/week01/exercises/javascript-first-steps/tests/rock-paper-scissors.test.js
