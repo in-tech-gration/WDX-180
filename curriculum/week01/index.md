@@ -109,7 +109,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/README.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/index.md)
 
 ### Summary
 
@@ -195,7 +195,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](resources/How_the_Internet_works/README.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](resources/How_the_Internet_works/index.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
@@ -406,7 +406,7 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   - Introduction to CSS
   - Publishing your website
 
-  - [Read: **CSS Basics**](resources/CSS_Basics/README.md)
+  - [Read: **CSS Basics**](resources/CSS_Basics/index.md)
   - [Read: **Publishing your website**](resources/Publishing_your_website/README.md)
 
 ### Summary
