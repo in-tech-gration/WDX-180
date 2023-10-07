@@ -1,0 +1,56 @@
+[
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In CSS, which of these values CANNOT be used with the &quot;position&quot; property?",
+    "correct_answer": "center",
+    "incorrect_answers": ["static", "absolute", "relative"],
+    "options": ["static", "relative", "center", "absolute"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How long is an IPv6 address?",
+    "correct_answer": "128 bits",
+    "incorrect_answers": ["32 bits", "64 bits", "128 bytes"],
+    "options": ["128 bits", "64 bits", "128 bytes", "32 bits"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the server hosting industry IaaS stands for...",
+    "correct_answer": "Infrastructure as a Service",
+    "incorrect_answers": [
+      "Internet as a Service",
+      "Internet and a Server",
+      "Infrastructure as a Server"
+    ],
+    "options": [
+      "Infrastructure as a Service",
+      "Internet and a Server",
+      "Internet as a Service",
+      "Infrastructure as a Server"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "How many bits make up the significand portion of a single precision floating point number?",
+    "correct_answer": "23",
+    "incorrect_answers": ["8", "53", "15"],
+    "options": ["53", "15", "8", "23"]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In programming, what do you call functions with the same name but different implementations?",
+    "correct_answer": "Overloading",
+    "incorrect_answers": ["Overriding", "Abstracting", "Inheriting"],
+    "options": ["Overriding", "Inheriting", "Abstracting", "Overloading"]
+  }
+]
