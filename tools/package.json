@@ -24,6 +24,7 @@
     "markdown-it-anchor": "^8.6.7",
     "marked": "^9.0.3",
     "octokit": "^3.1.1",
+    "open": "^9.1.0",
     "papaparse": "^5.4.1",
     "showdown": "^2.1.0",
     "yaml": "^2.3.2"
