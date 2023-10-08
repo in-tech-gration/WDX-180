@@ -76,6 +76,28 @@
 
 ---
 
+## About the Instructor's Cockpit Tool
+
+  This is a tool that helps instructors and mentors track their students' progress.
+
+  To launch the tool: 
+  
+  - `npm install`
+  - `npm run cockpit`
+
+  **Tech Specs:**
+
+  - Express.js (backend)
+  - JavaScript (frontend)
+
+  **Configuration:**
+
+  You first need to create one or more `yaml` files inside the `teaching/cohorts/` folder which must contain a list of students. For a sample `yaml` file check `/teaching/cohort.yaml.sample`.
+
+  **IMPORTANT:** You should keep the `/teaching/cohorts/` folder in `.gitignore` and **never** push it on GitHub.
+
+---
+
 ## About the `npm run learn` platform 
 
   This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
