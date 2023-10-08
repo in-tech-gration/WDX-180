@@ -3,7 +3,6 @@ const defaultStudentSelection = {
   trimester: "beginner",
   day: "01"
 }
-
 const getWeeklyGitHubProgressURLs = ( 
   studentId, 
   week, 
@@ -37,9 +36,9 @@ const COMPLETED_COL = 6;
 /**
  * Source: https://people.apache.org/~angeloh/
  */
-function renderSpreadsheetDataOnTable(data, tableSelector, headers) {
+function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay) {
 
-  console.log("renderSpreadsheetDataOnTable()",{ data, headers });
+  console.log("renderSpreadsheetDataOnTable()",{ data, headers, selectedDay });
 
   const table             = document.querySelector(tableSelector);
   const { parentElement } = table;
@@ -63,12 +62,26 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers) {
     }
   }
 
-  data.forEach( weeklyData =>{
+  data.forEach(( weeklyData, idx ) =>{
 
     try {
 
       let row = table.insertRow(-1);
       const newCell = row.insertCell(-1);
+
+      const is404 = weeklyData === "404";
+
+      if ( is404 || weeklyData.length === 0 ){
+
+        const prepend = selectedDay === "all" ? "Weekly" : "";
+        const weekday = selectedDay === "all" ? `(day ${idx})` : "";
+
+        newCell.innerHTML = prepend + ( is404 ? `Entry ${weekday} resulted in 404` : `Entry ${weekday} is empty. Check for malformed CSV.` );
+        newCell.setAttribute("colspan", headers.length);
+        newCell.setAttribute("class", "error-dark");
+        return; 
+
+      }
   
       const week = weeklyData[0][0].toString().padStart(2, "0");
       const day = weeklyData[0][1].toString().padStart(2, "0");
@@ -203,13 +216,15 @@ function aggregateCSVData({ weeklyCSVs, withHeaders = true }){
 
     if ( value === "404: Not Found" ){
 
-      console.log("404");
+      console.log( "404" );
+      csvData.push( "404" );
 
     } else {
 
-      const isNotEmpty = typeof value === "string" && ( value.trim().length !== 0 );
+      const isNotString = ( typeof value !== "string" );
+      const isEmpty     = isNotString || value.trim().length === 0;
 
-      if ( headers.length === 0 && isNotEmpty ){
+      if ( headers.length === 0 && !isEmpty ){
 
         const csvRowData = CSV.parse(value, { ...options, skipInitialRows: 0 });
         headers = csvRowData[0];
@@ -251,7 +266,8 @@ async function handleWeekSelection( studentId ){
     renderSpreadsheetDataOnTable( 
       csvData, 
       `.student-progress-sheets[data-student="${studentId}"] table`, 
-      headers 
+      headers,
+      day
     );
 
   } catch (e) {

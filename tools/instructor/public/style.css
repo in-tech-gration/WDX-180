@@ -45,7 +45,12 @@ td.cell-with-link {
 .error {
   color: tomato;
 }
-
+.error-dark {
+  padding: 0.5rem 2rem !important;
+  text-align: center;
+  background: darkred !important;
+  color: white;
+}
 .font-bold {
   font-weight: bold;
 }
