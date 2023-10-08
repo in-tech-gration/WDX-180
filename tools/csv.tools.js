@@ -22,24 +22,41 @@ function validateCSVSchema(filePath) {
   try {
     
     if ( fs.lstatSync(filePath).isDirectory() ){
-      const dir = fs.readdirSync(filePath);
+
+      const dir    = fs.readdirSync(filePath);
+      const drafts = [];
+
       const filteredFiles = dir.filter( file =>{
         const isDraft = file.startsWith("progress.draft.w") && file.endsWith(".csv");
+        if ( isDraft ){
+          drafts.push( file );
+        }
         return !isDraft;
       });
+
+      info("DRAFTS CHECK: ");
+
+      if ( drafts.length < 5 ){
+        warn(`Folder: ${filePath} seems to be missing some progress.draft CSV files. `);
+      } else {
+        ok("Drafts look good!\n");
+      }
   
       const invalidFiles = filteredFiles.filter( file =>{
         const isValid = file.startsWith("progress.w") && file.endsWith(".csv");
         return !isValid;
       });
   
-      invalidFiles.forEach( file =>{
-        warn( "Error: the following file is not named correctly: ");
-        info( file );
-      });
-  
+
+      info("STUDENT PROGRESS SHEETS CHECK: ");
+
       if ( invalidFiles.length === 0 ){
         ok("All good!");
+      } else {
+        invalidFiles.forEach( file =>{
+          warn( "Error: the following file is not named correctly: ");
+          info( file );
+        });
       }
   
       return;
