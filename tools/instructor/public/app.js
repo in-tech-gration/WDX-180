@@ -65,68 +65,74 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers) {
 
   data.forEach( weeklyData =>{
 
-    let row = table.insertRow(-1);
-    const newCell = row.insertCell(-1);
+    try {
 
-    const week = weeklyData[0][0].toString().padStart(2, "0");
-    const day = weeklyData[0][1].toString().padStart(2, "0");
-
-    const fileName = `progress.w${week}.d${day}.csv`
-    const URL = `https://raw.githubusercontent.com/${studentId}/WDX-180/main/user/week${week}/progress/progress.w${week}.d${day}.csv`
-    const URL_Pages = `https://github.com/${studentId}/WDX-180/blob/main/user/week${week}/progress/progress.w${week}.d${day}.csv`
-
-    newCell.innerHTML = `
-      <a href="${URL}" target="_blank">
-        ${fileName}
-      </a>
-      /
-      <a href="${URL_Pages}" target="_blank">
-        ${fileName} (open in Pages)
-      </a>
-    `;
-    newCell.setAttribute("colspan", headers.length);
-    newCell.setAttribute("class", "cell-with-link");
-
-    // Fill-in CSV:
-    for (let rowIndex = 0; rowIndex < weeklyData.length; rowIndex++) {
-  
       let row = table.insertRow(-1);
+      const newCell = row.insertCell(-1);
   
-      for (let colIndex = 0; colIndex < headers.length; colIndex++) {
+      const week = weeklyData[0][0].toString().padStart(2, "0");
+      const day = weeklyData[0][1].toString().padStart(2, "0");
   
-        if ( colIndex === 0 || colIndex === 1 ){
+      const fileName = `progress.w${week}.d${day}.csv`
+      const URL = `https://raw.githubusercontent.com/${studentId}/WDX-180/main/user/week${week}/progress/progress.w${week}.d${day}.csv`
+      const URL_Pages = `https://github.com/${studentId}/WDX-180/blob/main/user/week${week}/progress/progress.w${week}.d${day}.csv`
   
-          const newCell = row.insertCell(-1);
-          newCell.innerHTML = weeklyData[rowIndex][colIndex];
-          newCell.setAttribute("class", "text-center");
+      newCell.innerHTML = `
+        <a href="${URL}" target="_blank">
+          ${fileName}
+        </a>
+        /
+        <a href="${URL_Pages}" target="_blank">
+          ${fileName} (open in Pages)
+        </a>
+      `;
+      newCell.setAttribute("colspan", headers.length);
+      newCell.setAttribute("class", "cell-with-link");
   
-        } else {
-  
-          const newCell = row.insertCell(-1);
-          const cellData = weeklyData[rowIndex][colIndex];
-          newCell.innerHTML = cellData;
-  
-          if ( colIndex > 3 && colIndex < 7  ){
-            newCell.classList.add("text-center");
-          }
-          
-          if ( colIndex === COMPLETED_COL ){
-  
-            newCell.classList.add("completed-col");
-  
-            if ( cellData === "TRUE" ){
-              newCell.classList.add("completed");
+      // Fill-in CSV:
+      for (let rowIndex = 0; rowIndex < weeklyData.length; rowIndex++) {
+    
+        let row = table.insertRow(-1);
+    
+        for (let colIndex = 0; colIndex < headers.length; colIndex++) {
+    
+          if ( colIndex === 0 || colIndex === 1 ){
+    
+            const newCell = row.insertCell(-1);
+            newCell.innerHTML = weeklyData[rowIndex][colIndex];
+            newCell.setAttribute("class", "text-center");
+    
+          } else {
+    
+            const newCell = row.insertCell(-1);
+            const cellData = weeklyData[rowIndex][colIndex];
+            newCell.innerHTML = cellData;
+    
+            if ( colIndex > 3 && colIndex < 7  ){
+              newCell.classList.add("text-center");
             }
-        
+            
+            if ( colIndex === COMPLETED_COL ){
+    
+              newCell.classList.add("completed-col");
+    
+              if ( cellData === "TRUE" ){
+                newCell.classList.add("completed");
+              }
+          
+            }
+    
+            // const cellId = `${studentId}-${rowIndex}-${colIndex}`;
+            // row.insertCell(-1).innerHTML = `<input id="${cellId}" value="${weeklyData[rowIndex][colIndex]}" />`;
+    
           }
-  
-          // const cellId = `${studentId}-${rowIndex}-${colIndex}`;
-          // row.insertCell(-1).innerHTML = `<input id="${cellId}" value="${weeklyData[rowIndex][colIndex]}" />`;
-  
+    
         }
-  
+    
       }
-  
+      
+    } catch (error) {
+      console.log(`Error parsing weekly data.`, error, weeklyData );      
     }
 
   });
@@ -188,14 +194,22 @@ function aggregateCSVData({ weeklyCSVs, withHeaders = true }){
   const options = { skipInitialRows: 1 }
 
   weeklyCSVs.forEach(({ status, value }, index) =>{
+
     if ( status !== "fulfilled" ){
+
       return false;
+
     }
+
     if ( value === "404: Not Found" ){
+
       console.log("404");
+
     } else {
 
-      if ( headers.length === 0 ){
+      const isNotEmpty = typeof value === "string" && ( value.trim().length !== 0 );
+
+      if ( headers.length === 0 && isNotEmpty ){
 
         const csvRowData = CSV.parse(value, { ...options, skipInitialRows: 0 });
         headers = csvRowData[0];
