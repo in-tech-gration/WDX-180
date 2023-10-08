@@ -19,6 +19,37 @@ const { parse } = require("csv/sync");
 
 function validateCSVSchema(filePath) {
 
+  try {
+    
+    if ( fs.lstatSync(filePath).isDirectory() ){
+      const dir = fs.readdirSync(filePath);
+      const filteredFiles = dir.filter( file =>{
+        const isDraft = file.startsWith("progress.draft.w") && file.endsWith(".csv");
+        return !isDraft;
+      });
+  
+      const invalidFiles = filteredFiles.filter( file =>{
+        const isValid = file.startsWith("progress.w") && file.endsWith(".csv");
+        return !isValid;
+      });
+  
+      invalidFiles.forEach( file =>{
+        warn( "Error: the following file is not named correctly: ");
+        info( file );
+      });
+  
+      if ( invalidFiles.length === 0 ){
+        ok("All good!");
+      }
+  
+      return;
+    }
+
+  } catch (error) {
+
+    return warn(error);
+    
+  }
   
   try {
     console.log(`Processing ${filePath}`);

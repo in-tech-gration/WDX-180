@@ -2,17 +2,20 @@
 <html  lang="en">
   <head>
     <title>{{ title }}</title>
-    {# https://cdn.simplecss.org/simple.min.css #}
     <link rel="stylesheet" href="chota.custom.css">
+
+    {# Source: https://cdn.simplecss.org/simple.min.css #}
     <link rel="stylesheet" href="simple.min.css">
+
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     {% block  content %}
     {% endblock %}
 
-    {# https://github.com/okfn/csv.js/ #}
+    {# Source: https://github.com/okfn/csv.js/ #}
     <script src="csv.min.js"></script>
+
     <script src="app.js"></script>
   </body>
 </html>

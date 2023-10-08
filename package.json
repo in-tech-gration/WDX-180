@@ -10,6 +10,7 @@
     "yari:download": "node tools/yari.download.js",
     "yari:parse": "node tools/yari.parser.js",
     "validate": "node tools/validator.js",
+    "csv-validate": "node tools/csv.tools.js -s",
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
