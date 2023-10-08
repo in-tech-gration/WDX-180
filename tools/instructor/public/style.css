@@ -1,0 +1,16 @@
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+.student-data {
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 0;
+}
+
+ul.student-list li {
+  margin: 1rem;
+}
+.student-progress-sheets table {
+  transform: translateX(-30%);
+}
