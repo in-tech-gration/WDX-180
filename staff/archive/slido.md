@@ -26,6 +26,10 @@
 
   **MOVED TO `/curriculum/FAQ/index.md`**
 
+  Q: Is the fork repository supposed to be private or public? (Because l choose private)
+
+  A: The forked repository of WDX-180 should always be public.
+
   Q: I'm doing the css assignment and can't find the correct index.html file I need. Was this something you guys did in previous classes? I started late so I'm not sure what to do here.
 
   A :Are you referring to the "Styling the world’s first website" exercise?
