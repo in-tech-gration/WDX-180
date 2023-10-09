@@ -18,6 +18,7 @@ _(Updated: 18/09/2023)_
 
   - Basic Git concepts
   - Basic Git commands
+  - Connecting to GitHub securely using SSH keys
   - Create a GitHub repository
 
   ---
@@ -41,9 +42,19 @@ _(Updated: 18/09/2023)_
 
   ---
 
-  - **Set up SSH keys for GitHub.** Complete the following 4 steps in order to be able to access GitHub without using a username and password.
+  On the Internet, it's pretty easy for someone to intercept the data going from one place to another.
 
-  > [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh): "Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit."
+  ![](./assets/Comm.Insecure.png)
+
+  That's why it's crucial to always use some form of encryption and decryption, in order for your data to be securely transported through the Internet. 
+
+  ![](./assets/Comm.Secure.png)
+
+  The same goes, of course, for the data that you exchange with **GitHub**. In order to open up a secure connection with **GitHub** and be able to download (`git pull`) or upload (`git push`) data, we can use the **SSH** protocol along with a pair of keys to lock and unlock data going back and forth.
+
+  > [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh): "SSH, which stands for Secure Shell, is a protocol used to open up a secure communication channel between computers. Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit."
+
+  - **Set up SSH keys for GitHub.** Complete the following 4 steps in order to be able to access GitHub without using a username and password.
 
   1. [**Set up SSH keys for GitHub**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
@@ -135,6 +146,11 @@ _(Updated: 18/09/2023)_
 ### [Extra Resources](EXTRAS.md)
 
 ### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - [Git SSH keys simplified and how to setup on GitHub](https://inspirezone.tech/git-ssh-keys-simplified/)
+
 </details>
 
 <!-- Week 2 - Day 2 | HTML -->
@@ -158,10 +174,10 @@ _(Updated: 18/09/2023)_
       - [Active learning: The description's use in search engines](./resources/the_head_metadata_in_html/index.md#active-learning-the-descriptions-use-in-search-engines)
       - [Active learning: applying CSS and JavaScript to a page](./resources/the_head_metadata_in_html/index.md#active-learning-applying-css-and-javascript-to-a-page)
 
-  - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/README.md)
+  - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/index.md)
     - Description: This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
-    - Exercises:
-      - 
+    - Exercises: 
+      - Make sure to complete the 3 Tasks found under the 'Test your skills!' section of the tutorial.
 
   - [Read: **Creating hyperlinks**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
     - Description: You already know [**how the hyperlink changed everything**](https://www.youtube.com/watch?v=3Va3oY8pfSI). Now it's time to dive into the more technical aspects of it.
