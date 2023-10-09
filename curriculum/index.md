@@ -68,6 +68,7 @@
   - [**Week 34**: Blockchain](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 35**: Solo Project](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 36**: Solo Project](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**The Road Ahead**](#) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
 

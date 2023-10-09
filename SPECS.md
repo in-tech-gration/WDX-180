@@ -82,7 +82,7 @@
 
   To launch the tool: 
   
-  - `npm install`
+  - `npm install` inside the `tools/instructor` folder.
   - `npm run cockpit`
 
   **Tech Specs:**
