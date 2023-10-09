@@ -74,3 +74,74 @@
 
   10. You can regularly validate the `README.md` file using the `tools/validator.js` script.
 
+## Creating Automated tests for JavaScript exercises
+
+  1. Create a folder named `tests` inside each exercise's folder (e.g. `/curriculum/weekXX/exercises/<EXERCISE-NAME>/tests/`)
+  2. Create a Javascript test file `<FILE-NAME>.test.js` using the sample below
+  ```js
+    const test = require('node:test');
+    const assert = require('assert')
+
+    // Student is a expected to create a file in the path below as stated in the exercises instructions
+    const solutionPath = "user/weekXX/exercises/dayXX/<EXERCISE-NAME>/<FILE-NAME>"
+
+    try {
+
+      require("../../../../../" + solutionPath);
+
+    } catch(e){
+
+      // Print out the actual error
+      console.log(e);
+      // Possibly the most common Error if a test fails to start.
+      // Maybe add more extensive error handling
+      throw new Error(`
+        Could not find exercise solution at the user/ folder. Please check if you have used the correct folder path (${solutionPath}) and commit message
+      `);
+
+    }
+
+    // Create a test for each function requested to create in the exercise
+    test('FUNCTION_TO_TEST', () => {
+
+      // YOUR TEST CODE HERE
+      
+    });
+
+  ```
+  > **Note:** Please use different tests for different tasks of an exercise if possible. 
+  >
+  > Check the test for this [exercise](../curriculum/week01/exercises/javascript-first-steps/index.md)
+  3. Create a new YAML file inside `.github/workflows/` folder name `wXX-dYY.yaml` using the sample below
+  ```yaml
+  # Tests: for WeekXX DayYY
+  name: "Tests: for WeekXX DayYY"
+
+  # When we want the test to be triggered
+  on: push
+
+  # Different Jobs of the Action, one for each automated task of an exercise
+  jobs:
+    # CHANGE <EXERCISE-TASK-NAME>, <EXERCISE-NAME> and <FILE-NAME> accordingly
+    <EXERCISE-TASK-NAME>:
+      # Specify a Trigger Word to be contained in the commit message
+      if: contains(github.event.head_commit.message, '<EXERCISE-TASK-NAME>')
+      
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+        - name: Setup Node
+          uses: actions/setup-node@v3
+          with:
+            node-version: 18.x
+        - name: Install dependencies
+          run: npm ci
+        - name: Run <EXERCISE-TASK-NAME>
+          # CHANGE PATH:
+          run: node /curriculum/weekXX/exercises/<EXERCISE-NAME>/tests/<FILE-NAME>.test.js
+  ```
+  4. To test: 
+      - **fork** the **WDX-180 repo**
+      - **solve the exercises** by following the **instructions given**.
