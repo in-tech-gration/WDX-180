@@ -37,7 +37,7 @@ try {
     quickLinks = { ...linksObj.links }
   }
 } catch(e){
-  console.log(e);
+  console.log("\nWARNING: " + e.message + "\n");
 }
 
 function passCohortDataToRoutesMiddleware(options) {
