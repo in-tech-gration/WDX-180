@@ -6,7 +6,7 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
 1,2,How the Internet Works,Read 'How the Internet works',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
 1,2,How the Internet Works,Watch: the 'How the Internet Works in 5 Minutes' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
 1,2,How the Web Works,Watch: the 'The Internet: HTTP & HTML' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'How the web works' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Read: 'How the web works',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
 1,2,How the Web Works,Read: 'What is a web server?',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
 1,2,How the Web Works,Read: 'What is a URL?',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
 1,2,How the Web Works,Read: 'What is a Domain Name?',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
