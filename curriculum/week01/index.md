@@ -366,6 +366,10 @@ We encourage you to **help and support each other** but in a constructive and he
 
 ### Exercises
 
+  **TIP:** Before starting to with the HTML exercises, perhaps, you can spend a few minutes to watch [this video](https://www.youtube.com/watch?v=n7wkAp9_bqw){:target="_blank"} which walks you through the process of setting up VSCode to efficiently work with the exercises.
+
+  ---
+
   - Complete the following exercises and update the progress CSV files accordingly:
 
   - [Complete: **Parent-Child Relationships** exercise](./exercises/1-parent-child/instructions.md)
