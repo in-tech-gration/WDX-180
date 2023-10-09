@@ -26,9 +26,24 @@ cohortYamls.forEach( yamlFile =>{
 
 });
 
+// LOAD OPTIONAL YAML FILES:
+let quickLinks = {}
+try {
+  const instructorConfigPath = path.join( __dirname, "config" );
+  const instructorConfigDir  = fs.readdirSync(instructorConfigPath);
+  if ( instructorConfigDir.includes("links.yaml") ){
+    const links = fs.readFileSync( path.join( instructorConfigPath, "links.yaml" ), "utf-8" );
+    const linksObj = yaml.parse(links);
+    quickLinks = { ...linksObj.links }
+  }
+} catch(e){
+  console.log(e);
+}
+
 function passCohortDataToRoutesMiddleware(options) {
   return function (req, res, next) {
     req.cohortData = options.cohortData;
+    req.quickLinks = options.quickLinks;
     next();
   }
 }
@@ -47,7 +62,7 @@ app.use(express.urlencoded({ extended:  false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', passCohortDataToRoutesMiddleware({ cohortData }), indexRouter)
+app.use('/', passCohortDataToRoutesMiddleware({ cohortData, quickLinks }), indexRouter)
 // app.use('/users', usersRouter)
 
 app.listen(port, () => {

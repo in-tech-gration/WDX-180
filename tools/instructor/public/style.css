@@ -55,6 +55,9 @@ td.cell-with-link {
   font-weight: bold;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
 .m-0 {
   margin: 0 !important;
 }
@@ -67,4 +70,6 @@ td.cell-with-link {
 .mb-1 {
   margin-bottom: 1rem;
 }
-
+.d-inline-block {
+  display: inline-block !important;
+}

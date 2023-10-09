@@ -4,6 +4,15 @@
 
   <h1 class="mb-0">{{message}}</h1>
 
+  {% if links %}
+  <section class="quick-links m-0 p-0">
+    <h4 class="m-0 d-inline-block">Quick links:</h4>
+    {% for key, value in links %}
+      <a href="{{ value }}" target="_blank">{{ key }}</a>
+    {% endfor %}
+  </section>
+  {% endif %}
+
   <main>
     <section>
       {# <pre>
