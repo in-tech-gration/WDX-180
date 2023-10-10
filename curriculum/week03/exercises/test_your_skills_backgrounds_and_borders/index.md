@@ -6,7 +6,7 @@ page-type: learn-module-assessment
 
 # Test your skills: Backgrounds and borders
 
-_(Updated: 12/09/2023)_
+_(Updated: 10/10/2023)_
 
 The aim of this skill test is to assess whether you understand [backgrounds and borders of boxes in CSS](../../resources/css_building_blocks/backgrounds_and_borders/index.md).
 
@@ -20,11 +20,53 @@ In this task, we want you to add a background, border, and some simple styling t
 2. Add a background image (use the URL `balloons.jpg`) and size it so that it covers the box.
 3. Give the `<h2>` a semi-transparent black background color, and make the text white.
 
-[Download the starting point for this task](assets/backgrounds1-download.html) to work in your own editor or in an online editor.
+Copy and paste the code below in a file named `backgrounds1.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Backgrounds and Borders: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 500px;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="box">
+      <h2>Backgrounds &amp; Borders</h2>
+    </div>
+
+  </body>
+
+</html
+```
 
 Your final result should look like the image below:
 
 ![Images shows a box with a photograph background, rounded border and white text on a semi-transparent black background.](assets/backgrounds-task1.png)
+
+When you're ready, move the files in the following path `user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/task01/` and run the git commands below to submit your exercise:
+
+- `git add user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/task01/`
+- `git commit -m "test_your_skills_backgrounds_and_borders_task01"`
+- `git push`
 
 ## Task 2
 
@@ -34,11 +76,53 @@ In this task, we want you to add background images, a border, and some other sty
 - The heading uses the `star.png` image as a background image, with a single centered star on the left and a repeating pattern of stars on the right.
 - Make sure that the heading text does not overlay the image, and that it is centered — you will need to use techniques learned in previous lessons to achieve this.
 
-[Download the starting point for this task](assets/backgrounds2-download.html) to work in your own editor or in an online editor.
+Copy and paste the code below in a file named `backgrounds2.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Backgrounds and Borders: Task 2</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 300px;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="box">
+      <h2>Backgrounds &amp; Borders</h2>
+    </div>
+
+  </body>
+
+</html>
+```
 
 Your final result should look like the image below:
 
 ![Images shows a box with a blue border rounded at the top left and bottom right corners. On the left of the text is a single star, on the right 3 stars.](assets/backgrounds-task2.png)
+
+When you're ready, move the files in the following path `user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/task02/` and run the git commands below to submit your exercise:
+
+- `git add user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/task02/`
+- `git commit -m "test_your_skills_backgrounds_and_borders_task02"`
+- `git push`
 
 ### Sources and Attributions
 
