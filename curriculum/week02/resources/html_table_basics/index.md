@@ -202,7 +202,7 @@ When implemented correctly, HTML tables are handled well by accessibility tools 
 
 You can also have a [look at the live example](https://mdn.github.io/learning-area/html/tables/assessment-finished/planets-data.html){:target="_blank"} on GitHub! One thing you'll notice is that the table does look a bit more readable there — this is because the table you see above on this page has minimal styling, whereas the GitHub version has more significant CSS applied.
 
-Be under no illusion; for tables to be effective on the web, you need to provide some styling information with [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS){:target="_blank"}, as well as good solid structure with HTML. In this module we are focusing on the HTML part; to find out about the CSS part you should visit our [Styling tables](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables){:target="_blank"} article after you've finished here.
+Be under no illusion; for tables to be effective on the web, you need to provide some styling information with [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS){:target="_blank"}, as well as good solid structure with HTML. In this module we are focusing on the HTML part; there's another module for styling tables using CSS.
 
 We won't focus on CSS in this module, but we have provided a minimal CSS stylesheet for you to use that will make your tables more readable than the default you get without any styling. You can find the [stylesheet here](https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css){:target="_blank"}, and you can also find an [HTML template](https://github.com/mdn/learning-area/blob/main/html/tables/basic/blank-template.html){:target="_blank"} that applies the stylesheet — these together will give you a good starting point for experimenting with HTML tables.
 
@@ -222,8 +222,10 @@ In short, **using tables for layout** rather than [CSS layout techniques](https:
 
 We've talked table theory enough, so, let's dive into a practical example and build up a simple table.
 
-1. First of all, make a local copy of [blank-template.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/blank-template.html){:target="_blank"} and [minimal-table.css](https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css){:target="_blank"} in a new directory on your local machine.
+1. First of all, make a local copy of [blank-template.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/blank-template.html){:target="_blank"} and [minimal-table.css](https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css){:target="_blank"}. To submit this exercise, the files should be placed in the `user/week02/exercises/day03/html_table_basics/` folder.
+
 2. The content of every table is enclosed by these two tags: **[`<table></table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table){:target="_blank"}**. Add these inside the body of your HTML.
+
 3. The smallest container inside a table is a table cell, which is created by a **[`<td>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td){:target="_blank"}** element ('td' stands for 'table data'). Add the following inside your table tags:
 
    ```html
@@ -258,39 +260,7 @@ To stop this row from growing and start placing subsequent cells on a second row
 
 ### Result
 
-This should result in a table that looks something like the following:
-
-```html
-<table>
-  <tr>
-    <td>Hi, I'm your first cell.</td>
-    <td>I'm your second cell.</td>
-    <td>I'm your third cell.</td>
-    <td>I'm your fourth cell.</td>
-  </tr>
-
-  <tr>
-    <td>Second row, first cell.</td>
-    <td>Cell 2.</td>
-    <td>Cell 3.</td>
-    <td>Cell 4.</td>
-  </tr>
-</table>
-```
-
-```css
-table {
-  border-collapse: collapse;
-}
-td,
-th {
-  border: 1px solid black;
-  padding: 10px 20px;
-}
-```
-Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwGWfQAJCCELAEkAcjkLHVIAVwcLSAdtfxgPAlbI4ZGx_QWllfWMmGUcjD2oA5aj-NGj8-W1jdppCCdd_aHcavCynD6XDZgL4_AGPIHHQ5DfqDY5vcYAZRuFByDlIAHcZlsdvdAc9gYUTkcAMIPWpPF4UtH6GkeCwAZnp5JGoOptIALJyEc8kc1nr1OiBBPwgA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
-
-> **Note:** You can also find this on GitHub as [simple-table.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/simple-table.html){:target="_blank"} ([see it live also](https://mdn.github.io/learning-area/html/tables/basic/simple-table.html)){:target="_blank"}.
+This should result in a table that looks something [like this](https://mdn.github.io/learning-area/html/tables/basic/simple-table.html){:target="_blank"}.
 
 ## Adding headers with \<th> elements
 
@@ -347,8 +317,6 @@ th {
 }
 ```
 
-Now the actual rendered table:
-
 Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwGWfQAyclM4FGDWyOGRsf0AaXJSbB0F8fjRxYAxKEcdpf3xgFEPNFO9ixWAKQBXNGaWxf73of7Bs_vFgBCDhgMBYt0Ky0WD0wWAsACUnnAfB5wSN_uMAAqkUgsWCoyHjADKgxBkVIuHx530AGFNlgYA4LIT0OReFB8QtvhCBly0SsAIL4Sno_TJABswpWAE5JYtkhVZeMAKwcr5LHl_FYAeQA7uQGYr9ABZUi0aQMlxiFyeHWGo0wO0O967CFUwkQbQWq021W_H68gn6C5oWhlCwACTMEFocENwZjFhgADcGToKDAAORwCywMC0Ugphyx52axYAOQgpnM8AsIYsYGxYJLdxW4ZgaAcukTIYNzddIoA6tAoN3aBZQx4LObExIUMc2MWPty1cYFr1OiBBPwgA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
 
 The problem here is that, while you can kind of make out what's going on, it is not as easy to cross reference data as it could be. If the column and row headings stood out in some way, it would be much better.
@@ -358,10 +326,12 @@ The problem here is that, while you can kind of make out what's going on, it is 
 Let's have a go at improving this table.
 
 1. First, make a local copy of our [dogs-table.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/dogs-table.html){:target="_blank"} and [minimal-table.css](https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css){:target="_blank"} files in a new directory on your local machine. The HTML contains the same Dogs example as you saw above.
-2. To recognize the table headers as headers, both visually and semantically, you can use the **[`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th){:target="_blank"}** element ('th' stands for 'table header'). This works in exactly the same way as a `<td>`, except that it denotes a header, not a normal cell. Go into your HTML, and change all the `<td>` elements surrounding the table headers into `<th>` elements.
-3. Save your HTML and load it in a browser, and you should see that the headers now look like headers.
 
-> **Note:** You can find our finished example at [dogs-table-fixed.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/dogs-table-fixed.html){:target="_blank"} on GitHub ([see it live also](https://mdn.github.io/learning-area/html/tables/basic/dogs-table-fixed.html)){:target="_blank"}.
+To submit this exercise, the files should be placed in the `user/week02/exercises/day03/html_table_basics/` folder.
+
+2. To recognize the table headers as headers, both visually and semantically, you can use the **[`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th){:target="_blank"}** element ('th' stands for 'table header'). This works in exactly the same way as a `<td>`, except that it denotes a header, not a normal cell. Go into your HTML, and change all the `<td>` elements surrounding the table headers into `<th>` elements.
+
+3. Save your HTML and load it in a browser, and you should see that the headers now look like headers. See it [live here](https://mdn.github.io/learning-area/html/tables/basic/dogs-table-fixed.html){:target="_blank"}
 
 ### Why are headers useful?
 
@@ -369,7 +339,7 @@ We have already partially answered this question — it is easier to find the da
 
 > **Note:** Table headings come with some default styling — they are bold and centered even if you don't add your own styling to the table, to help them stand out.
 
-Tables headers also have an added benefit — along with the `scope` attribute (which we'll learn about in the next article), they allow you to make tables more accessible by associating each header with all the data in the same row or column. Screen readers are then able to read out a whole row or column of data at once, which is pretty useful.
+Tables headers also have an added benefit — along with the `scope` attribute (more on this later), they allow you to **make tables more accessible** by associating each header with all the data in the same row or column. Screen readers are then able to read out a whole row or column of data at once, which is pretty useful.
 
 ## Allowing cells to span multiple rows and columns
 
@@ -425,11 +395,14 @@ We need a way to get "Animals", "Hippopotamus", and "Crocodile" to span across t
 Let's use `colspan` and `rowspan` to improve this table.
 
 1. First, make a local copy of our [animals-table.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/animals-table.html){:target="_blank"} and [minimal-table.css](https://github.com/mdn/learning-area/blob/main/html/tables/basic/minimal-table.css){:target="_blank"} files in a new directory on your local machine. The HTML contains the same animals example as you saw above.
-2. Next, use `colspan` to make "Animals", "Hippopotamus", and "Crocodile" span across two columns.
-3. Finally, use `rowspan` to make "Horse" and "Chicken" span across two rows.
-4. Save and open your code in a browser to see the improvement.
 
-> **Note:** You can find our finished example at [animals-table-fixed.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/animals-table-fixed.html){:target="_blank"} on GitHub ([see it live also](https://mdn.github.io/learning-area/html/tables/basic/animals-table-fixed.html)){:target="_blank"}.
+To submit this exercise, the files should be placed in the `user/week02/exercises/day03/html_table_basics/` folder.
+
+2. Next, use `colspan` to make "Animals", "Hippopotamus", and "Crocodile" span across two columns.
+
+3. Finally, use `rowspan` to make "Horse" and "Chicken" span across two rows.
+
+4. Save and open your code in a browser to see the improvement. See it [live here](https://mdn.github.io/learning-area/html/tables/basic/animals-table-fixed.html){:target="_blank"}
 
 ## Providing common styling to columns
 
@@ -516,109 +489,24 @@ Just like `colspan` and `rowspan`, `span` takes a unitless number value that spe
 
 Now it's time to have a go yourself.
 
-Below you can see the timetable of a languages teacher. On Friday she has a new class teaching Dutch all day, but she also teaches German for a few periods on Tuesday and Thursdays. She wants to highlight the columns containing the days she is teaching.
+1. First, make a local copy of our [timetable.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/timetable.html){:target="_blank"} file in a new directory on your local machine. The HTML contains the timetable of a languages teacher.
 
-```html
-<h1>School timetable</h1>
-<table>
-  <colgroup>
-    <col span="2">
-    <col style="background-color:#97DB9A;">
-    <col style="width:42px;">
-    <col style="background-color:#97DB9A;">
-    <col style="background-color:#DCC48E; border:4px solid #C1437A;">
-    <col span="2" style="width:42px;">
-  </colgroup>
-  <tr>
-    <td>&nbsp;</td>
-    <th>Mon</th>
-    <th>Tues</th>
-    <th>Wed</th>
-    <th>Thurs</th>
-    <th>Fri</th>
-    <th>Sat</th>
-    <th>Sun</th>
-  </tr>
-  <tr>
-    <th>1st period</th>
-    <td>English</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>German</td>
-    <td>Dutch</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th>2nd period</th>
-    <td>English</td>
-    <td>English</td>
-    <td>&nbsp;</td>
-    <td>German</td>
-    <td>Dutch</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th>3rd period</th>
-    <td>&nbsp;</td>
-    <td>German</td>
-    <td>&nbsp;</td>
-    <td>German</td>
-    <td>Dutch</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th>4th period</th>
-    <td>&nbsp;</td>
-    <td>English</td>
-    <td>&nbsp;</td>
-    <td>English</td>
-    <td>Dutch</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-```
+On Friday she has a new class teaching Dutch all day, but she also teaches German for a few periods on Tuesday and Thursdays. She wants to highlight the columns containing the days she is teaching.
 
-```css
-html {
-  font-family: sans-serif;
-}
+To submit this exercise, the files should be placed in the `user/week02/exercises/day03/html_table_basics/` folder.
 
-table {
-  border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-}
-
-td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
-}
-
-td {
-  text-align: center;
-}
-
-caption {
-  padding: 10px;
-}
-```
-
-Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA65WQoAEwY2bNg6AWjBo50HYjNw05OHbgwAThBgANzG_Ma0aABGsBZWZpGkfmx-djRQUGgovm5pGVkwIeTWCUn-bgBMKBLupFAQLGZ-uJEAFOUADO1CHV09AJSF1rC09Clw6DzkuG4AjFWDNvZwEABeMG7tBAAcfjByhWGMLEJmtNKxRfGJybNVNXUNTa0zAJxdr-9vA3HoLCxi0zMM3adw681C4Qalku9AktDsaDquHIOVU_gOxgwmVoEAoF2sv3-U1mIIkGPIGgA9No9DAjBTpDN9ABlDDSUi1U4QOQwCLRGBUxn0jR8gxxDRpXB-UgAVxQ9Os1glnPGngAvIYQOVNQrFcqoO5dLANSBIpgsFLZeJUrVEogAMQvADsABEAEIvACCIRAuqVaUNtJNAHd6mdEAAWSpknVxf0qo0wE1m7CWmXWtJ2x2uj3e2OXeMGmnGzUpi3S9MsG1QLMugDCdYjWwAokErqU_JG7mQHmZ7XWZhGAMxOvO-uNmfXudDkE3akCBksgUMscNR8Hjy5UyUV-Xi2h-P2T2gsfQAMnIkXGQSpJ6PIuk-gAshRb4-Jw_9AAVGXwN_3s59AAdRgFh_w_QCv2kGU_DgcCC2PR8ADEAngxVEJZNBaDQvVAOZdMcNvQ992IhDPxmbQzA4AJSDAylAIg09mymOo4GkW9T0Y89L2vDiANPC8rxQG96M4si7wAcX8ORPD4riXRlWg2Tk8SBJ44SVPQkU1KEkS73FejSKVA8AMfcpxCo_xcTohjVP0ZjcFY9jRP4-yWIgNjNNwnTeJcripL8GSKT8uyFKU5z9LswTfMirS72ijSQqVQzdRFIzcMfIckksmibPfKL1L0sS4tPAKgq84yfMS2LvP0MrZKS2qwuUxrKu43SKuPKqitSlKSNM_QIzOHLrJwtqEp6riHKczrtPamLitq6aPIixa2ua1bXIm2b4sKryiOFeiogMEBBH4IA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
-
-Recreate the table by following the steps below.
-
-1. First, make a local copy of our [timetable.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/timetable.html){:target="_blank"} file in a new directory on your local machine. The HTML contains the same table you saw above, minus the column styling information.
 2. Add a `<colgroup>` element at the top of the table, just underneath the `<table>` tag, in which you can add your `<col>` elements (see the remaining steps below).
+
 3. The first two columns need to be left unstyled.
+
 4. Add a background color to the third column. The value for your `style` attribute is `background-color:#97DB9A;`
+
 5. Set a separate width on the fourth column. The value for your `style` attribute is `width: 42px;`
+
 6. Add a background color to the fifth column. The value for your `style` attribute is `background-color: #97DB9A;`
+
 7. Add a different background color plus a border to the sixth column, to signify that this is a special day and she's teaching a new class. The values for your `style` attribute are `background-color:#DCC48E; border:4px solid #C1437A;`
+
 8. The last two days are free days, so just set them to no background color but a set width; the value for the `style` attribute is `width: 42px;`
 
 See how you get on with the example. You can check out the [live demo also](https://mdn.github.io/learning-area/html/tables/basic/timetable-fixed.html){:target="_blank"}.
