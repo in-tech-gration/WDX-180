@@ -32,169 +32,7 @@ It is therefore no wonder that the creators of HTML provided a means by which to
 
 ### How does a table work?
 
-The point of a table is that it is rigid. Information is easily interpreted by making visual associations between row and column headers. Look at the table below for example and find a Jovian gas giant with 62 moons. You can find the answer by associating the relevant row and column headers.
-
-Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA9iCZCBqMGTRHIplYBKKVwAKAIwAmAMwBKANwh-IsZIIALWgFsozefUZIQAHji0AnrAA-AB1GNAAjWAACYBDIyLDSACc2RIBaGigoNBQ4GERIjKycmFNY-KSU_P0UCUi1CBZ4rOxS8n4Q2lshDsaY8jj0FhYxXHyAVhrWuITkmET83Rq60igGpswsVvbyTwB6H38YYJ3acMCyzwxs2ggKY7i4gBE0U8jw0gBXWkjOmEiULLkGC0OCRUhgMEfRLLLLQuC-HwwByRbQABUBwLQiV8kTAmBBPzQWAYuMSpAcZTinjQkVsiRgYAAvEEQPZaDlELtduQ4HAWBgCLg4GABeQ0HA0ILSAA3XYAtBA07Y3Z4jAg2wwYG7FmUh4BABy4rQAHJQeiFZjsZEAGL4yIAZQ1wMiqUiAFlgYkIBg9mhdQFjAQLrsrigbncLr80Cx7g9PLRErGHpF440MnB0ORmSB9CyAntaDHdVTOnUaBxsxk84aHDAC7Yk3HS3ByzBKys827xaC9AAGbwfFABfQAFj2cEHASwuGM9cbJdsZdIFZZVZAAUeEDQtfo0O0WAcs92nXnKebrfbUDzjwYcAgfhR092DgHQ8M48nR5PxbPi5by7bVcO3XABxRI0Gle8cW0Bx9lfYcPyHL8Gx_eM_wvICr3XAAZBhcFLcFIhYNBoNsT5EjgZDTzQpcVxULCNwgHwFQwP4wDJZF7Q-fo-3ggA2RCp0POdUPPADL07GAFR-JEOHA2goT-bQAAaAGEqNE9DxMw6sPgcMI5jBCEHFIVQRP6ZNf1owD6OrUh6DgczkwLRNgyjIsLPjBIWF8Rt41ciznNLdNM2zXMQEiMkAHcMwVbMRxZazs2i3AyUHPMABU5npHwvTQKB_gxEEnMsmj_zo6LJMSDAoV8EqgpjXsCEMQx-2PDzLLPGMRyEAAOAB2ABOAsOtKwsAjGEd9H6kbqPGwwCBm9q5u6_Q1oIATltEmMxn6ghhq2wKmxjXQ-KW8btoCNqLqOksY1UzRch8H5SB-DUHW42bdRcvyEzmrSKtIKK8wANQYD5HOPFDbq6gIRwIAavph1MAgMIRdF7MdDs6lGxlHd9sbGmNev2pGcfG_Ret7fQCGu0aGtR3sSf0MmibhvisZu8nGtZhneZTY8AqCoWxoBmzKvXABRLFOnq46Jv2876fltH-rGTaubZsYxl0TnlbugJBoR_mDdHWmTdh3WjY1_XLbGC2Ud0B3xoAeShSIoqSKAWH5n7vr-zSkpZCWAi7Ci5YNpqOZZwmGb4oQhpjzWGcMQaWudmMFqVlbh3h7PLrWvaDuT-XUj4-3Y_lpPbZRjL3vpRp5UVX3Bd-kWgsXaLYqzFkEoi8rxaB1LPhQPMACkZS3fom-BSHv2R0su9CllwqDkAUrS0fQPFSJcCn4qof-teQ7Hwd7zmCPLd6wbeoz1GpqEG-9Zz3RDH0G2c6MAgncrg2jeLmu41-r9RJh_S6qRdAYzvmdO-dc_iwnwM9GetAW4ByOv5I-A9kpAzzPaF4UIdiH0uurW-v9Lb6F7EIMYhgwELxjHxRGZCUZGzpi_Jq-c6H3xagQCuJcDYQJHKwy6fFq451Qe3M8EiFyRSBt3MKiUsHByHpvPMABJViu995z2huTMW2DgbrgAKrgXIBDS-KNep8WNkw8aOt0a6FIXw8h_Uf5OIsYtO-ug9qiILgNGmvDAExggYNAJn8OHc3zJXP26C0G6OPjg9c-p2AKSBOY8aGMfGcJHINKhlNPF8UMI4wJqNdDmxsSdKxrjikjmyWMb-d9UgUKEZw3Wd9xFtyPiFOKK8FEYXXsoke14opYghMg7RmC-kh3RF8UgaTGq011rQiJ-ghCGH6s05ZvYQl33YZ46hzU75jEGr2Kxz9wFrVCcQu-P4ngwAwFkXkEBIAwEaDvGkyDIhiEiE0-O8QvhvSYjclMfoYbJjpAybMbIORciirCggEMXikGIr4AgNBYI-CSL4Y8dzbC7AobrXYGNdjUzlFAGZqRkGpDUFiKlCJ6CwVOrta-RztQgCBXEAI9IHBoDEKCVwZJpRzDvPlX0QKAhBmRlE1ublvK-RCAWM4RwLCCCAA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
-
-```html
-<table>
-  <caption>
-    Data about the planets of our solar system (Planetary facts taken from
-    <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
-      >Nasa's Planetary Fact Sheet - Metric</a
-    >).
-  </caption>
-  <thead>
-    <tr>
-      <td colspan="2"></td>
-      <th scope="col">Name</th>
-      <th scope="col">Mass (10<sup>24</sup>kg)</th>
-      <th scope="col">Diameter (km)</th>
-      <th scope="col">Density (kg/m<sup>3</sup>)</th>
-      <th scope="col">Gravity (m/s<sup>2</sup>)</th>
-      <th scope="col">Length of day (hours)</th>
-      <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
-      <th scope="col">Mean temperature (°C)</th>
-      <th scope="col">Number of moons</th>
-      <th scope="col">Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
-      <th scope="row">Mercury</th>
-      <td>0.330</td>
-      <td>4,879</td>
-      <td>5427</td>
-      <td>3.7</td>
-      <td>4222.6</td>
-      <td>57.9</td>
-      <td>167</td>
-      <td>0</td>
-      <td>Closest to the Sun</td>
-    </tr>
-    <tr>
-      <th scope="row">Venus</th>
-      <td>4.87</td>
-      <td>12,104</td>
-      <td>5243</td>
-      <td>8.9</td>
-      <td>2802.0</td>
-      <td>108.2</td>
-      <td>464</td>
-      <td>0</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Earth</th>
-      <td>5.97</td>
-      <td>12,756</td>
-      <td>5514</td>
-      <td>9.8</td>
-      <td>24.0</td>
-      <td>149.6</td>
-      <td>15</td>
-      <td>1</td>
-      <td>Our world</td>
-    </tr>
-    <tr>
-      <th scope="row">Mars</th>
-      <td>0.642</td>
-      <td>6,792</td>
-      <td>3933</td>
-      <td>3.7</td>
-      <td>24.7</td>
-      <td>227.9</td>
-      <td>-65</td>
-      <td>2</td>
-      <td>The red planet</td>
-    </tr>
-    <tr>
-      <th rowspan="4" scope="rowgroup">Jovian planets</th>
-      <th rowspan="2" scope="rowgroup">Gas giants</th>
-      <th scope="row">Jupiter</th>
-      <td>1898</td>
-      <td>142,984</td>
-      <td>1326</td>
-      <td>23.1</td>
-      <td>9.9</td>
-      <td>778.6</td>
-      <td>-110</td>
-      <td>67</td>
-      <td>The largest planet</td>
-    </tr>
-    <tr>
-      <th scope="row">Saturn</th>
-      <td>568</td>
-      <td>120,536</td>
-      <td>687</td>
-      <td>9.0</td>
-      <td>10.7</td>
-      <td>1433.5</td>
-      <td>-140</td>
-      <td>62</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th rowspan="2" scope="rowgroup">Ice giants</th>
-      <th scope="row">Uranus</th>
-      <td>86.8</td>
-      <td>51,118</td>
-      <td>1271</td>
-      <td>8.7</td>
-      <td>17.2</td>
-      <td>2872.5</td>
-      <td>-195</td>
-      <td>27</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Neptune</th>
-      <td>102</td>
-      <td>49,528</td>
-      <td>1638</td>
-      <td>11.0</td>
-      <td>16.1</td>
-      <td>4495.1</td>
-      <td>-200</td>
-      <td>14</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th colspan="2" scope="rowgroup">Dwarf planets</th>
-      <th scope="row">Pluto</th>
-      <td>0.0146</td>
-      <td>2,370</td>
-      <td>2095</td>
-      <td>0.7</td>
-      <td>153.3</td>
-      <td>5906.4</td>
-      <td>-225</td>
-      <td>5</td>
-      <td>
-        Declassified as a planet in 2006, but this
-        <a
-          href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/"
-          >remains controversial</a
-        >.
-      </td>
-    </tr>
-  </tbody>
-</table>
-```
-
-```css
-table {
-  border-collapse: collapse;
-  border: 2px solid black;
-}
-
-th,
-td {
-  padding: 5px;
-  border: 1px solid black;
-}
-```
+The point of a table is that it is rigid. Information is easily interpreted by making visual associations between row and column headers. <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA9iCZCBqMGTRHIplYBKKVwAKAIwAmAMwBKANwh-IsZIIALWgFsozefUZIQAHji0AnrAA-AB1GNAAjWAACYBDIyLDSACc2RIBaGigoNBQ4GERIjKycmFNY-KSU_P0UCUi1CBZ4rOxS8n4Q2lshDsaY8jj0FhYxXHyAVhrWuITkmET83Rq60igGpswsVvbyTwB6H38YYJ3acMCyzwxs2ggKY7i4gBE0U8jw0gBXWkjOmEiULLkGC0OCRUhgMEfRLLLLQuC-HwwByRbQABUBwLQiV8kTAmBBPzQWAYuMSpAcZTinjQkVsiRgYAAvEEQPZaDlELtduQ4HAWBgCLg4GABeQ0HA0ILSAA3XYAtBA07Y3Z4jAg2wwYG7FmUh4BABy4rQAHJQeiFZjsZEAGL4yIAZQ1wMiqUiAFlgYkIBg9mhdQFjAQLrsrigbncLr80Cx7g9PLRErGHpF440MnB0ORmSB9CyAntaDHdVTOnUaBxsxk84aHDAC7Yk3HS3ByzBKys827xaC9AAGbwfFABfQAFj2cEHASwuGM9cbJdsZdIFZZVZAAUeEDQtfo0O0WAcs92nXnKebrfbUDzjwYcAgfhR092DgHQ8M48nR5PxbPi5by7bVcO3XABxRI0Gle8cW0Bx9lfYcPyHL8Gx_eM_wvICr3XAAZBhcFLcFIhYNBoNsT5EjgZDTzQpcVxULCNwgHwFQwP4wDJZF7Q-fo-3ggA2RCp0POdUPPADL07GAFR-JEOHA2goT-bQAAaAGEqNE9DxMw6sPgcMI5jBCEHFIVQRP6ZNf1owD6OrUh6DgczkwLRNgyjIsLPjBIWF8Rt41ciznNLdNM2zXMQEiMkAHcMwVbMRxZazs2i3AyUHPMABU5npHwvTQKB_gxEEnMsmj_zo6LJMSDAoV8EqgpjXsCEMQx-2PDzLLPGMRyEAAOAB2ABOAsOtKwsAjGEd9H6kbqPGwwCBm9q5u6_Q1oIATltEmMxn6ghhq2wKmxjXQ-KW8btoCNqLqOksY1UzRch8H5SB-DUHW42bdRcvyEzmrSKtIKK8wANQYD5HOPFDbq6gIRwIAavph1MAgMIRdF7MdDs6lGxlHd9sbGmNev2pGcfG_Ret7fQCGu0aGtR3sSf0MmibhvisZu8nGtZhneZTY8AqCoWxoBmzKvXABRLFOnq46Jv2876fltH-rGTaubZsYxl0TnlbugJBoR_mDdHWmTdh3WjY1_XLbGC2Ud0B3xoAeShSIoqSKAWH5n7vr-zSkpZCWAi7Ci5YNpqOZZwmGb4oQhpjzWGcMQaWudmMFqVlbh3h7PLrWvaDuT-XUj4-3Y_lpPbZRjL3vpRp5UVX3Bd-kWgsXaLYqzFkEoi8rxaB1LPhQPMACkZS3fom-BSHv2R0su9CllwqDkAUrS0fQPFSJcCn4qof-teQ7Hwd7zmCPLd6wbeoz1GpqEG-9Zz3RDH0G2c6MAgncrg2jeLmu41-r9RJh_S6qRdAYzvmdO-dc_iwnwM9GetAW4ByOv5I-A9kpAzzPaF4UIdiH0uurW-v9Lb6F7EIMYhgwELxjHxRGZCUZGzpi_Jq-c6H3xagQCuJcDYQJHKwy6fFq451Qe3M8EiFyRSBt3MKiUsHByHpvPMABJViu995z2huTMW2DgbrgAKrgXIBDS-KNep8WNkw8aOt0a6FIXw8h_Uf5OIsYtO-ug9qiILgNGmvDAExggYNAJn8OHc3zJXP26C0G6OPjg9c-p2AKSBOY8aGMfGcJHINKhlNPF8UMI4wJqNdDmxsSdKxrjikjmyWMb-d9UgUKEZw3Wd9xFtyPiFOKK8FEYXXsoke14opYghMg7RmC-kh3RF8UgaTGq011rQiJ-ghCGH6s05ZvYQl33YZ46hzU75jEGr2Kxz9wFrVCcQu-P4ngwAwFkXkEBIAwEaDvGkyDIhiEiE0-O8QvhvSYjclMfoYbJjpAybMbIORciirCggEMXikGIr4AgNBYI-CSL4Y8dzbC7AobrXYGNdjUzlFAGZqRkGpDUFiKlCJ6CwVOrta-RztQgCBXEAI9IHBoDEKCVwZJpRzDvPlX0QKAhBmRlE1ublvK-RCAWM4RwLCCCAA&query=file=/index.html" target="_blank">Look at this table</a> for example and find a Jovian gas giant with 62 moons. You can find the answer by associating the relevant row and column headers.
 
 When implemented correctly, HTML tables are handled well by accessibility tools such as screen readers, so a successful HTML table should enhance the experience of sighted and visually impaired users alike.
 
@@ -402,7 +240,7 @@ To submit this exercise, the files should be placed in the `user/week02/exercise
 
 3. Finally, use `rowspan` to make "Horse" and "Chicken" span across two rows.
 
-4. Save and open your code in a browser to see the improvement. See it [live here](https://mdn.github.io/learning-area/html/tables/basic/animals-table-fixed.html){:target="_blank"}
+4. Save and open your code in a browser to see the improvement. It should look [like this.](https://mdn.github.io/learning-area/html/tables/basic/animals-table-fixed.html){:target="_blank"}
 
 ## Providing common styling to columns
 
@@ -442,9 +280,7 @@ th {
 }
 ```
 
-Which gives us the following result:
-
-Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwHpfQARNB6LZNbacfjRhYzdWABeQxBTTCxcB1IAV3E3UihHPx0YD1IAdy3J6bRa-cXCi3mh_sHhkYGWfQAYTQUAwh1oPXmAKWH0iqw6m22u32RxO7guFiuN3uIH0AHkHGhyPgob9PmSfjD_voAEqkey0OCkqlw9obLY7bAo44sU7nByXa7nHH6ABSaAAXhLme9ycZ5r1OiBBPwgA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
+Which gives us the <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwHpfQARNB6LZNbacfjRhYzdWABeQxBTTCxcB1IAV3E3UihHPx0YD1IAdy3J6bRa-cXCi3mh_sHhkYGWfQAYTQUAwh1oPXmAKWH0iqw6m22u32RxO7guFiuN3uIH0AHkHGhyPgob9PmSfjD_voAEqkey0OCkqlw9obLY7bAo44sU7nByXa7nHH6ABSaAAXhLme9ycZ5r1OiBBPwgA&query=file=/index.html" target="_blank">following result</a>.
 
 This isn't ideal, as we have to repeat the styling information across all three cells in the column (we'd probably have a `class` set on all three in a real project and specify the styling in a separate stylesheet).
 
