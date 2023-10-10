@@ -68,7 +68,7 @@ YouTube video, 8min
 
 Here you can find tips for getting the most out of this awesome IDE and its numerous extensions!
 
-  ### RainbowCSV
+### RainbowCSV
 
   Apart from the beautiful colors the extension adds to our CSV file, it offers a great consistency checker!
   
