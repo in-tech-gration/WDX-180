@@ -258,7 +258,7 @@ To stop this row from growing and start placing subsequent cells on a second row
 
 This should result in a table that looks something like the following:
 
-```html hidden
+```html
 <table>
   <tr>
     <td>Hi, I'm your first cell.</td>
@@ -276,7 +276,7 @@ This should result in a table that looks something like the following:
 </table>
 ```
 
-```css hidden
+```css
 table {
   border-collapse: collapse;
 }
@@ -335,7 +335,7 @@ Now let's turn our attention to table headers — special cells that go at the s
 </table>
 ```
 
-```css hidden
+```css
 table {
   border-collapse: collapse;
 }
@@ -404,7 +404,7 @@ The initial markup looks like this:
 </table>
 ```
 
-```css hidden
+```css
 table {
   border-collapse: collapse;
 }
@@ -457,7 +457,7 @@ Take the following simple example:
 </table>
 ```
 
-```css hidden
+```css
 table {
   border-collapse: collapse;
 }
@@ -530,7 +530,7 @@ Recreate the table by following the steps below.
 7. Add a different background color plus a border to the sixth column, to signify that this is a special day and she's teaching a new class. The values for your `style` attribute are `background-color:#DCC48E; border:4px solid #C1437A;`
 8. The last two days are free days, so just set them to no background color but a set width; the value for the `style` attribute is `width: 42px;`
 
-See how you get on with the example. You can check out the [live demo also](https://mdn.github.io/learning-area/html/tables/basic/timetable-fixed.html).
+See how you get on with the example. You can check out the [live demo also](https://mdn.github.io/learning-area/html/tables/basic/timetable-fixed.html){:target="_blank"}.
 
 ## Summary
 
@@ -541,4 +541,4 @@ That just about wraps up the basics of HTML tables.
   **Content is based on the following sources:**
 
   - **MDN**:
-    - [HTML table basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics) / [(Permalink)](https://github.com/mdn/content/blob/7073233dfed28e7c2fb325d2bb378075763d81b9/files/en-us/learn/html/tables/basics/index.md)
+    - [HTML table basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics){:target="_blank"} / [(Permalink)](https://github.com/mdn/content/blob/7073233dfed28e7c2fb325d2bb378075763d81b9/files/en-us/learn/html/tables/basics/index.md){:target="_blank"}
