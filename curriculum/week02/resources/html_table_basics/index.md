@@ -34,6 +34,8 @@ It is therefore no wonder that the creators of HTML provided a means by which to
 
 The point of a table is that it is rigid. Information is easily interpreted by making visual associations between row and column headers. Look at the table below for example and find a Jovian gas giant with 62 moons. You can find the answer by associating the relevant row and column headers.
 
+Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA9iCZCBqMGTRHIplYBKKVwAKAIwAmAMwBKANwh-IsZIIALWgFsozefUZIQAHji0AnrAA-AB1GNAAjWAACYBDIyLDSACc2RIBaGigoNBQ4GERIjKycmFNY-KSU_P0UCUi1CBZ4rOxS8n4Q2lshDsaY8jj0FhYxXHyAVhrWuITkmET83Rq60igGpswsVvbyTwB6H38YYJ3acMCyzwxs2ggKY7i4gBE0U8jw0gBXWkjOmEiULLkGC0OCRUhgMEfRLLLLQuC-HwwByRbQABUBwLQiV8kTAmBBPzQWAYuMSpAcZTinjQkVsiRgYAAvEEQPZaDlELtduQ4HAWBgCLg4GABeQ0HA0ILSAA3XYAtBA07Y3Z4jAg2wwYG7FmUh4BABy4rQAHJQeiFZjsZEAGL4yIAZQ1wMiqUiAFlgYkIBg9mhdQFjAQLrsrigbncLr80Cx7g9PLRErGHpF440MnB0ORmSB9CyAntaDHdVTOnUaBxsxk84aHDAC7Yk3HS3ByzBKys827xaC9AAGbwfFABfQAFj2cEHASwuGM9cbJdsZdIFZZVZAAUeEDQtfo0O0WAcs92nXnKebrfbUDzjwYcAgfhR092DgHQ8M48nR5PxbPi5by7bVcO3XABxRI0Gle8cW0Bx9lfYcPyHL8Gx_eM_wvICr3XAAZBhcFLcFIhYNBoNsT5EjgZDTzQpcVxULCNwgHwFQwP4wDJZF7Q-fo-3ggA2RCp0POdUPPADL07GAFR-JEOHA2goT-bQAAaAGEqNE9DxMw6sPgcMI5jBCEHFIVQRP6ZNf1owD6OrUh6DgczkwLRNgyjIsLPjBIWF8Rt41ciznNLdNM2zXMQEiMkAHcMwVbMRxZazs2i3AyUHPMABU5npHwvTQKB_gxEEnMsmj_zo6LJMSDAoV8EqgpjXsCEMQx-2PDzLLPGMRyEAAOAB2ABOAsOtKwsAjGEd9H6kbqPGwwCBm9q5u6_Q1oIATltEmMxn6ghhq2wKmxjXQ-KW8btoCNqLqOksY1UzRch8H5SB-DUHW42bdRcvyEzmrSKtIKK8wANQYD5HOPFDbq6gIRwIAavph1MAgMIRdF7MdDs6lGxlHd9sbGmNev2pGcfG_Ret7fQCGu0aGtR3sSf0MmibhvisZu8nGtZhneZTY8AqCoWxoBmzKvXABRLFOnq46Jv2876fltH-rGTaubZsYxl0TnlbugJBoR_mDdHWmTdh3WjY1_XLbGC2Ud0B3xoAeShSIoqSKAWH5n7vr-zSkpZCWAi7Ci5YNpqOZZwmGb4oQhpjzWGcMQaWudmMFqVlbh3h7PLrWvaDuT-XUj4-3Y_lpPbZRjL3vpRp5UVX3Bd-kWgsXaLYqzFkEoi8rxaB1LPhQPMACkZS3fom-BSHv2R0su9CllwqDkAUrS0fQPFSJcCn4qof-teQ7Hwd7zmCPLd6wbeoz1GpqEG-9Zz3RDH0G2c6MAgncrg2jeLmu41-r9RJh_S6qRdAYzvmdO-dc_iwnwM9GetAW4ByOv5I-A9kpAzzPaF4UIdiH0uurW-v9Lb6F7EIMYhgwELxjHxRGZCUZGzpi_Jq-c6H3xagQCuJcDYQJHKwy6fFq451Qe3M8EiFyRSBt3MKiUsHByHpvPMABJViu995z2huTMW2DgbrgAKrgXIBDS-KNep8WNkw8aOt0a6FIXw8h_Uf5OIsYtO-ug9qiILgNGmvDAExggYNAJn8OHc3zJXP26C0G6OPjg9c-p2AKSBOY8aGMfGcJHINKhlNPF8UMI4wJqNdDmxsSdKxrjikjmyWMb-d9UgUKEZw3Wd9xFtyPiFOKK8FEYXXsoke14opYghMg7RmC-kh3RF8UgaTGq011rQiJ-ghCGH6s05ZvYQl33YZ46hzU75jEGr2Kxz9wFrVCcQu-P4ngwAwFkXkEBIAwEaDvGkyDIhiEiE0-O8QvhvSYjclMfoYbJjpAybMbIORciirCggEMXikGIr4AgNBYI-CSL4Y8dzbC7AobrXYGNdjUzlFAGZqRkGpDUFiKlCJ6CwVOrta-RztQgCBXEAI9IHBoDEKCVwZJpRzDvPlX0QKAhBmRlE1ublvK-RCAWM4RwLCCCAA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
+
 ```html
 <table>
   <caption>
@@ -194,8 +196,6 @@ td {
 }
 ```
 
-{{EmbedLiveSample("How_does_a_table_work", 100, 560)}}
-
 When implemented correctly, HTML tables are handled well by accessibility tools such as screen readers, so a successful HTML table should enhance the experience of sighted and visually impaired users alike.
 
 ### Table styling
@@ -286,8 +286,7 @@ th {
   padding: 10px 20px;
 }
 ```
-
-{{EmbedLiveSample("Result")}}
+Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwGWfQAJCCELAEkAcjkLHVIAVwcLSAdtfxgPAlbI4ZGx_QWllfWMmGUcjD2oA5aj-NGj8-W1jdppCCdd_aHcavCynD6XDZgL4_AGPIHHQ5DfqDY5vcYAZRuFByDlIAHcZlsdvdAc9gYUTkcAMIPWpPF4UtH6GkeCwAZnp5JGoOptIALJyEc8kc1nr1OiBBPwgA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
 
 > **Note:** You can also find this on GitHub as [simple-table.html](https://github.com/mdn/learning-area/blob/main/html/tables/basic/simple-table.html){:target="_blank"} ([see it live also](https://mdn.github.io/learning-area/html/tables/basic/simple-table.html)){:target="_blank"}.
 
@@ -348,7 +347,7 @@ th {
 
 Now the actual rendered table:
 
-{{EmbedLiveSample("Adding_headers_with_th_elements", "", "250")}}
+Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwGWfQAyclM4FGDWyOGRsf0AaXJSbB0F8fjRxYAxKEcdpf3xgFEPNFO9ixWAKQBXNGaWxf73of7Bs_vFgBCDhgMBYt0Ky0WD0wWAsACUnnAfB5wSN_uMAAqkUgsWCoyHjADKgxBkVIuHx530AGFNlgYA4LIT0OReFB8QtvhCBly0SsAIL4Sno_TJABswpWAE5JYtkhVZeMAKwcr5LHl_FYAeQA7uQGYr9ABZUi0aQMlxiFyeHWGo0wO0O967CFUwkQbQWq021W_H68gn6C5oWhlCwACTMEFocENwZjFhgADcGToKDAAORwCywMC0Ugphyx52axYAOQgpnM8AsIYsYGxYJLdxW4ZgaAcukTIYNzddIoA6tAoN3aBZQx4LObExIUMc2MWPty1cYFr1OiBBPwgA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
 
 The problem here is that, while you can kind of make out what's going on, it is not as easy to cross reference data as it could be. If the column and row headings stood out in some way, it would be much better.
 
@@ -417,7 +416,7 @@ th {
 
 But the output doesn't give us quite what we want:
 
-{{EmbedLiveSample("Allowing_cells_to_span_multiple_rows_and_columns", "", "350")}}
+Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwHpfQBBcgg5NCg4Vtpx_pbB4YsBofjRpf0ACQgUFFJjnrkAVwXV5cKN1a3bzfWd8b3HH0WbkY3I_QBZNAOGCLFjrRYPHYQkYDUEAZR6HggFBBYPuYLW2x-4wAwg5SDRSrBPqiMY9Sd8xvpsdIINgGMTMTD9vTVqCVuSflCdqCAEqkUjaGAOFHsh6LXqdECCfhAA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
 
 We need a way to get "Animals", "Hippopotamus", and "Crocodile" to span across two columns, and "Horse" and "Chicken" to span downwards over two rows. Fortunately, table headers and cells have the `colspan` and `rowspan` attributes, which allow us to do just those things. Both accept a unitless number value, which equals the number of rows or columns you want spanned. For example, `colspan="2"` makes a cell span two columns.
 
@@ -470,7 +469,7 @@ th {
 
 Which gives us the following result:
 
-{{EmbedLiveSample("Styling_without_col", "", "200")}}
+Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA6jNACNYAAmDGLF06QBObBwFoaUKGhRwYiC-89vGABuY35jWhYhCOkrGztHZz8ARhQJCzIoCBY7T2xQ8lt0FhYxXBSABjSLACYqiQLw8g0Aem09GCNm2jMDeI1aBy7bWwHpfQARNB6LZNbacfjRhYzdWABeQxBTTCxcB1IAV3E3UihHPx0YD1IAdy3J6bRa-cXCi3mh_sHhkYGWfQAYTQUAwh1oPXmAKWH0iqw6m22u32RxO7guFiuN3uIH0AHkHGhyPgob9PmSfjD_voAEqkey0OCkqlw9obLY7bAo44sU7nByXa7nHH6ABSaAAXhLme9ycZ5r1OiBBPwgA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
 
 This isn't ideal, as we have to repeat the styling information across all three cells in the column (we'd probably have a `class` set on all three in a real project and specify the styling in a separate stylesheet).
 
@@ -517,7 +516,97 @@ Now it's time to have a go yourself.
 
 Below you can see the timetable of a languages teacher. On Friday she has a new class teaching Dutch all day, but she also teaches German for a few periods on Tuesday and Thursdays. She wants to highlight the columns containing the days she is teaching.
 
-{{EmbedGHLiveSample("learning-area/html/tables/basic/timetable-fixed.html", '100%', 350)}}
+```html
+<h1>School timetable</h1>
+<table>
+  <colgroup>
+    <col span="2">
+    <col style="background-color:#97DB9A;">
+    <col style="width:42px;">
+    <col style="background-color:#97DB9A;">
+    <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+    <col span="2" style="width:42px;">
+  </colgroup>
+  <tr>
+    <td>&nbsp;</td>
+    <th>Mon</th>
+    <th>Tues</th>
+    <th>Wed</th>
+    <th>Thurs</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+  </tr>
+  <tr>
+    <th>1st period</th>
+    <td>English</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>German</td>
+    <td>Dutch</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>2nd period</th>
+    <td>English</td>
+    <td>English</td>
+    <td>&nbsp;</td>
+    <td>German</td>
+    <td>Dutch</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>3rd period</th>
+    <td>&nbsp;</td>
+    <td>German</td>
+    <td>&nbsp;</td>
+    <td>German</td>
+    <td>Dutch</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>4th period</th>
+    <td>&nbsp;</td>
+    <td>English</td>
+    <td>&nbsp;</td>
+    <td>English</td>
+    <td>Dutch</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+```
+
+```css
+html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  padding: 10px;
+}
+```
+
+Open the code in a live <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA65WQoAEwY2bNg6AWjBo50HYjNw05OHbgwAThBgANzG_Ma0aABGsBZWZpGkfmx-djRQUGgovm5pGVkwIeTWCUn-bgBMKBLupFAQLGZ-uJEAFOUADO1CHV09AJSF1rC09Clw6DzkuG4AjFWDNvZwEABeMG7tBAAcfjByhWGMLEJmtNKxRfGJybNVNXUNTa0zAJxdr-9vA3HoLCxi0zMM3adw681C4Qalku9AktDsaDquHIOVU_gOxgwmVoEAoF2sv3-U1mIIkGPIGgA9No9DAjBTpDN9ABlDDSUi1U4QOQwCLRGBUxn0jR8gxxDRpXB-UgAVxQ9Os1glnPGngAvIYQOVNQrFcqoO5dLANSBIpgsFLZeJUrVEogAMQvADsABEAEIvACCIRAuqVaUNtJNAHd6mdEAAWSpknVxf0qo0wE1m7CWmXWtJ2x2uj3e2OXeMGmnGzUpi3S9MsG1QLMugDCdYjWwAokErqU_JG7mQHmZ7XWZhGAMxOvO-uNmfXudDkE3akCBksgUMscNR8Hjy5UyUV-Xi2h-P2T2gsfQAMnIkXGQSpJ6PIuk-gAshRb4-Jw_9AAVGXwN_3s59AAdRgFh_w_QCv2kGU_DgcCC2PR8ADEAngxVEJZNBaDQvVAOZdMcNvQ992IhDPxmbQzA4AJSDAylAIg09mymOo4GkW9T0Y89L2vDiANPC8rxQG96M4si7wAcX8ORPD4riXRlWg2Tk8SBJ44SVPQkU1KEkS73FejSKVA8AMfcpxCo_xcTohjVP0ZjcFY9jRP4-yWIgNjNNwnTeJcripL8GSKT8uyFKU5z9LswTfMirS72ijSQqVQzdRFIzcMfIckksmibPfKL1L0sS4tPAKgq84yfMS2LvP0MrZKS2qwuUxrKu43SKuPKqitSlKSNM_QIzOHLrJwtqEp6riHKczrtPamLitq6aPIixa2ua1bXIm2b4sKryiOFeiogMEBBH4IA&query=file=/index.html" target="_blank">Codesandbox</a> to see the actual result of the code.
 
 Recreate the table by following the steps below.
 
