@@ -18,7 +18,14 @@ jobs:
         id: check_files
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week02/exercises/day03/html_table_basics/blank-template.html, user/week02/exercises/day03/html_table_basics/minimal-table.css"
+          files: "user/week02/exercises/day03/html_table_basics/blank-template.html"
+          fail: true
+
+      - name: Check file existence
+        id: check_files
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/minimal-table.css"
           fail: true
 
       - name: File exists
