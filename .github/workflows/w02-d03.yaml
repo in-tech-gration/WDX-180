@@ -1,0 +1,67 @@
+name: "Tests: for Week 02 - Day 03"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    paths:
+      - user/week02/exercises/day03/**
+
+jobs:
+  HTML_Tables:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "HTML table basics > Check file existence: blank-template.html" 
+        # https://github.com/marketplace/actions/file-existence
+        # https://github.com/andstor/file-existence-action
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/blank-template.html"
+          fail: true
+
+      - name: "HTML table basics > Check file existence: minimal-table.css"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/minimal-table.css"
+          fail: true
+
+      - name: "HTML table basics > Check file existence: dogs-table.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/dogs-table.html"
+          fail: true
+
+      - name: "HTML table basics > Check file existence: time-table.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/time-table.html"
+          fail: true
+
+      - name: "HTML table advanced features and accessibility > Check file existence: timetable-fixed.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/timetable-fixed.html"
+          fail: true
+
+      - name: "HTML table advanced features and accessibility > Check file existence: spending-record.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/spending-record.html"
+          fail: true
+
+      - name: "HTML table advanced features and accessibility > Check file existence: items-sold.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/html_table_basics/items-sold.html"
+          fail: true
+
+      - name: "Structuring planet data > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/Structuring_planet_data/blank-template.html, user/week02/exercises/day03/Structuring_planet_data/minimal-table.css, user/week02/exercises/day03/Structuring_planet_data/planets-data.txt"
+          fail: true
+
