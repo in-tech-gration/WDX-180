@@ -19,6 +19,7 @@ jobs:
         uses: andstor/file-existence-action@v2
         with:
           files: "user/week02/exercises/day03/html_table_basics/blank-template.html, user/week02/exercises/day03/html_table_basics/minimal-table.css"
+          fail: true
 
       - name: File exists
         if: steps.check_files.outputs.files_exists == 'true'
