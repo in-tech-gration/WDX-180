@@ -2,6 +2,14 @@
 
 [![Web Development X - A Course made with love by intechgration.io](/assets/WDX.Header.jpg)](https://in-tech-gration.github.io/WDX-180)
 
+```css hidden
+* { border: 1px solid red; }
+```
+
+```html hidden
+<h1>HIDDEN?</h1>
+```
+
 ## Web Development X - 180°
 
 <!-- About -->
