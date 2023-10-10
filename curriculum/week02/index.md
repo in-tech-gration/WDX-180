@@ -12,6 +12,10 @@ _(Updated: 18/09/2023)_
 
 ### Schedule
 
+  - [Study](#study-plan)
+  - [Exercises](#exercises)
+  - [Extra Resources](#extra-resources)
+
 ### Study Plan
 
   **What you'll learn:**
@@ -159,6 +163,10 @@ _(Updated: 18/09/2023)_
 
 ### Schedule
 
+  - [Study](#study-plan-1)
+  - [Exercises](#exercises-1)
+  - [Extra Resources](#extra-resources-1)
+
 ### Study Plan
 
   **What you'll learn:**
@@ -168,16 +176,20 @@ _(Updated: 18/09/2023)_
 
   - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/index.md)
     - Description: The `<head>` of an HTML document is the part that is not displayed in the web browser when the page is loaded. In this article, you'll learn all about the information it contains.
-    - Exercises:
+    - Exercises: Make sure to practice by completing all the **Active learning** sections of this article and then pasting all the files that you've created in the `user/week02/exercises/day02/the_head_metadata_in_html/` folder for submission.
       - [Active learning: Inspecting a simple example](./resources/the_head_metadata_in_html/index.md#active-learning-inspecting-a-simple-example)
+
       - [Active learning: Experiment with character encoding](./resources/the_head_metadata_in_html/index.md#active-learning-experiment-with-character-encoding)
+
       - [Active learning: The description's use in search engines](./resources/the_head_metadata_in_html/index.md#active-learning-the-descriptions-use-in-search-engines)
+
       - [Active learning: applying CSS and JavaScript to a page](./resources/the_head_metadata_in_html/index.md#active-learning-applying-css-and-javascript-to-a-page)
+
 
   - [Read: **HTML text fundamentals**](resources/html_text_fundamentals/index.md)
     - Description: This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
     - Exercises: 
-      - Make sure to complete the 3 Tasks found under the 'Test your skills!' section of the tutorial.
+      - Make sure to complete all the **Active learning** sections along with the 3 Tasks found under the 'Test your skills!' section of the tutorial and submit your code under the `user/week02/exercises/day02/html_text_fundamentals/` folder.
 
   - [Read: **Creating hyperlinks**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks)
     - Description: You already know [**how the hyperlink changed everything**](https://www.youtube.com/watch?v=3Va3oY8pfSI). Now it's time to dive into the more technical aspects of it.
@@ -191,7 +203,8 @@ _(Updated: 18/09/2023)_
       - Link best practices
       - The `download` attribute
       - Email links
-    - Exercises:
+    - Exercises:       
+      - Make sure to complete all the **Active learning** sections along with the 3 Tasks found under the 'Test your skills!' section of the tutorial and submit your code under the `user/week02/exercises/day02/Creating_hyperlinks/` folder:
       - [Active learning: creating your own example link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_your_own_example_link)
       - [Active learning: creating a navigation menu](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_a_navigation_menu)
       - [Test your skills: Links (3x Tasks)](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links)
@@ -213,6 +226,10 @@ _(Updated: 18/09/2023)_
 
 ### Schedule
 
+  - [Study](#study-plan-2)
+  - [Exercises](#exercises-2)
+  - [Extra Resources](#extra-resources-2)
+
 ### Study Plan
 
   **What you'll learn:**
@@ -230,15 +247,22 @@ _(Updated: 18/09/2023)_
 ### Sources and Attributions
 </details>
 
-<!-- Week 2 - Day 4 | Forms -->
+<!-- Week 2 - Day 4 | Forms & Accessibility -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 4 | Forms</h2></summary>
 
 ### Schedule
 
+  - [Study](#study-plan-3)
+  - [Exercises](#exercises-3)
+  - [Extra Resources](#extra-resources-3)
+
 ### Study Plan
 
   **What you'll learn:**
+
+  Which airline apps fail blind people? - Which?
+  https://www.youtube.com/watch?v=TUfM2IeZp54
 
 ### Summary
 
@@ -256,6 +280,10 @@ _(Updated: 18/09/2023)_
   <summary><h2>Week 2 - Day 5 | SVG & MathML</h2></summary>
 
 ### Schedule
+
+  - [Study](#study-plan-4)
+  - [Exercises](#exercises-4)
+  - [Extra Resources](#extra-resources-4)
 
 ### Study Plan
 
