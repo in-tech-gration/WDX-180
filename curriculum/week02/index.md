@@ -247,13 +247,21 @@ _(Updated: 18/09/2023)_
 
   **Guides**
 
+  <!-- - [HTML table basics](./resources/html_table_basics/index.md){:target="_blank"}
+    - Description: This article gets you started with HTML tables, covering the very basics such as rows and cells, headings, making cells span multiple columns and rows, and how to group together all the cells in a column for styling purposes. (COMPLETED) -->
+
   This module contains the following articles, which will take you through all the fundamentals of creating tables in HTML.
 
-  - [HTML table basics](./resources/html_table_basics/index.md){:target="_blank"}
-    - Description: This article gets you started with HTML tables, covering the very basics such as rows and cells, headings, making cells span multiple columns and rows, and how to group together all the cells in a column for styling purposes.
+  - [HTML table basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics){:target="_blank"}
+    - **Description:** This article gets you started with HTML tables, covering the very basics such as rows and cells, headings, making cells span multiple columns and rows, and how to group together all the cells in a column for styling purposes.
+    - **Exercises:** You should place the files related to the exercises found in this module, in the `user/week02/exercises/day03/html_table_basics/` folder.
 
   - [HTML table advanced features and accessibility](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced){:target="_blank"}
-    - Description: This article looks at some more advanced features of HTML tables — such as captions/summaries and grouping your rows into table head, body and footer sections — as well as looking at the accessibility of tables for visually impaired users.
+    - **Description:** This article looks at some more advanced features of HTML tables — such as captions/summaries and grouping your rows into table head, body and footer sections — as well as looking at the accessibility of tables for visually impaired users.
+    - **Exercises:** You should place the files related to the exercises found in this module, in the `user/week02/exercises/day03/html_table_basics/` folder.
+
+  <!-- - [Styling tables](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
+    - Description: This article provides a guide to making HTML tables look good, with some specific table styling techniques highlighted. -->
 
 ### Summary
 
@@ -262,9 +270,8 @@ _(Updated: 18/09/2023)_
   The following assessment will test your understanding of the HTML table techniques covered in the guides above.
 
   - [Structuring planet data](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data){:target="_blank"}
-    - Description: In our table assessment, we provide you with some data on the planets in our solar system, and get you to structure it into an HTML table.
-
-  - Exercise: https://github.com/4GeeksAcademy/html-tutorial-exercises-course/tree/master/exercises/12-my-first-table
+    - **Description:** In our table assessment, we provide you with some data on the planets in our solar system, and get you to structure it into an HTML table.
+    - **Submission:** You should place the files related to this exercise in the `user/week02/exercises/day03/Structuring_planet_data` folder.
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
@@ -292,9 +299,6 @@ _(Updated: 18/09/2023)_
 ### Study Plan
 
   **What you'll learn:**
-
-  Which airline apps fail blind people? - Which?
-  https://www.youtube.com/watch?v=TUfM2IeZp54
 
 ### Summary
 
