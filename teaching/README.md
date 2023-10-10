@@ -34,9 +34,9 @@
 
 ## Integrating MDN Articles in our Curriculum
 
-  1. Find the MDN article, and keep the title and URL
+  1. Find the MDN article, take note of the **title** and **URL**
     
-  - For example, title: "How CSS is structured", URL: "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured"
+  - For example, title: **"How CSS is structured"**, URL: `"https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured"`
 
   2. Scroll down to the `Summary` section and click on `Edit the page on GitHub`
 
