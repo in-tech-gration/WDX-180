@@ -9,6 +9,7 @@ try {
 
 } catch(e){
 
+  console.log(e);
   throw new Error(`
     Could not find exercise solution at the user/ folder. Please check if you have used the correct folder path (${solutionPath}) and commit message
   `);

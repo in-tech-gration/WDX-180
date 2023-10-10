@@ -66,7 +66,8 @@ nav#side-toc > ul > li {
   padding: 5px ;
   border-bottom: 1px solid gray;
 }
-nav#side-toc > ul > li > p, a{
+nav#side-toc > ul > li > p,
+nav#side-toc > ul > li > a {
   font-size: 1rem; /* base size */
 }
 //<< SIDE NAVIGATION (ToC) RESPONSIVENESS

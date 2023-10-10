@@ -103,6 +103,15 @@ on your system:
   "WARNING: Daily structure for day 5 is missing some sections.
    6 required. Found 0."
 
+  - (009) Find entries like `[Watch: **JavaScript Numbers, Number Methods, isNaN | JavaScript Tutorial for Beginners**]` and escape the `|` pipe character with `\|` as it breaks during the Jekyll build process
+
+  Breaking links:
+
+  Don't do this: [Watch: **What is Localhost? | Explained**]()
+  Do this: [Watch: **What is Localhost? \| Explained**]()
+
+  Ref: https://github.com/jekyll/jekyll/issues/2818
+
 ## YARI MARKDOWN PARSER
 
   ### tools/yari.parser.js

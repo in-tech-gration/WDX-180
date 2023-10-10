@@ -1,0 +1,75 @@
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+.student-data {
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 0;
+}
+
+ul.student-list li {
+  margin: 1rem;
+}
+.student-progress-sheets {
+  margin: 0;
+  padding: 0;
+}
+.student-progress-sheets table {
+  transform: translateX(-30%);
+  width: 80vw;
+}
+
+.student-progress-sheets table td {
+  padding: 0.1rem 0.5rem;
+}
+.student-progress-sheets table td.completed-col {
+  background-color: tomato;
+  color: black;
+}
+.student-progress-sheets table td.completed {
+  background-color: yellowgreen;
+  color: black;
+}
+
+td.cell-with-link {
+  padding: 0.5rem 2rem !important;
+  text-align: center;
+  background: black;
+  color: orange;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.error {
+  color: tomato;
+}
+.error-dark {
+  padding: 0.5rem 2rem !important;
+  text-align: center;
+  background: darkred !important;
+  color: white;
+}
+.font-bold {
+  font-weight: bold;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.d-inline-block {
+  display: inline-block !important;
+}

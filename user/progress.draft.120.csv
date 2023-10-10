@@ -1,4 +1,4 @@
-Week, Day, Concept, Task, Level, Confidence, Completed, Submitted Links
+Week, Day, Concept, Task, Level, Confidence, Completed, Instructions
 13, 1,Even,Hand, -, 0-10, FALSE, -
 13, 2, -, -, -, 0-10, FALSE, -
 13, 3, -, -, -, 0-10, FALSE, -
@@ -38,11 +38,11 @@ Week, Day, Concept, Task, Level, Confidence, Completed, Submitted Links
 18, 2, Events Core Module, Build a custom logEvents module for event handling, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 3, Common Core Modules, Import 'http' module and start a simple web server, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 3, NodeJS Web Server, Get familiar with basic routing concepts, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-18, 3, NodeJS Web Server, Serve different type of files (JSON, text, images), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, NodeJS Web Server, Serve different type of files (JSON - text - images), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 3, NodeJS Web Server, Log requests and errors, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 3, ExpressJS, What is ExpressJS framework and install it, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-18, 3, ExpressJS, Handle routing using ExpressJS (routers, redirects, sending files, etc), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
-18, 4, ExpressJS, What is middleware, using built-in and third party middlewares, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, ExpressJS, Handle routing using ExpressJS (routers - redirects - sending files - etc), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 4, ExpressJS, What is middleware. Using built-in and third party middlewares, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 4, ExpressJS, Create a custom middleware, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 4, Express Router, Create and apply a router, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
 18, 4, Resource Access, What is the CORS mechanism, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column

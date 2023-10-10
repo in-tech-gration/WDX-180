@@ -10,6 +10,10 @@ Welcome to the first part of our curriculum, WDX 60°. The goal of this first pa
 
 Before you dive in, **make sure that you have your notebook** and colored pens besides your computer, in order to pause and take those invaluable notes as you move along the curriculum.
 
+At this point, it's extremely important to let you know that **sharing solutions** on Slack is **not allowed** and will be removed upon first notice. 
+
+We encourage you to **help and support each other** but in a constructive and helpful manner: guiding other participants towards the right direction by asking questions, providing hints, suggesting alternatives and generally cultivating a problem solving mindset instead of depriving others of the capacity to process a problem by handing them a ready-made solution. 
+
 **Let's get started!**
 
 <!-- Week 1 - Day 1 | Onboarding & Basics of Computing -->
@@ -361,6 +365,10 @@ Before you dive in, **make sure that you have your notebook** and colored pens b
   On top of HTML, you also learned about a very handy format, called `Markdown` which you are going to be seeing and using a lot in upcoming weeks.
 
 ### Exercises
+
+  **TIP:** Before starting to with the HTML exercises, perhaps, you can spend a few minutes to watch [this video](https://www.youtube.com/watch?v=n7wkAp9_bqw){:target="_blank"} which walks you through the process of setting up VSCode to efficiently work with the exercises.
+
+  ---
 
   - Complete the following exercises and update the progress CSV files accordingly:
 

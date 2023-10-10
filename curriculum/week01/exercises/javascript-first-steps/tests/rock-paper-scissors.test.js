@@ -2,7 +2,7 @@ const test = require("node:test");
 const assert = require("assert");
 
 const solutionPath = "user/week01/exercises/day05/javascript-first-steps/rock-paper-scissors";
-global.prompt = () => {};
+global.prompt = () => { return '' };
 global.alert = () => {};
 
 try {

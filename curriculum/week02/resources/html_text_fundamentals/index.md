@@ -144,7 +144,7 @@ Therefore, we need to give our content structural markup.
 
 ### Active learning: Giving our content structure
 
-Let's jump straight in with an example. Create a basic HTML file (named `user/week02/exercises/short-story.html`) and add the following text inside the `<body>` tags:
+Let's jump straight in with an example. Create a basic HTML file (named `user/week02/exercises/html_text_fundamentals/short-story.html`) and add the following text inside the `<body>` tags:
 
 ```
 My short story I am a statistician and my name is Trish.
@@ -223,7 +223,7 @@ The last step is to wrap each list item in a [`<li>`](https://developer.mozilla.
 
 #### Active learning: Marking up an unordered list
 
-Create an HTML file (`user/week02/exercises/shopping-list.html`) and create an unordered list containing the following items:
+Create an HTML file (`user/week02/exercises/html_text_fundamentals/shopping-list.html`) and create an unordered list containing the following items:
 
 ```
 milk eggs bread hummus
@@ -262,7 +262,7 @@ The markup structure is the same as for unordered lists, except that you have to
 
 #### Active learning: Marking up an ordered list
 
-Try turning the text content below into an ordered list in a file named `user/week02/exercises/directions.html`.
+Try turning the text content below into an ordered list in a file named `user/week02/exercises/html_text_fundamentals/directions.html`.
 
 ```
 Drive to the end of the road
@@ -279,7 +279,7 @@ The school is on your right, 300 meters up the road
 
 ### Active learning: Marking up our recipe page
 
-Create a file named `user/week02/exercises/recipe-page.html` and turn the following text content into an HTML structure that looks like this:
+Create a file named `user/week02/exercises/html_text_fundamentals/recipe-page.html` and turn the following text content into an HTML structure that looks like this:
 
 ![](./assets/recipe.output.jpg)
 
@@ -332,7 +332,7 @@ Since the last two bullets are very closely related to the one before them (they
 </ol>
 ```
 
-Try going back to the previous active learning example and updating the second list like this. Save the file in `user/week02/exercises/recipe-page2.html`.
+Try going back to the previous active learning example and updating the second list like this. Save the file in `user/week02/exercises/html_text_fundamentals/recipe-page2.html`.
 
 ## Emphasis and importance
 
@@ -440,7 +440,7 @@ The aim of this skill test is to assess whether you understand how to mark up te
 
 In this task, we want you to mark up the provided HTML using semantic heading and paragraph elements.
 
-Save the provided HTML in `user/week02/exercises/basic-text1.html` and try to make it look like the screenshot below:
+Save the provided HTML in `user/week02/exercises/html_text_fundamentals/basic-text1.html` and try to make it look like the screenshot below:
 
 HTML:
 
@@ -503,7 +503,7 @@ The finished example should look like this:
 
 ## Task 2
 
-In this task, we want you to turn the first un-marked up list into an unordered list, and the second one into an ordered list. Save the code in a file named `user/week02/exercises/basic-text2.html`.
+In this task, we want you to turn the first un-marked up list into an unordered list, and the second one into an ordered list. Save the code in a file named `user/week02/exercises/html_text_fundamentals/basic-text2.html`.
 
 ```html
 <!DOCTYPE html>
@@ -577,7 +577,7 @@ The finished example should look like this:
 
 ## Task 3
 
-In this task, you are provided with a paragraph, and your aim is to use some inline elements to mark up a couple of appropriate words with strong importance, and a couple with emphasis. Save the file in `user/week02/exercises/basic-text2.html`.
+In this task, you are provided with a paragraph, and your aim is to use some inline elements to mark up a couple of appropriate words with strong importance, and a couple with emphasis. Save the file in `user/week02/exercises/html_text_fundamentals/basic-text2.html`.
 
 ```html
 <!DOCTYPE html>

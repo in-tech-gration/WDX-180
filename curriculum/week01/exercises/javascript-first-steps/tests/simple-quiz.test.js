@@ -2,6 +2,8 @@ const test = require('node:test');
 const assert = require('assert')
 
 const solutionPath = "user/week01/exercises/day05/javascript-first-steps/simple-quiz"
+global.prompt = () => { return '' };
+global.alert = () => {};
 
 try {
 
@@ -9,6 +11,7 @@ try {
 
 } catch(e){
 
+  console.log(e);
   throw new Error(`
     Could not find exercise solution at the user/ folder. Please check if you have used the correct folder path (${solutionPath}) and commit message
   `);

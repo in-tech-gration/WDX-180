@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "cockpit": "node tools/instructor/server.js",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
     "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
     "DEPRECATED_wordpress": "echo 'coming soon...'",
@@ -10,6 +11,7 @@
     "yari:download": "node tools/yari.download.js",
     "yari:parse": "node tools/yari.parser.js",
     "validate": "node tools/validator.js",
+    "csv-validate": "node tools/csv.tools.js -s",
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
