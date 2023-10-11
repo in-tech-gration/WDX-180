@@ -30,6 +30,14 @@ const getWeeklyGitHubProgressURLs = (
 const currentlySelectedStudents = {}
 const studentList = document.querySelector("ul.student-list");
 const COMPLETED_COL = 6;
+const INSTRUCTIONS_COL = 7;
+
+// GITHUB API:
+const GITHUB_API_BASE = `https://api.github.com`;
+
+const getGitHubRepoInfoFromUsername = username => `${GITHUB_API_BASE}/repos/${username}/WDX-180`;
+
+const getGitHubRepoSyncInfoFromUsername = username => `${GITHUB_API_BASE}/repos/in-tech-gration/WDX-180/compare/in-tech-gration:main...${username}:main`
 
 // FUNCTIONS:
 
@@ -38,7 +46,7 @@ const COMPLETED_COL = 6;
  */
 function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay) {
 
-  console.log("renderSpreadsheetDataOnTable()",{ data, headers, selectedDay });
+  // console.log("renderSpreadsheetDataOnTable()",{ data, headers, selectedDay });
 
   const table             = document.querySelector(tableSelector);
   const { parentElement } = table;
@@ -74,7 +82,7 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
       if ( is404 || weeklyData.length === 0 ){
 
         const prepend = selectedDay === "all" ? "Weekly" : "";
-        const weekday = selectedDay === "all" ? `(day ${idx})` : "";
+        const weekday = selectedDay === "all" ? `(day ${idx+1})` : "";
 
         newCell.innerHTML = prepend + ( is404 ? `Entry ${weekday} resulted in 404` : `Entry ${weekday} is empty. Check for malformed CSV.` );
         newCell.setAttribute("colspan", headers.length);
@@ -119,7 +127,20 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
     
             const newCell = row.insertCell(-1);
             const cellData = weeklyData[rowIndex][colIndex];
+
             newCell.innerHTML = cellData;
+            
+            if ( !cellData ){
+              newCell.innerHTML = `<span class="error">(malformed cell data)</span>`;
+            }
+
+            if ( colIndex === INSTRUCTIONS_COL ){
+
+              const isLink = cellData.trim().indexOf("https://")  === 0; 
+              if ( isLink ){
+                newCell.innerHTML = `<a href="${cellData}" target="_blank">${cellData}</a>`;
+              }
+            } 
     
             if ( colIndex > 3 && colIndex < 7  ){
               newCell.classList.add("text-center");
@@ -275,6 +296,48 @@ async function handleWeekSelection( studentId ){
   }
 }
 
+function handleProgressDisplay(target){
+  const studentId = target.href.split("#")[1];
+  const studentSection = studentList.querySelector(`section.student-data[data-student="${studentId}"]`);
+  studentSection.classList.toggle("hidden");
+
+  const studentTableSection = studentList.querySelector(`section.student-progress-sheets[data-student="${studentId}"]`);
+  studentTableSection.classList.toggle('hidden');
+
+}
+
+function handleRepoSyncInfo( target ){
+  const studentId = target.href.split("#")[1];
+  console.log({ studentId });
+  const btn = studentList.querySelector(`a.sync[href='#${studentId}']`);
+  const btnIcon = btn.querySelector("i")
+  btnIcon.classList.add("rotating");
+
+  fetch(getGitHubRepoSyncInfoFromUsername(studentId))
+  .then( res => res.json() )
+  .then( data =>{
+    // data.ahead_by / data.behind_by / data.total_commits
+    const behindByEl = btn.querySelector(".github_behind_by");
+    if ( data.behind_by > 0 ){
+      behindByEl.textContent = "Behind by: " + data.behind_by;
+      behindByEl.classList.add("active");
+    } else {
+      behindByEl.textContent = "In-sync";
+      behindByEl.classList.add("active");
+      behindByEl.classList.add("github_in_sync");
+    }
+    const commitEl = btn.querySelector(".github_commits")
+    commitEl.textContent = "Commits: " + data.total_commits;
+    commitEl.classList.add("active");
+
+  })
+  .catch( error => {
+    console.log(error);
+  })
+  .finally(()=>{
+    btnIcon.classList.remove("rotating");
+  })
+}
 // ACTION!
 
 function init(e) {
@@ -286,14 +349,10 @@ function init(e) {
     const { target } = e;
 
     if (target.classList.contains("student-progress-btn")) {
-      e.preventDefault();
-      const studentId = target.href.split("#")[1];
-      const studentSection = studentList.querySelector(`section.student-data[data-student="${studentId}"]`);
-      studentSection.classList.toggle("hidden");
-
-      const studentTableSection = studentList.querySelector(`section.student-progress-sheets[data-student="${studentId}"]`);
-      studentTableSection.classList.toggle('hidden');
-  
+      handleProgressDisplay(target);
+    }
+    if (target.classList.contains("student-repo-sync")) {
+      handleRepoSyncInfo(target);
     }
 
   });

@@ -11,10 +11,12 @@
 ul.student-list li {
   margin: 1rem;
 }
+
 .student-progress-sheets {
   margin: 0;
   padding: 0;
 }
+
 .student-progress-sheets table {
   transform: translateX(-30%);
   width: 80vw;
@@ -23,10 +25,12 @@ ul.student-list li {
 .student-progress-sheets table td {
   padding: 0.1rem 0.5rem;
 }
+
 .student-progress-sheets table td.completed-col {
   background-color: tomato;
   color: black;
 }
+
 .student-progress-sheets table td.completed {
   background-color: yellowgreen;
   color: black;
@@ -42,15 +46,18 @@ td.cell-with-link {
 .text-center {
   text-align: center !important;
 }
+
 .error {
   color: tomato;
 }
+
 .error-dark {
   padding: 0.5rem 2rem !important;
   text-align: center;
   background: darkred !important;
   color: white;
 }
+
 .font-bold {
   font-weight: bold;
 }
@@ -58,18 +65,88 @@ td.cell-with-link {
 .p-0 {
   padding: 0 !important;
 }
+
 .m-0 {
   margin: 0 !important;
 }
+
 .mt-0 {
   margin-top: 0 !important;
 }
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
+
 .mb-1 {
   margin-bottom: 1rem;
 }
+
 .d-inline-block {
   display: inline-block !important;
+}
+
+ul.student-list,
+ul.student-list ul {
+  padding-left: 0;
+}
+ul.student-list > li > ul > li {
+  display: flex;
+  flex-wrap: wrap;
+}
+.github_info {
+  padding: 0 0.75rem;
+  border-radius: 8px;
+  color: black;
+  margin: 0 0.5rem;
+  display: none;
+}
+.github_info.active {
+  display: inline-block;
+}
+.github_behind_by {
+  background: tomato;
+}
+.github_commits {
+  background: yellowgreen;
+}
+.github_in_sync {
+  background: green;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg) scale(0.75);
+  }
+  to {
+    transform: rotate(360deg) scale(0.75);
+  }
+}
+.rotating {
+  animation: rotating 2s linear infinite;
+}
+
+.ic-btn {
+  background: black;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 200ms ease;
+  padding: 0rem 0.75rem;
+  color: white !important;
+  border-radius: 6px;
+  margin: 0.5rem 0.2rem 0 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ic-btn:hover {
+  background: forestgreen;
+  filter: none !important;
+}
+
+.ic-btn i {
+  color: white;
+  text-decoration: none;
+  transform: scale(0.7);
 }
