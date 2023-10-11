@@ -74,7 +74,57 @@
 
   10. You can regularly validate the `README.md` file using the `tools/validator.js` script.
 
-## Creating Automated tests for JavaScript exercises
+## Automated Tests
+
+In this section, you can find instructions on how to create various tests.
+
+> You can combine multiples types of tests in a single YAML file.
+
+Because the following steps are based on **GitHub Actions** workflow, in order to avoid submitting solved exercises to the original repo of WDX-180 please make sure to fork the repo to your personal GitHub account and start working there.
+
+### File Existence Tests
+
+  These are simple tests that check if specific files are submitted to specific exercise folder.
+
+  1. Create a new YAML file inside `.github/workflows/` folder name `wXX-dYY.yaml` using the sample below
+  ```yaml
+  name: "Tests: for Week XX - Day YY"
+
+  on:
+    push:
+      # Run tests only when the following folders/files have changed during the push:
+      paths:
+        - user/weekXX/exercises/dayYY/**
+
+  jobs:
+    HTML_Tables:
+      
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+
+        - name: "EXERCISE_TASK_1_DESCRIPTION > Check file(s) existence" 
+          # https://github.com/marketplace/actions/file-existence
+          # https://github.com/andstor/file-existence-action
+          uses: andstor/file-existence-action@v2
+          with:
+            files: "user/weekXX/exercises/dayXX/EXERCISE_1/FILE_1, user/weekXX/exercises/dayXX/EXERCISE_1/FILE_4, user/weekXX/exercises/dayXX/EXERCISE_1/FILE_3"
+            fail: true
+
+        - name: "EXERCISE_TASK_2_DESCRIPTION > Check file(s) existence" 
+          # https://github.com/marketplace/actions/file-existence
+          # https://github.com/andstor/file-existence-action
+          uses: andstor/file-existence-action@v2
+          with:
+            files: "user/weekXX/exercises/dayXX/EXERCISE_2/FILE_1, user/weekXX/exercises/dayXX/EXERCISE_2/FILE_4, user/weekXX/exercises/dayXX/EXERCISE_2/FILE_3"
+            fail: true
+  ```
+
+### JavaScript Tests
+
+  Below you can find instructions on how to create tests for the Javascript exercises submitted by the students.
 
   1. Create a folder named `tests` inside each exercise's folder (e.g. `/curriculum/weekXX/exercises/<EXERCISE-NAME>/tests/`)
   2. Create a Javascript test file `<FILE-NAME>.test.js` using the sample below
@@ -142,6 +192,3 @@
           # CHANGE PATH:
           run: node /curriculum/weekXX/exercises/<EXERCISE-NAME>/tests/<FILE-NAME>.test.js
   ```
-  4. To test: 
-      - **fork** the **WDX-180 repo**
-      - **solve the exercises** by following the **instructions given**.
