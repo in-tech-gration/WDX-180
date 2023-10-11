@@ -273,6 +273,13 @@
 
   const gameResult10 = checkMove("pencil", "rock");
   console.log("Game Result 10: ", gameResult10); // Should be invalid move
+
+  try {
+    if (global) {
+      global.getRandomMove = getRandomMove;
+      global.checkMove = checkMove;
+    }
+  } catch (e) {}
   ```
 
   When you're ready, move the files in the following path `user/week01/exercises/day05/javascript-first-steps/` and run the git commands below to submit your exercise:
