@@ -22,9 +22,60 @@
 
 --- 
 
-## Week 01 (Day 01-05)
+## Week 01 (Day 01)
 
   **MOVED TO `/curriculum/FAQ/index.md`**
+
+--- 
+
+## Week 01 (Day 02)
+
+QUESTION: I will need a clear explanation about idempotence in examples.
+
+_(Source: https://speakerdeck.com/rkh/http-rubymonsters-edition?slide=20)_
+
+ANSWER: Let's go through the process of how we suggest you start your search on a new term, either technical in nature or found in a technical context.
+
+If the term does not make sense in english or you are unfamiliar with it, we suggest that you start with finding out and understanding its formal definition. You can do that by googling `define [ACTUAL WORD]`, e.g. let's start by searching `define idempotence` (which in turns leads us to `idempotent`)
+
+[SCREENSHOT](/curriculum/week02/assets/define.idempotent.jpg)
+
+_*adjective: idempotent*_
+_denoting an element of a set which is unchanged in value when multiplied or otherwise operated on by itself._
+
+OK. That gives us a clue. Or at least some clue, about what the word is all about in a general context.
+
+It's also useful sometimes to look at the etymology of the word to better understand its meaning. For example, we see that the word is made up of two words: "idem" (which means the same in Latin) and "potent" which means "having great power, influence or effect". For our purposes, it makes sense to keep the last meaning of potent: "same" + "effect"
+
+If at this point, things are not clear enough, we jump to Wikipedia which states that:
+
+_"Idempotence is the property of certain operations in mathematics and computer science whereby **they can be applied multiple times without changing the result beyond the initial application**."_
+
+That provides even more insight into the meaning of the word.
+
+To give a more concrete explanation with a programming example:
+
+Idempotent means that the result of every operation should be same: 
+
+- If a variable named `i` is equal to `1`, the `i + i` is an *idempotent* operation (shows _idempotence_) since every operation of `1+1` will result in the same unchanged initial result `2`.
+
+- By contrast, `i++` is *not an idempotent* operation, since every time the operation takes place, `i` will be larger by 1 since the last operation: `2`, `3`, `4` and so forth.
+
+In the context of HTTP methods, and specifically taken from the presentation...
+
+_"Idempotent requests:_
+_- The resource state will be the same after performing the request one or multiple times_
+_- HTTP client does not need to ask the user for permission to repeat the request_
+
+...idempotent requests have the same outcome no matter how many times they are executed.
+
+- If we do an `HTTP GET /index.html` request one or 1000 times, we will always get back the same `index.html` file.
+
+As per the documentation, "The methods GET, HEAD, PUT and DELETE share this property."
+
+If you want to read a bit more about Idempotency, check out [this article](https://www.mscharhag.com/api-design/http-idempotent-safe).  
+
+## Week 01 (Day 01-05)
 
   Q: Is the fork repository supposed to be private or public? (Because l choose private)
 
