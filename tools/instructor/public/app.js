@@ -134,7 +134,7 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
               newCell.innerHTML = `<span class="error">(malformed cell data)</span>`;
             }
 
-            if ( colIndex === INSTRUCTIONS_COL ){
+            if ( cellData && colIndex === INSTRUCTIONS_COL ){
 
               const isLink = cellData.trim().indexOf("https://")  === 0; 
               if ( isLink ){
