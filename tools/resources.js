@@ -54,7 +54,11 @@ const args = parseArgs({ options, strict: false });
 
 // HANDLE MISSING PARAMETERS:
 if (Object.keys(args.values).length === 0) {
-  return warn("Missing arguments. Maybe you wanted to run with `--search-for-youtube <ID> or -y <ID>?`")
+  warn("Missing arguments.")
+  warn("Maybe you wanted to run with:")
+  warn("--search-for-youtube <ID> or -y <ID>")
+  warn("--search-by-url <URL> or -u <URL>")
+  return; 
 }
 
 const help = args.values["help"];

@@ -1730,6 +1730,36 @@
       "language": [
         "en"
       ]
+    },
+    "understand-website-accessibility-with-the-firefox-accessibility-inspector": {
+      "type": "YouTube",
+      "duration": 481,
+      "title": "Understand Website Accessibility with the Firefox Accessibility Inspector",
+      "date": "11/11/2019",
+      "youtube": {
+        "id": "7mqqgIxX_NU",
+        "channel_id": "UCh5UlGiu9d6LegIeUCW4N1w",
+        "channel_title": "Mozilla Developer",
+        "thumbnail_url": "https://i.ytimg.com/vi/7mqqgIxX_NU/sddefault.jpg"
+      },
+      "tags": [
+        "mozilla",
+        "firefox",
+        "mozilla developer",
+        "css",
+        "html",
+        "a11y",
+        "accessibility",
+        "front-end development",
+        "web design",
+        "code",
+        "Accessibility Inspector",
+        "Accessibility tools",
+        "WCAG"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
