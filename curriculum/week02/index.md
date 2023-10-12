@@ -309,7 +309,7 @@ _(Updated: 18/09/2023)_
 
   This module provides a series of articles that will help you master the essentials of web forms. Web forms are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a user interface. However, for historical and technical reasons, it's not always obvious how to use them to their full potential. In the articles listed below, we'll cover most of the essential aspects of Web forms.
 
-  ## Prerequisites
+  **Prerequisites**
 
   - HTML
 
