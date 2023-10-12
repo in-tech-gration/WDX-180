@@ -65,3 +65,9 @@ jobs:
           files: "user/week02/exercises/day03/Structuring_planet_data/blank-template.html, user/week02/exercises/day03/Structuring_planet_data/minimal-table.css, user/week02/exercises/day03/Structuring_planet_data/planets-data.txt"
           fail: true
 
+      - name: "Bits & Bytes Table > Check solution files existence: user/week02/exercises/day03/bits_and_bytes_table/index.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day03/bits_and_bytes_table/index.html"
+          fail: true
+

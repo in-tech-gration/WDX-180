@@ -209,7 +209,7 @@ _(Updated: 18/09/2023)_
       - [Active learning: creating a navigation menu](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_a_navigation_menu){:target="_blank"}
       - [Test your skills: Links (3x Tasks)](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links){:target="_blank"}
 
-### Summary
+<!-- ### Summary -->
 
 ### Exercises
 
@@ -260,10 +260,13 @@ _(Updated: 18/09/2023)_
     - **Description:** This article looks at some more advanced features of HTML tables — such as captions/summaries and grouping your rows into table head, body and footer sections — as well as looking at the accessibility of tables for visually impaired users.
     - **Exercises:** You should place the files related to the exercises found in this module, in the `user/week02/exercises/day03/html_table_basics/` folder.
 
+  - **Exercise: Recreate the table** shown on [this video frame (02:40)](https://www.youtube.com/watch?v=H2kTzmJJ79E&t=159s)
+    - For this exercise, create an HTML file and save it in `user/week02/exercises/day03/bits_and_bytes_table/index.html`
+
   <!-- - [Styling tables](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
     - Description: This article provides a guide to making HTML tables look good, with some specific table styling techniques highlighted. -->
 
-### Summary
+<!-- ### Summary -->
 
 ### Exercises
 
@@ -302,46 +305,35 @@ _(Updated: 18/09/2023)_
 
   - (Almost) all about HTML Forms!
 
-  **Accessibility**
+  **Web forms — Working with user data**
 
-  Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. Beyond mechanical use, it's important to learn how to use these technologies **responsibly** so that all readers might use your creations on the web. To help you achieve this, this module will cover general best practices (which are demonstrated throughout the HTML, CSS and JavaScript topics), [cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing){:target="_blank"}, and some tips on enforcing accessibility from the start. We'll cover accessibility in special detail. This is probably the **most important aspect of web development**.
+  This module provides a series of articles that will help you master the essentials of web forms. Web forms are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a user interface. However, for historical and technical reasons, it's not always obvious how to use them to their full potential. In the articles listed below, we'll cover most of the essential aspects of Web forms.
 
-  #### Overview
+  ## Prerequisites
 
-  When someone describes a site as "accessible", they mean that any user can use all its features and content, regardless of how the user accesses the web — even and especially users with physical or mental impairments.
+  - HTML
 
-  - Sites should be accessible to keyboard, mouse, and touch screen users, and any other way users access the web, including screen readers and voice assistants like Alexa and Google Home.
-  - Applications should be understandable and usable by people regardless of auditory, visual, physical, or cognitive abilities.
-  - Sites should also not cause harm: web features like motion can cause migraines or epileptic seizures.
+  **Introductory guides:**
 
-  **By default, HTML is accessible, if used correctly.** Web accessibility involves ensuring that content remains accessible, regardless of who and how the web is accessed.
+  - [Read: **Your first form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
+    - **Description:** The first article in our series provides you with your very first experience of creating a web form, including designing a simple form, implementing it using the right HTML form controls and other HTML elements, adding some very simple styling via CSS, and describing how data is sent to a server. 
+    - **Level:** Beginner
 
-  The Browser Accessibility developer tools (like for example the Firefox Accessibility Inspector or the Chrome DevTools Accessibility panel) are very useful tools for checking out accessibility issues on web pages. The following video provides a nice introduction to the Firefox Accessibility Inspector:
+  - [Read: **How to structure a web form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
+    - **Description:** With the basics out of the way, we'll now look in more detail at the elements used to provide structure and meaning to the different parts of a form.
+    - **Level:** Beginner
 
-  - [Watch: **Understand Website Accessibility with the Firefox Accessibility Inspector**](https://www.youtube.com/watch?v=7mqqgIxX_NU)
-    - Description: When building a website, understanding what's happening with accessibility can help you make certain your site can be used by everyone. Firefox DevTools now has a new Accessibility Inspector that shows an outline of the accessibility tree, and lists problems with contrast or missing labels, and much more. Jen Simmons gives you a tour.
-    - Duration: 8min
+  - [Complete the: **Test your skills: Form structure** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form)
 
-  - [Watch: **Which airline apps fail blind people? - Which?**](https://www.youtube.com/watch?v=TUfM2IeZp54) to understand more about why Accessibility matters and why your responsibility as a web developer is crucial to the well-being of other human beings.
+  **The different form controls:**
 
-  #### Guides
+  - [Read: **Basic native form controls**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls)
+    - **Description:** In this particular article, we will look at the original set of form controls, available in all browsers since the early days of the web.
+    - **Level:** Beginner
 
-  - [Read: **What is accessibility?**](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility){:target="_blank"}
-    - Description: This article starts off the module with a good look at what accessibility is — this includes what groups of people we need to consider and why, what tools different people use to interact with the web, and how we can make accessibility part of our web development workflow.
+  - [Complete the: **Test your skills: Basic controls** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/Test_your_skills:_Basic_controls)
 
-  - [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML){:target="_blank"}
-    - Description: A great deal of web content can be made accessible just by making sure the correct HTML elements are always used for the correct purpose. This article looks in detail at how HTML can be used to ensure maximum accessibility.
-
-  ## See also
-
-  Check out the following resources and make sure to cover the material included in there as you progress in this course and your web development journey:
-
-  - [Start Building Accessible Web Applications Today](https://egghead.io/courses/start-building-accessible-web-applications-today){:target="_blank"} — an excellent series of video tutorials by Marcy Sutton.
-  - [Deque University resources](https://dequeuniversity.com/resources/){:target="_blank"} — includes code examples, screen reader references, and other useful resources.
-  - [WebAIM resources](https://webaim.org/resources/){:target="_blank"} — includes guides, checklists, tools, and more.
-  - [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/){:target="_blank"} — includes a list of web accessibility evaluation tools.
-
-### Summary
+<!-- ### Summary -->
 
 ### Exercises
 
@@ -354,13 +346,14 @@ _(Updated: 18/09/2023)_
   **Content is based on the following sources:**
 
   - **MDN**:
+    - [Web forms — Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms) / [(Permalink)](https://github.com/mdn/content/blob/26f68076bcd8e3d5893cffcd9c1c01ff949318a9/files/en-us/learn/forms/index.md)
     - [Accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility) / [Permalink](https://github.com/mdn/content/blob/26f68076bcd8e3d5893cffcd9c1c01ff949318a9/files/en-us/learn/accessibility/index.md)
 
 </details>
 
-<!-- Week 2 - Day 5 | Accessibility, SVG & MathML -->
+<!-- Week 2 - Day 5 | HTML Form Controls & Accessibility -->
 <details markdown="1">
-  <summary><h2>Week 2 - Day 5 | Accessibility, SVG & MathML</h2></summary>
+  <summary><h2>Week 2 - Day 5 | HTML Form Controls & Accessibility</h2></summary>
 
 ### Schedule
 
@@ -372,14 +365,28 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
+  - More HTML Form controls
   - Using your web dev skills responsibly to create accessible websites
-  - Introduction to SVG & MathML
+
+  **More form controls:**
+
+  - [Read: **The HTML5 input types**](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types)
+    - **Description:** Now we'll look at the functionality of newer form controls in detail, including some new input types, which were added in HTML5 to allow the collection of specific types of data.
+    - **Level:** Beginner
+
+  - [Complete the: **Test your skills: HTML5 controls** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/Test_your_skills:_HTML5_controls)
+
+  - [Read: **Other form controls**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Other_form_controls)
+    - **Description:** We now look at the functionality of non-`<input>` form elements in detail.
+    - **Level:** Beginner
+
+  - [Complete the: **Test your skills: Other controls** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/Test_your_skills:_Other_controls)
 
   **Accessibility**
 
   Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. Beyond mechanical use, it's important to learn how to use these technologies **responsibly** so that all readers might use your creations on the web. To help you achieve this, this module will cover general best practices (which are demonstrated throughout the HTML, CSS and JavaScript topics), [cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing){:target="_blank"}, and some tips on enforcing accessibility from the start. We'll cover accessibility in special detail. This is probably the **most important aspect of web development**.
 
-  #### Overview
+  **Overview**
 
   When someone describes a site as "accessible", they mean that any user can use all its features and content, regardless of how the user accesses the web — even and especially users with physical or mental impairments.
 
@@ -415,7 +422,7 @@ _(Updated: 18/09/2023)_
 
   - [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/){:target="_blank"} — includes a list of web accessibility evaluation tools.
 
-### Summary
+<!-- ### Summary -->
 
 ### Exercises
 
