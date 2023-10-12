@@ -313,6 +313,12 @@ _(Updated: 18/09/2023)_
 
   - HTML
 
+  **High level overview:**
+
+  ![](./assets/form.01.png)
+
+  ![](./assets/form.02.png)
+
   **Introductory guides:**
 
   - [Read: **Your first form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
