@@ -220,9 +220,9 @@ _(Updated: 18/09/2023)_
 ### Sources and Attributions
 </details>
 
-<!-- Week 2 - Day 3 | Tables -->
+<!-- Week 2 - Day 3 | HTML Tables -->
 <details markdown="1">
-  <summary><h2>Week 2 - Day 3 | Tables</h2></summary>
+  <summary><h2>Week 2 - Day 3 | HTML Tables</h2></summary>
 
 ### Schedule
 
@@ -286,9 +286,9 @@ _(Updated: 18/09/2023)_
 
 </details>
 
-<!-- Week 2 - Day 4 | Forms & Accessibility -->
+<!-- Week 2 - Day 4 | HTML Forms -->
 <details markdown="1">
-  <summary><h2>Week 2 - Day 4 | Forms</h2></summary>
+  <summary><h2>Week 2 - Day 4 | HTML Forms</h2></summary>
 
 ### Schedule
 

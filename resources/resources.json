@@ -1760,6 +1760,70 @@
       "language": [
         "en"
       ]
+    },
+    "claude-shannon-the-man-who-turned-paper-into-pixels": {
+      "type": "YouTube",
+      "duration": 352,
+      "title": "Claude Shannon: The Man Who Turned Paper Into Pixels",
+      "date": "17/06/2014",
+      "youtube": {
+        "id": "Q8rVJZ-VDKQ",
+        "channel_id": "UC3tCNZAURUKbrp2dQkZQy2w",
+        "channel_title": "Adam Westbrook",
+        "thumbnail_url": "https://i.ytimg.com/vi/Q8rVJZ-VDKQ/sddefault.jpg"
+      },
+      "tags": [
+        "Adam Westbrook",
+        "delve.tv",
+        "video essay",
+        "Information Theory",
+        "Claude Shannon",
+        "Binary",
+        "How computers work",
+        "How the digital world was born",
+        "how binary works",
+        "transistors",
+        "A mathematical theory of communication",
+        "Telephones",
+        "Information",
+        "Noise",
+        "Probabilities",
+        "Gambling",
+        "motion graphics",
+        "documentary",
+        "video",
+        "Chopin",
+        "information age",
+        "digital age",
+        "juggling",
+        "what does digital mean",
+        "digital",
+        "learning",
+        "curiosity",
+        "delve",
+        "Vincent Van Gogh",
+        "Charles and Ray Eames",
+        "knowledge",
+        "history"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "the-bit-player-2018---claude-shannon---legendas-pt-br": {
+      "type": "YouTube",
+      "duration": 5152,
+      "title": "The Bit Player 2018 - Claude Shannon - Legendas PT-BR",
+      "date": "05/05/2022",
+      "youtube": {
+        "id": "CCrpgUM_rYc",
+        "channel_id": "UCdoP-TuqD5zRj3QnNR8IC8g",
+        "channel_title": "Odradek",
+        "thumbnail_url": "https://i.ytimg.com/vi/CCrpgUM_rYc/sddefault.jpg"
+      },
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
