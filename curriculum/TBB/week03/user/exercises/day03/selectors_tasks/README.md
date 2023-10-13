@@ -1,6 +1,6 @@
 # Week 03 | Day 03
 
-  [Test your skills: Selectors](../../../../../curriculum/week03/exercises/selectors_tasks/README.md)
+  [Test your skills: Selectors](/curriculum/TBB/week03/exercises/selectors_tasks/index.md)
 
   **Important!**
 

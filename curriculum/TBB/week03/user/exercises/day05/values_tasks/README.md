@@ -1,6 +1,6 @@
 # Week 03 | Day 05
 
-  [Test yours skills: Values and units](../../../../../curriculum/week03/exercises/values_tasks/README.md)
+  [Test yours skills: Values and units](/curriculum/TBB/week03/exercises/values_tasks/index.md)
 
   **Important!**
 

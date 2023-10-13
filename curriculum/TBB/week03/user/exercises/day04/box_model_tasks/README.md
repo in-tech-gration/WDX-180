@@ -1,6 +1,6 @@
 # Week 03 | Day 04
   
-  [Test your skills: The box model](../../../../../curriculum/week03/exercises/box_model_tasks/README.md)
+  [Test your skills: The box model](/curriculum/TBB/week03/exercises/box_model_tasks/index.md)
 
   **Important!**
 

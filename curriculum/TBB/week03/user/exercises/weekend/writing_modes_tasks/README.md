@@ -1,6 +1,6 @@
 # Week 03 | Weekend
 
-  [Test your skills: Writing modes and logical properties](../../../../../curriculum/week03/exercises/writing_modes_tasks/README.md)
+  [Test your skills: Writing modes and logical properties](/curriculum/TBB/week03/exercises/writing_modes_tasks/index.md)
 
   **Important!**
 
