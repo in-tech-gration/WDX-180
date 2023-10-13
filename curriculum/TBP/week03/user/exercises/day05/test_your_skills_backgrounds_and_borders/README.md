@@ -1,6 +1,6 @@
 # Week 03 | Day 05
 
-  [Test your skills: Backgrounds and borders](/curriculum/TBB/week03/exercises/test_your_skills_backgrounds_and_borders/index.md)
+  [Test your skills: Backgrounds and borders](/curriculum/TBP/week03/exercises/test_your_skills_backgrounds_and_borders/index.md)
 
   **Important!**
 

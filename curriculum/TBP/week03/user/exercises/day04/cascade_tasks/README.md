@@ -1,6 +1,6 @@
 # Week 03 | Day 04
 
-  [Test your skills: The Cascade](/curriculum/TBB/week03/exercises/cascade_tasks/index.md)
+  [Test your skills: The Cascade](/curriculum/TBP/week03/exercises/cascade_tasks/index.md)
 
   **Important!**
 

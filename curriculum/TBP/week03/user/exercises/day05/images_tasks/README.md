@@ -1,6 +1,6 @@
 # Week 03 | Day 05
 
-  [Test yours skills: Images and form elements](/curriculum/TBB/week03/exercises/images_tasks/index.md)
+  [Test yours skills: Images and form elements](/curriculum/TBP/week03/exercises/images_tasks/index.md)
 
   **Important!**
 

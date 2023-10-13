@@ -1,6 +1,6 @@
 # Week 03 | Day 05
 
-  [Test yours skills: Overflow](/curriculum/TBB/week03/exercises/overflow_tasks/index.md)
+  [Test yours skills: Overflow](/curriculum/TBP/week03/exercises/overflow_tasks/index.md)
 
   **Important!**
 
