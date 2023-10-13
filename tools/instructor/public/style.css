@@ -196,3 +196,6 @@ ul.student-list > li > ul > li {
 .lm_content--inner {
   padding: 0.5rem 2rem;
 }
+.lm_content {
+  overflow: scroll !important;
+}
