@@ -1842,6 +1842,37 @@
       "language": [
         "en"
       ]
+    },
+    "the-undersea-cable-that-linked-the-world": {
+      "type": "YouTube",
+      "duration": 310,
+      "title": "The Undersea Cable That Linked The World",
+      "date": "16/04/2019",
+      "youtube": {
+        "id": "nV0Wc9Y33so",
+        "channel_id": "UCUMZ7gohGI9HcU9VNsr2FJQ",
+        "channel_title": "Bloomberg Originals",
+        "thumbnail_url": "https://i.ytimg.com/vi/nV0Wc9Y33so/sddefault.jpg"
+      },
+      "tags": [
+        "News",
+        "bloomberg",
+        "telegraph",
+        "History",
+        "Transatlantic Cable",
+        "Undersea Cable",
+        "elon musk",
+        "entrepreneur",
+        "telephone",
+        "Internet",
+        "texting",
+        "technology",
+        "Richard Branson",
+        "19th Century"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
