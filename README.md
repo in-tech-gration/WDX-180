@@ -229,6 +229,8 @@
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
 - [**Vangelis Chirmpilidis**  / Content Curator & Passionate Contributor](https://github.com/vagelisx)
 - [**Mary Richelle**  / Content Curator & Passionate Contributor](https://github.com/MaryRichelle)
+- [**Evan Cole** / Educational Advisor](https://www.linkedin.com/in/evan-cole/)
+- [**Yoshi Malaise** / Educational Advisor](https://www.linkedin.com/in/yoshi-malaise/)
 - [**How about you?**](#contribute) 😉
 
 The curriculum draws heavily on the following amazing resources:
