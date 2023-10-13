@@ -10,7 +10,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](week05/EXTRAS.md)
+  ### [Extra Resources](EXTRAS.md)
 
 ## Week 5 - Day 2
 
@@ -22,7 +22,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](week05/EXTRAS.md)
+  ### [Extra Resources](EXTRAS.md)
 
 ## Week 5 - Day 3
 
@@ -34,7 +34,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](week05/EXTRAS.md)
+  ### [Extra Resources](EXTRAS.md)
 
 ## Week 5 - Day 4
 
@@ -46,7 +46,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](week05/EXTRAS.md)
+  ### [Extra Resources](EXTRAS.md)
 
 ## Week 5 - Day 5
 
@@ -58,7 +58,7 @@
 
   ### Exercises
 
-  ### [Extra Resources](week05/EXTRAS.md#day-05)
+  ### [Extra Resources](EXTRAS.md#day-05)
 
 ## Week 5 - Weekend Suggestions
 
