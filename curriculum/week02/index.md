@@ -174,6 +174,10 @@ _(Updated: 18/09/2023)_
   During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/index.md). 
   Now, it's time to dive deeper into HTML. 
 
+  HTML elements can be distinguished by default into 2 broad categories, **block** and **inline** elements. This fundamental display property of HTML elements, affects their placement on the page and how they stack against each other. 
+
+  Check this [short video](https://www.youtube.com/watch?v=XHjoohto2-w) to learn about this display property of HTML elements and then head over to [**https://htmlreference.io/**](https://htmlreference.io/) to discover various block and inline elements, by unchecking all categories at the top, and selecting either the **inline** or **block** checkboxes. Once you've checked either of these categories to filter HTML elements, open up a couple of those elements and have a look at their syntax, use cases, available attributes and how they are displayed on a web page.
+
   - [Read: **What's in the head? Metadata in HTML**](resources/the_head_metadata_in_html/index.md)
     - Description: The `<head>` of an HTML document is the part that is not displayed in the web browser when the page is loaded. In this article, you'll learn all about the information it contains.
     - Exercises: Make sure to practice by completing all the **Active learning** sections of this article and then pasting all the files that you've created in the `user/week02/exercises/day02/the_head_metadata_in_html/` folder for submission.

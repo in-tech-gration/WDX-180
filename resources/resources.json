@@ -1873,6 +1873,49 @@
       "language": [
         "en"
       ]
+    },
+    "html-block-vs-inline-elements": {
+      "type": "YouTube",
+      "duration": 45,
+      "title": "HTML Block vs Inline Elements",
+      "date": "14/05/2021",
+      "youtube": {
+        "id": "XHjoohto2-w",
+        "channel_id": "UCeYUHG6o0YguM-g23htdsSw",
+        "channel_title": "GCFLearnFree",
+        "thumbnail_url": "https://i.ytimg.com/vi/XHjoohto2-w/sddefault.jpg"
+      },
+      "tags": [
+        "HTML",
+        "how to code",
+        "learn HTML",
+        "learn coding",
+        "website coding",
+        "coding for web browsers",
+        "understanding coding",
+        "understanding HTML",
+        "what is HTML",
+        "what is coding",
+        "gcf",
+        "gcfglobal",
+        "gcflearnfree",
+        "coding lessons",
+        "HTML lessons",
+        "understanding code",
+        "block elements",
+        "inline elements",
+        "stack horizontally",
+        "stack vertically",
+        "default values",
+        "what are block elements",
+        "what are inline elements",
+        "how to stack HTML elements",
+        "how to stack horizontally",
+        "how to stack vertically"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
