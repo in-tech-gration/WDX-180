@@ -9,6 +9,10 @@
 
   - [**What is git? An easy introduction**](https://inspirezone.tech/what-is-git/)
 
+  - [Watch: **How to be a git expert**](https://www.youtube.com/watch?v=hZS96dwKvt0)
+    - **Description:** Learn git concepts, level up your command line skills, and become a more capable git user!
+    - **Duration:** 47min
+
 ## Accessibility
 
   - [Listen: **Accessibility** Kopec Explains Software Podcast](http://kopec.live/episode/184aa586/accessibility)
