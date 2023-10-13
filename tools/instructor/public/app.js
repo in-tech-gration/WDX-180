@@ -3,18 +3,18 @@ const defaultStudentSelection = {
   trimester: "beginner",
   day: "01"
 }
-const getWeeklyGitHubProgressURLs = ( 
-  studentId, 
-  week, 
-  day = defaultStudentSelection.day 
-)=>{
+const getWeeklyGitHubProgressURLs = (
+  studentId,
+  week,
+  day = defaultStudentSelection.day
+) => {
 
   const URLs = [];
   const paddedWeek = week;
 
-  if ( day === "all" ){
+  if (day === "all") {
 
-    for ( let i = week; i <= 5; i++ ){
+    for (let i = week; i <= 5; i++) {
       URLs.push(`https://raw.githubusercontent.com/${studentId}/WDX-180/main/user/week${paddedWeek}/progress/progress.w${paddedWeek}.d${String(i).padStart(2, "0")}.csv`);
     }
 
@@ -32,6 +32,12 @@ const studentList = document.querySelector("ul.student-list");
 const COMPLETED_COL = 6;
 const INSTRUCTIONS_COL = 7;
 
+// TODO: Grab Workflow Runs and check for submitted exercises, failed tests, etc.
+// FAILED: https://github.com/alkozp/WDX-180/actions/runs/6481541762
+// PASSED: https://github.com/alkozp/WDX-180/actions/runs/6481855477
+// https://api.github.com/repos/in-tech-gration/WDX-180/actions/runs
+// Date: https://api.github.com/repos/in-tech-gration/WDX-180/actions/runs?created=YYYY-MM-DD..YYYY-MM-DD
+
 // GITHUB API:
 const GITHUB_API_BASE = `https://api.github.com`;
 
@@ -48,21 +54,21 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
 
   // console.log("renderSpreadsheetDataOnTable()",{ data, headers, selectedDay });
 
-  const table             = document.querySelector(tableSelector);
+  const table = document.querySelector(tableSelector);
   const { parentElement } = table;
-  table.innerHTML         = "";
+  table.innerHTML = "";
   const errorEl = parentElement.querySelector(".error")
   errorEl.classList.add("hidden");
 
-  if ( data.length === 0 || !headers ){
+  if (data.length === 0 || !headers) {
     errorEl.classList.remove("hidden");
     errorEl.textContent = `ERROR: Could not load progress file.`
-  } 
+  }
 
   const studentId = parentElement.getAttribute("data-student");
 
   // Fill-in Headers:
-  if ( headers ){
+  if (headers) {
     let row = table.insertRow(-1);
     for (let colIndex = 0; colIndex < headers.length; colIndex++) {
       let letter = headers[colIndex];
@@ -70,7 +76,7 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
     }
   }
 
-  data.forEach(( weeklyData, idx ) =>{
+  data.forEach((weeklyData, idx) => {
 
     try {
 
@@ -79,25 +85,25 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
 
       const is404 = weeklyData === "404";
 
-      if ( is404 || weeklyData.length === 0 ){
+      if (is404 || weeklyData.length === 0) {
 
         const prepend = selectedDay === "all" ? "Weekly" : "";
-        const weekday = selectedDay === "all" ? `(day ${idx+1})` : "";
+        const weekday = selectedDay === "all" ? `(day ${idx + 1})` : "";
 
-        newCell.innerHTML = prepend + ( is404 ? `Entry ${weekday} resulted in 404` : `Entry ${weekday} is empty. Check for malformed CSV.` );
+        newCell.innerHTML = prepend + (is404 ? `Entry ${weekday} resulted in 404` : `Entry ${weekday} is empty. Check for malformed CSV.`);
         newCell.setAttribute("colspan", headers.length);
         newCell.setAttribute("class", "error-dark");
-        return; 
+        return;
 
       }
-  
+
       const week = weeklyData[0][0].toString().padStart(2, "0");
       const day = weeklyData[0][1].toString().padStart(2, "0");
-  
+
       const fileName = `progress.w${week}.d${day}.csv`
       const URL = `https://raw.githubusercontent.com/${studentId}/WDX-180/main/user/week${week}/progress/progress.w${week}.d${day}.csv`
       const URL_Pages = `https://github.com/${studentId}/WDX-180/blob/main/user/week${week}/progress/progress.w${week}.d${day}.csv`
-  
+
       newCell.innerHTML = `
         <a href="${URL}" target="_blank">
           ${fileName}
@@ -109,64 +115,64 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
       `;
       newCell.setAttribute("colspan", headers.length);
       newCell.setAttribute("class", "cell-with-link");
-  
+
       // Fill-in CSV:
       for (let rowIndex = 0; rowIndex < weeklyData.length; rowIndex++) {
-    
+
         let row = table.insertRow(-1);
-    
+
         for (let colIndex = 0; colIndex < headers.length; colIndex++) {
-    
-          if ( colIndex === 0 || colIndex === 1 ){
-    
+
+          if (colIndex === 0 || colIndex === 1) {
+
             const newCell = row.insertCell(-1);
             newCell.innerHTML = weeklyData[rowIndex][colIndex];
             newCell.setAttribute("class", "text-center");
-    
+
           } else {
-    
+
             const newCell = row.insertCell(-1);
             const cellData = weeklyData[rowIndex][colIndex];
 
             newCell.innerHTML = cellData;
-            
-            if ( !cellData ){
+
+            if (!cellData) {
               newCell.innerHTML = `<span class="error">(malformed cell data)</span>`;
             }
 
-            if ( cellData && colIndex === INSTRUCTIONS_COL ){
+            if (cellData && colIndex === INSTRUCTIONS_COL) {
 
-              const isLink = cellData.trim().indexOf("https://")  === 0; 
-              if ( isLink ){
+              const isLink = cellData.trim().indexOf("https://") === 0;
+              if (isLink) {
                 newCell.innerHTML = `<a href="${cellData}" target="_blank">${cellData}</a>`;
               }
-            } 
-    
-            if ( colIndex > 3 && colIndex < 7  ){
+            }
+
+            if (colIndex > 3 && colIndex < 7) {
               newCell.classList.add("text-center");
             }
-            
-            if ( colIndex === COMPLETED_COL ){
-    
+
+            if (colIndex === COMPLETED_COL) {
+
               newCell.classList.add("completed-col");
-    
-              if ( cellData === "TRUE" ){
+
+              if (cellData === "TRUE") {
                 newCell.classList.add("completed");
               }
-          
+
             }
-    
+
             // const cellId = `${studentId}-${rowIndex}-${colIndex}`;
             // row.insertCell(-1).innerHTML = `<input id="${cellId}" value="${weeklyData[rowIndex][colIndex]}" />`;
-    
+
           }
-    
+
         }
-    
+
       }
-      
+
     } catch (error) {
-      console.log(`Error parsing weekly data.`, error, weeklyData );      
+      console.log(`Error parsing weekly data.`, error, weeklyData);
     }
 
   });
@@ -174,18 +180,18 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
   // MAKE SPREADSHEET EDITABLE: (TEMPORARILY DISABLED. REQUIRES DEBUGGING.)
   return;
 
-  function computeAll () {
-    INPUTS.forEach(function (elm) { 
-      try { 
-        elm.value = DATA[elm.id]; 
-      } catch (e) { 
+  function computeAll() {
+    INPUTS.forEach(function (elm) {
+      try {
+        elm.value = DATA[elm.id];
+      } catch (e) {
 
-      } 
+      }
     });
   };
 
-  let DATA   = {}
-  let INPUTS = [].slice.call(document.querySelectorAll( `${tableSelector} input` ));
+  let DATA = {}
+  let INPUTS = [].slice.call(document.querySelectorAll(`${tableSelector} input`));
 
   INPUTS.forEach(function (elm) {
 
@@ -209,48 +215,48 @@ function renderSpreadsheetDataOnTable(data, tableSelector, headers, selectedDay)
 
 }
 
-async function fetchCSV( URL ){
+async function fetchCSV(URL) {
 
   // Alternative: fetch via GitHub API:
   // https://api.github.com/repos/{ USERNAME }/WDX-180/contents/user/week01/progress/progress.w01.d01.csv
 
-  return fetch( URL )
-  .then( response => response.text() )
-  .catch( error =>{
-    console.error(`ERROR fetching ${URL}`, error);
-  })
+  return fetch(URL)
+    .then(response => response.text())
+    .catch(error => {
+      console.error(`ERROR fetching ${URL}`, error);
+    })
 }
 
-function aggregateCSVData({ weeklyCSVs, withHeaders = true }){
+function aggregateCSVData({ weeklyCSVs, withHeaders = true }) {
 
   let csvData = [];
   let headers = [];
   const options = { skipInitialRows: 1 }
 
-  weeklyCSVs.forEach(({ status, value }, index) =>{
+  weeklyCSVs.forEach(({ status, value }, index) => {
 
-    if ( status !== "fulfilled" ){
+    if (status !== "fulfilled") {
 
       return false;
 
     }
 
-    if ( value === "404: Not Found" ){
+    if (value === "404: Not Found") {
 
-      console.log( "404" );
-      csvData.push( "404" );
+      console.log("404");
+      csvData.push("404");
 
     } else {
 
-      const isNotString = ( typeof value !== "string" );
-      const isEmpty     = isNotString || value.trim().length === 0;
+      const isNotString = (typeof value !== "string");
+      const isEmpty = isNotString || value.trim().length === 0;
 
-      if ( headers.length === 0 && !isEmpty ){
+      if (headers.length === 0 && !isEmpty) {
 
         const csvRowData = CSV.parse(value, { ...options, skipInitialRows: 0 });
         headers = csvRowData[0];
         csvData.push(csvRowData.slice(1));
-        
+
       } else {
 
         const csvRowData = CSV.parse(value, options);
@@ -260,33 +266,33 @@ function aggregateCSVData({ weeklyCSVs, withHeaders = true }){
     }
   })
 
-  return [ csvData, headers ];
+  return [csvData, headers];
 
 }
 
-async function handleWeekSelection( studentId ){
+async function handleWeekSelection(studentId) {
 
   const selectedStudent = {
-    ... defaultStudentSelection,
+    ...defaultStudentSelection,
     ...currentlySelectedStudents[studentId]
   }
 
   const { week, day } = selectedStudent
-  
-  if ( !week ){
+
+  if (!week) {
     return false;
   }
 
-  const weeklyURLs = getWeeklyGitHubProgressURLs( studentId, week, day );
-  const promises   = weeklyURLs.map( URL => fetchCSV(URL) )
+  const weeklyURLs = getWeeklyGitHubProgressURLs(studentId, week, day);
+  const promises = weeklyURLs.map(URL => fetchCSV(URL))
 
   try {
 
-    const weeklyCSVs = await Promise.allSettled( promises );
-    const [ csvData, headers ] = aggregateCSVData({ weeklyCSVs });
-    renderSpreadsheetDataOnTable( 
-      csvData, 
-      `.student-progress-sheets[data-student="${studentId}"] table`, 
+    const weeklyCSVs = await Promise.allSettled(promises);
+    const [csvData, headers] = aggregateCSVData({ weeklyCSVs });
+    renderSpreadsheetDataOnTable(
+      csvData,
+      `.student-progress-sheets[data-student="${studentId}"] table`,
       headers,
       day
     );
@@ -296,7 +302,7 @@ async function handleWeekSelection( studentId ){
   }
 }
 
-function handleProgressDisplay(target){
+function handleProgressDisplay(target) {
   const studentId = target.href.split("#")[1];
   const studentSection = studentList.querySelector(`section.student-data[data-student="${studentId}"]`);
   studentSection.classList.toggle("hidden");
@@ -306,7 +312,7 @@ function handleProgressDisplay(target){
 
 }
 
-function handleRepoSyncInfo( target ){
+function handleRepoSyncInfo(target) {
   const studentId = target.href.split("#")[1];
   console.log({ studentId });
   const btn = studentList.querySelector(`a.sync[href='#${studentId}']`);
@@ -314,35 +320,98 @@ function handleRepoSyncInfo( target ){
   btnIcon.classList.add("rotating");
 
   fetch(getGitHubRepoSyncInfoFromUsername(studentId))
-  .then( res => res.json() )
-  .then( data =>{
-    // data.ahead_by / data.behind_by / data.total_commits
-    const behindByEl = btn.querySelector(".github_behind_by");
-    if ( data.behind_by > 0 ){
-      behindByEl.textContent = "Behind by: " + data.behind_by;
-      behindByEl.classList.add("active");
-    } else {
-      behindByEl.textContent = "In-sync";
-      behindByEl.classList.add("active");
-      behindByEl.classList.add("github_in_sync");
-    }
-    const commitEl = btn.querySelector(".github_commits")
-    commitEl.textContent = "Commits: " + data.total_commits;
-    commitEl.classList.add("active");
+    .then(res => res.json())
+    .then(data => {
+      // data.ahead_by / data.behind_by / data.total_commits
+      const behindByEl = btn.querySelector(".github_behind_by");
+      if (data.behind_by > 0) {
+        behindByEl.textContent = "Behind by: " + data.behind_by;
+        behindByEl.classList.add("active");
+      } else {
+        behindByEl.textContent = "In-sync";
+        behindByEl.classList.add("active");
+        behindByEl.classList.add("github_in_sync");
+      }
+      const commitEl = btn.querySelector(".github_commits")
+      commitEl.textContent = "Commits: " + data.total_commits;
+      commitEl.classList.add("active");
 
-  })
-  .catch( error => {
-    console.log(error);
-  })
-  .finally(()=>{
-    btnIcon.classList.remove("rotating");
-  })
+    })
+    .catch(error => {
+      console.log(error);
+    })
+    .finally(() => {
+      btnIcon.classList.remove("rotating");
+    })
+}
+
+function initGoldenLayout({ colA }) {
+  var config = {
+    content: [{
+      type: 'row',
+      content: [
+        {
+          type: 'component',
+          componentName: 'Cockpit',
+          title: "Dashboard",
+          width: 80,
+          componentState: { label: 'A' }
+        },
+        {
+          type: 'column',
+          content: [
+            {
+              type: 'component',
+              title: "Statistics",
+              componentName: 'Cockpit',
+              componentState: { label: 'B' }
+            },
+            {
+              type: 'component',
+              title: "Preview",
+              componentName: 'Cockpit',
+              componentState: { label: 'C' }
+            }
+          ]
+        }
+      ]
+    }]
+  };
+
+  var myLayout = new GoldenLayout(config);
+
+  myLayout.registerComponent('Cockpit', function (container, componentState) {
+
+    if (componentState.label === "A") {
+
+      colA.removeAttribute("hidden");
+      container.getElement().html(colA);
+
+    } else {
+
+      container.getElement().html(
+        `
+        <div class="lm_content--inner">
+          <h4>Under construction...</h4>
+        </div>
+        `
+      );
+
+    }
+
+  });
+
+  myLayout.init();
 }
 // ACTION!
 
 function init(e) {
 
   console.log("Instructor Cockpit v0.1 (beta)");
+
+  const appWrapper = document.querySelector(".app-wrapper");
+
+  initGoldenLayout({ colA: appWrapper });
 
   studentList.addEventListener("click", e => {
 
@@ -364,21 +433,21 @@ function init(e) {
     // Trimester Selection:
     if (target.getAttribute("name") === "trimester-selection") {
       const studentId = target.parentElement.getAttribute("data-student");
-      if ( currentlySelectedStudents[studentId] ){
+      if (currentlySelectedStudents[studentId]) {
         currentlySelectedStudents[studentId].trimester = target.value;
       } else {
         currentlySelectedStudents[studentId] = {
           trimester: target.value
         }
       }
-      handleWeekSelection( studentId )
+      handleWeekSelection(studentId)
     }
 
     // Week Selection:
     if (target.getAttribute("name") === "week-selection") {
 
       const studentId = target.parentElement.getAttribute("data-student");
-      if ( currentlySelectedStudents[studentId] ){
+      if (currentlySelectedStudents[studentId]) {
         currentlySelectedStudents[studentId].week = target.value;
       } else {
         currentlySelectedStudents[studentId] = {
@@ -387,24 +456,24 @@ function init(e) {
       }
 
       // Do not update sheet if no week has been selected:
-      if (target.selectedIndex === 0 ){
+      if (target.selectedIndex === 0) {
         return;
       }
 
-      handleWeekSelection( studentId )
+      handleWeekSelection(studentId)
     }
 
     // Day Selection:
     if (target.getAttribute("name") === "day-selection") {
       const studentId = target.parentElement.getAttribute("data-student");
-      if ( currentlySelectedStudents[studentId] ){
+      if (currentlySelectedStudents[studentId]) {
         currentlySelectedStudents[studentId].day = target.value;
       } else {
         currentlySelectedStudents[studentId] = {
           day: target.value
         }
       }
-      handleWeekSelection( studentId )
+      handleWeekSelection(studentId)
     }
 
   });

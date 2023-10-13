@@ -1,98 +1,100 @@
 {% extends  layout %}
 {% block  content %}
-  <h1 class="mb-0">{{ message }}</h1>
-  {% if links %}
-    <section class="quick-links m-0 p-0">
-      <h4 class="m-0 d-inline-block">Quick links:</h4>
-      {% for key, value in links %}
-        <a href="{{ value }}" target="_blank">{{ key }}</a>
-      {% endfor %}
-    </section>
-  {% endif %}
-  <main>
-    <section class="mt-0">
-      {# <pre>
-              {{ cohortData.cohort_02.students | dump | safe }}
-            </pre> #}
-      <ul class="student-list">
-        {% for key, value in cohortData.cohort_02.students %}
-          <li>
-            Student:
-            <strong>{{ value.fullname }}</strong>
-            <strong>@{{ key }}</strong>
-            <ul>
-              <li>
-
-                <a class="github ic-btn" href="https://github.com/{{ key }}/WDX-180" target="_blank">
-                  <i class="icono-folder"></i>GitHub
-                </a>
-
-                <a class="commits ic-btn" href="https://github.com/{{ key }}/WDX-180/commits/main" target="_blank">
-                  <i class="icono-list"></i>Commits
-                </a>
-
-                <a class="github-page ic-btn" href="https://{{ key }}.github.io/WDX-180" target="_blank">
-                  <i class="icono-display"></i>Page
-                </a>
-
-                <a
-                  class="pushes ic-btn"
-                  href="https://github.com/{{ key }}/WDX-180/activity?ref=main&activity_type=direct_push&actor={{ key }}"
-                  target="_blank">
-                  <i class="icono-upArrow"></i>Pushes
-                </a>
-
-                <a class="progress ic-btn student-progress-btn" href="#{{ key }}">
-                  <i class="icono-barChart"></i>Progress
-                </a>
-
-                <a class="sync ic-btn student-repo-sync" href="#{{ key }}">
-                  <i class="icono-sync"></i>Sync
-                  <span class="github_info github_behind_by">Behind by:</span>
-                  <span class="github_info github_commits">Commits:</span>
-
-                </a>
-
-              </li>
-            </ul>
-          </li>
-          <section class="student-data hidden" data-student="{{ key }}">
-            Student Data:
-            <select name="trimester-selection">
-              <option value="beginner">Beginner (60)</option>
-              <option value="intermediate">Intermediate (120)</option>
-              <option value="advanced">Advanced (180)</option>
-            </select>
-            <select name="week-selection">
-              <option>Select Week</option>
-              <option value="01">Week 1</option>
-              <option value="02">Week 2</option>
-              <option value="03">Week 3</option>
-              <option value="04">Week 4</option>
-              <option value="05">Week 5</option>
-              <option value="06">Week 6</option>
-              <option value="07">Week 7</option>
-              <option value="08">Week 8</option>
-              <option value="09">Week 9</option>
-              <option value="10">Week 10</option>
-              <option value="11">Week 11</option>
-              <option value="12">Week 12</option>
-            </select>
-            <select name="day-selection">
-              <option value="all">All Days</option>
-              <option value="01" selected>Day 01</option>
-              <option value="02">Day 02</option>
-              <option value="03">Day 03</option>
-              <option value="04">Day 04</option>
-              <option value="05">Day 05</option>
-            </select>
-          </section>
-          <section class="student-progress-sheets hidden" data-student="{{ key }}">
-            <div class="hidden error mb-1 font-bold"></div>
-            <table></table>
-          </section>
+  <div class="app-wrapper" hidden>
+    <h1 class="mb-0">{{ message }}</h1>
+    {% if links %}
+      <section class="quick-links">
+        <h4 class="m-0 d-inline-block">Quick links:</h4>
+        {% for key, value in links %}
+          <a href="{{ value }}" target="_blank">{{ key }}</a>
         {% endfor %}
-      </ul>
-    </section>
-  </main>
+      </section>
+    {% endif %}
+    <main>
+      <section class="mt-0">
+        {# <pre>
+                {{ cohortData.cohort_02.students | dump | safe }}
+              </pre> #}
+        <ul class="student-list">
+          {% for key, value in cohortData.cohort_02.students %}
+            <li>
+              Student:
+              <strong>{{ value.fullname }}</strong>
+              <strong>@{{ key }}</strong>
+              <ul>
+                <li>
+                  <div class="student-list--inner">
+                    <a class="github ic-btn" href="https://github.com/{{ key }}/WDX-180" target="_blank">
+                      <i class="icono-folder"></i>GitHub
+                    </a>
+
+                    <a class="commits ic-btn" href="https://github.com/{{ key }}/WDX-180/commits/main" target="_blank">
+                      <i class="icono-list"></i>Commits
+                    </a>
+
+                    <a class="github-page ic-btn" href="https://{{ key }}.github.io/WDX-180" target="_blank">
+                      <i class="icono-display"></i>Page
+                    </a>
+
+                    <a
+                      class="pushes ic-btn"
+                      href="https://github.com/{{ key }}/WDX-180/activity?ref=main&activity_type=direct_push&actor={{ key }}"
+                      target="_blank">
+                      <i class="icono-upArrow"></i>Pushes
+                    </a>
+
+                    <a class="progress ic-btn student-progress-btn" href="#{{ key }}">
+                      <i class="icono-barChart"></i>Progress
+                    </a>
+                  </div>
+                  <div class="student-list--inner">
+                    <a class="sync ic-btn student-repo-sync" href="#{{ key }}">
+                      <i class="icono-sync"></i>Sync
+                      <span class="github_info github_behind_by">Behind by:</span>
+                      <span class="github_info github_commits">Commits:</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <section class="student-data hidden" data-student="{{ key }}">
+              Student Data:
+              <select name="trimester-selection">
+                <option value="beginner">Beginner (60)</option>
+                <option value="intermediate">Intermediate (120)</option>
+                <option value="advanced">Advanced (180)</option>
+              </select>
+              <select name="week-selection">
+                <option>Select Week</option>
+                <option value="01">Week 1</option>
+                <option value="02">Week 2</option>
+                <option value="03">Week 3</option>
+                <option value="04">Week 4</option>
+                <option value="05">Week 5</option>
+                <option value="06">Week 6</option>
+                <option value="07">Week 7</option>
+                <option value="08">Week 8</option>
+                <option value="09">Week 9</option>
+                <option value="10">Week 10</option>
+                <option value="11">Week 11</option>
+                <option value="12">Week 12</option>
+              </select>
+              <select name="day-selection">
+                <option value="all">All Days</option>
+                <option value="01" selected>Day 01</option>
+                <option value="02">Day 02</option>
+                <option value="03">Day 03</option>
+                <option value="04">Day 04</option>
+                <option value="05">Day 05</option>
+              </select>
+            </section>
+            <section class="student-progress-sheets hidden" data-student="{{ key }}">
+              <div class="hidden error mb-1 font-bold"></div>
+              <table></table>
+            </section>
+          {% endfor %}
+        </ul>
+      </section>
+    </main>
+  </div>
 {% endblock %}
