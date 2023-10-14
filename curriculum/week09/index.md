@@ -2,6 +2,8 @@
 
 ## Week 9  - Day 1
 
+  > "I'm not a great programmer; I'm just a good programmer with great habits." ~ [Kent Beck](https://www.wikiwand.com/en/Kent_Beck)
+
 ## Week 9  - Day 2
 
 ## Week 9  - Day 3
