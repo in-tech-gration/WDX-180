@@ -4,7 +4,7 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 18/09/2023)_
+_(Updated: 15/10/2023)_
 
 <!-- Week 3 - Day 1 | More Git -->
 <details markdown="1">
