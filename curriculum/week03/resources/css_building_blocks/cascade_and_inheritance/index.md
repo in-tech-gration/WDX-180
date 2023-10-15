@@ -36,7 +36,27 @@ Let's start by taking a quick look at the key things we are dealing with, then w
 
 ### Cascade
 
-Stylesheets [**cascade**](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade){:target="_blank"} — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, the one that is defined last in the stylesheet is the one that will be used.
+**TIP:** Before diving into a technical concept, it's always a good practice to learn more about what the term means in a more general context. For example, `cascade` –not a pretty common word for most non-native english speakers– will become more clear in its technical context once we get to know its original meaning. 
+
+The first step to learn more about an english word, is to Google for its definition using the `define <word>` syntax. For example, `define cascade` will result in the following definitions:
+
+![](./assets/define.cascade.jpg)
+
+![](./assets/define.cascase.definitions.jpg)
+
+Probably, the most relevant definitions that we need to keep in mind, as we move on to understand `cascade` in the CSS context, are the following:
+
+_"a process whereby something [...] is successively passed on."_
+
+_"pass (something) on to a succession of others."_
+
+Sometimes, checking the `similar words` section, provides an even deeper understanding of the word.
+
+![](./assets/define.cascade.similar.jpg)
+
+---
+
+Stylesheets [**cascade**](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade){:target="_blank"} — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, **the one that is defined last in the stylesheet is the one that will be used**.
 
 In the below example, we have two rules that could apply to the `<h1>` element. The `<h1>` content ends up being colored blue. This is because both the rules are from the same source, have an identical element selector, and therefore, carry the same specificity, but the last one in the source order wins.
 
@@ -51,6 +71,10 @@ In the below example, we have two rules that could apply to the `<h1>` element. 
     [ External link ]
   </a>
 </p>
+
+[![](./assets/DevTips.jpg)](https://www.youtube.com/watch?v=tZhmjgLQgXU)
+
+[Watch Travis Neilson and Carlos Montoya explain CSS Cascades](https://www.youtube.com/watch?v=tZhmjgLQgXU) before moving on to the reading section. 
 
 ### Specificity
 

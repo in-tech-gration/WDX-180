@@ -157,16 +157,36 @@ function getYouTubeListIdParts( ytURL ){
 
   return [];
 }
+function getResourcesContent(){
+
+  const resourcesDir = path.join( __dirname, "..", "..", "resources/" );
+  const resourcesPath = path.join( resourcesDir, "resources.json");
+  const resourcesText = fs.readFileSync(resourcesPath, "utf8");
+  return resourcesText;
+
+}
 /**
  * Description: read resource.json and return the contents in JSON format
  */
 function getResources(){
 
-  const resourcesDir = path.join( __dirname, "..", "..", "resources/" );
-  const resourcesPath = path.join( resourcesDir, "resources.json");
-  const resourcesText = fs.readFileSync(resourcesPath, "utf8");
+  const resourcesText = getResourcesContent()
   const { resources } = JSON.parse(resourcesText)
   return resources;
+
+}
+function appendObjectToResources( obj ){
+
+  const resourcesText = getResourcesContent()
+  const json = JSON.parse(resourcesText)
+  const key = Object.keys(obj)[0];
+  json.resources[key] = obj[key];
+  try {
+    fs.writeFileSync(resourcesPath, JSON.stringify(json, null, "  "), "utf-8");
+  } catch(e){
+    console.log(e);
+  }
+  return json;
 
 }
 function getYouTubeResources(){
@@ -202,6 +222,7 @@ function createFrontMatterMarkdownFromObject( fmObj ){
 }
 
 module.exports = {
+  appendObjectToResources,
   checkmark,
   xmark,
   youTubeIdRegEx,
