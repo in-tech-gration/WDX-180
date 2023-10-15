@@ -2083,6 +2083,51 @@
         "css preprocessor",
         "css preprocessing"
       ]
+    },
+    "learn-every-css-selector-in-20-minutes": {
+      "type": "YouTube",
+      "duration": 1178,
+      "title": "Learn Every CSS Selector In 20 Minutes",
+      "date": "07/07/2020",
+      "youtube": {
+        "id": "l1mER1bV0N0",
+        "channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+        "channel_title": "Web Dev Simplified",
+        "thumbnail_url": "https://i.ytimg.com/vi/l1mER1bV0N0/sddefault.jpg"
+      },
+      "tags": [
+        "webdevsimplified",
+        "css selector crash course",
+        "css selectors",
+        "css selector tutorial",
+        "css selector specificity",
+        "css for beginners",
+        "css introduction",
+        "css selectors guide",
+        "css selector chaining",
+        "css tutorial",
+        "css project",
+        "css concepts",
+        "css guide",
+        "learn css quick",
+        "easy css",
+        "css beginner",
+        "css selector beginner",
+        "css beginner guide",
+        "css beginner tutorial",
+        "css selector guide",
+        "learn css",
+        "css tips",
+        "css tricks",
+        "css tips and tricks",
+        "css advanced",
+        "css advanced selectors",
+        "css",
+        "css easy"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
