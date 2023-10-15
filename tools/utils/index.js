@@ -177,6 +177,8 @@ function getResources(){
 }
 function appendObjectToResources( obj ){
 
+  const resourcesDir = path.join( __dirname, "..", "..", "resources/" );
+  const resourcesPath = path.join( resourcesDir, "resources.json");
   const resourcesText = getResourcesContent()
   const json = JSON.parse(resourcesText)
   const key = Object.keys(obj)[0];

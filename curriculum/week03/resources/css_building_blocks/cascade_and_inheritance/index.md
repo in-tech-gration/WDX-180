@@ -6,7 +6,7 @@ page-type: learn-module-chapter
 
 # Cascade, specificity and Inheritance
 
-_(Updated: 07/09/2023)_
+_(Updated: 15/10/2023)_
 
 The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts between style declarations are resolved.
 
@@ -77,6 +77,8 @@ In the below example, we have two rules that could apply to the `<h1>` element. 
 [Watch Travis Neilson and Carlos Montoya explain CSS Cascades](https://www.youtube.com/watch?v=tZhmjgLQgXU) before moving on to the reading section. 
 
 ### Specificity
+
+**Watch: [Learn CSS Specificity In 11 Minutes](https://www.youtube.com/watch?v=CHyPGSpIhSs)** to get a basic understanding of this hugely important CSS rule.
 
 [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity){:target="_blank"} is the algorithm that the browser uses to decide which property value is applied to an element. If multiple style blocks have different selectors that configure the same property with different values and target the same element, specificity decides the property value that gets applied to the element. Specificity is basically a measure of how specific a selector's selection will be:
 

@@ -1967,6 +1967,67 @@
         "Designer (Project Role)",
         "Cascading Style Sheets (Programming Language)"
       ]
+    },
+    "css-specificity-explained": {
+      "type": "YouTube",
+      "duration": 807,
+      "title": "CSS Specificity explained",
+      "date": "11/01/2018",
+      "youtube": {
+        "id": "c0kfcP_nD9E",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/c0kfcP_nD9E/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "tutorial",
+        "html",
+        "css",
+        "specificity",
+        "CSS Specificity",
+        "CSS Specificity explained",
+        "CSS Specificity tutorial"
+      ]
+    },
+    "learn-css-specificity-in-11-minutes": {
+      "type": "YouTube",
+      "duration": 686,
+      "title": "Learn CSS Specificity In 11 Minutes",
+      "date": "09/11/2019",
+      "youtube": {
+        "id": "CHyPGSpIhSs",
+        "channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+        "channel_title": "Web Dev Simplified",
+        "thumbnail_url": "https://i.ytimg.com/vi/CHyPGSpIhSs/sddefault.jpg"
+      },
+      "tags": [
+        "webdevsimplified",
+        "css specificity",
+        "css specificity tutorial",
+        "css specificity explained",
+        "css specificity rules",
+        "css important",
+        "css !important",
+        "css selector",
+        "css tutorial",
+        "css for beginners",
+        "css specificity order",
+        "css specificity hierarchy",
+        "css specificity tutorial for beginners",
+        "css tutorial for beginners",
+        "css selector specificity",
+        "selector specificity",
+        "specificity",
+        "cascading style sheets",
+        "css !important tutorial",
+        "css selector tutorial",
+        "css",
+        "css explained"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
