@@ -14,6 +14,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: "Game: CSS Diner > Checks file existence: completed-level.png"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/completed-level.png"
+          fail: true
       
       # Selectors
       - name: "Type Selectors > Checks file existence: type.html"
