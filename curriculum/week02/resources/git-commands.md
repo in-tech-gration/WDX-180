@@ -14,7 +14,6 @@
 | Git Commands |                                                                                                                 |
 | ------------ | --------------------------------------------------------------------------------------------------------------- |
 | **clone**    | bring a repo down from the internet (remote repository like Github) to your local machine                       |
-| **repo**     | repository                                                                                                      |
 | **add**      | track your files and changes with Git                                                                           |
 |              | **Example:** add all changes to be saved: `git add .`                                                           |
 |              | **Example:** add a single file to be saved: `git add filename`                                                  |
