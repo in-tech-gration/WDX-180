@@ -171,7 +171,7 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/index.md). 
+  During Week 1, we covered some of the [basics of HTML](../week01/resources/HTML_Basics/index.md). 
   Now, it's time to dive deeper into HTML. 
 
   HTML elements can be distinguished by default into 2 broad categories, **block** and **inline** elements. This fundamental display property of HTML elements, affects their placement on the page and how they stack against each other. 
