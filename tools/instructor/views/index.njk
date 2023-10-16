@@ -1,7 +1,19 @@
 {% extends  layout %}
 {% block  content %}
   <div class="app-wrapper" hidden>
-    <h1 class="mb-0">{{ message }}</h1>
+
+    <header class="ic-header">
+      <div class="gutter"></div>
+      <h1 class="m-0">{{ message }}</h1>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" checked />
+          <div class="slider round"></div>
+        </label>
+        <em>Enable Dark Mode!</em>
+      </div>
+    </header>
+
     {% if links %}
       <section class="quick-links">
         <h4 class="m-0 d-inline-block">Quick links:</h4>
@@ -10,11 +22,13 @@
         {% endfor %}
       </section>
     {% endif %}
+
     <main>
-      <section class="mt-0">
+      <section
+        class="mt-0">
         {# <pre>
-                {{ cohortData.cohort_02.students | dump | safe }}
-              </pre> #}
+                        {{ cohortData.cohort_02.students | dump | safe }}
+                      </pre> #}
         <ul class="student-list">
           {% for key, value in cohortData.cohort_02.students %}
             <li>
@@ -27,22 +41,18 @@
                     <a class="github ic-btn" href="https://github.com/{{ key }}/WDX-180" target="_blank">
                       <i class="icono-folder"></i>GitHub
                     </a>
-
                     <a class="commits ic-btn" href="https://github.com/{{ key }}/WDX-180/commits/main" target="_blank">
                       <i class="icono-list"></i>Commits
                     </a>
-
                     <a class="github-page ic-btn" href="https://{{ key }}.github.io/WDX-180" target="_blank">
                       <i class="icono-display"></i>Page
                     </a>
-
                     <a
                       class="pushes ic-btn"
                       href="https://github.com/{{ key }}/WDX-180/activity?ref=main&activity_type=direct_push&actor={{ key }}"
                       target="_blank">
                       <i class="icono-upArrow"></i>Pushes
                     </a>
-
                     <a class="progress ic-btn student-progress-btn" href="#{{ key }}">
                       <i class="icono-barChart"></i>Progress
                     </a>
@@ -96,5 +106,6 @@
         </ul>
       </section>
     </main>
+
   </div>
 {% endblock %}

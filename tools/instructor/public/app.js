@@ -345,38 +345,173 @@ function handleRepoSyncInfo(target) {
     })
 }
 
-function initGoldenLayout({ colA }) {
-  var config = {
-    content: [{
-      type: 'row',
-      content: [
-        {
-          type: 'component',
-          componentName: 'Cockpit',
-          title: "Dashboard",
-          width: 80,
-          componentState: { label: 'A' }
-        },
-        {
-          type: 'column',
-          content: [
-            {
-              type: 'component',
-              title: "Statistics",
-              componentName: 'Cockpit',
-              componentState: { label: 'B' }
-            },
-            {
-              type: 'component',
-              title: "Preview",
-              componentName: 'Cockpit',
-              componentState: { label: 'C' }
+function initGoogleTranscriptParser() {
+
+    document
+      .getElementById("docx")
+      .addEventListener("change", event =>{
+
+        handleFileSelect(event.target.files[0]);
+
+      }, false);
+
+    function parseNames(){
+
+    }
+    // google-meet-names
+
+    function convertArrayBufferToText(arrayBuffer) {
+
+      // mammoth.convertToHtml({ arrayBuffer: arrayBuffer })
+      return mammoth.extractRawText({ arrayBuffer: arrayBuffer })
+        .then(function (result) {
+          const lines = result.value.split('\n');
+          
+          const attendees = [];
+
+          lines.some((line, idx) => {
+
+            if (line.indexOf("Attendees") > -1) {
+
+              lines[idx + 2]
+                .split(",")
+                .map(name => name.trim())
+                .filter( name =>{
+                  return name.indexOf("'s Presentation") === -1;
+                })
+                .forEach(name => {
+                   attendees.push(name);
+                });
+
+              return true;
+
             }
-          ]
-        }
-      ]
-    }]
-  };
+          });
+
+          return attendees;
+
+
+        })
+        .catch(function (e) {
+          console.log(e);
+        })
+
+    }
+
+    function handleFileSelect(file) {
+
+      const reader = new FileReader();
+      reader.onload = async function (loadEvent) {
+
+        const arrayBuffer = loadEvent.target.result;
+        const attendees = await convertArrayBufferToText(arrayBuffer);
+        // console.log(attendees);
+        const textarea = document.querySelector("#google-meet-names")
+        textarea.value = attendees.join("\n");
+        textarea.focus();
+        textarea.select();
+
+      };
+
+      reader.readAsArrayBuffer(file);
+
+    }
+
+    const dropArea = document.getElementById('drop-area');
+
+    // Prevent the default behavior for file drop (open as a link)
+    dropArea.addEventListener('dragover', function (e) {
+      e.preventDefault();
+      dropArea.classList.add('dragging'); // Add a class to highlight the drop area
+    });
+
+    // Reset the drop area's style when the user leaves
+    dropArea.addEventListener('dragleave', function () {
+      dropArea.classList.remove('dragging'); // Remove the highlight class
+    });
+
+    dropArea.addEventListener('drop', function (e) {
+      e.preventDefault();
+      dropArea.classList.remove('dragging'); // Remove the highlight class
+      return handleFileSelect(e.dataTransfer.files[0]);
+
+      const file = e.dataTransfer.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (loadEvent) {
+          const arrayBuffer = loadEvent.target.result;
+          convertArrayBufferToText(arrayBuffer);
+        };
+
+        reader.readAsArrayBuffer(file);
+
+      }
+    });
+
+}
+
+const googleTranscriptParserHTML = `
+
+  <div id="google-transcript-parser" class="lm_content--inner">
+    <h4>Google Meet Transcript (.docx) Parser</h4>
+    <div id="drop-area">Drop .docx here</div>
+    <input id="docx" type="file" />
+    <textarea id="google-meet-names" rows="12"></textarea>
+  </div>
+
+`
+
+const goldenLayoutConfig = {
+  content: [{
+    type: 'row',
+    content: [
+      {
+        type: 'component',
+        componentName: 'Cockpit',
+        title: "Dashboard",
+        width: 80,
+        componentState: { label: 'A' }
+      },
+      {
+        type: 'column',
+        content: [
+          {
+            type: 'stack', // Stack
+            content: [
+              {
+                type: 'component',
+                title: 'Google Transcript Parser',
+                componentName: 'Cockpit',
+                componentState: {
+                  text: 'Component 1',
+                  isTranscriptComponent: true
+                }
+              },
+              {
+                type: 'component',
+                title: 'Statistics',
+                componentName: 'Cockpit',
+                componentState: { text: 'Component 2' }
+              },
+            ],
+            height: 65,
+          },
+          {
+            height: 35,
+            type: 'component',
+            title: "Preview",
+            componentName: 'Cockpit',
+            componentState: { label: 'C' }
+          }
+        ]
+      }
+    ]
+  }]
+};
+
+function initGoldenLayout({ colA, config }) {
 
   var myLayout = new GoldenLayout(config);
 
@@ -386,6 +521,10 @@ function initGoldenLayout({ colA }) {
 
       colA.removeAttribute("hidden");
       container.getElement().html(colA);
+
+    } else if (componentState.isTranscriptComponent) {
+
+      container.getElement().html(googleTranscriptParserHTML);
 
     } else {
 
@@ -403,6 +542,39 @@ function initGoldenLayout({ colA }) {
 
   myLayout.init();
 }
+function initThemeToggler() {
+
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  if (currentTheme) {
+
+    if (currentTheme === 'light') {
+      toggleSwitch.checked = false;
+      document.querySelector("head #gl-light-theme").setAttribute("rel", "stylesheet");
+      document.querySelector("head #gl-dark-theme").setAttribute("rel", "x");
+    }
+
+  }
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.querySelector("head #gl-light-theme").setAttribute("rel", "x");
+      document.querySelector("head #gl-dark-theme").setAttribute("rel", "stylesheet");
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.querySelector("head #gl-dark-theme").setAttribute("rel", "x");
+      document.querySelector("head #gl-light-theme").setAttribute("rel", "stylesheet");
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+}
 // ACTION!
 
 function init(e) {
@@ -411,7 +583,8 @@ function init(e) {
 
   const appWrapper = document.querySelector(".app-wrapper");
 
-  initGoldenLayout({ colA: appWrapper });
+  initGoldenLayout({ colA: appWrapper, config: goldenLayoutConfig });
+  initGoogleTranscriptParser();
 
   studentList.addEventListener("click", e => {
 
@@ -477,6 +650,8 @@ function init(e) {
     }
 
   });
+
+  initThemeToggler(); // Dark/Light Theme Switcher
 
 }
 
