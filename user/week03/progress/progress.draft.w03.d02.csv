@@ -3,4 +3,4 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
 3,2,CSS,Read 'Getting started with CSS',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 3,2,CSS,Read 'How CSS is structured',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 3,2,CSS,Read 'How CSS works',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-3,2,CSS,Complete the exercise 'Styling a biography page',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/styling_a_biography_page/')
+3,2,CSS,Complete the exercise 'Styling a biography page',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day02/styling_a_biography_page/')

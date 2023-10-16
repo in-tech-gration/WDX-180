@@ -150,7 +150,7 @@ We will look at many more ways to support various browsers in later lessons.
 
 ## Summary
 
-You've nearly finished this module — we only have one more thing to do. In the [Styling a biography page assessment](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page){:target="_blank"} you'll use your new knowledge to restyle an example, testing out some CSS in the process.
+You've nearly finished this module — we only have one more thing to do. In the **Styling a biography page assessment** you'll use your new knowledge to restyle an example, testing out some CSS in the process.
 
 ### Sources and Attributions
 
