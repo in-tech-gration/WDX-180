@@ -163,7 +163,7 @@ _(Updated: 15/10/2023)_
   - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md)
     - Level: Beginner
 
-  - Let's recap CSS Selectors by watching Kyle (from `WebDevSimplified`) going through every CSS Selector in his [**Learn Every CSS Selector In 20 Minutes**](https://www.youtube.com/watch?v=l1mER1bV0N0) video. 
+  Let's recap CSS Selectors by watching Kyle (from `WebDevSimplified`) going through every CSS Selector in his [**Learn Every CSS Selector In 20 Minutes**](https://www.youtube.com/watch?v=l1mER1bV0N0){:target="_blank"} video. 
 
 ### Summary
 

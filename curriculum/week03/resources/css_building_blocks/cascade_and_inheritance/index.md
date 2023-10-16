@@ -22,7 +22,7 @@ page-type: learn-module-chapter
 
   **Objective:**
 
-  -To learn about the cascade and specificity, and how inheritance works in CSS.
+  - To learn about the cascade and specificity, and how inheritance works in CSS.
 
 ## Conflicting rules
 
