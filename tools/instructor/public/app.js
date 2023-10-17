@@ -347,108 +347,108 @@ function handleRepoSyncInfo(target) {
 
 function initGoogleTranscriptParser() {
 
-    document
-      .getElementById("docx")
-      .addEventListener("change", event =>{
+  document
+    .getElementById("docx")
+    .addEventListener("change", event => {
 
-        handleFileSelect(event.target.files[0]);
+      handleFileSelect(event.target.files[0]);
 
-      }, false);
+    }, false);
 
-    function parseNames(){
+  function parseNames() {
 
-    }
-    // google-meet-names
+  }
+  // google-meet-names
 
-    function convertArrayBufferToText(arrayBuffer) {
+  function convertArrayBufferToText(arrayBuffer) {
 
-      // mammoth.convertToHtml({ arrayBuffer: arrayBuffer })
-      return mammoth.extractRawText({ arrayBuffer: arrayBuffer })
-        .then(function (result) {
-          const lines = result.value.split('\n');
-          
-          const attendees = [];
+    // mammoth.convertToHtml({ arrayBuffer: arrayBuffer })
+    return mammoth.extractRawText({ arrayBuffer: arrayBuffer })
+      .then(function (result) {
+        const lines = result.value.split('\n');
 
-          lines.some((line, idx) => {
+        const attendees = [];
 
-            if (line.indexOf("Attendees") > -1) {
+        lines.some((line, idx) => {
 
-              lines[idx + 2]
-                .split(",")
-                .map(name => name.trim())
-                .filter( name =>{
-                  return name.indexOf("'s Presentation") === -1;
-                })
-                .forEach(name => {
-                   attendees.push(name);
-                });
+          if (line.indexOf("Attendees") > -1) {
 
-              return true;
+            lines[idx + 2]
+              .split(",")
+              .map(name => name.trim())
+              .filter(name => {
+                return name.indexOf("'s Presentation") === -1;
+              })
+              .forEach(name => {
+                attendees.push(name);
+              });
 
-            }
-          });
+            return true;
 
-          return attendees;
+          }
+        });
+
+        return attendees;
 
 
-        })
-        .catch(function (e) {
-          console.log(e);
-        })
+      })
+      .catch(function (e) {
+        console.log(e);
+      })
 
-    }
+  }
 
-    function handleFileSelect(file) {
+  function handleFileSelect(file) {
 
+    const reader = new FileReader();
+    reader.onload = async function (loadEvent) {
+
+      const arrayBuffer = loadEvent.target.result;
+      const attendees = await convertArrayBufferToText(arrayBuffer);
+      // console.log(attendees);
+      const textarea = document.querySelector("#google-meet-names")
+      textarea.value = attendees.join("\n");
+      textarea.focus();
+      textarea.select();
+
+    };
+
+    reader.readAsArrayBuffer(file);
+
+  }
+
+  const dropArea = document.getElementById('drop-area');
+
+  // Prevent the default behavior for file drop (open as a link)
+  dropArea.addEventListener('dragover', function (e) {
+    e.preventDefault();
+    dropArea.classList.add('dragging'); // Add a class to highlight the drop area
+  });
+
+  // Reset the drop area's style when the user leaves
+  dropArea.addEventListener('dragleave', function () {
+    dropArea.classList.remove('dragging'); // Remove the highlight class
+  });
+
+  dropArea.addEventListener('drop', function (e) {
+    e.preventDefault();
+    dropArea.classList.remove('dragging'); // Remove the highlight class
+    return handleFileSelect(e.dataTransfer.files[0]);
+
+    const file = e.dataTransfer.files[0];
+
+    if (file) {
       const reader = new FileReader();
-      reader.onload = async function (loadEvent) {
 
+      reader.onload = function (loadEvent) {
         const arrayBuffer = loadEvent.target.result;
-        const attendees = await convertArrayBufferToText(arrayBuffer);
-        // console.log(attendees);
-        const textarea = document.querySelector("#google-meet-names")
-        textarea.value = attendees.join("\n");
-        textarea.focus();
-        textarea.select();
-
+        convertArrayBufferToText(arrayBuffer);
       };
 
       reader.readAsArrayBuffer(file);
 
     }
-
-    const dropArea = document.getElementById('drop-area');
-
-    // Prevent the default behavior for file drop (open as a link)
-    dropArea.addEventListener('dragover', function (e) {
-      e.preventDefault();
-      dropArea.classList.add('dragging'); // Add a class to highlight the drop area
-    });
-
-    // Reset the drop area's style when the user leaves
-    dropArea.addEventListener('dragleave', function () {
-      dropArea.classList.remove('dragging'); // Remove the highlight class
-    });
-
-    dropArea.addEventListener('drop', function (e) {
-      e.preventDefault();
-      dropArea.classList.remove('dragging'); // Remove the highlight class
-      return handleFileSelect(e.dataTransfer.files[0]);
-
-      const file = e.dataTransfer.files[0];
-
-      if (file) {
-        const reader = new FileReader();
-
-        reader.onload = function (loadEvent) {
-          const arrayBuffer = loadEvent.target.result;
-          convertArrayBufferToText(arrayBuffer);
-        };
-
-        reader.readAsArrayBuffer(file);
-
-      }
-    });
+  });
 
 }
 
@@ -467,12 +467,18 @@ const goldenLayoutConfig = {
   content: [{
     type: 'row',
     content: [
+
       {
-        type: 'component',
-        componentName: 'Cockpit',
-        title: "Dashboard",
+        type: 'stack', // Stack
         width: 80,
-        componentState: { label: 'A' }
+        content: [
+          {
+            type: 'component',
+            componentName: 'Cockpit',
+            title: "Dashboard",
+            componentState: { label: 'A' }
+          }
+        ],
       },
       {
         type: 'column',
@@ -513,6 +519,21 @@ const goldenLayoutConfig = {
 
 function initGoldenLayout({ colA, config }) {
 
+  const tabsEl = document.querySelector("script#tabs-json");
+  const tabsJSON = JSON.parse(tabsEl.textContent);
+  const mainTab = config.content[0].content[0].content;
+
+  Object.entries(tabsJSON.tabs).forEach(([title, URL]) =>{
+    const newTab = {
+      type: 'component',
+      title,
+      componentName: 'Cockpit',
+      componentState: { id: 'ChatGPT', isDynamicTab: true, title, URL }
+    }
+    mainTab.push(newTab);
+  })
+
+
   var myLayout = new GoldenLayout(config);
 
   myLayout.registerComponent('Cockpit', function (container, componentState) {
@@ -521,6 +542,12 @@ function initGoldenLayout({ colA, config }) {
 
       colA.removeAttribute("hidden");
       container.getElement().html(colA);
+
+    } else if (componentState.isDynamicTab) {
+
+      console.log(componentState.title)
+      console.log(componentState.URL)
+      container.getElement().html(`<iframe style="height:100%; width:100%;" src="${componentState.URL}">`);
 
     } else if (componentState.isTranscriptComponent) {
 

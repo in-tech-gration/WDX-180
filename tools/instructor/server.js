@@ -28,6 +28,7 @@ cohortYamls.forEach( yamlFile =>{
 
 // LOAD OPTIONAL YAML FILES:
 let quickLinks = {}
+let tabs = {}
 try {
   const instructorConfigPath = path.join( __dirname, "config" );
   const instructorConfigDir  = fs.readdirSync(instructorConfigPath);
@@ -35,6 +36,7 @@ try {
     const links = fs.readFileSync( path.join( instructorConfigPath, "links.yaml" ), "utf-8" );
     const linksObj = yaml.parse(links);
     quickLinks = { ...linksObj.links }
+    tabs = [ ...linksObj.tabs ]
   }
 } catch(e){
   console.log("\nWARNING: " + e.message + "\n");
@@ -44,6 +46,7 @@ function passCohortDataToRoutesMiddleware(options) {
   return function (req, res, next) {
     req.cohortData = options.cohortData;
     req.quickLinks = options.quickLinks;
+    req.tabs = options.tabs;
     next();
   }
 }
@@ -62,7 +65,7 @@ app.use(express.urlencoded({ extended:  false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', passCohortDataToRoutesMiddleware({ cohortData, quickLinks }), indexRouter)
+app.use('/', passCohortDataToRoutesMiddleware({ cohortData, quickLinks, tabs }), indexRouter)
 // app.use('/users', usersRouter)
 
 app.listen(port, () => {

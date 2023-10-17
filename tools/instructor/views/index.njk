@@ -14,6 +14,22 @@
       </div>
     </header>
 
+    {% if tabs %}
+      <script id="tabs-json" type="application/json">
+        {
+          "tabs": {
+            {% for item in tabs %}
+              {% if loop.last %}
+                "{{ item.title }}": "{{ item.URL }}"  
+              {% else %}
+                "{{ item.title }}": "{{ item.URL }}",  
+              {% endif %}
+            {% endfor %}
+          }
+        }
+      </script>
+    {% endif %}
+
     {% if links %}
       <section class="quick-links">
         <h4 class="m-0 d-inline-block">Quick links:</h4>
