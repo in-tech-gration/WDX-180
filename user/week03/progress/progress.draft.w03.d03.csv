@@ -4,5 +4,5 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
 3,3,CSS,Read 'Attribute Selectors',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 3,3,CSS,Read 'Pseudo-classes and Pseudo-elements',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 3,3,CSS,Read 'Combinators',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-3,3,CSS,Complete the game 'CSS Diner',Beginner,0-10,FALSE,Upload your recorded video or proof images to the corresponding folder ('/user/week03/exercises/css_diner/')
-3,3,CSS,Complete the exercise 'Test your skills: Selectors',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/selectors_tasks/')
+3,3,CSS,Complete the game 'CSS Diner',Beginner,0-10,FALSE,Upload your screenshot to the corresponding folder ('/user/week03/exercises/day03/')
+3,3,CSS,Complete the exercise 'Test your skills: Selectors',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day03/selectors_tasks/')

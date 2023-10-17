@@ -1,8 +1,8 @@
 // cSpell:ignore clipboardy
-const path          = require("node:path");
-const https         = require('node:https'); // or 'https' for https:// URLs
+const path = require("node:path");
+const https = require('node:https'); // or 'https' for https:// URLs
 const { parseArgs } = require("node:util");
-const clipboardy    = require('clipboardy');
+const clipboardy = require('clipboardy');
 
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
 console.log("Running yt.s...");
@@ -14,25 +14,6 @@ require("dotenv").config({ path: path.resolve(__dirname, '.env') });
 // USAGE: node tools/yt.js --get-video-info 3Ul9gYweEPs
 
 const { YOUTUBE_API_KEY } = process.env;
-
-const args = parseArgs({
-  strict: false,
-  options: {
-    "get-video-info": {
-      type: "string",
-      short: "i",
-    }
-  },
-});
-
-// HANDLE MISSING PARAMETERS:
-if ( Object.keys(args.values).length === 0 ){
-  return warn("Missing arguments. Maybe you wanted to run with `--get-video-info <ID> or -i <ID>?`")
-}
-
-const vid = args.values["get-video-info"];
-
-getYouTubeVideoInfo({ vid });
 
 const IVideoInfo = {
   kind: 'string',
@@ -74,113 +55,167 @@ const IVideoInfo = {
   }
 }
 
-async function getYouTubeVideoInfo({ vid }){
+function getYouTubeVideoInfo({ vid, log = false }) {
 
-  if( !youTubeIdRegEx.test(vid) ){
-    return warn(`Invalid YouTube ID: ${vid}`);
+  return new Promise((resolve, reject)=>{
+
+    if (!youTubeIdRegEx.test(vid)) {
+      warn(`Invalid YouTube ID: ${vid}`);
+      return reject(`Invalid YouTube ID: ${vid}`); 
+    }
+  
+    const URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails%2C+snippet&id=${vid}&key=${YOUTUBE_API_KEY}`
+  
+    const resourceJSON = {}
+  
+    try {
+  
+      let data = "";
+      https.get(URL, function (response) { 
+  
+        // response.statusCode, response.headers
+        response
+          .on("data", append => {
+            data += append
+          })
+          .on("error", e => {
+            console.log(e);
+            reject({ error: e });
+          })
+          .on("end", () => {
+  
+            const json = JSON.parse(data);
+  
+            if (json.error) {
+              return warn(json.error.message);
+            }
+  
+            const videoInfo = json.items[0];
+  
+            let defaultAudioLanguage = null;
+  
+            if (!videoInfo) {
+              warn("Ops! Something went wrong.");
+              return reject("Ops! Something went wrong.");
+            }
+  
+            if (videoInfo.snippet.defaultAudioLanguage) {
+  
+              defaultAudioLanguage = videoInfo.snippet.defaultAudioLanguage.split("-")[0];
+  
+            }
+  
+            // videoInfo.contentDetails.caption // BOOLEAN
+            if ( log ){
+  
+              ok("YouTube video description below:");
+              ok("================================");
+              console.log();
+              console.log(videoInfo.snippet.description);
+              console.log();
+              ok("================================");
+              ok("End of YouTube video description");
+  
+            }
+  
+            const entrySlug = convertToKebabCase(videoInfo.snippet.title);
+  
+            // console.log("THUMBNAILS:", videoInfo.snippet.thumbnails);
+  
+            const thumbnail_url = videoInfo.snippet.thumbnails.standard ? videoInfo.snippet.thumbnails.standard.url : videoInfo.snippet.thumbnails.high.url;
+  
+            resourceJSON[entrySlug] = {
+              type: "YouTube",
+              duration: iso8601ToSeconds(videoInfo.contentDetails.duration),
+              title: videoInfo.snippet.title,
+              date: formatDate(videoInfo.snippet.publishedAt),
+              youtube: {
+                id: videoInfo.id,
+                channel_id: videoInfo.snippet.channelId,
+                channel_title: videoInfo.snippet.channelTitle,
+                thumbnail_url
+              },
+              tags: videoInfo.snippet.tags
+            }
+  
+            if (defaultAudioLanguage) {
+              resourceJSON[entrySlug].language = [defaultAudioLanguage]
+            }
+  
+            // ok( JSON.stringify(resourceJSON, null, "\t"));
+            const removeFirstTabs = /^\s{1}/gm;
+            const output = JSON.stringify(resourceJSON, null, "\t")
+              .split("\n")
+              .map(line => {
+                return line.replace(removeFirstTabs, "");
+              })
+              .slice(1)
+              .slice(0, -1)
+              .join("\n")
+  
+            clipboardy.writeSync(output);
+            if ( log ){
+              
+              console.log();
+              ok(output);
+              console.log();
+  
+            }
+            resolve({ output });
+            ok("Content copied to clipboard. Just use Ctrl+V to paste.");
+  
+          });
+  
+      }).on("error", e => {
+  
+        console.log(e);
+        reject({ error: e });
+  
+      });
+  
+    } catch (error) {
+  
+      console.log("Ops!", { error });
+      reject({ error });
+      
+    }
+  
+    console.log("EoF");
+
+  });
+
+}
+
+function init() {
+
+  const args = parseArgs({
+    strict: false,
+    options: {
+      "get-video-info": {
+        type: "string",
+        short: "i",
+      }
+    },
+  });
+
+  // HANDLE MISSING PARAMETERS:
+  if (Object.keys(args.values).length === 0) {
+    return warn("Missing arguments. Maybe you wanted to run with `--get-video-info <ID> or -i <ID>?`")
   }
 
-  const URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails%2C+snippet&id=${vid}&key=${YOUTUBE_API_KEY}`
-  
-  const resourceJSON = {}
+  const vid = args.values["get-video-info"];
 
-  try {
+  getYouTubeVideoInfo({ vid, log: true });
 
-    let data="";
-    https.get(URL, function(response) {
-    
-      // console.log('statusCode:', response.statusCode);
-      // console.log('headers:', response.headers);
+}
 
-      response
-      .on("data", append => {
-        data += append
-      })
-      .on("error", e => console.log(e) )
-      .on("end", ()=> {
+if (require.main === module) {
+  // console.log("This script was executed directly.");
+  init();
+} else {
+  // console.log("This script was imported as a module.");
+}
 
-        const json = JSON.parse(data);
-        
-        if ( json.error ){
-          return warn(json.error.message);
-        }
-
-        const videoInfo = json.items[0];
-
-        let defaultAudioLanguage = null;
-
-        if ( !videoInfo ){
-          return warn("Ops! Something went wrong.");
-        }
-
-        if ( videoInfo.snippet.defaultAudioLanguage ){
-
-          defaultAudioLanguage = videoInfo.snippet.defaultAudioLanguage.split("-")[0];
-
-        }
-
-        // videoInfo.contentDetails.caption // BOOLEAN
-        ok("YouTube video description below:");
-        ok("================================");
-        console.log();
-        console.log(videoInfo.snippet.description);
-        console.log();
-        ok("================================");
-        ok("End of YouTube video description");
-
-        const entrySlug = convertToKebabCase(videoInfo.snippet.title);
-
-        // console.log("THUMBNAILS:", videoInfo.snippet.thumbnails);
-
-        const thumbnail_url = videoInfo.snippet.thumbnails.standard ? videoInfo.snippet.thumbnails.standard.url : videoInfo.snippet.thumbnails.high.url;
-
-        resourceJSON[entrySlug] = {
-          type: "YouTube",
-          duration: iso8601ToSeconds(videoInfo.contentDetails.duration),
-          title: videoInfo.snippet.title,
-          date: formatDate(videoInfo.snippet.publishedAt),
-          youtube : {
-            id : videoInfo.id,
-            channel_id: videoInfo.snippet.channelId,
-            channel_title: videoInfo.snippet.channelTitle,
-            thumbnail_url
-          },
-          tags: videoInfo.snippet.tags
-        }
-
-        if ( defaultAudioLanguage ){
-          resourceJSON[entrySlug].language = [ defaultAudioLanguage ]
-        }
-
-        // ok( JSON.stringify(resourceJSON, null, "\t"));
-        const removeFirstTabs = /^\s{1}/gm;
-        const output = JSON.stringify(resourceJSON, null, "\t")
-        .split("\n")
-        .map( line =>{
-          return line.replace(removeFirstTabs, "");
-        })
-        .slice(1)
-        .slice(0, -1)
-        .join("\n")
-
-        clipboardy.writeSync( output );
-        console.log();
-        ok( output );
-        console.log();
-        ok( "Content copied to clipboard. Just use Ctrl+V to paste." );
-
-      });
-    
-    }).on("error", e =>{
-      console.log(e);
-    });
-
-  } catch (error) {
-
-    console.log("Ops!", { error });
-    
-  } 
-
-  console.log("EoF");
-
+module.exports = {
+  getYouTubeVideoInfo
 }

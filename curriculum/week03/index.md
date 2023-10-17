@@ -4,7 +4,7 @@ title: Week 3
 
 # Week 3 | CSS, Accessibility & Git
 
-_(Updated: 18/09/2023)_
+_(Updated: 15/10/2023)_
 
 <!-- Week 3 - Day 1 | More Git -->
 <details markdown="1">
@@ -163,6 +163,8 @@ _(Updated: 18/09/2023)_
   - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md)
     - Level: Beginner
 
+  Let's recap CSS Selectors by watching Kyle (from `WebDevSimplified`) going through every CSS Selector in his [**Learn Every CSS Selector In 20 Minutes**](https://www.youtube.com/watch?v=l1mER1bV0N0){:target="_blank"} video. 
+
 ### Summary
 
   Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercises!
@@ -171,7 +173,7 @@ _(Updated: 18/09/2023)_
 
   - [Play: **CSS Diner**](https://flukeout.github.io/){:target="_blank"}
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
-    - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
+    - Take a screenshot of the max level you have successfully completed, name it `completed-level.png` and move it to folder `user/week03/exercises/day03/`
 
   - [MDN's Assessment: **Test your skills: Selectors**](exercises/selectors_tasks/index.md)
 
@@ -227,7 +229,8 @@ _(Updated: 18/09/2023)_
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-### [Extra Resources]
+### [Extra Resources](EXTRAS.md)
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**
