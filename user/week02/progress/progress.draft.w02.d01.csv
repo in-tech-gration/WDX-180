@@ -6,4 +6,3 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
 2,1,Version Control: Git & GitHub,Set up SSH keys for GitHub,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 2,1,Version Control: Git & GitHub,Create a (demo-repo) GitHub repository,Beginner,0-10,FALSE,Paste GitHub repository URL
 2,1,Version Control: Git & GitHub,Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme,Beginner,0-10,FALSE,Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx
-2,1,Version Control: Git & GitHub,Update the terms sheet (/user/progress.draft.terms.csv) by giving 1 point to each of the git and CLI terms you've learned through this module,Beginner,0-10,FALSE,"Make sure to stage, commit and push your changes"
