@@ -577,7 +577,7 @@ The finished example should look like this:
 
 ## Task 3
 
-In this task, you are provided with a paragraph, and your aim is to use some inline elements to mark up a couple of appropriate words with strong importance, and a couple with emphasis. Save the file in `user/week02/exercises/html_text_fundamentals/basic-text2.html`.
+In this task, you are provided with a paragraph, and your aim is to use some inline elements to mark up a couple of appropriate words with strong importance, and a couple with emphasis. Save the file in `user/week02/exercises/html_text_fundamentals/basic-text3.html`.
 
 ```html
 <!DOCTYPE html>
