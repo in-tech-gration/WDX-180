@@ -95,7 +95,7 @@
 
 <!-- Software -->
 <details markdown="1">
-  <summary><h3>Software</h3></summary>
+  <summary><h3 id="software">Software</h3></summary>
 
   This is a list of Software you must have installed on your system in order to get started with the course:
 

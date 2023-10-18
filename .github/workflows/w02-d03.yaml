@@ -3,6 +3,8 @@ name: "Tests: for Week 02 - Day 03"
 on:
   push:
     # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
     paths:
       - user/week02/exercises/day03/**
 

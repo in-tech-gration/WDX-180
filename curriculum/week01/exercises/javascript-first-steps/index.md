@@ -163,7 +163,7 @@
   </head>
   <body>
     <h1>Simple Quiz</h1>
-    <script src="simple_quiz.js"></script>  
+    <script src="simple-quiz.js"></script>  
   </body>
   </html>
   ```
