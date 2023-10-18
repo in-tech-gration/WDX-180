@@ -70,6 +70,8 @@ app.use('/', passCohortDataToRoutesMiddleware({ cohortData, quickLinks, tabs }),
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
-  open(`http://localhost:${port}`);
+  if ( process.argv[2] !== "--noopen" ){
+    open(`http://localhost:${port}`);
+  }
 });
 

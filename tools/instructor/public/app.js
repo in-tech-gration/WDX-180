@@ -29,8 +29,71 @@ const getWeeklyGitHubProgressURLs = (
 }
 const currentlySelectedStudents = {}
 const studentList = document.querySelector("ul.student-list");
-const COMPLETED_COL = 6;
+const COMPLETED_COL    = 6;
 const INSTRUCTIONS_COL = 7;
+const googleTranscriptParserHTML = `
+
+  <div id="google-transcript-parser" class="lm_content--inner">
+    <h4>Google Meet Transcript (.docx) Parser</h4>
+    <div id="drop-area">Drop .docx here</div>
+    <input id="docx" type="file" />
+    <textarea id="google-meet-names" rows="12"></textarea>
+  </div>
+
+`
+const goldenLayoutConfig = {
+  content: [{
+    type: 'row',
+    content: [
+
+      {
+        type: 'stack', // Stack
+        width: 80,
+        content: [
+          {
+            type: 'component',
+            componentName: 'Cockpit',
+            title: "Dashboard",
+            componentState: { label: 'A' }
+          }
+        ],
+      },
+      {
+        type: 'column',
+        content: [
+          {
+            type: 'stack', // Stack
+            content: [
+              {
+                type: 'component',
+                title: 'Google Transcript Parser',
+                componentName: 'Cockpit',
+                componentState: {
+                  text: 'Component 1',
+                  isTranscriptComponent: true
+                }
+              },
+              {
+                type: 'component',
+                title: 'Statistics',
+                componentName: 'Cockpit',
+                componentState: { text: 'Component 2' }
+              },
+            ],
+            height: 65,
+          },
+          {
+            height: 35,
+            type: 'component',
+            title: "Preview",
+            componentName: 'Cockpit',
+            componentState: { label: 'C' }
+          }
+        ]
+      }
+    ]
+  }]
+};
 
 // TODO: Grab Workflow Runs and check for submitted exercises, failed tests, etc.
 // FAILED: https://github.com/alkozp/WDX-180/actions/runs/6481541762
@@ -451,71 +514,6 @@ function initGoogleTranscriptParser() {
   });
 
 }
-
-const googleTranscriptParserHTML = `
-
-  <div id="google-transcript-parser" class="lm_content--inner">
-    <h4>Google Meet Transcript (.docx) Parser</h4>
-    <div id="drop-area">Drop .docx here</div>
-    <input id="docx" type="file" />
-    <textarea id="google-meet-names" rows="12"></textarea>
-  </div>
-
-`
-
-const goldenLayoutConfig = {
-  content: [{
-    type: 'row',
-    content: [
-
-      {
-        type: 'stack', // Stack
-        width: 80,
-        content: [
-          {
-            type: 'component',
-            componentName: 'Cockpit',
-            title: "Dashboard",
-            componentState: { label: 'A' }
-          }
-        ],
-      },
-      {
-        type: 'column',
-        content: [
-          {
-            type: 'stack', // Stack
-            content: [
-              {
-                type: 'component',
-                title: 'Google Transcript Parser',
-                componentName: 'Cockpit',
-                componentState: {
-                  text: 'Component 1',
-                  isTranscriptComponent: true
-                }
-              },
-              {
-                type: 'component',
-                title: 'Statistics',
-                componentName: 'Cockpit',
-                componentState: { text: 'Component 2' }
-              },
-            ],
-            height: 65,
-          },
-          {
-            height: 35,
-            type: 'component',
-            title: "Preview",
-            componentName: 'Cockpit',
-            componentState: { label: 'C' }
-          }
-        ]
-      }
-    ]
-  }]
-};
 
 function initGoldenLayout({ colA, config }) {
 

@@ -43,8 +43,9 @@
       <section
         class="mt-0">
         {# <pre>
-                        {{ cohortData.cohort_02.students | dump | safe }}
-                      </pre> #}
+          {{ cohortData.cohort_02.students | dump | safe }}
+        </pre> 
+        #}
         <ul class="student-list">
           {% for key, value in cohortData.cohort_02.students %}
             <li>
@@ -116,6 +117,14 @@
             </section>
             <section class="student-progress-sheets hidden" data-student="{{ key }}">
               <div class="hidden error mb-1 font-bold"></div>
+
+              {# TODO: PROGRESS SHEET SEARCH & FILTERING #}
+              <div class="progress-search--wrapper">
+                <label for="progress-search">Search:</label>
+                <input type="search" id="progress-search">
+              </div>
+              {# TODO: PROGRESS SHEET SEARCH & FILTERING #}
+
               <table></table>
             </section>
           {% endfor %}
