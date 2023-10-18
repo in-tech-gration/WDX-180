@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "gen": "node tools/sgen curriculum/curriculum.yaml",
     "cockpit": "node tools/instructor/server.js",
     "cockpit:dev": "nodemon -e .js,.njk,.css tools/instructor/server.js --noopen",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",

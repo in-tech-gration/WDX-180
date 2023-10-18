@@ -34,8 +34,8 @@
   - [**Week 06**: CSS 2 & Performance](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 07**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 08**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 09**: Functional Programming 1, Clean Code & Testing](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 10**: CSS Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 09**: CSS Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 10**: Functional Programming 1, Clean Code & Testing](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 11**: Templating, JavaScript Frameworks & Git Workflow](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 12**: Deploying our Applications & Group Project](#) _(🔒 Stay tuned! This module is on the way.)_
 

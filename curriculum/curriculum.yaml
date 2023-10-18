@@ -27,9 +27,9 @@ Syllabus:
         8: 
           title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
         9: 
-          title: "Functional Programming 1, Clean Code & Testing"
-        10: 
           title: "CSS Frameworks"
+        10: 
+          title: "Functional Programming 1, Clean Code & Testing"
         11: 
           title: "Templating, JavaScript Frameworks & Git Workflow"
         12: 
