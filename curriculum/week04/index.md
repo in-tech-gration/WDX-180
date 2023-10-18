@@ -192,8 +192,7 @@ _(Updated: 12/10/2023)_
 
 - Scopes
   - PUT EXERCISE HERE
-- Arrays
-  - [Test your skills: Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Arrays){:target="_blank"}
+- [JavaScript Arrays](exercises/arrays/index.md)
 - Objects
   - PUT EXERCISE HERE
 
