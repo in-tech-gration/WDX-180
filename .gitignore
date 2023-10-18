@@ -4,6 +4,7 @@ node_modules
 .vscode
 .next/
 # kostasx section:
+.gitattributes
 CURRICULUM.x 
 .personal/
 teaching/cohorts
