@@ -64,6 +64,28 @@ YouTube video, 8min
 
 ---
 
+## Visual Studio Code
+
+Here you can find tips for getting the most out of this awesome IDE and its numerous extensions!
+
+### RainbowCSV
+
+  Apart from the beautiful colors the extension adds to our CSV file, it offers a great consistency checker!
+  
+  **How to use it**
+
+  At the bottom of you VSCode when there is an editor open with a CSV file, there is a button named **CSVLint**.
+  Click on it to check your file's validity. After the process is finished, the button is colored:
+  - **Green**: Everything looks fine!
+  - **Red**: The errors are displayed on hover
+
+  As per creator's documentation:
+  - The linter checks the following:
+    - Consistency of double quotes usage in CSV rows.
+    - Consistency of number of fields per CSV row.
+
+---
+
 ## Tools
 
 - [**Excalidraw**](https://excalidraw.com/){:target="_blank"}: Virtual whiteboard for sketching hand-drawn like diagrams

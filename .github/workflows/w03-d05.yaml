@@ -1,0 +1,95 @@
+name: "Tests: for Week 03 - Day 05 Backgrounds and borders"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
+    paths:
+      - user/week03/exercises/day05/**
+
+jobs:
+  MORE_CSS_BUILDING_BLOCKS:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Backgrounds and Borders
+      - name: "Backgrounds and Borders: Task 1 > Checks file existence: backgrounds1.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/task01/backgrounds1.html"
+          fail: true
+      
+      - name: "Backgrounds and Borders: Task 2 > Checks file existence: backgrounds2.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/task02/backgrounds2.html"
+          fail: true
+      
+      # Overflow
+      - name: "Overflow Task 1: Making a scrollable box > Checks file existence: overflow-scroll.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/overflow_tasks/task01/overflow-scroll.html"
+          fail: true
+      
+      - name: "Overflow Task 2: Hiding overflow > Checks file existence: overflow-hidden.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/overflow_tasks/task02/overflow-hidden.html"
+          fail: true
+      
+      # Values and Units
+      - name: "Values and Units Task 1: color values > Checks file existence: color.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/values_tasks/task01/color.html"
+          fail: true
+
+      - name: "Values and Units Task 2: length values > Checks file existence: length.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/values_tasks/task02/length.html"
+          fail: true
+
+      - name: "Values and Units Task 3: position values > Checks file existence: position.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/values_tasks/task03/position.html"
+          fail: true
+
+      # Sizing
+      - name: "Sizing Task 1: height and min-height > Checks file existence: height-min-height.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/sizing_tasks/task01/height-min-height.html"
+          fail: true
+
+      - name: "Sizing Task 2: Percentages > Checks file existence: percentages.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/sizing_tasks/task02/percentages.html"
+          fail: true
+
+      - name: "Sizing Task 3: maximum width and images > Checks file existence: max-width.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/sizing_tasks/task03/max-width.html"
+          fail: true
+      
+      # Images and form elements
+      - name: "Images and forms 1: covering the box with an image > Checks file existence: object-fit.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/images_tasks/task01/object-fit.html"
+          fail: true
+      
+      - name: "Images and forms 2: styling form fields > Checks file existence: form.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day05/images_tasks/task02/form.html"
+          fail: true

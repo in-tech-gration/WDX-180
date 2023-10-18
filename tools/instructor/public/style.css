@@ -1,0 +1,281 @@
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.error {
+  color: tomato;
+}
+
+.error-dark {
+  padding: 0.5rem 2rem !important;
+  text-align: center;
+  background: darkred !important;
+  color: white;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* Style */
+body {
+  display: block;
+}
+
+.app-wrapper {
+  margin: 2rem;
+}
+.app-wrapper h1,
+.quick-links {
+  text-align: center;
+}
+.quick-links {
+  margin: 1rem 0 0 0;
+  padding: 8px;
+}
+.quick-links a {
+  background: #00000066;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.quick-links a:hover {
+  background: #000000;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.app-wrapper main {
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+.student-data {
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 0;
+}
+ul.student-list li {
+  margin: 1rem;
+}
+ul.student-list > li {
+  border-bottom: 1px dashed gray;
+}
+.student-progress-sheets {
+  margin: 0;
+  padding: 0;
+}
+.student-progress-sheets DISABLEDtable {
+  transform: translateX(-30%);
+  width: 80vw;
+}
+.student-progress-sheets table td {
+  padding: 0.1rem 0.5rem;
+}
+.student-progress-sheets table td.completed-col {
+  background-color: tomato;
+  color: black;
+}
+.student-progress-sheets table td.completed {
+  background-color: yellowgreen;
+  color: black;
+}
+td.cell-with-link {
+  padding: 0.5rem 2rem !important;
+  text-align: center;
+  background: black;
+  color: orange;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+ul.student-list {
+  text-align: center;
+  list-style: none;
+}
+ul.student-list,
+ul.student-list ul {
+  padding-left: 0;
+}
+ul.student-list > li > ul > li {
+  display: flex;
+  flex-wrap: wrap;
+}
+.student-list--inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.github_info {
+  padding: 0 0.75rem;
+  border-radius: 8px;
+  color: black;
+  margin: 0 0.5rem;
+  display: none;
+}
+.github_info.active {
+  display: inline-block;
+}
+.github_behind_by {
+  background: tomato;
+}
+.github_commits {
+  background: yellowgreen;
+}
+.github_in_sync {
+  background: green;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg) scale(0.75);
+  }
+  to {
+    transform: rotate(360deg) scale(0.75);
+  }
+}
+.rotating {
+  animation: rotating 2s linear infinite;
+}
+
+.ic-btn {
+  background: black;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 200ms ease;
+  padding: 0rem 0.75rem;
+  color: white !important;
+  border-radius: 6px;
+  margin: 0.5rem 0.2rem 0 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ic-btn:hover {
+  background: forestgreen;
+  filter: none !important;
+}
+
+.ic-btn i {
+  color: white;
+  text-decoration: none;
+  transform: scale(0.7);
+}
+
+header.ic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Dark/Light Theme Toggler */
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  margin-right: 1rem;
+}
+header.ic-header .gutter, header.ic-header .theme-switch-wrapper {
+  width: 20%;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Golden Layout */
+.lm_content--inner {
+  padding: 0.5rem 2rem;
+}
+.lm_content {
+  overflow: scroll !important;
+}
+
+/* Google Meet Transcript Parser  */
+#google-transcript-parser #drop-area {
+  height: 200px;
+  border: 2px dashed gray;
+  text-align: center;
+  padding: 1rem;
+  font-size: 18px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#google-transcript-parser #drop-area.dragging {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}

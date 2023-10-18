@@ -1,0 +1,50 @@
+name: "Tests: for Week 03 - Day 04 Cascade, Inheritance and the box model"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
+    paths:
+      - user/week03/exercises/day04/**
+
+jobs:
+  CASCADE_INHERITANCE_BOX_MODEL:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      # Cascade
+      - name: "The Cascade Task > Checks file existence: cascade.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day04/cascade_tasks/task01/cascade.html"
+          fail: true
+      
+      - name: "The Cascade Layer Task > Checks file existence: cascadelayer.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day04/cascade_tasks/task02/cascadelayer.html"
+          fail: true
+      
+      # Box Model
+      - name: "Box Model Task 1: Standard and Alternate Box Models > Checks file existence: box-models.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day04/box_model_tasks/task01/box-models.html"
+          fail: true
+      
+      - name: "Box Model Task 2: Margin, Border, and Padding > Checks file existence: mbp.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day04/box_model_tasks/task02/mbp.html"
+          fail: true
+      
+      - name: "Box Model Task 3: Inline Block > Checks file existence: inline-block.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day04/box_model_tasks/task03/inline-block.html"
+          fail: true

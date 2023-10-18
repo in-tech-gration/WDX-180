@@ -1,2 +1,9 @@
-Week,Day,Concept,Task,Level,Confidence,Completed,Submitted Links
-2,3,-,-,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
+2,3,HTML Tables,Complete the 'Active learning: Creating your first table' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Active learning: table headers' first exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Active learning: table headers' second exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Active learning: colgroup and col' second exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Active learning: Adding a caption' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Active learning: Adding table structure' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Active learning: playing with scope and headers' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+2,3,HTML Tables,Complete the 'Structuring planet data' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

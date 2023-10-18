@@ -1,0 +1,43 @@
+name: "Tests: for Week 02 - Day 04"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
+    paths:
+      - user/week02/exercises/day04/**
+
+jobs:
+  HTML_Tables:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Your first form > Check file existence: first-form.html" 
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day04/your_first_form/first-form.html"
+          fail: true
+
+      - name: "Your first form > Check file existence: first-form-styled.html" 
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day04/your_first_form/first-form-styled.html"
+          fail: true
+
+      - name: "How to structure a web form > Check file existence: payment-form.html" 
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day04/how_to_structure_a_web_form/payment-form.html"
+          fail: true
+
+      - name: "Test your skills: form structure > Check file existence: form-structure1-download.html" 
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week02/exercises/day04/test_your_skills_form_structure/form-structure1-download.html"
+          fail: true
+

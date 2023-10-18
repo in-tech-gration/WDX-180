@@ -1,0 +1,9 @@
+# 1) Should be placed inside the folder: /teaching/cohorts/
+# 2) Should be renamed to yaml, e.g. /teaching/cohorts/cohort.yaml
+students:
+  github_username_a: 
+    fullname: Full Name A
+  github_username_b:
+    fullname: Full Name B
+  john_doe_codes:
+    fullname: John Doe

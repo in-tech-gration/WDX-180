@@ -147,6 +147,13 @@
 
     `html-nolint example-bad`
 
+    - Fix the following issue:
+
+      These links: `![](./assets/Comm.Insecure.png)`
+      Become: `![](assets/./assets/Comm.Insecure.png)`
+
+      They shouldn't!
+
   ### Create linter for the /user/progress.draft.*.csv files
 
     - Project Manager: Kostas Minaidis (@kostasx)

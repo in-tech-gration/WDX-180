@@ -1,0 +1,25 @@
+name: "Tests: for Week 03 - Day 02 What is CSS"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
+    paths:
+      - user/week03/exercises/day02/**
+
+jobs:
+  WHAT_IS_CSS:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Styling a biography page
+      - name: "Styling a biography page > Checks file existence: blog.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day02/styling_a_biography_page/blog.html"
+          fail: true

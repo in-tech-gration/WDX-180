@@ -1,0 +1,55 @@
+name: "Tests: for Week 03 - Day 03 CSS Selectors"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
+    paths:
+      - user/week03/exercises/day03/**
+
+jobs:
+  CSS_SELECTORS:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Game: CSS Diner > Checks file existence: completed-level.png"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/completed-level.png"
+          fail: true
+      
+      # Selectors
+      - name: "Type Selectors > Checks file existence: type.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/selectors_tasks/task01/type.html"
+          fail: true
+      
+      - name: "Class and ID Selectors > Checks file existence: class-id.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/selectors_tasks/task02/class-id.html"
+          fail: true
+  
+      - name: "Pseudo-class and Pseudo-element Selectors > Checks file existence: pseudo.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/selectors_tasks/task03/pseudo.html"
+          fail: true
+  
+      - name: "Combinators > Checks file existence: combinators.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/selectors_tasks/task04/combinators.html"
+          fail: true
+  
+      - name: "Attribute Selectors > Checks file existence: attribute-links.html"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week03/exercises/day03/selectors_tasks/task05/attribute-links.html"
+          fail: true

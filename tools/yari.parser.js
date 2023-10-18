@@ -394,6 +394,7 @@ function getEmbedLiveSampleRegex() {
  */
 function createCodeSandboxURL({ html, css, js, header_block_id }) {
 
+  let prefix;
   // https://codesandbox.io/docs/learn/sandboxes/cli-api
   let indexHTML = `
         <!DOCTYPE html>

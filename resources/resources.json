@@ -1681,9 +1681,453 @@
         "EDUCATION"
       ]
     },
-    "javascript-in-14-minutes" : {
+    "javascript-in-14-minutes": {
       "identifier": "https://jgthms.com/javascript-in-14-minutes/",
       "type": "Interactive Tutorial"
+    },
+    "what-are-the-best-websites-for-booking-a-flight-if-youre-blind-disability-pie": {
+      "type": "YouTube",
+      "duration": 517,
+      "title": "What are the best websites for booking a flight if you're blind: Disability Pie",
+      "date": "05/08/2019",
+      "youtube": {
+        "id": "QUZ091A73bk",
+        "channel_id": "UCCXhNabvw86SnYho-rWdLMA",
+        "channel_title": "AbilityNet",
+        "thumbnail_url": "https://i.ytimg.com/vi/QUZ091A73bk/sddefault.jpg"
+      },
+      "tags": [
+        "accessibility"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "which-airline-apps-fail-blind-people---which": {
+      "type": "YouTube",
+      "duration": 259,
+      "title": "Which airline apps fail blind people?  - Which?",
+      "date": "02/05/2022",
+      "youtube": {
+        "id": "TUfM2IeZp54",
+        "channel_id": "UCkqEX4I6XYfiOZ5zIwL7oag",
+        "channel_title": "Which?",
+        "thumbnail_url": "https://i.ytimg.com/vi/TUfM2IeZp54/sddefault.jpg"
+      },
+      "tags": [
+        "accessibility",
+        "reviews",
+        "product reviews",
+        "service reviews",
+        "independent review",
+        "product tests",
+        "service ratings",
+        "consumer rights",
+        "advice",
+        "Which",
+        "which?"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "understand-website-accessibility-with-the-firefox-accessibility-inspector": {
+      "type": "YouTube",
+      "duration": 481,
+      "title": "Understand Website Accessibility with the Firefox Accessibility Inspector",
+      "date": "11/11/2019",
+      "youtube": {
+        "id": "7mqqgIxX_NU",
+        "channel_id": "UCh5UlGiu9d6LegIeUCW4N1w",
+        "channel_title": "Mozilla Developer",
+        "thumbnail_url": "https://i.ytimg.com/vi/7mqqgIxX_NU/sddefault.jpg"
+      },
+      "tags": [
+        "mozilla",
+        "firefox",
+        "mozilla developer",
+        "css",
+        "html",
+        "a11y",
+        "accessibility",
+        "front-end development",
+        "web design",
+        "code",
+        "Accessibility Inspector",
+        "Accessibility tools",
+        "WCAG"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "claude-shannon-the-man-who-turned-paper-into-pixels": {
+      "type": "YouTube",
+      "duration": 352,
+      "title": "Claude Shannon: The Man Who Turned Paper Into Pixels",
+      "date": "17/06/2014",
+      "youtube": {
+        "id": "Q8rVJZ-VDKQ",
+        "channel_id": "UC3tCNZAURUKbrp2dQkZQy2w",
+        "channel_title": "Adam Westbrook",
+        "thumbnail_url": "https://i.ytimg.com/vi/Q8rVJZ-VDKQ/sddefault.jpg"
+      },
+      "tags": [
+        "Adam Westbrook",
+        "delve.tv",
+        "video essay",
+        "Information Theory",
+        "Claude Shannon",
+        "Binary",
+        "How computers work",
+        "How the digital world was born",
+        "how binary works",
+        "transistors",
+        "A mathematical theory of communication",
+        "Telephones",
+        "Information",
+        "Noise",
+        "Probabilities",
+        "Gambling",
+        "motion graphics",
+        "documentary",
+        "video",
+        "Chopin",
+        "information age",
+        "digital age",
+        "juggling",
+        "what does digital mean",
+        "digital",
+        "learning",
+        "curiosity",
+        "delve",
+        "Vincent Van Gogh",
+        "Charles and Ray Eames",
+        "knowledge",
+        "history"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "the-bit-player-2018---claude-shannon---legendas-pt-br": {
+      "type": "YouTube",
+      "duration": 5152,
+      "title": "The Bit Player 2018 - Claude Shannon - Legendas PT-BR",
+      "date": "05/05/2022",
+      "youtube": {
+        "id": "CCrpgUM_rYc",
+        "channel_id": "UCdoP-TuqD5zRj3QnNR8IC8g",
+        "channel_title": "Odradek",
+        "thumbnail_url": "https://i.ytimg.com/vi/CCrpgUM_rYc/sddefault.jpg"
+      },
+      "language": [
+        "en"
+      ]
+    },
+    "how-to-be-a-git-expert": {
+      "type": "YouTube",
+      "duration": 2786,
+      "title": "How to be a git expert",
+      "date": "03/02/2022",
+      "youtube": {
+        "id": "hZS96dwKvt0",
+        "channel_id": "UCfghz6BODc_PFP6qiLtZd-g",
+        "channel_title": "Floating Little Leaves of Code",
+        "thumbnail_url": "https://i.ytimg.com/vi/hZS96dwKvt0/sddefault.jpg"
+      },
+      "tags": [
+        "git"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "the-undersea-cable-that-linked-the-world": {
+      "type": "YouTube",
+      "duration": 310,
+      "title": "The Undersea Cable That Linked The World",
+      "date": "16/04/2019",
+      "youtube": {
+        "id": "nV0Wc9Y33so",
+        "channel_id": "UCUMZ7gohGI9HcU9VNsr2FJQ",
+        "channel_title": "Bloomberg Originals",
+        "thumbnail_url": "https://i.ytimg.com/vi/nV0Wc9Y33so/sddefault.jpg"
+      },
+      "tags": [
+        "News",
+        "bloomberg",
+        "telegraph",
+        "History",
+        "Transatlantic Cable",
+        "Undersea Cable",
+        "elon musk",
+        "entrepreneur",
+        "telephone",
+        "Internet",
+        "texting",
+        "technology",
+        "Richard Branson",
+        "19th Century"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "html-block-vs-inline-elements": {
+      "type": "YouTube",
+      "duration": 45,
+      "title": "HTML Block vs Inline Elements",
+      "date": "14/05/2021",
+      "youtube": {
+        "id": "XHjoohto2-w",
+        "channel_id": "UCeYUHG6o0YguM-g23htdsSw",
+        "channel_title": "GCFLearnFree",
+        "thumbnail_url": "https://i.ytimg.com/vi/XHjoohto2-w/sddefault.jpg"
+      },
+      "tags": [
+        "HTML",
+        "how to code",
+        "learn HTML",
+        "learn coding",
+        "website coding",
+        "coding for web browsers",
+        "understanding coding",
+        "understanding HTML",
+        "what is HTML",
+        "what is coding",
+        "gcf",
+        "gcfglobal",
+        "gcflearnfree",
+        "coding lessons",
+        "HTML lessons",
+        "understanding code",
+        "block elements",
+        "inline elements",
+        "stack horizontally",
+        "stack vertically",
+        "default values",
+        "what are block elements",
+        "what are inline elements",
+        "how to stack HTML elements",
+        "how to stack horizontally",
+        "how to stack vertically"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "css-basics-part2-cascades": {
+      "type": "YouTube",
+      "duration": 230,
+      "title": "CSS Basics (Part2) — Cascades",
+      "date": "04/11/2013",
+      "youtube": {
+        "id": "tZhmjgLQgXU",
+        "channel_id": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+        "channel_title": "DevTips",
+        "thumbnail_url": "https://i.ytimg.com/vi/tZhmjgLQgXU/sddefault.jpg"
+      },
+      "tags": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Web Development",
+        "Coding",
+        "Design",
+        "Dev Tips",
+        "Web Design",
+        "Website",
+        "Web",
+        "Internet",
+        "Internet code",
+        "Tips",
+        "How To",
+        "tutorial",
+        "web design tuts",
+        "net tuts",
+        "web tuts",
+        "coding tutorial",
+        "advice",
+        "development advice",
+        "friendly internet",
+        "programming",
+        "programming help",
+        "html",
+        "css",
+        "javascript",
+        "workflow",
+        "code editing",
+        "design",
+        "graphic design",
+        "graphic designer",
+        "designer who codes",
+        "designers who code",
+        "design prototyping",
+        "Designer (Project Role)",
+        "Cascading Style Sheets (Programming Language)"
+      ]
+    },
+    "css-specificity-explained": {
+      "type": "YouTube",
+      "duration": 807,
+      "title": "CSS Specificity explained",
+      "date": "11/01/2018",
+      "youtube": {
+        "id": "c0kfcP_nD9E",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/c0kfcP_nD9E/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "tutorial",
+        "html",
+        "css",
+        "specificity",
+        "CSS Specificity",
+        "CSS Specificity explained",
+        "CSS Specificity tutorial"
+      ]
+    },
+    "learn-css-specificity-in-11-minutes": {
+      "type": "YouTube",
+      "duration": 686,
+      "title": "Learn CSS Specificity In 11 Minutes",
+      "date": "09/11/2019",
+      "youtube": {
+        "id": "CHyPGSpIhSs",
+        "channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+        "channel_title": "Web Dev Simplified",
+        "thumbnail_url": "https://i.ytimg.com/vi/CHyPGSpIhSs/sddefault.jpg"
+      },
+      "tags": [
+        "webdevsimplified",
+        "css specificity",
+        "css specificity tutorial",
+        "css specificity explained",
+        "css specificity rules",
+        "css important",
+        "css !important",
+        "css selector",
+        "css tutorial",
+        "css for beginners",
+        "css specificity order",
+        "css specificity hierarchy",
+        "css specificity tutorial for beginners",
+        "css tutorial for beginners",
+        "css selector specificity",
+        "selector specificity",
+        "specificity",
+        "cascading style sheets",
+        "css !important tutorial",
+        "css selector tutorial",
+        "css",
+        "css explained"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "css-basics-part8-css-preprocessors": {
+      "type": "YouTube",
+      "duration": 679,
+      "title": "CSS Basics (Part8) — CSS Preprocessors",
+      "date": "16/12/2013",
+      "youtube": {
+        "id": "PJkWbezpHpE",
+        "channel_id": "UCyIe-61Y8C4_o-zZCtO4ETQ",
+        "channel_title": "DevTips",
+        "thumbnail_url": "https://i.ytimg.com/vi/PJkWbezpHpE/sddefault.jpg"
+      },
+      "tags": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Web Development",
+        "Coding",
+        "Design",
+        "Dev Tips",
+        "Web Design",
+        "Website",
+        "Web",
+        "Internet",
+        "Internet code",
+        "Tips",
+        "How To",
+        "tutorial",
+        "web design tuts",
+        "net tuts",
+        "web tuts",
+        "coding tutorial",
+        "advice",
+        "development advice",
+        "friendly internet",
+        "programming",
+        "programming help",
+        "html",
+        "css",
+        "javascript",
+        "workflow",
+        "code editing",
+        "design",
+        "graphic design",
+        "graphic designer",
+        "designer who codes",
+        "designers who code",
+        "design prototyping",
+        "Less CSS",
+        "SASS CSS",
+        "SASS",
+        "Stylus",
+        "css preprocessor",
+        "css preprocessing"
+      ]
+    },
+    "learn-every-css-selector-in-20-minutes": {
+      "type": "YouTube",
+      "duration": 1178,
+      "title": "Learn Every CSS Selector In 20 Minutes",
+      "date": "07/07/2020",
+      "youtube": {
+        "id": "l1mER1bV0N0",
+        "channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+        "channel_title": "Web Dev Simplified",
+        "thumbnail_url": "https://i.ytimg.com/vi/l1mER1bV0N0/sddefault.jpg"
+      },
+      "tags": [
+        "webdevsimplified",
+        "css selector crash course",
+        "css selectors",
+        "css selector tutorial",
+        "css selector specificity",
+        "css for beginners",
+        "css introduction",
+        "css selectors guide",
+        "css selector chaining",
+        "css tutorial",
+        "css project",
+        "css concepts",
+        "css guide",
+        "learn css quick",
+        "easy css",
+        "css beginner",
+        "css selector beginner",
+        "css beginner guide",
+        "css beginner tutorial",
+        "css selector guide",
+        "learn css",
+        "css tips",
+        "css tricks",
+        "css tips and tricks",
+        "css advanced",
+        "css advanced selectors",
+        "css",
+        "css easy"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

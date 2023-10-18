@@ -143,7 +143,7 @@ Specifying a description that includes keywords relating to the content of your 
 
 The description is also used on search engine result pages. Let's go through an exercise to explore this
 
-1. Go to the [front page of The Mozilla Developer Network](/en-US/).
+1. Go to the [front page of The Mozilla Developer Network](https://developer.mozilla.org/en-US/).
 2. View the page's source (right-click on the page, choose _View Page Source_ from the context menu.)
 3. Find the description meta tag. It will look something like this (although it may change over time):
 
