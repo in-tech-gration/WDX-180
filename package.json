@@ -5,7 +5,7 @@
   "scripts": {
     "gen": "node tools/sgen curriculum/curriculum.yaml",
     "cockpit": "node tools/instructor/server.js",
-    "cockpit:dev": "nodemon -e .js,.njk,.css tools/instructor/server.js --noopen",
+    "cockpit:dev": "nodemon -e .js,.njk,.css,.yaml tools/instructor/server.js --noopen",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
     "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
     "DEPRECATED_wordpress": "echo 'coming soon...'",
