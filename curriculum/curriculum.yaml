@@ -1,0 +1,95 @@
+input: curriculum/curriculum.draft.md
+output: curriculum/index.md
+messages:
+  MODULE_CURRENTLY_NOT_AVAILABLE: "🔒 Stay tuned! This module is on the way."
+Syllabus:
+  Beginner:
+    title: "Beginner: WDX 60°"
+    subtitle: ""
+    schedule:
+      weeks: # Can also be 'days'
+        1: 
+          title: "Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript"
+          open: true
+        2: 
+          title: "HTML, Accessibility & Git"
+          open: true
+        3: 
+          title: "CSS, Accessibility & more Git"
+        4: 
+          title: "JavaScript Core 1"
+        5: 
+          title: "JavaScript Core 2"
+        6: 
+          title: "CSS 2 & Performance"
+        7: 
+          title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
+        8: 
+          title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
+        9: 
+          title: "Functional Programming 1, Clean Code & Testing"
+        10: 
+          title: "CSS Frameworks"
+        11: 
+          title: "Templating, JavaScript Frameworks & Git Workflow"
+        12: 
+          title: "Deploying our Applications & Group Project"
+  Intermediate:
+    title: "Intermediate: WDX 120°"
+    schedule:
+      weeks:
+        13:
+          title: "JavaScript Intermediate 1 & Git"
+        14:
+          title: "Data Structures"
+        15:
+          title: "Algorithms"
+        16:
+          title: "Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more"
+        17:
+          title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
+        18:
+          title: "Node.js 1"
+        19:
+          title: "Node.js 2, NoSQL Databases & Docker"
+        20:
+          title: "React 1"
+        21:
+          title: "React 2, Firebase"
+        22:
+          title: "React 3, Redux & Tech Interview"
+        23:
+          title: "Group Project, Tech Interview & Job Hunt"
+        24:
+          title: "Group Project"
+  Advanced:
+    title: "Advanced: WDX 180°"
+    schedule:
+      weeks:
+        25:
+          title: "JavaScript Advanced 1"
+        26:
+          title: "JavaScript Advanced 2, TypeScript Advanced"
+        27:
+          title: "Node.js 3 & Relational Databases"
+        28:
+          title: "Express.js, REST APIs & GraphQL"
+        29:
+          title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
+        30:
+          title: "Functional Programming 2, Software Principles & Reading Academic Papers"
+        31:
+          title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
+        32:
+          title: "Introduction to AI, Machine Learning & Tensorflow.js"
+        33:
+          title: "Introduction to Data Science & Danfo.js"
+        34:
+          title: "Blockchain & Web3"
+        35:
+          title: "Solo Project"
+        36:
+          title: "Solo Project"
+        37:
+          title: The Road Ahead
+          no_unit: true
