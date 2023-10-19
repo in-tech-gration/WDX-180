@@ -20,6 +20,10 @@
 
   - [ ] Check the final text with the [Grammarly App](https://grammarly.com/) and make all necessary changes.
 
+  - [ ] Ensure that any date/time-related sentences are relevant or avoid using them altogether. For example, "what have you learned yesterday/past week" should probably be replaced with "what have you learned in the previous Module(s)", "What have you learned from the Git fundamentals section/module" or something similar.
+
+  - [ ] Avoid too informal language, e.g. "you gonna remember" =(replace with)=> "you are going to remember"
+
   ### List of MDN articles and resources that must be integrated 
 
   The following resources must be reviewed, updated and integrated into the platform in order to be available offline:
