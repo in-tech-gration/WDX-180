@@ -13,6 +13,7 @@ jobs:
   Arrays:
 
     runs-on: ubuntu-latest
+    if: ${{ contains(github.event.head_commit.added, 'user/week04/exercises/day01/arrays/') }}
 
     steps:
       
@@ -62,6 +63,51 @@ jobs:
 
       - name: Run Birds Test
         run: node curriculum/week04/exercises/arrays/tests/birds.test.js
+  
+  Objects:
+
+    runs-on: ubuntu-latest
+    if: ${{ contains(github.event.head_commit.added, 'user/week04/exercises/day01/objects/') }}
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: "Object Basics 1 > Check file existence: object-basics-1.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/objects/object-basics-1.js"
+          fail: true
+
+      - name: Run Object Basics 1 Test
+        run: node curriculum/week04/exercises/objects/tests/object-basics-1.test.js
+
+      - name: "Object Basics 2 > Check file existence: object-basics-2.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/objects/object-basics-2.js"
+          fail: true
+
+      - name: "Object Basics 2 > Check file existence: object-basics-2.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/objects/object-basics-2.js"
+          fail: true
+
+      - name: "Object Basics 4 > Check file existence: object-basics-4.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/objects/object-basics-4.js"
+          fail: true
       
 
       
