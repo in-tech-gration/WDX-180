@@ -116,7 +116,7 @@
   Now that you have completed ALL the exercises above, please run the following git commands to submit them:
 
   - `git add user/week04/exercises/day01/arrays/`
-  - `git commit -m "Week 04 Day 01 Exercises"`
+  - `git commit -m "Week 04 Day 01 Arrays"`
   - `git push`
 
   After the push is complete, head over to GitHub and check:
@@ -126,4 +126,4 @@
 ### Sources and Attributions
 
   All 4 exercises are from MDN:
-  - [Test your skills: Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Arrays){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/59897d30821b4b57d1c92d87d5b97e886d18ed7d/files/en-us/learn/javascript/first_steps/test_your_skills_colon__arrays/index.md)
+  - [Test your skills: Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Arrays){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/59897d30821b4b57d1c92d87d5b97e886d18ed7d/files/en-us/learn/javascript/first_steps/test_your_skills_colon__arrays/index.md){:target="_blank"}
