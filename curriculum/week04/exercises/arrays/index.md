@@ -24,7 +24,7 @@
   } catch(e){}
   ```
 
-  <INSTRUCTIONS_TO_SUBMIT>
+  When you're ready move the file (`basic-array-practice.js`) to the following path `user/week04/exercises/day01/arrays/`.
 
 ## 2) String to Array
 
@@ -54,7 +54,7 @@
   } catch(e){}
   ```
 
-  <INSTRUCTIONS_TO_SUBMIT>
+  When you're ready move the file (`string-to-array.js`) to the following path `user/week04/exercises/day01/arrays/`.
 
 ## 3) Array to String
 
@@ -84,7 +84,7 @@
   } catch(e){}
   ```
 
-  <INSTRUCTIONS_TO_SUBMIT>
+  When you're ready move the file (`array-to-string.js`) to the following path `user/week04/exercises/day01/arrays/`.
 
 ## 4) Birds
 
@@ -108,6 +108,20 @@
     if ( global ){ global.eBirds = eBirds; }
   } catch(e){}
   ```
+
+  When you're ready move the file (`birds.js`) to the following path `user/week04/exercises/day01/arrays/`.
+
+### Submit Exercises
+
+  Now that you have completed ALL the exercises above, please run the following git commands to submit them:
+
+  - `git add user/week04/exercises/day01/arrays/`
+  - `git commit -m "Week 04 Day 01 Exercises"`
+  - `git push`
+
+  After the push is complete, head over to GitHub and check:
+  - if any of the tests failed, please try to solve those errors (reach out to us for anything unusual).
+  - if all tests run successfully, Congratulations! You're becoming more and more familiar with Javascript!
 
 ### Sources and Attributions
 

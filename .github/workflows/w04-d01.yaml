@@ -1,0 +1,67 @@
+name: "Tests: for Week04 Day01"
+
+on:
+  push:
+    # Run tests only when the following folders/files have changed during the push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day01/**
+
+
+jobs:
+  Arrays:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: "Basic Array Practice > Check file existence: basic-array-practice.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/arrays/basic-array-practice.js"
+          fail: true
+
+      - name: Run Basic Array Practice Test
+        run: node curriculum/week04/exercises/arrays/tests/basic-array-practice.test.js
+
+      - name: "String to Array > Check file existence: string-to-array.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/arrays/string-to-array.js"
+          fail: true
+
+      - name: Run String to Array Test
+        run: node curriculum/week04/exercises/arrays/tests/string-to-array.test.js
+
+      - name: "Array to String > Check file existence: array-to-string.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/arrays/array-to-string.js"
+          fail: true
+
+      - name: Run Array to String Test
+        run: node curriculum/week04/exercises/arrays/tests/array-to-string.test.js
+
+      - name: "Birds > Check file existence: birds.js"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/arrays/birds.js"
+          fail: true
+
+      - name: Run Birds Test
+        run: node curriculum/week04/exercises/arrays/tests/birds.test.js
+      
+
+      
