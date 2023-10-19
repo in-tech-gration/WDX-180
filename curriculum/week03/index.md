@@ -164,7 +164,7 @@ _(Updated: 15/10/2023)_
 
 ### Summary
 
-  Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercises!
+  Now that you've finished studying this Module's content, you've learned about a wide variety of CSS selectors that are available, allowing for fine-grained precision when selecting elements to style in a Web page. It's time to put this information to the test with the following exercises!
 
 ### Exercises
 
