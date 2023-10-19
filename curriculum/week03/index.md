@@ -112,7 +112,7 @@ _(Updated: 15/10/2023)_
 
 ### Summary
 
-  Now that you've finished studying today's content, you've gained familiarity with the language and its syntax. Move on to the exercise to get some basic experience using it.
+  Now that you've finished studying today's content, you've gained some more familiarity with the CSS language and its syntax. Move on to the exercises to get some basic experience using it.
 
 ### Exercises
 
@@ -120,7 +120,8 @@ _(Updated: 15/10/2023)_
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-### [Extra Resources]
+<!-- ### [Extra Resources] -->
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**
@@ -142,21 +143,21 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper.
+  Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper. **CSS Selectors** is the part of CSS that defines which element(s) will be `selected` from the HTML page and what styling rules will be applied to them. Let's see them in detail:
 
-  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/index.md)
+  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/index.md)
+  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/index.md)
+  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/index.md)
+  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md)
+  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md){:target="_blank"}
     - Level: Beginner
 
   Let's recap CSS Selectors by watching Kyle (from `WebDevSimplified`) going through every CSS Selector in his [**Learn Every CSS Selector In 20 Minutes**](https://www.youtube.com/watch?v=l1mER1bV0N0){:target="_blank"} video. 
@@ -177,7 +178,8 @@ _(Updated: 15/10/2023)_
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-### [Extra Resources]
+<!-- ### [Extra Resources] -->
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**
