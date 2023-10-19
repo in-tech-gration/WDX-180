@@ -10,6 +10,8 @@ _(Updated: 12/09/2023)_
 
 Overflow is what happens when there is too much content to fit in an element box. In this guide, you will learn what overflow is and how to manage it.
 
+![](./assets/css.is.awesome.jpg)
+
 **Prerequisites:**
 
 - Basic computer literacy
