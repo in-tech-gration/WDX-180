@@ -37,10 +37,10 @@ jobs:
           files: "user/week02/exercises/day03/html_table_basics/dogs-table.html"
           fail: true
 
-      - name: "HTML table basics > Check file existence: time-table.html"
+      - name: "HTML table basics > Check file existence: timetable.html"
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week02/exercises/day03/html_table_basics/time-table.html"
+          files: "user/week02/exercises/day03/html_table_basics/timetable.html"
           fail: true
 
       - name: "HTML table advanced features and accessibility > Check file existence: timetable-fixed.html"
