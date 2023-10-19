@@ -2128,6 +2128,72 @@
       "language": [
         "en"
       ]
+    },
+    "the-box-model-for-beginners-web-design-tutorial": {
+      "type": "YouTube",
+      "duration": 115,
+      "title": "The box model for beginners web design tutorial",
+      "date": "15/08/2017",
+      "youtube": {
+        "id": "MrAnu4zdjjY",
+        "channel_id": "UCELSb-IYi_d5rYFOxWeOz5g",
+        "channel_title": "Webflow",
+        "thumbnail_url": "https://i.ytimg.com/vi/MrAnu4zdjjY/sddefault.jpg"
+      },
+      "tags": [
+        "web design",
+        "webflow",
+        "responsive web design",
+        "graphic design",
+        "web development",
+        "cms",
+        "content management system",
+        "HTML",
+        "box model",
+        "layout"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "learn-css-box-model-in-8-minutes": {
+      "type": "YouTube",
+      "duration": 502,
+      "title": "Learn CSS Box Model In 8 Minutes",
+      "date": "16/03/2019",
+      "youtube": {
+        "id": "rIO5326FgPE",
+        "channel_id": "UCFbNIlppjAuEX4znoulh0Cw",
+        "channel_title": "Web Dev Simplified",
+        "thumbnail_url": "https://i.ytimg.com/vi/rIO5326FgPE/sddefault.jpg"
+      },
+      "tags": [
+        "webdevsimplified",
+        "css box model",
+        "css box model tutorial",
+        "css box model explained",
+        "learn css box model",
+        "css box model explained fast",
+        "css box model quick",
+        "css box model fast",
+        "css box model example",
+        "box model tutorial",
+        "box model explained",
+        "box model css",
+        "box model css tutorial",
+        "box model css explained",
+        "box model for beginners",
+        "css padding vs margin",
+        "css padding and margin",
+        "css padding vs margin vs border",
+        "css padding",
+        "css margin",
+        "css spacing",
+        "learn css box model in 8 minutes"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
