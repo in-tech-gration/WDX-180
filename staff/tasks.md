@@ -16,6 +16,10 @@
 
 ## CONTENT
 
+  ### Contribute Content Preflight Checklist
+
+  - [ ] Check the final text with the [Grammarly App](https://grammarly.com/) and make all necessary changes.
+
   ### List of MDN articles and resources that must be integrated 
 
   The following resources must be reviewed, updated and integrated into the platform in order to be available offline:
