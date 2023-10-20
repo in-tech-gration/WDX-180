@@ -47,7 +47,7 @@
 </details>
 
 <!-- Setup -->
-<details markdown="1" open>
+<details markdown="1">
   <summary><h3>Setup</h3></summary>
 
   The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo){:target="_blank"}  this repository under your GitHub account.
