@@ -47,7 +47,7 @@
 </details>
 
 <!-- Setup -->
-<details markdown="1">
+<details markdown="1" open>
   <summary><h3>Setup</h3></summary>
 
   The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo){:target="_blank"}  this repository under your GitHub account.
@@ -64,6 +64,10 @@
   The URL should look something like this: `https://your_username.github.io/WDX-180`
 
   > Here is a [YouTube video walkthrough](https://www.youtube.com/watch?v=xqGlWAHjtcM){:target="_blank"} to help you with this step. 
+
+  While you are at the **Settings** page, select **General** on the side menu and go to **Features > Check "Issues" > Save** in order to enable the **Issues** feature on your forked repo.
+
+  ![](./assets/GitHub.Enable.Issues.jpg)
 </details>
 
 <!-- Communication -->
