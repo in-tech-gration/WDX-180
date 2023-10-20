@@ -91,6 +91,16 @@ and always use main instead of master as it is changed
 
  Αnswer: No, it's an optional attribute. Depending on the case of the form you're making, you can use it to fill the value of the input with a predefined one, according to your needs.
 
+ Question: What is the meaning of "native" in programming?
+
+ Answer: Wikipedia says that "native" refers to programming for a specific processor/operating system. It is the opposite of cross-platform, that runs everywhere!
+
+ Question: When reading an artice from the links of WDX-180 do we also have to read the sublinks of it? Example from mdn :Read Website security ....?
+
+ Answer: Because sublinks of an article, especially those on MDN, can lead to many more subjects that we have not covered yet, it's better to read the content of the article and then follow the next steps as instructured from the WDX-180 :D. After finishing the contents of the day, of course you can read those extra sublinks and have a look at them!
+
+
+
 ## Week 01 (Day 01)
 
   **MOVED TO `/curriculum/FAQ/index.md`**
