@@ -91,8 +91,6 @@ and always use main instead of master as it is changed
 
  Αnswer: No, it's an optional attribute. Depending on the case of the form you're making, you can use it to fill the value of the input with a predefined one, according to your needs.
 
----
-
 ## Week 01 (Day 01)
 
   **MOVED TO `/curriculum/FAQ/index.md`**
