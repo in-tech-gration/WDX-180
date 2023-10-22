@@ -16,24 +16,26 @@ Syllabus:
           open: true
         3: 
           title: "CSS, Accessibility & more Git"
+          open: true
         4: 
-          title: "JavaScript Core 1"
-        5: 
-          title: "JavaScript Core 2"
-        6: 
           title: "CSS 2 & Performance"
-        7: 
-          title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
-        8: 
-          title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
-        9: 
+        5: 
           title: "CSS Frameworks"
+        6: 
+          title: "JavaScript Core 1"
+        7: 
+          title: "JavaScript Core 2"
+        8: 
+          title: "JavaScript Core 3"
+        9: 
+          title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
         10: 
-          title: "Functional Programming 1, Clean Code & Testing"
+          title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
         11: 
-          title: "Templating, JavaScript Frameworks & Git Workflow"
+          title: "Functional Programming 1, Clean Code & Testing"
         12: 
-          title: "Deploying our Applications & Group Project"
+          title: "Templating, JavaScript Frameworks & Git Workflow"
+          # title: "Deploying our Applications & Group Project"
   Intermediate:
     title: "Intermediate: WDX 120°"
     schedule:
