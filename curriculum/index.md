@@ -28,7 +28,7 @@
 
   - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/index.md)
   - [**Week 02**: HTML, Accessibility & Git](week02/index.md)
-  - [**Week 03**: CSS, Accessibility & more Git](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 03**: CSS, Accessibility & more Git](week03/index.md) 
   - [**Week 04**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 05**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 06**: CSS 2 & Performance](#) _(🔒 Stay tuned! This module is on the way.)_
