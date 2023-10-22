@@ -22,74 +22,76 @@
 
 ## Week 02 (Day 01-05)
 
- Question: touch command doesnt work on command line
+ Q: touch command doesnt work on command line
 
- Αnswer: This question was covered extensively on the Q&A section: 
+ Αnswer: This Q was covered extensively on the Q&A section: 
 
- Question: Could someone provide me an example how "secure passphrase" should look??
+ Q: Could someone provide me an example how "secure passphrase" should look??
 
  Αnswer: https://www.youtube.com/watch?v=opRMrEfAIiI
 
- Question: javascript-first-steps,Largest Number Checker do we have to check for null and equal or not?  (edited)  
+ Q: javascript-first-steps,Largest Number Checker do we have to check for null and equal or not?  (edited)  
 
  Αnswer: It is not required to check for null cases, but it's a good practice! For equality, I guess you can say it's redundant and you can figure out why :D
 
- Question: https://youtu.be/mJ-qvsxPHpY?t=622  need git checkout -b main  before push
+ Q: https://youtu.be/mJ-qvsxPHpY?t=622  need git checkout -b main  before push
 and always use main instead of master as it is changed
 
  Αnswer: Yep, that's a good reminder. Curriculum updated. :)
 
- Question: git remote -v may i know what is -v flag stands for
+ Q: git remote -v may i know what is -v flag stands for
 
- Αnswer: git remote --help provides the answer: "--v or --verbose"
+ Αnswer: git remote --help provides the A: "--v or --verbose"
 
  Αnswer: "Be a little more verbose and show remote url after name. For promisor remotes, also show which filter (blob:none etc.) are configured. NOTE: This must be placed between remote and subcommand."
 
- Question: How can i automate this process or run it from command line? github repo -> sync fork-> update branch 
+ Q: How can i automate this process or run it from command line? github repo -> sync fork-> update branch 
 
- Αnswer: It can be automated, but a lot of advanced git commands must be executed which might lead to confusion and errors, so stay tuned. :) Automating (the boring stuff) is the way to go, so kudos for the question. :)
+ Αnswer: It can be automated, but a lot of advanced git commands must be executed which might lead to confusion and errors, so stay tuned. :) Automating (the boring stuff) is the way to go, so kudos for the Q. :)
 
- Question: Can i use different vscode themes on different types of files?
+ Q: Can i use different vscode themes on different types of files?
 
  Αnswer: What did Google come up with?
 
- Question: What do we have to write inside a <td></td> to get a number to the power of x? For example, 1000^3?
+ Q: What do we have to write inside a <td></td> to get a number to the power of x? For example, 1000^3?
 
  Αnswer: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
 
  Αnswer: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
 
- Question: how to find the correct color of text in an image?
+ Q: how to find the correct color of text in an image?
 
  Αnswer: Microsoft has a great tool of toys as they call them that can do many sorts of thinkgs. They're called PowerToys and includes lots of helpful tools like a color picker that you're looking for. Give them a try and you won't miss! https://learn.microsoft.com/en-us/windows/powertoys/
 
  Αnswer: This might help also: https://developer.chrome.com/docs/devtools/css/color/ For images found on websites or images dragged and dropped in the browser.
 
- Question: Computer detects wrong font color because image divided to pixels.
+ Q: Computer detects wrong font color because image divided to pixels.
 
  Αnswer: Can you elaborate a bit on this?
 
- Question: Can we use git as a command to backup our files with one command?
+ Q: Can we use git as a command to backup our files with one command?
 
  Αnswer: Yes, that is possible.
 
- Question: What type of files are supported by git and is there a size limit for use of a file?
+ Q: What type of files are supported by git and is there a size limit for use of a file?
 
  Αnswer: Regarding file size: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github Other than that, git can handle almost any file.
 
- Question: How can i add multiple collaborators at once from a list?
+ Q: How can i add multiple collaborators at once from a list?
 
  Αnswer: A quick Google search didn't bring any results. Probably some scripting might help here through their API.
 
- Question: How i ignore folders, files or file types from git tracking them?
+ Q: How i ignore folders, files or file types from git tracking them?
 
  Αnswer: Use the .gitignore Luke!
 
  Αnswer: You can also ignore .gitignore
 
- Question: Does the input element need a default value attribute and in what cases?
+ Q: Does the input element need a default value attribute and in what cases?
 
  Αnswer: No, it's an optional attribute. Depending on the case of the form you're making, you can use it to fill the value of the input with a predefined one, according to your needs.
+
+---
 
 ## Week 01 (Day 01)
 
@@ -99,11 +101,11 @@ and always use main instead of master as it is changed
 
 ## Week 01 (Day 02)
 
-  QUESTION: I will need a clear explanation about idempotence in examples.
+  Q: I will need a clear explanation about idempotence in examples.
 
   _(Source: https://speakerdeck.com/rkh/http-rubymonsters-edition?slide=20)_
 
-  ANSWER: Let's go through the process of how we suggest you start your search on a new term, either technical in nature or found in a technical context.
+  A: Let's go through the process of how we suggest you start your search on a new term, either technical in nature or found in a technical context.
 
   If the term does not make sense in english or you are unfamiliar with it, we suggest that you start with finding out and understanding its formal definition. You can do that by googling `define [ACTUAL WORD]`, e.g. let's start by searching `define idempotence` (which in turns leads us to `idempotent`)
 
@@ -182,7 +184,7 @@ and always use main instead of master as it is changed
 
   ---
 
-  Q: Sorry, Kosta, one more question. I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
+  Q: Sorry, Kosta, one more Q. I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
 
   A: Try removing the - at the end: https://in-tech-gration.github.io/WDX-180/
 
@@ -190,7 +192,7 @@ and always use main instead of master as it is changed
 
   ---
 
-  Q: I have a question) we have to stylish only the page  "world's first Website"? And in the way as we want or how? 
+  Q: I have a Q) we have to stylish only the page  "world's first Website"? And in the way as we want or how? 
 
   A: You can style it as you like. There is no restriction in that. Use what you've learned today and make it look as pleasing as you see fit! 
 
@@ -250,7 +252,7 @@ and always use main instead of master as it is changed
 
   ---
 
-  Q: I have a question regarding VS Code. I don't see any day 04 exercises in my curriculum or user. How do I complete the assignment? The only thing I see under day 04 is README.md
+  Q: I have a Q regarding VS Code. I don't see any day 04 exercises in my curriculum or user. How do I complete the assignment? The only thing I see under day 04 is README.md
 
   A: you should create a cern directory under week-1/exercises/day04 structure should be like this user/week01/exercises/day04/cern/ and your html file css and images for assignment goes inside this cern directory
 
