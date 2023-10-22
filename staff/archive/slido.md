@@ -24,72 +24,74 @@
 
  Q: touch command doesnt work on command line
 
- Αnswer: This Q was covered extensively on the Q&A section: 
+ A: This Q was covered extensively on the Q&A section: 
 
  Q: Could someone provide me an example how "secure passphrase" should look??
 
- Αnswer: https://www.youtube.com/watch?v=opRMrEfAIiI
+ A: https://www.youtube.com/watch?v=opRMrEfAIiI
 
  Q: javascript-first-steps,Largest Number Checker do we have to check for null and equal or not?  (edited)  
 
- Αnswer: It is not required to check for null cases, but it's a good practice! For equality, I guess you can say it's redundant and you can figure out why :D
+ A: It is not required to check for null cases, but it's a good practice! For equality, I guess you can say it's redundant and you can figure out why :D
 
  Q: https://youtu.be/mJ-qvsxPHpY?t=622  need git checkout -b main  before push
 and always use main instead of master as it is changed
 
- Αnswer: Yep, that's a good reminder. Curriculum updated. :)
+ A: Yep, that's a good reminder. Curriculum updated. :)
 
  Q: git remote -v may i know what is -v flag stands for
 
- Αnswer: git remote --help provides the A: "--v or --verbose"
+ A: git remote --help provides the A: "--v or --verbose"
 
- Αnswer: "Be a little more verbose and show remote url after name. For promisor remotes, also show which filter (blob:none etc.) are configured. NOTE: This must be placed between remote and subcommand."
+ A: "Be a little more verbose and show remote url after name. For promisor remotes, also show which filter (blob:none etc.) are configured. NOTE: This must be placed between remote and subcommand."
 
  Q: How can i automate this process or run it from command line? github repo -> sync fork-> update branch 
 
- Αnswer: It can be automated, but a lot of advanced git commands must be executed which might lead to confusion and errors, so stay tuned. :) Automating (the boring stuff) is the way to go, so kudos for the Q. :)
+ A: It can be automated, but a lot of advanced git commands must be executed which might lead to confusion and errors, so stay tuned. :) Automating (the boring stuff) is the way to go, so kudos for the Q. :)
 
  Q: Can i use different vscode themes on different types of files?
 
- Αnswer: What did Google come up with?
+ A: What did Google come up with?
 
  Q: What do we have to write inside a <td></td> to get a number to the power of x? For example, 1000^3?
 
- Αnswer: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
+ A: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
 
- Αnswer: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
+ A: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
 
  Q: how to find the correct color of text in an image?
 
- Αnswer: Microsoft has a great tool of toys as they call them that can do many sorts of thinkgs. They're called PowerToys and includes lots of helpful tools like a color picker that you're looking for. Give them a try and you won't miss! https://learn.microsoft.com/en-us/windows/powertoys/
+ A: Microsoft has a great tool of toys as they call them that can do many sorts of thinkgs. They're called PowerToys and includes lots of helpful tools like a color picker that you're looking for. Give them a try and you won't miss! https://learn.microsoft.com/en-us/windows/powertoys/
 
- Αnswer: This might help also: https://developer.chrome.com/docs/devtools/css/color/ For images found on websites or images dragged and dropped in the browser.
+ A: This might help also: https://developer.chrome.com/docs/devtools/css/color/ For images found on websites or images dragged and dropped in the browser.
 
  Q: Computer detects wrong font color because image divided to pixels.
 
- Αnswer: Can you elaborate a bit on this?
+ A: Can you elaborate a bit on this?
 
  Q: Can we use git as a command to backup our files with one command?
 
- Αnswer: Yes, that is possible.
+ A: Yes, that is possible.
 
  Q: What type of files are supported by git and is there a size limit for use of a file?
 
- Αnswer: Regarding file size: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github Other than that, git can handle almost any file.
+ A: Regarding file size: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github Other than that, git can handle almost any file.
 
  Q: How can i add multiple collaborators at once from a list?
 
- Αnswer: A quick Google search didn't bring any results. Probably some scripting might help here through their API.
+ A: A quick Google search didn't bring any results. Probably some scripting might help here through their API.
 
  Q: How i ignore folders, files or file types from git tracking them?
 
- Αnswer: Use the .gitignore Luke!
+ A: Use the .gitignore Luke!
 
- Αnswer: You can also ignore .gitignore
+ A: You can also ignore .gitignore
 
  Q: Does the input element need a default value attribute and in what cases?
 
- Αnswer: No, it's an optional attribute. Depending on the case of the form you're making, you can use it to fill the value of the input with a predefined one, according to your needs.
+ A: No, it's an optional attribute. Depending on the case of the form you're making, you can use it to fill the value of the input with a predefined one, according to your needs.
+
+---
 
 ## Week 01 (Day 01)
 
