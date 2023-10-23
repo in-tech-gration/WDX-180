@@ -1,0 +1,15 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: CSS 2 & Performance
+schedule: 
+  days:
+    1:
+      module: css/styling_tables_debugging_organizing
+    2: 
+      module: css/styling_text
+    3: 
+      module: css/layout_part1
+    4: 
+      module: css/layout_part2
+    5: 
+      module: css/web_performance
