@@ -18,17 +18,19 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  About a week ago, you learned about the infamous version control system (VCS) called Git. One of the most important tools in your arsenal! Today, we are gonna remember what we've learned the past week and later on we're going to focus on a much more realistic and everyday scenario that you're gonna encounter as a web developer.
+  About a week ago, you've learned about the infamous version control system (VCS) called Git. Definitely, one of the most important tools in your arsenal! Today, we are going to recap on what we've learned in the previous modules and later on we're going to focus on a much more realistic and everyday scenario that you're going to encounter as a web developer.
 
-  First things first though. What have learned a week a ago??
+  First things first though. What have you learned so far?
 
   - What is Git
-  - How to initialize a git repository on our local machine
+  - How to initialize a git repository on your local machine
   - How to commit new changes
   - How to create new branches
-  - How to push our version to GitHub
+  - How to push your version to GitHub
 
-  These are some of the basic concepts covered so far. If you feel like you are uncertain about some of the things above, don't worry! It takes time to learn and master git! You can always revisit old lectures and your personal notes! Confident or not, below is a video where in about ten minutes gives a solid explanation on branches and a basic local workflow of creating/deleting branches.  
+  These are some of the basic concepts covered so far. If you feel like you are uncertain about some of the things above, don't worry! It takes time and lots of practice to learn and master git! You can always revisit old lectures and your personal notes! 
+  
+  Let's strengthen our confidence by watching a video that gives a solid explanation of branches and a basic local workflow of creating/deleting branches in about ten minutes.  
   
   - [Watch: **Git & GitHub Tutorial for Beginners #8 - Branches**](https://www.youtube.com/watch?v=QV0kVNvkMxc){:target="_blank"}
     - Duration: 10min
@@ -37,7 +39,7 @@ _(Updated: 15/10/2023)_
   
   ---
 
-  **Practice time!**
+  **Practice time: New Feature List**
 
   Now that we freshened up our memory, let's take a few minutes and try to create a step-by-step list of the commands executed on our local repo, when we want to work on a new feature on a project. You're going to create a new Markdown file, named `new-feature-list.md`, containing your list! The structure of your file should be as below:
 
@@ -67,25 +69,23 @@ _(Updated: 15/10/2023)_
     - Level: Beginner
     - Captions: Yes
 
+  **Practice time: Learn Git Branching**
+
+  - Go through the [LearnGitBranching](https://learngitbranching.js.org/) interactive game and try to complete all the steps.
+
 ### Summary
 
-  At the end of the day, you're gonna have a pretty good understanding of the Git VCS. However, with this tool you're gonna get better and better the more you use it and the more you make mistakes! Don't be afraid to fail! Even great mid and senior developers worldwide have serious issues with it. Git is a powerful tool, developed by a genius, who did not plan on sharing this knowledge with us newbies. 
-
-### Exercises
-
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
-### [Extra Resources]
+  At the end of the day, you're gonna have a pretty good understanding of the Git VCS. However, with this tool you're gonna get better and better the more you use it and the more you make mistakes! Don't be afraid to fail! Even great mid-level and senior developers worldwide have serious issues with it. Git is a powerful tool, developed by a [genius](https://youtu.be/o8NPllzkFhE?t=343), who did not plan on making it easy for the rest of us. 
 
   **Understanding Git == becoming a better developer**
 
-  Keeping that in mind, below you can find some very good articles on git branches and how actually git works under the hood.
+<!-- ### Exercises -->
 
-  - [Read: **A look under the hood: how branches work in Git**](https://stackoverflow.blog/2021/04/05/a-look-under-the-hood-how-branches-work-in-git/){:target="_blank"}
+  <!-- Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md). -->
 
-  - [Read: **Git Branching - Branches in a Nutshell**](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell){:target="_blank"}
+### [Extra Resources](EXTRAS.md#git)
 
-  > **Disclaimer**: These two articles are advanced for someone like you right now. You can always keep them for later and give them a read whenever you feel confident enough with Git, but we do highly recommend to give them a try nonetheless!
+  You can find some very good (advanced) articles on git branches and how actually git works under the hood in the [EXTRAS](EXTRAS.md#git) under the `Git` section.
 
 ### Sources and Attributions
 </details>
@@ -102,21 +102,21 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/index.md)
+  - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/index.md)
+  - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/index.md)
+  - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **How CSS works**](resources/css_first_steps/how_css_works/index.md)
+  - [Read: **How CSS works**](resources/css_first_steps/how_css_works/index.md){:target="_blank"}
     - Level: Beginner
 
 ### Summary
 
-  Now that you've finished studying today's content, you've gained familiarity with the language and its syntax. Move on to the exercise to get some basic experience using it.
+  Now that you've finished studying today's content, you've gained some more familiarity with the CSS language and its syntax. Move on to the exercises to get some basic experience using it.
 
 ### Exercises
 
@@ -124,7 +124,8 @@ _(Updated: 15/10/2023)_
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-### [Extra Resources]
+<!-- ### [Extra Resources] -->
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**
@@ -146,28 +147,28 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper.
+  Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper. **CSS Selectors** is the part of CSS that defines which element(s) will be `selected` from the HTML page and what styling rules will be applied to them. Let's see them in detail:
 
-  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/index.md)
+  - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/index.md)
+  - [Read: **Type, class, and ID selectors**](resources/css_building_blocks/css_selectors/type_class_and_id_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/index.md)
+  - [Read: **Attribute Selectors**](resources/css_building_blocks/css_selectors/attribute_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/index.md)
+  - [Read: **Pseudo-classes and Pseudo-elements**](resources/css_building_blocks/css_selectors/pseudo-classes_and_pseudo-elements/index.md){:target="_blank"}
     - Level: Beginner
   
-  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md)
+  - [Read: **Combinators**](resources/css_building_blocks/css_selectors/combinators/index.md){:target="_blank"}
     - Level: Beginner
 
   Let's recap CSS Selectors by watching Kyle (from `WebDevSimplified`) going through every CSS Selector in his [**Learn Every CSS Selector In 20 Minutes**](https://www.youtube.com/watch?v=l1mER1bV0N0){:target="_blank"} video. 
 
 ### Summary
 
-  Now that you've finished studying today's content, you've learned a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. It's time to put this information to the test with the following exercises!
+  Now that you've finished studying this Module's content, you've learned about a wide variety of CSS selectors that are available, allowing for fine-grained precision when selecting elements to style in a Web page. It's time to put this information to the test with the following exercises!
 
 ### Exercises
 
@@ -181,7 +182,8 @@ _(Updated: 15/10/2023)_
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-### [Extra Resources]
+<!-- ### [Extra Resources] -->
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**
@@ -209,12 +211,24 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — the cascade, specificity, and inheritance — which control how CSS is applied to HTML and how conflicts are resolved.
+  The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS — **cascade, specificity, and inheritance** — which control how CSS is applied to HTML and how conflicts are resolved.
 
-  - [Read: **Cascade and Inheritance**](resources/css_building_blocks/cascade_and_inheritance/index.md)
+  - [Read: **Cascade and Inheritance**](resources/css_building_blocks/cascade_and_inheritance/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **The box model**](resources/css_building_blocks/the_box_model/index.md)
+  **The Box Model**
+
+  In a web page, **every element is rendered as a rectangular box**. The box model describes how the element’s content, padding, border, and margin determine the space occupied by the element and its relation to other elements in the page.
+
+  Depending on the element’s display property, its box may be one of two types: a **block box** or an **inline box**. 
+
+  - [Watch: **The box model for beginners web design tutorial**](https://www.youtube.com/watch?v=MrAnu4zdjjY) to get a first quick taste of the **Box Model**.
+    - **Duration:** 2min 
+
+  - [Watch: **Learn CSS Box Model In 8 Minutes**](https://www.youtube.com/watch?v=rIO5326FgPE) to get a better, more detailed overview of the Box Model.
+    - **Duration:** 8min 
+
+  - [Read: **The box model**](resources/css_building_blocks/the_box_model/index.md){:target="_blank"}
     - Level: Beginner
 
 ### Summary
@@ -223,9 +237,9 @@ _(Updated: 15/10/2023)_
   
 ### Exercises
 
-  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/index.md)
+  - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/index.md){:target="_blank"}
 
-  - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/index.md)
+  - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/index.md){:target="_blank"}
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
@@ -234,6 +248,8 @@ _(Updated: 15/10/2023)_
 ### Sources and Attributions
 
   **Content is based on the following sources:**
+
+  - [Understanding the CSS box model for inline elements](https://hacks.mozilla.org/2015/03/understanding-inline-box-model/)
 
   - **MDN**
     - [Cascade, specificity, and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_and_inheritance/index.md){:target="_blank"}
@@ -254,19 +270,19 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/index.md)
+  - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **Overflowing Content**](resources/css_building_blocks/overflowing_content/index.md)
+  - [Read: **Overflowing Content**](resources/css_building_blocks/overflowing_content/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **CSS values and units**](resources/css_building_blocks/values_and_units/index.md)
+  - [Read: **CSS values and units**](resources/css_building_blocks/values_and_units/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/index.md)
+  - [Read: **Sizing items in css**](resources/css_building_blocks/sizing_items_in_css/index.md){:target="_blank"}
     - Level: Beginner
 
-  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/index.md)
+  - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/index.md){:target="_blank"}
     - Level: Beginner
 
 ### Summary
@@ -275,19 +291,20 @@ _(Updated: 15/10/2023)_
 
 ### Exercises
 
-  - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/index.md)
+  - [MDN's Assessment: **Test your skills: Backgrounds and borders**](exercises/test_your_skills_backgrounds_and_borders/index.md){:target="_blank"}
 
-  - [MDN's Assessment: **Test your skills: Overflow**](exercises/overflow_tasks/index.md)
+  - [MDN's Assessment: **Test your skills: Overflow**](exercises/overflow_tasks/index.md){:target="_blank"}
 
-  - [MDN's Assessment: **Test your skills: Values and units**](exercises/values_tasks/index.md)
+  - [MDN's Assessment: **Test your skills: Values and units**](exercises/values_tasks/index.md){:target="_blank"}
 
-  - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/index.md)
+  - [MDN's Assessment: **Test your skills: Sizing**](exercises/sizing_tasks/index.md){:target="_blank"}
 
-  - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/index.md)
+  - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/index.md){:target="_blank"}
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-### [Extra Resources]
+<!-- ### [Extra Resources] -->
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**

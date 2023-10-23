@@ -1,0 +1,12 @@
+# RENAME THIS FILE TO: links.yaml
+
+# Adding Links to the Quicklinks Area:
+links:
+  # LINK_NAME: URL
+  Google: https://google.com
+# Adding Extra Tabs to the main Panel
+tabs:
+  # - title: Your Tab Title
+  #   URL: External URL (that supports iframe embedding)
+  - title: Nasa Image of the Day
+    URL: https://www.nasa.gov/image-of-the-day/
