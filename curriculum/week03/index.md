@@ -69,6 +69,10 @@ _(Updated: 15/10/2023)_
     - Level: Beginner
     - Captions: Yes
 
+  **Practice time!**
+
+  - Go through the [LearnGitBranching](https://learngitbranching.js.org/) interactive game and try to complete all the steps.
+
 ### Summary
 
   At the end of the day, you're gonna have a pretty good understanding of the Git VCS. However, with this tool you're gonna get better and better the more you use it and the more you make mistakes! Don't be afraid to fail! Even great mid-level and senior developers worldwide have serious issues with it. Git is a powerful tool, developed by a [genius](https://youtu.be/o8NPllzkFhE?t=343), who did not plan on making it easy for the rest of us. 
