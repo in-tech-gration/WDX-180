@@ -14,7 +14,7 @@ const getWeeklyGitHubProgressURLs = (
 
   if (day === "all") {
 
-    for (let i = week; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {
       URLs.push(`https://raw.githubusercontent.com/${studentId}/WDX-180/main/user/week${paddedWeek}/progress/progress.w${paddedWeek}.d${String(i).padStart(2, "0")}.csv`);
     }
 
