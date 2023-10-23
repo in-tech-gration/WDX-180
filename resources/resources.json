@@ -2194,6 +2194,11 @@
       "language": [
         "en"
       ]
+    },
+    "learngitbranching" : {
+      "type": "Interactive Tutorial",
+      "identifier": "https://learngitbranching.js.org/",
+      "tags": [ "git", "branches", "interactive" ]
     }
   },
   "creators": {}
