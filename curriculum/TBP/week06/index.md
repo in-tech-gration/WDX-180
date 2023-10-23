@@ -1,5 +1,5 @@
 ---
-  title: Week 6 | CSS 2 & Performance
+title: Week 6 | CSS 2 & Performance
 ---
 
 # Week 6 | CSS 2 & Performance
