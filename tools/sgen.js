@@ -125,6 +125,13 @@ function createSyllabusFromMarkdownText({ configYaml, textContent }) {
 
 }
 
+function createWeeklyContentFromYaml({ configYaml }){
+
+  const configYamlObject = yaml.parse(configYaml);
+  console.log({ configYamlObject });
+
+}
+
 function init() {
 
   const configYamlPath = process.argv[2];
@@ -135,22 +142,30 @@ function init() {
   }
 
   const configYaml = fs.readFileSync(path.join(configYamlPath), "utf-8");
-  const { input, output } = yaml.parse(configYaml);
+  const { input, output, Syllabus } = yaml.parse(configYaml);
 
   try {
 
-    console.log(`Processing ${input}`);
-
     const textContent = fs.readFileSync(input, "utf-8");
 
-    const outputContent = createSyllabusFromMarkdownText({ textContent, configYaml });
+    if ( Syllabus ){  // e.g. curriculum/curriculum.yaml
 
-    fs.writeFileSync(output, outputContent, "utf-8");
+      console.log(`Processing Syllabus: ${input}`);
+      const outputContent = createSyllabusFromMarkdownText({ textContent, configYaml });
+      fs.writeFileSync(output, outputContent, "utf-8");
+      
+    } else {  // e.g. curriculum/schedule/week04.yaml
+      
+      console.log(`Processing Weekly Content: ${input}`);
+      createWeeklyContentFromYaml({ configYaml: configYaml });
 
+      // fs.writeFileSync(output, outputContent, "utf-8");
+
+    }
 
   } catch (e) {
 
-    warn(e.message);
+    console.log(e);
 
   }
 
