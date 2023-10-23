@@ -84,6 +84,13 @@ summary > h3 {
 summary > h3:hover {
   color: white;
 }
+details summary { 
+  cursor: pointer;
+}
+
+details summary > * {
+  display: inline;
+}
 
 // BLOCK QUOTES:
 blockquote {
