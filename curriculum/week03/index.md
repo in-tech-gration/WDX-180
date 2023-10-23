@@ -39,7 +39,7 @@ _(Updated: 15/10/2023)_
   
   ---
 
-  **Practice time!**
+  **Practice time: New Feature List**
 
   Now that we freshened up our memory, let's take a few minutes and try to create a step-by-step list of the commands executed on our local repo, when we want to work on a new feature on a project. You're going to create a new Markdown file, named `new-feature-list.md`, containing your list! The structure of your file should be as below:
 
@@ -69,7 +69,7 @@ _(Updated: 15/10/2023)_
     - Level: Beginner
     - Captions: Yes
 
-  **Practice time!**
+  **Practice time: Learn Git Branching**
 
   - Go through the [LearnGitBranching](https://learngitbranching.js.org/) interactive game and try to complete all the steps.
 
