@@ -14,7 +14,9 @@ _(Updated: 20/09/2023)_
 
 <!-- Week 6 - Day 1 | Styling Tables, Debugging and Organizing CSS -->
 <details markdown="1">
-  <summary><h2>Week 6 - Day 1 | Styling Tables, Debugging and Organizing CSS</h2></summary>
+  <summary>
+    <h2>Week 6 - Day 1 | Styling Tables, Debugging and Organizing CSS</h2>
+  </summary>
 
 ### Schedule
 
@@ -49,7 +51,9 @@ _(Updated: 20/09/2023)_
 
 <!-- Week 6 - Day 2 | Styling text -->
 <details markdown="1">
-  <summary><h2>Week 6 - Day 2 | Styling text</h2></summary>
+  <summary>
+    <h2>Week 6 - Day 2 | Styling text</h2>
+  </summary>
 
 ### Schedule
 
@@ -84,7 +88,9 @@ _(Updated: 20/09/2023)_
 
 <!-- Week 6 - Day 3 | CSS Layout Part 1 -->
 <details markdown="1">
-  <summary><h2>Week 6 - Day 3 | CSS Layout Part 1</h2></summary>
+  <summary>
+    <h2>Week 6 - Day 3 | CSS Layout Part 1</h2>
+  </summary>
 
 ### Schedule
 
@@ -135,7 +141,9 @@ _(Updated: 20/09/2023)_
 
 <!-- Week 6 - Day 4 | CSS Layout Part 2 -->
 <details markdown="1">
-  <summary><h2>Week 6 - Day 4 | CSS Layout Part 2</h2></summary>
+  <summary>
+    <h2>Week 6 - Day 4 | CSS Layout Part 2</h2>
+  </summary>
 
 ### Schedule
 
@@ -170,7 +178,9 @@ _(Updated: 20/09/2023)_
 
 <!-- Week 6 - Day 5 | Web Performance & CSS Pre-processors-->
 <details markdown="1">
-  <summary><h2>Week 6 - Day 5 | Web Performance</h2></summary>
+  <summary>
+    <h2>Week 6 - Day 5 | Web Performance</h2>
+  </summary>
 
 ### Schedule
 
