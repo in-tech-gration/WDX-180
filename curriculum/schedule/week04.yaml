@@ -4,12 +4,17 @@ title: CSS 2 & Performance
 schedule: 
   days:
     1:
+      # file://./../modules/css/styling_tables_debugging_organizing/index.md
       module: css/styling_tables_debugging_organizing
     2: 
+      # file://./../modules/css/styling_text/index.md
       module: css/styling_text
     3: 
+      # file://./../modules/css/layout_part1/index.md
       module: css/layout_part1
     4: 
+      # file://./../modules/css/layout_part2/index.md
       module: css/layout_part2
     5: 
+      # file://./../modules/css/web_performance/index.md
       module: css/web_performance
