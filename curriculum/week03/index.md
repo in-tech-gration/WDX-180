@@ -29,6 +29,11 @@ _(Updated: 15/10/2023)_
   - How to push your version to GitHub
 
   These are some of the basic concepts covered so far. If you feel like you are uncertain about some of the things above, don't worry! It takes time and lots of practice to learn and master git! You can always revisit old lectures and your personal notes! 
+
+  Let's start by looking more into the remote repositories and get comfortable with some very important git concepts, terms and commands:
+
+  - [Watch: **Git Remotes Fundamentals**](https://www.youtube.com/watch?v=5ctkqMqG6G4)
+    - Duration: 11min
   
   Let's strengthen our confidence by watching a video that gives a solid explanation of branches and a basic local workflow of creating/deleting branches in about ten minutes.  
   

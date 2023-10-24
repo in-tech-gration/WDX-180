@@ -2195,10 +2195,36 @@
         "en"
       ]
     },
-    "learngitbranching" : {
+    "learngitbranching": {
       "type": "Interactive Tutorial",
       "identifier": "https://learngitbranching.js.org/",
-      "tags": [ "git", "branches", "interactive" ]
+      "tags": [
+        "git",
+        "branches",
+        "interactive"
+      ]
+    },
+    "git-remotes-fundamentals": {
+      "type": "YouTube",
+      "duration": 632,
+      "title": "Git Remotes Fundamentals",
+      "date": "05/02/2018",
+      "youtube": {
+        "id": "5ctkqMqG6G4",
+        "channel_id": "UCtRaaXKGn_rrLIkkrARKYXA",
+        "channel_title": "CraftQuest",
+        "thumbnail_url": "https://i.ytimg.com/vi/5ctkqMqG6G4/sddefault.jpg"
+      },
+      "tags": [
+        "Git",
+        "Remotes in git",
+        "Git version control",
+        "Git remotes",
+        "mijingo"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
