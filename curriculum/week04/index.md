@@ -214,7 +214,21 @@ _(Updated: 24/10/2023)_
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  There a lot of tools that can help a web developer check how good the performance of a website is. One of the best out there, and open source, is **Google Lighthouse**. Check the video below that covers the absolute basics of this simple but helpful tool
+
+  [Watch: **What Is Google Lighthouse and How to Use It?**](https://www.youtube.com/watch?v=VyaHwvPWuZU)
+
+  After watching the video, it's time to give it a go by following these steps:
+
+  - Head over to your GitHub Page where your solution from [this exercise](/curriculum/week01/index.md#exercises-3) is published.
+    - If you have not completed this exercise, now it's time to do so!
+    - If you followed correctly the instructions provided you can find your solution following this link `https://<GITHUB_USERNAME>.github.io/WDX-180/user/week01/exercises/day04/cern/index.html` by replacing `<GITHUB_USERNAME>` with your username.
+  - While on this page, open Lighthouse, in any way you prefer (we're suggesting using the Chrome Dev Tools), and initiate a report for `Desktop` device by checking the following categories: `Performance`, `Accessibility`, `Best Practices`, `SEO`.
+  - After the report is finished, check thoroughly what changes can be made to increase the score in any of the 4 categories, and try to improve your site's performance as much as possible!
+
+  The goal is to have a score on all categories over 90. **Let's start analyzing this webpage**!
 
   Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week04/progress/progress.draft.w04.d05.csv**
 
