@@ -4,7 +4,7 @@ title: Week 04 | CSS 2 & Performance
 
 # Week 04 | CSS 2 & Performance
 
-_(Updated: 24/10/2023)_
+_(Updated: 25/10/2023)_
 
 ---
 

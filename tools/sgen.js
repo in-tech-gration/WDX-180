@@ -417,6 +417,7 @@ function init() {
       console.log(`Processing Syllabus: ${input}`);
       const outputContent = createSyllabusFromMarkdownText({ textContent, configYaml });
       fs.writeFileSync(output, outputContent, "utf-8");
+      // TODO: (Optionally) read all weeks (e.g. week01.yaml, week02.yaml, etc.) and generate all the content along with the curriculum/index.md
 
     } else {  // e.g. curriculum/schedule/week04.yaml
 
