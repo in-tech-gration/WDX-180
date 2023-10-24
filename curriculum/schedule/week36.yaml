@@ -1,0 +1,26 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: TBA
+schedule: 
+  days:
+    1:
+      # file://./../modules/
+      module: 
+    2: 
+      # file://./../modules/
+      module: 
+    3: 
+      # file://./../modules/
+      module: 
+    4:
+      # file://./../modules/
+      module: 
+    5: 
+      # file://./../modules/
+      module: 
+
+## 🏆 WDX°180 COMPLETION CERTIFICATE
+
+# Enrolled students receive their digital certification for attending and completing all 3 parts of the WDX curriculum.
+
+# In order to receive this certificate, the student must have completed the first and second parts of the curriculum (WDX 60° and WDX 120° respectively).
