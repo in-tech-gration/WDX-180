@@ -22,8 +22,6 @@ title: CSS Layout Part 2
 ### Exercises
 
   - [MDN's Assessment: **Test your skills: Responsive web design and media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/rwd_skills){:target="_blank"}
-
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
   
 ### Extra Resources
 
