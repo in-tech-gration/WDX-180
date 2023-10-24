@@ -1,0 +1,23 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: CSS Frameworks
+schedule: 
+  days:
+    1:
+      # file://./../modules/css/
+      module: css/
+    2: 
+      # file://./../modules/css/
+      module: css/
+    3: 
+      # Bootstrap & FontAwesome
+      # file://./../modules/css/
+      module: css/
+    4:
+      # Tailwind 1
+      # file://./../modules/css/
+      module: css/
+    5: 
+      # Tailwind 2
+      # file://./../modules/css/
+      module: css/
