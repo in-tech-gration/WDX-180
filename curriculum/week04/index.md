@@ -7,9 +7,11 @@ title: Week 04 | CSS 2 & Performance
 _(Updated: 24/10/2023)_
 
 ---
+
 > **Important**
-> As you'll notice, after finishing a MDN article it has a suggestion on what to study next.
+> As you'll notice, after finishing an MDN article, there are suggestions on what to study next.
 > We strongly advise you to ignore this part and follow our curriculum's flow that you'll find on this document.
+
 ---
 
 <!-- Week 04 - Day 1 | Styling Tables, Debugging and Organizing CSS -->

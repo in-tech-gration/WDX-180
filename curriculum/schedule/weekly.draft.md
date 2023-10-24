@@ -7,14 +7,14 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
 _(Updated: {{ WDX:DATE_UPDATED }})_
 
 ---
-> **Important**
-> As you'll notice, after finishing an MDN article, there are suggestions on what to study next.
-> We strongly advise you to ignore this part and follow our curriculum's flow that you'll find on this document.
+
+{{ WDX:INCLUDES:skip_mdn_suggestions }}
+
 ---
 
 {{ WDX:WEEKLY_CONTENT }}
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+{{ WDX:INCLUDES:weekly_feedback_reminder }}
 
 ## {{ WDX:WEEK }} - Weekend Suggestions
 
