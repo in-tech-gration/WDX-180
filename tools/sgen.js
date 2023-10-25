@@ -206,6 +206,34 @@ function generateProgressSheet(){
 
 }
 
+// Search for WDX:META patterns:
+function parseWdxMeta( token ){
+
+  const wdxMetaRegex = /<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i;
+  const entryDefault = {
+    task: null,
+    instructions: "Update FALSE to TRUE in the COMPLETED column",
+    level: "Beginner"
+  }
+  const output = { hasMeta: null, meta: null, raw: null }
+  const hasWdxMeta = token.raw.match(wdxMetaRegex); 
+  if ( hasWdxMeta ){
+
+    output.hasMeta = true;
+    const raw = token.raw.replace(wdxMetaRegex, "");
+    const params = hasWdxMeta.groups.params.split("|");
+    const entry = {}
+    params.forEach( param =>{
+      const [ key, value ] = param.split("=");
+      entry[key] = value;
+    })
+    output.meta = { ...entryDefault, ...entry, raw }
+
+  }
+  return output
+
+}
+
 function replaceSectionFromObject( section, contentObject ){
 
   return function( match ){
@@ -270,21 +298,19 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
           ) 
         ){
 
-          // Search for WDX:META patterns:
-          const wdxMetaRegex = /<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i;
-          const hasWdxMeta = nextToken.raw.match(wdxMetaRegex); 
+          const wdxMeta = parseWdxMeta(nextToken);
 
-          if ( hasWdxMeta ){
-            nextToken.raw = nextToken.raw.replace(wdxMetaRegex, "");
-            console.log(hasWdxMeta);
-            nextToken = tokens[++nextIdx];
+          if ( wdxMeta.hasMeta ){
+
+            nextToken.raw = wdxMeta.raw;
+            dailyProgressObject.entries.push(wdxMeta.meta);
 
           } else {
 
             nextSection.push(nextToken.raw);
-            nextToken = tokens[++nextIdx];
-
+            
           }
+          nextToken = tokens[++nextIdx];
           
         }
 
@@ -314,11 +340,6 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   }, {});
 
   let dailyContent = "";
-  if ( day === "1" ){
-    // console.log(dailyContentObject['Summary']);
-    // console.log(dailyContentObject['Extra Resources']);
-    // console.log(dailyContentObject['Sources and Attributions']);
-  }
 
   // Go through the Markdown and replace all {{ WDX }} with content:
   dailyMarkdownTokens.forEach((token,idx,tokens) =>{
@@ -358,7 +379,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   });
 
-  return dailyContent;
+  return { content: dailyContent, progress: dailyProgressObject };
 
 }
 
@@ -390,14 +411,17 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
 
     const dailyDraftTemplate = fs.readFileSync(daily_input, "utf-8");
     const dailyMarkdownTokens = marked.lexer(dailyDraftTemplate);
-    let weeklyContent = "";
 
     const daysEntries = Object.entries(schedule.days);
-    weeklyContent = daysEntries
+    const weeklyData = daysEntries
     .map( entry =>{
       return parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek });
-    }).filter(Boolean).join("");
-
+    });
+    
+    let weeklyContent = weeklyData
+    .filter(Boolean)
+    .map( data => data.content )
+    .join("");
     // Parse markdown tokens:
     const markdownTokens = marked.lexer(content);
     let outputContent = "";
