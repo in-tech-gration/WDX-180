@@ -238,23 +238,35 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 
     if ( progressEntries.length ){
 
-      let { week, day } = dailyData.progress;
-      week = week.indexOf("0") === 0 ? week.slice(1) : week;
+      const { week, day } = dailyData.progress;
+      const upPaddedWeek = week.indexOf("0") === 0 ? week.slice(1) : week;
       progressEntries.forEach( entry =>{
 
-        const { instructions, task, level } = entry;
-        csv += `\n${week},${day},${title},${task},${level},0-10,FALSE,${instructions}`;
+        const { instructions: _instructions, task, level, user_folder } = entry;
+        let instructions = "Update FALSE to TRUE in the COMPLETED column";
+        const userFolder = user_folder ? `user/week${week}/exercises/day${String(day).padStart(2,"0")}/${user_folder}/` : null;
+
+        switch (_instructions) {
+          case "UPLOAD_ASSETS":
+            if ( userFolder ){
+              instructions = `Upload the required assets to the ${userFolder} folder`;
+            } else {
+              instructions = "Upload the required assets to the corresponding user/ folder";
+            }
+            break;
+          case "CHECK_COMPLETED":
+          default:
+            if ( userFolder ){
+              instructions = `Upload the required assets to the ${userFolder} folder`;
+            } 
+            break;
+        }
+        csv += `\n${upPaddedWeek},${day},${title},${task},${level},0-10,FALSE,${instructions}`;
 
       })
 
     }
   });
-
- 
-  // const r1 = parse(csv1, { trim: true });
-  // const r2 = parse(csv2, { trim: true })
-  // console.log(stringify(r1) === stringify(r2));
-  
 
   try {
     parse(csv);
@@ -263,7 +275,7 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
     console.log("Error parsing generated progress CSV");
   }
  
-  printColoredCSV(csv);
+  return csv;
 }
 
 // Search for WDX:META patterns:
@@ -513,7 +525,8 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
     fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
 
     // Generate progress sheets:
-    generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title });
+    const csv = generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title });
+    printColoredCSV(csv);
 
   } catch(e) {
 

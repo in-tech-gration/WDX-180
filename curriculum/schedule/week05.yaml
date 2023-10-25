@@ -4,7 +4,7 @@ title: CSS Frameworks
 schedule: 
   days:
     1:
-      # file://./../modules/css/
+      # STUDY: file://./../modules/css/frameworks/index.md
       module: css/
     2: 
       # file://./../modules/css/
