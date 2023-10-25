@@ -195,6 +195,8 @@ _(Updated: 15/10/2023)_
 
   **Content is based on the following sources:**
 
+  - [The CSS-Selector-Game](https://github.com/toolness/css-selector-game) _(Please give the original author a star!)_
+
   - **MDN:**
     - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors){:target="_blank"}
     - [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors){:target="_blank"}
