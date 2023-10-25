@@ -438,10 +438,12 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
 
 function init() {
 
+  /* eslint-disable-next-line no-undef */
   const configYamlPath = process.argv[2];
-
+  
   if (!configYamlPath) {
     warn("No configYamlPath.")
+    /* eslint-disable-next-line no-undef */
     process.exit();
   }
 
