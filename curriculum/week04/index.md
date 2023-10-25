@@ -74,10 +74,13 @@ _(Updated: 25/10/2023)_
 
   - [Read : **Fundamental text and font styling**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals){:target="_blank"}
     - Level: Beginner
+
   - [Read : **Styling lists**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists){:target="_blank"}
     - Level: Beginner
+
   - [Read : **Styling links**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links){:target="_blank"}
     - Level: Beginner
+
   - [Read : **Web fonts**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts){:target="_blank"}
     - Level: Beginner
 

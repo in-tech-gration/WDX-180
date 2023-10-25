@@ -226,33 +226,28 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   return newRaw;
 }
 
-const sample = `Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-6,1,CSS 2 & Performance,Read 'Styling tables',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,CSS 2 & Performance,Read 'Debugging CSS',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,CSS 2 & Performance,Read 'Organizing your CSS',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,CSS 2 & Performance,Complete the exercise 'Test your skills: Tables',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/tables_tasks/')
-6,1,CSS 2 & Performance,Complete the exercise 'Fundamental CSS comprehension',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/fundamental_css_comprehension/')
-6,1,CSS 2 & Performance,EXTRAS: Complete the exercise 'Creating fancy letterheaded paper',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/creating_fancy_letterheaded_paper/')
-6,1,CSS 2 & Performance,EXTRAS: Complete the exercise 'A cool-looking box',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/a_cool_looking_box/')`
-
 // Generate progress.draft.*.csv files from weekly content object
 function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 
-  let csv = `Week,Day,Concept,Task,Level,Confidence,Completed,Instructions`;
+  const csvHeaders = `Week,Day,Concept,Task,Level,Confidence,Completed,Instructions`;
+  let csv = csvHeaders;
 
   weeklyData.forEach( dailyData =>{
 
+    let dailyCSV = csvHeaders;
+
     const progressEntries = dailyData.progress.entries;
+    const { week, day }  = dailyData.progress;
+    const upPaddedWeek   = week.indexOf("0") === 0 ? week.slice(1) : week;
+    const paddedDay      = String(day).padStart(2,"0");
 
     if ( progressEntries.length ){
 
-      const { week, day } = dailyData.progress;
-      const upPaddedWeek = week.indexOf("0") === 0 ? week.slice(1) : week;
       progressEntries.forEach( entry =>{
 
         const { instructions: _instructions, task, level, user_folder, extras } = entry;
         let instructions = "Update FALSE to TRUE in the COMPLETED column";
-        const userFolder = user_folder ? `user/week${week}/exercises/day${String(day).padStart(2,"0")}/${user_folder}/` : null;
+        const userFolder = user_folder ? `user/week${week}/exercises/day${paddedDay}/${user_folder}/` : null;
 
         switch (_instructions) {
           case "UPLOAD_ASSETS":
@@ -269,20 +264,47 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
             } 
             break;
         }
-        csv += `\n${upPaddedWeek},${day},${title},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
+        dailyCSV += `\n${upPaddedWeek},${day},${title},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
 
       })
 
     }
+
+    csv += dailyCSV;
+
+    try {
+      parse(dailyCSV);
+      ok(`${checkmark} CSV Linting looks good!`);
+  
+      const userFolder       = path.join("user", `week${week}`, "progress");
+      const userFolderExists = fs.existsSync(userFolder)
+  
+      if ( userFolderExists ) {
+    
+        warn(`Folder '${userFolder}' already exists.`);
+        
+      } else {
+        
+        fs.mkdirSync(userFolder, { recursive: true });
+        console.log(`Folder '${userFolder}' created.`);
+        
+      }
+
+      const progressFilename = `progress.draft.w${week}.d${paddedDay}.csv`;
+      console.log("Writing to file " + progressFilename + ":");
+      printColoredCSV(dailyCSV);
+      fs.writeFileSync(
+        path.join( userFolder, progressFilename ),
+        dailyCSV, "utf-8"
+      );
+      
+    } catch(e){
+
+      console.log("Error parsing generated progress CSV",e);
+    }
+
   });
 
-  try {
-    parse(csv);
-    ok(`${checkmark} CSV Linting looks good!`)
-  } catch(e){
-    console.log("Error parsing generated progress CSV");
-  }
- 
   return csv;
 }
 
@@ -538,8 +560,9 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
     fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
 
     // Generate progress sheets:
-    const csv = generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title });
-    printColoredCSV(csv);
+    const csv = generateWeeklyProgressSheetFromWeeklyData({ 
+      weeklyData, title 
+    });
 
   } catch(e) {
 
