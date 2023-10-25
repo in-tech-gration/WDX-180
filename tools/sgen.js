@@ -240,6 +240,11 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   const { content, data: fm, orig } = matter(moduleMarkdown);
   const moduleMarkdownTokens = marked.lexer(content);
 
+  const dailyProgressObject = {
+    week: numOfWeek,
+    day: day.padStart(2, "0"),
+    entries: []
+  }
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
   const dailyContentObject = moduleMarkdownTokens
   .filter( t => t.type !== "space" )
@@ -266,7 +271,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
         ){
 
           // Search for WDX:META patterns:
-          const wdxMetaRegex = /<!-- WDX:META:PROGRESS: -->\n/i;
+          const wdxMetaRegex = /<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i;
           const hasWdxMeta = nextToken.raw.match(wdxMetaRegex); 
 
           if ( hasWdxMeta ){
