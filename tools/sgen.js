@@ -10,13 +10,16 @@ const path = require("node:path");
 const fs = require("node:fs");
 const { parseArgs } = require("node:util");
 const marked = require("marked");
+const chalk  = require("chalk");
 const matter = require('gray-matter');
 const yaml = require('yaml');
+const { parse, stringify } = require("csv/sync");
 const {
   warn,
   ok,
   info,
-  xmark
+  xmark,
+  checkmark
 } = require("./utils");
 const wdxTemplateRegexes = {
 
@@ -176,6 +179,19 @@ function replaceInclude({ day, numOfWeek }){
   }
 }
 
+function printColoredCSV( csv, SEPARATOR = "," ){
+  const colors = [ "white", "magenta", "green", "yellow", "blue", "magentaBright", "red", "cyan" ];
+  console.log();
+  csv.split("\n").forEach( line =>{
+    let str = [];
+    line.split(SEPARATOR).forEach((col,index) =>{
+      str.push(`${chalk[colors[index]](col)}`);
+    });
+
+    console.log(str.join(","));
+  }) 
+}
+
 // Mini-parsers: (to be moved elsewhere and unit-tested)
 function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
 
@@ -202,8 +218,52 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   return newRaw;
 }
 
-function generateProgressSheet(){
+const sample = `Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
+6,1,CSS 2 & Performance,Read 'Styling tables',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,1,CSS 2 & Performance,Read 'Debugging CSS',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,1,CSS 2 & Performance,Read 'Organizing your CSS',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,1,CSS 2 & Performance,Complete the exercise 'Test your skills: Tables',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/tables_tasks/')
+6,1,CSS 2 & Performance,Complete the exercise 'Fundamental CSS comprehension',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/fundamental_css_comprehension/')
+6,1,CSS 2 & Performance,EXTRAS: Complete the exercise 'Creating fancy letterheaded paper',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/creating_fancy_letterheaded_paper/')
+6,1,CSS 2 & Performance,EXTRAS: Complete the exercise 'A cool-looking box',Beginner,0-10,FALSE,Upload the required assets to the corresponding folder ('/user/week06/exercises/a_cool_looking_box/')`
 
+// Generate progress.draft.*.csv files from weekly content object
+function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
+
+  let csv = `Week,Day,Concept,Task,Level,Confidence,Completed,Instructions`;
+
+  weeklyData.forEach( dailyData =>{
+
+    const progressEntries = dailyData.progress.entries;
+
+    if ( progressEntries.length ){
+
+      let { week, day } = dailyData.progress;
+      week = week.indexOf("0") === 0 ? week.slice(1) : week;
+      progressEntries.forEach( entry =>{
+
+        const { instructions, task, level } = entry;
+        csv += `\n${week},${day},${title},${task},${level},0-10,FALSE,${instructions}`;
+
+      })
+
+    }
+  });
+
+ 
+  // const r1 = parse(csv1, { trim: true });
+  // const r2 = parse(csv2, { trim: true })
+  // console.log(stringify(r1) === stringify(r2));
+  
+
+  try {
+    parse(csv);
+    ok(`${checkmark} CSV Linting looks good!`)
+  } catch(e){
+    console.log("Error parsing generated progress CSV");
+  }
+ 
+  printColoredCSV(csv);
 }
 
 // Search for WDX:META patterns:
@@ -270,7 +330,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   const dailyProgressObject = {
     week: numOfWeek,
-    day: day.padStart(2, "0"),
+    day,
     entries: []
   }
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
@@ -451,6 +511,9 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
   
     const weeklyIndexMarkdown = path.join( weeklyFolder, "index.md" );
     fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
+
+    // Generate progress sheets:
+    generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title });
 
   } catch(e) {
 
