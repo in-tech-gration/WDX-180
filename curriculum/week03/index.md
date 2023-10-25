@@ -177,6 +177,8 @@ _(Updated: 15/10/2023)_
 
 ### Exercises
 
+  - Let's quickly practice some CSS Selectors [here](css-selector-game/index.html){:target="_blank"}.
+
   - [Play: **CSS Diner**](https://flukeout.github.io/){:target="_blank"}
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
     - Take a screenshot of the max level you have successfully completed, name it `completed-level.png` and move it to folder `user/week03/exercises/day03/`
