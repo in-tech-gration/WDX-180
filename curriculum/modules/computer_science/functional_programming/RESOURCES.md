@@ -1,0 +1,2 @@
+- [ESLint for FP](https://github.com/purely-functional/eslint-plugin-pure)
+- [ESLint Immutable Plugin](https://github.com/jhusain/eslint-plugin-immutable)
