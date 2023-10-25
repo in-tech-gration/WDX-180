@@ -40,6 +40,14 @@ const wdxTemplateRegexes = {
 const modulesFolder  = path.join("curriculum", "modules");
 const includesFolder = path.join("curriculum", "schedule", "includes");
 
+// SECTIONS CONSTANTS:
+const SCHEDULE        = "Schedule";
+const EXTRA_RESOURCES = "Extra Resources";
+const STUDY_PLAN      = "Study Plan";
+const SUMMARY         = "Summary";
+const EXERCISES       = "Exercises";
+const ATTRIBUTIONS    = "Sources and Attributions"
+
 // 1) OUR FUNCTIONS: ===========================================================
 
 // APPEND FRONTMATTER TO THE OUTPUT FILE:
@@ -242,7 +250,7 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
       const upPaddedWeek = week.indexOf("0") === 0 ? week.slice(1) : week;
       progressEntries.forEach( entry =>{
 
-        const { instructions: _instructions, task, level, user_folder } = entry;
+        const { instructions: _instructions, task, level, user_folder, extras } = entry;
         let instructions = "Update FALSE to TRUE in the COMPLETED column";
         const userFolder = user_folder ? `user/week${week}/exercises/day${String(day).padStart(2,"0")}/${user_folder}/` : null;
 
@@ -261,7 +269,7 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
             } 
             break;
         }
-        csv += `\n${upPaddedWeek},${day},${title},${task},${level},0-10,FALSE,${instructions}`;
+        csv += `\n${upPaddedWeek},${day},${title},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
 
       })
 
@@ -279,7 +287,7 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 }
 
 // Search for WDX:META patterns:
-function parseWdxMeta( token ){
+function parseWdxMeta({ token }){
 
   const wdxMetaRegex = /<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i;
   const entryDefault = {
@@ -346,6 +354,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     entries: []
   }
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
+  let headingCursor;
   const dailyContentObject = moduleMarkdownTokens
   .filter( t => t.type !== "space" )
   .reduce((acc,token,idx,tokens)=>{
@@ -355,6 +364,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
       const nextToken = tokens[idx+1];
       const isNextTokenNotAHeading = nextToken && nextToken.type !== "heading";
       const isNextTokenNotAHeading3 = nextToken && nextToken.type === "heading" && nextToken.depth !== 3;
+      headingCursor = token;
 
       if ( isNextTokenNotAHeading || isNextTokenNotAHeading3 ){
 
@@ -370,12 +380,15 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
           ) 
         ){
 
-          const wdxMeta = parseWdxMeta(nextToken);
+          const wdxMeta = parseWdxMeta({ token: nextToken });
 
           if ( wdxMeta.hasMeta ){
 
             nextToken.raw = wdxMeta.raw;
-            dailyProgressObject.entries.push(wdxMeta.meta);
+            dailyProgressObject.entries.push({ 
+              ...wdxMeta.meta,
+              extras: headingCursor.text === EXTRA_RESOURCES 
+            });
 
           } else {
 
@@ -437,12 +450,12 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     .replace(weekRegex, `Week ${numOfWeek}`)
     .replace(titleRegex, fm.title)
     .replace(dayRegex, `Day ${day}`)
-    .replace(scheduleRegex, replaceSectionFromObject("Schedule", dailyContentObject))
-    .replace(studyPlanRegex, replaceSectionFromObject("Study Plan", dailyContentObject))
-    .replace(summaryRegex, replaceSectionFromObject("Summary", dailyContentObject))
-    .replace(exercisesRegex, replaceSectionFromObject("Exercises", dailyContentObject))
-    .replace(extrasRegex, replaceSectionFromObject("Extra Resources", dailyContentObject))
-    .replace(attributionsRegex, replaceSectionFromObject("Sources and Attributions", dailyContentObject))
+    .replace(scheduleRegex, replaceSectionFromObject(SCHEDULE, dailyContentObject))
+    .replace(studyPlanRegex, replaceSectionFromObject(STUDY_PLAN, dailyContentObject))
+    .replace(summaryRegex, replaceSectionFromObject(SUMMARY, dailyContentObject))
+    .replace(exercisesRegex, replaceSectionFromObject(EXERCISES, dailyContentObject))
+    .replace(extrasRegex, replaceSectionFromObject(EXTRA_RESOURCES, dailyContentObject))
+    .replace(attributionsRegex, replaceSectionFromObject(ATTRIBUTIONS, dailyContentObject))
     .replace(includesRegex, replaceInclude({ day, numOfWeek }));
 
     if ( (idx === (tokens.length - 1)) && (day !== "5") ){
