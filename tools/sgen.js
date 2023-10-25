@@ -266,7 +266,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
         ){
 
           // Search for WDX:META patterns:
-          const wdxMetaRegex = /<!-- WDX:META:PROGRESS -->\n/i;
+          const wdxMetaRegex = /<!-- WDX:META:PROGRESS: -->\n/i;
           const hasWdxMeta = nextToken.raw.match(wdxMetaRegex); 
 
           if ( hasWdxMeta ){
