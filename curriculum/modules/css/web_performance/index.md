@@ -8,12 +8,19 @@ title: Web Performance & CSS Pre-processors
 
 ### Study Plan
 
+  <!-- WDX:META:PROGRESS:task=Read 'The why of web performance' -->
   - [Read: **The "why" of web performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance){:target="_blank"}
     - Level: Beginner
+
+  <!-- WDX:META:PROGRESS:task=Read 'What is web performance?' -->
   - [Read: **What is web performance?**](https://developer.mozilla.org/en-US/docs/Learn/Performance/What_is_web_performance){:target="_blank"}
     - Level: Beginner
+
+  <!-- WDX:META:PROGRESS:task=Read 'Perceived performance' -->
   - [Read: **Perceived performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance){:target="_blank"}
     - Level: Beginner
+
+  <!-- WDX:META:PROGRESS:task=Watch 'CSS Preprocessors' -->
   - [Watch: **CSS Preprocessors**](https://www.youtube.com/watch?v=PJkWbezpHpE)
     - **Description:** In this video we look at the wonderful world of CSS Preprocessors and a few of the awesome things that you can do with CSS Preprocessors, and look at a few of the more popular ones; LESS, Sass (SCSS), and Stylus.
     - **Duration:** 12min
@@ -22,6 +29,7 @@ title: Web Performance & CSS Pre-processors
 
 ### Exercises
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise with Google Lighthouse -->
   There a lot of tools that can help a web developer check how good the performance of a website is. One of the best out there, and open source, is **Google Lighthouse**. Check the video below that covers the absolute basics of this simple but helpful tool
 
   [Watch: **What Is Google Lighthouse and How to Use It?**](https://www.youtube.com/watch?v=VyaHwvPWuZU){:target="_blank"}

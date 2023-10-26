@@ -4,7 +4,7 @@ title: Week 04 | CSS 2 & Performance
 
 # Week 04 | CSS 2 & Performance
 
-_(Updated: 25/10/2023)_
+_(Updated: 26/10/2023)_
 
 ---
 
@@ -115,10 +115,13 @@ _(Updated: 25/10/2023)_
 
   - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Normal Flow**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}
     - Level: Beginner
 
@@ -131,13 +134,11 @@ _(Updated: 25/10/2023)_
   - [Play: **Flexbox Defense**](http://flexboxdefense.com/){:target="_blank"}
     - Tower Defense with a twist: all towers must be positioned with CSS Flexbox.
     - Level: Beginner
-    - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
 
   - [Play: **Flexbox Froggy**](https://flexboxfroggy.com/){:target="_blank"}
     - A game for learning CSS flexbox called Flexbox Froggy. The goal of the game is to help the frogs get to their lily pads by writing CSS code. See if you can beat all the levels!
     - Level: Beginner, Intermediate, Expert (check settings at the bottom of the page)
     - Lots of languages available, but we suggest playing it in English.
-    - You can either record your progress through the game with <INSERT_TOOL_HERE> or post proof images that you reached the final page and have completed the all levels.
 
   - [MDN's Assessment: **Test your skills: Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills){:target="_blank"}
 
@@ -171,10 +172,13 @@ _(Updated: 25/10/2023)_
 
   - [Read: **Responsive Design**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Beginner's guide to media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Legacy layout methods**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Supporting older browsers**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers){:target="_blank"}
     - Level: Beginner
 
@@ -190,6 +194,9 @@ _(Updated: 25/10/2023)_
 
 
 ### Extra Resources
+
+  <!--  WDX:META:PROGRESS:task=EXTRAS: Complete the exercise 'Fundamental layout comprehension'|user_folder=fundamental_layout_comprehension -->
+
 
   - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension){:target="_blank"}
 
@@ -211,10 +218,13 @@ _(Updated: 25/10/2023)_
 
   - [Read: **The "why" of web performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/why_web_performance){:target="_blank"}
     - Level: Beginner
+
   - [Read: **What is web performance?**](https://developer.mozilla.org/en-US/docs/Learn/Performance/What_is_web_performance){:target="_blank"}
     - Level: Beginner
+
   - [Read: **Perceived performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance){:target="_blank"}
     - Level: Beginner
+
   - [Watch: **CSS Preprocessors**](https://www.youtube.com/watch?v=PJkWbezpHpE)
     - **Description:** In this video we look at the wonderful world of CSS Preprocessors and a few of the awesome things that you can do with CSS Preprocessors, and look at a few of the more popular ones; LESS, Sass (SCSS), and Stylus.
     - **Duration:** 12min
