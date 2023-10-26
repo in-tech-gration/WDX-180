@@ -269,7 +269,7 @@ _(Updated: 15/10/2023)_
 
 <!-- Week 3 - Day 5 | Backgrounds and borders -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 5 | Backgrounds and borders</h2></summary>
+  <summary><h2>Week 3 - Day 5 | Backgrounds, borders, media, sizing items & more</h2></summary>
 
 ### Schedule
 
@@ -278,6 +278,8 @@ _(Updated: 15/10/2023)_
   - [Extra Resources](#extra-resources-4)
 
 ### Study Plan
+
+  ![](assets/css.bg.media.sizing.png)
 
   **CSS**
 
