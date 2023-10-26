@@ -583,11 +583,16 @@ function init() {
     process.exit();
   }
 
-  const configYaml = fs.readFileSync(path.join(configYamlPath), "utf-8");
-  const { input, output, Syllabus } = yaml.parse(configYaml);
-
+  
   try {
+    
+    const configYaml = fs.readFileSync(path.join(configYamlPath), "utf-8");
 
+    if ( configYaml.length === 0 ){
+      throw new Error("YAML file seems to be empty.");
+    }
+
+    const { input, output, Syllabus } = yaml.parse(configYaml);
     const textContent = fs.readFileSync(input, "utf-8");
 
     if (Syllabus) {  // e.g. curriculum/curriculum.yaml
