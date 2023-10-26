@@ -195,9 +195,6 @@ _(Updated: 26/10/2023)_
 
 ### Extra Resources
 
-  <!--  WDX:META:PROGRESS:task=EXTRAS: Complete the exercise 'Fundamental layout comprehension'|user_folder=fundamental_layout_comprehension -->
-
-
   - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension){:target="_blank"}
 
 <!-- Sources and Attributions -->
