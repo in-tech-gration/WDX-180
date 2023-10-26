@@ -34,7 +34,13 @@ const wdxTemplateRegexes = {
   attributionsRegex:  /\{\{\s?WDX:\s?ATTRIBUTIONS\s?\}\}/gi,
   includesRegex:      /\{\{\s?WDX:\s?INCLUDES:(.*)\s?\}\}/gi,
   dateUpdatedRegex:   /\{\{\s?WDX:\s?DATE_UPDATED\s?\}\}/gi,
-  weeklyContentRegex: /\{\{\s?WDX:\s?WEEKLY_CONTENT\s?\}\}/gi
+  weeklyContentRegex: /\{\{\s?WDX:\s?WEEKLY_CONTENT\s?\}\}/gi,
+  wdx: {
+    meta: {
+      progress: /<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i,
+      tests: /<!-- WDX:META:TESTS:(?<params>.*) -->\n/i,
+    }
+  }
 
 }
 const modulesFolder  = path.join("curriculum", "modules");
@@ -308,21 +314,49 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
   return csv;
 }
 
-// Search for WDX:META patterns:
-function parseWdxMeta({ token }){
+function generateWeeklyTestsFromWeeklyData({ weeklyData, title }){
 
-  const wdxMetaRegex = /<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i;
+  weeklyData.forEach(dailyData =>{
+  
+    const { week, day } = dailyData.progress; // Every day has progress so no need to store week,day on dailyTestsObject
+    const testEntries = dailyData.tests.entries;
+    const upPaddedWeek   = week.indexOf("0") === 0 ? week.slice(1) : week;
+    const paddedDay      = String(day).padStart(2,"0");
+
+    if ( testEntries.length ){
+
+      testEntries.forEach( entry =>{
+
+        const finalFolder = `user/week${week}/exercises/day${paddedDay}/${entry.user_folder}/`;
+
+        const testName = `Week ${week} - Day ${day} ${title} | ${entry.name}`;
+        const triggerOn = `on:\n\tpush:\n\t\tbranches:\n\t\t\t- 'main'\n\t\tpaths:\n\t\t\t- ${finalFolder}**`;
+        const jobs = `jobs:\n\t${entry.user_folder}:\n\n\t\truns-on: ubuntu-latest\n\n\t\t`;
+        const steps = `steps:\n\t\t\t- name: Checkout code\n\t\t\t\tuses: actions/checkout@v3\n\n\t\t\t- name: "Test for :${entry.name}"\n\t\t\t\tuses: andstor/file-existence-action@v2\n\t\t\t\twith:\n\t\t\t\t\tfiles: "${entry.files.map(file => `${finalFolder}${file}`).join(", ")}"\n\t\t\t\t\tfail: true`
+        const yamlContent = `${testName}\n${triggerOn}\n${jobs}${steps}`;
+        console.log(yamlContent);
+
+      } );
+    }
+  })
+
+}
+
+// Search for WDX:META patterns:
+function parseWdxMetaProgress({ token }){
+
+  const wdxMetaProgressRegex = wdxTemplateRegexes.wdx.meta.progress;
   const entryDefault = {
     task: null,
     instructions: "Update FALSE to TRUE in the COMPLETED column",
     level: "Beginner"
   }
   const output = { hasMeta: null, meta: null, raw: null }
-  const hasWdxMeta = token.raw.match(wdxMetaRegex); 
+  const hasWdxMeta = token.raw.match(wdxMetaProgressRegex); 
   if ( hasWdxMeta ){
 
     output.hasMeta = true;
-    const raw = token.raw.replace(wdxMetaRegex, "");
+    const raw = token.raw.replace(wdxMetaProgressRegex, "");
     const params = hasWdxMeta.groups.params.split("|");
     const entry = {}
     params.forEach( param =>{
@@ -333,6 +367,38 @@ function parseWdxMeta({ token }){
 
   }
   return output
+
+}
+
+// Search for WDX:META:TESTS
+function parseWdxMetaTests({ token }){
+
+  const wdxMetaTestsRegex = wdxTemplateRegexes.wdx.meta.tests;
+  const output = { hasMeta: null, meta: null, raw: null };
+  const hasWdxMetaTests = token.raw.match(wdxMetaTestsRegex);
+
+  if ( hasWdxMetaTests ) {
+    
+    output.hasMeta = true;
+    const raw = token.raw.replace(wdxMetaTestsRegex, "");
+    const params = hasWdxMetaTests.groups.params.split("|");
+    const entry = {};
+    params.forEach( param =>{
+      const [ key, value ] = param.split("=");
+      if ( key === 'files' ) {
+
+        entry[key] = value.split(",");
+
+      } else {
+
+        entry[key] = value;
+
+      }
+    })
+    output.meta = { ...entry, raw };
+
+  }
+  return output;
 
 }
 
@@ -375,6 +441,9 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     day,
     entries: []
   }
+  const dailyTestsObject = {
+    entries: []
+  }
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
   let headingCursor;
   const dailyContentObject = moduleMarkdownTokens
@@ -402,14 +471,22 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
           ) 
         ){
 
-          const wdxMeta = parseWdxMeta({ token: nextToken });
+          const wdxMetaProgress = parseWdxMetaProgress({ token: nextToken });
+          const wdxMetaTests = parseWdxMetaTests({ token: nextToken });
 
-          if ( wdxMeta.hasMeta ){
+          if ( wdxMetaProgress.hasMeta ){
 
-            nextToken.raw = wdxMeta.raw;
+            nextToken.raw = wdxMetaProgress.raw;
             dailyProgressObject.entries.push({ 
-              ...wdxMeta.meta,
+              ...wdxMetaProgress.meta,
               extras: headingCursor.text === EXTRA_RESOURCES 
+            });
+
+          } else if ( wdxMetaTests.hasMeta ) {
+
+            nextToken.raw = wdxMetaTests.raw;
+            dailyTestsObject.entries.push({
+              ...wdxMetaTests.meta
             });
 
           } else {
@@ -486,7 +563,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   });
 
-  return { content: dailyContent, progress: dailyProgressObject };
+  return { content: dailyContent, progress: dailyProgressObject, tests: dailyTestsObject };
 
 }
 
@@ -562,6 +639,11 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
     // Generate progress sheets:
     const csv = generateWeeklyProgressSheetFromWeeklyData({ 
       weeklyData, title 
+    });
+
+    // Generate yaml tests:
+    const test = generateWeeklyTestsFromWeeklyData({
+      weeklyData, title
     });
 
   } catch(e) {
