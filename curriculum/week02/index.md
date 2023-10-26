@@ -46,6 +46,12 @@ _(Updated: 18/09/2023)_
 
   ---
 
+  **What is Version Control and why do we need it? Why do most professional developers and teams use Git and GitHub?**
+
+  - Let's find out with this [**What is Git and Github? Source Control —Coding For Beginners**](https://www.youtube.com/watch?v=3bchX_7ANQc){:target="_blank"} video.
+
+  ---
+
   On the Internet, it's pretty easy for someone to intercept the data going from one place to another.
 
   ![](./assets/Comm.Insecure.png)
