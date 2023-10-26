@@ -450,6 +450,8 @@ _(Updated: 18/09/2023)_
 
   - Watch as many lessons as you can from the [Start Building Accessible Web Applications Today](https://egghead.io/courses/start-building-accessible-web-applications-today){:target="_blank"} excellent excellent series of video tutorials by Marcy Sutton.
 
+  [![](./assets/accessibility.is.our.responsibility.jpg)](https://www.youtube.com/watch?v=E66RCBAUk8A)
+  
   **See also:**
 
   Check out the following resources and make sure to cover the material included in there as you progress in this course and your web development journey:
