@@ -279,6 +279,8 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
+  **CSS**
+
   - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/index.md){:target="_blank"}
     - Level: Beginner
 
@@ -292,6 +294,15 @@ _(Updated: 15/10/2023)_
     - Level: Beginner
 
   - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/index.md){:target="_blank"}
+    - Level: Beginner
+
+  **CSS & Accessibility**
+
+  Among the things that a Frontend developer must always check, to ensure web accessibility, is `Color Contrast`.
+
+  Most of the times, this means that the background (the `background-color` property in CSS) and foreground color (the `color` property in CSS) combination used on our HTML elements must ideally pass the WCAG AA and/or AAA tests.
+
+  - [Read: **About Color Contrast and Accessibility**](./resources/color_contrast/index.md)
     - Level: Beginner
 
 ### Summary
