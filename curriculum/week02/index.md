@@ -406,6 +406,24 @@ _(Updated: 18/09/2023)_
 
   **Overview**
 
+  When building `User Interfaces` with Frontend technologies such as HTML, CSS and JavaScript, developers must strive for usability and accessibility. 
+
+  According to [W3C](https://www.w3.org/WAI/fundamentals/accessibility-intro/), _"Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them."_
+
+  Web accessibility also benefits people without disabilities, for example:
+
+  - People using mobile phones, smart watches, smart TVs, and other devices with small screens, different input modes, etc.
+
+  - Older people with changing abilities due to ageing
+
+  - People with “temporary disabilities” such as a broken arm or lost glasses
+
+  - People with “situational limitations” such as in bright sunlight or in an environment where they cannot listen to audio
+
+  - People using a slow Internet connection, or who have limited or expensive bandwidth
+
+  _"Making the web accessible benefits individuals, businesses, and society. International web standards define what is needed for accessibility."_
+
   When someone describes a site as "accessible", they mean that any user can use all its features and content, regardless of how the user accesses the web — even and especially users with physical or mental impairments.
 
   - Sites should be accessible to keyboard, mouse, and touch screen users, and any other way users access the web, including screen readers and voice assistants like Alexa and Google Home.
