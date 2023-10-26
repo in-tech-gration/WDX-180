@@ -326,9 +326,9 @@ Another example would be the various values for [`transform`](https://developer.
 }
 ```
 
-The output from the above code looks like this:
+The output from the above code looks like <a href="https://codesandbox.io/api/v1/sandboxes/define?parameters=N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTxUC-ggDQgI5NgA8CAC1oBbKMxqMGTRCAA8cWgE9YAPgA65AgCNSEgATBjly3LQAnXGMSWAzAAYUEgNy3LAHcIFlppNwBGT28_AOkYCFxZSOiff3I7U0wsXEdSAFdxAFoaKFJHN0cYUxgMDDQUfMcUWHS7Wkc0cjgwcrlK0lo0egAKTwIADlom8gBKdP5jDQB6bT0YI3INFggAN0sMKDQ4OABeQxBzCQv9FZ3d_RBBfiA&query=file=/index.html" target="_blank">this</a>
 
-{{EmbedLiveSample('Transform_functions', '100%', 200)}}
+<!-- {{EmbedLiveSample('Transform_functions', '100%', 200)}} -->
 
 **Look up different values of properties listed below. Write CSS rules that apply styling to different HTML elements:**
 
