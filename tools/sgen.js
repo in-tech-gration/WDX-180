@@ -408,7 +408,7 @@ function replaceSectionFromObject( section, contentObject ){
 
     if ( !contentObject[section] ){
 
-      warn(`Something's wrong in section "${section}". Check this section in the Module's markdown. Perhaps your sections are not using a Level 3 heading? => ###`);
+      warn(`Something's wrong with "${section}" section. Check this in the Module's markdown. Perhaps you are missing this section or the section is not using a Level 3 heading? => ###`);
       return `<!-- ${section} -->`;
 
     } else {

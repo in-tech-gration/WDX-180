@@ -5,19 +5,33 @@ schedule:
   days:
     1:
       # STUDY: file://./../modules/css/frameworks/index.md
-      module: css/
-    2: 
-      # file://./../modules/css/
-      module: css/
-    3: 
-      # Bootstrap & FontAwesome
-      # file://./../modules/css/
-      module: css/
-    4:
-      # Tailwind 1
-      # file://./../modules/css/
-      module: css/
-    5: 
-      # Tailwind 2
-      # file://./../modules/css/
-      module: css/
+      module: css/frameworks
+    # 2: 
+    #   # file://./../modules/css/
+    #   module: css/
+    # 3: 
+    #   # Bootstrap & FontAwesome
+    #   # file://./../modules/css/
+    #   module: css/
+    # 4:
+    #   # Tailwind 1
+    #   # file://./../modules/css/
+    #   module: css/
+    # 5: 
+    #   # Tailwind 2
+    #   # file://./../modules/css/
+    #   module: css/
+
+# STUDY
+# https://thesassway.com/the-pros-and-cons-of-utility-first-css/
+# https://littlelines.com/blog/2019/04/30/component-vs-utility-based-css-design-systems
+# https://tailwindcss.com/docs/utility-first
+# https://johnpolacek.github.io/the-case-for-atomic-css/
+# https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project
+# https://github.com/GibbonEdu/core/issues/805
+# https://getbootstrap.com/docs/4.0/about/history/
+# https://dev.to/yongdev/brief-history-of-bootstrap-3gi6
+# https://cleancommit.io/blog/why-we-use-tailwind-css-as-our-primary-framework/
+# https://stackoverflow.blog/2021/09/06/scaling-front-end-design-with-a-design-system/
+# https://www.quora.com/Why-should-we-use-front-end-CSS-frameworks
+# https://innovation.ebayinc.com/tech/engineering/how-our-css-framework-helps-enforce-accessibility/
