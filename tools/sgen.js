@@ -338,7 +338,7 @@ function generateWeeklyTestsFromWeeklyData({ weeklyData, title }){
         if (entry.type === 'exist') {
           steps += `\n      - name: "${entry.name} > Check solution files existence"\n        uses: andstor/file-existence-action@v2\n        with:\n          files: "${entry.files.map(file => `${finalFolder}${file}`).join(", ")}"\n          fail: true`;
         } else if (entry.type === 'js') {
-          // TODO: Add configuration for JS tests (maybe will need more parameters on the WDX:META:TESTS comment)
+          // TODO: Add configuration for JS tests (maybe will need more parameters on the WDX:META:TESTS comment) plus some existence checks
           steps += ``;
         }
         const yamlContent = `name: "${testName}"\n${triggerOn}\n${jobs}${steps}`;
@@ -361,7 +361,7 @@ function generateWeeklyTestsFromWeeklyData({ weeklyData, title }){
   
           }
   
-          const testFilename = `w${week}-d${paddedDay}-${entry.user_folder}.yml`;
+          const testFilename = `w${week}-d${paddedDay}-${entry.user_folder}.yaml`;
           info(`Writing to file ${testFilename}:`);
           fs.writeFileSync(
             path.join(workflowsFolder, testFilename),
