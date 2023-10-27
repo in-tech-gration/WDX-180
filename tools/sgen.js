@@ -318,23 +318,61 @@ function generateWeeklyTestsFromWeeklyData({ weeklyData, title }){
 
   weeklyData.forEach(dailyData =>{
   
-    const { week, day } = dailyData.progress; // Every day has progress so no need to store week,day on dailyTestsObject
+    const { week, day } = dailyData.tests;
     const testEntries = dailyData.tests.entries;
     const upPaddedWeek   = week.indexOf("0") === 0 ? week.slice(1) : week;
     const paddedDay      = String(day).padStart(2,"0");
 
     if ( testEntries.length ){
 
+      console.log(`Creating tests for exercises of Week ${week} Day ${paddedDay}.`);
+
       testEntries.forEach( entry =>{
 
         const finalFolder = `user/week${week}/exercises/day${paddedDay}/${entry.user_folder}/`;
 
         const testName = `Week ${week} - Day ${day} ${title} | ${entry.name}`;
-        const triggerOn = `on:\n\tpush:\n\t\tbranches:\n\t\t\t- 'main'\n\t\tpaths:\n\t\t\t- ${finalFolder}**`;
-        const jobs = `jobs:\n\t${entry.user_folder}:\n\n\t\truns-on: ubuntu-latest\n\n\t\t`;
-        const steps = `steps:\n\t\t\t- name: Checkout code\n\t\t\t\tuses: actions/checkout@v3\n\n\t\t\t- name: "Test for :${entry.name}"\n\t\t\t\tuses: andstor/file-existence-action@v2\n\t\t\t\twith:\n\t\t\t\t\tfiles: "${entry.files.map(file => `${finalFolder}${file}`).join(", ")}"\n\t\t\t\t\tfail: true`
-        const yamlContent = `${testName}\n${triggerOn}\n${jobs}${steps}`;
-        console.log(yamlContent);
+        const triggerOn = `on:\n  push:\n    branches:\n      - 'main'\n    paths:\n      - ${finalFolder}**`;
+        const jobs = `jobs:\n  ${entry.user_folder}:\n\n    runs-on: ubuntu-latest\n\n    `;
+        let steps = 'steps:\n      - name: Checkout code\n        uses: actions/checkout@v3\n';
+        if (entry.type === 'exist') {
+          steps += `\n      - name: "${entry.name} > Check solution files existence"\n        uses: andstor/file-existence-action@v2\n        with:\n          files: "${entry.files.map(file => `${finalFolder}${file}`).join(", ")}"\n          fail: true`;
+        } else if (entry.type === 'js') {
+          // TODO: Add configuration for JS tests (maybe will need more parameters on the WDX:META:TESTS comment) plus some existence checks
+          steps += ``;
+        }
+        const yamlContent = `name: "${testName}"\n${triggerOn}\n${jobs}${steps}`;
+
+        const workflowsFolder = path.join(".github", "workflows");
+        const workflowsFolderExists = fs.existsSync(workflowsFolder);
+
+        try {
+
+          yaml.parse(yamlContent);
+          
+          if ( workflowsFolderExists ) {
+
+            warn(`Folder ${workflowsFolder} already exists.`);
+  
+          } else {
+  
+            fs.mkdirSync(workflowsFolder, { recursive: true });
+            info(`Folder ${workflowsFolder} created.`);
+  
+          }
+  
+          const testFilename = `w${week}-d${paddedDay}-${entry.user_folder}.yaml`;
+          info(`Writing to file ${testFilename}:`);
+          fs.writeFileSync(
+            path.join(workflowsFolder, testFilename),
+            yamlContent, "utf-8"
+          );
+
+        } catch (e) {
+
+          console.log(`Error while writing YAML test file for exercise ${entry.name}: ${e}`);
+          
+        }
 
       } );
     }
@@ -453,6 +491,8 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     entries: []
   }
   const dailyTestsObject = {
+    week: numOfWeek,
+    day,
     entries: []
   }
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
