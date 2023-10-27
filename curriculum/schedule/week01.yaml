@@ -27,6 +27,17 @@ schedule:
 # </html>
 # 2) Closing Tag Slash misplacement
 # <a>Link<a/>
+# 3) Improper Opening/Closing Order
+# <h2><u>This is my first page</h2></u>
+# 4) Improper Indentation (IRL:Student)
+# <header>
+#   <div>
+#   <div>
+#     <div>
+#   <h1>Title</h1>
+# <a href="">Link</a>
+# </div>
+#   </div>
 
 # TODO: Add Cryptography Basics Video
 # W01D01: What is Cryptography? https://www.youtube.com/watch?v=Kf9KjCKmDcU
