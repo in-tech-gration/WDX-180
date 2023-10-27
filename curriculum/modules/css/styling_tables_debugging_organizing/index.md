@@ -8,6 +8,8 @@ title: Styling Tables, Debugging and Organizing CSS
 
 ### Study Plan
 
+{{ WDX:INCLUDES:skip_mdn_suggestions }}
+
   <!-- WDX:META:PROGRESS:task=Read 'Styling tables' -->
   - [Read: **Styling tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables){:target="_blank"}
     - Level: Beginner

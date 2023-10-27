@@ -8,12 +8,6 @@ _(Updated: 27/10/2023)_
 
 ---
 
-> **Important**
-> As you'll notice, after finishing an MDN article, there are suggestions on what to study next.
-> We strongly advise you to ignore this part and follow our curriculum's flow that you'll find on this document.
-
----
-
 <!-- Week 04 - Day 1 | Styling Tables, Debugging and Organizing CSS -->
 <details markdown="1">
   <summary>
@@ -25,6 +19,10 @@ _(Updated: 27/10/2023)_
   - [Study](#study-plan)
 
 ### Study Plan
+
+> **Important**
+> As you'll notice, after finishing an MDN article, there are suggestions on what to study next.
+> We strongly advise you to ignore this part and follow our curriculum's flow that you'll find on this document.
 
   - [Read: **Styling tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables){:target="_blank"}
     - Level: Beginner
@@ -259,6 +257,8 @@ _(Updated: 27/10/2023)_
   
 </details>
 
+
+---
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 

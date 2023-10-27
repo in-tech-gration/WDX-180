@@ -8,10 +8,6 @@ _(Updated: {{ WDX:DATE_UPDATED }})_
 
 ---
 
-{{ WDX:INCLUDES:skip_mdn_suggestions }}
-
----
-
 {{ WDX:WEEKLY_CONTENT }}
 
 ---
