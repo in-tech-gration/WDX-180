@@ -246,6 +246,58 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   return newRaw;
 }
 
+function copyModuleMediaAssets({ weeklyData, title }){
+
+  weeklyData.forEach( dailyData =>{
+
+    const mediaEntries = dailyData.media;
+
+    if ( mediaEntries ){
+
+      for ( const entry of mediaEntries.entries ){
+        const mediaPath = path.join( mediaEntries.dailyModuleDir, entry );
+        const targetPath = path.join( "curriculum", `week${mediaEntries.week}` );
+        const targetFile = path.join( targetPath, entry );
+
+        try {
+
+          const userFolderExists = fs.existsSync(targetPath)
+      
+          if ( userFolderExists ) {
+        
+            warn(`Folder '${targetPath}' already exists.`);
+            
+          } else {
+            
+            fs.mkdirSync(targetPath, { recursive: true });
+            console.log(`Folder '${targetPath}' created.`);
+            
+          }
+
+          fs.copyFile(mediaPath, targetFile, (err) => {
+            if (err) {
+              console.log(err);
+              throw err
+            };
+            ok(`${checkmark} MEDIA COPIED: ${mediaPath} => ${targetFile}`);
+          });
+
+        } catch (e){
+
+          console.log(e);
+          
+        }
+
+      }
+
+      return;
+
+    }
+
+  });
+
+}
+
 // Generate progress.draft.*.csv files from weekly content object
 function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 
@@ -511,7 +563,8 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     return;
   }
 
-  const dailyModule    = path.join( modulesFolder, dayMeta.module, "index.md" ); 
+  const dailyModuleDir = path.join( modulesFolder, dayMeta.module ); 
+  const dailyModule    = path.join( dailyModuleDir, "index.md" ); 
   const moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");
   const { content, data: fm, orig } = matter(moduleMarkdown);
   const moduleMarkdownTokens = marked.lexer(content);
@@ -526,11 +579,25 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     day,
     entries: []
   }
+  const dailyMediaAssets = {
+    dailyModuleDir,
+    week: numOfWeek,
+    day,
+    entries: new Set()
+  }
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
   let headingCursor;
   const dailyContentObject = moduleMarkdownTokens
   .filter( t => t.type !== "space" )
   .reduce((acc,token,idx,tokens)=>{
+
+    if ( token.type === "paragraph" ){
+      token.tokens.forEach( t =>{
+        if ( t.type === "image" ){
+          dailyMediaAssets.entries.add(t.href);
+        }
+      });
+    }
 
     if ( token.type === "heading" && token.depth === 3 ){
 
@@ -663,7 +730,14 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   });
 
-  return { content: dailyContent, progress: dailyProgressObject, tests: dailyTestsObject };
+  const hasDailyMediaAssets = dailyMediaAssets.entries.size > 0;
+
+  return { 
+    content: dailyContent, 
+    progress: dailyProgressObject, 
+    tests: dailyTestsObject,
+    media: hasDailyMediaAssets ? dailyMediaAssets : null 
+  };
 
 }
 
@@ -735,6 +809,9 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
   
     const weeklyIndexMarkdown = path.join( weeklyFolder, "index.md" );
     fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
+
+    // Copy Media Assets from Module folder to curriculum/
+    copyModuleMediaAssets({ weeklyData, title });
 
     // Generate progress sheets:
     const csv = generateWeeklyProgressSheetFromWeeklyData({ 
