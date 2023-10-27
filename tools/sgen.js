@@ -340,6 +340,17 @@ function replaceSectionFromObject( section, contentObject ){
 
   return function( match ){
 
+    if ( !contentObject[section] ){
+
+      warn(`Something's wrong in section "${section}". Check this section in the Module's markdown.`);
+      return "";
+
+    } else {
+
+      ok(`Section "${section.toString()}" parsed correctly`);
+      
+    }
+
     let dailyScheduleSection = "";
 
     if (contentObject[section].nextSection){
