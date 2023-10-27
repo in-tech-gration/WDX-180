@@ -4,7 +4,7 @@ title: Week 03 | CSS, Accessibility & Git
 
 # Week 03 | CSS, Accessibility & Git
 
-_(Updated: 27/10/2023)_
+_(Updated: 28/10/2023)_
 
 ---
 
@@ -199,13 +199,20 @@ _(Updated: 27/10/2023)_
 
   Let's recap CSS Selectors by watching Kyle (from `WebDevSimplified`) going through every CSS Selector in his [**Learn Every CSS Selector In 20 Minutes**](https://www.youtube.com/watch?v=l1mER1bV0N0){:target="_blank"} video. 
 
+  ---
+
+
+  **Still confused?** Let's try this [**little tool**](/resources/css/selectors-explained/index.html) that explains CSS selectors. If you find this tool useful, keep a bookmark and please don't forget to star the [author's repo](https://github.com/KittyGiraudel/selectors-explained){:target="_blank"}.
+
+  ![](./assets/selectors-explained.jpg)
+
 ### Summary
 
   Now that you've finished studying this Module's content, you've learned about a wide variety of CSS selectors that are available, allowing for fine-grained precision when selecting elements to style in a Web page. It's time to put this information to the test with the following exercises!
 
 ### Exercises
 
-  - Let's quickly practice some CSS Selectors [here](css-selector-game/index.html){:target="_blank"}.
+  - Let's quickly practice some CSS Selectors [here](/resources/css/css-selector-game/index.html){:target="_blank"}.
 
   - [Play: **CSS Diner**](https://flukeout.github.io/){:target="_blank"}
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
@@ -227,6 +234,8 @@ _(Updated: 27/10/2023)_
   **Content is based on the following sources:**
 
   - [The CSS-Selector-Game](https://github.com/toolness/css-selector-game) _(Please give the original author a star!)_
+
+  - [Selectors Explained: A CSS selector to plain English translator](https://github.com/KittyGiraudel/selectors-explained)
 
   - **MDN:**
     - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors){:target="_blank"}
