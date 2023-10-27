@@ -28,16 +28,16 @@
 
   - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/index.md)
   - [**Week 02**: HTML, Accessibility & Git](week02/index.md)
-  - [**Week 03**: CSS, Accessibility & more Git](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 04**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 05**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 06**: CSS 2 & Performance](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 07**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 08**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 09**: CSS Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 10**: Functional Programming 1, Clean Code & Testing](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 11**: Templating, JavaScript Frameworks & Git Workflow](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 12**: Deploying our Applications & Group Project](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 03**: CSS, Accessibility & more Git](week03/index.md)
+  - [**Week 04**: CSS 2 & Performance](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 05**: CSS Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 06**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 07**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 08**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 09**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 10**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 11**: Functional Programming 1, Clean Code & Testing](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 12**: Templating, JavaScript Frameworks & Git Workflow](#) _(🔒 Stay tuned! This module is on the way.)_
 
 ### Intermediate: WDX 120°
 

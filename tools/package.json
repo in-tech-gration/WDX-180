@@ -18,6 +18,7 @@
     "clipboardy": "2.3.0",
     "csv": "^6.3.3",
     "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
     "famulus": "^2.2.3",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.2",

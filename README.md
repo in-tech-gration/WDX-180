@@ -67,7 +67,9 @@
 
   While you are at the **Settings** page, select **General** on the side menu and go to **Features > Check "Issues" > Save** in order to enable the **Issues** feature on your forked repo.
 
-  ![](./assets/GitHub.Enable.Issues.jpg)
+  [![](./assets/GitHub.Enable.Issues.jpg)](./assets/GitHub.Enable.Issues.jpg){:target="_blank"}
+
+  _(Click the image to see a full-size version)_
 </details>
 
 <!-- Communication -->
