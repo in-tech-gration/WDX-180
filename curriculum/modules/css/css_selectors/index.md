@@ -35,7 +35,7 @@ title: CSS Selectors
 
   ---
   
-  **Still confused?** Let's try this [**little tool**](/WDX-180/resources/css/selectors-explained/index.html) that explains CSS selectors. If you find this tool useful, keep a bookmark and please don't forget to star the [author's repo](https://github.com/KittyGiraudel/selectors-explained){:target="_blank"}.
+  **Still confused?** Let's try this [**little tool**](/WDX-180/resources/css/selectors-explained/index.html){:target="_blank"} that explains CSS selectors. If you find this tool useful, keep a bookmark and please don't forget to star the [author's repo](https://github.com/KittyGiraudel/selectors-explained){:target="_blank"}.
 
   ![](./assets/selectors-explained.jpg)
 
