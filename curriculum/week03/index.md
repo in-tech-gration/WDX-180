@@ -154,6 +154,10 @@ _(Updated: 15/10/2023)_
 
   Now that you've gained familiarity with the language and its syntax, and got some basic experience using it, it's time to dive a bit deeper. **CSS Selectors** is the part of CSS that defines which element(s) will be `selected` from the HTML page and what styling rules will be applied to them. Let's see them in detail:
 
+  - Let's start by watching a super quick intro to [**CSS Selectors**](https://www.youtube.com/watch?v=rLZWAGrY6cU) just to get a first taste of what they are.
+
+  Now let's dive deeper into CSS Selectors _(because nobody became a professional Web developer by watching 1-minute coding videos)_.
+
   - [Read: **CSS Selectors**](resources/css_building_blocks/css_selectors/index.md){:target="_blank"}
     - Level: Beginner
   
@@ -269,7 +273,7 @@ _(Updated: 15/10/2023)_
 
 <!-- Week 3 - Day 5 | Backgrounds and borders -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 5 | Backgrounds and borders</h2></summary>
+  <summary><h2>Week 3 - Day 5 | Backgrounds, borders, media, sizing items & more</h2></summary>
 
 ### Schedule
 
@@ -279,11 +283,25 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
+  ![](assets/css.bg.media.sizing.png)
+
+  **CSS**
+
+  - [Watch: **CSS Borders in 1 Minute**](https://www.youtube.com/watch?v=JYv_jNYV2R8){:target="_blank"}
+    - Level: Beginner
+  
+  - [Watch: **Border radius - CSS Tutorial for beginners in 1 Minute**](https://www.youtube.com/watch?v=Th1fXtFjhJ4){:target="_blank"}
+    - Level: Beginner
+
   - [Read: **Backgrounds and borders**](resources/css_building_blocks/backgrounds_and_borders/index.md){:target="_blank"}
     - Level: Beginner
 
+  - Quick taste of CSS Overflow with [**this video**](https://www.youtube.com/watch?v=LMLwvJvnsZE){:target="_blank"}. Then dive deeper with the MDN guide.
+
   - [Read: **Overflowing Content**](resources/css_building_blocks/overflowing_content/index.md){:target="_blank"}
     - Level: Beginner
+
+  CSS has some [absolute sizing units](https://www.youtube.com/watch?v=RvW5rXuFDGU){:target="_blank"} along with some [relative sizing units](https://www.youtube.com/watch?v=HdSm-aDTes8){:target="_blank"}. Oh, and don't forget [these guys too](https://www.youtube.com/watch?v=N4Mt32GkBSI){:target="_blank"}. 
 
   - [Read: **CSS values and units**](resources/css_building_blocks/values_and_units/index.md){:target="_blank"}
     - Level: Beginner
@@ -292,6 +310,15 @@ _(Updated: 15/10/2023)_
     - Level: Beginner
 
   - [Read: **Images, media, and form elements**](resources/css_building_blocks/images_media_form_elements/index.md){:target="_blank"}
+    - Level: Beginner
+
+  **CSS & Accessibility**
+
+  Among the things that a Frontend developer must always check, to ensure web accessibility, is `Color Contrast`.
+
+  Most of the times, this means that the background (the `background-color` property in CSS) and foreground color (the `color` property in CSS) combination used on our HTML elements must ideally pass the WCAG AA and/or AAA tests.
+
+  - [Read: **About Color Contrast and Accessibility**](./resources/color_contrast/index.md)
     - Level: Beginner
 
 ### Summary

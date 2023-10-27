@@ -8,19 +8,19 @@ title: CSS Layout Part 1
 
 ### Study Plan
 
-  <!-- WDX:META:PROGRESS:task=Read 'Introduction to CSS layout'   -->
+  <!-- WDX:META:PROGRESS:task=Read 'Introduction to CSS layout' -->
   - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction){:target="_blank"}
     - Level: Beginner
   
-  <!-- WDX:META:PROGRESS:task=Read 'Normal Flow'   -->
+  <!-- WDX:META:PROGRESS:task=Read 'Normal Flow' -->
   - [Read: **Normal Flow**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow){:target="_blank"}
     - Level: Beginner
   
-  <!-- WDX:META:PROGRESS:task=Read 'Positioning'   -->
+  <!-- WDX:META:PROGRESS:task=Read 'Positioning' -->
   - [Read: **Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}
     - Level: Beginner
   
-  <!-- WDX:META:PROGRESS:task=Read 'Flexbox'   -->
+  <!-- WDX:META:PROGRESS:task=Read 'Flexbox' -->
   - [Read: **Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}
     - Level: Beginner
 

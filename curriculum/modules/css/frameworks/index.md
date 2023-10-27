@@ -1,19 +1,16 @@
 ---
-  title: CSS Frameworks
+title: CSS Frameworks
 ---
 
-_(Updated: 25/10/2023)_
+### What is a CSS Framework
 
-# CSS Frameworks
-
-## What is a CSS Framework
   A CSS framework is a prepped and ready-to-use CSS library (Cascading Style Sheets). The stylesheets collection makes the job of a UI developer **easier**. 
 
   Rather than starting every project from scratch, a CSS framework gives them tools to quickly create a user interface that they repeat and tweak during a project. They also **enable the creation** of more **standards-compliant** websites. 
 
   While quite challenging to use or ambiguous for beginners, senior developers who know the CSS framework sites’ descriptions and buzzwords find them extremely useful.
 
-## Why Do You Need A CSS Framework?
+### Why Do You Need A CSS Framework?
 
   CSS frameworks **are designed for use in typical scenarios** such as establishing navigation bars, footers, sliders, hamburger menus, 3-column layouts, and more. 
 
@@ -33,7 +30,7 @@ _(Updated: 25/10/2023)_
 
   Each CSS framework has its own set of styles, components, and conventions that developers need to learn in order to use it effectively. This can take time and effort, especially for developers who are new to front-end development. Additionally, CSS frameworks may not always align with a developer's preferred workflow or coding style. This can make it challenging to use the framework effectively, especially if the developer is used to writing custom CSS from scratch.
 
-## Conclusion
+### Conclusion
 
   CSS Frameworks are so popular these days and they get better and better as time goes by. However, just because they make things easier and faster for some cases, that does not mean that we should ditch plain CSS and restrain our options and imagination to what each CSS Framework has to offer.
 

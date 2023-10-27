@@ -2225,6 +2225,35 @@
       "language": [
         "en"
       ]
+    },
+    "the-internets-accessibility-problem-and-how-to-fix-it-clive-loseby-ted": {
+      "type": "YouTube",
+      "duration": 813,
+      "title": "The Internet's Accessibility Problem — and How To Fix It | Clive Loseby | TED",
+      "date": "17/01/2023",
+      "youtube": {
+        "id": "QWPWgaDqbZI",
+        "channel_id": "UCAuUUnT6oDeKwE6v1NGQxug",
+        "channel_title": "TED",
+        "thumbnail_url": "https://i.ytimg.com/vi/QWPWgaDqbZI/sddefault.jpg"
+      },
+      "tags": [
+        "A11y",
+        "TEDTalk",
+        "TEDTalks",
+        "TED Talk",
+        "TED Talks",
+        "TED",
+        "technology",
+        "design",
+        "TEDx",
+        "Internet",
+        "disability",
+        "Clive Loseby"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
