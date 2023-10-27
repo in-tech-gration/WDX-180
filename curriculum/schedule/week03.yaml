@@ -18,3 +18,24 @@ schedule:
     5: 
       # file://./../modules/css/backgrounds_and_borders/index.md
       module: css/backgrounds_and_borders
+
+# TODO: Add section about background-clip:
+# ```html 
+# <style>
+# body {
+#   background: gray;
+# }
+# section {
+#   width: 500px;
+#   margin: 64px auto;
+#   background: white;
+#   padding: 1rem;
+#   border: 10px dashed rgb(255 255 255 / 50%);
+#   background-clip: padding-box;
+#   background-clip: content-box;
+# }
+# </style>
+# <section>
+#   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo delectus veniam voluptatibus ut, placeat ducimus quidem aut maiores beatae? Qui labore laborum ipsam mollitia laboriosam sunt, necessitatibus explicabo cupiditate.
+# </section>
+# ``` 
