@@ -1,16 +1,21 @@
 ---
-title: Week 3
+title: Week 03 | CSS, Accessibility & Git
 ---
 
-# Week 3 | CSS, Accessibility & Git
+# Week 03 | CSS, Accessibility & Git
 
-_(Updated: 15/10/2023)_
+_(Updated: 27/10/2023)_
 
-<!-- Week 3 - Day 1 | More Git -->
+---
+
+<!-- Week 03 - Day 1 | More Git -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 1 | More Git</h2></summary>
+  <summary>
+    <h2>Week 03 - Day 1 | More Git</h2>
+  </summary>
 
 ### Schedule
+
 
   - [Study](#study-plan)
   - [Exercises](#exercises)
@@ -18,7 +23,7 @@ _(Updated: 15/10/2023)_
 
 ### Study Plan
 
-  About a week ago, you've learned about the infamous version control system (VCS) called Git. Definitely, one of the most important tools in your arsenal! Today, we are going to recap on what we've learned in the previous modules and later on we're going to focus on a much more realistic and everyday scenario that you're going to encounter as a web developer.
+ About a week ago, you've learned about the infamous version control system (VCS) called Git. Definitely, one of the most important tools in your arsenal! Today, we are going to recap on what we've learned in the previous modules and later on we're going to focus on a much more realistic and everyday scenario that you're going to encounter as a web developer.
 
   First things first though. What have you learned so far?
 
@@ -34,15 +39,17 @@ _(Updated: 15/10/2023)_
 
   - [Watch: **Git Remotes Fundamentals**](https://www.youtube.com/watch?v=5ctkqMqG6G4)
     - Duration: 11min
-  
+
   Let's strengthen our confidence by watching a video that gives a solid explanation of branches and a basic local workflow of creating/deleting branches in about ten minutes.  
-  
+
   - [Watch: **Git & GitHub Tutorial for Beginners #8 - Branches**](https://www.youtube.com/watch?v=QV0kVNvkMxc){:target="_blank"}
     - Duration: 10min
     - Level: Beginner
     - Captions: Yes
-  
+
   ---
+
+
 
   **Practice time: New Feature List**
 
@@ -59,9 +66,13 @@ _(Updated: 15/10/2023)_
 
   > Note: It's a good practice to check the **status** of our repository after any alteration!!
 
+
+
   After you're finished with your list, do not forget to push it your `user` folder in your forked WDX repository!
-  
+
   ---
+
+
 
   After you've finished the task above, make sure to **take a short break**, and get ready to dig deeper with the following content!
 
@@ -84,20 +95,27 @@ _(Updated: 15/10/2023)_
 
   **Understanding Git == becoming a better developer**
 
-<!-- ### Exercises -->
+<!-- Exercises -->
 
-  <!-- Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md). -->
+### Extra Resources
 
-### [Extra Resources](EXTRAS.md#git)
+  - [Read: **A look under the hood: how branches work in Git**](https://stackoverflow.blog/2021/04/05/a-look-under-the-hood-how-branches-work-in-git/){:target="_blank"}
 
-  You can find some very good (advanced) articles on git branches and how actually git works under the hood in the [EXTRAS](EXTRAS.md#git) under the `Git` section.
+  - [Read: **Git Branching - Branches in a Nutshell**](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell){:target="_blank"}
 
-### Sources and Attributions
+  > **Disclaimer**: These two articles are advanced for someone like you right now. You can always keep them for later and give them a read whenever you feel confident enough with Git, but we do highly recommend to give them a try nonetheless!
+
+
+
+<!-- Sources and Attributions -->
+  
 </details>
-    
-<!-- Week 3 - Day 2 | What is CSS? -->
+
+<!-- Week 03 - Day 2 | What is CSS? -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 2 | What is CSS?</h2></summary>
+  <summary>
+    <h2>Week 03 - Day 2 | What is CSS?</h2>
+  </summary>
 
 ### Schedule
 
@@ -127,9 +145,12 @@ _(Updated: 15/10/2023)_
 
   - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/index.md)
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d02.csv**
 
-<!-- ### [Extra Resources] -->
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
 
 ### Sources and Attributions
 
@@ -138,11 +159,14 @@ _(Updated: 15/10/2023)_
   - **MDN:**
     - [Learn to style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/index.md){:target="_blank"}
     - [Styling a biography page](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/first_steps/styling_a_biography_page/index.md){:target="_blank"}
+  
 </details>
 
-<!-- Week 3 - Day 3 | CSS Selectors -->
+<!-- Week 03 - Day 3 | CSS Selectors -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 3 | CSS Selectors</h2></summary>
+  <summary>
+    <h2>Week 03 - Day 3 | CSS Selectors</h2>
+  </summary>
 
 ### Schedule
 
@@ -191,9 +215,12 @@ _(Updated: 15/10/2023)_
 
   As for the CSS Diner, if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the [repo](https://github.com/flukeout/css-diner){:target="_blank"} of this awesome game!
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d03.csv**
 
-<!-- ### [Extra Resources] -->
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
 
 ### Sources and Attributions
 
@@ -210,11 +237,14 @@ _(Updated: 15/10/2023)_
     - [Test your skills: Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/a77137e6239ef445ac67b2ffb7067d6332907910/files/en-us/learn/css/building_blocks/selectors/selectors_tasks/index.md){:target="_blank"}
   - **CSS Diner:**
     - [CSS Diner Github Repo](https://github.com/flukeout/css-diner){:target="_blank"}
+  
 </details>
 
-<!-- Week 3 - Day 4 | Cascade, Inheritance and the box model -->
+<!-- Week 03 - Day 4 | Cascade, Inheritance and the Box Model -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 4 | Cascade, Inheritance and the box model</h2></summary>
+  <summary>
+    <h2>Week 03 - Day 4 | Cascade, Inheritance and the Box Model</h2>
+  </summary>
 
 ### Schedule
 
@@ -247,16 +277,19 @@ _(Updated: 15/10/2023)_
 ### Summary
 
   Now that you've finished studying today's content, you have a better understanding of the most fundamental concepts of CSS. It's time to put this information to the test with the following exercise!
-  
+
 ### Exercises
 
   - [MDN's Assessment: **Test your skills: The Cascade**](exercises/cascade_tasks/index.md){:target="_blank"}
 
   - [MDN's Assessment: **Test your skills: The box model**](exercises/box_model_tasks/index.md){:target="_blank"}
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d04.csv**
 
-### [Extra Resources](EXTRAS.md)
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
 
 ### Sources and Attributions
 
@@ -269,11 +302,15 @@ _(Updated: 15/10/2023)_
     - [Test your skills: The Cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/cascade_tasks/index.md){:target="_blank"}
     - [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/the_box_model/index.md){:target="_blank"}
     - [Test your skills: The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/529a4466f00f0f29e11716313a3ceb1f9ce5ce76/files/en-us/learn/css/building_blocks/box_model_tasks/index.md){:target="_blank"}
+
+  
 </details>
 
-<!-- Week 3 - Day 5 | Backgrounds and borders -->
+<!-- Week 03 - Day 5 | Backgrounds, borders, media, sizing items & more -->
 <details markdown="1">
-  <summary><h2>Week 3 - Day 5 | Backgrounds, borders, media, sizing items & more</h2></summary>
+  <summary>
+    <h2>Week 03 - Day 5 | Backgrounds, borders, media, sizing items & more</h2>
+  </summary>
 
 ### Schedule
 
@@ -337,9 +374,12 @@ _(Updated: 15/10/2023)_
 
   - [MDN's Assessment: **Test your skills: Images and form elements**](exercises/images_tasks/index.md){:target="_blank"}
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d05.csv**
 
-<!-- ### [Extra Resources] -->
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
 
 ### Sources and Attributions
 
@@ -356,10 +396,15 @@ _(Updated: 15/10/2023)_
     - [Test your skills: Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/de7d710496266ccf4fce5ade75a67e6605f60ce5/files/en-us/learn/css/building_blocks/sizing_tasks/index.md){:target="_blank"}
     - [Images, media, and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_media_form_elements/index.md){:target="_blank"}
     - [Test your skills: Images and form elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/bffe6c3486fa8cbaa2291a5e1cd67f704cf483bf/files/en-us/learn/css/building_blocks/images_tasks/index.md){:target="_blank"}
+
+  
 </details>
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
-## Week 3 - Weekend Suggestions
+---
+
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+## Week 03 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).

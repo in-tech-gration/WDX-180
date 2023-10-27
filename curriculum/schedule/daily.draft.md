@@ -12,8 +12,6 @@
 
 {{ WDX:EXERCISES }}
 
-{{ WDX:INCLUDES:progress_update_reminder }}
-
 {{ WDX:EXTRAS }}
 
 {{ WDX:ATTRIBUTIONS }}

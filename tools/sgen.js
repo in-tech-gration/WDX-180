@@ -167,7 +167,7 @@ function createSyllabusFromMarkdownText({ configYaml, textContent }) {
 
 }
 
-function replaceInclude({ day, numOfWeek }){
+function getInclude({ file, day, numOfWeek }){
 
   const {
 
@@ -176,22 +176,33 @@ function replaceInclude({ day, numOfWeek }){
 
   } = wdxTemplateRegexes;
 
+  const includeFile = path.join( includesFolder, file.trim() + ".md" );
+
+  try {
+
+    const contents = fs.readFileSync(includeFile, "utf-8");
+    return contents
+    .replace(weekRegex,String(numOfWeek).padStart(2,"0"))
+    .replace(dayRegex, String(day).padStart(2,"0"));
+
+  } catch(e) {
+
+    console.log(e);
+    return `<!-- Missing include file: ${file.trim()}.md -->`
+
+  }
+
+}
+
+function replaceInclude({ day, numOfWeek }){
+
   return function( match, group1, string){
 
-    const includeFile = path.join( includesFolder, group1.trim() + ".md" );
-    try {
-
-      const contents = fs.readFileSync(includeFile, "utf-8");
-      return contents
-      .replace(weekRegex,String(numOfWeek).padStart(2,"0"))
-      .replace(dayRegex, String(day).padStart(2,"0"));
-
-    } catch(e) {
-
-      console.log(e);
-      return `<!-- Missing include file: ${group1.trim()}.md -->`
-
-    }
+    return getInclude({ 
+      file: group1, 
+      day: String(day).padStart(2,"0"), 
+      numOfWeek: String(numOfWeek).padStart(2,"0") 
+    });
 
   }
 }
@@ -448,7 +459,7 @@ function parseWdxMetaTests({ token }){
 
 }
 
-function replaceSectionFromObject( section, contentObject ){
+function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
   return function( match ){
 
@@ -469,7 +480,19 @@ function replaceSectionFromObject( section, contentObject ){
 
       dailyScheduleSection = contentObject[section].heading + contentObject[section].nextSection;
 
+      if ( section === EXERCISES ){
+
+        const progress_update_reminder = getInclude({ 
+          file: "progress_update_reminder",
+          day,
+          numOfWeek 
+        });
+        dailyScheduleSection += "\n\n" + progress_update_reminder;
+
+      }
+
     } else {
+
 
       dailyScheduleSection = `<!-- ${contentObject[section].text.trim()} -->`
 
@@ -602,18 +625,36 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
     } = wdxTemplateRegexes;
 
-    // if ( day === "1" ) console.log(token);
-
     dailyContent += token.raw
     .replace(weekRegex, `Week ${numOfWeek}`)
     .replace(titleRegex, fm.title)
     .replace(dayRegex, `Day ${day}`)
-    .replace(scheduleRegex, replaceSectionFromObject(SCHEDULE, dailyContentObject))
-    .replace(studyPlanRegex, replaceSectionFromObject(STUDY_PLAN, dailyContentObject))
-    .replace(summaryRegex, replaceSectionFromObject(SUMMARY, dailyContentObject))
-    .replace(exercisesRegex, replaceSectionFromObject(EXERCISES, dailyContentObject))
-    .replace(extrasRegex, replaceSectionFromObject(EXTRA_RESOURCES, dailyContentObject))
-    .replace(attributionsRegex, replaceSectionFromObject(ATTRIBUTIONS, dailyContentObject))
+    .replace(scheduleRegex, replaceSectionFromObject({ 
+      section: SCHEDULE, 
+      contentObject: dailyContentObject
+    }))
+    .replace(studyPlanRegex, replaceSectionFromObject({
+      section: STUDY_PLAN, 
+      contentObject: dailyContentObject
+    }))
+    .replace(summaryRegex, replaceSectionFromObject({
+      section: SUMMARY, 
+      contentObject: dailyContentObject
+    }))
+    .replace(exercisesRegex, replaceSectionFromObject({
+      section: EXERCISES, 
+      contentObject: dailyContentObject,
+      day,
+      numOfWeek
+    }))
+    .replace(extrasRegex, replaceSectionFromObject({
+      section: EXTRA_RESOURCES, 
+      contentObject: dailyContentObject
+    }))
+    .replace(attributionsRegex, replaceSectionFromObject({
+      section: ATTRIBUTIONS, 
+      contentObject: dailyContentObject
+    }))
     .replace(includesRegex, replaceInclude({ day, numOfWeek }));
 
     if ( (idx === (tokens.length - 1)) && (day !== "5") ){

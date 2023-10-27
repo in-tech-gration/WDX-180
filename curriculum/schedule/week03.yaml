@@ -1,0 +1,20 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: CSS, Accessibility & Git
+schedule: 
+  days:
+    1:
+      # file://./../modules/version_control/git/branching_and_remote_git/index.md
+      module: version_control/git/branching_and_remote_git
+    2: 
+      # file://./../modules/css/what_is_css/index.md
+      module: css/what_is_css
+    3: 
+      # file://./../modules/css/css_selectors/index.md
+      module: css/css_selectors
+    4: 
+      # file://./../modules/css/cascade_inheritance_box_model/index.md
+      module: css/cascade_inheritance_box_model
+    5: 
+      # file://./../modules/css/backgrounds_and_borders/index.md
+      module: css/backgrounds_and_borders
