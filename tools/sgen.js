@@ -298,7 +298,12 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 
       const progressFilename = `progress.draft.w${week}.d${paddedDay}.csv`;
       console.log("Writing to file " + progressFilename + ":");
-      printColoredCSV(dailyCSV);
+
+      // printColoredCSV(dailyCSV);
+      if ( dailyCSV === csvHeaders || dailyCSV.length === 0 ){
+        return;
+      }
+
       fs.writeFileSync(
         path.join( userFolder, progressFilename ),
         dailyCSV, "utf-8"
