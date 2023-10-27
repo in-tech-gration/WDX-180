@@ -6,7 +6,7 @@ title: CSS Frameworks
 
 ### Study Plan
 
-#### What is a CSS Framework
+  **What is a CSS Framework**
 
   A CSS framework is a prepped and ready-to-use CSS library (Cascading Style Sheets). The stylesheets collection makes the job of a UI developer **easier**. 
 
@@ -14,7 +14,7 @@ title: CSS Frameworks
 
   While quite challenging to use or ambiguous for beginners, senior developers who know the CSS framework sites’ descriptions and buzzwords find them extremely useful.
 
-#### Why Do You Need A CSS Framework?
+  **Why Do You Need A CSS Framework?**
 
   CSS frameworks **are designed for use in typical scenarios** such as establishing navigation bars, footers, sliders, hamburger menus, 3-column layouts, and more. 
 
