@@ -342,13 +342,13 @@ function replaceSectionFromObject( section, contentObject ){
 
     if ( !contentObject[section] ){
 
-      warn(`Something's wrong in section "${section}". Check this section in the Module's markdown.`);
-      return "";
+      warn(`Something's wrong in section "${section}". Check this section in the Module's markdown. Perhaps your sections are not using a Level 3 heading? => ###`);
+      return `<!-- ${section} -->`;
 
     } else {
 
       ok(`Section "${section.toString()}" parsed correctly`);
-      
+
     }
 
     let dailyScheduleSection = "";
@@ -377,7 +377,18 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   }
 
   const dailyModule    = path.join( modulesFolder, dayMeta.module, "index.md" ); 
-  const moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");
+  let moduleMarkdown;
+
+  try {
+
+    moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");
+
+  } catch(e){
+
+    console.log(e, { moduleMarkdown });
+
+  }
+
   const { content, data: fm, orig } = matter(moduleMarkdown);
   const moduleMarkdownTokens = marked.lexer(content);
 
