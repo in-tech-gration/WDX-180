@@ -16,7 +16,6 @@ _(Updated: 27/10/2023)_
 
 <!-- Week 05 - Day 1 | CSS Frameworks -->
 
-{::options parse_block_html="true" /}
 <details markdown="1">
   <summary>
     <h2>Week 05 - Day 1 | CSS Frameworks</h2>
@@ -26,9 +25,7 @@ _(Updated: 27/10/2023)_
 
 ### Study Plan
 
-#### What is a CSS Framework
-
-
+**What is a CSS Framework**
 
   A CSS framework is a prepped and ready-to-use CSS library (Cascading Style Sheets). The stylesheets collection makes the job of a UI developer **easier**. 
 
@@ -36,7 +33,7 @@ _(Updated: 27/10/2023)_
 
   While quite challenging to use or ambiguous for beginners, senior developers who know the CSS framework sites’ descriptions and buzzwords find them extremely useful.
 
-  **Why Do You Need A CSS Framework?**
+**Why Do You Need A CSS Framework?**
 
   CSS frameworks **are designed for use in typical scenarios** such as establishing navigation bars, footers, sliders, hamburger menus, 3-column layouts, and more. 
 
@@ -82,7 +79,6 @@ _(Updated: 27/10/2023)_
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
   
 </details>
-{::options parse_block_html="false" /}
 
 
 
