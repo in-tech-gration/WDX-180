@@ -35,7 +35,7 @@ title: CSS Selectors
 
   ---
   
-  **Still confused?** Let's try this [**little tool**](/resources/css/selectors-explained/index.html) that explains CSS selectors. If you find this tool useful, keep a bookmark and please don't forget to star the [author's repo](https://github.com/KittyGiraudel/selectors-explained){:target="_blank"}.
+  **Still confused?** Let's try this [**little tool**](/WDX-180/resources/css/selectors-explained/index.html) that explains CSS selectors. If you find this tool useful, keep a bookmark and please don't forget to star the [author's repo](https://github.com/KittyGiraudel/selectors-explained){:target="_blank"}.
 
   ![](./assets/selectors-explained.jpg)
 
@@ -45,7 +45,7 @@ title: CSS Selectors
 
 ### Exercises
 
-  - Let's quickly practice some CSS Selectors [here](/resources/css/css-selector-game/index.html){:target="_blank"}.
+  - Let's quickly practice some CSS Selectors [here](/WDX-180/resources/css/css-selector-game/index.html){:target="_blank"}.
 
   - [Play: **CSS Diner**](https://flukeout.github.io/){:target="_blank"}
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
