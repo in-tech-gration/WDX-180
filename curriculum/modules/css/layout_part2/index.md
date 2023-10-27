@@ -29,11 +29,13 @@ title: CSS Layout Part 2
 ### Exercises
 
   <!-- WDX:META:PROGRESS:task=Complete 'Test your skills: Responsive web design and media queries'|user_folder=rwd_skills -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Test your skills: Responsive web design and media queries'|type=exist|user_folder=rwd_skills|files=rwd-download.html -->
   - [MDN's Assessment: **Test your skills: Responsive web design and media queries**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/rwd_skills){:target="_blank"}
   
 ### Extra Resources
 
   <!-- WDX:META:PROGRESS:task=EXTRAS: Complete the exercise 'Fundamental layout comprehension'|user_folder=fundamental_layout_comprehension -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Fundamental layout comprehension'|type=exist|user_folder=fundamental_layout_comprehension|files=index.html,styles.css,images/balloon-sq1.jpg,images/balloon-sq2.jpg,images/balloon-sq3.jpg,images/balloon-sq4.jpg,images/balloon-sq5.jpg,images/balloon-sq6.jpg, -->
   - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension){:target="_blank"}
 
 ### Sources and Attributions
