@@ -1,0 +1,10 @@
+{
+  "WDX META EXERCISE 1": {
+    "prefix": ["wme1", "wdx-meta-ex-1"],
+    "body": [
+      "<!-- WDX:META:PROGRESS:task=Complete the exercise '${1:title}'|user_folder=${2:folder} -->",
+      "<!-- WDX:META:TESTS:name=Test Exercise: '${1:title}'|type=exist|user_folder=${2:folder}|${3:files} -->"
+    ],
+    "description": "Adds 2 comments with WDX:META:PROGRESS and WDX:META:TESTS (for type='exist' tests) for WDX exercises."
+  }
+}
