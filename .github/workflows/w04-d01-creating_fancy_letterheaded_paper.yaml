@@ -1,0 +1,21 @@
+name: "Week 04 - Day 1 CSS 2 & Performance | Test Exercise: 'Creating fancy letterheaded paper'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day01/creating_fancy_letterheaded_paper/**
+jobs:
+  creating_fancy_letterheaded_paper:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Creating fancy letterheaded paper' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/creating_fancy_letterheaded_paper/index.html, user/week04/exercises/day01/creating_fancy_letterheaded_paper/styles.css, user/week04/exercises/day01/creating_fancy_letterheaded_paper/top-image.png, user/week04/exercises/day01/creating_fancy_letterheaded_paper/bottom-image.png, user/week04/exercises/day01/creating_fancy_letterheaded_paper/logo.png"
+          fail: true
