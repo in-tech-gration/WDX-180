@@ -20,6 +20,7 @@ schedule:
       module: css/backgrounds_and_borders
 
 # TODO: Add section about background-clip:
+# https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
 # ```html 
 # <style>
 # body {
