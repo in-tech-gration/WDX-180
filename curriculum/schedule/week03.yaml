@@ -19,7 +19,7 @@ schedule:
       # file://./../modules/css/backgrounds_and_borders/index.md
       module: css/backgrounds_and_borders
 
-# TODO: Add section about background-clip:
+# TODO: Add section about background-clip: How to add Transparent Borders
 # https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
 # ```html 
 # <style>
