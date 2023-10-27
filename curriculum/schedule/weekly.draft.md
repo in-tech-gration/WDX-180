@@ -14,6 +14,8 @@ _(Updated: {{ WDX:DATE_UPDATED }})_
 
 {{ WDX:WEEKLY_CONTENT }}
 
+---
+
 {{ WDX:INCLUDES:weekly_feedback_reminder }}
 
 ## {{ WDX:WEEK }} - Weekend Suggestions
