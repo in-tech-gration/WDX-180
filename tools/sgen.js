@@ -46,6 +46,9 @@ const wdxTemplateRegexes = {
 const modulesFolder  = path.join("curriculum", "modules");
 const includesFolder = path.join("curriculum", "schedule", "includes");
 
+// TODO:
+// 1) Warn about #### inside the ### Module sections. Use **Bold** instead.
+
 // SECTIONS CONSTANTS:
 const SCHEDULE        = "Schedule";
 const EXTRA_RESOURCES = "Extra Resources";

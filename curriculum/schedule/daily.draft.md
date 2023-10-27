@@ -5,8 +5,6 @@
     <h2>{{ WDX:WEEK }} - {{ WDX:DAY }} | {{ WDX:TITLE }}</h2>
   </summary>
 
-{::options parse_block_html="true" /}
-
 {{ WDX:DAILY_SCHEDULE }}
 
 {{ WDX:STUDY_PLAN }}
@@ -21,6 +19,4 @@
 
 {{ WDX:ATTRIBUTIONS }}
   
-{::options parse_block_html="false" /}
-
 </details>
