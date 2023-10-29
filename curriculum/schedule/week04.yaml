@@ -6,6 +6,9 @@ schedule:
     1:
       # file://./../modules/css/styling_tables_debugging_organizing/index.md
       module: css/styling_tables_debugging_organizing
+      # TODO: STUDY ALTERNATIVE/EXTRA EXERCISES: 
+      # 1) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/http.status.codes.tables.exercise.jpeg
+      # 2) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/monthly.sheet.jpg 
     2: 
       # file://./../modules/css/styling_text/index.md
       module: css/styling_text

@@ -4,7 +4,7 @@ title: Week 04 | CSS 2 & Performance
 
 # Week 04 | CSS 2 & Performance
 
-_(Updated: 29/10/2023)_
+_(Updated: 30/10/2023)_
 
 ---
 
@@ -236,7 +236,7 @@ _(Updated: 29/10/2023)_
   - [Read: **Perceived performance**](https://developer.mozilla.org/en-US/docs/Learn/Performance/Perceived_performance){:target="_blank"}
     - Level: Beginner
 
-  - [Watch: **CSS Preprocessors**](https://www.youtube.com/watch?v=PJkWbezpHpE)
+  - [Watch: **CSS Preprocessors**](https://www.youtube.com/watch?v=PJkWbezpHpE){:target="_blank"}
     - **Description:** In this video we look at the wonderful world of CSS Preprocessors and a few of the awesome things that you can do with CSS Preprocessors, and look at a few of the more popular ones; LESS, Sass (SCSS), and Stylus.
     - **Duration:** 12min
 
@@ -253,7 +253,7 @@ _(Updated: 29/10/2023)_
   <!-- TODO: Replace week01 + exercises-3 with dynamic links. There should be no references to particular Weeks or Days inside the Modules content -->
 
 
-  - Head over to your GitHub Page where your solution from [this exercise](/curriculum/week01/index.md#exercises-3) is published.
+  - Head over to your GitHub Page where your solution from [the **Styling the world’s first website** exercise](/WDX-180/curriculum/week01/index.html#exercises-3) is published.
     - If you have not completed this exercise, now it's time to do so!
     <!-- TODO: Same as above. Replace references to weeks and days. -->
     - If you followed correctly the instructions provided you can find your solution following this link `https://<GITHUB_USERNAME>.github.io/WDX-180/user/week01/exercises/day04/cern/index.html` by replacing `<GITHUB_USERNAME>` with your username.
