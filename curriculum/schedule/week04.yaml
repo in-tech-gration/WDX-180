@@ -16,6 +16,8 @@ schedule:
       # 1) Star the Repo Reminder 
       # 2) Work on the fork: https://github.com/in-tech-gration/Flexbox30
       # TODO: STUDY: https://github.com/dinanathsj29/css-flexbox-beginners-tutorial
+      # TODO: INTEGRATE INTERACTIVE LEARNING MATERIAL: https://eventloop.gr/Education/TechTalentSchool/flexbox/flexbox-flex-grow.html
+      # TODO: INTEGRATE INTERACTIVE LEARNING MATERIAL: https://eventloop.gr/Education/TechTalentSchool/flexbox/flexbox-order.html
     4: 
       # file://./../modules/css/layout_part2/index.md
       module: css/layout_part2
