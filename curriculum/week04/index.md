@@ -4,7 +4,7 @@ title: Week 04 | CSS 2 & Performance
 
 # Week 04 | CSS 2 & Performance
 
-_(Updated: 27/10/2023)_
+_(Updated: 29/10/2023)_
 
 ---
 
@@ -112,16 +112,22 @@ _(Updated: 27/10/2023)_
 ### Study Plan
 
   - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction){:target="_blank"}
-    - Level: Beginner
+    - **Level:** Beginner
 
   - [Read: **Normal Flow**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow){:target="_blank"}
-    - Level: Beginner
+    - **Level:** Beginner
 
   - [Read: **Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}
-    - Level: Beginner
+    - **Level:** Beginner
 
-  - [Read: **Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}
-    - Level: Beginner
+  - [Complete the interactive **Learn Flexbox** tutorial](https://scrimba.com/learn/flexbox)
+    - **Level:** Beginner
+    - **Duration:** 1h
+    - **Tip:** You can bookmark this [**really neat visual guide**](https://www.samanthaming.com/flexbox30/) to Flexbox and use it to quickly see a description and a visual overview of each property. If you find this useful, please don't forget to [star the repo](https://github.com/samanthaming/Flexbox30).
+
+  > **Reminder:** If it feels too much at this point, don't worry. It takes time, lots and lots of practice and constantly going back to the concepts again and again in order to build confidence and become comfortable with the multitude of Flexbox properties. 
+
+
 
 <!-- Summary -->
 
@@ -140,14 +146,19 @@ _(Updated: 27/10/2023)_
 
   - [MDN's Assessment: **Test your skills: Flexbox**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills){:target="_blank"}
 
-  As for the Flexbox Defense(1) and Flexbox Froggy(2), if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the repos ([1](https://github.com/channingallen/tower-defense){:target="_blank"} & [2](https://github.com/thomaspark/flexboxfroggy)){:target="_blank"} of these awesome games!
+  As for the Flexbox Defense(1) and Flexbox Froggy(2), if you've  enjoyed the experience and it has helped you learn something, do not forget to star (⭐) the repos ([1](https://github.com/channingallen/tower-defense){:target="_blank"} & [2](https://github.com/thomaspark/flexboxfroggy){:target="_blank"}) of these awesome games!
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week04/progress/progress.draft.w04.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  - [**A Complete Guide to Flexbox**](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) _(You **definitely** need to bookmark this page if you want to master Flexbox)_
+
+  - [Read the MDN **Flexbox** documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}
+    - **Level:** Beginner
 
 ### Sources and Attributions
 

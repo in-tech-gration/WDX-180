@@ -9,9 +9,13 @@ schedule:
     2: 
       # file://./../modules/css/styling_text/index.md
       module: css/styling_text
-    3: 
+    3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
       # file://./../modules/css/layout_part1/index.md
       module: css/layout_part1
+      # TODO: STUDY & INTEGRATE: https://github.com/samanthaming/Flexbox30
+      # 1) Star the Repo Reminder 
+      # 2) Work on the fork: https://github.com/in-tech-gration/Flexbox30
+      # TODO: STUDY: https://github.com/dinanathsj29/css-flexbox-beginners-tutorial
     4: 
       # file://./../modules/css/layout_part2/index.md
       module: css/layout_part2
