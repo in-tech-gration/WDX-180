@@ -18,6 +18,9 @@ schedule:
       # TODO: STUDY: https://github.com/dinanathsj29/css-flexbox-beginners-tutorial
       # TODO: INTEGRATE INTERACTIVE LEARNING MATERIAL: https://eventloop.gr/Education/TechTalentSchool/flexbox/flexbox-flex-grow.html
       # TODO: INTEGRATE INTERACTIVE LEARNING MATERIAL: https://eventloop.gr/Education/TechTalentSchool/flexbox/flexbox-order.html
+      # TODO: INTEGRATE: https://github.com/channingallen/tower-defense
+      # TODO: INTEGRATE: https://github.com/thomaspark/flexboxfroggy
+
     4: 
       # file://./../modules/css/layout_part2/index.md
       module: css/layout_part2

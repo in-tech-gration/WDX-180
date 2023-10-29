@@ -125,6 +125,10 @@ _(Updated: 29/10/2023)_
     - **Duration:** 1h
     - **Tip:** You can bookmark this [**really neat visual guide**](https://www.samanthaming.com/flexbox30/){:target="_blank"} to Flexbox and use it to quickly see a description and a visual overview of each property. If you find this useful, please don't forget to [star the repo](https://github.com/samanthaming/Flexbox30){:target="_blank"}.
 
+  - Learn about the [**CSS Flexbox debugging tools**](https://www.youtube.com/watch?v=J5n2aS37rpE) available in Google Chrome that will help you work with Flexbox and debug any related issues more easily.
+    - **Level:** Beginner
+    - **Duration:** 4min
+
   > **Reminder:** If it feels too much at this point, don't worry. It takes time, lots and lots of practice and constantly going back to the concepts again and again in order to build confidence and become comfortable with the multitude of Flexbox properties. 
 
 
@@ -162,8 +166,9 @@ _(Updated: 29/10/2023)_
 
 ### Sources and Attributions
 
-  - [Flexbox Defense](https://github.com/channingallen/tower-defense){:target="_blank"} [(Last Commit point)](https://github.com/channingallen/tower-defense/tree/8466c0d260aa2a30744a73331cfd6441afefc659){:target="_blank"}
-  - [Flexbox Froggy](https://github.com/thomaspark/flexboxfroggy){:target="_blank"} [(Last Commit point)](https://github.com/thomaspark/flexboxfroggy/tree/46274b15502b68f4d36d9377537f14643b16063c){:target="_blank"}
+  - [Flexbox Defense](https://github.com/channingallen/tower-defense){:target="_blank"} 
+  - [Flexbox Froggy](https://github.com/thomaspark/flexboxfroggy){:target="_blank"}
+
   
 </details>
 
