@@ -253,7 +253,7 @@ _(Updated: 30/10/2023)_
   <!-- TODO: Replace week01 + exercises-3 with dynamic links. There should be no references to particular Weeks or Days inside the Modules content -->
 
 
-  - Head over to your GitHub Page where your solution from [the **Styling the world’s first website** exercise](/WDX-180/curriculum/week01/index.html#exercises-3) is published.
+  - Head over to your GitHub Page where your solution from [the **Styling the world’s first website** exercise](/WDX-180/curriculum/week01/index.html#exercises-3){:target="_blank"} is published.
     - If you have not completed this exercise, now it's time to do so!
     <!-- TODO: Same as above. Replace references to weeks and days. -->
     - If you followed correctly the instructions provided you can find your solution following this link `https://<GITHUB_USERNAME>.github.io/WDX-180/user/week01/exercises/day04/cern/index.html` by replacing `<GITHUB_USERNAME>` with your username.
