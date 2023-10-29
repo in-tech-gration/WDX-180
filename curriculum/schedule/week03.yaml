@@ -18,6 +18,8 @@ schedule:
     4: # Cascade, Inheritance and the Box Model
       # file://./../modules/css/cascade_inheritance_box_model/index.md
       module: css/cascade_inheritance_box_model
+      # TODO: INTEGRATE SPECIFICITY GAME: https://codepen.io/kostasx/pen/zQyjdv
+      # /BOOTCAMP/INTECHGRATION/TASKS/quiz-can-you-count-specificity/
     5: 
       # file://./../modules/css/backgrounds_and_borders/index.md
       module: css/backgrounds_and_borders
