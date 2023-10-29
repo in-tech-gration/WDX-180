@@ -21,10 +21,10 @@ title: CSS Layout Part 1
     - **Level:** Beginner
   
   <!-- WDX:META:PROGRESS:task=Complete the 'Learn Flexbox' Scrimba tutorial -->
-  - [Complete the interactive **Learn Flexbox** tutorial](https://scrimba.com/learn/flexbox)
+  - [Complete the interactive **Learn Flexbox** tutorial](https://scrimba.com/learn/flexbox){:target="_blank"}
     - **Level:** Beginner
     - **Duration:** 1h
-    - **Tip:** You can bookmark this [**really neat visual guide**](https://www.samanthaming.com/flexbox30/) to Flexbox and use it to quickly see a description and a visual overview of each property. If you find this useful, please don't forget to [star the repo](https://github.com/samanthaming/Flexbox30).
+    - **Tip:** You can bookmark this [**really neat visual guide**](https://www.samanthaming.com/flexbox30/){:target="_blank"} to Flexbox and use it to quickly see a description and a visual overview of each property. If you find this useful, please don't forget to [star the repo](https://github.com/samanthaming/Flexbox30){:target="_blank"}.
 
   > **Reminder:** If it feels too much at this point, don't worry. It takes time, lots and lots of practice and constantly going back to the concepts again and again in order to build confidence and become comfortable with the multitude of Flexbox properties. 
 
@@ -57,7 +57,7 @@ title: CSS Layout Part 1
 
 ### Extra Resources
 
-  - [**A Complete Guide to Flexbox**](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) _(You **definitely** need to bookmark this page if you want to master Flexbox)_
+  - [**A Complete Guide to Flexbox**](https://css-tricks.com/snippets/css/a-guide-to-flexbox/){:target="_blank"} _(You **definitely** need to bookmark this page if you want to master Flexbox)_ 
 
   - [Read the MDN **Flexbox** documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}
     - **Level:** Beginner
