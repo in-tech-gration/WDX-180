@@ -21,10 +21,10 @@ title: Cascade, Inheritance and the Box Model
 
   Depending on the element’s display property, its box may be one of two types: a **block box** or an **inline box**. 
 
-  - [Watch: **The box model for beginners web design tutorial**](https://www.youtube.com/watch?v=MrAnu4zdjjY) to get a first quick taste of the **Box Model**.
+  - [Watch: **The box model for beginners web design tutorial**](https://www.youtube.com/watch?v=MrAnu4zdjjY){:target="_blank"} to get a first quick taste of the **Box Model**.
     - **Duration:** 2min 
 
-  - [Watch: **Learn CSS Box Model In 8 Minutes**](https://www.youtube.com/watch?v=rIO5326FgPE) to get a better, more detailed overview of the Box Model.
+  - [Watch: **Learn CSS Box Model In 8 Minutes**](https://www.youtube.com/watch?v=rIO5326FgPE){:target="_blank"} to get a better, more detailed overview of the Box Model.
     - **Duration:** 8min 
 
   - [Read: **The box model**](resources/css_building_blocks/the_box_model/index.md){:target="_blank"}

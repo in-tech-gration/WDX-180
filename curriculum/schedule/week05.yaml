@@ -4,11 +4,17 @@ title: CSS Frameworks
 schedule: 
   days:
     1:
+      # Group Project: Practice HTML Form Input Fields  
+      # file://./../modules/frontend/input_fields_practice/index.md
+      module: frontend/input_fields_practice
+    2: 
       # STUDY: file://./../modules/css/frameworks/index.md
+      # file://./../modules/css/
       module: css/frameworks
-    # 2: 
-    #   # file://./../modules/css/
-    #   module: css/
+      # TODO: STUDY + PRACTICE: A11y => Skip to Content Link
+      # https://css-tricks.com/how-to-create-a-skip-to-content-link/
+      # https://codepen.io/team/css-tricks/pen/jOPBQZw
+      # https://www.a11yproject.com/
     # 3: 
     #   # Bootstrap & FontAwesome
     #   # file://./../modules/css/

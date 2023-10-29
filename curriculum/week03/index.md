@@ -4,7 +4,7 @@ title: Week 03 | CSS, Accessibility & Git
 
 # Week 03 | CSS, Accessibility & Git
 
-_(Updated: 28/10/2023)_
+_(Updated: 30/10/2023)_
 
 ---
 

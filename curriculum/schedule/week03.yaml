@@ -12,7 +12,10 @@ schedule:
     3: 
       # file://./../modules/css/css_selectors/index.md
       module: css/css_selectors
-    4: 
+      # TODO: INTEGRATE SELECTOR GAME
+      # https://codepen.io/kostasx/pen/LYqNYyx
+      # BOOTCAMP/INTECHGRATION/TASKS/css.selectors.exercise/index.html
+    4: # Cascade, Inheritance and the Box Model
       # file://./../modules/css/cascade_inheritance_box_model/index.md
       module: css/cascade_inheritance_box_model
     5: 
