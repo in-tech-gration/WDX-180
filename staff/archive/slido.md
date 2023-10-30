@@ -64,6 +64,8 @@ A: You can find the relevant settings under: Settings > General > Code and Autom
 
 A: There are certain limitations though, when you are part of the free plan on GitHub, so make sure to check which options that are mentioned in the Docs are actually available in the free plan (vs Business/Enterprise plans)
 
+---
+
 ## Week 02 (Day 01-05)
 
  Q: touch command doesnt work on command line
@@ -84,8 +86,7 @@ A: There are certain limitations though, when you are part of the free plan on G
 
 ---
 
- Q: https://youtu.be/mJ-qvsxPHpY?t=622  need git checkout -b main  before push
-and always use main instead of master as it is changed
+ Q: https://youtu.be/mJ-qvsxPHpY?t=622  need git checkout -b main  before push and always use main instead of master as it is changed
 
  A: Yep, that's a good reminder. Curriculum updated. :)
 
@@ -145,13 +146,13 @@ and always use main instead of master as it is changed
 
 ---
 
- Q: How can i add multiple collaborators at once from a list?
+ Q: How can I add multiple collaborators at once from a list?
 
  A: A quick Google search didn't bring any results. Probably some scripting might help here through their API.
 
 ---
 
- Q: How i ignore folders, files or file types from git tracking them?
+ Q: How can I ignore folders, files or file types from git tracking them?
 
  A: Use the .gitignore Luke!
 
@@ -256,7 +257,7 @@ and always use main instead of master as it is changed
 
   ---
 
-  Q: Sorry, Kosta, one more Q. I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
+  Q: I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
 
   A: Try removing the - at the end: https://in-tech-gration.github.io/WDX-180/
 
@@ -264,7 +265,7 @@ and always use main instead of master as it is changed
 
   ---
 
-  Q: I have a Q) we have to stylish only the page  "world's first Website"? And in the way as we want or how? 
+  Q: We have to stylish only the page "world's first Website"? And in the way as we want or how? 
 
   A: You can style it as you like. There is no restriction in that. Use what you've learned today and make it look as pleasing as you see fit! 
 
@@ -278,9 +279,9 @@ and always use main instead of master as it is changed
   
   ---
 
-  Q: Hello !How can i do to see on window10 pro open terminal ? but i can only Open Git Bash ?Thanks
+  Q: How can i do to see on window10 pro open terminal? I can only Open Git Bash?
 
-  A: Hello! Git Bash it just fine. Do you mean, how do you access Git Bash via VSCode?
+  A: Git Bash it just fine. Do you mean, how do you access Git Bash via VSCode?
 
   Q: But i have visual studio code already in my machine
 
@@ -310,7 +311,7 @@ and always use main instead of master as it is changed
   - Work on the copied files and complete the exercise.
   - Upload to your repo.
 
-  Q: got it thnx)
+  Q: got it thnx.
 
   ---
 
@@ -333,11 +334,3 @@ and always use main instead of master as it is changed
   A: it doesn't exist you can create one. If you right click on day04 in options click "New folder" and give it a name "cern" hit "Enter" inside  *cern*  you can create your html and assignment related files.
 
   A: and also i think you don't need to search anything in curriculum everything related to us students you can find in user directory or https://in-tech-gration.github.io/WDX-180/ curriculum will confuse you.
-
-
-
-
-
-
-
-
