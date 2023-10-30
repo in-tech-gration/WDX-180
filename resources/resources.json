@@ -2254,6 +2254,62 @@
       "language": [
         "en"
       ]
+    },
+    "dom-api---javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 2537,
+      "title": "DOM API - JavaScript Tutorial for beginners",
+      "date": "17/10/2023",
+      "youtube": {
+        "id": "wbQLEXg_urE",
+        "channel_id": "UCHa8J-xnRYOg5VuudfWpBgg",
+        "channel_title": "ColorCode",
+        "thumbnail_url": "https://i.ytimg.com/vi/wbQLEXg_urE/sddefault.jpg"
+      },
+      "tags": [
+        "#JavaScriptDOM",
+        "#DOMManipulation",
+        "#FrontEndDevelopment",
+        "#WebDevTips",
+        "#JSProgrammingTricks",
+        "#WebDesignWithJavaScript",
+        "#CodingLikeAPro",
+        "#JavaScriptFundamentals",
+        "#WebDevelopmentTutorial",
+        "#JavaScriptExplained",
+        "#DOMManipulationGuide",
+        "#DocumentObjectModel",
+        "#WebProgrammingTips",
+        "#JSWebDevelopment",
+        "#CodingSkills",
+        "#JavaScriptForBeginners",
+        "#FrontEndJS",
+        "#WebDevelopmentTools",
+        "#JavaScriptSkills",
+        "#CodingPro",
+        "#JavaScript101",
+        "#ProgrammingWithJS",
+        "#JStutorial",
+        "DOMAPI",
+        "JSDomAPI",
+        "JS dom",
+        "Web development",
+        "ReactJS",
+        "VueJS",
+        "AngularJS",
+        "Svelte",
+        "JS"
+      ],
+      "language": [
+        "en"
+      ],
+      "level": "Advanced",
+      "reviewers": [
+        {
+          "rating": 0.4,
+          "review": "  feedback regarding the video i will rate it 5/10 for beginner.\n\n          - this tutorial is good for some one who already know dom. ( but still i dont like it)\n          - the way of teaching and tool are bit advance.\n          - for demo he used console i believe it can be still completed for some  who are still new to JS\n          - he also used bind()method totally advance topic.\n          - like other 50%  tutorials on youtube i feel like he was only solving the problem but not telling what is the problem\n          - he also uses some short hands\n          - i might like it more if he would  start for the basics APIs  like getElementById() or querySeletor() (ok he went with the sequences of CRUD)\n          in collusion he is not explain in depth. there could be many thing added into 42''min video be he was more talkative(i felt bored) and distractive\n        \n          he is good content creator i have watched almost all his videos of \"10 things Js developers should know but doesn't know\" but still i didnt like this video not for the beginner not for intermediates.\n        \n          i couldnt make any notes and didn't learn anything new in 42 mins"
+        }
+      ]
     }
   },
   "creators": {}
