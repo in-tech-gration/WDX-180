@@ -64,6 +64,8 @@ _(Updated: 30/10/2023)_
   
 </details>
 
+<hr class="day-separator">
+
 <!-- Week 04 - Day 2 | Styling Text -->
 <details markdown="1">
   <summary>
@@ -106,6 +108,8 @@ _(Updated: 30/10/2023)_
 <!-- Sources and Attributions -->
   
 </details>
+
+<hr class="day-separator">
 
 <!-- Week 04 - Day 3 | CSS Layout Part 1 -->
 <details markdown="1">
@@ -180,6 +184,8 @@ _(Updated: 30/10/2023)_
   
 </details>
 
+<hr class="day-separator">
+
 <!-- Week 04 - Day 4 | CSS Layout Part 2 -->
 <details markdown="1">
   <summary>
@@ -222,6 +228,8 @@ _(Updated: 30/10/2023)_
 <!-- Sources and Attributions -->
   
 </details>
+
+<hr class="day-separator">
 
 <!-- Week 04 - Day 5 | Web Performance & CSS Pre-processors -->
 <details markdown="1">

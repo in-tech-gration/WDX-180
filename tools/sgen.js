@@ -726,7 +726,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     .replace(includesRegex, replaceInclude({ day, numOfWeek }));
 
     if ( (idx === (tokens.length - 1)) && (day !== "5") ){
-      dailyContent += "\n";
+      dailyContent += `\n<hr class="day-separator">\n\n`;
     }
 
   });
