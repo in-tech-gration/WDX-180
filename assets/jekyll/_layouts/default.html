@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="{{ css | prepend: '/assets/jekyll/css/' | relative_url }}">
   {% endfor %}
   <!-- Load CSS from Frontmatter 'load_css' property -->
-    
+  <title>{{ site.title | default: site.github.repository_name }}</title>  
   {% include head-custom.html %}
 
 </head>
