@@ -15,6 +15,14 @@ body {
 
 }
 
+// UTILITY
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
 // TYPOGRAPHY
 p, a {
   font-size: 1.2rem;
@@ -137,10 +145,6 @@ section.main-section {
 }
 .ctrl-back-forward > div:hover {
   opacity: 1;
-}
-
-.day-separator {
-  margin-top: 1rem;
 }
 
 .summary-day {
