@@ -290,7 +290,7 @@ A: There are certain limitations though, when you are part of the free plan on G
 
   ---
 
-  Q: Sorry, I forgot to ask what platform we'll be using for class in case I need to download something?
+  Q: What platform we'll be using for class in case I need to download something?
 
   A: Our main tools are the browser (through which you'll be accessing the curriculum -https://in-tech-gration.github.io/WDX-180/- and study material), our code editor (VSCode) and a few other tools (Node, git, etc.)
 
