@@ -37,6 +37,14 @@ _(Updated: 30/10/2023)_
 
 ### Exercises
 
+  - Create a file named `azure_table.html` and try to recreate the table below using your HTML and CSS skills.
+
+  ![](assets/azure_table.jpg)
+
+  - Create a file named `german_table.html` and try to recreate the table below using your HTML and CSS skills.
+
+  ![](assets/german_table.jpg)
+
   - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks){:target="_blank"}
 
   - [MDN's Assessment: **Fundamental CSS comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension){:target="_blank"}

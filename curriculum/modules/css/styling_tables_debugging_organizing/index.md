@@ -26,6 +26,17 @@ title: Styling Tables, Debugging and Organizing CSS
 
 ### Exercises
 
+  <!-- WDX:META:PROGRESS:task=Complete the 'Recreate Azure HTML Table'|user_folder=azure_table|files=azure_table.html -->
+  - Create a file named `azure_table.html` and try to recreate the table below using your HTML and CSS skills.
+
+  ![](assets/azure_table.jpg)
+
+  <!-- WDX:META:PROGRESS:task=Complete the 'Recreate German HTML Table'|user_folder=german_table|files=german_table.html -->
+  - Create a file named `german_table.html` and try to recreate the table below using your HTML and CSS skills.
+
+  ![](assets/german_table.jpg)
+
+
   <!-- WDX:META:PROGRESS:task=Complete the exercise 'Test your skills: Tables'|user_folder=tables_tasks -->
   <!-- WDX:META:TESTS:name=Test Exercise: 'Test your skills: Tables'|type=exist|user_folder=tables_tasks|files=table.html -->
   - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks){:target="_blank"}

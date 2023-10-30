@@ -257,11 +257,12 @@ function copyModuleMediaAssets({ weeklyData, title }){
       for ( const entry of mediaEntries.entries ){
         const mediaPath = path.join( mediaEntries.dailyModuleDir, entry );
         const targetPath = path.join( "curriculum", `week${mediaEntries.week}` );
+        const targetAssetsPath = path.join( targetPath, "assets" );
         const targetFile = path.join( targetPath, entry );
 
         try {
 
-          const userFolderExists = fs.existsSync(targetPath)
+          const userFolderExists = fs.existsSync(targetAssetsPath)
       
           if ( userFolderExists ) {
         
@@ -269,7 +270,7 @@ function copyModuleMediaAssets({ weeklyData, title }){
             
           } else {
             
-            fs.mkdirSync(targetPath, { recursive: true });
+            fs.mkdirSync(targetAssetsPath, { recursive: true });
             console.log(`Folder '${targetPath}' created.`);
             
           }
