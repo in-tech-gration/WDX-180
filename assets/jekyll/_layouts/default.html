@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="{{ page.url | slugify }}">
+<body class="{{ page.url | slugify | append: '__page' }}">
 
   <div class="wrapper">
 
