@@ -89,6 +89,9 @@ summary > h3 {
   display: inline-block;
   cursor: pointer;
 }
+summary>h2 {
+  font-size: 1.5rem;
+}
 summary > h3:hover {
   color: white;
 }
