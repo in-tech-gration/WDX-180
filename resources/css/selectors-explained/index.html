@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Kitty Giraudel" />
+    <title>Selectors Explained</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="Container">
+      <header role="banner" class="Header">
+        <h1 class="Title">Selectors Explained</h1>
+        <p class="Baseline">
+          Translate
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+            rel="noopener noreferrer"
+            target="_blank"
+            >CSS selectors</a
+          >
+          into plain English.
+        </p>
+      </header>
+
+      <main role="main" class="Main">
+        <form id="form" class="Form" action="/">
+          <label for="selector" class="Label">🤯 Selector</label>
+          <input
+            type="text"
+            name="selector"
+            id="selector"
+            required
+            class="Input"
+            placeholder="e.g. p.foo a[href]"
+            autofocus
+            aria-describedby="result"
+          />
+          <button type="submit" class="Button">Explain ✨</button>
+        </form>
+        <div id="result" class="Result"></div>
+        <p id="specificity" class="Specificity"></p>
+      </main>
+    </div>
+
+    <footer role="contentinfo" class="Footer">
+      <p>
+        &copy; Made with
+        <span role="img" aria-label="love">💖</span> by
+        <a
+          href="https://kittygiraudel.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Kitty Giraudel</a
+        >
+        ·
+        <a
+          href="https://github.com/KittyGiraudel/selectors-explained"
+          rel="noopener noreferrer"
+          target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="./bundle.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => App.init())
+    </script>
+  </body>
+</html>

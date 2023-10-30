@@ -1,0 +1,21 @@
+name: "Week 04 - Day 2 CSS 2 & Performance | Test Exercise: 'Typesetting a community school homepage'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day02/typesetting_a_homepage/**
+jobs:
+  typesetting_a_homepage:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Typesetting a community school homepage' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day02/typesetting_a_homepage/index.html, user/week04/exercises/day02/typesetting_a_homepage/styles.css"
+          fail: true

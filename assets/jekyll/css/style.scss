@@ -15,6 +15,14 @@ body {
 
 }
 
+// UTILITY
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
 // TYPOGRAPHY
 p, a {
   font-size: 1.2rem;
@@ -81,6 +89,9 @@ summary > h3 {
   display: inline-block;
   cursor: pointer;
 }
+summary>h2 {
+  font-size: 1.5rem;
+}
 summary > h3:hover {
   color: white;
 }
@@ -137,4 +148,8 @@ section.main-section {
 }
 .ctrl-back-forward > div:hover {
   opacity: 1;
+}
+
+.summary-day {
+  color: #9d9c9c;
 }

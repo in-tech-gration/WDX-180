@@ -1,19 +1,20 @@
 ---
-  title: CSS Frameworks
+title: CSS Frameworks
 ---
 
-_(Updated: 25/10/2023)_
+### Schedule
 
-# CSS Frameworks
+### Study Plan
 
-## What is a CSS Framework
+  **What is a CSS Framework**
+
   A CSS framework is a prepped and ready-to-use CSS library (Cascading Style Sheets). The stylesheets collection makes the job of a UI developer **easier**. 
 
   Rather than starting every project from scratch, a CSS framework gives them tools to quickly create a user interface that they repeat and tweak during a project. They also **enable the creation** of more **standards-compliant** websites. 
 
   While quite challenging to use or ambiguous for beginners, senior developers who know the CSS framework sites’ descriptions and buzzwords find them extremely useful.
 
-## Why Do You Need A CSS Framework?
+  **Why Do You Need A CSS Framework?**
 
   CSS frameworks **are designed for use in typical scenarios** such as establishing navigation bars, footers, sliders, hamburger menus, 3-column layouts, and more. 
 
@@ -33,7 +34,32 @@ _(Updated: 25/10/2023)_
 
   Each CSS framework has its own set of styles, components, and conventions that developers need to learn in order to use it effectively. This can take time and effort, especially for developers who are new to front-end development. Additionally, CSS frameworks may not always align with a developer's preferred workflow or coding style. This can make it challenging to use the framework effectively, especially if the developer is used to writing custom CSS from scratch.
 
-## Conclusion
+  **How to use a CSS Framework**
+
+  There are many different CSS Frameworks out there and they can be broken down to two categories:
+
+  1. Pre-styled, prescriptive, all-in-one frameworks (e.g. Bootstrap)
+
+  2. Hands-off, unopinionated, utility frameworks (e.g. TailwindCSS)
+
+  In later modules we're going to dive deeper to each one of those two popular CSS frameworks, but first we must answer the one million dollar question: **What type of Framework do we need?**
+
+  To begin, we must have some knowledge of our website. Is it even necessary to have a system? Structures are beneficial to most locations with a large number of pages. The ideal amount of pages can change, but if we find ourselves repeating the same HTML, CSS, or even JavaScript on one of our pages, a layout or structure can help.
+
+  -  Framework Language
+
+  We should be familiar with the computer language(s) that our framework employs. As previously stated, some simple frameworks are nothing more than basic HTML templates, while more complicated frameworks may include CSS and JavaScript. Some frameworks construct the CSS using LESS or SASS, while others utilize Ruby or other computer languages to compile the pages once they're built. It will be challenging to build our framework if we are unfamiliar with the language(s) it employs.
+
+  - Framework Features
+
+  A CSS framework, often known as a web framework, is a collection of web-based tools, libraries, and best practices. A CSS framework can be as simple as a one-page template that serves as the foundation for all of our site's pages, or it can be a complicated collection of CSS, HTML, JavaScript, and server-side programs and files that govern the entire site architecture.
+
+  - Whether the Framework is Customizable and Modular
+  Customizable frameworks allow us to add our own code to make our site look unique and different from other websites. However, if a framework is overly customized, its benefits are lost, and it will be better to start from scratch.
+
+  After we've decided which type of Framework, and specifically which one we want to use, all we have to do it find their **Official Documentation** and follow their instructions! This can be scary for a new developer, but it can benefit us in the long run! 
+
+### Summary
 
   CSS Frameworks are so popular these days and they get better and better as time goes by. However, just because they make things easier and faster for some cases, that does not mean that we should ditch plain CSS and restrain our options and imagination to what each CSS Framework has to offer.
 
@@ -43,7 +69,12 @@ _(Updated: 25/10/2023)_
   >
   > You can have a look at this [video](https://www.youtube.com/watch?v=ufMqGkXL1Jw) if you're time stressed, but the article mentioned above is worth reading!
 
+### Exercises
+
+### Extra Resources
+
 ### Sources and Attributions
   
   - [What Is A CSS Framework?](https://elementor.com/resources/glossary/what-is-a-css-framework/#:~:text=them%20extremely%20useful.-,Why%20Do%20You%20Need%20A%20CSS%20Framework%3F,%2C%20SASS%2C%20and%20other%20technologies.)
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
+  - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)

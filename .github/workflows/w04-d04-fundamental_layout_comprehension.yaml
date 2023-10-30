@@ -1,0 +1,21 @@
+name: "Week 04 - Day 4 CSS 2 & Performance | Test Exercise: 'Fundamental layout comprehension'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day04/fundamental_layout_comprehension/**
+jobs:
+  fundamental_layout_comprehension:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Fundamental layout comprehension' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day04/fundamental_layout_comprehension/index.html, user/week04/exercises/day04/fundamental_layout_comprehension/styles.css, user/week04/exercises/day04/fundamental_layout_comprehension/images/balloon-sq1.jpg, user/week04/exercises/day04/fundamental_layout_comprehension/images/balloon-sq2.jpg, user/week04/exercises/day04/fundamental_layout_comprehension/images/balloon-sq3.jpg, user/week04/exercises/day04/fundamental_layout_comprehension/images/balloon-sq4.jpg, user/week04/exercises/day04/fundamental_layout_comprehension/images/balloon-sq5.jpg, user/week04/exercises/day04/fundamental_layout_comprehension/images/balloon-sq6.jpg, user/week04/exercises/day04/fundamental_layout_comprehension/"
+          fail: true

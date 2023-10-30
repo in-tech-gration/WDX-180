@@ -8,11 +8,9 @@ _(Updated: {{ WDX:DATE_UPDATED }})_
 
 ---
 
-{{ WDX:INCLUDES:skip_mdn_suggestions }}
-
----
-
 {{ WDX:WEEKLY_CONTENT }}
+
+<hr class="mt-1">
 
 {{ WDX:INCLUDES:weekly_feedback_reminder }}
 

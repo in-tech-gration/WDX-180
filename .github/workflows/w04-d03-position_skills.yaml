@@ -1,0 +1,21 @@
+name: "Week 04 - Day 3 CSS 2 & Performance | Test Exercise: 'Test your skills: Positioning'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day03/position_skills/**
+jobs:
+  position_skills:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Test your skills: Positioning' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day03/position_skills/position1-download.html, user/week04/exercises/day03/position_skills/position2-download.html"
+          fail: true

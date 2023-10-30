@@ -1,0 +1,47 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: CSS, Accessibility & Git
+schedule: 
+  days:
+    1:
+      # file://./../modules/version_control/git/branching_and_remote_git/index.md
+      module: version_control/git/branching_and_remote_git
+    2: 
+      # file://./../modules/css/what_is_css/index.md
+      module: css/what_is_css
+    3: 
+      # file://./../modules/css/css_selectors/index.md
+      module: css/css_selectors
+      # TODO: INTEGRATE SELECTOR GAME
+      # https://codepen.io/kostasx/pen/LYqNYyx
+      # BOOTCAMP/INTECHGRATION/TASKS/css.selectors.exercise/index.html
+    4: # Cascade, Inheritance and the Box Model
+      # file://./../modules/css/cascade_inheritance_box_model/index.md
+      module: css/cascade_inheritance_box_model
+      # TODO: INTEGRATE SPECIFICITY GAME: https://codepen.io/kostasx/pen/zQyjdv
+      # /BOOTCAMP/INTECHGRATION/TASKS/quiz-can-you-count-specificity/
+    5: 
+      # file://./../modules/css/backgrounds_and_borders/index.md
+      module: css/backgrounds_and_borders
+
+# TODO: Add section about background-clip: How to add Transparent Borders
+# https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
+# ```html 
+# <style>
+# body {
+#   background: gray;
+# }
+# section {
+#   width: 500px;
+#   margin: 64px auto;
+#   background: white;
+#   padding: 1rem;
+#   border: 10px dashed rgb(255 255 255 / 50%);
+#   background-clip: padding-box;
+#   background-clip: content-box;
+# }
+# </style>
+# <section>
+#   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo delectus veniam voluptatibus ut, placeat ducimus quidem aut maiores beatae? Qui labore laborum ipsam mollitia laboriosam sunt, necessitatibus explicabo cupiditate.
+# </section>
+# ``` 

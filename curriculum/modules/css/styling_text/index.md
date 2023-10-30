@@ -31,6 +31,7 @@ title: Styling Text
 ### Exercises
 
   <!-- WDX:META:PROGRESS:task=Complete the exercise 'Typesetting a community school homepage'|user_folder=typesetting_a_homepage -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Typesetting a community school homepage'|type=exist|user_folder=typesetting_a_homepage|files=index.html,styles.css -->
   - [MDN's Assessment: **Typesetting a community school homepage**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Typesetting_a_homepage){:target="_blank"}
 
 ### Extra Resources

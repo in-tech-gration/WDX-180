@@ -21,7 +21,7 @@ title: Web Performance & CSS Pre-processors
     - Level: Beginner
 
   <!-- WDX:META:PROGRESS:task=Watch 'CSS Preprocessors' -->
-  - [Watch: **CSS Preprocessors**](https://www.youtube.com/watch?v=PJkWbezpHpE)
+  - [Watch: **CSS Preprocessors**](https://www.youtube.com/watch?v=PJkWbezpHpE){:target="_blank"}
     - **Description:** In this video we look at the wonderful world of CSS Preprocessors and a few of the awesome things that you can do with CSS Preprocessors, and look at a few of the more popular ones; LESS, Sass (SCSS), and Stylus.
     - **Duration:** 12min
 
@@ -37,7 +37,7 @@ title: Web Performance & CSS Pre-processors
   After watching the video, it's time to give it a go by following these steps:
 
   <!-- TODO: Replace week01 + exercises-3 with dynamic links. There should be no references to particular Weeks or Days inside the Modules content -->
-  - Head over to your GitHub Page where your solution from [this exercise](/curriculum/week01/index.md#exercises-3) is published.
+  - Head over to your GitHub Page where your solution from [the **Styling the world’s first website** exercise](/WDX-180/curriculum/week01/index.html#exercises-3){:target="_blank"} is published.
     - If you have not completed this exercise, now it's time to do so!
     <!-- TODO: Same as above. Replace references to weeks and days. -->
     - If you followed correctly the instructions provided you can find your solution following this link `https://<GITHUB_USERNAME>.github.io/WDX-180/user/week01/exercises/day04/cern/index.html` by replacing `<GITHUB_USERNAME>` with your username.

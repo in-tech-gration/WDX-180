@@ -1,0 +1,21 @@
+name: "Week 04 - Day 1 CSS 2 & Performance | Test Exercise: 'A cool-looking box'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day01/a_cool_looking_box/**
+jobs:
+  a_cool_looking_box:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'A cool-looking box' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/a_cool_looking_box/index.html, user/week04/exercises/day01/a_cool_looking_box/styles.css"
+          fail: true
