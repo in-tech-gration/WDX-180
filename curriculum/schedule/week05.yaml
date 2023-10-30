@@ -7,6 +7,7 @@ schedule:
       # Group Project: Practice HTML Form Input Fields  
       # file://./../modules/frontend/input_fields_practice/index.md
       module: frontend/input_fields_practice
+      # TODO: REVIEW: file://./../modules/accessibility/improving_website_accessibility_practice/index.md
     2: 
       # STUDY: file://./../modules/css/frameworks/index.md
       # file://./../modules/css/
