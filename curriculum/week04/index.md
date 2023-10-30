@@ -65,7 +65,7 @@ _(Updated: 30/10/2023)_
   
 </details>
 
-<hr class="day-separator">
+<hr class="mt-1">
 
 <!-- Week 04 - Day 2 | Styling Text -->
 <details markdown="1">
@@ -111,7 +111,7 @@ _(Updated: 30/10/2023)_
   
 </details>
 
-<hr class="day-separator">
+<hr class="mt-1">
 
 <!-- Week 04 - Day 3 | CSS Layout Part 1 -->
 <details markdown="1">
@@ -187,7 +187,7 @@ _(Updated: 30/10/2023)_
   
 </details>
 
-<hr class="day-separator">
+<hr class="mt-1">
 
 <!-- Week 04 - Day 4 | CSS Layout Part 2 -->
 <details markdown="1">
@@ -233,7 +233,7 @@ _(Updated: 30/10/2023)_
   
 </details>
 
-<hr class="day-separator">
+<hr class="mt-1">
 
 <!-- Week 04 - Day 5 | Web Performance & CSS Pre-processors -->
 <details markdown="1">
@@ -295,7 +295,7 @@ _(Updated: 30/10/2023)_
 </details>
 
 
----
+<hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
