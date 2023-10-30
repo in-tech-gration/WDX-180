@@ -2310,6 +2310,46 @@
           "review": "  feedback regarding the video i will rate it 5/10 for beginner.\n\n          - this tutorial is good for some one who already know dom. ( but still i dont like it)\n          - the way of teaching and tool are bit advance.\n          - for demo he used console i believe it can be still completed for some  who are still new to JS\n          - he also used bind()method totally advance topic.\n          - like other 50%  tutorials on youtube i feel like he was only solving the problem but not telling what is the problem\n          - he also uses some short hands\n          - i might like it more if he would  start for the basics APIs  like getElementById() or querySeletor() (ok he went with the sequences of CRUD)\n          in collusion he is not explain in depth. there could be many thing added into 42''min video be he was more talkative(i felt bored) and distractive\n        \n          he is good content creator i have watched almost all his videos of \"10 things Js developers should know but doesn't know\" but still i didnt like this video not for the beginner not for intermediates.\n        \n          i couldnt make any notes and didn't learn anything new in 42 mins"
         }
       ]
+    },
+    "javascript-tutorial-for-beginners-learn-javascript-in-1-hour": {
+      "type": "YouTube",
+      "duration": 2897,
+      "title": "JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour",
+      "date": "24/04/2018",
+      "youtube": {
+        "id": "W6NZfCO5SIk",
+        "channel_id": "UCWv7vMbMWH4-V0ZXdmDpPBA",
+        "channel_title": "Programming with Mosh",
+        "thumbnail_url": "https://i.ytimg.com/vi/W6NZfCO5SIk/sddefault.jpg"
+      },
+      "tags": [
+        "javascript tutorial",
+        "javascript for beginners",
+        "learn javascript for beginners",
+        "javascript basics",
+        "javascript course",
+        "javascript crash course",
+        "javascript programming",
+        "learn javascript",
+        "learning javascript",
+        "programming tutorial",
+        "js tutorial",
+        "javascript",
+        "javascript tutorial for beginners",
+        "javascript tutorials",
+        "javascript beginners",
+        "java script tutorial",
+        "javascript 2019",
+        "javascript lesson",
+        "web development",
+        "mosh hamedani",
+        "front end",
+        "javascript functions",
+        "code with mosh"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

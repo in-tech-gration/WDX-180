@@ -566,7 +566,12 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   const dailyModuleDir = path.join( modulesFolder, dayMeta.module ); 
   const dailyModule    = path.join( dailyModuleDir, "index.md" ); 
-  const moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");
+  let moduleMarkdown = null;
+  try {
+    moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");
+  } catch(e){
+    return false;
+  }
   const { content, data: fm, orig } = matter(moduleMarkdown);
   const moduleMarkdownTokens = marked.lexer(content);
 

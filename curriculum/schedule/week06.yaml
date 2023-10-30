@@ -1,0 +1,20 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Core 1
+schedule: 
+  days:
+    1:
+      # file://./../modules/javascript/core/intro/index.md
+      module: javascript/core/intro
+    2:
+      # file://./../modules/javascript/.../index.md
+      module: javascript/
+    3:
+      # file://./../modules/javascript/.../index.md
+      module: javascript/
+    4:
+      # file://./../modules/javascript/.../index.md
+      module: javascript/
+    5:
+      # file://./../modules/javascript/.../index.md
+      module: javascript/
