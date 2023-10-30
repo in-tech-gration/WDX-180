@@ -11,7 +11,8 @@ _(Updated: 30/10/2023)_
 <!-- Week 03 - Day 1 | More Git -->
 <details markdown="1">
   <summary>
-    <h2>Week 03 - Day 1 | More Git</h2>
+    <h2>
+      <span class="summary-day">Week 03 - Day 1</span> | More Git</h2>
   </summary>
 
 ### Schedule
@@ -111,10 +112,13 @@ _(Updated: 30/10/2023)_
   
 </details>
 
+<hr class="mt-1">
+
 <!-- Week 03 - Day 2 | What is CSS? -->
 <details markdown="1">
   <summary>
-    <h2>Week 03 - Day 2 | What is CSS?</h2>
+    <h2>
+      <span class="summary-day">Week 03 - Day 2</span> | What is CSS?</h2>
   </summary>
 
 ### Schedule
@@ -162,10 +166,13 @@ _(Updated: 30/10/2023)_
   
 </details>
 
+<hr class="mt-1">
+
 <!-- Week 03 - Day 3 | CSS Selectors -->
 <details markdown="1">
   <summary>
-    <h2>Week 03 - Day 3 | CSS Selectors</h2>
+    <h2>
+      <span class="summary-day">Week 03 - Day 3</span> | CSS Selectors</h2>
   </summary>
 
 ### Schedule
@@ -249,10 +256,13 @@ _(Updated: 30/10/2023)_
   
 </details>
 
+<hr class="mt-1">
+
 <!-- Week 03 - Day 4 | Cascade, Inheritance and the Box Model -->
 <details markdown="1">
   <summary>
-    <h2>Week 03 - Day 4 | Cascade, Inheritance and the Box Model</h2>
+    <h2>
+      <span class="summary-day">Week 03 - Day 4</span> | Cascade, Inheritance and the Box Model</h2>
   </summary>
 
 ### Schedule
@@ -315,10 +325,13 @@ _(Updated: 30/10/2023)_
   
 </details>
 
+<hr class="mt-1">
+
 <!-- Week 03 - Day 5 | Backgrounds, borders, media, sizing items & more -->
 <details markdown="1">
   <summary>
-    <h2>Week 03 - Day 5 | Backgrounds, borders, media, sizing items & more</h2>
+    <h2>
+      <span class="summary-day">Week 03 - Day 5</span> | Backgrounds, borders, media, sizing items & more</h2>
   </summary>
 
 ### Schedule
@@ -410,7 +423,7 @@ _(Updated: 30/10/2023)_
 </details>
 
 
----
+<hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
