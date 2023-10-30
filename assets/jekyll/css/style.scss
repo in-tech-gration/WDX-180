@@ -95,8 +95,15 @@ summary>h2 {
 summary > h3:hover {
   color: white;
 }
+details summary + h3 {
+  margin-top: 1rem;
+}
 details summary { 
   cursor: pointer;
+  border: 1px solid gray;
+  padding: 1rem 0 1rem 1rem;
+  border-left: 4px solid #ffcc00;
+  background: #343333;
 }
 
 details summary > * {
