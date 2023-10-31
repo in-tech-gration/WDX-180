@@ -27,13 +27,13 @@
   - NodeJS
   - React
 
-  Each student is required to make a fork of our [GitHub repository](https://github.com/in-tech-gration/WDX-180){:target="_blank"} in order to keep track of their progress and assert their knowledge by updating several CSV files, that can be found under the `user/` folder ([example](https://github.com/in-tech-gration/WDX-180/blob/main/user/week01/progress/progress.draft.w01.d01.csv)){:target="_blank"}.
+  Each student is required to make a fork of our [GitHub repository](https://github.com/in-tech-gration/WDX-180){:target="_blank"} in order to keep track of their progress and assert their knowledge by updating several CSV files, that can be found under the `user/` folder ([example](https://github.com/in-tech-gration/WDX-180/blob/main/user/week01/progress/progress.draft.w01.d01.csv){:target="_blank"}).
 
 ## WDX-180's Curriculum: Behind the scenes
 
   After a lot of research and communication with people from a great Open Education project called [DeNepo](https://github.com/DeNepo){:target="_blank"}, we decided to make our curriculum, as modular as possible. In order to achieve this, we have broken down the content of our curriculum that will be covered into several modules.
 
-  Each of these _modules_ consists of _sub-modules_, which are broken down into smaller packages, called _units_. For example, _JavaScript_ is a module that consists of 5 different sub-modules _(Async, Core, Frameworks, NodeJS, Web APIs)_, where each one of those consists of smaller units. All modules,sub-modules, and units are markdown files containing information on their subject ([sample found here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/Module.sample.md)){:target="_blank"}, plus some predefined regular expressions that we have established. More on those later!
+  Each of these _modules_ consists of _sub-modules_, which are broken down into smaller packages, called _units_. For example, _JavaScript_ is a module that consists of 5 different sub-modules _(Async, Core, Frameworks, NodeJS, Web APIs)_, where each one of those consists of smaller units. All modules,sub-modules, and units are markdown files containing information on their subject ([sample found here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/Module.sample.md){:target="_blank"}), plus some predefined regular expressions that we have established. More on those later!
 
   Below you can find the list of modules that are available right now:
 
@@ -43,7 +43,7 @@
   - [CSS](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css){:target="_blank"}
   - [DevTools](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/devtools){:target="_blank"}
   - [Frontend](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/frontend){:target="_blank"}
-  - [HTML]((https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/html))
+  - [HTML](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/html){:target="_blank"}
   - [JavaScript](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript){:target="_blank"}
   - [Version Control](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/version_control){:target="_blank"}
   - [Web3](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/web3){:target="_blank"}
@@ -58,13 +58,14 @@
 
   Below you can find its current functionality:
 
-  - Takes as input a .yaml file (either [curriculum](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml){:target="_blank"} or [week](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/schedule/week04.yaml)){:target="_blank"}
+  - Takes as input a .yaml file (either [curriculum](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml){:target="_blank"} or [week](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/schedule/week04.yaml){:target="_blank"})
     - Each YAML file contains
-      - a link to a draft Markdown file containing the structure desired for our curriculum, week and day (e.g. [curriculum draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/curriculum.draft.md){:target="_blank"}, [week draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/weekly.draft.md){:target="_blank"}, [day draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/daily.draft.md)){:target="_blank"}
+      - a link to a draft Markdown file containing the structure desired for our curriculum, week and day (e.g. [curriculum draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/curriculum.draft.md){:target="_blank"}, [week draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/weekly.draft.md){:target="_blank"}, [day draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/daily.draft.md){:target="_blank"})
       - Metadata: **title**, **subtitle**, and _more to come_.
       - `schedule` property that contains a number of weeks/days that a curriculum/week consists of.
       - each `weeks` or `days` property has a number of properties (starting from **1:**) that contain links to markdown files from our modules
   - Parses each markdown file (either draft or module) and replaces the string templates found below:
+  {% raw %}
     - `{{WDX:WEEK}}`
     - `{{WDX:TITLE}}`
     - `{{WDX:DAY}}`
@@ -79,6 +80,7 @@
     - `{{WDX:WEEKLY_CONTENT}}`
     - `<!-- WDX:META:PROGRESS:<params> -->`
     - `<!-- WDX:META:TESTS:<params> -->`
+{% endraw %}
 
   Based on the functionality of the current version of our SGEN tool, WDX-180 cohort_02's curriculum can be found [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml){:target="_blank"}.
 
