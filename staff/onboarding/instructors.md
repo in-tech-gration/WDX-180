@@ -33,7 +33,24 @@
 
   After a lot of research and communication with people from a great Open Education project called [DeNepo](https://github.com/DeNepo), we decided to make our curriculum, as modular as possible. In order to achieve this, we have broken down the content of our curriculum that is going to be covered into several modules.
 
-  Each of these _modules_, is consisted of _sub-modules_, which are broken down into smaller packages, called _units_. For example, _JavaScript_ is a module that is consisted of 5 different sub-modules _(Async, Core, Frameworks, NodeJS, Web APIs)_, where each one of those is consisted of smaller units. All of modules,sub-modules and units are markdown files containing information on their subject, plus some predefined regular expressions that we have established. More on those later! 
+  Each of these _modules_, is consisted of _sub-modules_, which are broken down into smaller packages, called _units_. For example, _JavaScript_ is a module that is consisted of 5 different sub-modules _(Async, Core, Frameworks, NodeJS, Web APIs)_, where each one of those is consisted of smaller units. All of modules,sub-modules and units are markdown files containing information on their subject ([sample found here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/Module.sample.md)), plus some predefined regular expressions that we have established. More on those later!
+
+  Below you can find the list of modules that are available right now:
+
+  - [Accessibility](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/accessibility)
+  - [Backend](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/backend)
+  - [Computer Science](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/computer_science)
+  - [CSS](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css)
+  - [DevTools](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/devtools)
+  - [Frontend](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/frontend)
+  - [HTML]((https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/html))
+  - [JavaScript](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript)
+  - [Version Control](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/version_control)
+  - [Web3](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/web3)
+
+  > Note:
+  >
+  > As you can see, the content for each of those modules is not complete. If you have any suggestions of what content can be included on each of those modules, please do not hesitate to create a new Pull Request containing a markdown file with your suggestions on the selected concepts.
 
   We shifted to this structure, because we want people to be able to grab any amount of modules inside our knowledge base and create their own course, no matter it's duration.
 
