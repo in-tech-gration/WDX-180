@@ -37,6 +37,8 @@ title: Practice with Form Input fields
 
 ### Exercises
 
+<!-- WDX:META:PROGRESS:task=Complete the 'Form Input Field' practice challenge|user_folder=input_fields_practice -->
+
 **What are you building?**
 
 Take a close look at the screenshot below to understand what you are building:
