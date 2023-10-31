@@ -4,7 +4,7 @@
 
 ## Web Development X - 180°
 
-<!-- About -->
+<!-- TODO: Transform this into a Module: About -->
 <details open markdown="1">
   <summary><h3>About</h3></summary>
 
@@ -15,7 +15,7 @@
   You can find the [Syllabus here](curriculum/index.md).
 </details>
 
-<!-- Where do I start? -->
+<!-- TODO: Transform this into a Module: Where do I start? -->
 <details markdown="1">
   <summary><h3>Where do I start?</h3></summary>
 
@@ -33,7 +33,7 @@
 
 </details>
 
-<!-- Accounts -->
+<!-- TODO: Transform this into a Module: Accounts -->
 <details markdown="1">
   <summary><h3>Accounts</h3></summary>
 
@@ -46,7 +46,7 @@
   - [Sli.do _(used during our Q&As)_](https://www.slido.com/){:target="_blank"}
 </details>
 
-<!-- Setup -->
+<!-- TODO: Transform this into a Module: Setup -->
 <details markdown="1">
   <summary><h3>Setup</h3></summary>
 
@@ -72,7 +72,7 @@
   _(Click the image to see a full-size version)_
 </details>
 
-<!-- Communication -->
+<!-- TODO: Transform this into a Module: Communication -->
 <details markdown="1">
   <summary><h3>Communication</h3></summary>
 
@@ -85,7 +85,7 @@
   **Enrolled students** also have the opportunity to schedule one 30~45min call each week with an instructor.
 </details>
 
-<!-- Hardware Requirements -->
+<!-- TODO: Transform this into a Module: Hardware Requirements -->
 <details markdown="1">
   <summary><h3>Hardware Requirements</h3></summary>
 
@@ -99,7 +99,7 @@
     - Notebook for note taking
 </details>
 
-<!-- Software -->
+<!-- TODO: Transform this into a Module: Software -->
 <details markdown="1">
   <summary><h3 id="software">Software</h3></summary>
 
@@ -149,7 +149,24 @@
     - **MacOS:** _(Already includes built-in Unix command line terminals. No need to install.)_
       - You will need to install [Homebrew](https://brew.sh/){:target="_blank"}
 
-  > At this point, it's probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c){:target="_blank"} and follow along in order to create your SSH keys and connect them with GitHub, then follow the rest of the instructions to `clone` (download) the repository to your computer and install all the necessary dependencies.  
+  > So, you've downloaded Visual Studio Code (aka VSCode) along with Git and GitBash if you are running Windows. Even though Windows comes packed with quite a few types of terminals through which you can type and execute commands, we highly recommend that you stick with Git Bash on Windows.
+  >
+  > VSCode has this neat feature called **Integrated Terminal** which basically means that you can access any terminal without leaving the VSCode interface. Pretty cool!
+
+  - Spend a few minutes to watch the following video and learn some of the most basic terminal commands. You will need to **carefully practice** _(especially with the `rm` command)_ and repeat these commands on your own terminal in order to become comfortable with it. 
+  
+  - [Watch: **Terminal Commands for Web Developers**](https://www.youtube.com/watch?v=YSj30jnvxKo)
+    - **Duration:** 12min
+    - **Level:** Beginner 
+    - List of commands that you will learn: `pwd`, `cd`, `mkdir`, `ls`, `touch`, `rm`, `rmdir`, `mv`, `cp`.
+
+  **❌ Caution:** be extremely careful with the `rm -rf` command. You can probably try to avoid running this command on your system until you get quite comfortable with the terminal, as this command can literally wipe out your entire disk drive if ran improperly.  
+
+  You can also use our [**online virtual terminal**](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/) to safely practice these commands. Remember that the file structure on your system and our virtual terminal environment is quite different from the file structure depicted in the video above. And, yes, you can safely run `rm -rf` in this virtual environment!
+
+  It's extremely helpful and will greatly improve your chances of retaining any new concept, to keep notes of everything that you learn (e.g. terminal commands in this case) and organize them in a manner that will help you quickly go back and find what you need. 
+
+  > At this point, it's also probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c){:target="_blank"} and follow along in order to create your SSH keys and connect them with GitHub, then follow the rest of the instructions to `clone` (download) the repository to your computer and install all the necessary dependencies.  
 
   - **Node.js:** Download the `LTS` version of the powerful and popular JavaScript running environment [here](https://nodejs.org/en){:target="_blank"}. You are going to be using `Node.js` **a lot** during this course 🙂. In order to check that `Node.js` has been installed on your system, you will need to run one of the following commands in the terminal: 
     - `node --version`
@@ -161,7 +178,7 @@
     - [**Photopea**](https://www.photopea.com/){:target="_blank"}: a free, online image editing software that's pretty similar to `Adobe Photoshop`. You can use this tool to resize, crop or compress images among other things. 
 </details>
 
-<!-- Data Formats -->
+<!-- TODO: Transform this into a Module: Data Formats -->
 <details markdown="1">
   <summary><h3>Getting familiar with data formats</h3></summary>
 
@@ -198,7 +215,7 @@
   You can find the [Syllabus here](curriculum/index.md#syllabus).
 </details>
 
-<!-- How to Study / Productivity tips -->
+<!-- TODO: Transform this into a Module: How to Study / Productivity tips -->
 <details markdown="1">
   <summary><h3>How to Study / Productivity tips</h3></summary>
 

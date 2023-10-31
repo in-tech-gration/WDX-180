@@ -2350,6 +2350,55 @@
       "language": [
         "en"
       ]
+    },
+    "terminal-commands-for-web-developers": {
+      "type": "YouTube",
+      "duration": 705,
+      "title": "Terminal Commands for Web Developers",
+      "date": "15/06/2020",
+      "youtube": {
+        "id": "YSj30jnvxKo",
+        "channel_id": "UCTBGXCJHORQjivtgtMsmkAQ",
+        "channel_title": "Steve Griffith - Prof3ssorSt3v3",
+        "thumbnail_url": "https://i.ytimg.com/vi/YSj30jnvxKo/sddefault.jpg"
+      },
+      "tags": [
+        "MAD9013",
+        "MAD9014",
+        "MAD9022",
+        "web development",
+        "steve flix",
+        "steveflix",
+        "web dev",
+        "professor steve",
+        "prof3ssorSt3v3",
+        "linux terminal",
+        "macos terminal",
+        "how to use the terminal",
+        "cli",
+        "terminal commands",
+        "WLS",
+        "windows linux subsystem",
+        "linux terminal commands",
+        "macos terminal commands",
+        "windows terminal commands",
+        "command prompt",
+        "bash shell",
+        "z shell",
+        "zsh",
+        "cd",
+        "ls",
+        "cp",
+        "mv",
+        "touch",
+        "rm",
+        "rmdir",
+        "mkdir",
+        "pwd"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

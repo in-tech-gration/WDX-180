@@ -8,6 +8,7 @@ schedule:
       # from here: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
+      # TODO: Arrays? => Intro: https://www.youtube.com/watch?v=seBDTeZmb-k (Without Scratch)
     2:
       # file://./../modules/javascript/.../index.md
       module: javascript/
