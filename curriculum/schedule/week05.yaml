@@ -17,15 +17,14 @@ schedule:
       # https://css-tricks.com/how-to-create-a-skip-to-content-link/
       # https://codepen.io/team/css-tricks/pen/jOPBQZw
       # https://www.a11yproject.com/
-
     # 3: 
     #   # Bootstrap & FontAwesome
     #   # file://./../modules/css/
     #   module: css/
     # 4:
-    #   # Tailwind 1
-    #   # file://./../modules/css/
-    #   module: css/
+      # Tailwind 1
+      # file://./../modules/css/
+      # module: css/
     # 5: 
     #   # Tailwind 2
     #   # file://./../modules/css/
