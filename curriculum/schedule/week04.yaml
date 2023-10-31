@@ -3,18 +3,19 @@ daily_input: curriculum/schedule/daily.draft.md
 title: CSS 2 & Performance
 schedule: 
   days:
-    1:
+    1: # Styling Tables, Debugging and Organizing CSS
       # file://./../modules/css/styling_tables_debugging_organizing/index.md
       module: css/styling_tables_debugging_organizing
       # TODO: STUDY ALTERNATIVE/EXTRA EXERCISES: 
       # 1) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/http.status.codes.tables.exercise.jpeg
       # 2) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/monthly.sheet.jpg 
-    2: 
+    2: # Styling Text
       # file://./../modules/css/styling_text/index.md
       module: css/styling_text
     3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
       # file://./../modules/css/layout_part1/index.md
       module: css/layout_part1
+      # TODO: STUDY & INTEGRATE: https://www.youtube.com/watch?v=yMEjLBKyvEg (The fundamentals of CSS layout | Workshop)
       # TODO: STUDY & INTEGRATE: https://github.com/samanthaming/Flexbox30
       # 1) Star the Repo Reminder 
       # 2) Work on the fork: https://github.com/in-tech-gration/Flexbox30

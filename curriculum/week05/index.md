@@ -42,7 +42,7 @@ _(Updated: 31/10/2023)_
 
 
 
-  This Module is about replicating some real-life User Interfaces and specifically the form fields found in the [**YouTube Studio**](https://www.youtube.com/playlist?list=PLpjK416fmKwQ42eDY75Q05uM0g3N9WNXU) video editor page.
+  This Module is about replicating some real-life User Interfaces and specifically the form fields found in the [**YouTube Studio**](https://www.youtube.com/playlist?list=PLpjK416fmKwQ42eDY75Q05uM0g3N9WNXU){:target="_blank"} video editor page.
 
   [![](./assets/youtube_editor_input_fields.jpg)](./assets/youtube_editor_input_fields.jpg){:target="_blank"}
 
@@ -75,7 +75,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
   - The border color on focus is: `#7c9dbd`
   - When there is a validation error on some input, the border color is: `#862e2a`
 
-- For this project, we need all the CSS colors to be stored in [**CSS variables**](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that follow [**good naming practices**](https://stackoverflow.com/a/74253999/4861760). 
+- For this project, we need all the CSS colors to be stored in [**CSS variables**](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"} that follow [**good naming practices**](https://stackoverflow.com/a/74253999/4861760){:target="_blank"}. 
 
 - The font family for all text should be: `Arial, Helvetica, sans-serif;`
 
@@ -87,13 +87,13 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
 - You should validate your HTML code using the `W3C Validator` service and make sure to fix all warnings and errors.
 
-- You should check your web page using the Chrome [**Lighthouse**](https://developer.chrome.com/docs/lighthouse/overview/) checker and make sure that you have a green score (>90%) on the `Accessibility` checks. If the score is lower than 90%, make sure to do any necessary fixes.
+- You should check your web page using the Chrome [**Lighthouse**](https://developer.chrome.com/docs/lighthouse/overview/){:target="_blank"} checker and make sure that you have a green score (>90%) on the `Accessibility` checks. If the score is lower than 90%, make sure to do any necessary fixes.
 
 **Extra Challenges**
 
 - Whenever the input value is invalid, a specially crafted HTML element should appear beneath the input element, displaying an error notification: `("Error: Invalid input")`. You **do not need JavaScript** for this one to work. Do your research and come up with a plain HTML/CSS solution.
 
-[![](./assets/form_fields_error_preview.jpg)](./assets/form_fields_error_preview.jpg)
+[![](./assets/form_fields_error_preview.jpg)](./assets/form_fields_error_preview.jpg){:target="_blank"}
 
 **Study Resources**
 
