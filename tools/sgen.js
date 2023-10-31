@@ -525,6 +525,8 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
   return function( match ){
 
+    const { weekRegex, dayRegex } = wdxTemplateRegexes;
+
     if ( !contentObject[section] ){
 
       warn(`Something's wrong with "${section}" section. Check this in the Module's markdown. Perhaps you are missing this section or the section is not using a Level 3 heading? => ###`);
@@ -559,6 +561,8 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
       dailyScheduleSection = `<!-- ${contentObject[section].text.trim()} -->`
 
     }
+
+    dailyScheduleSection = dailyScheduleSection.replace(weekRegex, `Week ${numOfWeek}`).replace(dayRegex, `Day ${day}`);
 
     return dailyScheduleSection;
   }
@@ -744,15 +748,21 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     .replace(dayRegex, `Day ${day}`)
     .replace(scheduleRegex, replaceSectionFromObject({ 
       section: SCHEDULE, 
-      contentObject: dailyContentObject
+      contentObject: dailyContentObject,
+      day,
+      numOfWeek
     }))
     .replace(studyPlanRegex, replaceSectionFromObject({
       section: STUDY_PLAN, 
-      contentObject: dailyContentObject
+      contentObject: dailyContentObject,
+      day,
+      numOfWeek
     }))
     .replace(summaryRegex, replaceSectionFromObject({
       section: SUMMARY, 
-      contentObject: dailyContentObject
+      contentObject: dailyContentObject,
+      day,
+      numOfWeek
     }))
     .replace(exercisesRegex, replaceSectionFromObject({
       section: EXERCISES, 
@@ -762,11 +772,15 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     }))
     .replace(extrasRegex, replaceSectionFromObject({
       section: EXTRA_RESOURCES, 
-      contentObject: dailyContentObject
+      contentObject: dailyContentObject,
+      day,
+      numOfWeek
     }))
     .replace(attributionsRegex, replaceSectionFromObject({
       section: ATTRIBUTIONS, 
-      contentObject: dailyContentObject
+      contentObject: dailyContentObject,
+      day,
+      numOfWeek
     }))
     .replace(includesRegex, replaceInclude({ day, numOfWeek }));
 
@@ -936,6 +950,7 @@ if (require.main === module) {
 // 4) EXPORT SECTION: ==========================================================
 
 module.exports = {
+  wdxTemplateRegexes, // This export is for testing purposes.
   getFrontMatterStringFromObject,
   createSyllabusFromMarkdownText
 }
