@@ -39,13 +39,48 @@ title: Practice with Form Input fields
 
 **What are you building?**
 
+Take a close look at the screenshot below to understand what you are building:
+
+[![](./assets/form_fields_preview.jpg)](./assets/form_fields_preview.jpg)
+
+We are basically creating a single `<input>` form field of type `text`. In the screenshot, you are seeing various states of this input field. You won't be creating 5 different input fields but just one. Check the Requirements below to learn more about the various states and behavior that we want this element to exhibit.
+
 **Requirements**
+
+- Here are the color you must use:
+  - Background color for the page: `#282828`
+  - The input text color (for the user values) is: `#d0d0d0`
+  - The `placeholder` text color is: `#767676`
+  - The border color is: `#4c4c4c`
+  - The border color on hover is: `#8f8f8f`
+  - The border color on focus is: `#7c9dbd`
+  - When there is a validation error on some input, the border color is: `#862e2a`
 
 - For this project, we need all the CSS colors to be stored in [**CSS variables**](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that follow [**good naming practices**](https://stackoverflow.com/a/74253999/4861760). 
 
+- The font family for all text should be: `Arial, Helvetica, sans-serif;`
+
+- There should be special validation rule for this input field, so that the only permitted characters are the following: `A-Z`, `a-z`, `0-9` and the special characters `!, @, _, -, $, ( and )`. Also, there is a limit on how many characters should be permitted: **maximum 30 chars**. If the user has entered more than 30 characters or any non-permitted character, the input border should change to the error color (as seen in the last input example in the screenshot).
+
+- The input field must be accompanied by a special section that indicates the number of current characters along with the limit (30) as seen in the screenshot. This does not need to change dynamically. For now, you'll just want this element to contain the text: `0/30 characters`. Once you've learned about JavaScript, you'll be able to dynamically update these numbers.
+
+- The input field must also be accompanied by a `<label>` element (as depicted in the screenshot) with the informative text: `Enter your message`. The `<input>` and `<label>` elements **should be paired together** so that when the user clicks on the label, the input should receive focus. Also, when the user hovers over the label, the input should change its border color to the appropriate focus color (see list of colors above). The label should use the same color as the input text value.
+
+- You should validate your HTML code using the `W3C Validator` service and make sure to fix all warnings and errors.
+
+- You should check your web page using the Chrome [**Lighthouse**](https://developer.chrome.com/docs/lighthouse/overview/) checker and make sure that you have a green score (>90%) on the `Accessibility` checks. If the score is lower than 90%, make sure to do any necessary fixes.
+
+**Extra Challenges**
+
+- Whenever the input value is invalid, a specially crafted HTML element should appear beneath the input element, displaying an error notification: `("Error: Invalid input")`. You **do not need JavaScript** for this one to work. Do your research and come up with a plain HTML/CSS solution.
+
+[![](./assets/form_fields_error_preview.jpg)](./assets/form_fields_error_preview.jpg)
+
 **Study Resources**
 
-- [Naming CSS Stuff Is Really Hard](https://sparkbox.com/foundry/naming_css_stuff_is_really_hard)
+- [Naming CSS Stuff Is Really Hard](https://sparkbox.com/foundry/naming_css_stuff_is_really_hard){:target="_blank"}
+
+- [Input pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#input_pseudo-classes){:target="_blank"}
 
 ### Extra Resources
 
