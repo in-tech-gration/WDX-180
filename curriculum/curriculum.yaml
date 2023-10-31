@@ -37,6 +37,7 @@ Syllabus:
         12: 
           title: "Templating, JavaScript Frameworks & Git Workflow"
           # title: "Deploying our Applications & Group Project"
+          # TODO: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
   Intermediate:
     title: "Intermediate: WDX 120°"
     schedule:
