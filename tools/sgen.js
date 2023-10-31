@@ -370,7 +370,6 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
       const progressFilename = `progress.draft.w${week}.d${paddedDay}.csv`;
 
       // printColoredCSV(dailyCSV);
-      console.log(dailyCSV === csvHeaders);
       if ( dailyCSV === csvHeaders || dailyCSV.length === 0 ){
         return;
       }
