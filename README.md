@@ -162,7 +162,9 @@
 
   **❌ Caution:** be extremely careful with the `rm -rf` command. You can probably try to avoid running this command on your system until you get quite comfortable with the terminal, as this command can literally wipe out your entire disk drive if ran improperly.  
 
-  You can also use our [**online virtual terminal**](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/) to safely practice these commands. Remember that the file structure on your system and our virtual terminal environment is quite different from the file structure depicted in the video above. And, yes, you can safely run `rm -rf` in this virtual environment!
+  You can also use our [**online virtual terminal**](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/){:target="_blank"} to safely practice these commands. Remember that the file structure on your system and our virtual terminal environment is quite different from the file structure depicted in the video above. And, yes, you can safely run `rm -rf` in this virtual environment!
+
+  [![](./assets/jslinux.jpg)](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/){:target="_blank"}
 
   It's extremely helpful and will greatly improve your chances of retaining any new concept, to keep notes of everything that you learn (e.g. terminal commands in this case) and organize them in a manner that will help you quickly go back and find what you need. 
 
