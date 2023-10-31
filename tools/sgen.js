@@ -309,6 +309,10 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 
     let dailyCSV = csvHeaders;
 
+    if ( !dailyData.progress ){
+      return false;
+    }
+
     const progressEntries = dailyData.progress.entries;
     const { week, day }  = dailyData.progress;
     const upPaddedWeek   = week.indexOf("0") === 0 ? week.slice(1) : week;
@@ -392,6 +396,10 @@ function generateWeeklyTestsFromWeeklyData({ weeklyData, title }){
 
   weeklyData.forEach(dailyData =>{
   
+    if ( !dailyData.tests ){
+      return false;
+    }
+
     const { week, day } = dailyData.tests;
     const testEntries = dailyData.tests.entries;
     const upPaddedWeek   = week.indexOf("0") === 0 ? week.slice(1) : week;
