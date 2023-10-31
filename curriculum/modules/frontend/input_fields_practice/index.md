@@ -27,6 +27,8 @@ title: Practice with Form Input fields
 
   [![](./assets/youtube_editor_input_fields.jpg)](./assets/youtube_editor_input_fields.jpg){:target="_blank"}
 
+  <!-- ![](./assets/youtube_editor_input_fields.jpg) -->
+
   _(Click on the screenshot to see it in full scale)_
 
   The process, of course, involves coding but also doing some research to find out more about the required HTML and CSS to complete the project.
