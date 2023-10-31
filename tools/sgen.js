@@ -565,6 +565,36 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
 }
 
+// Input: Token => Output: Array(hrefs)
+function parseTokenForMediaAssets( token ){
+
+  const hrefs = [];
+
+  if ( token.type === "paragraph" ){
+
+    token.tokens.forEach( t =>{
+
+      const isImage        = t.type === "image";
+      const isInAssets     = t.href && ( t.href.indexOf("./assets") === 0 );
+      const isLink         = t.type === "link";
+      const hasImageToken  = t.tokens && Array.isArray(t.tokens) && ( t.tokens.length === 1) && ( t.tokens[0].type === "image" );
+
+      if ( isImage && isInAssets ){
+        hrefs.push(t.href);
+      }
+
+      if ( isLink && hasImageToken ){
+        hrefs.push(t.tokens[0].href);
+      }
+  
+    });
+
+  }
+
+  return hrefs;
+
+}
+
 function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   const [ day, dayMeta ] = entry;
@@ -606,25 +636,13 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   .filter( t => t.type !== "space" )
   .reduce((acc,token,idx,tokens)=>{
 
-    if ( token.type === "paragraph" ){
+    // Parse for Media Assets:
+    const hrefs = parseTokenForMediaAssets(token);
 
-      token.tokens.forEach( t =>{
-
-        const isImage        = t.type === "image";
-        const isInAssets     = t.href && ( t.href.indexOf("./assets") === 0 );
-        const isLink         = t.type === "link";
-        const hasImageToken  = t.tokens && Array.isArray(t.tokens) && ( t.tokens.length === 1) && ( t.tokens[0].type === "image" );
-
-        if ( isImage && isInAssets ){
-          dailyMediaAssets.entries.add(t.href);
-        }
-
-        if ( isLink && hasImageToken ){
-          dailyMediaAssets.entries.add(t.tokens[0].href);
-        }
-    
-      });
-
+    if ( hrefs.length > 0 ){
+      hrefs.forEach( href => {
+        dailyMediaAssets.entries.add(href);
+      })
     }
 
     if ( token.type === "heading" && token.depth === 3 ){
