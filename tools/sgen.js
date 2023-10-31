@@ -600,11 +600,24 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   .reduce((acc,token,idx,tokens)=>{
 
     if ( token.type === "paragraph" ){
+
       token.tokens.forEach( t =>{
-        if ( t.type === "image" ){
+
+        const isImage        = t.type === "image";
+        const isInAssets     = t.href && ( t.href.indexOf("./assets") === 0 );
+        const isLink         = t.type === "link";
+        const hasImageToken  = t.tokens && Array.isArray(t.tokens) && ( t.tokens.length === 1) && ( t.tokens[0].type === "image" );
+
+        if ( isImage && isInAssets ){
           dailyMediaAssets.entries.add(t.href);
         }
+
+        if ( isLink && hasImageToken ){
+          dailyMediaAssets.entries.add(t.tokens[0].href);
+        }
+    
       });
+
     }
 
     if ( token.type === "heading" && token.depth === 3 ){
