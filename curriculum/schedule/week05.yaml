@@ -8,14 +8,16 @@ schedule:
       # file://./../modules/frontend/input_fields_practice/index.md
       module: frontend/input_fields_practice
       # TODO: REVIEW: file://./../modules/accessibility/improving_website_accessibility_practice/index.md
-    2: 
+    # 2: 
       # STUDY: file://./../modules/css/frameworks/index.md
       # file://./../modules/css/
-      module: css/frameworks
+      # module: css/frameworks
+
       # TODO: STUDY + PRACTICE: A11y => Skip to Content Link
       # https://css-tricks.com/how-to-create-a-skip-to-content-link/
       # https://codepen.io/team/css-tricks/pen/jOPBQZw
       # https://www.a11yproject.com/
+
     # 3: 
     #   # Bootstrap & FontAwesome
     #   # file://./../modules/css/

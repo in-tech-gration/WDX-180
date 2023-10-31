@@ -4,83 +4,119 @@ title: Week 05 | CSS Frameworks
 
 # Week 05 | CSS Frameworks
 
-_(Updated: 27/10/2023)_
+_(Updated: 31/10/2023)_
 
 ---
 
-> **Important**
-> As you'll notice, after finishing an MDN article, there are suggestions on what to study next.
-> We strongly advise you to ignore this part and follow our curriculum's flow that you'll find on this document.
-
----
-
-<!-- Week 05 - Day 1 | CSS Frameworks -->
-
+<!-- Week 05 - Day 1 | Practice with Form Input fields -->
 <details markdown="1">
   <summary>
-    <h2>Week 05 - Day 1 | CSS Frameworks</h2>
+    <h2>
+      <span class="summary-day">Week 05 - Day 1</span> | Practice with Form Input fields</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
+
+  - [Study](#study-plan)
+  - [Exercises](#exercises)
+  - [Extra Resources](#extra-resources)
 
 ### Study Plan
 
-**What is a CSS Framework**
+  <!-- ![](assets/css.bg.media.sizing.png) -->
 
-  A CSS framework is a prepped and ready-to-use CSS library (Cascading Style Sheets). The stylesheets collection makes the job of a UI developer **easier**. 
 
-  Rather than starting every project from scratch, a CSS framework gives them tools to quickly create a user interface that they repeat and tweak during a project. They also **enable the creation** of more **standards-compliant** websites. 
 
-  While quite challenging to use or ambiguous for beginners, senior developers who know the CSS framework sites’ descriptions and buzzwords find them extremely useful.
-
-**Why Do You Need A CSS Framework?**
-
-  CSS frameworks **are designed for use in typical scenarios** such as establishing navigation bars, footers, sliders, hamburger menus, 3-column layouts, and more. 
-
-  The frameworks also **enable expanding on JavaScript, SASS, and other technologies**. If designers are time-stressed, frameworks allow setting up web pages – not just homepages, without diving into some CSS.
-
-  Other than time-saving, teams comprising several developers benefit from the standards offered by CSS frameworks. Rather than each developer on a project adding their own style of names, frameworks regulate layouts, easily read others’ code, and smooth the development cycle with fewer bugs and better team communication.
-
-  All of the above are the two strongest **pros** of working with a CSS Framework: **Faster Development** and **Consistency**
-
-  However, as you already know, every coin has 2 sides. Using any CSS Framework can have it's drawbacks and not be suitable for some cases as described below:
-
-  1. **Bloated Code**
-
-  CSS frameworks include a lot of pre-built styles and components, which can add unnecessary code to a website or application. This can slow down the website's loading time and negatively impact performance. Additionally, using pre-built components can limit the customization options available to developers and tempt developers to use them without fully understanding how they work.
-
-  2. **Learning Curve**
-
-  Each CSS framework has its own set of styles, components, and conventions that developers need to learn in order to use it effectively. This can take time and effort, especially for developers who are new to front-end development. Additionally, CSS frameworks may not always align with a developer's preferred workflow or coding style. This can make it challenging to use the framework effectively, especially if the developer is used to writing custom CSS from scratch.
-
-### Summary
-
-  CSS Frameworks are so popular these days and they get better and better as time goes by. However, just because they make things easier and faster for some cases, that does not mean that we should ditch plain CSS and restrain our options and imagination to what each CSS Framework has to offer.
-
-  Finally, it's highly suggested that you take a look on the following link focused on [Understanding the spectrum of CSS frameworks](https://dev.to/bholmesdev/when-and-why-you-should-use-css-frameworks-4oe)
-
-  > **Note:**
+  > Inspirational quote of the week:
   >
-  > You can have a look at this [video](https://www.youtube.com/watch?v=ufMqGkXL1Jw) if you're time stressed, but the article mentioned above is worth reading!
+  > ___"If I ran a school, I’d give the average grade to the ones 
+  > who gave me all the right answers, for being good parrots. 
+  > I’d give the top grades to those who made a lot of mistakes 
+  > and told me about them, and then told me what they learned from them."___
+  >
+  > R. Buckminster Fuller
 
 
 
-<!-- Exercises -->
+  ---
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week05/progress/progress.draft.w05.d01.csv**
+
+
+  This Module is about replicating some real-life User Interfaces and specifically the form fields found in the [**YouTube Studio**](https://www.youtube.com/playlist?list=PLpjK416fmKwQ42eDY75Q05uM0g3N9WNXU) video editor page.
+
+  [![](./assets/youtube_editor_input_fields.jpg)](./assets/youtube_editor_input_fields.jpg){:target="_blank"}
+
+  _(Click on the screenshot to see it in full scale)_
+
+  The process, of course, involves coding but also doing some research to find out more about the required HTML and CSS to complete the project.
+
+  Scroll down to the [**Exercises section**](#exercises) to find all the details and start the project. 
+
+<!-- Summary -->
+
+### Exercises
+
+**What are you building?**
+
+Take a close look at the screenshot below to understand what you are building:
+
+[![](./assets/form_fields_preview.jpg)](./assets/form_fields_preview.jpg)
+
+We are basically creating a single `<input>` form field of type `text`. In the screenshot, you are seeing various states of this input field. You won't be creating 5 different input fields but just one. Check the Requirements below to learn more about the various states and behavior that we want this element to exhibit.
+
+**Requirements**
+
+- Here are the color you must use:
+  - Background color for the page: `#282828`
+  - The input text color (for the user values) is: `#d0d0d0`
+  - The `placeholder` text color is: `#767676`
+  - The border color is: `#4c4c4c`
+  - The border color on hover is: `#8f8f8f`
+  - The border color on focus is: `#7c9dbd`
+  - When there is a validation error on some input, the border color is: `#862e2a`
+
+- For this project, we need all the CSS colors to be stored in [**CSS variables**](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that follow [**good naming practices**](https://stackoverflow.com/a/74253999/4861760). 
+
+- The font family for all text should be: `Arial, Helvetica, sans-serif;`
+
+- There should be special validation rule for this input field, so that the only permitted characters are the following: `A-Z`, `a-z`, `0-9` and the special characters `!, @, _, -, $, ( and )`. Also, there is a limit on how many characters should be permitted: **maximum 30 chars**. If the user has entered more than 30 characters or any non-permitted character, the input border should change to the error color (as seen in the last input example in the screenshot).
+
+- The input field must be accompanied by a special section that indicates the number of current characters along with the limit (30) as seen in the screenshot. This does not need to change dynamically. For now, you'll just want this element to contain the text: `0/30 characters`. Once you've learned about JavaScript, you'll be able to dynamically update these numbers.
+
+- The input field must also be accompanied by a `<label>` element (as depicted in the screenshot) with the informative text: `Enter your message`. The `<input>` and `<label>` elements **should be paired together** so that when the user clicks on the label, the input should receive focus. Also, when the user hovers over the label, the input should change its border color to the appropriate focus color (see list of colors above). The label should use the same color as the input text value.
+
+- You should validate your HTML code using the `W3C Validator` service and make sure to fix all warnings and errors.
+
+- You should check your web page using the Chrome [**Lighthouse**](https://developer.chrome.com/docs/lighthouse/overview/) checker and make sure that you have a green score (>90%) on the `Accessibility` checks. If the score is lower than 90%, make sure to do any necessary fixes.
+
+**Extra Challenges**
+
+- Whenever the input value is invalid, a specially crafted HTML element should appear beneath the input element, displaying an error notification: `("Error: Invalid input")`. You **do not need JavaScript** for this one to work. Do your research and come up with a plain HTML/CSS solution.
+
+[![](./assets/form_fields_error_preview.jpg)](./assets/form_fields_error_preview.jpg)
+
+**Study Resources**
+
+- [Naming CSS Stuff Is Really Hard](https://sparkbox.com/foundry/naming_css_stuff_is_really_hard){:target="_blank"}
+
+- [Input pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#input_pseudo-classes){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week05/progress/progress.draft.w05.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
 
-### Sources and Attributions
-  - [What Is A CSS Framework?](https://elementor.com/resources/glossary/what-is-a-css-framework/#:~:text=them%20extremely%20useful.-,Why%20Do%20You%20Need%20A%20CSS%20Framework%3F,%2C%20SASS%2C%20and%20other%20technologies.)
-  - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
+<!-- Sources and Attributions -->
   
 </details>
 
+<hr class="mt-1">
 
+
+
+<hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
