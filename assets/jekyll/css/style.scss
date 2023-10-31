@@ -184,6 +184,11 @@ section.main-section h1 {
   font-weight: bold;
   line-height: 4.2rem;
 }
+// Fixing Jekyll inconsistencies with <li> elements that do not generate <p>
+section.main-section li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
 
 .ctrl-back-forward {
   display: flex;
