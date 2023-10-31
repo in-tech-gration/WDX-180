@@ -16,9 +16,9 @@
 
   > Note:
   >
-  > All those {{ WDX:* }} string literals are parsed by our [SGEN tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js) that is responsible for dynamically creating each week of our curriculum.
+  > All those {{ WDX:* }} string literals are parsed by our [SGEN tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js) which is responsible for dynamically creating each week of our curriculum.
 
-  The goal of our course is to teach the fundamentals around the world of Web Development. Some of the concepts covered are:
+  The goal of our course is to teach the fundamentals of the world of Web Development. Some of the concepts covered are:
 
   - The World Wide Web
   - HTML
@@ -31,9 +31,9 @@
 
 ## WDX-180's Curriculum: Behind the scenes
 
-  After a lot of research and communication with people from a great Open Education project called [DeNepo](https://github.com/DeNepo), we decided to make our curriculum, as modular as possible. In order to achieve this, we have broken down the content of our curriculum that is going to be covered into several modules.
+  After a lot of research and communication with people from a great Open Education project called [DeNepo](https://github.com/DeNepo), we decided to make our curriculum, as modular as possible. In order to achieve this, we have broken down the content of our curriculum that will be covered into several modules.
 
-  Each of these _modules_, is consisted of _sub-modules_, which are broken down into smaller packages, called _units_. For example, _JavaScript_ is a module that is consisted of 5 different sub-modules _(Async, Core, Frameworks, NodeJS, Web APIs)_, where each one of those is consisted of smaller units. All of modules,sub-modules and units are markdown files containing information on their subject ([sample found here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/Module.sample.md)), plus some predefined regular expressions that we have established. More on those later!
+  Each of these _modules_ consists of _sub-modules_, which are broken down into smaller packages, called _units_. For example, _JavaScript_ is a module that consists of 5 different sub-modules _(Async, Core, Frameworks, NodeJS, Web APIs)_, where each one of those consists of smaller units. All modules,sub-modules, and units are markdown files containing information on their subject ([sample found here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/Module.sample.md)), plus some predefined regular expressions that we have established. More on those later!
 
   Below you can find the list of modules that are available right now:
 
@@ -50,35 +50,35 @@
 
   > Note:
   >
-  > As you can see, the content for each of those modules is not complete. If you have any suggestions of what content can be included on each of those modules, please do not hesitate to create a new Pull Request containing a markdown file with your suggestions on the selected concepts.
+  > As you can see, the content for each of those modules needs to be completed. If you have any suggestions of what content can be included in each of those modules, please do not hesitate to create a new Pull Request containing a markdown file with your suggestions on the selected concepts.
 
-  We shifted to this structure, because we want people to be able to grab any amount of modules inside our knowledge base and create their own course, no matter it's duration.
+  We shifted to this structure because we want people to be able to grab any amount of modules inside our knowledge base and create their own course, no matter its duration.
 
-  In order to achieve this, we have a [tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js) in our repository that can automatically create dynamic content based on a YAML configuration file. Right now, the SGEN tool is not "production ready", as it requires a lot of documentation, testing etc.
+  In order to achieve this, we have a [tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js) in our repository that can automatically create dynamic content based on a YAML configuration file. Right now, the SGEN tool is not "production ready", as it requires a lot of documentation, testing, etc.
 
-  Below you can find it's current functionality:
+  Below you can find its current functionality:
 
-  - Takes as input a .yml file (either [curriculum](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml) or [week](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/schedule/week04.yaml))
+  - Takes as input a .yaml file (either [curriculum](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml) or [week](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/schedule/week04.yaml))
     - Each YAML file contains
-      - a link to a draft Markdown file containing the structure desired for our curriculum, week and\or day (e.g. [curriculum draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/curriculum.draft.md), [week draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/weekly.draft.md), [day draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/daily.draft.md))
-      - Metadata: **title**, **subtitle** and _more to come_.
-      - `schedule` property that contains number of weeks/days that a curriculum/week is consisted of.
+      - a link to a draft Markdown file containing the structure desired for our curriculum, week and day (e.g. [curriculum draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/curriculum.draft.md), [week draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/weekly.draft.md), [day draft](https://raw.githubusercontent.com/in-tech-gration/WDX-180/main/curriculum/schedule/daily.draft.md))
+      - Metadata: **title**, **subtitle**, and _more to come_.
+      - `schedule` property that contains a number of weeks/days that a curriculum/week consists of.
       - each `weeks` or `days` property has a number of properties (starting from **1:**) that contain links to markdown files from our modules
-  - Parses each markdown file (either draft or module) and replaces the string regular expressions found below:
-    - `/\{\{\s?WDX:\s?WEEK\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?TITLE\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?DAY\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?DAILY_SCHEDULE\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?STUDY_PLAN\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?SUMMARY\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?EXERCISES\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?EXTRAS\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?ATTRIBUTIONS\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?INCLUDES:(.*)\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?DATE_UPDATED\s?\}\}/gi`
-    - `/\{\{\s?WDX:\s?WEEKLY_CONTENT\s?\}\}/gi`
-    - `/<!-- WDX:META:PROGRESS:(?<params>.*) -->\n/i`
-    - `/<!-- WDX:META:TESTS:(?<params>.*) -->\n/i`
+  - Parses each markdown file (either draft or module) and replaces the string templates found below:
+    - `{{WDX:WEEK}}`
+    - `{{WDX:TITLE}}`
+    - `{{WDX:DAY}}`
+    - `{{WDX:DAILY_SCHEDULE}}`
+    - `{{WDX:STUDY_PLAN}}`
+    - `{{WDX:SUMMARY}}`
+    - `{{WDX:EXERCISES}}`
+    - `{{WDX:EXTRAS}}`
+    - `{{WDX:ATTRIBUTIONS}}`
+    - `{{WDX:INCLUDES:(.*)}}`
+    - `{{WDX:DATE_UPDATED}}`
+    - `{{WDX:WEEKLY_CONTENT}}`
+    - `<!-- WDX:META:PROGRESS:<params> -->`
+    - `<!-- WDX:META:TESTS:<params> -->`
 
   Based on the functionality of the current version of our SGEN tool, WDX-180 cohort_02's curriculum can be found [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml).
 
@@ -87,8 +87,8 @@
 ## Useful Links
 
   - [inTECHgration's website](https://intechgration.io/)
-    - Currently the GitHub repository for our website is private, so if you have any ideas and wish to contribute to make it look more awesome, please contact **Kostas**, **Abed** or **Asteris** for more!
+    - Currently, the GitHub repository for our website is private, so if you have any ideas and wish to contribute to making it look more awesome, please contact **Kostas**, **Abed**, or **Asteris** for more!
   - [cohort_02's current page](https://in-tech-gration.github.io/WDX-180/)
     - This is our current GitHub Page that contains the curriculum available for the current students.
     - [GitHub Repository](https://github.com/in-tech-gration/WDX-180)
-      - As you can see the repository is public, however access is required to make changes. Once again, please contact **Kostas**, **Abed** or **Asteris** for more!
+      - As you can see the repository is public, however, access is required to make changes. Once again, please contact **Kostas**, **Abed**, or **Asteris** for more!
