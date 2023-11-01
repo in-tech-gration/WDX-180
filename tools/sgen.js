@@ -23,7 +23,9 @@ const {
 } = require("./utils");
 const wdxTemplateRegexes = {
 
+  // TODO: weekRegex will be replaced by weekFullRegex and weekNumRegex
   weekRegex:          /\{\{\s?WDX:\s?WEEK\s?\}\}/gi,
+  weekFullRegex:      /\{\{\s?WDX:\s?WEEK_FULL\s?\}\}/gi,
   titleRegex:         /\{\{\s?WDX:\s?TITLE\s?\}\}/gi,
   dayRegex:           /\{\{\s?WDX:\s?DAY\s?\}\}/gi,
   scheduleRegex:      /\{\{\s?WDX:\s?DAILY_SCHEDULE\s?\}\}/gi,
@@ -172,6 +174,7 @@ function getInclude({ file, day, numOfWeek }){
   const {
 
     weekRegex,
+    weekFullRegex,
     dayRegex
 
   } = wdxTemplateRegexes;
@@ -183,6 +186,7 @@ function getInclude({ file, day, numOfWeek }){
     const contents = fs.readFileSync(includeFile, "utf-8");
     return contents
     .replace(weekRegex,String(numOfWeek).padStart(2,"0"))
+    .replace(weekFullRegex, `Week ${numOfWeek}`)
     .replace(dayRegex, String(day).padStart(2,"0"));
 
   } catch(e) {
@@ -345,8 +349,11 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
             } 
             break;
         }
-        // Replaced ${title} (Weekly title) with ${dailyData.title} (Daily title) 
-        dailyCSV += `\n${upPaddedWeek},${day},${dailyData.title},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
+
+        const weeklyTitle = title;
+        const dailyTitle  = dailyData.title;
+
+        dailyCSV += `\n${upPaddedWeek},${day},${weeklyTitle}: ${dailyTitle},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
 
       })
 
