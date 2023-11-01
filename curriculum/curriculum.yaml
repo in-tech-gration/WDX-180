@@ -59,6 +59,10 @@ Syllabus:
         19:
           title: "Node.js 2, NoSQL Databases & Docker"
           # STUDY: https://github.com/btholt/complete-intro-to-sql
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/03-sqlite.md
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/01-tables.md
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
         20:
           title: "React 1"
         21:
