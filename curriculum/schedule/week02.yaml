@@ -3,20 +3,27 @@ daily_input: curriculum/schedule/daily.draft.md
 title: HTML, Accessibility & Git
 schedule: 
   days:
-    1:
+  
+    1: # Git
       # TODO: Add to this week: File Paths: https://www.kirupa.com/html5/all_about_file_paths.htm
       # file://./../modules/
       module: 
-    2: 
+      # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/02-html
+      # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/blob/main/lessons/07-other-stuff-you-should-know/B-git-and-github.md
+
+    2: # Intro to HTML
       # file://./../modules/
       module: 
-    3: 
+
+    3: # HTML Tables
       # file://./../modules/
       module: 
-    4: 
+
+    4: # HTML Forms
       # file://./../modules/
       module: 
-    5: 
+
+    5: # HTML Forms & Accessibility
       # HTML Form Controls & Accessibility
       # file://./../modules/
       # TODO: Addition: What you need to know about forms and placeholders

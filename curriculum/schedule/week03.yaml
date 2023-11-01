@@ -3,13 +3,14 @@ daily_input: curriculum/schedule/daily.draft.md
 title: CSS, Accessibility & Git
 schedule: 
   days:
-    1:
+    1: # Git
       # file://./../modules/version_control/git/branching_and_remote_git/index.md
       module: version_control/git/branching_and_remote_git
-    2: 
+      # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/03-css
+    2: # What is CSS
       # file://./../modules/css/what_is_css/index.md
       module: css/what_is_css
-    3: 
+    3: # CSS Selectors
       # file://./../modules/css/css_selectors/index.md
       module: css/css_selectors
       # TODO: INTEGRATE SELECTOR GAME

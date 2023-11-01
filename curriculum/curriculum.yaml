@@ -30,8 +30,10 @@ Syllabus:
           title: "JavaScript Core 3"
         9: 
           title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
+          # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
         10: 
           title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
+          # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
         11: 
           title: "Functional Programming 1, Clean Code & Testing"
         12: 
