@@ -192,6 +192,9 @@ html {
 
 To understand the underlying idea, you can read [the CSS Tricks article on box-sizing](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/){:target="_blank"}.
 
+> It's worth noting that the `box-sizing: border-box;` is considered the best way to deal with an element's box size, so most of the popular CSS libraries, start by making sure that **all elements** have this setting applied to them. Check the [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss/blob/b7bafaaf85d48becb166a1bf0b4ff3063ffe4a7f/src/css/preflight.css#L6) and [Bootstrap CSS](https://github.com/twbs/bootstrap/blob/2a40d5309992ac0eabb64211c47bc58681574083/scss/_reboot.scss#L16) source code to see how it is applied.
+
+
 ## Playing with box models
 
 In the example below, you can see two boxes. Both have a class of `.box`, which gives them the same `width`, `height`, `margin`, `border`, and `padding`. The only difference is that the second box has been set to use the alternative box model.

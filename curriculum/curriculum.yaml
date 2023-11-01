@@ -46,8 +46,10 @@ Syllabus:
           title: "JavaScript Intermediate 1 & Git"
         14:
           title: "Data Structures"
+          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         15:
           title: "Algorithms"
+          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         16:
           title: "Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more"
         17:
@@ -56,6 +58,7 @@ Syllabus:
           title: "Node.js 1"
         19:
           title: "Node.js 2, NoSQL Databases & Docker"
+          # STUDY: https://github.com/btholt/complete-intro-to-sql
         20:
           title: "React 1"
         21:
