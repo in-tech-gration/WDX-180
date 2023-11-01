@@ -570,6 +570,12 @@ function parseTokenForMediaAssets( token ){
 
   const hrefs = [];
 
+  if ( token.type === "list" && token.items ){
+    token.items.forEach( item =>{
+      // console.log( item );
+    })
+  }
+
   if ( token.type === "paragraph" ){
 
     token.tokens.forEach( t =>{
@@ -586,7 +592,7 @@ function parseTokenForMediaAssets( token ){
       if ( isLink && hasImageToken ){
         hrefs.push(t.tokens[0].href);
       }
-  
+
     });
 
   }

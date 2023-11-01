@@ -25,6 +25,11 @@ schedule:
       # Tailwind 1
       # file://./../modules/css/
       # module: css/
+      # TODO: CONTENT: 1) Tailwind in 100 Seconds (https://www.youtube.com/watch?v=mr15Xzb1Ook)
+      # CONTENT: 2) Tailwind CSS Introduction, Basics & Guided Tutorial (https://www.youtube.com/watch?v=pYaamz6AyvU)
+      # CONTENT: 3) How To Make A Website With Tailwind CSS Step By Step Tutorial For Beginners (https://www.youtube.com/watch?v=8eQwgc9nc64)
+      # CONTENT: 4) Practice: Recreate: Tailwind CSS - why CSS utility classes save so much time (https://www.youtube.com/watch?v=oU5ar0dmQEY)
+ 
     5: 
       # Tailwind 2
       # file://./../modules/css/frameworks/tailwind/make_a_website_using_tailwind/index.md

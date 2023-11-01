@@ -455,6 +455,8 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
   This is one of the toughest modules on the curriculum, so make sure to arm yourself with plenty of coffee and concentration!
 
+  Don't worry if this feels overwhelming and probably too much for a single day. It is intended to be so. Just go through the material, pick up as many concepts as you can, try things out and get a first taste of one of the most popular programming languages in the world. You'll have plenty of time later on during this course to learn all about this language.
+
   **What you'll learn:**
 
   - How to install the **Live Server** VSCode extension and develop using a local web server
