@@ -3,21 +3,21 @@ daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 1
 schedule: 
   days:
-    1:
+    1: # Introduction to JavaScript
       # TODO: Add exercises 1, 2, 3, 4 (basics), 5, 8
       # from here: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
       # TODO: Arrays? => Intro: https://www.youtube.com/watch?v=seBDTeZmb-k (Without Scratch)
-    2:
+    2: # Introduction to Objects
+      # file://./../modules/javascript/core/objects/intro_to_objects/index.md
+      module: javascript/core/objects/intro_to_objects
+    3: # Introduction to Arrays
+      # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
+      module: javascript/core/arrays/intro_to_arrays
+    4: # 
       # file://./../modules/javascript/.../index.md
       module: javascript/
-    3:
-      # file://./../modules/javascript/.../index.md
-      module: javascript/
-    4:
-      # file://./../modules/javascript/.../index.md
-      module: javascript/
-    5:
+    5: # 
       # file://./../modules/javascript/.../index.md
       module: javascript/
