@@ -250,6 +250,10 @@ function copyModuleMediaAssets({ weeklyData, title }){
 
   weeklyData.forEach( dailyData =>{
 
+    if ( !dailyData ){
+      return false;
+    }
+
     const mediaEntries = dailyData.media;
 
     if ( mediaEntries ){
@@ -309,7 +313,7 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
 
     let dailyCSV = csvHeaders;
 
-    if ( !dailyData.progress ){
+    if ( !dailyData || !dailyData.progress ){
       return false;
     }
 
@@ -341,7 +345,8 @@ function generateWeeklyProgressSheetFromWeeklyData({ weeklyData, title }){
             } 
             break;
         }
-        dailyCSV += `\n${upPaddedWeek},${day},${title},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
+        // Replaced ${title} (Weekly title) with ${dailyData.title} (Daily title) 
+        dailyCSV += `\n${upPaddedWeek},${day},${dailyData.title},${extras ? "EXTRAS: " + task : task},${level},0-10,FALSE,${instructions}`;
 
       })
 
@@ -395,7 +400,7 @@ function generateWeeklyTestsFromWeeklyData({ weeklyData, title }){
 
   weeklyData.forEach(dailyData =>{
   
-    if ( !dailyData.tests ){
+    if ( !dailyData || !dailyData.tests ){
       return false;
     }
 
@@ -726,6 +731,11 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   let dailyContent = "";
 
+  const msg = `Parsing "${fm.title}" sections:`;
+  const msgUnderline = Array.from({ length: msg.length }, _=> "=").join("");
+  ok( msg );
+  ok( msgUnderline );
+
   // Go through the Markdown and replace all {{ WDX }} with content:
   dailyMarkdownTokens.forEach((token,idx,tokens) =>{
     
@@ -785,6 +795,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   const hasDailyMediaAssets = dailyMediaAssets.entries.size > 0;
 
   return { 
+    title: fm.title,
     content: dailyContent, 
     progress: dailyProgressObject, 
     tests: dailyTestsObject,
