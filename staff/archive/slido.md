@@ -70,7 +70,7 @@ A: There are certain limitations though, when you are part of the free plan on G
 
  Q: touch command doesnt work on command line
 
- A: This Q was covered extensively on the Q&A live section: https://www.youtube.com/watch?v=mhUiYaZjEvU&list=PLdo7hJB0agEkkLFrssQCGWnV08Q50X_M0&index=5 
+ A: This Q was covered extensively on the Q&A live section: https://www.youtube.com/watch?v=mhUiYaZjEvU&list=PLdo7hJB0agEkkLFrssQCGWnV08Q50X_M0&index=5        
 
  ---
 
