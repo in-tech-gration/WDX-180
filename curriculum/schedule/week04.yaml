@@ -15,6 +15,7 @@ schedule:
     3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
       # file://./../modules/css/layout_part1/index.md
       module: css/layout_part1
+      # TODO: STUDY & INTEGRATE: https://flexbox.ninja/demos/holy-grail-layout/
       # TODO: INTEGRATE CSS GRID IN 7min
       # https://www.youtube.com/watch?v=uAagyjvxSPY
       # After: "Read: Introduction to CSS layout"

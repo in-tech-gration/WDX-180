@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Intermediate 1 & Git
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/
+      module: javascript/
+      # TODO: Add: How to speed up your workflow with Console shortcuts | DevTools Tips (https://www.youtube.com/watch?v=hdRDTj6ObiE) + https://developer.chrome.com/docs/devtools/console/utilities/
+    2: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    3: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    4: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    5: # 
+      # file://./../modules/javascript/
+      module: javascript/
