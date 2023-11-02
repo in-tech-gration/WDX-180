@@ -163,6 +163,8 @@ _(Updated: 18/09/2023)_
 
 </details>
 
+<hr class="mt-1">
+
 <!-- Week 2 - Day 2 | HTML -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 2 | HTML</h2></summary>
@@ -229,6 +231,8 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 </details>
+
+<hr class="mt-1">
 
 <!-- Week 2 - Day 3 | HTML Tables -->
 <details markdown="1">
@@ -299,6 +303,8 @@ _(Updated: 18/09/2023)_
 
 </details>
 
+<hr class="mt-1">
+
 <!-- Week 2 - Day 4 | HTML Forms -->
 <details markdown="1">
   <summary><h2>Week 2 - Day 4 | HTML Forms</h2></summary>
@@ -366,6 +372,8 @@ _(Updated: 18/09/2023)_
     - [Accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility) / [Permalink](https://github.com/mdn/content/blob/26f68076bcd8e3d5893cffcd9c1c01ff949318a9/files/en-us/learn/accessibility/index.md)
 
 </details>
+
+<hr class="mt-1">
 
 <!-- Week 2 - Day 5 | HTML Form Controls & Accessibility -->
 <details markdown="1">
@@ -480,6 +488,8 @@ _(Updated: 18/09/2023)_
 
 ### Sources and Attributions
 </details>
+
+<hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
