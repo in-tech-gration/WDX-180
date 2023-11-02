@@ -918,23 +918,33 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
 function init() {
 
   /* eslint-disable-next-line no-undef */
-  const configYamlPath = process.argv[2];
-  
+  const pathOrNumber = process.argv[2]; // Either curriculum/schedule/week04.yaml or 4
+  const weekNum = parseInt(pathOrNumber, 10);
+  let configYamlPath = pathOrNumber;
+
+  // Handle alternative syntax: npm run sgen 5
+  if ( typeof weekNum === "number" && !Number.isNaN(weekNum) ){
+    configYamlPath = path.join(
+      "curriculum", 
+      "schedule", 
+      `week${String(weekNum).padStart(2,"0")}.yaml`
+    );
+  }
+
   if (!configYamlPath) {
     warn("No configYamlPath.")
     /* eslint-disable-next-line no-undef */
     process.exit();
   }
 
-  const configYaml = fs.readFileSync(path.join(configYamlPath), "utf-8");
+  const configYaml = fs.readFileSync(configYamlPath, "utf-8");
   const { input, output, Syllabus } = yaml.parse(configYaml);
 
   try {
 
-    const textContent = fs.readFileSync(input, "utf-8");
-
     if (Syllabus) {  // e.g. curriculum/curriculum.yaml
-
+      
+      const textContent = fs.readFileSync(input, "utf-8");
       console.log(`Processing Syllabus: ${input}`);
       const outputContent = createSyllabusFromMarkdownText({ textContent, configYaml });
       fs.writeFileSync(output, outputContent, "utf-8");

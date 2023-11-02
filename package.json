@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "gen": "node tools/sgen curriculum/curriculum.yaml",
+    "sgen": "node tools/sgen",
     "cockpit": "node tools/instructor/server.js",
     "cockpit:dev": "nodemon -e .js,.njk,.css,.yaml tools/instructor/server.js --noopen",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
