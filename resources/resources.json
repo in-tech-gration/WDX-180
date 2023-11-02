@@ -2440,6 +2440,44 @@
       "language": [
         "en"
       ]
+    },
+    "html-vs-dom-lets-debug-them": {
+      "type": "YouTube",
+      "duration": 312,
+      "title": "HTML vs DOM? Let’s debug them",
+      "date": "26/10/2023",
+      "youtube": {
+        "id": "J-02VNxE7lE",
+        "channel_id": "UCnUYZLuoy1rq1aVMwx4aTzw",
+        "channel_title": "Chrome for Developers",
+        "thumbnail_url": "https://i.ytimg.com/vi/J-02VNxE7lE/sddefault.jpg"
+      },
+      "tags": [
+        "Chrome",
+        "Developers",
+        "Google",
+        "Web",
+        "Chrome Devtools",
+        "chrome developer tools",
+        "intro to devtools tips",
+        "what are devtools tips",
+        "how to use devtools tips",
+        "devtools tips tutorial",
+        "devtools",
+        "chrome",
+        "developer",
+        "developers",
+        "google developer",
+        "google developers",
+        "google chrome developers",
+        "chrome developer",
+        "chrome developers",
+        "google chrome",
+        "Jecelyn Yeen"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
