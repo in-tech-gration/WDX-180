@@ -38,5 +38,7 @@ title: CSS Layout Part 2
   <!-- WDX:META:TESTS:name=Test Exercise: 'Fundamental layout comprehension'|type=exist|user_folder=fundamental_layout_comprehension|files=index.html,styles.css,images/balloon-sq1.jpg,images/balloon-sq2.jpg,images/balloon-sq3.jpg,images/balloon-sq4.jpg,images/balloon-sq5.jpg,images/balloon-sq6.jpg, -->
   - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension){:target="_blank"}
 
+  - [**Conquering Responsive Layouts**](https://courses.kevinpowell.co/conquering-responsive-layouts): a free, 21-day challenge to learn all about responsive designs with the master of CSS Kevin Powell.
+
 ### Sources and Attributions
 

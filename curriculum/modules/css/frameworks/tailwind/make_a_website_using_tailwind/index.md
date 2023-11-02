@@ -20,9 +20,14 @@ title: How To Make A Website With Tailwind CSS
     - [**Image.png**](./assets/Image.png){:target="_blank"}
     - [**logo.png**](./assets/logo.png){:target="_blank"}
 
+  You will need to create a repository named **grocify** under your GitHub account and enable GitHub Pages on that. Once you have finished recreating the website in the video, update the progress sheet with your GitHub repository's Pages URL, that would look something like this: `https://YOUR_USERNAME.github.io/grocify`
+
 ### Summary
 
 ### Exercises
+
+  <!-- WDX:META:PROGRESS:task=Complete the 'Make a Website with Tailwind CSS' challenge -->
+  - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
 
 ### Extra Resources
 

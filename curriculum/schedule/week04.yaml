@@ -4,8 +4,8 @@ title: CSS 2 & Performance
 schedule: 
   days:
     1: # Styling Tables, Debugging and Organizing CSS
-      # file://./../modules/css/styling_tables_debugging_organizing/index.md
-      module: css/styling_tables_debugging_organizing
+      # file://./../modules/css/misc/styling_tables_debugging_organizing/index.md
+      module: css/misc/styling_tables_debugging_organizing
       # TODO: STUDY ALTERNATIVE/EXTRA EXERCISES: 
       # 1) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/http.status.codes.tables.exercise.jpeg
       # 2) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/monthly.sheet.jpg 
@@ -34,7 +34,7 @@ schedule:
       # +Semantic HTML page structure
       # -Uses float/clear for layout
       # +Media queries for responsive version
-    4: 
+    4: # Responsive Design, Media Queries
       # file://./../modules/css/layout_part2/index.md
       module: css/layout_part2
     5: 

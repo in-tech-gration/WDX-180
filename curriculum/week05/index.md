@@ -4,7 +4,7 @@ title: Week 05 | CSS Frameworks
 
 # Week 05 | CSS Frameworks
 
-_(Updated: 31/10/2023)_
+_(Updated: 2/11/2023)_
 
 ---
 
@@ -139,9 +139,18 @@ We are basically creating a single `<input>` form field of type `text`. In the s
     - [**Image.png**](./assets/Image.png){:target="_blank"}
     - [**logo.png**](./assets/logo.png){:target="_blank"}
 
+  You will need to create a repository named **grocify** under your GitHub account and enable GitHub Pages on that. Once you have finished recreating the website in the video, update the progress sheet with your GitHub repository's Pages URL, that would look something like this: `https://YOUR_USERNAME.github.io/grocify`
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week05/progress/progress.draft.w05.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 

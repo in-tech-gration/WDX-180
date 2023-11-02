@@ -4,7 +4,7 @@ title: Week 04 | CSS 2 & Performance
 
 # Week 04 | CSS 2 & Performance
 
-_(Updated: 1/11/2023)_
+_(Updated: 2/11/2023)_
 
 ---
 
@@ -244,6 +244,8 @@ _(Updated: 1/11/2023)_
 ### Extra Resources
 
   - [MDN's Assessment: **Fundamental layout comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension){:target="_blank"}
+
+  - [**Conquering Responsive Layouts**](https://courses.kevinpowell.co/conquering-responsive-layouts): a free, 21-day challenge to learn all about responsive designs with the master of CSS Kevin Powell.
 
 <!-- Sources and Attributions -->
   
