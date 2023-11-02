@@ -6,7 +6,11 @@ title: Week 1
 
 _(Updated: 28/09/2023)_
 
-Welcome to the first part of our curriculum, WDX 60°. The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these 3 building blocks: HTML, CSS and JavaScript. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
+![](./assets/colorful.02.png)
+
+**Welcome to the first part of our curriculum, WDX 60°!** 
+
+The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these 3 building blocks: HTML, CSS and JavaScript. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
 
 Before you dive in, **make sure that you have your notebook** and colored pens besides your computer, in order to pause and take those invaluable notes as you move along the curriculum.
 
