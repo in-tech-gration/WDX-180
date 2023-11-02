@@ -38,5 +38,5 @@ schedule:
       # file://./../modules/css/layout_part2/index.md
       module: css/layout_part2
     5: 
-      # file://./../modules/css/web_performance/index.md
-      module: css/web_performance
+      # file://./../modules/css/performance/web_performance/index.md
+      module: css/performance/web_performance
