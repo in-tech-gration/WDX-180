@@ -581,16 +581,30 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
 }
 
+// Deep Markdown Token parsing for Assets (./assets/*)
+function parseTokenForAssetAndPushToArray( token, hrefs ){
+  
+  if ( token.type === "link" ){
+    if ( token.href.indexOf("./assets") === 0 ){
+      hrefs.push(token.href);
+    }
+  }
+  if ( token.tokens ){
+    token.tokens.forEach( t => parseTokenForAssetAndPushToArray( t, hrefs ));
+  }
+  if ( token.items ){
+    token.items.forEach( t => parseTokenForAssetAndPushToArray( t, hrefs ));
+  }
+
+}
+
 // Input: Token => Output: Array(hrefs)
 function parseTokenForMediaAssets( token ){
 
   const hrefs = [];
 
-  if ( token.type === "list" && token.items ){
-    token.items.forEach( item =>{
-      // console.log( item );
-    })
-  }
+  // TODO: Probably this function can replace the following 2 if statements altogether as it parses all the MD Tree for links with ./assets
+  parseTokenForAssetAndPushToArray( token, hrefs );
 
   if ( token.type === "paragraph" ){
 
