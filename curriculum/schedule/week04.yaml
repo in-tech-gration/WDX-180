@@ -37,6 +37,6 @@ schedule:
     4: # Responsive Design, Media Queries
       # file://./../modules/css/misc/layout_part2/index.md
       module: css/misc/layout_part2
-    5: 
+    5: # Web Performance & CSS Pre-processors
       # file://./../modules/css/performance/web_performance/index.md
       module: css/performance/web_performance
