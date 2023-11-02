@@ -18,11 +18,153 @@
 
 ## Week 03 (Day 01-05)
 
+  Q: Can i rename my new branch after i create it?
+
+  A: Yes, you can.
+
+  ---
+
+  Q: what is git add -A?
+
+  A: it allows for staging all files at once. please, take a few minutes to review this post: https://www.geeksforgeeks.org/difference-between-git-add-a-and-git-add/
+
+  A: Run git add --help to find out about a particular git command.
+
+  ---
+
+  Q: Difference between git push --set-upstream and git push -set-upstream?
+
+  A: Just a typo. The second does not exist
+
+  ---
+
+  Q: Where exactly do we push the file new-feature-list.md?
+
+  A: When not stated explicitly, you should use the root folder of the current week and day, for example: /user/week03/exercises/day01/new-feature-list.md  (edited)  
+
+  A: If it's not a single file (e.g. HTML, CSS, JS) you should create a folder and put the files inside, for example: user/weekXX/exercises/dayXX/exercise_name/*files here
+
+  A: Update: the correct folder structure is user/weekXX/exercises/dayXX/
+
+  ---
+
+  Q: What is the head branch and the base branch?
+
+  A: In the context of a Pull Request: "The `Base Branch` is the branch where your new changes should be applied / integrated into.The `Head Branch` is the branch that contains the changes you want to integrate."
+
+  A: Another description from the docs: "Once you're satisfied with your work, you can open a pull request to merge the changes in the current branch (the head branch) into another branch (the base branch). " ~ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#working-with-branches
+
+  ---
+
+  Q: How Repository administrator can add constraints to branches using branch protection rules or repository rulesets to prevent merging from other collaborators?
+
+  A: Start with the Docs: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+
+  A: You can find the relevant settings under: Settings > General > Code and Automation: Branches > Branch Protection Rules
+
+  A: There are certain limitations though, when you are part of the free plan on GitHub, so make sure to check which options that are mentioned in the Docs are actually available in the free plan (vs Business/Enterprise plans)
+
 ---
 
 ## Week 02 (Day 01-05)
 
---- 
+  Q: touch command doesnt work on command line
+
+  A: This question was covered extensively on the Q&A live section: https://www.youtube.com/watch?v=mhUiYaZjEvU&list=PLdo7hJB0agEkkLFrssQCGWnV08Q50X_M0&index=5        
+
+  ---
+
+  Q: Could someone provide me an example how "secure passphrase" should look??
+
+  A: https://www.youtube.com/watch?v=opRMrEfAIiI
+
+  ---
+
+  Q: javascript-first-steps,Largest Number Checker do we have to check for null and equal or not?  (edited)  
+
+  A: It is not required to check for null cases, but it's a good practice! For equality, I guess you can say it's redundant and you can figure out why :D
+
+  ---
+
+  Q: https://youtu.be/mJ-qvsxPHpY?t=622  need git checkout -b main  before push and always use main instead of master as it is changed
+
+  A: Yep, that's a good reminder. Curriculum updated. :)
+
+  ---
+
+  Q: git remote -v may i know what is -v flag stands for
+
+  A: git remote --help provides the A: "--v or --verbose"
+
+  A: "Be a little more verbose and show remote url after name. For promisor remotes, also show which filter (blob:none etc.) are configured. NOTE: This must be placed between remote and subcommand."
+
+  ---
+
+  Q: How can i automate this process or run it from command line? github repo -> sync fork-> update branch 
+
+  A: It can be automated, but a lot of advanced git commands must be executed which might lead to confusion and errors, so stay tuned. :) Automating (the boring stuff) is the way to go, so kudos for the Q. :)
+
+  ---
+
+  Q: Can i use different vscode themes on different types of files?
+
+  A: What did Google come up with?
+
+  ---
+
+  Q: What do we have to write inside a <td></td> to get a number to the power of x? For example, 1000^3?
+
+  A: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
+
+  A: Hint #1: https://www.wikiwand.com/en/Subscript_and_superscript
+
+  ---
+
+  Q: how to find the correct color of text in an image?
+
+  A: Microsoft has a great tool of toys as they call them that can do many sorts of thinkgs. They're called PowerToys and includes lots of helpful tools like a color picker that you're looking for. Give them a try and you won't miss! https://learn.microsoft.com/en-us/windows/powertoys/
+
+  A: This might help also: https://developer.chrome.com/docs/devtools/css/color/ For images found on websites or images dragged and dropped in the browser.
+
+  ---
+
+  Q: Computer detects wrong font color because image divided to pixels.
+
+  A: Can you elaborate a bit on this?
+
+  ---
+
+  Q: Can we use git as a command to backup our files with one command?
+
+  A: Yes, that is possible.
+
+  ---
+
+  Q: What type of files are supported by git and is there a size limit for use of a file?
+
+  A: Regarding file size: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github Other than that, git can handle almost any file.
+
+  ---
+
+  Q: How can I add multiple collaborators at once from a list?
+
+  A: A quick Google search didn't bring any results. Probably some scripting might help here through their API.
+
+  ---
+
+  Q: How can I ignore folders, files or file types from git tracking them?
+
+  A: Use the .gitignore Luke!
+
+  A: You can also ignore .gitignore
+
+  ---
+
+  Q: Does the input element need a default value attribute and in what cases?
+
+  A: No, it's an optional attribute. Depending on the case of the form you're making, you can use it to fill the value of the input with a predefined one, according to your needs.
+
+  ---
 
 ## Week 01 (Day 01)
 
@@ -32,11 +174,11 @@
 
 ## Week 01 (Day 02)
 
-  QUESTION: I will need a clear explanation about idempotence in examples.
+  Q: I will need a clear explanation about idempotence in examples.
 
   _(Source: https://speakerdeck.com/rkh/http-rubymonsters-edition?slide=20)_
 
-  ANSWER: Let's go through the process of how we suggest you start your search on a new term, either technical in nature or found in a technical context.
+  A: Let's go through the process of how we suggest you start your search on a new term, either technical in nature or found in a technical context.
 
   If the term does not make sense in english or you are unfamiliar with it, we suggest that you start with finding out and understanding its formal definition. You can do that by googling `define [ACTUAL WORD]`, e.g. let's start by searching `define idempotence` (which in turns leads us to `idempotent`)
 
@@ -115,7 +257,7 @@
 
   ---
 
-  Q: Sorry, Kosta, one more question. I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
+  Q: I'm getting a 404 for the curriculum page. What should I do regarding this? https://in-tech-gration.github.io/WDX-180/-
 
   A: Try removing the - at the end: https://in-tech-gration.github.io/WDX-180/
 
@@ -123,7 +265,7 @@
 
   ---
 
-  Q: I have a question) we have to stylish only the page  "world's first Website"? And in the way as we want or how? 
+  Q: We have to stylish only the page "world's first Website"? And in the way as we want or how? 
 
   A: You can style it as you like. There is no restriction in that. Use what you've learned today and make it look as pleasing as you see fit! 
 
@@ -137,9 +279,9 @@
   
   ---
 
-  Q: Hello !How can i do to see on window10 pro open terminal ? but i can only Open Git Bash ?Thanks
+  Q: How can i do to see on window10 pro open terminal? I can only Open Git Bash?
 
-  A: Hello! Git Bash it just fine. Do you mean, how do you access Git Bash via VSCode?
+  A: Git Bash it just fine. Do you mean, how do you access Git Bash via VSCode?
 
   Q: But i have visual studio code already in my machine
 
@@ -148,7 +290,7 @@
 
   ---
 
-  Q: Sorry, I forgot to ask what platform we'll be using for class in case I need to download something?
+  Q: What platform we'll be using for class in case I need to download something?
 
   A: Our main tools are the browser (through which you'll be accessing the curriculum -https://in-tech-gration.github.io/WDX-180/- and study material), our code editor (VSCode) and a few other tools (Node, git, etc.)
 
@@ -168,8 +310,6 @@
   - Paste them inside folder user/week01/exercises/day03/1-parent-child/ .
   - Work on the copied files and complete the exercise.
   - Upload to your repo.
-
-  Q: got it thnx)
 
   ---
 
@@ -192,11 +332,3 @@
   A: it doesn't exist you can create one. If you right click on day04 in options click "New folder" and give it a name "cern" hit "Enter" inside  *cern*  you can create your html and assignment related files.
 
   A: and also i think you don't need to search anything in curriculum everything related to us students you can find in user directory or https://in-tech-gration.github.io/WDX-180/ curriculum will confuse you.
-
-
-
-
-
-
-
-
