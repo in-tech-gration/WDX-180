@@ -3,8 +3,7 @@ daily_input: curriculum/schedule/daily.draft.md
 title: CSS Frameworks
 schedule: 
   days:
-    1: # ✅
-      # Group Project: Practice HTML Form Input Fields  
+    1: # ✅ Group Project: Practice HTML Form Input Fields  
       # file://./../modules/frontend/input_fields_practice/index.md
       module: frontend/input_fields_practice
       # TODO: REVIEW: file://./../modules/accessibility/improving_website_accessibility_practice/index.md
@@ -19,22 +18,15 @@ schedule:
       # https://codepen.io/team/css-tricks/pen/jOPBQZw
       # https://www.a11yproject.com/
 
-    # 3: # 🚧
-    #   # Bootstrap & FontAwesome
-    #   # file://./../modules/css/
-    #   module: css/
-
-    # 4: # 🚧
-      # Tailwind 1
-      # file://./../modules/css/
+    # 3: # 🚧 Bootstrap & FontAwesome
+      # # file://./../modules/css/
       # module: css/
-      # TODO: CONTENT: 1) Tailwind in 100 Seconds (https://www.youtube.com/watch?v=mr15Xzb1Ook)
-      # CONTENT: 2) Tailwind CSS Introduction, Basics & Guided Tutorial (https://www.youtube.com/watch?v=pYaamz6AyvU)
-      # CONTENT: 3) How To Make A Website With Tailwind CSS Step By Step Tutorial For Beginners (https://www.youtube.com/watch?v=8eQwgc9nc64)
-      # CONTENT: 4) Practice: Recreate: Tailwind CSS - why CSS utility classes save so much time (https://www.youtube.com/watch?v=oU5ar0dmQEY)
+
+    4: # 🚧 Tailwind 1
+      # file://./../modules/css/frameworks/tailwind/intro/index.md
+      module: css/frameworks/tailwind/intro
  
-    5: # ✅
-      # Tailwind 2
+    5: # ✅ Tailwind 2
       # file://./../modules/css/frameworks/tailwind/make_a_website_using_tailwind/index.md
       module: css/frameworks/tailwind/make_a_website_using_tailwind
 

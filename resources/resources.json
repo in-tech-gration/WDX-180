@@ -2479,10 +2479,37 @@
         "en"
       ]
     },
-    "vscode-tailwindcss" : {
+    "vscode-tailwindcss": {
       "type": "VSCode Extension",
       "identifier": "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
-      "tags": [ "Tailwind", "VSCode" ]
+      "tags": [
+        "Tailwind",
+        "VSCode"
+      ]
+    },
+    "tailwind-in-100-seconds": {
+      "type": "YouTube",
+      "duration": 141,
+      "title": "Tailwind in 100 Seconds",
+      "date": "26/08/2021",
+      "youtube": {
+        "id": "mr15Xzb1Ook",
+        "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+        "channel_title": "Fireship",
+        "thumbnail_url": "https://i.ytimg.com/vi/mr15Xzb1Ook/sddefault.jpg"
+      },
+      "tags": [
+        "app development",
+        "lesson",
+        "tailwind",
+        "tailwindcss",
+        "webdev",
+        "web design",
+        "css"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

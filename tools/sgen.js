@@ -25,9 +25,13 @@ const wdxTemplateRegexes = {
 
   // TODO: weekRegex will be replaced by weekFullRegex and weekNumRegex
   weekRegex:          /\{\{\s?WDX:\s?WEEK\s?\}\}/gi,
+  weekNumRegex:       /\{\{\s?WDX:\s?WEEK_NUM\s?\}\}/gi,
   weekFullRegex:      /\{\{\s?WDX:\s?WEEK_FULL\s?\}\}/gi,
   titleRegex:         /\{\{\s?WDX:\s?TITLE\s?\}\}/gi,
+  // TODO: dayRegex will be replaced by dayFullRegex and dayNumRegex
   dayRegex:           /\{\{\s?WDX:\s?DAY\s?\}\}/gi,
+  dayFullRegex:       /\{\{\s?WDX:\s?DAY_FULL\s?\}\}/gi,
+  dayNumRegex:        /\{\{\s?WDX:\s?DAY_NUM\s?\}\}/gi,
   scheduleRegex:      /\{\{\s?WDX:\s?DAILY_SCHEDULE\s?\}\}/gi,
   studyPlanRegex:     /\{\{\s?WDX:\s?STUDY_PLAN\s?\}\}/gi,
   summaryRegex:       /\{\{\s?WDX:\s?SUMMARY\s?\}\}/gi,
@@ -537,7 +541,12 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
   return function( match ){
 
-    const { weekRegex, dayRegex } = wdxTemplateRegexes;
+    const { 
+      weekRegex,
+      weekNumRegex,
+      dayRegex,
+      dayNumRegex 
+    } = wdxTemplateRegexes;
 
     if ( !contentObject[section] ){
 
@@ -574,7 +583,11 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
     }
 
-    dailyScheduleSection = dailyScheduleSection.replace(weekRegex, `Week ${numOfWeek}`).replace(dayRegex, `Day ${day}`);
+    dailyScheduleSection = dailyScheduleSection
+    .replace(weekRegex, `Week ${numOfWeek}`)
+    .replace(weekNumRegex, `${numOfWeek}`)
+    .replace(dayNumRegex, `${String(day).padStart(2,"0")}`)
+    .replace(dayRegex, `Day ${day}`);
 
     return dailyScheduleSection;
   }
