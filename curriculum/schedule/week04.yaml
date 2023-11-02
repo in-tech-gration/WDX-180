@@ -10,8 +10,8 @@ schedule:
       # 1) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/http.status.codes.tables.exercise.jpeg
       # 2) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/monthly.sheet.jpg 
     2: # Styling Text
-      # file://./../modules/css/styling_text/index.md
-      module: css/styling_text
+      # file://./../modules/css/misc/styling_text/index.md
+      module: css/misc/styling_text
     3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
       # file://./../modules/css/layout_part1/index.md
       module: css/layout_part1

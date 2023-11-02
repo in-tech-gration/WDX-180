@@ -2478,6 +2478,11 @@
       "language": [
         "en"
       ]
+    },
+    "vscode-tailwindcss" : {
+      "type": "VSCode Extension",
+      "identifier": "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+      "tags": [ "Tailwind", "VSCode" ]
     }
   },
   "creators": {}
