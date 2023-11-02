@@ -203,3 +203,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+## Week 05 - Weekend Suggestions
+
+If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
