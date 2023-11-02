@@ -13,8 +13,8 @@ schedule:
       # file://./../modules/css/misc/styling_text/index.md
       module: css/misc/styling_text
     3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
-      # file://./../modules/css/layout_part1/index.md
-      module: css/layout_part1
+      # file://./../modules/css/misc/layout_part1/index.md
+      module: css/misc/layout_part1
       # TODO: STUDY & INTEGRATE AS A MODULE: /curriculum/modules/css/flexbox/flexbox-playground/dist/index.html (Remove unused code?)
       # TODO: STUDY & INTEGRATE: https://flexbox.ninja/demos/holy-grail-layout/
       # TODO: INTEGRATE CSS GRID IN 7min
@@ -35,8 +35,8 @@ schedule:
       # -Uses float/clear for layout
       # +Media queries for responsive version
     4: # Responsive Design, Media Queries
-      # file://./../modules/css/layout_part2/index.md
-      module: css/layout_part2
+      # file://./../modules/css/misc/layout_part2/index.md
+      module: css/misc/layout_part2
     5: 
       # file://./../modules/css/performance/web_performance/index.md
       module: css/performance/web_performance
