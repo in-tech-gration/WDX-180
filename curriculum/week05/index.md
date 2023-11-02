@@ -129,16 +129,13 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
 ### Study Plan
 
+  ![](./assets/tailwind.css.jpg)
+
   - Let's start by watching this quick introduction to [**Tailwind in 100 seconds**](https://www.youtube.com/watch?v=mr15Xzb1Ook){:target="_blank"}.
 
   - Watch this [**Tailwind CSS Introduction**](https://www.youtube.com/watch?v=pYaamz6AyvU){:target="_blank"} video by Dave Gray and follow along by coding and replicating the example he creates in the video. You will need to place all the files in the `user/week05/exercises/day04/tailwind_intro/` folder. Make sure to create the folder if it doesn't already exist.
 
-<!-- # CONTENT: 3) How To Make A Website With Tailwind CSS Step By Step Tutorial For Beginners (https://www.youtube.com/watch?v=8eQwgc9nc64) -->
-
-
-<!-- # CONTENT: 4) Practice: Recreate: Tailwind CSS - why CSS utility classes save so much time (https://www.youtube.com/watch?v=oU5ar0dmQEY) -->
-
-
+  - More practice with utility classes! Watch [**this video**](https://www.youtube.com/watch?v=oU5ar0dmQEY){:target="_blank"} and code along. Place your file in the `user/week05/exercises/day04/utility_classes/` folder. Make sure to create the folder if it doesn't already exist.
 
 <!-- Summary -->
 
@@ -166,6 +163,8 @@ We are basically creating a single `<input>` form field of type `text`. In the s
   - [Extra Resources](#extra-resources-05)
 
 ### Study Plan
+
+  ![](./assets/screenshot.jpg)
 
   - [Watch: **How To Make A Website With Tailwind CSS**](https://www.youtube.com/watch?v=8eQwgc9nc64){:target="_blank"}
     - **Duration:** 32min
@@ -204,7 +203,3 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-## Week 05 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).

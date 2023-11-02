@@ -2510,6 +2510,72 @@
       "language": [
         "en"
       ]
+    },
+    "how-to-make-a-website-with-tailwind-css-step-by-step-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 1880,
+      "title": "How To Make A Website With Tailwind CSS Step By Step Tutorial For Beginners",
+      "date": "10/02/2023",
+      "youtube": {
+        "id": "8eQwgc9nc64",
+        "channel_id": "UCkjoHfkLEy7ZT4bA2myJ8xA",
+        "channel_title": "GreatStack",
+        "thumbnail_url": "https://i.ytimg.com/vi/8eQwgc9nc64/sddefault.jpg"
+      },
+      "tags": [
+        "web design",
+        "web development",
+        "website design for beginners",
+        "HTML and CSS",
+        "HTML website",
+        "How to make a website using HTML",
+        "tailwind css",
+        "tailwind css tutorial",
+        "tailwind css tutorial for beginners",
+        "tailwind css website",
+        "tailwind css web design",
+        "web design tailwind",
+        "responsive web design tailwind css",
+        "tailwind css project",
+        "web design project"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "tailwind-css---why-css-utility-classes-save-so-much-time": {
+      "type": "YouTube",
+      "duration": 1015,
+      "title": "Tailwind CSS - why CSS utility classes save so much time",
+      "date": "09/07/2021",
+      "youtube": {
+        "id": "oU5ar0dmQEY",
+        "channel_id": "UCVTlvUkGslCV_h-nSAId8Sw",
+        "channel_title": "LearnCode.academy",
+        "thumbnail_url": "https://i.ytimg.com/vi/oU5ar0dmQEY/sddefault.jpg"
+      },
+      "tags": [
+        "tailwind css",
+        "tailwind css tutorial",
+        "tailwindcss tutorial",
+        "tailwind css react",
+        "tailwind css crash course",
+        "tailwindcss purgecss",
+        "tailwind css purge css",
+        "purge css classes",
+        "how to use tailwind css in html",
+        "css tutorial",
+        "tailwinds css",
+        "tailwind tutorial",
+        "tailwind tutorial 2021",
+        "tailwind css purgecss",
+        "tailwind 2021",
+        "tailwind tutorial for beginners",
+        "Tailwind css vue"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

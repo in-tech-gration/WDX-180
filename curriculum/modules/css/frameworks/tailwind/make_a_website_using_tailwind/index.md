@@ -10,6 +10,8 @@ title: How To Make A Website With Tailwind CSS
 
 ### Study Plan
 
+  ![](./assets/screenshot.jpg)
+
   - [Watch: **How To Make A Website With Tailwind CSS**](https://www.youtube.com/watch?v=8eQwgc9nc64){:target="_blank"}
     - **Duration:** 32min
     - **Level:** Beginner
