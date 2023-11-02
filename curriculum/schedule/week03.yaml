@@ -11,8 +11,8 @@ schedule:
       # file://./../modules/css/misc/what_is_css/index.md
       module: css/misc/what_is_css
     3: # CSS Selectors
-      # file://./../modules/css/css_selectors/index.md
-      module: css/css_selectors
+      # file://./../modules/css/selectors/css_selectors/index.md
+      module: css/selectors/css_selectors
       # TODO: INTEGRATE SELECTOR GAME
       # https://codepen.io/kostasx/pen/LYqNYyx
       # BOOTCAMP/INTECHGRATION/TASKS/css.selectors.exercise/index.html
