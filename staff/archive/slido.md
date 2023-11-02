@@ -323,7 +323,7 @@ A: There are certain limitations though, when you are part of the free plan on G
 
   ---
 
-  Q: I have a Q regarding VS Code. I don't see any day 04 exercises in my curriculum or user. How do I complete the assignment? The only thing I see under day 04 is README.md
+  Q: I have a question regarding VS Code. I don't see any day 04 exercises in my curriculum or user. How do I complete the assignment? The only thing I see under day 04 is README.md
 
   A: you should create a cern directory under week-1/exercises/day04 structure should be like this user/week01/exercises/day04/cern/ and your html file css and images for assignment goes inside this cern directory
 
