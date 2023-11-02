@@ -16,6 +16,8 @@ title: Web Performance & CSS Pre-processors
   - [Read: **What is web performance?**](https://developer.mozilla.org/en-US/docs/Learn/Performance/What_is_web_performance){:target="_blank"}
     - Level: Beginner
 
+  ![](./assets/panda-waving-2x.png)
+
   - **TIP:** let's bookmark and use a really useful tool that will our compress images, cutting down their size oftentimes to more than 50% thus improving the loading times of our web pages. Find an old (group?) project, drag and drop all the images into the [**TinyPNG**](https://tinypng.com/){:target="_blank"} page, then download the compressed version and compare the difference in size and loading times. Keep in mind, that **TinyPNG** can compress all sorts of images types, not just `.png`.
 
   <!-- WDX:META:PROGRESS:task=Read 'Perceived performance' -->
