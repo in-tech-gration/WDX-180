@@ -3,4 +3,6 @@ Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
 4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Read 'What is web performance?',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Read 'Perceived performance',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Watch 'CSS Preprocessors',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Install the 'Live Sass Compiler' VSCode extension,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Watch the 'Learn Sass In 20 Minutes' video and code along,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Complete the exercise with Google Lighthouse,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

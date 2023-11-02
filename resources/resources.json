@@ -2576,6 +2576,41 @@
       "language": [
         "en"
       ]
+    },
+    "learn-sass-in-20-minutes-sass-crash-course": {
+      "type": "YouTube",
+      "duration": 1182,
+      "title": "Learn Sass In 20 Minutes | Sass Crash Course",
+      "date": "13/03/2019",
+      "youtube": {
+        "id": "Zz6eOVaaelI",
+        "channel_id": "UClb90NQQcskPUGDIXsQEz5Q",
+        "channel_title": "developedbyed",
+        "thumbnail_url": "https://i.ytimg.com/vi/Zz6eOVaaelI/sddefault.jpg"
+      },
+      "tags": [
+        "learn sass",
+        "learn sass css",
+        "learn scss",
+        "sass tutorial",
+        "scss tutorial",
+        "sass tutorial 2018",
+        "how to install sass",
+        "visual studio code sass",
+        "visual studio code scss",
+        "visual studio code",
+        "free sass tutorials",
+        "scss tutorial for beginners",
+        "how to install sass css",
+        "free sass course",
+        "Learn Sass In 20 Minutes",
+        "sass in 20 minutes",
+        "sass course",
+        "sass compiler"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

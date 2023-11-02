@@ -22,7 +22,7 @@ schedule:
       # # file://./../modules/css/
       # module: css/
 
-    4: # 🚧 Tailwind 1
+    4: # ✅ Tailwind 1
       # file://./../modules/css/frameworks/tailwind/intro/index.md
       module: css/frameworks/tailwind/intro
  
