@@ -22,8 +22,8 @@ schedule:
       # TODO: INTEGRATE SPECIFICITY GAME: https://codepen.io/kostasx/pen/zQyjdv
       # /BOOTCAMP/INTECHGRATION/TASKS/quiz-can-you-count-specificity/
     5: 
-      # file://./../modules/css/backgrounds_and_borders/index.md
-      module: css/backgrounds_and_borders
+      # file://./../modules/css/misc/backgrounds_and_borders/index.md
+      module: css/misc/backgrounds_and_borders
 
 # TODO: Add section about background-clip: How to add Transparent Borders
 # https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
