@@ -825,6 +825,35 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
 }
 
+function createExerciseFolders({ weeklyData, title, numOfWeek }){
+
+  weeklyData.forEach((dailyData, idx) =>{
+
+    const paddedDay = String(idx+1).padStart(2,"0");
+    const weeklyUserFolder = path.join(
+      "user",
+      `week${numOfWeek}`,
+      "exercises",
+      `day${paddedDay}`
+    );
+
+    const doesWeeklyUserFolderExist = fs.existsSync(weeklyUserFolder);
+
+    if ( doesWeeklyUserFolderExist ) {
+      warn(`Folder '${weeklyUserFolder}' already exists.`);
+    } else {
+      fs.mkdirSync(weeklyUserFolder, { recursive: true });
+      console.log(`Folder '${weeklyUserFolder}' created.`);
+    }
+    fs.writeFileSync(
+      path.join(weeklyUserFolder, ".gitkeep"), 
+      "", "utf-8"
+    );
+
+
+  })
+}
+
 function createWeeklyContentFromYaml({ configYaml, filename }) {
 
   const { input, daily_input, schedule, title } = yaml.parse(configYaml);
@@ -896,35 +925,6 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
 
     // Copy Media Assets from Module folder to curriculum/
     copyModuleMediaAssets({ weeklyData, title });
-
-    function createExerciseFolders({ weeklyData, title, numOfWeek }){
-
-      weeklyData.forEach((dailyData, idx) =>{
-
-        const paddedDay = String(idx+1).padStart(2,"0");
-        const weeklyUserFolder = path.join(
-          "user",
-          `week${numOfWeek}`,
-          "exercises",
-          `day${paddedDay}`
-        );
-
-        const doesWeeklyUserFolderExist = fs.existsSync(weeklyUserFolder);
-
-        if ( doesWeeklyUserFolderExist ) {
-          warn(`Folder '${weeklyUserFolder}' already exists.`);
-        } else {
-          fs.mkdirSync(weeklyUserFolder, { recursive: true });
-          console.log(`Folder '${weeklyUserFolder}' created.`);
-        }
-        fs.writeFileSync(
-          path.join(weeklyUserFolder, ".gitkeep"), 
-          "", "utf-8"
-        );
-
-
-      })
-    }
 
     // Generate /user/weekXX/exercises/... folders
     createExerciseFolders({
