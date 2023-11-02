@@ -4,7 +4,7 @@ title: Week 03 | CSS, Accessibility & Git
 
 # Week 03 | CSS, Accessibility & Git
 
-_(Updated: 30/10/2023)_
+_(Updated: 2/11/2023)_
 
 ---
 
@@ -128,6 +128,12 @@ _(Updated: 30/10/2023)_
   - [Extra Resources](#extra-resources-1)
 
 ### Study Plan
+
+  **TIP OF THE DAY:** During your coding journey, you will be constantly using the Browser Developer Tools _(aka DevTools)_ panel to inspect and debug your code, whether it's HTML, CSS or JavaScript. This [short video](https://www.youtube.com/watch?v=X65TAP8a530){:target="_blank"} will help you familiarize yourself with some common keyboard shortcuts that will open up the appropriate `DevTools` panel. 
+
+  ---
+
+
 
   - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/index.md){:target="_blank"}
     - Level: Beginner
