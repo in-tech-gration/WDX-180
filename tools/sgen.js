@@ -653,7 +653,12 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   }
 
   const dailyModuleDir = path.join( modulesFolder, dayMeta.module ); 
-  const dailyModule    = path.join( dailyModuleDir, "index.md" ); 
+  const pathStats = fs.statSync(dailyModuleDir);
+  let dailyModule = dailyModuleDir;
+  // We can either pass a directory (that contains an index.md file) or a full path that includes a filename, e.g. extra_day.md
+  if ( pathStats.isDirectory() ){
+    dailyModule = path.join( dailyModuleDir, "index.md" ); 
+  }
   let moduleMarkdown = null;
   try {
     moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");

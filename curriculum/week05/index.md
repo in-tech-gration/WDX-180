@@ -308,6 +308,35 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
 <hr class="mt-1">
 
+<!-- Week 05 - Day 3 | Flappy App - Day 2 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 05 - Day 3</span> | Flappy App - Day 2</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+This is Day 2 of the Flappy App practice. Just follow the instructions found on Day 1 and continue where you've left off.
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
 <!-- Week 05 - Day 4 | Introduction to Tailwind CSS -->
 <details markdown="1">
   <summary>
