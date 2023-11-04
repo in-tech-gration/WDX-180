@@ -14,6 +14,7 @@ schedule:
     2: # Intro to HTML
       # file://./../modules/
       module: 
+      # TODO: INTEGRATE: First Part (HTML) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
       # TODO: INTEGRATE: https://caninclude.glitch.me/caninclude?child=div&parent=p (https://github.com/CyberLight/caninclude-v2) (Add Star Repo reminder) Complement with: https://css-tricks.com/can-include-a-certain-html-element-within-another-certain-html-element/
 
     3: # HTML Tables

@@ -10,6 +10,8 @@ schedule:
     2: # What is CSS
       # file://./../modules/css/misc/what_is_css/index.md
       module: css/misc/what_is_css
+      # TODO: INTEGRATE: Second Part (CSS) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
+
     3: # CSS Selectors
       # file://./../modules/css/selectors/css_selectors/index.md
       module: css/selectors/css_selectors

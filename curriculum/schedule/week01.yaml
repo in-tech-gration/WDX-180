@@ -12,6 +12,7 @@ schedule:
     3: 
       # file://./../modules/html/misc/html_in_a_day/index.md
       module: html/misc/html_in_a_day
+      # TODO: INTEGRATE: https://russmaxdesign.github.io/maxdesign-slides/01-html/106-creating-document.html#/
     4: 
       # file://./../modules/css/misc/css_in_a_day/index.md
       module: css/misc/css_in_a_day

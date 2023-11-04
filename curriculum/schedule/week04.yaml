@@ -12,6 +12,9 @@ schedule:
     2: # Styling Text
       # file://./../modules/css/misc/styling_text/index.md
       module: css/misc/styling_text
+      # TODO: INTEGRATE: https://www.youtube.com/watch?v=Y5TYDo9Qcv4 
+      # TODO: Beginner’s guide to styling text with CSS (27min)
+      # TODO: Practice: use modules/css/misc/styling_text/assets/style-stage.html to recreate the final result in the video
     3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
       # file://./../modules/css/misc/layout_part1/index.md
       module: css/misc/layout_part1
