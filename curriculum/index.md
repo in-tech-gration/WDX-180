@@ -30,7 +30,7 @@
   - [**Week 02**: HTML, Accessibility & Git](week02/index.md)
   - [**Week 03**: CSS, Accessibility & more Git](week03/index.md)
   - [**Week 04**: CSS 2 & Performance](week04/index.md)
-  - [**Week 05**: CSS Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 05**: CSS Frameworks](week05/index.md)
   - [**Week 06**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 07**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 08**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_

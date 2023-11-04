@@ -22,6 +22,7 @@ Syllabus:
           open: true
         5: # file:///./schedule/week05.yaml
           title: "CSS Frameworks"
+          open: true
         6: # file:///./schedule/week06.yaml
           title: "JavaScript Core 1"
         7: # file:///./schedule/week07.yaml
