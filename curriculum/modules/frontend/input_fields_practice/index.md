@@ -31,7 +31,12 @@ title: Practice with Form Input fields
 
   The process, of course, involves coding but also doing some research to find out more about the required HTML and CSS to complete the project.
 
-  Scroll down to the [**Exercises section**](#exercises) to find all the details and start the project. 
+  Before starting the project, we have a tiny bit of theory for you. Check the next short video about the BEM CSS methodology before starting the exercise:
+
+  - [Watch: **Why I use the BEM naming convention for my CSS**](https://www.youtube.com/watch?v=SLjHSVwXYq4){:target="_blank"}
+    - **Duration:** 7min
+  
+  Now that you have rough idea about organizing CSS code using the BEM methodology, scroll down to the [**Exercises section**](#exercises) to find all the details and start the project. 
 
 ### Summary
 

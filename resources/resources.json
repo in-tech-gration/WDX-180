@@ -2611,6 +2611,34 @@
       "language": [
         "en"
       ]
+    },
+    "why-i-use-the-bem-naming-convention-for-my-css": {
+      "type": "YouTube",
+      "duration": 423,
+      "title": "Why I use the BEM naming convention for my CSS",
+      "date": "09/11/2018",
+      "youtube": {
+        "id": "SLjHSVwXYq4",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/SLjHSVwXYq4/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "tutorial",
+        "html",
+        "css",
+        "css bem",
+        "bem naming convention",
+        "css bem naming",
+        "css bem methodology",
+        "css bem best practice",
+        "css bem examples",
+        "why i use bem",
+        "css naming conventions",
+        "css naming conventions best practices",
+        "css naming classes"
+      ]
     }
   },
   "creators": {}
