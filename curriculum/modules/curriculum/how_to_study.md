@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: How to Study / Productivity tips -->
+<!-- HOW TO STUDY -->
 <details markdown="1">
   <summary><h3>How to Study / Productivity tips</h3></summary>
 

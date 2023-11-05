@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: Setup -->
+<!-- SETUP -->
 <details markdown="1">
   <summary><h3>Setup</h3></summary>
 

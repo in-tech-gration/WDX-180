@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: About -->
+<!-- ABOUT -->
 <details open markdown="1">
   <summary><h3>About</h3></summary>
 

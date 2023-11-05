@@ -4,7 +4,7 @@
 
 ## Web Development X - 180°
 
-<!-- TODO: Transform this into a Module: About -->
+<!-- ABOUT -->
 <details open markdown="1">
   <summary><h3>About</h3></summary>
 
@@ -15,7 +15,7 @@
   You can find the [Syllabus here](curriculum/index.md).
 </details>
 
-<!-- TODO: Transform this into a Module: Where do I start? -->
+<!-- WHERE DO I START? -->
 <details markdown="1">
   <summary><h3>Where do I start?</h3></summary>
 
@@ -33,7 +33,7 @@
 
 </details>
 
-<!-- TODO: Transform this into a Module: Accounts -->
+<!-- ACCOUNTS -->
 <details markdown="1">
   <summary><h3>Accounts</h3></summary>
 
@@ -46,7 +46,7 @@
   - [Sli.do _(used during our Q&As)_](https://www.slido.com/){:target="_blank"}
 </details>
 
-<!-- TODO: Transform this into a Module: Setup -->
+<!-- SETUP -->
 <details markdown="1">
   <summary><h3>Setup</h3></summary>
 
@@ -72,7 +72,7 @@
   _(Click the image to see a full-size version)_
 </details>
 
-<!-- TODO: Transform this into a Module: Communication -->
+<!-- COMMUNICATIONS -->
 <details markdown="1">
   <summary><h3>Communication</h3></summary>
 
@@ -85,7 +85,7 @@
   **Enrolled students** also have the opportunity to schedule one 30~45min call each week with an instructor.
 </details>
 
-<!-- TODO: Transform this into a Module: Hardware Requirements -->
+<!-- HARDWARE -->
 <details markdown="1">
   <summary><h3>Hardware Requirements</h3></summary>
 
@@ -99,7 +99,7 @@
     - Notebook for note taking
 </details>
 
-<!-- TODO: Transform this into a Module: Software -->
+<!-- SOFTWARE -->
 <details markdown="1">
   <summary><h3 id="software">Software</h3></summary>
 
@@ -180,7 +180,7 @@
     - [**Photopea**](https://www.photopea.com/){:target="_blank"}: a free, online image editing software that's pretty similar to `Adobe Photoshop`. You can use this tool to resize, crop or compress images among other things. 
 </details>
 
-<!-- TODO: Transform this into a Module: Data Formats -->
+<!-- DATA FORMATS -->
 <details markdown="1">
   <summary><h3>Getting familiar with data formats</h3></summary>
 
@@ -217,7 +217,7 @@
   You can find the [Syllabus here](curriculum/index.md#syllabus).
 </details>
 
-<!-- TODO: Transform this into a Module: How to Study / Productivity tips -->
+<!-- HOW TO STUDY -->
 <details markdown="1">
   <summary><h3>How to Study / Productivity tips</h3></summary>
 

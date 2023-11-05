@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: Data Formats -->
+<!-- DATA FORMATS -->
 <details markdown="1">
   <summary><h3>Getting familiar with data formats</h3></summary>
 

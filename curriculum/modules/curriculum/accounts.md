@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: Accounts -->
+<!-- ACCOUNTS -->
 <details markdown="1">
   <summary><h3>Accounts</h3></summary>
 

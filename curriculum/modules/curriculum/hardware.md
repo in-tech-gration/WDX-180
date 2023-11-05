@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: Hardware Requirements -->
+<!-- HARDWARE -->
 <details markdown="1">
   <summary><h3>Hardware Requirements</h3></summary>
 

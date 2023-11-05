@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: Communication -->
+<!-- COMMUNICATIONS -->
 <details markdown="1">
   <summary><h3>Communication</h3></summary>
 

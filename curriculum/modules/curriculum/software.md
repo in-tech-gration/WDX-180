@@ -1,4 +1,4 @@
-<!-- TODO: Transform this into a Module: Software -->
+<!-- SOFTWARE -->
 <details markdown="1">
   <summary><h3 id="software">Software</h3></summary>
 
