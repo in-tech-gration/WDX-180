@@ -4,7 +4,7 @@ title: Week 05 | CSS Frameworks
 
 # Week 05 | CSS Frameworks
 
-_(Updated: 4/11/2023)_
+_(Updated: 5/11/2023)_
 
 ---
 
@@ -50,7 +50,12 @@ _(Updated: 4/11/2023)_
 
   The process, of course, involves coding but also doing some research to find out more about the required HTML and CSS to complete the project.
 
-  Scroll down to the [**Exercises section**](#exercises) to find all the details and start the project. 
+  Before starting the project, we have a tiny bit of theory for you. Check the next short video about the BEM CSS methodology before starting the exercise:
+
+  - [Watch: **Why I use the BEM naming convention for my CSS**](https://www.youtube.com/watch?v=SLjHSVwXYq4){:target="_blank"}
+    - **Duration:** 7min
+
+  Now that you have rough idea about organizing CSS code using the BEM methodology, scroll down to the [**Exercises section**](#exercises) to find all the details and start the project. 
 
 <!-- Summary -->
 
@@ -278,6 +283,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
     - **Description:** Recreating the Footer area of the mockup
     - **What you'll learn:** 
       - More Utility CSS classes
+    - **Notes:** You'll see at some point in the video, that it's unclear whether the `padding` property applied in an `ul` element is inherited and applied to the children `li` elements. In order to find out whether a specific CSS property is inherited by the children, always check the appropriate MDN page, and specifically look for the **Inherited** property entry in the **Formal Definition** section. For example, `padding` is a [non-inheritable property](https://developer.mozilla.org/en-US/docs/Web/CSS/padding#formal_definition){:target="_blank"} whereas [color is inherited by the children of an element](https://developer.mozilla.org/en-US/docs/Web/CSS/color#formal_definition){:target="_blank"}.
 
   - Part 16: [Adjusting for max-width](https://www.youtube.com/watch?v=lEGm5UUbTCk){:target="_blank"} 
     - **Duration:** 16min
