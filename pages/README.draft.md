@@ -8,57 +8,11 @@
 
 {{ WDX:MODULE:curriculum/where_do_I_start.md }}
 
-<!-- TODO: Transform this into a Module: Accounts -->
-<details markdown="1">
-  <summary><h3>Accounts</h3></summary>
+{{ WDX:MODULE:curriculum/accounts.md }}
 
-  In order to attend the course (and become a professional web developer) you will need to open an account in the following services:
+{{ WDX:MODULE:curriculum/setup.md }}
 
-  - [Google Gmail](https://www.google.com/gmail/about/){:target="_blank"}
-  - [GitHub](https://github.com/){:target="_blank"}
-  - [StackOverflow](https://stackoverflow.com/){:target="_blank"}
-  - [Codesandbox](https://codesandbox.io/){:target="_blank"}
-  - [Sli.do _(used during our Q&As)_](https://www.slido.com/){:target="_blank"}
-</details>
-
-<!-- TODO: Transform this into a Module: Setup -->
-<details markdown="1">
-  <summary><h3>Setup</h3></summary>
-
-  The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo){:target="_blank"}  this repository under your GitHub account.
-
-  After you've successfully forked the repo, you will need to enable [GitHub Pages](https://pages.github.com/){:target="_blank"} in order to turn the repo into a website also.
-
-  Here are the steps:
-
-  1. Go to **Settings**
-  2. Click on the **Pages** button
-  3. Under **Branch**, select **main** and click **Save**
-  4. Wait a few minutes, check that your repo is online and paste the URL on your personal progress sheet.
-
-  The URL should look something like this: `https://your_username.github.io/WDX-180`
-
-  > Here is a [YouTube video walkthrough](https://www.youtube.com/watch?v=xqGlWAHjtcM){:target="_blank"} to help you with this step. 
-
-  While you are at the **Settings** page, select **General** on the side menu and go to **Features > Check "Issues" > Save** in order to enable the **Issues** feature on your forked repo.
-
-  [![](./assets/GitHub.Enable.Issues.jpg)](./assets/GitHub.Enable.Issues.jpg){:target="_blank"}
-
-  _(Click the image to see a full-size version)_
-</details>
-
-<!-- TODO: Transform this into a Module: Communication -->
-<details markdown="1">
-  <summary><h3>Communication</h3></summary>
-
-  Our main channel of communication is [Slack](https://intechgration.slack.com){:target="_blank"}. If you haven't received an invitation to the Intechgration Slack team, please inform us via email. 
-
-  We encourage you to use the [Web version](https://slack.com/signin#/signin){:target="_blank"} of Slack on your PC/laptop and also have it installed on your smartphone. It's available for both [Android](https://play.google.com/store/apps/details?id=com.Slack){:target="_blank"} and [iOS](https://apps.apple.com/app/slack-app/id618783545?ls=1){:target="_blank"} devices.
-
-  In order to learn more about Slack and the various versions (mobile, desktop, web), scroll down to the [Software](#software) section.
-
-  **Enrolled students** also have the opportunity to schedule one 30~45min call each week with an instructor.
-</details>
+{{ WDX:MODULE:curriculum/communication.md }}
 
 <!-- TODO: Transform this into a Module: Hardware Requirements -->
 <details markdown="1">
