@@ -1008,25 +1008,29 @@ function init() {
 
   try {
 
-    if (Syllabus) {  // e.g. curriculum/curriculum.yaml
+    // e.g. curriculum/curriculum.yaml
+    if ( Syllabus ) {  
       
       const textContent = fs.readFileSync(input, "utf-8");
       console.log(`Processing Syllabus: ${input}`);
       const outputContent = createSyllabusFromMarkdownText({ textContent, configYaml });
-      fs.writeFileSync(output, outputContent, "utf-8");
+      return fs.writeFileSync(output, outputContent, "utf-8");
       // TODO: (Optionally) read all weeks (e.g. week01.yaml, week02.yaml, etc.) and generate all the content along with the curriculum/index.md
 
-    } else {  // e.g. curriculum/schedule/week04.yaml
+    }  
+
+    const filename = path.basename(configYamlPath, path.extname(configYamlPath));
+
+    // e.g. curriculum/schedule/week04.yaml
+    if ( filename.indexOf("week") === 0 ){
 
       console.log(`Processing Weekly Content: ${configYamlPath}`);
-      const filename = path.basename(configYamlPath, path.extname(configYamlPath));
-      if ( filename.indexOf("week") !== 0 ){
-        return warn("Weekly YAML requires the following format: 'weeklyDD.yaml'")
-      } else {
-        createWeeklyContentFromYaml({ configYaml, filename });
-      }
+      return createWeeklyContentFromYaml({ configYaml, filename });
 
     }
+
+    // All the rest...
+    createContentFromYaml({ configYaml, filename });
 
   } catch (e) {
 
