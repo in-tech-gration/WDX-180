@@ -61,6 +61,11 @@ Syllabus:
           title: "Node.js 1"
         19: # file:///./schedule/week19.yaml
           title: "Node.js 2, NoSQL Databases & Docker"
+          # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
+          # STUDY: https://www.sql-practice.com/
+          # STUDY: https://sql.js.org/examples/GUI/index.html
+          # STUDY: https://sqlbolt.com/
+          # STUDY: https://www.db-fiddle.com/
           # STUDY: https://github.com/btholt/complete-intro-to-sql
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/03-sqlite.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
