@@ -39,6 +39,7 @@ const wdxTemplateRegexes = {
   extrasRegex:        /\{\{\s?WDX:\s?EXTRAS\s?\}\}/gi,
   attributionsRegex:  /\{\{\s?WDX:\s?ATTRIBUTIONS\s?\}\}/gi,
   includesRegex:      /\{\{\s?WDX:\s?INCLUDES:(.*)\s?\}\}/gi,
+  moduleRegex:        /\{\{\s?WDX:\s?MODULE:(.*)\s?\}\}/gi,
   dateUpdatedRegex:   /\{\{\s?WDX:\s?DATE_UPDATED\s?\}\}/gi,
   weeklyContentRegex: /\{\{\s?WDX:\s?WEEKLY_CONTENT\s?\}\}/gi,
   wdx: {
@@ -202,7 +203,12 @@ function getInclude({ file, day, numOfWeek }){
 
 }
 
-function replaceInclude({ day, numOfWeek }){
+// TODO: WiP
+function getModule({}){
+
+}
+
+function replaceInclude({ day, numOfWeek } = {}){
 
   return function( match, group1, string){
 
@@ -972,6 +978,114 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
     const test = generateWeeklyTestsFromWeeklyData({
       weeklyData, title
     });
+
+  } catch(e) {
+
+    console.log(e);
+
+  }
+
+}
+
+// TODO: WiP
+function createContentFromYaml({ configYaml, filename }) {
+
+  const { input, output, daily_input, schedule, title } = yaml.parse(configYaml);
+  const textContent        = fs.readFileSync(input, "utf-8");
+
+  // Parse markdown and separate Frontmatter and main content:
+  const { content, data: fm, orig } = matter(textContent);
+
+  try {
+
+    const {
+
+      // weekRegex,
+      titleRegex,
+      moduleRegex,
+      // dateUpdatedRegex,
+      // weeklyContentRegex,
+      // includesRegex
+  
+    } = wdxTemplateRegexes;
+  
+    // const date = new Date();
+    // const DDMMYYYY = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}` 
+  
+    let newRaw = textContent
+    .replace(titleRegex, title)
+    
+    // .replace(dateUpdatedRegex, DDMMYYYY)
+    // .replace(includesRegex, replaceInclude());
+    .replace(moduleRegex, function( match, modulePath, offset, string ){
+
+      const fullPath = path.join(modulesFolder, modulePath.trim());
+      const textContent = fs.readFileSync(fullPath, "utf-8");
+      return textContent;
+
+    });
+  
+    
+  // const dailyMarkdownTokens = marked.lexer(dailyDraftTemplate);
+  fs.writeFileSync(output, newRaw, "utf-8");
+
+  //   const daysEntries = Object.entries(schedule.days);
+  //   const weeklyData = daysEntries
+  //   .map( entry =>{
+  //     return parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek });
+  //   });
+    
+  //   let weeklyContent = weeklyData
+  //   .filter(Boolean)
+  //   .map( data => data.content )
+  //   .join("");
+  //   // Parse markdown tokens:
+  //   const markdownTokens = marked.lexer(content);
+  //   let outputContent = "";
+  //   markdownTokens.forEach( token =>{
+
+  //     if ( token.raw ){
+
+  //       const parsedTokenRaw = parseWeeklyPatterns({ 
+  //         raw: token.raw, 
+  //         numOfWeek,
+  //         weeklyContent,
+  //         title
+  //       }); 
+
+  //       outputContent += parsedTokenRaw;
+
+  //     } else {
+
+  //       outputContent += token.raw;
+
+  //     }
+  //   });
+  
+  //   const fmString = getFrontMatterStringFromObject(fm);
+  
+  //   outputContent = parseWeeklyPatterns({ raw: fmString, numOfWeek, title }) + outputContent;
+  
+  //   const weeklyIndexMarkdown = path.join( weeklyFolder, "index.md" );
+  //   fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
+
+  //   // Copy Media Assets from Module folder to curriculum/
+  //   copyModuleMediaAssets({ weeklyData, title });
+
+  //   // Generate /user/weekXX/exercises/... folders
+  //   createExerciseFolders({
+  //     weeklyData, title, numOfWeek
+  //   }); 
+
+  //   // Generate progress sheets:
+  //   const csv = generateWeeklyProgressSheetFromWeeklyData({ 
+  //     weeklyData, title 
+  //   });
+
+  //   // Generate yaml tests:
+  //   const test = generateWeeklyTestsFromWeeklyData({
+  //     weeklyData, title
+  //   });
 
   } catch(e) {
 

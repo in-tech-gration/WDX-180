@@ -4,34 +4,9 @@
 
 ## Web Development X - 180°
 
-<!-- TODO: Transform this into a Module: About -->
-<details open markdown="1">
-  <summary><h3>About</h3></summary>
+{{ WDX:MODULE:curriculum/about.md }}
 
-  This is Web Development X 180°. An introductory course to the web and related technologies such as HTML, CSS and JavaScript, split into 180 days.
-
-  The WDX 180° curriculum, along with all related material (exercises, code, etc.), **is and will always be free and open-source** under the GPLv3 license.
-
-  You can find the [Syllabus here](curriculum/index.md).
-</details>
-
-<!-- TODO: Transform this into a Module: Where do I start? -->
-<details markdown="1">
-  <summary><h3>Where do I start?</h3></summary>
-
-  If you are ready and feel committed enough to start the course, you must start by carefully going through the following sections and completing all the necessary tasks:
-
-  - **Accounts**  
-  - **Setup**  
-  - **Communication**  
-  - **Hardware Requirements**  
-  - **Software**  
-  - **Getting familiar with data formats**
-  - **How to Study / Productivity Tips**  
-
-  Don't forget to open the [FAQ page](./curriculum/FAQ/index.md){:target="_blank"} that accompanies the setup process in a new Tab and check for relevant questions and their respective responses as you go through the next steps.
-
-</details>
+{{ WDX:MODULE:curriculum/where_do_I_start.md }}
 
 <!-- TODO: Transform this into a Module: Accounts -->
 <details markdown="1">
