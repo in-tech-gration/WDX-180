@@ -45,7 +45,7 @@ p, a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--headings-font-family);
+  font-family: var(--headings-font-family) !important;
 }
 
 h1 {
@@ -188,6 +188,9 @@ section.main-section h1 {
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 4.2rem;
+}
+section.main-section h3 {
+  font-weight: 300;
 }
 // Fixing Jekyll inconsistencies with <li> elements that do not generate <p>
 section.main-section li {
