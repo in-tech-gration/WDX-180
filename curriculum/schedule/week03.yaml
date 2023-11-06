@@ -15,6 +15,7 @@ schedule:
     3: # CSS Selectors
       # file://./../modules/css/selectors/css_selectors/index.md
       module: css/selectors/css_selectors
+      # TODO: ADD: Bite-sized intros: https://www.youtube.com/watch?v=kpXKwDGtjGE (FireShip > CSS Pseudo-classes: in 100 Seconds)
       # TODO: INTEGRATE SELECTOR GAME
       # https://codepen.io/kostasx/pen/LYqNYyx
       # BOOTCAMP/INTECHGRATION/TASKS/css.selectors.exercise/index.html

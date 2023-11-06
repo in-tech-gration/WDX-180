@@ -55,6 +55,7 @@ const includesFolder = path.join("curriculum", "schedule", "includes");
 
 // TODO:
 // 1) Warn about #### inside the ### Module sections. Use **Bold** instead.
+// 2) Add a `--no-user` flag to run the sgen tool without creating the user/ folder and subsequent subfolders
 
 // SECTIONS CONSTANTS:
 const SCHEDULE        = "Schedule";

@@ -18,6 +18,7 @@ schedule:
     3: # CSS Layout Intro / Normal Flow / Positioning / Flexbox
       # file://./../modules/css/misc/layout_part1/index.md
       module: css/misc/layout_part1
+      # TODO: ADD: https://www.youtube.com/watch?v=K74l26pE4YA (CSS Flexbox in 100 Seconds)
       # TODO: STUDY & INTEGRATE AS A MODULE: /curriculum/modules/css/flexbox/flexbox-playground/dist/index.html (Remove unused code?)
       # TODO: STUDY & INTEGRATE: https://flexbox.ninja/demos/holy-grail-layout/
       # TODO: INTEGRATE CSS GRID IN 7min
