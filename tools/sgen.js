@@ -287,6 +287,31 @@ function copyDailyMediaAssets({ weeklyFolder, dailyModuleFolder }){
 
 }
 
+// Copies module/FOLDER/exercises/ => curriculum/weekXX/exercises/
+function copyDailyExercises({ weeklyFolder, dailyModuleFolder }){
+
+  const sourceDailyAssetsPath = path.join( MODULES_FOLDER, dailyModuleFolder, "exercises" ); 
+  const targetCurriculumAssetsPath = path.join( weeklyFolder, "exercises" );
+
+  try {
+    fse.copySync(
+      sourceDailyAssetsPath,
+      targetCurriculumAssetsPath,
+      { overwrite: true }
+    );
+
+    console.log(
+      `Successfully copied ${sourceDailyAssetsPath} => ${targetCurriculumAssetsPath}`
+    );
+
+  } catch (err) {
+
+    warn(`${xmark} ERROR COPYING: ${sourceDailyAssetsPath} => ${targetCurriculumAssetsPath}`);
+
+  }
+
+}
+
 // TODO: Simplify this, so that sgen just copies the whole assets/ folder!
 function copyWeeklyMediaAssets({ weeklyData, title }){
 
@@ -1001,6 +1026,7 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
       
       const dailyModuleFolder = dailyEntry[1].module;
       copyDailyMediaAssets({ weeklyFolder, dailyModuleFolder });
+      copyDailyExercises({ weeklyFolder, dailyModuleFolder });
       
     });
     // [DEPRECATED] IN FAVOR OF copyDailyMediaAssets()
