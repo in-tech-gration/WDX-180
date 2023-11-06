@@ -22,3 +22,12 @@ schedule:
       # file://./../modules/javascript/.../index.md
       # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
       module: javascript/
+
+# Contents Covered
+# Variables let, const, var
+# Numbers, Booleans and Strings
+# Control flow (if)
+# Loops (while, for(let i=0; i < X; i++))
+# Functions (normal, arrow, higher-order), Scope, Built-ins
+# Objects Basics
+# Arrays
