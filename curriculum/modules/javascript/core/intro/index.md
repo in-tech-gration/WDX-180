@@ -267,6 +267,7 @@ title: Introduction to JavaScript
 
   In this task, we want you to load the [numbers.js file](./exercises/numbers.js){:target="_blank"} from an HTML named `numbers.html` and complete the challenges found inside. 
 
+<!-- TODO: Move this Task to external files: -->
 #### Task 4
 
   In this task, we want you to copy and paste the following code in a file called `strings.js` and complete the challenges found inside:
@@ -411,6 +412,7 @@ title: Introduction to JavaScript
   */
   ```
 
+<!-- TODO: Move this Task to external files: -->
 #### Task 5
 
   In this task, we want you to create a file called `variables.js` and :
@@ -419,6 +421,7 @@ title: Introduction to JavaScript
   - Calculate the remainder of 29 ÷ 3, using **two variables**. Store the remainder to a **third variable**. Output the result to the console. Your final result should look like the following: `The remainder of X ÷ Y is Z`.
   - Store your birth year in **a variable**. Store the current year in **a variable**. Calculate your age based on the difference of the stored values. Output to the console the following string based on the result: `You are approximately X years old`.
 
+<!-- TODO: Move this Task to external files: -->
 #### Task 6
 
   In this task, we want you to create a file called `experiments.js` and:
