@@ -14,7 +14,7 @@ title: Introduction to JavaScript
 
   ![](./assets/js.magician.png)
 
-### JavaScript Intro
+#### JavaScript Intro
 
   This is a tough section to teach because the needs of the students vary quite widely here. Some of you are programmers from other languages coming here to learn front-end coding. Some of you are totally new to coding and JavaScript will be your first programming language. Just like if you know Spanish already, learning Italian becomes much easier since you take the same concepts and express them with minor variances. This workshop is optimized for those totally new to coding and thus we assume no prior knowledge. If you do know another programming language, we invite you instead to skim this section to familiarize yourself with how JavaScript looks. The next sections will also be aimed at you.
 
@@ -76,7 +76,7 @@ title: Introduction to JavaScript
 
 ---
 
-### Numbers, Strings and Booleans
+#### Numbers, Strings and Booleans
 
   So far we've just dealt with numbers. Let's go further and start working with words and characters. In programming, we refer to these things are strings, as in a string of one-letter characters. An example of this would be
 
@@ -112,7 +112,7 @@ title: Introduction to JavaScript
 
 ---
 
-### Control Flow
+#### Control Flow
 
   Sometimes I want to modify the flow of how my program works, or in other words, sometimes I only want to run code if some condition is true. This is where `if` statements are very useful. Imagine if we tried this.
 
@@ -161,7 +161,7 @@ title: Introduction to JavaScript
 
 ---
 
-### Loops
+#### Loops
 
   Okay so now what if I want to do one thing multiple times? I could do something like this
 

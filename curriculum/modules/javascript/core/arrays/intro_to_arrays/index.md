@@ -10,7 +10,7 @@ title: Intro to Arrays
 
 ### Study Plan
 
-### Intro to Arrays
+#### Intro to Arrays
 
   [Watch **CS Discoveries: Introduction to Arrays**](https://www.youtube.com/watch?v=seBDTeZmb-k){:target="_blank"}
 

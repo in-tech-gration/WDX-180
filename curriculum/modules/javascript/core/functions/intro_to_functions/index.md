@@ -10,7 +10,7 @@ title: Intro to Functions
 
 ### Study Plan
 
-### Functions
+#### Functions
 
   A function is a bit of reusable code. Just as we like to re-use CSS classes, we love to re-use code. Let's start with an example:
 
@@ -77,7 +77,7 @@ title: Intro to Functions
 
 ---
 
-### Scope
+#### Scope
 
   We'll talk about scope multiple times but we'll start off here with it. Every time you call a function, it has its own scope. Other things can't peek into it; it just has its own little workspace for it to work with. Once it's done, any variable that you haven't explicitly held on to or returned at the end is discarded. For example:
 
@@ -173,7 +173,7 @@ title: Intro to Functions
 
 ---
 
-### Built-ins
+#### Built-ins
 
   Lots of functions already exist for you! Smart people have created these commonly-used functions for things we often need. For example, say you have a string and you want to make everything lowercase, you can do this:
 

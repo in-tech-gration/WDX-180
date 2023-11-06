@@ -10,7 +10,7 @@ title: Intro to Objects
 
 ### Study Plan
 
-### Intro to Objects
+#### Intro to Objects
 
   So far we've talked about having one variable at a time: one first name, one last name, one price, etc. What if we have a collection of data? It'd be nice to group together like data. Good news! You can!
 
@@ -95,7 +95,7 @@ title: Intro to Objects
 
 ---
 
-### Context
+#### Context
 
   Given an object with a person's address, wouldn't it be nice if we could use a function to print out a properly formatted shipping address?
 
