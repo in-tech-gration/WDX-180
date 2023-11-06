@@ -49,6 +49,11 @@ title: Intro to Functions
 
   logOutYourHome(myHomeCity, myHomeState, myHomeCountry);
   ```
+  ---
+
+  Keep this next diagram by [Wes Bos](https://wesbos.com/){:target="_blank"} handy, as it depicts all the function parts with their respective terminology. It's always good to know our way around a function's inner parts.
+
+  [![](./assets/wes_bos_function_definition.jpg)](./assets/wes_bos_function_definition.jpg){:target="_blank"}
 
 #### Various Ways of Writing Functions
 
