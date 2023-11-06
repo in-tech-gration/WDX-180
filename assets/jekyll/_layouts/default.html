@@ -18,6 +18,9 @@
     -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <!-- Google Web Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700" rel="stylesheet">
+
   <!-- Load CSS from Frontmatter 'load_css' property -->
   {% for css in page.load_css %}
   <link rel="stylesheet" href="{{ css | prepend: '/assets/jekyll/css/' | relative_url }}">
