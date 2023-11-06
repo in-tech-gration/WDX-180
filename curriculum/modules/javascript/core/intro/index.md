@@ -50,7 +50,7 @@ title: Introduction to JavaScript
   Let's get this little snippet working in our browser. Make a new folder (I'll just put it on my desktop) and add an index.html file with the following in it:
 
 
-  ```display-html
+  ```html
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -65,7 +65,7 @@ title: Introduction to JavaScript
 
   That `script` tag is going to let us load JavaScript code into our HTML page. So make another file in the same folder called `experiments.js` (it really can be called anything as long as the script tag matches it.) Then in the JS file put our code from above:
 
-  ```display-javascript
+  ```javascript
   const monthlyRent = 500;
 
   const yearlyRent = monthlyRent * 12;
@@ -161,7 +161,15 @@ title: Introduction to JavaScript
 
 ---
 
-#### Loops
+#### Loops: behavior that repeats
+
+  In programming, we often times need to repeat part of our code, again and again. This repeating behavior is called a **Loop** in programming lingo.
+
+  The more geeky term for looping _(which you will also encounter again and again in programming manuals)_ is **iteration**.
+
+  - Watch a Microsoft engineer explain loops in the first part of [this video](https://www.youtube.com/embed/G8hfAk4PfOM?si=8N2UnFsPaim5YmTr&amp;start=0&end=109){:target="_blank"} and then move on.  
+
+  ---
 
   Okay so now what if I want to do one thing multiple times? I could do something like this
 
@@ -220,6 +228,8 @@ title: Introduction to JavaScript
   }
   console.log(friendsAtYourParty);
   ```
+
+  [![](./assets/nikkisiapno.for.loop.jpeg)](./assets/nikkisiapno.for.loop.jpeg){:target="_blank"}
 
   This is a for loop which is likely the most common kind of loop. Inside the parens are three statements and you need all of them. The `let i = 0;` is you defining your control variable that will control the loop. For some reason, people always use `i`, not sure why. It's just that way. It really could be anything. The second statement `i <= 10` is just like the while loop, is that's the statement that as soon as it's false it breaks the loop. The last statement, `i++` happens at the end of every loop. In our case, we increment the control variable `i` so that it creeps closer to the end of the loop each time.
 
