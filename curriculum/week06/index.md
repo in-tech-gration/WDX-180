@@ -804,7 +804,7 @@ _(Updated: 6/11/2023)_
 
   This is a pretty convoluted example but see what you think. Once you're ready, the next block will be the answers.
 
-  ```display-javascript
+  ```javascript
   const A = "A";
   let F;
 
