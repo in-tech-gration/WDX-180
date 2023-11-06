@@ -7,7 +7,8 @@
 
 // 0) IMPORTS: =================================================================
 const path = require("node:path");
-const fs = require("node:fs");
+const fs   = require("node:fs");
+const fse  = require('fs-extra');
 const { parseArgs } = require("node:util");
 const marked = require("marked");
 const chalk  = require("chalk");
@@ -50,8 +51,8 @@ const wdxTemplateRegexes = {
   }
 
 }
-const modulesFolder  = path.join("curriculum", "modules");
-const includesFolder = path.join("curriculum", "schedule", "includes");
+const MODULES_FOLDER  = path.join("curriculum", "modules");
+const INCLUDES_FOLDER = path.join("curriculum", "schedule", "includes");
 
 // TODO:
 // 1) Warn about #### inside the ### Module sections. Use **Bold** instead.
@@ -185,7 +186,7 @@ function getInclude({ file, day, numOfWeek }){
 
   } = wdxTemplateRegexes;
 
-  const includeFile = path.join( includesFolder, file.trim() + ".md" );
+  const includeFile = path.join( INCLUDES_FOLDER, file.trim() + ".md" );
 
   try {
 
@@ -261,7 +262,33 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   return newRaw;
 }
 
-function copyModuleMediaAssets({ weeklyData, title }){
+// Copies module/FOLDER/assets/ => curriculum/weekXX/assets/
+function copyDailyMediaAssets({ weeklyFolder, dailyModuleFolder }){
+
+  const sourceDailyAssetsPath = path.join( MODULES_FOLDER, dailyModuleFolder, "assets" ); 
+  const targetCurriculumAssetsPath = path.join( weeklyFolder, "assets" );
+
+  try {
+    fse.copySync(
+      sourceDailyAssetsPath,
+      targetCurriculumAssetsPath,
+      { overwrite: true }
+    );
+
+    console.log(
+      `Successfully copied ${sourceDailyAssetsPath} => ${targetCurriculumAssetsPath}`
+    );
+
+  } catch (err) {
+
+    warn(`${xmark} ERROR COPYING: ${sourceDailyAssetsPath} => ${targetCurriculumAssetsPath}`);
+
+  }
+
+}
+
+// TODO: Simplify this, so that sgen just copies the whole assets/ folder!
+function copyWeeklyMediaAssets({ weeklyData, title }){
 
   weeklyData.forEach( dailyData =>{
 
@@ -296,8 +323,10 @@ function copyModuleMediaAssets({ weeklyData, title }){
 
           fs.copyFile(mediaPath, targetFile, (err) => {
             if (err) {
-              console.log(err);
-              throw err
+              if ( err.code && err.code === "ENOENT" ){
+                warn(`${xmark} Error copying ${err.path} => ${err.dest}`);
+                console.log(`${xmark}: ${mediaPath} => ${targetFile}`);                
+              }
             };
             ok(`${checkmark} MEDIA COPIED: ${mediaPath} => ${targetFile}`);
           });
@@ -659,7 +688,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     return;
   }
 
-  const dailyModuleDir = path.join( modulesFolder, dayMeta.module ); 
+  const dailyModuleDir = path.join( MODULES_FOLDER, dayMeta.module ); 
   const pathStats = fs.statSync(dailyModuleDir);
   let dailyModule = dailyModuleDir;
   // We can either pass a directory (that contains an index.md file) or a full path that includes a filename, e.g. extra_day.md
@@ -895,9 +924,14 @@ function createExerciseFolders({ weeklyData, title, numOfWeek }){
 
 function createWeeklyContentFromYaml({ configYaml, filename }) {
 
-  const { input, daily_input, schedule, title } = yaml.parse(configYaml);
+  const { 
+    input: markdownDraftTemplate,
+    daily_input,
+    schedule,
+    title 
+  } = yaml.parse(configYaml);
   const weeklyFolder       = path.join("curriculum", filename);
-  const weeklyFolderExists = fs.existsSync(weeklyFolder)
+  const weeklyFolderExists = fs.existsSync(weeklyFolder);
 
   if ( weeklyFolderExists ) {
 
@@ -910,7 +944,7 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
     
   }
 
-  const textContent = fs.readFileSync(input, "utf-8");
+  const textContent = fs.readFileSync( markdownDraftTemplate, "utf-8");
 
   // Parse markdown and separate Frontmatter and main content:
   const { content, data: fm, orig } = matter(textContent);
@@ -961,9 +995,16 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
   
     const weeklyIndexMarkdown = path.join( weeklyFolder, "index.md" );
     fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
-
-    // Copy Media Assets from Module folder to curriculum/
-    copyModuleMediaAssets({ weeklyData, title });
+    
+    // Copy Media Assets from Module folder to curriculum/ 
+    daysEntries.forEach( dailyEntry =>{
+      
+      const dailyModuleFolder = dailyEntry[1].module;
+      copyDailyMediaAssets({ weeklyFolder, dailyModuleFolder });
+      
+    });
+    // [DEPRECATED] IN FAVOR OF copyDailyMediaAssets()
+    // copyWeeklyMediaAssets({ weeklyData, title });
 
     // Generate /user/weekXX/exercises/... folders
     createExerciseFolders({
@@ -1020,7 +1061,7 @@ function createContentFromYaml({ configYaml, filename }) {
     // .replace(includesRegex, replaceInclude());
     .replace(moduleRegex, function( match, modulePath, offset, string ){
 
-      const fullPath = path.join(modulesFolder, modulePath.trim());
+      const fullPath = path.join(MODULES_FOLDER, modulePath.trim());
       const textContent = fs.readFileSync(fullPath, "utf-8");
       return textContent;
 
@@ -1071,7 +1112,7 @@ function createContentFromYaml({ configYaml, filename }) {
   //   fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
 
   //   // Copy Media Assets from Module folder to curriculum/
-  //   copyModuleMediaAssets({ weeklyData, title });
+  //   copyWeeklyMediaAssets({ weeklyData, title });
 
   //   // Generate /user/weekXX/exercises/... folders
   //   createExerciseFolders({
