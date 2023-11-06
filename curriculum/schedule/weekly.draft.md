@@ -2,7 +2,9 @@
 title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
 ---
 
-# {{ WDX:WEEK }} | {{ WDX:TITLE }}
+<h1 id="{{ {{ WDX:WEEK }}-{{ WDX:title }} | slugify }}">
+  <span class="week-prefix">{{ WDX:WEEK }} |</span> {{ WDX:TITLE }}
+</h1>
 
 _(Updated: {{ WDX:DATE_UPDATED }})_
 

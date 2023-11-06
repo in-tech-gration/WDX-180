@@ -175,7 +175,6 @@ code {
   margin: 0;
   padding: 4px;
 }
-
 .credits-highlighted {
   color: var(--highlighted);
 }
@@ -189,8 +188,14 @@ section.main-section h1 {
   font-weight: bold;
   line-height: 4.2rem;
 }
+section.main-section h1 .week-prefix {
+  font-weight: 300;  
+}
 section.main-section h3 {
   font-weight: 300;
+}
+section.main-section h4 {
+  font-size: 1.2rem;
 }
 // Fixing Jekyll inconsistencies with <li> elements that do not generate <p>
 section.main-section li {
