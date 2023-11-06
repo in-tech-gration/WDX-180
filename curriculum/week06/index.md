@@ -3,7 +3,7 @@ title: Week 06 | JavaScript Core 1
 ---
 
 <h1 id="{{ Week 06-JavaScript Core 1 | slugify }}">
-  <span>Week 06 |</span> JavaScript Core 1
+  <span class="week-prefix">Week 06 |</span> JavaScript Core 1
 </h1>
 
 _(Updated: 6/11/2023)_
