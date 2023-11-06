@@ -10,6 +10,8 @@ title: Flappy App - Day 1
 
 ### Study Plan
 
+  ![](./assets/FlappyAppThumbnail.jpg)
+
   **Flappy App**: Recreating a web page from a design mockup
 
   This is a 2-day project. You will go through a series of videos, where we take a webpage mockup and turn it into HTML and CSS code.

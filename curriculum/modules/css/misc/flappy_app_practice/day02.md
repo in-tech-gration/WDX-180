@@ -10,4 +10,6 @@ title: Flappy App - Day 2
 
 ### Study Plan
 
-This is Day 2 of the Flappy App practice. Just follow the instructions found on Day 1 and continue where you've left off.
+  ![](./assets/FlappyAppThumbnail.jpg)
+
+  This is Day 2 of the Flappy App practice. Just follow the instructions found on Day 1 and continue where you've left off.
