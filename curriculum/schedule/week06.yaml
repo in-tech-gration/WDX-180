@@ -9,7 +9,7 @@ schedule:
       # SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
-    2: Introduction to Functions
+    2: # Introduction to Functions
       module: javascript/core/functions/intro_to_functions
     3: # Introduction to Objects
       # file://./../modules/javascript/core/objects/intro_to_objects/index.md
