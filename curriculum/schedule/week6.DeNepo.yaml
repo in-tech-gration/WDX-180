@@ -1,0 +1,20 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Core 1
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/denepo/what-is-programming/index.md
+      module: javascript/denepo/what-is-programming
+    # 2: # 
+    #   # file://./../modules/javascript/denepo/
+    #   module: javascript/denepo/
+    # 3: # 
+    #   # file://./../modules/javascript/denepo/
+    #   module: javascript/denepo/
+    # 4: # 
+    #   # file://./../modules/javascript/denepo/
+    #   module: javascript/denepo/
+    # 5: # 
+    #   # file://./../modules/javascript/denepo/
+    #   module: javascript/denepo/

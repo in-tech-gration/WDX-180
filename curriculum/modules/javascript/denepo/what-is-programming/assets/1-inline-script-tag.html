@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>a web page (inline)</title>
+
+    <style>
+      .loud {
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="greeting" class="loud"></h1>
+
+    <script>
+      /* --- for the computer --- */
+
+      'use strict';
+
+      /* --- for the developer --- */
+
+      // log to the console for developers to read
+      console.log('hello developer (console)');
+
+      /* --- for the user --- */
+
+      // alert hello for the user
+      //  not a great UX, but easy to program
+      alert('hello user (alert)');
+
+      // write hello in the main User Interface
+      //  this uses the Document Object Model (DOM)
+      //  you'll learn about this in later modules
+      document.getElementById('greeting').innerHTML = 'hello user (DOM)';
+    </script>
+  </body>
+</html>
