@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 2
 schedule: 
+# STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/1
   days:
     1: # 
       # file://./../modules/javascript/core/
