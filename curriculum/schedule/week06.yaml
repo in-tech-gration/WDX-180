@@ -10,6 +10,7 @@ schedule:
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
     2: # Introduction to Functions
+      # file://./../modules/javascript/core/functions/intro_to_functions/index.md
       module: javascript/core/functions/intro_to_functions
     3: # Introduction to Objects
       # file://./../modules/javascript/core/objects/intro_to_objects/index.md
