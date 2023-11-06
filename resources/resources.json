@@ -2639,6 +2639,27 @@
         "css naming conventions best practices",
         "css naming classes"
       ]
+    },
+    "cs-discoveries-introduction-to-arrays": {
+      "type": "YouTube",
+      "duration": 227,
+      "title": "CS Discoveries: Introduction to Arrays",
+      "date": "28/02/2018",
+      "youtube": {
+        "id": "seBDTeZmb-k",
+        "channel_id": "UCJyEBMU1xVP2be1-AoGS1BA",
+        "channel_title": "Code.org",
+        "thumbnail_url": "https://i.ytimg.com/vi/seBDTeZmb-k/sddefault.jpg"
+      },
+      "tags": [
+        "Code.org",
+        "computer science",
+        "code",
+        "Hour of Code"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
