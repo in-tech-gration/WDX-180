@@ -261,6 +261,7 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   return newRaw;
 }
 
+// TODO: Simplify this, so that sgen just copies the whole assets/ folder!
 function copyModuleMediaAssets({ weeklyData, title }){
 
   weeklyData.forEach( dailyData =>{
@@ -296,8 +297,10 @@ function copyModuleMediaAssets({ weeklyData, title }){
 
           fs.copyFile(mediaPath, targetFile, (err) => {
             if (err) {
-              console.log(err);
-              throw err
+              if ( err.code && err.code === "ENOENT" ){
+                warn(`${xmark} Error copying ${err.path} => ${err.dest}`);
+                console.log(`${xmark}: ${mediaPath} => ${targetFile}`);                
+              }
             };
             ok(`${checkmark} MEDIA COPIED: ${mediaPath} => ${targetFile}`);
           });
