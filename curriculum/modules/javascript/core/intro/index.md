@@ -14,6 +14,7 @@ title: Introduction to JavaScript
 
   ![](./assets/js.magician.png)
 
+<!-- WDX:META:PROGRESS:task=Read 'JavaScript Intro' -->
 #### JavaScript Intro
 
   This is a tough section to teach because the needs of the students vary quite widely here. Some of you are programmers from other languages coming here to learn front-end coding. Some of you are totally new to coding and JavaScript will be your first programming language. Just like if you know Spanish already, learning Italian becomes much easier since you take the same concepts and express them with minor variances. This workshop is optimized for those totally new to coding and thus we assume no prior knowledge. If you do know another programming language, we invite you instead to skim this section to familiarize yourself with how JavaScript looks. The next sections will also be aimed at you.
@@ -76,6 +77,7 @@ title: Introduction to JavaScript
 
 ---
 
+<!-- WDX:META:PROGRESS:task=Read 'Numbers Strings and Booleans' -->
 #### Numbers, Strings and Booleans
 
   So far we've just dealt with numbers. Let's go further and start working with words and characters. In programming, we refer to these things are strings, as in a string of one-letter characters. An example of this would be
@@ -112,6 +114,7 @@ title: Introduction to JavaScript
 
 ---
 
+<!-- WDX:META:PROGRESS:task=Read 'Control Flow' -->
 #### Control Flow
 
   Sometimes I want to modify the flow of how my program works, or in other words, sometimes I only want to run code if some condition is true. This is where `if` statements are very useful. Imagine if we tried this.
@@ -161,6 +164,7 @@ title: Introduction to JavaScript
 
 ---
 
+<!-- WDX:META:PROGRESS:task=Read 'Loops: behavior that repeats' -->
 #### Loops: behavior that repeats
 
   In programming, we often times need to repeat part of our code, again and again. This repeating behavior is called a **Loop** in programming lingo.
@@ -255,26 +259,38 @@ title: Introduction to JavaScript
 
 #### Task 1: Booleans in JavaScript
 
- In this task, we want you to load the [booleans.js file](./exercises/booleans.js){:target="_blank"} from an HTML named `booleans.html` and complete the challenges found inside. 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Booleans in JavaScript'|user_folder=task_1 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Booleans in JavaScript'|type=exist|user_folder=task_1|files=booleans.js,booleans.html -->
+  In this task, we want you to load the [booleans.js file](./exercises/booleans.js){:target="_blank"} from an HTML named `booleans.html` and complete the challenges found inside. 
 
 #### Task 2: Creating Variables
 
- In this task, we want you to load the [creating-variables.js file](./exercises/creating-variables.js){:target="_blank"} from an HTML named `creating-variables.html` and complete the challenges found inside. 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Creating Variables'|user_folder=task_2 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Creating Variables'|type=exist|user_folder=task_2|files=creating-variables.js,creating-variables.html -->
+  In this task, we want you to load the [creating-variables.js file](./exercises/creating-variables.js){:target="_blank"} from an HTML named `creating-variables.html` and complete the challenges found inside. 
 
 #### Task 3: JavaScript Numbers
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Number'|user_folder=task_3 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Number'|type=exist|user_folder=task_3|files=numbers.js,numbers.html -->
   In this task, we want you to load the [numbers.js file](./exercises/numbers.js){:target="_blank"} from an HTML named `numbers.html` and complete the challenges found inside. 
 
 #### Task 4: JavaScript Strings
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Strings'|user_folder=task_4 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Strings'|type=exist|user_folder=task_4|files=strings.js,strings.html -->
   In this task, we want you to load the [strings.js file](./exercises/strings.js){:target="_blank"} from an HTML named `strings.html` and complete the challenges found inside.
 
 #### Task 5: JavaScript Variables
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Variables'|user_folder=task_5 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Variables'|type=exist|user_folder=task_5|files=variables.js,variables.html -->
   In this task, we want you to load the [variables.js](./exercises/variables.js){:target="_blank"} from an HTML named `variables.html` and complete the challenges found inside.
 
 #### Task 6: JavaScript Loops
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Loops'|user_folder=task_6 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Loops'|type=exist|user_folder=task_6|files=loops.js,loops.html -->
   In this task, we want you to load the [loops.js](./exercises/loops.js){:target="_blank"} from an HTML named `loops.html` and complete the challenges found inside.
 
 ### Extra Resources
