@@ -100,213 +100,21 @@ title: Intro to Arrays
 
 ### Exercises
 
-#### Task 1
+#### Task 1: Declaring JavaScript Arrays
 
-  In this task, we want you to copy and paste the following code in a file called `declaring-arrays.js` and complete the challenges found inside:
+  In this task, we want you to load the [declaring-arrays.js](./exercises/declaring-arrays.js){:target="_blank"} from an HTML named `declaring-arrays.html` and complete the challenges found inside.
 
-  ```javascript
-  /* 
-  ------------------------------------------------------------------------------------
-  Tutorial: Declaring an array
-  ------------------------------------------------------------------------------------
-  */
+#### Task 2: Indexing JavaScript Arrays
 
-  // To create an array we use square brackets []
-  // Arrays are indexed data structures
-  // The objects we place inside are indexed with integer's starting at zero
+  In this task, we want you to load the [indexing-arrays.js](./exercises/indexing-arrays.js){:target="_blank"} from an HTML named `indexing-arrays.html` and complete the challenges found inside.
 
-  let fruits = ['Apple', 'Banana'];
+#### Task 3: Modifying JavaScript Arrays
 
-  // For this example 'Apple' is indexed at position 0 and 'Banana' is indexed at position 1 inside the array fruits.
-  console.log(fruits[0]);
-  console.log(fruits[1]);
+  In this task, we want you to load the [modifying-arrays.js](./exercises/modifying-arrays.js){:target="_blank"} from an HTML named `modifying-arrays.html` and complete the challenges found inside.
 
-  /*
-  ------------------------------------------------------------------------------------
-  Challenge: 1. Create an array for years that inside have 1999, 1984 and 2021, the least recent year should be at position 0. 
-              2. console.log each item in the array to check its position.
-  ------------------------------------------------------------------------------------
-  */
-  ```
+#### Task 4: Properties and Methods of JavaScript Arrays
 
-#### Task 2
-
-  In this task, we want you to copy and paste the following code in a file called `indexing-arrays.js` and complete the challenges found inside:
-
-  ```javascript
-  /* 
-  ------------------------------------------------------------------------------------
-  Tutorial: Indexing Arrays
-  ------------------------------------------------------------------------------------
-  */
-
-  // Arrays are indexed with integer values beginning with 0.
-  // Lets use the example below
-
-  let pringles = ['classic', 'pizza', 'ranch'];
-
-  // The index value of each element inside the array is the following:
-
-  // 'classic'  |  'pizza'  |  'ranch'
-  //     0            1           2
-
-  // And we can verify this by printing on console the elements of the array 
-  // by it's position or index value
-
-  console.log(0); // 'classic'
-  console.log(1); // 'pizza'
-  console.log(2); // 'ranch'
-
-  // We can find out how many items are in an array with the length property.
-
-  console.log(pringles.length);
-
-  // output
-  // 3
-
-  // Although the indices of pringles consists of 0 to 2, the length property will output the actual amount of items in the array, starting with 1.
-
-  // Counting starts with 0 in indices, which goes against our natural intuition to start counting at 1, 
-  // so special care must be taken to remember this until it becomes natural. 
-
-  //If we want to find out the index number of a specific item in an array, such as pizza, we can use the indexOf() method.
-
-  console.log(pringles.indexOf('pizza'));
-
-  // output
-  // 1
-
-  // If an index number is not found, such as for a value that does not exist, the console will return -1.
-
-  console.log(pringles.indexOf('blue cheese'));
-
-  // output
-  // -1
-              
-  /*
-  ------------------------------------------------------------------------------------
-  Challenge: 1. Consider the following array: myColor = ['Red', 'Green', 'White', 'Black'];
-                What is the length of the array?
-              2. With the previous array, what is the index value/position of the 'Yellow' color.
-  ------------------------------------------------------------------------------------
-  */
-  ```
-
-#### Task 3
-
-  In this task, we want you to copy and paste the following code in a file called `modifying-arrays.js` and complete the challenges found inside:
-
-  ```javascript
-  /* 
-  ------------------------------------------------------------------------------------
-  Tutorial: Modify an array using indexes
-  ------------------------------------------------------------------------------------
-  */
-
-  // The most basic way to modify an array is to use indexes. We replace the element at the 0th index by 5.
-  var numbers = [1, 2, 3, 4];
-  numbers[0] = 5;
-  console.log(numbers);
-
-  /*
-  ------------------------------------------------------------------------------------
-  Challenge: Given an array of positive integers above, if a number in the array of numbers is even, then multiply it by 2
-  ------------------------------------------------------------------------------------
-  */
-  ```
-
-#### Task 4
-
-  In this task, we want you to copy and paste the following code in a file called `properties-and-methods-of-arrays.js` and complete the challenges found inside:
-
-  ```javascript
-  // Some properties and methods of array are :
-
-
-  // 1. Returns the number of elements :
-
-      //length
-
-  // example
-
-  var fruits = ["Orange", "Apple", "Banana"];
-
-  console.log(fruits.length); 
-
-  // Output : 3
-
-
-
-
-  // 2. Sorts the array :
-
-      //sort();
-
-  // example
-
-  var fruits = ["Orange", "Apple", "Banana"];
-
-  console.log(fruits.sort());  
-
-  // Output : ['Apple', 'Banana', 'Orange']
-
-
-
-
-  // 3. Joins arrays and returns an array with the joined arrays :
-
-      //concat();
-
-  // example
-
-  var fruits = ["Orange", "Apple", "Banana"];
-  var car = ["Audi", "BMW", "Ferrari"];
-
-  console.log(fruits.concat(car));
-
-  // Output : [ 'Orange', 'Apple', 'Banana', 'Audi', 'BMW', 'Ferrari' ]
-
-
-
-
-  // 4. Joins all elements of an array into a string :
-
-      //join();
-
-  // example
-
-  var fruits = ["Orange", "Apple", "Banana"];
-
-  console.log(fruits.join());
-
-  // Output : Orange,Apple,Banana
-
-
-
-
-  // 5. Search the array for an element and returns its position :
-
-      //indexOf();
-
-  // example
-
-  var fruits = ["Orange", "Apple", "Banana"];
-
-  console.log(fruits.indexOf("Apple"));
-
-  // Output : 1
-
-
-
-
-
-  /*
-  ------------------------------------------------------------------------------------
-  Challenge 1: Find the length of the array Car ["Audi", "BMW", "Ferrari"] using the properties of the array.
-  Challenge 2: Find the position of the element "BMW" in the array Car ["Audi", "BMW", "Ferrari"] using the properties of the array.
-  ------------------------------------------------------------------------------------
-  */
-  ```
+  In this task, we want you to load the [properties-and-methods-of-arrays.js](./exercises/properties-and-methods-of-arrays.js){:target="_blank"} from an HTML named `properties-and-methods-of-arrays.html` and complete the challenges found inside.
 
 ### Extra Resources
 
@@ -314,19 +122,19 @@ title: Intro to Arrays
 
   **Content is based on the following sources:**
 
-  [Arrays](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/K-arrays.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/K-arrays.md){:target="_blank"}
+  - [Arrays](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/K-arrays.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/K-arrays.md){:target="_blank"}
 
   Please do not forget to ⭐ the [repo](https://github.com/btholt/complete-intro-to-web-dev-v3){:target="_blank"}!
 
-  **Exercise is based on the following sources:**
+  **Exercises are based on the following sources:**
 
-  [TeachMeJavaScriptLikeIm5 declaring-arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/declaring-arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/declaring-arrays.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 declaring-arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/declaring-arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/declaring-arrays.js){:target="_blank"}
 
-  [TeachMeJavaScriptLikeIm5 indexing-arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/indexing-arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/indexing-arrays.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 indexing-arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/indexing-arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/indexing-arrays.js){:target="_blank"}
 
-  [TeachMeJavaScriptLikeIm5 modifying-arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/modifying-arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/modifying-arrays.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 modifying-arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/modifying-arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/modifying-arrays.js){:target="_blank"}
 
-  [TeachMeJavaScriptLikeIm5 properties_and_methods_of_arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/properties_and_methods_of_arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/properties_and_methods_of_arrays.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 properties_and_methods_of_arrays](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/3-arrays/properties_and_methods_of_arrays.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/3-arrays/properties_and_methods_of_arrays.js){:target="_blank"}
 
   Please do not forget to ⭐ the [repo](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5){:target="_blank"}!
 

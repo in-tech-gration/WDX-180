@@ -175,9 +175,7 @@ title: Intro to Functions
   console.log(C); // does not work, C was declared inside the function and the function is over
   console.log(F); // works, F was declared in the global scope
   ```
-
 ---
-
 #### Built-ins
 
   Lots of functions already exist for you! Smart people have created these commonly-used functions for things we often need. For example, say you have a string and you want to make everything lowercase, you can do this:
@@ -214,330 +212,21 @@ title: Intro to Functions
   console.log(Date.now());
   ```
 
-
----
-
 ### Summary
 
 ### Exercises
 
-#### Task 1
+#### Task 1: JavaScript Functions
 
-  In this task, we want you to copy and paste the following code in a file called `functions.js` and complete the challenges found inside:
+  In this task, we want you to load the [functions.js](./exercises/functions.js){:target="_blank"} from an HTML named `functions.html` and complete the challenges found inside.
 
-  ```javascript
-    /* 
-  ------------------------------------------------------------------------------------
-  Tutorial: Functions in JavaScript
-  ------------------------------------------------------------------------------------
-  */
+#### Task 2: JavaScript Arrow Functions
 
+  In this task, we want you to load the [arrow-functions.js](./exercises/arrow-functions.js){:target="_blank"} from an HTML named `arrow-functions.html` and complete the challenges found inside.
 
-  /*
-  ------------------------------------------------------------------------------------
-  FUNCTIONS: A function is a repeating piece of "Processing" while the input and output changes.
-  ------------------------------------------------------------------------------------
+#### Task 3: JavaScript Higher Order Functions
 
-  ------------------------------------------------------------------------------------
-  EXAMPLE: washing machine which takes dirty clothes as an input, do some processing i.e washing the clothes and returns the washed clothes as an output. Functions are same as washing machine, they take some input, do some processing on that input and then returns that processed value as an output. 
-  ------------------------------------------------------------------------------------
-
-  ------------------------------------------------------------------------------------
-
-  SYNTAX:-
-
-  function functionName(parameterOne, parameterTwo){
-      some processing code...
-  }
-
-  ------------------------------------------------------------------------------------
-
-  ------------------------------------------------------------------------------------
-  FUNCTION EXAMPLE - the below 👇 example takes a name as an input and prints hello "passedName" in the console;
-  ------------------------------------------------------------------------------------
-  */
-
-
-  function showName(name){
-      console.log("hello " + name);
-  }
-
-  showName("sourabh"); // will print "hello sourabh" in the console
-
-
-  /*
-  ------------------------------------------------------------------------------------
-
-  PARAMETERS & ARGUMENTS:-
-
-  1. PARAMETERS: Parameters are the variable names listed inside of the function definition's parenthesis. (for the above showName function the parameter is "name" listed inside the parenthesis.)
-
-  2. ARGUMENTS: Arguments are the actual values passed to a function when it is called. (for the above function showName the argument is "sourabh" which is passed to the function "showName" when called.)
-    
-  ------------------------------------------------------------------------------------
-  */
-
-  /*
-  ------------------------------------------------------------------------------------
-
-  RETURN VALUE & UNDEFINED:-
-
-  A funtion which do not returns something returns a special value "undefined".
-  Also we can assign the returned value of a function as a value in a variable identifier.
-    
-  ------------------------------------------------------------------------------------
-  */
-
-  console.log(showName("Tanay pratap")); // will print "undefined" in the console because showName is not returning any value
-
-  // Returning value from the function
-  function add(num1, num2){
-      return num1 + num2;
-  }
-
-  console.log(add(5, 6)); // will print 11 in the console
-
-
-  /*
-  ------------------------------------------------------------------------------------
-  Challenge: create a function "welcomeUser" which will take username as an input and returns "Welcome " + passed username as an output.
-  
-  -> your function name should be "welcomeUser".
-  -> parameter name should be "userName".
-  -> return Welcome + passed username value as an return value.
-  -> pass your name as an argument to the "welcomeUser" function.
-  -> store that return value in a new variable named as "greeting".
-  -> use console.log() to show the greeting value.
-  ------------------------------------------------------------------------------------
-  */
-  ```
-
-#### Task 2
-
-  In this task, we want you to copy and paste the following code in a file called `arrow-functions.js` and complete the challenges found inside:
-
-  ```javascript
-  //In the previous file you aquired the basic concept of functions and how to make a function.
-
-  /*
-  In this file as the filename suggests, we would learn about arrow functions, before starting with this it is recommended to have a basic idea of how functions work and how they are build, so that we could understand what is the purpose of "Arrow functions".
-  */
-
-  /*
-  What is arrow function or => ?
-  It's a new feature that introduced in ES6 and is called arrow function. The left part denotes the input of a function and the right part the output of that function.
-  Arrow functions introduce concise body syntax, or implicit return. This allows the omission of the curly brackets and the return keyword. Implicit return is useful for creating succinct one-line operations in map , filter , and other common array methods.
-
-  (If you are familiar with python you can compare it to list comprehension or comprehension method, it is used to reduce the line of codes and make the function/code look compact and neat.)
-  */
-
-  //How does it work?
-
-  hello = function() {
-    return ("Hello World!") ;  //A normal function.
-  };
-
-  //----------------------------------------------------------------------------------------------------------
-
-  hello = val => "Hello " + val ; //The same function above but with arrow function '=>'.
-
-  /* 
-
-  As you can see from the example above, that you have to write less lines of code for the same function that you created using the layman way.
-  But there are some points that you should remember while using the arrow function, such as:
-  -> You don't need to use {} or return when you are returning a single value.
-  -> You can avoid using (), when there is only one parameter in your function.
-  -> You should not add return in single return type as you have to use {} for applying the return keyword.
-
-  */
-
-  //------------------------------------------------------------------------------------------------------
-
-  /* 
-  Aside from this there are many ways to creatively use the arrow function, you should try the things mentioned above in your local console and experiment with it.
-  If you wanna read more about this you can visit the links below:
-  -> https://www.w3schools.com/js/js_arrow_function.asp
-  -> https://devdocs.io/javascript/
-
-  */
-
-  //-------------------------------------------------------------------------------------------------------
-
-  /* 
-  A challenge problem to test your understanding and making it crystal clear.
-  (Do not skip it as it will only benefit you.)
-
-  Q1) Write an arrow function expression called greet(). It should accept a single argument representing a person's name. It should return a greeting string.
-  Q2) Write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.
-  Q3) Write an arrow function for the following JavaScript function:
-
-  function nameAge(name, age) {
-    console.log("Hello " + name);
-    console.log("You are " + age + " years old");
-  }
-
-
-  If you wanna practice more or you are stuck, you can check the solutions at:
-
-  Avoid looking at the solutions first, and try to complete the problems above by yourself.
-
-  https://www.tutorialsandyou.com/javascript/javascript-arrow-function-exercises-and-practice-questions-73.html
-  */
-
-  //----------------------------------------------------------------------------------------------------------
-
-  /*
-  Believe in your grind, here's a quote for you:
-
-  "There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself." ~miyamoto musashi
-  */
-  ```
-
-#### Task 3
-
-  In this task, we want you to copy and paste the following code in a file called `higher-order-functions.js` and complete the challenges found inside:
-
-  ```javascript
-  /*
-  In this file as the filename suggests, we would learn about higher order functions, before starting with this it is recommended to have a basic idea of how functions work and how they are build, so that we could understand what is the purpose of "Higher Order functions".
-  */
-
-  /*
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  What is a Higher Order Function (HOF) ?
-  A function that accepts and/or returns another function is called a higher-order function.
-  It’s higher-order because instead of strings, numbers, or booleans, it goes higher to operate on functions.
-  Probably the greatest benefit of HOFs is greater reusability.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-
-  /*
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Why is the need for higher order functions ? 
-  As a functional programming language, JavaScript uses higher-order functions to implement abstraction at an even higher level.
-  Abstraction means hiding certain details and showing only essential information to the user. 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-
-  //Below is an example to understand what higher order functions are:
-
-  //Pass function as an argument to another function
-
-  //array of names to be used in the function
-
-  const names= ['John', 'Tina','Kale','Max'];
-
-  //Function "useFunction" takes an array and another function fn as parameters
-  function useFunction(arr,fn){
-    for(let i=0; i<arr.length; i++){
-      fn(arr[i]);
-    }
-  }                                
-
-  //Function that is being used as a parameter
-  function argFn (name){
-    console.log("Hello " + name );
-  }
-
-  //calling useFunction() with argFn() as a parameter
-  useFunction(names,argFn);
-
-  /*Result printed:
-    Hello John
-    Hello Tina
-    Hello Kale
-    Hello Max
-  */
-
-
-
-  /*
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Some popular higher order functions in JavaScript are:
-  1.map
-  2.filter
-  3.reduce
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-
-
-
-  /*
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1. Map
-  The map() method is used for creating a new array from an existing one, applying a function to each one of the elements of the first array.
-
-  Syntax:
-  var new_array = arr.map(function callback(element, index, array) {
-      // Return value for new_array
-  }[, thisArg])
-
-  In the callback, only the element is required. Other parameters are optional.
-
-  Example: 
-  In the following example, each number in an array is doubled.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-
-  const numbers = [1, 2, 3, 4];
-  const doubled = numbers.map(item => item * 2);
-  console.log(doubled); //Output array "doubled" -> [2, 4, 6, 8]
-
-  /*
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  2. Filter
-  The filter() method takes each element in an array and it applies a conditional statement against it. 
-  If this conditional returns true, the element gets pushed to the output array.
-  If the condition returns false, the element does not get pushed to the output array.
-
-  Syntax
-  var new_array = arr.filter(function callback(element, index, array) {
-      // Return true or false
-  }[, thisArg])
-
-  The syntax for filter is similar to map, except the callback function should return true to keep the element, or false otherwise. In the callback, only the element is required.
-
-  Example:
-  In the following example, odd numbers are "filtered" out, leaving only even numbers.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-
-  const evens = numbers.filter(item => item % 2 === 0);
-  console.log(evens); // Output array "evens" -> [2, 4]
-
-  /*
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  3. Reduce
-  The reduce() method reduces an array of values down to just one value. 
-  To get the output value, it runs a reducer function on each element of the array.
-
-  Syntax
-  arr.reduce(callback[, initialValue])
-
-  The callback argument is a function that will be called once for every item in the array. 
-
-  Example:
-  The following example adds every number together in an array of numbers.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-
-  const sum = numbers.reduce(function (result, item) {
-      return result + item;
-    }, 0);
-    console.log(sum); // Output "sum" -> 10
-
-
-  /*
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Challenges:
-  1. Map -> Take an array arr = [1, 4, 9, 16, 25] and create a new array containing the square roots of the numbers in the first array.
-  2. Filter -> Take an array arr = [2, 1, 7, 3, 6, 5, 8] and create a new array containing only odd numbers from first array.
-  3. Reduce -> Take an array arr = [1,3,5,7] and return the product of all the elements in the array.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  */
-  ```
-
-
+  In this task, we want you to load the [higher-order-functions.js](./exercises/higher-order-functions.js){:target="_blank"} from an HTML named `higher-order-functions.html` and complete the challenges found inside.
 
 ### Extra Resources
 
@@ -545,20 +234,20 @@ title: Intro to Functions
 
   **Content is based on the following sources:**
 
-  [Functions](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/F-functions.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/F-functions.md){:target="_blank"}
+  - [Functions](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/F-functions.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/F-functions.md){:target="_blank"}
 
-  [Scope](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/G-scope.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/G-scope.md){:target="_blank"}
+  - [Scope](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/G-scope.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/G-scope.md){:target="_blank"}
 
-  [Built-ins](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/H-builtins.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/H-builtins.md){:target="_blank"}
+  - [Built-ins](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/main/lessons/04-javascript/H-builtins.md){:target="_blank"} [(Permalink)](https://github.com/btholt/complete-intro-to-web-dev-v3/blob/a46a32bb9d641523163d74c28340ec686c5be2f9/lessons/04-javascript/H-builtins.md){:target="_blank"}
 
   Please do not forget to ⭐ the [repo](https://github.com/btholt/complete-intro-to-web-dev-v3){:target="_blank"}!
 
   **Exercises are based on the following sources:**
 
-  [TeachMeJavaScriptLikeIm5 arrow-functions](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/8-functions/arrow-function.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/8-functions/arrow-function.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 arrow-functions](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/8-functions/arrow-function.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/8-functions/arrow-function.js){:target="_blank"}
 
-  [TeachMeJavaScriptLikeIm5 functions](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/8-functions/functions.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/8-functions/functions.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 functions](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/8-functions/functions.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/8-functions/functions.js){:target="_blank"}
 
-  [TeachMeJavaScriptLikeIm5 higher-order-functions](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/8-functions/higher-order-functions.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/8-functions/higher-order-functions.js){:target="_blank"}
+  - [TeachMeJavaScriptLikeIm5 higher-order-functions](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/main/8-functions/higher-order-functions.js){:target="_blank"} [(Permalink)](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5/blob/bcbe160a29718c0eb832fbf7af113b896ff06deb/8-functions/higher-order-functions.js){:target="_blank"}
 
   Please do not forget to ⭐ the [repo](https://github.com/inspirezonetech/TeachMeJavaScriptLikeIm5){:target="_blank"}!
