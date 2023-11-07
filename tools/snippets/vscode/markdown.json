@@ -1,10 +1,24 @@
 {
+	"WDX:Kramdown target _blank": {
+    "prefix": "_blank",
+    "body": [
+      "{:target=\"_blank\"}"
+    ],
+    "description": "WDX:Kramdown target _blank"
+  },
   "WDX META EXERCISE 1": {
-    "prefix": ["wme1", "wdx-meta-ex-1"],
+    "prefix": "wdx-meta-ex-1",
     "body": [
       "<!-- WDX:META:PROGRESS:task=Complete the exercise '${1:title}'|user_folder=${2:folder} -->",
-      "<!-- WDX:META:TESTS:name=Test Exercise: '${1:title}'|type=exist|user_folder=${2:folder}|${3:files} -->"
+      "<!-- WDX:META:TESTS:name=Test Exercise: '${1:title}'|type=exist|user_folder=${2:folder}|files=${3:files} -->"
     ],
     "description": "Adds 2 comments with WDX:META:PROGRESS and WDX:META:TESTS (for type='exist' tests) for WDX exercises."
+  },
+  "WDX META PROGRESS READ": {
+    "prefix": "wdx-meta-prog-read",
+    "body": [
+      "<!-- WDX:META:PROGRESS:task=Read '${1:title}' -->"
+    ],
+    "description": "Adds 1 comment with WDX:META:PROGRESS with Read '<task>'"
   }
 }
