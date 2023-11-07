@@ -10,6 +10,7 @@ title: Intro to Arrays
 
 ### Study Plan
 
+<!-- WDX:META:PROGRESS:task=Read 'Intro to Arrays' -->
 #### Intro to Arrays
 
   ![](./assets/flat-design-devops-illustration.jpg)
@@ -104,18 +105,26 @@ title: Intro to Arrays
 
 #### Task 1: Declaring JavaScript Arrays
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Declaring JavaScript Arrays'|user_folder=task_1 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Declaring JavaScript Arrays'|type=exist|user_folder=task_1|files=declaring-arrays.js,declaring-arrays.html -->
   In this task, we want you to load the [declaring-arrays.js](./exercises/declaring-arrays.js){:target="_blank"} from an HTML named `declaring-arrays.html` and complete the challenges found inside.
 
 #### Task 2: Indexing JavaScript Arrays
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Indexing JavaScript Arrays'|user_folder=task_2 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Indexing JavaScript Arrays'|type=exist|user_folder=task_2|files=indexing-arrays.js,indexing-arrays.html -->
   In this task, we want you to load the [indexing-arrays.js](./exercises/indexing-arrays.js){:target="_blank"} from an HTML named `indexing-arrays.html` and complete the challenges found inside.
 
 #### Task 3: Modifying JavaScript Arrays
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Modifying JavaScript Arrays'|user_folder=task_3 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Modifying JavaScript Arrays'|type=exist|user_folder=task_3|files=modifying-arrays.js,modifying-arrays.html -->
   In this task, we want you to load the [modifying-arrays.js](./exercises/modifying-arrays.js){:target="_blank"} from an HTML named `modifying-arrays.html` and complete the challenges found inside.
 
 #### Task 4: Properties and Methods of JavaScript Arrays
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Properties and Methods of JavaScript Arrays'|user_folder=task_4 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Properties and Methods of JavaScript Arrays'|type=exist|user_folder=task_4|files=properties-and-methods-of-arrays.js,properties-and-methods-of-arrays.html -->
   In this task, we want you to load the [properties-and-methods-of-arrays.js](./exercises/properties-and-methods-of-arrays.js){:target="_blank"} from an HTML named `properties-and-methods-of-arrays.html` and complete the challenges found inside.
 
 ### Extra Resources

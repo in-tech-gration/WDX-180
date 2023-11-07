@@ -10,6 +10,7 @@ title: Intro to Functions
 
 ### Study Plan
 
+<!-- WDX:META:PROGRESS:task=Read 'Functions' -->
 #### Functions
 
   A function is a bit of reusable code. Just as we like to re-use CSS classes, we love to re-use code. Let's start with an example:
@@ -55,6 +56,7 @@ title: Intro to Functions
 
   [![](./assets/wes_bos_function_definition.jpg)](./assets/wes_bos_function_definition.jpg){:target="_blank"}
 
+<!-- WDX:META:PROGRESS:task=Read 'Various Ways of Writing Functions' -->
 #### Various Ways of Writing Functions
 
   There are a few ways to write functions that are mostly the same (there are some differences but for now don't worry about it.)
@@ -82,6 +84,7 @@ title: Intro to Functions
 
 ---
 
+<!-- WDX:META:PROGRESS:task=Read 'Scope' -->
 #### Scope
 
   We'll talk about scope multiple times but we'll start off here with it. Every time you call a function, it has its own scope. Other things can't peek into it; it just has its own little workspace for it to work with. Once it's done, any variable that you haven't explicitly held on to or returned at the end is discarded. For example:
@@ -176,6 +179,7 @@ title: Intro to Functions
   console.log(F); // works, F was declared in the global scope
   ```
 ---
+<!-- WDX:META:PROGRESS:task=Read 'Built-ins' -->
 #### Built-ins
 
   Lots of functions already exist for you! Smart people have created these commonly-used functions for things we often need. For example, say you have a string and you want to make everything lowercase, you can do this:
@@ -218,14 +222,20 @@ title: Intro to Functions
 
 #### Task 1: JavaScript Functions
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Functions'|user_folder=task_1 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Functions'|type=exist|user_folder=task_1|files=functions.js,functions.html -->
   In this task, we want you to load the [functions.js](./exercises/functions.js){:target="_blank"} from an HTML named `functions.html` and complete the challenges found inside.
 
 #### Task 2: JavaScript Arrow Functions
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Arrow Functions'|user_folder=task_2 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Arrow Functions'|type=exist|user_folder=task_2|files=arrow-functions.js,arrow-functions.html -->
   In this task, we want you to load the [arrow-functions.js](./exercises/arrow-functions.js){:target="_blank"} from an HTML named `arrow-functions.html` and complete the challenges found inside.
 
 #### Task 3: JavaScript Higher Order Functions
 
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'JavaScript Higher Order Functions'|user_folder=task_3 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'JavaScript Higher Order Functions'|type=exist|user_folder=task_3|files=higher-order-functions.js,higher-order-functions.html -->
   In this task, we want you to load the [higher-order-functions.js](./exercises/higher-order-functions.js){:target="_blank"} from an HTML named `higher-order-functions.html` and complete the challenges found inside.
 
 ### Extra Resources
