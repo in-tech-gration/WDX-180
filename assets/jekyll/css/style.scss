@@ -22,12 +22,17 @@
   --details-border-color: gray;
   --details-border-left-color: #ffcc00;
   --details-bg-color: #343333;
+
+  --max-width: 780px;
   
 }
 
 body {
   font-family: var(--font-family);
   font-size: 16px;
+}
+.wrapper, .main-section {
+  max-width: var(--max-width);
 }
 
 //>>> UTILITY CLASSES <<<//

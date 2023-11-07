@@ -1,6 +1,6 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: 
+title: Web APIs Part 3
 schedule: 
   days:
     1: # Geolocation API

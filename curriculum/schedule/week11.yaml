@@ -1,0 +1,24 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: Functional Programming, Clean Code & Testing
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+
+      # TODO: STUDY: What went wrong? Troubleshooting JavaScript
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
+
+    2: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    3: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    4: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    5: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
