@@ -220,3 +220,12 @@ section.main-section li {
 .summary-day {
   color: var(--secondary-color);
 }
+
+// FLEMS CODE SECTIONS
+a[href="#flems-enable"] {
+  background: yellowgreen;
+  color: black;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
