@@ -35,7 +35,7 @@
   - `assets/jekyll/_layouts/default.html` (Main HTML file)
   - `assets/jekyll/_includes/` (Includes)
 
-### Jekyll | How to | Include CSS & JS in a markdown file
+## Jekyll | How to | Include CSS & JS in a markdown file
 
   **Q: How do I load a CSS file in a particular markdown file?**
 
@@ -71,7 +71,9 @@
 
   The JS files must be placed in the `assets/jekyll/_includes/` folder.
 
-### Jekyll | How to | Create markdown links that open in a new Tab
+  The code that injects both CSS and JS inside Jekyll-generated files can be found at the bottom of this template: `assets/jekyll/_layouts/default.html`
+
+## Jekyll | How to | Create markdown links that open in a new Tab
 
   Markdown for GitHub Pages (Kramdown) supports links that open in a new Tab:
 
@@ -91,7 +93,7 @@
   },
   ```
 
-### Jekyll | How to | Prevent build on GitHub Pages
+## Jekyll | How to | Prevent build on GitHub Pages
 
   Just include a `.nojekyll` file in the repo.
 
