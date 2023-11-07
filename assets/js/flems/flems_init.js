@@ -14,6 +14,7 @@
     try {
 
       if (!mainSectionEl) {
+        throw new Error("No .main-section element found.");
         return false;
       }
 
@@ -22,12 +23,14 @@
         const { target } = e;
 
         if (!target.href) {
+          throw new Error("Not target.href found. target:", target);
           return false;
         }
 
         const hrefURL = new URL(target.href);
 
         if (hrefURL.hash !== flemsEnableButtonHREF) {
+          throw new Error("Has does not include #flems-enable. href: ", href);
           return false;
         }
 
@@ -35,12 +38,13 @@
         const parentSiblingCodeSection = target.parentElement.previousElementSibling;
 
         if (!parentSiblingCodeSection) {
+          throw new Error("Did not find a parentSiblingCodeSection. parentSiblingCodeSection:", parentSiblingCodeSection);
           return false;
         }
 
         // Check if the Code Editor has already been initialized 
         const nextElementSibling = target.nextElementSibling;
-        if ( !nextElementSibling || nextElementSibling.classList.contains("wdx-flems-editor") ){
+        if ( nextElementSibling && nextElementSibling.classList.contains("wdx-flems-editor") ){
           return false;
         }
 
