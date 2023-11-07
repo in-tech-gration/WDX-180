@@ -140,6 +140,12 @@
           "source": {
             "type": "string"
           },
+          "module": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "language": {
             "type": "array",
             "items": {
