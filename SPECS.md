@@ -1,3 +1,9 @@
+# WDX-180 | Technical Details & Specifications
+
+---
+
+>> JEKYLL
+
 ## Jekyll | About the main website and GitHub Pages
 
   Website: https://in-tech-gration.github.io/WDX-180/
@@ -15,6 +21,19 @@
       ├── css
       └── jekyll
   ```
+
+## Jekyll | How to | Change Website Styling (CSS)
+
+  Edit the following file:
+
+  - `assets/jekyll/css/style.scss`
+
+## Jekyll | How to | Change Website Layout (HTML)
+
+  Edit the following files:
+
+  - `assets/jekyll/_layouts/default.html` (Main HTML file)
+  - `assets/jekyll/_includes/` (Includes)
 
 ### Jekyll | How to | Include CSS & JS in a markdown file
 
@@ -37,6 +56,8 @@
   **How to include JS:**
 
   A: You will need to include the JS filename in a Front matter property named `load_script_js`:
+
+  The JS files must be placed inside `assets/jekyll/_includes/`. If this is a JS library it must be placed inside `assets/jekyll/_includes/libs/`.
 
   ```markdown
   ---
