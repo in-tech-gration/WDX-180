@@ -33,8 +33,7 @@
 
     <!-- Load JS from Frontmatter 'load_script_js' property -->
     {% for js in page.load_script_js_via_src %}
-    <script type="text/javascript" src="/{{ js | relative_url }}"></script>
-    {% endfor %}
+    <script type="text/javascript" src="/{{ js | prepend: 'assets/js/' | relative_url }}"></script>
   
 </head>
 
