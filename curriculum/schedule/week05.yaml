@@ -8,6 +8,8 @@ schedule:
       module: frontend/input_fields_practice
       # TODO: REVIEW: file://./../modules/accessibility/improving_website_accessibility_practice/index.md
 
+    # TODO: Rename YouTube Videos and their respective description by starting to increment from Video #2 (Skip the Intro). Part 1 => Part 0 Intro
+    # Should update YT video descriptions as well as Markdown
     2: # ✅ Flappy App - Day 1
       # file://./../modules/css/misc/flappy_app_practice/index.md
       module: css/misc/flappy_app_practice
