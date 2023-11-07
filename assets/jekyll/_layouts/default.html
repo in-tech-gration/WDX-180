@@ -31,6 +31,11 @@
   <title>{{ site.title | default: site.github.repository_name }}</title>  
   {% include head-custom.html %}
 
+    <!-- Load JS from Frontmatter 'load_script_js' property -->
+    {% for js in page.load_script_js_via_src %}
+    <script type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}
+  
 </head>
 
 <body class="{{ page.url | slugify | append: '__page' }}">
