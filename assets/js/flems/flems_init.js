@@ -38,8 +38,15 @@
           return false;
         }
 
+        // Check if the Code Editor has already been initialized 
+        const nextElementSibling = target.nextElementSibling;
+        if ( !nextElementSibling || nextElementSibling.classList.contains("wdx-flems-editor") ){
+          return false;
+        }
+
         const code = parentSiblingCodeSection.textContent;
         const codeEditor = document.createElement("div");
+        codeEditor.setAttribute("class", "wdx-flems-editor")
         target.insertAdjacentElement("afterEnd", codeEditor);
 
         // Initialize JavaScript Code Playground:

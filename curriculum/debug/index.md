@@ -13,11 +13,7 @@ const b = 2;
 console.log( a * b );
 ```
 
-[Live coding](#flems-enable)
+[&#9658; Live coding](#flems-enable)
 
-```js-flems
-const a = 420;
-const b = 20;
-console.log( "Flems?", a * b );
-```
+
 
