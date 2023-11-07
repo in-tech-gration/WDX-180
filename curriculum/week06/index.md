@@ -859,6 +859,8 @@ _(Updated: 7/11/2023)_
 
 
 
+  ![](./assets/flat-design-devops-illustration.jpg)
+
   [Watch **CS Discoveries: Introduction to Arrays**](https://www.youtube.com/watch?v=seBDTeZmb-k){:target="_blank"}
 
   Objects are unordered collections of data using keys and values. Arrays, in contrast, are **ordered collections of data**. If you put something in an array, it has an order. For example, you might a list of the days of the week.

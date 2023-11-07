@@ -4,9 +4,7 @@ title: JavaScript Core 1
 schedule: 
   days:
     1: # Introduction to JavaScript
-      # TODO: Add exercises 1, 2, 3, 4 (basics), 5, 8
-      # from here: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5
-      # SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
+      # TODO: SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
     2: # Introduction to Functions
@@ -16,8 +14,6 @@ schedule:
       # file://./../modules/javascript/core/objects/intro_to_objects/index.md
       module: javascript/core/objects/intro_to_objects
     4: # Introduction to Arrays
-      # TODO: Arrays? => Intro: https://www.youtube.com/watch?v=seBDTeZmb-k (Without Scratch)
-      # TODO: Download and add this image as a header image to the Arrays chapter: https://www.freepik.com/free-vector/flat-design-devops-illustration_25644111.htm#query=programming%20loop&position=2&from_view=search&track=ais
       # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
       module: javascript/core/arrays/intro_to_arrays
     5: # 
