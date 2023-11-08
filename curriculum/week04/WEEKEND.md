@@ -4,7 +4,7 @@ This weekend, meet the genius (and unfortunately tragic) figure of Aaron Swartz 
 
 - [The Internet's Own Boy: The Story of Aaron Swartz](https://www.imdb.com/title/tt3268458/){:target="_blank"}
 
-- [Watch it here: **The Internet's Own Boy: The Story of Aaron Swartz | full movie (2014)**](https://www.youtube.com/watch?v=9vz06QO3UkQ) _(or search on YouTube for a full-length version available online)_
+- [Watch it here: **The Internet's Own Boy: The Story of Aaron Swartz \| full movie (2014)**](https://www.youtube.com/watch?v=9vz06QO3UkQ) _(or search on YouTube for a full-length version available online)_
 
 > "What is the most important thing you could be working on in the world right now? And if you're not working on that, why aren't you?"
 
