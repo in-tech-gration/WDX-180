@@ -69,7 +69,7 @@ const ATTRIBUTIONS    = "Sources and Attributions"
 // 1) OUR FUNCTIONS: ===========================================================
 
 // APPEND FRONTMATTER TO THE OUTPUT FILE:
-function getFrontMatterStringFromObject(fm) {
+function getFrontMatterStringFromObject(fm, liveCodeEnabled=false) {
 
   const fmEntries = Object.entries(fm);
   let fmString = "";
@@ -78,6 +78,10 @@ function getFrontMatterStringFromObject(fm) {
     fmEntries.forEach(line => {
       fmString += `${line[0]}: ${line[1]}\n`
     });
+    if ( liveCodeEnabled ) {
+      // Include the following content to enable live coding 
+      fmString += "load_script_js_via_src:\n  - flems/flems.html\n  - flems/flems_init.js\n";
+    }
     fmString += "---\n";
   }
   return fmString;
@@ -745,6 +749,9 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     day,
     entries: new Set()
   }
+
+  // Boolean variable to check if at least one daily content has live coding feature
+  let liveCodeEnabled = false;
   // Create Object that contains content that will replace the {{ WDX }} patterns inside the template:
   let headingCursor;
   const dailyContentObject = moduleMarkdownTokens
@@ -758,6 +765,11 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
       hrefs.forEach( href => {
         dailyMediaAssets.entries.add(href);
       })
+    }
+
+    // TODO: Maybe need to go deeper than one level
+    if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
+      liveCodeEnabled = true;
     }
 
     if ( token.type === "heading" && token.depth === 3 ){
@@ -913,7 +925,8 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     content: dailyContent, 
     progress: dailyProgressObject, 
     tests: dailyTestsObject,
-    media: hasDailyMediaAssets ? dailyMediaAssets : null 
+    media: hasDailyMediaAssets ? dailyMediaAssets : null,
+    liveCodeEnabled
   };
 
 }
@@ -1014,7 +1027,7 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
       }
     });
   
-    const fmString = getFrontMatterStringFromObject(fm);
+    const fmString = getFrontMatterStringFromObject(fm, weeklyData.some(wd => wd.liveCodeEnabled));
   
     outputContent = parseWeeklyPatterns({ raw: fmString, numOfWeek, title }) + outputContent;
   
