@@ -128,6 +128,12 @@ title: Intro to Arrays
   <!-- WDX:META:TESTS:name=Test Exercise: 'Properties and Methods of JavaScript Arrays'|type=exist|user_folder=task_4|files=properties-and-methods-of-arrays.js,properties-and-methods-of-arrays.html -->
   In this task, we want you to load the [properties-and-methods-of-arrays.js](./exercises/properties-and-methods-of-arrays.js){:target="_blank"} from an HTML named `properties-and-methods-of-arrays.html` and complete the challenges found inside.
 
+#### Task 5: Test your skills: JavaScript Arrays
+
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Test your skills: JavaScript Arrays'|user_folder=task5 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Test your skills: JavaScript Arrays'|type=exist|user_folder=task5|files=arrays-skills.js,arrays-skills.html -->
+  In this task, we want you to load the [arrays-skills.js](./exercises/arrays-skills.js){:target="_blank"} from an HTML named `arrays-skills.html` and complete the challenges found inside.
+
 ### Extra Resources
 
 ### Sources and Attributions
