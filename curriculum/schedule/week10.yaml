@@ -1,0 +1,20 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
+schedule: 
+  days:
+    1: # Promises
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    2: # Fetch API
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    3: # JSON
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    4: # Web Storage
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    5: # Media
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/

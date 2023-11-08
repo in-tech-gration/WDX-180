@@ -6,6 +6,11 @@ schedule:
     1: # 
       # file://./../modules/javascript/
       module: javascript/
+      # TODO: You are now grown-ups, so let's recommend some cool tools to add to your arsenal:
+      # https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla
+      # https://30secondsofknowledge.com/
+      # https://github.com/petrovicstefanrs/30_seconds_of_knowledge (star/fork)
+      # CodeGrepper + ChatGPT + Copilot
       # TODO: Add: How to speed up your workflow with Console shortcuts | DevTools Tips (https://www.youtube.com/watch?v=hdRDTj6ObiE) + https://developer.chrome.com/docs/devtools/console/utilities/
     2: # 
       # file://./../modules/javascript/

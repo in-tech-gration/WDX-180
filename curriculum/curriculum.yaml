@@ -33,7 +33,7 @@ Syllabus:
           title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
           # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
         10: # file:///./schedule/week10.yaml
-          title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
+          title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media"
           # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
         11: # file:///./schedule/week11.yaml
           title: "Functional Programming 1, Clean Code & Testing"
@@ -54,7 +54,7 @@ Syllabus:
           title: "Algorithms"
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         16: # file:///./schedule/week16.yaml
-          title: "Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more"
+          title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
         17: # file:///./schedule/week17.yaml
           title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
         18: # file:///./schedule/week18.yaml

@@ -4,11 +4,15 @@ title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
 schedule: 
   days:
     1: # Introduction to the DOM API
+      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/8
       # 1) https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
       # 2) https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents 
       # file://./../modules/javascript/web_apis/dom/intro/index.md
+      # TODO: INTEGRATE: INTERVIEW QUESTIONS
+      # https://github.com/in-tech-gration/30-seconds-of-interviews#what-is-the-dom
       module: javascript/web_apis/dom/intro
     2: # Events
+      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/9 
       # file://./../modules/javascript/.../index.md
       module: javascript/
     3: # Events
@@ -16,6 +20,7 @@ schedule:
       module: javascript/
     4: # Asynchronous Programming 1
        # STUDY: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
+       # STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/10
       # file://./../modules/javascript/.../index.md
       module: javascript/
     5: # Asynchronous Programming 2 & Ajax
