@@ -4,18 +4,23 @@ title: JavaScript Core 2
 schedule: 
 # STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/1
   days:
-    1: # 
+    1: # String Manipulation 
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings
       # file://./../modules/javascript/core/
       module: javascript/core/
-    2: # 
+    2: # Arrays Part 2
+      # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
       # file://./../modules/javascript/core/
       module: javascript/core/
-    3: # 
+    3: # Arrays
       # file://./../modules/javascript/core/
       module: javascript/core/
-    4: # 
+    4: # Objects Part 2
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects
       # file://./../modules/javascript/core/
       module: javascript/core/
-    5: # 
+    5: # Project
       # file://./../modules/javascript/core/
       module: javascript/core/

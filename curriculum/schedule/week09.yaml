@@ -4,17 +4,25 @@ title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
 schedule: 
   days:
     1: # Introduction to the DOM API
+      # 1) https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
+      # 2) https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents 
       # file://./../modules/javascript/web_apis/dom/intro/index.md
       module: javascript/web_apis/dom/intro
-    2:
+    2: # Events
       # file://./../modules/javascript/.../index.md
       module: javascript/
-    3:
+    3: # Events
       # file://./../modules/javascript/.../index.md
       module: javascript/
-    4:
+    4: # Asynchronous Programming 1
+       # STUDY: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
       # file://./../modules/javascript/.../index.md
       module: javascript/
-    5:
+    5: # Asynchronous Programming 2 & Ajax
+      # Ajax: The Technology that shaped the world!
+      # https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
+      # TODO: STUDY: https://www.w3schools.com/xml/xml_http.asp
+      # TODO: STUDY:  https://www.w3schools.com/js/js_ajax_http.asp
       # file://./../modules/javascript/.../index.md
       module: javascript/

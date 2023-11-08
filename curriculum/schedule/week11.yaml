@@ -12,15 +12,18 @@ schedule:
       # TODO: STUDY: What went wrong? Troubleshooting JavaScript
       # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
 
-    2: # 
+    2: # Clean Code & Best Practices, Testing
       # file://./../modules/javascript/core/
       module: javascript/core/
-    3: # 
+
+    3: # Testing
       # file://./../modules/javascript/core/
       module: javascript/core/
-    4: # 
+
+    4: # Functional Programming
       # file://./../modules/javascript/core/
       module: javascript/core/
-    5: # 
+
+    5: # Functional Programming
       # file://./../modules/javascript/core/
       module: javascript/core/
