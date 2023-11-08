@@ -2,9 +2,11 @@
 title: Week 04 | CSS 2 & Performance
 ---
 
-# Week 04 | CSS 2 & Performance
+<h1 id="{{ Week 04-CSS 2 & Performance | slugify }}">
+  <span class="week-prefix">Week 04 |</span> CSS 2 & Performance
+</h1>
 
-_(Updated: 2/11/2023)_
+_(Updated: 8/11/2023)_
 
 ---
 
@@ -326,3 +328,7 @@ _(Updated: 2/11/2023)_
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+## Week 04 - Weekend Suggestions
+
+If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
