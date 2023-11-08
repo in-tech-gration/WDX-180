@@ -1,0 +1,21 @@
+name: "Week 06 - Day 3 JavaScript Core 1 | Test Exercise: 'JavaScript Higher Order Functions'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week06/exercises/day03/task_3/**
+jobs:
+  task_3:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'JavaScript Higher Order Functions' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week06/exercises/day03/task_3/higher-order-functions.js, user/week06/exercises/day03/task_3/higher-order-functions.html"
+          fail: true

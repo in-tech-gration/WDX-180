@@ -1,7 +1,4 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-6,4,JavaScript Core 1: Intro to Arrays,Read 'Intro to Arrays',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,4,JavaScript Core 1: Intro to Arrays,Watch 'CS Discoveries: Introduction to Arrays',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,4,JavaScript Core 1: Intro to Arrays,Complete the exercise 'Declaring JavaScript Arrays',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day04/task_1/ folder
-6,4,JavaScript Core 1: Intro to Arrays,Complete the exercise 'Indexing JavaScript Arrays',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day04/task_2/ folder
-6,4,JavaScript Core 1: Intro to Arrays,Complete the exercise 'Modifying JavaScript Arrays',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day04/task_3/ folder
-6,4,JavaScript Core 1: Intro to Arrays,Complete the exercise 'Properties and Methods of JavaScript Arrays',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day04/task_4/ folder
+6,4,JavaScript Core 1: Intro to Objects,Read 'Intro to Objects',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,4,JavaScript Core 1: Intro to Objects,Read 'Context',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,4,JavaScript Core 1: Intro to Objects,Complete the exercise 'JavaScript Objects Basics',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day04/task_1/ folder

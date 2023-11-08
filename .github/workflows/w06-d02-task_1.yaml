@@ -1,4 +1,4 @@
-name: "Week 06 - Day 2 JavaScript Core 1 | Test Exercise: 'JavaScript Functions'"
+name: "Week 06 - Day 2 JavaScript Core 1 | Test Exercise: 'Booleans in JavaScript'"
 on:
   push:
     branches:
@@ -14,8 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: "Test Exercise: 'JavaScript Functions' > Check solution files existence"
+      - name: "Test Exercise: 'Booleans in JavaScript' > Check solution files existence"
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week06/exercises/day02/task_1/functions.js, user/week06/exercises/day02/task_1/functions.html"
+          files: "user/week06/exercises/day02/task_1/booleans.js, user/week06/exercises/day02/task_1/booleans.html"
           fail: true
