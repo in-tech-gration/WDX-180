@@ -1,10 +1,10 @@
-name: "Week 06 - Day 4 JavaScript Core 1 | Test Exercise: 'Indexing JavaScript Arrays'"
+name: "Week 06 - Day 5 JavaScript Core 1 | Test Exercise: 'Indexing JavaScript Arrays'"
 on:
   push:
     branches:
       - 'main'
     paths:
-      - user/week06/exercises/day04/task_2/**
+      - user/week06/exercises/day05/task_2/**
 jobs:
   task_2:
 
@@ -17,5 +17,5 @@ jobs:
       - name: "Test Exercise: 'Indexing JavaScript Arrays' > Check solution files existence"
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week06/exercises/day04/task_2/indexing-arrays.js, user/week06/exercises/day04/task_2/indexing-arrays.html"
+          files: "user/week06/exercises/day05/task_2/indexing-arrays.js, user/week06/exercises/day05/task_2/indexing-arrays.html"
           fail: true

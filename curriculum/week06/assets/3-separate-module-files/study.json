@@ -1,0 +1,13 @@
+{
+  "study": {
+    "type": "module",
+    "environment": "module",
+
+    "flowchart": false,
+    "variables": false,
+    "blanks": false,
+    "writeme": false,
+    "trace": false,
+    "ask": false
+  }
+}

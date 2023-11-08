@@ -19,36 +19,38 @@ schedule:
   # https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
 
   days:
-    1: # Introduction to JavaScript
+    1: # 
+      # file://./../modules/javascript/.../index.md
+      # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
+      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
+      module: javascript/denepo/what-is-programming
+    2: # Introduction to JavaScript
+      # Contents covered: 
+      # -- Variables let, const, var
+      # -- Numbers, Booleans and Strings
+      # -- Control flow (if)
+      # -- Loops (while, for(let i=0; i < X; i++))
       # TODO: SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
-    2: # Introduction to Functions
+    3: # Introduction to Functions
+      # Contents covered: 
+      # -- Functions (normal, arrow, higher-order)
+      # -- Scope
+      # -- Built-ins
       # file://./../modules/javascript/core/functions/intro_to_functions/index.md
       module: javascript/core/functions/intro_to_functions
-    3: # Introduction to Objects
+    4: # Introduction to Objects
+      # Contents covered: 
+      # -- JavaScript Objects basics
       # file://./../modules/javascript/core/objects/intro_to_objects/index.md
       module: javascript/core/objects/intro_to_objects
       # TODO: STUDY & INTEGRATE:
       # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/41
       # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/42/3
       # EXERCISE: https://codepen.io/kostasx/pen/vQMwKp?editors=0011
-
-
-    4: # Introduction to Arrays
+    5: # Introduction to Arrays
+      # Contents covered: 
+      # -- JavaScript Arrays basics
       # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
       module: javascript/core/arrays/intro_to_arrays
-    5: # 
-      # file://./../modules/javascript/.../index.md
-      # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
-      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
-      module: javascript/
-
-# Contents Covered
-# Variables let, const, var
-# Numbers, Booleans and Strings
-# Control flow (if)
-# Loops (while, for(let i=0; i < X; i++))
-# Functions (normal, arrow, higher-order), Scope, Built-ins
-# Objects Basics
-# Arrays

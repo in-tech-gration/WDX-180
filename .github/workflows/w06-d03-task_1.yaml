@@ -1,4 +1,4 @@
-name: "Week 06 - Day 3 JavaScript Core 1 | Test Exercise: 'JavaScript Objects Basics'"
+name: "Week 06 - Day 3 JavaScript Core 1 | Test Exercise: 'JavaScript Functions'"
 on:
   push:
     branches:
@@ -14,8 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: "Test Exercise: 'JavaScript Objects Basics' > Check solution files existence"
+      - name: "Test Exercise: 'JavaScript Functions' > Check solution files existence"
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week06/exercises/day03/task_1/using-objects-basic.js, user/week06/exercises/day03/task_1/using-objects-basic.html"
+          files: "user/week06/exercises/day03/task_1/functions.js, user/week06/exercises/day03/task_1/functions.html"
           fail: true
