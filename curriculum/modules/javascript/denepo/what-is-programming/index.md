@@ -10,6 +10,7 @@ title: What is Programming?
 
 ### Study Plan
 
+<!-- WDX:META:PROGRESS:task=Read 'What is programming?' -->
 #### What is Programming?
 
   Programming is communication. It's also a lot of other things, but this
@@ -78,6 +79,7 @@ title: What is Programming?
 
   ---
 
+<!-- WDX:META:PROGRESS:task=Read 'JavaScript' -->
 #### JavaScript
 
   JavaScript is the only programming language supported by web browsers, this
@@ -237,7 +239,7 @@ title: What is Programming?
 
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=_cj6JYwuO38PPGKxXN_cQ,3910Z7e2jGLZu4vjueG-Bg)
 
-
+<!-- WDX:META:PROGRESS:task=Read 'Some History' -->
 #### Some History
 
   JavaScript has an interesting history, it was originally created in 1 week
@@ -302,6 +304,7 @@ title: What is Programming?
   through the [proposals repository](https://github.com/tc39/proposals){:target="_blank"} can be
   interesting to see how people plan and discuss additions to the JS language.
 
+<!-- WDX:META:PROGRESS:task=Read 'Developers' -->
 #### Developers
 
   Developers are the ones designing the software, writing the code, and fixing the
@@ -329,6 +332,7 @@ title: What is Programming?
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=40qMI89WByj9Yhhh94Ghg,4zpL-AmDgpnbyFJWJfNQhg)
 
+<!-- WDX:META:PROGRESS:task=Read 'The Computer' -->
 #### The Computer
 
   You've been the user of many websites, you've even developed a few with HTML &
@@ -386,6 +390,7 @@ title: What is Programming?
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=_cj6JYwuO38PPGKxXN_cQ,3910Z7e2jGLZu4vjueG-Bg)
 
+<!-- WDX:META:PROGRESS:task=Read 'Users' -->
 #### Users
 
   Users will use your running programs, but will never see your source code. When
@@ -417,6 +422,7 @@ title: What is Programming?
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=40qMI89WByj9Yhhh94Ghg,4zpL-AmDgpnbyFJWJfNQhg)
 
+<!-- WDX:META:PROGRESS:task=Read 'Data In Data Out: I/O' -->
 #### Data In, Data Out: I/O
 
   So what is a program? It's something like this:
