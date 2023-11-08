@@ -130,8 +130,8 @@ title: Intro to Arrays
 
 #### Task 5: Test your skills: JavaScript Arrays
 
-  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Test your skills: JavaScript Arrays'|user_folder=task5 -->
-  <!-- WDX:META:TESTS:name=Test Exercise: 'Test your skills: JavaScript Arrays'|type=exist|user_folder=task5|files=arrays-skills.js,arrays-skills.html -->
+  <!-- WDX:META:PROGRESS:task=Complete the exercise 'Test your skills: JavaScript Arrays'|user_folder=task_5 -->
+  <!-- WDX:META:TESTS:name=Test Exercise: 'Test your skills: JavaScript Arrays'|type=exist|user_folder=task_5|files=arrays-skills.js,arrays-skills.html -->
   In this task, we want you to load the [arrays-skills.js](./exercises/arrays-skills.js){:target="_blank"} from an HTML named `arrays-skills.html` and complete the challenges found inside.
 
 ### Extra Resources
