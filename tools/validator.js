@@ -22,6 +22,9 @@ const {
   getYouTubeListIdParts 
 } = require("./utils");
 
+// SOME CONSTANTS:
+const WEEKEND_FILENAME = "WEEKEND";
+
 // 1) OUR FUNCTIONS: ===========================================================
 
 /**
@@ -437,9 +440,12 @@ function initializeChecks(){
     warn("No markdown file passed as argument.")
     process.exit();
   }
-  
+
+  info(`Validating ${markdownFilePath}`);
+
+  const isWeekendFile = path.parse(path.basename(markdownFilePath)).name === WEEKEND_FILENAME;
+
   const isInCurriculumFolder  = isCurriculumFolder( markdownFilePath );
-  console.log({ isInCurriculumFolder });
   const markdownContent       = fs.readFileSync(markdownFilePath, 'utf8');
   const frontmatter           = getFrontmatterFromMarkdown( markdownContent );
   const markdownBody          = getMarkdownBody( markdownContent );

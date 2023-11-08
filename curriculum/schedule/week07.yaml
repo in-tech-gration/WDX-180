@@ -2,7 +2,12 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 2
 schedule: 
-# STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/1
+
+# TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/1
+# TODO: STUDY: Pass by value vs pass by reference:
+# Mosh?
+# https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/44
+
   days:
     1: # String Manipulation 
       # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods

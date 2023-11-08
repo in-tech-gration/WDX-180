@@ -2,6 +2,22 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 1
 schedule: 
+
+  # TODO: Check whether the following DeNepo material can be integrated (dispersed) throughout this week's content:
+  # 1) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming
+  # 2) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/README.md
+  # 3) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/some-history.md
+  # 4) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/1-the-developers
+  # 5) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/2-the-computer
+  # 6) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/3-the-users
+  # 7) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/4-data-in-data-out
+
+  # TODO: Integrate?
+  # while loop exercise (using document.write instead):
+  # https://www.w3schools.com/js/tryit.asp?filename=tryjs_while
+  # for loop (using document.write instead):
+  # https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
+
   days:
     1: # Introduction to JavaScript
       # TODO: SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
@@ -13,12 +29,19 @@ schedule:
     3: # Introduction to Objects
       # file://./../modules/javascript/core/objects/intro_to_objects/index.md
       module: javascript/core/objects/intro_to_objects
+      # TODO: STUDY & INTEGRATE:
+      # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/41
+      # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/42/3
+      # EXERCISE: https://codepen.io/kostasx/pen/vQMwKp?editors=0011
+
+
     4: # Introduction to Arrays
       # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
       module: javascript/core/arrays/intro_to_arrays
     5: # 
       # file://./../modules/javascript/.../index.md
       # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
+      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
       module: javascript/
 
 # Contents Covered
