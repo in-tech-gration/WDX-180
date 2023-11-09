@@ -709,6 +709,27 @@ function parseTokenForMediaAssets( token ){
 
 }
 
+
+/**
+ * function parseTokenForLiveCoding
+ * parses token for [&#9658; Live coding](#flems-enable) used with flems
+ * 
+ * @params token: string
+ * @return True if link found, False otherwise
+ */
+function parseTokenForLiveCoding( token ) {
+
+  // TODO: Maybe need to go deeper than one level
+  // TODO: Add toggle on/off functionality
+  if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
+    console.log(token);
+    return true;
+  }
+
+  return false;
+
+}
+
 function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
   const [ day, dayMeta ] = entry;
@@ -767,12 +788,8 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
       })
     }
 
-    // TODO: Maybe need to go deeper than one level
-    // TODO: Make sure that flems is enabled when only a markdown link is present
-    // TODO: Make sure that flems is not enabled when #flems-enable is present as plain HTML content (not a link)
-    // TODO: Add toggle on/off functionality
-    if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
-      liveCodeEnabled = true;
+    if (!liveCodeEnabled) {
+      liveCodeEnabled = parseTokenForLiveCoding(token);
     }
 
     if ( token.type === "heading" && token.depth === 3 ){
