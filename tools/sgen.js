@@ -722,7 +722,6 @@ function parseTokenForLiveCoding( token ) {
   // TODO: Maybe need to go deeper than one level
   // TODO: Add toggle on/off functionality
   if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
-    console.log(token);
     return true;
   }
 
