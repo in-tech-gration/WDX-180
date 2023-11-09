@@ -771,7 +771,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     // TODO: Make sure that flems is enabled when only a markdown link is present
     // TODO: Make sure that flems is not enabled when #flems-enable is present as plain HTML content (not a link)
     // TODO: Add toggle on/off functionality
-    if ( token.type === "paragraph" && token.tokens.some(t => t.type === "html" && t.raw.includes("#flems-enable")) ) {
+    if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
       liveCodeEnabled = true;
     }
 

@@ -1544,7 +1544,7 @@ _(Updated: 9/11/2023)_
   console.log(courses);
   ```
 
-  <a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
+  [&#9658; Live coding](#flems-enable)
 
   The first thing we do is add an element to the end using the push function that arrays have. It "pushes" the element on the end.
 
@@ -1572,7 +1572,7 @@ _(Updated: 9/11/2023)_
   });
   ```
 
-  <a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
+  [&#9658; Live coding](#flems-enable)
 
   The first way, using a for loop, is using that `i` control variable which gets incremented each loop. We use that `i` to access each item in the array on each iteration of the loop. We have the loop to stop when `i` gets equal to the `length` of cities. Very useful pattern. You'll see it a lot.
 
