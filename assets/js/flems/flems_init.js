@@ -5,7 +5,7 @@
 
     console.log('Flem initialization...');
 
-    const mainSectionEl = document.querySelector(".main-section");
+    const flemsButtonEl = document.querySelector(".flems-button");
     const flemsEnableButtonHREF = "#flems-enable";
     // TODO: Implement Fullscreen mode:
     // ELEMENT.exitFullscreen() 
@@ -13,12 +13,12 @@
 
     try {
 
-      if (!mainSectionEl) {
+      if (!flemsButtonEl) {
         throw new Error("No .main-section element found.");
         return false;
       }
 
-      mainSectionEl.addEventListener("click", e => {
+      flemsButtonEl.addEventListener("click", e => {
 
         const { target } = e;
 

@@ -96,7 +96,7 @@ title: Intro to Arrays
   });
   ```
 
-  [&#9658; Live coding](#flems-enable)
+  <a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
 
   The first way, using a for loop, is using that `i` control variable which gets incremented each loop. We use that `i` to access each item in the array on each iteration of the loop. We have the loop to stop when `i` gets equal to the `length` of cities. Very useful pattern. You'll see it a lot.
 

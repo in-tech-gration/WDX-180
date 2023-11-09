@@ -1,15 +1,12 @@
 ---
 title: Week 06 | JavaScript Core 1
-load_script_js_via_src:
-  - flems/flems.html
-  - flems/flems_init.js
 ---
 
 <h1 id="{{ Week 06-JavaScript Core 1 | slugify }}">
   <span class="week-prefix">Week 06 |</span> JavaScript Core 1
 </h1>
 
-_(Updated: 8/11/2023)_
+_(Updated: 9/11/2023)_
 
 ---
 
@@ -1570,7 +1567,7 @@ _(Updated: 8/11/2023)_
   });
   ```
 
-  [&#9658; Live coding](#flems-enable)
+  <a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
 
   The first way, using a for loop, is using that `i` control variable which gets incremented each loop. We use that `i` to access each item in the array on each iteration of the loop. We have the loop to stop when `i` gets equal to the `length` of cities. Very useful pattern. You'll see it a lot.
 
