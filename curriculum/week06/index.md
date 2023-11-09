@@ -1,5 +1,8 @@
 ---
 title: Week 06 | JavaScript Core 1
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 <h1 id="{{ Week 06-JavaScript Core 1 | slugify }}">

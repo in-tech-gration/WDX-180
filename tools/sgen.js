@@ -768,7 +768,7 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
     }
 
     // TODO: Maybe need to go deeper than one level
-    if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
+    if ( token.type === "paragraph" && token.tokens.some(t => t.type === "html" && t.raw.includes("#flems-enable")) ) {
       liveCodeEnabled = true;
     }
 
