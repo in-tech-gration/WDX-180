@@ -6,7 +6,7 @@ title: Week 04 | CSS 2 & Performance
   <span class="week-prefix">Week 04 |</span> CSS 2 & Performance
 </h1>
 
-_(Updated: 8/11/2023)_
+_(Updated: 9/11/2023)_
 
 ---
 

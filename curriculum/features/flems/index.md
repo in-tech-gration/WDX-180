@@ -48,4 +48,8 @@ console.log( a * b );
 <a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
 
 
+```js
+console.log(Math.random());
+```
 
+[&#9658; Live coding](#flems-enable)
