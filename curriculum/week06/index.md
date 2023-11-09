@@ -1544,6 +1544,8 @@ _(Updated: 9/11/2023)_
   console.log(courses);
   ```
 
+  <a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
+
   The first thing we do is add an element to the end using the push function that arrays have. It "pushes" the element on the end.
 
   Below that, we're overriding index 2 with a new course. This will throw away what was there before and set it to be what we've set it to be.

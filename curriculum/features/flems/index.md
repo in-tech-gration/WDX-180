@@ -20,7 +20,7 @@ const b = 2;
 console.log( a * b );
 ```
 
-[&#9658; Live coding](#flems-enable)
+<a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
 ~~~
 
 3) Include the following content in the Markdown Frontmatter:
@@ -45,7 +45,7 @@ const b = 2;
 console.log( a * b );
 ```
 
-[&#9658; Live coding](#flems-enable)
+<a href="#flems-enable" class="flems-button">&#9658; Live coding</a>
 
 
 
