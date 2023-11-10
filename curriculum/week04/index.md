@@ -11,13 +11,13 @@ title: Week 04 | CSS 2 & Performance
 <div class="week-controls">
 
   <h2 class="week-controls__previous_week">
-    <a href="WDX-180/curriculum/{{ WDX:WEEK_NUM | minus: 1 }}">Week {{ WDX:WEEK_NUM }} &#8678;</a>
+    <a href="/WDX-180/curriculum/week{{ WDX:WEEK_NUM | to_integer | minus: 1 }}">Week {{ WDX:WEEK_NUM }} &#8678;</a>
   </h2>
 
   <span>Updated: 10/11/2023</span>
 
   <h2 class="week-controls__next_week">
-    <a href="WDX-180/curriculum/{{ WDX:WEEK_NUM | plus: 1 }}">&#8680; Week {{ WDX:WEEK_NUM }}</a>
+    <a href="/WDX-180/curriculum/week{{ WDX:WEEK_NUM | to_integer | plus: 1 }}">&#8680; Week {{ WDX:WEEK_NUM }}</a>
   </h2>
 
 </div>
