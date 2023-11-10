@@ -35,35 +35,40 @@ Syllabus:
           title: "JavaScript Core 3"
         10: # file:///./schedule/week10.yaml
           title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
-          # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
+          # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
         11: # file:///./schedule/week11.yaml
           title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media"
-          # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
+          # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
         12: # file:///./schedule/week12.yaml
           title: "Project Week: Combine Web APIs to build a shopping cart"
-          # title: "JavaScript Libraries, Clean Code & Testing"
-          # title: "Functional Programming 1, Templating, JavaScript Frameworks & Git Workflow"
-          # title: "Deploying our Applications & Group Project"
-          # TODO: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
   Intermediate:
     title: "Intermediate: WDX 120°"
     schedule:
       weeks:
-        13: # file:///./schedule/week13.yaml
+        13: # JavaScript Intermediate 1 & Git
+          # file:///./schedule/week13.yaml
           title: "JavaScript Intermediate 1 & Git"
-        14: # file:///./schedule/week14.yaml
-          title: "Data Structures"
+          # Clean Code, Testing, Workflow, Deploying your app
+        14: # Functional Programming 1, Templating, JavaScript Frameworks 
+          # file:///./schedule/week14.yaml
+          title: "Functional Programming 1, Templating, JavaScript Frameworks"
+          # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
+        15: # Data Structures & Algorithms 
+          # file:///./schedule/week15.yaml
+          title: "Data Structures & Algorithms"
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
-        15: # file:///./schedule/week15.yaml
-          title: "Algorithms"
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
-        16: # file:///./schedule/week16.yaml
+        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more
+          # file:///./schedule/week16.yaml
           title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
-        17: # file:///./schedule/week17.yaml
+        17: # JavaScript Intermediate 2: Software Patterns & TypeScript
+          # file:///./schedule/week17.yaml
           title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
-        18: # file:///./schedule/week18.yaml
+        18: # Node.js 1 
+          # file:///./schedule/week18.yaml
           title: "Node.js 1"
-        19: # file:///./schedule/week19.yaml
+        19: # Node.js 2, NoSQL Databases, Docker 
+          # file:///./schedule/week19.yaml
           title: "Node.js 2, NoSQL Databases & Docker"
           # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
           # STUDY: https://www.sql-practice.com/
@@ -75,15 +80,20 @@ Syllabus:
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/01-tables.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
-        20: # file:///./schedule/week20.yaml
+        20: # React 1 
+          # file:///./schedule/week20.yaml
           title: "React 1"
-        21: # file:///./schedule/week21.yaml
+        21: # React 2 
+          # file:///./schedule/week21.yaml
           title: "React 2, Firebase"
-        22: # file:///./schedule/week22.yaml
+        22: # React 3 
+          # file:///./schedule/week22.yaml
           title: "React 3, Redux & Tech Interview"
-        23: # file:///./schedule/week23.yaml
+        23: # Group Project, Tech Interviews, Job Hunt 
+          # file:///./schedule/week23.yaml
           title: "Group Project, Tech Interview & Job Hunt"
-        24: # file:///./schedule/week24.yaml
+        24: # Group Project 
+          # file:///./schedule/week24.yaml
           title: "Group Project"
   Advanced:
     title: "Advanced: WDX 180°"
