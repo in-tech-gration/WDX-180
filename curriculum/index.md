@@ -30,21 +30,21 @@
   - [**Week 02**: HTML, Accessibility & Git](week02/index.md)
   - [**Week 03**: CSS, Accessibility & more Git](week03/index.md)
   - [**Week 04**: CSS 2 & Performance](week04/index.md)
-  - [**Week 05**: CSS Frameworks](week05/index.md)
-  - [**Week 06**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 07**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 08**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 09**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 10**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 11**: Functional Programming 1, Clean Code & Testing](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 12**: Templating, JavaScript Frameworks & Git Workflow](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 05**: Mockup CSS Challenge](week05/index.md)
+  - [**Week 06**: CSS Frameworks & Intro to Programming](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 07**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 08**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 09**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 10**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 11**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 12**: Project Week: Combine Web APIs to build a shopping cart](#) _(🔒 Stay tuned! This module is on the way.)_
 
 ### Intermediate: WDX 120°
 
   - [**Week 13**: JavaScript Intermediate 1 & Git](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 14**: Data Structures](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 15**: Algorithms](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 18**: Node.js 1](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 19**: Node.js 2, NoSQL Databases & Docker](#) _(🔒 Stay tuned! This module is on the way.)_
