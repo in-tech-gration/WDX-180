@@ -1,0 +1,21 @@
+name: "Week 07 - Day 2 JavaScript Core 1 | Test Exercise: 'JavaScript Arrow Functions'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week07/exercises/day02/task_2/**
+jobs:
+  task_2:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'JavaScript Arrow Functions' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week07/exercises/day02/task_2/arrow-functions.js, user/week07/exercises/day02/task_2/arrow-functions.html"
+          fail: true
