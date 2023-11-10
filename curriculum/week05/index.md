@@ -14,7 +14,7 @@ title: Week 05 | CSS Frameworks
 
   <h2 class="week-controls__previous_week">
 
-    {% if week_num > 0 %}
+    {% if false and week_num > 0 %}
 
       {% assign previous_week_num = 05 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -27,7 +27,7 @@ title: Week 05 | CSS Frameworks
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if false and week_num <= 36 %}
 
       {% assign next_week_num = 05 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 

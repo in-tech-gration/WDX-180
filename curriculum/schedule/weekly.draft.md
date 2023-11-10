@@ -14,7 +14,8 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
 
   <h2 class="week-controls__previous_week">
 
-    {% if week_num > 0 %}
+    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
+    {% if false and week_num > 0 %}
 
       {% assign previous_week_num = {{ WDX:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -27,7 +28,8 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
+    {% if false and week_num <= 36 %}
 
       {% assign next_week_num = {{ WDX:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
