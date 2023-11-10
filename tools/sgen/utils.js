@@ -6,6 +6,9 @@ const { warn } = require("../utils");
 
 const wdxTemplateRegexes = {
 
+  markdownTargetBlank: /\[(.*?)\]\((.*?)\)\{:target="_blank"\}/gi,
+  // const [ _, linkText, URL ] = markdownTargetBlank.exec( text );
+
   // TODO: weekRegex will be replaced by weekFullRegex and weekNumRegex
   weekRegex:          /\{\{\s?WDX:\s?WEEK\s?\}\}/gi,
   weekNumRegex:       /\{\{\s?WDX:\s?WEEK_NUM\s?\}\}/gi,
