@@ -16,9 +16,10 @@ schedule:
     4: 
       # file://./../modules/css/misc/css_in_a_day/index.md
       module: css/misc/css_in_a_day
+    # TODO: REPLACE THIS WITH AN EASIER INTRO TO JS 
     5: # JavaScript in a Day
-      # file://./../modules/javascript/javascript_in_a_day/index.md
-      module: javascript/javascript_in_a_day
+      # file://./../modules/javascript/misc/javascript_in_a_day/index.md
+      module: javascript/misc/javascript_in_a_day
 
 # TODO: Add common beginner mistakes in HTML language syntax:
 # 1) Improper Tag Spacing + No indentation
