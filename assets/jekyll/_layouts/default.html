@@ -53,26 +53,36 @@
     <section class="main-section">
 
       <div id="title">
-        <h1>
-          <a class="bold-title" href="/WDX-180">
-            {{ site.title | default: site.github.repository_name }}
-          </a>
-        </h1>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
         <div class="ctrl-back-forward">
           <div id="ctrl-back">&#8678; Back</div>
           <!-- <div id="ctrl-forward">Forward &#8680;</div> -->
         </div>
-
-        <hr>
-        <span class="credits left">Project maintained by <a class="credits credits-highlighted"
-            href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-        <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a class="credits credits-highlighted"
-            href="https://twitter.com/mattgraham">mattgraham</a></span>
+        <div>
+          <h1>
+            <a class="bold-title" href="/WDX-180">
+              {{ site.title | default: site.github.repository_name }}
+            </a>
+          </h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        </div>
+        <div class="empty"></div>
       </div>
 
       {{ content }}
+
+      <!-- MAINTAINED BY SECTION -->
+      <hr>
+      <div class="maintained-by">
+        <span class="credits left">
+          Project maintained by <a class="credits credits-highlighted"
+          href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+        </span>
+        <span class="credits right">
+          Hosted on GitHub Pages &mdash; Theme by <a class="credits credits-highlighted"
+          href="https://twitter.com/mattgraham">mattgraham</a>
+        </span>
+      </div>
+      <!--/ MAINTAINED BY SECTION -->
 
     </section>
 
