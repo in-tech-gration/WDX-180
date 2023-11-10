@@ -14,15 +14,19 @@ title: What is CSS?
 
   ---
 
+  <!-- TODO: Turn this resource into a Module -->
   - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/index.md){:target="_blank"}
     - Level: Beginner
 
+  <!-- TODO: Turn this resource into a Module -->
   - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/index.md){:target="_blank"}
     - Level: Beginner
 
+  <!-- TODO: Turn this resource into a Module -->
   - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/index.md){:target="_blank"}
     - Level: Beginner
 
+  <!-- TODO: Turn this resource into a Module -->
   - [Read: **How CSS works**](resources/css_first_steps/how_css_works/index.md){:target="_blank"}
     - Level: Beginner
 
@@ -32,7 +36,7 @@ title: What is CSS?
 
 ### Exercises
 
-  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/index.md)
+  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/index.md){:target="_blank"}
 
 ### Extra Resources
 
