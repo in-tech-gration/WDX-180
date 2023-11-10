@@ -138,15 +138,14 @@ nav#side-toc > ul > li > a {
   cursor: pointer;
   transition: all 200ms ease;
   position: relative;
-}
-.week-controls h2 {
-  right: 10px;
+  width: 25%;
 }
 .week-controls h2:nth-of-type(1) {
   left: 10px;
 }
 .week-controls h2:nth-of-type(2) {
   right: 10px;
+  text-align: right;
 }
 .week-controls h2:nth-of-type(2) {
   right: 10px;

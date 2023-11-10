@@ -12,22 +12,22 @@ title: Week 04 | CSS 2 & Performance
 
   {% assign week_num = 04 | to_integer %}
 
-  {% if week_num > 0 %}
-    <!-- DEBUG: Larger than 0 -->
-  {% endif %}
-
-  {% if week_num <= 36 %}
-    <!-- DEBUG: Less than or equal to 36 -->
-  {% endif %}
-
   <h2 class="week-controls__previous_week">
-    <a href="/WDX-180/curriculum/week{{ 04 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 }}">Week 04 &#8678;</a>
+
+    {% if week_num > 0 %}
+      <a href="/WDX-180/curriculum/week{{ 04 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 }}">Week 04 &#8678;</a>
+    {% endif %}
+
   </h2>
 
   <span>Updated: 10/11/2023</span>
 
   <h2 class="week-controls__next_week">
-    <a href="/WDX-180/curriculum/week{{ 04 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 }}">&#8680; Week 04</a>
+
+    {% if week_num <= 36 %}
+      <a href="/WDX-180/curriculum/week{{ 04 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 }}">&#8680; Week 04</a>
+    {% endif %}
+
   </h2>
 
 </div>

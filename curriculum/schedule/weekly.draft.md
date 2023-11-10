@@ -12,22 +12,22 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
 
   {% assign week_num = {{ WDX:WEEK_NUM }} | to_integer %}
 
-  {% if week_num > 0 %}
-    <!-- DEBUG: Larger than 0 -->
-  {% endif %}
-
-  {% if week_num <= 36 %}
-    <!-- DEBUG: Less than or equal to 36 -->
-  {% endif %}
-
   <h2 class="week-controls__previous_week">
-    <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 }}">Week {{ WDX:WEEK_NUM }} &#8678;</a>
+
+    {% if week_num > 0 %}
+      <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 }}">Week {{ WDX:WEEK_NUM }} &#8678;</a>
+    {% endif %}
+
   </h2>
 
   <span>Updated: {{ WDX:DATE_UPDATED }}</span>
 
   <h2 class="week-controls__next_week">
-    <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 }}">&#8680; Week {{ WDX:WEEK_NUM }}</a>
+
+    {% if week_num <= 36 %}
+      <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 }}">&#8680; Week {{ WDX:WEEK_NUM }}</a>
+    {% endif %}
+
   </h2>
 
 </div>
