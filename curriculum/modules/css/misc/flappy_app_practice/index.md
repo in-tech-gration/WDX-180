@@ -86,7 +86,7 @@ title: Flappy App - Day 1
       - How to load [Google Web Fonts](https://fonts.google.com/specimen/Lato?query=Lato){:target="_blank"} into an HTML page.
       - Use the `Format Document` feature of VSCode to keep your code well-formatted
 
-  - Part 6: [Containers](https://www.youtube.com/watch?v=qdP5WY0WWfw) 
+  - Part 6: [Containers](https://www.youtube.com/watch?v=qdP5WY0WWfw){:target="_blank"} 
     - **Duration:** 9min
     - **Description:** Define containers within the design to restrict the maximum width of the main content sections.
     - **What you'll learn:** 
