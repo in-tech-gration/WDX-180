@@ -2,6 +2,7 @@ const path = require("node:path");
 const fs   = require("node:fs");
 const chalk  = require("chalk");
 const { INCLUDES_FOLDER, MODULES_FOLDER } = require("./constants");
+const { warn } = require("../utils");
 
 const wdxTemplateRegexes = {
 
@@ -109,9 +110,173 @@ function replaceInclude({ day, numOfWeek } = {}){
   }
 }
 
+// Deep Markdown Token parsing for Assets (./assets/*)
+function parseTokenForAssetAndPushToArray( token, hrefs ){
+  
+  if ( token.type === "link" ){
+    if ( token.href.indexOf("./assets") === 0 ){
+      hrefs.push(token.href);
+    }
+  }
+  if ( token.tokens ){
+    token.tokens.forEach( t => parseTokenForAssetAndPushToArray( t, hrefs ));
+  }
+  if ( token.items ){
+    token.items.forEach( t => parseTokenForAssetAndPushToArray( t, hrefs ));
+  }
+
+}
+
+// Input: Token => Output: Array(hrefs)
+function parseTokenForMediaAssets( token ){
+
+  const hrefs = [];
+
+  // TODO: Probably this function can replace the following 2 if statements altogether as it parses all the MD Tree for links with ./assets
+  parseTokenForAssetAndPushToArray( token, hrefs );
+
+  if ( token.type === "paragraph" ){
+
+    token.tokens.forEach( t =>{
+
+      const isImage        = t.type === "image";
+      const isInAssets     = t.href && ( t.href.indexOf("./assets") === 0 );
+      const isLink         = t.type === "link";
+      const hasImageToken  = t.tokens && Array.isArray(t.tokens) && ( t.tokens.length === 1) && ( t.tokens[0].type === "image" );
+
+      if ( isImage && isInAssets ){
+        hrefs.push(t.href);
+      }
+
+      if ( isLink && hasImageToken ){
+        hrefs.push(t.tokens[0].href);
+      }
+
+    });
+
+  }
+
+  return hrefs;
+
+}
+
+
+/**
+ * function parseTokenForLiveCoding
+ * parses token for [&#9658; Live coding](#flems-enable) used with flems
+ * 
+ * @params token: string
+ * @return True if link found, False otherwise
+ */
+function parseTokenForLiveCoding( token ) {
+
+  // TODO: Maybe need to go deeper than one level
+  // TODO: Add toggle on/off functionality
+  if ( token.type === "paragraph" && token.tokens.some(t => t.type === "link" && t.href === "#flems-enable") ) {
+    return true;
+  }
+
+  return false;
+
+}
+
+// Search for WDX:META patterns:
+function parseWdxMetaProgress({ token }){
+
+  const wdxMetaProgressRegex = wdxTemplateRegexes.wdx.meta.progress;
+  const entryDefault = {
+    task: null,
+    instructions: "Update FALSE to TRUE in the COMPLETED column",
+    level: "Beginner"
+  }
+  const output = { hasMeta: null, meta: null, raw: null }
+  const hasWdxMeta = token.raw.match(wdxMetaProgressRegex); 
+  if ( hasWdxMeta ){
+
+    output.hasMeta = true;
+    const raw = token.raw.replace(wdxMetaProgressRegex, "");
+    const params = hasWdxMeta.groups.params.split("|");
+    const entry = {}
+    params.forEach( param =>{
+      const [ key, value ] = param.split("=");
+      entry[key] = value;
+    })
+    output.meta = { ...entryDefault, ...entry, raw }
+
+  }
+  return output
+
+}
+
+// Search for WDX:META:TESTS
+function parseWdxMetaTests({ token }){
+
+  const wdxMetaTestsRegex = wdxTemplateRegexes.wdx.meta.tests;
+  const output = { hasMeta: null, meta: null, raw: null };
+  const hasWdxMetaTests = token.raw.match(wdxMetaTestsRegex);
+
+  if ( hasWdxMetaTests ) {
+    
+    output.hasMeta = true;
+    const raw = token.raw.replace(wdxMetaTestsRegex, "");
+    const params = hasWdxMetaTests.groups.params.split("|");
+    const entry = {};
+    params.forEach( param =>{
+      const [ key, value ] = param.split("=");
+      if ( key === 'files' ) {
+
+        entry[key] = value.split(",");
+
+      } else {
+
+        entry[key] = value;
+
+      }
+    })
+    output.meta = { ...entry, raw };
+
+  }
+  return output;
+
+}
+
+function createExerciseFolders({ weeklyData, title, numOfWeek }){
+
+  weeklyData.forEach((dailyData, idx) =>{
+
+    const paddedDay = String(idx+1).padStart(2,"0");
+    const weeklyUserFolder = path.join(
+      "user",
+      `week${numOfWeek}`,
+      "exercises",
+      `day${paddedDay}`
+    );
+
+    const doesWeeklyUserFolderExist = fs.existsSync(weeklyUserFolder);
+
+    if ( doesWeeklyUserFolderExist ) {
+      warn(`Folder '${weeklyUserFolder}' already exists.`);
+    } else {
+      fs.mkdirSync(weeklyUserFolder, { recursive: true });
+      console.log(`Folder '${weeklyUserFolder}' created.`);
+    }
+    fs.writeFileSync(
+      path.join(weeklyUserFolder, ".gitkeep"), 
+      "", "utf-8"
+    );
+
+
+  })
+}
+
 module.exports = {
   wdxTemplateRegexes,
   getFrontMatterStringFromObject,
   getInclude,
-  replaceInclude
+  replaceInclude,
+  parseTokenForLiveCoding,
+  parseTokenForMediaAssets,
+  parseWdxMetaProgress,
+  parseWdxMetaTests,
+  createExerciseFolders
 }
