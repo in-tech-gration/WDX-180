@@ -266,6 +266,12 @@ section.main-section h4 {
 }
 section #title {
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+section #title .ctrl-back-forward,
+section #title .empty {
+  width: 33%;
 }
 // Fixing Jekyll inconsistencies with <li> elements that do not generate <p>
 section.main-section li {

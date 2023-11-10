@@ -29,6 +29,7 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   const {
 
     weekRegex,
+    weekNumRegex,
     titleRegex,
     dateUpdatedRegex,
     weeklyContentRegex,
@@ -40,6 +41,7 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   const DDMMYYYY = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}` 
 
   let newRaw = raw
+  .replace(weekNumRegex, `${String(numOfWeek).padStart(2,"0")}`)
   .replace(weekRegex, `Week ${numOfWeek}`)
   .replace(titleRegex, title)
   .replace(dateUpdatedRegex, DDMMYYYY)
