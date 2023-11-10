@@ -15,7 +15,10 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
   <h2 class="week-controls__previous_week">
 
     {% if week_num > 0 %}
-      <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 }}">Week {{ WDX:WEEK_NUM }} &#8678;</a>
+
+      {% assign previous_week_num = {{ WDX:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
@@ -25,7 +28,10 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
   <h2 class="week-controls__next_week">
 
     {% if week_num <= 36 %}
-      <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 }}">&#8680; Week {{ WDX:WEEK_NUM }}</a>
+
+      {% assign next_week_num = {{ WDX:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
