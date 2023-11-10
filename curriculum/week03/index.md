@@ -2,9 +2,41 @@
 title: Week 03 | CSS, Accessibility & Git
 ---
 
-# Week 03 | CSS, Accessibility & Git
+<hr class="mb-0">
 
-_(Updated: 2/11/2023)_
+<h1 id="{{ Week 03-CSS, Accessibility & Git | slugify }}">
+  <span class="week-prefix">Week 03 |</span> CSS, Accessibility & Git
+</h1>
+
+<div class="week-controls">
+
+  {% assign week_num = 03 | to_integer %}
+
+  <h2 class="week-controls__previous_week">
+
+    {% if week_num > 0 %}
+
+      {% assign previous_week_num = 03 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+    {% endif %}
+
+  </h2>
+
+  <span>Updated: 10/11/2023</span>
+
+  <h2 class="week-controls__next_week">
+
+    {% if week_num <= 36 %}
+
+      {% assign next_week_num = 03 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+    {% endif %}
+
+  </h2>
+
+</div>
 
 ---
 
@@ -135,14 +167,26 @@ _(Updated: 2/11/2023)_
 
 
 
+  <!-- TODO: Turn this resource into a Module -->
+
+
   - [Read: **What is CSS?**](resources/css_first_steps/what_is_css/index.md){:target="_blank"}
     - Level: Beginner
+
+  <!-- TODO: Turn this resource into a Module -->
+
 
   - [Read: **Getting started with CSS**](resources/css_first_steps/getting_started/index.md){:target="_blank"}
     - Level: Beginner
 
+  <!-- TODO: Turn this resource into a Module -->
+
+
   - [Read: **How CSS is structured**](resources/css_first_steps/how_css_is_structured/index.md){:target="_blank"}
     - Level: Beginner
+
+  <!-- TODO: Turn this resource into a Module -->
+
 
   - [Read: **How CSS works**](resources/css_first_steps/how_css_works/index.md){:target="_blank"}
     - Level: Beginner
@@ -153,7 +197,7 @@ _(Updated: 2/11/2023)_
 
 ### Exercises
 
-  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/index.md)
+  - [MDN's Assessment: **Styling a biography page**](exercises/styling_a_biography_page/index.md){:target="_blank"}
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d02.csv**
 

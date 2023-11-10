@@ -2,11 +2,41 @@
 title: Week 05 | CSS Frameworks
 ---
 
+<hr class="mb-0">
+
 <h1 id="{{ Week 05-CSS Frameworks | slugify }}">
   <span class="week-prefix">Week 05 |</span> CSS Frameworks
 </h1>
 
-_(Updated: 10/11/2023)_
+<div class="week-controls">
+
+  {% assign week_num = 05 | to_integer %}
+
+  <h2 class="week-controls__previous_week">
+
+    {% if week_num > 0 %}
+
+      {% assign previous_week_num = 05 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+    {% endif %}
+
+  </h2>
+
+  <span>Updated: 10/11/2023</span>
+
+  <h2 class="week-controls__next_week">
+
+    {% if week_num <= 36 %}
+
+      {% assign next_week_num = 05 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+    {% endif %}
+
+  </h2>
+
+</div>
 
 ---
 
@@ -216,7 +246,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
       - How to load [Google Web Fonts](https://fonts.google.com/specimen/Lato?query=Lato){:target="_blank"} into an HTML page.
       - Use the `Format Document` feature of VSCode to keep your code well-formatted
 
-  - Part 6: [Containers](https://www.youtube.com/watch?v=qdP5WY0WWfw) 
+  - Part 6: [Containers](https://www.youtube.com/watch?v=qdP5WY0WWfw){:target="_blank"} 
     - **Duration:** 9min
     - **Description:** Define containers within the design to restrict the maximum width of the main content sections.
     - **What you'll learn:** 
@@ -326,7 +356,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
 ### Sources and Attributions
 
-  - [Flappy App Project by the `devleague`](https://github.com/devleague/Flappy_App) (Make sure to star the repo if you liked this challenge)
+  - [Flappy App Project by the `devleague`](https://github.com/devleague/Flappy_App){:target="_blank"} (Make sure to star the repo if you liked this challenge)
   
 </details>
 
