@@ -20,7 +20,7 @@ schedule:
 
   days:
     1: # 
-      # file://./../modules/javascript/.../index.md
+      # file://./../modules/javascript/denepo/what-is-programming/index.md
       # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
       # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
       module: javascript/denepo/what-is-programming

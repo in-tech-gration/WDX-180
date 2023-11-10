@@ -549,6 +549,8 @@ function initializeChecks(){
   checkProgressRefs( markdownBody, markdownFilePath, isInCurriculumFolder );
 
   // TODO: Check that all `<details>` contain the markdown="1" attribute
+
+  // TODO: CHECK: FOR CORRECT MARKDOWN LINKS THAT CONTAIN ESCAPED CHARACTERS (e.g. |)
   
   // TODO: CHECK: LINKS INSIDE TABLES: https://github.com/mdn/content/edit/main/files/en-us/learn/css/building_blocks/values_and_units/index.md
   // https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
