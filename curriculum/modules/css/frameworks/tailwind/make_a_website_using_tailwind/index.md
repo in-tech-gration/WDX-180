@@ -37,4 +37,8 @@ title: How To Make A Website With Tailwind CSS
 
 ### Extra Resources
 
+  - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"}
+
+  - [Read: **10 Reasons To Use TailwindCSS In Your Next Project**](https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project){:target="_blank"}
+  
 ### Sources and Attributions
