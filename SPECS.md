@@ -22,6 +22,18 @@
       └── jekyll
   ```
 
+> "By default, Jekyll doesn't build files or folders that:
+> 
+> are located in a folder called `/node_modules` or `/vendor`
+>
+> start with _, ., or #
+>
+> end with ~
+>
+> are excluded by the exclude setting in your configuration file
+>
+> If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
+
 ## Jekyll | How to | Change Website Styling (CSS)
 
   Edit the following file:

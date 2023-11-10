@@ -6,27 +6,33 @@ schedule:
     1: # Git
       # file://./../modules/version_control/git/branching_and_remote_git/index.md
       module: version_control/git/branching_and_remote_git
-      # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/03-css
     2: # What is CSS
       # file://./../modules/css/misc/what_is_css/index.md
       module: css/misc/what_is_css
-      # TODO: INTEGRATE: Second Part (CSS) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
 
     3: # CSS Selectors
       # file://./../modules/css/selectors/css_selectors/index.md
       module: css/selectors/css_selectors
-      # TODO: ADD: Bite-sized intros: https://www.youtube.com/watch?v=kpXKwDGtjGE (FireShip > CSS Pseudo-classes: in 100 Seconds)
-      # TODO: INTEGRATE SELECTOR GAME
-      # https://codepen.io/kostasx/pen/LYqNYyx
-      # BOOTCAMP/INTECHGRATION/TASKS/css.selectors.exercise/index.html
     4: # Cascade, Inheritance and the Box Model
       # file://./../modules/css/misc/cascade_inheritance_box_model/index.md
       module: css/misc/cascade_inheritance_box_model
-      # TODO: INTEGRATE SPECIFICITY GAME: https://codepen.io/kostasx/pen/zQyjdv
-      # /BOOTCAMP/INTECHGRATION/TASKS/quiz-can-you-count-specificity/
     5: 
       # file://./../modules/css/misc/backgrounds_and_borders/index.md
       module: css/misc/backgrounds_and_borders
+
+# ---
+
+# TODO: Day 1: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/03-css
+
+# TODO: Day 2: INTEGRATE: Second Part (CSS) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
+
+# TODO: Day 3: ADD: Bite-sized intros: https://www.youtube.com/watch?v=kpXKwDGtjGE (FireShip > CSS Pseudo-classes: in 100 Seconds)
+# TODO: INTEGRATE SELECTOR GAME
+# https://codepen.io/kostasx/pen/LYqNYyx
+# BOOTCAMP/INTECHGRATION/TASKS/css.selectors.exercise/index.html
+
+# TODO: Day 4: INTEGRATE SPECIFICITY GAME: https://codepen.io/kostasx/pen/zQyjdv
+# /BOOTCAMP/INTECHGRATION/TASKS/quiz-can-you-count-specificity/
 
 # TODO: Add section about background-clip: How to add Transparent Borders
 # https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
