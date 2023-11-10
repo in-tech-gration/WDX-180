@@ -12,14 +12,18 @@ schedule:
     3: # HTML In a Day
       # file://./../modules/html/misc/html_in_a_day/index.md
       module: html/misc/html_in_a_day
-      # TODO: INTEGRATE: https://russmaxdesign.github.io/maxdesign-slides/01-html/106-creating-document.html#/
     4: # CSS In a Day
       # file://./../modules/css/misc/css_in_a_day/index.md
       module: css/misc/css_in_a_day
-    # TODO: REPLACE THIS WITH AN EASIER INTRO TO JS 
     5: # JavaScript in a Day
       # file://./../modules/javascript/misc/javascript_in_a_day/index.md
       module: javascript/misc/javascript_in_a_day
+
+# ---
+
+# TODO: Day 5 REPLACE THIS WITH AN EASIER INTRO TO JS 
+
+# TODO: Day 3: INTEGRATE: https://russmaxdesign.github.io/maxdesign-slides/01-html/106-creating-document.html#/
 
 # TODO: Add common beginner mistakes in HTML language syntax:
 # 1) Improper Tag Spacing + No indentation

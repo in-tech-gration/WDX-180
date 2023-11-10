@@ -9,7 +9,7 @@ plugins:
 # EXCLUDE FILES & FOLDERS FROM BUILD: 
 exclude: 
   - curriculum/TBP/
-  - curriculum/modules/
+  # - curriculum/modules/
   - app
   - components
   - public
