@@ -10,6 +10,16 @@ title: "{{ WDX:WEEK }} | {{ WDX:TITLE }}"
 
 <div class="week-controls">
 
+  {% assign week_num = {{ WDX:WEEK_NUM }} | to_integer %}
+
+  {% if week_num > 0 %}
+    <!-- DEBUG: Larger than 0 -->
+  {% endif %}
+
+  {% if week_num <= 36 %}
+    <!-- DEBUG: Less than or equal to 36 -->
+  {% endif %}
+
   <h2 class="week-controls__previous_week">
     <a href="/WDX-180/curriculum/week{{ {{ WDX:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 }}">Week {{ WDX:WEEK_NUM }} &#8678;</a>
   </h2>
