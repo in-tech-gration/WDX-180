@@ -5,7 +5,7 @@ messages:
 Syllabus:
   Beginner:
     title: "Beginner: WDX 60°"
-    subtitle: ""
+    subtitle: "Intro to Web Development, HTML, CSS and JavaScript"
     schedule:
       weeks: # Can also be 'days'
         1: # file:///./schedule/week01.yaml

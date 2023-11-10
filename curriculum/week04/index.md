@@ -2,11 +2,25 @@
 title: Week 04 | CSS 2 & Performance
 ---
 
+<hr class="mb-0">
+
 <h1 id="{{ Week 04-CSS 2 & Performance | slugify }}">
   <span class="week-prefix">Week 04 |</span> CSS 2 & Performance
 </h1>
 
-_(Updated: 9/11/2023)_
+<div class="week-controls">
+
+  <h2 class="week-controls__previous_week" id="week-{{ WDX:WEEK_NUM }}">
+    <a href="">Week 1 &#8678;</a>
+  </h2>
+
+  <span>Updated: 10/11/2023</span>
+
+  <h2 class="week-controls__next_week" id="week-{{ WDX:WEEK_NUM }}">
+    <a href="">&#8680; Week 3</a>
+  </h2>
+
+</div>
 
 ---
 

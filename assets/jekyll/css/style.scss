@@ -42,6 +42,9 @@ body {
 .mb-1 {
   margin-bottom: 1rem !important;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
 
 //>>> TYPOGRAPHY <<<//
 p, a {
@@ -115,6 +118,65 @@ nav#side-toc > ul > li > a {
   font-size: 1rem; /* base size */
 }
 //<< SIDE NAVIGATION (ToC) RESPONSIVENESS
+
+//>> MAIN NAVIGATION
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.week-controls h1 {
+  margin: 0;
+}
+.week-controls h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.25;
+  cursor: pointer;
+  transition: all 200ms ease;
+  position: relative;
+}
+.week-controls h2 {
+  right: 10px;
+}
+.week-controls h2:nth-of-type(1) {
+  left: 10px;
+}
+.week-controls h2:nth-of-type(2) {
+  right: 10px;
+}
+.week-controls h2:nth-of-type(2) {
+  right: 10px;
+ 
+ }
+ .week-controls h2:nth-of-type(1) {
+  left: 10px;
+ 
+ }
+ .week-controls h2:nth-of-type(1):hover {
+     left: 0;
+     opacity: 1;
+ }
+ .week-controls h2:nth-of-type(2):hover {
+     right: 0;
+     opacity: 1;
+ }
+ .week-controls h2 a {
+  color: #e8e8e8;
+}
+.week-controls__previous_week {
+
+}
+.week-controls__next_week {
+
+}
+.maintained-by {
+  display: flex;
+  justify-content: space-between;
+}
 
 // <summary> Styling
 summary {
@@ -201,6 +263,9 @@ section.main-section h3 {
 }
 section.main-section h4 {
   font-size: 1.2rem;
+}
+section #title {
+  margin-bottom: 0;
 }
 // Fixing Jekyll inconsistencies with <li> elements that do not generate <p>
 section.main-section li {
