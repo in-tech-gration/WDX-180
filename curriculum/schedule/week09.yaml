@@ -1,33 +1,20 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
+title: JavaScript Core 3
 schedule: 
   days:
-    1: # Introduction to the DOM API
-      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/8
-      # 1) https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
-      # 2) https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents 
-      # file://./../modules/javascript/web_apis/dom/intro/index.md
-      # TODO: INTEGRATE: INTERVIEW QUESTIONS
-      # https://github.com/in-tech-gration/30-seconds-of-interviews#what-is-the-dom
-      module: javascript/web_apis/dom/intro
-    2: # Events
-      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/9 
-      # file://./../modules/javascript/.../index.md
-      module: javascript/
-    3: # Events
-      # file://./../modules/javascript/.../index.md
-      module: javascript/
-    4: # Asynchronous Programming 1
-       # STUDY: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
-       # STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/10
-      # file://./../modules/javascript/.../index.md
-      module: javascript/
-    5: # Asynchronous Programming 2 & Ajax
-      # Ajax: The Technology that shaped the world!
-      # https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
-      # TODO: STUDY: https://www.w3schools.com/xml/xml_http.asp
-      # TODO: STUDY:  https://www.w3schools.com/js/js_ajax_http.asp
-      # file://./../modules/javascript/.../index.md
-      module: javascript/
+    1: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    2: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    3: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    4: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    5: # 
+      # file://./../modules/javascript/core/
+      module: javascript/core/

@@ -1,29 +1,20 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: Functional Programming, Clean Code & Testing
+title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media"
 schedule: 
   days:
-    1: # Clean Code
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-
-      # TODO: STUDY: Solve common problems in your JavaScript code
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Howto
-      # TODO: STUDY: What went wrong? Troubleshooting JavaScript
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
-
-    2: # Clean Code & Best Practices, Testing
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-
-    3: # Testing
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-
-    4: # Functional Programming
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-
-    5: # Functional Programming
-      # file://./../modules/javascript/core/
-      module: javascript/core/
+    1: # Promises
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    2: # Fetch API
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    3: # JSON
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    4: # Web Storage
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/
+    5: # Media
+      # file://./../modules/javascript/web_apis/dom/
+      module: javascript/web_apis/

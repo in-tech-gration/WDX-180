@@ -1,0 +1,36 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Project Week: Combine Web APIs to build a shopping cart"
+schedule: 
+  days:
+    1:
+      title: Project Description
+    # TODO: More days to be added.
+
+
+
+  # Old Week's content: Functional Programming 1, Clean Code & Testing
+    # 1: # Clean Code
+    #   # file://./../modules/javascript/core/
+    #   module: javascript/core/
+
+    #   # TODO: STUDY: Solve common problems in your JavaScript code
+    #   # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Howto
+    #   # TODO: STUDY: What went wrong? Troubleshooting JavaScript
+    #   # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
+
+    # 2: # Clean Code & Best Practices, Testing
+    #   # file://./../modules/javascript/core/
+    #   module: javascript/core/
+
+    # 3: # Testing
+    #   # file://./../modules/javascript/core/
+    #   module: javascript/core/
+
+    # 4: # Functional Programming
+    #   # file://./../modules/javascript/core/
+    #   module: javascript/core/
+
+    # 5: # Functional Programming
+    #   # file://./../modules/javascript/core/
+    #   module: javascript/core/

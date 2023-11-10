@@ -1,36 +1,56 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: JavaScript Core 2
+title: JavaScript Core 1
 schedule: 
 
-# TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/1
-# TODO: STUDY: Pass by value vs pass by reference:
-# Mosh?
-# https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/44
-# TODO: STUDY: SCOPE
-# https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/3
-# TODO: STUDY: HOISTING: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/4/5
-# TODO: STUDY: Manipulating Arrays: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/6
-# PRACTICE: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/7
+  # TODO: Check whether the following DeNepo material can be integrated (dispersed) throughout this week's content:
+  # 1) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming
+  # 2) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/README.md
+  # 3) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/some-history.md
+  # 4) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/1-the-developers
+  # 5) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/2-the-computer
+  # 6) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/3-the-users
+  # 7) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/4-data-in-data-out
+
+  # TODO: Integrate?
+  # while loop exercise (using document.write instead):
+  # https://www.w3schools.com/js/tryit.asp?filename=tryjs_while
+  # for loop (using document.write instead):
+  # https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
 
   days:
-    1: # String Manipulation 
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    2: # Arrays Part 2
-      # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    3: # Arrays
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    4: # Objects Part 2
-      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    5: # Project
-      # file://./../modules/javascript/core/
-      module: javascript/core/
+    1: # 
+      # file://./../modules/javascript/denepo/what-is-programming/index.md
+      # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
+      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
+      module: javascript/denepo/what-is-programming
+    2: # Introduction to JavaScript
+      # Contents covered: 
+      # -- Variables let, const, var
+      # -- Numbers, Booleans and Strings
+      # -- Control flow (if)
+      # -- Loops (while, for(let i=0; i < X; i++))
+      # TODO: SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
+      # file://./../modules/javascript/core/intro/index.md
+      module: javascript/core/intro
+    3: # Introduction to Functions
+      # Contents covered: 
+      # -- Functions (normal, arrow, higher-order)
+      # -- Scope
+      # -- Built-ins
+      # file://./../modules/javascript/core/functions/intro_to_functions/index.md
+      module: javascript/core/functions/intro_to_functions
+    4: # Introduction to Objects
+      # Contents covered: 
+      # -- JavaScript Objects basics
+      # file://./../modules/javascript/core/objects/intro_to_objects/index.md
+      module: javascript/core/objects/intro_to_objects
+      # TODO: STUDY & INTEGRATE:
+      # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/41
+      # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/42/3
+      # EXERCISE: https://codepen.io/kostasx/pen/vQMwKp?editors=0011
+    5: # Introduction to Arrays
+      # Contents covered: 
+      # -- JavaScript Arrays basics
+      # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
+      module: javascript/core/arrays/intro_to_arrays
