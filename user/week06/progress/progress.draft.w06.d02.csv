@@ -1,11 +1,2 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-6,2,JavaScript Core 1: Introduction to JavaScript,Read 'JavaScript Intro',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,2,JavaScript Core 1: Introduction to JavaScript,Read 'Numbers Strings and Booleans',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,2,JavaScript Core 1: Introduction to JavaScript,Read 'Control Flow',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,2,JavaScript Core 1: Introduction to JavaScript,Read 'Loops: behavior that repeats',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,2,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'Booleans in JavaScript',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day02/task_1/ folder
-6,2,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'Creating Variables',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day02/task_2/ folder
-6,2,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Number',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day02/task_3/ folder
-6,2,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Strings',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day02/task_4/ folder
-6,2,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Variables',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day02/task_5/ folder
-6,2,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Loops',Beginner,0-10,FALSE,Upload the required assets to the user/week06/exercises/day02/task_6/ folder
+6,2,CSS Frameworks & Intro to Programming: How To Make A Website With Tailwind CSS,Complete the 'Make a Website with Tailwind CSS' challenge,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

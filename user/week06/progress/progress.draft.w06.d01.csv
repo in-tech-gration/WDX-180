@@ -1,8 +1,4 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-6,1,JavaScript Core 1: What is Programming?,Read 'What is programming?',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,JavaScript Core 1: What is Programming?,Read 'JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,JavaScript Core 1: What is Programming?,Read 'Some History',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,JavaScript Core 1: What is Programming?,Read 'Developers',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,JavaScript Core 1: What is Programming?,Read 'The Computer',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,JavaScript Core 1: What is Programming?,Read 'Users',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-6,1,JavaScript Core 1: What is Programming?,Read 'Data In Data Out: I/O',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,1,CSS Frameworks & Intro to Programming: Introduction to Tailwind CSS,Watch 'Tailwind in 100 seconds',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,1,CSS Frameworks & Intro to Programming: Introduction to Tailwind CSS,Recreate the example from the 'Tailwind CSS Introduction' video and place it in a folder named 'tailwind_intro',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+6,1,CSS Frameworks & Intro to Programming: Introduction to Tailwind CSS,Recreate the example from the 'Tailwind CSS - why CSS utility classes save so much time' video and place it in a folder named 'utility_classes',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
