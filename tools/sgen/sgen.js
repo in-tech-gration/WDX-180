@@ -22,8 +22,21 @@ const {
   checkmark
 } = require("../utils");
 
-const { wdxTemplateRegexes, getFrontMatterStringFromObject, getInclude, replaceInclude } = require("./utils");
-const { SCHEDULE, EXTRA_RESOURCES, EXERCISES, STUDY_PLAN, SUMMARY, ATTRIBUTIONS, MODULES_FOLDER } = require("./constants");
+const { 
+  wdxTemplateRegexes,
+  getFrontMatterStringFromObject,
+  getInclude,
+  replaceInclude 
+} = require("./utils");
+
+const { 
+  SCHEDULE,
+  EXTRA_RESOURCES,
+  EXERCISES,
+  STUDY_PLAN, SUMMARY,
+  ATTRIBUTIONS,
+  MODULES_FOLDER 
+} = require("./constants");
 
 // TODO:
 // 1) Warn about #### inside the ### Module sections. Use **Bold** instead.

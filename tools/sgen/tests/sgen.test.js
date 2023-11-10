@@ -1,4 +1,4 @@
-const { createSyllabusFromMarkdownText } = require("./sgen.js");
+const { createSyllabusFromMarkdownText } = require("../sgen.js");
 
 const curriculumYaml = `
 input: curriculum/curriculum.draft.md
