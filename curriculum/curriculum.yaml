@@ -20,25 +20,29 @@ Syllabus:
         4: # file:///./schedule/week04.yaml
           title: "CSS 2 & Performance"
           open: true
+        # TODO: WiP
         5: # file:///./schedule/week05.yaml
-          title: "CSS Frameworks"
+          title: "Mockup CSS Challenge"
           open: true
+        # TODO: WiP
         6: # file:///./schedule/week06.yaml
-          title: "JavaScript Core 1"
+          title: "CSS Frameworks & Intro to Programming"
         7: # file:///./schedule/week07.yaml
-          title: "JavaScript Core 2"
+          title: "JavaScript Core 1"
         8: # file:///./schedule/week08.yaml
-          title: "JavaScript Core 3"
+          title: "JavaScript Core 2"
         9: # file:///./schedule/week09.yaml
+          title: "JavaScript Core 3"
+        10: # file:///./schedule/week10.yaml
           title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
           # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
-        10: # file:///./schedule/week10.yaml
+        11: # file:///./schedule/week11.yaml
           title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media"
           # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
-        11: # file:///./schedule/week11.yaml
-          title: "Functional Programming 1, Clean Code & Testing"
         12: # file:///./schedule/week12.yaml
-          title: "Templating, JavaScript Frameworks & Git Workflow"
+          title: "Project Week: Combine Web APIs to build a shopping cart"
+          # title: "JavaScript Libraries, Clean Code & Testing"
+          # title: "Functional Programming 1, Templating, JavaScript Frameworks & Git Workflow"
           # title: "Deploying our Applications & Group Project"
           # TODO: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
   Intermediate:
