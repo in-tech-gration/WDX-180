@@ -1,54 +1,7 @@
 ---
-title: Week 06 | CSS Frameworks & Intro to Programming
+title: What is JavaScript?
 ---
 
-<hr class="mb-0">
-
-<h1 id="{{ Week 06-CSS Frameworks & Intro to Programming | slugify }}">
-  <span class="week-prefix">Week 06 |</span> CSS Frameworks & Intro to Programming
-</h1>
-
-<div class="week-controls">
-
-  {% assign week_num = 06 | to_integer %}
-
-  <h2 class="week-controls__previous_week">
-
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if week_num > 0 %}
-
-      {% assign previous_week_num = 06 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
-
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
-    {% endif %}
-
-  </h2>
-
-  <span>Updated: 11/11/2023</span>
-
-  <h2 class="week-controls__next_week">
-
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
-
-      {% assign next_week_num = 06 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
-
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
-    {% endif %}
-
-  </h2>
-
-</div>
-
----
-
-<!-- Week 06 - Day 1 | Introduction to Tailwind CSS -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 06 - Day 1</span> | Introduction to Tailwind CSS</h2>
-  </summary>
-
 ### Schedule
 
   - [Study](#study-plan-NN)
@@ -57,296 +10,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
 ### Study Plan
 
-  ![](./assets/tailwind.css.jpg)
-
-  **What is a CSS Framework**
-
-  A CSS framework is a prepped and ready-to-use CSS library (Cascading Style Sheets). The stylesheets collection makes the job of a UI developer **easier**. 
-
-  Rather than starting every project from scratch, a CSS framework gives them tools to quickly create a user interface that they repeat and tweak during a project. They also **enable the creation** of more **standards-compliant** websites. 
-
-  While quite challenging to use or ambiguous for beginners, senior developers who know the CSS framework sites’ descriptions and buzzwords find them extremely useful.
-
-  **Why Do You Need A CSS Framework?**
-
-  CSS frameworks **are designed for use in typical scenarios** such as establishing navigation bars, footers, sliders, hamburger menus, 3-column layouts, and more. 
-
-  The frameworks also **enable expanding on JavaScript, SASS, and other technologies**. If designers are time-stressed, frameworks allow setting up web pages – not just homepages, without diving into some CSS.
-
-  Other than time-saving, teams comprising several developers benefit from the standards offered by CSS frameworks. Rather than each developer on a project adding their own style of names, frameworks regulate layouts, easily read others’ code, and smooth the development cycle with fewer bugs and better team communication.
-
-  All of the above are the two strongest **pros** of working with a CSS Framework: **Faster Development** and **Consistency**
-
-  However, as you already know, every coin has 2 sides. Using any CSS Framework can have it's drawbacks and not be suitable for some cases as described below:
-
-  1. **Bloated Code**
-
-  CSS frameworks include a lot of pre-built styles and components, which can add unnecessary code to a website or application. This can slow down the website's loading time and negatively impact performance. Additionally, using pre-built components can limit the customization options available to developers and tempt developers to use them without fully understanding how they work.
-
-  2. **Learning Curve**
-
-  Each CSS framework has its own set of styles, components, and conventions that developers need to learn in order to use it effectively. This can take time and effort, especially for developers who are new to front-end development. Additionally, CSS frameworks may not always align with a developer's preferred workflow or coding style. This can make it challenging to use the framework effectively, especially if the developer is used to writing custom CSS from scratch.
-
-  **How to use a CSS Framework**
-
-  There are many different CSS Frameworks out there and they can be broken down to two categories:
-
-  1. Pre-styled, prescriptive, all-in-one frameworks (e.g. Bootstrap)
-
-  2. Hands-off, unopinionated, utility frameworks (e.g. TailwindCSS)
-
-  In later modules we're going to dive deeper to each one of those two popular CSS frameworks, but first we must answer the one million dollar question: **What type of Framework do we need?**
-
-  To begin, we must have some knowledge of our website. Is it even necessary to have a system? Structures are beneficial to most locations with a large number of pages. The ideal amount of pages can change, but if we find ourselves repeating the same HTML, CSS, or even JavaScript on one of our pages, a layout or structure can help.
-
-  -  Framework Language
-
-  We should be familiar with the computer language(s) that our framework employs. As previously stated, some simple frameworks are nothing more than basic HTML templates, while more complicated frameworks may include CSS and JavaScript. Some frameworks construct the CSS using LESS or SASS, while others utilize Ruby or other computer languages to compile the pages once they're built. It will be challenging to build our framework if we are unfamiliar with the language(s) it employs.
-
-  - Framework Features
-
-  A CSS framework, often known as a web framework, is a collection of web-based tools, libraries, and best practices. A CSS framework can be as simple as a one-page template that serves as the foundation for all of our site's pages, or it can be a complicated collection of CSS, HTML, JavaScript, and server-side programs and files that govern the entire site architecture.
-
-  - Whether the Framework is Customizable and Modular
-  Customizable frameworks allow us to add our own code to make our site look unique and different from other websites. However, if a framework is overly customized, its benefits are lost, and it will be better to start from scratch.
-
-  After we've decided which type of Framework, and specifically which one we want to use, all we have to do it find their **Official Documentation** and follow their instructions! This can be scary for a new developer, but it can benefit us in the long run! 
-
-  **Tailwind CSS**
-
-  - Let's start by watching this quick introduction to [**Tailwind in 100 seconds**](https://www.youtube.com/watch?v=mr15Xzb1Ook){:target="_blank"}.
-
-  - Watch this [**Tailwind CSS Introduction**](https://www.youtube.com/watch?v=pYaamz6AyvU){:target="_blank"} video by Dave Gray and follow along by coding and replicating the example he creates in the video. You will need to place all the files in the `user/week06/exercises/day01/tailwind_intro/` folder. Make sure to create the folder if it doesn't already exist.
-
-  - More practice with utility classes! Watch [**this video**](https://www.youtube.com/watch?v=oU5ar0dmQEY){:target="_blank"} and code along. Place your file in the `user/week06/exercises/day01/utility_classes/` folder. Make sure to create the folder if it doesn't already exist.
-
-### Summary
-
-  CSS Frameworks are so popular these days and they get better and better as time goes by. However, just because they make things easier and faster for some cases, that does not mean that we should ditch plain CSS and restrain our options and imagination to what each CSS Framework has to offer.
-
-  Finally, it's highly suggested that you take a look on the following link focused on [Understanding the spectrum of CSS frameworks](https://dev.to/bholmesdev/when-and-why-you-should-use-css-frameworks-4oe)
-
-  > **Note:**
-  >
-  > You can have a look at this [video](https://www.youtube.com/watch?v=ufMqGkXL1Jw) if you're time stressed, but the article mentioned above is worth reading!
-
-
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-### Sources and Attributions
-
-  - [What Is A CSS Framework?](https://elementor.com/resources/glossary/what-is-a-css-framework/)
-
-  - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
-  
-  - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 06 - Day 2 | How To Make A Website With Tailwind CSS -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 06 - Day 2</span> | How To Make A Website With Tailwind CSS</h2>
-  </summary>
-
-### Schedule
-
-  - [Study](#study-plan-05)
-  - [Exercises](#exercises-05)
-  - [Extra Resources](#extra-resources-05)
-
-### Study Plan
-
-  ![](./assets/screenshot.jpg)
-
-  - [Watch: **How To Make A Website With Tailwind CSS**](https://www.youtube.com/watch?v=8eQwgc9nc64){:target="_blank"}
-    - **Duration:** 32min
-    - **Level:** Beginner
-
-  - Now, go through the video again, pause and code along. Below, you can find all the images needed to complete the tutorial _(just click the links, then right click and select "Save Image as")_:
-    - [**cart.png**](./assets/cart.png){:target="_blank"}
-    - [**grocery-image.png**](./assets/grocery-image.png){:target="_blank"}
-    - [**Image.png**](./assets/Image.png){:target="_blank"}
-    - [**logo.png**](./assets/logo.png){:target="_blank"}
-
-  You will need to create a repository named **grocify** under your GitHub account and enable GitHub Pages on that. Once you have finished recreating the website in the video, update the progress sheet with your GitHub repository's Pages URL, that would look something like this: `https://YOUR_USERNAME.github.io/grocify`
-
-  While working with Tailwind CSS, it's probably a good idea to install the following VSCode extension that will help you deal with the large list of utility classes provided by the library:
-
-  - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss){:target="_blank"}
-
-<!-- Summary -->
-
-### Exercises
-
-  - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d02.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
-
-### Extra Resources
-
-  - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"}
-
-  - [Read: **10 Reasons To Use TailwindCSS In Your Next Project**](https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project){:target="_blank"}
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 06 - Day 3 | What is Programming? -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 06 - Day 3</span> | What is Programming?</h2>
-  </summary>
-
-### Schedule
-
-  - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
-
-### Study Plan
-
-#### What is Programming?
-
-
-
-  Programming is communication. It's also a lot of other things, but this
-  introduction will focus on the different ways you communicate with your code.
-
-  When you write code you are really just writing a text document, exactly like
-  you might write an email or a note. The biggest difference between an email and a computer program is _who you are writing for_.
-
-  When you write an email you're writing for the person who will be reading it.
-  When you write a computer program you are writing for 3 very different audiences at the same time! One single document (your code) needs to be understandable to:
-
-  - **Developers**: A developer needs to read your code and understand what you
-    were trying to do and why.
-  - **Computers**: Your code needs to have _perfect_ syntax so the computer can
-    parse it, and you must write instructions that are allowed by the programming language or the computer will throw an error.
-  - **Users**: The instructions you give to the computer must create an intuitive and pleasant experience for the user.
-
-  Being a developer means understanding how all these characters interact, and
-  then communicating with everyone involved to deliver quality software within
-  your project's constraints. This diagram shows the different channels of
-  communication in a software project:
-
-  ![rhetorical situation](./assets/the-big-picture.png)
-
-#### Thinking like a Computer
-
-
-
-  In the following video, Evan Cole guides you through the basic concepts of programming and explains the feedback loop that continuously runs through the software cycle as source code is written by developers, subsequently read and executed by the computer which eventually displays the output back to the users.
-
-  - [Watch: **Thinking like a Computer**](https://youtu.be/Lc68CtuMuTM){:target="_blank"}
-    - **Duration:** 45min
-    - **Level:** Beginner
-
-  ---
-
-
-
-  **Programming Languages**
-
-  High-level programming languages like JavaScript are a compromise between how
-  people think and how a computer works. Programming languages are not always easy for people to learn but they're definitely easier than directly telling a
-  computer what to do (writing 1's and 0's).
-
-  Because humans are so much better at learning and understanding than computers
-  are (for now), programming languages have been designed to leave all the hard
-  work for us. It's our job to make sure our instructions for the computer are
-  perfectly structured and do exactly what we want. The computer just _parses_
-  (interprets) our code and follows the instructions without any understanding or thinking.
-
-  You can think of a programming language as the developer's UI for the computer.
-  Because this UI isn't very intuitive you will need to spend a lot of time
-  studying syntax and other details before you can program with ease. This is why you will be focusing on _understanding_ programs before writing them.
-
-  [**_Learnable Programming_**](http://worrydream.com/LearnableProgramming/){:target="_blank"} said it best:
-
-  > - **Programming is a way of thinking, not a rote skill**. Learning about "for"
-  >   loops is not learning to program, any more than learning about pencils is
-  >   learning to draw.
-  > - **People understand what they can see**. If a programmer cannot see what a
-  >   program is doing, she can't understand it.
-  >
-  > Thus, the goals of a programming system should be:
-  >
-  > - to support and encourage powerful ways of thinking
-  > - to enable programmers to see and understand the execution of their programs
-  >
-  > ...
-  >
-  > _How do we get people to understand programming?_
-  >
-  > We change programming. We turn it into something that's understandable by
-  > people.
-
-
-
-  Until the future when computers are designed to understand us, we're stuck with programming systems where we do the hard work of understanding computers. 
-
-  Hopefully these Modules can make this journey easier.
-
-  ---
-
-
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-### Sources and Attributions
-
-  - **DeNepo**:
-    - [What is Programming](https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming) [(Permalink)](https://github.com/in-tech-gration/welcome-to-js/tree/9239360311e64cb81658105b674c7fdfec97bed8/1-what-is-programming)
-  
-  - [CodeCademy](https://www.codecademy.com/articles/what-is-programming)
-  
-  - [Khan Academy](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro)
-  
-  - [The Coding Train](https://www.youtube.com/watch?v=AImF__7FyzM)
-  
-  - [Practical Introduction to JS](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-programming/)
-
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 06 - Day 4 | What is JavaScript? -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 06 - Day 4</span> | What is JavaScript?</h2>
-  </summary>
-
-### Schedule
-
-  - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
-
-### Study Plan
-
+<!-- WDX:META:PROGRESS:task=Read 'JavaScript' -->
 #### JavaScript
-
-
 
   JavaScript is the only programming language supported by web browsers, this
   makes is a very common language. Every website that needs interactivity uses
@@ -373,21 +38,15 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **1. Writing directly in the console**
 
   > This is closest to how you will be studying JS in this module.
-
-
 
   Writing JS in your browser's console is the simplest and quickest way to run
   some JavaScript, but is limited. It's perfect for doing little experiments to
   see how something works, but it's not possible to write and save a full program.
 
   > Try copy-pasting this code into your browser's console and pressing "enter"
-
-
 
   ```js
   /* --- for the computer --- */
@@ -408,8 +67,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **2. Writing directly in an HTML file**
 
   You can also write your code in a script tag of an HTML file then open the HTML
@@ -418,15 +75,11 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   <!-- TODO: The ./assets above pointing to a folder containing code, should be managed in some way, e.g. redirect to GitHub or local repo, display them inline or through a viewer (Flems/Codesandbox/other)  -->
 
-
-
   You will learn about this later in the course for examples and exercises that
   introduce how JavaScript interacts with the DOM. It's easier to understand "the
   big picture" when you can see everything in one document.
 
   ---
-
-
 
   **3. Loading JS files into HTML**
 
@@ -436,9 +89,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   [`./assets/3-separate-module-files/index.html`](./assets/3-separate-module-files/index.html) (you'll learn more about scripts vs. modules later on).
   <!-- TODO: Same as above... -->
 
+
   <!-- TODO: INTEGRATE: https://stackoverflow.com/a/53821485/4861760 -->
-
-
 
   You will use this for larger projects and for collaboration. Separating code
   into smaller files each with a clear purpose makes your code base easier to
@@ -446,16 +98,12 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **4. Specialized Browser Environments**
 
   There are also many specialized environments for writing and running JavaScript
   in a browser, each one has a specific use case:
 
   <!-- TODO: ADD LINK to online study-lenses or local npm script -->
-
-
   - **Study Lenses**: This is an environment specialized for studying JavaScript
     locally with your text editor and a browser. It has features for understanding
     different aspects of code and for visualizing what happens during execution.
@@ -488,8 +136,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **5. Beyond the Browser**
 
   You can also use JavaScript outside of the browser to create web servers,
@@ -502,8 +148,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   secure and developer-friendly alternative to Node.js.
 
   ---
-
-
 
   **References**
 
@@ -518,17 +162,14 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **Programs: Source Code**
 
   JavaScript is the language used to write the Source Code in this diagram:
 
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=_cj6JYwuO38PPGKxXN_cQ,3910Z7e2jGLZu4vjueG-Bg)
 
+<!-- WDX:META:PROGRESS:task=Read 'Some History' -->
 #### Some History
-
-
 
   JavaScript has an interesting history, it was originally created in 1 week
   during 1995 by Brendan Eich and since then has gone through many many changes.
@@ -552,8 +193,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   **Backwards Compatibility**
 
   > or "don’t break the internet!”
-
-
 
   An important concept for understanding the JavaScript language is "**Backwards
   Compatibility**". Backwards Compatibility means that any program ever written in
@@ -594,9 +233,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   through the [proposals repository](https://github.com/tc39/proposals){:target="_blank"} can be
   interesting to see how people plan and discuss additions to the JS language.
 
+<!-- WDX:META:PROGRESS:task=Read 'Developers' -->
 #### Developers
-
-
 
   Developers are the ones designing the software, writing the code, and fixing the
   bugs. As a developer you'll spend lots of time reading source code. So it's very
@@ -611,8 +249,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **Programs: Developers**
 
   Users and on the left in this diagram, developers are on the right.
@@ -625,9 +261,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=40qMI89WByj9Yhhh94Ghg,4zpL-AmDgpnbyFJWJfNQhg)
 
+<!-- WDX:META:PROGRESS:task=Read 'The Computer' -->
 #### The Computer
-
-
 
   You've been the user of many websites, you've even developed a few with HTML &
   CSS, but you haven't had to _be the computer_ yet. With HTML & CSS it's enough
@@ -673,8 +308,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **Programs: The Computer**
 
   The computer is in the center of this diagram. It interpreting the developers
@@ -686,9 +319,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=_cj6JYwuO38PPGKxXN_cQ,3910Z7e2jGLZu4vjueG-Bg)
 
+<!-- WDX:META:PROGRESS:task=Read 'Users' -->
 #### Users
-
-
 
   Users will use your running programs, but will never see your source code. When
   writing for a user you need to think of their needs and their experience using
@@ -707,8 +339,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **Programs: Users**
 
   Users and on the left in this diagram, developers are on the right.
@@ -721,9 +351,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=40qMI89WByj9Yhhh94Ghg,4zpL-AmDgpnbyFJWJfNQhg)
 
+<!-- WDX:META:PROGRESS:task=Read 'Data In Data Out: I/O' -->
 #### Data In, Data Out: I/O
-
-
 
   So what is a program? It's something like this:
 
@@ -749,8 +378,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   behind the scenes processing their data and producing new data.
 
   ---
-
-
 
   **JavaScript Strings**
 
@@ -790,8 +417,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
 
   ---
 
-
-
   **Programs to Study**
 
   A very important skill to learn as a programmer is not being afraid of code you
@@ -819,8 +444,6 @@ title: Week 06 | CSS Frameworks & Intro to Programming
     out.
 
   <!-- TODO: Maybe this has to be removed. -->
-
-
   In the `/examples` folder you will find a few programs with a comment describing
   the **behavior**, **data in** and **data out**. Your challenge in `/exericses`
   is to fill in the same information for new programs.
@@ -851,9 +474,9 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   // ... the rest of the code
   ```
 
-<!-- Summary -->
+### Summary
 
-<!-- Exercises -->
+### Exercises
 
 ### Extra Resources
 
@@ -871,18 +494,3 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   - [The Coding Train](https://www.youtube.com/watch?v=AImF__7FyzM)
   
   - [Practical Introduction to JS](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-programming/)
-
-  
-</details>
-
-<hr class="mt-1">
-
-
-
-<hr class="mt-1">
-
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-## Week 06 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).

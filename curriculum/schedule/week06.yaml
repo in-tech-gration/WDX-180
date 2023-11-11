@@ -11,10 +11,14 @@ schedule:
       module: css/frameworks/tailwind/make_a_website_using_tailwind
     3: # What is programming?
       # file://./../modules/javascript/denepo/what-is-programming/index.md
-      # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
-      # TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
       module: javascript/denepo/what-is-programming
-    # 4: #
-    #   module: 
+    4: # What is JavaScript?
+      # file://./../modules/javascript/denepo/what-is-javascript/index.md
+      module: javascript/denepo/what-is-javascript
     # 5: #
     #   module: 
+
+# ---
+
+# Day 3: Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
+# Day3: TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43

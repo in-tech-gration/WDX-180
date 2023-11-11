@@ -14,7 +14,7 @@ title: Flappy App - Day 1
 
   **Flappy App**: Recreating a web page from a design mockup
 
-  This is a 2-day project. You will go through a series of videos, where we take a webpage mockup and turn it into HTML and CSS code.
+  This is a project that should ideally be completed in 3 to 4 days. You will go through a series of videos, where we take a webpage mockup and turn it into HTML and CSS code.
 
   Below you'll find a list of videos that will take you through the process of decomposing the mockup into an HTML structure and gradually building and styling each section of the mockup. The total duration of the videos is around 3 hours. 
 
@@ -29,8 +29,6 @@ title: Flappy App - Day 1
   At this step, the notes you took during the first run will help you move on and find what you need to complete each step. 
 
   If you get stuck and don't see the expected results, don't worry. Move on and you'll be able to compare your code with the video, after you've finished each step. You will then notice what went wrong, what misconceptions you've held and take notes.
-
-  It will probably take 3 hours for you to go through the videos once, then somewhere around 3 to 4 hours to go through the videos and code along and finally, you will spend 3 to 5 hours recreating the project without referencing the videos.
 
   It's recommended that you create 2 separate folders and VSCode workspaces for these last 2 steps. 
 

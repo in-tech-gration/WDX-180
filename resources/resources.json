@@ -2661,12 +2661,88 @@
         "en"
       ]
     },
-    "https-developer-mozilla-org-en-us-docs-learn-getting-started-with-the-web-java-script-basics" : {
+    "https-developer-mozilla-org-en-us-docs-learn-getting-started-with-the-web-java-script-basics": {
       "identifier": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics",
       "type": "MDN",
       "module": [
         "curriculum/week01/resources/JavaScript_Basics/index.md",
         "curriculum/week01/resources/What_is_JavaScript/index.md"
+      ]
+    },
+    "what-is-javascript-creator-brendan-eich-explains": {
+      "type": "YouTube",
+      "duration": 73,
+      "title": "What is JavaScript? Creator Brendan Eich explains",
+      "date": "21/05/2018",
+      "youtube": {
+        "id": "kB32-Cvj0X4",
+        "channel_id": "UC46BCt0WGx7_BHvkSlQnEFw",
+        "channel_title": "InfoWorld",
+        "thumbnail_url": "https://i.ytimg.com/vi/kB32-Cvj0X4/sddefault.jpg"
+      },
+      "tags": [
+        "computer",
+        "technology",
+        "IT",
+        "tech",
+        "javascript",
+        "Brendan Eich",
+        "programming",
+        "computer language",
+        "coding",
+        "programmers",
+        "coders"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "a-brief-history-of-javascript-talk-by-brendan-eich-creator-of-javascript": {
+      "type": "YouTube",
+      "duration": 1075,
+      "title": "A Brief History of JavaScript, talk by Brendan Eich (creator of JavaScript)",
+      "date": "27/04/2018",
+      "youtube": {
+        "id": "qKJP93dWn40",
+        "channel_id": "UC8butISFwT-Wl7EV0hUK0BQ",
+        "channel_title": "freeCodeCamp.org",
+        "thumbnail_url": "https://i.ytimg.com/vi/qKJP93dWn40/sddefault.jpg"
+      },
+      "tags": [
+        "learn to code",
+        "programming",
+        "coding",
+        "javascript",
+        "web development",
+        "web design",
+        "tutorial",
+        "python",
+        "android",
+        "security",
+        "testing",
+        "coding tutorial",
+        "javascript tutorial",
+        "web development tutorial",
+        "html",
+        "css",
+        "design",
+        "html tutorial",
+        "css tutorial",
+        "learn to program",
+        "learn how to code",
+        "learn how to program",
+        "get a programmer job",
+        "get a developer job",
+        "python tutorial",
+        "android tutorial",
+        "linux",
+        "learn programming",
+        "learn coding",
+        "linux tutorial",
+        "learn linux"
+      ],
+      "language": [
+        "en"
       ]
     }
   },

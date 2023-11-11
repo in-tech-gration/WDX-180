@@ -18,13 +18,15 @@ schedule:
       # file://./../modules/css/misc/flappy_app_practice/day02.md
       module: css/misc/flappy_app_practice/day02.md
 
-    4: # ✅ Tailwind 1
-      # file://./../modules/css/frameworks/tailwind/intro/index.md
-      module: css/frameworks/tailwind/intro
+    4: # ✅ Flappy App - Day 3
+      # file://./../modules/css/frameworks/tailwind/intro/day03.md
+      module: css/misc/flappy_app_practice/day03.md
  
-    5: # ✅ Tailwind 2
-      # file://./../modules/css/frameworks/tailwind/make_a_website_using_tailwind/index.md
-      module: css/frameworks/tailwind/make_a_website_using_tailwind
+    5: # ✅ Flappy App - Day 4
+      # file://./../modules/css/misc/flappy_app_practice/day04.md
+      module: css/misc/flappy_app_practice/day04.md
+
+# ---
 
 # TODO: Part 16 of the Flappy App: Make sure that the image has the same height with the Features table, just like the Mockup
 
