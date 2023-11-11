@@ -178,6 +178,13 @@ title: Flappy App - Day 1
       - `background-position`
       - `background-repeat`
 
+  - **Extra Challenges:**
+    - Try to make the game image fit nicely next to the `Features` table as depicted in the mockup. The height of the image should be properly aligned with the height of the `Features` table.
+    - Try to use CSS (no image involved) to recreate the ribbon decoration of the header and footer.
+    - Use the W3C Validator services to make sure that your HTML and CSS do not contain any warnings or errors.
+      - [HTML Validator](https://validator.w3.org/){:target="_blank"}
+      - [CSS Validator](https://jigsaw.w3.org/css-validator/){:target="_blank"}
+
 ### Summary
 
   **Insights**
@@ -189,6 +196,8 @@ title: Flappy App - Day 1
   Another insight that you'll probably gain from this project is the way to organize your HTML and CSS. Your CSS selectors should be laid out hierarchically and according to the HTML structure. If your page has a `<header>`, `<main>` and `<footer>` sections, then your CSS selectors must follow that order too so that you can quickly find the selectors that update the styling of each section in your HTML.
 
 ### Exercises
+
+<!-- WDX:META:PROGRESS:task=Watch the 'Flappy App reconstruction' and keep notes -->
 
 ### Extra Resources
 

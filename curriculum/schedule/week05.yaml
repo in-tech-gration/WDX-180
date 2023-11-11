@@ -19,7 +19,7 @@ schedule:
       module: css/misc/flappy_app_practice/day02.md
 
     4: # ✅ Flappy App - Day 3
-      # file://./../modules/css/frameworks/tailwind/intro/day03.md
+      # file://./../modules/css/misc/flappy_app_practice/day03.md
       module: css/misc/flappy_app_practice/day03.md
  
     5: # ✅ Flappy App - Day 4

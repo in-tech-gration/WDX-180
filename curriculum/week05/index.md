@@ -15,7 +15,7 @@ title: Week 05 | CSS Frameworks
   <h2 class="week-controls__previous_week">
 
     <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if  week_num > 0 %}
+    {% if false and week_num > 0 %}
 
       {% assign previous_week_num = 05 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -339,6 +339,13 @@ We are basically creating a single `<input>` form field of type `text`. In the s
       - `background-image`
       - `background-position`
       - `background-repeat`
+
+  - **Extra Challenges:**
+    - Try to make the game image fit nicely next to the `Features` table as depicted in the mockup. The height of the image should be properly aligned with the height of the `Features` table.
+    - Try to use CSS (no image involved) to recreate the ribbon decoration of the header and footer.
+    - Use the W3C Validator services to make sure that your HTML and CSS do not contain any warnings or errors.
+      - [HTML Validator](https://validator.w3.org/){:target="_blank"}
+      - [CSS Validator](https://jigsaw.w3.org/css-validator/){:target="_blank"}
 
 ### Summary
 

@@ -13,3 +13,7 @@ title: Flappy App - Day 3
   ![](./assets/FlappyAppThumbnail.jpg)
 
   This is Day 3 of the Flappy App practice. Just follow the instructions and continue where you've left off.
+
+### Exercises
+
+  <!-- WDX:META:PROGRESS:task=Recreate the FlappyApp without going back to the video -->
