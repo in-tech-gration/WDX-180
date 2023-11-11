@@ -1,5 +1,8 @@
 ---
 title: Week 06 | CSS Frameworks & Intro to Programming
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 <hr class="mb-0">
@@ -15,7 +18,7 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   <h2 class="week-controls__previous_week">
 
     <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if week_num > 0 %}
+    {% if false and week_num > 0 %}
 
       {% assign previous_week_num = 06 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -406,6 +409,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   alert('hello user (alert)');
   ```
 
+  [&#9658; Live coding](#flems-enable)
+
   ---
 
 
@@ -783,6 +788,8 @@ title: Week 06 | CSS Frameworks & Intro to Programming
   //  you can combine two strings using concatenation
   console.log('a' + 'b' + 'c'); // 'abc'
   ```
+
+  [&#9658; Live coding](#flems-enable)
 
   You don't need to understand very much about JavaScript types for now, just that
   the programs in this folder are all processing _text data_ represented in

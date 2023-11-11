@@ -65,6 +65,8 @@ title: What is JavaScript?
   alert('hello user (alert)');
   ```
 
+  [&#9658; Live coding](#flems-enable)
+
   ---
 
   **2. Writing directly in an HTML file**
@@ -410,6 +412,8 @@ title: What is JavaScript?
   //  you can combine two strings using concatenation
   console.log('a' + 'b' + 'c'); // 'abc'
   ```
+
+  [&#9658; Live coding](#flems-enable)
 
   You don't need to understand very much about JavaScript types for now, just that
   the programs in this folder are all processing _text data_ represented in
