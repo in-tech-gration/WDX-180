@@ -31,7 +31,7 @@
   - [**Week 03**: CSS, Accessibility & more Git](week03/index.md)
   - [**Week 04**: CSS 2 & Performance](week04/index.md)
   - [**Week 05**: Mockup CSS Challenge](week05/index.md)
-  - [**Week 06**: CSS Frameworks & Intro to Programming](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 06**: CSS Frameworks & Intro to Programming](week06/index.md)
   - [**Week 07**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 08**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 09**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
@@ -42,8 +42,8 @@
 ### Intermediate: WDX 120°
 
   - [**Week 13**: JavaScript Intermediate 1 & Git](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 14**: Data Structures](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 15**: Algorithms](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 14**: Functional Programming 1, Templating, JavaScript Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 15**: Data Structures & Algorithms](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 18**: Node.js 1](#) _(🔒 Stay tuned! This module is on the way.)_

@@ -20,13 +20,12 @@ Syllabus:
         4: # file:///./schedule/week04.yaml
           title: "CSS 2 & Performance"
           open: true
-        # TODO: WiP
         5: # file:///./schedule/week05.yaml
           title: "Mockup CSS Challenge"
           open: true
-        # TODO: WiP
         6: # file:///./schedule/week06.yaml
           title: "CSS Frameworks & Intro to Programming"
+          open: true
         7: # file:///./schedule/week07.yaml
           title: "JavaScript Core 1"
         8: # file:///./schedule/week08.yaml
