@@ -35,6 +35,7 @@ title: What is Programming?
 
   ![rhetorical situation](./assets/the-big-picture.png)
 
+<!-- WDX:META:PROGRESS:task=Watch 'Thinking like a Computer' video -->
 #### Thinking like a Computer
 
   In the following video, Evan Cole guides you through the basic concepts of programming and explains the feedback loop that continuously runs through the software cycle as source code is written by developers, subsequently read and executed by the computer which eventually displays the output back to the users.
@@ -89,6 +90,8 @@ title: What is Programming?
 
 ### Summary
 
+<!-- WDX:META:PROGRESS:task=Install study-lenses on your machine -->
+<!-- WDX:META:PROGRESS:task=Run study-lenses on the hello-world.js file and explore various lenses -->
 ### Exercises
 
   **Installing Study Lenses**
@@ -104,27 +107,31 @@ title: What is Programming?
 
   **Running Study Lenses on WDX-180 material**
 
-  **Using Study Lenses with some examples**
+  Let's now check whether `study-lenses` is available globally and try to use it to study a simple JavaScript program.
 
-  Here are some things we recommend that you try out with `study-lenses`:
+  - Open the terminal and stop any other instance of `study-lenses` that might be running, e.g. the `npm run test-content` from previous steps. You can press `Ctrl+C` on the terminal to stop the currently running process.
 
-  - Use the **parsons** feature
+  - Change to the following directory inside your local `WDX-180` repo: `cd curriculum/week{{ WDX:WEEK_NUM }}/exercises`.
+
+  - Run either the `study` or `lenses` command on the terminal and check whether the app opens up in the browser.
+
+  - If the app opens up in the browser, click on the `hello-world.js` file and start exploring some lenses like `flowchart`, `pseudo`, `variables`, `blanks`, `parsons`, etc.
 
   **Give the Study Lenses repo a ⭐ Star!**
 
-  - Visit the [original repo](https://github.com/DeNepo/study-lenses){:target="_blank"} and give it a star as a gesture of appreciation for the hard work that these guys have put on this open source learning tool.
+  - Visit the [original repo](https://github.com/DeNepo/study-lenses){:target="_blank"} and give it a star as a gesture of appreciation for the hard work that these guys have put to make this great open source learning tool.
 
 ### Extra Resources
 
 ### Sources and Attributions
 
   - **DeNepo**:
-    - [What is Programming](https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming) [(Permalink)](https://github.com/in-tech-gration/welcome-to-js/tree/9239360311e64cb81658105b674c7fdfec97bed8/1-what-is-programming)
+    - [What is Programming](https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/welcome-to-js/tree/9239360311e64cb81658105b674c7fdfec97bed8/1-what-is-programming)
   
-  - [CodeCademy](https://www.codecademy.com/articles/what-is-programming)
+  - [CodeCademy](https://www.codecademy.com/articles/what-is-programming){:target="_blank"}
   
-  - [Khan Academy](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro)
+  - [Khan Academy](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro){:target="_blank"}
   
-  - [The Coding Train](https://www.youtube.com/watch?v=AImF__7FyzM)
+  - [The Coding Train](https://www.youtube.com/watch?v=AImF__7FyzM){:target="_blank"}
   
-  - [Practical Introduction to JS](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-programming/)
+  - [Practical Introduction to JS](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-programming/){:target="_blank"}

@@ -1,0 +1,34 @@
+{
+  "--defaults": {
+    ".md": "slides"
+  },
+  "study": {
+    "run": true,
+    "debug": true,
+    "parsons": true,
+    "flowchart": true,
+    "variables": true,
+    "blanks": true,
+    "pseudo": true,
+
+    "trace": false,
+    "highlight": false,
+    "loopGuard": false,
+    "ask": false,
+    "table": false,
+    "writeme": false,
+    "eslint": false
+  },
+  "highlight": {
+    "--use": "study"
+  },
+  "parsons": {
+    "--use": "study"
+  },
+  "flowchart": {
+    "--use": "study"
+  },
+  "variables": {
+    "--use": "study"
+  }
+}

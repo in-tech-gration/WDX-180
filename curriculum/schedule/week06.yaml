@@ -9,14 +9,14 @@ schedule:
     2: # ✅ Tailwind 2
       # file://./../modules/css/frameworks/tailwind/make_a_website_using_tailwind/index.md
       module: css/frameworks/tailwind/make_a_website_using_tailwind
-    3: # What is programming?
+    3: # ✅ What is programming?
       # file://./../modules/javascript/denepo/what-is-programming/index.md
       module: javascript/denepo/what-is-programming
     4: # What is JavaScript?
       # file://./../modules/javascript/denepo/what-is-javascript/index.md
       module: javascript/denepo/what-is-javascript
-    # 5: #
-    #   module: 
+    5: # 
+      module: curriculum/work_in_progress.md
 
 # ---
 
