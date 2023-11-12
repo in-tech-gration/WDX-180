@@ -27,7 +27,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 11/11/2023</span>
+  <span>Updated: 12/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -310,7 +310,35 @@ load_script_js_via_src:
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  **Installing Study Lenses**
+
+  1. Follow the steps [**described here**](https://github.com/in-tech-gration/study-lenses#to-explore-anything-on-your-computer){:target="_blank"} to install `study-lenses` globally on your machine.
+
+  If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
+
+  **Watch a short introduction to Study Lenses**
+
+  - Watch the [**WDX180 - Study Lenses Guide**](https://youtu.be/5uCJBiQ7MkA){:target="_blank"} video to get familiar with the `study-lenses` tool that you'll be using to study code and explore various aspects of JavaScript programs.
+    - **Duration:** 12min
+
+  **Running Study Lenses on WDX-180 material**
+
+  **Using Study Lenses with some examples**
+
+  Here are some things we recommend that you try out with `study-lenses`:
+
+  - Use the **parsons** feature
+
+  **Give the Study Lenses repo a ⭐ Star!**
+
+  - Visit the [original repo](https://github.com/DeNepo/study-lenses){:target="_blank"} and give it a star as a gesture of appreciation for the hard work that these guys have put on this open source learning tool.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
