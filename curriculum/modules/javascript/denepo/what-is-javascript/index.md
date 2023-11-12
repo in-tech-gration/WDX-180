@@ -418,15 +418,30 @@ title: What is JavaScript?
 
   **Programs to Study**
 
-  A very important skill to learn as a programmer is not being afraid of code you
-  don't understand. There is always _something_ you can understand and there is
-  always a way to understand the rest. You aren't expected understand all the
-  syntax in this folder just yet.
+  A very important skill to learn as a programmer is not being afraid of code you don't understand. There is always _something_ you can understand and there is always a way to understand the rest. You aren't expected understand all the syntax in this folder just yet.
 
-  Instead focus on what you _can_ understand about each program at a higher level,
-  like in the diagram at the top of this README. For all of these examples and
-  exercises try running the program many times inputting different data and seeing
-  what comes out.
+  Instead focus on what you _can_ understand about each program at a higher level, like in the diagram at the top of this README. For all of these examples and exercises try running the program many times inputting different data and seeing what comes out.
+
+### Summary
+
+<!-- WDX:META:PROGRESS:task=Explore Study Lenses -->
+<!-- WDX:META:PROGRESS:task=Practice 'Program Explaining' -->
+### Exercises
+
+  **Explore Study Lenses**
+
+  Continue your exploration of the `study-lenses` tool. Run the following commands on your local copy of the `WDX-180` repo:
+
+  - `cd curriculum/week{{ WDX:WEEK_NUM}}/exercises/exploring-study-lenses`
+  - `study`
+
+  Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
+
+  Explore these with your team.
+
+  ---
+
+  **Practice Program Explaining**
 
   Practice explaining what is happening in each program using these terms:
 
@@ -442,7 +457,7 @@ title: What is JavaScript?
   - **Test Cases**: Specific examples of data that goes in and the data that comes
     out.
 
-  In the `{{WDX:ASSETS_DIR}}/examples/` folder you will find a few programs with a comment describing the **behavior**, **data in** and **data out**. Your challenge in `{{WDX:EXERCISES_DIR}}/practice_explaining/` is to fill in the same information for new programs.
+ In the `{{WDX:ASSETS_DIR}}/examples/` folder you will find a few programs with a comment describing the **behavior**, **data in** and **data out**. Your challenge in `{{WDX:EXERCISES_DIR}}/practice_explaining/` is to fill in the same information for new programs.
 
   Be _very careful_ about your formatting! Study the example comments closely and
   do your best to format yours _exactly_ the same:
@@ -469,19 +484,6 @@ title: What is JavaScript?
 
   // ... the rest of the code
   ```
-
-### Summary
-
-### Exercises
-
-  Continue your exploration of the `study-lenses` tool. Run the following commands on your local copy of the `WDX-180` repo:
-
-  - `cd curriculum/week{{ WDX:WEEK_NUM}}/exercises/exploring-study-lenses`
-  - `study`
-
-  Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
-
-  Explore these with your team.
 
 ### Extra Resources
 
