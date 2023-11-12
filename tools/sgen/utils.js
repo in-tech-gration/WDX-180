@@ -9,6 +9,7 @@ const wdxTemplateRegexes = {
   markdownTargetBlank: /\[(.*?)\]\((.*?)\)\{:target="_blank"\}/gi,
   // const [ _, linkText, URL ] = markdownTargetBlank.exec( text );
 
+  assetsAsCodeRegex:  /\{\{\s?WDX:\s?ASSETS_AS_CODE\s?\}\}/gi,
   // TODO: weekRegex will be replaced by weekFullRegex and weekNumRegex
   weekRegex:          /\{\{\s?WDX:\s?WEEK\s?\}\}/gi,
   weekNumRegex:       /\{\{\s?WDX:\s?WEEK_NUM\s?\}\}/gi,

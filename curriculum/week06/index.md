@@ -18,7 +18,7 @@ load_script_js_via_src:
   <h2 class="week-controls__previous_week">
 
     <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num > 0 %}
+    {% if week_num > 0 %}
 
       {% assign previous_week_num = 06 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -449,7 +449,7 @@ load_script_js_via_src:
 
   You can also write your code in a script tag of an HTML file then open the HTML
   file in your browser. The JavaScript will run automatically when the page is
-  loaded. See this in action with [`./assets/1-inline-script-tag.html`](./assets/1-inline-script-tag.html).
+  loaded. See this in action with [`./assets/1-inline-script-tag.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/1-inline-script-tag.html).
 
   <!-- TODO: The ./assets above pointing to a folder containing code, should be managed in some way, e.g. redirect to GitHub or local repo, display them inline or through a viewer (Flems/Codesandbox/other)  -->
 
@@ -466,9 +466,7 @@ load_script_js_via_src:
   **3. Loading JS files into HTML**
 
   You can also write your code in a separate `.js` file, then load the file into
-  your HTML to execute the code. There are two different ways you can load a `.js`
-  file into your HTML, you can see them in action with [`./assets/2-separate-script-file/index.html`](./assets/2-separate-script-file/index.html) and
-  [`./assets/3-separate-module-files/index.html`](./assets/3-separate-module-files/index.html) (you'll learn more about scripts vs. modules later on).
+  your HTML to execute the code. There are two different ways you can load a `.js` file into your HTML, you can see them in action with [`./assets/2-separate-script-file/index.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/2-separate-script-file/index.html) and [`./assets/3-separate-module-files/index.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/3-separate-module-files/index.html) (you'll learn more about scripts vs. modules later on).
   <!-- TODO: Same as above... -->
 
   <!-- TODO: INTEGRATE: https://stackoverflow.com/a/53821485/4861760 -->
@@ -915,13 +913,13 @@ load_script_js_via_src:
   - **DeNepo**:
     - [What is Programming](https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming) [(Permalink)](https://github.com/in-tech-gration/welcome-to-js/tree/9239360311e64cb81658105b674c7fdfec97bed8/1-what-is-programming)
   
-  - [CodeCademy](https://www.codecademy.com/articles/what-is-programming)
+  - [CodeCademy](https://www.codecademy.com/articles/what-is-programming){:target="_blank"}
   
-  - [Khan Academy](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro)
+  - [Khan Academy](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro){:target="_blank"}
   
-  - [The Coding Train](https://www.youtube.com/watch?v=AImF__7FyzM)
+  - [The Coding Train](https://www.youtube.com/watch?v=AImF__7FyzM){:target="_blank"}
   
-  - [Practical Introduction to JS](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-programming/)
+  - [Practical Introduction to JS](https://shawnr.gitbooks.io/practical-introduction-to-javascript/content/what-is-programming/){:target="_blank"}
 
   
 </details>

@@ -14,12 +14,13 @@ const {
 } = require("./utils");
 
 const { 
-  SCHEDULE,
-  EXTRA_RESOURCES,
-  EXERCISES,
-  STUDY_PLAN, SUMMARY,
   ATTRIBUTIONS,
-  MODULES_FOLDER 
+  EXERCISES,
+  EXTRA_RESOURCES,
+  GITHUB_BLOB_URL,
+  MODULES_FOLDER, 
+  SCHEDULE,
+  STUDY_PLAN, SUMMARY
 } = require("./constants");
 
 const { parseTokenForMediaAssets, parseTokenForLiveCoding } = require("./utils");
@@ -31,6 +32,7 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
     const { 
       weekRegex,
       weekNumRegex,
+      assetsAsCodeRegex,
       dayRegex,
       dayNumRegex 
     } = wdxTemplateRegexes;
@@ -71,6 +73,9 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
     }
 
     dailyScheduleSection = dailyScheduleSection
+    .replace(assetsAsCodeRegex, (string, match, group)=>{
+      return `${GITHUB_BLOB_URL}curriculum/week${numOfWeek}/assets`;
+    })
     .replace(weekRegex, `Week ${numOfWeek}`)
     .replace(weekNumRegex, `${numOfWeek}`)
     .replace(dayNumRegex, `${String(day).padStart(2,"0")}`)
