@@ -30,6 +30,8 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
   return function( match ){
 
     const { 
+      assetsDir,
+      exercisesDir,
       weekRegex,
       weekNumRegex,
       assetsAsCodeRegex,
@@ -75,6 +77,12 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
     dailyScheduleSection = dailyScheduleSection
     .replace(assetsAsCodeRegex, (string, match, group)=>{
       return `${GITHUB_BLOB_URL}curriculum/week${numOfWeek}/assets`;
+    })
+    .replace(assetsDir, (string, match, group)=>{
+      return `curriculum/week${numOfWeek}/assets`;
+    })
+    .replace(exercisesDir, (string, match, group)=>{
+      return `curriculum/week${numOfWeek}/exercises`;
     })
     .replace(weekRegex, `Week ${numOfWeek}`)
     .replace(weekNumRegex, `${numOfWeek}`)

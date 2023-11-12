@@ -853,12 +853,7 @@ load_script_js_via_src:
   - **Test Cases**: Specific examples of data that goes in and the data that comes
     out.
 
-  <!-- TODO: Maybe this has to be removed. -->
-
-
-  In the `/examples` folder you will find a few programs with a comment describing
-  the **behavior**, **data in** and **data out**. Your challenge in `/exericses`
-  is to fill in the same information for new programs.
+  In the `curriculum/week06/assets/examples/` folder you will find a few programs with a comment describing the **behavior**, **data in** and **data out**. Your challenge in `curriculum/week06/exercises/practice_explaining/` is to fill in the same information for new programs.
 
   Be _very careful_ about your formatting! Study the example comments closely and
   do your best to format yours _exactly_ the same:
