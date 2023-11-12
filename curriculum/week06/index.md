@@ -385,9 +385,7 @@ load_script_js_via_src:
 
   JavaScript is the only programming language supported by web browsers, this
   makes is a very common language. Every website that needs interactivity uses
-  JavaScript alongside HTML & CSS. Because people across the world with all levels
-  of programming experience are writing web pages, JavaScript has become something
-  like the English of programming languages:
+  JavaScript alongside HTML & CSS. Because people across the world with all levels of programming experience are writing web pages, JavaScript has become something like the English of programming languages:
 
   - It's everywhere, most developers will know at least a little bit of
     JavaScript.
@@ -892,7 +890,21 @@ load_script_js_via_src:
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Continue your exploration of the `study-lenses` tool. Run the following commands on your local copy of the `WDX-180` repo:
+
+  - `cd curriculum/week06/exercises/exploring-study-lenses`
+  - `study`
+
+  Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
+
+  Explore these with your team.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 

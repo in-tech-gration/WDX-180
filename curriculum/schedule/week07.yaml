@@ -9,10 +9,7 @@ schedule:
       # file://./../modules/javascript/core/intro/index.md
       module: javascript/core/intro
     2: # Introduction to Functions
-      # Contents covered: 
-      # -- Functions (normal, arrow, higher-order)
-      # -- Scope
-      # -- Built-ins
+      # Topics: Functions (normal, arrow, higher-order), Scope, Built-ins
       # file://./../modules/javascript/core/functions/intro_to_functions/index.md
       module: javascript/core/functions/intro_to_functions
     3: # Introduction to Objects
