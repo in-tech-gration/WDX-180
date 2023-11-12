@@ -449,7 +449,7 @@ load_script_js_via_src:
 
   You can also write your code in a script tag of an HTML file then open the HTML
   file in your browser. The JavaScript will run automatically when the page is
-  loaded. See this in action with [`./assets/1-inline-script-tag.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/1-inline-script-tag.html).
+  loaded. See this in action with [`./assets/1-inline-script-tag.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/1-inline-script-tag.html){:target="_blank"}.
 
   <!-- TODO: The ./assets above pointing to a folder containing code, should be managed in some way, e.g. redirect to GitHub or local repo, display them inline or through a viewer (Flems/Codesandbox/other)  -->
 
@@ -466,7 +466,7 @@ load_script_js_via_src:
   **3. Loading JS files into HTML**
 
   You can also write your code in a separate `.js` file, then load the file into
-  your HTML to execute the code. There are two different ways you can load a `.js` file into your HTML, you can see them in action with [`./assets/2-separate-script-file/index.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/2-separate-script-file/index.html) and [`./assets/3-separate-module-files/index.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/3-separate-module-files/index.html) (you'll learn more about scripts vs. modules later on).
+  your HTML to execute the code. There are two different ways you can load a `.js` file into your HTML, you can see them in action with [`./assets/2-separate-script-file/index.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/2-separate-script-file/index.html){:target="_blank"} and [`./assets/3-separate-module-files/index.html`](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week06/assets/3-separate-module-files/index.html){:target="_blank"} (you'll learn more about scripts vs. modules later on).
   <!-- TODO: Same as above... -->
 
   <!-- TODO: INTEGRATE: https://stackoverflow.com/a/53821485/4861760 -->
