@@ -34,6 +34,9 @@ body {
 .wrapper, .main-section {
   max-width: var(--max-width);
 }
+summary {
+  display: list-item;
+}
 
 //>>> UTILITY CLASSES <<<//
 .mt-1 {
@@ -171,25 +174,25 @@ nav#side-toc > ul > li > a {
   justify-content: space-between;
 }
 
-// <summary> Styling
-summary {
+//>> <summary> Styling
+.main-section > summary {
   display: list-item;
 }
-summary > h2,
-summary > h3 {
+.main-section > summary > h2,
+.main-section > summary > h3 {
   display: inline-block;
   cursor: pointer;
 }
-summary>h2 {
+.main-section > summary > h2 {
   font-size: 1.5rem;
 }
-summary > h3:hover {
+.main-section > summary > h3:hover {
   color: white;
 }
-details summary + h3 {
+.main-section > details > summary + h3 {
   margin-top: 1rem;
 }
-details summary { 
+.main-section > details > summary { 
   cursor: pointer;
   border: 1px solid var(--details-border-color);
   padding: 1rem 0 1rem 1rem;
@@ -198,8 +201,8 @@ details summary {
   transition: all 400ms ease;
 }
 
-details[open] summary,
-details summary:hover {
+.main-section > details[open] > summary,
+.main-section > details > summary:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 20px rgba(0,0,0,0.5);
   border-top-color: white;
@@ -207,9 +210,10 @@ details summary:hover {
   border-right-color: white;
 }
 
-details summary > * {
+.main-section > details > summary > * {
   display: inline;
 }
+//<< <summary> Styling
 
 // BLOCK QUOTES:
 blockquote {
