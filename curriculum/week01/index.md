@@ -941,24 +941,24 @@ We encourage you to **help and support each other** but in a constructive and he
   - [Mosh: JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk){:target="_blank"}
     - **Duration:** 48min
     - **Description:** An introductory JS screencast that covers the following concepts: 
-    <details>
-    <summary>Table of Content</summary>
-    <ul>
-      <li>What is JavaScript</li>
-      <li>Setting Up the Development Environment </li>
-      <li>JavaScript in Browsers</li>
-      <li>Separation of Concerns</li>
-      <li>JavaScript in Node</li>
-      <li>Variables</li>
-      <li>Constants</li>
-      <li>Primitive Types </li>
-      <li>Dynamic Typing </li>
-      <li>Objects</li>
-      <li>Arrays</li>
-      <li>Functions</li>
-      <li>Types of Functions </li>
-    </ul>
-    </details>
+    - <details>
+        <summary>Table of Content</summary>
+        <ul>
+          <li>What is JavaScript</li>
+          <li>Setting Up the Development Environment </li>
+          <li>JavaScript in Browsers</li>
+          <li>Separation of Concerns</li>
+          <li>JavaScript in Node</li>
+          <li>Variables</li>
+          <li>Constants</li>
+          <li>Primitive Types </li>
+          <li>Dynamic Typing </li>
+          <li>Objects</li>
+          <li>Arrays</li>
+          <li>Functions</li>
+          <li>Types of Functions </li>
+        </ul>
+      </details>
 
   - [Mosh: JavaScript if else (tutorial)](https://www.youtube.com/watch?v=IsG4Xd6LlsM){:target="_blank"}
     - **Duration:** 7min

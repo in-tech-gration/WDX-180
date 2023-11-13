@@ -36,3 +36,9 @@ schedule:
 
 # TODO: Day 5: Addition: What you need to know about forms and placeholders
 # PLACEHOLDERS ARE NOT LABELS AND DO NOT GET TRANSLATED -- START TYPING AND THEN FORGET WHAT THE INPUT IS FOR? Also, placeholders are not read by some assistive technology
+
+# Day 5: Integrate Emmet Guide + Interactive Exercise?
+# https://dev.to/ziratsu/emmet-crash-course-gjm
+# https://github.com/ecole-du-web/Emmet-Crash-Course/tree/main
+
+# TEST & SUGGEST: https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator (SAR: Mary)

@@ -18,3 +18,15 @@ schedule:
     5: # Media
       # file://./../modules/javascript/web_apis/dom/
       module: javascript/web_apis/
+
+# ---
+
+# Day 3:
+# https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/11
+# https://jsonplaceholder.typicode.com/
+# When HTTP Content-Type is not application/json: https://backend-omega-seven.vercel.app/api/getjoke
+# Extension: 
+# JSON Storage: 
+# - https://jsonbin.io/quick-store
+# - https://jsonblob.com/
+# - https://www.npoint.io/
