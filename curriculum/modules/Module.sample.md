@@ -20,4 +20,6 @@ title: Module title
 
 ### Extra Resources
 
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
 ### Sources and Attributions
