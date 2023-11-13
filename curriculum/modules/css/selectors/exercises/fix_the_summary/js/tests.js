@@ -318,12 +318,12 @@
         init();
         console.log("Everything looks good! Congratulations!");
         confettis();
-        errorsEl.textContent = "";
+        errorsEl.querySelector("p").textContent = "";
         errorsEl.removeAttribute("class");
         style.removeAttribute("contenteditable");
       } catch(e){
         document.body.style.backgroundColor = "tomato";
-        errorsEl.textContent = e.message;
+        errorsEl.querySelector("p").textContent = e.message;
         errorsEl.setAttribute("class", "active");
         console.log(e);
       }

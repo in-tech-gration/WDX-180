@@ -1,128 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <style>
-      * {
-        transition: all 200ms ease;
-      }
-      html {
-        font-size: 16px;
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-        background: gray;
-        color: white;
-        display: flex;
-        gap: 2rem;
-        max-width: 1440px;
-        margin: 0 auto;
-        font-size: 1.5rem;
-      }
-      #html-wrapper, 
-      #code-wrapper {
-        width: 50%;
-      }
-      #html-wrapper,
-      #styles {
-        margin-top: 5rem;
-        height: fit-content;
-      }
-      #instructions {
-        background: #fff;
-        color: black;
-        font-size: 1.2rem;
-      }
-      #instructions a {
-        text-decoration: none;
-        font-weight: bold;
-        color: green;
-      }
-      #instructions a:hover {
-        color: black;
-      }
-      #app {
-        margin-top: 2rem;
-        background: gray;
-      }
-      #styles {
-        background: white;
-        padding: 0;
-        font-size: 1.5rem;
-      }
-      section {
-        border: 2px solid indigo;
-        padding: 1rem;
-        box-shadow: 6px 6px black;
-      }
-      #errors {
-        margin-top: 2rem;
-        background: white;
-        opacity: 0.1;
-        transition: all 300ms ease;
-        color: tomato;
-      }
-      #errors.active {
-        opacity: 1;
-      }
-      style {
-        color: black;
-        white-space: pre;
-        outline: none;
-        display: inline-block;
-        padding: 1rem;
-      }
-      pre {
-        font-size: 1rem !important;
-        background: transparent !important;
-        border-left: none !important;
-        box-shadow: none !important;
-      }
-      code {
-        box-shadow: none !important;
-        padding-right: 0;
-        box-shadow: 6px 6px black !important;
-        border: 2px solid black !important;
-      }
-      pre:before, pre:after {
-        display: none !important;
-      }
-      /* Make changes to the code starting here: */
-      /* #app details summary {
-        border: 2px solid black;
-        padding: 1rem;
-        background: black;
-      } */
-      /* SOLUTION: */
-      /* #app > details > summary {
-        background: black;
-        border: 2px solid black;
-        padding: 1rem;
-      } */
-    </style>
-    <!-- Prism.js -->
-    <link rel="stylesheet" href="js/prism.css" />
-    <script src="js/prism.js"></script>
-  </head>
-  <body>
-    <!-- WARNING: YOU SHOULD NOT CHANGE THE HTML CONTENT FOR THIS EXERCISE! -->
-    <div id="code-wrapper">
-      <section id="styles">
-        <style contenteditable="true">/* Make changes to the CSS code: */
 
-#app details summary {
-  border: 4px solid yellowgreen;
-  padding: 1rem;
-  background: black;
-}
-        </style>
-      </section>
-      <pre>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+  <style>
+    * {
+      transition: all 200ms ease;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+      background: gray;
+      color: white;
+      display: flex;
+      gap: 2rem;
+      max-width: 1440px;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+
+    .mini {
+      position: absolute;
+      top: -16px;
+      right: 16px;
+      background: skyblue;
+      padding: 0.25rem 1rem;
+      border: 2px solid black;
+      font-size: 1rem;
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+      color: black;
+    }
+
+    #html-wrapper,
+    #code-wrapper {
+      width: 50%;
+    }
+
+    #html-wrapper,
+    #styles {
+      margin-top: 5rem;
+      height: fit-content;
+    }
+
+    #instructions {
+      background: #fff;
+      color: black;
+      font-size: 1.2rem;
+      position: relative;
+    }
+
+    #instructions a {
+      text-decoration: none;
+      font-weight: bold;
+      color: green;
+    }
+
+    #instructions a:hover {
+      color: black;
+    }
+
+    #app {
+      margin-top: 2rem;
+      background: gray;
+      position: relative;
+    }
+
+    #styles {
+      background: white;
+      padding: 0;
+      font-size: 1.5rem;
+      position: relative;
+    }
+
+    section {
+      border: 2px solid indigo;
+      padding: 1rem;
+      box-shadow: 6px 6px black;
+    }
+
+    #errors {
+      margin-top: 2rem;
+      background: white;
+      opacity: 0.1;
+      transition: all 300ms ease;
+      color: tomato;
+      position: relative;
+    }
+
+    #errors.active {
+      opacity: 1;
+    }
+
+    style {
+      color: black;
+      white-space: pre;
+      outline: none;
+      display: inline-block;
+      padding: 1rem;
+    }
+
+    pre {
+      font-size: 1rem !important;
+      background: transparent !important;
+      border-left: none !important;
+      box-shadow: none !important;
+    }
+
+    code {
+      box-shadow: none !important;
+      padding-right: 0;
+      box-shadow: 6px 6px black !important;
+      border: 2px solid black !important;
+    }
+
+    pre:before,
+    pre:after {
+      display: none !important;
+    }
+
+    /* Make changes to the code starting here: */
+    /* #app details summary {
+        border: 2px solid black;
+        padding: 1rem;
+        background: black;
+      } */
+    /* SOLUTION: */
+    /* #app > details > summary {
+        background: black;
+        border: 2px solid black;
+        padding: 1rem;
+      } */
+  </style>
+  <!-- Prism.js -->
+  <link rel="stylesheet" href="js/prism.css" />
+  <script src="js/prism.js"></script>
+</head>
+
+<body>
+  <!-- WARNING: YOU SHOULD NOT CHANGE THE HTML CONTENT FOR THIS EXERCISE! -->
+  <div id="code-wrapper">
+    <section id="styles">
+      <div class="mini">Live CSS Code</div>
+      <style contenteditable="true">
+        /* Make changes to the CSS code: */
+
+        #app details summary {
+          border: 4px solid yellowgreen;
+          padding: 1rem;
+          background: black;
+        }
+      </style>
+    </section>
+    <pre>
         <code class="language-markup">
 &lt;section id=&quot;app&quot;&gt;
   &lt;details open&gt;
@@ -153,53 +191,63 @@
 &lt;/section&gt;
         </code>
       </pre>
-    </div>
-    <div id="html-wrapper">
+  </div>
+  <div id="html-wrapper">
 
-      <section id="instructions">
-        <strong>Instructions:</strong>
-        <p>In the HTML code example, we have applied a nice styling for the main &lt;summary&gt; section <em>(the "Let's Learn HTML" one)</em>.</p>
-        <p>Unfortunately, the CSS selectors we picked are also applying the styling to the inner &lt;summary&gt; elements (1.1, 1.2, 1.3) which is something that we don't want to.</p>
-        <p>Can you update the CSS code on the left so that it targets only the first (main) one?</p>
-        <p><strong>Hint:</strong> perhaps you can check whether one of these guys <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator" target="_blank">+</a>, <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">&gt;</a>, <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator">~</a> can help?</p>
-      </section>
+    <section id="instructions">
+      <div class="mini">Start here</div>
+      <strong>Instructions:</strong>
+      <p>In the HTML code example, we have applied a nice styling for the main &lt;summary&gt; section <em>(the "Let's
+          Learn HTML" one)</em>.</p>
+      <p>Unfortunately, the CSS selectors we picked are also applying the styling to the inner &lt;summary&gt; elements
+        (1.1, 1.2, 1.3) which is something that we don't want to.</p>
+      <p>Can you update the CSS code on the left so that it targets only the first (main) one?</p>
+      <p><strong>Hint:</strong> perhaps you can check whether one of these guys <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator" target="_blank">+</a>, <a
+          target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">&gt;</a>, <a
+          target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator">~</a>
+        can help?</p>
+    </section>
 
-      <!-- ERROR OUTPUT -->
-      <section id="errors">
-          ERRORS
-      </section>
+    <!-- ERROR OUTPUT -->
+    <section id="errors">
+      <div class="mini">HTML Preview</div>
+      <p>ERRORS</p>
+    </section>
 
-      <!-- RENDERED HTML -->
-      <section id="app">
-        <details open>
-          <summary>1) Let's Learn HTML</summary>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque
-            deleniti sequi adipisci error commodi nostrum corrupti quae libero.
-            Corporis blanditiis, eligendi labore officia eius rem fugiat id
-            exercitationem ullam?
-          </p>
-          <hr />
-          <details>
-            <summary>1.1) What you'll learn</summary>
-            <p>Exercitationem soluta quisquam ratione.</p>
-          </details>
-          <hr />
-          <details>
-            <summary>1.2) Where to go from here</summary>
-            <p>Exercitationem soluta quisquam ratione.</p>
-          </details>
-          <hr />
-          <details>
-            <summary>1.3) Contribution</summary>
-            <p>Exercitationem soluta quisquam ratione.</p>
-          </details>
+    <!-- RENDERED HTML -->
+    <section id="app">
+      <div class="mini">HTML Preview</div>
+      <details open>
+        <summary>1) Let's Learn HTML</summary>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque
+          deleniti sequi adipisci error commodi nostrum corrupti quae libero.
+          Corporis blanditiis, eligendi labore officia eius rem fugiat id
+          exercitationem ullam?
+        </p>
+        <hr />
+        <details>
+          <summary>1.1) What you'll learn</summary>
+          <p>Exercitationem soluta quisquam ratione.</p>
         </details>
-      </section>
+        <hr />
+        <details>
+          <summary>1.2) Where to go from here</summary>
+          <p>Exercitationem soluta quisquam ratione.</p>
+        </details>
+        <hr />
+        <details>
+          <summary>1.3) Contribution</summary>
+          <p>Exercitationem soluta quisquam ratione.</p>
+        </details>
+      </details>
+    </section>
 
-    </div>
+  </div>
 
-    <!-- Let's run some tests! -->
-    <script src="js/tests.js"></script>
-  </body>
+  <!-- Let's run some tests! -->
+  <script src="js/tests.js"></script>
+</body>
+
 </html>
