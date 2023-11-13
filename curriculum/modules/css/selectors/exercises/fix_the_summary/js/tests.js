@@ -260,8 +260,8 @@
     
     }
 
-    const details = document.querySelector("body details:first-child");
-    const summary = details.querySelector("body details:first-child > summary"); 
+    const details = document.querySelector("body details:first-of-type");
+    const summary = details.querySelector("body details:first-of-type > summary"); 
     const summaries = Array.from(details.querySelectorAll("summary")).slice(1);
     const computedStyle = getComputedStyle(summary);
     const bgColor = computedStyle.backgroundColor;
