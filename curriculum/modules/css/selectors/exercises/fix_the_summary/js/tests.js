@@ -263,7 +263,6 @@
     const details = document.querySelector("body details:first-child");
     const summary = details.querySelector("body details:first-child > summary"); 
     const summaries = Array.from(details.querySelectorAll("summary")).slice(1);
-    errorsEl = document.querySelector("#errors");
     const computedStyle = getComputedStyle(summary);
     const bgColor = computedStyle.backgroundColor;
     const isBgColorBlack = checkIsColorBlack(bgColor);
@@ -315,6 +314,7 @@
 
     function doCheck(){
       try {
+        errorsEl = document.querySelector("#errors");
         init();
         console.log("Everything looks good! Congratulations!");
         confettis();
