@@ -1,0 +1,26 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: Data Structures & Algorithms
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    2: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    3: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    4: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    5: # 
+      # file://./../modules/javascript/
+      module: javascript/
+
+# ---
+
+# STUDY: 
+# Linked Lists for JavaScript Developers
+# > https://daveceddia.com/linked-lists-javascript/

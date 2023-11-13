@@ -5,17 +5,12 @@ schedule:
   days:
   
     1: # Git
-      # TODO: Add to this week: File Paths: https://www.kirupa.com/html5/all_about_file_paths.htm
       # file://./../modules/
       module: 
-      # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/02-html
-      # TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/blob/main/lessons/07-other-stuff-you-should-know/B-git-and-github.md
 
     2: # Intro to HTML
       # file://./../modules/
       module: 
-      # TODO: INTEGRATE: First Part (HTML) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
-      # TODO: INTEGRATE: https://caninclude.glitch.me/caninclude?child=div&parent=p (https://github.com/CyberLight/caninclude-v2) (Add Star Repo reminder) Complement with: https://css-tricks.com/can-include-a-certain-html-element-within-another-certain-html-element/
 
     3: # HTML Tables
       # file://./../modules/
@@ -26,8 +21,18 @@ schedule:
       module: 
 
     5: # HTML Forms & Accessibility
-      # HTML Form Controls & Accessibility
       # file://./../modules/
-      # TODO: Addition: What you need to know about forms and placeholders
-      # PLACEHOLDERS ARE NOT LABELS AND DO NOT GET TRANSLATED -- START TYPING AND THEN FORGET WHAT THE INPUT IS FOR? Also, placeholders are not read by some assistive technology
       module: 
+
+# ---
+
+# TODO: Day1: Add to this week: File Paths: https://www.kirupa.com/html5/all_about_file_paths.htm
+
+# TODO: Day 1: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/02-html
+# TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/blob/main/lessons/07-other-stuff-you-should-know/B-git-and-github.md
+
+# TODO: Day 2: INTEGRATE: First Part (HTML) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
+# TODO: INTEGRATE: https://caninclude.glitch.me/caninclude?child=div&parent=p (https://github.com/CyberLight/caninclude-v2) (Add Star Repo reminder) Complement with: https://css-tricks.com/can-include-a-certain-html-element-within-another-certain-html-element/
+
+# TODO: Day 5: Addition: What you need to know about forms and placeholders
+# PLACEHOLDERS ARE NOT LABELS AND DO NOT GET TRANSLATED -- START TYPING AND THEN FORGET WHAT THE INPUT IS FOR? Also, placeholders are not read by some assistive technology
