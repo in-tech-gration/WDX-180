@@ -190,7 +190,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
   It's recommended that you create 2 separate folders and VSCode workspaces for these last 2 steps. 
 
-  All the videos can be found in this _(unlisted*)_ [**YouTube playlist**](https://www.youtube.com/playlist?list=PLdo7hJB0agEmTY9xT7EvzUkClAeAHJr9G).
+  All the videos can be found on this [**YouTube playlist**](https://www.youtube.com/playlist?list=PLdo7hJB0agEmTY9xT7EvzUkClAeAHJr9G).
 
   Good luck!
 
