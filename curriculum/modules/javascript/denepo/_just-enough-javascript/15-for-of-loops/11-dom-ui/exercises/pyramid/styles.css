@@ -1,0 +1,13 @@
+.computery {
+  font-family: monospace;
+  color: chartreuse;
+  background-color: black;
+  height: 35em;
+  width: 20em;
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

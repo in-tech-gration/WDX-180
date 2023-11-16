@@ -1,0 +1,31 @@
+{
+  "study": {
+    "trace": {
+      "functions": false,
+      "controlFlow": false,
+      "operators": false
+    },
+    "flowchart": false,
+    "openIn": "jsTutor",
+    "ask": {
+      "operators": false,
+      "controlFlow": false,
+      "levels": [1, 2, 3]
+    },
+    "loopGuard": false
+  },
+  "highlight": {
+    "trace": {
+      "functions": false,
+      "controlFlow": false,
+      "operators": false,
+      "console": false
+    },
+    "openIn": "jsTutor",
+    "flowchart": false,
+    "ask": {
+      "operators": false,
+      "controlFlow": false
+    }
+  }
+}

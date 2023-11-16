@@ -1,0 +1,10 @@
+{
+  "--defaults": {
+    ".md": "quiz"
+  },
+  "study": {
+    "eslint": false,
+    "debug": true,
+    "loopGuard": false
+  }
+}

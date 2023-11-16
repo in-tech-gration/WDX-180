@@ -1,0 +1,10 @@
+{
+  "study": {
+    "flowchart": false,
+    "trace": false,
+    "ask": false,
+    "table": false,
+    "variables": false,
+    "parsons": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "study": {
+    "loopGuard": {
+      "active": true
+    },
+    "environment": true,
+    "debug": true,
+    "openIn": "jsTutor"
+  }
+}

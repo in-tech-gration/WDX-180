@@ -1,0 +1,18 @@
+{
+  "study": {
+    "run": false,
+    "debug": false,
+    "flowchart": false,
+    "save": true,
+    "trace": false,
+    "variables": false,
+    "highlight": true,
+    "loopGuard": false,
+    "ask": false,
+    "table": true,
+    "blanks": false,
+    "writeme": false,
+    "pseudo": false,
+    "eslint": false
+  }
+}
