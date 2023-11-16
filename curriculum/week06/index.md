@@ -27,7 +27,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 12/11/2023</span>
+  <span>Updated: 16/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -515,9 +515,7 @@ load_script_js_via_src:
     libraries or support for game development. These include
     [code.org](https://code.org/){:target="_blank"} (develop and play games with JS),
     [editor.p5js.org](https://editor.p5js.org/){:target="_blank"} (create interactive artwork),
-    [PencilCode](https://pencilcode.net/edit/myprogram){:target="_blank"} (write your code as blocks
-    or text), [Ocelot](https://code.ocelot-ide.org/){:target="_blank"} (disallows "bad" language
-    features and has helpful error messages).
+    [PencilCode](https://pencilcode.net/edit/myprogram){:target="_blank"} (write your code as blocks or text).
 
   ---
 
