@@ -601,7 +601,6 @@ load_script_js_via_src:
 
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch1.md#backwards--forwards){:target="_blank"}
   - [Why is JavaScript backwards compatible to a fault?](https://stackoverflow.com/questions/4937245/why-is-javascript-backwards-compatible-to-a-fault){:target="_blank"}
-  - [edytawrobel](https://www.edytawrobel.com/js-compatibility/){:target="_blank"}
   - [tonsky.me](https://tonsky.me/blog/compatibility/){:target="_blank"}
   - [rohitdhatrak](https://www.rohitdhatrak.com/backwards-forwards-compatibility/){:target="_blank"}
   - [Chrome Breaks the Web](https://www.theregister.com/2021/10/04/chrome_breaks_web/){:target="_blank"}
