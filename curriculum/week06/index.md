@@ -921,22 +921,22 @@ load_script_js_via_src:
 
 <hr class="mt-1">
 
-<!-- Week 06 - Day 5 | Work in Progress -->
+<!-- Week 06 - Day 5 | Predictive Stepping -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 06 - Day 5</span> | Work in Progress</h2>
+      <span class="summary-day">Week 06 - Day 5</span> | Predictive Stepping</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
 
-#### Work in progress...
-
-
-
-  **Stay tuned**
+  **Predictive Stepping:** Practice predicting each step of program execution, using your browser's debugger to check your predictions every step of the way.
 
 <!-- Summary -->
 

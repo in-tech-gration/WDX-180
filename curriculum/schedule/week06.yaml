@@ -15,8 +15,9 @@ schedule:
     4: # What is JavaScript?
       # file://./../modules/javascript/denepo/what-is-javascript/index.md
       module: javascript/denepo/what-is-javascript
-    5: # 
-      module: curriculum/work_in_progress.md
+    5: # Split Day 4 into 2? Perhaps add some more things from DeNepo?
+      # file://./../modules/javascript/denepo/predictive_stepping/index.md
+      module: javascript/denepo/predictive_stepping
 
 # ---
 
