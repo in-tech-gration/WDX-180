@@ -183,6 +183,15 @@ title: Flappy App - Day 1
       - [HTML Validator](https://validator.w3.org/){:target="_blank"}
       - [CSS Validator](https://jigsaw.w3.org/css-validator/){:target="_blank"}
 
+  ---
+
+  **Found a content problem with this page? Want to contribute?** 
+  
+  - [Join the discussion here](https://github.com/in-tech-gration/WDX-180/discussions/categories/flappyapp-challenge)
+  - [View the source code](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/css/misc/flappy_app_practice/index.md)
+  - [Report an issue](https://github.com/in-tech-gration/WDX-180/issues)
+  - [Edit the page on GitHub](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/css/misc/flappy_app_practice/index.md)
+
 ### Summary
 
   **Insights**
