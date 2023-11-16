@@ -8,3 +8,5 @@ node_modules
 CURRICULUM.x 
 .personal/
 teaching/cohorts
+
+curriculum/modules/**/denepo/**/*.mp4
