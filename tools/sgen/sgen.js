@@ -16,12 +16,9 @@ const {
 
 const { 
   wdxTemplateRegexes,
+  replaceModule,
   getFrontMatterStringFromObject,
 } = require("./utils");
-
-const {
-  MODULES_FOLDER 
-} = require("./constants");
 
 const { createWeeklyContentFromYaml } = require("./weekly");
 const { createSyllabusFromMarkdownText } = require("./syllabus");
@@ -68,13 +65,7 @@ function createContentFromYaml({ configYaml, filename }) {
     
     // .replace(dateUpdatedRegex, DDMMYYYY)
     // .replace(includesRegex, replaceInclude());
-    .replace(moduleRegex, function( match, modulePath, offset, string ){
-
-      const fullPath = path.join(MODULES_FOLDER, modulePath.trim());
-      const textContent = fs.readFileSync(fullPath, "utf-8");
-      return textContent;
-
-    });
+    .replace(moduleRegex, replaceModule);
   
     
   // const dailyMarkdownTokens = marked.lexer(dailyDraftTemplate);

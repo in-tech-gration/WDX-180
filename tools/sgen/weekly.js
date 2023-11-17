@@ -7,6 +7,7 @@ const matter = require('gray-matter');
 const { 
   wdxTemplateRegexes,
   replaceInclude,
+  replaceModule,
   createExerciseFolders,
   getFrontMatterStringFromObject
 } = require("./utils");
@@ -33,7 +34,8 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
     titleRegex,
     dateUpdatedRegex,
     weeklyContentRegex,
-    includesRegex
+    includesRegex,
+    moduleRegex
 
   } = wdxTemplateRegexes;
 
@@ -46,7 +48,8 @@ function parseWeeklyPatterns({ raw, numOfWeek, weeklyContent, title }){
   .replace(titleRegex, title)
   .replace(dateUpdatedRegex, DDMMYYYY)
   .replace(weeklyContentRegex, weeklyContent)
-  .replace(includesRegex, replaceInclude({ numOfWeek }));
+  .replace(includesRegex, replaceInclude({ numOfWeek }))
+  .replace(moduleRegex, replaceModule );
 
   return newRaw;
 }

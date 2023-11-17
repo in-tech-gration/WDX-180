@@ -1,8 +1,9 @@
-const path = require("node:path");
-const fs   = require("node:fs");
-const chalk  = require("chalk");
-const { INCLUDES_FOLDER, MODULES_FOLDER } = require("./constants");
+const path     = require("node:path");
+const fs       = require("node:fs");
+const chalk    = require("chalk");
 const { warn } = require("../utils");
+const matter   = require('gray-matter');
+const { INCLUDES_FOLDER, MODULES_FOLDER } = require("./constants");
 
 const wdxTemplateRegexes = {
 
@@ -114,6 +115,17 @@ function replaceInclude({ day, numOfWeek } = {}){
     });
 
   }
+}
+
+// REPLACES: {{ WDX:MODULE:path/index.md }} WITH: contents of index.md
+function replaceModule( match, modulePath, offset, string ){
+
+  // console.log({ modulePath, match });
+  const fullPath = path.join(MODULES_FOLDER, modulePath.trim());
+  const textContent = fs.readFileSync(fullPath, "utf-8");
+  const { content, data: fm, orig } = matter(textContent);
+  return content;
+
 }
 
 // Deep Markdown Token parsing for Assets (./assets/*)
@@ -284,5 +296,6 @@ module.exports = {
   parseTokenForMediaAssets,
   parseWdxMetaProgress,
   parseWdxMetaTests,
-  createExerciseFolders
+  createExerciseFolders,
+  replaceModule
 }

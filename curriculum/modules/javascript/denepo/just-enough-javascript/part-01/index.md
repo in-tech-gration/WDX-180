@@ -10,24 +10,33 @@ title: Just Enough JavaScript - Part 1
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  This Module is about learning "Just enough JavaScript" in order to understand, trace and debug the execution process of JavaScript programs and learn how to read and comprehend every single line of code that you see. That's probably the most important task, anyone learning a new language (even natural languages), must go through in order to become familiar with this new fascinating territory. 
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
+
+  {{ WDX:MODULE:javascript/denepo/setting-up-study-lenses }}
+
+  **Launching Study Lenses and following the material**
+
+  Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
 
   or just:
 
-  `cd curriculum/modules/javascript/denepo/_just-enough-javascript/`
-  `lenses2`
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  - `lenses2`
 
-  (Warning: the URL will be different!)
+  Now it's time to go through the material. For this Module you will only need to go through the following sections:
 
-  Go through:
-
-  - 00-errors
-  - ...
-  - 06-undefined
+  - **00-errors**
+  - **01-comments-and-logs**
+  - **02-primitive-values**
+  - **03-operators**
+  - **04-booleans**
+  - **05-strings**
+  - **06-undefined**
 
 ### Summary
 
