@@ -133,17 +133,12 @@ title: Week 07 | JavaScript Core 1
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  Go through:
-
-  - 07-
-  - ...
-  - 08-
+  - **07-variables**
+  - **08-null**
 
 <!-- Summary -->
 
@@ -174,17 +169,14 @@ title: Week 07 | JavaScript Core 1
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  Go through:
-
-  - 09-
-  - ...
-  - 12-
+  - **09-interactions**
+  - **10-numbers**
+  - **11-block-scope**
+  - **12-conditionals**
 
 <!-- Summary -->
 
@@ -215,17 +207,12 @@ title: Week 07 | JavaScript Core 1
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  Go through:
-
-  - 13-
-  - ...
-  - 14-
+  - **13-while-loops**
+  - **14-review-quiz**
 
 <!-- Summary -->
 
@@ -256,17 +243,13 @@ title: Week 07 | JavaScript Core 1
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  Go through:
-
-  - 15-
-  - ...
-  - 17-
+  - **15-for-of-loops**
+  - **16-break**
+  - **17-continue**
 
 <!-- Summary -->
 

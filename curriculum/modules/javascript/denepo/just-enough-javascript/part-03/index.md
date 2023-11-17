@@ -10,17 +10,15 @@ title: Just Enough JavaScript - Part 3
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  Go through:
-
-  - 09-
-  - ...
-  - 12-
+ 
+  - **09-interactions**
+  - **10-numbers**
+  - **11-block-scope**
+  - **12-conditionals**
 
 ### Summary
 
