@@ -1,0 +1,39 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Core 2
+schedule: 
+
+  days:
+    1: # String Manipulation 
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    2: # Arrays Part 2
+      # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    3: # Arrays
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    4: # Objects Part 2
+      # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+    5: # Project
+      # file://./../modules/javascript/core/
+      module: javascript/core/
+
+# ---
+
+# TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/1
+# TODO: STUDY: Pass by value vs pass by reference:
+# Mosh?
+# https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/44
+# A Visual Guide to References in JavaScript: https://daveceddia.com/javascript-references/ (SAR: Marios)
+# TODO: STUDY: SCOPE
+# https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/3
+# TODO: STUDY: HOISTING: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/4/5
+# TODO: STUDY: Manipulating Arrays: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/6
+# PRACTICE: https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/7
