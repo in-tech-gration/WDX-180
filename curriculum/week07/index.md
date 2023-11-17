@@ -57,24 +57,56 @@ title: Week 07 | JavaScript Core 1
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  This Module is about learning "Just enough JavaScript" in order to understand, trace and debug the execution process of JavaScript programs and learn how to read and comprehend every single line of code that you see. That's probably the most important task, anyone learning a new language (even natural languages), must go through in order to become familiar with this new fascinating territory. 
 
-  `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
+
+  
+  **Setting up Study Lenses (v2) on your System**
+  
+  1. Clone the `study-lenses` repository from this [link: https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
+  
+  - `git clone git@github.com:in-tech-gration/study-lenses.git`
+  
+  2. Change to the `study-lenses` directory and install all dependencies:
+  
+  - Run: `cd study-lenses`
+  
+  - Then: `npm install` or `npm i` for short
+  
+  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
+  
+  - `git checkout lenses2`
+  
+  - `npm link` 
+  
+  - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
+  
+  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
+  
+  - `lenses2 --version` or `lenses2 -v`
+
+  **Launching Study Lenses and following the material**
+
+  Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
 
   or just:
 
-  `cd curriculum/modules/javascript/denepo/_just-enough-javascript/`
-  `lenses2`
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  - `lenses2`
 
-  (Warning: the URL will be different!)
+  Now it's time to go through the material. For this Module you will only need to go through the following sections:
 
-  Go through:
-
-  - 00-errors
-  - ...
-  - 06-undefined
+  - **00-errors**
+  - **01-comments-and-logs**
+  - **02-primitive-values**
+  - **03-operators**
+  - **04-booleans**
+  - **05-strings**
+  - **06-undefined**
 
 <!-- Summary -->
 

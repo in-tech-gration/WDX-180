@@ -1,5 +1,7 @@
 ---
 title: Setting up Study Lenses (v2)
+TODO: 
+- Once lenses2 is available as an npm package, update this Module with instructions on how to install the tool globally via `npm install --global lenses2`
 ---
 
 **Setting up Study Lenses (v2) on your System**
@@ -25,5 +27,3 @@ title: Setting up Study Lenses (v2)
 4. Check that `study-lenses` have been successfully installed on your system by running the following command:
 
 - `lenses2 --version` or `lenses2 -v`
-
-<!-- TODO: Once lenses2 is available as an npm package, update this Module with instructions on how to install the tool globally via `npm install --global lenses2` -->

@@ -29,7 +29,7 @@ const wdxTemplateRegexes = {
   extrasRegex:        /\{\{\s?WDX:\s?EXTRAS\s?\}\}/gi,
   attributionsRegex:  /\{\{\s?WDX:\s?ATTRIBUTIONS\s?\}\}/gi,
   includesRegex:      /\{\{\s?WDX:\s?INCLUDES:(.*)\s?\}\}/gi,
-  moduleRegex:        /\{\{\s?WDX:\s?MODULE:(.*)\s?\}\}/gi,
+  moduleRegex:        /( *?)\{\{\s?WDX:\s?MODULE:(.*)\s?\}\}/gi,
   dateUpdatedRegex:   /\{\{\s?WDX:\s?DATE_UPDATED\s?\}\}/gi,
   weeklyContentRegex: /\{\{\s?WDX:\s?WEEKLY_CONTENT\s?\}\}/gi,
   wdx: {
@@ -118,12 +118,21 @@ function replaceInclude({ day, numOfWeek } = {}){
 }
 
 // REPLACES: {{ WDX:MODULE:path/index.md }} WITH: contents of index.md
-function replaceModule( match, modulePath, offset, string ){
+function replaceModule( match, lineSpaces, modulePath, offset, string ){
 
-  // console.log({ modulePath, match });
+  // console.log({ match, lineSpaces, modulePath, offset });
   const fullPath = path.join(MODULES_FOLDER, modulePath.trim());
   const textContent = fs.readFileSync(fullPath, "utf-8");
   const { content, data: fm, orig } = matter(textContent);
+
+  // Making sure to respect the indentation of the initial Module:
+  if ( lineSpaces.length > 0 ){
+    // console.log("Appending extra space:");
+    const extraSpace = Array.from({ length: lineSpaces.length }, x => " " ).join("");
+    return content.split("\n")
+    .map( line => extraSpace + line )
+    .join("\n");
+  }
   return content;
 
 }
