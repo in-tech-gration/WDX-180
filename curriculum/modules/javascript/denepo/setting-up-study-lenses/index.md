@@ -6,24 +6,20 @@ TODO:
 
 **Setting up Study Lenses (v2) on your System**
 
-1. Clone the `study-lenses` repository from this [link: https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
-
-- `git clone git@github.com:in-tech-gration/study-lenses.git`
+1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
+    - `git clone git@github.com:in-tech-gration/study-lenses.git`
 
 2. Change to the `study-lenses` directory and install all dependencies:
 
-- Run: `cd study-lenses`
-
-- Then: `npm install` or `npm i` for short
+    - Run: `cd study-lenses`
+    - Then: `npm install` (or `npm i` for short)
 
 3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
 
-- `git checkout lenses2`
-
-- `npm link` 
-
-- (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
+    - `git checkout lenses2`
+    - `npm link` 
+    - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
 
 4. Check that `study-lenses` have been successfully installed on your system by running the following command:
 
-- `lenses2 --version` or `lenses2 -v`
+    - `lenses2 --version` or `lenses2 -v`
