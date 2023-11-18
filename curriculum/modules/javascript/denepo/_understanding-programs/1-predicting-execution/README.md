@@ -36,9 +36,9 @@ step:
   take some practice to use effectively and is worth every second. You can see
   every value in memory, at every step of your program's execution. Debuggers
   are designed to help you understand how memory is structured in JS. Here is a
-  [quick setup video](https://www.youtube.com/watch?v=VFh7A77_lS0&list=PLdo7hJB0agEk3A3Rq55CXDsa7JfDscBAA)
+  [quick setup video](https://www.youtube.com/watch?v=VFh7A77_lS0)
    on Google Chrome's Debugger.
 
 - **Videos**:
 
-  - [Guide](https://www.youtube.com/watch?v=GTpMBY-KECE&list=PLdo7hJB0agEk3A3Rq55CXDsa7JfDscBAA)
+  - [Guide](https://www.youtube.com/watch?v=GTpMBY-KECE)

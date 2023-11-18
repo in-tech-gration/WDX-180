@@ -10,24 +10,12 @@ title: Understanding Programs - Part 5
 
 ### Study Plan
 
-  `cd study-lenses`
-  `git checkout lenses2`
-  `npm link` or `sudo npm link`
+  In this Module, we are continuing our journey into "Understanding Programs"
 
-  `lenses2 curriculum/modules/javascript/denepo/_understanding-programs/`
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and 
+  **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
 
-  or just:
-
-  `cd curriculum/modules/javascript/denepo/_understanding-programs/`
-  `lenses2`
-
-  (Warning: the URL will be different!)
-
-  Go through:
-
-  - 00-errors
-  - ...
-  - 06-undefined
+  - **z-challenge**
 
 ### Summary
 

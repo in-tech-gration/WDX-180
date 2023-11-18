@@ -9,6 +9,7 @@ schedule:
       module: javascript/denepo/understanding-programs/part-01
     2: #
       # file://./../modules/javascript/denepo/understanding-programs/part-02/index.md
+      # TODO: integrate the guide.mp4
       module: javascript/denepo/understanding-programs/part-02
     3: #
       # file://./../modules/javascript/denepo/understanding-programs/part-03/index.md

@@ -4,6 +4,8 @@ Your code should be written first for humans, and then for computers. One of the
 best tools you have for helping humans is a good variable name.
 
 - [Variable Analysis](#variable-analysis)
+  - You can also have a look at this guide [over here](https://www.youtube.com/watch?v=BnQrYRrYeVE)
+    by our dear friend Evan!
 - [`let` or `const`](#let-or-const)
 - [Naming the Variable](#name-the-variable)
 - [Variable Roles](#variable-roles)
@@ -219,9 +221,3 @@ rules. Here's some resources to get you started:
 - [nexTRIE](https://www.youtube.com/watch?v=O5WlRR-lEDE)
 - [Best Practices (swlh)](https://medium.com/swlh/javascript-best-practices-variable-naming-conventions-ea121ca389c5)
 - [Chidre's Tech Tutorials](https://www.youtube.com/watch?v=CZ9iNTLYhfw)
-
----
-
-## Class Recordings
-
-- [Class 15](https://vimeo.com/566111424) (first half of the video)

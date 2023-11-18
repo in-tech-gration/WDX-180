@@ -15,7 +15,7 @@ you get started reading the programs:
   questions
 - [Drawing on Code](#drawing-on-code) is about finding the answers
 
-You can also have a look at this guide [over here](https://www.youtube.com/watch?v=7nCCQQFbMOM&list=PLdo7hJB0agEk3A3Rq55CXDsa7JfDscBAA)
+You can also have a look at this guide [over here](https://www.youtube.com/watch?v=7nCCQQFbMOM)
  by our dear friend Evan!
 
 > Note: 
