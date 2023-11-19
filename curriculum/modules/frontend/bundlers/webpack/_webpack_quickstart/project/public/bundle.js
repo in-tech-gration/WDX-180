@@ -1,0 +1,1 @@
+(()=>{console.log(1234);for(var o,l=[1,2,3,4],e=[],g=0;g<l.length;g++)e.push((o=l[g],console.log(o)))})();
