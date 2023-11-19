@@ -2744,6 +2744,33 @@
       "language": [
         "en"
       ]
+    },
+    "intro-to-databases-1-overview": {
+      "type": "YouTube",
+      "duration": 526,
+      "title": "Intro to Databases 1 Overview",
+      "date": "23/05/2013",
+      "youtube": {
+        "id": "D98mNPLccSg",
+        "channel_id": "UCkgGZlIeBM7rjwNBcVee3WQ",
+        "channel_title": "Al Zimmerman",
+        "thumbnail_url": "https://i.ytimg.com/vi/D98mNPLccSg/sddefault.jpg"
+      },
+      "tags": [
+        "Database",
+        "databases",
+        "relational database",
+        "data",
+        "information",
+        "big data",
+        "tables",
+        "entitity",
+        "entities",
+        "attributes",
+        "record",
+        "records",
+        "relationships"
+      ]
     }
   },
   "creators": {}
