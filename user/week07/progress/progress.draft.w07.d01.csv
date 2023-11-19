@@ -1,11 +1,8 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-7,1,JavaScript Core 1: Introduction to JavaScript,Read 'JavaScript Intro',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Introduction to JavaScript,Read 'Numbers Strings and Booleans',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Introduction to JavaScript,Read 'Control Flow',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Introduction to JavaScript,Read 'Loops: behavior that repeats',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'Booleans in JavaScript',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day01/task_1/ folder
-7,1,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'Creating Variables',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day01/task_2/ folder
-7,1,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Number',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day01/task_3/ folder
-7,1,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Strings',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day01/task_4/ folder
-7,1,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Variables',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day01/task_5/ folder
-7,1,JavaScript Core 1: Introduction to JavaScript,Complete the exercise 'JavaScript Loops',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day01/task_6/ folder
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '00-errors' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '01-comments-and-logs' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '02-primitive-values' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '03-operators' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '04-booleans' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '05-strings' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '06-undefined' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

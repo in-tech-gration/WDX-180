@@ -28,6 +28,7 @@ Syllabus:
           open: true
         7: # file:///./schedule/week07.yaml
           title: "JavaScript Core 1"
+          open: true
         8: # file:///./schedule/week08.yaml
           title: "JavaScript Core 2"
         9: # file:///./schedule/week09.yaml

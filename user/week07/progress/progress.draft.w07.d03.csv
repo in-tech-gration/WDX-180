@@ -1,4 +1,5 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-7,3,JavaScript Core 1: Intro to Objects,Read 'Intro to Objects',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,3,JavaScript Core 1: Intro to Objects,Read 'Context',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,3,JavaScript Core 1: Intro to Objects,Complete the exercise 'JavaScript Objects Basics',Beginner,0-10,FALSE,Upload the required assets to the user/week07/exercises/day03/task_1/ folder
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '09-interactions' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '10-numbers' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '11-block-scope' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '12-conditionals' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

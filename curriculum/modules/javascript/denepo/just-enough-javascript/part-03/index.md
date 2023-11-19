@@ -24,6 +24,14 @@ title: Just Enough JavaScript - Part 3
 
 ### Exercises
 
+  <!-- WDX:META:PROGRESS:task=Explore the '09-interactions' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '10-numbers' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '11-block-scope' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '12-conditionals' section of 'Just Enough JavaScript' -->
+  
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_

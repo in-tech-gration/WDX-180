@@ -42,6 +42,20 @@ title: Just Enough JavaScript - Part 1
 
 ### Exercises
 
+  <!-- WDX:META:PROGRESS:task=Explore the '00-errors' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '01-comments-and-logs' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '02-primitive-values' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '03-operators' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '04-booleans' section of 'Just Enough JavaScript' -->
+  
+  <!-- WDX:META:PROGRESS:task=Explore the '05-strings' section of 'Just Enough JavaScript' -->
+
+  <!-- WDX:META:PROGRESS:task=Explore the '06-undefined' section of 'Just Enough JavaScript' -->
+
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
