@@ -39,15 +39,6 @@ schedule:
 # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/42/3
 # EXERCISE: https://codepen.io/kostasx/pen/vQMwKp?editors=0011
 
-# TODO: Check whether the following DeNepo material can be integrated (dispersed) throughout this week's content:
-# 1) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming
-# 2) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/README.md
-# 3) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/some-history.md
-# 4) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/1-the-developers
-# 5) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/2-the-computer
-# 6) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/3-the-users
-# 7) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/4-data-in-data-out
-
 # TODO: Integrate?
 # while loop exercise (using document.write instead):
 # https://www.w3schools.com/js/tryit.asp?filename=tryjs_while
