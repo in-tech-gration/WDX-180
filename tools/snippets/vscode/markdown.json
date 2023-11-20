@@ -6,19 +6,19 @@
     ],
     "description": "WDX:Kramdown target _blank"
   },
-  "WDX META EXERCISE 1": {
-    "prefix": "wdx-meta-ex-1",
+  "WDX SGEN EXERCISE 1": {
+    "prefix": "wdx-sgen-ex-1",
     "body": [
-      "<!-- WDX:META:PROGRESS:task=Complete the exercise '${1:title}'|user_folder=${2:folder} -->",
-      "<!-- WDX:META:TESTS:name=Test Exercise: '${1:title}'|type=exist|user_folder=${2:folder}|files=${3:files} -->"
+      "<!-- WDX:SGEN:PROGRESS:task=Complete the exercise '${1:title}'|user_folder=${2:folder} -->",
+      "<!-- WDX:SGEN:TESTS:name=Test Exercise: '${1:title}'|type=exist|user_folder=${2:folder}|files=${3:files} -->"
     ],
-    "description": "Adds 2 comments with WDX:META:PROGRESS and WDX:META:TESTS (for type='exist' tests) for WDX exercises."
+    "description": "Adds 2 comments with WDX:SGEN:PROGRESS and WDX:SGEN:TESTS (for type='exist' tests) for WDX exercises."
   },
-  "WDX META PROGRESS READ": {
-    "prefix": "wdx-meta-prog-read",
+  "WDX SGEN PROGRESS": {
+    "prefix": "wdx-sgen-prog",
     "body": [
-      "<!-- WDX:META:PROGRESS:task=Read '${1:title}' -->"
+      "<!-- WDX:SGEN:PROGRESS:task=${1:title} -->"
     ],
-    "description": "Adds 1 comment with WDX:META:PROGRESS with Read '<task>'"
+    "description": "Adds 1 comment with WDX:SGEN:PROGRESS with Read '<task>'"
   }
 }
