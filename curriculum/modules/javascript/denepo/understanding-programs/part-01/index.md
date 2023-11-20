@@ -12,7 +12,23 @@ title: Understanding Programs - Part 1
 
   This Module is about "Understanding Programs". It's not enough just to know the language features in JS. Before you can write good programs you need to learn how to understand code that you did not write. The following module contains a handful of sections that provide you a good amount of JavaScript programs and a lot of tools,methods and good practices on how to properly understand programs written by others!
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
+
+  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+
+  **Launching Study Lenses and following the material**
+
+  Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+
+  or just:
+
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  - `lenses2`
+
+  Now it's time to go through the material. For this Module you will only need to go through the following sections:
 
   - **0-let-vs-const**
   - **1-predicting-execution**
@@ -21,6 +37,12 @@ title: Understanding Programs - Part 1
 ### Summary
 
 ### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '0-let-vs-const' section of 'Understanding Programs' -->
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '1-predicting-execution' section of 'Understanding Programs' -->
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '2-reading-programs' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

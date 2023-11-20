@@ -24,7 +24,7 @@ title: Week 08 | JavaScript Core 2
 
   </h2>
 
-  <span>Updated: 18/11/2023</span>
+  <span>Updated: 20/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -59,7 +59,42 @@ title: Week 08 | JavaScript Core 2
 
   This Module is about "Understanding Programs". It's not enough just to know the language features in JS. Before you can write good programs you need to learn how to understand code that you did not write. The following module contains a handful of sections that provide you a good amount of JavaScript programs and a lot of tools,methods and good practices on how to properly understand programs written by others!
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
+
+  
+  **Setting up Study Lenses (v2) on your System**
+  
+  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
+      - `git clone git@github.com:in-tech-gration/study-lenses.git`
+  
+  2. Change to the `study-lenses` directory and install all dependencies:
+  
+      - Run: `cd study-lenses`
+      - Then: `npm install` (or `npm i` for short)
+  
+  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
+  
+      - `git checkout lenses2`
+      - `npm link` 
+      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
+  
+  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
+  
+      - `lenses2 --version` or `lenses2 -v`
+
+  **Launching Study Lenses and following the material**
+
+  Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+
+  or just:
+
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  - `lenses2`
+
+  Now it's time to go through the material. For this Module you will only need to go through the following sections:
 
   - **0-let-vs-const**
   - **1-predicting-execution**
@@ -67,7 +102,24 @@ title: Week 08 | JavaScript Core 2
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '0-let-vs-const' section of 'Understanding Programs' -->
+
+
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '1-predicting-execution' section of 'Understanding Programs' -->
+
+
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '2-reading-programs' section of 'Understanding Programs' -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
@@ -96,15 +148,27 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and 
-  **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
   - **3-plain-text-programs**
   - **4-describing-programs**
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '3-plain-text-programs' section of 'Understanding Programs' -->
+
+
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '4-describing-programs' section of 'Understanding Programs' -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
@@ -133,15 +197,27 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and 
-  **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
   - **6-logging-state**
   - **7-tracing-backwards**
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '6-logging-state' section of 'Understanding Programs' -->
+
+
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '7-tracing-backwards' section of 'Understanding Programs' -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
@@ -170,15 +246,27 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and 
-  **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
   - **8-naming-variables**
   - **9-code-review**
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '8-naming-variables' section of 'Understanding Programs' -->
+
+
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '9-code-review' section of 'Understanding Programs' -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
@@ -207,14 +295,22 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and 
-  **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
   - **z-challenge**
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the 'z-challenge' section of 'Understanding Programs' -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 

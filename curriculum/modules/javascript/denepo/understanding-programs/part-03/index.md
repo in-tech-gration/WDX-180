@@ -12,8 +12,7 @@ title: Understanding Programs - Part 3
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and 
-  **Launching Study Lenses and following the material** from [Week 07 Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week07/){:target="_blank"} and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
   - **6-logging-state**
   - **7-tracing-backwards**
@@ -21,6 +20,10 @@ title: Understanding Programs - Part 3
 ### Summary
 
 ### Exercises
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '6-logging-state' section of 'Understanding Programs' -->
+
+  <!-- WDX:SGEN:PROGRESS:task=Explore the '7-tracing-backwards' section of 'Understanding Programs' -->
 
 ### Extra Resources
 
