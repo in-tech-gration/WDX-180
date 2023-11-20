@@ -22,6 +22,10 @@ schedule:
 
 # ---
 
+# Day 01: Q: "anybody installed lenses2? im stuck at installing."
+# A: "its done ok after npm install and not npm i. I also deleted the folders and did it from the start."
+# >> Q: "are we going to use checkout main to return to main or stay on branch lenses2?"
+
 # http://localhost:4600/curriculum/modules/javascript/denepo/_just-enough-javascript/02-primitive-values/syntax/exercises/four-lines-of-code.js?--defaults
 # Share the pictures you've taken with your classmates and have a discussion while comparing your screenshots!
 
