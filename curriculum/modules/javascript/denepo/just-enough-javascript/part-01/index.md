@@ -14,7 +14,7 @@ title: Just Enough JavaScript - Part 1
 
   In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
 
-  {{ WDX:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
 
   **Launching Study Lenses and following the material**
 
@@ -42,19 +42,19 @@ title: Just Enough JavaScript - Part 1
 
 ### Exercises
 
-  <!-- WDX:META:PROGRESS:task=Explore the '00-errors' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '00-errors' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '01-comments-and-logs' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '01-comments-and-logs' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '02-primitive-values' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '02-primitive-values' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '03-operators' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '03-operators' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '04-booleans' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '04-booleans' section of 'Just Enough JavaScript' -->
   
-  <!-- WDX:META:PROGRESS:task=Explore the '05-strings' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '05-strings' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '06-undefined' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '06-undefined' section of 'Just Enough JavaScript' -->
 
 ### Extra Resources
 

@@ -16,4 +16,4 @@ title: Flappy App - Day 3
 
 ### Exercises
 
-  <!-- WDX:META:PROGRESS:task=Recreate the FlappyApp without going back to the video -->
+  <!-- SGEN:META:PROGRESS:task=Recreate the FlappyApp without going back to the video -->

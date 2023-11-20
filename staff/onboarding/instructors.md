@@ -16,7 +16,7 @@
 
   > Note:
   >
-  > All those {{ WDX:* }} string literals are parsed by our [SGEN tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js){:target="_blank"} which is responsible for dynamically creating each week of our curriculum.
+  > All those {{ SGEN:* }} string literals are parsed by our [SGEN tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js){:target="_blank"} which is responsible for dynamically creating each week of our curriculum.
 
   The goal of our course is to teach the fundamentals of the world of Web Development. Some of the concepts covered are:
 
@@ -66,20 +66,20 @@
       - each `weeks` or `days` property has a number of properties (starting from **1:**) that contain links to markdown files from our modules
   - Parses each markdown file (either draft or module) and replaces the string templates found below:
   {% raw %}
-    - `{{WDX:WEEK}}`
-    - `{{WDX:TITLE}}`
-    - `{{WDX:DAY}}`
-    - `{{WDX:DAILY_SCHEDULE}}`
-    - `{{WDX:STUDY_PLAN}}`
-    - `{{WDX:SUMMARY}}`
-    - `{{WDX:EXERCISES}}`
-    - `{{WDX:EXTRAS}}`
-    - `{{WDX:ATTRIBUTIONS}}`
-    - `{{WDX:INCLUDES:(.*)}}`
-    - `{{WDX:DATE_UPDATED}}`
-    - `{{WDX:WEEKLY_CONTENT}}`
-    - `<!-- WDX:META:PROGRESS:<params> -->`
-    - `<!-- WDX:META:TESTS:<params> -->`
+    - `{{SGEN:WEEK}}`
+    - `{{SGEN:TITLE}}`
+    - `{{SGEN:DAY}}`
+    - `{{SGEN:DAILY_SCHEDULE}}`
+    - `{{SGEN:STUDY_PLAN}}`
+    - `{{SGEN:SUMMARY}}`
+    - `{{SGEN:EXERCISES}}`
+    - `{{SGEN:EXTRAS}}`
+    - `{{SGEN:ATTRIBUTIONS}}`
+    - `{{SGEN:INCLUDES:(.*)}}`
+    - `{{SGEN:DATE_UPDATED}}`
+    - `{{SGEN:WEEKLY_CONTENT}}`
+    - `<!-- SGEN:META:PROGRESS:<params> -->`
+    - `<!-- SGEN:META:TESTS:<params> -->`
 {% endraw %}
 
   Based on the functionality of the current version of our SGEN tool, WDX-180 cohort_02's curriculum can be found [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/curriculum.yaml){:target="_blank"}.

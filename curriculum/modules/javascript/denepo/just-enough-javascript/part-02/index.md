@@ -21,9 +21,9 @@ title: Just Enough JavaScript - Part 2
 
 ### Exercises
 
-  <!-- WDX:META:PROGRESS:task=Explore the '07-variables' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '07-variables' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '08-null' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '08-null' section of 'Just Enough JavaScript' -->
 
 ### Extra Resources
 

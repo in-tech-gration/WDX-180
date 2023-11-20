@@ -24,7 +24,7 @@
 
 ## Syllabus
 
-{{ WDX:Syllabus }}
+{{ SGEN:Syllabus }}
 
 ---
 

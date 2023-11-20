@@ -101,7 +101,7 @@
     "body": [
       "{:target=\"_blank\"}"
     ],
-    "description": "WDX:Kramdown target _blank"
+    "description": "SGEN:Kramdown target _blank"
   },
   ```
 

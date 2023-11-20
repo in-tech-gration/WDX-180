@@ -4,25 +4,25 @@
 
 ## Web Development X - 180°
 
-{{ WDX:MODULE:curriculum/about.md }}
+{{ SGEN:MODULE:curriculum/about.md }}
 
-{{ WDX:MODULE:curriculum/where_do_I_start.md }}
+{{ SGEN:MODULE:curriculum/where_do_I_start.md }}
 
-{{ WDX:MODULE:curriculum/accounts.md }}
+{{ SGEN:MODULE:curriculum/accounts.md }}
 
-{{ WDX:MODULE:curriculum/setup.md }}
+{{ SGEN:MODULE:curriculum/setup.md }}
 
-{{ WDX:MODULE:curriculum/communication.md }}
+{{ SGEN:MODULE:curriculum/communication.md }}
 
-{{ WDX:MODULE:curriculum/hardware.md }}
+{{ SGEN:MODULE:curriculum/hardware.md }}
 
-{{ WDX:MODULE:curriculum/software.md }}
+{{ SGEN:MODULE:curriculum/software.md }}
 
-{{ WDX:MODULE:curriculum/data_formats.md }}
+{{ SGEN:MODULE:curriculum/data_formats.md }}
 
-{{ WDX:MODULE:curriculum/syllabus.md }}
+{{ SGEN:MODULE:curriculum/syllabus.md }}
 
-{{ WDX:MODULE:curriculum/how_to_study.md }}
+{{ SGEN:MODULE:curriculum/how_to_study.md }}
 
 ### Finished setting everything up? 
 

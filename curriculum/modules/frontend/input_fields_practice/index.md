@@ -42,7 +42,7 @@ title: Practice with Form Input fields
 
 ### Exercises
 
-<!-- WDX:META:PROGRESS:task=Complete the 'Form Input Field' practice challenge|user_folder=input_fields_practice -->
+<!-- SGEN:META:PROGRESS:task=Complete the 'Form Input Field' practice challenge|user_folder=input_fields_practice -->
 
 **What are you building?**
 

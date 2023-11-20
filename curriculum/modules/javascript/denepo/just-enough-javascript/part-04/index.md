@@ -21,9 +21,9 @@ title: Just Enough JavaScript - Part 4
 
 ### Exercises
 
-  <!-- WDX:META:PROGRESS:task=Explore the '13-while-loops' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '13-while-loops' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '14-review-quiz' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '14-review-quiz' section of 'Just Enough JavaScript' -->
 
 ### Extra Resources
 

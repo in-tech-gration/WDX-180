@@ -204,7 +204,7 @@ title: Flappy App - Day 1
 
 ### Exercises
 
-<!-- WDX:META:PROGRESS:task=Watch the 'Flappy App reconstruction' and keep notes -->
+<!-- SGEN:META:PROGRESS:task=Watch the 'Flappy App reconstruction' and keep notes -->
 
 ### Extra Resources
 

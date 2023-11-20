@@ -10,7 +10,7 @@ title: Build your first JavaScript Library
 
 ### Study Plan
 
-  <!-- WDX:META:PROGRESS:task=Read 'Fundamental text and font styling' -->
+  <!-- SGEN:META:PROGRESS:task=Read 'Fundamental text and font styling' -->
   - [Read : **Article**](URL){:target="_blank"}
 
   <!-- TODO: Watch: Build Your First Javascript Library (Like jQuery!) -->

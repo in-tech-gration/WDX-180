@@ -22,11 +22,11 @@ title: Just Enough JavaScript - Part 5
 
 ### Exercises
 
-  <!-- WDX:META:PROGRESS:task=Explore the '15-for-of-loops' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '15-for-of-loops' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '16-break' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '16-break' section of 'Just Enough JavaScript' -->
 
-  <!-- WDX:META:PROGRESS:task=Explore the '17-continue' section of 'Just Enough JavaScript' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '17-continue' section of 'Just Enough JavaScript' -->
 
 ### Extra Resources
 

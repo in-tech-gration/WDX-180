@@ -400,10 +400,10 @@ title: JavaScript in a Day
 
 ### Exercises
 
-  <!-- WDX:META:PROGRESS:task=Complete the 'Largest Number Checker' exercise -->
-  <!-- WDX:META:PROGRESS:task=Complete the 'Landscape Mode Checker' exercise -->
-  <!-- WDX:META:PROGRESS:task=Complete the 'Simple Quiz' exercise -->
-  <!-- WDX:META:PROGRESS:task=Complete the 'Schnick-Schnack-Schnuck' exercise -->
+  <!-- SGEN:META:PROGRESS:task=Complete the 'Largest Number Checker' exercise -->
+  <!-- SGEN:META:PROGRESS:task=Complete the 'Landscape Mode Checker' exercise -->
+  <!-- SGEN:META:PROGRESS:task=Complete the 'Simple Quiz' exercise -->
+  <!-- SGEN:META:PROGRESS:task=Complete the 'Schnick-Schnack-Schnuck' exercise -->
   - Try to solve all the exercises found [here](./exercises/javascript-first-steps/index.md)
 
 ### Extra Resources
