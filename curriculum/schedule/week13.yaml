@@ -32,3 +32,6 @@ schedule:
 
 # ES6: Destructuring
 # https://codepen.io/kostasx/pen/xmgKpo?editors=0010
+
+# JavaScript: Don’t Reassign Your Function Arguments
+# https://spin.atomicobject.com/2011/04/10/javascript-don-t-reassign-your-function-arguments/

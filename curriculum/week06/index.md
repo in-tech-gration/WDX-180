@@ -27,12 +27,12 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 19/11/2023</span>
+  <span>Updated: 20/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
     <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
+    {% if week_num <= 36 %}
 
       {% assign next_week_num = 06 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 

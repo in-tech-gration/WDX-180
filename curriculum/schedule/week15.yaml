@@ -24,3 +24,21 @@ schedule:
 # STUDY: 
 # Linked Lists for JavaScript Developers
 # > https://daveceddia.com/linked-lists-javascript/
+# > https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d
+
+# TRIE:
+# https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014
+# https://reginafurness.medium.com/implementing-a-trie-in-javascript-part-1-d96e85ba0b4a
+# https://reginafurness.medium.com/implementing-a-trie-in-javascript-part-2-5253e82021e0
+# https://learnersbucket.com/tutorials/data-structures/trie-data-structure-in-javascript/
+# https://www.cs.usfca.edu/~galles/visualization/Trie.html
+# https://github.com/dgalles/visualization
+# https://www.youtube.com/watch?v=zIjfhVPRZCg
+# https://www.youtube.com/watch?v=IdOMRI2KjWQ
+# https://kvzaytsev.github.io/trie-visualizer/
+# https://www.youtube.com/watch?v=MC-iQHFdEDI
+# https://stackfull.dev/trie-in-javascript-the-data-structure-behind-autocomplete
+# https://www.freecodecamp.org/news/how-to-validate-user-input-with-automated-trie-visualization/
+# https://hackernoon.com/practical-data-structures-for-frontend-applications-when-to-use-tries-5428a565eba4
+# Practice: implement an autocomplete feature for a search bar on a website
+# Practice: implement a spell checker
