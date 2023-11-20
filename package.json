@@ -3,13 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "gen": "node tools/sgen/sgen curriculum/curriculum.yaml",
-    "sgen": "node tools/sgen/sgen",
     "cockpit": "node tools/instructor/server.js",
     "cockpit:dev": "nodemon -e .js,.njk,.css,.yaml tools/instructor/server.js --noopen",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
-    "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
-    "DEPRECATED_wordpress": "echo 'coming soon...'",
     "md2html": "node tools/md2html.js",
     "yari:download": "node tools/yari.download.js",
     "yari:parse": "node tools/yari.parser.js",
@@ -18,7 +14,12 @@
     "yt:info": "node tools/yt.js --get-video-info",
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
-    "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/"
+    "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/",
+    
+    "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
+    "DEPRECATED_wordpress": "echo 'coming soon...'",
+    "DEPRECATED_gen": "node tools/sgen/sgen curriculum/curriculum.yaml",
+    "DEPRECATED_sgen": "node tools/sgen/sgen"
   },
   "dependencies": {
     "@types/node": "^20.2.5",
