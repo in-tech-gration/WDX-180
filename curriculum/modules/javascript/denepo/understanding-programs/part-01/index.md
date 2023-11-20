@@ -38,11 +38,11 @@ title: Understanding Programs - Part 1
 
 ### Exercises
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '0-let-vs-const' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '0-let-vs-const' section of 'Understanding Programs' -->
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '1-predicting-execution' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '1-predicting-execution' section of 'Understanding Programs' -->
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '2-reading-programs' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '2-reading-programs' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

@@ -21,9 +21,9 @@ title: Understanding Programs - Part 2
 
 ### Exercises
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '3-plain-text-programs' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '3-plain-text-programs' section of 'Understanding Programs' -->
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '4-describing-programs' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '4-describing-programs' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

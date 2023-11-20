@@ -21,9 +21,9 @@ title: Understanding Programs - Part 4
 
 ### Exercises
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '8-naming-variables' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '8-naming-variables' section of 'Understanding Programs' -->
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '9-code-review' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '9-code-review' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

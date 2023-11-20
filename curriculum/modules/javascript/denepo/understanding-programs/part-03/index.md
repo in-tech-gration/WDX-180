@@ -21,9 +21,9 @@ title: Understanding Programs - Part 3
 
 ### Exercises
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '6-logging-state' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '6-logging-state' section of 'Understanding Programs' -->
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '7-tracing-backwards' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '7-tracing-backwards' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

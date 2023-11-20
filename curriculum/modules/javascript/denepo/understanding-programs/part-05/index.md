@@ -20,7 +20,7 @@ title: Understanding Programs - Part 5
 
 ### Exercises
 
-  <!-- WDX:SGEN:PROGRESS:task=Explore the 'z-challenge' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the 'z-challenge' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

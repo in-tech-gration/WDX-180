@@ -102,24 +102,7 @@ title: Week 08 | JavaScript Core 2
 
 <!-- Summary -->
 
-### Exercises
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '0-let-vs-const' section of 'Understanding Programs' -->
-
-
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '1-predicting-execution' section of 'Understanding Programs' -->
-
-
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '2-reading-programs' section of 'Understanding Programs' -->
-
-
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d01.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
+<!-- Exercises -->
 
 ### Extra Resources
 
@@ -155,20 +138,7 @@ title: Week 08 | JavaScript Core 2
 
 <!-- Summary -->
 
-### Exercises
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '3-plain-text-programs' section of 'Understanding Programs' -->
-
-
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '4-describing-programs' section of 'Understanding Programs' -->
-
-
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d02.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
+<!-- Exercises -->
 
 ### Extra Resources
 
@@ -204,20 +174,7 @@ title: Week 08 | JavaScript Core 2
 
 <!-- Summary -->
 
-### Exercises
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '6-logging-state' section of 'Understanding Programs' -->
-
-
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '7-tracing-backwards' section of 'Understanding Programs' -->
-
-
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d03.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
+<!-- Exercises -->
 
 ### Extra Resources
 
@@ -253,20 +210,7 @@ title: Week 08 | JavaScript Core 2
 
 <!-- Summary -->
 
-### Exercises
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '8-naming-variables' section of 'Understanding Programs' -->
-
-
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the '9-code-review' section of 'Understanding Programs' -->
-
-
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d04.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
+<!-- Exercises -->
 
 ### Extra Resources
 
@@ -301,16 +245,7 @@ title: Week 08 | JavaScript Core 2
 
 <!-- Summary -->
 
-### Exercises
-
-  <!-- WDX:SGEN:PROGRESS:task=Explore the 'z-challenge' section of 'Understanding Programs' -->
-
-
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week08/progress/progress.draft.w08.d05.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
-
+<!-- Exercises -->
 
 ### Extra Resources
 
