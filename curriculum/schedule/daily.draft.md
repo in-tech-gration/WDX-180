@@ -1,20 +1,20 @@
-<!-- {{ WDX:WEEK }} - {{ WDX:DAY }} | {{ WDX:TITLE}} -->
+<!-- {{ SGEN:WEEK }} - {{ SGEN:DAY }} | {{ SGEN:TITLE}} -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">{{ WDX:WEEK }} - {{ WDX:DAY }}</span> | {{ WDX:TITLE }}</h2>
+      <span class="summary-day">{{ SGEN:WEEK }} - {{ SGEN:DAY }}</span> | {{ SGEN:TITLE }}</h2>
   </summary>
 
-{{ WDX:DAILY_SCHEDULE }}
+{{ SGEN:DAILY_SCHEDULE }}
 
-{{ WDX:STUDY_PLAN }}
+{{ SGEN:STUDY_PLAN }}
 
-{{ WDX:SUMMARY }}
+{{ SGEN:SUMMARY }}
 
-{{ WDX:EXERCISES }}
+{{ SGEN:EXERCISES }}
 
-{{ WDX:EXTRAS }}
+{{ SGEN:EXTRAS }}
 
-{{ WDX:ATTRIBUTIONS }}
+{{ SGEN:ATTRIBUTIONS }}
   
 </details>

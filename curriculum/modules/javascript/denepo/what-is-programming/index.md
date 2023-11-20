@@ -10,7 +10,7 @@ title: What is Programming?
 
 ### Study Plan
 
-<!-- WDX:META:PROGRESS:task=Read 'What is programming?' -->
+<!-- SGEN:META:PROGRESS:task=Read 'What is programming?' -->
 #### What is Programming?
 
   Programming is communication. It's also a lot of other things, but this
@@ -35,7 +35,7 @@ title: What is Programming?
 
   ![rhetorical situation](./assets/the-big-picture.png)
 
-<!-- WDX:META:PROGRESS:task=Watch 'Thinking like a Computer' video -->
+<!-- SGEN:META:PROGRESS:task=Watch 'Thinking like a Computer' video -->
 #### Thinking like a Computer
 
   In the following video, Evan Cole guides you through the basic concepts of programming and explains the feedback loop that continuously runs through the software cycle as source code is written by developers, subsequently read and executed by the computer which eventually displays the output back to the users.
@@ -90,15 +90,19 @@ title: What is Programming?
 
 ### Summary
 
-<!-- WDX:META:PROGRESS:task=Install study-lenses on your machine -->
-<!-- WDX:META:PROGRESS:task=Run study-lenses on the hello-world.js file and explore various lenses -->
+<!-- SGEN:META:PROGRESS:task=Install study-lenses on your machine -->
+<!-- SGEN:META:PROGRESS:task=Run study-lenses on the hello-world.js file and explore various lenses -->
 ### Exercises
 
   **Installing Study Lenses**
 
-  1. Follow the steps [**described here**](https://github.com/in-tech-gration/study-lenses#to-explore-anything-on-your-computer){:target="_blank"} to install `study-lenses` globally on your machine.
+  1. Follow the steps described below to install `study-lenses` globally on your machine:
 
-  If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
+  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+
+  > If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. 
+  > 
+  > **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
 
   **Watch a short introduction to Study Lenses**
 
@@ -111,7 +115,7 @@ title: What is Programming?
 
   - Open the terminal and stop any other instance of `study-lenses` that might be running, e.g. the `npm run test-content` from previous steps. You can press `Ctrl+C` on the terminal to stop the currently running process.
 
-  - Change to the following directory inside your local `WDX-180` repo: `cd curriculum/week{{ WDX:WEEK_NUM }}/exercises`.
+  - Change to the following directory inside your local `WDX-180` repo: `cd curriculum/week{{ SGEN:WEEK_NUM }}/exercises`.
 
   - Run either the `study` or `lenses` command on the terminal and check whether the app opens up in the browser.
 

@@ -14,7 +14,7 @@ title: Predictive Stepping
 
   In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
 
-  {{ WDX:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
 
   **Launching Study Lenses and following the material**
 

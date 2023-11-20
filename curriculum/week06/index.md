@@ -314,9 +314,34 @@ load_script_js_via_src:
 
   **Installing Study Lenses**
 
-  1. Follow the steps [**described here**](https://github.com/in-tech-gration/study-lenses#to-explore-anything-on-your-computer){:target="_blank"} to install `study-lenses` globally on your machine.
+  1. Follow the steps described below to install `study-lenses` globally on your machine:
 
-  If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
+  
+  **Setting up Study Lenses (v2) on your System**
+  
+  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
+      - `git clone git@github.com:in-tech-gration/study-lenses.git`
+  
+  2. Change to the `study-lenses` directory and install all dependencies:
+  
+      - Run: `cd study-lenses`
+      - Then: `npm install` (or `npm i` for short)
+  
+  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
+  
+      - `git checkout lenses2`
+      - `npm link` 
+      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
+  
+  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
+  
+      - `lenses2 --version` or `lenses2 -v`
+
+  > If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. 
+  > 
+  > **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
+
+
 
   **Watch a short introduction to Study Lenses**
 

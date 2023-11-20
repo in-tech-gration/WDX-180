@@ -10,7 +10,7 @@ title: What is JavaScript?
 
 ### Study Plan
 
-<!-- WDX:META:PROGRESS:task=Read 'JavaScript' -->
+<!-- SGEN:META:PROGRESS:task=Read 'JavaScript' -->
 #### JavaScript
 
   JavaScript is the only programming language supported by web browsers, this
@@ -71,7 +71,7 @@ title: What is JavaScript?
 
   You can also write your code in a script tag of an HTML file then open the HTML
   file in your browser. The JavaScript will run automatically when the page is
-  loaded. See this in action with [`./assets/1-inline-script-tag.html`]({{ WDX:ASSETS_AS_CODE }}/1-inline-script-tag.html){:target="_blank"}.
+  loaded. See this in action with [`./assets/1-inline-script-tag.html`]({{ SGEN:ASSETS_AS_CODE }}/1-inline-script-tag.html){:target="_blank"}.
 
   <!-- TODO: The ./assets above pointing to a folder containing code, should be managed in some way, e.g. redirect to GitHub or local repo, display them inline or through a viewer (Flems/Codesandbox/other)  -->
 
@@ -84,7 +84,7 @@ title: What is JavaScript?
   **3. Loading JS files into HTML**
 
   You can also write your code in a separate `.js` file, then load the file into
-  your HTML to execute the code. There are two different ways you can load a `.js` file into your HTML, you can see them in action with [`./assets/2-separate-script-file/index.html`]({{ WDX:ASSETS_AS_CODE }}/2-separate-script-file/index.html){:target="_blank"} and [`./assets/3-separate-module-files/index.html`]({{ WDX:ASSETS_AS_CODE }}/3-separate-module-files/index.html){:target="_blank"} (you'll learn more about scripts vs. modules later on).
+  your HTML to execute the code. There are two different ways you can load a `.js` file into your HTML, you can see them in action with [`./assets/2-separate-script-file/index.html`]({{ SGEN:ASSETS_AS_CODE }}/2-separate-script-file/index.html){:target="_blank"} and [`./assets/3-separate-module-files/index.html`]({{ SGEN:ASSETS_AS_CODE }}/3-separate-module-files/index.html){:target="_blank"} (you'll learn more about scripts vs. modules later on).
   <!-- TODO: Same as above... -->
 
   <!-- TODO: INTEGRATE: https://stackoverflow.com/a/53821485/4861760 -->
@@ -161,7 +161,7 @@ title: What is JavaScript?
 
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=_cj6JYwuO38PPGKxXN_cQ,3910Z7e2jGLZu4vjueG-Bg)
 
-<!-- WDX:META:PROGRESS:task=Read 'Some History' -->
+<!-- SGEN:META:PROGRESS:task=Read 'Some History' -->
 #### Some History
 
   JavaScript has an interesting history, it was originally created in 1 week
@@ -225,7 +225,7 @@ title: What is JavaScript?
   through the [proposals repository](https://github.com/tc39/proposals){:target="_blank"} can be
   interesting to see how people plan and discuss additions to the JS language.
 
-<!-- WDX:META:PROGRESS:task=Read 'Developers' -->
+<!-- SGEN:META:PROGRESS:task=Read 'Developers' -->
 #### Developers
 
   Developers are the ones designing the software, writing the code, and fixing the
@@ -253,7 +253,7 @@ title: What is JavaScript?
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=40qMI89WByj9Yhhh94Ghg,4zpL-AmDgpnbyFJWJfNQhg)
 
-<!-- WDX:META:PROGRESS:task=Read 'The Computer' -->
+<!-- SGEN:META:PROGRESS:task=Read 'The Computer' -->
 #### The Computer
 
   You've been the user of many websites, you've even developed a few with HTML &
@@ -311,7 +311,7 @@ title: What is JavaScript?
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=_cj6JYwuO38PPGKxXN_cQ,3910Z7e2jGLZu4vjueG-Bg)
 
-<!-- WDX:META:PROGRESS:task=Read 'Users' -->
+<!-- SGEN:META:PROGRESS:task=Read 'Users' -->
 #### Users
 
   Users will use your running programs, but will never see your source code. When
@@ -343,7 +343,7 @@ title: What is JavaScript?
   <!-- TODO: Maybe this has to be removed. -->
   [![program diagram](./assets/a-program.png)](https://excalidraw.com/#json=40qMI89WByj9Yhhh94Ghg,4zpL-AmDgpnbyFJWJfNQhg)
 
-<!-- WDX:META:PROGRESS:task=Read 'Data In Data Out: I/O' -->
+<!-- SGEN:META:PROGRESS:task=Read 'Data In Data Out: I/O' -->
 #### Data In, Data Out: I/O
 
   So what is a program? It's something like this:
@@ -419,15 +419,15 @@ title: What is JavaScript?
 
 ### Summary
 
-<!-- WDX:META:PROGRESS:task=Explore Study Lenses -->
-<!-- WDX:META:PROGRESS:task=Practice 'Program Explaining' -->
+<!-- SGEN:META:PROGRESS:task=Explore Study Lenses -->
+<!-- SGEN:META:PROGRESS:task=Practice 'Program Explaining' -->
 ### Exercises
 
   **Explore Study Lenses**
 
   Continue your exploration of the `study-lenses` tool. Run the following commands on your local copy of the `WDX-180` repo:
 
-  - `cd curriculum/week{{ WDX:WEEK_NUM}}/exercises/exploring-study-lenses`
+  - `cd curriculum/week{{ SGEN:WEEK_NUM}}/exercises/exploring-study-lenses`
   - `study`
 
   Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
@@ -452,7 +452,7 @@ title: What is JavaScript?
   - **Test Cases**: Specific examples of data that goes in and the data that comes
     out.
 
- In the `{{WDX:ASSETS_DIR}}/examples/` folder you will find a few programs with a comment describing the **behavior**, **data in** and **data out**. Your challenge in `{{WDX:EXERCISES_DIR}}/practice_explaining/` is to fill in the same information for new programs.
+ In the `{{SGEN:ASSETS_DIR}}/examples/` folder you will find a few programs with a comment describing the **behavior**, **data in** and **data out**. Your challenge in `{{SGEN:EXERCISES_DIR}}/practice_explaining/` is to fill in the same information for new programs.
 
   Be _very careful_ about your formatting! Study the example comments closely and
   do your best to format yours _exactly_ the same:
