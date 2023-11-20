@@ -26,48 +26,48 @@ Syllabus:
         6: # file:///./schedule/week06.yaml
           title: "CSS Frameworks & Intro to Programming"
           open: true
-        7: # file:///./schedule/week07.yaml
+        7: # file:///./schedule/week07.yaml (20/11/2023 - 24/11/2023)
           title: "JavaScript Core 1"
           open: true
-        8: # file:///./schedule/week08.yaml
+        8: # file:///./schedule/week08.yaml (27/11/2023 - 01/12/2023)
           title: "JavaScript Core 2"
-        9: # file:///./schedule/week09.yaml
+        9: # file:///./schedule/week09.yaml (04/12/2023 - 08/12/2023)
           title: "JavaScript Core 3"
-        10: # file:///./schedule/week10.yaml
+        10: # file:///./schedule/week10.yaml (11/12/2023 - 15/12/2023)
           title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
-        11: # file:///./schedule/week11.yaml
+        11: # file:///./schedule/week11.yaml (18/12/2023 - 22/12/2023)
           title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media"
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
-        12: # file:///./schedule/week12.yaml
+        12: # file:///./schedule/week12.yaml (XMAS Project)
           title: "Project Week: Combine Web APIs to build a shopping cart"
   Intermediate:
     title: "Intermediate: WDX 120°"
     schedule:
       weeks:
-        13: # JavaScript Intermediate 1 & Git
+        13: # JavaScript Intermediate 1 & Git (08/01/2024 - 12/01/2024)
           # file:///./schedule/week13.yaml
           title: "JavaScript Intermediate 1 & Git"
           # Clean Code, Testing, Workflow, Deploying your app
-        14: # Functional Programming 1, Templating, JavaScript Frameworks 
+        14: # Functional Programming 1, Templating, JavaScript Frameworks (15/01/2024 - 19/01/204)
           # file:///./schedule/week14.yaml
           title: "Functional Programming 1, Templating, JavaScript Frameworks"
           # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
-        15: # Data Structures & Algorithms 
+        15: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
           # file:///./schedule/week15.yaml
           title: "Data Structures & Algorithms"
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
-        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more
+        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
           # file:///./schedule/week16.yaml
           title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
-        17: # JavaScript Intermediate 2: Software Patterns & TypeScript
+        17: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml
           title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
-        18: # Node.js 1 
+        18: # Node.js 1 (12/02/2024 - 16/02/2024)
           # file:///./schedule/week18.yaml
           title: "Node.js 1"
-        19: # Node.js 2, NoSQL Databases, Docker 
+        19: # Node.js 2, NoSQL Databases, Docker (19/02/2024 - 23/02/2024)
           # file:///./schedule/week19.yaml
           title: "Node.js 2, NoSQL Databases & Docker"
           # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
@@ -80,19 +80,19 @@ Syllabus:
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/01-tables.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
-        20: # React 1 
+        20: # React 1 (26/02/2024 - 01/03/2024)
           # file:///./schedule/week20.yaml
           title: "React 1"
-        21: # React 2 
+        21: # React 2 (04/03/2024 - 08/03/2024)
           # file:///./schedule/week21.yaml
           title: "React 2, Firebase"
-        22: # React 3 
+        22: # React 3 (11/03/2024 - 15/03/2024)
           # file:///./schedule/week22.yaml
           title: "React 3, Redux & Tech Interview"
-        23: # Group Project, Tech Interviews, Job Hunt 
+        23: # Group Project, Tech Interviews, Job Hunt (18/03/2024 - 22/03/2024)
           # file:///./schedule/week23.yaml
           title: "Group Project, Tech Interview & Job Hunt"
-        24: # Group Project 
+        24: # Group Project (25/03/2024 - 29/03/2024)
           # file:///./schedule/week24.yaml
           title: "Group Project"
   Advanced:
