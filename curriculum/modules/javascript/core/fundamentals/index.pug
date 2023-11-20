@@ -1,0 +1,1103 @@
+//- How to render: npx pug-cli index.pug --pretty --watch
+doctype html
+
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  title EventLoop | JavaScript Fundamentals
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/reveal.css')
+  //- link(rel='stylesheet' href='css/theme/simple.css')
+  link#theme(rel='stylesheet' href='css/black-tts.css')
+
+  // Bootstrap 4
+  // <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  link(rel='stylesheet' href='./css/bootstrap-grid.min.css')
+  // Font Awesome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+  // Poppins Font
+  link(href='https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700' rel='stylesheet')
+  link(rel='stylesheet' href='./css/custom.css')
+
+  // Theme used for syntax highlighting of code
+  //- link(rel='stylesheet' href='lib/css/monokai.css')
+  link(rel='stylesheet' href='./css/monokai-sublime-sha.css')
+  link(rel='stylesheet' href='./css/reveal-overrides.css')
+  link(rel='stylesheet' href='./css/reveal-tts.css')
+
+  // Printing and PDF exports
+  script.
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+body 
+  .reveal
+    .slides
+      // INTRO TITLES
+      section.typography
+        .row
+          .col-10.offset-1.text-left
+            h1
+              | JavaScript 
+              span.font-weight-light Fundamentals
+            p.text-left.text-medium
+              | By Kostas Minaidis | 
+              strong 2023-2024
+
+      section(data-background-color="#0D2234")
+          include img/introduction.svg
+
+      section.typography
+        section
+          h3.font-weight-light.pb-5.mb-5 The World Wide Web (www)
+          .row.mt-5
+            .col
+              h3 HTML
+            .col
+              h3 CSS
+            .col
+              h3 JS
+          img(src='./img/web-trio.svg' alt='')
+        section
+          .row
+            .col-10.offset-1
+              p
+                | JavaScript along with HTML and CSS form a triad of cornerstone technologies for creating web pages and web applications.
+              img(src='./img/web-trio.svg' alt='')
+
+      // HTML
+      section(data-background-color="#0D2234")
+          include img/html-text.svg
+
+      // CSS
+      section(data-background-color="#0D2234")
+          include img/css.svg
+
+      // JS
+      section(data-background-color="#0D2234")
+          section
+              include img/js.svg
+          section
+              a(href="./assets/html-css-js.html" target="_blank") HTML + CSS + JS
+
+      // HTML + CSS + JS
+      section
+          include img/html-css.js.svg
+
+      // JS INTERPRETER #1
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter.svg
+
+      // JS INTERPRETER #2
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-002.svg
+
+      // JS INTERPRETER #3
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-003.svg
+
+      // JS INTERPRETER #4 (I/O)
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-004.svg
+
+      // JS INTERPRETER #5 (INPUT)
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-005.svg
+
+      // JS INTERPRETER #6 (DATA MANIPULATION)
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-006.svg
+
+      // JS INTERPRETER #7 (DATA MANIPULATION II)
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-007.svg
+
+      // JS INTERPRETER #8 
+      section.svg_contain(data-transition="fade-out")
+              include img/js-interpreter-008.svg
+
+      // CHATTING WITH JS
+      section.svg_contain
+          h2.highlight Chatting with JavaScript
+          p.fragment Open your Browser's Console: F12
+          p.fragment Ctrl + Shift + J / Cmd + Shift + J
+
+      // CSS INCLUDES
+      section
+          section.svg_contain
+              include img/css-includes.svg
+          // CSS INCLUDES | External
+          section.svg_contain
+              include img/css-includes-external.svg
+
+          // CSS INCLUDES | Internal
+          section.svg_contain
+              include img/css-includes-internal.svg
+
+          // CSS INCLUDES | Inline
+          section.svg_contain
+              include img/css-includes-inline.svg
+
+      // JS INCLUDES
+      section
+          section.svg_contain
+              include img/js-includes.svg
+
+          // JS INCLUDES | External
+          section.svg_contain
+              include img/js-includes-external.svg
+
+          // JS INCLUDES | Internal
+          section.svg_contain
+              include img/js-includes-internal.svg
+
+          // JS INCLUDES | Inline
+          section.svg_contain
+              include img/js-includes-inline.svg
+
+          // JS Proper Placement of <script>
+          section.svg_contain
+              include img/js-includes-best-practices.svg
+
+          // Practice: Embed JS
+          section
+              h6 Let's introduce ourselves to our first JS command<br/> and test all these methods:
+              .columns
+                  .column.is-10.is-offset-1
+                      pre
+                          code.htjs.javascript(data-trim contenteditable).
+
+                              document.write( "Hello JS!" );
+                              document.write( "<h1>HTML is allowed also!</h1>" );
+
+              p.small.fragment - Internal <strong class="colorful">&lt;head&gt;&lt;script&gt;</strong>
+              p.small.fragment - Internal <strong class="colorful">&lt;/body&gt;&lt;script&gt;</strong>
+              p.small.fragment - External <strong class="colorful">&lt;script src="app.js"&gt;</strong><br/>( app.js is just a text file with a .js extension )
+              p.small.fragment - Inline (Should be avoided!)
+              p.small.fragment
+                  a(href="https://developer.mozilla.org/en-US/docs/Web/API/Document/write" target="_blank") * document.write @ Mozilla Developer Network 
+
+      // JS STATEMENTS 
+      section.svg_contain
+              include img/js-statements.svg
+
+      // PRIMITIVE DATA TYPES
+      section
+          section
+              h2 Basic Data Values in JS: 
+              h5.fragment Primitive Data Types
+              h6.colorful
+                  p.fragment Strings (Text)
+                  p.fragment Numbers
+                  p.fragment Booleans (true, false)
+              h5.fragment A real life comparison...
+          section.svg_contain(data-background='#ffffff' data-transition='fade')
+              img.plain(src='./img/DataTypeTalk-001.svg' alt='')
+          section.svg_contain(data-background='#ffffff' data-transition='fade')
+              img.plain(src='./img/DataTypeTalk-002.svg' alt='')
+          section.svg_contain(data-background='#ffffff' data-transition='fade')
+              img.plain(src='./img/DataTypeTalk-003.svg' alt='')
+          section.svg_contain(data-background='#ffffff' data-transition='fade')
+              img.plain(src='./img/DataTypeTalk-004.svg' alt='')
+          section.svg_contain(data-background='#ffffff' data-transition='fade')
+              img.plain(src='./img/DataTypeTalk-005.svg' alt='')
+
+      //- // JS STATEMENTS (Our first statement)
+      //- section.svg_contain
+      //-         include img/js-statements-01.svg
+
+      // JS STATEMENTS (Our first statement - II)
+      section.svg_contain
+              include img/js-statements-02.svg
+
+      // JS STATEMENTS (Our first statement - III)
+      section.svg_contain
+              include img/js-statements-03.svg
+
+      // ARITHMETIC OPERATORS 001
+      section.svg_contain
+          include img/arithmetic-operators-001.svg
+
+      // ARITHMETIC OPERATORS 002
+      section.svg_contain
+          include img/arithmetic-operators-002.svg
+
+      // ARITHMETIC OPERATORS 003 | OPERATOR PRECEDENCE
+      section
+          section.svg_contain
+              include img/arithmetic-operators-003.svg
+          section
+              h3 More on <strong class="colorful">Operator Precedence</strong>
+              .columns
+                  .column.is-6.is-offset-3
+                      a(href="https://www.w3schools.com/js/js_arithmetic.asp" target="_blank") W3Schools.com 
+                      p.small ( scroll until you find the <strong>JavaScript Operator Precedence Values</strong> section. )
+                      a(href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" target="_blank") MDN JS
+
+      // STRINGS
+      section.svg_contain
+          include img/strings.svg
+
+      // COMMENTS
+      section
+          section
+              h2.colorful Comments
+          section
+              p What are <strong class="colorful">Comments</strong>?
+              small.fragment Parts of the program that don't get executed
+              p
+                  small.fragment Single line comments:
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      // This is a single line comment
+
+              p
+                  small.fragment Multi-line comments:
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      /* Comments that
+                      span multiple lines
+                      can be placed like this.
+                      */
+
+      // PRACTICE TIME: https://codepen.io/kostasx/pen/opVQQg
+      section(data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom")
+          h2 It's time to test our skills!
+          .columns
+              .column.is-8.is-offset-2
+                  a.dark(target="_blank" href="https://codepen.io/kostasx/pen/opVQQg?editors=0010")
+                      p https://bit.ly/2U97u52
+                      img.no_hover_effect(src='./img/codepen.png' width="160px")
+                  .linebreak
+                  small <strong>*</strong>In JavaScript there are 2 basic functions<br>to output values to the browser:
+          .columns
+              .column.is-6.is-offset-3
+                  pre
+                      code alert( VALUE );
+                  .linebreak
+                  pre
+                      code console.log( VALUE );
+
+      // TYPE COERCION
+      section.svg_contain
+          section
+              include img/type-coercion.svg
+          section
+              h6 What happens when we try to use the + or - operators on Strings and Numbers?
+          section
+              h6 Implicit Coercion (Automatic)
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      "2" + 2;    
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      "22"    // String
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      2 + "2";
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      "22"   // String
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      "2" - 1;
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      1   // Number
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      2 - "2";
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      0   // Number
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      "A" - 2;
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      NaN
+          section
+              h6 Explicit Coercion (Manual)
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      let strValue = "2";
+                      let numValue = 2;
+                      let floatValue = "3.1415";
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      Number( strValue ); 
+                      //=> 2
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      parseInt( strValue, 10 );
+                      //=> 2
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      parseFloat( floatValue, 10 );
+                      //=> 3.1415
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      String( numValue );
+                      //=> "2"
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      ""+2
+                      //=> "2"
+
+      // VARIABLES
+      section.svg_contain
+          section
+              h3 Variables
+              p.fragment ( A dive into our mobile phone's<br/>contacts mechanism )
+              a.fragment(href="http://www.pythontutor.com/javascript.html#code=let%20kostas%20%3D%206900112233%3B%0Alet%20mary%20%3D%206900445566%3B%0Alet%20george%20%3D%206900778899%3B%0A%0Aconsole.log%28%20%22Let's%20call%20Kostas%3A%20%22,%20kostas%20%29%3B%0Aconsole.log%28%20%22Let's%20text%20Mary%3A%20%22,%20mary%20%29%3B%0Aconsole.log%28%20%22Let's%20ring%20George%3A%20%22,%20george%20%29%3B%0A%0A//%20Oops!%20George%20has%20changed%20his%20number%3A%0A%0Ageorge%20%3D%206911002233%3B%0A%0Aconsole.log%28%20%22Let's%20call%20George%3A%20%22,%20george%20%29%3B%0A&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D" target="_blank") Visual Representation
+              br
+              p.small.fragment.is-italic (We'll also see multiple entries per contact in the next slides.)
+          section
+              include img/variables-001.svg
+          section
+              include img/variables-002.svg
+          section
+              h2 Let's see a visualization...
+              a(target="_blank" href="http://www.pythontutor.com/javascript.html#code=let%20someName%20%3D%20%22Kostas%22%3B%0Alet%20someDate%20%3D%202018%3B%0AsomeDate%20%3D%202019%3B%0Aconst%20dateOfBirth%20%3D%201995%3B%0A%0A//%20Access%20%26%20print%20the%20Values%3A%0Aconsole.log%28%20someDate%20%29%3B%0Aconsole.log%28%20dateOfBirth%20%29%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D") 
+                  p https://bit.ly/2AOczXA 
+          section
+              h6 Variable Naming Rules
+              .columns
+                  .column.is-8.is-offset-2
+                      ul(style="font-size:2rem")
+                          li.fragment Variables must not begin with a number: <strong class="colorful">let 3sisters = "Chekhov";</strong>
+                          li.fragment Only the <strong class="colorful">$</strong> and <strong class="colorful">_</strong> non-alphanumeric characters are allowed
+                          li.fragment Variables names are case sensitive: <strong class="colorful">myname</strong> is not the same as <strong class="colorful">myName</strong> or <strong class="colorful">MyName</strong>
+
+      // PRACTICE TIME: https://codepen.io/kostasx/pen/QaoRZN
+      section(data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom")
+          h2 It's time to test our skills!
+          .columns
+              .column.is-8.is-offset-2
+                  a.dark(target="_blank" href="https://codepen.io/kostasx/pen/QaoRZN?editors=0010")
+                      p https://bit.ly/2BPf11W
+                      img.no_hover_effect(src='./img/codepen.png' width="160px")
+                  .linebreak
+
+      // BOOLEANS
+      section.svg_contain
+          include img/booleans-001.svg
+
+      // ARRAYS 01
+      section.svg_contain
+          section
+              include img/arrays-001.svg
+          // ACCESING VALUES
+          section
+              include img/arrays-002.svg
+          // ADDING AND REMOVING VALUES
+          section
+              include img/arrays-003.svg
+          // VISUALIZATION
+          section
+              h6 Let's check out some visualizations...
+              a(target="blank" href="http://www.pythontutor.com/javascript.html#code=let%20listOfNames%20%3D%20%5B%20'Abdul',%20'Sofia',%20'Chris'%20%5D%3B%0A%0Aconsole.log%28%20listOfNames%20%29%3B%0A%0AlistOfNames%5B2%5D%20%3D%20'Mary'%3B%0A%0Aconsole.log%28%20listOfNames%5B2%5D%20%29%3B%0A%0Aconsole.log%28%20listOfNames%20%29%3B%0A&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D")
+                  p https://bit.ly/2Ue8btL
+              a(href="http://www.pythontutor.com/javascript.html#code=let%20numberList%20%3D%20%5B%201,%202,%203%20%5D%3B%0A%0AnumberList.push%28%204%20%29%3B%0A%0AnumberList.pop%28%204%20%29%3B%0A%0AnumberList.unshift%280%29%3B%0A%0AnumberList.shift%28%29%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D" target="_blank")
+                  p https://bit.ly/2KQCumh
+              p.small.fragment ...and come back to our mobile contact list example<br/>with additional entries per contact!
+
+      // PRACTICE TIME: https://codepen.io/kostasx/pen/ppBGGb
+      section(data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom")
+          h2 It's time to test our skills!
+          .columns
+              .column.is-8.is-offset-2
+                  a.dark(target="_blank" href="https://codepen.io/kostasx/pen/ppBGGb?editors=0010")
+                      p https://bit.ly/2Pjj5e7
+                      img.no_hover_effect(src='./img/codepen.png' width="160px")
+                  .linebreak
+
+      // NULL + UNDEFINED
+      section.svg_contain
+          include img/null-undefined.svg
+
+      // COMPARISON OPERATORS
+      section
+          section
+              h3.colorful Comparison Operators
+          section.svg_contain
+              include img/comparison-operators-001.svg
+          section.svg_contain
+              include img/comparison-operators-002.svg
+          section
+              p <strong class="colorful">What's the use?</strong>
+              p.fragment They help us switch our code<br/>and add conditional logic
+              p.small.fragment ( Drawing Board / Conditionals Chart )
+
+      // LOGICAL OPERATORS
+      section.svg_contain
+          include img/logical-operators-001.svg
+      
+      // CONDITIONAL STATEMENTS 
+      section(data-background="#ffffff")
+          h3 Conditionals
+          h6 { Conditional Statements }
+          <p style="font-size:14px; opacity:0.5;">Image by: <a style="color: black;" href="https://www.guru99.com/how-to-use-conditional-statements-in-javascript.html">Guru99</a></p>
+          img(src="img/conditionals.png" alt="")
+
+      // Conditionals | If ... Else
+      section
+          section
+              <h3 class="colorful">if ... else</h3>
+          section
+              p if { ... }
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let trafficLight = 'red';
+
+                      if ( trafficLight === 'red' ){
+
+                          console.log( "Stop the car!" );
+
+                      }
+          section
+              <p>if { ... } else { ... }</p>
+              pre
+                  code.hljs(data-trim contenteditable).
+                          let trafficLight = 'red';
+
+                          if ( trafficLight === 'red' ){
+
+                              console.log( "Stop the car!" );
+
+                          } else {
+
+                              console.log( "Move on." );
+
+                          }
+          section
+              <p>NESTED if { ... } else { ... }</p>
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let trafficLight = 'red';
+
+                      if ( trafficLight === 'red' ){
+                          console.log( "Stop the car!" );
+                      } else {
+                          if ( trafficLight === "orange" ){
+                              console.log( "Slow down!" );
+                          } else {
+                              if ( trafficLight === "green" ){
+                              console.log( "Move on." );
+                              }
+                          }
+                      }
+              <p><small class="colorful">This can be written like this...</small></p>
+          section
+              <p>if { ... } else if { ... }</p>
+              pre
+                  code.hljs(data-trim contenteditable).
+                      if ( trafficLight === 'red' ){
+
+                          console.log( "Stop the car!" );
+
+                      } else if ( trafficLight === "orange" ){
+
+                          console.log( "Slow down!" );
+
+                      } else if ( trafficLight === "green" ){
+
+                          console.log( "Move on." );
+
+                      }
+
+      // Conditionals | Switch
+      section
+          section
+              <h2>The <strong class="colorful">switch</strong> statement</h2>
+              <p>No more <strong class="colorful">else ... if's</strong>!</p>
+          section
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let trafficLight = "orange";
+                      switch (trafficLight){
+                          case "red":
+                              console.log("Stop!");
+                              break;
+                          case "orange":
+                              console.log("Slow down");
+                              break;
+                          case "green":
+                              console.log("Move on");
+                              break;
+                          default:
+                              console.log("Default catch...");
+                      }
+              <p><small><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">More on the <strong class="colorful">Switch</strong> Statement</a></small></p>
+
+      // LOOPS
+      section
+          section
+              h3 Loops
+          // Loops | While
+          section
+              <h2>The <strong class="colorful">while ... loop</strong></h2>
+          section
+              pre
+                  code.hljs(data-trim contenteditable).
+                      while ( EXPRESSION ){
+
+                          RUN CODE...
+
+                      }
+              <p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+          section(data-background="#fff")
+              img(src="./img/JavaScript-while-loop.png")
+          section
+              <h5>Example:</h5>
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let counter = 0;
+
+                      while ( counter < 3 ){
+
+                          console.log( "Counter value is: " + counter );
+                          counter = counter + 1;
+
+                      }
+              <p>
+                  <small><strong>Output:</strong><br /><br /></small>
+              </p>
+              pre.fragment
+                  code.html(data-trim contenteditable).
+                      Counter value is: 0
+              pre.fragment
+                  code.html(data-trim contenteditable).
+                      Counter value is: 1
+              pre.fragment
+                  code.html(data-trim contenteditable).
+                      Counter value is: 2
+          section
+              <h5>Example #2: Inner Counter</h5>
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let counter = 0;
+
+                      while ( counter++ < 3 ){
+
+                          console.log( "Counter value is: " + counter );
+
+                      }
+              <p>
+                  <small><strong>Output:</strong><br /><br /></small>
+              </p>
+              pre.fragment
+                  code.html(data-trim contenteditable).
+                      Counter value is: 1
+              pre.fragment
+                  code.html(data-trim contenteditable).
+                      Counter value is: 2
+              pre.fragment
+                  code.html(data-trim contenteditable).
+                      Counter value is: 3
+          section
+              h3 Quick Practice:
+              a(href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_while" target="_blank") https://bit.ly/2riL4RE
+              p References:
+              p
+                  a(href="http://www.javascripttutorial.net/javascript-while-loop/" target="_blank") Introduction to the JavaScript while loop statement
+
+
+          // Loops | for ... loop
+          section
+              <h2>The <strong class="colorful">for ... loop</strong></h2>
+              <h5>A while statement with... a twist!</h5>
+          section
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let counter = 0; 
+                      while ( counter < 3 ){
+
+                          console.log( counter );
+                          counter = counter + 1;
+
+                      }
+              .linebreak
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      for ( let counter = 0; counter < 3; counter = counter + 1 ){
+
+                          console.log( counter );
+
+                      }
+              <p class="fragment"><small>So, the loop structure is this:</small></p>
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      for ( START STATEMENT; CONDITION; END STATEMENT ){
+
+                          CODE
+
+                      }
+          section
+              <h5>Example:</h5>
+              pre
+                  code.javascript(data-trim contenteditable).
+                      let someArray = [ "a", "b", "c" ];
+
+                      for ( let counter = 0; counter < someArray.length; counter++ ){
+
+                      console.log( "Counter value is: " + someArray[counter] );
+
+                      }
+              <p>
+                  <small><strong>Output:</strong><br /><br /></small>
+              </p>
+              pre.fragment
+                  code.html(data-trim).
+                      Counter value is: a
+              pre.fragment
+                  code.html(data-trim).
+                      Counter value is: b
+              pre.fragment
+                  code.html(data-trim).
+                      Counter value is: c
+          section
+              h3 Quick Practice:
+              a(href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for" target="_blank") https://bit.ly/2sFunCg
+
+          // Loops | Quick Mention: do ... while
+          section
+              h3 Quick Mention:
+              h4 The <strong class="colorful">do ... while</strong> loop
+              a(href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank") W3Schools.com
+
+      // FUNCTIONS
+      section
+          section(data-background="#9cbf3f")
+              h3 Functions
+          section.clean_img(style='padding:0; margin-top: -80px;' data-background="#9cbf3f")
+              <img src="img/understanding_functions_01.jpg" alt="">
+          section.clean_img(style='padding:0; margin-top: -80px;' data-background="#9cbf3f")
+              <img src="img/understanding_functions_02.jpg" alt="">
+          section.clean_img(style='padding:0; margin-top: -80px;' data-background="#9cbf3f")
+              <img src="img/understanding_functions_03.jpg" alt="">
+          section.clean_img(style='padding:0; margin-top: -80px;' data-background="#9cbf3f")
+              <img src="img/understanding_functions_04.jpg" alt="">
+          section.clean_img(style='padding:0; margin-top: -80px;' data-background="#9cbf3f")
+              <img src="img/understanding_functions_05.jpg" alt="">
+          section.clean_img(style='padding:0; margin-top: -80px;' data-background="#9cbf3f")
+              <img src="img/understanding_functions_06.jpg" alt="">
+
+      // FUNCTIONS | Declaring & Calling
+      section
+          section
+              <p><small>Declaring a Function:</small></p>
+              pre
+                  code.hljs(data-trim contenteditable).
+                      function repeatCode( param, otherParam ){
+
+                          console.log( param );
+                          console.log( otherParam );
+
+                      }
+              <p class="fragment"><small>Calling the Function:</small></p>
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      repeatCode( "value for param", "value for otherParam" );
+
+              <p class="fragment"><small>Will output:</small></p>
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      "value for param"
+                      "value for otherParam"
+
+          section
+              <p><small>Declaring a Function (#2):</small></p>
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      function repeatCode( param, otherParam ){
+
+                          console.log( param );
+                          console.log( otherParam );
+
+                      }
+              <p class="fragment"><small>Can be declared as:</small></p>
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      let repeatCode = function( param, otherParam ){
+
+                          console.log( param );
+                          console.log( otherParam );
+
+                      }
+          section
+              <p><small>The return statement:</small></p>
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      function repeatCode( one, two ){
+
+                          return one + two;
+
+                      }
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      repeatCode( 4, 6 );
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      console.log( repeatCode( 4, 6 ) );
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      let sum = repeatCode( 4, 6 );
+              .linebreak
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      console.log( sum );
+              p.small.fragment ( What if there is no return statement present? )
+          section
+              h3 Let's practice, shall we?
+              a(href="https://codepen.io/kostasx/pen/vQMwKp?editors=0011" target="_blank") https://bit.ly/2RxaJl9
+
+      // OBJECTS
+      section
+          section
+              h3.colorful Objects
+              h5.fragment { Advanced Data Structures }
+          section
+              h5 Remember Arrays?
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      let arr = [ "Kosmas", "Kostas", "Chris" ]; 
+
+                      console.log( arr[0] ); // "Kosmas"
+              <p class="fragment"><small>Under the hood, this works much like this:</small></p>
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      [ 0: "Kosmas", 1: "Kostas", 2: "Chris" ]
+              <p class="fragment"><small>Try it on your console!</small></p>
+
+          // OBJECTS: Objects as Variable Collections
+          section
+              p Objects as Variable Collections
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      let model = "Nokia";
+                      let color = "Black";
+                      let type  = "X5";
+              p.fragment Organize:
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      {
+                          model : "Nokia",
+                          color : "Black",
+                          type  : "X5",
+                      }
+              p.fragment Pack:
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      let nokiaPhone = {
+                          model : "Nokia",
+                          color : "Black",
+                          type  : "X5",
+                      }
+
+          // OBJECTS: Declaring an Object
+          section
+              p Declaring an Object:
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      let obj = { 
+
+                          teacher: "Kosmas",
+                          assistant: "Kostas",
+                          founder: "Chris" 
+
+                      }
+              <p><small>In Objects, instead of using a numeric index for each element,<br />we explicitly define a key (String).</small></p>
+
+          // OBJECTS: Accessing Object Properties
+          section
+              p Accessing an Object Property:
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let obj = { teacher: "Kosmas", assistant: "Kostas", founder: "Chris" }
+
+                      console.log( obj["teacher"] );
+                      console.log( obj.assistant );
+              <p class="fragment"><small>Will Output:</small></p>
+              pre.fragment
+                  code.hljs.
+                      "Kosmas"
+                      "Kostas"
+          section
+              <p>Setting an Object Property:</p>
+              pre
+                  code.hljs(data-trim contenteditable).
+                      let obj = { teacher: "Kosmas", assistant: "Kostas", founder: "Chris" }
+
+                      obj.teacher = "Mary";
+
+                      console.log( obj );
+                      console.log( obj["teacher"] );
+              <p class="fragment"><small>Will Output:</small></p>
+              pre.fragment
+                  code.hljs.javascript.
+                      { teacher: "Mary", assistant: "Kostas", founder: "Chris" }
+                      "Mary"
+          section
+              <p><small>When an Object Property contains a Function, it is called a <strong class="colorful">method</strong></small></p>
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      let car = {
+                          color: "red",
+                          year: 2010,
+                          type: "sports",
+                          showInfo: function(){
+                              console.log("A red sports car.");
+                          }
+                      }
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      car.showInfo();
+              <p class="fragment"><small>Will output:</small></p>
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      "A red sports car."
+          section
+              <p><small>You can access any Object property using the <strong class="colorful">this</strong> keyword, while inside the Object.</small></p>
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      let car = {
+                          color: "red",
+                          year: 2010,
+                          type: "sports",
+                          showInfo: function(){
+                              console.log("A " + this.color + " sports car.");
+                          }
+                      }
+              pre.fragment
+                  code.hljs.javascript(data-trim contenteditable).
+                      car.showInfo();
+              <p class="fragment"><small>Will output:</small></p>
+              pre.fragment
+                  code.hljs(data-trim).
+                      "A red sports car."
+              p.fragment.small
+                  a(href="http://www.pythontutor.com/javascript.html#code=let%20obj%20%3D%20%7B%0A%20%20name%3A%20%22kostas%22,%0A%20%20surname%3A%20%22minaidis%22,%0A%20%20showName%3A%20function%28%29%7B%0A%20%20%20%20console.log%28%20obj.surname%20%29%3B%20//%20We%20should%20always%20use%20this%0A%20%20%7D%0A%7D%0A%0Alet%20another%20%3D%20obj%3B%0Aobj%20%3D%205%3B%0A%0Aanother.showName%28%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D" target="_blank") Why use <strong class="colorful">this</strong>?
+              p.fragment.small
+                  a.frament(href="http://www.pythontutor.com/javascript.html#code=let%20obj%20%3D%20%7B%0A%20%20name%3A%20%22kostas%22,%0A%20%20surname%3A%20%22minaidis%22,%0A%20%20showName%3A%20function%28%29%7B%0A%20%20%20%20console.log%28%20this.surname%20%29%3B%20//%20We%20should%20always%20use%20this%0A%20%20%7D%0A%7D%0A%0Alet%20another%20%3D%20obj%3B%0Aobj%20%3D%205%3B%0A%0Aanother.showName%28%29%3B%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D" target="_blank") Using <strong class="colorful">this</strong>
+          section
+              <h4>Recap</h4>
+          section
+              <p><small>An <strong class="colorful">Object</strong> is a collection of variables (called <strong class="colorful">properties</strong>)<br />
+                      and functions (called <strong class="colorful">methods</strong>) which can be accessed<br />using the . dot
+                      notation: <strong class="colorful">Object.property, Object.method()</strong></small></p>
+              pre
+                  code.hljs.javascript(data-trim contenteditable).
+                      let client = {
+                          age: 50,
+                          name: "Jane",
+                          surname: "Doe",
+                          getName: function(){
+
+                              console.log( this.name + " " + this.surname );
+
+                          } 
+                      }
+
+                      client.getName();
+              pre.fragment
+                  code.hljs(data-trim contenteditable).
+                      "Jane Doe"
+          section
+              h3 Quick Practice?
+              a(href="https://codepen.io/kostasx/pen/YJJBrR?editors=0010" target="_blank") https://bit.ly/2FWYb5d
+
+      // PASS BY VALUE vs PASS BY REFERENCE
+      section
+          section
+              h3 Passing Data <strong class="colorful">by Value</strong><br/>versus<br/>Passing Data <strong class="colorful">by Reference</strong>
+              a(href="https://www.youtube.com/watch?v=e-_mDyqm2oU" target="_blank")
+          section
+              .columns
+                  .column
+                      h6 <strong class="colorful">By Value</strong> 
+                      p Strings
+                      p Numbers
+                      p Booleans
+                      p null
+                      p undefined
+                      p(style="opacity:0.5") (Primitives)
+                  .column
+                      h6 <strong class="colorful">By Reference</strong>
+                      p Arrays
+                      p Objects
+                      p Functions
+          section
+
+              p
+                  a(href="http://www.pythontutor.com/visualize.html#code=let%20fruit%20%3D%20%22apple%22%3B%0Alet%20fruit2%20%3D%20fruit%3B%0A%0Aconsole.log%28%20%22%5Cnfruit%3A%22,%20fruit%20%29%3B%0Aconsole.log%28%20%22fruit2%3A%22,%20fruit2%20%29%3B%0A%0Afruit%20%3D%20%22orange%22%3B%0A%0Aconsole.log%28%20%22%5Cnfruit%3A%22,%20fruit%20%29%3B%0Aconsole.log%28%20%22fruit2%3A%22,%20fruit2%20%29%3B%0A%0Alet%20fruitBasket%20%3D%20%5B%20%22apples%22%20,%20%22oranges%22%20%5D%3B%0Alet%20fruitBasket2%20%3D%20fruitBasket%3B%0A%0Aconsole.log%28%20%22%5CnfruitBasket%3A%22,%20fruitBasket%20%29%3B%0Aconsole.log%28%20%22fruitBasket2%3A%22,%20fruitBasket2%20%29%3B%0A%0AfruitBasket%5B0%5D%20%3D%20%22bananas%22%3B%0A%0Aconsole.log%28%20%22%5CnfruitBasket%3A%22,%20fruitBasket%20%29%3B%0Aconsole.log%28%20%22fruitBasket2%3A%22,%20fruitBasket2%20%29%3B%0A%0Alet%20person%20%3D%20%7B%20name%3A%20%22John%22%20%7D%0Alet%20anotherPerson%20%3D%20person%3B%0AanotherPerson.name%20%3D%20%22Jane%22%3B%0A%0Aconsole.log%28%20%22%5CanotherPerson%3A%22,%20anotherPerson%20%29%3B%0Aconsole.log%28%20%22person%3A%22,%20person%20%29%3B%0A&cumulative=false&curInstr=19&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank") Visualization
+
+              <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=let%20fruit%20%3D%20%22apple%22%3B%0Alet%20fruit2%20%3D%20fruit%3B%0A%0Aconsole.log%28%20%22%5Cnfruit%3A%22,%20fruit%20%29%3B%0Aconsole.log%28%20%22fruit2%3A%22,%20fruit2%20%29%3B%0A%0Afruit%20%3D%20%22orange%22%3B%0A%0Aconsole.log%28%20%22%5Cnfruit%3A%22,%20fruit%20%29%3B%0Aconsole.log%28%20%22fruit2%3A%22,%20fruit2%20%29%3B%0A%0Alet%20fruitBasket%20%3D%20%5B%20%22apples%22%20,%20%22oranges%22%20%5D%3B%0Alet%20fruitBasket2%20%3D%20fruitBasket%3B%0A%0Aconsole.log%28%20%22%5CnfruitBasket%3A%22,%20fruitBasket%20%29%3B%0Aconsole.log%28%20%22fruitBasket2%3A%22,%20fruitBasket2%20%29%3B%0A%0AfruitBasket%5B0%5D%20%3D%20%22bananas%22%3B%0A%0Aconsole.log%28%20%22%5CnfruitBasket%3A%22,%20fruitBasket%20%29%3B%0Aconsole.log%28%20%22fruitBasket2%3A%22,%20fruitBasket2%20%29%3B%0A%0Alet%20person%20%3D%20%7B%20name%3A%20%22John%22%20%7D%0Alet%20anotherPerson%20%3D%20person%3B%0AanotherPerson.name%20%3D%20%22Jane%22%3B%0A%0Aconsole.log%28%20%22%5CanotherPerson%3A%22,%20anotherPerson%20%29%3B%0Aconsole.log%28%20%22person%3A%22,%20person%20%29%3B%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+          section
+              h6 Resources on Value Types &amp; Reference Types
+              p 
+                  a(href="https://www.youtube.com/watch?v=e-_mDyqm2oU" target="_blank") Value Types and Reference Types in JavaScript
+
+      // RESOURCES
+      section
+          h3 Resources
+          .columns
+              .column.is-8.is-offset-2
+                  ul(style="font-size: 28px;")
+                      li
+                          p Google: <strong class="colorful">mdn js keyword</strong>
+                      li
+                          <a target="_blank" href="https://scrimba.com/g/gintrotojavascript">Scrimba: Introduction to JavaScript</a>
+                      li
+                          <a target="_blank" href="https://www.sololearn.com/Course/JavaScript/">SoloLearn</a>
+                      li
+                          a( target="_blank" href="https://jgthms.com/javascript-in-14-minutes/") JavaScript in 14 minutes
+                      li
+                          a( target="_blank" href="https://www.javascript.com/" ) READY TO TRY JavaScript?
+                      li
+                          a( target="_blank" href="http://jsforcats.com/" ) JavaScript for Cats: An introduction for new programmers
+                      li
+                          a( target="_blank" href="https://wsvincent.com/javascript-guide/" ) JavaScript Guide by William S. Vincent
+                      li
+                          <a target="_blank" href="https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md">You Don't Know JS - Up &amp; Going | Into Programming</a>
+                      li
+                          <a target="_blank" href="https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md">You Don't Know JS - Up &amp; Going | Into JavaScript</a>
+                      li
+                          <a target="_blank" href="https://javascript.info/first-steps">JavaScript.info: JavaScript Fundamentals</a>
+                      li
+                          <a target="_blank" href="https://www.w3schools.com/js/default.asp">W3Schools: JavaScript</a>
+                      li
+                          <a target="_blank" href="https://www.codecademy.com/learn/introduction-to-javascript">Codecademy: Introduction to JavaScript</a>
+
+      // EXERCISES 
+      section
+          h3 Exercises &amp; Practice Material:
+          .columns
+              .column.is-8.is-offset-2
+                  ul
+                      li
+                          <a href="https://www.w3schools.com/js/js_examples.asp">W3Schools: JavaScript by Example</a>
+                      li
+                          <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1">W3Schools: JavaScript Exercises</a>
+
+      // ABOUT ME
+      section
+          h3 About me
+          p Tech Instructor
+          p Full Stack Developer @ <a href="https://plethorathemes.com">https://plethorathemes.com</a>
+          ul
+              li <a target="_blank" href="https://github.com/kostasx/">GitHub</a>
+              li <a target="_blank" href="https://twitter.com/kostas_mns">Twitter</a>
+              li <a target="_blank" href="https://www.linkedin.com/in/kostas-minaidis/">Linkedin</a>
+
+      // BEING A DEVELOPER
+      section(data-background="#000")
+          h3 And remember...
+          img.fragment(src="./img/being-a-developer.jpg")
+
+      //- section.typography
+
+      //-   section
+      //-     h6 typography
+      //-     .font-family
+      //-       .font-weight-bold
+      //-         h1 Aa
+      //-         h4 Poppins Bold
+      //-       .font-weight-medium
+      //-         h1 Aa
+      //-         h4 Poppins Medium
+      //-       .text-light
+      //-         h1 Aa
+      //-         h4 Poppins Light
+
+      //-   section
+      //-     .font-example
+      //-       .font-example__headline
+      //-         h6.subheader Headlines
+      //-         h1 h1 headline
+      //-         h2 h2 headline
+      //-         h3 h3 headline
+      //-         h4 h4 headline
+      //-         h5 h5 headline
+      //-         h6 h6 headline
+      //-       .font-example__bodytext
+      //-         h6.subheader Body Text
+      //-         p
+      //-           | I think we need to start from scratch. Jazz it up a little bit- use a funky color like purple.
+      //-         p.text-medium
+      //-           strong
+      //-             | Can you add a bit of pastel pink and baby blue because the purple alone looks too fancy.
+      //-         p.text-small
+      //-           em
+      //-             | Make the purple more well, purple-er. Try a more powerful colour, it needs to be the same, but totally different.
+
+      // ABOUT ME
+      section.typography
+        section
+          h6 ABOUT ME
+          .row
+            .col
+              h4.font-weight-medium
+                a.btn(href='https://github.com/kostasx/') GitHub
+            .col
+              h4.font-weight-medium
+                a.btn(href='https://twitter.com/kostas_mns') Twitter
+            .col
+              h4.font-weight-medium
+                a.btn(href='https://www.linkedin.com/in/kostas-minaidis/') Linkedin
+
+  // REVEALJS CONFIGURATION
+  script(src='js/reveal.js')
+  script.
+    // Configure Key Bindings:
+    Reveal.configure({
+      keyboard: {
+        // Key: 'e'
+        69: function() {}
+      }
+    });
+    Reveal.initialize({
+      // controls: true,
+      // progress: true,
+      // center: true,
+      // hash: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      maxScale: 1,
+      minScale: 1,
+      history: true,
+      dependencies: [
+        {
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true
+        },
+        {
+          src: 'plugin/search/search.js',
+          async: true
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        }
+      ]
+    });
