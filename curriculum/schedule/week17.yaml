@@ -1,0 +1,65 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Intermediate Part 2 - Software Patterns & TypeScript
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    2: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    3: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    4: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    5: # 
+      # file://./../modules/javascript/
+      module: javascript/
+
+# ---
+# Patterns: Simple PubSub
+# Patterns: Observer
+# STUDY: https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/design_patterns/observer
+# STUDY: Design Patterns: Observer and Publish-Subscribe
+# https://www.youtube.com/watch?v=72bdaDl4KLM
+# STUDY: https://www.wikiwand.com/en/Observer_pattern
+# STUDY: https://www.wikiwand.com/en/Publish%E2%80%93subscribe_pattern
+
+# Observer Design Pattern in Javascript | Design Patterns Tutorial
+# https://www.youtube.com/watch?v=T-xfEbDORng
+
+# https://embeddedartistry.com/fieldatlas/differentiating-observer-and-publish-subscribe-patterns/
+# Publish Subscribe Pattern: https://www.youtube.com/watch?v=0WJjmmw1ryM
+
+# PubSub Design Pattern in JS
+# https://www.youtube.com/watch?v=aynSM8llOBs
+
+# Exercise: Implement a PubSub:
+# 
+# //subscribe to 'hello/world' namespace
+# pubsub.subscribe('hello/world', function(data) {
+#     console.log(data);
+# });
+# //publish event on 'hello/world' namespace
+# pubsub.publish('hello/world', ['hello!']); // second parameter is an array of arguments
+# //prints "hello!" inside console
+# UNSUBSCRIBE:
+# //subscribe to 'hello/world' namespace
+# var subscription = pubsub.subscribe('hello/world', function() {
+#     console.log('hello world!');
+# });
+# //publish event on 'hello/world' namespace
+# pubsub.publish('hello/world');
+# //prints "hello world" inside console
+
+# //unsubscribe
+# pubsub.unsubscribe(subscription);
+# //publish event on 'hello/world' namespace
+# pubsub.publish('hello/world');
+# //nothing happen - we've previously unsubscribed that subscription
+# Src: https://sahadar.github.io/pubsub/
+
+# Exercise: Build a Loader that publishes the loading state to 3 UI components
