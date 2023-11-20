@@ -169,8 +169,8 @@ title: Week 08 | JavaScript Core 2
 
   Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  - **6-logging-state**
-  - **7-tracing-backwards**
+  - **5-logging-state**
+  - **6-tracing-backwards**
 
 <!-- Summary -->
 
@@ -205,8 +205,8 @@ title: Week 08 | JavaScript Core 2
 
   Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
 
-  - **8-naming-variables**
-  - **9-code-review**
+  - **7-naming-variables**
+  - **8-code-review**
 
 <!-- Summary -->
 
