@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Puzzle Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A programming game for non programmers">
+    <meta name="author" content="Michael N. Gagnon">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <link rel="stylesheet" href="lib/solarized.css">
+    <link rel="stylesheet" href="lib/eclipse.css">
+    <link rel="stylesheet" href="lib/solarized_dim.css">
+    <link href="lib/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .note-gutter { width: 15em; }
+      .CodeMirror-linenumbers { width: 3em; }
+      .activeline-background {background: #eaea84;}
+      .nextActiveline-background {background: #ff0;}
+      .errorLink {
+        text-decoration: underline;
+        color: navy; font-weight: bold}
+      a.errorLink:hover{color: deepskyblue}
+      body .modal {
+        color: #444;
+        text-align: left;
+      }
+      .level-select {
+        width: 207px;
+        text-align: left;
+      }
+      .world-menu-caret {
+        float: right;
+      }
+      /* designed to match bootstrap accordion style */
+      .rounded-div {
+        padding: 8px 15px;
+        margin-bottom: 20px;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 4px;
+           -moz-border-radius: 4px;
+                border-radius: 4px;
+      }
+      .level-box {
+        background: #eee;
+      }
+      .btn-level-menu {
+        width: 4em;
+        margin-bottom: 5px;
+        margin-right: 5px;
+      }
+      .world-menu-label {
+        width: 9em;
+      }
+      .victory-label {
+        width: 100px;
+        text-align: center
+      }
+      .right-column {
+        overflow: hidden;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+      .board {
+        float: left;
+        margin-top: 23px;
+      }
+      .menu-button {
+        width: 100px;
+      }
+      /* taken from eclipse.css and codemirror.css */
+      span.keyword {
+        font-family: monospace;
+        font-size: 120%;
+        line-height: 1em;
+        font-weight: bold;
+        color: #7F0055;
+      }
+      span.keyword-link {
+        font-family: monospace;
+        font-size: 120%;
+        line-height: 1em;
+        font-weight: bold;
+      }
+      /* TODO: document where this came from */
+      .code-mirror-wrapper {
+        line-height: 1.3em;
+        font-family: monospace;
+
+        /* Necessary so the scrollbar can be absolutely positioned within the wrapper on Lion. */
+        position: relative;
+        /* This prevents unwanted scrollbars from showing up on the body and wrapper in IE. */
+        overflow: hidden;
+        background-color: white;
+        width: 530px;
+
+        /* Copied from Bootstrap's textarea */
+        display: inline-block;
+        padding: 4px 6px;
+        margin-bottom: 9px;
+        color: #555555;
+        border: 1px solid #ccc;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+        transition: border linear 0.2s, box-shadow linear 0.2s;  
+      }
+      /* http://stackoverflow.com/questions/9834961/making-select-boxes-glow-blue-in-twitter-bootstrap */
+      .glow-focus {
+        -moz-box-shadow: 0 0 30px #f00;
+        -webkit-box-shadow: 0 0 30px #f00;
+        box-shadow: 0px 0px 30px #f00;
+      }
+      .tutorial-continue-btn {
+        float: right;
+      }
+    </style>
+    <link href="lib/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- TODO: get and test the shiv -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand">Puzzle Code</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="https://github.com/mikegagnon/puzzlecode/blob/master/README.md">About</a></li>
+              <li><a href="http://mikegagnon.com">By Mike Gagnon</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN: container -->
+    <div class="container-fluid" id="container">
+      <div class="row-fluid">
+
+        <!-- BEGIN: column -->
+        <div class="span12">
+
+        <div class="alert alert-block">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <p><strong>Warning</strong>: this game is incomplete, and under construction.
+            
+            <a target="_blank" href="https://docs.google.com/forms/d/1cs8d6XNmHsbjQRN15LDIQcof8KWrVlpVYFCgZIDXKw4/viewform">
+             Please give me anonymous feedback by completing this short survey</a>
+             (link opens in a new window).</p>
+        </div><!-- END: message box -->
+
+        <!-- this div will only be visible if the player has at least two
+         levels to choose from -->
+        <!-- BEGIN: level menu -->
+        <div class="rounded-div" id="choose-level-div">
+
+          <h3>
+            <a id="choose-level-button" href="javascript: chooseLevelClick()">
+            Choose level
+            </a>
+          </h3>
+
+        </div> <!-- END: level menu -->
+
+        <!-- BEGIN: level-box -->
+        <div class="rounded-div level-box">
+
+          <h2 id="leveltitle" styl="text-color: white"></h2>
+
+            <!-- BEGIN: message box -->
+            <div id="messageBoxDiv" class="alert alert-block alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+              <h3 id="messageBoxHeader"></h3>
+              <p id="messageBox"></p>
+            </div><!-- END: message box -->
+
+          <div id="constraintBoxDiv" class="alert alert-info" style="display: none;">
+            <h4 id="constraintBoxHeader"></h4>
+            <ul id="constraintBoxList"><ul>
+          </div>
+
+          <!-- BEGIN: buttons, message box and code editor -->
+          <div style="clear:both">
+            <p>
+              <div class="btn-group">
+                <button class="btn menu-button" id="pauseplay">Run!</button>
+                <button class="btn menu-button" id="stepButton">Step</button>
+                <button class="btn menu-button" id="restart">Reset</button>
+                <a class="btn menu-button" id="speedText">Animation speed</a>
+                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="javascript: setSpeed(PlaySpeed.SUPER_SLOW)">Super slow</a></li>
+                    <li><a href="javascript: setSpeed(PlaySpeed.SLOW)">Slow</a></li>
+                    <li><a href="javascript: setSpeed(PlaySpeed.NORMAL)">Normal speed</a></li>
+                    <li><a href="javascript: setSpeed(PlaySpeed.FAST)">Fast</a></li>
+                    <li><a href="javascript: setSpeed(PlaySpeed.SUPER_FAST)">Super fast</a></li>
+                  </ul>
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-primary menu-button"
+                  type="button"
+                  id="helpButton"
+                  onClick="TUTORIAL.setup.startTutorialPrompt.activate()">
+                  Help</button>
+
+                <a
+                  href="#hintModal"
+                  role="button" 
+                  class="btn menu-button"
+                  id="hintButton"
+                  data-toggle="modal">
+                  Hint</a>
+              </div>
+            </p>
+          </div><!-- END: buttons, message box and code editor -->
+
+          <!-- BEGIN: board div -->
+          <div class="board" id="boardDiv">
+            <svg id="board" xmlns="http://www.w3.org/2000/svg" >
+              <defs>
+        
+                <g id="xTemplate" height="32" width="32">
+                  <path d="M10 10 L22 22" stroke="white" stroke-width="2"/>
+                  <path d="M10 22 L22 10" stroke="white" stroke-width="2"/>
+                </g>
+
+                <g id="blockTemplate" height="32" width="32" >
+                  <rect x="0" y="0" width="32" height="32" fill="#888" />
+                  <path d="M0 0 L32 0 L28 4 L4 4 Z"
+                    stroke="none" fill="#aaa"/>
+                  <path d="M0 0 L4 4 L4 28 L0 32 Z"
+                    stroke="none" fill="#aaa"/>
+                  <path d="M32 0 L28 4 L28 28 L32 32 Z"
+                    stroke="none" fill="#666"/>
+                  <path d="M32 32 L28 28 L4 28 L0 32 Z"
+                    stroke="none" fill="#666"/>
+                </g>
+
+                <!-- the bot is facing up -->
+                <!-- TODO: put this SVG image in a separate file-->
+                <g id="botTemplate" height="32" width="32" >
+
+                  <circle
+                    stroke="black"
+                    fill="steelblue"
+                    r="9"
+                    cx="16"
+                    cy="16" ></circle>
+
+                  <!-- the head -->
+                  <g transform="rotate(45 16 16)">
+                    <!-- fill in the head -->
+                    <path
+                      d="M7 7 L17 7 L7 17 Z"
+                      stroke="none"
+                      fill="steelblue" />
+
+                    <!-- outline the head -->
+                    <path
+                      d="M7 7 L17 7 M7 7 L7 17"
+                      stroke="black"
+                      stroke-width="1"
+                      fill="none" />
+                    </g>
+                </g>
+              </defs>
+            </svg>
+          </div> <!-- END: board div -->
+
+          <!-- BEGIN: right column -->
+          <div class="right-column">
+
+          <!-- HACK: these nesteed divs are a hack to allow me to show
+           mulitple popover overs on the code editor
+           TODO: fix this hack -->
+          <div id="code-mirror-wrapper5">
+            <div id="code-mirror-wrapper4">
+              <div id="code-mirror-wrapper3">
+                <div id="code-mirror-wrapper2">
+                  <div id="code-mirror-wrapper" class="code-mirror-wrapper">
+                    <div id="codeMirrorEdit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <!-- BEGIN: hint modal -->
+            <div
+              id="hintModal"
+              class="modal hide fade"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="hintModalLabel"
+              aria-hidden="true">
+              <div class="modal-header">
+                <h3 id="hintModalTitle">Hint</h3>
+              </div>
+              <div id="hintModalBody" class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <p style="float:left">For more in-depth help, visit our
+                    <strong>
+                      <a
+                        target="_blank"
+                        href='https://github.com/mikegagnon/puzzlecode/wiki/Help-for-Puzzle-Code'>Help Page</a></strong> (opens in a new
+                    window).
+                </p>
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+            </div> <!-- END: hint modal -->
+
+
+          </div> <!-- END: right  column -->
+
+          <!-- BEGIN: victory modal -->
+          <div
+            id="victoryModal"
+            class="modal hide fade"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="victoryModalLabel"
+            aria-hidden="true">
+            <div class="modal-header">
+              <h3 id="victoryModalLabel">Choose level</h3>
+            </div>
+            <div id="victoryModalBody" class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <div class="btn-group">
+                <a
+                  class="btn"
+                  data-dismiss="modal" aria-hidden="true">
+                  Back to current level
+                </a>
+              </div>
+
+              <!--<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>-->
+            </div>
+          </div> <!-- END: victory modal -->
+
+        </div> <!-- END: level-box -->
+      </div><!-- END: column -->
+
+    </div> <!-- /container -->
+    <br><br>
+
+
+
+    <br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/d3.min.js"> </script>
+    <script src="lib/codemirror.js"></script>
+    <script src="lib/clike.js"></script>
+    <script src="lib/lodash.js"></script>
+    <script src="lib/tinycolor-min.js"></script>
+    <script src="puzzlecode.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+
+
+      $('body').popover({
+          selector: '[data-toggle="popover"]',
+          html: true,
+          trigger: 'manual'
+      });
+
+      $('body').tooltip({
+          selector: 'a[rel="tooltip"], [data-toggle="tooltip"]'
+      });
+
+    });
+
+</script>
+
+  </body>
+</html>
