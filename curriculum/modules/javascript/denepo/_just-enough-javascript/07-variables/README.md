@@ -86,9 +86,7 @@ Variables are relatively simple, they store a value and that value can change.
 What becomes more challenging is understanding how to use variables in a
 program.
 
-Below is a few examples of what you can do with variables, the
-[naming-variables](../naming-variables) exercises go into more depth on the
-different ways you can use a variable in your programs.
+Below are a few examples of what you can do with variables:
 
 <details>
 <summary>🥚 different types</summary>
