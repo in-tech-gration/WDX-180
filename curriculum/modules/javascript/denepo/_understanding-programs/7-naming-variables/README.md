@@ -4,12 +4,12 @@ Your code should be written first for humans, and then for computers. One of the
 best tools you have for helping humans is a good variable name.
 
 - [Variable Analysis](#variable-analysis)
-  - You can also have a look at this guide [over here](https://www.youtube.com/watch?v=BnQrYRrYeVE)
-    by our dear friend Evan!
 - [`let` or `const`](#let-or-const)
 - [Naming the Variable](#name-the-variable)
 - [Variable Roles](#variable-roles)
 - [Naming Conventions](#naming-conventions)
+
+Additionally, you can watch the [following video](https://www.youtube.com/watch?v=BnQrYRrYeVE) for a better understanding on some of the concepts described.
 
 ---
 

@@ -57,6 +57,8 @@ alert(line);
 - [Goals](#goals)
 - [About Commenting](#about-commenting)
 
+Additionally, you can watch the [following video](https://www.youtube.com/watch?v=vYZAkIM1fac) for a better understanding on some of the concepts described.
+
 ---
 
 ## Zooming Out

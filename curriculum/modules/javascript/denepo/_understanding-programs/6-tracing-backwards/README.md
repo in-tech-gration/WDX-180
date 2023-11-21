@@ -26,9 +26,4 @@ Here are some steps to help you study the programs in this chapter:
 5. Check your work with the `[trace]` button, but you will need to read the
    trace from bottom to top.
 
-You can also have a look at this guide [over here](https://www.youtube.com/watch?v=DaZtMxD_dKg)
- by our dear friend Evan!
-
-> Note: 
-> 
-> The video has some UI differences but the content is the same with our version.
+Additionally, you can watch the [following video](https://www.youtube.com/watch?v=DaZtMxD_dKg) for a better understanding on some of the concepts described.

@@ -15,13 +15,7 @@ you get started reading the programs:
   questions
 - [Drawing on Code](#drawing-on-code) is about finding the answers
 
-You can also have a look at this guide [over here](https://www.youtube.com/watch?v=7nCCQQFbMOM)
- by our dear friend Evan!
-
-> Note: 
-> 
-> The video has some UI differences but the content is the same with our version.
-> Just follow the link to the exercise `getting-an-orange.js`!
+Additionally, you can watch the [following video](https://www.youtube.com/watch?v=7nCCQQFbMOM) for a better understanding on some of the concepts described.
 ---
 
 ## Printing Code
