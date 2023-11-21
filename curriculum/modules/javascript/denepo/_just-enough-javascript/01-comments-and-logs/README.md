@@ -53,11 +53,11 @@ console.log('a', 'message', 'from', 'beyond'); // 'a', 'message', 'from', 'beyon
 ## References
 
 - Comments
-  - [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/how-to-write-code/comments.html)
+  - [launchcode](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/how-to-write-code/comments.html)
   - [programiz](https://www.programiz.com/javascript/comments)
   - [javascript.info](https://javascript.info/structure#code-comments)
   - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#comments)
 - Logging
-  - [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/how-to-write-code/output.html?highlight=log)
+  - [launchcode](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/how-to-write-code/output.html?highlight=log)
   - [programiz](https://www.programiz.com/javascript/console)
   - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Console/log)

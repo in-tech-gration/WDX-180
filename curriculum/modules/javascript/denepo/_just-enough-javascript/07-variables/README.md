@@ -523,7 +523,7 @@ alert('will throw an error'); // TypeError - not a function
 
 ## References
 
-- [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/data-and-variables/variables.html)
+- [launchcode](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/data-and-variables/variables.html)
 - [javascript.info](https://javascript.info/variables)
 - [programiz](https://www.programiz.com/javascript/variables-constants)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)

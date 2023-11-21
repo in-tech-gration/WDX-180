@@ -256,7 +256,7 @@ console.log(message);
 - [Mosh](https://www.youtube.com/watch?v=IsG4Xd6LlsM)
 - [programiz](https://www.programiz.com/javascript/if-else)
 - [javascript.info](https://javascript.info/ifelse)
-- [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/booleans-and-conditionals/conditionals.html)
+- [launchcode](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/booleans-and-conditionals/conditionals.html)
 - MDN:
   [the docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else),
   [intro](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)

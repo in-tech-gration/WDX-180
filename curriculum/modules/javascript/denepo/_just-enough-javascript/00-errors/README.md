@@ -42,5 +42,5 @@ blank is!
 ---
 
 - Launchcode:
-  [categories](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/categories-of-errors.html),
-  [diagnosing](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/diagnosing-error-messages.html)
+  [categories](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/errors-and-debugging/categories-of-errors.html),
+  [diagnosing](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/errors-and-debugging/diagnosing-error-messages.html)

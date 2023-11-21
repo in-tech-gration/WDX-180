@@ -241,5 +241,5 @@ alert(input);
 ## References
 
 - [programiz](https://www.programiz.com/javascript/while-loop)
-- [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/loops/while-loops.html)
+- [launchcode](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/loops/while-loops.html)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)

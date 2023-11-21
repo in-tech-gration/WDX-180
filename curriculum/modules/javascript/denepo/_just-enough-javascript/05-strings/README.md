@@ -294,5 +294,5 @@ console.log('abcd'.slice(-3, -2)); //  'b'
 
 ## References
 
-- [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/data-and-variables/values-and-data-types.html#more-on-strings)
+- [launchcode](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/data-and-variables/values-and-data-types.html#more-on-strings)
 - [javascript.info](https://javascript.info/string#accessing-characters)

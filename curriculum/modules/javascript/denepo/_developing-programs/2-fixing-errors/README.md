@@ -120,7 +120,7 @@ thinking. These exercises only cover Errors.
 - [creation phase & execution phase](https://www.youtube.com/watch?v=YID-HIdy1bk)
 - [syntax vs semantics](https://www.youtube.com/watch?v=vP-mn62EF0o)
 - [Syntax Parsers, Execution Contexts, and Lexical Environments](https://jsbeginners.com/understanding-the-weird-parts-notes-1/)
-- [different kinds of errors](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/categories-of-errors.html)
+- [different kinds of errors](https://in-tech-gration.github.io/intro-to-professional-web-dev/chapters/errors-and-debugging/categories-of-errors.html)
 - JS Tutor snippets:
   - [creation phase errors](https://goo.gl/1Psxu7)
   - [creation phase errors](https://goo.gl/68af7H)
