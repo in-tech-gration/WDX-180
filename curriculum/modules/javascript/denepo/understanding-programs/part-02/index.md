@@ -12,18 +12,27 @@ title: Understanding Programs - Part 2
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
-  - **3-plain-text-programs**
-  - **4-describing-programs**
+  - **5-logging-state**
+  - **6-tracing-backwards**
+  - **7-naming-variables**
+  - **8-code-review**
+  - **z-challenge**
 
 ### Summary
 
 ### Exercises
 
-  <!-- SGEN:META:PROGRESS:task=Explore the '3-plain-text-programs' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '5-logging-state' section of 'Understanding Programs' -->
 
-  <!-- SGEN:META:PROGRESS:task=Explore the '4-describing-programs' section of 'Understanding Programs' -->
+  <!-- SGEN:META:PROGRESS:task=Explore the '6-tracing-backwards' section of 'Understanding Programs' -->
+
+  <!-- SGEN:META:PROGRESS:task=Explore the '7-naming-variables' section of 'Understanding Programs' -->
+
+  <!-- SGEN:META:PROGRESS:task=Explore the '8-code-review' section of 'Understanding Programs' -->
+
+  <!-- SGEN:META:PROGRESS:task=Explore the 'z-challenge' section of 'Understanding Programs' -->
 
 ### Extra Resources
 

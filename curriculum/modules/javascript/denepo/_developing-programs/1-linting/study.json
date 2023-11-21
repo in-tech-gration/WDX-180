@@ -1,0 +1,12 @@
+{
+  "study": {
+    "run": false,
+    "debug": false,
+    "trace": false,
+    "loopGuard": false,
+    "writeme": false,
+    "table": false,
+    "ask": false,
+    "blanks": false
+  }
+}

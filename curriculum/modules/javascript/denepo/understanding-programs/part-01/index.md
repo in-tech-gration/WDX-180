@@ -21,11 +21,11 @@ title: Understanding Programs - Part 1
   Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  - `lenses2 curriculum/modules/javascript/denepo/_understanding-programs/`
 
   or just:
 
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_understanding-programs/`
   - `lenses2`
 
   Now it's time to go through the material. For this Module you will only need to go through the following sections:
@@ -33,6 +33,8 @@ title: Understanding Programs - Part 1
   - **0-let-vs-const**
   - **1-predicting-execution**
   - **2-reading-programs**
+  - **3-plain-text-programs**
+  - **4-describing-programs**
 
 ### Summary
 
@@ -43,6 +45,10 @@ title: Understanding Programs - Part 1
   <!-- SGEN:META:PROGRESS:task=Explore the '1-predicting-execution' section of 'Understanding Programs' -->
 
   <!-- SGEN:META:PROGRESS:task=Explore the '2-reading-programs' section of 'Understanding Programs' -->
+
+  <!-- SGEN:META:PROGRESS:task=Explore the '3-plain-text-programs' section of 'Understanding Programs' -->
+
+  <!-- SGEN:META:PROGRESS:task=Explore the '4-describing-programs' section of 'Understanding Programs' -->
 
 ### Extra Resources
 
