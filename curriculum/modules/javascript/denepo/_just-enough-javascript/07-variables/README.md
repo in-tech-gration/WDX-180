@@ -302,7 +302,7 @@ many rules and the rules aren't very complicated, you just need to learn them:
 
 - [javascript.info](https://javascript.info/variables#variable-naming)
 - [nexTRIE](https://www.youtube.com/watch?v=O5WlRR-lEDE)
-- [launchcode](ntro-to-professional-web-dev/chapters/data-and-variables/more-on-variables.html#naming-variables)
+- [launchcode](https://education.launchcode.org/intro-to-professional-web-dev/chapters/data-and-variables/more-on-variables.html#naming-variables)
 
 <details>
 <summary>🥚 variable names <strong>can</strong> use numbers, letters, $, or _</summary>
