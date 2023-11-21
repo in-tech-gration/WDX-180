@@ -9,14 +9,13 @@ schedule:
       module: javascript/denepo/understanding-programs/part-01
     2: #
       # file://./../modules/javascript/denepo/understanding-programs/part-02/index.md
-      # TODO: integrate the guide.mp4
       module: javascript/denepo/understanding-programs/part-02
     3: #
-      # file://./../modules/javascript/denepo/understanding-programs/part-03/index.md
-      module: javascript/denepo/understanding-programs/part-03
+      # file://./../modules/javascript/denepo/developing-programs/part-01/index.md
+      module: javascript/denepo/developing-programs/part-01
     4: #
-      # file://./../modules/javascript/denepo/understanding-programs/part-04/index.md
-      module: javascript/denepo/understanding-programs/part-04
+      # file://./../modules/javascript/denepo/developing-programs/part-02/index.md
+      module: javascript/denepo/developing-programs/part-02
     5: #
-      # file://./../modules/javascript/denepo/understanding-programs/part-05/index.md
-      module: javascript/denepo/understanding-programs/part-05
+      # file://./../modules/javascript/denepo/developing-programs/part-03/index.md
+      module: javascript/denepo/developing-programs/part-03
