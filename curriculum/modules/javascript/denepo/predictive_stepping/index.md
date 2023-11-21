@@ -38,6 +38,9 @@ title: Predictive Stepping
 
 ### Exercises
 
+<!-- SGEN:META:PROGRESS:task=Watch the 'Predictive Stepping' sessions with Evan Cole -->
+<!-- SGEN:META:PROGRESS:task=Go through the 'Predictive Stepping' material and work on the exercises -->
+
 ### Extra Resources
 
 ### Sources and Attributions
