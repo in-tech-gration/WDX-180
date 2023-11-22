@@ -3,21 +3,21 @@ daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 3
 schedule: 
   days:
-    1: # 
+    1: # Functions
+      # file://./../modules/javascript/core/functions/index.md
+      module: javascript/core/functions
+    2: # Functions
       # file://./../modules/javascript/core/
       module: javascript/core/
-    2: # 
+    3: # Arrays
+      # file://./../modules/javascript/core/arrays/index.md
+      module: javascript/core/arrays
+    4: # Arrays
       # file://./../modules/javascript/core/
       module: javascript/core/
-    3: # 
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    4: # 
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    5: # 
-      # file://./../modules/javascript/core/
-      module: javascript/core/
+    5: # Objects
+      # file://./../modules/javascript/core/objects/index.md
+      module: javascript/core/objects
 
 # ---
 
