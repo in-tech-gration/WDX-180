@@ -1,0 +1,12 @@
+{
+  "study": {
+    "trace": {
+      "operators": false,
+      "console": false,
+      "controlFlow": false,
+      "variablesDeclare": false,
+      "variablesAssign": false,
+      "variablesRead": false
+    }
+  }
+}

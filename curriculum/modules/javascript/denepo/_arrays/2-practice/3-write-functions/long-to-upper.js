@@ -1,0 +1,6 @@
+// #todo
+
+/**
+ *
+ */
+export const longToUpper = () => {};
