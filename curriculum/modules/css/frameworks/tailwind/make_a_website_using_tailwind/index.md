@@ -32,7 +32,7 @@ title: How To Make A Website With Tailwind CSS
 
 ### Exercises
 
-  <!-- SGEN:META:PROGRESS:task=Complete the 'Make a Website with Tailwind CSS' challenge -->
+  <!-- SGEN:META:PROGRESS:task=Complete the 'Make a Website with Tailwind CSS' challenge and paste the URL of the website at the last column (replacing the instructions) -->
   - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
 
 ### Extra Resources
