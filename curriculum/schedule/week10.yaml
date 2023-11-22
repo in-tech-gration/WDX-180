@@ -31,3 +31,7 @@ schedule:
       # TODO: STUDY:  https://www.w3schools.com/js/js_ajax_http.asp
       # file://./../modules/javascript/.../index.md
       module: javascript/
+
+# ---
+
+# TODO: STUDY: https://github.com/DeNepo/inspecting-the-dom
