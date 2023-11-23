@@ -1,0 +1,9 @@
+{
+  "study": {
+    "trace": {
+      "variablesDeclare": false,
+      "variablesAssign": false,
+      "variablesRead": false
+    }
+  }
+}
