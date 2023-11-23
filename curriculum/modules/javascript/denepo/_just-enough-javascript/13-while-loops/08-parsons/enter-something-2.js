@@ -28,4 +28,4 @@ if (input === '') {
 
 while input === null { // distractor
 if (input === '')  // distractor
-LET input = null;
+LET input = null; // distractor
