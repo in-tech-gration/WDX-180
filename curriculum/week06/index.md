@@ -27,7 +27,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 22/11/2023</span>
+  <span>Updated: 24/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -350,13 +350,13 @@ load_script_js_via_src:
 
   **Running Study Lenses on WDX-180 material**
 
-  Let's now check whether `study-lenses` is available globally and try to use it to study a simple JavaScript program.
+  Let's now check whether `study-lenses` is available globally and try to use it to study a simple JavaScript program. 
 
   - Open the terminal and stop any other instance of `study-lenses` that might be running, e.g. the `npm run test-content` from previous steps. You can press `Ctrl+C` on the terminal to stop the currently running process.
 
   - Change to the following directory inside your local `WDX-180` repo: `cd curriculum/week06/exercises`.
 
-  - Run either the `study` or `lenses` command on the terminal and check whether the app opens up in the browser.
+  - Run `lenses2` command on the terminal and check whether the app opens up in the browser.
 
   - If the app opens up in the browser, click on the `hello-world.js` file and start exploring some lenses like `flowchart`, `pseudo`, `variables`, `blanks`, `parsons`, etc.
 
@@ -859,10 +859,12 @@ load_script_js_via_src:
 
   **Explore Study Lenses**
 
-  Continue your exploration of the `study-lenses` tool. Run the following commands on your local copy of the `WDX-180` repo:
+  Continue your exploration of the `study-lenses` tool. Follow the [instructions here](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/) to set up Study Lenses (v2) on your System (if you haven't done that already).
+
+  Then the following commands on your local copy of the `WDX-180` repo:
 
   - `cd curriculum/week06/exercises/exploring-study-lenses`
-  - `study`
+  - `lenses2`
 
   Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
 

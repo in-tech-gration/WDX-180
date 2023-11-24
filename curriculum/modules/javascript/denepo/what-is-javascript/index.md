@@ -425,10 +425,12 @@ title: What is JavaScript?
 
   **Explore Study Lenses**
 
-  Continue your exploration of the `study-lenses` tool. Run the following commands on your local copy of the `WDX-180` repo:
+  Continue your exploration of the `study-lenses` tool. Follow the [instructions here](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/) to set up Study Lenses (v2) on your System (if you haven't done that already).
+
+  Then the following commands on your local copy of the `WDX-180` repo:
 
   - `cd curriculum/week{{ SGEN:WEEK_NUM}}/exercises/exploring-study-lenses`
-  - `study`
+  - `lenses2`
 
   Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
 

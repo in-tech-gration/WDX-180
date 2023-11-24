@@ -111,13 +111,13 @@ title: What is Programming?
 
   **Running Study Lenses on WDX-180 material**
 
-  Let's now check whether `study-lenses` is available globally and try to use it to study a simple JavaScript program.
+  Let's now check whether `study-lenses` is available globally and try to use it to study a simple JavaScript program. 
 
   - Open the terminal and stop any other instance of `study-lenses` that might be running, e.g. the `npm run test-content` from previous steps. You can press `Ctrl+C` on the terminal to stop the currently running process.
 
   - Change to the following directory inside your local `WDX-180` repo: `cd curriculum/week{{ SGEN:WEEK_NUM }}/exercises`.
 
-  - Run either the `study` or `lenses` command on the terminal and check whether the app opens up in the browser.
+  - Run `lenses2` command on the terminal and check whether the app opens up in the browser.
 
   - If the app opens up in the browser, click on the `hello-world.js` file and start exploring some lenses like `flowchart`, `pseudo`, `variables`, `blanks`, `parsons`, etc.
 
