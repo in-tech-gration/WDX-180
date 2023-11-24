@@ -1,5 +1,5 @@
 ---
-favicon: 
+favicon: sitemap.png
 ---
 
 # WDX 180° | SITEMAP
