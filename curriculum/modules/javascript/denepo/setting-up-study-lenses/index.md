@@ -4,6 +4,8 @@ TODO:
 - Once lenses2 is available as an npm package, update this Module with instructions on how to install the tool globally via `npm install --global lenses2`
 ---
 
+![](./assets/lenses2.jpg)
+
 **Setting up Study Lenses (v2) on your System**
 
 1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
