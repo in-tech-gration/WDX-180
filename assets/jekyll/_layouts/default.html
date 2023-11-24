@@ -14,7 +14,7 @@
   <script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>
 
   {% if page.favicon %}
-    <link rel="icon" type="image/png" href="{{ '/assets/jekyll/images/{{ page.favicon }}' | relative_url }}"/>
+    <link rel="icon" type="image/png" href="{{ page.favicon | prepend: '/assets/jekyll/images/' | relative_url }}"/>
   {% else %}
     <link rel="icon" type="image/png" href="{{ '/assets/jekyll/images/favicon.png' | relative_url }}"/>
   {% endif %}

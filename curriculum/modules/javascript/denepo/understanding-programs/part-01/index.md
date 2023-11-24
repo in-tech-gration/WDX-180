@@ -12,9 +12,7 @@ title: Understanding Programs - Part 1
 
   This Module is about "Understanding Programs". It's not enough just to know the language features in JS. Before you can write good programs you need to learn how to understand code that you did not write. The following module contains a handful of sections that provide you a good amount of JavaScript programs and a lot of tools,methods and good practices on how to properly understand programs written by others!
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+  In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
 
   **Launching Study Lenses and following the material**
 
