@@ -33,7 +33,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Marking Syntax</h3>
   </summary>
@@ -75,7 +75,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Trace</h3>
   </summary>
@@ -109,7 +109,7 @@ Learn more about each type of exercise below:
 </details>
 
 
-<details open markdown="1">
+<details markdown="1">
 
   <summary>Trace Tables</summary>
 
@@ -141,7 +141,7 @@ Learn more about each type of exercise below:
   the bigger picture and see more clearly the _strategy_ (or _algorithm_) of a
   program.
 
-  <details open markdown="1">
+  <details markdown="1">
     <summary>links about <strong>values</strong> trace tables</summary>
     <br>
 
@@ -165,7 +165,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Read</h3>
   </summary>
@@ -182,7 +182,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Fill in the Blanks</h3>
   </summary>
@@ -206,7 +206,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Quiz</h3>
   </summary>
@@ -225,7 +225,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Copy-Type</h3>
   </summary>
@@ -263,7 +263,7 @@ Learn more about each type of exercise below:
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🥚 Translate</h3>
   </summary>
@@ -347,7 +347,7 @@ alert(input);
 </table>
 
 ---
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🐣 Compare</h3>
   </summary>
@@ -437,7 +437,7 @@ Program 2 outputs "yes"
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🐣 Parsons Problems</h3>
   </summary>
@@ -458,7 +458,7 @@ Program 2 outputs "yes"
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🐥 Logs</h3>
   </summary>
@@ -551,7 +551,7 @@ Program 2 outputs "yes"
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🐔 Specs</h3>
   </summary>
@@ -853,7 +853,7 @@ console.log('--- end program ---');
 
 ---
 
-<details open markdown="1">
+<details markdown="1">
   <summary>
     <h3>🐔 DOM I/O</h3>
   </summary>
