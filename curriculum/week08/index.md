@@ -24,7 +24,7 @@ title: Week 08 | JavaScript Core 2
 
   </h2>
 
-  <span>Updated: 21/11/2023</span>
+  <span>Updated: 24/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -59,28 +59,7 @@ title: Week 08 | JavaScript Core 2
 
   This Module is about "Understanding Programs". It's not enough just to know the language features in JS. Before you can write good programs you need to learn how to understand code that you did not write. The following module contains a handful of sections that provide you a good amount of JavaScript programs and a lot of tools,methods and good practices on how to properly understand programs written by others!
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  
-  **Setting up Study Lenses (v2) on your System**
-  
-  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
-      - `git clone git@github.com:in-tech-gration/study-lenses.git`
-  
-  2. Change to the `study-lenses` directory and install all dependencies:
-  
-      - Run: `cd study-lenses`
-      - Then: `npm install` (or `npm i` for short)
-  
-  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
-  
-      - `git checkout lenses2`
-      - `npm link` 
-      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
-  
-  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
-  
-      - `lenses2 --version` or `lenses2 -v`
+  In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
 
   **Launching Study Lenses and following the material**
 
@@ -164,10 +143,6 @@ title: Week 08 | JavaScript Core 2
 
 ### Schedule
 
-  - [Study](#study-plan-2)
-  - [Exercises](#exercises-2)
-  - [Extra Resources](#extra-resources-2)
-
 ### Study Plan
 
   This Module is about "Developing Programs". Now it's finally time to put those skills into action! Hop on the material provided and you'll soon be able to start writing programs from a blank page!
@@ -236,10 +211,6 @@ title: Week 08 | JavaScript Core 2
 
 ### Schedule
 
-  - [Study](#study-plan-3)
-  - [Exercises](#exercises-3)
-  - [Extra Resources](#extra-resources-3)
-
 ### Study Plan
 
   In this Module, we are continuing our journey into "Developing Programs"
@@ -273,10 +244,6 @@ title: Week 08 | JavaScript Core 2
 
 ### Schedule
 
-  - [Study](#study-plan-4)
-  - [Exercises](#exercises-4)
-  - [Extra Resources](#extra-resources-4)
-
 ### Study Plan
 
   In this Module, we are continuing our journey into "Developing Programs"
@@ -303,7 +270,3 @@ title: Week 08 | JavaScript Core 2
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-## Week 08 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
