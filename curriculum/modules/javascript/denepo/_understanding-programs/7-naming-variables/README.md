@@ -187,7 +187,6 @@ Can you think of any other roles whiles studying these exercises?
 
 To learn more about roles of variables check out these links:
 
-- [einarsen](https://www.einarsen.no/variables-and-the-roles-they-play/)
 - [saja.kapsi.fi](http://saja.kapsi.fi/var_roles/stud_vers/stud_Python3_eng.html)
 - [counter vs. accumulator](https://stackoverflow.com/questions/12983063/what-is-the-difference-between-a-counter-and-an-accumulator)
 
@@ -216,8 +215,8 @@ good and some bad practices. Each company or project may also have it's own
 rules. Here's some resources to get you started:
 
 - [do's and don'ts](https://www.freecodecamp.org/news/javascript-naming-conventions-dos-and-don-ts-99c0e2fdd78a/)
-- [Best Practices (plainenglish)](https://javascript.plainenglish.io/javascript-naming-convention-best-practices-b2065694b7d)
-- [The Ultimate Guide](https://javascript.plainenglish.io/the-ultimate-guide-to-javascript-naming-conventions-f3e371efb0d1)
+<!-- - [Best Practices (plainenglish)](https://javascript.plainenglish.io/javascript-naming-convention-best-practices-b2065694b7d) -->
+<!-- - [The Ultimate Guide](https://javascript.plainenglish.io/the-ultimate-guide-to-javascript-naming-conventions-f3e371efb0d1) -->
 - [nexTRIE](https://www.youtube.com/watch?v=O5WlRR-lEDE)
-- [Best Practices (swlh)](https://medium.com/swlh/javascript-best-practices-variable-naming-conventions-ea121ca389c5)
+<!-- - [Best Practices (swlh)](https://medium.com/swlh/javascript-best-practices-variable-naming-conventions-ea121ca389c5) -->
 - [Chidre's Tech Tutorials](https://www.youtube.com/watch?v=CZ9iNTLYhfw)
