@@ -75,6 +75,7 @@ Learn more about each type of exercise below:
 
 ---
 
+<!-- TRACE -->
 <details markdown="1">
   <summary>
     <h3>🥚 Trace</h3>
@@ -141,30 +142,31 @@ Learn more about each type of exercise below:
   the bigger picture and see more clearly the _strategy_ (or _algorithm_) of a
   program.
 
-  <details markdown="1">
-    <summary>links about <strong>values</strong> trace tables</summary>
-    <br>
 
-    - videos
-      - [TeamComputing](https://www.youtube.com/watch?v=DyeVR1zb7Jo)
-      - [Computer Science Tutorials](https://www.youtube.com/watch?v=UbANyxE7pGE)
-      - [Chris Mayfield](https://www.youtube.com/watch?v=tJGrie7k97c)
-      - [Revise Computer Science](https://www.youtube.com/watch?v=dzYlncc72O0)
-      - [5 Minutes to Code: Programming Basics "Trace Tables"](https://www.youtube.com/watch?v=i2qLAVBUERs)
-    - articles
-      - [akxl - Desk Checking](https://www.akxl.org/JavaProgramming1/TraceTables.htm)
-      - [101computing](https://www.101computing.net/using-trace-tables/),
-        [online table](https://www.101computing.net/trace-table/)
-      - [ibcomputerscience](https://ibcomputerscience.xyz/trace-tables/)
-      - [wikipedia](https://en.wikipedia.org/wiki/Trace_table)
-      - [bits of bytes](https://www.bitsofbytes.co/trace-tables.html)
+</details>
 
-  </details>
+<details markdown="1">
+  <summary>Links about <strong>values</strong> trace tables</summary>
+
+  - videos
+    - [TeamComputing](https://www.youtube.com/watch?v=DyeVR1zb7Jo)
+    - [Computer Science Tutorials](https://www.youtube.com/watch?v=UbANyxE7pGE)
+    - [Chris Mayfield](https://www.youtube.com/watch?v=tJGrie7k97c)
+    - [Revise Computer Science](https://www.youtube.com/watch?v=dzYlncc72O0)
+    - [5 Minutes to Code: Programming Basics "Trace Tables"](https://www.youtube.com/watch?v=i2qLAVBUERs)
+  - articles
+    - [akxl - Desk Checking](https://www.akxl.org/JavaProgramming1/TraceTables.htm)
+    - [101computing](https://www.101computing.net/using-trace-tables/),
+      [online table](https://www.101computing.net/trace-table/)
+    - [ibcomputerscience](https://ibcomputerscience.xyz/trace-tables/)
+    - [wikipedia](https://en.wikipedia.org/wiki/Trace_table)
+    <!-- - [bits of bytes](https://www.bitsofbytes.co/trace-tables.html) -->
 
 </details>
 
 ---
 
+<!-- READ -->
 <details markdown="1">
   <summary>
     <h3>🥚 Read</h3>
@@ -182,6 +184,7 @@ Learn more about each type of exercise below:
 
 ---
 
+<!-- BLANKS -->
 <details markdown="1">
   <summary>
     <h3>🥚 Fill in the Blanks</h3>
@@ -206,6 +209,7 @@ Learn more about each type of exercise below:
 
 ---
 
+<!-- QUIZ -->
 <details markdown="1">
   <summary>
     <h3>🥚 Quiz</h3>
@@ -225,6 +229,7 @@ Learn more about each type of exercise below:
 
 ---
 
+<!-- COPY-TYPE -->
 <details markdown="1">
   <summary>
     <h3>🥚 Copy-Type</h3>
@@ -263,6 +268,7 @@ Learn more about each type of exercise below:
 
 ---
 
+<!-- TRANSLATE -->
 <details markdown="1">
   <summary>
     <h3>🥚 Translate</h3>
@@ -437,6 +443,7 @@ Program 2 outputs "yes"
 
 ---
 
+<!-- PARSONS -->
 <details markdown="1">
   <summary>
     <h3>🐣 Parsons Problems</h3>
@@ -448,7 +455,7 @@ Program 2 outputs "yes"
   lines as distraction, you'll need to figure out which lines are part of the
   program and which are there to confuse you.
 
-  **Here's a [video guide](https://www.youtube.com/watch?v=8mRlMF96gLA){:target="_blank"} to the `Parsons` lens.**
+  **Here's a [video guide](https://www.youtube.com/watch?v=8mRlMF96gLA) to the `Parsons` lens.**
 
   - [Parsons Problems have same Learning Gains as Writing or Fixing code, in less time](https://computinged.wordpress.com/2017/11/17/parsons-problems-have-same-learning-gains-as-writing-or-fixing-code-in-less-time-koli-calling-2017-preview)
   <!-- - [How to study programming](https://medium.com/swlh/how-to-study-computer-programming-parsons-problems-2bfdefabfd86) -->
@@ -458,6 +465,7 @@ Program 2 outputs "yes"
 
 ---
 
+<!-- LOGS -->
 <details markdown="1">
   <summary>
     <h3>🐥 Logs</h3>
@@ -551,6 +559,7 @@ Program 2 outputs "yes"
 
 ---
 
+<!-- SPECS -->
 <details markdown="1">
   <summary>
     <h3>🐔 Specs</h3>
