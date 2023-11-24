@@ -372,6 +372,6 @@ alert(reaction);
 ## About Commenting
 
 <!-- - [better-programming](https://medium.com/better-programming/javascript-clean-code-comments-c926d5aae2cb) -->
-- [elegantthemes](https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits)
-- [4 reasons to comment](https://blog.submain.com/4-reasons-need-code-comments/)
-- [the good, the bad, the ugly](https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/)
+- [How to Comment Your Code Like a Pro: Best Practices and Good Habits](https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits)
+- [4 Reasons Why We Need Code Comments](https://blog.submain.com/4-reasons-need-code-comments/)
+- [Putting comments in code: the good, the bad, and the ugly](https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/)
