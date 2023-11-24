@@ -13,7 +13,12 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>
 
-  <link rel="icon" type="image/png" href="{{ '/assets/jekyll/images/favicon.png' | relative_url }}"/>
+  {% if page.favicon %}
+    <link rel="icon" type="image/png" href="{{ '/assets/jekyll/images/{{ page.favicon }}' | relative_url }}"/>
+  {% else %}
+    <link rel="icon" type="image/png" href="{{ '/assets/jekyll/images/favicon.png' | relative_url }}"/>
+  {% endif %}
+
 
   <!-- 
       <script src="{{ '/assets/jekyll/js/respond.js' | relative_url }}"></script> 

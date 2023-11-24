@@ -1,3 +1,7 @@
+---
+favicon: 
+---
+
 # WDX 180° | SITEMAP
 
   - **Modules**
