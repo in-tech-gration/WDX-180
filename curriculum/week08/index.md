@@ -57,6 +57,8 @@ title: Week 08 | JavaScript Core 2
 
 ### Study Plan
 
+  ![](./assets/understanding.programs.png)
+
   This Module is about "Understanding Programs". It's not enough just to know the language features in JS. Before you can write good programs you need to learn how to understand code that you did not write. The following module contains a handful of sections that provide you a good amount of JavaScript programs and a lot of tools,methods and good practices on how to properly understand programs written by others!
 
   In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
@@ -143,32 +145,15 @@ title: Week 08 | JavaScript Core 2
 
 ### Schedule
 
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
 ### Study Plan
 
   This Module is about "Developing Programs". Now it's finally time to put those skills into action! Hop on the material provided and you'll soon be able to start writing programs from a blank page!
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  
-  **Setting up Study Lenses (v2) on your System**
-  
-  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
-      - `git clone git@github.com:in-tech-gration/study-lenses.git`
-  
-  2. Change to the `study-lenses` directory and install all dependencies:
-  
-      - Run: `cd study-lenses`
-      - Then: `npm install` (or `npm i` for short)
-  
-  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
-  
-      - `git checkout lenses2`
-      - `npm link` 
-      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
-  
-  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
-  
-      - `lenses2 --version` or `lenses2 -v`
+  In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
 
   **Launching Study Lenses and following the material**
 
@@ -211,6 +196,10 @@ title: Week 08 | JavaScript Core 2
 
 ### Schedule
 
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
 ### Study Plan
 
   In this Module, we are continuing our journey into "Developing Programs"
@@ -243,6 +232,10 @@ title: Week 08 | JavaScript Core 2
   </summary>
 
 ### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
 
