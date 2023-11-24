@@ -2771,6 +2771,18 @@
         "records",
         "relationships"
       ]
+    },
+    "2-just-enough-javascript13-while-loops09-infinite-loopsguidemp4": {
+      "type": "YouTube",
+      "duration": 305,
+      "title": "./2-just-enough-javascript/13-while-loops/09-infinite-loops/guide.mp4",
+      "date": "24/11/2023",
+      "youtube": {
+        "id": "rj2R5oy8xIw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/rj2R5oy8xIw/sddefault.jpg"
+      }
     }
   },
   "creators": {}
