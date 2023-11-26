@@ -1,5 +1,18 @@
 ---
 title: Developing Programs - Part 2
+content:
+  - source: DeNepo Welcome to JS
+    URL: "https://github.com/in-tech-gration/welcome-to-js/"
+  - modules:
+    - title: Developing Programs
+      URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs
+      modules:
+        - title: Fixing Errors
+          URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs/2-fixing-errors
+        - title: Fixing Bugs
+          URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs/3-fixing-bugs
+        - title: Modifying Programs
+          URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs/4-modifying-programs
 ---
 
 ### Schedule
