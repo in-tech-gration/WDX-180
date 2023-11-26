@@ -33,7 +33,7 @@
   - [**Week 05**: Mockup CSS Challenge](week05/index.md)
   - [**Week 06**: CSS Frameworks & Intro to Programming](week06/index.md)
   - [**Week 07**: JavaScript Core 1](week07/index.md)
-  - [**Week 08**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 08**: JavaScript Core 2](week08/index.md)
   - [**Week 09**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 10**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 11**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media](#) _(🔒 Stay tuned! This module is on the way.)_
