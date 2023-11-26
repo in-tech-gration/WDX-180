@@ -4,20 +4,20 @@ title: JavaScript Core 3
 schedule: 
   days:
     1: # Functions
-      # file://./../modules/javascript/core/functions/index.md
-      module: javascript/core/functions
-    2: # Functions
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    3: # Arrays
-      # file://./../modules/javascript/core/arrays/index.md
-      module: javascript/core/arrays
-    4: # Arrays
-      # file://./../modules/javascript/core/
-      module: javascript/core/
-    5: # Objects
-      # file://./../modules/javascript/core/objects/index.md
-      module: javascript/core/objects
+      # file://./../modules/javascript/denepo/inside-js/functions-part-1.md
+      module: javascript/denepo/inside-js/functions-part-1.md
+    # 2: # Functions
+    #   # file://./../modules/javascript/denepo/inside-js/functions-part-2.md
+    #   module: javascript/denepo/inside-js/functions-part-2.md
+    # 3: # Arrays
+    #   # file://./../modules/javascript/core/arrays/index.md
+    #   module: javascript/core/arrays
+    # 4: # Arrays
+    #   # file://./../modules/javascript/core/
+    #   module: javascript/core/
+    # 5: # Objects
+    #   # file://./../modules/javascript/core/objects/index.md
+    #   module: javascript/core/objects
 
 # ---
 
