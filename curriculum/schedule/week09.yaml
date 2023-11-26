@@ -3,15 +3,15 @@ daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 3
 schedule: 
   days:
-    1: # Functions
+    1: # Functions 1
       # file://./../modules/javascript/denepo/inside-js/functions-part-1.md
       module: javascript/denepo/inside-js/functions-part-1.md
-    2: # Functions
+    2: # Functions 2
       # file://./../modules/javascript/denepo/inside-js/functions-part-2.md
       module: javascript/denepo/inside-js/functions-part-2.md
-    # 3: # Arrays
-    #   # file://./../modules/javascript/core/arrays/index.md
-    #   module: javascript/core/arrays
+    3: # Arrays 1
+      # file://./../modules/javascript/denepo/inside-js/arrays-part-1.md
+      module: javascript/denepo/inside-js/arrays-part-1.md
     # 4: # Arrays
     #   # file://./../modules/javascript/core/
     #   module: javascript/core/

@@ -1,0 +1,9 @@
+{
+  "study": {
+    "openIn": false,
+    "ask": false,
+    "trace": false,
+    "type": "module",
+    "environment": true
+  }
+}

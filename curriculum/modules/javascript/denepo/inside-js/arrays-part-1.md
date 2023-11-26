@@ -1,5 +1,5 @@
 ---
-title: Arrays
+title: Arrays Part 1
 ---
 
 ### Schedule
@@ -18,27 +18,36 @@ title: Arrays
 
   <!-- WDX:SGEN:PROGRESS:task=Watch 'Arrays in Javascript' -->
   - [Watch **Arrays in Javascript**](https://www.youtube.com/watch?v=0SyTDl4pb4w){:target="_blank"}
-   - Level: Beginner
-   - Duration: 28min
-   - Captions: Yes
+   - **Duration:** 28min
+   - **Level:** Beginner
+   - **Captions:** Yes
 
-  <!-- SGEN:META:PROGRESS:task=Explore the examples on 'Arrays' section -->
   Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_arrays/`
+  - `lenses2 curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
 
   or just:
 
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_arrays/`
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
   - `lenses2`
+
+  You should focus and study the following modules (included within `7-arrays/`):
+
+  - **1-isolate**
+  - **2-practice**
+  - **3-integrate**
 
 ### Summary
 
 ### Exercises
 
-### Extra Resources
+  <!-- SGEN:META:PROGRESS:task=Complete the exercises found inside the '1-isolate' module -->
 
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+  <!-- SGEN:META:PROGRESS:task=Complete the exercises found inside the '2-practice' module -->
+
+  <!-- SGEN:META:PROGRESS:task=Complete the exercises found inside the '3-integrate' module -->
+
+### Extra Resources
 
 ### Sources and Attributions
