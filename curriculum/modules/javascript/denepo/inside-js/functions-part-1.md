@@ -1,5 +1,5 @@
 ---
-title: Functions
+title: Functions Part 1
 ---
 
 ### Schedule

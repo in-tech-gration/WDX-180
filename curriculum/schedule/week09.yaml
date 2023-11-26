@@ -6,9 +6,9 @@ schedule:
     1: # Functions
       # file://./../modules/javascript/denepo/inside-js/functions-part-1.md
       module: javascript/denepo/inside-js/functions-part-1.md
-    # 2: # Functions
-    #   # file://./../modules/javascript/denepo/inside-js/functions-part-2.md
-    #   module: javascript/denepo/inside-js/functions-part-2.md
+    2: # Functions
+      # file://./../modules/javascript/denepo/inside-js/functions-part-2.md
+      module: javascript/denepo/inside-js/functions-part-2.md
     # 3: # Arrays
     #   # file://./../modules/javascript/core/arrays/index.md
     #   module: javascript/core/arrays
