@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>testing dom io</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <div>
+      <form id="user-data">
+        <!-- valid boolean inputs -->
+
+        <label><input id="red" type="checkbox" /> the color red</label>
+        <br />
+
+        <!-- valid string inputs -->
+
+        <label for="words">cool fish</label
+        ><input id="words" type="text" value="ray" />
+        <br />
+        <!-- --- error case: unsupported input type -->
+        <!-- <label
+          >a secret
+          <input id="pw" type="password" value="secret" />
+        </label> -->
+
+        <label for="pig">p, i, g</label>
+        <select id="pig">
+          <!-- --- error case: an option with no value or inner text -->
+          <!-- <option></option> -->
+          <option>p</option>
+          <!-- --- error case: an option with a value but not text -->
+          <!-- <option value="i"></option> -->
+          <option value="i">I</option>
+          <option selected>g</option>
+          <!-- --- error case: a non-option element -->
+          <!-- <div></div> -->
+          <!-- --- error case: no options in a select -->
+        </select>
+
+        <fieldset id="toad">
+          <label
+            >t<input type="radio" name="toad-letters" value="t" checked
+          /></label>
+          <br />
+          <!-- --- error case: none of the radios are checked -->
+          <!-- <label>t<input type="radio" name="toad-letters" value="t" /></label> -->
+          <!-- --- error case: no label -->
+          <!-- t<input type="radio" name="toad-letters" value="t" checked /> -->
+          <label>o<input type="radio" name="toad-letters" value="o" /></label
+          ><br />
+          <label>a<input type="radio" name="toad-letters" value="a" /></label
+          ><br />
+          <label>d<input type="radio" name="toad-letters" value="d" /></label
+          ><br />
+          <!-- --- error case: radio input with a different name inside this fieldset -->
+          <!-- <label>d<input type="radio" name="letters" value="d" /></label> -->
+          <!-- --- error case: non-radio input inside this fieldset -->
+          <!-- <label>d<input type="text" name="toad-letters" value="d" /></label> -->
+        </fieldset>
+        <!-- --- error case: radio input with matching name outside of the fieldset -->
+        <!-- <input type="radio" name="toad-letters" value="d" /> -->
+
+        <!-- valid number inputs  -->
+
+        <label>x<input type="range" id="x" /></label>
+        <br />
+        <label>y<input type="number" id="y" value="22" /></label>
+
+        <!-- --- error case: <pre> output is in a form -->
+        <!-- <pre id="should-not-be-in-a-form"></pre> -->
+      </form>
+
+      <hr />
+
+      <!-- valid output container -->
+      <pre id="out"></pre>
+
+      <!-- --- error cases: inputs are out of a form -->
+      <!-- <input id="should-be-in-a-form-n" type="number" /> -->
+      <!-- <input id="should-be-in-a-form-s" type="text" /> -->
+      <!-- <input id="should-be-in-a-form-b" type="checkbox" /> -->
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
