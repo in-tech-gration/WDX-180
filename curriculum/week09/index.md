@@ -258,12 +258,64 @@ title: Week 09 | JavaScript Core 3
 
 <hr class="mt-1">
 
+<!-- Week 09 - Day 5 | Objects Part 1 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 09 - Day 5</span> | Objects Part 1</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+  ## Objects
+
+
+
+  An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+
+  Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+
+  <!-- WDX:SGEN:PROGRESS:task=Watch 'Javascript Objects Explained' -->
+
+
+  - [Watch **Javascript Objects Explained**](https://www.youtube.com/watch?v=rLPwCAqyCAE){:target="_blank"}
+   - Level: Beginner
+   - Duration: 23min
+   - Captions: Yes
+
+  Now that you have a good understanding of what Javascript Objects are, you can start playing around with some code.
+
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
+
+  or just:
+
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
+  - `lenses2`
+
+  You should focus and study the following modules (included within `9-multiple-interactions/`):
+
+  - **1-isolate**
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
 
 
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-## Week 09 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).

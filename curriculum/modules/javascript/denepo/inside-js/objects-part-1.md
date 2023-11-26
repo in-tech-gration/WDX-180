@@ -1,5 +1,5 @@
 ---
-title: Objects
+title: Objects Part 1
 ---
 
 ### Schedule
@@ -24,23 +24,26 @@ title: Objects
 
   Now that you have a good understanding of what Javascript Objects are, you can start playing around with some code.
 
-  <!-- SGEN:META:PROGRESS:task=Explore the examples on 'Objects' section -->
   Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_objects/`
+  - `lenses2 curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
 
   or just:
 
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_objects/`
+  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
   - `lenses2`
+
+  You should focus and study the following modules (included within `9-multiple-interactions/`):
+
+  - **1-isolate**
 
 ### Summary
 
 ### Exercises
 
-### Extra Resources
+  <!-- SGEN:META:PROGRESS:task=Complete the exercises found inside the '1-isolate' module -->
 
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+### Extra Resources
 
 ### Sources and Attributions
