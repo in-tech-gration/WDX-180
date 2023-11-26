@@ -24,7 +24,7 @@ title: Week 08 | JavaScript Core 2
 
   </h2>
 
-  <span>Updated: 24/11/2023</span>
+  <span>Updated: 26/11/2023</span>
 
   <h2 class="week-controls__next_week">
 

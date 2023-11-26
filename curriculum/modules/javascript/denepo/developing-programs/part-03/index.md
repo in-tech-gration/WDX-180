@@ -1,5 +1,18 @@
 ---
 title: Developing Programs - Part 3
+content:
+  - source: DeNepo Welcome to JS
+    URL: "https://github.com/in-tech-gration/welcome-to-js/"
+  - modules:
+    - title: Developing Programs
+      URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs
+      modules:
+        - title: From Spec
+          URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs/6-from-spec
+        - title: Reverse Engineering
+          URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs/7-reverse-engineering
+        - title: Imagining Programs
+          URL: https://github.com/in-tech-gration/welcome-to-js/tree/main/4-developing-programs/8-imagining-programs
 ---
 
 ### Schedule
