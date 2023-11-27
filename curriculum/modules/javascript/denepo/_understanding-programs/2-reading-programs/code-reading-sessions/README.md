@@ -7,6 +7,14 @@ divided them into [basic](./basic.md?--defaults) and [advanced](./advanced.md?--
 that have been running for a while, and especially work well when doing a second
 code club using the same code snippet.
 
+**Tools and Resources**
+
+- [Annotation Tool](https://annotate.codereading.club/#/)
+  - Use the annotation tool to import files from GitHub and hightlight parts of the code. Hightlighted areas can be linked with arrows to make connections, and individual lines of code can be marked.
+
+- [PDF Maker](https://pdf.codereading.club/)
+  - Convert code from GitHub to PDFs for printing, ready to use in in-person code reading sessions.
+
 ---
 
 > adapted from
