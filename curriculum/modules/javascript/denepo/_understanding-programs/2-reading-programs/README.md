@@ -30,11 +30,11 @@ Additionally, you can watch the [following video](https://www.youtube.com/watch?
 
 ---
 
-## Code Reading Session
+## Code Reading Sessions
 
   Reading code is like a nice sunny day, best enjoyed with friends. 
 
-  <!-- Try following this code-reading [Session Agenda](./session-agenda.md) to give some structure to your study time. -->
+  Try following the **code-reading-sessions** agenda to give some structure to your study time.
 
 ---
 
