@@ -863,8 +863,7 @@ load_script_js_via_src:
 
   Then the following commands on your local copy of the `WDX-180` repo:
 
-  - `cd curriculum/week06/exercises/exploring-study-lenses`
-  - `lenses2`
+  - `lenses2 curriculum/week06/exercises/exploring-study-lenses`
 
   Once the `study-lenses` is up and running on your browser, click on the **README.md** link to open up the slides. Browse through the slides _(using the left and right arrow keys on your keyboard or just by pressing space)_, click on the **load** buttons to load the file and follow the study guide on each of them.
 

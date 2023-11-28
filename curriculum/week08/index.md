@@ -70,11 +70,6 @@ title: Week 08 | JavaScript Core 2
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_understanding-programs/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_understanding-programs/`
-  - `lenses2`
-
   Now it's time to go through the material. For this Module you will only need to go through the following sections:
 
   - **0-let-vs-const**
@@ -161,11 +156,6 @@ title: Week 08 | JavaScript Core 2
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_developing-programs/`
-
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_developing-programs/`
-  - `lenses2`
 
   Now it's time to go through the material. For this Module you will only need to go through the following sections:
 

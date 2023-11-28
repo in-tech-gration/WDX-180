@@ -27,11 +27,6 @@ title: Arrays Part 1
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
-  - `lenses2`
-
   You should focus and study the following modules (included within `7-arrays/`):
 
   - **1-isolate**

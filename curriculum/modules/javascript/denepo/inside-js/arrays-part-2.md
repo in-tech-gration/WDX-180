@@ -15,11 +15,6 @@ title: Arrays Part 2
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/8-functional-array-methods/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/8-functional-array-methods/`
-  - `lenses2`
-
   You should focus and study the following modules (included within `8-functional-array-methods/`):
 
   - **1-isolate**

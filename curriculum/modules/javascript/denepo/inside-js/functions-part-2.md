@@ -15,11 +15,6 @@ title: Functions Part 2
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/6-using-functions/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/6-using-functions/`
-  - `lenses2`
-
   You should focus and study the following modules (included within `6-using-functions/`):
 
   - **1-calling-functions**

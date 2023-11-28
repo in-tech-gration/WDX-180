@@ -3,7 +3,7 @@
 You should think of source code _first_ as a letter to the next developer,
 _second_ as a user experience, and _third_ as instructions for the computer.
 
-All of the programs in this folder are variations of the Cat Detector with small
+All of the programs in this folder are variations of the `Cat Detector` (_found under `_just-enough-javascript/13-while-loops/06-translate/cat-detector.js`_) with small
 changes so you can explore how each change effect different audiences.
 
 ## The Developer

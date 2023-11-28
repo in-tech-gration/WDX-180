@@ -89,11 +89,6 @@ title: Week 07 | JavaScript Core 1
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
-  - `lenses2`
-
   Here's a basic methodology for going through the material:
 
   - 1) Read the related material and explore any external resources

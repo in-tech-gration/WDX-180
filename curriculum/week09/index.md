@@ -82,11 +82,6 @@ title: Week 09 | JavaScript Core 3
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/3-functions/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/3-functions/`
-  - `lenses2`
-
   You should focus and study the following modules (included within `3-functions/`):
 
   - **1-functions**
@@ -129,11 +124,6 @@ title: Week 09 | JavaScript Core 3
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/6-using-functions/`
-
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/6-using-functions/`
-  - `lenses2`
 
   You should focus and study the following modules (included within `6-using-functions/`):
 
@@ -191,11 +181,6 @@ title: Week 09 | JavaScript Core 3
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
 
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
-  - `lenses2`
-
   You should focus and study the following modules (included within `7-arrays/`):
 
   - **1-isolate**
@@ -233,11 +218,6 @@ title: Week 09 | JavaScript Core 3
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/8-functional-array-methods/`
-
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/8-functional-array-methods/`
-  - `lenses2`
 
   You should focus and study the following modules (included within `8-functional-array-methods/`):
 
@@ -295,11 +275,6 @@ title: Week 09 | JavaScript Core 3
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
-
-  or just:
-
-  - `cd WDX-180/curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
-  - `lenses2`
 
   You should focus and study the following modules (included within `9-multiple-interactions/`):
 
