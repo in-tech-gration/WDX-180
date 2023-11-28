@@ -10,6 +10,9 @@ title: Introduction to the DOM API
 
 ### Study Plan
 
+  > "The making of good software takes time.
+  > If you try to make it take less time, it will take more time."
+
   - [Watch: **HTML vs DOM? Let’s debug them**](https://www.youtube.com/watch?v=J-02VNxE7lE) to understand the basic difference between these two very crucial concepts in Web Development and start building an intuition around the Document Object Model (DOM).
     - **Duration:** 5min
     - **Level:** Beginner
