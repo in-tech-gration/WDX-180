@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Cheatsheet</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Roboto | Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <style>* { font-family: 'Roboto', sans-serif;  }</style>
+</head>
+<body>
+
+  <!-- Original idea by @yoksel: http://yoksel.github.io/flex-cheatsheet/ -->
+
+  <h1 class="visually-hidden">Flexbox Cheat Sheet</h1>
+  <div class="l-wrapper">
+
+      <main class="l-main"></main>
+      <aside class="l-aside"></aside>
+
+  </div>
+
+  <div class="hidden-content">
+      <div class="demo-wrapper">
+          <div class="demo">
+              <div class="demo__view">
+                <div class="parent">
+                    <div class="child"></div>
+                    <div class="child"></div>
+                    <div class="child child--featured"></div>
+                    <div class="child"></div>
+                </div>
+              </div>
+
+              <div class="demo__code" contenteditable=true spellcheck="false"></div>
+          </div>
+      </div>
+
+  </div>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- JS CSS Parser | https://github.com/therealglazou/jscssp -->
+  <script src="./js/libs/jscssp/cssParser.js"></script>
+  <script>
+
+    function injectStylesheet(cssContent){
+
+      removeInjectedStylesheet();
+  
+      var head   = document.head || document.getElementsByTagName('head')[0];
+      var style  = document.createElement('style');
+      style.type = 'text/css';
+      style.id = "injected_stylesheet";
+
+      if ( style.styleSheet ){
+        style.styleSheet.cssText = cssContent;
+      } else {
+        style.appendChild(document.createTextNode(cssContent));
+      }
+
+      head.appendChild( style );
+
+    }
+
+    Array.from( document.querySelectorAll(".demo__code") ).map(($demoCode)=>{
+
+      $demoCode.addEventListener("blur", function(e){
+
+        var source     = this.textContent;
+        var parser     = new CSSParser();
+        var sheet      = parser.parse(source, false, true);
+        var rand = "__" + Math.floor(Math.random() * 1000000);
+
+        sheet.cssRules.map((cssRule)=>{
+
+          cssRule.mSelectorText = "." + rand + " " + cssRule.mSelectorText;
+
+        });
+
+        var textResult = sheet.cssText()
+        var $demoView = this.previousElementSibling;
+        $demoView.classList.add(rand);
+        injectStylesheet(textResult);
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
