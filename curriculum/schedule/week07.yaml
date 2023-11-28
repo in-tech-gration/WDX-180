@@ -22,6 +22,9 @@ schedule:
 
 # ---
 
+# TODO: Programming Quote: ""Both writing and programming can be described as the translation of a high-level idea into low level sentences or statements."
+# Felienne Hermans & Marlies Aldewereld
+
 # Day 01: Q: "anybody installed lenses2? im stuck at installing."
 # A: "its done ok after npm install and not npm i. I also deleted the folders and did it from the start."
 # >> Q: "are we going to use checkout main to return to main or stay on branch lenses2?"
