@@ -4,8 +4,8 @@ title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media"
 schedule: 
   days:
     1: # Promises
-      # file://./../modules/javascript/web_apis/dom/
-      module: javascript/web_apis/
+      # file://./../modules/javascript/core/json/intro/index.md
+      module: javascript/core/json/intro/
     2: # Fetch API
       # file://./../modules/javascript/web_apis/dom/
       module: javascript/web_apis/
