@@ -179,34 +179,44 @@ title: DOM Manipulation - Part 03
 
 ### Summary
 
-  🌕 You are so special, you are progressing everyday. Now, you knew how to destroy a created DOM element when it is needed. You learned DOM and now you have the capability to build and develop applications. You are left with only eight days to your way to greatness. Now do some exercises for your brain and for your muscle.
+  Now, you know how to destroy a created DOM element when it is needed. You learned DOM and now you have the capability to build and develop applications. Now do some exercises for your brain and for your muscle.
 
 
 ### Exercises
 
-  <!-- TODO: Finish exercises -->
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Simple Manipulation - Part 01'|user_folder=dom_manipulation_part_01 -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Simple Manipulation - Part 01'|type=exist|user_folder=dom_manipulation_part_01|files=simple-manipulation.html,script.js -->
-  ### Exercises: Level 1
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Number Generator'|user_folder=number_generator -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Number Generator'|type=exist|user_folder=number_generator|files=index.html,script.js -->
+  ###  Number Generator
 
-  1. Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div. 
+  In this exercise, we want you to copy [index.html](./exercises/number_generator/index.html) and [script.js](./exercises/number_generator/script.js) and complete the tasks found below:
+  
+  1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
+  2. Append style to each number as described below:
     - Even numbers background is green
     - Odd numbers background is yellow
     - Prime numbers background is red
+  
+  The expected output should be as shown in the image below. 
 
   ![Number Generator](./assets/number_generators.png)
 
-  ### Exercises: Level 2
+  ### Countries List
 
-  1. Use the countries array to display all the countries.See the design
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Countries List'|user_folder=countries_list -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Countries List'|type=exist|user_folder=countries_list|files=index.html,script.js -->
+  In this exercise, we want you to copy [countries.js](./exercises/countries_list/countries.js) and [index.html](./exercises/countries_list/index.html) and use the countries array provided to display **dynamically** all countries as shown in the image below:
 
   ![World Countries List](./assets/countries_list.png)
 
-  ### Exercises: Level 3
+  ### Asabeneh's Challenge
 
-  Check the requirement of this project from both images(jpg and gif). All the data and CSS has been implemented using JavaScript only. The data is found on starter folder project_3. The drop down button has been created using [*details*](https://www.w3schools.com/tags/tag_details.asp){:target="_blank"} HTML element.
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Asabeneh's Challenge'|user_folder=asabeneh_challenge -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Asabeneh's Challenge'|type=exist|user_folder=asabeneh_challenge|files=index.html,script.js -->
+  In this exercise, we want you to copy [script.js](./exercises/asabeneh_challenge/script.js) and [index.html](./exercises/asabeneh_challenge/index.html) and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
 
   ![Challenge Information](./assets/dom_mini_project_challenge_info_day_2.3.gif)
+
+  > Note: The drop down button has been created using [*details*](https://www.w3schools.com/tags/tag_details.asp){:target="_blank"} HTML element.
 
 ### Extra Resources
 
@@ -217,3 +227,5 @@ title: DOM Manipulation - Part 03
   **Content is based on the following sources:**
 
   - [30 Days Of JavaScript: Document Object Model(DOM)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/22_Day_Manipulating_DOM_object/22_day_manipulating_DOM_object.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/22_Day_Manipulating_DOM_object/22_day_manipulating_DOM_object.md){:target="_blank"}
+
+  Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
