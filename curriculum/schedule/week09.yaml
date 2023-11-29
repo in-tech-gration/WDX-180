@@ -4,20 +4,20 @@ title: JavaScript Core 3
 schedule: 
   days:
     1: # Functions 1
-      # file://./../modules/javascript/denepo/inside-js/functions-part-1.md
-      module: javascript/denepo/inside-js/functions-part-1.md
+      # file://./../modules/javascript/core/functions/inside-js/functions-part-1.md
+      module: javascript/core/functions/inside-js/functions-part-1.md
     2: # Functions 2
-      # file://./../modules/javascript/denepo/inside-js/functions-part-2.md
-      module: javascript/denepo/inside-js/functions-part-2.md
+      # file://./../modules/javascript/core/functions/inside-js/functions-part-2.md
+      module: javascript/core/functions/inside-js/functions-part-2.md
     3: # Arrays 1
-      # file://./../modules/javascript/denepo/inside-js/arrays-part-1.md
-      module: javascript/denepo/inside-js/arrays-part-1.md
+      # file://./../modules/javascript/core/arrays/inside-js/arrays-part-1.md
+      module: javascript/core/arrays/inside-js/arrays-part-1.md
     4: # Arrays 2
-      # file://./../modules/javascript/denepo/inside-js/arrays-part-2.md
-      module: javascript/denepo/inside-js/arrays-part-2.md
+      # file://./../modules/javascript/core/arrays/inside-js/arrays-part-2.md
+      module: javascript/core/arrays/inside-js/arrays-part-2.md
     5: # Objects 1
-      # file://./../modules/javascript/denepo/inside-js/objects-part-1.md
-      module: javascript/denepo/inside-js/objects-part-1.md
+      # file://./../modules/javascript/core/objects/inside-js/objects-part-1.md
+      module: javascript/core/objects/inside-js/objects-part-1.md
 
 # ---
 
