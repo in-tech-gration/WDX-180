@@ -1,0 +1,3 @@
+[submodule "curriculum/modules/javascript/denepo/inside-js"]
+	path = curriculum/modules/javascript/denepo/inside-js
+	url = git@github.com:in-tech-gration/inside-js.git
