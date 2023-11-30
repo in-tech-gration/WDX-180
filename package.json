@@ -15,6 +15,7 @@
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
     "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/",
+    "update:submodules" : "git submodule update --recursive --remote",
     
     "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
     "DEPRECATED_wordpress": "echo 'coming soon...'",
