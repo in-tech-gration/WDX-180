@@ -27,7 +27,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 24/11/2023</span>
+  <span>Updated: 30/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -314,7 +314,12 @@ load_script_js_via_src:
 
   **Installing Study Lenses**
 
-  1. Follow the steps described below to install `study-lenses` globally on your machine:
+  1. Run the following commands in your terminal while inside the root folder of your forked `WDX-180` repository:
+
+  - `git submodule init`
+  - `npm run update:submodules`
+
+  2. Follow the steps described below to install `study-lenses` globally on your machine:
 
   
   **Setting up Study Lenses (v2) on your System**

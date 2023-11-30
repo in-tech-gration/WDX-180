@@ -96,7 +96,12 @@ title: What is Programming?
 
   **Installing Study Lenses**
 
-  1. Follow the steps described below to install `study-lenses` globally on your machine:
+  1. Run the following commands in your terminal while inside the root folder of your forked `WDX-180` repository:
+
+  - `git submodule init`
+  - `npm run update:submodules`
+
+  2. Follow the steps described below to install `study-lenses` globally on your machine:
 
   {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
 
