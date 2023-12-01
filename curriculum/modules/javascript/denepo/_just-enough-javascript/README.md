@@ -9,7 +9,7 @@ and interact with users. Why just enough, and not a little more? Because reading
 and understanding program logic is more important than JavaScript, so why let
 the code get in the way?
 
-In this directory is is all the JavaScript you will find in this module's
+In this directory is all the JavaScript you will find in this module's
 examples and exercises. Don't be mistaken, there's a lot you can do with only
 this!
 
