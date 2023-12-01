@@ -44,3 +44,8 @@ schedule:
     5: # Web Performance & CSS Pre-processors
       # file://./../modules/css/performance/web_performance/index.md
       module: css/performance/web_performance
+
+# ---
+
+# STUDY: https://arrayexplorer.netlify.app/
+# ??? node validate
