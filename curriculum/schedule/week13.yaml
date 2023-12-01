@@ -35,3 +35,9 @@ schedule:
 
 # JavaScript: Don’t Reassign Your Function Arguments
 # https://spin.atomicobject.com/2011/04/10/javascript-don-t-reassign-your-function-arguments/
+
+# Prototype:
+# > https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
+# > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+# > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+# > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype

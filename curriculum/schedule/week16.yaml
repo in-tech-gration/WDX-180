@@ -27,3 +27,8 @@ schedule:
     5: # 
       # file://./../modules/javascript/
       module: javascript/
+
+# ---
+# Canvas:   > Mary Live Codes A JavaScript Game From Scratch – Mary Rose Cook / Front-Trends 2014
+  # > https://www.youtube.com/watch?v=hbKN-9o5_Z0
+  # > Prereq: Prototype, Canvas, IIFE, events, onevent, etc.
