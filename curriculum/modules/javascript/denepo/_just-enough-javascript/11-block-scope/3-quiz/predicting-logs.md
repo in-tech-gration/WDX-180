@@ -60,7 +60,7 @@ The assignment on line 7 is inside a block scope, but is accessing a variable
 declared in the outer scope. This means that the new value will still be
 available after the scope has closed.
 
-Line 8 and line 11 will both log `"cat"` because a new value was never assigned
+Line 8 and line 11 will both log `"dog"` because a new value was never assigned
 between those lines.
 
 </details>
