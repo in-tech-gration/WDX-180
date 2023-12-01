@@ -2783,6 +2783,29 @@
         "channel_title": "in-tech-gration",
         "thumbnail_url": "https://i.ytimg.com/vi/rj2R5oy8xIw/sddefault.jpg"
       }
+    },
+    "quokka-the-javascript-scratchpad": {
+      "type": "YouTube",
+      "duration": 688,
+      "title": "Quokka | The JavaScript Scratchpad",
+      "date": "08/03/2021",
+      "youtube": {
+        "id": "f_sEWa5hA0Q",
+        "channel_id": "UC29ju8bIPH5as8OGnQzwJyA",
+        "channel_title": "Traversy Media",
+        "thumbnail_url": "https://i.ytimg.com/vi/f_sEWa5hA0Q/sddefault.jpg"
+      },
+      "tags": [
+        "quokka",
+        "quokka.js",
+        "javascript",
+        "vscode",
+        "vs code",
+        "vscode extensions"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
