@@ -19,3 +19,7 @@ schedule:
     5: # DOM Project?
       # file://./../modules/javascript/web_apis/dom//index.md
       module: javascript/web_apis/dom/
+
+# --
+
+# onevent="" vs .onevent vs addEventListener
