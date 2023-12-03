@@ -25,3 +25,12 @@ schedule:
 # https://marketplace.visualstudio.com/items?itemName=Alexey-Strakh.stackoverflow-search
 # https://marketplace.visualstudio.com/items?itemName=kameshkotwani.bing-search
 # https://marketplace.visualstudio.com/items?itemName=kameshkotwani.google-search
+
+## Day 1 | Bookmarklets, ...
+# STUDY: https://github.com/shystruk/search-bookmarklet
+# STUDY: Unpacking and studying the code of third-party Chrome Extensions:
+# https://www.maketecheasier.com/download-save-chrome-extension/
+# https://techpp.com/2022/08/22/how-to-download-and-save-chrome-extension-as-crx/
+# SUCCESS! https://crxextractor.com/
+
+# Poor man's dark mode: * { filter: invert() } turned into a Bookmarklet!
