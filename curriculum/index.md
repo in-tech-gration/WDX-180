@@ -34,7 +34,7 @@
   - [**Week 06**: CSS Frameworks & Intro to Programming](week06/index.md)
   - [**Week 07**: JavaScript Core 1](week07/index.md)
   - [**Week 08**: JavaScript Core 2](week08/index.md)
-  - [**Week 09**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 09**: JavaScript Core 3](week09/index.md)
   - [**Week 10**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 11**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media](#) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 12**: Project Week: Combine Web APIs to build a shopping cart](#) _(🔒 Stay tuned! This module is on the way.)_

@@ -34,6 +34,7 @@ Syllabus:
           open: true
         9: # file:///./schedule/week09.yaml (04/12/2023 - 08/12/2023)
           title: "JavaScript Core 3"
+          open: true
         10: # file:///./schedule/week10.yaml (11/12/2023 - 15/12/2023)
           title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
