@@ -4,8 +4,8 @@ title: JavaScript Core 3
 schedule: 
   days:
     1: # Functions 1
-      # file://./../modules/javascript/core/functions/inside-js/functions-part-1.md
-      module: javascript/core/functions/inside-js/functions-part-1.md
+      # file://./../modules/javascript/core/functions/inside-js/functions-part-1/index.md
+      module: javascript/core/functions/inside-js/functions-part-1
     2: # Functions 2
       # file://./../modules/javascript/core/functions/inside-js/functions-part-2.md
       module: javascript/core/functions/inside-js/functions-part-2.md

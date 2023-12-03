@@ -34,3 +34,11 @@ schedule:
 # SUCCESS! https://crxextractor.com/
 
 # Poor man's dark mode: * { filter: invert() } turned into a Bookmarklet!
+
+# Node.js CLI and Logic exercise (process.argv)
+# Make sure that you handle all the following cases:
+# - node mytool file.jpeg
+# - node mytool file.jpeg --debug
+# - node mytool file.jpeg -d
+# - node mytool --debug file.jpeg
+# - node mytool -d file.jpeg
