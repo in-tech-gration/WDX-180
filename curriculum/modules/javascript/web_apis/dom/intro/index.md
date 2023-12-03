@@ -27,6 +27,13 @@ title: Introduction to the DOM API
     - **Duration:** 85min
     - **Level:** Intermediate
 
+  - Now Let's use the `study-lenses` tool to study "Just enough DOM":
+
+    - Sync your forked WDX-180 repo
+    - `git pull`
+    - `???`
+    - `lenses2 curriculum/modules/javascript/denepo/inside-js/02-just-enough-dom`
+
 ### Summary
 
 ### Exercises
