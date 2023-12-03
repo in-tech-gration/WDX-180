@@ -63,3 +63,5 @@ schedule:
 # Src: https://sahadar.github.io/pubsub/
 
 # Exercise: Build a Loader that publishes the loading state to 3 UI components
+
+# > STUDY: Higher Order Functions Practice: https://github.com/lpmi-13/higher-order-functions/tree/main
