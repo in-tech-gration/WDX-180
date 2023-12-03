@@ -6,6 +6,12 @@ title: Introduction to AI, Machine Learning & Tensorflow.js
 
 _(Updated: 25/09/2023)_
 
+<<<<<<< Updated upstream
+=======
+Use TF.js to solve the preliminary questions:
+- What comes next in the sequence: 2,4,6,8,..?
+- Identify the missing number in this sequence: 5,10,15,__,25
+>>>>>>> Stashed changes
 
 <!-- Week 32 - Day 1 | ... -->
 <details markdown="1">
