@@ -16,6 +16,10 @@ title: Functions Part 1
 
   Pretty much anytime you make use of a JavaScript structure that features a pair of parentheses — () — and you're not using a common built-in language structure like a for loop, while or do...while loop, or if...else statement, you are making use of a function.
 
+  ---
+  {{SGEN:MODULE:javascript/misc/quokka-extension.md}}
+  ---
+
   > The examples and exercises in this repository all use () => {} (arrow functions), while many resources online cover function functions. Why? Because arrow functions are simpler to study in the debugger. That's all you need to know for now!
 
   <!-- SGEN:META:PROGRESS:task=Watch the 'JavaScript Functions In 90 Seconds' video -->
