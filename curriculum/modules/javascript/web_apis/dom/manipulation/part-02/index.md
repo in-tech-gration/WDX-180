@@ -10,15 +10,15 @@ title: DOM Manipulation - Part 02
 
 ### Study Plan
 
-  ## Document Object Model (DOM) Manipulation - Part 02
+  **Document Object Model (DOM) Manipulation - Part 02**
 
   Picking up where we left of in **Part 01**, below there are more ways on how you can manipulate an HTML document using JavaScript!
 
-  ### Adding Text to HTML element
+  **Adding Text to HTML element**
 
   An HTML is a build block of an opening tag, a closing tag and a text content. We can add a text content using the property _textContent_ or \*innerHTML.
 
-  #### Adding Text content using textContent
+  **Adding Text content using textContent**
 
   The _textContent_ property is used to add text to an HTML element.
 
@@ -27,11 +27,11 @@ title: DOM Manipulation - Part 02
   titles[3].textContent = 'Fourth Title'
   ```
 
-  #### Adding Text Content using innerHTML
+  **Adding Text Content using innerHTML**
 
   Most people get confused between _textContent_ and _innerHTML_. _textContent_ is meant to add text to an HTML element, however innerHTML can add a text or HTML element or elements as a child.
 
-  ##### Text Content
+  **Text Content**
 
   We assign *textContent* HTML object property to a text
 
@@ -40,7 +40,7 @@ title: DOM Manipulation - Part 02
   titles[3].textContent = 'Fourth Title'
   ```
 
-  ##### Inner HTML
+  **Inner HTML**
 
   We use innerHTML property when we like to replace or a completely new children content to a parent element.
   It value we assign is going to be a string of HTML elements.
@@ -103,9 +103,9 @@ title: DOM Manipulation - Part 02
   </html>
   ```
 
-  ### Adding style
+  **Adding style**
 
-  #### Adding Style Color
+  **Color**
 
   Let us add some style to our titles. If the element has even index we give it green color else red.
 
@@ -121,7 +121,7 @@ title: DOM Manipulation - Part 02
   })
   ```
 
-  #### Adding Style Background Color
+  **Background Color**
 
   Let us add some style to our titles. If the element has even index we give it green color else red.
 
@@ -137,7 +137,7 @@ title: DOM Manipulation - Part 02
   })
   ```
 
-  #### Adding Style Font Size
+  **Font Size**
 
   Let us add some style to our titles. If the element has even index we give it 20px else 30px
 
@@ -161,7 +161,8 @@ title: DOM Manipulation - Part 02
 
 ### Exercises
 
-  ### Simple Manipulation - Part 02
+  **Simple Manipulation - Part 02**
+  
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Simple Manipulation - Part 02'|user_folder=dom_manipulation_part_02 -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Simple Manipulation - Part 02'|type=exist|user_folder=dom_manipulation_part_02|files=simple-manipulation.html,script.js -->
   In this exercise, we want you to copy the files you've submitted for the exercise from Part 01, and complete the task found below:
@@ -174,7 +175,8 @@ title: DOM Manipulation - Part 02
   4. Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
   5. Set text content, id and class to each paragraph
 
-  ### DOM Mini Project
+  **DOM Mini Project**
+
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'DOM Mini Project'|user_folder=dom_mini_project -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'DOM Mini Project'|type=exist|user_folder=dom_mini_project|files=index.html,script.js -->
   In this exercise, we want you to copy [script.js](./exercises/dom_mini_project/script.js) and [index.html](./exercises/dom_mini_project/index.html) and complete the tasks found below. Apply all the styles and functionality using JavaScript only.

@@ -10,9 +10,9 @@ title: DOM Manipulation - Part 03
 
 ### Study Plan
 
-  ## Document Object Model (DOM) Manipulation - Part 03
+  **Document Object Model (DOM) Manipulation - Part 03**
 
-  ### Creating an Element
+  **Creating an Element**
 
   To create an HTML element we use tag name. Creating an HTML element using JavaScript is very simple and straight forward. We use the method _document.createElement()_. The method takes an HTML element tag name as a string parameter.
 
@@ -44,7 +44,7 @@ title: DOM Manipulation - Part 03
   </html>
   ```
 
-  ### Creating elements
+  **Creating elements**
 
   To create multiple elements we should use loop. Using loop we can create as many HTML elements as we want.
   After we create the element we can assign value to the different properties of the HTML object.
@@ -74,7 +74,7 @@ title: DOM Manipulation - Part 03
   </html>
   ```
 
-  ### Appending child to a parent element
+  **Appending child to a parent element**
 
   To see a created element on the HTML document we should append it to the parent as a child element. We can access the HTML document body using *document.body*. The *document.body* support the *appendChild()* method. See the example below.
 
@@ -103,7 +103,7 @@ title: DOM Manipulation - Part 03
   </html>
   ```
 
-  ### Removing a child element from a parent node
+  **Removing a child element from a parent node**
 
   After creating an HTML, we may want to remove element or elements and we can use the *removeChild()* method.
 
@@ -184,10 +184,10 @@ title: DOM Manipulation - Part 03
 
 ### Exercises
 
+  **Number Generator**
+
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Number Generator'|user_folder=number_generator -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Number Generator'|type=exist|user_folder=number_generator|files=index.html,script.js -->
-  ###  Number Generator
-
   In this exercise, we want you to copy [index.html](./exercises/number_generator/index.html) and [script.js](./exercises/number_generator/script.js) and complete the tasks found below:
   
   1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
@@ -200,7 +200,7 @@ title: DOM Manipulation - Part 03
 
   ![Number Generator](./assets/number_generators.png)
 
-  ### Countries List
+  **Countries List**
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Countries List'|user_folder=countries_list -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Countries List'|type=exist|user_folder=countries_list|files=index.html,script.js -->
@@ -208,7 +208,7 @@ title: DOM Manipulation - Part 03
 
   ![World Countries List](./assets/countries_list.png)
 
-  ### Asabeneh's Challenge
+  **Asabeneh's Challenge**
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Asabeneh's Challenge'|user_folder=asabeneh_challenge -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Asabeneh's Challenge'|type=exist|user_folder=asabeneh_challenge|files=index.html,script.js -->

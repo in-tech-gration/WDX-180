@@ -10,11 +10,11 @@ title: DOM Manipulation - Part 01
 
 ### Study Plan
 
-  ## Document Object Model (DOM) Manipulation - Part 01
+  **Document Object Model (DOM) Manipulation - Part 01**
 
   HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript. Check the examples below. Selecting HTML element using JavaScript is similar to selecting using CSS. To select an HTML element, we use tag name, id, class name or other attributes.
 
-  ### Getting Element
+  **Getting Element**
 
   We can access already created element or elements using JavaScript. To access or get elements we use different methods. The code below has four _h1_ elements. Let us see the different methods to access the _h1_ elements.
 
@@ -35,7 +35,7 @@ title: DOM Manipulation - Part 01
     </html>
   ```
 
-  #### Getting elements by tag name
+  **Getting elements by tag name**
 
   **_getElementsByTagName()_**:takes a tag name as a string parameter and this method returns an HTMLCollection object. An HTMLCollection is an array like object of HTML elements. The length property provides the size of the collection. Whenever we use this method we access the individual elements using index or after loop through each individual items. An HTMLCollection does not support all array methods therefore we should use regular for loop instead of forEach.
 
@@ -55,7 +55,7 @@ title: DOM Manipulation - Part 01
   }
   ```
 
-  #### Getting elements by class name
+ **Getting elements by class name**
 
   **_getElementsByClassName()_** method returns an HTMLCollection object. An HTMLCollection is an array like list of HTML elements. The length property provides the size of the collection. It is possible to loop through all the HTMLCollection elements. See the example below
 
@@ -75,7 +75,7 @@ title: DOM Manipulation - Part 01
   }
   ```
 
-  #### Getting an element by id
+  **Getting an element by id**
 
   **_getElementsById()_** targets a single HTML element. We pass the id without # as an argument.
 
@@ -89,7 +89,7 @@ title: DOM Manipulation - Part 01
   console.log(firstTitle) // <h1>First Title</h1>
   ```
 
-  #### Getting elements by using querySelector methods
+  **Getting elements by using querySelector methods**
 
   The _document.querySelector_ method can select an HTML or HTML elements by tag name, by id or by class name.
 
@@ -115,7 +115,7 @@ title: DOM Manipulation - Part 01
   const allTitles = document.querySelectorAll('.title') // the same goes for selecting using class
   ```
 
-  ### Adding attribute
+  **Adding attribute**
 
   An attribute is added in the opening tag of HTML which gives additional information about the element. Common HTML attributes: id, class, src, style, href,disabled, title, alt. Lets add id and class for the fourth title.
 
@@ -125,7 +125,7 @@ title: DOM Manipulation - Part 01
   titles[3].id = 'fourth-title'
   ```
 
-  #### Adding attribute using setAttribute
+  **Adding attribute using setAttribute**
 
   The **_setAttribute()_** method set any html attribute. It takes two parameters the type of the attribute and the name of the attribute.
   Let's add class and id attribute for the fourth title.
@@ -136,7 +136,7 @@ title: DOM Manipulation - Part 01
   titles[3].setAttribute('id', 'fourth-title')
   ```
 
-  #### Adding attribute without setAttribute
+  **Adding attribute without setAttribute**
 
   We can use normal object setting method to set an attribute but this can not work for all elements. Some attributes are DOM object property and they can be set directly. For instance id and class
 
@@ -146,7 +146,7 @@ title: DOM Manipulation - Part 01
   titles[3].id = 'fourth-title'
   ```
 
-  #### Adding class using classList
+  **Adding class using classList**
 
   The class list method is a good method to append additional class. It does not override the original class if a class exists rather it adds additional class for the element.
 
@@ -155,7 +155,7 @@ title: DOM Manipulation - Part 01
   titles[3].classList.add('title', 'header-title')
   ```
 
-  #### Removing class using remove
+  **Removing class using remove**
 
   Similar to adding we can also remove class from an element. We can remove a specific class from an element.
 
@@ -170,7 +170,8 @@ title: DOM Manipulation - Part 01
 
 ### Exercises
 
-  ### Simple Manipulation - Part 01
+  **Simple Manipulation - Part 01**
+  
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Simple Manipulation - Part 01'|user_folder=dom_manipulation_part_01 -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Simple Manipulation - Part 01'|type=exist|user_folder=dom_manipulation_part_01|files=simple-manipulation.html,script.js -->
   In this exercise, we want you to copy and paste the following code in an HTML file named `simple-manipulation.html` and complete the tasks listed below to a JavaScript file called `script.js`:
