@@ -2,6 +2,8 @@
 title: 30 Days Of JavaScript - Promises
 ---
 
+# Promises and Callbacks
+
 ## Promise
 
 We human give or receive a promise to do some activity at some point in time. If we keep the promise we make others happy but if we do not keep the promise, it may lead discontentment. Promise in JavaScript has something in common with the above examples.

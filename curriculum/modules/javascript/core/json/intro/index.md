@@ -10,7 +10,8 @@ title: Introduction to JSON
 
 ### Study Plan
 
-- [Read: **Introduction to JSON**](../30-days-of-javascript/index.md){:target="_blank"}
+<!-- TODO: Keep this structure and create SGEN feature for link creation of units/modules -->
+- [Read: **Introduction to JSON**](../modules/javascript/core/json/30-days-of-javascript/){:target="_blank"}
 
 ### Summary
 

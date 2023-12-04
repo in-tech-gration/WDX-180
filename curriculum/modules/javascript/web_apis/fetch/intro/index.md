@@ -10,7 +10,8 @@ title: Introduction to Fetch API
 
 ### Study Plan
 
-{{ SGEN:MODULE:javascript/web_apis/fetch/30-days-of-javascript/index.md }}
+<!-- TODO: Keep this structure and create SGEN feature for link creation of units/modules -->
+- [Read: **Introduction to JSON**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
 
 ### Summary
 
