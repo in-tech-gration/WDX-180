@@ -16,7 +16,8 @@
     "yari:test": "node tools/yari.parser.test.js",
     "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/",
     "update:submodules" : "git submodule update --init --recursive",
-
+    
+    "DEPRECATED_update:submodules" : "git submodule update --init --recursive --remote (--remote will create modifications on the user's local repo)",
     "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
     "DEPRECATED_wordpress": "echo 'coming soon...'",
     "DEPRECATED_gen": "node tools/sgen/sgen curriculum/curriculum.yaml",

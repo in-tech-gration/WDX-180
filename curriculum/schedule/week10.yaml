@@ -16,10 +16,12 @@ schedule:
     4: # DOM Manipulation Part 03
       # file://./../modules/javascript/web_apis/dom/manipulation/part-03/index.md
       module: javascript/web_apis/dom/manipulation/part-03
-    5: # DOM Project?
-      # file://./../modules/javascript/web_apis/dom//index.md
-      module: javascript/web_apis/dom/
+    5: # Events + DOM Project
+      # file://./../modules/javascript/web_apis/events/intro/index.md
+      module: javascript/web_apis/events/intro
+      
 
 # --
 
 # onevent="" vs .onevent vs addEventListener
+# DOM Exercise: Web Scraping your favorite page!
