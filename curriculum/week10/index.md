@@ -793,7 +793,7 @@ title: Week 10 | Web APIs 1: DOM
   <!-- TODO: Review + Add Practice -->
 
 
-  - Watch lessons 8-9* from [**JavaScript DOM Manipulation Mastery: A Comprehensive Guide**](https://www.youtube.com/watch?v=BGkc6dKUZ84){:target="_blank"} and try to replicate as much as you can in your local environment.
+  - Watch lessons 8-9* from [**JavaScript DOM Manipulation Mastery: A Comprehensive Guide**](https://youtu.be/BGkc6dKUZ84?t=3887){:target="_blank"} and try to replicate as much as you can in your local environment.
     - **Duration:** 20min
     - **Level:** Intermediate
 
