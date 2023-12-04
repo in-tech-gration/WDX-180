@@ -1,0 +1,21 @@
+name: "Week 10 - Day 3 Web APIs 1: DOM | Test Exercise: 'Simple Manipulation - Part 02'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week10/exercises/day03/dom_manipulation_part_02/**
+jobs:
+  dom_manipulation_part_02:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Simple Manipulation - Part 02' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week10/exercises/day03/dom_manipulation_part_02/simple-manipulation.html, user/week10/exercises/day03/dom_manipulation_part_02/script.js"
+          fail: true

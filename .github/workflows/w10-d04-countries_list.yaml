@@ -1,0 +1,21 @@
+name: "Week 10 - Day 4 Web APIs 1: DOM | Test Exercise: 'Countries List'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week10/exercises/day04/countries_list/**
+jobs:
+  countries_list:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Countries List' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week10/exercises/day04/countries_list/index.html, user/week10/exercises/day04/countries_list/script.js"
+          fail: true

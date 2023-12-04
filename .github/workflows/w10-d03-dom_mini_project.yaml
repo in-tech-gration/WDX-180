@@ -1,0 +1,21 @@
+name: "Week 10 - Day 3 Web APIs 1: DOM | Test Exercise: 'DOM Mini Project'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week10/exercises/day03/dom_mini_project/**
+jobs:
+  dom_mini_project:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'DOM Mini Project' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week10/exercises/day03/dom_mini_project/index.html, user/week10/exercises/day03/dom_mini_project/script.js"
+          fail: true
