@@ -1,0 +1,6 @@
+[submodule "curriculum/modules/javascript/denepo/welcome-to-javascript"]
+	path = curriculum/modules/javascript/denepo/welcome-to-javascript
+	url = git@github.com:in-tech-gration/welcome-to-javascript.git
+[submodule "curriculum/modules/javascript/denepo/inside-javascript"]
+	path = curriculum/modules/javascript/denepo/inside-javascript
+	url = git@github.com:in-tech-gration/inside-javascript.git
