@@ -62,6 +62,8 @@ title: Week 10 | Web APIs 1: DOM
 
 
 
+  ![](./assets/HTML-to-DOM-Building.gif)
+
   - [Watch: **HTML vs DOM? Let’s debug them**](https://www.youtube.com/watch?v=J-02VNxE7lE){:target="_blank"} to understand the basic difference between these two very crucial concepts in Web Development and start building an intuition around the Document Object Model (DOM).
     - **Duration:** 5min
     - **Level:** Beginner
