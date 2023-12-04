@@ -50,6 +50,7 @@ Syllabus:
         13: # JavaScript Intermediate 1 & Git (08/01/2024 - 12/01/2024)
           # file:///./schedule/week13.yaml
           title: "JavaScript Intermediate 1 & Git"
+          # TODO: ES6
           # Clean Code, Testing, Workflow, Deploying your app
         14: # Functional Programming 1, Templating, JavaScript Frameworks (15/01/2024 - 19/01/204)
           # file:///./schedule/week14.yaml
