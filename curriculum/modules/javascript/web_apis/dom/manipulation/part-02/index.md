@@ -11,7 +11,7 @@ title: DOM Manipulation - Part 02
 ### Study Plan
 
   <!-- SGEN:META:PROGRESS:task=Read 'Document Object Model (DOM) Manipulation - Part 02' -->
-  [Read **Document Object Model (DOM) Manipulation - Part 02**](../modules/javascript/web_apis/dom/manipulation/part-02/index.md){:target="_blank"}
+  [Read **Document Object Model (DOM) Manipulation - Part 02**](../modules/javascript/web_apis/dom/manipulation/part-02/content/index.md){:target="_blank"}
 
 ### Summary
 

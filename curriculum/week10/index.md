@@ -111,7 +111,7 @@ title: Week 10 | Web APIs 1: DOM
 
 ### Study Plan
 
-  [Read: **Document Object Model (DOM) Manipulation - Part 01**](../modules/javascript/web_apis/dom/manipulation/part-01/index.md){:target="_blank"}
+  [Read: **Document Object Model (DOM) Manipulation - Part 01**](../modules/javascript/web_apis/dom/manipulation/part-01/content/index.md){:target="_blank"}
 
 ### Summary
 
@@ -184,7 +184,7 @@ title: Week 10 | Web APIs 1: DOM
 
 ### Study Plan
 
-  [Read **Document Object Model (DOM) Manipulation - Part 02**](../modules/javascript/web_apis/dom/manipulation/part-02/index.md){:target="_blank"}
+  [Read **Document Object Model (DOM) Manipulation - Part 02**](../modules/javascript/web_apis/dom/manipulation/part-02/content/index.md){:target="_blank"}
 
 ### Summary
 
@@ -256,7 +256,7 @@ title: Week 10 | Web APIs 1: DOM
 
 ### Study Plan
 
-  [Read: **Document Object Model (DOM) Manipulation - Part 03**](../modules/javascript/web_apis/dom/manipulation/part-03/index.md){:target="_blank"}
+  [Read: **Document Object Model (DOM) Manipulation - Part 03**](../modules/javascript/web_apis/dom/manipulation/part-03/content/index.md){:target="_blank"}
 
 ### Summary
 
