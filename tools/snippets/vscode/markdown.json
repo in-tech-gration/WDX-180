@@ -1,5 +1,12 @@
 {
-	"WDX:Kramdown target _blank": {
+	"WDX:Study Lenses Installation": {
+		"prefix": "wdx:lenses2",
+		"body": [
+			"https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/"
+		],
+		"description": "JS"
+	},
+  "WDX:Kramdown target _blank": {
     "prefix": "_blank",
     "body": [
       "{:target=\"_blank\"}"

@@ -24,12 +24,12 @@ title: Week 09 | JavaScript Core 3
 
   </h2>
 
-  <span>Updated: 3/12/2023</span>
+  <span>Updated: 5/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
     <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
+    {% if week_num <= 36 %}
 
       {% assign next_week_num = 09 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -188,7 +188,8 @@ title: Week 09 | JavaScript Core 3
 
 ### Study Plan
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2) on your System**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target=
+  }. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/6-using-functions/`
