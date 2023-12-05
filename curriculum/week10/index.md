@@ -1,5 +1,5 @@
 ---
-title: Week 10 | Web APIs 1: DOM
+title: "Week 10 | Web APIs 1: DOM"
 ---
 
 <hr class="mb-0">
