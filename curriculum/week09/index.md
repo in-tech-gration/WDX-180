@@ -24,7 +24,7 @@ title: Week 09 | JavaScript Core 3
 
   </h2>
 
-  <span>Updated: 5/12/2023</span>
+  <span>Updated: 6/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -246,7 +246,7 @@ title: Week 09 | JavaScript Core 3
    - **Level:** Beginner
    - **Captions:** Yes
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2) on your System**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
