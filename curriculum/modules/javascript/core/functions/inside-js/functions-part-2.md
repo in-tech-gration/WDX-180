@@ -23,6 +23,8 @@ title: Functions Part 2
   - **4-reverse-engineering**
   - **5-dom-io**
 
+  {{ SGEN:MODULE:curriculum/do-not-alter-folders-other-than-user.md }}
+
 ### Summary
 
 ### Exercises

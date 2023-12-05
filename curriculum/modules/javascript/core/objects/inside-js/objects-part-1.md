@@ -33,6 +33,8 @@ title: Objects Part 1
 
   - **1-isolate**
 
+  {{ SGEN:MODULE:curriculum/do-not-alter-folders-other-than-user.md }}
+
 ### Summary
 
 ### Exercises

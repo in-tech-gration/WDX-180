@@ -33,6 +33,8 @@ title: Arrays Part 1
   - **2-practice**
   - **3-integrate**
 
+  {{ SGEN:MODULE:curriculum/do-not-alter-folders-other-than-user.md }}
+
 ### Summary
 
 ### Exercises

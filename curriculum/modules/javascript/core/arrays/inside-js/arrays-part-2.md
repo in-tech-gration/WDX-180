@@ -22,6 +22,8 @@ title: Arrays Part 2
   - **3-implicit-return**
   - **4-integrate**
 
+  {{ SGEN:MODULE:curriculum/do-not-alter-folders-other-than-user.md }}
+
 ### Summary
 
 ### Exercises
