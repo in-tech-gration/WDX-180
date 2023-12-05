@@ -10,6 +10,8 @@ schedule:
       # file://./../modules/javascript/web_apis/dom/
       module: javascript/async/promises/intro/
     3: # Fetch API
+      # TODO: Start Module with this: https://www.youtube.com/watch?v=3ySZQXVjCoM (JavaScript Fetch API 👨🏻‍💻 in 1 Minute)
+      # Include: /WDX-180/curriculum/modules/javascript/web_apis/fetch/Fetch.Better.Have.My.Money.jpg :)
       # file://./../modules/javascript/web_apis/dom/
       module: javascript/web_apis/fetch/intro/
     4: # 
