@@ -16,7 +16,9 @@ title: Introduction to Fetch API
 
 ### Exercises
 
-  Copy the [fetch.js](./exercises/fetch.js) file and load it on an HTML file called `fetch.html` and compete all the challenges found inside.
+  **Fetch Basics**
+
+  Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/fetch_basics/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and compete all the challenges found inside the JavaScript file.
 
 ### Extra Resources
 
