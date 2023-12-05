@@ -65,7 +65,9 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API
 
 ### Exercises
 
-  Copy the [json.js](./exercises/json.js) file and load it on an HTML file called `json.html` and compete all the challenges found inside.
+  **JSON Basics**
+
+  Copy the folder `curriculum/week11/exercises/json_basics/` inside folder `user/week11/exercises/day01/` and compete all the challenges found inside the JavaScript file.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d01.csv**
 
@@ -146,7 +148,9 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API
 
 ### Exercises
 
-  Copy the [fetch.js](./exercises/fetch.js) file and load it on an HTML file called `fetch.html` and compete all the challenges found inside.
+  **Fetch Basics**
+
+  Copy the folder `curriculum/week11/exercises/fetch_basics/` inside folder `user/week11/exercises/day03/` and compete all the challenges found inside the JavaScript file.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d03.csv**
 
