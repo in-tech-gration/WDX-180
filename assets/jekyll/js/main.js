@@ -61,4 +61,19 @@ $(function() {
     history.back();
   });
 
+  // DEBUG SOON TO BE RELEASED WEEKS: Shift+MetaKey+Click
+  $(document.body).on("click", e => {
+    try {
+      if (e.shiftKey && e.metaKey) {
+        const match = e.target.href.match(/#week(\d{2})\/.*/);
+        if (match) {
+          e.target.href = e.target.href.replace(/#week(\d{2})\/.*/, `week${match[1]}/`);
+        }
+      }
+      return true;
+    } catch (e) {
+      console.log(e);
+    }
+  });
+
 });
