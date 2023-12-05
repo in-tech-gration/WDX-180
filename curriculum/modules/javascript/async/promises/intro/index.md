@@ -10,8 +10,7 @@ title: Introduction to Promises
 
 ### Study Plan
 
-<!-- TODO: Keep this structure and create SGEN feature for link creation of units/modules -->
-- [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
 
 ### Summary
 

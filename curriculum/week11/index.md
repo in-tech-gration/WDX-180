@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API
 
   </h2>
 
-  <span>Updated: 4/12/2023</span>
+  <span>Updated: 5/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -57,10 +57,7 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API
 
 ### Study Plan
 
-<!-- TODO: Keep this structure and create SGEN feature for link creation of units/modules -->
-
-
-- [Read: **Introduction to JSON**](../modules/javascript/core/json/30-days-of-javascript/){:target="_blank"}
+  - [Read: **Introduction to JSON**](../modules/javascript/core/json/30-days-of-javascript/index.md){:target="_blank"}
 
 ### Summary
 
@@ -106,10 +103,7 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API
 
 ### Study Plan
 
-<!-- TODO: Keep this structure and create SGEN feature for link creation of units/modules -->
-
-
-- [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
 
 <!-- Summary -->
 
@@ -146,10 +140,7 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API
 
 ### Study Plan
 
-<!-- TODO: Keep this structure and create SGEN feature for link creation of units/modules -->
-
-
-- [Read: **Introduction to JSON**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
 
 <!-- Summary -->
 
