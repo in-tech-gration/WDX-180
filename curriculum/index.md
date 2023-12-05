@@ -35,40 +35,40 @@
   - [**Week 07**: JavaScript Core 1](week07/index.md)
   - [**Week 08**: JavaScript Core 2](week08/index.md)
   - [**Week 09**: JavaScript Core 3](week09/index.md)
-  - [**Week 10**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 11**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 12**: Project Week: Combine Web APIs to build a web application](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 10**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#week10/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 11**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media](#week11/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 12**: Project Week: Combine Web APIs to build a web application](#week12/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ### Intermediate: WDX 120°
 
-  - [**Week 13**: JavaScript Intermediate 1 & Git](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 14**: Functional Programming 1, Templating, JavaScript Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 15**: Data Structures & Algorithms](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 18**: Node.js 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 19**: Node.js 2, NoSQL Databases & Docker](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 20**: React 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 21**: React 2, Firebase](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 22**: React 3, Redux & Tech Interview](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 23**: Group Project, Tech Interview & Job Hunt](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 24**: Group Project](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 13**: JavaScript Intermediate 1 & Git](#week13/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 14**: Functional Programming 1, Templating, JavaScript Frameworks](#week14/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 15**: Data Structures & Algorithms](#week15/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#week16/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 18**: Node.js 1](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 19**: Node.js 2, NoSQL Databases & Docker](#week19/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 20**: React 1](#week20/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 21**: React 2, Firebase](#week21/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 22**: React 3, Redux & Tech Interview](#week22/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 23**: Group Project, Tech Interview & Job Hunt](#week23/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 24**: Group Project](#week24/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ### Advanced: WDX 180°
 
-  - [**Week 25**: JavaScript Advanced 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 26**: JavaScript Advanced 2, TypeScript Advanced](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 27**: Node.js 3 & Relational Databases](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 28**: Express.js, REST APIs & GraphQL](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 31**: Content Management Systems, WordPress, Eleventy & Serverless Architecture](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 32**: Introduction to AI, Machine Learning & Tensorflow.js](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 33**: Introduction to Data Science & Danfo.js](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 34**: Blockchain & Web3](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 35**: Solo Project](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 36**: Solo Project](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**The Road Ahead**](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 25**: JavaScript Advanced 1](#week25/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 26**: JavaScript Advanced 2, TypeScript Advanced](#week26/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 27**: Node.js 3 & Relational Databases](#week27/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 28**: Express.js, REST APIs & GraphQL](#week28/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](#week29/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](#week30/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 31**: Content Management Systems, WordPress, Eleventy & Serverless Architecture](#week31/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 32**: Introduction to AI, Machine Learning & Tensorflow.js](#week32/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 33**: Introduction to Data Science & Danfo.js](#week33/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 34**: Blockchain & Web3](#week34/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 35**: Solo Project](#week35/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 36**: Solo Project](#week36/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
 
