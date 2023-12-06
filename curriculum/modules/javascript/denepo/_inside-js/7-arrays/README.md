@@ -35,8 +35,8 @@ Below are listed the goals of following this material.
     remove items in an array:
     - [ ] **arr.push()**: Adds a new item to the end of an array.
     - [ ] **arr.pop()**: Removes the last item in an array.
-    - [ ] **arr.shift()**: Adds a new item to the front of an array.
-    - [ ] **arr.unshift()**: Removes the first item in an array.
+    - [ ] **arr.unshift()**: Adds a new item to the front of an array.
+    - [ ] **arr.shift()**: Removes the first item in an array.
   - 🥚 **Reading Items**: You can read items in an array using:
     - [ ] **arr[i]**: Access a specific item in an array using square brackets a
           positive index.
