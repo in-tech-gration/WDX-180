@@ -165,6 +165,11 @@ title: Week 11 | Web APIs 2: JSON - Promises - APIs
 
   - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
 
+  - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
+    - Level: Beginner
+    - Duration: 30min
+    - Caption: Yes
+
 <!-- Summary -->
 
 ### Exercises
