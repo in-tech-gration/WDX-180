@@ -24,7 +24,7 @@ title: DOM Manipulation - Part 03
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Number Generator'|user_folder=number_generator -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Number Generator'|type=exist|user_folder=number_generator|files=index.html,script.js -->
-  In this exercise, we want you to copy [index.html](./exercises/number_generator/index.html) and [script.js](./exercises/number_generator/script.js) and complete the tasks found below:
+  Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/number_generator/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and compete all the challenges found below:
   
   1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
   2. Append style to each number as described below:
@@ -40,7 +40,7 @@ title: DOM Manipulation - Part 03
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Countries List'|user_folder=countries_list -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Countries List'|type=exist|user_folder=countries_list|files=index.html,script.js -->
-  In this exercise, we want you to copy [countries.js](./exercises/countries_list/countries.js) and [index.html](./exercises/countries_list/index.html) and use the countries array provided to display **dynamically** all countries as shown in the image below:
+  Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/countries_list/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and use the countries array provided to display **dynamically** all countries as shown in the image below:
 
   ![World Countries List](./assets/countries_list.png)
 
@@ -48,7 +48,7 @@ title: DOM Manipulation - Part 03
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Asabeneh's Challenge'|user_folder=asabeneh_challenge -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Asabeneh's Challenge'|type=exist|user_folder=asabeneh_challenge|files=index.html,script.js -->
-  In this exercise, we want you to copy [script.js](./exercises/asabeneh_challenge/script.js) and [index.html](./exercises/asabeneh_challenge/index.html) and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
+  Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/asabeneh_challenge/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
 
   ![Challenge Information](./assets/dom_mini_project_challenge_info_day_2.3.gif)
 

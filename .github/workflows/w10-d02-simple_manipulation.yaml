@@ -4,9 +4,9 @@ on:
     branches:
       - 'main'
     paths:
-      - user/week10/exercises/day02/dom_manipulation_part_01/**
+      - user/week10/exercises/day02/simple_manipulation/**
 jobs:
-  dom_manipulation_part_01:
+  simple_manipulation:
 
     runs-on: ubuntu-latest
 
@@ -17,5 +17,5 @@ jobs:
       - name: "Test Exercise: 'Simple Manipulation - Part 01' > Check solution files existence"
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week10/exercises/day02/dom_manipulation_part_01/simple-manipulation.html, user/week10/exercises/day02/dom_manipulation_part_01/script.js"
+          files: "user/week10/exercises/day02/simple_manipulation/dom.html, user/week10/exercises/day02/simple_manipulation/dom.js"
           fail: true

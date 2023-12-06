@@ -1,5 +1,5 @@
 ---
-title: "Week 10 | Web APIs 1: DOM"
+title: Week 10 | Web APIs 1: DOM
 ---
 
 <hr class="mb-0">
@@ -24,7 +24,7 @@ title: "Week 10 | Web APIs 1: DOM"
 
   </h2>
 
-  <span>Updated: 5/12/2023</span>
+  <span>Updated: 6/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -121,32 +121,7 @@ title: "Week 10 | Web APIs 1: DOM"
 
   **Simple Manipulation - Part 01**
 
-  In this exercise, we want you to copy and paste the following code in an HTML file named `simple-manipulation.html` and complete the tasks listed below to a JavaScript file called `script.js`:
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Paragraphs with IDs</title>
-  </head>
-  <body>
-
-      <p id="paragraph1">This is the first paragraph.</p>
-      <p id="paragraph2">Here is the second paragraph.</p>
-      <p id="paragraph3">The third paragraph is right here.</p>
-      <p id="paragraph4">Finally, the fourth paragraph.</p>
-
-      <script src="./script.js"></script>
-  </body>
-  </html>
-  ```
-
-  1. Get the first paragraph by using **_document.querySelector(tagname)_** and tag name
-  2. Get each of the the paragraph using **_document.querySelector('#id')_** and by their id
-  3. Get all the p as nodeList using **_document.querySelectorAll(tagname)_** and by their tag name
-  4. Set id and class attribute for all the paragraphs using different attribute setting methods
+  Copy the folder `curriculum/week10/exercises/simple_manipulation/` inside folder `user/week10/exercises/day02/` and complete all the challenges found inside the JavaScript file.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week10/progress/progress.draft.w10.d02.csv**
 
@@ -194,7 +169,7 @@ title: "Week 10 | Web APIs 1: DOM"
 
   **Simple Manipulation - Part 02**
 
-  In this exercise, we want you to copy the files you've submitted for the exercise from Part 01, and complete the task found below:
+  In this exercise, we want you to copy the folder (`simple_manipulation/`) with the files you've submitted for the exercise from Part 01, and complete the task found below:
 
   > _(if you have not done the previous exercise, now is a good time to do so!)_
 
@@ -208,7 +183,7 @@ title: "Week 10 | Web APIs 1: DOM"
 
   **DOM Mini Project**
 
-  In this exercise, we want you to copy [script.js](./exercises/dom_mini_project/script.js) and [index.html](./exercises/dom_mini_project/index.html) and complete the tasks found below. Apply all the styles and functionality using JavaScript only.
+  Copy the folder `curriculum/week10/exercises/dom_mini_project/` inside folder `user/week10/exercises/day03/` and complete all the challenges found below. Apply all the styles and functionality using JavaScript only.
 
   1. The year color is changing every 1 second
   2. The date and time background color is changing every on seconds
@@ -266,7 +241,7 @@ title: "Week 10 | Web APIs 1: DOM"
 
   **Number Generator**
 
-  In this exercise, we want you to copy [index.html](./exercises/number_generator/index.html) and [script.js](./exercises/number_generator/script.js) and complete the tasks found below:
+  Copy the folder `curriculum/week10/exercises/number_generator/` inside folder `user/week10/exercises/day04/` and compete all the challenges found below:
 
   1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
   2. Append style to each number as described below:
@@ -280,13 +255,13 @@ title: "Week 10 | Web APIs 1: DOM"
 
   **Countries List**
 
-  In this exercise, we want you to copy [countries.js](./exercises/countries_list/countries.js) and [index.html](./exercises/countries_list/index.html) and use the countries array provided to display **dynamically** all countries as shown in the image below:
+  Copy the folder `curriculum/week10/exercises/countries_list/` inside folder `user/week10/exercises/day04/` and use the countries array provided to display **dynamically** all countries as shown in the image below:
 
   ![World Countries List](./assets/countries_list.png)
 
   **Asabeneh's Challenge**
 
-  In this exercise, we want you to copy [script.js](./exercises/asabeneh_challenge/script.js) and [index.html](./exercises/asabeneh_challenge/index.html) and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
+  Copy the folder `curriculum/week10/exercises/asabeneh_challenge/` inside folder `user/week10/exercises/day04/` and use the asabenehChallenges2020 array provided to display **dynamically** its content as show in the image below: 
 
   ![Challenge Information](./assets/dom_mini_project_challenge_info_day_2.3.gif)
 

@@ -21,34 +21,9 @@ title: DOM Manipulation - Part 01
 
   **Simple Manipulation - Part 01**
   
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Simple Manipulation - Part 01'|user_folder=dom_manipulation_part_01 -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Simple Manipulation - Part 01'|type=exist|user_folder=dom_manipulation_part_01|files=simple-manipulation.html,script.js -->
-  In this exercise, we want you to copy and paste the following code in an HTML file named `simple-manipulation.html` and complete the tasks listed below to a JavaScript file called `script.js`:
-
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Paragraphs with IDs</title>
-  </head>
-  <body>
-
-      <p id="paragraph1">This is the first paragraph.</p>
-      <p id="paragraph2">Here is the second paragraph.</p>
-      <p id="paragraph3">The third paragraph is right here.</p>
-      <p id="paragraph4">Finally, the fourth paragraph.</p>
-
-      <script src="./script.js"></script>
-  </body>
-  </html>
-  ```
-
-  1. Get the first paragraph by using **_document.querySelector(tagname)_** and tag name
-  2. Get each of the the paragraph using **_document.querySelector('#id')_** and by their id
-  3. Get all the p as nodeList using **_document.querySelectorAll(tagname)_** and by their tag name
-  4. Set id and class attribute for all the paragraphs using different attribute setting methods
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Simple Manipulation - Part 01'|user_folder=simple_manipulation -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Simple Manipulation - Part 01'|type=exist|user_folder=simple_manipulation|files=dom.html,dom.js -->
+  Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/simple_manipulation/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and complete all the challenges found inside the JavaScript file.
 
 ### Extra Resources
 
