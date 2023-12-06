@@ -9,6 +9,7 @@
 	<div class="wrapper">
 		<h1>Asabeneh Yetayeh challenges in 2020</h1>
 		<h2>30DaysOfJavaScript Challenge</h2>
+		<h3 id="datetime"></h3>
 		<ul>
 			<li>30DaysOfPython Challenge Done</li>
 			<li>30DaysOfJavaScript Challenge Ongoing</li>
@@ -19,6 +20,16 @@
 			<li>30DaysOfMachineLearning Challenge Coming</li>
 		</ul>
 	</div>
+
+	<script>
+		function updateDateTime() {
+			const now = new Date();
+			const currentDateTime = now.toLocaleString();
+			document.querySelector('#datetime').textContent = currentDateTime;
+		}
+
+		setInterval(updateDateTime, 1000);
+	</script>
 	<script src="./script.js"></script>
 
 </body>

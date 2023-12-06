@@ -26,8 +26,8 @@ title: DOM Manipulation - Part 03
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Number Generator'|type=exist|user_folder=number_generator|files=index.html,script.js -->
   Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/number_generator/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and compete all the challenges found below:
   
-  1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
-  2. Append style to each number as described below:
+  - Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
+  - Append style to each number as described below:
     - Even numbers background is green
     - Odd numbers background is yellow
     - Prime numbers background is red

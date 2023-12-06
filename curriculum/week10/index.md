@@ -178,7 +178,7 @@ title: Week 10 | Web APIs 1: DOM
   1. Loop through the nodeList and get the text content of each paragraph
   2. Set a text content to paragraph the fourth paragraph,**_Fourth Paragraph_**
   3. Change stye of each paragraph using JavaScript(eg. color, background, border, font-size, font-family)
-  4. Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
+  4. Select all paragraphs and loop through each element and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
   5. Set text content, id and class to each paragraph
 
   **DOM Mini Project**
@@ -187,9 +187,9 @@ title: Week 10 | Web APIs 1: DOM
 
   1. The year color is changing every 1 second
   2. The date and time background color is changing every on seconds
-  3. Completed challenge has background green
-  4. Ongoing challenge has background yellow
-  5. Coming challenges have background red
+  3. 'Done' challenges has background green
+  4. 'Ongoing' challenges has background yellow
+  5. 'Coming' challenges have background red
 
   The result should be as 
 
@@ -243,8 +243,8 @@ title: Week 10 | Web APIs 1: DOM
 
   Copy the folder `curriculum/week10/exercises/number_generator/` inside folder `user/week10/exercises/day04/` and compete all the challenges found below:
 
-  1. Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
-  2. Append style to each number as described below:
+  - Inside the div container with class name `wrapper` on the HTML document, create **dynamically** 102 `div` container, each one containing a number from 0 to 101.
+  - Append style to each number as described below:
     - Even numbers background is green
     - Odd numbers background is yellow
     - Prime numbers background is red
