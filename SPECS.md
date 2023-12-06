@@ -109,6 +109,40 @@
 
   Just include a `.nojekyll` file in the repo.
 
+## Jekyll | How to | Build Locally
+
+  - Follow the instructions on installing Jekyll:
+    - https://jekyllrb.com/docs/installation/macos/
+    - https://jekyllrb.com/docs/installation/windows/
+    - https://jekyllrb.com/docs/installation/ubuntu/
+
+  - Create a `Gemfile`:
+
+  ```
+  source "https://rubygems.org"
+
+  gem 'github-pages', group: :jekyll_plugins
+  gem "webrick", "~> 1.8"
+
+  # gem 'github-pages'
+  # gem "jekyll-readme-index", "~> 0.3.0"
+  # gem "jekyll-theme-midnight", "= 0.2.0"
+  # gem "jekyll-sass-converter", "= 1.5.2"
+  ```
+
+  - Run:
+    - `bundle add webrick`
+    - `bundle install`
+    - `bundle exec jekyll _3.9.3_ serve`
+    - or `npm run build:jekyll`
+
+  REFERENCES:
+
+  - https://github.com/github/pages-gem
+  - https://github.com/github/pages-gem
+  - https://github.com/orgs/community/discussions/37669
+  - https://pages.github.com/versions/
+
 ---
 
 ## About the Instructor's Cockpit Tool

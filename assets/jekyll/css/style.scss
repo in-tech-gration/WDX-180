@@ -9,6 +9,7 @@
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --secondary-color: #9d9c9c;
   --headings-font-family: "Poppins", sans-serif;
+  --vibrant: #ffcc00;
 
   --code-color: #ef6200;
   --code-font-size: 1rem;
@@ -20,7 +21,7 @@
   --side-nav-bottom-color: gray;
 
   --details-border-color: gray;
-  --details-border-left-color: #ffcc00;
+  --details-border-left-color: var(--vibrant);
   --details-bg-color: #343333;
 
   --max-width: 780px;
@@ -312,4 +313,68 @@ a[href="#flems-enable"]:hover {
   margin-top: 1rem;
   border-top: 10px solid yellowgreen;
   box-shadow: 6px 16px 24px rgba(0,0,0,0.7);
+}
+
+// DARK THEME:
+body.dark-theme {
+  background: black;
+}
+
+body.dark-theme .main-section > details > summary {
+  background: black;
+  border-color: #666 !important;
+  border-left-color: var(--details-border-left-color) !important;
+}
+
+body.dark-theme hr {
+  opacity: 0.3;
+}
+
+// THEME TOGGLER:
+#theme-toggler {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#theme-toggler label {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #222;
+  overflow: hidden;
+  cursor: pointer;
+}
+#theme-toggler label:before, #theme-toggler label:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 3.5px;
+  left: 3.5px;
+  transition: 0.5s ease;
+}
+#theme-toggler label:before {
+  background-color: var(--vibrant);
+}
+#theme-toggler label:after {
+  background-color: #222;
+  left: -15px;
+  transform: scale(0.00001);
+}
+#theme-toggler input[type=checkbox] {
+  display: none;
+}
+#theme-toggler input[type=checkbox]:checked + label:before {
+  background-color: #FFF;
+  transform: translateX(20px);
+}
+#theme-toggler input[type=checkbox]:checked + label:after {
+  transform: translateX(30px) scale(1);
 }

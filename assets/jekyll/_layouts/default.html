@@ -45,6 +45,13 @@
 
 <body class="{{ page.url | slugify | append: '__page' }}">
 
+  <!-- THEME TOGGLER: -->
+  <div id="theme-toggler">		
+    <input type="checkbox" id="toggle"/>
+    <label for="toggle"></label>
+  </div>
+  <!-- THEME TOGGLER: -->
+
   <div class="wrapper">
 
     <!-- Table of Contents -->
@@ -83,7 +90,7 @@
           href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
         </span>
         <span class="credits right">
-          Hosted on GitHub Pages &mdash; Theme by <a class="credits credits-highlighted"
+          Hosted on <a href="https://github.com/in-tech-gration/WDX-180/" target="_blank">GitHub Pages</a> &mdash; Theme by <a class="credits credits-highlighted"
           href="https://twitter.com/mattgraham">mattgraham</a>
         </span>
       </div>
