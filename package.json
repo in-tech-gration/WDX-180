@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build:jekyll": "bundle exec jekyll _3.9.3_ serve",
+    "build:jekyll": "bundle exec jekyll _3.9.3_ serve --incremental",
     "cockpit": "node tools/instructor/server.js",
     "cockpit:dev": "nodemon -e .js,.njk,.css,.yaml tools/instructor/server.js --noopen",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
