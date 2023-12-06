@@ -21,6 +21,12 @@ title: Introduction to Fetch API
   <!-- SGEN:META:PROGRESS:task=Read 'Fetch API and Async/Await' -->
   - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
 
+  <!-- SGEN:META:PROGRESS:task=Watch 'Fetch API' -->
+  - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
+    - Level: Beginner
+    - Duration: 30min
+    - Caption: Yes
+
 ### Summary
 
 ### Exercises
