@@ -10,7 +10,22 @@ title: Introduction to Fetch API
 
 ### Study Plan
 
+  ![Fetch Better Have My Money](./assets/Fetch.Better.Have.My.Money.jpg)
+
+  <!-- SGEN:META:PROGRESS:task=Watch 'JavaScript Fetch API 👨🏻‍💻 in 1 Minute' -->
+  - [Watch: **JavaScript Fetch API 👨🏻‍💻 in 1 Minute**](https://www.youtube.com/watch?v=3ySZQXVjCoM){:target="_blank"}
+    - Level: Beginner
+    - Duration: 1min
+    - Captions: Yes
+
+  <!-- SGEN:META:PROGRESS:task=Read 'Fetch API and Async/Await' -->
   - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
+
+  <!-- SGEN:META:PROGRESS:task=Watch 'Fetch API' -->
+  - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
+    - Level: Beginner
+    - Duration: 30min
+    - Caption: Yes
 
 ### Summary
 
@@ -18,6 +33,8 @@ title: Introduction to Fetch API
 
   **Fetch Basics**
 
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Fetch Basics'|user_folder=fetch_basics -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Fetch Basics'|type=exist|user_folder=fetch_basics|files=fetch.html,fetch.js -->
   Copy the folder `curriculum/week{{ SGEN:WEEK_NUM }}/exercises/fetch_basics/` inside folder `user/week{{ SGEN:WEEK_NUM }}/exercises/day{{ SGEN:DAY_NUM }}/` and compete all the challenges found inside the JavaScript file.
 
 ### Extra Resources

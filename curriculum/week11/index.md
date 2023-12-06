@@ -1,11 +1,11 @@
 ---
-title: "Week 11 | Web APIs 2: Promises, JSON, Fetch API"
+title: Week 11 | Web APIs 2: JSON - Promises - APIs
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 11-Web APIs 2: Promises, JSON, Fetch API | slugify }}">
-  <span class="week-prefix">Week 11 |</span> Web APIs 2: Promises, JSON, Fetch API
+<h1 id="{{ Week 11-Web APIs 2: JSON - Promises - APIs | slugify }}">
+  <span class="week-prefix">Week 11 |</span> Web APIs 2: JSON - Promises - APIs
 </h1>
 
 <div class="week-controls">
@@ -24,7 +24,7 @@ title: "Week 11 | Web APIs 2: Promises, JSON, Fetch API"
 
   </h2>
 
-  <span>Updated: 5/12/2023</span>
+  <span>Updated: 6/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -107,6 +107,20 @@ title: "Week 11 | Web APIs 2: Promises, JSON, Fetch API"
 
   - [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
 
+  Promises are a tough subject in JavaScript, and a lot of developers, even very experienced ones, have issues with them. So you do not have to worry is this concept feel unclear to you.
+
+  Below you can find 2 great videos that explain both the Asynchronous topic and Promises
+
+  - [Watch: **Async JavaScript & Callback Functions**](https://www.youtube.com/watch?v=QSqc6MMS6Fk){:target="_blank"}
+    - Level: Beginner
+    - Duration: 24mins
+    - Captions: Yes
+
+  - [Watch: **JavaScript Promises**](https://www.youtube.com/watch?v=TnhCX0KkPqs){:target="_blank"}
+    - Level: Beginner
+    - Duration: 37mins
+    - Captions: Yes
+
 <!-- Summary -->
 
 <!-- Exercises -->
@@ -142,7 +156,19 @@ title: "Week 11 | Web APIs 2: Promises, JSON, Fetch API"
 
 ### Study Plan
 
+  ![Fetch Better Have My Money](./assets/Fetch.Better.Have.My.Money.jpg)
+
+  - [Watch: **JavaScript Fetch API 👨🏻‍💻 in 1 Minute**](https://www.youtube.com/watch?v=3ySZQXVjCoM){:target="_blank"}
+    - Level: Beginner
+    - Duration: 1min
+    - Captions: Yes
+
   - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
+
+  - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
+    - Level: Beginner
+    - Duration: 30min
+    - Caption: Yes
 
 <!-- Summary -->
 

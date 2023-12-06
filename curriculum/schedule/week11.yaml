@@ -1,18 +1,16 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Web APIs 2: Promises, JSON, Fetch API"
+title: "Web APIs 2: JSON - Promises - APIs"
 schedule: 
   days:
     1: # JSON
       # file://./../modules/javascript/core/json/intro/index.md
       module: javascript/core/json/intro/
     2: # Promises
-      # file://./../modules/javascript/web_apis/dom/
+      # file://./../modules/javascript/async/promises/intro/index.md
       module: javascript/async/promises/intro/
     3: # Fetch API
-      # TODO: Start Module with this: https://www.youtube.com/watch?v=3ySZQXVjCoM (JavaScript Fetch API 👨🏻‍💻 in 1 Minute)
-      # Include: /WDX-180/curriculum/modules/javascript/web_apis/fetch/Fetch.Better.Have.My.Money.jpg :)
-      # file://./../modules/javascript/web_apis/dom/
+      # file://./../modules/javascript/web_apis/fetch/intro/index.md
       module: javascript/web_apis/fetch/intro/
     4: # 
       # file://./../modules/javascript/web_apis/dom/
