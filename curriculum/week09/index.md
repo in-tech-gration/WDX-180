@@ -24,7 +24,7 @@ title: Week 09 | JavaScript Core 3
 
   </h2>
 
-  <span>Updated: 6/12/2023</span>
+  <span>Updated: 7/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -296,7 +296,6 @@ title: Week 09 | JavaScript Core 3
   - **1-isolate**
   - **2-practice**
   - **3-implicit-return**
-  - **4-integrate**
 
   > **REMINDER:** You should never create, delete or modify any files or folders outside the `user/` directory. If the Module you are studying contains exercise files and folders, they should be copied over to the `user/` folder and modified there. 
 
