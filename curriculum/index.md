@@ -35,8 +35,8 @@
   - [**Week 07**: JavaScript Core 1](week07/index.md)
   - [**Week 08**: JavaScript Core 2](week08/index.md)
   - [**Week 09**: JavaScript Core 3](week09/index.md)
-  - [**Week 10**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#week10/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 11**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media](#week11/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 10**: Web APIs 1: DOM API & Events](#week10/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 11**: Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API](#week11/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 12**: Project Week: Combine Web APIs to build a web application](#week12/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ### Intermediate: WDX 120°
