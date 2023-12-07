@@ -2847,6 +2847,35 @@
       "language": [
         "en"
       ]
+    },
+    "introduction-to-javascript-objects": {
+      "type": "YouTube",
+      "duration": 231,
+      "title": "Introduction to JavaScript Objects",
+      "date": "12/11/2020",
+      "youtube": {
+        "id": "OJBlJI1vEK8",
+        "channel_id": "UCpaabVZEeuXqlv8VPQvtTdQ",
+        "channel_title": "SkillsReactor",
+        "thumbnail_url": "https://i.ytimg.com/vi/OJBlJI1vEK8/sddefault.jpg"
+      },
+      "tags": [
+        "javascript objects",
+        "learn javascript",
+        "what are objects in javascript",
+        "what are javascript objects",
+        "create objects in javascript",
+        "how to create objects in javascript",
+        "javascript objects for beginners",
+        "javascript tutorial 2020",
+        "learn javascript programming for beginners",
+        "javascript objects explained",
+        "javascript objects and methods",
+        "Javascript objects tutorial"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
