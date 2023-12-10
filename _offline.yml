@@ -30,6 +30,7 @@ exclude:
   - CODE_OF_CONDUCT.md
   - SPECS.md
   - CHANGELOG.md
+  - curriculum/schedule/
 
 # CUSTOM _SASS FOLDER: https://github.com/jekyll/jekyll-sass-converter#configuration-options, https://jekyllrb.com/docs/configuration/sass/
 sass:
