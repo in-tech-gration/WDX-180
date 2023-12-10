@@ -39,6 +39,7 @@ Syllabus:
         10: # file:///./schedule/week10.yaml (11/12/2023 - 15/12/2023)
           title: "Web APIs 1: DOM API & Events"
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
+          open: true
         11: # file:///./schedule/week11.yaml (18/12/2023 - 22/12/2023)
           title: "Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API"
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
