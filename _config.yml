@@ -16,6 +16,7 @@ exclude:
   - public
   - tools
   - node_modules/
+  - user/
   
 # CUSTOM _SASS FOLDER: https://github.com/jekyll/jekyll-sass-converter#configuration-options, https://jekyllrb.com/docs/configuration/sass/
 sass:
