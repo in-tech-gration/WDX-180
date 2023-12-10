@@ -24,6 +24,7 @@ title: Introduction to the DOM API
     - Go through this [**document**](https://developer.chrome.com/docs/devtools/dom/){:target="_blank"} and stop at each section to practice the command or tool described in your browser.
   
   <!-- TODO: Integrate into the curriculum (as a Module?): https://github.com/GoogleChrome/developer.chrome.com/blob/main/site/en/docs/devtools/dom/index.md -->
+  <!-- TODO: Convert interactive tutorial steps into progress steps -->
 
   <!-- TODO: Review + Add Practice -->
   - Watch lessons 1-7* from [**JavaScript DOM Manipulation Mastery: A Comprehensive Guide**](https://www.youtube.com/watch?v=BGkc6dKUZ84){:target="_blank"} and try to replicate as much as you can in your local environment.
