@@ -68,6 +68,7 @@ Syllabus:
         17: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml
           title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
+          # MEMOIZATION
         18: # Node.js 1 (12/02/2024 - 16/02/2024)
           # file:///./schedule/week18.yaml
           title: "Node.js 1"
