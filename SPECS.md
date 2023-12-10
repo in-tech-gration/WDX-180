@@ -15,6 +15,7 @@
   ├── curriculum
   ├── README.md
   ├── _config.yml
+  ├── _offline.yml
   └── assets
       ├── WDX.Header.Alternative.jpg
       ├── WDX.Header.jpg
@@ -22,17 +23,19 @@
       └── jekyll
   ```
 
-> "By default, Jekyll doesn't build files or folders that:
-> 
-> are located in a folder called `/node_modules` or `/vendor`
->
-> start with _, ., or #
->
-> end with ~
->
-> are excluded by the exclude setting in your configuration file
->
-> If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
+  - **offline.yml** is used to build a local GitHub Pages site, excluding some folders that are not needed for offline usage by the students
+
+  > "By default, Jekyll doesn't build files or folders that:
+  > 
+  > are located in a folder called `/node_modules` or `/vendor`
+  >
+  > start with _, ., or #
+  >
+  > end with ~
+  >
+  > are excluded by the exclude setting in your configuration file
+  >
+  > If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
 
 ## Jekyll | How to | Change Website Styling (CSS)
 
