@@ -1,4 +1,5 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Complete the interactive tutorials at 'Get started with viewing and changing the DOM',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 1 - What is the DOM' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 2 - Getting the Elements in the DOM' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
 10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 3 - Querying the Document' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

@@ -19,6 +19,7 @@ title: Introduction to the DOM API
     - **Duration:** 5min
     - **Level:** Beginner
 
+  <!-- SGEN:META:PROGRESS:task=Complete the interactive tutorials at 'Get started with viewing and changing the DOM' -->
   - **Practice time!** Now that you know the difference between HTML and the DOM, and got a first test of working with the DOM using the `DevTools`, it's time to practice those skills and become comfortable with DOM manipulation.
     - Go through this [**document**](https://developer.chrome.com/docs/devtools/dom/){:target="_blank"} and stop at each section to practice the command or tool described in your browser.
   
