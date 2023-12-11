@@ -3,29 +3,30 @@ daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Intermediate 1 & Git
 schedule: 
   days:
-    1: # 
+    1: # ES6
       # file://./../modules/javascript/
       module: javascript/
-      # TODO: You are now grown-ups, so let's recommend some cool tools to add to your arsenal:
-      # https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla
-      # https://30secondsofknowledge.com/
-      # https://github.com/petrovicstefanrs/30_seconds_of_knowledge (star/fork)
-      # CodeGrepper + ChatGPT + Copilot
-      # TODO: Add: How to speed up your workflow with Console shortcuts | DevTools Tips (https://www.youtube.com/watch?v=hdRDTj6ObiE) + https://developer.chrome.com/docs/devtools/console/utilities/
-    2: # 
+    2: # More ES6
       # file://./../modules/javascript/
       module: javascript/
-    3: # 
+    3: # The Power of Functions
       # file://./../modules/javascript/
       module: javascript/
-    4: # 
-      # file://./../modules/javascript/
-      module: javascript/
-    5: # 
-      # file://./../modules/javascript/
-      module: javascript/
-
+    4: # CSSOM
+      # file://./../modules/javascript/web_apis/cssom/intro/index.md
+      module: javascript/web_apis/cssom/intro/
+    5: # Advanced CSS Sorcery + JavaScript
+      # file://./../modules/css/misc/advanced_css/index.md
+      module: css/misc/advanced_css/
+      # TODO: Good morning! Let's lighten up our Friday with some CSS tricks. ;)
 # ---
+
+# DAY 1: TODO: You are now grown-ups, so let's recommend some cool tools to add to your arsenal:
+# https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla
+# https://30secondsofknowledge.com/
+# https://github.com/petrovicstefanrs/30_seconds_of_knowledge (star/fork)
+# CodeGrepper + ChatGPT + Copilot
+# DAY 1: TODO: Add: How to speed up your workflow with Console shortcuts | DevTools Tips (https://www.youtube.com/watch?v=hdRDTj6ObiE) + https://developer.chrome.com/docs/devtools/console/utilities/
 
 # SAR: https://www.hackinbits.com/articles/js/how-to-create-a-javascript-map-from-an-array-or-an-object-and-vice-versa---map-part-3
 

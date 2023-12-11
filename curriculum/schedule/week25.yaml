@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Advanced 1
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    2: # More 
+      # file://./../modules/javascript/
+      module: javascript/
+    3: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    4: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    5: # 
+      # file://./../modules/javascript/
+      module: javascript/
+

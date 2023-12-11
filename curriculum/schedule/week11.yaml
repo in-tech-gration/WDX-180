@@ -12,7 +12,7 @@ schedule:
     3: # Fetch API
       # file://./../modules/javascript/web_apis/fetch/intro/index.md
       module: javascript/web_apis/fetch/intro/
-    4: # 
+    4: # Async/Await
       # file://./../modules/javascript/async/async_await/intro/index.md
       module: javascript/async/async_await/intro/
     5: # 
@@ -23,6 +23,8 @@ schedule:
 
 # Day 5: Tip of the day (related to <video>)
 # => # YouTube Speed-up Shortcuts
+
+# DAY 3: Install https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
 # Day 3:
 # https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/11

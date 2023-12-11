@@ -1,0 +1,35 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: Functional Programming 1, Templating, JavaScript Frameworks
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    2: # 
+      # file://./../modules/css/
+      module: javascript/
+    3: # Templating
+      # file://./../modules/javascript/
+      module: javascript/
+    4: # 
+      # file://./../modules/javascript/
+      module: javascript/
+    5: # Let's Build jQuery
+      # file://./../modules/javascript/
+      module: javascript/
+
+# ---
+# DAY 1: What is Functional Programming?
+# First https://reactivex.io/learnrx/ exercises
+
+# DAY 2: More https://reactivex.io/learnrx/
+
+# DAY 3: HTML Templates, Template Literals and other patterns (type="text/x-template", Mustache)
+# ```html
+# <script type="text/x-template">
+#   Let's change {{ this_placeholder }} with different values!
+# </script>
+# ```
+
+# DAY 5: $(), chaining, on("click"), text(), val(), html(), load(), css()

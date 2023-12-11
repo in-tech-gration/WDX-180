@@ -2,11 +2,52 @@
 title: Introduction to AI, Machine Learning & Tensorflow.js
 ---
 
+# Intro [STUDY]: https://www.youtube.com/playlist?list=PLpQQipWcxwt9MhxXfyadqQPymI54pRXqJ
+# > 8min in total! (Super simple)
+
+# https://microsoft.github.io/onnxjs-demo/#/squeezenet
+# ? https://github.com/mudafar/alz-predictor/tree/main
+
+# > STUDY: 5.1 A Brief History of AI: https://www.youtube.com/watch?v=eHXF8Q78GIY
+# > STUDY: 5.2 Introduction to Machine Learning: https://www.youtube.com/watch?v=s5X-FflJvi8
+
+# Schedule
+# Watch: 1.1, How Web Developers use Machine Learning, 1.3, 2.1, 2.2, 2.3, 2.4, 2.5, 3.1, 3.2, 3.3.1~3.3.6
+# https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
+# Review 3.4???
+
+# 6.1: Introduction to TensorFlow.js - Intelligence and Learning
+# https://www.youtube.com/watch?v=Qt3ZABW5lD0 (20min)
+
+# Neural Networks - Lecture 5 - CS50's Introduction to Artificial Intelligence with Python 2020
+# Watch until Python coding 45:45
+# https://www.youtube.com/watch?v=mFZazxxCKbw
+
+# 3.4 
+# https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
+
+# ---
+
 # Use TF.js to solve the preliminary questions:
 # - What comes next in the sequence: 2,4,6,8,..?
 # - Identify the missing number in this sequence: 5,10,15,__,25
+
+# https://codelabs.developers.google.com/codelabs/tfjs-training-regression#0
+# https://codelabs.developers.google.com/codelabs/tfjs-training-classfication#0
+# https://developers.google.com/codelabs/tensorflowjs-comment-spam-detection?hl=en#0
+# https://developers.google.com/codelabs/tensorflow-retraining-comment-spam-detection?hl=en#0
+# https://codelabs.developers.google.com/codelabs/tensorflowjs-nodejs-codelab?hl=en#0
+# https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection?hl=en#0
+# https://codelabs.developers.google.com/codelabs/tensorflowjs-audio-codelab?hl=en#0
 
 # EXTRA RESOURCES
 ## AI
 # - [Watch: **How Spotify’s AI-Driven Recommendations Work | WSJ Tech Behind**](https://www.youtube.com/watch?v=pGntmcy_HX8)
 #   - Duration: 7min
+
+# INSPIRATION: https://www.youtube.com/watch?v=OAdegPmkK-o
+# Teachable Machine and Face Recognition
+# > https://github.com/googlecreativelab/teachable-machine-v1
+# > https://github.com/googlecreativelab/teachable-machine-boilerplate
+
+# Traffic Sign Project
