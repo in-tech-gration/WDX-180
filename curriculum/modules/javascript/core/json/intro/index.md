@@ -11,7 +11,7 @@ title: Introduction to JSON
 ### Study Plan
 
   <!-- SGEN:META:PROGRESS:task=Read 'Introduction to JSON' -->
-  - [Read: **Introduction to JSON**](../modules/javascript/core/json/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
 
 ### Summary
 

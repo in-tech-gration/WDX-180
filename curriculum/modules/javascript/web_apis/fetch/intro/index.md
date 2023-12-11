@@ -19,7 +19,7 @@ title: Introduction to Fetch API
     - Captions: Yes
 
   <!-- SGEN:META:PROGRESS:task=Read 'Fetch API' -->
-  - [Read: **Fetch API**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Fetch API**](../modules/javascript/web_apis/fetch/intro/content/index.md){:target="_blank"}
 
   <!-- SGEN:META:PROGRESS:task=Watch 'Fetch API' -->
   - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}

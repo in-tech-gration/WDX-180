@@ -10,8 +10,8 @@ title: Introduction to Promises
 
 ### Study Plan
 
-  <!-- SGEN:META:PROGRESS:task=Read 'Introduction to Promises' -->
-  - [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
+  <!-- SGEN:META:PROGRESS:task=Read 'Promises and Callbacks' -->
+  - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
   Promises are a tough subject in JavaScript, and a lot of developers, even very experienced ones, have issues with them. So you do not have to worry is this concept feel unclear to you.
 
