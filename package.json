@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build:jekyll": "bundle exec jekyll _3.9.3_ build --incremental --config _offline.yml",
-    "serve:jekyll": "bundle exec jekyll _3.9.3_ serve --incremental --config _offlie.yml",
+    "serve:jekyll": "bundle exec jekyll _3.9.3_ serve --incremental --config _offline.yml",
     "cockpit": "node tools/instructor/server.js",
     "cockpit:dev": "nodemon -e .js,.njk,.css,.yaml tools/instructor/server.js --noopen",
     "linux": "http-server -o -p 54689 resources/vm/jslinux/",
