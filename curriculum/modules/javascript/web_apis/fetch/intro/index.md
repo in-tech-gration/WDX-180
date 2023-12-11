@@ -18,8 +18,8 @@ title: Introduction to Fetch API
     - Duration: 1min
     - Captions: Yes
 
-  <!-- SGEN:META:PROGRESS:task=Read 'Fetch API and Async/Await' -->
-  - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
+  <!-- SGEN:META:PROGRESS:task=Read 'Fetch API' -->
+  - [Read: **Fetch API**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
 
   <!-- SGEN:META:PROGRESS:task=Watch 'Fetch API' -->
   - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
@@ -45,6 +45,6 @@ title: Introduction to Fetch API
 
   **Content is based on the following sources:**
 
-  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md){:target="_blank"}
+  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#fetch-api){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md#fetch-api){:target="_blank"}
 
   Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
