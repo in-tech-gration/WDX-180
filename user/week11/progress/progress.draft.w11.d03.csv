@@ -1,5 +1,5 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-11,3,Web APIs 2: JSON - Promises - APIs: Introduction to Fetch API,Watch 'JavaScript Fetch API 👨🏻‍💻 in 1 Minute',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-11,3,Web APIs 2: JSON - Promises - APIs: Introduction to Fetch API,Read 'Fetch API and Async/Await',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-11,3,Web APIs 2: JSON - Promises - APIs: Introduction to Fetch API,Watch 'Fetch API',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-11,3,Web APIs 2: JSON - Promises - APIs: Introduction to Fetch API,Complete the exercise 'Fetch Basics',Beginner,0-10,FALSE,Upload the required assets to the user/week11/exercises/day03/fetch_basics/ folder
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Watch 'JavaScript Fetch API 👨🏻‍💻 in 1 Minute',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Read 'Fetch API',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Watch 'Fetch API',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Complete the exercise 'Fetch Basics',Beginner,0-10,FALSE,Upload the required assets to the user/week11/exercises/day03/fetch_basics/ folder

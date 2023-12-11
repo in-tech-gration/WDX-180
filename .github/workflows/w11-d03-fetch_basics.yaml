@@ -1,4 +1,4 @@
-name: "Week 11 - Day 3 Web APIs 2: JSON - Promises - APIs | Test Exercise: 'Fetch Basics'"
+name: "Week 11 - Day 3 Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | Test Exercise: 'Fetch Basics'"
 on:
   push:
     branches:

@@ -1,4 +1,4 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-11,2,Web APIs 2: JSON - Promises - APIs: Introduction to Promises,Read 'Introduction to Promises',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-11,2,Web APIs 2: JSON - Promises - APIs: Introduction to Promises,Watch 'Async JavaScript & Callback Functions',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-11,2,Web APIs 2: JSON - Promises - APIs: Introduction to Promises,Watch 'JavaScript Promises',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+11,2,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Promises,Read 'Promises and Callbacks',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+11,2,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Promises,Watch 'Async JavaScript & Callback Functions',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+11,2,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Promises,Watch 'JavaScript Promises',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

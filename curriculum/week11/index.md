@@ -1,11 +1,11 @@
 ---
-title: Week 11 | Web APIs 2: JSON - Promises - APIs
+title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 11-Web APIs 2: JSON - Promises - APIs | slugify }}">
-  <span class="week-prefix">Week 11 |</span> Web APIs 2: JSON - Promises - APIs
+<h1 id="{{ Week 11-Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
+  <span class="week-prefix">Week 11 |</span> Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
 </h1>
 
 <div class="week-controls">
@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: JSON - Promises - APIs
 
   </h2>
 
-  <span>Updated: 6/12/2023</span>
+  <span>Updated: 11/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -57,7 +57,7 @@ title: Week 11 | Web APIs 2: JSON - Promises - APIs
 
 ### Study Plan
 
-  - [Read: **Introduction to JSON**](../modules/javascript/core/json/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
 
 ### Summary
 
@@ -105,7 +105,7 @@ title: Week 11 | Web APIs 2: JSON - Promises - APIs
 
 ### Study Plan
 
-  - [Read: **Introduction to Promises**](../modules/javascript/async/promises/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
   Promises are a tough subject in JavaScript, and a lot of developers, even very experienced ones, have issues with them. So you do not have to worry is this concept feel unclear to you.
 
@@ -163,7 +163,7 @@ title: Week 11 | Web APIs 2: JSON - Promises - APIs
     - Duration: 1min
     - Captions: Yes
 
-  - [Read: **Fetch API and Async/Await**](../modules/javascript/web_apis/fetch/30-days-of-javascript/index.md){:target="_blank"}
+  - [Read: **Fetch API**](../modules/javascript/web_apis/fetch/intro/content/index.md){:target="_blank"}
 
   - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
     - Level: Beginner
@@ -191,7 +191,54 @@ title: Week 11 | Web APIs 2: JSON - Promises - APIs
 
   **Content is based on the following sources:**
 
-  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md){:target="_blank"}
+  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#fetch-api){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md#fetch-api){:target="_blank"}
+
+  Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 11 - Day 4 | Introduction to Async/Await -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 11 - Day 4</span> | Introduction to Async/Await</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+  - [Watch: **JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute**](https://www.youtube.com/watch?v=TtnodUZ7xnQ){:target="_blank"}
+    - Level: Beginner
+    - Duration: 1min
+    - Captions: Yes
+
+  - [Read: **Introduction to Async/Await**](../modules/javascript/async/async_await/intro/content/index.md){:target="_blank"}
+
+  - [Watch: **Async Await vs. Promises**](https://www.youtube.com/watch?v=spvYqO_Kp9Q){:target="_blank"}
+    - Level: Beginner
+    - Duration: 24mins
+    - Captions: Yes
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
+### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#async-and-await){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md#async-and-await){:target="_blank"}
 
   Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
   
