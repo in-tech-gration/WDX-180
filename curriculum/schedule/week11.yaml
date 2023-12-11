@@ -41,3 +41,11 @@ schedule:
 # > https://github.com/lpmi-13/jq-pilot
 
 # PRACTICE: DOM to JSON: /BOOTCAMP/EXERCISES/@JAVASRIPT/DOM.to.JSON.Exercise/solution.js
+
+# DAY 4: 
+# - Asynchronous Code: callbacks, promises, async/await [ CB9-FJ: COVERED ]
+#   http://eventloop.gr/Education/TechTalentSchool/javascript/advanced.html#/3
+# https://codepen.io/kostasx/pen/NONQgL?editors=0011  
+#   Exercises: 
+#     - /CB9/EXERCISES/Async-Await-Exercise-001.html
+#     - /CB9/EXERCISES/Async-Await-Exercise-002.html

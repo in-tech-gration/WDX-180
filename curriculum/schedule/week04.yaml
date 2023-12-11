@@ -6,8 +6,6 @@ schedule:
     1: # Styling Tables, Debugging and Organizing CSS
       # file://./../modules/css/misc/styling_tables_debugging_organizing/index.md
       module: css/misc/styling_tables_debugging_organizing
-      # 1) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/http.status.codes.tables.exercise.jpeg
-      # 2) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/monthly.sheet.jpg 
     2: # Styling Text
       # file://./../modules/css/misc/styling_text/index.md
       module: css/misc/styling_text
@@ -25,6 +23,12 @@ schedule:
 
 # STUDY: https://arrayexplorer.netlify.app/
 # ??? node validate
+
+# DAY 1:
+# 1) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/http.status.codes.tables.exercise.jpeg
+# 2) /BOOTCAMP/EXERCISES/HTML - CSS/TABLES/monthly.sheet.jpg 
+
+# TODO: STUDY & INTEGRATE: https://developer.chrome.com/docs/css-ui/css-grid
 
 # TODO: DAY 1 STUDY ALTERNATIVE/EXTRA EXERCISES: 
 
