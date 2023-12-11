@@ -16,7 +16,7 @@
 
   > Note:
   >
-  > All those {{ SGEN:* }} string literals are parsed by our [SGEN tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js){:target="_blank"} which is responsible for dynamically creating each week of our curriculum.
+  > All those {{ SGEN:* }} string literals are parsed by our [SGEN tool](https://github.com/in-tech-gration/sgen){:target="_blank"} which is responsible for dynamically creating each week of our curriculum.
 
   The goal of our course is to teach the fundamentals of the world of Web Development. Some of the concepts covered are:
 
@@ -54,7 +54,7 @@
 
   We shifted to this structure because we want people to be able to grab any amount of modules inside our knowledge base and create their own course, no matter its duration.
 
-  In order to achieve this, we have a [tool](https://github.com/in-tech-gration/WDX-180/blob/main/tools/sgen.js){:target="_blank"} in our repository that can automatically create dynamic content based on a YAML configuration file. Right now, the SGEN tool is not "production ready", as it requires a lot of documentation, testing, etc.
+  In order to achieve this, we have a [tool](https://github.com/in-tech-gration/sgen){:target="_blank"} in our repository that can automatically create dynamic content based on a YAML configuration file. Right now, the SGEN tool is not "production ready", as it requires a lot of documentation, testing, etc.
 
   Below you can find its current functionality:
 
