@@ -24,7 +24,7 @@ title: Week 10 | Web APIs 1: DOM
 
   </h2>
 
-  <span>Updated: 10/12/2023</span>
+  <span>Updated: 12/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -74,6 +74,9 @@ title: Week 10 | Web APIs 1: DOM
   <!-- TODO: Integrate into the curriculum (as a Module?): https://github.com/GoogleChrome/developer.chrome.com/blob/main/site/en/docs/devtools/dom/index.md -->
 
 
+  <!-- TODO: Convert interactive tutorial steps into progress steps -->
+
+
 
   <!-- TODO: Review + Add Practice -->
 
@@ -110,6 +113,22 @@ title: Week 10 | Web APIs 1: DOM
   - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
+
+  **Computer Science mini-lesson: What is "Arity"?**
+  
+  In computer science, `arity` is the number of arguments taken by a function:
+  
+  - A `nullary` function takes no arguments: `alert()`
+  - A `unary` function takes one argument: `alert(1)`
+  - A `binary` function takes two arguments: `alert(1,2)`
+  - A `ternary` function takes three arguments: `alert(1,2,3)`
+  - An `n-ary` function takes `n` arguments
+  
+  Source: [Wikipedia](https://en.wikipedia.org/wiki/Arity)
+
+  ---
+
+
 
   [Read: **Document Object Model (DOM) Manipulation - Part 01**](../modules/javascript/web_apis/dom/manipulation/part-01/content/index.md){:target="_blank"}
 
