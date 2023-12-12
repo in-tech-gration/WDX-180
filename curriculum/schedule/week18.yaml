@@ -1,0 +1,15 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: NodeJS 1
+schedule: 
+  days:
+    1: #
+      module: curriculum/schedule/week18/day01.md
+    2: #
+      module: curriculum/schedule/week18/day02.md
+    3: #
+      module: curriculum/schedule/week18/day03.md
+    4: #
+      module: javascript/
+    5: #
+      module: javascript/
