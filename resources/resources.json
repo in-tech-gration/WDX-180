@@ -2876,6 +2876,24 @@
       "language": [
         "en"
       ]
+    },
+    "discovering-javascript-object-notation-with-douglas-crockford": {
+      "type": "YouTube",
+      "duration": 428,
+      "title": "Discovering JavaScript Object Notation with Douglas Crockford",
+      "date": "29/03/2012",
+      "youtube": {
+        "id": "kc8BAR7SHJI",
+        "channel_id": "UCSVKswAwikRd8ZS3AmSnuKg",
+        "channel_title": "ieeeComputerSociety",
+        "thumbnail_url": "https://i.ytimg.com/vi/kc8BAR7SHJI/sddefault.jpg"
+      },
+      "tags": [
+        "JSON",
+        "JavaScript",
+        "XML",
+        "Douglas Crockford"
+      ]
     }
   },
   "creators": {}
