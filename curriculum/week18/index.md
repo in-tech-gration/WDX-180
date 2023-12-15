@@ -24,7 +24,7 @@ title: Week 18 | NodeJS 1
 
   </h2>
 
-  <span>Updated: 12/12/2023</span>
+  <span>Updated: 15/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -130,7 +130,7 @@ title: Week 18 | NodeJS 1
 
 ### Study Plan
 
-  - [Read: **Introduction to ExpressJS**](../modules/javascript/nodejs/intro/index.md){:target="_blank"}
+  - [Read: **Introduction to ExpressJS**](../modules/javascript/nodejs/frameworks/expressjs/intro/index.md){:target="_blank"}
 
 <!-- Summary -->
 
