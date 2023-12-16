@@ -15,7 +15,7 @@ title: Introduction to ExpressJS
   <!-- SGEN:META:PROGRESS:task=Watch: 'Middleware in ExpressJS' -->
 
   <!-- SGEN:META:PROGRESS:task=Watch: 'Express Router' -->
-  - [Read: **Introduction to ExpressJS**](../modules/javascript/nodejs/intro/index.md){:target="_blank"}
+  - [Read: **Introduction to ExpressJS**](../modules/javascript/nodejs/frameworks/expressjs/intro/index.md){:target="_blank"}
 
 ### Summary
 
