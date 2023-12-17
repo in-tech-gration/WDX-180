@@ -20,6 +20,11 @@ title: Async Recap & Practice
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Promise Refactoring'|type=exist|user_folder=promise_refactoring|files=index.html,styles.css,index.js -->
   - [**Promise Refactoring**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/promise_refactoring/){:target="_blank"}
 
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Wikipedia API'|user_folder=wikipedia_api -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Wikipedia API'|type=exist|user_folder=wikipedia_api|files=index.html,styles.css,index.js -->
+  - [**Wikipedia JSON API**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/wikipedia/){:target="_blank"}
+
+
 
 ### Summary
 
