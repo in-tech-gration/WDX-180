@@ -1,0 +1,148 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 100vh;
+  overflow:hidden;
+  width: 100vw;
+  background: #f3da52;
+  margin: 0;
+  padding: 0;
+}
+#sound-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#sound-btn {
+  font-size: 1rem;
+  cursor: pointer;
+  background: yellowgreen;
+  font-weight: bold;
+}
+main {
+  max-width: 1280px;
+  margin: 6rem auto;
+}
+.code {
+  position:relative;
+}
+#source {
+  margin:0 0 00;
+  transition: all 1s ease;
+  background-color: lightgray;
+  font-size: 1.5rem;
+  padding: 16px;
+}
+#target {
+  transition: all 1s ease;
+}
+.code_message {
+  margin:0 0 10px 0;
+  transition: all 1s ease;
+  background-color: #efefef;
+  font-size: 1.4rem;
+  padding: 16px 20px;
+  border-bottom: 5px solid black;
+}
+.number{
+  font-family: monospace;
+  background: coral;
+  position:absolute;
+  top:0;
+  right:0;
+  font-size: 1.2em;
+  padding:18px;
+}
+.browser-mockup {
+  background: white;
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0.25em 0.6em 1em 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-radius: 3px 3px 0 0
+}
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+.browser-mockup > * {
+  display: block;
+}
+.browser-mockup {
+  margin: 20px;
+  flex: 1;
+  padding: 20px 40px;
+}
+#getme {
+    padding: 10px;
+    font-size: 1.6em;
+}
+#note {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+#notice {
+  font-weight: bold;
+  font-size: 1rem;
+  background: tomato;
+  padding: 1rem;
+  color: white;
+}
+#selector_wrapper {
+  font-family: monospace;
+  font-size:1.2em;
+  transition: all 1s ease;
+  border: 5px solid coral;
+  padding-left: 20px;
+  width: 90%;
+  margin: 0 auto;
+  background: black;
+}
+#selector_wrapper span {
+  width: 20%;
+  color: white;
+}
+#selector {
+  color: white;
+  background: black;
+  padding: 10px 0;
+  display: inline-block;
+  width: 70%;
+  outline: none !important;
+  border: none;
+  font-family: monospace;
+  font-size:1em;
+}
+button {
+  margin-top: 20px;
+  background: tomato;
+  color: white;
+  font-size: 1.4rem;
+  float:right;
+  margin-right: 30px;
+  padding: 10px 36px;
+  outline: none;
+  transition: all 400ms ease;
+}
+audio {
+  visibility: hidden;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  z-index:10001;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events:none;
+}
+section p {
+  margin: 5px;
+}

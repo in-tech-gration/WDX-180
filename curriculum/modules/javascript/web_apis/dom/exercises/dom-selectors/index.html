@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Selectors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div id="sound-wrapper">
+    <button id="sound-btn">Turn Sound Off</button>
+  </div>
+
+  <main>
+
+    <p id="notice">Make sure to lower the audio volume before moving on, as there is some heavy shooting involved!</p>
+    <div class="code">
+      <pre id="source"></pre>
+      <span class="number">#<b></b></span>
+    </div>
+    <div class="code_message">
+      <strong>Target: </strong><span id="target">&lt;strong&gt;</span>
+    </div>
+    <div class="browser-mockup"></div>
+    <form>
+      <p id="note">Complete the JavaScript Selector</p>
+      <div id="selector_wrapper">
+        <span>let element = document</span><input type="text" id="selector">
+      </div>
+      <div style="clear:both;"></div>
+      <button id="next">Next</button>
+    </form>
+
+    <!-- AUDIO -->
+    <audio controls preload="auto" id="sound">
+      <!-- SOURCE: https://soundbible.com/mp3/Winchester12-RA_The_Sun_God-1722751268.mp3 -->
+      <source src="./assets/Winchester12-RA_The_Sun_God-1722751268.mp3" controls></source>
+    </audio>
+
+  </main>
+
+  <script src="confettis.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
