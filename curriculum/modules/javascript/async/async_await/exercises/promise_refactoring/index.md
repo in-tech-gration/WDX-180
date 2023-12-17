@@ -2,9 +2,9 @@
 title: "Promise Refactoring"
 ---
 
-# Exercise Title: Promise Refactoring
+# Promise Refactoring
 
-  Description
+  Let's refactor a `Promise` function into an `async/await` syntax:
 
   <details markdown="1">
   <summary><h2>HTML</h2></summary>
