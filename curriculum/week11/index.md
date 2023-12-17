@@ -255,6 +255,38 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 <hr class="mt-1">
 
+<!-- Week 11 - Day 5 | Async Recap & Practice -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 11 - Day 5</span> | Async Recap & Practice</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+  Let's practice what we've learned so far with a few exercises:
+
+  - [**Async/Await exercise: WaitForResult**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/wait_for_result/){:target="_blank"}
+
+  - [**Promise Refactoring**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/promise_refactoring/){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
+<!-- Sources and Attributions -->
+  
+</details>
 
 
 <hr class="mt-1">

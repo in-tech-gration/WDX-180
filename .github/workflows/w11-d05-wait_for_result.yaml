@@ -1,0 +1,21 @@
+name: "Week 11 - Day 5 Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | Test Exercise: 'Async/Await: WaitForResult'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week11/exercises/day05/wait_for_result/**
+jobs:
+  wait_for_result:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Async/Await: WaitForResult' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week11/exercises/day05/wait_for_result/index.html, user/week11/exercises/day05/wait_for_result/styles.css, user/week11/exercises/day05/wait_for_result/index.js"
+          fail: true
