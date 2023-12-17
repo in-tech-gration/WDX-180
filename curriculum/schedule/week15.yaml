@@ -1,6 +1,6 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: Data Structures & Algorithms
+title: JavaScript Intermediate Part 2 - Software Patterns & TypeScript
 schedule: 
   days:
     1: # 
@@ -20,25 +20,48 @@ schedule:
       module: javascript/
 
 # ---
+# Patterns: Simple PubSub
+# Patterns: Observer
+# STUDY: https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/design_patterns/observer
+# STUDY: Design Patterns: Observer and Publish-Subscribe
+# https://www.youtube.com/watch?v=72bdaDl4KLM
+# STUDY: https://www.wikiwand.com/en/Observer_pattern
+# STUDY: https://www.wikiwand.com/en/Publish%E2%80%93subscribe_pattern
 
-# STUDY: 
-# Linked Lists for JavaScript Developers
-# > https://daveceddia.com/linked-lists-javascript/
-# > https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d
+# Observer Design Pattern in Javascript | Design Patterns Tutorial
+# https://www.youtube.com/watch?v=T-xfEbDORng
 
-# TRIE:
-# https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014
-# https://reginafurness.medium.com/implementing-a-trie-in-javascript-part-1-d96e85ba0b4a
-# https://reginafurness.medium.com/implementing-a-trie-in-javascript-part-2-5253e82021e0
-# https://learnersbucket.com/tutorials/data-structures/trie-data-structure-in-javascript/
-# https://www.cs.usfca.edu/~galles/visualization/Trie.html
-# https://github.com/dgalles/visualization
-# https://www.youtube.com/watch?v=zIjfhVPRZCg
-# https://www.youtube.com/watch?v=IdOMRI2KjWQ
-# https://kvzaytsev.github.io/trie-visualizer/
-# https://www.youtube.com/watch?v=MC-iQHFdEDI
-# https://stackfull.dev/trie-in-javascript-the-data-structure-behind-autocomplete
-# https://www.freecodecamp.org/news/how-to-validate-user-input-with-automated-trie-visualization/
-# https://hackernoon.com/practical-data-structures-for-frontend-applications-when-to-use-tries-5428a565eba4
-# Practice: implement an autocomplete feature for a search bar on a website
-# Practice: implement a spell checker
+# https://embeddedartistry.com/fieldatlas/differentiating-observer-and-publish-subscribe-patterns/
+# Publish Subscribe Pattern: https://www.youtube.com/watch?v=0WJjmmw1ryM
+
+# PubSub Design Pattern in JS
+# https://www.youtube.com/watch?v=aynSM8llOBs
+
+# Exercise: Implement a PubSub:
+# 
+# //subscribe to 'hello/world' namespace
+# pubsub.subscribe('hello/world', function(data) {
+#     console.log(data);
+# });
+# //publish event on 'hello/world' namespace
+# pubsub.publish('hello/world', ['hello!']); // second parameter is an array of arguments
+# //prints "hello!" inside console
+# UNSUBSCRIBE:
+# //subscribe to 'hello/world' namespace
+# var subscription = pubsub.subscribe('hello/world', function() {
+#     console.log('hello world!');
+# });
+# //publish event on 'hello/world' namespace
+# pubsub.publish('hello/world');
+# //prints "hello world" inside console
+
+# //unsubscribe
+# pubsub.unsubscribe(subscription);
+# //publish event on 'hello/world' namespace
+# pubsub.publish('hello/world');
+# //nothing happen - we've previously unsubscribed that subscription
+# Src: https://sahadar.github.io/pubsub/
+
+# Exercise: Build a Loader that publishes the loading state to 3 UI components
+
+# > STUDY: Higher Order Functions Practice: https://github.com/lpmi-13/higher-order-functions/tree/main

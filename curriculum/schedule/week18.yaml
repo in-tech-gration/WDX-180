@@ -1,15 +1,3 @@
-input: curriculum/schedule/weekly.draft.md
-daily_input: curriculum/schedule/daily.draft.md
-title: NodeJS 1
-schedule: 
-  days:
-    1: #
-      module: curriculum/schedule/week18/day01.md
-    2: #
-      module: curriculum/schedule/week18/day02.md
-    3: #
-      module: curriculum/schedule/week18/day03.md
-    4: #
-      module: javascript/
-    5: #
-      module: javascript/
+
+# Learn MongoDB in 10 minutes
+# https://www.linkedin.com/feed/update/urn:li:activity:7114385483496886272/?utm_source=share&utm_medium=member_desktop
