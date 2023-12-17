@@ -1,0 +1,12 @@
+# XMLHttpRequest:
+# function makeAJAXCall(methodType, url, callback){
+#    var xhr = new XMLHttpRequest();
+#    xhr.withCredentials = true;
+#    xhr.open("GET", url, true);
+#    xhr.onreadystatechange = function(){
+#          if (xhr.readyState === 4 && xhr.state === 200){
+#              callback(xhr.response);
+#          } 
+#      }
+#      xhr.send();
+# }

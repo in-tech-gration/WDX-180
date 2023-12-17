@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 17/12/2023</span>
+  <span>Updated: 18/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -344,6 +344,8 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
   - [**Promise Refactoring**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/promise_refactoring/){:target="_blank"}
 
   - [**Wikipedia JSON API**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/wikipedia/){:target="_blank"}
+
+  - [**Bitcoin Wallet**](/Users/kostasx/WebServer/plethoralabs/GITHUB/INTEGRATION/WDX-180/curriculum/modules/javascript/web_apis/fetch/exercises/bitcoin-wallet/){:target="_blank"}
 
 <!-- Summary -->
 

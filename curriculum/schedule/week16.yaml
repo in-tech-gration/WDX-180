@@ -3,32 +3,35 @@ daily_input: curriculum/schedule/daily.draft.md
 title: Web APIs Part 3
 schedule: 
   days:
-    1: # Geolocation API
+    1: # Media API
       # file://./../modules/javascript/
       module: javascript/
-    2: # Audio API
+    2: # Geolocation API
       # file://./../modules/javascript/
       module: javascript/
-    3: # Canvas API
+    3: # Drag and Drop API
       # file://./../modules/javascript/
       module: javascript/
-
-      # TODO: STUDY: Canvas API (Intermediate - After getting to know the API): https://www.youtube.com/watch?v=WBkcCuqlzro
-      # Grid Layouts / 2D Arrays / Nested For Loops
-      # TODO: STUDY: Coding Math: Episode 56 - Box Layout: https://www.youtube.com/watch?v=1VgOwdoXJus
-      # EXERCISES: Build a dynamic polling/votes/chart
-      # EXERCISES: Connect Audio API with Canvas and create an Equalizer!
-      # TODO: EXTRAS: Coding Math: Episode 55 - Aspect Ratio
-      # https://www.youtube.com/watch?v=B3pjri-5sPc
-
-    4: # Web Workers
+    4: # Canvas API
       # file://./../modules/javascript/
       module: javascript/
-    5: # 
+    5: # Web Storage API
       # file://./../modules/javascript/
       module: javascript/
 
 # ---
+
+# INTEGRATE: https://eventloop.gr/frontend/html5/apis.html#/
+
 # Canvas:   > Mary Live Codes A JavaScript Game From Scratch – Mary Rose Cook / Front-Trends 2014
   # > https://www.youtube.com/watch?v=hbKN-9o5_Z0
   # > Prereq: Prototype, Canvas, IIFE, events, onevent, etc.
+
+# DAY 4:
+# TODO: STUDY: Canvas API (Intermediate - After getting to know the API): https://www.youtube.com/watch?v=WBkcCuqlzro
+# Grid Layouts / 2D Arrays / Nested For Loops
+# TODO: STUDY: Coding Math: Episode 56 - Box Layout: https://www.youtube.com/watch?v=1VgOwdoXJus
+# EXERCISES: Build a dynamic polling/votes/chart
+# EXERCISES: Connect Audio API with Canvas and create an Equalizer!
+# TODO: EXTRAS: Coding Math: Episode 55 - Aspect Ratio
+# https://www.youtube.com/watch?v=B3pjri-5sPc

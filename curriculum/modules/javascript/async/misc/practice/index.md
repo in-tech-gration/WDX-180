@@ -84,6 +84,9 @@ title: Async Recap & Practice
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Wikipedia API'|type=exist|user_folder=wikipedia_api|files=index.html,styles.css,index.js -->
   - [**Wikipedia JSON API**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/wikipedia/){:target="_blank"}
 
+  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Bitcoin Wallet API'|user_folder=bitcoin_wallet -->
+  <!-- SGEN:META:TESTS:name=Test Exercise: 'Bitcoin Wallet API'|type=exist|user_folder=bitcoin_wallet|files=index.html,styles.css,index.js -->
+  - [**Bitcoin Wallet**](/Users/kostasx/WebServer/plethoralabs/GITHUB/INTEGRATION/WDX-180/curriculum/modules/javascript/web_apis/fetch/exercises/bitcoin-wallet/){:target="_blank"}
 
 
 ### Summary
