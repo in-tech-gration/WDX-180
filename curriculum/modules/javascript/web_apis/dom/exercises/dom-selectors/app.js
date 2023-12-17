@@ -16,18 +16,27 @@ function safe_tags_replace(str) {
 }
 
 /* SELECTORS */
-let $browser = document.querySelector(".browser-mockup");
 let $element;
-let $target = document.querySelector("#target");
-let $source = document.querySelector("#source");
-let $selector = document.querySelector("#selector");
-let $next = document.querySelector("button#next");
+let $browser         = document.querySelector(".browser-mockup");
+let $target          = document.querySelector("#target");
+let $source          = document.querySelector("#source");
+let $selector        = document.querySelector("#selector");
+let $next            = document.querySelector("button#next");
 let $selectorWrapper = document.querySelector("#selector_wrapper");
-let $exec = document.querySelector(".number b");
-let $numberWrapper = document.querySelector(".number");
+let $exec            = document.querySelector(".number b");
+let $numberWrapper   = document.querySelector(".number");
+$selector.focus();
 
 /* EXERCISE DATA */
 let exercises = [
+  {
+    type: "h1",
+    doc: true,
+    message: "<h1>Heading 1</h1>",
+    textContent: "Heading 1",
+    selector: '.querySelector("...?")',
+    solution: '.querySelector("h1")'
+   },
   {
     type: "div",
     id: "getme",

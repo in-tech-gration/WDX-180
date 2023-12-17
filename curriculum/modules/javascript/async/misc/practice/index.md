@@ -86,7 +86,7 @@ title: Async Recap & Practice
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Bitcoin Wallet API'|user_folder=bitcoin_wallet -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Bitcoin Wallet API'|type=exist|user_folder=bitcoin_wallet|files=index.html,styles.css,index.js -->
-  - [**Bitcoin Wallet**](/Users/kostasx/WebServer/plethoralabs/GITHUB/INTEGRATION/WDX-180/curriculum/modules/javascript/web_apis/fetch/exercises/bitcoin-wallet/){:target="_blank"}
+  - [**Bitcoin Wallet**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/web_apis/fetch/exercises/bitcoin-wallet/){:target="_blank"}
 
 
 ### Summary
