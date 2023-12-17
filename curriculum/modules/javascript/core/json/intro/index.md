@@ -10,6 +10,11 @@ title: Introduction to JSON
 
 ### Study Plan
 
+  > How to become a better programmer? 
+  > _"**Fail as fast as you can and as often as you can.**"_ ~ [Scott Hanselman](https://www.hanselman.com/){:target="_blank"}
+
+  ---
+
   <!-- SGEN:META:PROGRESS:task=Read 'Introduction to JSON' -->
   - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
 

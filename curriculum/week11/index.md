@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 12/12/2023</span>
+  <span>Updated: 17/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -56,6 +56,15 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
   - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
+
+  > How to become a better programmer? 
+  > _"**Fail as fast as you can and as often as you can.**"_ ~ [Scott Hanselman](https://www.hanselman.com/){:target="_blank"}
+
+
+
+  ---
+
+
 
   - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
 

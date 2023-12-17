@@ -16,8 +16,9 @@ schedule:
       # file://./../modules/javascript/async/async_await/intro/index.md
       module: javascript/async/async_await/intro/
     5: # 
-      # file://./../modules/javascript/web_apis/dom/
-      module: javascript/web_apis/
+      # file://./../modules/javascript/async/misc/practice/index.md
+      module: javascript/async/misc/practice/
+      
 
 # ---
 

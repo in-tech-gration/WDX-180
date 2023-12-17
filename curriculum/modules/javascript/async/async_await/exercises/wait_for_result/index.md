@@ -29,12 +29,11 @@ title: "Async/Await exercise: WaitForResult"
         <code>
           async function name ( arguments ){ 
 
-            const await = asyncCommand(); 
+            const await = asyncPromiseCommand(); 
 
           }
         </code>
       </pre>
-      <p>Hint: Open the index.js file</p>
     </body>
     <script src="index.js"></script>
   </html>
@@ -118,8 +117,7 @@ title: "Async/Await exercise: WaitForResult"
   Copy the code below in a file called: `index.js`
 
   ```js
-  function waitForResult(value, ms) {
-    ms = ms || 1000;
+  function waitForResult(value, ms = 1000) {
     console.log("waiting for result...");
     return new Promise(function (resolve, reject) {
       function display() {

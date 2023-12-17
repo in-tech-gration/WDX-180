@@ -6,7 +6,7 @@ schedule:
     1: # ES6
       # file://./../modules/javascript/
       module: javascript/
-    2: # More ES6
+    2: # More ES6 (Promise.all/allSettled/new Promise)
       # file://./../modules/javascript/
       module: javascript/
     3: # The Power of Functions
