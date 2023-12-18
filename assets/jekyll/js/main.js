@@ -39,12 +39,27 @@ $(function() {
 
     const $this = $(this);
     const thisId = $this.attr("id");
-
+    
     if ( thisId !== "table-of-contents" && thisId !== "wdx-180" ){
 
+      const link = $this.text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'');
+      let innerText = $this.text().trim();
+
+      if ( $this.find("span").hasClass("summary-day") ){
+        innerText = innerText.replace(/Week\s?\d{1,2}\s-\s?/, "");
+      }
+
       $("nav#side-toc ul")
-        .append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $this.text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $this.text() + "</a></li>");
-      
+        .append(
+          `
+            <li class="tag-${this.nodeName.toLowerCase()}">
+              <a href="#${link}">
+                ${innerText}
+              </a>
+            </li>
+          `
+        );
+
       $this
         .attr("id",$this.text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
     
@@ -81,19 +96,7 @@ $(function() {
   });
 
   // DEBUG SOON TO BE RELEASED WEEKS: Shift+MetaKey+Click
-  $(document.body).on("click", e => {
-    try {
-      if (e.shiftKey && e.metaKey) {
-        const match = e.target.href.match(/#week(\d{2})\/.*/);
-        if (match) {
-          e.target.href = e.target.href.replace(/#week(\d{2})\/.*/, `week${match[1]}/`);
-        }
-      }
-      return true;
-    } catch (e) {
-      console.log(e);
-    }
-  });
+  debugUpcomingWeeklyLinks();
 
   const themeMode = localStorage.getItem("wdx-theme");
   if ( themeMode === "dark-theme" ){
