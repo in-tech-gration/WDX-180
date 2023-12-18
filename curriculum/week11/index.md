@@ -116,7 +116,9 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 ### Study Plan
 
-  ![](./assets/Promise.States.jpg)
+  [**Promises, Promises!**](https://www.youtube.com/watch?v=DpKAnp5Klzw){:target="_blank"}
+
+  ![](./assets/Promises.png)
 
   - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
@@ -128,6 +130,8 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     - Level: Beginner
     - Duration: 24mins
     - Captions: Yes
+
+  ![](./assets/Promise.States.jpg)
 
   - [Watch: **JavaScript Promises**](https://www.youtube.com/watch?v=TnhCX0KkPqs){:target="_blank"}
     - Level: Beginner
