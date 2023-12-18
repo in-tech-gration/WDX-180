@@ -35,6 +35,8 @@ load_script_js_via_src:
 
 You are good to go!
 
+Supported languages (at this point): `js` and `html`.
+
 ---
 
 **Live Example:**
