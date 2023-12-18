@@ -96,6 +96,20 @@ nav#side-toc {
   
 }
 
+nav#side-toc li.active:before {
+  content: "\21E8";
+  color: var(--vibrant);
+}
+nav#side-toc li.active {
+  opacity: 1;
+}
+nav#side-toc li.active a {
+  outline: none;
+}
+nav#side-toc li {
+  opacity: 0.4;
+}
+
 //>> CODE HIGHLIGHT SECTIONS:
 pre.highlight {
   padding: 15px;

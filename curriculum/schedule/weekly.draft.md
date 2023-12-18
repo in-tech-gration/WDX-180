@@ -19,7 +19,7 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
 
       {% assign previous_week_num = {{ SGEN:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
@@ -33,7 +33,7 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
 
       {% assign next_week_num = {{ SGEN:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
