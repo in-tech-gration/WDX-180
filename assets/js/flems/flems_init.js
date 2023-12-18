@@ -8,6 +8,7 @@
 
     const { target } = e;
 
+    // Looking for code sections in the DOM structure above the link
     const parentSiblingCodeSection = target.parentElement.previousElementSibling;
 
     if (!parentSiblingCodeSection) {
@@ -21,14 +22,22 @@
       return false;
     }
 
-    const code = parentSiblingCodeSection.textContent;
+    const code       = parentSiblingCodeSection.textContent;
     const codeEditor = document.createElement("div");
     codeEditor.setAttribute("class", "wdx-flems-editor")
     target.insertAdjacentElement("afterEnd", codeEditor);
 
-    // Initialize JavaScript Code Playground:
+    // Initialize JavaScript + HTML Code Playgrounds:
     // Check for both language-js and language-javascript classes.
-    if (parentSiblingCodeSection.classList.contains("language-js") || parentSiblingCodeSection.classList.contains("language-javascript")) {
+    const parentClassList = parentSiblingCodeSection.classList; 
+    const containsJS      = parentClassList.contains("language-js") || parentClassList.contains("language-javascript"); 
+    const containsHTML    = parentClassList.contains("language-html");
+
+    console.log(parentSiblingCodeSection);
+
+    if ( containsJS ) {
+
+      console.log("Initializing JS Flems playground...");
 
       const flems = Flems(codeEditor, {
         files: [{
@@ -50,6 +59,35 @@
         linkTabs: true,
         reloadButton: true,
         console: true,
+        autoReload: true,
+        autoReloadDelay: 400
+      });
+
+    }
+
+    if ( containsHTML ){
+      console.log("Initializing HTML Flems playground...");
+
+      const flems = Flems(codeEditor, {
+        files: [{
+          name: 'playground.html',
+          content: `${code}`
+        }],
+        shareButton: false,
+        middle: 50,
+        selected: '.html',
+        autoHeight: true,
+
+        // Default Settings:
+        color: 'rgb(38,50,56)',
+        theme: 'material', // and 'none' or 'default'
+        resizeable: true,
+        editable: true,
+        toolbar: true,
+        fileTabs: true,
+        linkTabs: true,
+        reloadButton: true,
+        console: false,
         autoReload: true,
         autoReloadDelay: 400
       });
