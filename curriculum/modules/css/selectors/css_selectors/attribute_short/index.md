@@ -12,7 +12,7 @@ tags: css, css selectors, attribute selector
 
 - Watch the [**video**](https://www.youtube.com/shorts/_018ufHLBII){:target="_blank"}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_018ufHLBII?si=dos8CMtCZioA97iI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/_018ufHLBII?si=dos8CMtCZioA97iI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: 4px solid red;"></iframe>
 
 - Check the [MDN page on `Attribute Selectors`](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors){:target="_blank"}
 
