@@ -71,7 +71,7 @@ Syllabus:
           title: "Node.js 1"
         18: # Node.js 2 & NoSQL Databases (19/02/2024 - 23/02/2024)
           # file:///./schedule/week19.yaml
-          title: "Node.js 2, NoSQL Databases & Docker"
+          title: "Node.js 2 & NoSQL Databases"
           # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
           # STUDY: https://www.sql-practice.com/
           # STUDY: https://sql.js.org/examples/GUI/index.html

@@ -46,7 +46,7 @@
   - [**Week 15**: JavaScript Intermediate 2: Software Patterns & TypeScript](#week15/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#week16/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 17**: Node.js 1](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 18**: Node.js 2, NoSQL Databases & Docker](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 18**: Node.js 2 & NoSQL Databases](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 19**: Data Structures & Algorithms](#week19/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 20**: React 1](#week20/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 21**: React 2, Firebase](#week21/index.md) _(🔒 Stay tuned! This module is on the way.)_
