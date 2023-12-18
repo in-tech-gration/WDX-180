@@ -19,7 +19,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
       {% assign previous_week_num = 11 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
@@ -33,7 +33,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
       {% assign next_week_num = 11 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -66,7 +66,9 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 
 
-  - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
+  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
+
+  - Read [**Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"} to learn about the world's most popular data format. JSON, which stands for `JavaScript Object Notation`, is a plain text, lightweight data format that can be used across different systems and programming languages.
 
 ### Summary
 
@@ -113,6 +115,8 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
   - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
+
+  ![](./assets/Promise.States.jpg)
 
   - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
@@ -223,6 +227,10 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 ### Study Plan
 
+  **Let's learn about `async/await`!**
+
+  ![](./assets/kahoot-bean.jpg)
+
   - [Watch: **JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute**](https://www.youtube.com/watch?v=TtnodUZ7xnQ){:target="_blank"}
     - Level: Beginner
     - Duration: 1min
@@ -269,6 +277,10 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
   - [Extra Resources](#extra-resources-NN)
 
 ### Study Plan
+
+  **Welcome to Asynchronous programming!**
+
+  ![](./assets/HUMOUR.Race.Condition.jpg){:style="width:100%"}
 
   **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
 

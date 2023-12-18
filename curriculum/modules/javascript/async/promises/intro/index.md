@@ -10,6 +10,8 @@ title: Introduction to Promises
 
 ### Study Plan
 
+  ![](./assets/Promise.States.jpg)
+
   <!-- SGEN:META:PROGRESS:task=Read 'Promises and Callbacks' -->
   - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 

@@ -10,6 +10,10 @@ title: Async Recap & Practice
 
 ### Study Plan
 
+  **Welcome to Asynchronous programming!**
+
+  ![](./assets/HUMOUR.Race.Condition.jpg){:style="width:100%"}
+
   **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
 
   - 1) 👍 Remember to handle errors first: When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:

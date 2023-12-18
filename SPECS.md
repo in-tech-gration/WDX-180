@@ -146,6 +146,10 @@
   - https://github.com/orgs/community/discussions/37669
   - https://pages.github.com/versions/
 
+## Jekyll | How to | Add custom attributes to Markdown links
+
+  `![](./assets/image.jpg){:style="width:100%"}`
+
 ## Jekyll | How to | Create interactive coding playground (inline)
 
   Instructions: [https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/)
