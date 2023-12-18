@@ -98,15 +98,24 @@ if (help) {
 }
 
 // PARSE: search-for-youtube
-if (vid && typeof vid === "string") {
+if ( vid ) {
 
-  const found = findYouTubeById(vid);
+  if ( typeof vid === "string" ){
 
-  if (found) {
-    ok(`YouTube video with id ${vid} was found in the resources.json.`);
+    const found = findYouTubeById(vid);
+  
+    if (found) {
+      ok(`YouTube video with id ${vid} was found in the resources.json.`);
+    } else {
+      warn(`YouTube video with id ${vid} was not found in the resources.json.`);
+      info(`Try running the command with the -a flag to insert the resource into the resources.`)
+    }
+
   } else {
-    warn(`YouTube video with id ${vid} was not found in the resources.json.`);
+
+    warn(`Missing Youtube video id. Command should be run like this: node tools/resources -y Ue3VUsZwAJ0`)
   }
+
 
 }
 
@@ -230,7 +239,7 @@ if (vidToAdd && typeof vidToAdd === "string") {
   const found = findYouTubeById(vidToAdd);
   
   if (found) {
-    warn(`YouTube video with id ${vidToAdd} was found in the resources.json.`);
+    warn(`YouTube video with id ${vidToAdd} is already in the resources.json.`);
     process.exit();
   } 
 
