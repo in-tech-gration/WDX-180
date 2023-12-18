@@ -146,6 +146,16 @@
   - https://github.com/orgs/community/discussions/37669
   - https://pages.github.com/versions/
 
+## Jekyll | How to | Create interactive coding playground (inline)
+
+  Instructions: [https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/)
+
+  Related Assets:
+
+  - /assets/js/flems/flems_init.js
+  - /assets/jekyll/css/style.scss (Check: // FLEMS CODE SECTIONS)
+  - /assets/js/flems/flems.html
+
 ---
 
 ## About the Instructor's Cockpit Tool
