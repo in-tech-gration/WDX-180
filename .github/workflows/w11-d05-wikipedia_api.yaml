@@ -1,0 +1,21 @@
+name: "Week 11 - Day 5 Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | Test Exercise: 'Wikipedia API'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week11/exercises/day05/wikipedia_api/**
+jobs:
+  wikipedia_api:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Wikipedia API' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week11/exercises/day05/wikipedia_api/index.html, user/week11/exercises/day05/wikipedia_api/styles.css, user/week11/exercises/day05/wikipedia_api/index.js"
+          fail: true

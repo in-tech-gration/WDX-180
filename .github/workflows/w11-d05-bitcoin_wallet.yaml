@@ -1,0 +1,21 @@
+name: "Week 11 - Day 5 Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | Test Exercise: 'Bitcoin Wallet API'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week11/exercises/day05/bitcoin_wallet/**
+jobs:
+  bitcoin_wallet:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Bitcoin Wallet API' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week11/exercises/day05/bitcoin_wallet/index.html, user/week11/exercises/day05/bitcoin_wallet/styles.css, user/week11/exercises/day05/bitcoin_wallet/index.js"
+          fail: true

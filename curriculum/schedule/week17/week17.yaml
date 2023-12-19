@@ -1,0 +1,13 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: NodeJS 1
+schedule: 
+  days:
+    # file://./day01.md
+    Monday: day01.md
+    Tuesday: day02.md
+    Wednesday: day03.md
+    # More Express here?
+    Thursday: ../module/javascript/
+    # More Express here?
+    Friday: ../module/javascript/

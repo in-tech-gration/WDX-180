@@ -36,18 +36,18 @@
   - [**Week 08**: JavaScript Core 2](week08/index.md)
   - [**Week 09**: JavaScript Core 3](week09/index.md)
   - [**Week 10**: Web APIs 1: DOM API & Events](week10/index.md)
-  - [**Week 11**: Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API](#week11/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 11**: Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API](week11/index.md)
   - [**Week 12**: Project Week: Combine Web APIs to build a web application](#week12/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ### Intermediate: WDX 120°
 
   - [**Week 13**: JavaScript Intermediate 1 & Git](#week13/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 14**: Functional Programming 1, Templating, JavaScript Frameworks](#week14/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 15**: Data Structures & Algorithms](#week15/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 15**: JavaScript Intermediate 2: Software Patterns & TypeScript](#week15/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#week16/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 18**: Node.js 1](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 19**: Node.js 2, NoSQL Databases & Docker](#week19/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 17**: Node.js 1](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 18**: Node.js 2 & NoSQL Databases](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 19**: Data Structures & Algorithms](#week19/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 20**: React 1](#week20/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 21**: React 2, Firebase](#week21/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 22**: React 3, Redux & Tech Interview](#week22/index.md) _(🔒 Stay tuned! This module is on the way.)_

@@ -19,12 +19,12 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
       {% assign previous_week_num = 11 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 12/12/2023</span>
+  <span>Updated: 18/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -33,7 +33,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
       {% assign next_week_num = 11 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -57,7 +57,18 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 ### Study Plan
 
-  - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
+  > How to become a better programmer? 
+  > _"**Fail as fast as you can and as often as you can.**"_ ~ [Scott Hanselman](https://www.hanselman.com/){:target="_blank"}
+
+
+
+  ---
+
+
+
+  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
+
+  - Read [**Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"} to learn about the world's most popular data format. JSON, which stands for `JavaScript Object Notation`, is a plain text, lightweight data format that can be used across different systems and programming languages.
 
 ### Summary
 
@@ -105,6 +116,10 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 ### Study Plan
 
+  [**Promises, Promises!**](https://www.youtube.com/watch?v=DpKAnp5Klzw){:target="_blank"}
+
+  ![](./assets/Promises.png)
+
   - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
   Promises are a tough subject in JavaScript, and a lot of developers, even very experienced ones, have issues with them. So you do not have to worry is this concept feel unclear to you.
@@ -115,6 +130,8 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     - Level: Beginner
     - Duration: 24mins
     - Captions: Yes
+
+  ![](./assets/Promise.States.jpg)
 
   - [Watch: **JavaScript Promises**](https://www.youtube.com/watch?v=TnhCX0KkPqs){:target="_blank"}
     - Level: Beginner
@@ -214,6 +231,10 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 ### Study Plan
 
+  **Let's learn about `async/await`!**
+
+  ![](./assets/kahoot-bean.jpg)
+
   - [Watch: **JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute**](https://www.youtube.com/watch?v=TtnodUZ7xnQ){:target="_blank"}
     - Level: Beginner
     - Duration: 1min
@@ -246,6 +267,113 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 <hr class="mt-1">
 
+<!-- Week 11 - Day 5 | Async Recap & Practice -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 11 - Day 5</span> | Async Recap & Practice</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+  **Welcome to Asynchronous programming!**
+
+  ![](./assets/HUMOUR.Race.Condition.jpg){:style="width:100%"}
+
+  **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
+
+  - 1) 👍 Remember to handle errors first: When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:
+
+  **Step 1**
+
+  ```js
+  fetch( URL )
+  .catch( error => console.log(error) ); // <= ALWAYS start this way
+  ```
+
+  **Step 2**
+
+  ```js
+  fetch( URL )
+  .then( response => /* Now we can start writing the code inside the then() */ )
+  .catch( error => console.log(error) );
+  ```
+
+  In the case of the `await` syntax, you simple start by enclosing the code inside a `try/catch`:
+
+  ```js
+  try {
+    const response = await fetch( URL );
+  } catch( error ){ //<= ALWAYS start this way
+    console.log( error );
+  }
+  ```
+
+  - 2) 👍 Naming helps: Name all your async Promise-based functions using the `Async` suffix:
+
+  ```js
+  async function getDataFromFacebookAsync(){
+    // ...
+  }
+  function collectUserDataAsync(){
+    return new Promise(/* callback function here... */);
+  }
+  ```
+
+  Having the `Async` suffix in your async function will help you remember to handle these functions using `await` or the `.then().catch()` syntax. Once you get familiar with asynchronous and Promise-based functions, you can get rid of this training wheels even though they will hurt nobody and can probably be of help to some beginner coders that will work on your code.
+
+  This will help you avoid common beginners' errors such as trying to get the result of an async function without `await` or `then()`:
+
+  ❌ Wrong:
+
+  ```js
+  const response = getDataFromFacebook( URL );
+  ```
+
+  ✅ Correct:
+
+  ```js
+  const response = await getDataFromFacebookAsync( URL );
+  ```
+
+  **What's the purpose of this?**
+  
+  Just like training wheels on a bicycle, `programming training wheels` act as our support and reminders in our first rides with JavaScript. Their role is to instill some core concepts, avoid bugs and common beginner mistakes and also get us accustomed with some of the good practices.
+  
+  > "The functionality of training wheels is based on the premise that a learner rider can gradually develop their balance and coordination skills by relying on the support of the extra wheels. As the rider gains confidence and proficiency, the training wheels are gradually raised or removed, theoretically allowing the rider to transition to riding without additional support." ~ Wikipedia
+  
+
+  ---
+
+
+
+  Now, let's practice what we've learned so far with a few exercises:
+
+  - [**Async/Await exercise: WaitForResult**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/wait_for_result/){:target="_blank"}
+
+  - [**Promise Refactoring**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/promise_refactoring/){:target="_blank"}
+
+  - [**Wikipedia JSON API**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/wikipedia/){:target="_blank"}
+
+  - [**Bitcoin Wallet**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/web_apis/fetch/exercises/bitcoin-wallet/){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
+<!-- Sources and Attributions -->
+  
+</details>
 
 
 <hr class="mt-1">

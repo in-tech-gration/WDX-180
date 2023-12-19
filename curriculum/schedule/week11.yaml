@@ -16,13 +16,17 @@ schedule:
       # file://./../modules/javascript/async/async_await/intro/index.md
       module: javascript/async/async_await/intro/
     5: # 
-      # file://./../modules/javascript/web_apis/dom/
-      module: javascript/web_apis/
+      # file://./../modules/javascript/async/misc/practice/index.md
+      module: javascript/async/misc/practice/
+      
 
 # ---
 
 # Day 5: Tip of the day (related to <video>)
 # => # YouTube Speed-up Shortcuts
+# Fetch to OMDB: https://codepen.io/kostasx/pen/XyRdgX?editors=0010
+# Error Handling with Promises: https://codepen.io/kostasx/pen/oJjENo?editors=0011
+# Async / Await: https://codepen.io/kostasx/pen/oaXpYd?editors=0011
 
 # DAY 3: Install https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 

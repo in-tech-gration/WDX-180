@@ -19,12 +19,12 @@ title: Week 09 | JavaScript Core 3
 
       {% assign previous_week_num = 09 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 7/12/2023</span>
+  <span>Updated: 18/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -33,7 +33,7 @@ title: Week 09 | JavaScript Core 3
 
       {% assign next_week_num = 09 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -359,7 +359,37 @@ title: Week 09 | JavaScript Core 3
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Based on [this reference](https://flexbox.malven.co/){:target="_blank"} and the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#formal_definition){:target="_blank"}, complete the following object structure:
+
+  ```js
+  const flexboxProperties = {
+    container: {
+      display: {
+        flex: {},
+        "inline-flex": {}
+      },
+      "flex-direction": {
+        row: { "initial-value": true },
+        "row-reverse": {},
+        column: {}
+      }
+    },
+    children: {
+
+    }
+  } 
+  ```
+
+  <!-- TODO: Add tests to the Flexbox Object exercise -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week09/progress/progress.draft.w09.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 

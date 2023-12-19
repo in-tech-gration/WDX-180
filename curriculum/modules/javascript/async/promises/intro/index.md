@@ -10,6 +10,10 @@ title: Introduction to Promises
 
 ### Study Plan
 
+  [**Promises, Promises!**](https://www.youtube.com/watch?v=DpKAnp5Klzw){:target="_blank"}
+
+  ![](./assets/Promises.png)
+
   <!-- SGEN:META:PROGRESS:task=Read 'Promises and Callbacks' -->
   - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
@@ -22,6 +26,8 @@ title: Introduction to Promises
     - Level: Beginner
     - Duration: 24mins
     - Captions: Yes
+
+  ![](./assets/Promise.States.jpg)
 
   <!-- SGEN:META:PROGRESS:task=Watch 'JavaScript Promises' -->
   - [Watch: **JavaScript Promises**](https://www.youtube.com/watch?v=TnhCX0KkPqs){:target="_blank"}

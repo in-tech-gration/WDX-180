@@ -10,8 +10,15 @@ title: Introduction to JSON
 
 ### Study Plan
 
+  > How to become a better programmer? 
+  > _"**Fail as fast as you can and as often as you can.**"_ ~ [Scott Hanselman](https://www.hanselman.com/){:target="_blank"}
+
+  ---
+
+  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
+
   <!-- SGEN:META:PROGRESS:task=Read 'Introduction to JSON' -->
-  - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
+  - Read [**Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"} to learn about the world's most popular data format. JSON, which stands for `JavaScript Object Notation`, is a plain text, lightweight data format that can be used across different systems and programming languages.
 
 ### Summary
 

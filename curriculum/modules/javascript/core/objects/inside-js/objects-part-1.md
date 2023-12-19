@@ -41,6 +41,30 @@ title: Objects Part 1
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercises found inside the '1-isolate' module -->
 
+  <!-- SGEN:META:PROGRESS:task=Complete the Flexbox Object exercise -->
+  - Based on [this reference](https://flexbox.malven.co/){:target="_blank"} and the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction#formal_definition){:target="_blank"}, complete the following object structure:
+
+  ```js
+  const flexboxProperties = {
+    container: {
+      display: {
+        flex: {},
+        "inline-flex": {}
+      },
+      "flex-direction": {
+        row: { "initial-value": true },
+        "row-reverse": {},
+        column: {}
+      }
+    },
+    children: {
+
+    }
+  } 
+  ```
+
+  <!-- TODO: Add tests to the Flexbox Object exercise -->
+
 ### Extra Resources
 
 ### Sources and Attributions

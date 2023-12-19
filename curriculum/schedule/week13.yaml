@@ -6,7 +6,7 @@ schedule:
     1: # ES6
       # file://./../modules/javascript/
       module: javascript/
-    2: # More ES6
+    2: # More ES6 (Promise.all/allSettled/new Promise)
       # file://./../modules/javascript/
       module: javascript/
     3: # The Power of Functions
@@ -20,6 +20,8 @@ schedule:
       module: css/misc/advanced_css/
       # TODO: Good morning! Let's lighten up our Friday with some CSS tricks. ;)
 # ---
+
+# DAY 1: ES6 refers to the features that were added to the JavaScript programming language in the 6th Edition of the ECMAScript standard (ES6 for short).
 
 # DAY 1: TODO: You are now grown-ups, so let's recommend some cool tools to add to your arsenal:
 # https://chrome.google.com/webstore/detail/30-seconds-of-knowledge/mmgplondnjekobonklacmemikcnhklla
@@ -44,3 +46,6 @@ schedule:
 # > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 # > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 # > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype
+
+# DAY 3: Callbacks
+# dendron.docs/notes/JS.FUNCTIONS.md => ## FUNCTIONS | CALLBACKS

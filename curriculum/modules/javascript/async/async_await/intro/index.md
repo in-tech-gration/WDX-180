@@ -10,6 +10,10 @@ title: Introduction to Async/Await
 
 ### Study Plan
 
+  **Let's learn about `async/await`!**
+
+  ![](./assets/kahoot-bean.jpg)
+
   <!-- SGEN:META:PROGRESS:task=Watch 'JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute' -->
   - [Watch: **JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute**](https://www.youtube.com/watch?v=TtnodUZ7xnQ){:target="_blank"}
     - Level: Beginner

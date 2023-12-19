@@ -42,6 +42,7 @@ Syllabus:
           open: true
         11: # file:///./schedule/week11.yaml (18/12/2023 - 22/12/2023)
           title: "Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API"
+          open: true
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
         12: # file:///./schedule/week12.yaml (XMAS Project)
           title: "Project Week: Combine Web APIs to build a web application"
@@ -58,24 +59,19 @@ Syllabus:
           # file:///./schedule/week14.yaml
           title: "Functional Programming 1, Templating, JavaScript Frameworks"
           # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
-        15: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
-          # file:///./schedule/week15.yaml
-          title: "Data Structures & Algorithms"
-          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
-          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
-        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
-          # file:///./schedule/week16.yaml
-          title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
-        17: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
+        15: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml
           title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
           # MEMOIZATION
-        18: # Node.js 1 (12/02/2024 - 16/02/2024)
+        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
+          # file:///./schedule/week16.yaml
+          title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
+        17: # Node.js 1 (12/02/2024 - 16/02/2024)
           # file:///./schedule/week18.yaml
           title: "Node.js 1"
-        19: # Node.js 2, NoSQL Databases, Docker (19/02/2024 - 23/02/2024)
+        18: # Node.js 2 & NoSQL Databases (19/02/2024 - 23/02/2024)
           # file:///./schedule/week19.yaml
-          title: "Node.js 2, NoSQL Databases & Docker"
+          title: "Node.js 2 & NoSQL Databases"
           # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
           # STUDY: https://www.sql-practice.com/
           # STUDY: https://sql.js.org/examples/GUI/index.html
@@ -86,6 +82,11 @@ Syllabus:
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/01-tables.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
+        19: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
+          # file:///./schedule/week15.yaml
+          title: "Data Structures & Algorithms"
+          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
+          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         20: # React 1 (26/02/2024 - 01/03/2024)
           # file:///./schedule/week20.yaml
           title: "React 1"
