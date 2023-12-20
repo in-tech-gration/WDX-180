@@ -11,7 +11,15 @@ load_script_js_via_src:
 
 - Watch the [**video**](){:target="_blank"}
 
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/<VIDEO_ID>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: 4px solid red;"></iframe>
+<iframe 
+  width="100%" 
+  height="480"
+  src="https://www.youtube.com/embed/<VIDEO_ID>" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen style="border: 4px solid red;">
+</iframe>
 
 - Check the [MDN page on ``](){:target="_blank"}
 

@@ -1,5 +1,5 @@
 {
-  "$schema": "./resources.schema.json",
+  "$schema": "./schemas/resources.schema.json",
   "resources": {
     "how-computers-work-binary-data": {
       "title": "How Computers Work: Binary & Data",
