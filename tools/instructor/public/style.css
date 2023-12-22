@@ -57,6 +57,9 @@ body {
 .quick-links {
   margin: 1rem 0 0 0;
   padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .quick-links a {
   background: #00000066;
