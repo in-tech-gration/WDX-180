@@ -288,6 +288,8 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
 
+  **Suggestion #1:**
+
   **Remember to handle errors first:** 
   
   When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:
@@ -316,6 +318,9 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     console.log( error );
   }
   ```
+
+  **Suggestion #2:**
+
   **Naming helps: Name all your async Promise-based functions using the `Async` suffix:**
   
   ```js
@@ -343,6 +348,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
   const response = await getDataFromFacebookAsync( URL );
   ```
   
+
   **What's the purpose of this?**
   
   Just like training wheels on a bicycle, `programming training wheels` act as our support and reminders in our first rides with JavaScript. Their role is to instill some core concepts, avoid bugs and common beginner mistakes and also get us accustomed with some of the good practices.

@@ -16,8 +16,14 @@ title: Async Recap & Practice
 
   **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
 
+  **Suggestion #1:**
+
   {{ SGEN:MODULE:training-wheels/promises-handle-errors.md }}
+
+  **Suggestion #2:**
+
   {{ SGEN:MODULE:training-wheels/promises-async-naming.md }}
+
   {{ SGEN:MODULE:training-wheels/why-training-wheels.md }}
 
   ---
