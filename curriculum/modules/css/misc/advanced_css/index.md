@@ -16,7 +16,7 @@ title: Advanced CSS
 
   Let's begin by reading about [What is a Software Post-Mortem and How Do You Write One?](https://www.freecodecamp.org/news/what-is-a-software-post-mortem/){:target="_blank"}
 
-  After having read the article, open up the code [found here](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/post_mortem) debug the program and write a short post mortem.
+  After having read the article, open up the code [found here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/post_mortem){:target="_blank"} debug the program and write a short post mortem.
 
   ---
 

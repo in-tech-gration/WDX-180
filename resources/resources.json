@@ -2914,6 +2914,10 @@
         "html",
         "tutorial"
       ]
+    },
+    "what-is-a-software-post-mortem": {
+      "type": "Blog Post",
+      "identifier": "https://www.freecodecamp.org/news/what-is-a-software-post-mortem/"
     }
   },
   "creators": {}
