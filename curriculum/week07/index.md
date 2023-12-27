@@ -24,7 +24,7 @@ title: Week 07 | JavaScript Core 1
 
   </h2>
 
-  <span>Updated: 27/12/2023</span>
+  <span>Updated: 28/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
