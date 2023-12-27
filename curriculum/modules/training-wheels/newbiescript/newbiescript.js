@@ -1,6 +1,9 @@
 ;(function(){
   // cSpell: ignore newbiescript
 
+  // TODO: Disable option
+  // window.disableNewbieScript = false;
+
   // Minify: npx uglify-js newbiescript.js > newbiescript.min.js
 
   // XRAY:

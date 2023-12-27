@@ -13,6 +13,32 @@ title: Introduction to the DOM API
   > "The making of good software takes time.
   > If you try to make it take less time, it will take more time."
 
+  Starting today, **there's a new requirement for you**. 
+
+  ![](./assets/bug_journal.png)
+    
+  Under the `user/` folder, you'll find a new `bug_journal/` folder that contains a sample file called `BUG_JOURNAL.draft.md`.  Copy this file, rename it to `BUG_JOURNAL.md` and **start tracking your bugs** from now on. You'll find a small example inside the draft (you can remove it from your copy) to give you an idea on what to look for and how to document each bug. There's a long and short version of bug reporting. Use the one that fits your style and mode of operation.
+
+  > "The worst thing you can do is to ignore your mistakes. Don't get into the bad habit of error amnesia. You should be learning from your mistakes and the only way to learn from your mistakes is to pay attention to them." ~ Douglas Crockford
+
+  The import steps are:
+
+  - Make sure to pay attention to the bugs and errors in your code
+  - When they happen, stop for a moment and document them
+  - Write a brief description of the bug/error
+  - Include a small code replicating the bug 
+  - Try to categorize the bug (in any way you want)
+  - Think about what caused the bug
+  - Think about ways to detect, protect the code from or avoid the bug altogether in the future
+
+  Why should you do this?
+
+  - Stop making the same mistakes again and again!
+  - Develop safer, more stable and bug-free software by learning how you've failed in the past
+  - Nothing is a more valuable lesson that our failures 
+
+  ---
+
   ![](./assets/HTML-to-DOM-Building.gif)
 
   - [Watch: **HTML vs DOM? Let’s debug them**](https://www.youtube.com/watch?v=J-02VNxE7lE){:target="_blank"} to understand the basic difference between these two very crucial concepts in Web Development and start building an intuition around the Document Object Model (DOM).
