@@ -66,7 +66,7 @@ title: Functions Part 1
   }
   ```
 
-  {{ SGEN:MODULE:curriculum/training-wheels/why-training-wheels.md }}
+  {{ SGEN:MODULE:training-wheels/why-training-wheels.md }}
 
   As you move on to work on the rest of the function body, the return statement will act as a reminder that some kind of value (most probably, some value other than `undefined`) should be returned.
 

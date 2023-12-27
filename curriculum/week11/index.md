@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 18/12/2023</span>
+  <span>Updated: 27/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -288,25 +288,27 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
 
-  - 1) 👍 Remember to handle errors first: When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:
-
+  **Remember to handle errors first:** 
+  
+  When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:
+  
   **Step 1**
-
+  
   ```js
   fetch( URL )
   .catch( error => console.log(error) ); // <= ALWAYS start this way
   ```
-
+  
   **Step 2**
-
+  
   ```js
   fetch( URL )
   .then( response => /* Now we can start writing the code inside the then() */ )
   .catch( error => console.log(error) );
   ```
-
+  
   In the case of the `await` syntax, you simple start by enclosing the code inside a `try/catch`:
-
+  
   ```js
   try {
     const response = await fetch( URL );
@@ -314,9 +316,8 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     console.log( error );
   }
   ```
-
-  - 2) 👍 Naming helps: Name all your async Promise-based functions using the `Async` suffix:
-
+  **Naming helps: Name all your async Promise-based functions using the `Async` suffix:**
+  
   ```js
   async function getDataFromFacebookAsync(){
     // ...
@@ -325,23 +326,23 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     return new Promise(/* callback function here... */);
   }
   ```
-
+  
   Having the `Async` suffix in your async function will help you remember to handle these functions using `await` or the `.then().catch()` syntax. Once you get familiar with asynchronous and Promise-based functions, you can get rid of this training wheels even though they will hurt nobody and can probably be of help to some beginner coders that will work on your code.
-
+  
   This will help you avoid common beginners' errors such as trying to get the result of an async function without `await` or `then()`:
-
+  
   ❌ Wrong:
-
+  
   ```js
   const response = getDataFromFacebook( URL );
   ```
-
+  
   ✅ Correct:
-
+  
   ```js
   const response = await getDataFromFacebookAsync( URL );
   ```
-
+  
   **What's the purpose of this?**
   
   Just like training wheels on a bicycle, `programming training wheels` act as our support and reminders in our first rides with JavaScript. Their role is to instill some core concepts, avoid bugs and common beginner mistakes and also get us accustomed with some of the good practices.
