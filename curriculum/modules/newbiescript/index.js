@@ -36,4 +36,10 @@
   // https://developer.mozilla.org/en-US/docs/Web/API/Window/rejectionhandled_event
   window.addEventListener("rejectionhandled", e => {});
 
+  console.log(`
+    █▄░█ █▀▀ █░█░█ █▄▄ █ █▀▀ █▀ █▀▀ █▀█ █ █▀█ ▀█▀
+    █░▀█ ██▄ ▀▄▀▄▀ █▄█ █ ██▄ ▄█ █▄▄ █▀▄ █ █▀▀ ░█░
+    0.1.0 Loaded
+  `);
+
 }());
