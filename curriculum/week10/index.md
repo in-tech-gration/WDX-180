@@ -19,21 +19,21 @@ title: Week 10 | Web APIs 1: DOM
 
       {% assign previous_week_num = 10 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 12/12/2023</span>
+  <span>Updated: 27/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
     <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
+    {% if week_num <= 36 %}
 
       {% assign next_week_num = 10 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
