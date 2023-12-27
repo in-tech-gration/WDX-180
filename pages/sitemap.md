@@ -23,3 +23,11 @@ favicon: sitemap.png
     - **Playlists**
       - [Flappy Bird](https://www.youtube.com/playlist?list=PLdo7hJB0agEmTY9xT7EvzUkClAeAHJr9G){:target="_blank"}
       - [Real-life coding](https://www.youtube.com/playlist?list=PLdo7hJB0agElB29_USaEp_wtd2cPuD71C){:target="_blank"}
+  
+  - **Training Wheels**
+    - [About](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/why-training-wheels){:target="_blank"}
+    - **Functions**
+      - [Explicit Function Return Statement](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/functions-always-return){:target="_blank"}
+    - **Async**
+      - [Promises: Handle Errors First](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/promises-handle-errors)
+      - [Async Naming Suffix](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/promises-async-naming)
