@@ -1,10 +1,10 @@
 ---
-title: "ES6 Destructuring Practice"
+title: "ES6 Spread Syntax Practice"
 ---
 
-# ES6 Destructuring Practice
+# ES6 Spread Syntax Practice
 
-  Here you can find a simple exercise in order to practice what you've learned about **destructuring with ES6**!
+  Here you can find a simple exercise in order to practice what you've learned about **ES6 Spread Syntax**!
 
   Below you will find boilerplate code in HTML, CSS and JavaScript. Copy each one in different files and start working towards the solution according to the task found inside the JavaScript code comments!
 
@@ -18,44 +18,21 @@ title: "ES6 Destructuring Practice"
   <html>
     <head>
       <meta charset="UTF-8" />
-      <title>ES6 Destructuring Practice</title>
+      <title>ES6 Spread Syntax Practice</title>
       <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
       <div class="js"></div>
-      <h1>ES6 Destructuring Practice</h1>
+      <h1>Spread Syntax Practice</h1>
       <pre><code>Quick Reference:
-
-  let obj = { a: 1, b: 2 };
-  let { a, b } = obj; // a === 1, b === 2
-  let { a:one, b:two } = obj; // one === 1, two === 2
-
-  let arr = [ 1, 2 ];
-  let [ first, last ] = arr; // first === 1, last === 2
-  </code></pre>
-      <hr />
-
-      <a
-        style="opacity: 1; font-weight: 600"
-        href="https://rangle-io.gitbooks.io/react-training/content/book/es6_constructs/destructuring.html"
-        target="_blank"
-        >[ Destructuring Reference ]</a
-      >
-      <br />
-      <a
-        style="opacity: 1; font-weight: 600"
-        href="https://wesbos.com/destructuring-objects/"
-        target="_blank"
-        >[ A Dead Simple intro to Destructuring JavaScript Objects ]</a
-      >
-      <br />
+      let a = [ 2, 3 ];
+      let b = [ 1, ...a, 4]; // b === [ 1, 2, 3, 4 ]
+      let clone = [ ...b ];
+      </code></pre>
+      <hr/>
+      <a style="opacity:1;font-weight:600" href="https://codeburst.io/javascript-es6-the-spread-syntax-f5c35525f754" target="_blank">[ JavaScript ES6 — The Spread Syntax (…) ]</a>
+      <br/>
       <div class="exercises"></div>
-      <br />
-      <a
-        target="_blank"
-        href="http://frontend.turing.io/lessons/module-3/es6-destructuring.html"
-        >[ Exercises by Turing School of Software and Design ]</a
-      >
     </body>
     <script src="index.js"></script>
   </html>
@@ -78,34 +55,34 @@ title: "ES6 Destructuring Practice"
     background: #f0dc27;
     color: #323330;
   }
-  .js:before {
-    z-index: -1;
+  .js:before{
+    z-index:-1;
     background: black;
     content: "";
     display: block;
     position: absolute;
     transform: rotate(45deg);
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     width: 100%;
-    height: 100%;
+    height:100%;
   }
   .js {
-    width: 200px;
-    height: 200px;
+    width:200px;
+    height:200px;
     color: white;
-    top: -100px;
-    left: -100px;
+    top:-100px;
+    left:-100px;
     position: fixed;
-    z-index: 10;
-    font-size: 2em;
+    z-index:10;
+    font-size:2em;
   }
-  .js:after {
+  .js:after{
     content: "JS";
-    position: absolute;
-    bottom: 45px;
-    right: 45px;
-    font-weight: 300;
+    position:absolute;
+    bottom:45px;
+    right:45px;
+    font-weight:300;
   }
   h1 {
     padding: 20px 20px 20px 40px;
@@ -119,7 +96,7 @@ title: "ES6 Destructuring Practice"
     transition: all 500ms ease;
   }
   a:hover {
-    opacity: 1;
+    opacity:1;
   }
   code {
     font-size: 1.3rem;
@@ -129,8 +106,7 @@ title: "ES6 Destructuring Practice"
   .output {
     display: flex;
   }
-  #demo,
-  #firstname {
+  #demo, #firstname {
     background: #f0f0f0;
     padding: 10px 20px;
     border: 2px solid #666;
@@ -188,30 +164,48 @@ title: "ES6 Destructuring Practice"
       document.body.style.backgroundColor = "#46ac46";
     }
   }
+
+  // Compare 2 Arrays
+  function isIdentical(arr1, arr2) {
+    // Is at least one element not the same as the
+    // element of the other Array?
+    let result = arr1.some((el, idx) => {
+      return el !== arr2[idx];
+    });
+    return !result;
+  }
   //==============================//
-  // EXERCISE A: Variable Swapping
-  // Given two variables, swap their values in one line of code.
+  // EXERCISE A: We want to 'spread' the `middle` Array elements
+  // in the middle of `arr` Array:
+  let final = [1, 2, 3, 4, 5, 6]; // <= This is what we want
+  let middle = [3, 4];
+  let arr = [1, 2, middle, 5, 6]; // <= We get: [1, 2, [3, 4], 5, 6] :(
 
-  let thing1 = "apple";
-  let thing2 = "banana";
-
-  check(thing1 === "banana" && thing2 === "apple", "a");
-
-  //==============================//
-  // EXERCISE B: Assigning New Variable Names to Object Keys
-  // Given an object, in one line, assign variables to the values
-  // of the object using different names than the keys already in the object.
-  let object = { name: "elvis", title: "hip swinger" };
-
-  check(person === "elvis" && job === "hip swinger", "b");
+  // We want: [1, 2, 3, 4, 5, 6]
+  // arr = CODE HERE...
+  check(isIdentical(arr, final), "a");
 
   //==============================//
-  // EXERCISE C: Object Matching
-  // Given an object, write one line of code that assigns variables to the keys.
+  // EXERCISE B: Clone Array `abc` using the spread operator
+  // and reverse the order of the elements making sure that the elements
+  // of Array `abc` remain intact:
+  let finalB = ["c", "b", "a"]; // <= This is what we want `clone` to be.
 
-  let object2 = { user: "brenna", id: 1, date: "monday", module: 3 };
+  let abc = ["a", "b", "c"];
+  let clone = abc; // <= REPLACE THIS LINE
+  clone.reverse(); // Now `abc` is [ 'c', 'b', 'a' ]. Not what we want!
 
-  check(user === "brenna" && id === 1 && date === "monday" && module === 3, "c");
+  check(isIdentical(clone, finalB) && !isIdentical(clone, abc), "b");
+
+  //==============================//
+  // EXERCISE C: Math.max takes a number of comma separated arguments
+  // and returns the biggest number. Use the spread syntax to get the
+  // biggest number found in the values Array:
+  let values = [2, 4, 8, 6, 0];
+  // CHANGE THE FOLLOWING LINE:
+  let max = Math.max(1, 2, 3, 4); // <= max is 4. It should be 8.
+
+  check(max === 8, "c");
 
   ```
   </details>
