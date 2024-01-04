@@ -16,6 +16,7 @@ favicon: sitemap.png
       - [CSS Selectors Practice](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/selectors/exercises/fix_the_summary/index.html){:target="_blank"}
     - **JavaScript**
       - [DOM Selectors Practice](https://in-tech-gration.github.io/WDX-180//curriculum/modules/javascript/web_apis/dom/exercises/dom-selectors/index.html){:target="_blank"}
+      - [Promise Refactoring](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/promise_refactoring/){:target="_blank"}
 
   - **Modules**
     - **JavaScript**

@@ -12,7 +12,7 @@ title: "Promise Refactoring"
   Copy the code below inside the `<body>` element of an HTML page and save it in a file called: `index.html`
 
   ```html
-  <div class="js"></div>
+  <link rel="stylesheet" src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/css/exercise.pack.css">
   <h1>Async/Await Exercise #2</h1>
   <pre><code>async function name ( arguments ){ 
 
@@ -20,65 +20,6 @@ title: "Promise Refactoring"
 
   }
   </code></pre>
-  ```
-  </details>
-
-  <details markdown="1">
-  <summary><h2>CSS</h2></summary>
-
-  Copy the code below in a file called: `styles.css`
-
-  ```css
-  body {
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0dc27;
-    color: #323330;
-    transition: all 6000ms ease;
-  }
-  h1 {
-    padding: 20px 20px 20px 40px;
-    border-bottom-left-radius: 64px;
-    border: 8px dashed white;
-  }
-  .js:before{
-    z-index:-1;
-    background: black;
-    content: "";
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    top:0;
-    left:0;
-    width: 100%;
-    height:100%;
-  }
-  .js {
-    width:200px;
-    height:200px;
-    color: white;
-    top:-100px;
-    left:-100px;
-    position: fixed;
-    z-index:10;
-    font-size:2em;
-  }
-  .js:after{
-    content: "JS";
-    position:absolute;
-    bottom:45px;
-    right:45px;
-    font-weight:100;
-  }
-  code {
-    font-size: 1.3rem;
-    font-weight: 800;
-    font-family: monospace;
-  }
   ```
   </details>
 
@@ -96,7 +37,7 @@ title: "Promise Refactoring"
     .then( ( result )=> result.json() ) // <= Convert result to JSON object
     .then( ( result )=>{                // <= Work with JSON object
 
-      console.log( result[0].description, result[0].full_name );
+      console.log( "1) Result using Promises:", result[0].description, result[0].full_name );
       
     }).catch(console.log);
 
@@ -115,7 +56,7 @@ title: "Promise Refactoring"
       result = ______;
 
       //>> 3) You should see the same result as the first console.log from `init()`
-      console.log( result[0].description, result[0].full_name );
+      console.log( "2) Result using async/await:", result[0].description, result[0].full_name );
     
       //>> 4) EXTRA: Enclose the `await` commands in a try { } catch(e) { }
       //>> for additional error handling. To check whether you are handling the error
