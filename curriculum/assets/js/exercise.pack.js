@@ -113,6 +113,7 @@
       if (this.particles.length < this.number) {
         this.particles.push(new particle(clamp(randomInt(this.x, this.w + this.x), this.x, this.w + this.x), clamp(randomInt(this.y, this.h + this.y), this.y, this.h + this.y), this.text));
       }
+      // TODO: Fix: this.number === -1 !?
       if ((this.particles.length > this.number) && this.number > -1) {
         this.particles.length = this.number;
       }

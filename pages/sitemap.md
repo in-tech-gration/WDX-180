@@ -13,6 +13,7 @@ favicon: sitemap.png
   - **Exercises**
     - **HTML**
     - **CSS**
+      - [CSS Selectors Practice](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/selectors/exercises/fix_the_summary/index.html){:target="_blank"}
     - **JavaScript**
       - [DOM Selectors Practice](https://in-tech-gration.github.io/WDX-180//curriculum/modules/javascript/web_apis/dom/exercises/dom-selectors/index.html){:target="_blank"}
 
