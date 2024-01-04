@@ -65,6 +65,10 @@
     };
   
     canvas = document.getElementById('canvas');
+
+    if ( !canvas ){
+      throw new Error(`Missing <canvas id="canvas"> element. Did you forget to initialize with wdx_exercisePack.confettiInit()?`)
+    }
   
     context = canvas.getContext('2d');
   
@@ -217,6 +221,28 @@
     update()
   
   });
+  wdx_exercisePack.confettiInit = function confettiInit(){
+    let canvas = document.querySelector("canvas#canvas");
+
+    if ( canvas ){
+      return;
+    }
+
+    canvas = document.createElement("canvas");
+    canvas.setAttribute("id", "canvas");
+    const canvasStyle = `
+      position: absolute;
+      top: 0;
+      z-index:10001;
+      left:0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events:none;
+    `;
+    canvas.style.cssText = canvasStyle;
+    document.body.insertAdjacentElement("afterbegin", canvas);
+
+  }
 
   console.log("WDX180 Exercise Pack initialized.");
 

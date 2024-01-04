@@ -10,6 +10,12 @@ favicon: sitemap.png
   - **Content**
     - [Integrating Interactive Coding Playgrounds (Flems)](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/){:target="_blank"}
 
+  - **Exercises**
+    - **HTML**
+    - **CSS**
+    - **JavaScript**
+      - [DOM Selectors Practice](https://in-tech-gration.github.io/WDX-180//curriculum/modules/javascript/web_apis/dom/exercises/dom-selectors/index.html){:target="_blank"}
+
   - **Modules**
     - **JavaScript**
       - [Setting up Study Lenses (v2) on your System](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"}

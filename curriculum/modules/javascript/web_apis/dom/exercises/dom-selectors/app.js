@@ -27,6 +27,9 @@ let $exec            = document.querySelector(".number b");
 let $numberWrapper   = document.querySelector(".number");
 $selector.focus();
 
+// INITIALIZE CONFETTI (FROM: EXERCISE PACK)
+wdx_exercisePack.confettiInit();
+
 /* EXERCISE DATA */
 let exercises = [
   {
