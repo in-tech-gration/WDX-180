@@ -144,7 +144,9 @@ function handleInput(elObj){
       $target.style.background = "limegreen";
       $selectorWrapper.style.borderColor = "limegreen";
       // Display Confettis:
-      try { confettis(); } catch (e){}
+      try { window.wdx_exercisePack.confetti(); } catch (e){
+        console.error(e);
+      }
       $selector.removeEventListener( "keyup", handleInput );
     }
   } catch(e){
