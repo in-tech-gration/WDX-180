@@ -3,6 +3,14 @@
 
   const wdx_exercisePack = window.wdx_exercisePack = window.wdx_exercisePack || {};
 
+  // HELPER CODE PLACEHOLDERS: e.g. const value = ___;
+  if ( !window._ ) window._ = undefined;
+  if ( !window.__ ) window.__ = undefined;
+  if ( !window.___ ) window.___ = undefined;
+  if ( !window.____ ) window.____ = undefined;
+  if ( !window._____ ) window._____ = undefined;
+  if ( !window.______ ) window.______ = undefined;
+
   // Celebratory Confetti Effect:
   wdx_exercisePack.confetti = (function() {
     var H, W, canvas, clamp, colors, context, friction, generator1, generatorStock, gravity, particle, particleGenerator, randomInt, update, utils, wind;
