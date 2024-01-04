@@ -30,15 +30,15 @@ title: "Promise Refactoring"
   Copy the code below in a file called: `index.js`
 
   ```js
-  const facebookURL = "https://api.github.com/users/facebook/repos?page=1&per_page=1";
+  const users = "https://jsonplaceholder.typicode.com/users";
     
   function init(){
 
-    return fetch( facebookURL )         // <= Fetch URL
+    return fetch( users )               // <= Fetch URL
     .then( ( result )=> result.json() ) // <= Convert result to JSON object
     .then( ( result )=>{                // <= Work with JSON object
 
-      console.log( "1) Result using Promises:", result[0].description, result[0].full_name );
+      console.log( "1) Result using Promises:", result[0].name, result[0].email );
       
     }).catch(console.log);
 
@@ -57,12 +57,12 @@ title: "Promise Refactoring"
       result = ______;
 
       //>> 3) You should see the same result as the first console.log from `init()`
-      console.log( "2) Result using async/await:", result[0].description, result[0].full_name );
+      console.log( "2) Result using async/await:", result[0].name, result[0].email );
     
       //>> 4) EXTRA: Enclose the `await` commands in a try { } catch(e) { }
       //>> for additional error handling. To check whether you are handling the error
-      //>> correctly, change the URL to: "https://api.githoob.com/users/facebook/repos?page=1&per_page=1"
-      //>> or "https://github.com" and see what types of errors you get.
+      //>> correctly, change the URL to: "https://jsonplaceholder.typicooode.com/users"
+      //>> or "https://jsonplaceholder.typicode.com" and see what types of errors you get.
 
   }
 

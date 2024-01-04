@@ -307,6 +307,10 @@ We encourage you to **help and support each other** but in a constructive and he
 
 ### Extra Resources
 
+  - Watch: [ALOHAnet: Grandfather of All Computer Networks - Computerphile](https://www.youtube.com/watch?v=oKrUGRVwFBI){:target="_blank"}
+
+  - Watch: [Behind the Scenes with your Browser (Scott Hanselman)](https://www.youtube.com/watch?v=CGgTuCH4V6U){:target="_blank"}
+
 #### The Internet & the World Wide Web
 
   - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps){:target="_blank"}
