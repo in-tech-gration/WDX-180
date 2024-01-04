@@ -14,6 +14,7 @@ title: Bitcoin Wallet
   Copy the code below in a file called: `index.html`
 
   ```html
+  <script src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/js/exercise.pack.js"></script>
   <link rel="stylesheet" src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/css/exercise.pack.css">
   <div class="wallet">
     <p class="address">
