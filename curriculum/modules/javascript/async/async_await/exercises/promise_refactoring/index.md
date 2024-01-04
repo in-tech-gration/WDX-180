@@ -20,6 +20,7 @@ title: "Promise Refactoring"
 
   }
   </code></pre>
+  <script src="index.js"></script>
   ```
   </details>
 
