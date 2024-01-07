@@ -8,6 +8,8 @@ title: Week 13 | Intermediate JavaScript
   <span class="week-prefix">Week 13 |</span> Intermediate JavaScript
 </h1>
 
+<img src="assets/colorful.03.png" />
+
 <div class="week-controls">
 
   {% assign week_num = 13 | to_integer %}
