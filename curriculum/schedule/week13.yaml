@@ -1,24 +1,24 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: JavaScript Intermediate 1 & Git
+title: Intermediate JavaScript 
 schedule: 
   days:
-    1: # ES6
+    1: # Intermediate JavaScript
       # file://./../modules/javascript/
-      module: javascript/
-    2: # More ES6 (Promise.all/allSettled/new Promise)
-      # file://./../modules/javascript/
-      module: javascript/
-    3: # The Power of Functions
-      # file://./../modules/javascript/
-      module: javascript/
-    4: # CSSOM
+      module: javascript/misc/_w13d01.md
+    2: # CSSOM
       # file://./../modules/javascript/web_apis/cssom/intro/index.md
       module: javascript/web_apis/cssom/intro/
-    5: # Advanced CSS Sorcery + JavaScript
+    3: # Intermediate JavaScript
+      # file://./../modules/javascript/
+      module: javascript/misc/_w13d03.md
+    4: # Advanced CSS Sorcery + JavaScript 
       # file://./../modules/css/misc/advanced_css/index.md
       module: css/misc/advanced_css/
-      # TODO: Good morning! Let's lighten up our Friday with some CSS tricks. ;)
+      # TODO: Good morning! Let's lighten up our day with some CSS tricks. ;)
+    5: # Intermediate JavaScript
+      # file://./../modules/javascript/
+      module: javascript/misc/_w13d05.md
 # ---
 
 # DAY 1: ES6 refers to the features that were added to the JavaScript programming language in the 6th Edition of the ECMAScript standard (ES6 for short).

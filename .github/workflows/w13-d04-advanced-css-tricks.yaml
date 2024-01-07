@@ -1,10 +1,10 @@
-name: "Week 13 - Day 5 Intermediate JavaScript | Test Exercise: 'Advanced CSS Tricks'"
+name: "Week 13 - Day 4 Intermediate JavaScript | Test Exercise: 'Advanced CSS Tricks'"
 on:
   push:
     branches:
       - 'main'
     paths:
-      - user/week13/exercises/day05/advanced-css-tricks/**
+      - user/week13/exercises/day04/advanced-css-tricks/**
 jobs:
   advanced-css-tricks:
 
@@ -17,5 +17,5 @@ jobs:
       - name: "Test Exercise: 'Advanced CSS Tricks' > Check solution files existence"
         uses: andstor/file-existence-action@v2
         with:
-          files: "user/week13/exercises/day05/advanced-css-tricks/advanced-css-tricks.html"
+          files: "user/week13/exercises/day04/advanced-css-tricks/advanced-css-tricks.html"
           fail: true

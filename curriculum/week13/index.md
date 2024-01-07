@@ -1,11 +1,11 @@
 ---
-title: Week 13 | JavaScript Intermediate 1 & Git
+title: Week 13 | Intermediate JavaScript
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 13-JavaScript Intermediate 1 & Git | slugify }}">
-  <span class="week-prefix">Week 13 |</span> JavaScript Intermediate 1 & Git
+<h1 id="{{ Week 13-Intermediate JavaScript | slugify }}">
+  <span class="week-prefix">Week 13 |</span> Intermediate JavaScript
 </h1>
 
 <div class="week-controls">
@@ -24,7 +24,7 @@ title: Week 13 | JavaScript Intermediate 1 & Git
 
   </h2>
 
-  <span>Updated: 28/12/2023</span>
+  <span>Updated: 8/1/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -42,11 +42,38 @@ title: Week 13 | JavaScript Intermediate 1 & Git
 
 ---
 
-<!-- Week 13 - Day 4 | CSS Object Model -->
+<!-- Week 13 - Day 1 | Intermediate JavaScript -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 13 - Day 4</span> | CSS Object Model</h2>
+      <span class="summary-day">Week 13 - Day 1</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 13 - Day 2 | CSS Object Model -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 13 - Day 2</span> | CSS Object Model</h2>
   </summary>
 
 ### Schedule
@@ -135,11 +162,38 @@ title: Week 13 | JavaScript Intermediate 1 & Git
 
 <hr class="mt-1">
 
-<!-- Week 13 - Day 5 | Advanced CSS -->
+<!-- Week 13 - Day 3 | Intermediate JavaScript -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 13 - Day 5</span> | Advanced CSS</h2>
+      <span class="summary-day">Week 13 - Day 3</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 13 - Day 4 | Advanced CSS -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 13 - Day 4</span> | Advanced CSS</h2>
   </summary>
 
 ### Schedule
@@ -201,11 +255,35 @@ title: Week 13 | JavaScript Intermediate 1 & Git
   
 </details>
 
+<hr class="mt-1">
+
+<!-- Week 13 - Day 5 | Intermediate JavaScript -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 13 - Day 5</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
 
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
-## Week 13 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
