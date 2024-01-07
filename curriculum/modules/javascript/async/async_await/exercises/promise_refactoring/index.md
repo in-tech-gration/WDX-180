@@ -20,6 +20,7 @@ title: "Promise Refactoring"
 
   }
   </code></pre>
+  <!-- TODO: ADD: EXERCISE PACK -->
   <script src="index.js"></script>
   ```
   </details>
