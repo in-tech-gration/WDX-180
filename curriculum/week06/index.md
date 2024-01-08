@@ -22,12 +22,12 @@ load_script_js_via_src:
 
       {% assign previous_week_num = 06 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 30/11/2023</span>
+  <span>Updated: 8/1/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -36,7 +36,7 @@ load_script_js_via_src:
 
       {% assign next_week_num = 06 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -322,6 +322,8 @@ load_script_js_via_src:
   2. Follow the steps described below to install `study-lenses` globally on your machine:
 
   
+  ![](./assets/lenses2.jpg)
+  
   **Setting up Study Lenses (v2) on your System**
   
   1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
@@ -571,7 +573,6 @@ load_script_js_via_src:
   - [javascript.info/intro](https://javascript.info/intro){:target="_blank"}
   - [The Net Ninja](https://www.youtube.com/watch?v=VB7y0yxZjro){:target="_blank"}
   - [Andrew Mosh](https://www.youtube.com/watch?v=W6NZfCO5SIk){:target="_blank"} \(first 5 minutes\)
-  - [Code School](https://www.youtube.com/watch?v=nItSSTwBvSU){:target="_blank"}
   - [MDN: First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript){:target="_blank"}
   - [Danielle Thé](https://www.youtube.com/watch?v=gT0Lh1eYk78){:target="_blank"}
 
@@ -969,6 +970,8 @@ load_script_js_via_src:
   In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
 
   
+  ![](./assets/lenses2.jpg)
+  
   **Setting up Study Lenses (v2) on your System**
   
   1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
@@ -1021,3 +1024,4 @@ load_script_js_via_src:
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
