@@ -26,7 +26,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 8/1/2024</span>
+  <span>Updated: 9/1/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -289,3 +289,6 @@ title: Week 13 | Intermediate JavaScript
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+## Week 13 - Weekend Suggestions
+
+If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
