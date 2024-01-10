@@ -369,7 +369,7 @@ The aim of this skill test is to assess whether you understand how to implement 
 
 <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Test your skills: Creating hyperlinks Task 1'|user_folder=creating_hyperlinks -->
 <!-- SGEN:META:TESTS:name=Test Exercise: 'Test your skills: Creating hyperlinks Task 1'|type=exist|user_folder=creating_hyperlinks|files=hyperlinks1.html -->
-## Task 1
+### Task 1
 
 In this task, we want you to help fill in the links on our Whales information page:
 
@@ -432,7 +432,7 @@ Save the provided HTML in `hyperlinks1.html` and try to implement the challenges
 
 <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Test your skills: Creating hyperlinks Task 2'|user_folder=creating_hyperlinks -->
 <!-- SGEN:META:TESTS:name=Test Exercise: 'Test your skills: Creating hyperlinks Task 2'|type=exist|user_folder=creating_hyperlinks|files=hyperlinks2.html -->
-## Task 2
+### Task 2
 
 In this task, we want you to fill in the four links so that they link to the appropriate places:
 
@@ -501,7 +501,7 @@ Save the provided HTML in `hyperlinks2.html` and try to implement the challenges
 
 <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Test your skills: Creating hyperlinks Task 3'|user_folder=creating_hyperlinks -->
 <!-- SGEN:META:TESTS:name=Test Exercise: 'Test your skills: Creating hyperlinks Task 3'|type=exist|user_folder=creating_hyperlinks|files=hyperlinks3.html -->
-## Task 3
+### Task 3
 
 The following links link to an info page about Narwhals, a support email address, and a PDF factfile that is 4MB in size. In this task, we want you to:
 
@@ -552,7 +552,7 @@ Save the provided HTML in `hyperlinks3.html` and try to implement the challenges
 ```
 </details>
 
-### Sources and Attributions
+## Sources and Attributions
 
 **Content is based on the following sources:**
 
