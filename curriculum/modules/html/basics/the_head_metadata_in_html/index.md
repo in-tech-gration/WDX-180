@@ -270,7 +270,6 @@ Just about all websites you'll use in the modern day will employ [CSS](https://d
 
   > **Note:** The `<script>` element may look like a [void element](https://developer.mozilla.org/en-US/docs/Glossary/Void_element){:target="_blank"}, but it's not, and so needs a closing tag. Instead of pointing to an external script file, you can also choose to put your script inside the `<script>` element.
 
-<!-- SGEN:META:PROGRESS:task=Active learning: applying CSS and JavaScript to a page|instructions=Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL -->
 <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: applying CSS and JavaScript to a page'|user_folder=the_head_metadata_in_html -->
 <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: applying CSS and JavaScript to a page'|type=exist|user_folder=the_head_metadata_in_html|files=meta-example.html,style.css,script.js -->
 ### Active learning: applying CSS and JavaScript to a page
