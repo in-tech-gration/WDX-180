@@ -6,6 +6,8 @@ page-type: learn-module-chapter
 
 # Creating Hyperlinks
 
+_(Updated: 10/01/2024)_
+
 Hyperlinks are really important — they are what makes the Web _a web_.
 This article shows the syntax required to make a link, and discusses link best practices.
 
@@ -549,3 +551,12 @@ Save the provided HTML in `hyperlinks3.html` and try to implement the challenges
 </html>
 ```
 </details>
+
+### Sources and Attributions
+
+**Content is based on the following sources:**
+
+- **MDN:**
+  - [Creating hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/b39037d337dc89b86229e862f2f3f1e66000d281/files/en-us/learn/html/introduction_to_html/creating_hyperlinks/index.md){:target="_blank"}
+  - [Test your skills: Links](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links){:target="_blank"} [(Permalink)](https://github.com/mdn/content/blob/b39037d337dc89b86229e862f2f3f1e66000d281/files/en-us/learn/html/introduction_to_html/test_your_skills_colon__links/index.md){:target="_blank"}
+
