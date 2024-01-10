@@ -15,3 +15,7 @@ Here are some short videos that explore the incredible minds and lives of some o
 - Meet the Queen of Code: [**Who is Grace Hopper?**](https://www.youtube.com/watch?v=5sNuPYJpSCI){:target="_blank"}
   - **Duration:** 6min
   - **Description:** Have you ever wanted to just divorce your sweetheart and join the navy? The Queen of Code, Grace Hopper, did. She then went on to write the world's first computer programming manual and become one of the most important individuals in computer history. In this episode of Honeypot Explains, we attempt to describe "Amazing" Grace Hopper and her contributions to society. Prepare to feel self-conscious in comparison to one of the coolest (and smartest) people in recent history. We know we did.  
+
+- [Watch: **The History of Computer Science with Professor Jim Al-Khalili**](https://www.youtube.com/watch?v=8KHuSw0W6OA){:target="_blank"}
+  - **Duration:** 1h
+  - **Description:** Professor Jim Al-Khalili unwraps the evolutionary histories responsible for the modern human condition, as currently represented by our sophistication in energy manipulation and information technology.
