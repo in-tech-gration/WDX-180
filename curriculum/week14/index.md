@@ -69,11 +69,11 @@ title: Week 14 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 14 - Day 2 | Intermediate JavaScript -->
+<!-- Week 14 - Day 2 | Group Project -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 14 - Day 2</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 14 - Day 2</span> | Group Project</h2>
   </summary>
 
 ### Schedule
@@ -121,11 +121,11 @@ title: Week 14 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 14 - Day 4 | Intermediate JavaScript -->
+<!-- Week 14 - Day 4 | Group Project -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 14 - Day 4</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 14 - Day 4</span> | Group Project</h2>
   </summary>
 
 ### Schedule
