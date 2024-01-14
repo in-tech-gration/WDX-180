@@ -42,7 +42,7 @@
 ### Intermediate: WDX 120°
 
   - [**Week 13**: Intermediate JavaScript](week13/index.md)
-  - [**Week 14**: Functional Programming 1, Templating, JavaScript Frameworks](#week14/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 14**: Intermediate JavaScript](week14/index.md)
   - [**Week 15**: JavaScript Intermediate 2: Software Patterns & TypeScript](#week15/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#week16/index.md) _(🔒 Stay tuned! This module is on the way.)_
   - [**Week 17**: Node.js 1](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_

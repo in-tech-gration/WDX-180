@@ -58,7 +58,9 @@ Syllabus:
           open: true
         14: # Functional Programming 1, Templating, JavaScript Frameworks (15/01/2024 - 19/01/204)
           # file:///./schedule/week14.yaml
-          title: "Functional Programming 1, Templating, JavaScript Frameworks"
+          title: "Intermediate JavaScript"
+          # title: "Functional Programming 1, Templating, JavaScript Frameworks"
+          open: true
           # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
         15: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml

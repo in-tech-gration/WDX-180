@@ -1,6 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript 
+# Cohort 0x02: 08/01/2024-12/01/2024
 schedule: 
   days:
     1: # Intermediate JavaScript

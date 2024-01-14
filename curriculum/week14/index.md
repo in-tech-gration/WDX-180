@@ -1,11 +1,11 @@
 ---
-title: Week 14 | Functional Programming 1, Templating, JavaScript Frameworks
+title: Week 14 | Intermediate JavaScript
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 14-Functional Programming 1, Templating, JavaScript Frameworks | slugify }}">
-  <span class="week-prefix">Week 14 |</span> Functional Programming 1, Templating, JavaScript Frameworks
+<h1 id="{{ Week 14-Intermediate JavaScript | slugify }}">
+  <span class="week-prefix">Week 14 |</span> Intermediate JavaScript
 </h1>
 
 <div class="week-controls">
@@ -19,12 +19,12 @@ title: Week 14 | Functional Programming 1, Templating, JavaScript Frameworks
 
       {% assign previous_week_num = 14 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 11/12/2023</span>
+  <span>Updated: 14/1/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -33,7 +33,7 @@ title: Week 14 | Functional Programming 1, Templating, JavaScript Frameworks
 
       {% assign next_week_num = 14 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -42,12 +42,137 @@ title: Week 14 | Functional Programming 1, Templating, JavaScript Frameworks
 
 ---
 
+<!-- Week 14 - Day 1 | Intermediate JavaScript -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 14 - Day 1</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 14 - Day 2 | Intermediate JavaScript -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 14 - Day 2</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 14 - Day 3 | Intermediate JavaScript -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 14 - Day 3</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 14 - Day 4 | Intermediate JavaScript -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 14 - Day 4</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 14 - Day 5 | Intermediate JavaScript -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 14 - Day 5</span> | Intermediate JavaScript</h2>
+  </summary>
+
+### Schedule
+
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
+  - **Work on Project (Group/Personal)**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
 
 
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
-## Week 14 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
