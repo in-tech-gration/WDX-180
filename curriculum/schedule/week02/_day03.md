@@ -10,26 +10,6 @@ title: HTML Tables
 
 ### Study Plan
 
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: Creating your first table'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: Creating your first table'|type=exist|user_folder=html_table_basics|files=blank-template.html,minimal-table.css -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: table headers first exercise'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: table headers first exercise'|type=exist|user_folder=html_table_basics|files=dogs-table.html -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: table headers second exercise'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: table headers second exercise'|type=exist|user_folder=html_table_basics|files=animals-table.html -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: colgroup and col'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: colgroup and col'|type=exist|user_folder=html_table_basics|files=timetable.html -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: Adding a caption'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: Adding a caption'|type=exist|user_folder=html_table_basics|files=timetable.html -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: Adding table structure'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: Adding table structure'|type=exist|user_folder=html_table_basics|files=spending-record.html -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Active learning: playing with scope and headers'|user_folder=html_table_basics -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Active learning: playing with scope and headers'|type=exist|user_folder=html_table_basics|files=items-sold.html -->
   - [Read: **HTML Tables**](../modules/html/tables/index.md){:target="_blank"}  
       
 ### Summary

@@ -1,15 +1,15 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: HTML, Accessibility & Git
+title: HTML - Accessibility - Git
 schedule: 
   days:
     # file://./_day01.md
-    Monday: _day01.md
+    1: _day01.md
     # file://./_day02.md
-    Tuesday: _day02.md
+    2: _day02.md
     # file://./_day03.md
-    Wednesday: _day03.md
+    3: _day03.md
     # file://./_day04.md
-    Thursday: _day04.md
+    4: _day04.md
     # file://./_day05.md
-    Friday: _day05.md
+    5: _day05.md

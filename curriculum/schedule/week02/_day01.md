@@ -10,20 +10,6 @@ title: Git
 
 ### Study Plan
 
-  <!-- SGEN:META:PROGRESS:task=Sign up with GitHub|instructions=Paste GitHub username -->
-
-  <!-- SGEN:META:PROGRESS:task=Set up SSH keys for GitHub -->
-
-  <!-- SGEN:META:PROGRESS:task=Create a (demo-repo) GitHub repository|instructions=Paste GitHub repository URL -->
-
-  <!-- SGEN:META:PROGRESS:task=Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme|instructions=Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx -->
-
-  <!-- SGEN:META:PROGRESS:task=Watch 'Git Tutorial For Dummies' and code along -->
-
-  <!-- SGEN:META:PROGRESS:task=Follow the steps mentioned in the 'Git Tutorial For Dummies' video and recreate the repository under your GitHub account|instructions=Paste the full GitHub URL of the gitVideo repository -->
-
-  <!-- SGEN:META:PROGRESS:task=Watch 'Git and GitHub for Beginners - Crash Course -->
-
   - [Read: **Git Introduction**](../modules/version_control/git/intro/index.md){:target="_blank"}
 
 ### Summary

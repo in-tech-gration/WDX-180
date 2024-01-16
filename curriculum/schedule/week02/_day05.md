@@ -17,11 +17,6 @@ title: HTML Form Controls & Accessibility
 
   **More form controls:**
 
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Test_your_skills:_HTML5_controls'|user_folder=test_your_skills_html5_controls -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Test_your_skills:_HTML5_controls'|type=exist|user_folder=test_your_skills_html5_controls|files=html5-controls1-download.html,html5-controls2-download.html -->
-
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Test your skills: Other controls'|user_folder=test_your_skills_other_controls -->
-  <!-- SGEN:META:TESTS:name=Test Exercise: 'Test your skills: Other controls'|type=exist|user_folder=test_your_skills_other_controls|files=other-controls1-download.html,other-controls2-download.html,other-controls3-download.html -->
   - [Read: **HTML Form Controls**](../modules/html/forms/controls/index.md){:target="_blank"}
 
   **Accessibility**
@@ -32,7 +27,6 @@ title: HTML Form Controls & Accessibility
 
 ### Exercises
 
-  <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Lets create a Blog' -->
   Now it's time to gather all this knowledge around HTML _(and GitHub)_, build your own (accessible) Blog and take it online. Follow the instructions found [here](../modules/accessibility/exercises/lets_create_a_blog/index.md). You might need to spend a few extra hours during the weekend to improve and finalize your Blog.
 
 ### Extra Resources
