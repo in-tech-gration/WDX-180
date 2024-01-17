@@ -50,13 +50,13 @@ title: Git Introduction
 
   > [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh){:target="_blank"}: "SSH, which stands for Secure Shell, is a protocol used to open up a secure communication channel between computers. Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit."
 
-  <!-- SGEN:META:PROGRESS:task=Sign up with GitHub|instructions=Paste GitHub username -->
+<!-- SGEN:META:PROGRESS:task=Sign up with GitHub|instructions=Paste GitHub username -->
 
-  <!-- SGEN:META:PROGRESS:task=Set up SSH keys for GitHub -->
+<!-- SGEN:META:PROGRESS:task=Set up SSH keys for GitHub -->
 
-  <!-- SGEN:META:PROGRESS:task=Create a (demo-repo) GitHub repository|instructions=Paste GitHub repository URL -->
+<!-- SGEN:META:PROGRESS:task=Create a (demo-repo) GitHub repository|instructions=Paste GitHub repository URL -->
 
-  <!-- SGEN:META:PROGRESS:task=Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme|instructions=Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx -->
+<!-- SGEN:META:PROGRESS:task=Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme|instructions=Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx -->
 
   - **Set up SSH keys for GitHub.** Complete the following 4 steps in order to be able to access GitHub without using a username and password.
 
@@ -70,9 +70,9 @@ title: Git Introduction
 
   **TASK: Set up SSH keys for GitHub**. Once you have successfully completed all 4 steps, make sure to update your [progress sheet](../../user/progress.draft.60.csv) and mark the ` Set up SSH keys for GitHub` task as completed by switching the COMPLETED column from `FALSE` to `TRUE`.
 
-  <!-- SGEN:META:PROGRESS:task=Watch 'Git Tutorial For Dummies' and code along -->
+<!-- SGEN:META:PROGRESS:task=Watch 'Git Tutorial For Dummies' and code along -->
 
-  <!-- SGEN:META:PROGRESS:task=Follow the steps mentioned in the 'Git Tutorial For Dummies' video and recreate the repository under your GitHub account|instructions=Paste the full GitHub URL of the gitVideo repository -->
+<!-- SGEN:META:PROGRESS:task=Follow the steps mentioned in the 'Git Tutorial For Dummies' video and recreate the repository under your GitHub account|instructions=Paste the full GitHub URL of the gitVideo repository -->
   - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY){:target="_blank"}
     - **Notes**: Make sure to **follow along** and run the git commands on your own repo. ⚠️ **IMPORTANT:** The repository you will create under your GitHub account, **must be named: `gitVideo`**. Also, even though the author is using the old **master** convention for his repo branch names, you should use **main** instead: `git checkout main`, `git push -u origin main`, etc.
     - **Duration**: 20min 
@@ -107,7 +107,7 @@ title: Git Introduction
 
   **Repetitio est mater studiorum:** "Repetition is the mother of learning". Let's recap those git concepts by revisiting them through another (longer) and more in-depth video about Git. 
 
-  <!-- SGEN:META:PROGRESS:task=Watch 'Git and GitHub for Beginners - Crash Course -->
+<!-- SGEN:META:PROGRESS:task=Watch 'Git and GitHub for Beginners - Crash Course -->
   - [Watch: **Git and GitHub for Beginners - Crash Course**](https://www.youtube.com/watch?v=RGOj5yH7evk){:target="_blank"}
     - **Duration**: 69min
     - **Level**: Beginner
