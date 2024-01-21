@@ -64,7 +64,9 @@ Syllabus:
           # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
         15: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml
-          title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
+          # title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
+          title: "Intermediate JavaScript"
+          open: true
           # MEMOIZATION
         16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
           # file:///./schedule/week16.yaml
