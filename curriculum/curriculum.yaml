@@ -70,13 +70,19 @@ Syllabus:
           # MEMOIZATION
         16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
           # file:///./schedule/week16.yaml
-          title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
+          # title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
+          title: "Intermediate JavaScript"
+          open: true
         17: # Node.js 1 (12/02/2024 - 16/02/2024)
           # file:///./schedule/week18.yaml
-          title: "Node.js 1"
+          # title: "Node.js 1"
+          title: "Intermediate JavaScript"
+          open: true
         18: # Node.js 2 & NoSQL Databases (19/02/2024 - 23/02/2024)
           # file:///./schedule/week19.yaml
-          title: "Node.js 2 & NoSQL Databases"
+          # title: "Node.js 2 & NoSQL Databases"
+          title: "Intermediate JavaScript"
+          open: true
           # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
           # STUDY: https://www.sql-practice.com/
           # STUDY: https://sql.js.org/examples/GUI/index.html
@@ -89,24 +95,36 @@ Syllabus:
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
         19: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
           # file:///./schedule/week15.yaml
-          title: "Data Structures & Algorithms"
+          # title: "Data Structures & Algorithms"
+          title: "Intermediate JavaScript"
+          open: true
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         20: # React 1 (26/02/2024 - 01/03/2024)
           # file:///./schedule/week20.yaml
-          title: "React 1"
+          # title: "React 1"
+          title: "Intermediate JavaScript"
+          open: true
         21: # React 2 (04/03/2024 - 08/03/2024)
           # file:///./schedule/week21.yaml
-          title: "React 2, Firebase"
+          # title: "React 2, Firebase"
+          title: "Intermediate JavaScript"
+          open: true
         22: # React 3 (11/03/2024 - 15/03/2024)
           # file:///./schedule/week22.yaml
-          title: "React 3, Redux & Tech Interview"
+          # title: "React 3, Redux & Tech Interview"
+          title: "Intermediate JavaScript"
+          open: true
         23: # Group Project, Tech Interviews, Job Hunt (18/03/2024 - 22/03/2024)
           # file:///./schedule/week23.yaml
-          title: "Group Project, Tech Interview & Job Hunt"
+          # title: "Group Project, Tech Interview & Job Hunt"
+          title: "Intermediate JavaScript"
+          open: true
         24: # Group Project (25/03/2024 - 29/03/2024)
           # file:///./schedule/week24.yaml
-          title: "Group Project"
+          # title: "Group Project"
+          title: "Intermediate JavaScript"
+          open: true
   Advanced:
     title: "Advanced: WDX 180°"
     schedule:

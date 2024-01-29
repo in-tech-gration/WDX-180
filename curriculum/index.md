@@ -44,15 +44,15 @@
   - [**Week 13**: Intermediate JavaScript](week13/index.md)
   - [**Week 14**: Intermediate JavaScript](week14/index.md)
   - [**Week 15**: Intermediate JavaScript](week15/index.md)
-  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#week16/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 17**: Node.js 1](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 18**: Node.js 2 & NoSQL Databases](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 19**: Data Structures & Algorithms](#week19/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 20**: React 1](#week20/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 21**: React 2, Firebase](#week21/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 22**: React 3, Redux & Tech Interview](#week22/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 23**: Group Project, Tech Interview & Job Hunt](#week23/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 24**: Group Project](#week24/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 16**: Intermediate JavaScript](week16/index.md)
+  - [**Week 17**: Intermediate JavaScript](week17/index.md)
+  - [**Week 18**: Intermediate JavaScript](week18/index.md)
+  - [**Week 19**: Intermediate JavaScript](week19/index.md)
+  - [**Week 20**: Intermediate JavaScript](week20/index.md)
+  - [**Week 21**: Intermediate JavaScript](week21/index.md)
+  - [**Week 22**: Intermediate JavaScript](week22/index.md)
+  - [**Week 23**: Intermediate JavaScript](week23/index.md)
+  - [**Week 24**: Intermediate JavaScript](week24/index.md)
 
 ### Advanced: WDX 180°
 

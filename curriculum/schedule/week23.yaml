@@ -1,3 +1,24 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: Intermediate JavaScript
+# title: Group Project, Tech Interview & Job Hunt
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
+    2: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    3: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
+    4: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    5: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
 # XMLHttpRequest:
 # function makeAJAXCall(methodType, url, callback){
 #    var xhr = new XMLHttpRequest();
