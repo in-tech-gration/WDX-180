@@ -1,11 +1,11 @@
 ---
-title: Week 24 | Intermediate JavaScript
+title: Week 24 | React JS
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 24-Intermediate JavaScript | slugify }}">
-  <span class="week-prefix">Week 24 |</span> Intermediate JavaScript
+<h1 id="{{ Week 24-React JS | slugify }}">
+  <span class="week-prefix">Week 24 |</span> React JS
 </h1>
 
 <div class="week-controls">
@@ -24,7 +24,7 @@ title: Week 24 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 29/1/2024</span>
+  <span>Updated: 31/1/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -42,16 +42,16 @@ title: Week 24 | Intermediate JavaScript
 
 ---
 
-<!-- Week 24 - Day 1 | Intermediate JavaScript -->
+<!-- Week 24 - Day 1 | React JS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 24 - Day 1</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 24 - Day 1</span> | React JS</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: React JS**
   - **Practice**
   - **Work on Project (Group/Personal)**
 
@@ -94,16 +94,16 @@ title: Week 24 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 24 - Day 3 | Intermediate JavaScript -->
+<!-- Week 24 - Day 3 | React JS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 24 - Day 3</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 24 - Day 3</span> | React JS</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: React JS**
   - **Practice**
   - **Work on Project (Group/Personal)**
 
@@ -146,16 +146,16 @@ title: Week 24 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 24 - Day 5 | Intermediate JavaScript -->
+<!-- Week 24 - Day 5 | React JS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 24 - Day 5</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 24 - Day 5</span> | React JS</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: React JS**
   - **Practice**
   - **Work on Project (Group/Personal)**
 

@@ -47,12 +47,12 @@
   - [**Week 16**: Intermediate JavaScript](week16/index.md)
   - [**Week 17**: Intermediate JavaScript](week17/index.md)
   - [**Week 18**: Intermediate JavaScript](week18/index.md)
-  - [**Week 19**: Intermediate JavaScript](week19/index.md)
-  - [**Week 20**: Intermediate JavaScript](week20/index.md)
-  - [**Week 21**: Intermediate JavaScript](week21/index.md)
-  - [**Week 22**: Intermediate JavaScript](week22/index.md)
-  - [**Week 23**: Intermediate JavaScript](week23/index.md)
-  - [**Week 24**: Intermediate JavaScript](week24/index.md)
+  - [**Week 19**: Node JS](week19/index.md)
+  - [**Week 20**: Node JS](week20/index.md)
+  - [**Week 21**: React JS](week21/index.md)
+  - [**Week 22**: React JS](week22/index.md)
+  - [**Week 23**: React JS](week23/index.md)
+  - [**Week 24**: React JS](week24/index.md)
 
 ### Advanced: WDX 180°
 

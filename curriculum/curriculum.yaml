@@ -96,34 +96,34 @@ Syllabus:
         19: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
           # file:///./schedule/week15.yaml
           # title: "Data Structures & Algorithms"
-          title: "Intermediate JavaScript"
+          title: "Node JS"
           open: true
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         20: # React 1 (26/02/2024 - 01/03/2024)
           # file:///./schedule/week20.yaml
           # title: "React 1"
-          title: "Intermediate JavaScript"
+          title: "Node JS"
           open: true
         21: # React 2 (04/03/2024 - 08/03/2024)
           # file:///./schedule/week21.yaml
           # title: "React 2, Firebase"
-          title: "Intermediate JavaScript"
+          title: "React JS"
           open: true
         22: # React 3 (11/03/2024 - 15/03/2024)
           # file:///./schedule/week22.yaml
           # title: "React 3, Redux & Tech Interview"
-          title: "Intermediate JavaScript"
+          title: "React JS"
           open: true
         23: # Group Project, Tech Interviews, Job Hunt (18/03/2024 - 22/03/2024)
           # file:///./schedule/week23.yaml
           # title: "Group Project, Tech Interview & Job Hunt"
-          title: "Intermediate JavaScript"
+          title: "React JS"
           open: true
         24: # Group Project (25/03/2024 - 29/03/2024)
           # file:///./schedule/week24.yaml
           # title: "Group Project"
-          title: "Intermediate JavaScript"
+          title: "React JS"
           open: true
   Advanced:
     title: "Advanced: WDX 180°"
