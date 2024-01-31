@@ -130,29 +130,53 @@ Syllabus:
     schedule:
       weeks:
         25: # file:///./schedule/week25.yaml
-          title: "JavaScript Advanced 1"
+          # title: "JavaScript Advanced 1"
+          title: "Advanced JavaScript"
+          open: true
         26: # file:///./schedule/week26.yaml
-          title: "JavaScript Advanced 2, TypeScript Advanced"
+          # title: "JavaScript Advanced 2, TypeScript Advanced"
+          title: "Advanced JavaScript"
+          open: true
         27: # file:///./schedule/week27.yaml
-          title: "Node.js 3 & Relational Databases"
+          # title: "Node.js 3 & Relational Databases"
+          title: "Advanced JavaScript"
+          open: true
         28: # file:///./schedule/week28.yaml
-          title: "Express.js, REST APIs & GraphQL"
+          # title: "Express.js, REST APIs & GraphQL"
+          title: "Advanced JavaScript"
+          open: true
         29: # file:///./schedule/week29.yaml
-          title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
+          # title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
+          title: "Advanced JavaScript"
+          open: true
         30: # file:///./schedule/week30.yaml
-          title: "Functional Programming 2, Software Principles & Reading Academic Papers"
+          # title: "Functional Programming 2, Software Principles & Reading Academic Papers"
+          title: "Advanced JavaScript"
+          open: true
         31: # file:///./schedule/week31.yaml
-          title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
+          # title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
+          title: "Advanced JavaScript"
+          open: true
         32: # file:///./schedule/week32.yaml
-          title: "Introduction to AI, Machine Learning & Tensorflow.js"
+          # title: "Introduction to AI, Machine Learning & Tensorflow.js"
+          title: "Advanced JavaScript"
+          open: true
         33: # file:///./schedule/week33.yaml
-          title: "Introduction to Data Science & Danfo.js"
+          # title: "Introduction to Data Science & Danfo.js"
+          title: "Advanced JavaScript"
+          open: true
         34: # file:///./schedule/week34.yaml
-          title: "Blockchain & Web3"
+          # title: "Blockchain & Web3"
+          title: "Advanced JavaScript"
+          open: true
         35: # file:///./schedule/week35.yaml
-          title: "Solo Project"
+          # title: "Solo Project"
+          title: "Advanced JavaScript"
+          open: true
         36: # file:///./schedule/week36.yaml
-          title: "Solo Project"
+          # title: "Solo Project"
+          title: "Advanced JavaScript"
+          open: true
         37: # file:///./schedule/week37.yaml
           title: The Road Ahead
           no_unit: true

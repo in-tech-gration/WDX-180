@@ -56,18 +56,18 @@
 
 ### Advanced: WDX 180°
 
-  - [**Week 25**: JavaScript Advanced 1](#week25/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 26**: JavaScript Advanced 2, TypeScript Advanced](#week26/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 27**: Node.js 3 & Relational Databases](#week27/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 28**: Express.js, REST APIs & GraphQL](#week28/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](#week29/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](#week30/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 31**: Content Management Systems, WordPress, Eleventy & Serverless Architecture](#week31/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 32**: Introduction to AI, Machine Learning & Tensorflow.js](#week32/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 33**: Introduction to Data Science & Danfo.js](#week33/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 34**: Blockchain & Web3](#week34/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 35**: Solo Project](#week35/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 36**: Solo Project](#week36/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 25**: Advanced JavaScript](week25/index.md)
+  - [**Week 26**: Advanced JavaScript](week26/index.md)
+  - [**Week 27**: Advanced JavaScript](week27/index.md)
+  - [**Week 28**: Advanced JavaScript](week28/index.md)
+  - [**Week 29**: Advanced JavaScript](week29/index.md)
+  - [**Week 30**: Advanced JavaScript](week30/index.md)
+  - [**Week 31**: Advanced JavaScript](week31/index.md)
+  - [**Week 32**: Advanced JavaScript](week32/index.md)
+  - [**Week 33**: Advanced JavaScript](week33/index.md)
+  - [**Week 34**: Advanced JavaScript](week34/index.md)
+  - [**Week 35**: Advanced JavaScript](week35/index.md)
+  - [**Week 36**: Advanced JavaScript](week36/index.md)
   - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
