@@ -24,7 +24,7 @@ title: Week 35 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 31/1/2024</span>
+  <span>Updated: 1/2/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -42,15 +42,16 @@ title: Week 35 | Advanced JavaScript
 
 ---
 
-<!-- Week 35 - Day 1 | Group Project -->
+<!-- Week 35 - Day 1 | Study & Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 1</span> | Group Project</h2>
+      <span class="summary-day">Week 35 - Day 1</span> | Study & Practice</h2>
   </summary>
 
 ### Schedule
 
+  - **Study & Practice**
   - **Work on Project (Group/Personal)**
 
 <!-- Study Plan -->
@@ -67,16 +68,16 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 2 | Advanced JavaScript -->
+<!-- Week 35 - Day 2 | Live Session -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 2</span> | Advanced JavaScript</h2>
+      <span class="summary-day">Week 35 - Day 2</span> | Live Session</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Advanced JavaScript**
+  - **Live Session**
   - **Practice**
   - **Work on Project (Group/Personal)**
 
@@ -94,15 +95,16 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 3 | Group Project -->
+<!-- Week 35 - Day 3 | Study & Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 3</span> | Group Project</h2>
+      <span class="summary-day">Week 35 - Day 3</span> | Study & Practice</h2>
   </summary>
 
 ### Schedule
 
+  - **Study & Practice**
   - **Work on Project (Group/Personal)**
 
 <!-- Study Plan -->
@@ -119,16 +121,16 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 4 | Advanced JavaScript -->
+<!-- Week 35 - Day 4 | Live Session -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 4</span> | Advanced JavaScript</h2>
+      <span class="summary-day">Week 35 - Day 4</span> | Live Session</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Advanced JavaScript**
+  - **Live Session**
   - **Practice**
   - **Work on Project (Group/Personal)**
 
@@ -146,15 +148,16 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 5 | Group Project -->
+<!-- Week 35 - Day 5 | Study & Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 5</span> | Group Project</h2>
+      <span class="summary-day">Week 35 - Day 5</span> | Study & Practice</h2>
   </summary>
 
 ### Schedule
 
+  - **Study & Practice**
   - **Work on Project (Group/Personal)**
 
 <!-- Study Plan -->
