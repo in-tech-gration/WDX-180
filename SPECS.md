@@ -160,6 +160,20 @@
   - /assets/jekyll/css/style.scss (Check: // FLEMS CODE SECTIONS)
   - /assets/js/flems/flems.html
 
+## Jekyll | How to | Add Comments Widget (Utteranc.es)
+
+  Just add the following `<script>`:
+
+  ```html
+  <script src="https://utteranc.es/client.js"
+    repo="in-tech-gration/WDX-180"
+    issue-term="pathname"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+  </script>
+  ```
+
 ---
 
 ## About the Instructor's Cockpit Tool
