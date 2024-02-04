@@ -287,3 +287,14 @@ The curriculum draws heavily on the following amazing resources:
 Our lovely contributors _(feel free to give them a follow/subscribe/like as a gesture of appreciation)_:
 
 - **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
