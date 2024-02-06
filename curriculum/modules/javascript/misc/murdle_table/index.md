@@ -8,7 +8,7 @@ title: "Challenge: Recreate Murdle Table"
 
 Greetings **fellow detectives** 🕵️!
 
-You have got your hands dirty on the murder-solving mystery game [Murdle Table](https://murdle.com/)!
+You have got your hands dirty on the murder-solving mystery game [Murdle Table](https://murdle.com/){:target="_blank"}!
 
 However, finding the murderer and completing the game, is not enough for us 😎! 
 
@@ -30,8 +30,8 @@ In this challenge, we want you to **recreate a functional version** of the infam
   - Save💾: saves the current layout
   - Lightbulb💡: turns on/off the light
 - Include the Murdle book image with the correct link
-- (**Extra**): All outer icons (motives, weapons, etc.) should have a hover feature, where the card description is displayed
-  - Each card description can be found after you click on any icon on the online version of the Murdle Table
+- (**Extra**): All outer icons (motives, weapons, etc.) should open a [modal](../../../html/modals/index.md){:target="_blank"}, where the card description is displayed
+  - Each card description can be found after you click on any icon on the online version of the Murdle Table, e.g. [gardening shears](./assets/gardening-shears-description.png){:target="_blank"}
 
 
 <table>
