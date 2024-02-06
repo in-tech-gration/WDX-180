@@ -24,14 +24,14 @@ In this challenge, we want you to **recreate a functional version** of the infam
 - Find the font used
 - Create the table layout
 - Each table square should have 4 different states (blank, cross, tick, question mark)
-- All outer icons (motives, weapons, etc.) should have a hover feature, where the card description is displayed
-  - Each card description can be found after you click on any icon on the online version of the Murdle Table
 - Implement the bottom right buttons functionality
   - Trash🗑️: clears the table
   - Recycle♻️: returns to last saved layout
   - Save💾: saves the current layout
   - Lightbulb💡: turns on/off the light
 - Include the Murdle book image with the correct link
+- (**Extra**): All outer icons (motives, weapons, etc.) should have a hover feature, where the card description is displayed
+  - Each card description can be found after you click on any icon on the online version of the Murdle Table
 
 
 <table>
