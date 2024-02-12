@@ -1,0 +1,14 @@
+.content p {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+}
+.content h4,
+.content h2 {
+  text-align: center;
+}
+.content h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 6rem;
+}
