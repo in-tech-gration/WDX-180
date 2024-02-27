@@ -26,3 +26,13 @@ try {
   console.log( error );
 }
 ```
+
+**Don't stop at console.log:**
+
+The second important rule to remember, is not to rely on a simple `console.log` for the error cases. Make sure to handle them appropriately. For example, always send some informative response back to the user. 
+
+```js
+fetch( URL )
+.then( data => outputEl.innerHTML = `Stock price: ${data}` );
+.catch( error => outputEl.innerHTML = `Ops! Something went wrong: ${error.message}` );
+```

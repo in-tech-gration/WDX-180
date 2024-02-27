@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 28/12/2023</span>
+  <span>Updated: 27/2/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -318,6 +318,17 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     console.log( error );
   }
   ```
+  
+  **Don't stop at console.log:**
+  
+  The second important rule to remember, is not to rely on a simple `console.log` for the error cases. Make sure to handle them appropriately. For example, always send some informative response back to the user. 
+  
+  ```js
+  fetch( URL )
+  .then( data => outputEl.innerHTML = `Stock price: ${data}` );
+  .catch( error => outputEl.innerHTML = `Ops! Something went wrong: ${error.message}` );
+  ```
+  
 
   **Suggestion #2:**
 
@@ -387,6 +398,3 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
-## Week 11 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
