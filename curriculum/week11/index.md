@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 27/2/2024</span>
+  <span>Updated: 28/2/2024</span>
 
   <h2 class="week-controls__next_week">
 
