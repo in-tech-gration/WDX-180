@@ -103,6 +103,8 @@ title: "Tiny Server Refactoring"
     async>
   </script>
 
-<!-- ### Sources and Attributions -->
+### Sources and Attributions
+
+  - Initial Node.js code: [Alex Kokh](https://github.com/alkozp){:target="_blank"}
 
 <!-- ### Extra Resources -->

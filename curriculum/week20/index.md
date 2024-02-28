@@ -254,17 +254,13 @@ title: Week 20 | Node JS
     async>
   </script>
 
-
-
-<!-- ### Sources and Attributions -->
-
-
-
-<!-- ### Extra Resources -->
-
 <!-- Extra Resources -->
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+  - Initial Node.js code: [Alex Kokh](https://github.com/alkozp){:target="_blank"}
+
+<!-- ### Extra Resources -->
   
 </details>
 
