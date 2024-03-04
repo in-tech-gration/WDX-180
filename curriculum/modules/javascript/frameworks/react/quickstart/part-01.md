@@ -1,80 +1,6 @@
 ---
-title: Week 21 | React JS
+title: Intro to React - Part 1
 ---
-
-<hr class="mb-0">
-
-<h1 id="{{ Week 21-React JS | slugify }}">
-  <span class="week-prefix">Week 21 |</span> React JS
-</h1>
-
-<div class="week-controls">
-
-  {% assign week_num = 21 | to_integer %}
-
-  <h2 class="week-controls__previous_week">
-
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if week_num > 0 %}
-
-      {% assign previous_week_num = 21 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
-
-      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
-    {% endif %}
-
-  </h2>
-
-  <span>Updated: 4/3/2024</span>
-
-  <h2 class="week-controls__next_week">
-
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if week_num <= 36 %}
-
-      {% assign next_week_num = 21 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
-
-      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
-    {% endif %}
-
-  </h2>
-
-</div>
-
----
-
-<!-- Week 21 - Day 1 | React JS -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 21 - Day 1</span> | React JS</h2>
-  </summary>
-
-### Schedule
-
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 21 - Day 2 | Intro to React - Part 1 -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 21 - Day 2</span> | Intro to React - Part 1</h2>
-  </summary>
 
 ### Schedule
 
@@ -93,8 +19,6 @@ title: Week 21 | React JS
 
 ## Creating and nesting components 
 
-
-
 React apps are made out of *components*. A component is a piece of the UI (user interface) that has its own logic and appearance. A component can be as small as a button, or as large as an entire page.
 
 React components are JavaScript functions that return markup:
@@ -110,8 +34,6 @@ function MyButton() {
 Now that you've declared `MyButton`, you can nest it into another component:
 
 <!-- ```js {5} -->
-
-
 ```jsx
 export default function MyApp() {
   return (
@@ -150,21 +72,15 @@ export default function MyApp() {
 
 </Sandpack> -->
 
-
-
 The `export default` keywords specify the main component in the file. If you're not familiar with some piece of JavaScript syntax, [MDN](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export){:target="_blank"} and [javascript.info](https://javascript.info/import-export){:target="_blank"} have great references.
 
 ## Writing markup with JSX
-
-
 
 The markup syntax you've seen above is called *JSX*. It is optional, but most React projects use JSX for its convenience. 
 
 JSX is stricter than HTML. You have to close tags like `<br />`. Your component also can't return multiple JSX tags. You have to wrap them into a shared parent, like a `<div>...</div>` or an empty `<>...</>` wrapper:
 
 <!-- ```js {3,6} -->
-
-
 ```jsx
 function AboutPage() {
   return (
@@ -179,8 +95,6 @@ function AboutPage() {
 If you have a lot of HTML to port to JSX, you can use an [online converter.](https://transform.tools/html-to-jsx){:target="_blank"}
 
 ## Adding styles
-
-
 
 In React, you specify a CSS class with `className`. It works the same way as the HTML [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class){:target="_blank"} attribute:
 
@@ -201,13 +115,9 @@ React does not prescribe how you add CSS files. In the simplest case, you'll add
 
 ## Displaying data 
 
-
-
 JSX lets you put markup into JavaScript. Curly braces let you "escape back" into JavaScript so that you can embed some variable from your code and display it to the user. For example, this will display `user.name`:
 
 <!-- ```js {3} -->
-
-
 ```jsx
 return (
   <h1>
@@ -219,8 +129,6 @@ return (
 You can also "escape into JavaScript" from JSX attributes, but you have to use curly braces *instead of* quotes. For example, `className="avatar"` passes the `"avatar"` string as the CSS class, but `src={user.imageUrl}` reads the JavaScript `user.imageUrl` variable value, and then passes that value as the `src` attribute:
 
 <!-- ```js {3,4} -->
-
-
 ```jsx
 return (
   <img
@@ -233,8 +141,6 @@ return (
 You can put more complex expressions inside the JSX curly braces too, for example, [string concatenation](https://javascript.info/operators#string-concatenation-with-binary){:target="_blank"}:
 
 <!-- <Sandpack> -->
-
-
 
 {% raw %}
 
@@ -277,8 +183,6 @@ export default function Profile() {
 
 <!-- </Sandpack> -->
 
-
-
 {% raw %}
 
 In the above example, `style={{}}` is not a special syntax, but a regular `{}` object inside the `style={ }` JSX curly braces. You can use the `style` attribute when your styles depend on JavaScript variables.
@@ -286,8 +190,6 @@ In the above example, `style={{}}` is not a special syntax, but a regular `{}` o
 {% endraw %}
 
 ## Conditional rendering
-
-
 
 In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an [`if`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else){:target="_blank"} statement to conditionally include JSX:
 
@@ -329,8 +231,6 @@ All of these approaches also work for conditionally specifying attributes. If yo
 
 ## Rendering lists 
 
-
-
 You will rely on JavaScript features like [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for){:target="_blank"} and the [array `map()` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map){:target="_blank"} to render lists of components.
 
 For example, let's say you have an array of products:
@@ -360,8 +260,6 @@ return (
 Notice how `<li>` has a `key` attribute. For each item in a list, you should pass a string or a number that uniquely identifies that item among its siblings. Usually, a key should be coming from your data, such as a database ID. React uses your keys to know what happened if you later insert, delete, or reorder the items.
 
 <!-- <Sandpack> -->
-
-
 
 {% raw %}
 
@@ -394,25 +292,13 @@ export default function ShoppingList() {
 
 <!-- </Sandpack> -->
 
-
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
 ### Sources and Attributions
 
 - [https://react.dev/learn](https://react.dev/learn){:target="_blank"}
 
 ---
 
-
-
 > **Questions, comments, suggestions? Please leave them on the comment section below.**
-
-
 
 <script src="https://utteranc.es/client.js"
   repo="in-tech-gration/WDX-180"
@@ -421,90 +307,3 @@ export default function ShoppingList() {
   crossorigin="anonymous"
   async>
 </script>
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 21 - Day 3 | React JS -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 21 - Day 3</span> | React JS</h2>
-  </summary>
-
-### Schedule
-
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 21 - Day 4 | Group Project -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 21 - Day 4</span> | Group Project</h2>
-  </summary>
-
-### Schedule
-
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 21 - Day 5 | React JS -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 21 - Day 5</span> | React JS</h2>
-  </summary>
-
-### Schedule
-
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-
-<hr class="mt-1">
-
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-

@@ -164,6 +164,8 @@
 
   Just add the following `<script>`:
 
+  > **Questions, comments, suggestions? Please leave them on the comment section below.**
+
   ```html
   <script src="https://utteranc.es/client.js"
     repo="in-tech-gration/WDX-180"
@@ -173,6 +175,10 @@
     async>
   </script>
   ```
+
+## Jekyll | How to | Properly add Syntax Highlighting for JSX
+
+  - Put code inside {% raw %} {% endraw %}
 
 ---
 
