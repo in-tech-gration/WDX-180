@@ -24,7 +24,7 @@ title: Week 21 | React JS
 
   </h2>
 
-  <span>Updated: 4/3/2024</span>
+  <span>Updated: 5/3/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -82,14 +82,14 @@ title: Week 21 | React JS
 
 ### Study Plan
 
-**Intro to React / Part 1**
+  **Intro to React / Part 1**
 
-![](./assets/react-quick-girl.png)
+  ![](./assets/react-quick-girl.png)
 
-- How to create and nest components
-- How to add markup and styles
-- How to display data
-- How to render conditions and lists
+  - How to create and nest components
+  - How to add markup and styles
+  - How to display data
+  - How to render conditions and lists
 
 ## Creating and nesting components 
 
@@ -400,7 +400,9 @@ export default function ShoppingList() {
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+- [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
 
 ### Sources and Attributions
 

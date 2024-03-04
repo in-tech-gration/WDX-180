@@ -8,14 +8,14 @@ title: Intro to React - Part 1
 
 ### Study Plan
 
-**Intro to React / Part 1**
+  **Intro to React / Part 1**
 
-![](./assets/react-quick-girl.png)
+  ![](./assets/react-quick-girl.png)
 
-- How to create and nest components
-- How to add markup and styles
-- How to display data
-- How to render conditions and lists
+  - How to create and nest components
+  - How to add markup and styles
+  - How to display data
+  - How to render conditions and lists
 
 ## Creating and nesting components 
 
@@ -291,6 +291,10 @@ export default function ShoppingList() {
 {% endraw %}
 
 <!-- </Sandpack> -->
+
+### Extra Resources
+
+- [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
 
 ### Sources and Attributions
 
