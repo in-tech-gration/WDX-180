@@ -14,8 +14,8 @@ schedule:
       # file://./../modules/generics/react-js-generic.md
       module: generics/react-js-generic.md
     4: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/frameworks/react/quickstart/part-02.md
+      module: javascript/frameworks/react/quickstart/part-02.md
     5: # 
       # file://./../modules/generics/react-js-generic.md
       module: generics/react-js-generic.md
