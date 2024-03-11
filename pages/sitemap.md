@@ -22,6 +22,10 @@ favicon: sitemap.png
   - **Modules**
     - **JavaScript**
       - [Setting up Study Lenses (v2) on your System](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"}
+      - **Functional Programming**
+        - [Part 01](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/functional_programming/part01/){:target="_blank"}
+        - [Part 02](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/functional_programming/part02/){:target="_blank"}
+        - [Part 03](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/functional_programming/part03/){:target="_blank"}
     - **Shorts/Tips**
       - [CSS: Hidden Scrollbar](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/tips/hidden_scrollbar/){:target="_blank"} (CSS tips hidden scrollbar)
       - [CSS: Simple Animation](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/tips/simple_animation/){:target="_blank"} (CSS tips simple animation)
