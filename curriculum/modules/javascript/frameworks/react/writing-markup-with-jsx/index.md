@@ -227,6 +227,7 @@ img { height: 90px }
 <!-- </Sandpack> -->
 
 <!-- <Recap> -->
+## Recap
 
 Now you know why JSX exists and how to use it in components:
 
@@ -237,6 +238,8 @@ Now you know why JSX exists and how to use it in components:
 <!-- </Recap> -->
 
 <!-- <Challenges> -->
+
+---
 
 ## Try out some challenges
 
