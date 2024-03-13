@@ -26,6 +26,12 @@ favicon: sitemap.png
         - [Part 01](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/functional_programming/part01/){:target="_blank"}
         - [Part 02](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/functional_programming/part02/){:target="_blank"}
         - [Part 03](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/functional_programming/part03/){:target="_blank"}
+      - **React**
+        - [QuickStart - Part 01](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/quickstart/part-01.html){:target="_blank"}
+        - [QuickStart - Part 02](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/quickstart/part-02.html){:target="_blank"}
+        - [JavaScript in JSX with curly braces](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/javascript-in-jsx-with-curly-braces/){:target="_blank"}
+        - [Passing props to a component](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/passing-props-to-a-component/){:target="_blank"}
+        - [Writing markup with JSX](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/writing-markup-with-jsx/){:target="_blank"}
     - **Shorts/Tips**
       - [CSS: Hidden Scrollbar](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/tips/hidden_scrollbar/){:target="_blank"} (CSS tips hidden scrollbar)
       - [CSS: Simple Animation](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/tips/simple_animation/){:target="_blank"} (CSS tips simple animation)
@@ -42,5 +48,5 @@ favicon: sitemap.png
     - **Functions**
       - [Explicit Function Return Statement](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/functions-always-return){:target="_blank"}
     - **Async**
-      - [Promises: Handle Errors First](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/promises-handle-errors)
-      - [Async Naming Suffix](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/promises-async-naming)
+      - [Promises: Handle Errors First](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/promises-handle-errors){:target="_blank"}
+      - [Async Naming Suffix](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/promises-async-naming){:target="_blank"}
