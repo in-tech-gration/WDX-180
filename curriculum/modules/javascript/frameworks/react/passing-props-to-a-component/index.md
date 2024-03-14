@@ -569,208 +569,228 @@ li { margin: 5px; }
 </details>
 <!-- </Hint> -->
 
-<!-- <Solution>
+<!-- <Solution> -->
 
-In this solution, the `Profile` component accepts multiple props: `imageId` (a string), `name` (a string), `profession` (a string), `awards` (an array of strings), `discovery` (a string), and `imageSize` (a number).
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 1</h4>
+  </summary>
 
-Note that the `imageSize` prop has a default value, which is why we don't pass it to the component.
-
-<Sandpack>
-
-```js src/App.js
-import { getImageUrl } from './utils.js';
-
-function Profile({
-  imageId,
-  name,
-  profession,
-  awards,
-  discovery,
-  imageSize = 70
-}) {
-  return (
-    <section className="profile">
-      <h2>{name}</h2>
-      <img
-        className="avatar"
-        src={getImageUrl(imageId)}
-        alt={name}
-        width={imageSize}
-        height={imageSize}
-      />
-      <ul>
-        <li><b>Profession:</b> {profession}</li>
-        <li>
-          <b>Awards: {awards.length} </b>
-          ({awards.join(', ')})
-        </li>
-        <li>
-          <b>Discovered: </b>
-          {discovery}
-        </li>
-      </ul>
-    </section>
-  );
-}
-
-export default function Gallery() {
-  return (
-    <div>
-      <h1>Notable Scientists</h1>
-      <Profile
-        imageId="szV5sdG"
-        name="Maria Skłodowska-Curie"
-        profession="physicist and chemist"
-        discovery="polonium (chemical element)"
-        awards={[
-          'Nobel Prize in Physics',
-          'Nobel Prize in Chemistry',
-          'Davy Medal',
-          'Matteucci Medal'
-        ]}
-      />
-      <Profile
-        imageId='YfeOqp2'
-        name='Katsuko Saruhashi'
-        profession='geochemist'
-        discovery="a method for measuring carbon dioxide in seawater"
-        awards={[
-          'Miyake Prize for geochemistry',
-          'Tanaka Prize'
-        ]}
-      />
-    </div>
-  );
-}
-```
-
-```js src/utils.js
-export function getImageUrl(imageId, size = 's') {
-  return (
-    'https://i.imgur.com/' +
-    imageId +
-    size +
-    '.jpg'
-  );
-}
-```
-
-```css
-.avatar { margin: 5px; border-radius: 50%; min-height: 70px; }
-.profile {
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  margin-top: 20px;
-  padding: 10px;
-}
-h1, h2 { margin: 5px; }
-h1 { margin-bottom: 10px; }
-ul { padding: 0px 10px 0px 20px; }
-li { margin: 5px; }
-```
-
-</Sandpack>
-
-Note how you don't need a separate `awardCount` prop if `awards` is an array. Then you can use `awards.length` to count the number of awards. Remember that props can take any values, and that includes arrays too!
-
-Another solution, which is more similar to the earlier examples on this page, is to group all information about a person in a single object, and pass that object as one prop:
-
-<Sandpack>
-
-```js src/App.js
-import { getImageUrl } from './utils.js';
-
-function Profile({ person, imageSize = 70 }) {
-  const imageSrc = getImageUrl(person)
-
-  return (
-    <section className="profile">
-      <h2>{person.name}</h2>
-      <img
-        className="avatar"
-        src={imageSrc}
-        alt={person.name}
-        width={imageSize}
-        height={imageSize}
-      />
-      <ul>
-        <li>
-          <b>Profession:</b> {person.profession}
-        </li>
-        <li>
-          <b>Awards: {person.awards.length} </b>
-          ({person.awards.join(', ')})
-        </li>
-        <li>
-          <b>Discovered: </b>
-          {person.discovery}
-        </li>
-      </ul>
-    </section>
-  )
-}
-
-export default function Gallery() {
-  return (
-    <div>
-      <h1>Notable Scientists</h1>
-      <Profile person={{
-        imageId: 'szV5sdG',
-        name: 'Maria Skłodowska-Curie',
-        profession: 'physicist and chemist',
-        discovery: 'polonium (chemical element)',
-        awards: [
-          'Nobel Prize in Physics',
-          'Nobel Prize in Chemistry',
-          'Davy Medal',
-          'Matteucci Medal'
-        ],
-      }} />
-      <Profile person={{
-        imageId: 'YfeOqp2',
-        name: 'Katsuko Saruhashi',
-        profession: 'geochemist',
-        discovery: 'a method for measuring carbon dioxide in seawater',
-        awards: [
-          'Miyake Prize for geochemistry',
-          'Tanaka Prize'
-        ],
-      }} />
-    </div>
-  );
-}
-```
-
-```js src/utils.js
-export function getImageUrl(person, size = 's') {
-  return (
-    'https://i.imgur.com/' +
-    person.imageId +
-    size +
-    '.jpg'
-  );
-}
-```
-
-```css
-.avatar { margin: 5px; border-radius: 50%; min-height: 70px; }
-.profile {
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  margin-top: 20px;
-  padding: 10px;
-}
-h1, h2 { margin: 5px; }
-h1 { margin-bottom: 10px; }
-ul { padding: 0px 10px 0px 20px; }
-li { margin: 5px; }
-```
-
-</Sandpack>
-
-Although the syntax looks slightly different because you're describing properties of a JavaScript object rather than a collection of JSX attributes, these examples are mostly equivalent, and you can pick either approach.
+  In this solution, the `Profile` component accepts multiple props: `imageId` (a string), `name` (a string), `profession` (a string), `awards` (an array of strings), `discovery` (a string), and `imageSize` (a number).
   
-</Solution> -->
+  Note that the `imageSize` prop has a default value, which is why we don't pass it to the component.
+  
+  <!-- <Sandpack> -->
+  
+  <!-- ```js src/App.js -->
+  ```jsx
+  import { getImageUrl } from './utils.js';
+  
+  function Profile({
+    imageId,
+    name,
+    profession,
+    awards,
+    discovery,
+    imageSize = 70
+  }) {
+    return (
+      <section className="profile">
+        <h2>{name}</h2>
+        <img
+          className="avatar"
+          src={getImageUrl(imageId)}
+          alt={name}
+          width={imageSize}
+          height={imageSize}
+        />
+        <ul>
+          <li><b>Profession:</b> {profession}</li>
+          <li>
+            <b>Awards: {awards.length} </b>
+            ({awards.join(', ')})
+          </li>
+          <li>
+            <b>Discovered: </b>
+            {discovery}
+          </li>
+        </ul>
+      </section>
+    );
+  }
+  
+  export default function Gallery() {
+    return (
+      <div>
+        <h1>Notable Scientists</h1>
+        <Profile
+          imageId="szV5sdG"
+          name="Maria Skłodowska-Curie"
+          profession="physicist and chemist"
+          discovery="polonium (chemical element)"
+          awards={[
+            'Nobel Prize in Physics',
+            'Nobel Prize in Chemistry',
+            'Davy Medal',
+            'Matteucci Medal'
+          ]}
+        />
+        <Profile
+          imageId='YfeOqp2'
+          name='Katsuko Saruhashi'
+          profession='geochemist'
+          discovery="a method for measuring carbon dioxide in seawater"
+          awards={[
+            'Miyake Prize for geochemistry',
+            'Tanaka Prize'
+          ]}
+        />
+      </div>
+    );
+  }
+  ```
+  
+  <!-- ```js src/utils.js -->
+  ```jsx
+  export function getImageUrl(imageId, size = 's') {
+    return (
+      'https://i.imgur.com/' +
+      imageId +
+      size +
+      '.jpg'
+    );
+  }
+  ```
+  
+  ```css
+  .avatar { margin: 5px; border-radius: 50%; min-height: 70px; }
+  .profile {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  h1, h2 { margin: 5px; }
+  h1 { margin-bottom: 10px; }
+  ul { padding: 0px 10px 0px 20px; }
+  li { margin: 5px; }
+  ```
+  
+  <!-- </Sandpack> -->
+  
+  Note how you don't need a separate `awardCount` prop if `awards` is an array. Then you can use `awards.length` to count the number of awards. Remember that props can take any values, and that includes arrays too!
+
+</details>
+
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 2</h4>
+  </summary>
+
+  Another solution, which is more similar to the earlier examples on this page, is to group all information about a person in a single object, and pass that object as one prop:
+  
+  <!-- <Sandpack> -->
+  {% raw %}
+  <!-- ```js src/App.js -->
+  ```jsx
+  import { getImageUrl } from './utils.js';
+  
+  function Profile({ person, imageSize = 70 }) {
+    const imageSrc = getImageUrl(person)
+  
+    return (
+      <section className="profile">
+        <h2>{person.name}</h2>
+        <img
+          className="avatar"
+          src={imageSrc}
+          alt={person.name}
+          width={imageSize}
+          height={imageSize}
+        />
+        <ul>
+          <li>
+            <b>Profession:</b> {person.profession}
+          </li>
+          <li>
+            <b>Awards: {person.awards.length} </b>
+            ({person.awards.join(', ')})
+          </li>
+          <li>
+            <b>Discovered: </b>
+            {person.discovery}
+          </li>
+        </ul>
+      </section>
+    )
+  }
+  
+  export default function Gallery() {
+    return (
+      <div>
+        <h1>Notable Scientists</h1>
+        <Profile person={{
+          imageId: 'szV5sdG',
+          name: 'Maria Skłodowska-Curie',
+          profession: 'physicist and chemist',
+          discovery: 'polonium (chemical element)',
+          awards: [
+            'Nobel Prize in Physics',
+            'Nobel Prize in Chemistry',
+            'Davy Medal',
+            'Matteucci Medal'
+          ],
+        }} />
+        <Profile person={{
+          imageId: 'YfeOqp2',
+          name: 'Katsuko Saruhashi',
+          profession: 'geochemist',
+          discovery: 'a method for measuring carbon dioxide in seawater',
+          awards: [
+            'Miyake Prize for geochemistry',
+            'Tanaka Prize'
+          ],
+        }} />
+      </div>
+    );
+  }
+  ```
+
+  {% endraw %}
+  
+  <!-- ```js src/utils.js -->
+  ```jsx
+  export function getImageUrl(person, size = 's') {
+    return (
+      'https://i.imgur.com/' +
+      person.imageId +
+      size +
+      '.jpg'
+    );
+  }
+  ```
+  
+  ```css
+  .avatar { margin: 5px; border-radius: 50%; min-height: 70px; }
+  .profile {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  h1, h2 { margin: 5px; }
+  h1 { margin-bottom: 10px; }
+  ul { padding: 0px 10px 0px 20px; }
+  li { margin: 5px; }
+  ```
+  
+  <!-- </Sandpack> -->
+  
+  Although the syntax looks slightly different because you're describing properties of a JavaScript object rather than a collection of JSX attributes, these examples are mostly equivalent, and you can pick either approach.
+  
+</details>
+  
+<!-- </Solution> -->
 
 ---
 
@@ -833,142 +853,168 @@ export function getImageUrl(person, size) {
 
 {% endraw %}
 
-<!-- <Solution>
+<!-- <Solution> -->
 
-<Sandpack>
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 1</h4>
+  </summary>
 
-```js src/App.js
-import { getImageUrl } from './utils.js';
-
-function Avatar({ person, size }) {
-  let thumbnailSize = 's';
-  if (size > 90) {
-    thumbnailSize = 'b';
+  <!-- <Sandpack> -->
+  
+  
+  {% raw %}
+  <!-- ```js src/App.js -->
+  ```jsx
+  import { getImageUrl } from './utils.js';
+  
+  function Avatar({ person, size }) {
+    let thumbnailSize = 's';
+    if (size > 90) {
+      thumbnailSize = 'b';
+    }
+    return (
+      <img
+        className="avatar"
+        src={getImageUrl(person, thumbnailSize)}
+        alt={person.name}
+        width={size}
+        height={size}
+      />
+    );
   }
-  return (
-    <img
-      className="avatar"
-      src={getImageUrl(person, thumbnailSize)}
-      alt={person.name}
-      width={size}
-      height={size}
-    />
-  );
-}
-
-export default function Profile() {
-  return (
-    <>
-      <Avatar
-        size={40}
-        person={{ 
-          name: 'Gregorio Y. Zara', 
-          imageId: '7vQD0fP'
-        }}
-      />
-      <Avatar
-        size={120}
-        person={{ 
-          name: 'Gregorio Y. Zara', 
-          imageId: '7vQD0fP'
-        }}
-      />
-    </>
-  );
-}
-```
-
-```js src/utils.js
-export function getImageUrl(person, size) {
-  return (
-    'https://i.imgur.com/' +
-    person.imageId +
-    size +
-    '.jpg'
-  );
-}
-```
-
-```css
-.avatar { margin: 20px; border-radius: 50%; }
-```
-
-</Sandpack>
-
-You could also show a sharper image for high DPI screens by taking [`window.devicePixelRatio`](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio){:target="_blank"} into account:
-
-<Sandpack>
-
-```js src/App.js
-import { getImageUrl } from './utils.js';
-
-const ratio = window.devicePixelRatio;
-
-function Avatar({ person, size }) {
-  let thumbnailSize = 's';
-  if (size * ratio > 90) {
-    thumbnailSize = 'b';
+  
+  export default function Profile() {
+    return (
+      <>
+        <Avatar
+          size={40}
+          person={{ 
+            name: 'Gregorio Y. Zara', 
+            imageId: '7vQD0fP'
+          }}
+        />
+        <Avatar
+          size={120}
+          person={{ 
+            name: 'Gregorio Y. Zara', 
+            imageId: '7vQD0fP'
+          }}
+        />
+      </>
+    );
   }
-  return (
-    <img
-      className="avatar"
-      src={getImageUrl(person, thumbnailSize)}
-      alt={person.name}
-      width={size}
-      height={size}
-    />
-  );
-}
+  ```
+  
+  {% endraw %}
+  
+  <!-- ```js src/utils.js -->
+  ```jsx
+  export function getImageUrl(person, size) {
+    return (
+      'https://i.imgur.com/' +
+      person.imageId +
+      size +
+      '.jpg'
+    );
+  }
+  ```
+  
+  ```css
+  .avatar { margin: 20px; border-radius: 50%; }
+  ```
+  
+  <!-- </Sandpack> -->
 
-export default function Profile() {
-  return (
-    <>
-      <Avatar
-        size={40}
-        person={{ 
-          name: 'Gregorio Y. Zara', 
-          imageId: '7vQD0fP'
-        }}
+</details>
+
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 2</h4>
+  </summary>
+
+  You could also show a sharper image for high DPI screens by taking [`window.devicePixelRatio`](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio){:target="_blank"} into account:
+  
+  <!-- <Sandpack> -->
+  
+  {% raw %}
+  
+  <!-- ```js src/App.js -->
+  ```jsx
+  import { getImageUrl } from './utils.js';
+  
+  const ratio = window.devicePixelRatio;
+  
+  function Avatar({ person, size }) {
+    let thumbnailSize = 's';
+    if (size * ratio > 90) {
+      thumbnailSize = 'b';
+    }
+    return (
+      <img
+        className="avatar"
+        src={getImageUrl(person, thumbnailSize)}
+        alt={person.name}
+        width={size}
+        height={size}
       />
-      <Avatar
-        size={70}
-        person={{ 
-          name: 'Gregorio Y. Zara', 
-          imageId: '7vQD0fP'
-        }}
-      />
-      <Avatar
-        size={120}
-        person={{ 
-          name: 'Gregorio Y. Zara', 
-          imageId: '7vQD0fP'
-        }}
-      />
-    </>
-  );
-}
-```
+    );
+  }
+  
+  export default function Profile() {
+    return (
+      <>
+        <Avatar
+          size={40}
+          person={{ 
+            name: 'Gregorio Y. Zara', 
+            imageId: '7vQD0fP'
+          }}
+        />
+        <Avatar
+          size={70}
+          person={{ 
+            name: 'Gregorio Y. Zara', 
+            imageId: '7vQD0fP'
+          }}
+        />
+        <Avatar
+          size={120}
+          person={{ 
+            name: 'Gregorio Y. Zara', 
+            imageId: '7vQD0fP'
+          }}
+        />
+      </>
+    );
+  }
+  ```
+  
+  {% endraw %}
+  
+  <!-- ```js src/utils.js -->
+  ```jsx
+  export function getImageUrl(person, size) {
+    return (
+      'https://i.imgur.com/' +
+      person.imageId +
+      size +
+      '.jpg'
+    );
+  }
+  ```
+  
+  ```css
+  .avatar { margin: 20px; border-radius: 50%; }
+  ```
+  
+  <!-- </Sandpack> -->
+  
+  Props let you encapsulate logic like this inside the `Avatar` component (and change it later if needed) so that everyone can use the `<Avatar>` component without thinking about how the images are requested and resized.
 
-```js src/utils.js
-export function getImageUrl(person, size) {
-  return (
-    'https://i.imgur.com/' +
-    person.imageId +
-    size +
-    '.jpg'
-  );
-}
-```
+</details>
 
-```css
-.avatar { margin: 20px; border-radius: 50%; }
-```
-
-</Sandpack>
-
-Props let you encapsulate logic like this inside the `Avatar` component (and change it later if needed) so that everyone can use the `<Avatar>` component without thinking about how the images are requested and resized.
-
-</Solution> -->
+<!-- </Solution> -->
 
 ---
 
@@ -1040,132 +1086,146 @@ h1 {
 
 <!-- </Hint> -->
 
-<!-- <Solution>
+<!-- <Solution> -->
 
-This is how you can use the `Card` component in both places:
+<details markdown="1">
+  <summary>
+    <h4>Show Solution</h4>
+  </summary>
 
-<Sandpack>
-
-```jsx
-function Card({ children }) {
-  return (
-    <div className="card">
-      <div className="card-content">
-        {children}
-      </div>
-    </div>
-  );
-}
-
-export default function Profile() {
-  return (
-    <div>
-      <Card>
-        <h1>Photo</h1>
-        <img
-          className="avatar"
-          src="https://i.imgur.com/OKS67lhm.jpg"
-          alt="Aklilu Lemma"
-          width={100}
-          height={100}
-        />
-      </Card>
-      <Card>
-        <h1>About</h1>
-        <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
-      </Card>
-    </div>
-  );
-}
-```
-
-```css
-.card {
-  width: fit-content;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  background: #fff;
-}
-.card-content {
-  text-align: center;
-}
-.avatar {
-  margin: 10px;
-  border-radius: 50%;
-}
-h1 {
-  margin: 5px;
-  padding: 0;
-  font-size: 24px;
-}
-```
-
-</Sandpack>
-
-You can also make `title` a separate prop if you want every `Card` to always have a title:
-
-<Sandpack>
-
-```jsx
-function Card({ children, title }) {
-  return (
-    <div className="card">
-      <div className="card-content">
-        <h1>{title}</h1>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-export default function Profile() {
-  return (
-    <div>
-      <Card title="Photo">
-        <img
-          className="avatar"
-          src="https://i.imgur.com/OKS67lhm.jpg"
-          alt="Aklilu Lemma"
-          width={100}
-          height={100}
-        />
-      </Card>
-      <Card title="About">
-        <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
-      </Card>
-    </div>
-  );
-}
-```
-
-```css
-.card {
-  width: fit-content;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  background: #fff;
-}
-.card-content {
-  text-align: center;
-}
-.avatar {
-  margin: 10px;
-  border-radius: 50%;
-}
-h1 {
-  margin: 5px;
-  padding: 0;
-  font-size: 24px;
-}
-```
-
-</Sandpack>
+  This is how you can use the `Card` component in both places:
   
-</Solution> -->
+  <!-- <Sandpack> -->
+  
+  ```jsx
+  function Card({ children }) {
+    return (
+      <div className="card">
+        <div className="card-content">
+          {children}
+        </div>
+      </div>
+    );
+  }
+  
+  export default function Profile() {
+    return (
+      <div>
+        <Card>
+          <h1>Photo</h1>
+          <img
+            className="avatar"
+            src="https://i.imgur.com/OKS67lhm.jpg"
+            alt="Aklilu Lemma"
+            width={100}
+            height={100}
+          />
+        </Card>
+        <Card>
+          <h1>About</h1>
+          <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
+        </Card>
+      </div>
+    );
+  }
+  ```
+  
+  ```css
+  .card {
+    width: fit-content;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .card-content {
+    text-align: center;
+  }
+  .avatar {
+    margin: 10px;
+    border-radius: 50%;
+  }
+  h1 {
+    margin: 5px;
+    padding: 0;
+    font-size: 24px;
+  }
+  ```
+  
+  <!-- </Sandpack> -->
+
+</details>
+
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 2</h4>
+  </summary>
+
+  You can also make `title` a separate prop if you want every `Card` to always have a title:
+  
+  <!-- <Sandpack> -->
+  
+  ```jsx
+  function Card({ children, title }) {
+    return (
+      <div className="card">
+        <div className="card-content">
+          <h1>{title}</h1>
+          {children}
+        </div>
+      </div>
+    );
+  }
+  
+  export default function Profile() {
+    return (
+      <div>
+        <Card title="Photo">
+          <img
+            className="avatar"
+            src="https://i.imgur.com/OKS67lhm.jpg"
+            alt="Aklilu Lemma"
+            width={100}
+            height={100}
+          />
+        </Card>
+        <Card title="About">
+          <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
+        </Card>
+      </div>
+    );
+  }
+  ```
+  
+  ```css
+  .card {
+    width: fit-content;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .card-content {
+    text-align: center;
+  }
+  .avatar {
+    margin: 10px;
+    border-radius: 50%;
+  }
+  h1 {
+    margin: 5px;
+    padding: 0;
+    font-size: 24px;
+  }
+  ```
+  
+  <!-- </Sandpack> -->
+
+</details>
+  
+<!-- </Solution> -->
 
 <!-- </Challenges> -->
 

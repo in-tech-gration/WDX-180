@@ -316,50 +316,57 @@ Can you find the problem?
 </details>
 <!-- </Hint> -->
 
-<!-- <Solution>
+<!-- <Solution> -->
+
+<details markdown="1">
+  <summary>
+    <h4>Show Solution</h4>
+  </summary>
   
-This is happening because this example renders *an object itself* into the markup rather than a string: `<h1>{person}'s Todos</h1>` is trying to render the entire `person` object! Including raw objects as text content throws an error because React doesn't know how you want to display them.
-
-To fix it, replace `<h1>{person}'s Todos</h1>` with `<h1>{person.name}'s Todos</h1>`:
-
-<Sandpack>
-
-```jsx
-const person = {
-  name: 'Gregorio Y. Zara',
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
+  This is happening because this example renders *an object itself* into the markup rather than a string: `<h1>{person}'s Todos</h1>` is trying to render the entire `person` object! Including raw objects as text content throws an error because React doesn't know how you want to display them.
+  
+  To fix it, replace `<h1>{person}'s Todos</h1>` with `<h1>{person.name}'s Todos</h1>`:
+  
+  <!-- <Sandpack> -->
+  
+  ```jsx
+  const person = {
+    name: 'Gregorio Y. Zara',
+    theme: {
+      backgroundColor: 'black',
+      color: 'pink'
+    }
+  };
+  
+  export default function TodoList() {
+    return (
+      <div style={person.theme}>
+        <h1>{person.name}'s Todos</h1>
+        <img
+          className="avatar"
+          src="https://i.imgur.com/7vQD0fPs.jpg"
+          alt="Gregorio Y. Zara"
+        />
+        <ul>
+          <li>Improve the videophone</li>
+          <li>Prepare aeronautics lectures</li>
+          <li>Work on the alcohol-fuelled engine</li>
+        </ul>
+      </div>
+    );
   }
-};
-
-export default function TodoList() {
-  return (
-    <div style={person.theme}>
-      <h1>{person.name}'s Todos</h1>
-      <img
-        className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
-        alt="Gregorio Y. Zara"
-      />
-      <ul>
-        <li>Improve the videophone</li>
-        <li>Prepare aeronautics lectures</li>
-        <li>Work on the alcohol-fuelled engine</li>
-      </ul>
-    </div>
-  );
-}
-```
-
-```css
-body { padding: 0; margin: 0 }
-body > div > div { padding: 20px; }
-.avatar { border-radius: 50%; height: 90px; }
-```
-</Sandpack>
+  ```
   
-</Solution> -->
+  ```css
+  body { padding: 0; margin: 0 }
+  body > div > div { padding: 20px; }
+  .avatar { border-radius: 50%; height: 90px; }
+  ```
+  <!-- </Sandpack> -->
+  
+</details>
+  
+<!-- </Solution> -->
 
 ---
 
@@ -405,50 +412,57 @@ body > div > div { padding: 20px; }
 
 <!-- </Sandpack> -->
 
-<!-- <Solution>
+<!-- <Solution> -->
+
+<details markdown="1">
+  <summary>
+    <h4>Show Solution</h4>
+  </summary>
   
-Move the image URL into a property called `person.imageUrl` and read it from the `<img>` tag using the curlies:
+  Move the image URL into a property called `person.imageUrl` and read it from the `<img>` tag using the curlies:
+    
+  <!-- <Sandpack> -->
+    
+  ```jsx
+  const person = {
+    name: 'Gregorio Y. Zara',
+    imageUrl: "https://i.imgur.com/7vQD0fPs.jpg",
+    theme: {
+      backgroundColor: 'black',
+      color: 'pink'
+    }
+  };
   
-<Sandpack>
-  
-```jsx
-const person = {
-  name: 'Gregorio Y. Zara',
-  imageUrl: "https://i.imgur.com/7vQD0fPs.jpg",
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
+  export default function TodoList() {
+    return (
+      <div style={person.theme}>
+        <h1>{person.name}'s Todos</h1>
+        <img
+          className="avatar"
+          src={person.imageUrl}
+          alt="Gregorio Y. Zara"
+        />
+        <ul>
+          <li>Improve the videophone</li>
+          <li>Prepare aeronautics lectures</li>
+          <li>Work on the alcohol-fuelled engine</li>
+        </ul>
+      </div>
+    );
   }
-};
+  ```
+  
+  ```css
+  body { padding: 0; margin: 0 }
+  body > div > div { padding: 20px; }
+  .avatar { border-radius: 50%; height: 90px; }
+  ```
+  
+  <!-- </Sandpack> -->
+  
+</details>
 
-export default function TodoList() {
-  return (
-    <div style={person.theme}>
-      <h1>{person.name}'s Todos</h1>
-      <img
-        className="avatar"
-        src={person.imageUrl}
-        alt="Gregorio Y. Zara"
-      />
-      <ul>
-        <li>Improve the videophone</li>
-        <li>Prepare aeronautics lectures</li>
-        <li>Work on the alcohol-fuelled engine</li>
-      </ul>
-    </div>
-  );
-}
-```
-
-```css
-body { padding: 0; margin: 0 }
-body > div > div { padding: 20px; }
-.avatar { border-radius: 50%; height: 90px; }
-```
-
-</Sandpack>
-
-</Solution> -->
+<!-- </Solution> -->
 
 ---
 
@@ -504,113 +518,129 @@ body > div > div { padding: 20px; }
 
 To check that your fix worked, try changing the value of `imageSize` to `'b'`. The image should resize after your edit.
 
-<!-- <Solution>
-  
-You can write it as `src={baseUrl + person.imageId + person.imageSize + '.jpg'}`.
+<!-- <Solution> -->
 
-1. `{` opens the JavaScript expression
-2. `baseUrl + person.imageId + person.imageSize + '.jpg'` produces the correct URL string
-3. `}` closes the JavaScript expression
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 1</h4>
+  </summary>
   
-<Sandpack>
+  You can write it as `src={baseUrl + person.imageId + person.imageSize + '.jpg'}`.
   
-```jsx
-const baseUrl = 'https://i.imgur.com/';
-const person = {
-  name: 'Gregorio Y. Zara',
-  imageId: '7vQD0fP',
-  imageSize: 's',
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
+  1. `{` opens the JavaScript expression
+  2. `baseUrl + person.imageId + person.imageSize + '.jpg'` produces the correct URL string
+  3. `}` closes the JavaScript expression
+    
+  <!-- <Sandpack> -->
+    
+  ```jsx
+  const baseUrl = 'https://i.imgur.com/';
+  const person = {
+    name: 'Gregorio Y. Zara',
+    imageId: '7vQD0fP',
+    imageSize: 's',
+    theme: {
+      backgroundColor: 'black',
+      color: 'pink'
+    }
+  };
+  
+  export default function TodoList() {
+    return (
+      <div style={person.theme}>
+        <h1>{person.name}'s Todos</h1>
+        <img
+          className="avatar"
+          src={baseUrl + person.imageId + person.imageSize + '.jpg'}
+          alt={person.name}
+        />
+        <ul>
+          <li>Improve the videophone</li>
+          <li>Prepare aeronautics lectures</li>
+          <li>Work on the alcohol-fuelled engine</li>
+        </ul>
+      </div>
+    );
   }
-};
-
-export default function TodoList() {
-  return (
-    <div style={person.theme}>
-      <h1>{person.name}'s Todos</h1>
-      <img
-        className="avatar"
-        src={baseUrl + person.imageId + person.imageSize + '.jpg'}
-        alt={person.name}
-      />
-      <ul>
-        <li>Improve the videophone</li>
-        <li>Prepare aeronautics lectures</li>
-        <li>Work on the alcohol-fuelled engine</li>
-      </ul>
-    </div>
-  );
-}
-```
-
-```css
-body { padding: 0; margin: 0 }
-body > div > div { padding: 20px; }
-.avatar { border-radius: 50%; }
-```
-
-</Sandpack>
-
-You can also move this expression into a separate function like `getImageUrl` below:
-
-<Sandpack>
+  ```
   
-```js src/App.js
-import { getImageUrl } from './utils.js'
+  ```css
+  body { padding: 0; margin: 0 }
+  body > div > div { padding: 20px; }
+  .avatar { border-radius: 50%; }
+  ```
+  
+  <!-- </Sandpack> -->
+  
+</details>
 
-const person = {
-  name: 'Gregorio Y. Zara',
-  imageId: '7vQD0fP',
-  imageSize: 's',
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
+<details markdown="1">
+  <summary>
+    <h4>Show Solution 2</h4>
+  </summary>
+
+  You can also move this expression into a separate function like `getImageUrl` below:
+  
+  <!-- <Sandpack> -->
+  
+  <!-- ```js src/App.js -->
+  ```jsx
+  import { getImageUrl } from './utils.js'
+  
+  const person = {
+    name: 'Gregorio Y. Zara',
+    imageId: '7vQD0fP',
+    imageSize: 's',
+    theme: {
+      backgroundColor: 'black',
+      color: 'pink'
+    }
+  };
+  
+  export default function TodoList() {
+    return (
+      <div style={person.theme}>
+        <h1>{person.name}'s Todos</h1>
+        <img
+          className="avatar"
+          src={getImageUrl(person)}
+          alt={person.name}
+        />
+        <ul>
+          <li>Improve the videophone</li>
+          <li>Prepare aeronautics lectures</li>
+          <li>Work on the alcohol-fuelled engine</li>
+        </ul>
+      </div>
+    );
   }
-};
+  ```
+  
+  <!-- ```js src/utils.js -->
+  ```jsx
+  export function getImageUrl(person) {
+    return (
+      'https://i.imgur.com/' +
+      person.imageId +
+      person.imageSize +
+      '.jpg'
+    );
+  }
+  ```
+  
+  ```css
+  body { padding: 0; margin: 0 }
+  body > div > div { padding: 20px; }
+  .avatar { border-radius: 50%; }
+  ```
+  
+  <!-- </Sandpack> -->
+  
+  Variables and functions can help you keep the markup simple!
 
-export default function TodoList() {
-  return (
-    <div style={person.theme}>
-      <h1>{person.name}'s Todos</h1>
-      <img
-        className="avatar"
-        src={getImageUrl(person)}
-        alt={person.name}
-      />
-      <ul>
-        <li>Improve the videophone</li>
-        <li>Prepare aeronautics lectures</li>
-        <li>Work on the alcohol-fuelled engine</li>
-      </ul>
-    </div>
-  );
-}
-```
+</details>
 
-```js src/utils.js
-export function getImageUrl(person) {
-  return (
-    'https://i.imgur.com/' +
-    person.imageId +
-    person.imageSize +
-    '.jpg'
-  );
-}
-```
-
-```css
-body { padding: 0; margin: 0 }
-body > div > div { padding: 20px; }
-.avatar { border-radius: 50%; }
-```
-
-</Sandpack>
-
-Variables and functions can help you keep the markup simple!
-
-</Solution> -->
+<!-- </Solution> -->
 
 <!-- </Challenges> -->
 
