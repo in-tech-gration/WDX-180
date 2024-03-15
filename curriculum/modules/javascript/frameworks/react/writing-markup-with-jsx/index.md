@@ -1,5 +1,8 @@
 ---
 title: Writing Markup with JSX
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 ### Schedule
@@ -50,6 +53,8 @@ Suppose that you have some (perfectly valid) HTML:
 </ul>
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 And you want to put it into your component:
 
 ```jsx
@@ -82,6 +87,8 @@ export default function TodoList() {
   );
 }
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```css
 img { height: 90px }
@@ -200,15 +207,18 @@ Here is your final result:
 
 <!-- <Sandpack> -->
 
+{% raw %}
+
 ```jsx
 export default function TodoList() {
   return (
     <>
       <h1>Hedy Lamarr's Todos</h1>
       <img 
-        src="https://i.imgur.com/yXOvdOSs.jpg" 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Hedy_Lamarr_Ziegfeld_Girl.jpg/1024px-Hedy_Lamarr_Ziegfeld_Girl.jpg" 
         alt="Hedy Lamarr" 
-        className="photo" 
+        className="photo"
+        style={{ height: '90px' }}
       />
       <ul>
         <li>Invent new traffic lights</li>
@@ -219,6 +229,10 @@ export default function TodoList() {
   );
 }
 ```
+
+[&#9658; Live coding](#flems-enable)
+
+{% endraw %}
 
 ```css
 img { height: 90px }
