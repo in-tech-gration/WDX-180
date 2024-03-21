@@ -1,6 +1,6 @@
 # ReactCommerce
 
-You have applied for a React developer job at a tech company. The lead Frontend developer has sent you the following challenge to complete today in order to get hired.
+You have applied for a React developer job at a tech company. The lead Frontend developer has sent you the following challenge to complete in order to get hired. This challenge should take no more than a day to complete.
 
 Good luck!
 
@@ -10,12 +10,12 @@ Good luck!
 
 ## Instructions
 
-Your task is to convert this [HTML/CSS page](./final/){:target="_blank"} into a functional React app.
+Your task is to convert this [HTML/CSS page](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/frameworks/react/exercises/react-commerce-challenge/ReactCommerce.html){:target="_blank"} into a **functional React app using [Vite](https://vitejs.dev/){:target="_blank"}**.
 
 Here are the tasks:
 
 1. Split the web page into the following React Components:
-  - `<Header />`: contains the `<Logo />`, `<NavMenu />` and top-right `<HamburgerMenu />` which contains the products bubble (showing 5 currently)
+  - `<Header />`: contains the `<Logo />`, `<NavMenu />` and the top-right `<HamburgerMenu />` (which contains the products count bubble) components. 
   - `<ProductsHeader />`: contains the `<Results />` Component which displays "**BAGS**" and the **number of products found** (6 results). The number 6 **should be dynamic**, based on the number of Products (_length of some array?_) and not a hardcoded string as it is now. It also contains a `<Close />` Component (the X)
   - A loop that displays 6 `<Product />` Components.
   - Each Component **should be placed in its own folder** along with a **.css file that contains the relevant CSS styling**.
@@ -29,6 +29,10 @@ Here are the tasks:
 - Move the `<link>` inside the `index.html`
 - Use [html-to-jsx](https://transform.tools/html-to-jsx){:target="_blank"} or [html-to-jsx VSCode extension](https://marketplace.visualstudio.com/items?itemName=riazxrazor.html-to-jsx){:target="_blank"} to convert HTML int o JSX
 - The Product's price, like status, description and image should be **passed as Props from a parent Component**. The initial products data should be stored in a **JSON file locally** that will be fetched using a `useEffect` hook during the initial mount of some parent component. The JSON should be placed inside the public folder, and named `products.json`.
+
+## Final Look
+
+Here's how the **[final app](./final/){:target="_blank"}** should look and work!
 
 ---
 
