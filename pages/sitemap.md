@@ -20,6 +20,7 @@ favicon: sitemap.png
       - [The Tweeter Frontend Challenge](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/tweeter_practice/){:target="_blank"}
       - **React**
         - [Simple Quiz](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
+        - [React Commerce Challenge](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/react-commerce-challenge/){:target="_blank"}
 
   - **Modules**
     - **JavaScript**
