@@ -43,6 +43,10 @@
     },
     "terms": {
       "$ref": "terms.json#/terms"
+    },
+    "prerequisites": {
+      "type": "string",
+      "$comment": "[WiP] Should include a referenced list of technologies or concepts that are prerequisites for the resource, e.g. React, Redux, React-Redux, Lodash, etc. Type should be an Array or Enum NOT a string"
     }
   },
   "type": "object",
