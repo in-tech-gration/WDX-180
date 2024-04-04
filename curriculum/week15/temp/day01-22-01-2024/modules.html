@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules</title>
+</head>
+<body>
+  <h1>Modules</h1>
+  <script type="text/javascript">
+    var levelA2 = undefined;
+    const levelA = "Level A";
+    const version = 2.0;
+    // console.log({ levelA2 });
+    // console.log({ levelB });
+    levelA2 = 222;
+  </script>
+  <script>
+    var levelB = undefined;
+    // console.log("levelA", levelA);
+    // console.log({ levelA }) // === { levelA: levelB }
+    levelB = "B here";
+  </script>
+  <script>
+    // console.log({ levelA, levelB });
+  </script>
+  <!-- <script type="module" src="./library.js">
+  </script> -->
+  <script type="module">
+    import { publicFn } from "./library.js";
+    publicFn();
+  </script>
+  <script type="module">
+    import { add, sub, mul } from "./library.js";
+    // const publicFn from "./library.js"
+    // console.log({ publicFn: publicFn.toString() });
+    // console.log(typeof publicFn); // typeof works on the VALUE of the variable NOT on the variable itself
+    // publicFn();
+    console.log(add(5,5));
+    console.log(mul(2,3));
+    console.log(sub(2,3));
+    export const last = "last";
+  </script>
+  <script>
+    // export const last = "last"; // Error: export/import are
+    // ONLY available in "modules"
+
+    // console.log({ moduleA }); // Cannot access a module's variables like this
+  </script>
+  <script type="module">
+    import lucky from "./library.js";
+    console.log({ lucky });
+  </script>
+  <script type="module" src="./app.js"></script>
+  <script type="module">
+    console.clear();
+    // await import("./special.js");
+    document.body.addEventListener("click", function(){
+      console.log("click()");
+      // We want to import after the click (Dynamic Import)
+      // import("./specialzzz.js")
+      import("./special.js")
+      .then((module) => {
+        // Do something with the module.
+        // console.log({ module });
+        console.log( module.default );
+      })
+      .catch(error =>{
+        console.log({error});
+      })
+    });
+  </script>
+  <button style="position:fixed; bottom: 0;">Play Music</button>
+</body>
+</html>
