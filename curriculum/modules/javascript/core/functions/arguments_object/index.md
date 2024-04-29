@@ -5,7 +5,6 @@ load_script_js_via_src:
   - flems/flems_init.js
 ---
 
-<!-- TODO: Fix jsxref links -->
 # The arguments object
 
 **`arguments`** is an array-like object accessible inside [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions){:target="_blank"} that contains the values of the arguments passed to that function.
@@ -57,7 +56,7 @@ function longestString() {
 }
 ```
 
-You can use [arguments.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"} to count how many arguments the function was called with. If you instead want to count how many parameters a function is declared to accept, inspect that function's [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Function/length){:target="_blank"} property.
+You can use [arguments.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/length){:target="_blank"} to count how many arguments the function was called with. If you instead want to count how many parameters a function is declared to accept, inspect that function's [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length){:target="_blank"} property.
 
 ### Assigning to indices
 
@@ -112,7 +111,7 @@ This is the same behavior exhibited by all [strict-mode functions](https://devel
 
 ### arguments is an array-like object
 
-`arguments` is an array-like object, which means that `arguments` has a [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"} property and properties indexed from zero, but it doesn't have [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array){:target="_blank"}'s built-in methods like [forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Array/forEach){:target="_blank"} or [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Array/map){:target="_blank"}. However, it can be converted to a real `Array`, using one of [`slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice){:target="_blank"}, [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from){:target="_blank"}, or [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax){:target="_blank"}.
+`arguments` is an array-like object, which means that `arguments` has a [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/length){:target="_blank"} property and properties indexed from zero, but it doesn't have [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array){:target="_blank"}'s built-in methods like [forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach){:target="_blank"} or [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map){:target="_blank"}. However, it can be converted to a real `Array`, using one of [`slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice){:target="_blank"}, [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from){:target="_blank"}, or [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax){:target="_blank"}.
 
 ```js
 const args = Array.prototype.slice.call(arguments);
@@ -136,11 +135,11 @@ console.log(midpoint(3, 1, 4, 1, 5)); // 3
 
 ## Properties
 
-- [arguments.callee](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"} {{deprecated_inline}}
+- [arguments.callee](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee){:target="_blank"} {{deprecated_inline}}
   - : Reference to the currently executing function that the arguments belong to. Forbidden in strict mode.
-- [arguments.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"}
+- [arguments.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/length){:target="_blank"}
   - : The number of arguments that were passed to the function.
-- [arguments[@@iterator]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"}
+- [arguments[@@iterator]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/@@iterator){:target="_blank"}
   - : Returns a new {{jsxref("Array/@@iterator", "Array iterator", "", 0)}} object that contains the values for each index in `arguments`.
 
 ## Examples
