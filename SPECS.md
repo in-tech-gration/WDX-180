@@ -162,11 +162,12 @@
 
 ## Jekyll | How to | Add Comments Widget (Utteranc.es)
 
-  Just add the following `<script>`:
+  Just add the following:
 
-  > **Questions, comments, suggestions? Please leave them on the comment section below.**
 
-  ```html
+  ```markdown
+  **Questions, comments, suggestions? Please leave them on the comment section below.**
+
   <script src="https://utteranc.es/client.js"
     repo="in-tech-gration/WDX-180"
     issue-term="pathname"
@@ -179,6 +180,18 @@
 ## Jekyll | How to | Properly add Syntax Highlighting for JSX
 
   - Put code inside {% raw %} {% endraw %}
+
+## Jekyll | How to | Enable/Disable Animated Bubbles Effect?
+
+  How can I disabled the Animated Bubbles effect found on the FAQ page?
+
+  > Remove the following line form the Frontmatter section:
+  - animated.bubbles.js
+
+  How can I enable it on another page?
+
+  > Add the following line to the Frontmatter section:
+  - animated.bubbles.js
 
 ---
 
