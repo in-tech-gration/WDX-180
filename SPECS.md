@@ -50,6 +50,16 @@
   - `assets/jekyll/_layouts/default.html` (Main HTML file)
   - `assets/jekyll/_includes/` (Includes)
 
+  Edit Frontmatter:
+
+  ```markdown
+  ---
+  layout: v2
+  ---
+  ```
+
+  Make sure that a file v2.html exists in: `/assets/jekyll/_layouts/v2.html`
+
 ## Jekyll | How to | Include CSS & JS in a markdown file
 
   **Q: How do I load a CSS file in a particular markdown file?**

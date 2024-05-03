@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {% seo %}
+
+  <link rel="stylesheet"
+    href="{{ '/assets/jekyll/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/jekyll/js/main.js' | relative_url }}"></script>
+
+  {% if page.favicon %}
+    <link rel="icon" type="image/png" href="{{ page.favicon | prepend: '/assets/jekyll/images/' | relative_url }}"/>
+  {% else %}
+    <link rel="icon" type="image/png" href="{{ '/assets/jekyll/images/favicon.png' | relative_url }}"/>
+  {% endif %}
+
+
+  <!-- 
+      <script src="{{ '/assets/jekyll/js/respond.js' | relative_url }}"></script> 
+    -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <!-- Google Web Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700" rel="stylesheet">
+
+  <!-- Load CSS from Frontmatter 'load_css' property -->
+  {% for css in page.load_css %}
+  <link rel="stylesheet" href="{{ css | prepend: '/assets/jekyll/css/' | relative_url }}">
+  {% endfor %}
+  <!-- Load CSS from Frontmatter 'load_css' property -->
+  <title>{{ site.title | default: site.github.repository_name }}</title>  
+  {% include head-custom.html %}
+
+    <!-- Load JS from Frontmatter 'load_script_js' property -->
+    {% for js in page.load_script_js_via_src %}
+    <script type="text/javascript" src="{{ js | prepend: 'assets/js/' | relative_url }}"></script>
+    {% endfor %}
+
+</head>
+
+<body class="{{ page.url | slugify | append: '__page' }}">
+
+  <div class="wrapper">
+
+    <section class="main-section">
+
+      <div id="title">
+        <div class="ctrl-back-forward">
+          <div id="ctrl-back">&#8678; Back</div>
+          <!-- <div id="ctrl-forward">Forward &#8680;</div> -->
+        </div>
+        <div>
+          <h1>
+            <a class="bold-title" href="/WDX-180">
+              {{ site.title | default: site.github.repository_name }}
+            </a>
+          </h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        </div>
+        <div class="empty"></div>
+      </div>
+
+      {{ content }}
+
+      <!-- MAINTAINED BY SECTION -->
+      <hr>
+      <div class="maintained-by">
+        <span class="credits left">
+          Project maintained by <a class="credits credits-highlighted"
+          href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+        </span>
+        <span class="credits right">
+          Hosted on <a href="https://github.com/in-tech-gration/WDX-180/" target="_blank">GitHub Pages</a> &mdash; Theme by <a class="credits credits-highlighted"
+          href="https://twitter.com/mattgraham">mattgraham</a>
+        </span>
+      </div>
+      <!--/ MAINTAINED BY SECTION -->
+
+    </section>
+
+  </div>
+
+  <!-- Load JS from Frontmatter 'load_script_js' property -->
+  {% for js in page.load_script_js %}
+  <script type="text/javascript">
+     {% include {{ js }} %}
+  </script>
+  {% endfor %}
+
+  <!-- Quiz -->
+  {% if page.exercise_path %}
+    <script type="text/wdx" id="exercise_path">{{ page.exercise_path }}</script>
+  {% endif %}
+
+</body>
+
+</html>
