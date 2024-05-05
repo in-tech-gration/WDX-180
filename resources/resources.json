@@ -2918,6 +2918,52 @@
     "what-is-a-software-post-mortem": {
       "type": "Blog Post",
       "identifier": "https://www.freecodecamp.org/news/what-is-a-software-post-mortem/"
+    },
+    "react-workshop-2024---routing-101---intechgrationio": {
+      "type": "YouTube",
+      "duration": 2206,
+      "title": "React Workshop 2024 - Routing 101 - intechgration.io",
+      "date": "04/05/2024",
+      "youtube": {
+        "id": "X2QC1NpGl7M",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/X2QC1NpGl7M/sddefault.jpg"
+      },
+      "tags": [
+        "react",
+        "routing",
+        "software",
+        "javascript",
+        "dom",
+        "router",
+        "beginner",
+        "wdx180",
+        "intechgration",
+        "coding",
+        "coder",
+        "web dev",
+        "development",
+        "frontend",
+        "basics",
+        "fundamentals",
+        "libraries",
+        "react router dom",
+        "software development",
+        "patterns",
+        "software patterns",
+        "browser",
+        "newbie",
+        "learn",
+        "learning",
+        "js",
+        "web",
+        "programming",
+        "progreammer"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
