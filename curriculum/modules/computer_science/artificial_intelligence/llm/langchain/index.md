@@ -20,9 +20,9 @@ title: LangChain
 
 <!-- ### Exercises -->
 
-<!-- ### Extra Resources
+### Extra Resources
 
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_ -->
+  - [The Official LangChain.js Course](https://v2.scrimba.com/the-official-langchainjs-course-c02t){:target="_blank"}
 
 <!-- ### Sources and Attributions -->
 
