@@ -70,8 +70,8 @@ title: Ollama Quickstart
 
 ## FAQ
 
-- ___How can I install Ollama on Windows?___
-  - From the docs: "The easiest way to install Ollama on Windows is to use the `OllamaSetup.exe` installer. It installs in your account without requiring Administrator rights. After installing Ollama Windows Preview, Ollama will run in the background and the ollama command line is available in `cmd`, `powershell` or your favorite terminal application. As usual the Ollama api will be served on http://localhost:11434." You can download `OllamaSetup.exe` by clicking on the `"Download for Windows (Preview)"` button.
+  - ___How can I install Ollama on Windows?___
+    - From the docs: "The easiest way to install Ollama on Windows is to use the `OllamaSetup.exe` installer. It installs in your account without requiring Administrator rights. After installing Ollama Windows Preview, Ollama will run in the background and the ollama command line is available in `cmd`, `powershell` or your favorite terminal application. As usual the Ollama api will be served on http://localhost:11434." You can download `OllamaSetup.exe` by clicking on the `"Download for Windows (Preview)"` button.
 
 ### Extra Resources
 
