@@ -2,6 +2,8 @@
 title: LangChain
 ---
 
+![](./assets/langchain.png)
+
 ### Schedule
 
   - [Study](#study-plan-NN)
