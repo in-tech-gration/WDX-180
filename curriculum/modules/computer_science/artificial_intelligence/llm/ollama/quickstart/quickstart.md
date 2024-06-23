@@ -75,6 +75,10 @@ title: Ollama Quickstart
 
 ### Extra Resources
 
+  - [Ollama.com](https://ollama.com/){:target="_blank"}
+
+  - [Available Ollama models](https://ollama.com/library){:target="_blank"}
+
   - [Introducing Phi-3: Redefining what’s possible with SLMs](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/){:target="_blank"}
 
 ### Sources and Attributions
