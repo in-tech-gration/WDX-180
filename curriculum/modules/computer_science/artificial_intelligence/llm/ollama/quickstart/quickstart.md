@@ -1,3 +1,9 @@
+---
+title: Ollama Quickstart
+---
+
+![](./assets/ollama.png)
+
 ## INSTALLING
 
   `Ollama` is a software for installing and running Large Language Models (LLMs) on your machine. It can run `Llama 3`, `Phi3`, `Mistral`, `Gemma` and other models. It also allows you to create your own.
@@ -56,9 +62,27 @@
 
   You can exit the Ollama prompt `(>>>)` by typing `/bye`. Keep in mind that Ollama server will keep running in the background. You can check this by opening up `http://localhost:11434` in the browser. You can stop the server by selecting the `Quit Ollama` option from the Ollama app running on your machine.
 
-  You can read more about `Phi3` here: [Introducing Phi-3: Redefining what’s possible with SLMs](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/)
+  You can read more about `Phi3` by checking the links found in the [`Extra Resources`](#extra-resources) section.
 
 ## FAQ
 
 - ___How can I install Ollama on Windows?___
   - From the docs: "The easiest way to install Ollama on Windows is to use the `OllamaSetup.exe` installer. It installs in your account without requiring Administrator rights. After installing Ollama Windows Preview, Ollama will run in the background and the ollama command line is available in `cmd`, `powershell` or your favorite terminal application. As usual the Ollama api will be served on http://localhost:11434." You can download `OllamaSetup.exe` by clicking on the `"Download for Windows (Preview)"` button.
+
+### Extra Resources
+
+  - [Introducing Phi-3: Redefining what’s possible with SLMs](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/){:target="_blank"}
+
+### Sources and Attributions
+
+---
+
+> **Questions, comments, suggestions? Please leave them on the comment section below.**
+
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
