@@ -32,6 +32,8 @@ title: LangChain Quickstart
 
   `ollama run phi3`
 
+  > Check out the [Ollama quick start guide](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/ollama/quickstart/quickstart.html){:target="_blank"} for installing and running LLM models locally using Ollama.
+
   Now, let's code our first `LangChain` app that uses the Ollama model and gets its first response from the LLM. Create a file namedd `ollama.mjs` and paste the following code:
 
   ```js
