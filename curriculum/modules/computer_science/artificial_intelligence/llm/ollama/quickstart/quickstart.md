@@ -2,6 +2,10 @@
 title: Ollama Quickstart
 ---
 
+# Ollama Quickstart
+
+#### Installing and chatting with an LLM in private (offline)
+
 ![](./assets/ollama.png)
 
 ## INSTALLING
