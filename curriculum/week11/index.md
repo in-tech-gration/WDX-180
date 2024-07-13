@@ -1,5 +1,5 @@
 ---
-title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
+title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
