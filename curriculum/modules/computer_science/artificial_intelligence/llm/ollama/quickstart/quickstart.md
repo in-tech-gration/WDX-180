@@ -68,6 +68,46 @@ title: Ollama Quickstart
 
   You can read more about `Phi3` by checking the links found in the [`Extra Resources`](#extra-resources) section.
 
+## RUNNING A MULTI-MODAL LLM
+
+  What is a `Multi-modal LLM` _(`MM-LLM`)_, you might ask? Simply, it's a chat model that can accept images, audio and event video along with text as input. You can ask questions but you can also share media files and ask questions about them as well. Here's how to install one such model locally and start asking questions about media files.
+
+  Download the [bakllava](#) MM-LLM model by running the following command:
+
+  - `ollama pull bakllava`
+
+  Check that the model has been downloaded and shows up on the list of the local models:
+
+  - `ollama list`
+
+  You'll get an output like this:
+
+  ```bash
+  NAME            ID              SIZE    MODIFIED    
+  bakllava 3dd68bd4447c    4.7 GB  1 minute ago
+  ```
+
+  Now, let's run the Phi3 model:
+
+  - `ollama run bakllava`
+
+  Your `bakllava` model should be running now and you can start chatting via the special command line prompt:
+
+  ```bash
+  >>> Send a message (/? for help)
+  ```
+
+  You can also check that Ollama is running by running the `ollama ps` command or opening up the Ollama web server in the browser: `http://localhost:11434`.
+
+  Now, you are ready to chat with the model offline and also ask it to answer questions related to media files that you share through the local filepath:
+
+  ```bash
+  >>> What is depicted in this image? /Users/Downloads/Plants/mountain_flower.jpg
+  Added image '/Users/Downloads/Plants/mountain_flower.jpg'
+  The image features a purple flower, which is part of a plant growing in the wild. It is surrounded by lush green foliage and is sitting 
+  prominently against a white background.
+  ```
+
 ## FAQ
 
   - ___How can I install Ollama on Windows?___
