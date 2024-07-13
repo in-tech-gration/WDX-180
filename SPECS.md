@@ -203,6 +203,10 @@
   > Add the following line to the Frontmatter section:
   - animated.bubbles.js
 
+## Jekyll | How to | Embed YouTube Videos?
+
+  _(work in progress)_
+
 ---
 
 ## About the Instructor's Cockpit Tool

@@ -13,7 +13,11 @@ title: LangChain
 ### Study Plan
 
   - Modules:
+
+    - [**What is an LLM?**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/what_is_an_llm/index.html)
+
     - [**Ollama Quickstart**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/ollama/quickstart/quickstart.html){:target="_blank"}
+
     - [**Our first LangChain app**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/langchain/quickstart/quickstart.html){:target="_blank"}
 
 <!-- ### Summary -->
