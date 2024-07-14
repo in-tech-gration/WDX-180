@@ -31,7 +31,8 @@ title: Module title
   [![](./assets/phi3.jpg)](/curriculum/modules/computer_science/artificial_intelligence/llm/experimental-phi3-webgpu/index.html){:target="_blank"}
 
   Visit [this page](../experimental-phi3-webgpu/index.html){:target="_blank"}, load the `Phi3` LLM model (**warning it's going to download around 2.4GB on your machine**, but this is a one-time only thing) and start asking questions. For example, you can ask:
-  
+
+  - `Can you explain what a Large Language Model is in layman's terms?`  
   - `What is a Large Language Model?`
   - `How does an LLM work?`
   - `Can you explain what a Large Language Model is to a non-technical person?`
