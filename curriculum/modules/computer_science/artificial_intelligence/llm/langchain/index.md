@@ -4,9 +4,9 @@ title: LangChain
 
 ![](./assets/langchain.png)
 
-### Schedule
+<!-- ### Schedule -->
 
-  - [Study](#study-plan-NN)
+  <!-- - [Study](#study-plan-NN) -->
   <!-- - [Exercises](#exercises-NN) -->
   <!-- - [Extra Resources](#extra-resources-NN) -->
 
