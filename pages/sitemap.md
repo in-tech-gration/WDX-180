@@ -42,9 +42,9 @@ favicon: sitemap.png
       - [JS: Array.at()](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/core/arrays/methods_shorts/at/){:target="_blank"} (JS methods arrays at)
     - **Artificial Intelligence**
       - **LLMs**
-        - [What is an LLM?](/curriculum/modules/computer_science/artificial_intelligence/llm/what_is_an_llm/index.html)
-        - [Ollama](/curriculum/modules/computer_science/artificial_intelligence/llm/ollama/quickstart/quickstart.html)
-        - [LangChain](/curriculum/modules/computer_science/artificial_intelligence/llm/langchain/index.html)
+        - [What is an LLM?](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/what_is_an_llm/index.html)
+        - [Ollama](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/ollama/quickstart/quickstart.html)
+        - [LangChain](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/langchain/index.html)
 
   - **YouTube**
     - **Playlists**
