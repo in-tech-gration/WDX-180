@@ -26,8 +26,8 @@ title: Module title
 
   - [LLM Explained \| What is LLM](https://www.youtube.com/watch?v=67_aMPDk2zw){:target="_blank"} (YouTube: 4min)
 
-  - Last, but not least, download and read the [Compact Guide to Large Language Models](https://pages.databricks.com/rs/094-YMS-629/images/compact-guide-to-large-language-models.pdf) eBook by `DataBricks`.
-  - If the link is not available, you can download the eBook from [this page](https://www.databricks.com/resources/ebook/tap-full-potential-llm)
+  - Last, but not least, download and read the [Compact Guide to Large Language Models](https://pages.databricks.com/rs/094-YMS-629/images/compact-guide-to-large-language-models.pdf){:target="_blank"} eBook by `DataBricks`.
+  - If the link is not available, you can download the eBook from [this page](https://www.databricks.com/resources/ebook/tap-full-potential-llm){:target="_blank"}
 
   **Why not let an LLM explain what an LLM is?**
 
@@ -46,7 +46,7 @@ title: Module title
 
 ### Extra Resources
 
-  - Subscribe to our YouTube channel and keep an eye on our [LLM Compendium playlist](https://www.youtube.com/playlist?list=PLdo7hJB0agEmQWPHM6kPe1vNUobuR1sUb), where we try to explain various concepts related to Large Language Models.
+  - Subscribe to our YouTube channel and keep an eye on our [LLM Compendium playlist](https://www.youtube.com/playlist?list=PLdo7hJB0agEmQWPHM6kPe1vNUobuR1sUb){:target="_blank"}, where we try to explain various concepts related to Large Language Models.
 
   - [The Phi3 LLM running in the browser](https://huggingface.co/spaces/Xenova/experimental-phi3-webgpu){:target="_blank"}
     - [The source code](https://huggingface.co/spaces/Xenova/experimental-phi3-webgpu/tree/main){:target="_blank"}
