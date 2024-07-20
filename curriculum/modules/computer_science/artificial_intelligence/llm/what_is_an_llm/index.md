@@ -14,6 +14,12 @@ title: Module title
 
   **What is a `Large Language Model` (or LLM for short)?**
 
+  > "Large language models are AI systems that are designed to process and analyze vast amounts of natural language data and then use that information to generate responses to user prompts." 
+  
+  > "These systems are trained on massive data sets using advanced machine learning algorithms to learn the patterns and structures of human language, and are capable of generating natural language responses to a wide range of written inputs. Large language models are becoming increasingly important in a variety of applications such as natural language processing, sentiment analysis, chatbots and virtual assistants, machine translation, code and text generation, and more."
+
+  <small>_Source: [A Compact Guide to Large Language Models](https://www.databricks.com/sites/default/files/2023-06/compact-guide-to-large-language-models.pdf)_</small>
+
   Go through the following material to learn more about LLMs and get a basic understanding of what an LLM is and how it works:
 
   - [What are Large Language Models (LLMs)?](https://www.youtube.com/watch?v=iR2O2GPbB0E){:target="_blank"} (YouTube: 6min)
