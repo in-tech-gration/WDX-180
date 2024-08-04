@@ -13,6 +13,8 @@
   The WDX 180° curriculum, along with all related material (exercises, code, etc.), **is and will always be free and open-source** under the GPLv3 license.
 
   You can find the [Syllabus here](curriculum/index.md).
+
+  This project is created by [intechgration.io](https://intechgration.io/){:target="_blank"}. Here's a [**short video**](https://youtu.be/VQUxkCUGW7w){:target="_blank"} about our story.
 </details>
 
 <!-- WHERE DO I START? -->
