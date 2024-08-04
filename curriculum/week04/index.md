@@ -362,3 +362,14 @@ title: Week 04 | CSS 2 & Performance
 ## Week 04 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

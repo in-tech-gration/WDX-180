@@ -473,3 +473,14 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 ## Week 05 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
