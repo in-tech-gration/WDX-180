@@ -24,7 +24,7 @@ title: "Scraping for AI"
 
   [![](./assets/ai-vocabulary-page.jpg)](./assets/ai-vocabulary-page.jpg){:target="_blank"}
 
-  Your task is to use your DOM querying and manipulation skills, traverse the web page and gather all the AI `terms` along with their corresponding `description` and accompanying `link` that's included in each card.
+  Your task is to use your [DOM querying and manipulation skills](./assets/DOM.Inspector.jpg){:target="_blank"}, traverse the web page and gather all the AI `terms` along with their corresponding `description` and accompanying `link` that's included in each card.
 
   [![](./assets/DOM.Inspector.access.jpg)](./assets/DOM.Inspector.access.jpg){:target="_blank"}
 
