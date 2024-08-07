@@ -9,6 +9,15 @@ title: "Scraping for AI"
 
   Let's scrape a web page using our JavaScript DOM manipulation skills and create a list of AI terminology in JSON format.
 
+  **Level:** Beginner
+
+  **Prerequisites:**
+
+  - Fundamental knowledge of HTML and CSS
+  - Fundamental knowledge of JavaScript
+  - Fundamental knowledge of DOM API methods for querying and manipulating the DOM, e.g. `document.querySelector`, `Element.textContent`, etc.
+  - Serving web content (HTML) using a local web server
+
   <details markdown="1">
   <summary><h2>Instructions</h2></summary>
 
