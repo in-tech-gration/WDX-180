@@ -1,4 +1,11 @@
+---
+title: "ReactCommerce Challenge"
+---
+
+## React.js Challenge:
 # ReactCommerce
+
+![](./assets/react-commerce-laptop.png)
 
 You have applied for a React developer job at a tech company. The lead Frontend developer has sent you the following challenge to complete in order to get hired. This challenge should take no more than a day to complete.
 
