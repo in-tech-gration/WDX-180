@@ -5,6 +5,8 @@ title: "Promise Refactoring"
 ## JavaScript Challenge:
 # Promise Refactoring
 
+  ![](./assets/computer.construction.png)
+
   Let's refactor a `Promise` function into an `async/await` syntax:
 
   <details markdown="1">
