@@ -2,6 +2,7 @@
 title: "Promise Refactoring"
 ---
 
+## JavaScript Challenge:
 # Promise Refactoring
 
   Let's refactor a `Promise` function into an `async/await` syntax:
@@ -70,3 +71,15 @@ title: "Promise Refactoring"
   asyncInit();
   ```
   </details>
+
+---
+
+**Questions, comments, suggestions? Please leave them on the comment section below.**
+
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
