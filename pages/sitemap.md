@@ -15,7 +15,8 @@ favicon: sitemap.png
     - **CSS**
       - [CSS Selectors Practice](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/selectors/exercises/fix_the_summary/index.html){:target="_blank"}
     - **JavaScript**
-      - [DOM Selectors Practice](https://in-tech-gration.github.io/WDX-180//curriculum/modules/javascript/web_apis/dom/exercises/dom-selectors/index.html){:target="_blank"}
+      - [Web Scraping for AI](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/web_apis/dom/exercises/scraping-for-AI/index.md)
+      - [DOM Selectors Practice](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/web_apis/dom/exercises/dom-selectors/index.html){:target="_blank"}
       - [Promise Refactoring](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/async/async_await/exercises/promise_refactoring/){:target="_blank"}
       - [The Tweeter Frontend Challenge](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/tweeter_practice/){:target="_blank"}
       - **React**
