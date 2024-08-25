@@ -294,6 +294,7 @@ Our lovely contributors _(feel free to give them a follow/subscribe/like as a ge
 
 - **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
 - **Maria Karavazaki**: [GitHub](https://github.com/MariaKar1991)
+- [**PlethoraThemes**](https://plethorathemes.com/)
 
 ---
 
