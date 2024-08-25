@@ -87,7 +87,7 @@ title: Ollama Quickstart
   bakllava 3dd68bd4447c    4.7 GB  1 minute ago
   ```
 
-  Now, let's run the Phi3 model:
+  Now, let's run the bakllava model:
 
   - `ollama run bakllava`
 
