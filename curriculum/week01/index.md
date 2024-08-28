@@ -368,11 +368,11 @@ We encourage you to **help and support each other** but in a constructive and he
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
-  - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
+  - [Read: **HTML**](resources/HTML.md){:target="_blank"} to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/index.md)
+  - [Read: **What will your website look like?**](../modules/html/misc/what_will_your_website_look_like/){:target="_blank"}
 
-  - [Read: **HTML Basics**](resources/HTML_Basics/index.md)
+  - [Read: **HTML Basics**](resources/HTML_Basics/index.md){:target="_blank"}
     - <details>
         <summary>What you'll learn</summary>
         <ul>

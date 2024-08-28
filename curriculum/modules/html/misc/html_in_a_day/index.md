@@ -18,7 +18,7 @@ title: HTML & Markdown in a Day
 
   - [Read: **HTML**](resources/HTML.md){:target="_blank"} to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/index.md){:target="_blank"}
+  - [Read: **What will your website look like?**](../modules/html/misc/what_will_your_website_look_like/index.md){:target="_blank"}
 
   - [Read: **HTML Basics**](resources/HTML_Basics/index.md){:target="_blank"}
     - <details>
