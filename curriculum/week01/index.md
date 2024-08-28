@@ -372,7 +372,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - [Read: **What will your website look like?**](../modules/html/misc/what_will_your_website_look_like/){:target="_blank"}
 
-  - [Read: **HTML Basics**](resources/HTML_Basics/index.md){:target="_blank"}
+  - [Read: **HTML Basics**](../modules/html/misc/html_basics/){:target="_blank"}
     - <details>
         <summary>What you'll learn</summary>
         <ul>
