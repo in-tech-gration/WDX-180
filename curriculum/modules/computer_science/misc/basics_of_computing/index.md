@@ -109,7 +109,7 @@ title: Onboarding and Basics of Computing
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](/WDX-180/curriculum/modules/computer_science/misc/hexadecimal/)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](../modules/computer_science/misc/hexadecimal/)
 
 ### Summary
 
