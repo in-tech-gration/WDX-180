@@ -236,16 +236,16 @@ We encourage you to **help and support each other** but in a constructive and he
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:**How the web works**](resources/How_the_web_works/index.md)
+  - [Read:**How the web works**](../modules/computer_science/internet/how_the_web_works/)
     - Level: Beginner
 
-  - [Read: **What is a web server?**](resources/What_is_a_web_server/index.md)
+  - [Read: **What is a web server?**](../modules/computer_science/internet/what_is_a_web_server/)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](resources/What_is_a_URL/index.md)
+  - [Read: **What is a URL?**](../modules/computer_science/internet/what_is_a_url/)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/index.md)
+  - [Read: **What is a Domain Name?**](../modules/computer_science/internet/what_is_a_domain_name/)
     - Level: Beginner
 
   - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI){:target="_blank"}
