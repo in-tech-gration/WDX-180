@@ -336,7 +336,7 @@ We encourage you to **help and support each other** but in a constructive and he
   - [Watch: **Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?**](https://www.youtube.com/watch?v=MDu6hWknk70){:target="_blank"}
     - Duration: 5min
 
-  - [Read: **HTTP**](resources/HTTP.md), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/){:target="_blank"}.
+  - [Read: **HTTP**](../modules/computer_science/internet/http/), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/){:target="_blank"}.
 
 #### Public Key Cryptography
 

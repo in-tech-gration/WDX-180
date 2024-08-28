@@ -149,3 +149,42 @@ title: How the Internet & the World Wide Web works
 ### Exercises
 
 ### Extra Resources
+
+  - Watch: [ALOHAnet: Grandfather of All Computer Networks - Computerphile](https://www.youtube.com/watch?v=oKrUGRVwFBI){:target="_blank"}
+
+  - Watch: [Behind the Scenes with your Browser (Scott Hanselman)](https://www.youtube.com/watch?v=CGgTuCH4V6U){:target="_blank"}
+
+#### The Internet & the World Wide Web
+
+  - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps){:target="_blank"}
+
+  - [**The (expansion of the) Internet: 1997 - 2021**](https://www.youtube.com/watch?v=-L1Zs_1VPXA){:target="_blank"} (2min). This video takes you through a journey of the Internet's astonishing growth.
+    - Duration: 2min
+
+  - [**How the hyperlink changed everything | TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI){:target="_blank"}
+    - Duration: 4min
+
+  - [Listen: **How does the Internet work?**](http://kopec.live/episode/5a9a3bbb4411493a/how-does-the-internet-work-){:target="_blank"}
+    - Description: _"The Internet is not a single technology—it’s a combination of networking technologies including protocols, physical devices, and software. In this episode we delve into its many layers and try to provide an intuitive understanding about how they all fit together. We cover topics like routing, packets, application protocols, and encryption."_
+    - Duration: 30min
+    - Level: Beginner
+    - Download: [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/5a9a3bbb-4411-493a-9fe3-30336c4abf3c.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}
+
+  - [Listen: **#6 How does the Web work?** (Kopec Explains Software Podcast)](http://kopec.live/episode/faffaffb63e34c2c/how-does-the-web-work-){:target="_blank"}
+    - Description: _"What are the technologies that underly the Web? We discuss Web Browsers and Web Servers. We touch on: the protocols they use to communicate (HTTP and HTTPS), the languages they use to render web pages (HTML, CSS, JavaScript), and server-side technologies like databases and server-side programming languages."_
+    - Duration: 22min
+    - Level: Beginner
+    - Download: [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/faffaffb-63e3-4c2c-a0fb-72c11fed390c.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}
+
+  - [Watch: **Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?**](https://www.youtube.com/watch?v=MDu6hWknk70){:target="_blank"}
+    - Duration: 5min
+
+  - [Read: **HTTP**](../modules/computer_science/internet/http/), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/){:target="_blank"}.
+
+#### Public Key Cryptography
+
+  - [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do){:target="_blank"}
+    - Duration: 9min
+
+  - [Watch: **How does public key cryptography work – Gary explains**](https://www.youtube.com/watch?v=rLiEA06Bcic){:target="_blank"}
+    - Duration: 16min
