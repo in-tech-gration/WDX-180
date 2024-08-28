@@ -16,7 +16,7 @@ title: CSS in a Day
   - Publishing your website
 
   - [Read: **CSS Basics**](resources/CSS_Basics/index.md)
-  - [Read: **Publishing your website**](resources/Publishing_your_website/README.md)
+  - [Read: **Publishing your website**](../modules/html/misc/publishing_your_website/index.md)
 
 ### Summary
 
