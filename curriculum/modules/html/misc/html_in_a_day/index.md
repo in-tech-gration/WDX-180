@@ -16,7 +16,7 @@ title: HTML & Markdown in a Day
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
-  - [Read: **HTML**](resources/HTML.md){:target="_blank"} to get a quick introduction to HTML. 
+  - [Read: **HTML**](../modules/html/intro/index.md){:target="_blank"} to get a quick introduction to HTML. 
 
   - [Read: **What will your website look like?**](../modules/html/misc/what_will_your_website_look_like/index.md){:target="_blank"}
 
