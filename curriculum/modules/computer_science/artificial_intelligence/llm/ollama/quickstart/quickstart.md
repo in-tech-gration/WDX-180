@@ -108,6 +108,28 @@ title: Ollama Quickstart
   prominently against a white background.
   ```
 
+  **Note:** Make sure to run the `/clear` command before using another image.
+
+## TESTING A MULTI-MODAL LLM WITH CCTV FOOTAGE 
+
+  Let's test some of the available MM-LLMs out there with footage captured from CCTV somewhere in the UK. In the YouTube video below, you'll see footage that captures a burglary suspect escaping through a house that has CCTV installed.
+
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/AKOnSEDDzDM?si=z4enwb-_eZRbxz0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  In the following video, you can see how we can test various MM-LLMs on several screen captures from the video footage to identify an individual inside the premises.
+
+  Here are the models tested on the video:
+
+  - [llava:13b](https://ollama.com/library/llava){:target="_blank"}
+  - [bakllava:7b](https://ollama.com/library/bakllava){:target="_blank"}
+
+  You can download the screen captures from the [GitHub repository](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/computer_science/artificial_intelligence/llm/ollama/quickstart/assets/burglary/).
+
+  Here are some ideas for prompts:
+
+  - Is there an individual? Answer with: Yes, No (Maybe).
+  - List the objects found in the picture.
+
 ## FAQ
 
   - ___How can I install Ollama on Windows?___
