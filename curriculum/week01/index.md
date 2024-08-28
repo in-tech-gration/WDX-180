@@ -501,8 +501,8 @@ We encourage you to **help and support each other** but in a constructive and he
   - Introduction to CSS
   - Publishing your website
 
-  - [Read: **CSS Basics**](../modules/css/misc/css_basics/)
-  - [Read: **Publishing your website**](../modules/html/misc/publishing_your_website/)
+  - [Read: **CSS Basics**](../modules/css/misc/css_basics/){:target="_blank"}
+  - [Read: **Publishing your website**](../modules/html/misc/publishing_your_website/){:target="_blank"}
 
 ### Summary
 
