@@ -552,7 +552,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - How to install the **Live Server** VSCode extension and develop using a local web server
 
-  - [Read: **What is JavaScript?**](resources/What_is_JavaScript/index.md)
+  - [Read: **What is JavaScript?**](../modules/javascript/misc/what_is_javascript/){:target="_blank"}
 
   - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE){:target="_blank"}
     - Duration: 8min
