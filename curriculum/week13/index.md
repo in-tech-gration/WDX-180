@@ -16,7 +16,6 @@ title: Week 13 | Intermediate JavaScript
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 13 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -30,7 +29,6 @@ title: Week 13 | Intermediate JavaScript
 
   <h2 class="week-controls__next_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 13 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
