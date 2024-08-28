@@ -211,6 +211,10 @@
 
   _(work in progress)_
 
+## Jekyll | How to | Add a Header Image for each Week?
+
+  In the yaml file (e.g. `week13.yaml`) add a new YAML property named `header_image:` and add the full path. The `sgen` tool will automatically detect the image path and will copy the file to the appropriate weekly folder.
+
 ---
 
 ## About the Instructor's Cockpit Tool
