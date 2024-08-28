@@ -66,7 +66,7 @@ title: How the Internet & the World Wide Web works
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](resources/How_the_Internet_works/index.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](../modules/computer_science/internet/how_the_internet_works/index.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
