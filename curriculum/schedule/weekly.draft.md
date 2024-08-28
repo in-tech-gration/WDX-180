@@ -8,13 +8,14 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
   <span class="week-prefix">{{ SGEN:WEEK }} |</span> {{ SGEN:TITLE }}
 </h1>
 
+<!-- ADD WEEKLY HEADER: <img src="assets/header.png" /> -->
+
 <div class="week-controls">
 
   {% assign week_num = {{ SGEN:WEEK_NUM }} | to_integer %}
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num > 0 %}
 
       {% assign previous_week_num = {{ SGEN:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
