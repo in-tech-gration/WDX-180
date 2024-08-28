@@ -127,7 +127,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - **Decode the secret message**: watch this [video](https://www.youtube.com/watch?v=OSZOf9pyepc) from an episode of [Silicon Valley](https://www.imdb.com/title/tt2575988/) series and try to find and decode the hidden geeky message.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
   **It is absolutely crucial** at this point to remind you that updating the `Confidence` column in the progress sheets should reflect an honest and accurate self-evaluation score. You should not overestimate nor underestimate your level of confidence. A score that is closer to your real level of confidence will help you and others attend to your real needs and put focus on the parts that need some further knowledge re-enforcement and engagement.
   
