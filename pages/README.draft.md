@@ -18,7 +18,7 @@
 
 {{ SGEN:MODULE:curriculum/software.md }}
 
-{{ SGEN:MODULE:curriculum/data_formats.md }}
+{{ SGEN:MODULE:computer_science/misc/data_formats/index.md }}
 
 {{ SGEN:MODULE:curriculum/syllabus.md }}
 

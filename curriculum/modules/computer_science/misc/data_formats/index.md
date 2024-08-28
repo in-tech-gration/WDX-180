@@ -17,7 +17,7 @@
   - [Understanding CSV Files](https://www.youtube.com/watch?v=UofTplCVkYI){:target="_blank"}
     - Duration: 6 min
     - Level: Beginner
-    - You can find the `sample.csv` file mentioned in the video in the following filepath: [curriculum/week01/assets/sample.csv](./curriculum/week01/assets/sample.csv)
+    - You can find the `sample.csv` file mentioned in the video in the following filepath: [curriculum/modules/curriculum](./curriculum/week01/assets/sample.csv)
 
   In short, CSV is a lightweight data format, where:
   
