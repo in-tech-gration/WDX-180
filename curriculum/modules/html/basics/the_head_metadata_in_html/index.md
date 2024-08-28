@@ -18,7 +18,7 @@ The [head](https://developer.mozilla.org/en-US/docs/Glossary/Head){:target="_bla
 
 ## What is the HTML head?
 
-Let's revisit the simple HTML document we covered [previously](../../../week01/resources/HTML_Basics/index.md){:target="_blank"}:
+Let's revisit the simple HTML document we covered [previously](../../misc/html_basics/index.md){:target="_blank"}:
 
 ```html
 <!doctype html>
