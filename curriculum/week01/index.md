@@ -117,7 +117,7 @@ We encourage you to **help and support each other** but in a constructive and he
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/index.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](/curriculum/modules/computer_science/misc/hexadecimal/)
 
 ### Summary
 
