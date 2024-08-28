@@ -37,6 +37,10 @@
   >
   > If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
 
+## Jekyll | How to | Update & Compile the Home Page?
+
+  - Run: `sgen pages/README.yaml` from the root directory.
+
 ## Jekyll | How to | Change Website Styling (CSS)
 
   Edit the following file:
