@@ -49,3 +49,5 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
 {{ SGEN:INCLUDES:weekly_feedback_reminder }}
 
 {{ SGEN:INCLUDES:weekly_suggestions }}
+
+{{ SGEN:INCLUDES:comments_section }}
