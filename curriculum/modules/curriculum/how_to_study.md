@@ -2,6 +2,8 @@
 <details markdown="1">
   <summary><h3>How to Study / Productivity tips</h3></summary>
 
+  ![](./curriculum/assets/take.notes.jpeg)
+
   - **AVOID DISTRACTIONS at all costs!** This means, closing all tabs, browser windows and applications that are not related to your daily study plan and practice. Be very vigilant against applications that include notifications (WhatsApp, Messenger, etc.). From time to time, you might even consider **pausing notifications from Slack** itself. Check the [**instructions found here**](https://slack.com/help/articles/214908388-Pause-notifications-with-Do-Not-Disturb){:target="_blank"} on how to do this. 
 
   - **Go the extra mile** and go through the `Extra Resources` section that accompanies most of the chapters in this curriculum.
