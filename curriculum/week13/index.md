@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 9/1/2024</span>
+  <span>Updated: 29/8/2024</span>
 
   <h2 class="week-controls__next_week">
 

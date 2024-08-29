@@ -8,7 +8,7 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
   <span class="week-prefix">{{ SGEN:WEEK }} |</span> {{ SGEN:TITLE }}
 </h1>
 
-<!-- ADD WEEKLY HEADER: <img src="assets/header.png" /> -->
+{{ SGEN:HEADER_IMAGE }}
 
 <div class="week-controls">
 
