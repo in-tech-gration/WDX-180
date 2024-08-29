@@ -25,9 +25,9 @@
 <details markdown="1">
   <summary><h3>Where do I start?</h3></summary>
 
-  You definitely need to **start by watching [this welcoming video](https://youtu.be/PxBdVw9tTa0)** about WDX180. Learn about what this we will cover, how to study, how to reach for help and some general tips and advice for the course.
+  You definitely need to **start by watching [this welcoming video](https://youtu.be/PxBdVw9tTa0){:target="_blank"}** about WDX180. Learn about what this we will cover, how to study, how to reach for help and some general tips and advice for the course.
 
-  ![](./assets/Welcome.to.WDX180.jpg)
+  ![](./curriculum/assets/Welcome.to.WDX180.jpg)
   
   What we are going to cover, how to study and some general tips
 
