@@ -406,6 +406,10 @@ title: JavaScript in a Day
   <!-- SGEN:META:PROGRESS:task=Complete the 'Schnick-Schnack-Schnuck' exercise -->
   - Try to solve all the exercises found [here](./exercises/javascript-first-steps/index.md)
 
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  
 ### Extra Resources
 
   In case you want to give JavaScript another go, here is another great introductory playlist by the amazing [Mosh Hamedani](https://codewithmosh.com/){:target="_blank"}:

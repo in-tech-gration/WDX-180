@@ -10,7 +10,7 @@ title: Onboarding and Basics of Computing
   - Setting up and getting to know each other
   - [Study](#study-plan)
   - [Exercises](#exercises)
-  <!-- - [Extra Resources](#extra-resources) -->
+  - [Extra Resources](#extra-resources)
 
 ### Setting up
 

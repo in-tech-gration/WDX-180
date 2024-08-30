@@ -148,6 +148,8 @@ title: How the Internet & the World Wide Web works
 
 ### Exercises
 
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+  
 ### Extra Resources
 
   - Watch: [ALOHAnet: Grandfather of All Computer Networks - Computerphile](https://www.youtube.com/watch?v=oKrUGRVwFBI){:target="_blank"}

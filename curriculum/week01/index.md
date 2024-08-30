@@ -184,12 +184,20 @@ We encourage you to **help and support each other** but in a constructive and he
     - **Description:** A YouTube playlist that provides an introduction to the history of computers, the basic elements of programming and the basic components of computer hardware.
     - **Duration:** 8h (40 videos)
 
+  - [Listen: **#How have User Interfaces Evolved?** Kopec Explains Software Podcast](http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-){:target="_blank"}
+    - **Description:** _"Through the history of computing, user interfaces (UIs) have evolved from punch cards to voice interaction. In this episode we track that evolution, discussing each paradigm and the machine that popularized it."_ 
+    - **Duration:** 24min
+    - **Level:** Beginner
+    - [Download in .mp3 format](https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}
+
   - [Listen: **What is a Character Encoding?** Kopec Explains Software Podcast](http://kopec.live/episode/d8ae81cf7d314abe/what-is-a-character-encoding-){:target="_blank"}
     - **Description:** _"Computers are not just great for calculating, they’re also great for storing, manipulating, and viewing text. In fact, the majority of the work we do on a computer is “text work.” But, how does a computer actually store text? How is text represented in software? In this episode we dive into the world of character encodings, the way that software represents text."_
     - **Duration:** 24min
     - **Level:** Beginner
     - **Download:** [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/d8ae81cf-7d31-4abe-baf6-0da95eecdcfe.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}
 
+<!-- Sources and Attributions -->
+  
 </details>
 
 <hr class="mt-1">
@@ -508,6 +516,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
+
 ### Extra Resources
 
   - [Watch: **HTML Tutorial for Beginners: HTML Crash Course**](https://www.youtube.com/watch?v=qz0aGYrrlhU){:target="_blank"}
@@ -588,10 +597,13 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
+
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
+<!-- Sources and Attributions -->
+  
 </details>
 
 <hr class="mt-1">
@@ -1020,6 +1032,9 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
   - Try to solve all the exercises found [here](./exercises/javascript-first-steps/index.md)
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
