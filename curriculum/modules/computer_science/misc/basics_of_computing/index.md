@@ -6,20 +6,6 @@ title: Onboarding and Basics of Computing
 
   > Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
 
-  ![](./assets/colorful.02.png)
-
-  **Welcome to the first part of our curriculum, WDX 60°!** 
-
-  The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these **3 building blocks: HTML, CSS and JavaScript**. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
-
-  Before you dive in, **make sure that you have your notebook** and colored pens besides your computer, in order to pause and take those invaluable notes as you move along the curriculum.
-
-  ![](./assets/notebook.png)
-
-  At this point, it's extremely important to let you know that **sharing solutions** on Slack is **not allowed** and will be removed upon first notice. 
-
-  We encourage you to **help and support each other** but in a constructive and helpful manner: guiding other participants towards the right direction by asking questions, providing hints, suggesting alternatives and generally cultivating a problem solving mindset instead of depriving others of the capacity to process a problem by handing them a ready-made solution. 
-
   - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
   - [Study](#study-plan)

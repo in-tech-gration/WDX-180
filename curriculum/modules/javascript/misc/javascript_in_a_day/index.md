@@ -410,4 +410,4 @@ title: JavaScript in a Day
 
 ### Sources and Attributions
 
-  - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
+  - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4){:target="_blank"} 
