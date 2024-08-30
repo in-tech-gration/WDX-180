@@ -408,6 +408,37 @@ title: JavaScript in a Day
 
 ### Extra Resources
 
+  In case you want to give JavaScript another go, here is another great introductory playlist by the amazing [Mosh Hamedani](https://codewithmosh.com/){:target="_blank"}:
+
+  - [Mosh: JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk){:target="_blank"}
+    - **Duration:** 48min
+    - **Description:** An introductory JS screencast that covers the following concepts: 
+    - <details>
+        <summary>Table of Content</summary>
+        <ul>
+          <li>What is JavaScript</li>
+          <li>Setting Up the Development Environment </li>
+          <li>JavaScript in Browsers</li>
+          <li>Separation of Concerns</li>
+          <li>JavaScript in Node</li>
+          <li>Variables</li>
+          <li>Constants</li>
+          <li>Primitive Types </li>
+          <li>Dynamic Typing </li>
+          <li>Objects</li>
+          <li>Arrays</li>
+          <li>Functions</li>
+          <li>Types of Functions </li>
+        </ul>
+      </details>
+
+  - [Mosh: JavaScript if else (tutorial)](https://www.youtube.com/watch?v=IsG4Xd6LlsM){:target="_blank"}
+    - **Duration:** 7min
+    
+  - [Mosh: JavaScript Loops](https://www.youtube.com/watch?v=s9wW2PpJsmQ){:target="_blank"}
+    - **Duration:** 7min
+    - **Description:** Here's one comment that should give you an idea about the educational quality of the video: _"Wow, I never thought I could understand loops this easily. I've struggled to understand this concept for 7 months. Thanks, Mosh!"_
+
 ### Sources and Attributions
 
   - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4){:target="_blank"} 

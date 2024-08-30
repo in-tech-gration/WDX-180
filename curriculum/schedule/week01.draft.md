@@ -58,6 +58,8 @@ At this point, it's extremely important to let you know that **sharing solutions
 
 We encourage you to **help and support each other** but in a constructive and helpful manner: guiding other participants towards the right direction by asking questions, providing hints, suggesting alternatives and generally cultivating a problem solving mindset instead of depriving others of the capacity to process a problem by handing them a ready-made solution. 
 
+**Let's get started!**
+
 <!-- BEFORE SECTION:END -->
 
 {{ SGEN:WEEKLY_CONTENT }}

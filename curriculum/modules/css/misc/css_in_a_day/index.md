@@ -35,3 +35,5 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
   **Your task is to rewrite the code** of this webpage in modern HTML (v5) and style it using CSS! Once everything is ready, make sure that your code lives under the `user/week01/exercises/day04/cern/` directory, commit and push to submit your solution to your forked repository.
 
 ### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_

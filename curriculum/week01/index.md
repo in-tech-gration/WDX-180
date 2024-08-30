@@ -58,6 +58,10 @@ At this point, it's extremely important to let you know that **sharing solutions
 
 We encourage you to **help and support each other** but in a constructive and helpful manner: guiding other participants towards the right direction by asking questions, providing hints, suggesting alternatives and generally cultivating a problem solving mindset instead of depriving others of the capacity to process a problem by handing them a ready-made solution. 
 
+**Let's get started!**
+
+<!-- BEFORE SECTION:END -->
+
 <!-- Week 01 - Day 1 | Onboarding and Basics of Computing -->
 <details markdown="1">
   <summary>
@@ -68,6 +72,8 @@ We encourage you to **help and support each other** but in a constructive and he
 ### Schedule
 
   > Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
+
+
 
   - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
@@ -303,6 +309,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
   ---
 
+
   **Practice time!**
 
   Let's take a few minutes to learn more about what `Site Blocking` through localhost really means.
@@ -313,6 +320,8 @@ We encourage you to **help and support each other** but in a constructive and he
   - [How to Edit Hosts File in Linux, Windows, or Mac](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux){:target="_blank"}
 
   ---
+
+
 
   - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/index.md)
     - Level: Beginner
@@ -351,6 +360,8 @@ We encourage you to **help and support each other** but in a constructive and he
 
 #### The Internet & the World Wide Web
 
+
+
   - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps){:target="_blank"}
 
   - [**The (expansion of the) Internet: 1997 - 2021**](https://www.youtube.com/watch?v=-L1Zs_1VPXA){:target="_blank"} (2min). This video takes you through a journey of the Internet's astonishing growth.
@@ -377,6 +388,8 @@ We encourage you to **help and support each other** but in a constructive and he
   - [Read: **HTTP**](../modules/computer_science/internet/http/), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/){:target="_blank"}.
 
 #### Public Key Cryptography
+
+
 
   - [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do){:target="_blank"}
     - Duration: 9min
@@ -475,6 +488,8 @@ We encourage you to **help and support each other** but in a constructive and he
   **TIP:** Before starting to with the HTML exercises, perhaps, you can spend a few minutes to watch [this video](https://www.youtube.com/watch?v=n7wkAp9_bqw){:target="_blank"} which walks you through the process of setting up VSCode to efficiently work with the exercises.
 
   ---
+
+
 
   - Complete the following exercises and update the progress CSV files accordingly:
 
@@ -633,6 +648,8 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
   > 
   > Even though, the author also points out that _"Both mental models can exist at the same time and might have benefits in different situations."_ it is recommended to stick with the notion that "a variable in JS is a label that references a value in memory somewhere". This notion also coincides with how programming languages actually work under the hood.
 
+
+
   > **TIP #2:** Wondering if you can use a given string as a variable name in JavaScript? Use [this tool](https://mothereff.in/js-variables) to find out! 
   >
   > _(Don't forget to star the [GitHub repo](https://github.com/mathiasbynens/mothereff.in) if you found this tool helpful.)_
@@ -663,7 +680,11 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
   >
   > `const ¯\_(ツ)_/¯ = "Nope`;
 
+
+
   ---
+
+
 
   - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM){:target="_blank"}
     - Duration: 8min
@@ -723,9 +744,13 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
   ---
 
+
+
   **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview){:target="_blank"} and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
 
   ---
+
+
 
   **Template Literals:** Apart from the familiar "double" and 'single' quotes to define a String in JavaScript, there's also the \`backtick\` characters that are used to define a String value. Also, called template literals, this format allows us to define plain text values inside a String along with dynamic values enclosed in a special dollar sign brackes syntax: `${}`:
 
@@ -768,11 +793,17 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
   ---
 
+
+
   > **What's up with number 42?** You probably see a lot of tutorials and blog posts using number 42 as the value for various examples, and wondering what's the deal with this number. 
   >
   > According to Wikipedia: "The number 42 is, in _The Hitchhiker's Guide to the Galaxy_ by Douglas Adams, the "Answer to the Ultimate Question of Life, the Universe, and Everything", calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years. Unfortunately, no one knows what the question is." [Source](https://en.wikipedia.org/wiki/42_(number)) 
 
+
+
   ---
+
+
 
   - [Watch: **Math Methods and How to Generate a Random Number with JavaScript \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y){:target="_blank"}
     - Duration: 6min
@@ -1029,6 +1060,7 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
   
 </details>
+
 
 <hr class="mt-1">
 

@@ -96,6 +96,30 @@ title: HTML & Markdown in a Day
 
 ### Extra Resources
 
+  - [Watch: **HTML Tutorial for Beginners: HTML Crash Course**](https://www.youtube.com/watch?v=qz0aGYrrlhU){:target="_blank"}
+    - **Duration:** 1h9min
+    - **Level:** Beginner
+    - **Description:** HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.
+    <details>
+    <summary>Table of Content</summary>
+    <ul>
+      <li>What You Need </li>
+      <li>Languages and Tools of Web Development </li>
+      <li>How the Web Works</li>
+      <li>Inspecting HTTP Requests and Responses </li>
+      <li>HTML Basics</li>
+      <li>CSS Basics</li>
+      <li>Formatting Code</li>
+      <li>Inspecting Pages Using DevTools</li>
+      <li>Validating Web Pages</li>
+      <li>The Head Section</li>
+      <li>Text</li>
+      <li>Entities</li>
+      <li>Hyperlinks</li>
+      <li>Images</li>
+    </ul>
+    </details>
+
 ### Sources and Attributions
 
   **Content is based on the following sources:**
