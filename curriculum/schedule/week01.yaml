@@ -21,6 +21,15 @@ schedule:
 
 # ---
 
+# TODO: Integrate our own fork of: https://github.com/in-tech-gration/mothereff.in/
+# Mentioned on Day 2 (https://mothereff.in/binary-ascii)
+
+# TODO: Integrate our own fork of: https://mothereff.in/js-variables on Day 5
+
+# ! FIX BROKEN LINK: ON DAY 2
+# https://in-tech-gration.github.io/WDX-180/curriculum/week01/EXTRAS.md#day-02---internet--the-web
+# > If you want another take on the localhost subject, take a look at the Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP? video found in the Extras <== This one
+
 # TODO: Integrate: Numeric Conversions | Decimal, Binary & Hexadecimal
 # https://www.youtube.com/watch?v=Jy_6odFi3l4 (214 in decimal, binary, hexadecimal)
 
