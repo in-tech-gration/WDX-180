@@ -5,14 +5,16 @@
   - Check out the [Codecademy Git](https://www.codecademy.com/resources/docs/git) resources which contain pages describing some of the most basic concepts such as the [git add](https://www.codecademy.com/resources/docs/git/add), [git commit](https://www.codecademy.com/resources/docs/git/commit) commands, etc.
     - The WDX retains an offline version of these files. You can find them in the [`/resources/codecademy/git/concepts/`](../../resources/codecademy/git/concepts/) folder.
 
-  - [**Git SSH keys simplified and how to setup on GitHub**](https://inspirezone.tech/git-ssh-keys-simplified/)
+  - [**Git SSH keys simplified and how to setup on GitHub**](https://inspirezone.tech/git-ssh-keys-simplified/){:target="_blank"}
 
-  - [**What is git? An easy introduction**](https://inspirezone.tech/what-is-git/)
+  - [**What is git? An easy introduction**](https://inspirezone.tech/what-is-git/){:target="_blank"}
 
-  - [Watch: **How to be a git expert**](https://www.youtube.com/watch?v=hZS96dwKvt0)
+  - [Watch: **How to be a git expert**](https://www.youtube.com/watch?v=hZS96dwKvt0){:target="_blank"}
     - **Description:** Learn git concepts, level up your command line skills, and become a more capable git user!
     - **Duration:** 47min
 
+  - [Watch: **Git and Git Bash Tutorial**](https://www.youtube.com/watch?v=iGutIN5t9Mo){:target="_blank"}
+  
 ## Accessibility
 
   - [Why the number input is the worst input](https://stackoverflow.blog/2022/12/26/why-the-number-input-is-the-worst-input/){:target="_blank"}

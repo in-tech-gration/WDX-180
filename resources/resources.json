@@ -4198,6 +4198,51 @@
         "channel_title": "in-tech-gration",
         "thumbnail_url": "https://i.ytimg.com/vi/xDz2d3e6_08/sddefault.jpg"
       }
+    },
+    "git-bash-tutorial-git-bash-basics-git-and-github-tutorial-devops-training-edureka": {
+      "type": "YouTube",
+      "duration": 1506,
+      "title": "Git Bash Tutorial | Git Bash Basics | Git and GitHub Tutorial | DevOps Training | Edureka",
+      "date": "15/03/2021",
+      "youtube": {
+        "id": "iGutIN5t9Mo",
+        "channel_id": "UCkw4JCwteGrDHIsyIIKo4tQ",
+        "channel_title": "edureka!",
+        "thumbnail_url": "https://i.ytimg.com/vi/iGutIN5t9Mo/sddefault.jpg"
+      },
+      "tags": [
+        "yt:cc=on",
+        "git bash tutorial",
+        "git bash",
+        "git bash basics",
+        "what is github",
+        "git bash commands",
+        "git bash github",
+        "git bash setup",
+        "github tutorial",
+        "how to use git bash to push to github",
+        "git bash commit",
+        "git and github tutorial",
+        "Git bash commit and push",
+        "git",
+        "github",
+        "what is git",
+        "git tutorial",
+        "git tutorial for beginners",
+        "github tutorial for beginners",
+        "what is git repository",
+        "git add",
+        "git branching",
+        "git commands",
+        "git init",
+        "git edureka",
+        "devops tools",
+        "edureka devops",
+        "edureka"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
