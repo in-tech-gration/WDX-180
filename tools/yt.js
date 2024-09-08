@@ -194,6 +194,10 @@ function init() {
       "get-video-info": {
         type: "string",
         short: "i",
+      },
+      help: {
+        type: "string",
+        short: "h"
       }
     },
   });
@@ -201,6 +205,10 @@ function init() {
   // HANDLE MISSING PARAMETERS:
   if (Object.keys(args.values).length === 0) {
     return warn("Missing arguments. Maybe you wanted to run with `--get-video-info <ID> or -i <ID>?`")
+  }
+
+  if ( args.values.help ){
+    return info("Usage: node yt.js --get-video-info <YOUTUBE_ID>");
   }
 
   const vid = args.values["get-video-info"];
