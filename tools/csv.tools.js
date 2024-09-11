@@ -324,9 +324,20 @@ function mergeCsvFiles(files, outputFile, forImport=false) {
     // Add all rows from the current file to the combinedData, and add the 'course' column
     parsed.forEach(row => {
       const rowWithCourse = headers.map(header => {
-        // If it's the new 'course' column, add the value 'wdx-180' for the Supabase Database
-        if (forImport && header === 'course') {
-          return 'wdx-180';
+        // If the csv should be imported to Supabase Database, change columns to be according to the database model
+        if (forImport) {
+          // If it's the new 'course' column, add the value 'wdx-180'
+          if (header === 'course') {
+            return 'wdx-180';
+          }
+          // If it's the 'confidence' column, change value to '0'
+          if (header === 'Confidence') {
+            return '0'
+          }
+          // If it's the 'day' column and value is 'Weekend' change it to '6' 
+          if (header === 'Day' && row[header] === 'Weekend') {
+            return '6'
+          }
         }
         return row[header];
       });
