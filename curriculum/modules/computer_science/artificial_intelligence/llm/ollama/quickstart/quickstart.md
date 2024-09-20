@@ -118,9 +118,9 @@ title: Ollama Quickstart
 
   <iframe width="100%" height="500" src="https://www.youtube.com/embed/AKOnSEDDzDM?si=z4enwb-_eZRbxz0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  In the following video, you can see how we can test various MM-LLMs on several screen captures from the video footage to identify an individual inside the premises.
+  <!-- In the following video, you can see how we can test various MM-LLMs on several screen captures from the video footage to identify an individual inside the premises. -->
 
-  Here are the models tested on the video:
+  Here are the models that can be tested on screenshots captured from various frames in the video:
 
   - [llava:13b](https://ollama.com/library/llava){:target="_blank"}
   - [bakllava:7b](https://ollama.com/library/bakllava){:target="_blank"}
