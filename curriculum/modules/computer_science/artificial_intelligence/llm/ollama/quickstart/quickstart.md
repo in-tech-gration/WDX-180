@@ -17,6 +17,8 @@ title: Ollama Quickstart
 
   After installing `Ollama`, it will be available via the command line as `ollama`. You can test whether the command was successfully installed by opening up a terminal and typing `ollama --version`. You can also run the `ollama --help` command to see the available options.  
 
+  > "The model will automatically be unloaded from memory after 5 minutes of inactivity."
+
 ## RUNNING OUR FIRST MODEL: Phi3
 
   Download the [Phi3](https://azure.microsoft.com/en-us/products/phi-3) model by running the following command:

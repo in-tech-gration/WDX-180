@@ -42,3 +42,10 @@ schedule:
 # https://github.com/ecole-du-web/Emmet-Crash-Course/tree/main
 
 # TEST & SUGGEST: https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator (SAR: Mary)
+
+# TODO: GIT LESSON PROBLEMS: (Student support)
+# ...stuck with "Set up GitBash as your default terminal in VSCode" that bash option does not appear in the dropdown menu?
+# File -> Preferences -> Settings (or press on Ctrl+,)
+# User -> Features -> Terminal
+# Click and add "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+# Save and Restart VS code. Bash terminal will reflect on the terminal.

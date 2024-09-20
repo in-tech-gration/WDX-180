@@ -20,6 +20,8 @@ title: LangChain
 
     - [**Our first LangChain app**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/langchain/quickstart/quickstart.html){:target="_blank"}
 
+    - [**Building a RAG Application using LangChain**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/langchain/rag/rag.html)
+
 <!-- ### Summary -->
 
 <!-- ### Exercises -->
