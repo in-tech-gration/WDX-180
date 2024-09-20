@@ -34,6 +34,8 @@ title: LangChain Quickstart
 
   > Check out the [Ollama quick start guide](https://in-tech-gration.github.io/WDX-180/curriculum/modules/computer_science/artificial_intelligence/llm/ollama/quickstart/quickstart.html){:target="_blank"} for installing and running LLM models locally using Ollama.
 
+  > **Phi-3** is a family of Language Models created and maintained by Microsoft. They are available for use through various platforms and tools, such as Microsoft Azure AI Studio, Hugging Face, Ollama and other. They come is all sorts of sizes and flavours: mini, small, medium, vision for general visual reasoning tasks and more. The Phi-3 models can run on the cloud but can also be downloaded and run directly on the device and they can run on GPU or CPU. They belong to a family of Language Models known as SLM (Small Language Models) due to their size and number of parameters and support 20+ languages, like arabic, chinese, german, english, turkish and more.
+
   Now, let's code our first `LangChain` app that uses the Ollama model and gets its first response from the LLM. Create a file namedd `ollama.mjs` and paste the following code:
 
   ```js

@@ -41,6 +41,8 @@ title: Module title
 
   Visit [this page](../experimental-phi3-webgpu/index.html){:target="_blank"}, load the `Phi3` LLM model (**warning it's going to download around 2.4GB on your machine**, but this is a one-time only thing) and start asking questions. For example, you can ask:
 
+  > **Phi-3** is a family of Language Models created and maintained by Microsoft. They are available for use through various platforms and tools, such as Microsoft Azure AI Studio, Hugging Face, Ollama and other. They come is all sorts of sizes and flavours: mini, small, medium, vision for general visual reasoning tasks and more. The Phi-3 models can run on the cloud but can also be downloaded and run directly on the device and they can run on GPU or CPU. They belong to a family of Language Models known as SLM (Small Language Models) due to their size and number of parameters and support 20+ languages, like arabic, chinese, german, english, turkish and more.
+
   - `Can you explain what a Large Language Model is in layman's terms?`  
   - `What is a Large Language Model?`
   - `How does an LLM work?`
