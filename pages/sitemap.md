@@ -52,6 +52,9 @@ favicon: sitemap.png
       - [Flappy Bird](https://www.youtube.com/playlist?list=PLdo7hJB0agEmTY9xT7EvzUkClAeAHJr9G){:target="_blank"}
       - [Real-life coding](https://www.youtube.com/playlist?list=PLdo7hJB0agElB29_USaEp_wtd2cPuD71C){:target="_blank"}
   
+  - **Tools & Interactive Environments**
+    - [JSLinux (Linux in the Browser)](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/index.html)
+
   - **Training Wheels**
     - [About](https://in-tech-gration.github.io/WDX-180/curriculum/modules/training-wheels/why-training-wheels){:target="_blank"}
     - **Functions**
