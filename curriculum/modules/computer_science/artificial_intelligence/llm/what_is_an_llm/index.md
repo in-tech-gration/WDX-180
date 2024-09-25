@@ -59,6 +59,8 @@ title: Module title
   - [The Phi3 LLM running in the browser](https://huggingface.co/spaces/Xenova/experimental-phi3-webgpu){:target="_blank"}
     - [The source code](https://huggingface.co/spaces/Xenova/experimental-phi3-webgpu/tree/main){:target="_blank"}
 
+  - [Data Science Pronto! - What are LLMs?](https://www.youtube.com/watch?v=n7VJzw94QfQ){:target="_blank"}
+
 <!-- ### Sources and Attributions -->
 
 ---
