@@ -12,6 +12,8 @@ title: Ollama Quickstart
 
   `Ollama` is a software for installing and running Large Language Models (LLMs) on your machine. It can run `Llama 3`, `Phi3`, `Mistral`, `Gemma` and other models. It also allows you to create your own.
 
+  - Watch [Ollama In 120 Seconds](https://www.youtube.com/watch?v=_6SlPLNEpzQ){:target="_blank"} to get a quick overview of the application and its features.
+
   - Download and install [**Ollama**](https://ollama.com/)
     - Visit [https://ollama.com](https://ollama.com) => Click **Download** => Select your OS and click "Download for Mac/Linux/Windows"
 
