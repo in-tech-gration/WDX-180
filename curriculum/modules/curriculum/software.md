@@ -74,7 +74,5 @@
     - `node -v` (for short)
 
   - **Productivity:**
-    - [**Wikiwand**: the Wikipedia Reader](https://www.wikiwand.com/){:target="_blank"} _(Install as a Browser extension)_
-      - As you will be reading **a lot** (and we mean it) of Wikipedia articles throughout the course, we highly recommend that you use this awesome Browser extension to enhance the Wikipedia experience. In a sentence, this is Wikipedia on steroids!
     - [**Photopea**](https://www.photopea.com/){:target="_blank"}: a free, online image editing software that's pretty similar to `Adobe Photoshop`. You can use this tool to resize, crop or compress images among other things. 
 </details>
