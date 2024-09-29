@@ -12,7 +12,4 @@
     - `StackOverflow` is a Q&A site for programmers.
   - [Codesandbox](https://codesandbox.io/){:target="_blank"}
     - An online code editor that gives you the ability to share your code with a single web address.
-  <!-- 
-    - [Sli.do _(used during our Q&As)_](https://www.slido.com/){:target="_blank"} 
-    -->
 </details>
