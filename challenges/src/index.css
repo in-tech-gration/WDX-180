@@ -1,0 +1,49 @@
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Yellow for chapter 6 */
+/* Custom CSS for circular progress */
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+}
+
+.circle-bg {
+  stroke: #eee;
+}
+
+.circle-progress {
+  stroke: #4a5568;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

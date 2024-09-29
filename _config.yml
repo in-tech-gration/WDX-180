@@ -19,7 +19,10 @@ exclude:
   - tools
   - node_modules/
   - user/
+  - challenges/
   # OFFLINE SECTION:
+include:
+  - challenges/v1
   
 # CUSTOM _SASS FOLDER: https://github.com/jekyll/jekyll-sass-converter#configuration-options, https://jekyllrb.com/docs/configuration/sass/
 sass:
