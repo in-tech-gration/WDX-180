@@ -22,5 +22,7 @@ const totalDuration = `${hours.toString().padStart(2, 0)}:${minutes.toString().p
 console.log(totalDuration);
 ```
 
-<!-- # The Chrome Extension -->
+# The Chrome Extension
+
+[Source code](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/youtube_playlist_duration_calculator/yt-calc-chrome-extension)
 
