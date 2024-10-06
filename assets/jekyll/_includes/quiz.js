@@ -31,13 +31,14 @@ const wdx_quiz = {
 
           }
           ul.selected[data-wdx-quiz-ul] li:not(.selected) {
-              cursor: default;
+              /* cursor: default; */
               opacity: 0.35;
 
           }
-          ul[data-wdx-quiz-ul]:not(.selected) li:hover {
+          /* ul[data-wdx-quiz-ul]:not(.selected) li:hover { */
+          ul[data-wdx-quiz-ul] li:hover {
               font-weight: bold;
-              opacity: 1;
+              opacity: 1 !important;
           }
       `;
     style.setAttribute("id", "wdx-js-quiz")
@@ -119,14 +120,9 @@ const wdx_quiz = {
       }
       ul.setAttribute("data-wdx-quiz-ul", "true");
 
-      let hasBeenAnswered = false; // <= We don't want to give our student another change :(
-
       ul.addEventListener("click", (e) => {
-        if (hasBeenAnswered) {
-          return;
-        }
-        hasBeenAnswered = true;
         ul.classList.add("selected");
+        ul.querySelectorAll("li").forEach( li => li.removeAttribute("class"))
         captureQuestions(e, question);
       })
     })
