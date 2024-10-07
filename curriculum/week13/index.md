@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 29/8/2024</span>
+  <span>Updated: 7/10/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -55,7 +55,19 @@ title: Week 13 | Intermediate JavaScript
   - **Practice**
   - **Work on Project (Group/Personal)**
 
-<!-- Study Plan -->
+### Study Plan
+
+  ![](./assets/Promises.jpg)
+
+  - [Watch Part 1](https://www.youtube.com/watch?v=rhr3CWnYO60){:target="_blank"} of today's lecture on `JavaScript Promises`.
+
+  - Take a break, walk away from the keyboard and do some quick stretch exercises.
+
+  - [Watch Part 2](https://www.youtube.com/watch?v=FkVIzOicuCE){:target="_blank"} of the lecture on `JavaScript Promises`. 
+
+  - Practice with Promises.
+
+  - Post your questions on [Slack](https://intechgration.slack.com){:target="_blank"}, in the comments on YouTube, at the bottom of this page or our [discussion forum on GitHub](https://github.com/in-tech-gration/WDX-180/discussions){:target="_blank"}.
 
 <!-- Summary -->
 
