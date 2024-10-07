@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 7/10/2024</span>
+  <span>Updated: 8/10/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -68,6 +68,10 @@ title: Week 13 | Intermediate JavaScript
   - Practice with Promises.
 
   - Post your questions on [Slack](https://intechgration.slack.com){:target="_blank"}, in the comments on YouTube, at the bottom of this page or our [discussion forum on GitHub](https://github.com/in-tech-gration/WDX-180/discussions){:target="_blank"}.
+
+  ![](./assets/Promises.Printer.png)
+
+  _(Image from [https://www.alexlintu.com/what-is-a-promise/](https://www.alexlintu.com/what-is-a-promise/){:target="_blank"})_
 
 <!-- Summary -->
 
