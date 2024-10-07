@@ -52,7 +52,7 @@ Syllabus:
       weeks:
         13: # JavaScript Intermediate 1 & Git (08/01/2024 - 12/01/2024)
           # file:///./schedule/week13.yaml
-          title: "Intermediate JavaScript"
+          title: "Intermediate JavaScript: Promises & Scope (var, let, const)"
           # TODO: ES6
           # Clean Code, Testing, Workflow, Deploying your app
           open: true

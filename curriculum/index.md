@@ -41,7 +41,7 @@
 
 ### Intermediate: WDX 120°
 
-  - [**Week 13**: Intermediate JavaScript](week13/index.md)
+  - [**Week 13**: Intermediate JavaScript: Promises & Scope (var, let, const)](week13/index.md)
   - [**Week 14**: Intermediate JavaScript](week14/index.md)
   - [**Week 15**: Intermediate JavaScript](week15/index.md)
   - [**Week 16**: Intermediate JavaScript](week16/index.md)
