@@ -25,7 +25,7 @@ title: Week 01 | Introduction to the Web and Web Technologies
 
   </h2>
 
-  <span>Updated: 31/8/2024</span>
+  <span>Updated: 11/10/2024</span>
 
   <h2 class="week-controls__next_week">
 
