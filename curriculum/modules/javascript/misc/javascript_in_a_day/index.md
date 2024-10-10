@@ -408,6 +408,8 @@ title: JavaScript in a Day
   
 ### Extra Resources
 
+  - In case you are wondering whether to place your `<script>` tag inside the `<head>` or the `<body>` tag of the HTML document, this [**live Q&A**](https://youtu.be/NVKPOL8O_YU){:target="_blank"} recording will help answer this common question. Watch the recording to learn how placing the `<script>` tag in different places in your HTML document can affect performance and cause problems with JavaScript programs that need access to the page's HTML content. 
+
   In case you want to give JavaScript another go, here is another great introductory playlist by the amazing [Mosh Hamedani](https://codewithmosh.com/){:target="_blank"}:
 
   - [Mosh: JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk){:target="_blank"}
