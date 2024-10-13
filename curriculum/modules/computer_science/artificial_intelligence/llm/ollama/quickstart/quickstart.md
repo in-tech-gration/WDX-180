@@ -134,6 +134,8 @@ title: Ollama Quickstart
   - Is there an individual? Answer with: Yes, No (Maybe).
   - List the objects found in the picture.
 
+<!-- TODO: ## CREATING A CUSTOM OLLAMA MODEL -->
+
 ## FAQ
 
   - ___How can I install Ollama on Windows?___
