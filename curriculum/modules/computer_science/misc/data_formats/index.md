@@ -4,15 +4,15 @@
 
   In this course we will be working a lot with `Markdown` files and `CSV` files.
 
-  **Markdown** is a lightweight markup language used for formatting plain text documents, allowing users to easily add structure and style using simple, human-readable syntax.
-
-  **CSV (Comma-Separated Values)** is a simple file format used for storing and exchanging structured data, where each line represents a record or entry, and fields or columns within each record are separated by commas.
-
   If you are unfamiliar with either the `markdown` or `CSV` file formats, we highly recommend that you watch the following 2 YouTube videos to get a better understanding:
+
+  **Markdown** is a lightweight markup language used for formatting plain text documents, allowing users to easily add structure and style using simple, human-readable syntax.
 
   - [What is markdown?](https://www.youtube.com/watch?v=f49LJV1i-_w){:target="_blank"}
     - Duration: 8 min
     - Level: Beginner
+
+  **CSV (Comma-Separated Values)** is a simple file format used for storing and exchanging structured data, where each line represents a record or entry, and fields or columns within each record are separated by commas.
 
   - [Understanding CSV Files](https://www.youtube.com/watch?v=UofTplCVkYI){:target="_blank"}
     - Duration: 6 min
@@ -27,3 +27,5 @@
   - Does not need any special software (it's just a plain text file)
   - All spreadsheet apps (MS Excel, Google Sheets, Numbers, etc.) can read and write CSV
 </details>
+
+<!-- TODO: Break this into CSV and Markdown submodules -->
