@@ -215,6 +215,10 @@
 
   In the yaml file (e.g. `week13.yaml`) add a new YAML property named `header_image:` and add the full path. The `sgen` tool will automatically detect the image path and will copy the file to the appropriate weekly folder.
 
+## Jekyll | How to | Add a Quiz?
+
+  Take a look at the contents of `curriculum/week01/exercises/Absolute_vs_Relative_URLs/index.md`
+
 ---
 
 ## About the Instructor's Cockpit Tool
