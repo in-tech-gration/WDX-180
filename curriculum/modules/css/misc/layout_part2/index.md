@@ -8,6 +8,9 @@ title: CSS Layout Part 2
 
 ### Study Plan
 
+  - [Take a quick CSS refresher test](exercises/day04/quick-CSS-refresher/index.md)
+    - Level: Beginner
+
   <!-- SGEN:META:PROGRESS:task=Read 'Responsive Design' -->
   - [Read: **Responsive Design**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design){:target="_blank"}
     - Level: Beginner

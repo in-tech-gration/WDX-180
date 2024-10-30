@@ -23,7 +23,7 @@ title: Week 04 | CSS 2 & Performance
 
   </h2>
 
-  <span>Updated: 10/11/2023</span>
+  <span>Updated: 31/10/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -249,6 +249,9 @@ title: Week 04 | CSS 2 & Performance
   - [Study](#study-plan-3)
 
 ### Study Plan
+
+  - [Take a quick CSS refresher test](exercises/day04/quick-CSS-refresher/index.md)
+    - Level: Beginner
 
   - [Read: **Responsive Design**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design){:target="_blank"}
     - Level: Beginner
