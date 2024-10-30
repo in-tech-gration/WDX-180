@@ -383,7 +383,7 @@ Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gratio
   - [**The (expansion of the) Internet: 1997 - 2021**](https://www.youtube.com/watch?v=-L1Zs_1VPXA){:target="_blank"} (2min). This video takes you through a journey of the Internet's astonishing growth.
     - Duration: 2min
 
-  - [**How the hyperlink changed everything | TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI){:target="_blank"}
+  - [**How the hyperlink changed everything \| TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI){:target="_blank"}
     - Duration: 4min
 
   - [Listen: **How does the Internet work?**](http://kopec.live/episode/5a9a3bbb4411493a/how-does-the-internet-work-){:target="_blank"}
