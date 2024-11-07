@@ -5,8 +5,8 @@ title: Flappy App - Day 4
 ### Schedule
 
   - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+  <!-- - [Exercises](#exercises-NN) -->
+  <!-- - [Extra Resources](#extra-resources-NN) -->
 
 ### Study Plan
 
