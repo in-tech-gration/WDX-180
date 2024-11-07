@@ -13,9 +13,6 @@ console.log("Running yt.s...");
 const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate, youTubeIdRegEx } = require("./utils");
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
 
-// --get-video-info
-// USAGE: node tools/yt.js --get-video-info 3Ul9gYweEPs
-
 const { YOUTUBE_API_KEY } = process.env;
 
 const IVideoInfo = {

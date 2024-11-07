@@ -37,15 +37,6 @@
 
     const { target } = e;
 
-    // Looking for code sections in the DOM structure above the link
-    const parentSiblingCodeSection =
-      target.parentElement.previousElementSibling;
-
-    if (!parentSiblingCodeSection) {
-      // Did not find a parentSiblingCodeSection.parentSiblingCodeSection
-      return false;
-    }
-
     // Check if the Code Editor has already been initialized
     const nextElementSibling = target.nextElementSibling;
     if (
@@ -54,20 +45,34 @@
     ) {
       return false;
     }
+    
+    // Looking for code sections in the DOM structure above the link
+    const parentSiblingCodeSection1 = target.parentElement.previousElementSibling;
+    const parentSiblingCodeSection2 = parentSiblingCodeSection1.previousElementSibling;
+    const parentSiblingCodeSection3 = parentSiblingCodeSection2.previousElementSibling;
 
-    const code = parentSiblingCodeSection.textContent;
+    if (!parentSiblingCodeSection1 && !parentSiblingCodeSection2 && !parentSiblingCodeSection3) {
+      console.log("Stopping here as no code sections were found.");
+      return false;
+    }
+
+    // Initialize Code Editor:
     const codeEditor = document.createElement("div");
     codeEditor.setAttribute("class", "wdx-flems-editor");
     target.insertAdjacentElement("afterEnd", codeEditor);
 
+    // Start adding code to the code editor:
+    const code = parentSiblingCodeSection1.textContent;
+
     // Initialize JavaScript, React(JSX) or HTML Code Playgrounds:
     // Check for both language-js and language-javascript classes.
-    const parentClassList = parentSiblingCodeSection.classList;
+    const parentClassList = parentSiblingCodeSection1.classList;
     const containsJS =
       parentClassList.contains("language-js") ||
       parentClassList.contains("language-javascript");
     const containsJSX = parentClassList.contains("language-jsx");
     const containsHTML = parentClassList.contains("language-html");
+    const containsCSS  = parentClassList.contains("language-css");
 
     // an array of files to be displayed in the code editor
     let files = [];
@@ -79,6 +84,15 @@
 
       files.push({
         name: "playground.js",
+        content: `\n${code}\n`,
+      });
+    }
+
+    if (containsCSS) {
+      console.log("Initializing CSS Flems playground...");
+
+      files.push({
+        name: "playground.css",
         content: `\n${code}\n`,
       });
     }
