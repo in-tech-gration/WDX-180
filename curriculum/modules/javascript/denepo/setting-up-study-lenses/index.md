@@ -8,8 +8,10 @@ TODO:
 
 **Setting up Study Lenses (v2) on your System**
 
-1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
+1. Clone the `study-lenses` repository from [this link](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
     - `git clone git@github.com:in-tech-gration/study-lenses.git`
+
+    >  _Note: Make sure you are **NOT** inside the **WDX-180** root folder_ 
 
 2. Change to the `study-lenses` directory and install all dependencies:
 
