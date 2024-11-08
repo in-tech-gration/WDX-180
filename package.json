@@ -17,9 +17,8 @@
     "wdx:lint": "echo 'To be implemented. Run validator.js and other scripts on all Markdown files and assets.'",
     "yari:test": "node tools/yari.parser.test.js",
     "git:gud": "http-server -o -p 4880 resources/tools/git-gud/docs/",
-    "update:submodules" : "git submodule update --init --recursive",
-    
-    "DEPRECATED_update:submodules" : "git submodule update --init --recursive --remote (--remote will create modifications on the user's local repo)",
+    "update:submodules": "git submodule update --init --recursive",
+    "DEPRECATED_update:submodules": "git submodule update --init --recursive --remote (--remote will create modifications on the user's local repo)",
     "DEPRECATED_jsonplaceholder": "node tools/node_modules/jsonplaceholder",
     "DEPRECATED_wordpress": "echo 'coming soon...'",
     "DEPRECATED_gen": "node tools/sgen/sgen curriculum/curriculum.yaml",
@@ -35,6 +34,6 @@
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
     "csv-file-validator": "^2.1.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.7"
   }
 }
