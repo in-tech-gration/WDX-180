@@ -39,6 +39,9 @@
       </section>
     {% endif %}
 
+    {# <script>
+      console.log({{ cohortData | dump | safe }})
+    </script> #}
     <main>
       <section
         class="mt-0">
@@ -46,6 +49,15 @@
           {{ cohortData.cohort_02.students | dump | safe }}
         </pre> 
         #}
+        {# <section class="quick-links">
+          <h4 class="m-0 d-inline-block">Cohorts:</h4>
+          <select id="list-of-cohorts">
+            <option value="">Please choose a cohort</option>
+            {% for item, cohort in cohortData %}
+              <option value="{{ item }}">{{ item }}</option>
+            {% endfor %}
+          </select>
+        </section> #}
         <ul class="student-list">
           {% for key, value in cohortData.cohort_03.students %}
             <li>
