@@ -3,15 +3,15 @@ const path = require("node:path");
 const https = require('node:https'); // or 'https' for https:// URLs
 const { parseArgs } = require("node:util");
 const clipboardy = require('clipboardy');
+const readline = require('node:readline');
+
+const VERSION = "0.1.1";
 
 // https://pawelgrzybek.com/til-node-js-18-3-comes-with-command-line-arguments-parser/
 console.log("Running yt.s...");
 
 const { warn, ok, info, convertToKebabCase, iso8601ToSeconds, formatDate, youTubeIdRegEx } = require("./utils");
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
-
-// --get-video-info
-// USAGE: node tools/yt.js --get-video-info 3Ul9gYweEPs
 
 const { YOUTUBE_API_KEY } = process.env;
 
@@ -186,6 +186,64 @@ function getYouTubeVideoInfo({ vid, log = false }) {
 
 }
 
+function getYouTubeVideoTitle({ vid, log = false }) {
+
+  return new Promise((resolve, reject)=>{
+
+    if (!youTubeIdRegEx.test(vid)) {
+      warn(`Invalid YouTube ID: ${vid}`);
+      return console.log(`Invalid YouTube ID: ${vid}`); 
+    }
+  
+    const URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails%2C+snippet&id=${vid}&key=${YOUTUBE_API_KEY}`
+  
+    try {
+  
+      let data = "";
+      https.get(URL, function (response) { 
+ 
+        // response.statusCode, response.headers
+        response
+          .on("data", append => {
+            data += append
+          })
+          .on("error", e => {
+            console.log(e);
+            reject({ error: e });
+          })
+          .on("end", () => {
+  
+            const json = JSON.parse(data);
+            
+            if (json.error) {
+              return warn(json.error.message);
+            }
+
+            console.log(json.items[0].snippet.title);
+            clipboardy.writeSync(json.items[0].snippet.title);
+  
+          });
+  
+      }).on("error", e => {
+  
+        console.log(e);
+        reject({ error: e });
+  
+      });
+  
+    } catch (error) {
+  
+      console.log("Ops!", { error });
+      reject({ error });
+      
+    }
+  
+    console.log("EoF");
+
+  });
+
+}
+
 function init() {
 
   const args = parseArgs({
@@ -195,9 +253,17 @@ function init() {
         type: "string",
         short: "i",
       },
+      title: {
+        type: "string",
+        short: "t"
+      },
       help: {
         type: "string",
         short: "h"
+      },
+      version: {
+        type: "string",
+        short: "v"
       }
     },
   });
@@ -211,6 +277,27 @@ function init() {
     return info("Usage: node yt.js --get-video-info <YOUTUBE_ID>");
   }
 
+  if ( args.values.version ){
+    return info(`version ${VERSION}`);
+  }
+
+  if ( args.values.title ){
+    const vid = args.values["title"];
+    if ( vid === true ){
+      // Create a readline interface for user input
+      const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+      });
+
+      return rl.question('Enter YouTube video ID: ', (videoId) => {
+        getYouTubeVideoTitle({ vid: videoId, log: true });
+        rl.close();
+      });
+    }
+    return getYouTubeVideoTitle({ vid, log: true });
+  }
+  
   const vid = args.values["get-video-info"];
 
   getYouTubeVideoInfo({ vid, log: true });
