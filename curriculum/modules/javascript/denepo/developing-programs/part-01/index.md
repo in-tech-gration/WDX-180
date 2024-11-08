@@ -12,7 +12,7 @@ title: Developing Programs - Part 1
 
   This Module is about "Developing Programs". Now it's finally time to put those skills into action! Hop on the material provided and you'll soon be able to start writing programs from a blank page!
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from {{ SGEN:MODULE_LINK:javascript/denepo/setting-up-study-lenses/index.md }} to set up Study Lenses (v2) on your System (if you haven't done that already).
 
   **Launching Study Lenses and following the material**
 
