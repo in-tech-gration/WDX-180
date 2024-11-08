@@ -1,11 +1,11 @@
 ---
-title: Week 12 | Project Week | Combine Web APIs to build a web application
+title: Week 12 | Practice Week
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 12-Project Week: Combine Web APIs to build a web application | slugify }}">
-  <span class="week-prefix">Week 12 |</span> Project Week: Combine Web APIs to build a web application
+<h1 id="{{ Week 12-Practice Week | slugify }}">
+  <span class="week-prefix">Week 12 |</span> Practice Week
 </h1>
 
 <div class="week-controls">
