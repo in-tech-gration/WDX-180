@@ -42,11 +42,13 @@ title: Week 12 | Practice Week
 
 <h2>Week 12 Content</h2>
 
-Greetings fellow future web developer! If you've reached at this point, it means that you have successfully all previous content of our curriculum. That's not an easy feat! **Congratulations !!**
+Greetings fellow future web developers! 
 
-Since in the beginning of our journey we retook **Week 01**, due to its heavy loaded content, this week is empty.
+If you've reached this point, it means that you have successfully completed all the previous content of our curriculum. That's not an easy feat. **Congratulations!**
 
-We kindly request you to move to **Week 13 - Intermediate JavaScript: Promises & Scope (var, let, const)** by clicking on the next week arrow on the top of the page!
+Since the beginning of our journey we retook **Week 01**, due to its heavy loaded content, so this content (week 12) can be safely skipped.
+
+We kindly request that you to move to **Week 13 - Intermediate JavaScript: Promises & Scope (var, let, const)** by clicking on the next week arrow on the top of the page!
 
 <hr class="mt-1">
 
