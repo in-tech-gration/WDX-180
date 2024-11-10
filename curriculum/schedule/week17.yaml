@@ -1,15 +1,21 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: NodeJS 1
+title: Intermediate JavaScript
+# title: NodeJS 1
 schedule: 
   days:
-    1: #
-      module: curriculum/schedule/week18/day01.md
-    2: #
-      module: curriculum/schedule/week18/day02.md
-    3: #
-      module: curriculum/schedule/week18/day03.md
-    4: # More Express here?
-      module: javascript/
-    5: # More Express here?
-      module: javascript/
+    1: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
+    2: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    3: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
+    4: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    5: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md

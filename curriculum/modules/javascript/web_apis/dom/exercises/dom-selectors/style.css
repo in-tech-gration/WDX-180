@@ -134,15 +134,6 @@ button {
 audio {
   visibility: hidden;
 }
-canvas {
-  position: absolute;
-  top: 0;
-  z-index:10001;
-  left:0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events:none;
-}
 section p {
   margin: 5px;
 }

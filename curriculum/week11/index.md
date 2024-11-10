@@ -1,5 +1,5 @@
 ---
-title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
+title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
@@ -14,7 +14,6 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 11 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,12 +23,11 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 18/12/2023</span>
+  <span>Updated: 28/2/2024</span>
 
   <h2 class="week-controls__next_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
+    {% if week_num <= 36 %}
 
       {% assign next_week_num = 11 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -288,25 +286,29 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   **Programming Training Wheels**: Here are two suggestions that can help you work better with Promises and asynchronous functions:
 
-  - 1) 👍 Remember to handle errors first: When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:
+  **Suggestion #1:**
 
+  **Remember to handle errors first:** 
+  
+  When working with a Promise-based function, using either the `await` or `.then()` syntax, **always** start with the error handling structure before moving on to do something with the rest of the code. In the case of the `then()` syntax, **always** start by typing in the `catch()` handler, then move on to type the `then()` handler:
+  
   **Step 1**
-
+  
   ```js
   fetch( URL )
   .catch( error => console.log(error) ); // <= ALWAYS start this way
   ```
-
+  
   **Step 2**
-
+  
   ```js
   fetch( URL )
   .then( response => /* Now we can start writing the code inside the then() */ )
   .catch( error => console.log(error) );
   ```
-
+  
   In the case of the `await` syntax, you simple start by enclosing the code inside a `try/catch`:
-
+  
   ```js
   try {
     const response = await fetch( URL );
@@ -314,9 +316,22 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     console.log( error );
   }
   ```
+  
+  **Don't stop at console.log:**
+  
+  The second important rule to remember, is not to rely on a simple `console.log` for the error cases. Make sure to handle them appropriately. For example, always send some informative response back to the user. 
+  
+  ```js
+  fetch( URL )
+  .then( data => outputEl.innerHTML = `Stock price: ${data}` );
+  .catch( error => outputEl.innerHTML = `Ops! Something went wrong: ${error.message}` );
+  ```
+  
 
-  - 2) 👍 Naming helps: Name all your async Promise-based functions using the `Async` suffix:
+  **Suggestion #2:**
 
+  **Naming helps: Name all your async Promise-based functions using the `Async` suffix:**
+  
   ```js
   async function getDataFromFacebookAsync(){
     // ...
@@ -325,22 +340,23 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
     return new Promise(/* callback function here... */);
   }
   ```
-
+  
   Having the `Async` suffix in your async function will help you remember to handle these functions using `await` or the `.then().catch()` syntax. Once you get familiar with asynchronous and Promise-based functions, you can get rid of this training wheels even though they will hurt nobody and can probably be of help to some beginner coders that will work on your code.
-
+  
   This will help you avoid common beginners' errors such as trying to get the result of an async function without `await` or `then()`:
-
+  
   ❌ Wrong:
-
+  
   ```js
   const response = getDataFromFacebook( URL );
   ```
-
+  
   ✅ Correct:
-
+  
   ```js
   const response = await getDataFromFacebookAsync( URL );
   ```
+  
 
   **What's the purpose of this?**
   
@@ -380,6 +396,13 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
-## Week 11 - Weekend Suggestions
+---
 
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

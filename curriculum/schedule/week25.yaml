@@ -1,21 +1,21 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: JavaScript Advanced 1
+# title: JavaScript Advanced 1
+title: "Advanced JavaScript"
 schedule: 
   days:
     1: # 
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
     2: # More 
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
     3: # 
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
     4: # 
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
     5: # 
-      # file://./../modules/javascript/
-      module: javascript/
-
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md

@@ -1,0 +1,27 @@
+{
+    "commands": {
+        "type": "string",
+        "enum": [
+            "git",
+            "git add",
+            "git branch",
+            "git push",
+            "git init",
+            "git commit",
+            "git checkout"
+        ]
+    },
+    "concepts": {
+      "type": "string",
+      "enum": [
+        "Version Control",
+        "Pull Request",
+        "Pull Requests",
+        "Merge",
+        "Git Branches",
+        "Branches"
+      ]
+    },
+    "references":{
+    }
+}

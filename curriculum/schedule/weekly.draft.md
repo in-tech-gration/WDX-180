@@ -8,13 +8,14 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
   <span class="week-prefix">{{ SGEN:WEEK }} |</span> {{ SGEN:TITLE }}
 </h1>
 
+{{ SGEN:HEADER_IMAGE }}
+
 <div class="week-controls">
 
   {% assign week_num = {{ SGEN:WEEK_NUM }} | to_integer %}
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num > 0 %}
 
       {% assign previous_week_num = {{ SGEN:WEEK_NUM }} | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -28,8 +29,7 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
 
   <h2 class="week-controls__next_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
+    {% if week_num <= 36 %}
 
       {% assign next_week_num = {{ SGEN:WEEK_NUM }} | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -49,3 +49,5 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
 {{ SGEN:INCLUDES:weekly_feedback_reminder }}
 
 {{ SGEN:INCLUDES:weekly_suggestions }}
+
+{{ SGEN:INCLUDES:comments_section }}

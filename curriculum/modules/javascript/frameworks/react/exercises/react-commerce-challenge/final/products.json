@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 100,
+      "price": 120,
+      "like": true,
+      "img": "./Chanel-Drawstring-Bags-3200.jpg",
+      "description": "Lorem Ipsum"
+    },
+    {
+      "id": 101,
+      "price": 300,
+      "like": false,
+      "img": "./f37249_main.jpg",
+      "description": "Lorem Ipsum"
+    },
+    {
+      "id": 102,
+      "price": 250,
+      "like": false,
+      "img": "./d94d5c_810db4caf45b473d82c8235bf63fdb60~mv2_d_3082_3221_s_4_2.jpg_srz_320_334_85_22_0.50_1.20_0.00_jpg_srz",
+      "description": "Lorem Ipsum"
+    },
+    {
+      "id": 103,
+      "price": 75,
+      "like": false,
+      "img": "./b98affe37ee8b2257210ee5958bd078b.jpg",
+      "description": "Lorem Ipsum"
+    },
+    {
+      "id": 104,
+      "price": 180,
+      "like": false,
+      "img": "./The-Mouawads-10001-Night-Diamond-Purse.jpg",
+      "description": "Lorem Ipsum"
+    },
+    {
+      "id": 105,
+      "price": 800,
+      "like": false,
+      "img": "./61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "description": "Lorem Ipsum"
+    }
+  ]
+}

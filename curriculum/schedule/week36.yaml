@@ -1,23 +1,24 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: TBA
+# title: TBA
+title: "Advanced JavaScript"
 schedule: 
   days:
-    1:
-      # file://./../modules/
-      module: 
-    2: 
-      # file://./../modules/
-      module: 
-    3: 
-      # file://./../modules/
-      module: 
-    4:
-      # file://./../modules/
-      module: 
-    5: 
-      # file://./../modules/
-      module: 
+    1: # 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
+    2: # More 
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
+    3: # 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
+    4: # 
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
+    5: # 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
 
 ## 🏆 WDX°180 COMPLETION CERTIFICATE
 

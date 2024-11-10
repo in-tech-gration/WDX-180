@@ -1,23 +1,24 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Thinking outside the box: CLI, Browser Extensions & ElectronJS"
+# title: "Thinking outside the box: CLI, Browser Extensions & ElectronJS"
+title: "Advanced JavaScript"
 schedule: 
   days:
     1: # 
-      # file://./../modules/
-      module: 
-    2: # 
-      # file://./../modules/
-      module: 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
+    2: # More 
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
     3: # 
-      # file://./../modules/
-      module: 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
     4: # 
-      # file://./../modules/
-      module: 
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
     5: # 
-      # file://./../modules/
-      module: 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
 
 # ---
 

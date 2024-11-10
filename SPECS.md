@@ -37,6 +37,10 @@
   >
   > If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
 
+## Jekyll | How to | Update & Compile the Home Page?
+
+  - Run: `sgen pages/README.yaml` from the root directory.
+
 ## Jekyll | How to | Change Website Styling (CSS)
 
   Edit the following file:
@@ -49,6 +53,16 @@
 
   - `assets/jekyll/_layouts/default.html` (Main HTML file)
   - `assets/jekyll/_includes/` (Includes)
+
+  Edit Frontmatter:
+
+  ```markdown
+  ---
+  layout: v2
+  ---
+  ```
+
+  Make sure that a file v2.html exists in: `/assets/jekyll/_layouts/v2.html`
 
 ## Jekyll | How to | Include CSS & JS in a markdown file
 
@@ -159,6 +173,51 @@
   - /assets/js/flems/flems_init.js
   - /assets/jekyll/css/style.scss (Check: // FLEMS CODE SECTIONS)
   - /assets/js/flems/flems.html
+
+## Jekyll | How to | Add Comments Widget (Utteranc.es)
+
+  Just add the following:
+
+
+  ```markdown
+  **Questions, comments, suggestions? Please leave them on the comment section below.**
+
+  <script src="https://utteranc.es/client.js"
+    repo="in-tech-gration/WDX-180"
+    issue-term="pathname"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+  </script>
+  ```
+
+## Jekyll | How to | Properly add Syntax Highlighting for JSX
+
+  - Put code inside {% raw %} {% endraw %}
+
+## Jekyll | How to | Enable/Disable Animated Bubbles Effect?
+
+  How can I disabled the Animated Bubbles effect found on the FAQ page?
+
+  > Remove the following line form the Frontmatter section:
+  - animated.bubbles.js
+
+  How can I enable it on another page?
+
+  > Add the following line to the Frontmatter section:
+  - animated.bubbles.js
+
+## Jekyll | How to | Embed YouTube Videos?
+
+  _(work in progress)_
+
+## Jekyll | How to | Add a Header Image for each Week?
+
+  In the yaml file (e.g. `week13.yaml`) add a new YAML property named `header_image:` and add the full path. The `sgen` tool will automatically detect the image path and will copy the file to the appropriate weekly folder.
+
+## Jekyll | How to | Add a Quiz?
+
+  Take a look at the contents of `curriculum/week01/exercises/Absolute_vs_Relative_URLs/index.md`
 
 ---
 

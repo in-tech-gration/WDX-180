@@ -1,24 +1,34 @@
+# yaml-language-server: $schema=week.schema.json
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: CSS, Accessibility & Git
 schedule: 
   days:
-    1: # Git
+    "Monday": "false"
+    "1": # Git
       # file://./../modules/version_control/git/branching_and_remote_git/index.md
       module: version_control/git/branching_and_remote_git
-    2: # What is CSS
+      technical:
+        - git
+        - git init
+        - git add
+        - git commit 
+        - git branch
+        - git push
+        - git checkout
+      concepts:
+        - Version Control
+        - Git Branches
+    "2": # What is CSS
       # file://./../modules/css/misc/what_is_css/index.md
       module: css/misc/what_is_css
 
-    3: # CSS Selectors
+    "3": # CSS Selectors
       # file://./../modules/css/selectors/css_selectors/index.md
       module: css/selectors/css_selectors
-    4: # Cascade, Inheritance and the Box Model
+    "4": # Cascade, Inheritance and the Box Model
       # file://./../modules/css/misc/cascade_inheritance_box_model/index.md
       module: css/misc/cascade_inheritance_box_model
-    5: 
-      # file://./../modules/css/misc/backgrounds_and_borders/index.md
-      module: css/misc/backgrounds_and_borders
 
 # ---
 

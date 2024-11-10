@@ -14,7 +14,8 @@ title: Bitcoin Wallet
   Copy the code below in a file called: `index.html`
 
   ```html
-  <div class="js"></div>
+  <script src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/js/exercise.pack.js"></script>
+  <link rel="stylesheet" src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/css/exercise.pack.css">
   <div class="wallet">
     <p class="address">
       <strong>Address:</strong>
@@ -64,16 +65,6 @@ title: Bitcoin Wallet
   Copy the code below in a file called: `styles.css`
 
   ```css
-  body {
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffcc66;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-  }
   .wallet {
     width: 400px;
     border: 2px solid gray;
@@ -99,36 +90,6 @@ title: Bitcoin Wallet
     color: black;
     font-style:italic;
   }
-  .js:before{
-    z-index:-1;
-    background: black;
-    content: "";
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    top:0;
-    left:0;
-    width: 100%;
-    height:100%;
-  }
-  .js {
-    width:200px;
-    height:200px;
-    color: white;
-    top:-100px;
-    left:-100px;
-    position: fixed;
-    z-index:10;
-    font-size:2em;
-  }
-  .js:after{
-    content: "JS";
-    position:absolute;
-    bottom:45px;
-    right:45px;
-    font-weight:100;
-  }
-
   ```
   </details>
 

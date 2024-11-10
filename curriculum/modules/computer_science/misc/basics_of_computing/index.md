@@ -6,27 +6,11 @@ title: Onboarding and Basics of Computing
 
   > Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
 
-  Welcome to the first part of our curriculum, WDX 60°. The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these 3 building blocks: HTML, CSS and JavaScript. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
-
-  Before you dive in, **make sure that you have your notebook** and colored pens besides your computer, in order to pause and take those invaluable notes as you move along the curriculum.
-
-  At this point, it's extremely important to let you know that **sharing solutions** on Slack is **not allowed** and will be removed upon first notice. 
-
-  We encourage you to **help and support each other** but in a constructive and helpful manner: guiding other participants towards the right direction by asking questions, providing hints, suggesting alternatives and generally cultivating a problem solving mindset instead of depriving others of the capacity to process a problem by handing them a ready-made solution. 
-
   - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
   - [Study](#study-plan)
   - [Exercises](#exercises)
   - [Extra Resources](#extra-resources)
-
-### Setting up
-
-  **Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack){:target="_blank"}. 
-  
-  This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
-
-  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack){:target="_blank"} and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration){:target="_blank"}. 🙏
 
 ### Study Plan
 
@@ -103,7 +87,7 @@ title: Onboarding and Basics of Computing
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/index.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](../modules/computer_science/misc/hexadecimal/)
 
 ### Summary
 
@@ -113,8 +97,20 @@ title: Onboarding and Basics of Computing
 
   - **Decode the secret message**: watch this [video](https://www.youtube.com/watch?v=OSZOf9pyepc) from an episode of [Silicon Valley](https://www.imdb.com/title/tt2575988/) series and try to find and decode the hidden geeky message.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
-
-  **It is absolutely crucial** at this point to remind you that updating the `Confidence` column in the progress sheets should reflect an honest and accurate self-evaluation score. You should not overestimate nor underestimate your level of confidence. A score that is closer to your real level of confidence will help you and others attend to your real needs and put focus on the parts that need some further knowledge re-enforcement and engagement.
-  
 ### Extra Resources
+
+  - [**Computer Science Crash Course**](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo){:target="_blank"}. 
+    - **Description:** A YouTube playlist that provides an introduction to the history of computers, the basic elements of programming and the basic components of computer hardware.
+    - **Duration:** 8h (40 videos)
+
+  - [Listen: **#How have User Interfaces Evolved?** Kopec Explains Software Podcast](http://kopec.live/episode/39fd279799594649/how-have-uis-evolved-){:target="_blank"}
+    - **Description:** _"Through the history of computing, user interfaces (UIs) have evolved from punch cards to voice interaction. In this episode we track that evolution, discussing each paradigm and the machine that popularized it."_ 
+    - **Duration:** 24min
+    - **Level:** Beginner
+    - [Download in .mp3 format](https://pdcn.co/e/pinecast.com/listen/39fd2797-9959-4649-987e-e61dff48ccc8.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}
+
+  - [Listen: **What is a Character Encoding?** Kopec Explains Software Podcast](http://kopec.live/episode/d8ae81cf7d314abe/what-is-a-character-encoding-){:target="_blank"}
+    - **Description:** _"Computers are not just great for calculating, they’re also great for storing, manipulating, and viewing text. In fact, the majority of the work we do on a computer is “text work.” But, how does a computer actually store text? How is text represented in software? In this episode we dive into the world of character encodings, the way that software represents text."_
+    - **Duration:** 24min
+    - **Level:** Beginner
+    - **Download:** [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/d8ae81cf-7d31-4abe-baf6-0da95eecdcfe.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}

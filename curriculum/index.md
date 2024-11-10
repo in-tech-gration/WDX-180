@@ -37,38 +37,46 @@
   - [**Week 09**: JavaScript Core 3](week09/index.md)
   - [**Week 10**: Web APIs 1: DOM API & Events](week10/index.md)
   - [**Week 11**: Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API](week11/index.md)
-  - [**Week 12**: Project Week: Combine Web APIs to build a web application](#week12/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 12**: Practice Week](week12/index.md)
 
 ### Intermediate: WDX 120°
 
-  - [**Week 13**: JavaScript Intermediate 1 & Git](#week13/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 14**: Functional Programming 1, Templating, JavaScript Frameworks](#week14/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 15**: JavaScript Intermediate 2: Software Patterns & TypeScript](#week15/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more](#week16/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 17**: Node.js 1](#week17/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 18**: Node.js 2 & NoSQL Databases](#week18/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 19**: Data Structures & Algorithms](#week19/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 20**: React 1](#week20/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 21**: React 2, Firebase](#week21/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 22**: React 3, Redux & Tech Interview](#week22/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 23**: Group Project, Tech Interview & Job Hunt](#week23/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 24**: Group Project](#week24/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 13**: Intermediate JavaScript: Promises & Scope (var, let, const)](week13/index.md)
+  - [**Week 14**: Intermediate JavaScript](week14/index.md)
+  - [**Week 15**: Intermediate JavaScript](week15/index.md)
+  - [**Week 16**: Intermediate JavaScript](week16/index.md)
+  - [**Week 17**: Intermediate JavaScript](week17/index.md)
+  - [**Week 18**: Intermediate JavaScript](week18/index.md)
+  - [**Week 19**: Node JS](week19/index.md)
+  - [**Week 20**: Node JS](week20/index.md)
+  - [**Week 21**: React JS](week21/index.md)
+  - [**Week 22**: React JS](week22/index.md)
+  - [**Week 23**: React JS](week23/index.md)
+  - [**Week 24**: React JS](week24/index.md)
 
 ### Advanced: WDX 180°
 
-  - [**Week 25**: JavaScript Advanced 1](#week25/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 26**: JavaScript Advanced 2, TypeScript Advanced](#week26/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 27**: Node.js 3 & Relational Databases](#week27/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 28**: Express.js, REST APIs & GraphQL](#week28/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](#week29/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](#week30/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 31**: Content Management Systems, WordPress, Eleventy & Serverless Architecture](#week31/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 32**: Introduction to AI, Machine Learning & Tensorflow.js](#week32/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 33**: Introduction to Data Science & Danfo.js](#week33/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 34**: Blockchain & Web3](#week34/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 35**: Solo Project](#week35/index.md) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 36**: Solo Project](#week36/index.md) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 25**: Advanced JavaScript](week25/index.md)
+  - [**Week 26**: Advanced JavaScript](week26/index.md)
+  - [**Week 27**: Advanced JavaScript](week27/index.md)
+  - [**Week 28**: Advanced JavaScript](week28/index.md)
+  - [**Week 29**: Advanced JavaScript](week29/index.md)
+  - [**Week 30**: Advanced JavaScript](week30/index.md)
+  - [**Week 31**: Advanced JavaScript](week31/index.md)
+  - [**Week 32**: Advanced JavaScript](week32/index.md)
+  - [**Week 33**: Advanced JavaScript](week33/index.md)
+  - [**Week 34**: Advanced JavaScript](week34/index.md)
+  - [**Week 35**: Advanced JavaScript](week35/index.md)
+  - [**Week 36**: Advanced JavaScript](week36/index.md)
   - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
 
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

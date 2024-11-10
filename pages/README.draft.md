@@ -18,7 +18,7 @@
 
 {{ SGEN:MODULE:curriculum/software.md }}
 
-{{ SGEN:MODULE:curriculum/data_formats.md }}
+{{ SGEN:MODULE:computer_science/misc/data_formats/index.md }}
 
 {{ SGEN:MODULE:curriculum/syllabus.md }}
 
@@ -37,10 +37,11 @@
 - [**Kostas Minaidis** / Technical Curriculum Developer](https://www.linkedin.com/in/kostas-minaidis/)
 - [**Asteris Giannoudis** / Software Development, Content Curator & Accessibility Consultant](https://www.linkedin.com/in/asteris-giannoudis/)
 - [**Gogi A. Hatzichristos** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/gogi-hatzichristos/)
+- [**Leon Kountouras** / Content Curator & Passionate Contributor](https://github.com/leonalkalai/)
 - [**Maria Barkouzou** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/mariabarkouzou/)
 - [**Shariar Shakhawat** / Content Curator & Passionate Contributor](https://www.linkedin.com/in/shariar-shakhawat/)
-- [**Vangelis Chirmpilidis**  / Content Curator & Passionate Contributor](https://github.com/vagelisx)
-- [**Mary Richelle**  / Content Curator & Passionate Contributor](https://github.com/MaryRichelle)
+- [**Vangelis Chirmpilidis** / Content Curator & Passionate Contributor](https://github.com/vagelisx)
+- [**Mary Richelle** / Content Curator & Passionate Contributor](https://github.com/MaryRichelle)
 - [**Evan Cole** / Educational Advisor](https://www.linkedin.com/in/evan-cole/)
 - [**Yoshi Malaise** / Educational Advisor](https://www.linkedin.com/in/yoshi-malaise/)
 - [**How about you?**](#contribute) 😉
@@ -50,8 +51,10 @@ The curriculum draws heavily on the following amazing resources:
 - [**Mozilla Developer Network**](https://developer.mozilla.org/en-US/)
 - [**CodeYourFuture**](https://codeyourfuture.io/about/)
 - [**Codecademy**](https://www.codecademy.com/)
+- [**DeNepo: Open Ed**](https://github.com/denepo/)
 - [**javascript.info** by Ilya Kantor](https://www.linkedin.com/in/iliakan/)
 - [**Kyle Simpson** aka getify, author of ___You Don't know JS___](https://www.linkedin.com/in/getify/)
+- [**LaunchCode Education**](https://github.com/LaunchCodeEducation)
 - [**Dave Gray**](https://www.linkedin.com/in/davidagray/)
 - [**Ruby Monstas**](https://rubymonstas.org/)
 
@@ -71,3 +74,16 @@ The curriculum draws heavily on the following amazing resources:
 Our lovely contributors _(feel free to give them a follow/subscribe/like as a gesture of appreciation)_:
 
 - **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
+- **Maria Karavazaki**: [GitHub](https://github.com/MariaKar1991)
+- [**PlethoraThemes**](https://plethorathemes.com/)
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

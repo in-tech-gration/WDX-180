@@ -208,6 +208,99 @@ function replaceDOMXrefLinks(textContent, fileName) {
 
 }
 
+function replaceJSXrefLinks(textContent, filename) {
+
+  // Thank you ChatGPT! 
+  const glossaryRegex = /\{\{jsxref\("([^"]+)"(?:,\s*"([^"]+)")?\)\}\}/g;
+
+  function replaceGlossary(match, p1, p2) {
+    console.log({ match, p1, p2 });
+    // TODO: Replace MDN domain with local resources/glossary path if available
+    // TODO: Find when Global_Objects path is needed (.../Reference/Global_Objects/...)
+    let baseLink = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/";
+    let link = "";
+
+    // const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
+
+    // TODO: UPDATE TO REFLECT Document/ FOLDER FOR LOCAL OFFLINE FILES
+    if (false && fs.existsSync(glossaryDirectory)) {
+
+      // Count the number of remaining path segments
+      const subfolderCount = filename.split(path.sep).length - 1;
+      const parentPaths = Array.from({ length: subfolderCount }).fill("../").join("");
+      link = `${parentPaths}resources/glossary/${p1}.md`
+      console.log(`Local glossary entry for ${p1} exists.`);
+
+    } else {
+
+      let base = p1;
+      let term = "";
+
+      if (p1.includes(".")) {
+
+        [base, term] = p1.split(".");
+
+        if (term == "prototype") {
+          [base, , term] = p1.split(".");
+        }
+
+        if (term.includes("()")) {
+          term = term.slice(0, -2);
+        }
+
+      }
+
+      if (p1.includes("/")) {
+
+        const dashSplits = p1.split("/");
+
+        if (dashSplits.length === 2) {
+          base = dashSplits[0];
+          term = dashSplits[1];
+        } else {
+          base = dashSplits[0];
+          term = dashSplits.slice(1).join("/");
+        }
+
+        if (term.includes("()")) {
+          term = term.slice(0, -2);
+        }
+
+      }
+
+      if (p1.includes(" ")) {
+
+        [base, term] = p1.split(" ");
+
+        console.log({ base, term });
+
+        base = `${base}_${term}`;
+        term = null;
+
+      }
+
+      if (!p2) {
+        // p2 is undefined, probably need to add 'Global_Objects' to baseLink
+        // TODO: This is not the only case that 'Global_Objects' is added. Need to investigate more
+        baseLink += 'Global_Objects/';
+      }
+      link = term ? `${baseLink}${base}/${term}` : `${baseLink}${base}`;
+
+    }
+
+    const output = `[${p2 ? p2 : p1}](${link}){:target="_blank"}`;
+    return output;
+  }
+
+  if (textContent.match(glossaryRegex)) {
+    ok("Substituted {{JSXRef}} matches successfully");
+    return textContent.replace(glossaryRegex, replaceGlossary);
+  }
+
+  info("\n No {{JSXRef}} matches found on this file");
+  return textContent;
+}
+
 function parseMDNLinks(textContent) {
   const domain = "https://developer.mozilla.org"
   const regex = /\[([^\]]+)\]\((\/en-US\/docs\/[^\)]+)\)/g;
@@ -639,6 +732,7 @@ function parseYariDynamicContent(textContent, fileName) {
   updatedTextContent = parseCSSTerm(updatedTextContent);
   updatedTextContent = parseHTTPStatus(updatedTextContent);
   updatedTextContent = replaceDOMXrefLinks(updatedTextContent);
+  updatedTextContent = replaceJSXrefLinks(updatedTextContent);
   updatedTextContent = parseHTTPHeader(updatedTextContent);
   updatedTextContent = parseEmbedYouTube(updatedTextContent);
   updatedTextContent = parseEmbedGHLiveSample(updatedTextContent);

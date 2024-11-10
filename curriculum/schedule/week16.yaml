@@ -1,23 +1,24 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: Web APIs Part 3
+title: Intermediate JavaScript
+# title: Web APIs Part 3
 schedule: 
   days:
-    1: # Media API
-      # file://./../modules/javascript/
-      module: javascript/
-    2: # Geolocation API
-      # file://./../modules/javascript/
-      module: javascript/
-    3: # Drag and Drop API
-      # file://./../modules/javascript/
-      module: javascript/
-    4: # Canvas API
-      # file://./../modules/javascript/
-      module: javascript/
-    5: # Web Storage API
-      # file://./../modules/javascript/
-      module: javascript/
+    1: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
+    2: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    3: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
+    4: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    5: # 
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
 
 # ---
 

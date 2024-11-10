@@ -1,4 +1,4 @@
-input: curriculum/schedule/weekly.draft.md
+input: curriculum/schedule/week01.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Introduction to the Web and Web Technologies
 schedule: 
@@ -20,6 +20,22 @@ schedule:
       module: javascript/misc/javascript_in_a_day
 
 # ---
+
+# TODO: Integrate our own fork of: https://github.com/in-tech-gration/mothereff.in/
+# Mentioned on Day 2 (https://mothereff.in/binary-ascii)
+
+# TODO: Integrate our own fork of: https://mothereff.in/js-variables on Day 5
+
+# ! FIX BROKEN LINK: ON DAY 2
+# https://in-tech-gration.github.io/WDX-180/curriculum/week01/EXTRAS.md#day-02---internet--the-web
+# > If you want another take on the localhost subject, take a look at the Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP? video found in the Extras <== This one
+
+# TODO: Integrate: Numeric Conversions | Decimal, Binary & Hexadecimal
+# https://www.youtube.com/watch?v=Jy_6odFi3l4 (214 in decimal, binary, hexadecimal)
+
+# TODO: Day 3: Organize your Bookmark bar! HTML > htmlreference.io
+
+# TODO: Day 4: Organize your Bookmark bar! CSS > htmlreference.io
 
 # TODO: Day 5: Integrate: Computer Science Basics: Sequences, Selections, and Loops
 # https://www.youtube.com/watch?v=eSYeHlwDCNA
@@ -69,3 +85,13 @@ schedule:
 
 # The Internet, The Web and HTML for Absolute Beginners
 # https://youtu.be/S6GbPxXdhmI (97min)
+
+# TODO: INTEGRATE? BREAK INTO 2 WEEKS? ADD TO EXTRAS?
+# What is a Protocol? (Deepdive)
+# https://www.youtube.com/watch?v=d-zn-wv4Di8
+# VPNs, Proxies and Secure Tunnels Explained (Deepdive)
+# https://www.youtube.com/watch?v=32KKwgF67Ho
+# Computer Networking (Deepdive)
+# https://www.youtube.com/watch?v=6G14NrjekLQ
+# What is a Server? (Deepdive)
+# https://www.youtube.com/watch?v=VXmvM2QtuMU

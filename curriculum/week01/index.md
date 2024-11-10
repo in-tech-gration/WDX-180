@@ -1,46 +1,93 @@
 ---
-title: Week 1
+title: Week 01 | Introduction to the Web and Web Technologies
 ---
 
-# Week 1
+<hr class="mb-0">
 
-_(Updated: 28/09/2023)_
+<h1 id="{{ Week 01-Introduction to the Web and Web Technologies | slugify }}">
+  <span class="week-prefix">Week 01 |</span> Introduction to the Web and Web Technologies
+</h1>
+
+{{ SGEN:HEADER_IMAGE }}
+
+<div class="week-controls">
+
+  {% assign week_num = 01 | to_integer %}
+
+  <h2 class="week-controls__previous_week">
+
+    {% if week_num > 0 %}
+
+      {% assign previous_week_num = 01 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+    {% endif %}
+
+  </h2>
+
+  <span>Updated: 11/10/2024</span>
+
+  <h2 class="week-controls__next_week">
+
+    {% if week_num <= 36 %}
+
+      {% assign next_week_num = 01 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+    {% endif %}
+
+  </h2>
+
+</div>
+
+---
+
+<!-- BEFORE SECTION:START -->
 
 ![](./assets/colorful.02.png)
 
 **Welcome to the first part of our curriculum, WDX 60°!** 
 
-The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these 3 building blocks: HTML, CSS and JavaScript. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
+The goal of this first part, that will span 60 days, is to give you a basic understanding of how computers and the Internet work, how the World Wide Web _(or Web for short)_ which is built on top of them works and connects people and ideas together through the use of these **3 building blocks: HTML, CSS and JavaScript**. By the end of this part of the course, you'd be able to code in these 3 languages and deploy your websites and web applications on the Web.  
 
 Before you dive in, **make sure that you have your notebook** and colored pens besides your computer, in order to pause and take those invaluable notes as you move along the curriculum.
+
+![](./assets/notebook.png)
 
 At this point, it's extremely important to let you know that **sharing solutions** on Slack is **not allowed** and will be removed upon first notice. 
 
 We encourage you to **help and support each other** but in a constructive and helpful manner: guiding other participants towards the right direction by asking questions, providing hints, suggesting alternatives and generally cultivating a problem solving mindset instead of depriving others of the capacity to process a problem by handing them a ready-made solution. 
 
+### Setting up
+
+**Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack){:target="_blank"}. 
+
+This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
+
+Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack){:target="_blank"} and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration){:target="_blank"}. 🙏
+
 **Let's get started!**
 
-<!-- Week 1 - Day 1 | Onboarding & Basics of Computing -->
-<details markdown="1">
-  <summary><h2>Week 1 - Day 1 | Onboarding & Basics of Computing</h2></summary>
+<!-- BEFORE SECTION:END -->
 
-> Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
+<!-- Week 01 - Day 1 | Onboarding and Basics of Computing -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 01 - Day 1</span> | Onboarding and Basics of Computing</h2>
+  </summary>
 
 ### Schedule
+
+  > Inspirational Quote of the Day: _"If you fail, never give up because F.A.I.L. means FIRST ATTEMPT IN LEARNING"_
+
+
 
   - Welcome Session _(*enrolled students)_
   - Setting up and getting to know each other
   - [Study](#study-plan)
   - [Exercises](#exercises)
   - [Extra Resources](#extra-resources)
-
-### Setting up
-
-  **Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack){:target="_blank"}. 
-  
-  This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
-
-  Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gration/VSCode-WDX-Extension-Pack){:target="_blank"} and subscribe to our [YouTube Channel](https://www.youtube.com/@in-tech-gration){:target="_blank"}. 🙏
 
 ### Study Plan
 
@@ -49,9 +96,9 @@ We encourage you to **help and support each other** but in a constructive and he
   Next, watch the following videos which give a brief introduction to the 0s and 1s that make computers tick. The total duration of these videos is around 31 minutes.
 
   **YouTube Tips - (1) grabbing screenshots and (2) customizing the playback speed:** 
-  
+
   (1) Sometimes you want to easily grab screenshots from particular segments of a video, e.g. a nice diagram, a frame that contains a code sample or a part that contains links. You can install and use [this Chrome extension](https://chrome.google.com/webstore/detail/screenshot-youtube/gjoijpfmdhbjkkgnmahganhoinjjpohk){:target="_blank"} to easily grab a screenshot at any point.  
-  
+
   (2) When watching YouTube videos that are either too slow or too fast for you to follow along, remember these speed shortcuts:
 
   ![](assets/youtube.speed.shortcuts.jpg)
@@ -117,7 +164,7 @@ We encourage you to **help and support each other** but in a constructive and he
     - Duration: 5min
     - Level: Beginner
 
-  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](resources/Hexadecimal/index.md)
+  - [Read: **Positional Notation, Binary, Octal and Hexadecimal numeric systems**](../modules/computer_science/misc/hexadecimal/)
 
 ### Summary
 
@@ -127,10 +174,11 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - **Decode the secret message**: watch this [video](https://www.youtube.com/watch?v=OSZOf9pyepc) from an episode of [Silicon Valley](https://www.imdb.com/title/tt2575988/) series and try to find and decode the hidden geeky message.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d01.csv**
 
-  **It is absolutely crucial** at this point to remind you that updating the `Confidence` column in the progress sheets should reflect an honest and accurate self-evaluation score. You should not overestimate nor underestimate your level of confidence. A score that is closer to your real level of confidence will help you and others attend to your real needs and put focus on the parts that need some further knowledge re-enforcement and engagement.
-  
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
 ### Extra Resources
 
   - [**Computer Science Crash Course**](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo){:target="_blank"}. 
@@ -149,13 +197,18 @@ We encourage you to **help and support each other** but in a constructive and he
     - **Level:** Beginner
     - **Download:** [in .mp3 format](https://pdcn.co/e/pinecast.com/listen/d8ae81cf-7d31-4abe-baf6-0da95eecdcfe.mp3?source=direct&download&ext=asset.mp3){:target="_blank"}
 
+<!-- Sources and Attributions -->
+  
 </details>
 
 <hr class="mt-1">
 
-<!-- Week 1 - Day 2 | How the Internet & the World Wide Web works -->
+<!-- Week 01 - Day 2 | How the Internet & the World Wide Web works -->
 <details markdown="1">
-  <summary><h2>Week 1 - Day 2 | How the Internet & the WWW works</h2></summary>
+  <summary>
+    <h2>
+      <span class="summary-day">Week 01 - Day 2</span> | How the Internet & the World Wide Web works</h2>
+  </summary>
 
 ### Schedule
 
@@ -193,10 +246,10 @@ We encourage you to **help and support each other** but in a constructive and he
   - What are packets?
   - How can a single image be sent through the internet?
   - How to prevent hackers from snooping and tampering websites?
-	- What are security protocols?
+    - What are security protocols?
   - What is public key and private key?
   - What is a spider program?
-	- What is the use of AI/ML to search a page?
+    - What is the use of AI/ML to search a page?
   - What are the technologies that underlay the Web?
 
   **Here's the watch list:**
@@ -221,12 +274,12 @@ We encourage you to **help and support each other** but in a constructive and he
     - Level: Beginner
     - Captions: Yes
 
-  - [Read: **How the Internet works**](resources/How_the_Internet_works/index.md) to get some additional information and another perspective on how the Internet works.
+  - [Read: **How the Internet works**](../modules/computer_science/internet/how_the_internet_works/index.md) to get some additional information and another perspective on how the Internet works.
     - Reading time: 5min
     - Level: Beginner
 
   Before we dive into a more detailed description of the Internet's most interesting part, the Web, let's do a quick recap on how the Internet works by [**watching this short video**](https://www.youtube.com/embed/7_LPdttKXPc?start=29&end=272){:target="_blank"} that summarizes the concepts you've learned so far and contains some really nice visuals that will help you create a mental model of the Internet backbone. 
-  
+
   The nice diagrams that show how devices on the Internet are connected and communicate with each other, along with the [cool animation](https://www.youtube.com/embed/7_LPdttKXPc?start=161&end=176){:target="_blank"} showing how various media files are moved across the Internet as small packets, are a great way to keep these concepts in your mind.
 
   After you've watched the video, **make sure to take a short break**, stretch your legs, arms and neck, give your eyes a break by looking at a distance for at least 20 seconds and briefly describe the main concepts that you've learned to yourself.
@@ -236,16 +289,16 @@ We encourage you to **help and support each other** but in a constructive and he
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:**How the web works**](resources/How_the_web_works/index.md)
+  - [Read:**How the web works**](../modules/computer_science/internet/how_the_web_works/index.md)
     - Level: Beginner
 
-  - [Read: **What is a web server?**](resources/What_is_a_web_server/index.md)
+  - [Read: **What is a web server?**](../modules/computer_science/internet/what_is_a_web_server/index.md)
     - Level: Beginner
 
-  - [Read: **What is a URL?**](resources/What_is_a_URL/index.md)
+  - [Read: **What is a URL?**](../modules/computer_science/internet/what_is_a_url/index.md)
     - Level: Beginner
 
-  - [Read: **What is a Domain Name?**](resources/What_is_a_Domain_Name/index.md)
+  - [Read: **What is a Domain Name?**](../modules/computer_science/internet/what_is_a_domain_name/index.md)
     - Level: Beginner
 
   - [Watch: **What is Localhost? \| Explained**](https://www.youtube.com/watch?v=m98GX51T5dI){:target="_blank"}
@@ -261,10 +314,11 @@ We encourage you to **help and support each other** but in a constructive and he
           </ul>
       </details>
 
-
   If you want another take on the localhost subject, take a look at the `Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?` video found in the [Extras](EXTRAS.md#day-02---internet--the-web)
 
   ---
+
+
   **Practice time!**
 
   Let's take a few minutes to learn more about what `Site Blocking` through localhost really means.
@@ -275,6 +329,8 @@ We encourage you to **help and support each other** but in a constructive and he
   - [How to Edit Hosts File in Linux, Windows, or Mac](https://phoenixnap.com/kb/how-to-edit-hosts-file-in-windows-mac-or-linux){:target="_blank"}
 
   ---
+
+
 
   - [Take the test: **Absolute vs Relative URLs**](exercises/Absolute_vs_Relative_URLs/index.md)
     - Level: Beginner
@@ -303,18 +359,31 @@ We encourage you to **help and support each other** but in a constructive and he
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+<!-- EXERCISES -->
+
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
+  - Watch: [ALOHAnet: Grandfather of All Computer Networks - Computerphile](https://www.youtube.com/watch?v=oKrUGRVwFBI){:target="_blank"}
+
+  - Watch: [Behind the Scenes with your Browser (Scott Hanselman)](https://www.youtube.com/watch?v=CGgTuCH4V6U){:target="_blank"}
+
 #### The Internet & the World Wide Web
+
+
 
   - [**40 maps that explain the internet**](https://www.vox.com/a/internet-maps){:target="_blank"}
 
   - [**The (expansion of the) Internet: 1997 - 2021**](https://www.youtube.com/watch?v=-L1Zs_1VPXA){:target="_blank"} (2min). This video takes you through a journey of the Internet's astonishing growth.
     - Duration: 2min
 
-  - [**How the hyperlink changed everything | TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI){:target="_blank"}
+  - [**How the hyperlink changed everything \| TED series**](https://www.youtube.com/watch?v=3Va3oY8pfSI){:target="_blank"}
     - Duration: 4min
 
   - [Listen: **How does the Internet work?**](http://kopec.live/episode/5a9a3bbb4411493a/how-does-the-internet-work-){:target="_blank"}
@@ -332,9 +401,11 @@ We encourage you to **help and support each other** but in a constructive and he
   - [Watch: **Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP?**](https://www.youtube.com/watch?v=MDu6hWknk70){:target="_blank"}
     - Duration: 5min
 
-  - [Read: **HTTP**](resources/HTTP.md), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/){:target="_blank"}.
+  - [Read: **HTTP**](../modules/computer_science/internet/http/), a nice and simple explanation of the HTTP protocol, written by the [Ruby Monstas](https://rubymonstas.org/){:target="_blank"}.
 
 #### Public Key Cryptography
+
+
 
   - [Watch: **Public key cryptography - Diffie-Hellman Key Exchange (full version)**](https://www.youtube.com/watch?v=YEBfamv-_do){:target="_blank"}
     - Duration: 9min
@@ -342,13 +413,18 @@ We encourage you to **help and support each other** but in a constructive and he
   - [Watch: **How does public key cryptography work – Gary explains**](https://www.youtube.com/watch?v=rLiEA06Bcic){:target="_blank"}
     - Duration: 16min
 
+<!-- Sources and Attributions -->
+  
 </details>
 
 <hr class="mt-1">
 
-<!-- Week 1 - Day 3 | HTML & Markdown -->
+<!-- Week 01 - Day 3 | HTML & Markdown in a Day -->
 <details markdown="1">
-  <summary><h2>Week 1 - Day 3 | HTML & Markdown</h2></summary>
+  <summary>
+    <h2>
+      <span class="summary-day">Week 01 - Day 3</span> | HTML & Markdown in a Day</h2>
+  </summary>
 
 ### Schedule
 
@@ -364,11 +440,11 @@ We encourage you to **help and support each other** but in a constructive and he
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
-  - [Read: **HTML**](resources/HTML.md) to get a quick introduction to HTML. 
+  - [Read: **HTML**](../modules/html/intro/index.md){:target="_blank"} to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/index.md)
+  - [Read: **What will your website look like?**](../modules/html/misc/what_will_your_website_look_like/index.md){:target="_blank"}
 
-  - [Read: **HTML Basics**](resources/HTML_Basics/index.md)
+  - [Read: **HTML Basics**](../modules/html/misc/html_basics/index.md){:target="_blank"}
     - <details>
         <summary>What you'll learn</summary>
         <ul>
@@ -399,7 +475,7 @@ We encourage you to **help and support each other** but in a constructive and he
           <li>HTML Entities</li>
         </ul>
       </details>
-  
+
   Now, that we have a good grasp of HTML, let's learn a little bit about another markup language called **Markdown**, that is going to come in handy in a lot of situations.
 
   - [Read: **Getting Started with Markdown**](https://www.markdownguide.org/getting-started/){:target="_blank"}
@@ -410,9 +486,9 @@ We encourage you to **help and support each other** but in a constructive and he
     - Don't forget to [give it a star](https://github.com/commonmark/commonmark-web){:target="_blank"}!
 
   Now it's a good time to bookmark this really useful website: [**htmlreference.io**](https://htmlreference.io/) is a free online guide to HTML. 
-  
+
   Take a few minutes to browse through some of the available HTML elements, see them in action, check their syntax and the attributes they support. 
-  
+
   Yes, they're quite a few of them (113), but don't worry too much though, as most of the times, you are probably going to need only a handful of them. 
 
 ### Summary
@@ -429,6 +505,8 @@ We encourage you to **help and support each other** but in a constructive and he
 
   ---
 
+
+
   - Complete the following exercises and update the progress CSV files accordingly:
 
   - [Complete: **Parent-Child Relationships** exercise](./exercises/1-parent-child/instructions.md)
@@ -442,7 +520,10 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - [Complete the **Markdown Tutorial** exercise](https://www.markdowntutorial.com/)
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
@@ -476,13 +557,17 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - **MDN:**
     - [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+  
 </details>
 
 <hr class="mt-1">
 
-<!-- Week 1 - Day 4 | CSS -->
+<!-- Week 01 - Day 4 | CSS in a Day -->
 <details markdown="1">
-  <summary><h2>Week 1 - Day 4 | CSS</h2></summary>
+  <summary>
+    <h2>
+      <span class="summary-day">Week 01 - Day 4</span> | CSS in a Day</h2>
+  </summary>
 
 ### Schedule
 
@@ -497,40 +582,46 @@ We encourage you to **help and support each other** but in a constructive and he
   - Introduction to CSS
   - Publishing your website
 
-  - [Read: **CSS Basics**](resources/CSS_Basics/index.md)
-  - [Read: **Publishing your website**](resources/Publishing_your_website/README.md)
+  - [Read: **CSS Basics**](../modules/css/misc/css_basics/index.md){:target="_blank"}
+  - [Read: **Publishing your website**](../modules/html/misc/publishing_your_website/index.md){:target="_blank"}
 
 ### Summary
 
-  Congratulations! You now know how to spice up your HTML using CSS. 
+Congratulations! You now know how to spice up your HTML using CSS. 
 
-  You should by now have a good understanding of how CSS uses various selectors to target HTML elements and apply various CSS rules to them and style them.
+You should by now have a good understanding of how CSS uses various selectors to target HTML elements and apply various CSS rules to them and style them.
 
-  Apart from creating HTML content and styling it with CSS, you also have some insight on how to publish and deploy your web pages on the Internet.
+Apart from creating HTML content and styling it with CSS, you also have some insight on how to publish and deploy your web pages on the Internet.
 
 ### Exercises
 
   **Styling the world's first website**: Visit this [link](https://info.cern.ch/hypertext/WWW/TheProject.html){:target="_blank"} to see the world's first web page created by the inventor of the Web and HTML, [Tim Berners Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee){:target="_blank"}! 
-  
+
   You can use Chrome's `View Source` functionality _(right-click anywhere on the web page to see the option appear)_ to check the source code. As you can see, this is a pretty old HTML standard! 
-  
+
   **Your task is to rewrite the code** of this webpage in modern HTML (v5) and style it using CSS! Once everything is ready, make sure that your code lives under the `user/week01/exercises/day04/cern/` directory, commit and push to submit your solution to your forked repository.
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d04.csv**
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
+<!-- Sources and Attributions -->
+  
 </details>
 
 <hr class="mt-1">
 
-<!-- Week 1 - Day 5 | JavaScript -->
+<!-- Week 01 - Day 5 | JavaScript in a Day -->
 <details markdown="1">
-  <summary><h2>Week 1 - Day 5 | JavaScript</h2></summary>
+  <summary>
+    <h2>
+      <span class="summary-day">Week 01 - Day 5</span> | JavaScript in a Day</h2>
+  </summary>
 
 ### Schedule
 
@@ -548,7 +639,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - How to install the **Live Server** VSCode extension and develop using a local web server
 
-  - [Read: **What is JavaScript?**](resources/What_is_JavaScript/index.md)
+  - [Read: **What is JavaScript?**](../modules/javascript/misc/what_is_javascript/index.md){:target="_blank"}
 
   - [Watch: **JavaScript Tutorial for Beginners: Quick Start**](https://www.youtube.com/watch?v=SajRjc9KKUE){:target="_blank"}
     - Duration: 8min
@@ -576,6 +667,8 @@ We encourage you to **help and support each other** but in a constructive and he
   > _"When we learn to program, thinking of a variable like a box that holds a value is helpful. However, after a while, we realize that a variable cannot hold more than one value, so alternatively, you might think of a variable like a name tag or label you attach to a value."_
   > 
   > Even though, the author also points out that _"Both mental models can exist at the same time and might have benefits in different situations."_ it is recommended to stick with the notion that "a variable in JS is a label that references a value in memory somewhere". This notion also coincides with how programming languages actually work under the hood.
+
+
 
   > **TIP #2:** Wondering if you can use a given string as a variable name in JavaScript? Use [this tool](https://mothereff.in/js-variables) to find out! 
   >
@@ -607,7 +700,11 @@ We encourage you to **help and support each other** but in a constructive and he
   >
   > `const ¯\_(ツ)_/¯ = "Nope`;
 
+
+
   ---
+
+
 
   - [Watch: **Where do I put my JavaScript? How to link Javascript to HTML**](https://www.youtube.com/watch?v=JMy6z1GricM){:target="_blank"}
     - Duration: 8min
@@ -667,9 +764,13 @@ We encourage you to **help and support each other** but in a constructive and he
 
   ---
 
+
+
   **Demo time:** visit this [Codesandbox](https://codesandbox.io/embed/github/kostasx/LearnJavascript/tree/master/resources/youtube/coding.an.interactive.string.length.counter?fontsize=14&hidenavigation=1&theme=dark&view=preview){:target="_blank"} and update the string value (`Hello World!`) to see how the `.length` property of the String data type corresponds to the number of characters found in the String.
 
   ---
+
+
 
   **Template Literals:** Apart from the familiar "double" and 'single' quotes to define a String in JavaScript, there's also the \`backtick\` characters that are used to define a String value. Also, called template literals, this format allows us to define plain text values inside a String along with dynamic values enclosed in a special dollar sign brackes syntax: `${}`:
 
@@ -712,11 +813,17 @@ We encourage you to **help and support each other** but in a constructive and he
 
   ---
 
+
+
   > **What's up with number 42?** You probably see a lot of tutorials and blog posts using number 42 as the value for various examples, and wondering what's the deal with this number. 
   >
   > According to Wikipedia: "The number 42 is, in _The Hitchhiker's Guide to the Galaxy_ by Douglas Adams, the "Answer to the Ultimate Question of Life, the Universe, and Everything", calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years. Unfortunately, no one knows what the question is." [Source](https://en.wikipedia.org/wiki/42_(number)) 
 
+
+
   ---
+
+
 
   - [Watch: **Math Methods and How to Generate a Random Number with JavaScript \| JavaScript Tutorial for Beginners**](https://www.youtube.com/watch?v=vzLdq3b0w3Y){:target="_blank"}
     - Duration: 6min
@@ -932,9 +1039,14 @@ We encourage you to **help and support each other** but in a constructive and he
 
   - Try to solve all the exercises found [here](./exercises/javascript-first-steps/index.md)
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](resources/PROGRESS-WORKFLOW.md).
-  
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week01/progress/progress.draft.w01.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
 ### Extra Resources
+
+  - In case you are wondering whether to place your `<script>` tag inside the `<head>` or the `<body>` tag of the HTML document, this [**live Q&A**](https://youtu.be/NVKPOL8O_YU){:target="_blank"} recording will help answer this common question. Watch the recording to learn how placing the `<script>` tag in different places in your HTML document can affect performance and cause problems with JavaScript programs that need access to the page's HTML content.
 
   In case you want to give JavaScript another go, here is another great introductory playlist by the amazing [Mosh Hamedani](https://codewithmosh.com/){:target="_blank"}:
 
@@ -969,15 +1081,27 @@ We encourage you to **help and support each other** but in a constructive and he
 
 ### Sources and Attributions
 
-  - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4) 
+  - [How to read complex code - Felienne Hermans](https://www.youtube.com/watch?v=GUtfW7SHMc4){:target="_blank"}
+
+  
 </details>
+
 
 <hr class="mt-1">
 
-**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9) before the day ends. Thanks you! 
+**Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
-## Week 1 - Weekend Suggestions
+## Week 01 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
 
+---
 
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

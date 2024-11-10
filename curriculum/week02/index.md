@@ -179,7 +179,7 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/HTML_Basics/index.md). 
+  During Week 1, we covered some of the [basics of HTML](../modules/html/misc/html_basics/). 
   Now, it's time to dive deeper into HTML. 
 
   HTML elements can be distinguished by default into 2 broad categories, **block** and **inline** elements. This fundamental display property of HTML elements, affects their placement on the page and how they stack against each other. 
@@ -496,3 +496,14 @@ _(Updated: 18/09/2023)_
 ## Week 2 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

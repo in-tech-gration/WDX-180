@@ -23,7 +23,7 @@ title: Week 04 | CSS 2 & Performance
 
   </h2>
 
-  <span>Updated: 10/11/2023</span>
+  <span>Updated: 31/10/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -250,6 +250,9 @@ title: Week 04 | CSS 2 & Performance
 
 ### Study Plan
 
+  - [Take a quick CSS refresher test](exercises/day04/quick-CSS-refresher/index.md)
+    - Level: Beginner
+
   - [Read: **Responsive Design**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design){:target="_blank"}
     - Level: Beginner
 
@@ -362,3 +365,14 @@ title: Week 04 | CSS 2 & Performance
 ## Week 04 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

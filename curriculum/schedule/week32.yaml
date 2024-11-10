@@ -1,6 +1,24 @@
----
-title: Introduction to AI, Machine Learning & Tensorflow.js
----
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+# title: "Introduction to AI, Machine Learning & Tensorflow.js"
+title: "Advanced JavaScript"
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
+    2: # More 
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
+    3: # 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
+    4: # 
+      # file://./../modules/generics/live-session-generic.md
+      module: generics/live-session-generic.md
+    5: # 
+      # file://./../modules/generics/study-practice-generic.md
+      module: generics/study-practice-generic.md
 
 # Intro [STUDY]: https://www.youtube.com/playlist?list=PLpQQipWcxwt9MhxXfyadqQPymI54pRXqJ
 # > 8min in total! (Super simple)

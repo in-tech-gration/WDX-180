@@ -1,2 +1,24 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: Node JS
+# title: React 1
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/generics/node-js-generic.md
+      module: generics/node-js-generic.md
+    2: # 
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
+    3: # 
+      # file://./../modules/generics/node-js-generic.md
+      module: generics/node-js-generic.md
+    4: # Tiny Web Server Refactoring: Node.js + CodeSmells
+      # file://./../modules/javascript/nodejs/webserver/refactoring/index.md
+      module: javascript/nodejs/webserver/refactoring/
+
+    5: # 
+      # file://./../modules/generics/node-js-generic.md
+      module: generics/node-js-generic.md
 # REACT:
 # STUDY: How React Works (https://github.com/in-tech-gration/how-react-works)

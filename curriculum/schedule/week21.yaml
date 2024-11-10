@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: React JS
+# title: React 2, Firebase 
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/generics/react-js-generic.md
+      module: generics/react-js-generic.md
+    2: # 
+      # file://./../modules/javascript/frameworks/react/quickstart/part-01.md
+      module: javascript/frameworks/react/quickstart/part-01.md
+    3: # 
+      # file://./../modules/generics/react-js-generic.md
+      module: generics/react-js-generic.md
+    4: # 
+      # file://./../modules/javascript/frameworks/react/quickstart/part-02.md
+      module: javascript/frameworks/react/quickstart/part-02.md
+    5: # 
+      # file://./../modules/generics/react-js-generic.md
+      module: generics/react-js-generic.md

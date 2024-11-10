@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>29.01.2024</h1>
+  <a id="search" href="#">Google</a>
+
+  <!-- Named vs Anonymous event handler -->
+  <script type="stop!">
+    // break the code here with some silly syntax
+    // ....
+    // Other <script>'s will still run!
+    const link = document.querySelector("a#search");
+
+    // + We can re-use!!!
+    // + Clear/clean code
+    // + Easy refactoring
+    // + Can declare anywhere in our scope
+    function handleLinkClick(event){
+      console.log("click(a)")
+    }
+    link.addEventListener("click", handleLinkClick);
+
+    link.removeEventListener("click", handleLinkClick);
+
+    // +Avoid functions in the outer scope
+    // +Keep event handlers "local"
+    const listener = link.addEventListener("click", function clickHandler(event){
+      console.log("anon click(a)", listener);
+      event.preventDefault();
+      event.stopPropagation();
+      // return "A Value that can never be accessed";
+      link.removeEventListener("click", clickHandler);
+    });
+
+  </script>
+
+  <!-- Debugging stopPropagation() -->
+  <!-- Try: stopImmediatePropagation() -->
+  <script type="stop">
+    const link = document.querySelector("a#search");
+    let clickBclicked = false;
+    function clickA(event) {
+      if ( clickBclicked === true ){
+        return;
+      }
+      console.log("a clicked");
+    }
+    function clickB(event) {
+      console.log("b clicked")
+      event.stopPropagation();
+      clickBclicked = true;
+      // break; // Check the error
+      // break clickC; // Check the error
+      // Can we use break;? break is just for loops and labelled statements...
+      // link.removeEventListener("click",clickC);
+      // link.removeEventListener("click",clickA);
+    }
+    function clickC(event) {
+      if ( clickBclicked ){
+        return;
+      }
+      console.log("c clicked");
+    }
+    link.addEventListener("click", clickB);
+    link.addEventListener("click", clickC);
+    link.addEventListener("click", clickA);
+  </script>
+
+  <!-- "this" in relation to event handlers -->
+  <script type="stop">
+    // "this" is a reserved JS keyword
+
+    const link = document.querySelector("#search");
+
+    // 'this' rule #1
+    // [x] Is 'this' found inside an event handler? event handler === 2nd argument to addEventListener
+    // [x] Is this event handler declared with the 'function' keyword? (=== NOT an arrow function)
+    // Then, 'this' refers to the element attached to the .addEventListener
+    // this === event.currentTarget
+    link.addEventListener("click", handleClick);
+
+    function handleClick(event){
+      // const eventListeningEl = event.currentTarget;
+      const eventListeningEl = this;
+      // console.log(event.eventPhase);
+      console.log(this === event.currentTarget);
+      event.preventDefault();
+      eventListeningEl.style.background = "red";
+      // eventListeningEl.removeEventListener()
+    }
+
+    const clicker = function(){
+      console.log(this === event.currentTarget);
+    }
+    link.addEventListener("click", clicker);
+  </script>
+
+  <button id="one">One</button>
+  <button id="two">Two</button>
+  <!-- Using 'this' vs variable for the currentTarget -->
+  <script>
+    "use strict";
+    const oneBtn = document.querySelector("#one");
+    let twoBtn = document.querySelector("#two");
+
+    function colorSwitcher(event){
+      // const eventListeningEl = this;
+      // const eventListeningEl = event.currentTarget;
+      // this.style.background = "green";
+      event.currentTarget.style.background = "indigo";
+    }
+
+    // "this" depends on the CONTEXT
+
+    oneBtn.addEventListener("click", colorSwitcher);
+
+    twoBtn.addEventListener("click", colorSwitcher);
+
+    const xray = console.log;
+
+    function changeColor(event){
+      xray(this); // "#two"
+      // xray(this.getAttribute("id"));
+      const id = this.getAttribute("id");
+      xray({ id });
+      const idSelector = "#" + id;
+      xray({ idSelector });
+      const selector = document.querySelector(idSelector);
+      xray(selector);
+      // twoBtn.style.color = "white";
+      // twoBtn.style.padding = "1rem";
+      this.style.color = "white";
+      this.style.padding = "1rem";
+    }
+
+    twoBtn.addEventListener("click", changeColor);
+
+    // twoBtn === HTMLButtonElement
+    console.log(twoBtn);
+    const second = twoBtn;
+    twoBtn = null;
+    // twoBtn === null
+    console.log(twoBtn);
+
+
+  </script>
+
+  <div>
+    the word button....
+  </div>
+</body>
+
+</html>

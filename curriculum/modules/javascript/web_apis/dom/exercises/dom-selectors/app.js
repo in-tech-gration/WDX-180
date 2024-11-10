@@ -27,6 +27,9 @@ let $exec            = document.querySelector(".number b");
 let $numberWrapper   = document.querySelector(".number");
 $selector.focus();
 
+// INITIALIZE CONFETTI (FROM: EXERCISE PACK)
+wdx_exercisePack.confettiInit();
+
 /* EXERCISE DATA */
 let exercises = [
   {
@@ -144,7 +147,9 @@ function handleInput(elObj){
       $target.style.background = "limegreen";
       $selectorWrapper.style.borderColor = "limegreen";
       // Display Confettis:
-      try { confettis(); } catch (e){}
+      try { window.wdx_exercisePack.confetti(); } catch (e){
+        console.error(e);
+      }
       $selector.removeEventListener( "keyup", handleInput );
     }
   } catch(e){

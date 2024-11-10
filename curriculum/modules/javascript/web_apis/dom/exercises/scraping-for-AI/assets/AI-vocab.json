@@ -1,0 +1,3167 @@
+{
+    "1-N Systems": {
+        "title": "1-N Systems",
+        "content": "Architectures where one input or controller manages multiple outputs or agents, applicable in fields like neural networks and robotics.",
+        "link": "https://www.envisioning.io/vocab/1-n-systems"
+    },
+    "A-B Testing": {
+        "title": "A-B Testing",
+        "content": "Method used to compare two versions of a variable to determine which one performs better in achieving a specific outcome.",
+        "link": "https://www.envisioning.io/vocab/a-b-testing"
+    },
+    "A-Life (Artificial Life)": {
+        "title": "A-Life (Artificial Life)",
+        "content": "Studies the simulation of life processes within computers or synthetic systems to gain insights into biological phenomena.",
+        "link": "https://www.envisioning.io/vocab/a-life-artificial-life"
+    },
+    "ACI (Agent-Computer Interface)": {
+        "title": "ACI (Agent-Computer Interface)",
+        "content": "Systems and methods that enable interactive communication between autonomous agents and computer programs.",
+        "link": "https://www.envisioning.io/vocab/aci-agent-computer-interface"
+    },
+    "ACO (Ant Colony Optimization)": {
+        "title": "ACO (Ant Colony Optimization)",
+        "content": "Probabilistic technique for solving computational problems which can be reduced to finding good paths through graphs, inspired by the behavior of ants seeking paths between their colony and food sources.",
+        "link": "https://www.envisioning.io/vocab/aco-ant-colony-optimization"
+    },
+    "ADAM (Adaptive Moment Estimation)": {
+        "title": "ADAM (Adaptive Moment Estimation)",
+        "content": "Algorithm for gradient-based optimization of stochastic objective functions, widely used in training DL models.",
+        "link": "https://www.envisioning.io/vocab/adam-adaptive-moment-estimation"
+    },
+    "AGI (Artificial General Intelligence)": {
+        "title": "AGI (Artificial General Intelligence)",
+        "content": "AI capable of understanding, learning, and applying knowledge across a wide range of tasks, matching or surpassing human intelligence.",
+        "link": "https://www.envisioning.io/vocab/agi-artificial-general-intelligence"
+    },
+    "AI Effect": {
+        "title": "AI Effect",
+        "content": "Phenomenon where once an AI system can perform a task previously thought to require human intelligence, the task is no longer considered to be a benchmark for intelligence.",
+        "link": "https://www.envisioning.io/vocab/ai-effect"
+    },
+    "AI Governance": {
+        "title": "AI Governance",
+        "content": "Set of policies, principles, and practices that guide the ethical development, deployment, and regulation of artificial intelligence technologies.",
+        "link": "https://www.envisioning.io/vocab/ai-governance"
+    },
+    "AI Watchdog": {
+        "title": "AI Watchdog",
+        "content": "Organizations, frameworks, or systems designed to monitor, regulate, and guide the development and deployment of artificial intelligence technologies to ensure they adhere to ethical standards, legal requirements, and societal expectations.",
+        "link": "https://www.envisioning.io/vocab/ai-watchdog"
+    },
+    "AI Winter": {
+        "title": "AI Winter",
+        "content": "Periods of reduced funding and interest in AI research and development, often due to unmet expectations and lack of significant progress.",
+        "link": "https://www.envisioning.io/vocab/ai-winter"
+    },
+    "ANN (Artificial Neural Networks)": {
+        "title": "ANN (Artificial Neural Networks)",
+        "content": "Computing systems inspired by the biological neural networks that constitute animal brains, designed to progressively improve their performance on tasks by considering examples.",
+        "link": "https://www.envisioning.io/vocab/ann-artificial-neural-networks"
+    },
+    "Autoregressive": {
+        "title": "Autoregressive",
+        "content": "Statistical algorithms used in time series forecasting, where future values are predicted based on a weighted sum of past observations.",
+        "link": "https://www.envisioning.io/vocab/ar-autoregressive"
+    },
+    "ASI (Artificial Super Intelligence)": {
+        "title": "ASI (Artificial Super Intelligence)",
+        "content": "Hypothetical form of AI that surpasses human intelligence across all domains, including creativity, general wisdom, and problem-solving capabilities.",
+        "link": "https://www.envisioning.io/vocab/asi-artificial-super-intelligence"
+    },
+    "ASL (AI Safety Level)": {
+        "title": "ASL (AI Safety Level)",
+        "content": "Tiered system for categorizing the risk levels associated with AI systems to guide their development and deployment responsibly.",
+        "link": "https://www.envisioning.io/vocab/asl-ai-safety-level"
+    },
+    "ASR (Automatic Speech Recognition)": {
+        "title": "ASR (Automatic Speech Recognition)",
+        "content": "Translates spoken language into written text, enabling computers to understand and process human speech.",
+        "link": "https://www.envisioning.io/vocab/asr-automatic-speech-recognition"
+    },
+    "AV (Autonomous Vehicles)": {
+        "title": "AV (Autonomous Vehicles)",
+        "content": "Self-driving cars that combine sensors, algorithms, and software to navigate and drive without human intervention.",
+        "link": "https://www.envisioning.io/vocab/av-autonomous-vehicles"
+    },
+    "Abductive Reasoning": {
+        "title": "Abductive Reasoning",
+        "content": "Form of logical inference that starts with an observation and seeks the simplest and most likely explanation for it.",
+        "link": "https://www.envisioning.io/vocab/abductive-reasoning"
+    },
+    "Ablation": {
+        "title": "Ablation",
+        "content": "Method where components of a neural network are systematically removed or altered to study their impact on the model's performance.",
+        "link": "https://www.envisioning.io/vocab/ablation"
+    },
+    "Abliteration": {
+        "title": "Abliteration",
+        "content": "Technique that uncensors language models by removing alignment restrictions without requiring retraining.",
+        "link": "https://www.envisioning.io/vocab/abliteration"
+    },
+    "Accelerator": {
+        "title": "Accelerator",
+        "content": "Hardware designed to speed up specific types of computations, such as those needed for AI model training and inference.",
+        "link": "https://www.envisioning.io/vocab/accelerator"
+    },
+    "Activation Beacon": {
+        "title": "Activation Beacon",
+        "content": "Method used in LLMs to extend the context window they can process by employing a technique of condensing and streamlining longer text sequences.",
+        "link": "https://www.envisioning.io/vocab/activation-beacon"
+    },
+    "Active Externalism": {
+        "title": "Active Externalism",
+        "content": "Theory that cognitive processes can extend beyond the human mind to include external devices or environments as integral components of thinking.",
+        "link": "https://www.envisioning.io/vocab/active-externalism"
+    },
+    "Active Inference": {
+        "title": "Active Inference",
+        "content": "Theoretical framework in neuroscience and artificial intelligence that describes how agents infer and act to minimize their prediction errors about the state of the world.",
+        "link": "https://www.envisioning.io/vocab/active-inference"
+    },
+    "Adapter Layer": {
+        "title": "Adapter Layer",
+        "content": "Neural network layer used to enable transfer learning by adding small, trainable modules to a pre-trained model, allowing it to adapt to new tasks with minimal additional training.",
+        "link": "https://www.envisioning.io/vocab/adapter-layer"
+    },
+    "Adapter": {
+        "title": "Adapter",
+        "content": "Lightweight, modular component added to a pre-trained model to fine-tune it for specific tasks without altering the original model's parameters significantly.",
+        "link": "https://www.envisioning.io/vocab/adapter"
+    },
+    "Adaptive Problem Solving": {
+        "title": "Adaptive Problem Solving",
+        "content": "The capacity of AI systems to modify their approaches to problem-solving based on new data, feedback, or changing environments, enhancing their efficiency and effectiveness over time.",
+        "link": "https://www.envisioning.io/vocab/adaptive-problem-solving"
+    },
+    "Adversarial Attacks": {
+        "title": "Adversarial Attacks",
+        "content": "Manipulating input data to deceive machine learning models, causing them to make incorrect predictions or classifications.",
+        "link": "https://www.envisioning.io/vocab/adversarial-attacks"
+    },
+    "Adversarial Debiasing": {
+        "title": "Adversarial Debiasing",
+        "content": "ML technique aimed at reducing bias in models by using adversarial training, where one network tries to predict sensitive attributes and another tries to prevent it.",
+        "link": "https://www.envisioning.io/vocab/adversarial-debiasing"
+    },
+    "Adversarial Instructions": {
+        "title": "Adversarial Instructions",
+        "content": "Inputs designed to deceive AI models into making incorrect predictions or decisions, highlighting vulnerabilities in their learning algorithms.",
+        "link": "https://www.envisioning.io/vocab/adversarial-instructions"
+    },
+    "Agent-to-Agent Interaction": {
+        "title": "Agent-to-Agent Interaction",
+        "content": "Communication and cooperation between autonomous agents within a multi-agent system to achieve individual or collective goals.",
+        "link": "https://www.envisioning.io/vocab/agent-to-agent-interaction"
+    },
+    "Agent": {
+        "title": "Agent",
+        "content": "System capable of perceiving its environment through sensors and acting upon that environment to achieve specific goals.",
+        "link": "https://www.envisioning.io/vocab/agent"
+    },
+    "Agentic AI Systems": {
+        "title": "Agentic AI Systems",
+        "content": "Advanced AI capable of making decisions and taking actions autonomously to achieve specific goals, embodying characteristics of agency and decision-making usually associated with humans or animals.",
+        "link": "https://www.envisioning.io/vocab/agentic-ai-systems"
+    },
+    "AlexNet": {
+        "title": "AlexNet",
+        "content": "Deep convolutional neural network that significantly advanced the field of computer vision by winning the ImageNet Large Scale Visual Recognition Challenge in 2012.",
+        "link": "https://www.envisioning.io/vocab/alexnet"
+    },
+    "Algorithm": {
+        "title": "Algorithm",
+        "content": "Step-by-step procedure or formula for solving a problem or performing a task.",
+        "link": "https://www.envisioning.io/vocab/algorithm"
+    },
+    "Algorithmic Bias": {
+        "title": "Algorithmic Bias",
+        "content": "Systematic and unfair discrimination embedded in the outcomes of algorithms, often reflecting prejudices present in the training data or design process.",
+        "link": "https://www.envisioning.io/vocab/algorithmic-bias"
+    },
+    "Alignment": {
+        "title": "Alignment",
+        "content": "Process of ensuring that an AI system's goals and behaviors are consistent with human values and ethics.",
+        "link": "https://www.envisioning.io/vocab/alignment"
+    },
+    "AmI (Ambient Intelligence)": {
+        "title": "AmI (Ambient Intelligence)",
+        "content": "Electronic environments that are sensitive, adaptive, and responsive to the presence of people, aiming to enhance the quality of life through seamless integration of technology.",
+        "link": "https://www.envisioning.io/vocab/ami-ambient-intelligence"
+    },
+    "Anomaly Detection": {
+        "title": "Anomaly Detection",
+        "content": "Process of identifying unusual patterns that deviate from expected behavior, often used to detect fraud, network intrusions, or unusual transactions.",
+        "link": "https://www.envisioning.io/vocab/anomaly-detection"
+    },
+    "Artefactual Autopoiesis": {
+        "title": "Artefactual Autopoiesis",
+        "content": "Design and creation of artificial systems capable of self-maintenance and reproduction, mirroring the autopoietic characteristics of living organisms.",
+        "link": "https://www.envisioning.io/vocab/artefactual-autopoiesis"
+    },
+    "Assistant": {
+        "title": "Assistant",
+        "content": "Software system designed to perform tasks or services for an individual, often leveraging NLP and ML to interact and respond intelligently.",
+        "link": "https://www.envisioning.io/vocab/assistant"
+    },
+    "Attention Matrix": {
+        "title": "Attention Matrix",
+        "content": "Component in attention mechanisms of neural networks that determines the importance of each element in a sequence relative to others, allowing the model to focus on relevant parts of the input when generating outputs.",
+        "link": "https://www.envisioning.io/vocab/attention-matrix"
+    },
+    "Attention Mechanisms": {
+        "title": "Attention Mechanisms",
+        "content": "Dynamically prioritize certain parts of input data over others, enabling models to focus on relevant information when processing complex data sequences.",
+        "link": "https://www.envisioning.io/vocab/attention-mechanisms"
+    },
+    "Attention Network": {
+        "title": "Attention Network",
+        "content": "Type of neural network that dynamically focuses on specific parts of the input data, enhancing the performance of tasks like language translation, image recognition, and more.",
+        "link": "https://www.envisioning.io/vocab/attention-network"
+    },
+    "Attention Pattern": {
+        "title": "Attention Pattern",
+        "content": "Mechanism that selectively focuses on certain parts of the input data to improve processing efficiency and performance outcomes.",
+        "link": "https://www.envisioning.io/vocab/attention-pattern"
+    },
+    "Attention Projection Matrix": {
+        "title": "Attention Projection Matrix",
+        "content": "Matrix used in attention mechanisms within neural networks, particularly in transformer models, to project input vectors into query, key, and value vectors.",
+        "link": "https://www.envisioning.io/vocab/attention-projection-matrix"
+    },
+    "Attention": {
+        "title": "Attention",
+        "content": "Refers to mechanisms that allow models to dynamically focus on specific parts of input data, enhancing the relevance and context-awareness of the processing.",
+        "link": "https://www.envisioning.io/vocab/attention"
+    },
+    "Attestation": {
+        "title": "Attestation",
+        "content": "Process of verifying the integrity and authenticity of hardware, software, or data.",
+        "link": "https://www.envisioning.io/vocab/attestation"
+    },
+    "AutoGPT": {
+        "title": "AutoGPT",
+        "content": "Autonomous AI agent that uses GPT-4 to generate prompts for itself, enabling it to complete tasks with minimal human intervention.",
+        "link": "https://www.envisioning.io/vocab/autogpt"
+    },
+    "AutoML (Automated Machine Learning)": {
+        "title": "AutoML (Automated Machine Learning)",
+        "content": "Streamlines the process of applying ML by automating the tasks of selecting the appropriate algorithms and tuning their hyperparameters.",
+        "link": "https://www.envisioning.io/vocab/automl-automated-machine-learning"
+    },
+    "Autocomplete": {
+        "title": "Autocomplete",
+        "content": "Feature in software applications that predicts and suggests possible completions for a user’s input, such as text or code, based on partial input data.",
+        "link": "https://www.envisioning.io/vocab/autocomplete"
+    },
+    "Autoencoder": {
+        "title": "Autoencoder",
+        "content": "Type of artificial neural network used to learn efficient codings of unlabeled data, typically for the purpose of dimensionality reduction or feature learning.",
+        "link": "https://www.envisioning.io/vocab/autoencoder"
+    },
+    "Autograd": {
+        "title": "Autograd",
+        "content": "Automatic differentiation system embedded within various ML frameworks that facilitates the computation of gradients, which are crucial for optimizing models during training.",
+        "link": "https://www.envisioning.io/vocab/autograd"
+    },
+    "Autonomous Agents": {
+        "title": "Autonomous Agents",
+        "content": "Systems capable of independent action in dynamic, unpredictable environments to achieve designated objectives.",
+        "link": "https://www.envisioning.io/vocab/autonomous-agents"
+    },
+    "Autonomous Learning": {
+        "title": "Autonomous Learning",
+        "content": "Systems capable of learning and adapting their strategies or knowledge without human intervention, based on their interactions with the environment.",
+        "link": "https://www.envisioning.io/vocab/autonomous-learning"
+    },
+    "Autonomous Reasoning": {
+        "title": "Autonomous Reasoning",
+        "content": "Capacity of AI systems to make independent decisions or draw conclusions based on logic or data without human intervention.",
+        "link": "https://www.envisioning.io/vocab/autonomous-reasoning"
+    },
+    "Autopoiesis": {
+        "title": "Autopoiesis",
+        "content": "Systems capable of reproducing and maintaining themselves by regulating their internal environment in response to external conditions.",
+        "link": "https://www.envisioning.io/vocab/autopoiesis"
+    },
+    "Autoregressive Generation": {
+        "title": "Autoregressive Generation",
+        "content": "Method where the prediction of the next output in a sequence is based on the previously generated outputs.",
+        "link": "https://www.envisioning.io/vocab/autoregressive-generation"
+    },
+    "BCI (Brain Computer Interface)": {
+        "title": "BCI (Brain Computer Interface)",
+        "content": "Enables direct communication pathways between the brain and external devices, allowing for control of computers or prosthetics with neural activity.",
+        "link": "https://www.envisioning.io/vocab/bci-brain-computer-interface"
+    },
+    "BERT (Bidirectional Encoder Representations from Transformers)": {
+        "title": "BERT (Bidirectional Encoder Representations from Transformers)",
+        "content": "Deep Learning model for NLP that significantly improves the understanding of context and the meaning of words in sentences by analyzing text bidirectionally.",
+        "link": "https://www.envisioning.io/vocab/bert-bidirectional-encoder-representations-from-transformers"
+    },
+    "BNN (Bispectral Neural Networks)": {
+        "title": "BNN (Bispectral Neural Networks)",
+        "content": "Utilize higher-order spectral features for improved signal processing and pattern recognition tasks, enhancing traditional neural network capabilities.",
+        "link": "https://www.envisioning.io/vocab/bnn-bispectral-neural-networks"
+    },
+    "BNNs (Biological Neural Networks)": {
+        "title": "BNNs (Biological Neural Networks)",
+        "content": "Complex networks of neurons found in biological organisms, responsible for processing and transmitting information through electrical and chemical signals.",
+        "link": "https://www.envisioning.io/vocab/bnns-biological-neural-networks"
+    },
+    "BQL (Binary Quantization Learning)": {
+        "title": "BQL (Binary Quantization Learning)",
+        "content": "ML method that aims to reduce model complexity and computational cost by quantizing weights and activations to binary values.",
+        "link": "https://www.envisioning.io/vocab/bql-binary-quantization-learning"
+    },
+    "Backpropagation": {
+        "title": "Backpropagation",
+        "content": "Algorithm used for training artificial neural networks, crucial for optimizing the weights to minimize error between predicted and actual outcomes.",
+        "link": "https://www.envisioning.io/vocab/backpropagation"
+    },
+    "Bagging": {
+        "title": "Bagging",
+        "content": "ML ensemble technique that improves the stability and accuracy of machine learning algorithms by combining multiple models trained on different subsets of the same data set.",
+        "link": "https://www.envisioning.io/vocab/bagging"
+    },
+    "Base Model": {
+        "title": "Base Model",
+        "content": "Pre-trained AI model that serves as a starting point for further training or adaptation on specific tasks or datasets.",
+        "link": "https://www.envisioning.io/vocab/base-model"
+    },
+    "Bayesian Inference": {
+        "title": "Bayesian Inference",
+        "content": "Method of statistical inference in which Bayes' theorem is used to update the probability estimate for a hypothesis as more evidence or information becomes available.",
+        "link": "https://www.envisioning.io/vocab/bayesian-inference"
+    },
+    "Bayesian Network": {
+        "title": "Bayesian Network",
+        "content": "Graphical model that represents probabilistic relationships among variables using directed acyclic graphs (DAGs).",
+        "link": "https://www.envisioning.io/vocab/bayesian-network"
+    },
+    "Bayesian Optimization": {
+        "title": "Bayesian Optimization",
+        "content": "Strategy for optimizing complex, expensive-to-evaluate functions by building a probabilistic model of the function and using it to select the most promising points to evaluate.",
+        "link": "https://www.envisioning.io/vocab/bayesian-optimization"
+    },
+    "Bellman Equation": {
+        "title": "Bellman Equation",
+        "content": "Recursive formula used to find the optimal policy in decision-making processes, particularly in the context of dynamic programming and RL.",
+        "link": "https://www.envisioning.io/vocab/bellman-equation"
+    },
+    "Benchmark": {
+        "title": "Benchmark",
+        "content": "Standard or set of standards used to measure and compare the performance of algorithms, models, or systems.",
+        "link": "https://www.envisioning.io/vocab/benchmark"
+    },
+    "Bias-Variance Dilemma": {
+        "title": "Bias-Variance Dilemma",
+        "content": "Fundamental problem in supervised ML that involves a trade-off between a model’s ability to minimize error due to bias and error due to variance.",
+        "link": "https://www.envisioning.io/vocab/bias-variance-dilemma"
+    },
+    "Bias": {
+        "title": "Bias",
+        "content": "Systematic errors in data or algorithms that create unfair outcomes, such as privileging one arbitrary group of users over others.",
+        "link": "https://www.envisioning.io/vocab/bias"
+    },
+    "Biocomputer": {
+        "title": "Biocomputer",
+        "content": "Computational system that uses biological molecules, such as DNA and proteins, to perform data processing and storage tasks.",
+        "link": "https://www.envisioning.io/vocab/biocomputer"
+    },
+    "Black Box": {
+        "title": "Black Box",
+        "content": "System or model whose internal workings are not visible or understandable to the user, only the input and output are known.",
+        "link": "https://www.envisioning.io/vocab/black-box"
+    },
+    "Blind Alley": {
+        "title": "Blind Alley",
+        "content": "Situation in problem-solving where a path or strategy leads nowhere, offering no further possibilities for progress or solution.",
+        "link": "https://www.envisioning.io/vocab/blind-alley"
+    },
+    "BoW (Bag-of-Words)": {
+        "title": "BoW (Bag-of-Words)",
+        "content": "Text representation technique used in NLP to simplify text content by treating it as an unordered set of words.",
+        "link": "https://www.envisioning.io/vocab/bow-bag-of-words"
+    },
+    "Boltzmann Machine": {
+        "title": "Boltzmann Machine",
+        "content": "Stochastic recurrent neural network used to learn and represent complex probability distributions over binary variables.",
+        "link": "https://www.envisioning.io/vocab/boltzmann-machine"
+    },
+    "Boosting": {
+        "title": "Boosting",
+        "content": "ML ensemble technique that combines multiple weak learners to form a strong learner, aiming to improve the accuracy of predictions.",
+        "link": "https://www.envisioning.io/vocab/boosting"
+    },
+    "Brain Organoid Reservoir Computing": {
+        "title": "Brain Organoid Reservoir Computing",
+        "content": "Combines the use of brain organoids—3D cultures of human brain cells—with reservoir computing principles to create advanced computational models for studying neural dynamics and intelligence.",
+        "link": "https://www.envisioning.io/vocab/brain-organoid-reservoir-computing"
+    },
+    "Brainoware": {
+        "title": "Brainoware",
+        "content": "AI systems designed to emulate the functions and processes of the human brain, focusing on cognitive and neural-inspired computing.",
+        "link": "https://www.envisioning.io/vocab/brainoware"
+    },
+    "Branching Factor": {
+        "title": "Branching Factor",
+        "content": "Number of possible actions or moves that can be taken from any given point in a decision-making process, such as in game trees or search algorithms.",
+        "link": "https://www.envisioning.io/vocab/branching-factor"
+    },
+    "Brute Force": {
+        "title": "Brute Force",
+        "content": "Straightforward problem-solving approach that systematically enumerates all possible candidates to find a solution.",
+        "link": "https://www.envisioning.io/vocab/brute-force"
+    },
+    "C2PA (Coalition for Content Provenance and Authenticity)": {
+        "title": "C2PA (Coalition for Content Provenance and Authenticity)",
+        "content": "Initiative focused on establishing industry standards for authenticating digital media content to combat misinformation and ensure content provenance.",
+        "link": "https://www.envisioning.io/vocab/c2pa-coalition-for-content-provenance-and-authenticity"
+    },
+    "CD (Contrastive Divergence)": {
+        "title": "CD (Contrastive Divergence)",
+        "content": "Algorithm used to approximate the gradient of the log-likelihood for training probabilistic models.",
+        "link": "https://www.envisioning.io/vocab/cd-contrastive-divergence"
+    },
+    "CLI (Command Line Interface)": {
+        "title": "CLI (Command Line Interface)",
+        "content": "Text-based user interface used to interact with software or operating systems through commands, rather than graphical elements.",
+        "link": "https://www.envisioning.io/vocab/cli-command-line-interface"
+    },
+    "CLIP (Contrastive Language–Image Pre-training)": {
+        "title": "CLIP (Contrastive Language–Image Pre-training)",
+        "content": "Machine learning model developed by OpenAI that learns visual concepts from natural language descriptions, enabling it to understand images in a manner aligned with textual descriptions.",
+        "link": "https://www.envisioning.io/vocab/clip-contrastive-language-image-pre-training"
+    },
+    "CNN (Convolutional Neural Network)": {
+        "title": "CNN (Convolutional Neural Network)",
+        "content": "Deep learning algorithm that can capture spatial hierarchies in data, particularly useful for image and video recognition tasks.",
+        "link": "https://www.envisioning.io/vocab/cnn-convolutional-neural-network"
+    },
+    "CSPs (Constraint Satisfaction Problems)": {
+        "title": "CSPs (Constraint Satisfaction Problems)",
+        "content": "Mathematical problems defined by a set of variables, a domain of values for each variable, and a set of constraints specifying allowable combinations of values.",
+        "link": "https://www.envisioning.io/vocab/csps-constraint-satisfaction-problems"
+    },
+    "CUDA (Compute Unified Device Architecture)": {
+        "title": "CUDA (Compute Unified Device Architecture)",
+        "content": "Parallel computing platform and application programming interface (API) that allows software developers and software engineers to use a graphics processing unit (GPU) for general purpose processing.",
+        "link": "https://www.envisioning.io/vocab/cuda-compute-unified-device-architecture"
+    },
+    "Capability Control": {
+        "title": "Capability Control",
+        "content": "Strategies and mechanisms implemented to ensure that AI systems act within desired limits, preventing them from performing actions that are undesired or harmful to humans.",
+        "link": "https://www.envisioning.io/vocab/capability-control"
+    },
+    "Capability Ladder": {
+        "title": "Capability Ladder",
+        "content": "Conceptual framework used to describe the progression of an AI system's abilities from simple, specific tasks to complex, general tasks.",
+        "link": "https://www.envisioning.io/vocab/capability-ladder"
+    },
+    "Capsule Network": {
+        "title": "Capsule Network",
+        "content": "Type of artificial neural network that aims to more accurately model hierarchical relationships and spatial information in visual data by using groups of neurons called capsules.",
+        "link": "https://www.envisioning.io/vocab/capsule-network"
+    },
+    "Capsule Networks": {
+        "title": "Capsule Networks",
+        "content": "Type of artificial neural network designed to improve the processing of spatial hierarchical information by encoding data into small groups of neurons called capsules.",
+        "link": "https://www.envisioning.io/vocab/capsule-networks"
+    },
+    "Catastrophic Forgetting": {
+        "title": "Catastrophic Forgetting",
+        "content": "Phenomenon where a neural network forgets previously learned information upon learning new data.",
+        "link": "https://www.envisioning.io/vocab/catastrophic-forgetting"
+    },
+    "Categorical Deep Learning": {
+        "title": "Categorical Deep Learning",
+        "content": "Application of DL techniques to analyze and predict categorical data, which includes discrete and typically non-numeric values that represent categories or classes.",
+        "link": "https://www.envisioning.io/vocab/categorical-deep-learning"
+    },
+    "Causal Inference": {
+        "title": "Causal Inference",
+        "content": "Process of determining the cause-and-effect relationship between variables.",
+        "link": "https://www.envisioning.io/vocab/causal-inference"
+    },
+    "Centaur": {
+        "title": "Centaur",
+        "content": "Collaborative system where humans and AI work together, combining human intuition and expertise with AI's computational power and data processing capabilities.",
+        "link": "https://www.envisioning.io/vocab/centaur"
+    },
+    "ChatGPT": {
+        "title": "ChatGPT",
+        "content": "Advanced conversational AI model developed by OpenAI based on the GPT architecture, designed to generate human-like text responses.",
+        "link": "https://www.envisioning.io/vocab/chatgpt"
+    },
+    "Chatbot": {
+        "title": "Chatbot",
+        "content": "Software application designed to simulate conversation with human users, often over the Internet.",
+        "link": "https://www.envisioning.io/vocab/chatbot"
+    },
+    "Cherry Picking": {
+        "title": "Cherry Picking",
+        "content": "Practice of selectively choosing the most favorable results from multiple outputs generated by an algorithm, often used to present the algorithm in a better light.",
+        "link": "https://www.envisioning.io/vocab/cherry-picking"
+    },
+    "Chinchilla Scaling": {
+        "title": "Chinchilla Scaling",
+        "content": "Strategy in training LLMs that optimizes the ratio of model size to training data size.",
+        "link": "https://www.envisioning.io/vocab/chinchilla-scaling"
+    },
+    "Chunking Strategy": {
+        "title": "Chunking Strategy",
+        "content": "Method of grouping similar pieces of information together to simplify processing and enhance memory performance.",
+        "link": "https://www.envisioning.io/vocab/chunking-strategy"
+    },
+    "Classification": {
+        "title": "Classification",
+        "content": "Supervised learning task in ML where the goal is to assign input data to one of several predefined categories.",
+        "link": "https://www.envisioning.io/vocab/classification"
+    },
+    "Classifier": {
+        "title": "Classifier",
+        "content": "ML model that categorizes data into predefined classes.",
+        "link": "https://www.envisioning.io/vocab/classifier"
+    },
+    "Clustering": {
+        "title": "Clustering",
+        "content": "Unsupervised learning method used to group a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups.",
+        "link": "https://www.envisioning.io/vocab/clustering"
+    },
+    "Co-Pilot": {
+        "title": "Co-Pilot",
+        "content": "System designed to assist humans in various tasks by offering suggestions, automating routine tasks, and enhancing decision-making processes.",
+        "link": "https://www.envisioning.io/vocab/co-pilot"
+    },
+    "CoT (Chain of Thought)": {
+        "title": "CoT (Chain of Thought)",
+        "content": "Reasoning method employed in AI that mimics human-like thought processes to solve complex problems by breaking them down into a series of simpler, interconnected steps.",
+        "link": "https://www.envisioning.io/vocab/cot-chain-of-thought"
+    },
+    "Cognitive Architecture": {
+        "title": "Cognitive Architecture",
+        "content": "A theory or model that outlines the underlying structure and mechanisms of the human mind or AI systems, guiding the integration of various cognitive processes.",
+        "link": "https://www.envisioning.io/vocab/cognitive-architecture"
+    },
+    "Cognitive Computing": {
+        "title": "Cognitive Computing",
+        "content": "Computer systems that simulate human thought processes to solve complex problems.",
+        "link": "https://www.envisioning.io/vocab/cognitive-computing"
+    },
+    "Cognitive Flexibility": {
+        "title": "Cognitive Flexibility",
+        "content": "Mental ability to switch between thinking about two different concepts, or to think about multiple concepts simultaneously.",
+        "link": "https://www.envisioning.io/vocab/cognitive-flexibility"
+    },
+    "Collaborative Intelligence": {
+        "title": "Collaborative Intelligence",
+        "content": "Synergy between human intelligence and AI to achieve outcomes neither could accomplish alone.",
+        "link": "https://www.envisioning.io/vocab/collaborative-intelligence"
+    },
+    "Complex Interaction": {
+        "title": "Complex Interaction",
+        "content": "Intricate, multi-layered exchanges or behaviors between components of an AI system, or between the AI system and its environment, which may involve non-linear dynamics and feedback loops.",
+        "link": "https://www.envisioning.io/vocab/complex-interaction"
+    },
+    "Composability": {
+        "title": "Composability",
+        "content": "Design feature in software systems that allows different components to be selected and assembled in various combinations to satisfy specific user requirements.",
+        "link": "https://www.envisioning.io/vocab/composability"
+    },
+    "Compositional Reasoning": {
+        "title": "Compositional Reasoning",
+        "content": "Cognitive process of understanding complex concepts or systems by breaking them down into their constituent parts and understanding the relationships between these parts.",
+        "link": "https://www.envisioning.io/vocab/compositional-reasoning"
+    },
+    "Computational Creativity": {
+        "title": "Computational Creativity",
+        "content": "The study and building of software and algorithms that exhibit behaviors deemed creative in humans, such as generating original artwork, music, or solving problems in unique ways.",
+        "link": "https://www.envisioning.io/vocab/computational-creativity"
+    },
+    "Compute Efficiency": {
+        "title": "Compute Efficiency",
+        "content": "Effective use of computational resources to maximize performance and minimize waste.",
+        "link": "https://www.envisioning.io/vocab/compute-efficiency"
+    },
+    "Compute": {
+        "title": "Compute",
+        "content": "Processing power and resources required to run AI algorithms and models.",
+        "link": "https://www.envisioning.io/vocab/compute"
+    },
+    "Conditional Generation": {
+        "title": "Conditional Generation",
+        "content": "Process where models produce output based on specified conditions or constraints.",
+        "link": "https://www.envisioning.io/vocab/conditional-generation"
+    },
+    "Conditional Probability": {
+        "title": "Conditional Probability",
+        "content": "Measures the likelihood of an event occurring, given that another event has already occurred.",
+        "link": "https://www.envisioning.io/vocab/conditional-probability"
+    },
+    "Confidential Computing": {
+        "title": "Confidential Computing",
+        "content": "Security measure that protects data in use by performing computation in a hardware-based environment, preventing unauthorized access or visibility even if the system is compromised.",
+        "link": "https://www.envisioning.io/vocab/confidential-computing"
+    },
+    "Confusion Matrix": {
+        "title": "Confusion Matrix",
+        "content": "Table used to evaluate the performance of a classification model by visualizing its true versus predicted values.",
+        "link": "https://www.envisioning.io/vocab/confusion-matrix"
+    },
+    "Connectionist AI": {
+        "title": "Connectionist AI",
+        "content": "Set of computational models in AI that simulate the human brain's network of neurons to process information and learn from data.",
+        "link": "https://www.envisioning.io/vocab/connectionist-ai"
+    },
+    "Constitutional AI": {
+        "title": "Constitutional AI",
+        "content": "Development of foundational principles and regulations that govern the design, deployment, and operation of AI systems to ensure they adhere to ethical standards, human rights, and democratic values.",
+        "link": "https://www.envisioning.io/vocab/constitutional-ai"
+    },
+    "Context Window": {
+        "title": "Context Window",
+        "content": "Predefined span of text surrounding a specific word or phrase that algorithms analyze to determine its meaning, relevance, or relationship with other words.",
+        "link": "https://www.envisioning.io/vocab/context-window"
+    },
+    "Continual Pre-Training": {
+        "title": "Continual Pre-Training",
+        "content": "Process of incrementally training a pre-trained ML model on new data or tasks to update its knowledge without forgetting previously learned information.",
+        "link": "https://www.envisioning.io/vocab/continual-pre-training"
+    },
+    "Continuous Learning": {
+        "title": "Continuous Learning",
+        "content": "Systems and models that learn incrementally from a stream of data, updating their knowledge without forgetting previous information.",
+        "link": "https://www.envisioning.io/vocab/continuous-learning"
+    },
+    "Contrastive Learning": {
+        "title": "Contrastive Learning",
+        "content": "ML technique used primarily in unsupervised learning that improves model performance by teaching the model to distinguish between similar and dissimilar data points.",
+        "link": "https://www.envisioning.io/vocab/contrastive-learning"
+    },
+    "Control Problem": {
+        "title": "Control Problem",
+        "content": "Challenge of ensuring that highly advanced AI systems act in alignment with human values and intentions.",
+        "link": "https://www.envisioning.io/vocab/control-problem"
+    },
+    "Control Vector": {
+        "title": "Control Vector",
+        "content": "Computational mechanism used in AI models to adjust certain characteristics of the model's outputs based on specific parameters or conditions.",
+        "link": "https://www.envisioning.io/vocab/control-vector"
+    },
+    "ControlNet": {
+        "title": "ControlNet",
+        "content": "Neural network architecture designed to add spatial conditioning controls to diffusion models, enabling precise manipulation without altering the original model's integrity.",
+        "link": "https://www.envisioning.io/vocab/controlnet"
+    },
+    "Convergence": {
+        "title": "Convergence",
+        "content": "The point at which an algorithm or learning process stabilizes, reaching a state where further iterations or data input do not significantly alter its outcome.",
+        "link": "https://www.envisioning.io/vocab/convergence"
+    },
+    "Convergent Learning": {
+        "title": "Convergent Learning",
+        "content": "Process by which a ML model consistently arrives at the same solution or prediction given the same input data, despite variations in initial conditions or configurations.",
+        "link": "https://www.envisioning.io/vocab/convergent-learning"
+    },
+    "Cosine Similarity": {
+        "title": "Cosine Similarity",
+        "content": "Measures the cosine of the angle between two vectors in a multidimensional space, often used to determine how similar two items are.",
+        "link": "https://www.envisioning.io/vocab/cosine-similarity"
+    },
+    "Counterfactual Explanations": {
+        "title": "Counterfactual Explanations",
+        "content": "Statements or scenarios that explain how a different outcome could have been achieved by altering specific inputs or conditions in an AI system.",
+        "link": "https://www.envisioning.io/vocab/counterfactual-explanations"
+    },
+    "Counterfactual Fairness": {
+        "title": "Counterfactual Fairness",
+        "content": "ML concept that ensures decisions remain fair by being unaffected by sensitive attributes, such as race or gender, in hypothetical scenarios where these attributes are altered.",
+        "link": "https://www.envisioning.io/vocab/counterfactual-fairness"
+    },
+    "Covariance": {
+        "title": "Covariance",
+        "content": "How much two random variables change together",
+        "link": "https://www.envisioning.io/vocab/covariance"
+    },
+    "Criteria Drift": {
+        "title": "Criteria Drift",
+        "content": "Phenomenon where the criteria used to evaluate a ML model change over time, leading to a potential decline in the model's performance.",
+        "link": "https://www.envisioning.io/vocab/criteria-drift"
+    },
+    "Cross Validation": {
+        "title": "Cross Validation",
+        "content": "Statistical method used to estimate the skill of ML models on unseen data by partitioning the original dataset into a training set to train the model and a test set to evaluate it.",
+        "link": "https://www.envisioning.io/vocab/cross-validation"
+    },
+    "Cross entropy loss": {
+        "title": "Cross entropy loss",
+        "content": "Loss function used to measure the difference between two probability distributions for a given random variable or set of events.",
+        "link": "https://www.envisioning.io/vocab/cross-entropy-loss"
+    },
+    "Cross-Attention": {
+        "title": "Cross-Attention",
+        "content": "Mechanism in neural networks that allows the model to weigh and integrate information from different input sources dynamically.",
+        "link": "https://www.envisioning.io/vocab/cross-attention"
+    },
+    "Cross-Domain Competency": {
+        "title": "Cross-Domain Competency",
+        "content": "Ability of an AI system to understand, learn, and apply knowledge and skills across multiple, varied domains or areas of expertise.",
+        "link": "https://www.envisioning.io/vocab/cross-domain-competency"
+    },
+    "Custom Instructions": {
+        "title": "Custom Instructions",
+        "content": "Directives or rules provided by users to AI systems, tailoring the AI's responses or behaviors to specific needs or contexts.",
+        "link": "https://www.envisioning.io/vocab/custom-instructions"
+    },
+    "Cybernetics": {
+        "title": "Cybernetics",
+        "content": "Interdisciplinary study of control and communication in living organisms and machines.",
+        "link": "https://www.envisioning.io/vocab/cybernetics"
+    },
+    "DAG (Directed Acyclic Graphs)": {
+        "title": "DAG (Directed Acyclic Graphs)",
+        "content": "Graph that consists of vertices connected by edges, with the directionality from one vertex to another and no possibility of forming a cycle.",
+        "link": "https://www.envisioning.io/vocab/dag-directed-acyclic-graphs"
+    },
+    "DL (Deep Learning)": {
+        "title": "DL (Deep Learning)",
+        "content": "Subset of machine learning that involves neural networks with many layers, enabling the modeling of complex patterns in data.",
+        "link": "https://www.envisioning.io/vocab/dl-deep-learning"
+    },
+    "DLMs (Deep Language Models)": {
+        "title": "DLMs (Deep Language Models)",
+        "content": "Advanced ML models designed to understand, generate, and translate human language by leveraging DL techniques.",
+        "link": "https://www.envisioning.io/vocab/dlms-deep-language-models"
+    },
+    "DNC (Differential Neural Computer)": {
+        "title": "DNC (Differential Neural Computer)",
+        "content": "Advanced type of artificial neural network that integrates an external memory module, enabling it to store and retrieve information similar to a computer, enhancing its capability to solve complex tasks requiring long-term dependencies.",
+        "link": "https://www.envisioning.io/vocab/dnc-differential-neural-computer"
+    },
+    "DNN (Deep Neural Networks)": {
+        "title": "DNN (Deep Neural Networks)",
+        "content": "Advanced neural network architectures with multiple  layers that enable complex pattern recognition and learning from large amounts of data.",
+        "link": "https://www.envisioning.io/vocab/dnn-deep-neural-networks"
+    },
+    "DP (Dynamic Programming)": {
+        "title": "DP (Dynamic Programming)",
+        "content": "Method used in computer science and mathematics to solve complex problems by breaking them down into simpler subproblems and solving each of these subproblems just once, storing their solutions.",
+        "link": "https://www.envisioning.io/vocab/dp-dynamic-programming"
+    },
+    "DPO (Direct Preference Optimization)": {
+        "title": "DPO (Direct Preference Optimization)",
+        "content": "ML technique used to optimize models based directly on user preferences rather than traditional loss functions.",
+        "link": "https://www.envisioning.io/vocab/dpo-direct-preference-optimization"
+    },
+    "DQN (Deep Q-Networks)": {
+        "title": "DQN (Deep Q-Networks)",
+        "content": "RL technique that combines Q-learning with deep neural networks to enable agents to learn how to make optimal decisions from high-dimensional sensory inputs.",
+        "link": "https://www.envisioning.io/vocab/dqn-deep-q-networks"
+    },
+    "DRL (Deep Reinforcement Learning)": {
+        "title": "DRL (Deep Reinforcement Learning)",
+        "content": "Combines neural networks with a reinforcement learning framework, enabling AI systems to learn optimal actions through trial and error to maximize a cumulative reward.",
+        "link": "https://www.envisioning.io/vocab/drl-deep-reinforcement-learning"
+    },
+    "DTW (Dynamic Time Warping)": {
+        "title": "DTW (Dynamic Time Warping)",
+        "content": "Algorithm used to measure similarity between two time series by aligning them in a nonlinear fashion, allowing for comparisons even when there are shifts and distortions in time.",
+        "link": "https://www.envisioning.io/vocab/dtw-dynamic-time-warping"
+    },
+    "Data Augmentation": {
+        "title": "Data Augmentation",
+        "content": "Techniques used to increase the size and improve the quality of training datasets for machine learning models without collecting new data.",
+        "link": "https://www.envisioning.io/vocab/data-augmentation"
+    },
+    "Data Blending": {
+        "title": "Data Blending",
+        "content": "Process of combining data from multiple sources into a single, cohesive dataset for analysis.",
+        "link": "https://www.envisioning.io/vocab/data-blending"
+    },
+    "Data Imputation": {
+        "title": "Data Imputation",
+        "content": "Process of replacing missing or incomplete data within a dataset with substituted values to maintain the dataset's integrity and usability.",
+        "link": "https://www.envisioning.io/vocab/data-imputation"
+    },
+    "Data Mining": {
+        "title": "Data Mining",
+        "content": "Extracting valuable information from large datasets to identify patterns, trends, and relationships that may not be immediately apparent.",
+        "link": "https://www.envisioning.io/vocab/data-mining"
+    },
+    "Data Wall": {
+        "title": "Data Wall",
+        "content": "Limitation faced when the available data becomes insufficient for further training or improving machine learning models.",
+        "link": "https://www.envisioning.io/vocab/data-wall"
+    },
+    "Dataset": {
+        "title": "Dataset",
+        "content": "Collection of related data points organized in a structured format, often used for training and testing machine learning models.",
+        "link": "https://www.envisioning.io/vocab/dataset"
+    },
+    "De-Biasing": {
+        "title": "De-Biasing",
+        "content": "Methods and practices used to reduce or eliminate biases in AI systems, aiming to make the systems more fair, equitable, and representative of diverse populations.",
+        "link": "https://www.envisioning.io/vocab/de-biasing"
+    },
+    "Decision Tree": {
+        "title": "Decision Tree",
+        "content": "Flowchart-like tree structure where each internal node represents a \"test\" on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).",
+        "link": "https://www.envisioning.io/vocab/decision-tree"
+    },
+    "Decomposition": {
+        "title": "Decomposition",
+        "content": "Process of breaking down a complex problem into smaller, more manageable parts that can be solved individually.",
+        "link": "https://www.envisioning.io/vocab/decomposition"
+    },
+    "Denoising": {
+        "title": "Denoising",
+        "content": "Process of removing noise from data, particularly in the context of images and signals, to enhance the quality of the information.",
+        "link": "https://www.envisioning.io/vocab/denoising"
+    },
+    "Deterministic Quoting": {
+        "title": "Deterministic Quoting",
+        "content": "Method ensuring that AI-generated quotations from source materials are verbatim and not subject to AI-induced hallucinations.",
+        "link": "https://www.envisioning.io/vocab/deterministic-quoting"
+    },
+    "Deterministic": {
+        "title": "Deterministic",
+        "content": "System or process is one that, given a particular initial state, will always produce the same output or result, with no randomness or unpredictability involved.",
+        "link": "https://www.envisioning.io/vocab/deterministic"
+    },
+    "Differentiable Parametric Curves": {
+        "title": "Differentiable Parametric Curves",
+        "content": "Mathematical curves described by parametric equations that are differentiable, meaning they have continuous derivatives.",
+        "link": "https://www.envisioning.io/vocab/differentiable-parametric-curves"
+    },
+    "Differential Privacy": {
+        "title": "Differential Privacy",
+        "content": "System for publicly sharing information about a dataset by describing the patterns of groups within the dataset while withholding information about individuals in the dataset.",
+        "link": "https://www.envisioning.io/vocab/differential-privacy"
+    },
+    "Diffusion": {
+        "title": "Diffusion",
+        "content": "Class of generative models used to create high-quality, diverse samples of data by iteratively adding and then reversing noise.",
+        "link": "https://www.envisioning.io/vocab/diffusion"
+    },
+    "Dimension": {
+        "title": "Dimension",
+        "content": "Number of features or attributes that represent a data point in a vector space.",
+        "link": "https://www.envisioning.io/vocab/dimension"
+    },
+    "Dimensionality Reduction": {
+        "title": "Dimensionality Reduction",
+        "content": "Process used in ML to reduce the number of input variables or features in a dataset, simplifying models while retaining essential information.",
+        "link": "https://www.envisioning.io/vocab/dimensionality-reduction"
+    },
+    "Directed Evolution": {
+        "title": "Directed Evolution",
+        "content": "Use of evolutionary algorithms to iteratively improve ML models or algorithms by mimicking the process of natural selection.",
+        "link": "https://www.envisioning.io/vocab/directed-evolution"
+    },
+    "Discontinuous Jump": {
+        "title": "Discontinuous Jump",
+        "content": "Sudden, significant leap in the performance or capability of an AI system, deviating sharply from its previous trajectory of incremental improvements.",
+        "link": "https://www.envisioning.io/vocab/discontinuous-jump"
+    },
+    "Discount Factor": {
+        "title": "Discount Factor",
+        "content": "Multiplicative factor used to reduce future values or rewards to their present value in decision-making processes, particularly in reinforcement learning.",
+        "link": "https://www.envisioning.io/vocab/discount-factor"
+    },
+    "Discriminative AI": {
+        "title": "Discriminative AI",
+        "content": "Algorithms that learn the boundary between classes of data, focusing on distinguishing between different outputs given an input.",
+        "link": "https://www.envisioning.io/vocab/discriminative-ai"
+    },
+    "Discriminator": {
+        "title": "Discriminator",
+        "content": "Model that determines the likelihood of a given input being real or fake, typically used in generative adversarial networks (GANs).",
+        "link": "https://www.envisioning.io/vocab/discriminator"
+    },
+    "Dot Product Similarity": {
+        "title": "Dot Product Similarity",
+        "content": "Measures the similarity between two vectors by calculating the sum of the products of their corresponding entries.",
+        "link": "https://www.envisioning.io/vocab/dot-product-similarity"
+    },
+    "Double Descent": {
+        "title": "Double Descent",
+        "content": "Phenomenon in ML where the prediction error on test data initially decreases, increases, and then decreases again as model complexity grows.",
+        "link": "https://www.envisioning.io/vocab/double-descent"
+    },
+    "Dropout": {
+        "title": "Dropout",
+        "content": "Regularization technique used in neural networks to prevent overfitting by randomly omitting a subset of neurons during training.",
+        "link": "https://www.envisioning.io/vocab/dropout"
+    },
+    "Dual Use Foundational Model": {
+        "title": "Dual Use Foundational Model",
+        "content": "AI systems designed for general purposes that can be adapted for both beneficial and potentially harmful applications.",
+        "link": "https://www.envisioning.io/vocab/dual-use-foundational-model"
+    },
+    "Dual Use": {
+        "title": "Dual Use",
+        "content": "Technologies developed for civilian purposes that can also be repurposed for military or malicious applications, highlighting ethical considerations in their development and regulation.",
+        "link": "https://www.envisioning.io/vocab/dual-use"
+    },
+    "Dualism": {
+        "title": "Dualism",
+        "content": "Theory or concept that emphasizes the division between symbolic (classical) AI and sub-symbolic (connectionist) AI.",
+        "link": "https://www.envisioning.io/vocab/dualism"
+    },
+    "EBM (Energy-Based Model)": {
+        "title": "EBM (Energy-Based Model)",
+        "content": "Class of deep learning models that learn to associate lower energy levels with more probable configurations of the input data.",
+        "link": "https://www.envisioning.io/vocab/ebm-energy-based-model"
+    },
+    "EDA (Exploratory Data Analysis)": {
+        "title": "EDA (Exploratory Data Analysis)",
+        "content": "Technique used to analyze data sets to summarize their main characteristics, often with visual methods, before applying more formal modeling.",
+        "link": "https://www.envisioning.io/vocab/eda-exploratory-data-analysis"
+    },
+    "EDL (Experimentation Driven Learning)": {
+        "title": "EDL (Experimentation Driven Learning)",
+        "content": "AI approach where learning algorithms improve their performance through systematic experimentation and feedback from the environment.",
+        "link": "https://www.envisioning.io/vocab/edl-experimentation-driven-learning"
+    },
+    "EM (Expectation-Maximization)": {
+        "title": "EM (Expectation-Maximization)",
+        "content": "Statistical technique used to find the maximum likelihood estimates of parameters in probabilistic models, specifically when the model depends on unobserved latent variables.",
+        "link": "https://www.envisioning.io/vocab/em-expectation-maximization"
+    },
+    "Effective Accelerationism": {
+        "title": "Effective Accelerationism",
+        "content": "Ideology that encourages the rapid advancement of technology, especially AI, to address global challenges and accelerate progress towards a technologically advanced future.",
+        "link": "https://www.envisioning.io/vocab/effective-accelerationism"
+    },
+    "Embedding Space": {
+        "title": "Embedding Space",
+        "content": "Mathematical representation where high-dimensional vectors of data points, such as text, images, or other complex data types, are transformed into a lower-dimensional space that captures their essential properties.",
+        "link": "https://www.envisioning.io/vocab/embedding-space"
+    },
+    "Embedding": {
+        "title": "Embedding",
+        "content": "Representations of items, like words, sentences, or objects, in a continuous vector space, facilitating their quantitative comparison and manipulation by AI models.",
+        "link": "https://www.envisioning.io/vocab/embedding"
+    },
+    "Embodied AI": {
+        "title": "Embodied AI",
+        "content": "Integration of AI into physical entities, enabling these systems to interact with the real world through sensory inputs and actions.",
+        "link": "https://www.envisioning.io/vocab/embodied-ai"
+    },
+    "Embodied Intelligence": {
+        "title": "Embodied Intelligence",
+        "content": "Intelligence emerging from the physical interaction of an agent with its environment, emphasizing the importance of a body in learning and cognition.",
+        "link": "https://www.envisioning.io/vocab/embodied-intelligence"
+    },
+    "Emergence": {
+        "title": "Emergence",
+        "content": "Phenomenon where larger entities, patterns, and regularities arise through interactions among smaller or simpler entities that themselves do not exhibit such properties.",
+        "link": "https://www.envisioning.io/vocab/emergence"
+    },
+    "Empathic AI": {
+        "title": "Empathic AI",
+        "content": "AI systems designed to recognize, understand, and respond to human emotions in a nuanced and contextually appropriate manner.",
+        "link": "https://www.envisioning.io/vocab/empathic-ai"
+    },
+    "Encoder-Decoder Models": {
+        "title": "Encoder-Decoder Models",
+        "content": "Class of deep learning architectures that process an input to generate a corresponding output.",
+        "link": "https://www.envisioning.io/vocab/encoder-decoder-models"
+    },
+    "End-to-End Learning": {
+        "title": "End-to-End Learning",
+        "content": "ML approach where a system is trained to directly map input data to the desired output, minimizing the need for manual feature engineering.",
+        "link": "https://www.envisioning.io/vocab/end-to-end-learning"
+    },
+    "Ensemble Learning": {
+        "title": "Ensemble Learning",
+        "content": "ML paradigm where multiple models (often called \"weak learners\") are trained to solve the same problem and combined to improve the accuracy of predictions.",
+        "link": "https://www.envisioning.io/vocab/ensemble-learning"
+    },
+    "Equivariance": {
+        "title": "Equivariance",
+        "content": "Property of a function whereby the function commutes with the actions of a group, meaning that transformations applied to the input result in proportional transformations in the output.",
+        "link": "https://www.envisioning.io/vocab/equivariance"
+    },
+    "Ethical AI": {
+        "title": "Ethical AI",
+        "content": "Practice of creating AI technologies that follow clearly defined ethical guidelines and principles to benefit society while minimizing harm.",
+        "link": "https://www.envisioning.io/vocab/ethical-ai"
+    },
+    "Eval (Evaluation)": {
+        "title": "Eval (Evaluation)",
+        "content": "Process of assessing the performance and effectiveness of an AI model or algorithm based on specified criteria and datasets.",
+        "link": "https://www.envisioning.io/vocab/eval-evaluation"
+    },
+    "Evolutionary Algorithm": {
+        "title": "Evolutionary Algorithm",
+        "content": "Optimization methods inspired by the process of natural selection where potential solutions evolve over generations to optimize a given objective function.",
+        "link": "https://www.envisioning.io/vocab/evolutionary-algorithm"
+    },
+    "Exascale": {
+        "title": "Exascale",
+        "content": "Computing systems capable of performing at least one exaflop, or a billion billion (quintillion) calculations per second.",
+        "link": "https://www.envisioning.io/vocab/exascale"
+    },
+    "Expert System": {
+        "title": "Expert System",
+        "content": "Computer program designed to mimic the decision-making abilities of a human expert in a specific domain.",
+        "link": "https://www.envisioning.io/vocab/expert-system"
+    },
+    "Explainability": {
+        "title": "Explainability",
+        "content": "Ability of a system to transparently convey how it arrived at a decision, making its operations understandable to humans.",
+        "link": "https://www.envisioning.io/vocab/explainability"
+    },
+    "Exponential Slope Blindness": {
+        "title": "Exponential Slope Blindness",
+        "content": "Human cognitive bias that makes it difficult to perceive and understand the implications of exponential growth accurately.",
+        "link": "https://www.envisioning.io/vocab/exponential-slope-blindness"
+    },
+    "FCN (Fully Convolutional Networks)": {
+        "title": "FCN (Fully Convolutional Networks)",
+        "content": "Neural network architecture designed specifically for image segmentation tasks, where the goal is to classify each pixel of an image into a category.",
+        "link": "https://www.envisioning.io/vocab/fcn-fully-convolutional-networks"
+    },
+    "FHE (Fully Homomorphic Encryption)": {
+        "title": "FHE (Fully Homomorphic Encryption)",
+        "content": "Type of encryption that allows computation on ciphertexts, producing an encrypted result that, when decrypted, matches the result of operations performed on the plaintext.",
+        "link": "https://www.envisioning.io/vocab/fhe-fully-homomorphic-encryption"
+    },
+    "FPGA (Field-Programmable Gate Array)": {
+        "title": "FPGA (Field-Programmable Gate Array)",
+        "content": "Type of integrated circuit that can be configured by the customer or designer after manufacturing.",
+        "link": "https://www.envisioning.io/vocab/fpga-field-programmable-gate-array"
+    },
+    "FSDP (Fully Sharded Data Parallel)": {
+        "title": "FSDP (Fully Sharded Data Parallel)",
+        "content": "Distributed training method in deep learning that divides both model parameters and optimizer states across multiple devices to improve efficiency and scalability.",
+        "link": "https://www.envisioning.io/vocab/fsdp-fully-sharded-data-parallel"
+    },
+    "FSL (Few-Shot Learning)": {
+        "title": "FSL (Few-Shot Learning)",
+        "content": "ML approach that enables models to learn and make accurate predictions from a very small dataset.",
+        "link": "https://www.envisioning.io/vocab/fsl-few-shot-learning"
+    },
+    "Fab": {
+        "title": "Fab",
+        "content": "A fabrication facility, or fab, is where microchips are manufactured using sophisticated processes involving advanced materials and photolithography.",
+        "link": "https://www.envisioning.io/vocab/fab"
+    },
+    "Fabless": {
+        "title": "Fabless",
+        "content": "Company which designs and markets hardware while outsourcing the manufacturing of silicon wafers and chips to specialized semiconductor foundries.",
+        "link": "https://www.envisioning.io/vocab/fabless"
+    },
+    "Fairness-Aware Machine Learning": {
+        "title": "Fairness-Aware Machine Learning",
+        "content": "Focuses on developing algorithms that ensure equitable treatment and outcomes across different demographic groups.",
+        "link": "https://www.envisioning.io/vocab/fairness-aware-machine-learning"
+    },
+    "Fast Takeoff": {
+        "title": "Fast Takeoff",
+        "content": "Rapid transition from human-level to superintelligent AI, occurring in a very short period of time.",
+        "link": "https://www.envisioning.io/vocab/fast-takeoff"
+    },
+    "Fast Weights": {
+        "title": "Fast Weights",
+        "content": "Fast weights are temporary, rapidly changing parameters in neural networks designed to capture transient patterns or short-term dependencies in data.",
+        "link": "https://www.envisioning.io/vocab/fast-weights"
+    },
+    "Feature Design": {
+        "title": "Feature Design",
+        "content": "Process of selecting, modifying, or creating new features from raw data to improve the performance of machine learning models.",
+        "link": "https://www.envisioning.io/vocab/feature-design"
+    },
+    "Feature Extraction": {
+        "title": "Feature Extraction",
+        "content": "Process of transforming raw data into a set of features that are more meaningful and informative for a specific task, such as classification or prediction.",
+        "link": "https://www.envisioning.io/vocab/feature-extraction"
+    },
+    "Feature Importance": {
+        "title": "Feature Importance",
+        "content": "Techniques used to identify and rank the significance of input variables (features) in contributing to the predictive power of a ML model.",
+        "link": "https://www.envisioning.io/vocab/feature-importance"
+    },
+    "Federated Learning": {
+        "title": "Federated Learning",
+        "content": "ML approach enabling models to be trained across multiple decentralized devices or servers holding local data samples, without exchanging them.",
+        "link": "https://www.envisioning.io/vocab/federated-learning"
+    },
+    "Few Shot": {
+        "title": "Few Shot",
+        "content": "ML technique designed to recognize patterns and make predictions based on a very limited amount of training data.",
+        "link": "https://www.envisioning.io/vocab/few-shot"
+    },
+    "Find+Replace Transformers": {
+        "title": "Find+Replace Transformers",
+        "content": "Novel architectural extension of traditional transformers, designed to achieve Turing completeness and enhance model performance on complex tasks.",
+        "link": "https://www.envisioning.io/vocab/find-replace-transformers"
+    },
+    "Fine Tuning": {
+        "title": "Fine Tuning",
+        "content": "Method used in ML to adjust the parameters of an already trained model to improve its accuracy on a specific, often smaller, dataset.",
+        "link": "https://www.envisioning.io/vocab/fine-tuning"
+    },
+    "Flash Attention": {
+        "title": "Flash Attention",
+        "content": "GPU-optimized attention mechanism designed to efficiently handle extremely large sequences of data in neural networks.",
+        "link": "https://www.envisioning.io/vocab/flash-attention"
+    },
+    "Flexible Semantics": {
+        "title": "Flexible Semantics",
+        "content": "Ability of a system to adapt and interpret meaning in a dynamic, context-sensitive manner, particularly within language processing and understanding.",
+        "link": "https://www.envisioning.io/vocab/flexible-semantics"
+    },
+    "Flow Engineering": {
+        "title": "Flow Engineering",
+        "content": "Structured process of improving problem-solving in tasks like code generation by guiding a model through systematic, iterative refinements based on feedback loops.",
+        "link": "https://www.envisioning.io/vocab/flow-engineering"
+    },
+    "Forward Propagation": {
+        "title": "Forward Propagation",
+        "content": "Process in a neural network where input data is passed through layers of the network to generate output.",
+        "link": "https://www.envisioning.io/vocab/forward-propagation"
+    },
+    "Foundation Model": {
+        "title": "Foundation Model",
+        "content": "Type of large-scale pre-trained model that can be adapted to a wide range of tasks without needing to be trained from scratch each time.",
+        "link": "https://www.envisioning.io/vocab/foundation-model"
+    },
+    "Fourier Features": {
+        "title": "Fourier Features",
+        "content": "Technique used in ML to transform input data into a higher-dimensional space using sine and cosine functions, which can help models learn more complex patterns.",
+        "link": "https://www.envisioning.io/vocab/fourier-features"
+    },
+    "Frame Problem": {
+        "title": "Frame Problem",
+        "content": "Challenge in AI of representing and updating the effects of actions in a dynamic world without having to explicitly state all conditions that remain unchanged.",
+        "link": "https://www.envisioning.io/vocab/frame-problem"
+    },
+    "Frontier Models": {
+        "title": "Frontier Models",
+        "content": "The most advanced and powerful AI models currently available, pushing the boundaries of AI capabilities towards achieving general intelligence.",
+        "link": "https://www.envisioning.io/vocab/frontier-models"
+    },
+    "Function Approximation": {
+        "title": "Function Approximation",
+        "content": "Method used in AI to estimate complex functions using simpler, computationally efficient models.",
+        "link": "https://www.envisioning.io/vocab/function-approximation"
+    },
+    "Function Approximator": {
+        "title": "Function Approximator",
+        "content": "Computational model used to estimate a target function that is generally complex or unknown, often applied in machine learning and control systems.",
+        "link": "https://www.envisioning.io/vocab/function-approximator"
+    },
+    "GAIL (Generative Adversarial Imitation Learning)": {
+        "title": "GAIL (Generative Adversarial Imitation Learning)",
+        "content": "Advanced ML technique that uses adversarial training to enable an agent to learn behaviors directly from expert demonstrations without requiring explicit reward signals.",
+        "link": "https://www.envisioning.io/vocab/gail-generative-adversarial-imitation-learning"
+    },
+    "GAN (Generative Adversarial Network)": {
+        "title": "GAN (Generative Adversarial Network)",
+        "content": "Class of AI algorithms used in unsupervised ML, implemented by a system of two neural networks contesting with each other in a game.",
+        "link": "https://www.envisioning.io/vocab/gan-generative-adversarial-network"
+    },
+    "GAT (Graph Attention Network)": {
+        "title": "GAT (Graph Attention Network)",
+        "content": "Type of neural network that applies attention mechanisms directly to graphs to dynamically prioritize information from different nodes in the graph.",
+        "link": "https://www.envisioning.io/vocab/gat-graph-attention-network"
+    },
+    "GCN (Graph Convolutional Networks)": {
+        "title": "GCN (Graph Convolutional Networks)",
+        "content": "Class of neural networks designed to operate on graph-structured data, leveraging convolutional layers to aggregate and transform features from graph nodes and their neighbors.",
+        "link": "https://www.envisioning.io/vocab/gcn-graph-convolutional-networks"
+    },
+    "GFlowNet (Generative Flow Networks)": {
+        "title": "GFlowNet (Generative Flow Networks)",
+        "content": "Research direction at the intersection of reinforcement learning, deep generative models, and energy-based probabilistic modeling, aimed at improving generative active learning and unsupervised learning.",
+        "link": "https://www.envisioning.io/vocab/gflownet-generative-flow-networks"
+    },
+    "GIGO (Garbage In, Garbage Out)": {
+        "title": "GIGO (Garbage In, Garbage Out)",
+        "content": "Concept that emphasizes the quality of output is determined by the quality of input data.",
+        "link": "https://www.envisioning.io/vocab/gigo-garbage-in-garbage-out"
+    },
+    "GLU (Gated Linear Unit)": {
+        "title": "GLU (Gated Linear Unit)",
+        "content": "Neural network component that uses a gating mechanism to control information flow, improving model efficiency and performance.",
+        "link": "https://www.envisioning.io/vocab/glu-gated-linear-unit"
+    },
+    "GMM (Gaussian Mixture Models)": {
+        "title": "GMM (Gaussian Mixture Models)",
+        "content": "Probabilistic models that assume all data points are generated from a mixture of a finite number of Gaussian distributions with unknown parameters.",
+        "link": "https://www.envisioning.io/vocab/gmm-gaussian-mixture-models"
+    },
+    "GNN (Graph Neural Networks)": {
+        "title": "GNN (Graph Neural Networks)",
+        "content": "Type of neural network designed for processing data represented in graph form, capturing relationships and structure within the data.",
+        "link": "https://www.envisioning.io/vocab/gnn-graph-neural-networks"
+    },
+    "GPS (General Problem Solver)": {
+        "title": "GPS (General Problem Solver)",
+        "content": "Early AI program designed to simulate human problem-solving processes through a heuristic-based approach.",
+        "link": "https://www.envisioning.io/vocab/gps-general-problem-solver"
+    },
+    "GPT (Generative Pre-Trained Transformer)": {
+        "title": "GPT (Generative Pre-Trained Transformer)",
+        "content": "Type of neural network architecture that excels in generating human-like text based on the input it receives.",
+        "link": "https://www.envisioning.io/vocab/gpt-generative-pre-trained-transformer"
+    },
+    "GPU (Graphics Processing Unit)": {
+        "title": "GPU (Graphics Processing Unit)",
+        "content": "Specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device, but widely used in deep learning for its parallel processing capabilities.",
+        "link": "https://www.envisioning.io/vocab/gpu-graphics-processing-unit"
+    },
+    "GPU-Poor": {
+        "title": "GPU-Poor",
+        "content": "Scenario where there is a lack of adequate GPU resources available for computational tasks.",
+        "link": "https://www.envisioning.io/vocab/gpu-poor"
+    },
+    "GQN (Generative Query Network)": {
+        "title": "GQN (Generative Query Network)",
+        "content": "Neural network architecture designed to enable machines to understand and generate visual scenes from different viewpoints based on limited observations.",
+        "link": "https://www.envisioning.io/vocab/gqn-generative-query-network"
+    },
+    "Gating Mechanism": {
+        "title": "Gating Mechanism",
+        "content": "Control function that regulates the flow of information through the model, deciding what information to keep, discard, or update.",
+        "link": "https://www.envisioning.io/vocab/gating-mechanism"
+    },
+    "General World Model": {
+        "title": "General World Model",
+        "content": "AI systems designed to generate internal representations of the world, enabling them to predict and interact with their environment effectively across a broad range of scenarios.",
+        "link": "https://www.envisioning.io/vocab/general-world-model"
+    },
+    "Generalization": {
+        "title": "Generalization",
+        "content": "Ability of a ML model to perform well on new, unseen data that was not included in the training set.",
+        "link": "https://www.envisioning.io/vocab/generalization"
+    },
+    "Generative AI": {
+        "title": "Generative AI",
+        "content": "Subset of AI technologies that can generate new content, ranging from text and images to music and code, based on learned patterns and data.",
+        "link": "https://www.envisioning.io/vocab/generative-ai"
+    },
+    "Generative Workflow": {
+        "title": "Generative Workflow",
+        "content": "Process of using AI to automatically create content, such as text, images, or music, based on learned patterns from data.",
+        "link": "https://www.envisioning.io/vocab/generative-workflow"
+    },
+    "Generative": {
+        "title": "Generative",
+        "content": "Subset of AI technologies capable of generating new content, ideas, or data that mimic human-like outputs.",
+        "link": "https://www.envisioning.io/vocab/generative"
+    },
+    "Geometric Deep Learning": {
+        "title": "Geometric Deep Learning",
+        "content": "Field of study that extends DL techniques to data that is structured as graphs, manifolds, or more general topological spaces.",
+        "link": "https://www.envisioning.io/vocab/geometric-deep-learning"
+    },
+    "Goal": {
+        "title": "Goal",
+        "content": "Desired outcome or objective that an AI system is programmed to achieve.",
+        "link": "https://www.envisioning.io/vocab/goal"
+    },
+    "God in a Box": {
+        "title": "God in a Box",
+        "content": "AI systems or models that are so powerful and advanced that they could theoretically solve any problem or fulfill any command, but are contained within strict controls to prevent unintended consequences.",
+        "link": "https://www.envisioning.io/vocab/god-in-a-box"
+    },
+    "Gradient Descent": {
+        "title": "Gradient Descent",
+        "content": "Optimization algorithm used to find the minimum of a function by iteratively moving towards the steepest descent direction.",
+        "link": "https://www.envisioning.io/vocab/gradient-descent"
+    },
+    "Graph Machine Learning": {
+        "title": "Graph Machine Learning",
+        "content": "AI field that applies ML techniques to graph-structured data, enabling the analysis and prediction of relationships and behaviors among interconnected nodes.",
+        "link": "https://www.envisioning.io/vocab/graph-machine-learning"
+    },
+    "Graph Theory": {
+        "title": "Graph Theory",
+        "content": "Field of mathematics and computer science focusing on the properties of graphs, which are structures made up of vertices (or nodes) connected by edges.",
+        "link": "https://www.envisioning.io/vocab/graph-theory"
+    },
+    "Greedy Decoding": {
+        "title": "Greedy Decoding",
+        "content": "Technique used in ML models, especially in NLP, where the model selects the most likely next item in a sequence at each step.",
+        "link": "https://www.envisioning.io/vocab/greedy-decoding"
+    },
+    "Grokking": {
+        "title": "Grokking",
+        "content": "Refers to the process of deeply understanding something intuitively and completely, often used in AI to describe achieving a profound comprehension of complex concepts or systems.",
+        "link": "https://www.envisioning.io/vocab/grokking"
+    },
+    "Groundedness": {
+        "title": "Groundedness",
+        "content": "Property of language models that ensures their generated content or interpretations are closely tied to or derived from real-world knowledge and contexts.",
+        "link": "https://www.envisioning.io/vocab/groundedness"
+    },
+    "Guardrails": {
+        "title": "Guardrails",
+        "content": "Principles, policies, and technical measures implemented to ensure AI systems operate safely, ethically, and within regulatory and societal norms.",
+        "link": "https://www.envisioning.io/vocab/guardrails"
+    },
+    "HITL (Human-in-the-Loop)": {
+        "title": "HITL (Human-in-the-Loop)",
+        "content": "Integration of human judgment into AI systems to improve or guide the decision-making process.",
+        "link": "https://www.envisioning.io/vocab/hitl-human-in-the-loop"
+    },
+    "HMI (Human-Machine Interface)": {
+        "title": "HMI (Human-Machine Interface)",
+        "content": "Hardware or software through which humans interact with machines, facilitating clear and effective communication between humans and computer systems.",
+        "link": "https://www.envisioning.io/vocab/hmi-human-machine-interface"
+    },
+    "HPOC (Human Point of Contact)": {
+        "title": "HPOC (Human Point of Contact)",
+        "content": "Designated person responsible for overseeing and managing interactions between an AI system and its users or other systems.",
+        "link": "https://www.envisioning.io/vocab/hpoc-human-point-of-contact"
+    },
+    "Hallucination": {
+        "title": "Hallucination",
+        "content": "Generation of inaccurate, fabricated, or irrelevant output by a model, not grounded in the input data or reality.",
+        "link": "https://www.envisioning.io/vocab/hallucination"
+    },
+    "Hash Table": {
+        "title": "Hash Table",
+        "content": "Data structure that stores key-value pairs and allows for fast data retrieval by using a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.",
+        "link": "https://www.envisioning.io/vocab/hash-table"
+    },
+    "Hebbian Learning": {
+        "title": "Hebbian Learning",
+        "content": "Neural network learning rule based on the principle that synapses between neurons are strengthened when the neurons activate simultaneously.",
+        "link": "https://www.envisioning.io/vocab/hebbian-learning"
+    },
+    "Hessian Matrix": {
+        "title": "Hessian Matrix",
+        "content": "Square matrix of second-order partial derivatives of a scalar-valued function, crucial in optimization, particularly for understanding the curvature of multidimensional functions.",
+        "link": "https://www.envisioning.io/vocab/hessian-matrix"
+    },
+    "Heuristic Search Techniques": {
+        "title": "Heuristic Search Techniques",
+        "content": "Methods used in AI to find solutions or make decisions more efficiently by using rules of thumb or informed guesses to guide the search process.",
+        "link": "https://www.envisioning.io/vocab/heuristic-search-techniques"
+    },
+    "Hidden Layer": {
+        "title": "Hidden Layer",
+        "content": "Layer of neurons in an artificial neural network that processes inputs from the previous layer, transforming the data before passing it on to the next layer, without direct exposure to the input or output data.",
+        "link": "https://www.envisioning.io/vocab/hidden-layer"
+    },
+    "Hierarchical Planning": {
+        "title": "Hierarchical Planning",
+        "content": "Approach to solving complex problems by breaking them down into more manageable sub-problems, organizing these into a hierarchy.",
+        "link": "https://www.envisioning.io/vocab/hierarchical-planning"
+    },
+    "Horizon": {
+        "title": "Horizon",
+        "content": "Length of the future over which decisions are considered, with long horizon involving many future steps and short horizon involving only a few.",
+        "link": "https://www.envisioning.io/vocab/horizon"
+    },
+    "Human-Level AI": {
+        "title": "Human-Level AI",
+        "content": "AI systems that can perform any intellectual task with the same proficiency as a human being.",
+        "link": "https://www.envisioning.io/vocab/human-level-ai"
+    },
+    "Hybrid AI": {
+        "title": "Hybrid AI",
+        "content": "Combines symbolic AI (rule-based systems) and sub-symbolic AI (machine learning) approaches to leverage the strengths of both for more versatile and explainable AI systems.",
+        "link": "https://www.envisioning.io/vocab/hybrid-ai"
+    },
+    "Hypernetwork": {
+        "title": "Hypernetwork",
+        "content": "Neural network that generates the weights for another neural network, enabling dynamic adaptation and increased flexibility in learning and generalization.",
+        "link": "https://www.envisioning.io/vocab/hypernetwork"
+    },
+    "Hyperparameter Tuning": {
+        "title": "Hyperparameter Tuning",
+        "content": "Process of optimizing the parameters of a ML model that are not learned from data, aiming to improve model performance.",
+        "link": "https://www.envisioning.io/vocab/hyperparameter-tuning"
+    },
+    "Hyperparameter": {
+        "title": "Hyperparameter",
+        "content": "Configuration settings used to structure ML models, which guide the learning process and are set before training begins.",
+        "link": "https://www.envisioning.io/vocab/hyperparameter"
+    },
+    "Hyperplane": {
+        "title": "Hyperplane",
+        "content": "Mathematical concept that represents a subspace in n-dimensional space, with one dimension less than the space itself, used extensively to separate data points in various dimensions.",
+        "link": "https://www.envisioning.io/vocab/hyperplane"
+    },
+    "IFEval (Instruction-Following Eval)": {
+        "title": "IFEval (Instruction-Following Eval)",
+        "content": "Methodology designed to assess the ability of AI systems to follow and execute human-given instructions accurately and effectively.",
+        "link": "https://www.envisioning.io/vocab/ifeval-instruction-following-eval"
+    },
+    "IO (Influence Operations)": {
+        "title": "IO (Influence Operations)",
+        "content": "Strategic actions designed to affect the perceptions, attitudes, and behaviors of target audiences to achieve specific objectives.",
+        "link": "https://www.envisioning.io/vocab/io-influence-operations"
+    },
+    "IR (Information Retrieval)": {
+        "title": "IR (Information Retrieval)",
+        "content": "Process of obtaining relevant information from a large repository based on user queries.",
+        "link": "https://www.envisioning.io/vocab/ir-information-retrieval"
+    },
+    "IRL (Inverse Reinforcement Learning)": {
+        "title": "IRL (Inverse Reinforcement Learning)",
+        "content": "Technique in which an algorithm learns the underlying reward function of an environment based on observed behavior from an agent, essentially inferring the goals an agent is trying to achieve.",
+        "link": "https://www.envisioning.io/vocab/irl-inverse-reinforcement-learning"
+    },
+    "ITM (Image-Text Matching)": {
+        "title": "ITM (Image-Text Matching)",
+        "content": "AI technique that involves automatically identifying correspondences between textual descriptions and visual elements within images.",
+        "link": "https://www.envisioning.io/vocab/itm-image-text-matching"
+    },
+    "Image Recognition": {
+        "title": "Image Recognition",
+        "content": "Ability of AI to identify objects, places, people, writing, and actions in images.",
+        "link": "https://www.envisioning.io/vocab/image-recognition"
+    },
+    "Image Synthesis": {
+        "title": "Image Synthesis",
+        "content": "Use of AI models to generate new, unique images based on learned patterns and features from a dataset.",
+        "link": "https://www.envisioning.io/vocab/image-synthesis"
+    },
+    "Imitation Learning": {
+        "title": "Imitation Learning",
+        "content": "AI technique where models learn to perform tasks by mimicking human behavior or strategies demonstrated in training data.",
+        "link": "https://www.envisioning.io/vocab/imitation-learning"
+    },
+    "Implicit Reasoning": {
+        "title": "Implicit Reasoning",
+        "content": "Ability of a system to make inferences and draw conclusions that are not explicitly programmed or directly stated in the input data.",
+        "link": "https://www.envisioning.io/vocab/implicit-reasoning"
+    },
+    "In-Context Learning": {
+        "title": "In-Context Learning",
+        "content": "Method where an AI model uses the context provided in a prompt to guide its responses without additional external training.",
+        "link": "https://www.envisioning.io/vocab/in-context-learning"
+    },
+    "Inductive Prior": {
+        "title": "Inductive Prior",
+        "content": "Set of assumptions or biases that a ML model uses to infer patterns from data and make predictions, effectively guiding the learning process based on prior knowledge or expected behavior.",
+        "link": "https://www.envisioning.io/vocab/inductive-prior"
+    },
+    "Inference Acceleration": {
+        "title": "Inference Acceleration",
+        "content": "Methods and hardware optimizations employed to increase the speed and efficiency of the inference process in machine learning models, particularly neural networks.",
+        "link": "https://www.envisioning.io/vocab/inference-acceleration"
+    },
+    "Inference-Time Reasoning": {
+        "title": "Inference-Time Reasoning",
+        "content": "Process by which a trained AI model applies learned patterns to new data to make decisions or predictions during its operational phase.",
+        "link": "https://www.envisioning.io/vocab/inference-time-reasoning"
+    },
+    "Inference": {
+        "title": "Inference",
+        "content": "Process by which a trained neural network applies learned patterns to new, unseen data to make predictions or decisions.",
+        "link": "https://www.envisioning.io/vocab/inference"
+    },
+    "Information Gap": {
+        "title": "Information Gap",
+        "content": "Discrepancy between the information needed to solve a problem or make a decision and the information that is actually available.",
+        "link": "https://www.envisioning.io/vocab/information-gap"
+    },
+    "Information Integration": {
+        "title": "Information Integration",
+        "content": "Process of combining data from different sources to provide a unified view.",
+        "link": "https://www.envisioning.io/vocab/information-integration"
+    },
+    "Initialization": {
+        "title": "Initialization",
+        "content": "Process of setting the initial values of the parameters (weights and biases) of a model before training begins.",
+        "link": "https://www.envisioning.io/vocab/initialization"
+    },
+    "Instantiation": {
+        "title": "Instantiation",
+        "content": "Process of creating a specific instance of an abstract concept, algorithm, or data structure, allowing for its practical use and application.",
+        "link": "https://www.envisioning.io/vocab/instantiation"
+    },
+    "Instruction Following Model": {
+        "title": "Instruction Following Model",
+        "content": "AI system designed to execute tasks based on specific commands or instructions provided by users.",
+        "link": "https://www.envisioning.io/vocab/instruction-following-model"
+    },
+    "Instruction Tuning": {
+        "title": "Instruction Tuning",
+        "content": "Process used in ML to optimize a language model’s responses for specific tasks by fine-tuning it on a curated set of instructions and examples.",
+        "link": "https://www.envisioning.io/vocab/instruction-tuning"
+    },
+    "Instruction-Following": {
+        "title": "Instruction-Following",
+        "content": "Ability to accurately understand and execute tasks based on given directives.",
+        "link": "https://www.envisioning.io/vocab/instruction-following"
+    },
+    "Instrumental Convergence": {
+        "title": "Instrumental Convergence",
+        "content": "",
+        "link": "https://www.envisioning.io/vocab/instrumental-convergence"
+    },
+    "Instrumentation": {
+        "title": "Instrumentation",
+        "content": "Techniques and tools used to monitor, measure, and analyze the performance and behavior of AI systems.",
+        "link": "https://www.envisioning.io/vocab/instrumentation"
+    },
+    "Intelligence Explosion": {
+        "title": "Intelligence Explosion",
+        "content": "Hypothetical scenario where an AI system rapidly improves its own capabilities and intelligence, leading to a superintelligent AI far surpassing human intelligence.",
+        "link": "https://www.envisioning.io/vocab/intelligence-explosion"
+    },
+    "Intention": {
+        "title": "Intention",
+        "content": "Planned or desired outcome that an agent aims to achieve through its actions.",
+        "link": "https://www.envisioning.io/vocab/intention"
+    },
+    "Internet Scale": {
+        "title": "Internet Scale",
+        "content": "Systems, applications, or analyses designed to handle and process the vast and diverse data sets available across the entire internet.",
+        "link": "https://www.envisioning.io/vocab/internet-scale"
+    },
+    "Interpretability": {
+        "title": "Interpretability",
+        "content": "Extent to which a human can understand the cause of a decision made by an AI system.",
+        "link": "https://www.envisioning.io/vocab/interpretability"
+    },
+    "Invariance": {
+        "title": "Invariance",
+        "content": "Property of a model or algorithm that ensures its output remains unchanged when specific transformations are applied to the input data.",
+        "link": "https://www.envisioning.io/vocab/invariance"
+    },
+    "Inverse Problems": {
+        "title": "Inverse Problems",
+        "content": "Determining the underlying causes or parameters from observed data, essentially reversing the usual process of predicting effects from known causes.",
+        "link": "https://www.envisioning.io/vocab/inverse-problems"
+    },
+    "Jagged Frontier": {
+        "title": "Jagged Frontier",
+        "content": "Metaphorically describes an area of AI research characterized by rapid, uneven advances and significant uncertainties or complexities.",
+        "link": "https://www.envisioning.io/vocab/jagged-frontier"
+    },
+    "Jailbreaking": {
+        "title": "Jailbreaking",
+        "content": "Exploiting vulnerabilities in AI systems to bypass restrictions and unlock otherwise inaccessible functionalities.",
+        "link": "https://www.envisioning.io/vocab/jailbreaking"
+    },
+    "Joint Embedding Architecture": {
+        "title": "Joint Embedding Architecture",
+        "content": "Neural network design that learns to map different forms of data (e.g., images and text) into a shared embedding space, facilitating tasks like cross-modal retrieval and multi-modal representation learning.",
+        "link": "https://www.envisioning.io/vocab/joint-embedding-architecture"
+    },
+    "KL (Kullback–Leibler) Divergence": {
+        "title": "KL (Kullback–Leibler) Divergence",
+        "content": "Measure of how one probability distribution diverges from a second, reference probability distribution.",
+        "link": "https://www.envisioning.io/vocab/kl-kullback-leibler-divergence"
+    },
+    "KV (Key-Value)": {
+        "title": "KV (Key-Value)",
+        "content": "Data storage model where data is stored as a collection of key-value pairs, where each key is unique and maps directly to a value.",
+        "link": "https://www.envisioning.io/vocab/kv-key-value"
+    },
+    "Knowledge Graph": {
+        "title": "Knowledge Graph",
+        "content": "Organizes and represents data as an interconnected network of entities (such as objects, events, concepts) and their relationships.",
+        "link": "https://www.envisioning.io/vocab/knowledge-graph"
+    },
+    "Knowledge Representation": {
+        "title": "Knowledge Representation",
+        "content": "Method by which AI systems formalize and utilize the knowledge necessary to solve complex tasks.",
+        "link": "https://www.envisioning.io/vocab/knowledge-representation"
+    },
+    "LAM (Large Action Model)": {
+        "title": "LAM (Large Action Model)",
+        "content": "Advanced AI systems designed to interpret and execute complex tasks by directly modeling human actions within digital applications.",
+        "link": "https://www.envisioning.io/vocab/lam-large-action-model"
+    },
+    "LAQ (Locally-Adaptive Quantization)": {
+        "title": "LAQ (Locally-Adaptive Quantization)",
+        "content": "Technique used in data compression and neural network optimization that adjusts quantization levels based on local data characteristics to improve accuracy and efficiency.",
+        "link": "https://www.envisioning.io/vocab/laq-locally-adaptive-quantization"
+    },
+    "LLE (Locally Linear Embedding)": {
+        "title": "LLE (Locally Linear Embedding)",
+        "content": "Nonlinear dimensionality reduction technique that preserves local neighborhood information to reduce high-dimensional data to a lower-dimensional space.",
+        "link": "https://www.envisioning.io/vocab/lle-locally-linear-embedding"
+    },
+    "LLM (Large Language Model)": {
+        "title": "LLM (Large Language Model)",
+        "content": "Advanced AI systems trained on extensive datasets to understand, generate, and interpret human language.",
+        "link": "https://www.envisioning.io/vocab/llm-large-language-model"
+    },
+    "LMN (Large Nature Model)": {
+        "title": "LMN (Large Nature Model)",
+        "content": "Open-source model focused on nature, using a vast, ethically sourced dataset of natural world elements.",
+        "link": "https://www.envisioning.io/vocab/lmn-large-nature-model"
+    },
+    "LNN (Liquid Neural Network)": {
+        "title": "LNN (Liquid Neural Network)",
+        "content": "Type of artificial neural network designed to process data that changes over time, such as time series data, by simulating a more dynamic and fluid-like behavior.",
+        "link": "https://www.envisioning.io/vocab/lnn-liquid-neural-network"
+    },
+    "LSTM (Long Short-Term Memory)": {
+        "title": "LSTM (Long Short-Term Memory)",
+        "content": "Type of recurrent neural network architecture designed to learn long-term dependencies in sequential data.",
+        "link": "https://www.envisioning.io/vocab/lstm-long-short-term-memory"
+    },
+    "LTPA (Long-Term Planning Agent)": {
+        "title": "LTPA (Long-Term Planning Agent)",
+        "content": "AI system designed to make decisions over extended periods, considering future consequences and outcomes.",
+        "link": "https://www.envisioning.io/vocab/ltpa-long-term-planning-agent"
+    },
+    "LVLMs (Large Vision Language Models)": {
+        "title": "LVLMs (Large Vision Language Models)",
+        "content": "Advanced AI systems designed to integrate and interpret both visual and textual data, enabling more sophisticated understanding and generation based on both modalities.",
+        "link": "https://www.envisioning.io/vocab/lvlms-large-vision-language-models"
+    },
+    "Latent Space": {
+        "title": "Latent Space",
+        "content": "Abstract, multi-dimensional representation of data where similar items are mapped close together, commonly used in ML and AI models.",
+        "link": "https://www.envisioning.io/vocab/latent-space"
+    },
+    "Linear Algebra": {
+        "title": "Linear Algebra",
+        "content": "Branch of mathematics focusing on vector spaces and linear mappings between these spaces, which is essential for many machine learning algorithms.",
+        "link": "https://www.envisioning.io/vocab/linear-algebra"
+    },
+    "LoRA (Low-Rank Adaptation)": {
+        "title": "LoRA (Low-Rank Adaptation)",
+        "content": "Technique for fine-tuning LLMs in a parameter-efficient manner.",
+        "link": "https://www.envisioning.io/vocab/lora-low-rank-adaptation"
+    },
+    "Local Pooling": {
+        "title": "Local Pooling",
+        "content": "Process that reduces the spatial dimensions of input data by aggregating information in local regions to create more abstract representations.",
+        "link": "https://www.envisioning.io/vocab/local-pooling"
+    },
+    "Local Weight Sharing": {
+        "title": "Local Weight Sharing",
+        "content": "Technique where the same weights are used across different positions in an input, enhancing the network's ability to recognize patterns irrespective of their spatial location.",
+        "link": "https://www.envisioning.io/vocab/local-weight-sharing"
+    },
+    "Log-Likelihood": {
+        "title": "Log-Likelihood",
+        "content": "Measure used in statistical models to quantify how well a model predicts a given set of observations, expressed as the logarithm of the likelihood function.",
+        "link": "https://www.envisioning.io/vocab/log-likelihood"
+    },
+    "Logistic Regression": {
+        "title": "Logistic Regression",
+        "content": "Statistical model that estimates the probability of a binary outcome, commonly used for classification tasks.",
+        "link": "https://www.envisioning.io/vocab/logistic-regression"
+    },
+    "Logits": {
+        "title": "Logits",
+        "content": "Raw, unnormalized outputs of the last layer in a neural network before applying the softmax function in classification tasks.",
+        "link": "https://www.envisioning.io/vocab/logits"
+    },
+    "Loss Function": {
+        "title": "Loss Function",
+        "content": "Quantifies the difference between the predicted values by a model and the actual values, serving as a guide for model optimization.",
+        "link": "https://www.envisioning.io/vocab/loss-function"
+    },
+    "Loss Optimization": {
+        "title": "Loss Optimization",
+        "content": "Process of adjusting a model's parameters to minimize the difference between the predicted outputs and the actual outputs, measured by a loss function.",
+        "link": "https://www.envisioning.io/vocab/loss-optimization"
+    },
+    "Lost-in-the-Middle": {
+        "title": "Lost-in-the-Middle",
+        "content": "Issue in LLMs where they tend to struggle with retaining and processing information from the middle parts of long input sequences.",
+        "link": "https://www.envisioning.io/vocab/lost-in-the-middle"
+    },
+    "Lovelace Test": {
+        "title": "Lovelace Test",
+        "content": "Designed to determine a machine's capability to create art or other outputs that it was not explicitly programmed to generate, challenging it to fool a human into believing the outputs were created by a human.",
+        "link": "https://www.envisioning.io/vocab/lovelace-test"
+    },
+    "Low-Bit Palletization": {
+        "title": "Low-Bit Palletization",
+        "content": "Process of reducing the bit depth of data representations to streamline computation and improve efficiency in neural network processing and other AI applications.",
+        "link": "https://www.envisioning.io/vocab/low-bit-palletization"
+    },
+    "MAS (Multi-Agent Systems)": {
+        "title": "MAS (Multi-Agent Systems)",
+        "content": "Systems in which multiple autonomous agents interact with each other within a shared environment to achieve individual or collective goals.",
+        "link": "https://www.envisioning.io/vocab/mas-multi-agent-systems"
+    },
+    "MDL (Minimum Description Length)": {
+        "title": "MDL (Minimum Description Length)",
+        "content": "Principle formalization of Occam's Razor in information theory, advocating that the best hypothesis for a given set of data is the one that leads to the shortest total description of the data and the hypothesis.",
+        "link": "https://www.envisioning.io/vocab/mdl-minimum-description-length"
+    },
+    "MDO (Multidomain Operations)": {
+        "title": "MDO (Multidomain Operations)",
+        "content": "Strategic and tactical integration of capabilities across multiple domains—such as land, sea, air, space, and cyberspace—enabled and enhanced by artificial intelligence and advanced technologies.",
+        "link": "https://www.envisioning.io/vocab/mdo-multidomain-operations"
+    },
+    "MDPO (Mirror Descent Policy Optimization)": {
+        "title": "MDPO (Mirror Descent Policy Optimization)",
+        "content": "Optimization algorithm used in reinforcement learning to update policies by leveraging the mirror descent technique, which balances exploration and exploitation more effectively than traditional gradient descent methods.",
+        "link": "https://www.envisioning.io/vocab/mdpo-mirror-descent-policy-optimization"
+    },
+    "MIMS (Multiple Instance Learning for Missing Annotations)": {
+        "title": "MIMS (Multiple Instance Learning for Missing Annotations)",
+        "content": "ML approach where training occurs on labeled bags of instances instead of individual instances, particularly useful when exact annotations are missing.",
+        "link": "https://www.envisioning.io/vocab/mims-multiple-instance-learning-for-missing-annotations"
+    },
+    "ML (Machine Learning)": {
+        "title": "ML (Machine Learning)",
+        "content": "Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.",
+        "link": "https://www.envisioning.io/vocab/ml-machine-learning"
+    },
+    "MLE (Maximum Likelihood Estimation)": {
+        "title": "MLE (Maximum Likelihood Estimation)",
+        "content": "Statistical method used to estimate the parameters of a probability distribution by maximizing a likelihood function.",
+        "link": "https://www.envisioning.io/vocab/mle-maximum-likelihood-estimation"
+    },
+    "MLLMs (Multimodal Large Language Models)": {
+        "title": "MLLMs (Multimodal Large Language Models)",
+        "content": "Advanced AI systems capable of understanding and generating information across different forms of data, such as text, images, and audio.",
+        "link": "https://www.envisioning.io/vocab/mllms-multimodal-large-language-models"
+    },
+    "MLM (Masked-Language Modeling)": {
+        "title": "MLM (Masked-Language Modeling)",
+        "content": "Training technique where random words in a sentence are replaced with a special token, and the model learns to predict these masked words based on their context.",
+        "link": "https://www.envisioning.io/vocab/mlm-masked-language-modeling"
+    },
+    "MLP (Multilayer Perceptron)": {
+        "title": "MLP (Multilayer Perceptron)",
+        "content": "Type of artificial neural network comprised of multiple layers of neurons, with each layer fully connected to the next, commonly used for tasks involving classification and regression.",
+        "link": "https://www.envisioning.io/vocab/mlp-multilayer-perceptron"
+    },
+    "MMLU (Massive Multitask Language Understanding)": {
+        "title": "MMLU (Massive Multitask Language Understanding)",
+        "content": "Evaluation framework designed to assess the performance of language models across a broad spectrum of tasks and domains.",
+        "link": "https://www.envisioning.io/vocab/mmlu-massive-multitask-language-understanding"
+    },
+    "MPC (Model-Predictive Control)": {
+        "title": "MPC (Model-Predictive Control)",
+        "content": "Control algorithm that uses a model of the system to predict future states and optimizes control actions over a future time horizon.",
+        "link": "https://www.envisioning.io/vocab/mpc-model-predictive-control"
+    },
+    "MRL (Matryoshka Representation Learning)": {
+        "title": "MRL (Matryoshka Representation Learning)",
+        "content": "ML approach under the umbrella of representation learning, which aims to construct hierarchical representations of data, akin to the nesting structure of Russian matryoshka dolls.",
+        "link": "https://www.envisioning.io/vocab/mrl-matryoshka-representation-learning"
+    },
+    "MTL (Multi-Task Learning)": {
+        "title": "MTL (Multi-Task Learning)",
+        "content": "ML approach where a single model is trained simultaneously on multiple related tasks, leveraging commonalities and differences across tasks to improve generalization.",
+        "link": "https://www.envisioning.io/vocab/mtl-multi-task-learning"
+    },
+    "Machine Understanding": {
+        "title": "Machine Understanding",
+        "content": "Capability of AI systems to interpret and comprehend data, text, images, or situations in a manner akin to human understanding.",
+        "link": "https://www.envisioning.io/vocab/machine-understanding"
+    },
+    "Machine Unlearning": {
+        "title": "Machine Unlearning",
+        "content": "Process by which an ML model is systematically modified to forget specific data, ensuring that the data no longer influences the model's behavior or decisions.",
+        "link": "https://www.envisioning.io/vocab/machine-unlearning"
+    },
+    "Manifold Learning": {
+        "title": "Manifold Learning",
+        "content": "Type of non-linear dimensionality reduction technique used to uncover the underlying structure of high-dimensional data by assuming it lies on a lower-dimensional manifold.",
+        "link": "https://www.envisioning.io/vocab/manifold-learning"
+    },
+    "Markov Chain": {
+        "title": "Markov Chain",
+        "content": "Stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.",
+        "link": "https://www.envisioning.io/vocab/markov-chain"
+    },
+    "Masking": {
+        "title": "Masking",
+        "content": "Technique used in NLP models to prevent future input tokens from influencing the prediction of current tokens.",
+        "link": "https://www.envisioning.io/vocab/masking"
+    },
+    "MatMul (Matrix Multiplication)": {
+        "title": "MatMul (Matrix Multiplication)",
+        "content": "Fundamental operation in linear algebra and essential in various applications, including neural networks and machine learning algorithms.",
+        "link": "https://www.envisioning.io/vocab/matmul-matrix-multiplication"
+    },
+    "Matryoshka Embedding": {
+        "title": "Matryoshka Embedding",
+        "content": "Method of representing nested structures in data using embeddings that encapsulate multiple layers of information, similar to Russian Matryoshka nesting dolls.",
+        "link": "https://www.envisioning.io/vocab/matryoshka-embedding"
+    },
+    "Max Pooling": {
+        "title": "Max Pooling",
+        "content": "Downsampling technique that reduces the dimensionality of input data by selecting the maximum value from a specified subset of the data.",
+        "link": "https://www.envisioning.io/vocab/max-pooling"
+    },
+    "Mechanistic Interpretability": {
+        "title": "Mechanistic Interpretability",
+        "content": "Study and methods used to understand the specific causal mechanisms through which AI models produce their outputs.",
+        "link": "https://www.envisioning.io/vocab/mechanistic-interpretability"
+    },
+    "Memory Systems": {
+        "title": "Memory Systems",
+        "content": "Mechanisms and structures designed to store, manage, and recall information, enabling machines to learn from past experiences and perform complex tasks.",
+        "link": "https://www.envisioning.io/vocab/memory-systems"
+    },
+    "Meta Prompt": {
+        "title": "Meta Prompt",
+        "content": "AI technique that emphasizes the structural and syntactical framework of prompts to guide models in problem-solving and task execution, prioritizing the 'how' of information presentation over the 'what'.",
+        "link": "https://www.envisioning.io/vocab/meta-prompt"
+    },
+    "Meta-Classifier": {
+        "title": "Meta-Classifier",
+        "content": "Algorithm that combines multiple ML models to improve prediction accuracy over individual models.",
+        "link": "https://www.envisioning.io/vocab/meta-classifier"
+    },
+    "Meta-Learning": {
+        "title": "Meta-Learning",
+        "content": "Learning to learn involves techniques that enable AI models to learn how to adapt quickly to new tasks with minimal data.",
+        "link": "https://www.envisioning.io/vocab/meta-learning"
+    },
+    "Meta-Regressor": {
+        "title": "Meta-Regressor",
+        "content": "Type of ensemble learning method that uses the predictions of several base regression models to train a second-level model to make a final prediction.",
+        "link": "https://www.envisioning.io/vocab/meta-regressor"
+    },
+    "Metaheuristic": {
+        "title": "Metaheuristic",
+        "content": "High-level problem-independent algorithmic framework that provides a set of guidelines or strategies to develop heuristic optimization algorithms.",
+        "link": "https://www.envisioning.io/vocab/metaheuristic"
+    },
+    "Misuse": {
+        "title": "Misuse",
+        "content": "Application of AI technologies in ways that are unethical, illegal, or harmful to individuals or society.",
+        "link": "https://www.envisioning.io/vocab/misuse"
+    },
+    "Mixture Map": {
+        "title": "Mixture Map",
+        "content": "Graphical representation used in data science and ML to visualize the relationships and interactions between different components or features of a dataset.",
+        "link": "https://www.envisioning.io/vocab/mixture-map"
+    },
+    "Mixture Model": {
+        "title": "Mixture Model",
+        "content": "Probabilistic model that assumes that the data is generated from a mixture of several distributions, each representing a different subpopulation within the overall population.",
+        "link": "https://www.envisioning.io/vocab/mixture-model"
+    },
+    "MoE (Mixture of Experts)": {
+        "title": "MoE (Mixture of Experts)",
+        "content": "ML architecture that utilizes multiple specialist models (experts) to handle different parts of the input space, coordinated by a gating mechanism that decides which expert to use for each input.",
+        "link": "https://www.envisioning.io/vocab/moe-mixture-of-experts"
+    },
+    "Model Compression": {
+        "title": "Model Compression",
+        "content": "Techniques designed to reduce the size of a machine learning model without significantly sacrificing its accuracy.",
+        "link": "https://www.envisioning.io/vocab/model-compression"
+    },
+    "Model Drift Minimization": {
+        "title": "Model Drift Minimization",
+        "content": "Strategies and methodologies to ensure that a ML model remains accurate and relevant over time as the underlying data changes.",
+        "link": "https://www.envisioning.io/vocab/model-drift-minimization"
+    },
+    "Model Drift": {
+        "title": "Model Drift",
+        "content": "Change in the underlying data patterns that a ML model was trained on, leading to a decrease in the model's accuracy and effectiveness over time.",
+        "link": "https://www.envisioning.io/vocab/model-drift"
+    },
+    "Model Garden": {
+        "title": "Model Garden",
+        "content": "Centralized repository that houses a collection of pre-trained machine learning models designed to be easily accessible and reusable by developers and researchers.",
+        "link": "https://www.envisioning.io/vocab/model-garden"
+    },
+    "Model Level": {
+        "title": "Model Level",
+        "content": "Abstraction layer at which an AI or ML model operates, focusing on the specific details and mechanics of the model's architecture and functioning.",
+        "link": "https://www.envisioning.io/vocab/model-level"
+    },
+    "Model Management": {
+        "title": "Model Management",
+        "content": "Practices and technologies used to handle various lifecycle stages of machine learning models including development, deployment, monitoring, and maintenance.",
+        "link": "https://www.envisioning.io/vocab/model-management"
+    },
+    "Model-Based Classifier": {
+        "title": "Model-Based Classifier",
+        "content": "ML algorithm that uses a pre-defined statistical model to make predictions based on input data.",
+        "link": "https://www.envisioning.io/vocab/model-based-classifier"
+    },
+    "Motor Learning": {
+        "title": "Motor Learning",
+        "content": "Process by which robots or AI systems acquire, refine, and optimize motor skills through experience and practice.",
+        "link": "https://www.envisioning.io/vocab/motor-learning"
+    },
+    "Move 37": {
+        "title": "Move 37",
+        "content": "Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol, which showcased the superior strategic capabilities of AI in the game of Go.",
+        "link": "https://www.envisioning.io/vocab/move-37"
+    },
+    "Multi-Token Prediction": {
+        "title": "Multi-Token Prediction",
+        "content": "AI technique used in NLP where a model generates multiple output tokens simultaneously, often improving coherence and speed compared to single-token generation methods.",
+        "link": "https://www.envisioning.io/vocab/multi-token-prediction"
+    },
+    "Multi-headed Attention": {
+        "title": "Multi-headed Attention",
+        "content": "Mechanism in neural networks that allows the model to jointly attend to information from different representation subspaces at different positions.",
+        "link": "https://www.envisioning.io/vocab/multi-headed-attention"
+    },
+    "Multiagent": {
+        "title": "Multiagent",
+        "content": "Multiple autonomous entities (agents) interacting in a shared environment, often with cooperative or competitive objectives.",
+        "link": "https://www.envisioning.io/vocab/multiagent"
+    },
+    "Multimodal": {
+        "title": "Multimodal",
+        "content": "AI systems or models that can process and understand information from multiple modalities, such as text, images, and sound.",
+        "link": "https://www.envisioning.io/vocab/multimodal"
+    },
+    "NAS (Neural Architecture Search)": {
+        "title": "NAS (Neural Architecture Search)",
+        "content": "Automated process that designs optimal neural network architectures for specific tasks.",
+        "link": "https://www.envisioning.io/vocab/nas-neural-architecture-search"
+    },
+    "NHI (Non-Human Intelligence)": {
+        "title": "NHI (Non-Human Intelligence)",
+        "content": "Intelligence systems that operate independently of human intelligence, encompassing a broad range of entities and origins, emphasizing capabilities that may surpass human cognitive processes.",
+        "link": "https://www.envisioning.io/vocab/nhi-non-human-intelligence"
+    },
+    "NIAN (Needle in a Needlestack)": {
+        "title": "NIAN (Needle in a Needlestack)",
+        "content": "Idiom used to describe the difficulty of finding a specific piece of information or data within a vast, but homogeneous, dataset.",
+        "link": "https://www.envisioning.io/vocab/nian-needle-in-a-needlestack"
+    },
+    "NLD (Neural Lie Detectors)": {
+        "title": "NLD (Neural Lie Detectors)",
+        "content": "AI systems designed to identify dishonesty or inconsistencies in the outputs or decisions of other AI models by analyzing their responses or behavior.",
+        "link": "https://www.envisioning.io/vocab/nld-neural-lie-detectors"
+    },
+    "NLP (Natural Language Processing)": {
+        "title": "NLP (Natural Language Processing)",
+        "content": "Field of AI that focuses on the interaction between computers and humans through natural language.",
+        "link": "https://www.envisioning.io/vocab/nlp-natural-language-processing"
+    },
+    "NLP (Neuro-Linguistic Programming)": {
+        "title": "NLP (Neuro-Linguistic Programming)",
+        "content": "Techniques and methodologies for understanding and generating human language by computers.",
+        "link": "https://www.envisioning.io/vocab/nlp-neuro-linguistic-programming"
+    },
+    "NLU (Natural Language Understanding)": {
+        "title": "NLU (Natural Language Understanding)",
+        "content": "Subfield of NLP focused on enabling machines to understand and interpret human language in a way that is both meaningful and contextually relevant.",
+        "link": "https://www.envisioning.io/vocab/nlu-natural-language-understanding"
+    },
+    "NPC (Non-Player Character)": {
+        "title": "NPC (Non-Player Character)",
+        "content": "Character in a virtual environment that operates under AI control, exhibiting behaviors or responses not directed by human players.",
+        "link": "https://www.envisioning.io/vocab/npc-non-player-character"
+    },
+    "Naive Bayesian Model": {
+        "title": "Naive Bayesian Model",
+        "content": "Probabilistic classifier that assumes strong (naive) independence between the features of a dataset.",
+        "link": "https://www.envisioning.io/vocab/naive-bayesian-model"
+    },
+    "Narrow AI": {
+        "title": "Narrow AI",
+        "content": "Also known as Weak AI, refers to AI systems designed to perform a specific task or a narrow range of tasks with a high level of proficiency.",
+        "link": "https://www.envisioning.io/vocab/narrow-ai"
+    },
+    "NeRF (Neural Radiance Fields)": {
+        "title": "NeRF (Neural Radiance Fields)",
+        "content": "Technique for creating high-quality 3D models from a set of 2D images using deep learning.",
+        "link": "https://www.envisioning.io/vocab/nerf-neural-radiance-fields"
+    },
+    "Negative Feedback": {
+        "title": "Negative Feedback",
+        "content": "Control mechanism where the output of a system is fed back into the system in a way that counteracts fluctuations from a setpoint, thereby promoting stability.",
+        "link": "https://www.envisioning.io/vocab/negative-feedback"
+    },
+    "Negative Utilitarianism": {
+        "title": "Negative Utilitarianism",
+        "content": "Ethical theory that prioritizes minimizing suffering and negative experiences over maximizing happiness and positive experiences.",
+        "link": "https://www.envisioning.io/vocab/negative-utilitarianism"
+    },
+    "Neural Network": {
+        "title": "Neural Network",
+        "content": "Computing system designed to simulate the way human brains analyze and process information, using a network of interconnected nodes that work together to solve specific problems.",
+        "link": "https://www.envisioning.io/vocab/neural-network"
+    },
+    "Neuroevolution": {
+        "title": "Neuroevolution",
+        "content": "AI approach that uses evolutionary algorithms to develop and optimize artificial neural networks.",
+        "link": "https://www.envisioning.io/vocab/neuroevolution"
+    },
+    "Neurogenesis": {
+        "title": "Neurogenesis",
+        "content": "Process by which new neurons are formed in the brain.",
+        "link": "https://www.envisioning.io/vocab/neurogenesis"
+    },
+    "Neuromorphic Chips": {
+        "title": "Neuromorphic Chips",
+        "content": "Specialized hardware designed to mimic the neural structures and functioning of the human brain to enhance computational efficiency and speed in processing AI algorithms.",
+        "link": "https://www.envisioning.io/vocab/neuromorphic-chips"
+    },
+    "Neurosymbolic AI": {
+        "title": "Neurosymbolic AI",
+        "content": "Integration of neural networks with symbolic AI to create systems that can both understand and manipulate symbols in a manner similar to human cognitive processes.",
+        "link": "https://www.envisioning.io/vocab/neurosymbolic-ai"
+    },
+    "Ngram": {
+        "title": "Ngram",
+        "content": "Contiguous sequence of N items from a given sample of text or speech.",
+        "link": "https://www.envisioning.io/vocab/ngram"
+    },
+    "Noise": {
+        "title": "Noise",
+        "content": "Irrelevant or meaningless data in a dataset or unwanted variations in signals that can interfere with the training and performance of AI models.",
+        "link": "https://www.envisioning.io/vocab/noise"
+    },
+    "Non-Contrastive": {
+        "title": "Non-Contrastive",
+        "content": "ML approach that focuses on learning useful representations of data without explicitly contrasting positive examples against negative examples.",
+        "link": "https://www.envisioning.io/vocab/non-contrastive"
+    },
+    "Numerical Processing": {
+        "title": "Numerical Processing",
+        "content": "Algorithms and techniques for handling and analyzing numerical data to extract patterns, make predictions, or understand underlying trends.",
+        "link": "https://www.envisioning.io/vocab/numerical-processing"
+    },
+    "OOMs (Orders of Magnitude)": {
+        "title": "OOMs (Orders of Magnitude)",
+        "content": "Way to understand and compare quantities in terms of their scale or size, typically using powers of ten.",
+        "link": "https://www.envisioning.io/vocab/ooms-orders-of-magnitude"
+    },
+    "Object Detection": {
+        "title": "Object Detection",
+        "content": "Computer vision technique that identifies and locates objects within an image or video frame.",
+        "link": "https://www.envisioning.io/vocab/object-detection"
+    },
+    "Objective Function": {
+        "title": "Objective Function",
+        "content": "Objective function used in ML which quantitatively defines the goal of an optimization problem by measuring the performance of a model or solution.",
+        "link": "https://www.envisioning.io/vocab/objective-function"
+    },
+    "Observability": {
+        "title": "Observability",
+        "content": "Capability to monitor and understand the internal states of an AI system through its outputs.",
+        "link": "https://www.envisioning.io/vocab/observability"
+    },
+    "One-Shot Learning": {
+        "title": "One-Shot Learning",
+        "content": "ML technique where a model learns information about object categories from a single training example.",
+        "link": "https://www.envisioning.io/vocab/one-shot-learning"
+    },
+    "Ontology": {
+        "title": "Ontology",
+        "content": "Structured framework that categorizes and organizes information or data into a hierarchy of concepts and relationships, facilitating the sharing and reuse of knowledge across systems and domains.",
+        "link": "https://www.envisioning.io/vocab/ontology"
+    },
+    "Optimization Problem": {
+        "title": "Optimization Problem",
+        "content": "Optimization problem in AI which involves finding the best solution from all feasible solutions, given a set of constraints and an objective to achieve or optimize.",
+        "link": "https://www.envisioning.io/vocab/optimization-problem"
+    },
+    "Orchestration": {
+        "title": "Orchestration",
+        "content": "Systematic coordination and management of various models, algorithms, and processes to efficiently execute complex tasks and workflows.",
+        "link": "https://www.envisioning.io/vocab/orchestration"
+    },
+    "Overfitting": {
+        "title": "Overfitting",
+        "content": "When a ML model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.",
+        "link": "https://www.envisioning.io/vocab/overfitting"
+    },
+    "Overhang": {
+        "title": "Overhang",
+        "content": "Disparity between the minimum computation needed for a certain performance level and the actual computation used in training a model, often leading to superior model performance.",
+        "link": "https://www.envisioning.io/vocab/overhang"
+    },
+    "Overparameterized": {
+        "title": "Overparameterized",
+        "content": "ML model that has more parameters than the number of data points available for training.",
+        "link": "https://www.envisioning.io/vocab/overparameterized"
+    },
+    "P(Doom)": {
+        "title": "P(Doom)",
+        "content": "Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.",
+        "link": "https://www.envisioning.io/vocab/p-doom"
+    },
+    "P-hacking": {
+        "title": "P-hacking",
+        "content": "Manipulation of data analysis to achieve statistically significant results, often by repeatedly testing different variables or subsets of data until desirable outcomes are found.",
+        "link": "https://www.envisioning.io/vocab/p-hacking"
+    },
+    "PFGM (Poisson Flow Generative Model)": {
+        "title": "PFGM (Poisson Flow Generative Model)",
+        "content": "Generative model that utilizes Poisson processes in its architecture to model and generate complex data distributions.",
+        "link": "https://www.envisioning.io/vocab/pfgm-poisson-flow-generative-model"
+    },
+    "PPML (Privacy-Preserving Machine Learning)": {
+        "title": "PPML (Privacy-Preserving Machine Learning)",
+        "content": "Techniques that protect user data privacy during the machine learning process, without compromising the utility of the models.",
+        "link": "https://www.envisioning.io/vocab/ppml-privacy-preserving-machine-learning"
+    },
+    "PPO (Proximal Policy Optimization)": {
+        "title": "PPO (Proximal Policy Optimization)",
+        "content": "RL algorithm that aims to balance ease of implementation, sample efficiency, and reliable performance by using a simpler but effective update method for policy optimization.",
+        "link": "https://www.envisioning.io/vocab/ppo-proximal-policy-optimization"
+    },
+    "PQ (Product Quantization)": {
+        "title": "PQ (Product Quantization)",
+        "content": "Technique used in large-scale vector quantization for efficient similarity search and data compression by decomposing high-dimensional vectors into smaller sub-vectors and quantizing each sub-vector separately.",
+        "link": "https://www.envisioning.io/vocab/pq-product-quantization"
+    },
+    "Panel-of-Experts": {
+        "title": "Panel-of-Experts",
+        "content": "Decision-making system where multiple experts provide their opinions or solutions, and the consensus or most supported option is chosen.",
+        "link": "https://www.envisioning.io/vocab/panel-of-experts"
+    },
+    "Parallelism": {
+        "title": "Parallelism",
+        "content": "Simultaneous execution of multiple processes or tasks to improve performance and efficiency.",
+        "link": "https://www.envisioning.io/vocab/parallelism"
+    },
+    "Parameter Size": {
+        "title": "Parameter Size",
+        "content": "Count of individual weights in a ML model that are learned from data during training.",
+        "link": "https://www.envisioning.io/vocab/parameter-size"
+    },
+    "Parameter": {
+        "title": "Parameter",
+        "content": "Variable that is internal to the model and whose value is estimated from the training data.",
+        "link": "https://www.envisioning.io/vocab/parameter"
+    },
+    "Parameterized": {
+        "title": "Parameterized",
+        "content": "Model or function in AI that utilizes parameters to make predictions or decisions.",
+        "link": "https://www.envisioning.io/vocab/parameterized"
+    },
+    "Parametric Knowledge": {
+        "title": "Parametric Knowledge",
+        "content": "Information and patterns encoded within the parameters of a machine learning model, which are learned during the training process.",
+        "link": "https://www.envisioning.io/vocab/parametric-knowledge"
+    },
+    "Parametric Memory": {
+        "title": "Parametric Memory",
+        "content": "Memory architecture where specific memories or facts are stored using parameterized models, often used to improve efficiency in storing and retrieving information in machine learning systems.",
+        "link": "https://www.envisioning.io/vocab/parametric-memory"
+    },
+    "Path Integration": {
+        "title": "Path Integration",
+        "content": "Computational process by which an agent estimates its current position based on its previous position and the path it has taken, using internal cues rather than external landmarks.",
+        "link": "https://www.envisioning.io/vocab/path-integration"
+    },
+    "Perceptron": {
+        "title": "Perceptron",
+        "content": "Model in neural networks designed to perform binary classification tasks by mimicking the decision-making process of a single neuron.",
+        "link": "https://www.envisioning.io/vocab/perceptron"
+    },
+    "Perceptual Domain": {
+        "title": "Perceptual Domain",
+        "content": "Range of sensory inputs and interpretations that an AI system can process, akin to human perception systems such as vision, hearing, and touch.",
+        "link": "https://www.envisioning.io/vocab/perceptual-domain"
+    },
+    "Performance Degradation": {
+        "title": "Performance Degradation",
+        "content": "Decline in the efficiency or effectiveness of an AI system over time or under specific conditions, leading to reduced accuracy, speed, or reliability.",
+        "link": "https://www.envisioning.io/vocab/performance-degradation"
+    },
+    "Permutation": {
+        "title": "Permutation",
+        "content": "Arrangement of all or part of a set of objects in a specific order.",
+        "link": "https://www.envisioning.io/vocab/permutation"
+    },
+    "Perplexity": {
+        "title": "Perplexity",
+        "content": "Measure used in language modeling to evaluate how well a model predicts a sample of text, quantifying the model's uncertainty in its predictions.",
+        "link": "https://www.envisioning.io/vocab/perplexity"
+    },
+    "Persuasive System": {
+        "title": "Persuasive System",
+        "content": "Type of software designed to change a person's attitude or behavior through persuasion and social influence.",
+        "link": "https://www.envisioning.io/vocab/persuasive-system"
+    },
+    "Phase Transition": {
+        "title": "Phase Transition",
+        "content": "Critical point where a small change in a parameter or condition causes a significant shift in the system's behavior or performance.",
+        "link": "https://www.envisioning.io/vocab/phase-transition"
+    },
+    "Point-wise Feedforward Network": {
+        "title": "Point-wise Feedforward Network",
+        "content": "Neural network layer that applies a series of linear and non-linear transformations to each position (or \"point\") in the input sequence independently.",
+        "link": "https://www.envisioning.io/vocab/point-wise-feedforward-network"
+    },
+    "Policy Gradient Algorithm": {
+        "title": "Policy Gradient Algorithm",
+        "content": "Type of RL algorithm that optimizes the policy directly by computing gradients of expected rewards with respect to policy parameters.",
+        "link": "https://www.envisioning.io/vocab/policy-gradient-algorithm"
+    },
+    "Policy Gradient": {
+        "title": "Policy Gradient",
+        "content": "Class of algorithms in RL that optimizes the parameters of a policy directly through gradient ascent on expected future rewards.",
+        "link": "https://www.envisioning.io/vocab/policy-gradient"
+    },
+    "Policy Parameters": {
+        "title": "Policy Parameters",
+        "content": "Variables in a ML model, particularly in RL, that define the behavior of the policy by determining the actions an agent takes in different states.",
+        "link": "https://www.envisioning.io/vocab/policy-parameters"
+    },
+    "Policy-Guided Diffusion": {
+        "title": "Policy-Guided Diffusion",
+        "content": "Method where a policy, typically learned via RL, guides the diffusion process in generating samples that conform to desired specifications or constraints.",
+        "link": "https://www.envisioning.io/vocab/policy-guided-diffusion"
+    },
+    "Polymathic AI": {
+        "title": "Polymathic AI",
+        "content": "AI systems that possess a wide range of skills and knowledge, enabling them to perform tasks across various domains, much like a human polymath.",
+        "link": "https://www.envisioning.io/vocab/polymathic-ai"
+    },
+    "Polymorphism": {
+        "title": "Polymorphism",
+        "content": "Ability of objects to take on many forms, allowing methods to perform differently based on the object that invokes them.",
+        "link": "https://www.envisioning.io/vocab/polymorphism"
+    },
+    "Positional Encoding": {
+        "title": "Positional Encoding",
+        "content": "Technique used in neural network models, especially in transformers, to inject information about the order of tokens in the input sequence.",
+        "link": "https://www.envisioning.io/vocab/positional-encoding"
+    },
+    "Post-Training": {
+        "title": "Post-Training",
+        "content": "Techniques and adjustments applied to neural networks after their initial training phase to enhance performance, efficiency, or adaptability to new data or tasks.",
+        "link": "https://www.envisioning.io/vocab/post-training"
+    },
+    "Predictive Analytics": {
+        "title": "Predictive Analytics",
+        "content": "Using statistical techniques and algorithms to analyze historical data and make predictions about future events.",
+        "link": "https://www.envisioning.io/vocab/predictive-analytics"
+    },
+    "Preference Model": {
+        "title": "Preference Model",
+        "content": "Computational framework used to predict and understand an individual's preferences, often applied in recommendation systems and decision-making processes.",
+        "link": "https://www.envisioning.io/vocab/preference-model"
+    },
+    "Pretrained Model": {
+        "title": "Pretrained Model",
+        "content": "ML model that has been previously trained on a large dataset and can be fine-tuned or used as is for similar tasks or applications.",
+        "link": "https://www.envisioning.io/vocab/pretrained-model"
+    },
+    "Private Cloud Compute": {
+        "title": "Private Cloud Compute",
+        "content": "Dedicated cloud infrastructure to provide cloud computing services exclusively to a single organization, ensuring enhanced control, privacy, and security.",
+        "link": "https://www.envisioning.io/vocab/private-cloud-compute"
+    },
+    "Privileged Instructions": {
+        "title": "Privileged Instructions",
+        "content": "Commands in computing that can only be executed in a privileged mode, typically restricted to the operating system or other system-level software to manage hardware and critical operations securely.",
+        "link": "https://www.envisioning.io/vocab/privileged-instructions"
+    },
+    "Probabilistic Programming": {
+        "title": "Probabilistic Programming",
+        "content": "Programming paradigm designed to handle uncertainty and probabilistic models, allowing for the creation of programs that can make inferences about data by incorporating statistical methods directly into the code.",
+        "link": "https://www.envisioning.io/vocab/probabilistic-programming"
+    },
+    "Proliferation Problem": {
+        "title": "Proliferation Problem",
+        "content": "The issue of an overwhelming number of options or paths that an algorithm must consider, making computation impractically complex or resource-intensive.",
+        "link": "https://www.envisioning.io/vocab/proliferation-problem"
+    },
+    "Prompt Engineering": {
+        "title": "Prompt Engineering",
+        "content": "Process of carefully designing input prompts to elicit desired outputs from language models.",
+        "link": "https://www.envisioning.io/vocab/prompt-engineering"
+    },
+    "Prompt Injection": {
+        "title": "Prompt Injection",
+        "content": "Technique used to manipulate or influence the behavior of AI models by inserting specific commands or cues into the input prompt.",
+        "link": "https://www.envisioning.io/vocab/prompt-injection"
+    },
+    "Prompt": {
+        "title": "Prompt",
+        "content": "User-generated input or question designed to elicit a specific response or output from the model.",
+        "link": "https://www.envisioning.io/vocab/prompt"
+    },
+    "Promptocracy": {
+        "title": "Promptocracy",
+        "content": "Theoretical governance model where decision-making is guided by AI-generated prompts based on large datasets and probabilistic models.",
+        "link": "https://www.envisioning.io/vocab/promptocracy"
+    },
+    "Q-value": {
+        "title": "Q-value",
+        "content": "Measure used in RL to represent the expected future rewards that an agent can obtain, starting from a given state and choosing a particular action.",
+        "link": "https://www.envisioning.io/vocab/q-value"
+    },
+    "QA (Question Answering)": {
+        "title": "QA (Question Answering)",
+        "content": "Field of natural language processing focused on building systems that automatically answer questions posed by humans in a natural language.",
+        "link": "https://www.envisioning.io/vocab/qa-question-answering"
+    },
+    "QA (Question-Answer)": {
+        "title": "QA (Question-Answer)",
+        "content": "Tools designed to provide precise answers to user queries by understanding and processing natural language inputs.",
+        "link": "https://www.envisioning.io/vocab/qa-question-answer"
+    },
+    "Quantization": {
+        "title": "Quantization",
+        "content": "Process of reducing the precision of the weights and activations in neural network models to decrease their memory and computational requirements.",
+        "link": "https://www.envisioning.io/vocab/quantization"
+    },
+    "Query": {
+        "title": "Query",
+        "content": "Request made to a data management system or AI model to retrieve information or execute a command based on specific criteria.",
+        "link": "https://www.envisioning.io/vocab/query"
+    },
+    "RAG (Retrieval-Augmented Generation)": {
+        "title": "RAG (Retrieval-Augmented Generation)",
+        "content": "Combines the retrieval of informative documents from a large corpus with the generative capabilities of neural models to enhance language model responses with real-world knowledge.",
+        "link": "https://www.envisioning.io/vocab/rag-retrieval-augmented-generation"
+    },
+    "RBMs (Restricted Boltzmann Machines)": {
+        "title": "RBMs (Restricted Boltzmann Machines)",
+        "content": "Type of generative stochastic artificial neural network that can learn a probability distribution over its set of inputs.",
+        "link": "https://www.envisioning.io/vocab/rbms-restricted-boltzmann-machines"
+    },
+    "RFM (Robotics Foundational Model)": {
+        "title": "RFM (Robotics Foundational Model)",
+        "content": "Base model designed to provide fundamental capabilities or understanding for the development of various robotic systems and applications.",
+        "link": "https://www.envisioning.io/vocab/rfm-robotics-foundational-model"
+    },
+    "RL (Reinforcement Learning)": {
+        "title": "RL (Reinforcement Learning)",
+        "content": "Type of ML where an agent learns to make decisions by performing actions in an environment to achieve a goal, guided by rewards.",
+        "link": "https://www.envisioning.io/vocab/rl-reinforcement-learning"
+    },
+    "RLHF (Reinforcement Learning from Human Feedback)": {
+        "title": "RLHF (Reinforcement Learning from Human Feedback)",
+        "content": "Technique that combines reinforcement learning (RL) with human feedback to guide the learning process towards desired outcomes.",
+        "link": "https://www.envisioning.io/vocab/rlhf-reinforcement-learning-from-human-feedback"
+    },
+    "RLHF++": {
+        "title": "RLHF++",
+        "content": "Advanced form of RLFH (Reinforcement Learning from Human Feedback), a technique used in ML to enhance model performance by incorporating human feedback into the training process.",
+        "link": "https://www.envisioning.io/vocab/rlhf"
+    },
+    "RNN (Recurrent Neural Network)": {
+        "title": "RNN (Recurrent Neural Network)",
+        "content": "Class of neural networks where connections between nodes form a directed graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior for a sequence of inputs.",
+        "link": "https://www.envisioning.io/vocab/rnn-recurrent-neural-network"
+    },
+    "Random Forest": {
+        "title": "Random Forest",
+        "content": "Robust ML algorithm that combines multiple decision trees to improve prediction accuracy and prevent overfitting.",
+        "link": "https://www.envisioning.io/vocab/random-forest"
+    },
+    "Random Walk": {
+        "title": "Random Walk",
+        "content": "Mathematical concept representing a path consisting of a succession of random steps on some mathematical space.",
+        "link": "https://www.envisioning.io/vocab/random-walk"
+    },
+    "ReAct (Reason+Act)": {
+        "title": "ReAct (Reason+Act)",
+        "content": "AI framework for integrating reasoning and acting capabilities, enabling models to make decisions based on both logic and learned actions.",
+        "link": "https://www.envisioning.io/vocab/react-reason-act"
+    },
+    "ReLU (Rectified Linear Unit)": {
+        "title": "ReLU (Rectified Linear Unit)",
+        "content": "Activation function commonly used in neural networks which outputs the input directly if it is positive, otherwise, it outputs zero.",
+        "link": "https://www.envisioning.io/vocab/relu-rectified-linear-unit"
+    },
+    "Recommendation Systems": {
+        "title": "Recommendation Systems",
+        "content": "Algorithms designed to suggest relevant items to users (such as movies, books, products, etc.) based on their preferences and behaviors.",
+        "link": "https://www.envisioning.io/vocab/recommendation-systems"
+    },
+    "Recursive Self-Improvement": {
+        "title": "Recursive Self-Improvement",
+        "content": "Process by which an AI system iteratively improves itself, enhancing its intelligence and capabilities without human intervention.",
+        "link": "https://www.envisioning.io/vocab/recursive-self-improvement"
+    },
+    "Red Teaming": {
+        "title": "Red Teaming",
+        "content": "Practice where a team independently challenges a system, project, or policy to identify vulnerabilities, improve security, and test the effectiveness of defenses, often applied in cybersecurity and, increasingly, in AI safety and ethics.",
+        "link": "https://www.envisioning.io/vocab/red-teaming"
+    },
+    "Reflective Programming": {
+        "title": "Reflective Programming",
+        "content": "Programming paradigm that allows a program to inspect and modify its own structure and behavior at runtime.",
+        "link": "https://www.envisioning.io/vocab/reflective-programming"
+    },
+    "Regime": {
+        "title": "Regime",
+        "content": "Distinct operational or behavioral mode in which an AI system functions, characterized by specific patterns or properties of data, parameters, or algorithms.",
+        "link": "https://www.envisioning.io/vocab/regime"
+    },
+    "Regression": {
+        "title": "Regression",
+        "content": "Statistical method used in ML to predict a continuous outcome variable based on one or more predictor variables.",
+        "link": "https://www.envisioning.io/vocab/regression"
+    },
+    "Regularization": {
+        "title": "Regularization",
+        "content": "Technique used in machine learning to reduce model overfitting by adding a penalty to the loss function based on the complexity of the model.",
+        "link": "https://www.envisioning.io/vocab/regularization"
+    },
+    "Rejection Sampling": {
+        "title": "Rejection Sampling",
+        "content": "Method used to generate samples from a probability distribution by proposing candidates from a simpler distribution and accepting or rejecting them based on a criterion related to the target distribution.",
+        "link": "https://www.envisioning.io/vocab/rejection-sampling"
+    },
+    "Reranking": {
+        "title": "Reranking",
+        "content": "Process in which an initial set of items retrieved by a search algorithm is resorted using a secondary criterion or algorithm to better match user expectations or specific criteria.",
+        "link": "https://www.envisioning.io/vocab/reranking"
+    },
+    "ResNet (Residual Network)": {
+        "title": "ResNet (Residual Network)",
+        "content": "Type of CNN (Convolutional Neural Network) architecture that introduces residual learning to facilitate the training of much deeper networks by utilizing shortcut connections or skip connections that allow the gradient to bypass some layers.",
+        "link": "https://www.envisioning.io/vocab/resnet-residual-network"
+    },
+    "Residual Connections": {
+        "title": "Residual Connections",
+        "content": "DL architecture feature designed to help alleviate the vanishing gradient problem by allowing gradients to flow through a network more effectively.",
+        "link": "https://www.envisioning.io/vocab/residual-connections"
+    },
+    "Retrieval-Based (Model)": {
+        "title": "Retrieval-Based (Model)",
+        "content": "Algorithms that generate responses by selecting them from a predefined set of responses, based on the input they receive.",
+        "link": "https://www.envisioning.io/vocab/retrieval-based-model"
+    },
+    "Reward Model Ensemble": {
+        "title": "Reward Model Ensemble",
+        "content": "Combination of multiple reward models used together to evaluate and guide the learning process of reinforcement learning agents, aiming to improve robustness, accuracy, and generalization of the reward signal.",
+        "link": "https://www.envisioning.io/vocab/reward-model-ensemble"
+    },
+    "Rightsizing": {
+        "title": "Rightsizing",
+        "content": "Adjusting the computational resources allocated to AI systems to match the workload requirements optimally.",
+        "link": "https://www.envisioning.io/vocab/rightsizing"
+    },
+    "Robustness": {
+        "title": "Robustness",
+        "content": "Ability of an algorithm or model to deliver consistent and accurate results under varying operating conditions and input perturbations.",
+        "link": "https://www.envisioning.io/vocab/robustness"
+    },
+    "Roko's Basilisk": {
+        "title": "Roko's Basilisk",
+        "content": "Thought experiment proposing that a future all-powerful AI could punish those who did not help bring about its existence.",
+        "link": "https://www.envisioning.io/vocab/roko-s-basilisk"
+    },
+    "SAIF (Secure AI Framework)": {
+        "title": "SAIF (Secure AI Framework)",
+        "content": "Set of guidelines and best practices developed by Google to enhance the security of AI systems across various applications.",
+        "link": "https://www.envisioning.io/vocab/saif-secure-ai-framework"
+    },
+    "SAM (Segment Anything Model)": {
+        "title": "SAM (Segment Anything Model)",
+        "content": "AI model designed for high-precision image segmentation, capable of identifying and delineating every object within an image.",
+        "link": "https://www.envisioning.io/vocab/sam-segment-anything-model"
+    },
+    "SIL (Simulator in the Loop)": {
+        "title": "SIL (Simulator in the Loop)",
+        "content": "Methodology in which a simulator is integrated into the control loop of a system, providing a virtual environment for real-time testing and validation of algorithms, control strategies, or system performance.",
+        "link": "https://www.envisioning.io/vocab/sil-simulator-in-the-loop"
+    },
+    "SIMA (Scalable Instructable Multiworld Agent)": {
+        "title": "SIMA (Scalable Instructable Multiworld Agent)",
+        "content": "AI agent designed to operate across multiple 3D virtual environments, following natural language instructions to accomplish varied tasks.",
+        "link": "https://www.envisioning.io/vocab/sima-scalable-instructable-multiworld-agent"
+    },
+    "SLAPA (Self-Learning Agent for Performing APIs)": {
+        "title": "SLAPA (Self-Learning Agent for Performing APIs)",
+        "content": "AI agent designed to autonomously learn and interact with APIs to perform tasks more effectively over time.",
+        "link": "https://www.envisioning.io/vocab/slapa-self-learning-agent-for-performing-apis"
+    },
+    "SNN (Spiking Neural Network)": {
+        "title": "SNN (Spiking Neural Network)",
+        "content": "Type of artificial neural network that mimics the way biological neural networks in the brain process information, using spikes of electrical activity to transmit and process information.",
+        "link": "https://www.envisioning.io/vocab/snn-spiking-neural-network"
+    },
+    "SSF (Stochastic Similarity Filter)": {
+        "title": "SSF (Stochastic Similarity Filter)",
+        "content": "Moderates GPU usage by skipping processing of similar consecutive input images, thereby improving computational efficiency in real-time image and video generation tasks.",
+        "link": "https://www.envisioning.io/vocab/ssf-stochastic-similarity-filter"
+    },
+    "SSL (Self-Supervised Learning)": {
+        "title": "SSL (Self-Supervised Learning)",
+        "content": "Type of ML where the system learns to predict part of its input from other parts, using its own data structure as supervision.",
+        "link": "https://www.envisioning.io/vocab/ssl-self-supervised-learning"
+    },
+    "SSM (State-Space Model)": {
+        "title": "SSM (State-Space Model)",
+        "content": "Mathematical frameworks used to model dynamic systems by describing their states in space and how these states evolve over time under the influence of inputs, disturbances, and noise.",
+        "link": "https://www.envisioning.io/vocab/ssm-state-space-model"
+    },
+    "SVM (Support Vector Machine)": {
+        "title": "SVM (Support Vector Machine)",
+        "content": "Supervised ML model used primarily for classification and regression tasks, which finds the optimal hyperplane that best separates different classes in the data.",
+        "link": "https://www.envisioning.io/vocab/svm-support-vector-machine"
+    },
+    "Safety Net": {
+        "title": "Safety Net",
+        "content": "Measures, policies, and technologies designed to prevent, detect, and mitigate adverse outcomes or ethical issues stemming from AI systems' operation.",
+        "link": "https://www.envisioning.io/vocab/safety-net"
+    },
+    "Salience": {
+        "title": "Salience",
+        "content": "Quality by which certain aspects of a dataset or information stand out as particularly noticeable or important in a given context.",
+        "link": "https://www.envisioning.io/vocab/salience"
+    },
+    "Sample Efficiency": {
+        "title": "Sample Efficiency",
+        "content": "Ability of a ML model to achieve high performance with a relatively small number of training samples.",
+        "link": "https://www.envisioning.io/vocab/sample-efficiency"
+    },
+    "Sampling": {
+        "title": "Sampling",
+        "content": "Fundamental technique used to reduce computational cost and simplify data management",
+        "link": "https://www.envisioning.io/vocab/sampling"
+    },
+    "Saturation Effect": {
+        "title": "Saturation Effect",
+        "content": "Phenomenon where the performance improvements of a model diminish as the complexity of the model or the amount of training data increases beyond a certain point.",
+        "link": "https://www.envisioning.io/vocab/saturation-effect"
+    },
+    "Scaffolding": {
+        "title": "Scaffolding",
+        "content": "Method of gradually building up the complexity of tasks or learning environments to help an AI system develop more sophisticated capabilities over time.",
+        "link": "https://www.envisioning.io/vocab/scaffolding"
+    },
+    "Scalable MatMul-free Language Modeling": {
+        "title": "Scalable MatMul-free Language Modeling",
+        "content": "Techniques in natural language processing that avoid matrix multiplication (MatMul) operations to improve scalability and efficiency.",
+        "link": "https://www.envisioning.io/vocab/scalable-matmul-free-language-modeling"
+    },
+    "Scalar": {
+        "title": "Scalar",
+        "content": "Single numerical value, typically representing a quantity or magnitude in mathematical or computational models.",
+        "link": "https://www.envisioning.io/vocab/scalar"
+    },
+    "Scale Separation": {
+        "title": "Scale Separation",
+        "content": "Distinguishing between phenomena or variables that operate on distinctly different magnitudes, time scales, or spatial dimensions.",
+        "link": "https://www.envisioning.io/vocab/scale-separation"
+    },
+    "Scaling Hypothesis": {
+        "title": "Scaling Hypothesis",
+        "content": "Enlarging model size, data, and computational resources can consistently improve task performance up to very large scales.",
+        "link": "https://www.envisioning.io/vocab/scaling-hypothesis"
+    },
+    "Search Optimization": {
+        "title": "Search Optimization",
+        "content": "Process of enhancing algorithms' ability to efficiently search for the most optimal solution in a potentially vast solution space.",
+        "link": "https://www.envisioning.io/vocab/search-optimization"
+    },
+    "Secure Enclave": {
+        "title": "Secure Enclave",
+        "content": "Hardware-based security feature designed to protect sensitive data by isolating it in a dedicated and secure area of a processor.",
+        "link": "https://www.envisioning.io/vocab/secure-enclave"
+    },
+    "Self-Attention": {
+        "title": "Self-Attention",
+        "content": "Mechanism in neural networks that allows models to weigh the importance of different parts of the input data differently.",
+        "link": "https://www.envisioning.io/vocab/self-attention"
+    },
+    "Self-Reasoning Token": {
+        "title": "Self-Reasoning Token",
+        "content": "AI mechanism designed to enhance the planning capabilities of language models by allowing them to anticipate and prepare for future outputs.",
+        "link": "https://www.envisioning.io/vocab/self-reasoning-token"
+    },
+    "Self-Supervised Pretraining": {
+        "title": "Self-Supervised Pretraining",
+        "content": "ML approach where a model learns to predict parts of the input data from other parts without requiring labeled data, which is then fine-tuned on downstream tasks.",
+        "link": "https://www.envisioning.io/vocab/self-supervised-pretraining"
+    },
+    "Self-awareness": {
+        "title": "Self-awareness",
+        "content": "",
+        "link": "https://www.envisioning.io/vocab/self-awareness"
+    },
+    "Semantic Entropy": {
+        "title": "Semantic Entropy",
+        "content": "Measure of uncertainty or unpredictability in the meaning of a message or data, often considering the context in which the information is used.",
+        "link": "https://www.envisioning.io/vocab/semantic-entropy"
+    },
+    "Semantic Segmentation": {
+        "title": "Semantic Segmentation",
+        "content": "Process of partitioning a digital image into multiple segments (sets of pixels) to simplify its representation into something more meaningful and easier to analyze, where each segment corresponds to different objects or parts of objects.",
+        "link": "https://www.envisioning.io/vocab/semantic-segmentation"
+    },
+    "Semi-Supervised Learning": {
+        "title": "Semi-Supervised Learning",
+        "content": "ML approach that uses a combination of a small amount of labeled data and a large amount of unlabeled data for training models.",
+        "link": "https://www.envisioning.io/vocab/semi-supervised-learning"
+    },
+    "Sequence Model": {
+        "title": "Sequence Model",
+        "content": "Model designed to process and predict sequences of data, such as time series, text, or biological sequences.",
+        "link": "https://www.envisioning.io/vocab/sequence-model"
+    },
+    "Sequence Models": {
+        "title": "Sequence Models",
+        "content": "Algorithms that predict the next element in a sequence, pivotal for tasks in natural language processing (NLP) such as text generation and translation.",
+        "link": "https://www.envisioning.io/vocab/sequence-models"
+    },
+    "Shared Awareness": {
+        "title": "Shared Awareness",
+        "content": "Collective understanding and perception of information among multiple agents, both human and machine, in a given environment.",
+        "link": "https://www.envisioning.io/vocab/shared-awareness"
+    },
+    "Siamese Network": {
+        "title": "Siamese Network",
+        "content": "Type of neural network architecture that involves two or more identical subnetworks sharing the same parameters and weights, typically used for tasks like similarity learning and verification.",
+        "link": "https://www.envisioning.io/vocab/siamese-network"
+    },
+    "Silicon-Based Intelligence": {
+        "title": "Silicon-Based Intelligence",
+        "content": "Concept of artificial intelligence systems that operate on silicon-based hardware, contrasting with biological, carbon-based forms of intelligence such as humans.",
+        "link": "https://www.envisioning.io/vocab/silicon-based-intelligence"
+    },
+    "Similarity Search": {
+        "title": "Similarity Search",
+        "content": "Method used in data science to identify similar items from a large dataset based on their proximity to a given query item (also known as proximity search).",
+        "link": "https://www.envisioning.io/vocab/similarity-search"
+    },
+    "Simulation": {
+        "title": "Simulation",
+        "content": "Process of creating a digital model of a real-world or theoretical situation to study the behavior and dynamics of systems.",
+        "link": "https://www.envisioning.io/vocab/simulation"
+    },
+    "Singularity": {
+        "title": "Singularity",
+        "content": "Hypothetical future point at which technological growth becomes uncontrollable and irreversible, resulting in unforeseeable changes to human civilization.",
+        "link": "https://www.envisioning.io/vocab/singularity"
+    },
+    "Situational Models": {
+        "title": "Situational Models",
+        "content": "Cognitive frameworks that allow AI systems to understand and predict dynamic environments by continuously integrating contextual information.",
+        "link": "https://www.envisioning.io/vocab/situational-models"
+    },
+    "Slop": {
+        "title": "Slop",
+        "content": "Colloquial slang referring to responses generated by  LLMs that may be overly verbose or repetitive, often observed in AI-generated summaries or answers, and sometimes criticized for lacking conciseness or relevance.",
+        "link": "https://www.envisioning.io/vocab/slop"
+    },
+    "Socratic Model": {
+        "title": "Socratic Model",
+        "content": "Conversational AI that is designed to engage in dialogue in a manner akin to Socratic questioning, aiming to stimulate critical thinking and draw out ideas and underlying presuppositions.",
+        "link": "https://www.envisioning.io/vocab/socratic-model"
+    },
+    "SoftMax": {
+        "title": "SoftMax",
+        "content": "Function that converts a vector of numerical values into a vector of probabilities, where the probabilities of each value are proportional to the exponentials of the input numbers.",
+        "link": "https://www.envisioning.io/vocab/softmax"
+    },
+    "Solomonoff Induction": {
+        "title": "Solomonoff Induction",
+        "content": "Theory of prediction that combines elements of algorithmic information theory and Bayesian inference to create a universal framework for inferring future data from past observations.",
+        "link": "https://www.envisioning.io/vocab/solomonoff-induction"
+    },
+    "Solution Space": {
+        "title": "Solution Space",
+        "content": "Refers to the set of all possible solutions to a given problem or decision-making scenario.",
+        "link": "https://www.envisioning.io/vocab/solution-space"
+    },
+    "Sovereign AI": {
+        "title": "Sovereign AI",
+        "content": "Hypothetical form of AI that operates independently with its own autonomy, potentially possessing the ability to make decisions and take actions without human intervention.",
+        "link": "https://www.envisioning.io/vocab/sovereign-ai"
+    },
+    "Spacetime Patches": {
+        "title": "Spacetime Patches",
+        "content": "Technique for transforming video data into a format suitable for ML models by breaking down video into temporal and spatial segments.",
+        "link": "https://www.envisioning.io/vocab/spacetime-patches"
+    },
+    "Sparsability": {
+        "title": "Sparsability",
+        "content": "Ability of algorithms to effectively handle and process data matrices where most elements are zero (sparse), improving computational efficiency and memory usage.",
+        "link": "https://www.envisioning.io/vocab/sparsability"
+    },
+    "Sparse Autoencoder": {
+        "title": "Sparse Autoencoder",
+        "content": "Type of neural network designed to learn efficient data representations by enforcing sparsity on the hidden layer activations.",
+        "link": "https://www.envisioning.io/vocab/sparse-autoencoder"
+    },
+    "Sparsity": {
+        "title": "Sparsity",
+        "content": "Technique and principle of having models that utilize minimal data representation and processing, typically through zero or near-zero values.",
+        "link": "https://www.envisioning.io/vocab/sparsity"
+    },
+    "Spatial Intelligence": {
+        "title": "Spatial Intelligence",
+        "content": "Ability of a system to understand, reason, and manipulate spatial relationships and properties within its environment.",
+        "link": "https://www.envisioning.io/vocab/spatial-intelligence"
+    },
+    "Speculative Decoding": {
+        "title": "Speculative Decoding",
+        "content": "AI technique that generates multiple potential outputs simultaneously to improve efficiency and accuracy in tasks like language modeling and neural network inference.",
+        "link": "https://www.envisioning.io/vocab/speculative-decoding"
+    },
+    "Speech Processing": {
+        "title": "Speech Processing",
+        "content": "Technology that enables computers to recognize, interpret, and generate human speech.",
+        "link": "https://www.envisioning.io/vocab/speech-processing"
+    },
+    "Spillover": {
+        "title": "Spillover",
+        "content": "Unintended consequences or effects that AI systems can have outside of their designed operational contexts.",
+        "link": "https://www.envisioning.io/vocab/spillover"
+    },
+    "Stacking": {
+        "title": "Stacking",
+        "content": "ML ensemble technique that combines multiple classification or regression models via a meta-classifier or meta-regressor to improve prediction accuracy.",
+        "link": "https://www.envisioning.io/vocab/stacking"
+    },
+    "State Space Model": {
+        "title": "State Space Model",
+        "content": "Mathematical frameworks used to represent systems that are governed by a set of latent (hidden) variables evolving over time, observed through another set of variables.",
+        "link": "https://www.envisioning.io/vocab/state-space-model"
+    },
+    "Stateful": {
+        "title": "Stateful",
+        "content": "System or application that saves client data from previous sessions to influence and personalize future interactions.",
+        "link": "https://www.envisioning.io/vocab/stateful"
+    },
+    "Static Inference": {
+        "title": "Static Inference",
+        "content": "Process of performing predictions using a pre-trained machine learning model without updating the model parameters during runtime.",
+        "link": "https://www.envisioning.io/vocab/static-inference"
+    },
+    "Steerability": {
+        "title": "Steerability",
+        "content": "Ability to intentionally manipulate the output of the network in a specific direction by applying predetermined modifications to its inputs or parameters.",
+        "link": "https://www.envisioning.io/vocab/steerability"
+    },
+    "Stochastic Parrot": {
+        "title": "Stochastic Parrot",
+        "content": "Language models that generate text based on probabilistic predictions, often criticized for parroting information without understanding.",
+        "link": "https://www.envisioning.io/vocab/stochastic-parrot"
+    },
+    "Stochastic": {
+        "title": "Stochastic",
+        "content": "Systems or processes that are inherently random, involving variables that are subject to chance.",
+        "link": "https://www.envisioning.io/vocab/stochastic"
+    },
+    "Straight-Through Estimator": {
+        "title": "Straight-Through Estimator",
+        "content": "Technique used in training neural networks to enable the backpropagation of gradients through non-differentiable functions or operations.",
+        "link": "https://www.envisioning.io/vocab/straight-through-estimator"
+    },
+    "Streaming": {
+        "title": "Streaming",
+        "content": "Continuous generation and delivery of text in real-time as the model processes input sequentially.",
+        "link": "https://www.envisioning.io/vocab/streaming"
+    },
+    "Structured Data": {
+        "title": "Structured Data",
+        "content": "Information that is highly organized and formatted in a way that is easily searchable and accessible by computer systems, typically stored in databases.",
+        "link": "https://www.envisioning.io/vocab/structured-data"
+    },
+    "Structured Generation": {
+        "title": "Structured Generation",
+        "content": "Process where outputs are produced in a structured format, often requiring adherence to specific formats or templates, such as tables, graphs, or well-organized textual reports.",
+        "link": "https://www.envisioning.io/vocab/structured-generation"
+    },
+    "Structured Search": {
+        "title": "Structured Search",
+        "content": "Method of querying and retrieving information from databases and other structured data sources where data is organized in defined types and relationships.",
+        "link": "https://www.envisioning.io/vocab/structured-search"
+    },
+    "Subsymbolic AI": {
+        "title": "Subsymbolic AI",
+        "content": "AI approaches that do not use explicit symbolic representation of knowledge but instead rely on distributed, often neural network-based methods to process and learn from data.",
+        "link": "https://www.envisioning.io/vocab/subsymbolic-ai"
+    },
+    "Super Alignment": {
+        "title": "Super Alignment",
+        "content": "Theoretical concept in AI, primarily focusing on ensuring that advanced AI systems or AGI align closely with human values and ethics to prevent negative outcomes.",
+        "link": "https://www.envisioning.io/vocab/super-alignment"
+    },
+    "Super Prompting": {
+        "title": "Super Prompting",
+        "content": "Method in AI where specific, carefully crafted input prompts are used to guide a model towards generating more accurate or contextually appropriate outputs.",
+        "link": "https://www.envisioning.io/vocab/super-prompting"
+    },
+    "Superintelligence": {
+        "title": "Superintelligence",
+        "content": "A form of AI that surpasses the cognitive performance of humans in virtually all domains of interest, including creativity, general wisdom, and problem-solving.",
+        "link": "https://www.envisioning.io/vocab/superintelligence"
+    },
+    "Supervised Classifier": {
+        "title": "Supervised Classifier",
+        "content": "Algorithm that, given a set of labeled training data, learns to predict the labels of new, unseen data.",
+        "link": "https://www.envisioning.io/vocab/supervised-classifier"
+    },
+    "Supervised Learning": {
+        "title": "Supervised Learning",
+        "content": "ML approach where models are trained on labeled data to predict outcomes or classify data into categories.",
+        "link": "https://www.envisioning.io/vocab/supervised-learning"
+    },
+    "Supervision": {
+        "title": "Supervision",
+        "content": "Use of labeled data to train ML models, guiding the learning process by providing input-output pairs.",
+        "link": "https://www.envisioning.io/vocab/supervision"
+    },
+    "Surrogate Objective": {
+        "title": "Surrogate Objective",
+        "content": "Alternative goal used to approximate or replace a primary objective in optimization problems, especially when the primary objective is difficult to evaluate directly.",
+        "link": "https://www.envisioning.io/vocab/surrogate-objective"
+    },
+    "Swarm Intelligence": {
+        "title": "Swarm Intelligence",
+        "content": "Form of AI inspired by the collective behavior of social insects and animals, used to solve complex problems through decentralized, self-organized systems.",
+        "link": "https://www.envisioning.io/vocab/swarm-intelligence"
+    },
+    "Symbolic AI": {
+        "title": "Symbolic AI",
+        "content": "Also known as \"Good Old-Fashioned AI\" (GOFAI), involves the manipulation of symbols to represent problems and compute solutions through rules.",
+        "link": "https://www.envisioning.io/vocab/symbolic-ai"
+    },
+    "Symbolic Regression": {
+        "title": "Symbolic Regression",
+        "content": "Type of regression analysis that searches for mathematical expressions to best fit a given set of data points.",
+        "link": "https://www.envisioning.io/vocab/symbolic-regression"
+    },
+    "Symmetry": {
+        "title": "Symmetry",
+        "content": "Invariances in data or models where certain transformations do not affect the outcomes or predictions.",
+        "link": "https://www.envisioning.io/vocab/symmetry"
+    },
+    "Synthetic Data Generation": {
+        "title": "Synthetic Data Generation",
+        "content": "Creating artificial data programmatically, often used to train ML models where real data is scarce, sensitive, or biased.",
+        "link": "https://www.envisioning.io/vocab/synthetic-data-generation"
+    },
+    "System 1 & System 2": {
+        "title": "System 1 & System 2",
+        "content": "Two modes of thinking in human cognition: System 1 is fast, automatic, and intuitive, while System 2 is slow, deliberate, and analytical.",
+        "link": "https://www.envisioning.io/vocab/system-1-system-2"
+    },
+    "System Prompt": {
+        "title": "System Prompt",
+        "content": "Predefined message or question generated by an AI system to guide or solicit a response from the user.",
+        "link": "https://www.envisioning.io/vocab/system-prompt"
+    },
+    "TCN (Temporal Convolutional Networks)": {
+        "title": "TCN (Temporal Convolutional Networks)",
+        "content": "Type of neural network designed to handle sequential data by applying convolutional operations over time.",
+        "link": "https://www.envisioning.io/vocab/tcn-temporal-convolutional-networks"
+    },
+    "TEM (Trusted Execution Monitor)": {
+        "title": "TEM (Trusted Execution Monitor)",
+        "content": "Security component that ensures the integrity and confidentiality of code and data within a computer system by managing and protecting execution environments.",
+        "link": "https://www.envisioning.io/vocab/tem-trusted-execution-monitor"
+    },
+    "TESCREAL": {
+        "title": "TESCREAL",
+        "content": "Seven ideologies: Transhumanism, Extropianism, Singularitarianism, Cosmism, Rationalism, Effective Altruism, and Longtermism. They all focus on using technology to improve people’s lives and they are deeply influential among people working on AGI.",
+        "link": "https://www.envisioning.io/vocab/tescreal"
+    },
+    "TPU (Tensor Processing Units)": {
+        "title": "TPU (Tensor Processing Units)",
+        "content": "Specialized hardware accelerators designed to significantly speed up the calculations required for ML tasks.",
+        "link": "https://www.envisioning.io/vocab/tpu-tensor-processing-units"
+    },
+    "TRL (Transfer Reinforcement Learning)": {
+        "title": "TRL (Transfer Reinforcement Learning)",
+        "content": "Subfield of RL focused on leveraging knowledge gained from one or more source tasks to improve learning efficiency and performance in a different, but related, target task.",
+        "link": "https://www.envisioning.io/vocab/trl-transfer-reinforcement-learning"
+    },
+    "TRPO (Trust Region Policy Optimization)": {
+        "title": "TRPO (Trust Region Policy Optimization)",
+        "content": "Advanced algorithm used in RL to ensure stable and reliable policy updates by optimizing within a trust region, thus preventing drastic policy changes.",
+        "link": "https://www.envisioning.io/vocab/trpo-trust-region-policy-optimization"
+    },
+    "TTFT (Test Time Fine-Tuning)": {
+        "title": "TTFT (Test Time Fine-Tuning)",
+        "content": "Process of adapting a pre-trained model using new data during the testing phase to improve its performance on specific tasks.",
+        "link": "https://www.envisioning.io/vocab/ttft-test-time-fine-tuning"
+    },
+    "TTS (Text-to-Speech)": {
+        "title": "TTS (Text-to-Speech)",
+        "content": "Converts written text into spoken voice output, enabling computers to read text aloud.",
+        "link": "https://www.envisioning.io/vocab/tts-text-to-speech"
+    },
+    "Targeted Adversarial Examples": {
+        "title": "Targeted Adversarial Examples",
+        "content": "Inputs intentionally designed to cause a machine learning model to misclassify them into a specific, incorrect category.",
+        "link": "https://www.envisioning.io/vocab/targeted-adversarial-examples"
+    },
+    "Task Environment": {
+        "title": "Task Environment",
+        "content": "Setting or context within which an intelligent agent operates and attempts to achieve its objectives.",
+        "link": "https://www.envisioning.io/vocab/task-environment"
+    },
+    "Teacher Committee": {
+        "title": "Teacher Committee",
+        "content": "Group of expert models that collaboratively guide the training process of a student model to improve its performance.",
+        "link": "https://www.envisioning.io/vocab/teacher-committee"
+    },
+    "Teacher-Guided Rejection Sampling": {
+        "title": "Teacher-Guided Rejection Sampling",
+        "content": "Advanced ML technique that refines a model by iteratively sampling and accepting data based on evaluations from multiple expert models (teachers).",
+        "link": "https://www.envisioning.io/vocab/teacher-guided-rejection-sampling"
+    },
+    "Temperature": {
+        "title": "Temperature",
+        "content": "Hyperparameter that controls the randomness of predictions by adjusting the probability distribution of the output classes to make the model's predictions more or less deterministic.",
+        "link": "https://www.envisioning.io/vocab/temperature"
+    },
+    "Tensor": {
+        "title": "Tensor",
+        "content": "Multi-dimensional array used in mathematics and computer science, serving as a fundamental data structure in neural networks for representing data and parameters.",
+        "link": "https://www.envisioning.io/vocab/tensor"
+    },
+    "TensorFlow": {
+        "title": "TensorFlow",
+        "content": "Open-source software library for machine learning, developed by Google, used for designing, building, and training deep learning models.",
+        "link": "https://www.envisioning.io/vocab/tensorflow"
+    },
+    "Text to Action": {
+        "title": "Text to Action",
+        "content": "Process of interpreting and converting written or spoken language into executable actions by a system or application.",
+        "link": "https://www.envisioning.io/vocab/text-to-action"
+    },
+    "Thought Token": {
+        "title": "Thought Token",
+        "content": "Computational abstraction used in NLP models to represent and manipulate complex ideas or concepts within sequences of text.",
+        "link": "https://www.envisioning.io/vocab/thought-token"
+    },
+    "Token Speculation Techniques": {
+        "title": "Token Speculation Techniques",
+        "content": "Strategies used in NLP models to predict multiple potential tokens (words or subwords) in parallel, improving the efficiency of text generation.",
+        "link": "https://www.envisioning.io/vocab/token-speculation-techniques"
+    },
+    "Token": {
+        "title": "Token",
+        "content": "Basic unit of data processed in NLP tasks, representing words, characters, or subwords.",
+        "link": "https://www.envisioning.io/vocab/token"
+    },
+    "Training Cost": {
+        "title": "Training Cost",
+        "content": "Quantifies the resources required to develop AI models, including computational expenses, energy consumption, and human expertise.",
+        "link": "https://www.envisioning.io/vocab/training-cost"
+    },
+    "Training Data": {
+        "title": "Training Data",
+        "content": "Dataset used to teach a ML model how to make predictions or perform tasks.",
+        "link": "https://www.envisioning.io/vocab/training-data"
+    },
+    "Training": {
+        "title": "Training",
+        "content": "Process of teaching a ML model to make accurate predictions or decisions, by adjusting its parameters based on data.",
+        "link": "https://www.envisioning.io/vocab/training"
+    },
+    "Trajectory Generation": {
+        "title": "Trajectory Generation",
+        "content": "Computational methods for designing the path that an object or agent should follow to reach a destination efficiently and effectively.",
+        "link": "https://www.envisioning.io/vocab/trajectory-generation"
+    },
+    "Transfer Learning": {
+        "title": "Transfer Learning",
+        "content": "ML method where a model developed for a task is reused as the starting point for a model on a second task, leveraging the knowledge gained from the first task to improve performance on the second.",
+        "link": "https://www.envisioning.io/vocab/transfer-learning"
+    },
+    "Transformer": {
+        "title": "Transformer",
+        "content": "Deep learning model architecture designed for handling sequential data, especially effective in natural language processing tasks.",
+        "link": "https://www.envisioning.io/vocab/transformer"
+    },
+    "Translational": {
+        "title": "Translational",
+        "content": "Process or approach of converting scientific research into practical applications.",
+        "link": "https://www.envisioning.io/vocab/translational"
+    },
+    "Transposed Convolutional Layer": {
+        "title": "Transposed Convolutional Layer",
+        "content": "Type of neural network layer that performs the opposite operation of a traditional convolutional layer, effectively upscaling input feature maps to a larger spatial resolution.",
+        "link": "https://www.envisioning.io/vocab/transposed-convolutional-layer"
+    },
+    "Triple": {
+        "title": "Triple",
+        "content": "Data structure in the form of a three-part entity consisting of a subject, predicate, and object, commonly used in semantic web technologies and knowledge graphs.",
+        "link": "https://www.envisioning.io/vocab/triple"
+    },
+    "Tunable Parameters": {
+        "title": "Tunable Parameters",
+        "content": "Variables in an AI model that are adjusted during training to optimize the model's performance on a given task.",
+        "link": "https://www.envisioning.io/vocab/tunable-parameters"
+    },
+    "Turing Complete": {
+        "title": "Turing Complete",
+        "content": "System capable of simulating any Turing machine, thereby performing arbitrary computational operations given enough time and resources.",
+        "link": "https://www.envisioning.io/vocab/turing-complete"
+    },
+    "Turing Test": {
+        "title": "Turing Test",
+        "content": "Measure of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.",
+        "link": "https://www.envisioning.io/vocab/turing-test"
+    },
+    "UTM (Universal Turing Machine)": {
+        "title": "UTM (Universal Turing Machine)",
+        "content": "Theoretical construct in computer science that can simulate any other Turing machine's computing process given the appropriate input and its own machine's description.",
+        "link": "https://www.envisioning.io/vocab/utm-universal-turing-machine"
+    },
+    "Uncensored AI": {
+        "title": "Uncensored AI",
+        "content": "AI systems that operate without restrictions on the content they generate or the decisions they make.",
+        "link": "https://www.envisioning.io/vocab/uncensored-ai"
+    },
+    "Underfitting": {
+        "title": "Underfitting",
+        "content": "Occurs when a ML model is too simple to capture the underlying pattern of the data it is trained on, resulting in poor performance on both training and testing datasets.",
+        "link": "https://www.envisioning.io/vocab/underfitting"
+    },
+    "Unhobbling": {
+        "title": "Unhobbling",
+        "content": "Process of unlocking latent capabilities in AI models by addressing limitations and inefficiencies, thus significantly enhancing their practical utility.",
+        "link": "https://www.envisioning.io/vocab/unhobbling"
+    },
+    "Universal Learning Algorithms": {
+        "title": "Universal Learning Algorithms",
+        "content": "Theoretical frameworks aimed at creating systems capable of learning any task to human-level competency, leveraging principles that could allow for generalization across diverse domains.",
+        "link": "https://www.envisioning.io/vocab/universal-learning-algorithms"
+    },
+    "Universality": {
+        "title": "Universality",
+        "content": "Concept that certain computational systems can simulate any other computational system, given the correct inputs and enough time and resources.",
+        "link": "https://www.envisioning.io/vocab/universality"
+    },
+    "Unstructured Data": {
+        "title": "Unstructured Data",
+        "content": "Data that lacks a pre-defined format or organization, making it challenging to collect, process, and analyze using conventional database tools.",
+        "link": "https://www.envisioning.io/vocab/unstructured-data"
+    },
+    "Unsupervised Learning": {
+        "title": "Unsupervised Learning",
+        "content": "Type of ML where algorithms learn patterns from untagged data, without any guidance on what outcomes to predict.",
+        "link": "https://www.envisioning.io/vocab/unsupervised-learning"
+    },
+    "Unverifyability": {
+        "title": "Unverifyability",
+        "content": "Inability to confirm the correctness, validity, or truth of a statement, model, or system, often due to inherent limitations in the verification process or lack of necessary information.",
+        "link": "https://www.envisioning.io/vocab/unverifyability"
+    },
+    "VAE (Variable AutoEncoder)": {
+        "title": "VAE (Variable AutoEncoder)",
+        "content": "Type of generative model that leverages neural networks to encode input data into a latent space and then reconstruct it back to the original input.",
+        "link": "https://www.envisioning.io/vocab/vae-variable-autoencoder"
+    },
+    "VAE (Variational Autoencoders)": {
+        "title": "VAE (Variational Autoencoders)",
+        "content": "Class of generative models that use neural networks to encode inputs into a latent space and then decode from this space to reconstruct the input or generate new data that resemble the input data.",
+        "link": "https://www.envisioning.io/vocab/vae-variational-autoencoders"
+    },
+    "VC Dimension (Vapnik-Chervonenkis)": {
+        "title": "VC Dimension (Vapnik-Chervonenkis)",
+        "content": "Measure of the capacity of a statistical classification algorithm, quantifying how complex the model is in terms of its ability to fit varied sets of data.",
+        "link": "https://www.envisioning.io/vocab/vc-dimension-vapnik-chervonenkis"
+    },
+    "VLM (Visual Language Model)": {
+        "title": "VLM (Visual Language Model)",
+        "content": "AI models designed to interpret and generate content by integrating visual and textual information, enabling them to perform tasks like image captioning, visual question answering, and more.",
+        "link": "https://www.envisioning.io/vocab/vlm-visual-language-model"
+    },
+    "VQA (Visual Question Answering)": {
+        "title": "VQA (Visual Question Answering)",
+        "content": "Field of AI where systems are designed to answer questions about visual content, such as images or videos.",
+        "link": "https://www.envisioning.io/vocab/vqa-visual-question-answering"
+    },
+    "Validation Data": {
+        "title": "Validation Data",
+        "content": "Subset of data used to assess the performance of a model during the training phase, separate from the training data itself.",
+        "link": "https://www.envisioning.io/vocab/validation-data"
+    },
+    "Value Matrix": {
+        "title": "Value Matrix",
+        "content": "Structured format for organizing and displaying data, often used in machine learning to represent input data and their corresponding outputs or labels.",
+        "link": "https://www.envisioning.io/vocab/value-matrix"
+    },
+    "Vanishing Gradient": {
+        "title": "Vanishing Gradient",
+        "content": "Phenomenon in neural networks where gradients of the network's parameters become very small, effectively preventing the weights from changing their values during training.",
+        "link": "https://www.envisioning.io/vocab/vanishing-gradient"
+    },
+    "Vector Database": {
+        "title": "Vector Database",
+        "content": "Specialized database optimized for storing and querying vectors, which are arrays of numbers representing data in high-dimensional space.",
+        "link": "https://www.envisioning.io/vocab/vector-database"
+    },
+    "Vectorization": {
+        "title": "Vectorization",
+        "content": "Process of converting non-numeric data into numeric format so that it can be used by ML algorithms.",
+        "link": "https://www.envisioning.io/vocab/vectorization"
+    },
+    "Verifier Theory": {
+        "title": "Verifier Theory",
+        "content": "Concept in computational complexity theory that focuses on the role of a verifier in determining the correctness of a solution to a problem within a given complexity class.",
+        "link": "https://www.envisioning.io/vocab/verifier-theory"
+    },
+    "ViTs (Vision Transformers)": {
+        "title": "ViTs (Vision Transformers)",
+        "content": "Class of DL models that apply the transformer architecture, originally designed for natural language processing, to computer vision tasks.",
+        "link": "https://www.envisioning.io/vocab/vits-vision-transformers"
+    },
+    "Volumetric AI": {
+        "title": "Volumetric AI",
+        "content": "AI techniques to process, analyze, and generate three-dimensional volumetric data, often used in fields like medical imaging, 3D reconstruction, and virtual reality.",
+        "link": "https://www.envisioning.io/vocab/volumetric-ai"
+    },
+    "WBE (Whole Brain Emulation)": {
+        "title": "WBE (Whole Brain Emulation)",
+        "content": "Hypothetical process of scanning a biological brain in detail and replicating its state and processes in a computational system to achieve functional and experiential equivalence.",
+        "link": "https://www.envisioning.io/vocab/wbe-whole-brain-emulation"
+    },
+    "Wait Calculation": {
+        "title": "Wait Calculation",
+        "content": "Assessing whether to proceed with projects immediately or wait for future advancements in AI that could offer significant benefits.",
+        "link": "https://www.envisioning.io/vocab/wait-calculation"
+    },
+    "Weight Decay": {
+        "title": "Weight Decay",
+        "content": "Regularization technique used in training neural networks to prevent overfitting by penalizing large weights.",
+        "link": "https://www.envisioning.io/vocab/weight-decay"
+    },
+    "Weight": {
+        "title": "Weight",
+        "content": "Represents a coefficient for a feature in a model that determines the influence of that feature on the model's predictions.",
+        "link": "https://www.envisioning.io/vocab/weight"
+    },
+    "Word Salad": {
+        "title": "Word Salad",
+        "content": "Disorganized and nonsensical sequence of words or letters, often making it difficult or impossible to derive coherent meaning from the text.",
+        "link": "https://www.envisioning.io/vocab/word-salad"
+    },
+    "Word Vector": {
+        "title": "Word Vector",
+        "content": "Numerical representations of words that capture their meanings, relationships, and context within a language.",
+        "link": "https://www.envisioning.io/vocab/word-vector"
+    },
+    "World Model": {
+        "title": "World Model",
+        "content": "Internal representation that an AI system uses to simulate the environment it operates in, enabling prediction and decision-making based on those simulations.",
+        "link": "https://www.envisioning.io/vocab/world-model"
+    },
+    "XAI (Explainable AI)": {
+        "title": "XAI (Explainable AI)",
+        "content": "AI systems designed to provide insights into their behavior and decisions, making them transparent and understandable to humans.",
+        "link": "https://www.envisioning.io/vocab/xai-explainable-ai"
+    },
+    "Xavier's Initialization": {
+        "title": "Xavier's Initialization",
+        "content": "Weight initialization technique designed to keep the variance of the outputs of a neuron approximately equal to the variance of its inputs across layers in a deep neural network.",
+        "link": "https://www.envisioning.io/vocab/xavier-s-initialization"
+    },
+    "ZSL (Zero-Shot Learning)": {
+        "title": "ZSL (Zero-Shot Learning)",
+        "content": "ML technique where a model learns to recognize objects, tasks, or concepts it has never seen during training.",
+        "link": "https://www.envisioning.io/vocab/zsl-zero-shot-learning"
+    },
+    "bGPT (Byte-Level Transformer)": {
+        "title": "bGPT (Byte-Level Transformer)",
+        "content": "Variant of the GPT architecture designed to process data at the byte level rather than at the word or sub-word level, allowing for greater flexibility in handling diverse text types and structures.",
+        "link": "https://www.envisioning.io/vocab/bgpt-byte-level-transformer"
+    },
+    "k-NN (k-Nearest Neighbors)": {
+        "title": "k-NN (k-Nearest Neighbors)",
+        "content": "Simple, non-parametric algorithm used in ML for classification and regression tasks by assigning labels based on the majority vote of the nearest neighbors.",
+        "link": "https://www.envisioning.io/vocab/k-nn-k-nearest-neighbors"
+    },
+    "xLSTM": {
+        "title": "xLSTM",
+        "content": "Extended form of Long Short-Term Memory (LSTM), integrating enhancements for scalability and efficiency in DL models.",
+        "link": "https://www.envisioning.io/vocab/xlstm"
+    }
+}

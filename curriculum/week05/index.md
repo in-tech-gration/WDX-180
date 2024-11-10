@@ -14,7 +14,6 @@ title: Week 05 | CSS Frameworks
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 05 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,11 +23,10 @@ title: Week 05 | CSS Frameworks
 
   </h2>
 
-  <span>Updated: 16/11/2023</span>
+  <span>Updated: 8/11/2024</span>
 
   <h2 class="week-controls__next_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 05 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -384,8 +382,8 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 ### Schedule
 
   - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+  <!-- - [Exercises](#exercises-NN) -->
+  <!-- - [Extra Resources](#extra-resources-NN) -->
 
 ### Study Plan
 
@@ -415,8 +413,8 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 ### Schedule
 
   - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+  <!-- - [Exercises](#exercises-NN) -->
+  <!-- - [Extra Resources](#extra-resources-NN) -->
 
 ### Study Plan
 
@@ -446,8 +444,8 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 ### Schedule
 
   - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+  <!-- - [Exercises](#exercises-NN) -->
+  <!-- - [Extra Resources](#extra-resources-NN) -->
 
 ### Study Plan
 
@@ -473,3 +471,14 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 ## Week 05 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

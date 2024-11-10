@@ -67,6 +67,23 @@ In our `.gitignore` we have an entry for a folder named `.personal` under which 
 
 ### How to do X?
 
+#### TODO: How to load JavaScript files in a Markdown?
+
+  _(Work in progress...)_
+
+#### TODO: How to enable Flems in a Markdown?
+
+  ```markdown
+
+    ```html
+    <style></style>
+    <section>Content</section>
+    ```
+
+  ```
+
+  [&#9658; Live coding](#flems-enable)
+
 #### How to launch the platform?
 
   1) While inside the root folder, run the following command:

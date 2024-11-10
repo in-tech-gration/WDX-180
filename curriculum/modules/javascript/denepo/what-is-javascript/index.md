@@ -149,7 +149,6 @@ title: What is JavaScript?
   - [javascript.info/intro](https://javascript.info/intro){:target="_blank"}
   - [The Net Ninja](https://www.youtube.com/watch?v=VB7y0yxZjro){:target="_blank"}
   - [Andrew Mosh](https://www.youtube.com/watch?v=W6NZfCO5SIk){:target="_blank"} \(first 5 minutes\)
-  - [Code School](https://www.youtube.com/watch?v=nItSSTwBvSU){:target="_blank"}
   - [MDN: First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript){:target="_blank"}
   - [Danielle Thé](https://www.youtube.com/watch?v=gT0Lh1eYk78){:target="_blank"}
 

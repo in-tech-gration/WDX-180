@@ -374,7 +374,29 @@ function handleProgressDisplay(target) {
   studentTableSection.classList.toggle('hidden');
 
 }
+function handleBugJournal(target, event){
 
+  const studentId = target.getAttribute("data-studentId");
+  // console.log({ studentId });
+  const bugJournalURL = `https://api.github.com/repos/${studentId}/WDX-180/commits?path=user/bug_journal/BUG_JOURNAL.md`;
+  console.log(`Fetching ${bugJournalURL}`);
+
+  // Temporarily disabled due to API limits on free plan
+  const ENABLED = false; 
+
+  ENABLED && fetch( bugJournalURL )
+  .then( res => res.json() )
+  .then( commitData =>{
+
+    console.log({ commitData });
+    console.log( commitData.length );
+
+  })
+  .catch( error =>{
+    console.log({error});
+  });
+
+}
 function handleRepoSyncInfo(target) {
   const studentId = target.href.split("#")[1];
   console.log({ studentId });
@@ -407,7 +429,6 @@ function handleRepoSyncInfo(target) {
       btnIcon.classList.remove("rotating");
     })
 }
-
 function initGoogleTranscriptParser() {
 
   document
@@ -514,7 +535,6 @@ function initGoogleTranscriptParser() {
   });
 
 }
-
 function initGoldenLayout({ colA, config }) {
 
   const tabsEl = document.querySelector("script#tabs-json");
@@ -620,6 +640,9 @@ function init(e) {
     }
     if (target.classList.contains("student-repo-sync")) {
       handleRepoSyncInfo(target);
+    }
+    if (target.classList.contains("student-bug-journal-btn")) {
+      handleBugJournal(target,e);
     }
 
   });

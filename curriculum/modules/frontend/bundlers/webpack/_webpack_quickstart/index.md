@@ -10,9 +10,11 @@ title: Webpack Quickstart
 
 ### Study Plan
 
-#### MINIMAL WEBPACK SETUP FOR AN HTML/JS APPLICATION
-
 "Webpack is a JavaScript bundler for your web application. In the past, you had to link JavaScript files manually in HTML files. Nowadays, Webpack takes care about it."
+
+NOTE: It would be nice to initialize the project folder as a git repository, then stage and commit each step in order to see what changes as you progress (e.g. by running git diff) and of course, going back a few steps to check what went wrong.
+
+#### MINIMAL WEBPACK SETUP FOR AN HTML/JS APPLICATION
 
 `mkdir project`
 `cd project`
@@ -179,6 +181,10 @@ import md from "./test.md";
 document.body.innerHTML = md;
 ```
 
+#### Configuring ESLint
+
+  https://www.robinwieruch.de/webpack-eslint/
+
 #### Adding TypeScript support
 
 Follow: https://webpack.js.org/guides/typescript/
@@ -216,6 +222,30 @@ module.exports = {
 
 **Write your first Babel Transformer**
 
+  **(1) Hello World**
+
+  babelPlugin.js:
+
+  ```js
+  module.exports = function () {
+    const SimpleVisitor = {
+      StringLiteral(path, state) {
+        if (path.node.value === "We'll never survive!") {
+          path.node.value = "Nonsense. You're only saying that because no one ever has.";
+        }
+      },
+    };
+  
+    return { visitor: SimpleVisitor };
+  };
+  ```
+
+  .babelrc:
+
+  ```json
+  "plugins": [ "./babelPlugin.js" ]
+  ```
+
 > https://lihautan.com/step-by-step-guide-for-writing-a-babel-transformation/
 
 > https://lihautan.com/creating-custom-javascript-syntax-with-babel/
@@ -236,3 +266,17 @@ module.exports = {
   - [How to Webpack 5 - Setup Tutorial](https://www.robinwieruch.de/webpack-setup-tutorial/){:target="_blank"}
 
   - [How to Webpack 5 with Babel - Setup Tutorial](https://www.robinwieruch.de/webpack-babel-setup-tutorial/){:target="_blank"}
+
+  - [Getting Started](https://webpack.js.org/guides/getting-started/)
+
+  - [Setting up HtmlWebpackPlugin](https://webpack.js.org/guides/output-management/#setting-up-htmlwebpackplugin)
+
+  - [Setting up a Webpack DevServer](https://webpack.js.org/guides/development/)
+
+  - [How to Webpack 5 - Setup Tutorial](https://www.robinwieruch.de/webpack-setup-tutorial/)
+
+  - [webpack Tutorial: How to Set Up webpack 5 From Scratch](https://www.taniarascia.com/how-to-use-webpack/)
+
+  - [How to Webpack 5 with Babel - Setup Tutorial](https://www.robinwieruch.de/webpack-babel-setup-tutorial/)
+
+  - [WRITING A BABEL PLUGIN WITH GRANDMA](https://stephencook.dev/blog/writing-a-babel-plugin-with-grandma/)

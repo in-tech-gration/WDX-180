@@ -12,7 +12,15 @@ title: Advanced CSS
 
 ### Summary
 
-  We are going to explore some pretty useful and cool CSS features (that you probably didn't know exist). Let's go!
+  ![](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/post_mortem/assets/post_mortem.png)
+
+  Let's begin by reading about [What is a Software Post-Mortem and How Do You Write One?](https://www.freecodecamp.org/news/what-is-a-software-post-mortem/){:target="_blank"}
+
+  After having read the article, open up the code [found here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/post_mortem){:target="_blank"} debug the program and write a short post mortem.
+
+  ---
+
+  Next, we are going to explore some pretty useful and cool CSS features (that you probably didn't know exist). Let's go!
 
   - Go through [**this article**](https://www.lambdatest.com/blog/advanced-css-tricks-and-techniques/){:target="_blank"} that covers quite a lot of features. For each one, you should check the appropriate MDN article for more details and play around with the feature in your local development environment. Perhaps it's a good idea at this point to create a file named `advanced-css-tricks.html` and work on it.
 

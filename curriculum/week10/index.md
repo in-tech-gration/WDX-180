@@ -1,10 +1,10 @@
 ---
-title: Week 10 | Web APIs 1: DOM
+title: Week 10 | Web APIs 1 | DOM
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 10-Web APIs 1: DOM | slugify }}">
+<h1 id="{{ Week 10-Web APIs 1 | DOM | slugify }}">
   <span class="week-prefix">Week 10 |</span> Web APIs 1: DOM
 </h1>
 
@@ -14,26 +14,24 @@ title: Week 10 | Web APIs 1: DOM
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 10 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 12/12/2023</span>
+  <span>Updated: 27/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num <= 36 %}
+    {% if week_num <= 36 %}
 
       {% assign next_week_num = 10 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -59,6 +57,36 @@ title: Week 10 | Web APIs 1: DOM
 
   > "The making of good software takes time.
   > If you try to make it take less time, it will take more time."
+
+
+
+  Starting today, **there's a new requirement for you**. 
+
+  ![](./assets/bug_journal.png)
+
+  Under the `user/` folder, you'll find a new `bug_journal/` folder that contains a sample file called `BUG_JOURNAL.draft.md`.  Copy this file, rename it to `BUG_JOURNAL.md` and **start tracking your bugs** from now on. You'll find a small example inside the draft (you can remove it from your copy) to give you an idea on what to look for and how to document each bug. There's a long and short version of bug reporting. Use the one that fits your style and mode of operation.
+
+  > "The worst thing you can do is to ignore your mistakes. Don't get into the bad habit of error amnesia. You should be learning from your mistakes and the only way to learn from your mistakes is to pay attention to them." ~ Douglas Crockford
+
+
+
+  The import steps are:
+
+  - Make sure to pay attention to the bugs and errors in your code
+  - When they happen, stop for a moment and document them
+  - Write a brief description of the bug/error
+  - Include a small code replicating the bug 
+  - Try to categorize the bug (in any way you want)
+  - Think about what caused the bug
+  - Think about ways to detect, protect the code from or avoid the bug altogether in the future
+
+  Why should you do this?
+
+  - Stop making the same mistakes again and again!
+  - Develop safer, more stable and bug-free software by learning how you've failed in the past
+  - Nothing is a more valuable lesson that our failures
+
+  ---
 
 
 
@@ -362,3 +390,14 @@ title: Week 10 | Web APIs 1: DOM
 ## Week 10 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

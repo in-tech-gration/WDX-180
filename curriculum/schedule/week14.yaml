@@ -1,23 +1,24 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: Functional Programming 1, Templating, JavaScript Frameworks
+title: Intermediate JavaScript 
+# title: Functional Programming 1, Templating, JavaScript Frameworks
 schedule: 
   days:
     1: # 
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
     2: # 
-      # file://./../modules/css/
-      module: javascript/
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
     3: # Templating
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
     4: # 
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/group-project-generic.md
+      module: generics/group-project-generic.md
     5: # Let's Build jQuery
-      # file://./../modules/javascript/
-      module: javascript/
+      # file://./../modules/generics/intermediate-generic.md
+      module: generics/intermediate-generic.md
 
 # ---
 # DAY 1: What is Functional Programming?

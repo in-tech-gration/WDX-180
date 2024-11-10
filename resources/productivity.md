@@ -47,6 +47,21 @@ _(A quick Google image search for "closure javascript" results in this nice visu
 [How to draw to remember more | Graham Shaw | TEDxVienna](https://www.youtube.com/watch?v=gj3ZnKlHqxI){:target="_blank"}
 YouTube video, 17min
 
+### How to share your screen
+
+  **Windows:**
+
+  - [How to Take a Screenshot on a Windows PC: 8 Simple Tricks](https://www.wikihow.com/Take-a-Screenshot-in-Microsoft-Windows){:target="_blank"}
+
+  **Linux:**
+
+  - [How to Take a Screenshot in Linux](https://www.wikihow.com/Take-a-Screenshot-in-Linux){:target="_blank"}
+
+  **Mac:**
+
+  - [Take screenshots or screen recordings on Mac](https://support.apple.com/en-mz/guide/mac-help/mh26782/mac){:target="_blank"}
+  - [How to Take a Screenshot on a Mac: Complete Guide](https://www.wikihow.com/Take-a-Screenshot-on-a-Mac){:target="_blank"}
+
 ---
 
 ## Browser

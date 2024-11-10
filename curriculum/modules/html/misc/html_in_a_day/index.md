@@ -16,11 +16,11 @@ title: HTML & Markdown in a Day
 
   By studying the material and following the instructions, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
-  - [Read: **HTML**](resources/HTML.md){:target="_blank"} to get a quick introduction to HTML. 
+  - [Read: **HTML**](../modules/html/intro/index.md){:target="_blank"} to get a quick introduction to HTML. 
 
-  - [Read: **What will your website look like?**](resources/What_will_your_website_look_like/index.md){:target="_blank"}
+  - [Read: **What will your website look like?**](../modules/html/misc/what_will_your_website_look_like/index.md){:target="_blank"}
 
-  - [Read: **HTML Basics**](resources/HTML_Basics/index.md){:target="_blank"}
+  - [Read: **HTML Basics**](../modules/html/misc/html_basics/index.md){:target="_blank"}
     - <details>
         <summary>What you'll learn</summary>
         <ul>
@@ -95,6 +95,30 @@ title: HTML & Markdown in a Day
   - [Complete the **Markdown Tutorial** exercise](https://www.markdowntutorial.com/)
 
 ### Extra Resources
+
+  - [Watch: **HTML Tutorial for Beginners: HTML Crash Course**](https://www.youtube.com/watch?v=qz0aGYrrlhU){:target="_blank"}
+    - **Duration:** 1h9min
+    - **Level:** Beginner
+    - **Description:** HTML Tutorial for Beginners - Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.
+    <details>
+    <summary>Table of Content</summary>
+    <ul>
+      <li>What You Need </li>
+      <li>Languages and Tools of Web Development </li>
+      <li>How the Web Works</li>
+      <li>Inspecting HTTP Requests and Responses </li>
+      <li>HTML Basics</li>
+      <li>CSS Basics</li>
+      <li>Formatting Code</li>
+      <li>Inspecting Pages Using DevTools</li>
+      <li>Validating Web Pages</li>
+      <li>The Head Section</li>
+      <li>Text</li>
+      <li>Entities</li>
+      <li>Hyperlinks</li>
+      <li>Images</li>
+    </ul>
+    </details>
 
 ### Sources and Attributions
 
