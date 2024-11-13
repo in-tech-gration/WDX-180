@@ -23,7 +23,7 @@ title: Week 07 | JavaScript Core 1
 
   </h2>
 
-  <span>Updated: 28/12/2023</span>
+  <span>Updated: 8/11/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -57,30 +57,7 @@ title: Week 07 | JavaScript Core 1
 
   This Module is about learning "Just enough JavaScript" in order to understand, trace and debug the execution process of JavaScript programs and learn how to read and comprehend every single line of code that you see. That's probably the most important task, anyone learning a new language (even natural languages), must go through in order to become familiar with this new fascinating territory. 
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  
-  ![](./assets/lenses2.jpg)
-  
-  **Setting up Study Lenses (v2) on your System**
-  
-  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
-      - `git clone git@github.com:in-tech-gration/study-lenses.git`
-  
-  2. Change to the `study-lenses` directory and install all dependencies:
-  
-      - Run: `cd study-lenses`
-      - Then: `npm install` (or `npm i` for short)
-  
-  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
-  
-      - `git checkout lenses2`
-      - `npm link` 
-      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
-  
-  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
-  
-      - `lenses2 --version` or `lenses2 -v`
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
 
   **Launching Study Lenses and following the material**
 
@@ -143,7 +120,7 @@ title: Week 07 | JavaScript Core 1
 
   In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **07-variables**
   - **08-null**
@@ -179,7 +156,7 @@ title: Week 07 | JavaScript Core 1
 
   In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **09-interactions**
   - **10-numbers**
@@ -217,7 +194,7 @@ title: Week 07 | JavaScript Core 1
 
   In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **13-while-loops**
   - **14-review-quiz**
@@ -253,7 +230,7 @@ title: Week 07 | JavaScript Core 1
 
   In this Module, we are continuing our journey into "Just enough JavaScript".
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Day 01 and then go through the following sections:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **15-for-of-loops**
   - **16-break**

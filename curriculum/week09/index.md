@@ -23,7 +23,7 @@ title: Week 09 | JavaScript Core 3
 
   </h2>
 
-  <span>Updated: 27/12/2023</span>
+  <span>Updated: 8/11/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -92,7 +92,7 @@ title: Week 09 | JavaScript Core 3
   - [Study: **Function Basics** @javascript.info](https://javascript.info/function-basics){:target="_blank"}
     - **Level:** Beginner
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/3-functions/`
@@ -186,7 +186,7 @@ Just like training wheels on a bicycle, `programming training wheels` act as our
 
 ### Study Plan
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2) on your System**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/6-using-functions/`
@@ -244,7 +244,7 @@ Just like training wheels on a bicycle, `programming training wheels` act as our
    - **Level:** Beginner
    - **Captions:** Yes
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2) on your System**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/7-arrays/`
@@ -286,7 +286,7 @@ Just like training wheels on a bicycle, `programming training wheels` act as our
 
   - Watch [**Introduction to JavaScript Objects**](https://www.youtube.com/watch?v=OJBlJI1vEK8){:target="_blank"} to get a very basic idea of the Object structure in JavaScript, then move on with the rest of the material that includes objects in several cases.
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/8-functional-array-methods/`
@@ -344,7 +344,7 @@ Just like training wheels on a bicycle, `programming training wheels` act as our
 
   Now that you have a good understanding of what Javascript Objects are, you can start playing around with some code.
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
