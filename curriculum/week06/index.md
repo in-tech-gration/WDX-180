@@ -11,8 +11,6 @@ load_script_js_via_src:
   <span class="week-prefix">Week 06 |</span> CSS Frameworks & Intro to Programming
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
-
 <div class="week-controls">
 
   {% assign week_num = 06 | to_integer %}
@@ -967,8 +965,6 @@ load_script_js_via_src:
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-
 
 ---
 

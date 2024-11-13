@@ -8,8 +8,6 @@ title: Week 09 | JavaScript Core 3
   <span class="week-prefix">Week 09 |</span> JavaScript Core 3
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
-
 <div class="week-controls">
 
   {% assign week_num = 09 | to_integer %}

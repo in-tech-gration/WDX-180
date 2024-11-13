@@ -8,8 +8,6 @@ title: Week 08 | JavaScript Core 2
   <span class="week-prefix">Week 08 |</span> JavaScript Core 2
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
-
 <div class="week-controls">
 
   {% assign week_num = 08 | to_integer %}
@@ -20,7 +18,7 @@ title: Week 08 | JavaScript Core 2
 
       {% assign previous_week_num = 08 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
@@ -33,7 +31,7 @@ title: Week 08 | JavaScript Core 2
 
       {% assign next_week_num = 08 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -253,8 +251,6 @@ title: Week 08 | JavaScript Core 2
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-
 
 ---
 
