@@ -36,8 +36,6 @@ title: Flappy App - Day 1
 
   Good luck!
 
-  __*Please do not share the link with anyone outside of intechgration.io__
-
   **The Videos**
 
   - [**Intro**](https://www.youtube.com/watch?v=mhTtjqa0a44){:target="_blank"}

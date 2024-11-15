@@ -26,7 +26,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 8/1/2024</span>
+  <span>Updated: 8/11/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -312,41 +312,7 @@ load_script_js_via_src:
 
   **Installing Study Lenses**
 
-  1. Run the following commands in your terminal while inside the root folder of your forked `WDX-180` repository:
-
-  - `git submodule init`
-  - `npm run update:submodules`
-
-  2. Follow the steps described below to install `study-lenses` globally on your machine:
-
-  
-  ![](./assets/lenses2.jpg)
-  
-  **Setting up Study Lenses (v2) on your System**
-  
-  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
-      - `git clone git@github.com:in-tech-gration/study-lenses.git`
-  
-  2. Change to the `study-lenses` directory and install all dependencies:
-  
-      - Run: `cd study-lenses`
-      - Then: `npm install` (or `npm i` for short)
-  
-  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
-  
-      - `git checkout lenses2`
-      - `npm link` 
-      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
-  
-  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
-  
-      - `lenses2 --version` or `lenses2 -v`
-
-  > If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. 
-  > 
-  > **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
-
-
+  Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System.
 
   **Watch a short introduction to Study Lenses**
 
@@ -863,9 +829,9 @@ load_script_js_via_src:
 
   **Explore Study Lenses**
 
-  Continue your exploration of the `study-lenses` tool. Follow the [instructions here](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/) to set up Study Lenses (v2) on your System (if you haven't done that already).
+  Continue your exploration of the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
 
-  Then the following commands on your local copy of the `WDX-180` repo:
+  Then run the following commands on your local copy of the `WDX-180` repo:
 
   - `lenses2 curriculum/week06/exercises/exploring-study-lenses`
 
@@ -965,30 +931,7 @@ load_script_js_via_src:
 
   **Predictive Stepping:** Practice predicting each step of program execution, using your browser's debugger to check your predictions every step of the way.
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  
-  ![](./assets/lenses2.jpg)
-  
-  **Setting up Study Lenses (v2) on your System**
-  
-  1. Clone the `study-lenses` repository from this link: [ https://github.com/in-tech-gration/study-lenses/](https://github.com/in-tech-gration/study-lenses/){:target="_blank"}.
-      - `git clone git@github.com:in-tech-gration/study-lenses.git`
-  
-  2. Change to the `study-lenses` directory and install all dependencies:
-  
-      - Run: `cd study-lenses`
-      - Then: `npm install` (or `npm i` for short)
-  
-  3. Checkout to the `lenses2` branch and run the `npm link` command to make this available globally:
-  
-      - `git checkout lenses2`
-      - `npm link` 
-      - (or if you're on a Mac/Linux, you'll perhaps need `sudo npm link`)
-  
-  4. Check that `study-lenses` have been successfully installed on your system by running the following command:
-  
-      - `lenses2 --version` or `lenses2 -v`
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
 
   **Launching Study Lenses and following the material**
 
