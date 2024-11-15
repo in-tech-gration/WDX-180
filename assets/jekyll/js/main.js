@@ -23,7 +23,15 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(function() {
-
+  // hamburger 
+  $('#hamburger-btn').on('click', function () {
+    $('#side-toc').toggleClass('hidden');
+    if ($('#side-toc').hasClass('hidden')) {
+      $('#hamburger-icon').show();
+      $('#close-icon').hide();
+    } 
+  });
+  
   function debugUpcomingWeeklyLinks(){
 
     // DEBUG SOON TO BE RELEASED WEEKS: Shift+MetaKey+Click

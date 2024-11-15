@@ -32,7 +32,7 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
 }
-.wrapper, .main-section {
+.main-section {
   max-width: var(--max-width);
 }
 summary {
@@ -86,13 +86,28 @@ h3 {
 .__page details {
   margin-bottom: 1rem;
 }
+#hamburger-btn {
+  font-size: 2rem;
+  color: var(--vibrant);
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  left: 1rem;
+  z-index: 2000;
+}
 
+.hidden {
+  display: none;
+}
 // Side Navigation
 nav#side-toc {
-
   position: fixed;
   left: 0;
-  padding-left: 1rem;
+  top:0;
+  padding: 3rem 1rem;
   
 }
 
@@ -120,10 +135,7 @@ pre.highlight code {
 //<< CODE HIGHLIGHT SECTIONS:
 
 //>> SIDE NAVIGATION (ToC) RESPONSIVENESS
-nav#side-toc{
-  width: 20vw;
-  padding-left: 0.75rem
-}
+
 nav#side-toc > ul{
   padding-left: 0;
   width: fit-content;
