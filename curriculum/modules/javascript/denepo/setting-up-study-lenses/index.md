@@ -25,3 +25,8 @@ TODO:
 4. Check that `study-lenses` have been successfully installed on your system by running the following command:
 
     - `lenses2 --version` or `lenses2 -v`
+
+**Explore Study Lenses**
+
+5. Watch the [**WDX180 - Study Lenses Guide**](https://youtu.be/5uCJBiQ7MkA){:target="_blank"} video to get familiar with the `study-lenses` tool.
+- **Duration:** 12min
