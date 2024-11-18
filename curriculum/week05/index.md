@@ -192,8 +192,6 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
   Good luck!
 
-  __*Please do not share the link with anyone outside of intechgration.io__
-
   **The Videos**
 
   - [**Intro**](https://www.youtube.com/watch?v=mhTtjqa0a44){:target="_blank"}

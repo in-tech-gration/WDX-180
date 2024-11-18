@@ -45,7 +45,8 @@ Syllabus:
           open: true
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
         12: # file:///./schedule/week12.yaml (XMAS Project)
-          title: "Project Week: Combine Web APIs to build a web application"
+          title: "Practice Week"
+          open: true
   Intermediate:
     title: "Intermediate: WDX 120°"
     schedule:

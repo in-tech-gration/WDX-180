@@ -23,7 +23,7 @@ title: Week 07 | JavaScript Core 1
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 18/11/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -46,6 +46,8 @@ title: Week 07 | JavaScript Core 1
     <h2>
       <span class="summary-day">Week 07 - Day 1</span> | Just Enough JavaScript - Part 1</h2>
   </summary>
+
+![](./assets/learning.with.study.lenses.jpg)
 
 ### Schedule
 
