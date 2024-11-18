@@ -12,9 +12,7 @@ title: Just Enough JavaScript - Part 1
 
   This Module is about learning "Just enough JavaScript" in order to understand, trace and debug the execution process of JavaScript programs and learn how to read and comprehend every single line of code that you see. That's probably the most important task, anyone learning a new language (even natural languages), must go through in order to become familiar with this new fascinating territory. 
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from {{ SGEN:MODULE_LINK:javascript/denepo/setting-up-study-lenses/index.md }} to set up Study Lenses (v2) on your System (if you haven't done that already).
 
   **Launching Study Lenses and following the material**
 
