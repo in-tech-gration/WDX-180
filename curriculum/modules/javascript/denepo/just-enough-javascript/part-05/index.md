@@ -18,6 +18,11 @@ title: Just Enough JavaScript - Part 5
   - **16-break**
   - **17-continue**
 
+  Here's a reminder on how to launch `study lenses`:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  
 ### Summary
 
 ### Exercises

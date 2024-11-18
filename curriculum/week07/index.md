@@ -127,6 +127,11 @@ title: Week 07 | JavaScript Core 1
   - **07-variables**
   - **08-null**
 
+  Here's a reminder on how to launch `study lenses`:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+
 <!-- Summary -->
 
 <!-- Exercises -->
@@ -165,6 +170,11 @@ title: Week 07 | JavaScript Core 1
   - **11-block-scope**
   - **12-conditionals**
 
+  Here's a reminder on how to launch `study lenses`:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+
 <!-- Summary -->
 
 <!-- Exercises -->
@@ -200,6 +210,11 @@ title: Week 07 | JavaScript Core 1
 
   - **13-while-loops**
   - **14-review-quiz**
+
+  Here's a reminder on how to launch `study lenses`:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
 
 <!-- Summary -->
 
@@ -237,6 +252,11 @@ title: Week 07 | JavaScript Core 1
   - **15-for-of-loops**
   - **16-break**
   - **17-continue**
+
+  Here's a reminder on how to launch `study lenses`:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
 
 <!-- Summary -->
 

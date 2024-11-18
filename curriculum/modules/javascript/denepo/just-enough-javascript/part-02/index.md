@@ -17,6 +17,11 @@ title: Just Enough JavaScript - Part 2
   - **07-variables**
   - **08-null**
 
+  Here's a reminder on how to launch `study lenses`:
+
+  - `cd WDX-180/`
+  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+
 ### Summary
 
 ### Exercises
