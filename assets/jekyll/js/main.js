@@ -24,13 +24,26 @@ $(window).resize(sectionHeight);
 
 $(function() {
   // hamburger 
-  $('#hamburger-btn').on('click', function () {
-    $('#side-toc').toggleClass('hidden');
-    if ($('#side-toc').hasClass('hidden')) {
-      $('#hamburger-icon').show();
-      $('#close-icon').hide();
-    } 
+  const $hamburgerBtn = $('#hamburger-btn');
+  const $sideToc = $('nav#side-toc');
+  const $hamburgerIcon = $('#hamburger-icon');
+  const $closeIcon = $('#close-icon');
+  $closeIcon.hide(); 
+  $hamburgerIcon.show();
+
+  $hamburgerBtn.on('click', function () {
+    if ($sideToc.css('display') === 'none') {
+      $sideToc.css('display', 'block');
+      $hamburgerIcon.hide();
+      $closeIcon.show();
+    } else {
+      $sideToc.css('display', 'none');
+      $hamburgerIcon.show();
+      $closeIcon.hide();
+    }
   });
+
+
   
   function debugUpcomingWeeklyLinks(){
 
@@ -118,12 +131,14 @@ $(function() {
   const themeMode = localStorage.getItem("wdx-theme");
   if ( themeMode === "dark-theme" ){
     $(document.body).addClass("dark-theme");
+    $sideToc.addClass("dark-theme");
     $("#theme-toggler #toggle").prop("checked", true);
   }
 
   $("#theme-toggler #toggle").on("change", e =>{
 
     $(document.body).toggleClass("dark-theme");
+    $sideToc.toggleClass("dark-theme");
 
     if ( localStorage.getItem("wdx-theme") === "dark-theme" ){
       localStorage.removeItem("wdx-theme");

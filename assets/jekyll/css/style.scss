@@ -23,6 +23,8 @@
   --details-border-color: gray;
   --details-border-left-color: var(--vibrant);
   --details-bg-color: #343333;
+  --light-theme-color:   linear-gradient(#2a2a29, #1c1c1c);
+  --dark-theme-color:    #000;
 
   --max-width: 780px;
   
@@ -91,24 +93,31 @@ h3 {
   color: var(--vibrant);
   border: none;
   cursor: pointer;
-  padding: 5px;
   background-color: inherit;
   position: sticky;
   top: 0;
   left: 1rem;
   z-index: 2000;
-}
-
-.hidden {
-  display: none;
+  @media (min-width: 1200px) {
+    display: none; 
+  }
 }
 // Side Navigation
 nav#side-toc {
   position: fixed;
   left: 0;
-  top:0;
+  top: 0;
   padding: 3rem 1rem;
-  
+  height: 100vh;
+  z-index: 1000;
+  background-image: var(--light-theme-color);
+  display: none; 
+  @media (min-width: 1200px) {
+    display: block; 
+  }
+  &.dark-theme {
+  background: var(--dark-theme-color);
+  }
 }
 
 nav#side-toc li.active:before {
@@ -343,7 +352,7 @@ a[href="#flems-enable"]:hover {
 
 // DARK THEME:
 body.dark-theme {
-  background: black;
+  background: var(--dark-theme-color);
 }
 
 body.dark-theme .main-section > details > summary {
