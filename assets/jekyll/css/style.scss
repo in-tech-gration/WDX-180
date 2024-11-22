@@ -83,6 +83,8 @@ h3 {
   font-weight: 900;
 
 }
+body.wrapper{
+position: relative;}
 
 // HOME PAGE
 .__page details {
@@ -94,7 +96,7 @@ h3 {
   border: none;
   cursor: pointer;
   background-color: inherit;
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 1rem;
   z-index: 2000;
@@ -107,13 +109,15 @@ nav#side-toc {
   position: fixed;
   left: 0;
   top: 0;
-  padding: 3rem 1rem;
   height: 100vh;
   z-index: 1000;
+  padding-left: 1rem;
+  padding-top: 3rem;
   background-image: var(--light-theme-color);
   display: none; 
   @media (min-width: 1200px) {
     display: block; 
+    width:20vw;
   }
   &.dark-theme {
   background: var(--dark-theme-color);
