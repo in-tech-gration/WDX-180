@@ -43,7 +43,7 @@ We've found this interesting library: [https://github.com/adaltas/node-csv](http
 
 ## SPECS
 
-- **Project Manager**: [Asteris Giannoudis](https://github.com/patric94)
+- **Project Manager**: [Asteris Giannoudis](https://github.com/asterisg)
 
 - **Git Branch:** kiptrak
 
