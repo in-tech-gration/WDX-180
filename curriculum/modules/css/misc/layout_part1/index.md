@@ -19,7 +19,11 @@ title: CSS Layout Part 1
   <!-- SGEN:META:PROGRESS:task=Read 'Positioning' -->
   - [Read: **Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}
     - **Level:** Beginner
+
+  **CSS Flexbox**
   
+  - Watch our [**CSS for Beginners: Making Sense of Flexbox**](https://www.youtube.com/watch?v=sgQVwd2IL9A){:target="_blank"} video to learn about one of the most powerful CSS technologies, allowing you to create 90% of the layouts that you see out there.
+
   <!-- SGEN:META:PROGRESS:task=Complete the 'Learn Flexbox' Scrimba tutorial -->
   - [Complete the interactive **Learn Flexbox** tutorial](https://scrimba.com/learn/flexbox){:target="_blank"}
     - **Level:** Beginner

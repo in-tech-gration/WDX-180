@@ -8,6 +8,8 @@ title: Week 04 | CSS 2 & Performance
   <span class="week-prefix">Week 04 |</span> CSS 2 & Performance
 </h1>
 
+{{ SGEN:HEADER_IMAGE }}
+
 <div class="week-controls">
 
   {% assign week_num = 04 | to_integer %}
@@ -18,12 +20,12 @@ title: Week 04 | CSS 2 & Performance
 
       {% assign previous_week_num = 04 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 31/10/2024</span>
+  <span>Updated: 28/11/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -31,7 +33,7 @@ title: Week 04 | CSS 2 & Performance
 
       {% assign next_week_num = 04 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -182,6 +184,10 @@ title: Week 04 | CSS 2 & Performance
 
   - [Read: **Positioning**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}
     - **Level:** Beginner
+
+  **CSS Flexbox**
+
+  - Watch our [**CSS for Beginners: Making Sense of Flexbox**](https://www.youtube.com/watch?v=sgQVwd2IL9A){:target="_blank"} video to learn about one of the most powerful CSS technologies, allowing you to create 90% of the layouts that you see out there.
 
   - [Complete the interactive **Learn Flexbox** tutorial](https://scrimba.com/learn/flexbox){:target="_blank"}
     - **Level:** Beginner
