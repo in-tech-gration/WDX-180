@@ -19,3 +19,7 @@
     
     Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md){:target="_blank"}.
 </details>
+
+<!-- 
+  TODO: Add "Focus is a super-power" (curriculum/modules/curriculum/how_to_study/assets/Web.Map.Focus.is.a.Super.Power.jpeg) 
+-->
