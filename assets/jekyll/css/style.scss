@@ -23,6 +23,8 @@
   --details-border-color: gray;
   --details-border-left-color: var(--vibrant);
   --details-bg-color: #343333;
+  --light-theme-color:   linear-gradient(#2a2a29, #1c1c1c);
+  --dark-theme-color:    #000;
 
   --max-width: 780px;
   
@@ -32,7 +34,7 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
 }
-.wrapper, .main-section {
+.main-section {
   max-width: var(--max-width);
 }
 summary {
@@ -81,19 +83,45 @@ h3 {
   font-weight: 900;
 
 }
+body.wrapper{
+position: relative;}
 
 // HOME PAGE
 .__page details {
   margin-bottom: 1rem;
 }
-
+#hamburger-btn {
+  font-size: 2rem;
+  color: var(--vibrant);
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 2000;
+  @media (min-width: 1200px) {
+    display: none; 
+  }
+}
 // Side Navigation
 nav#side-toc {
-
   position: fixed;
   left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
   padding-left: 1rem;
-  
+  padding-top: 3rem;
+  background-image: var(--light-theme-color);
+  display: none; 
+  @media (min-width: 1200px) {
+    display: block; 
+    width:20vw;
+  }
+  &.dark-theme {
+  background: var(--dark-theme-color);
+  }
 }
 
 nav#side-toc li.active:before {
@@ -120,10 +148,7 @@ pre.highlight code {
 //<< CODE HIGHLIGHT SECTIONS:
 
 //>> SIDE NAVIGATION (ToC) RESPONSIVENESS
-nav#side-toc{
-  width: 20vw;
-  padding-left: 0.75rem
-}
+
 nav#side-toc > ul{
   padding-left: 0;
   width: fit-content;
@@ -331,7 +356,7 @@ a[href="#flems-enable"]:hover {
 
 // DARK THEME:
 body.dark-theme {
-  background: black;
+  background: var(--dark-theme-color);
 }
 
 body.dark-theme .main-section > details > summary {

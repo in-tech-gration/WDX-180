@@ -23,7 +23,25 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(function() {
+  // hamburger 
+ 
+  $('#close-icon').hide(); 
+  $('#hamburger-icon').show();
 
+  $('#hamburger-btn').on('click', function () {
+    if ($('nav#side-toc').css('display') === 'none') {
+      $('nav#side-toc').css('display', 'block');
+      $('#hamburger-icon').hide();
+      $('#close-icon').show();
+    } else {
+      $('nav#side-toc').css('display', 'none');
+      $('#hamburger-icon').show();
+      $('#close-icon').hide();
+    }
+  });
+
+
+  
   function debugUpcomingWeeklyLinks(){
 
     // DEBUG SOON TO BE RELEASED WEEKS: Shift+MetaKey+Click
@@ -58,7 +76,7 @@ $(function() {
         innerText = innerText.replace(/Week\s?\d{1,2}\s-\s?/, "");
       }
 
-      $("nav#side-toc ul")
+      $("nav#side-toc ul")// toc links
         .append(
           `
             <li class="tag-${this.nodeName.toLowerCase()}">
@@ -89,7 +107,11 @@ $(function() {
     $("nav ul li a").parent().removeClass("active");
     $this.parent().addClass("active");
     event.preventDefault();
-
+    if ($(window).width() < 1200) {
+      $('nav#side-toc').hide()
+      $('#close-icon').hide();
+      $('#hamburger-icon').show();
+    }
   });
 
   sectionHeight();
@@ -110,12 +132,14 @@ $(function() {
   const themeMode = localStorage.getItem("wdx-theme");
   if ( themeMode === "dark-theme" ){
     $(document.body).addClass("dark-theme");
+    $('nav#side-toc').addClass("dark-theme");
     $("#theme-toggler #toggle").prop("checked", true);
   }
 
   $("#theme-toggler #toggle").on("change", e =>{
 
     $(document.body).toggleClass("dark-theme");
+    $('nav#side-toc').toggleClass("dark-theme");
 
     if ( localStorage.getItem("wdx-theme") === "dark-theme" ){
       localStorage.removeItem("wdx-theme");
