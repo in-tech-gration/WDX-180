@@ -9,6 +9,7 @@ favicon: sitemap.png
 
   - **Content**
     - [Integrating Interactive Coding Playgrounds (Flems)](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/){:target="_blank"}
+    - [Build your GitHub Profile](https://in-tech-gration.github.io/WDX-180/curriculum/modules/pro/github-profile/index.html){:target="_blank"}
 
   - **Exercises**
     - **HTML**

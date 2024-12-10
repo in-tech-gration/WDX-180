@@ -101,3 +101,12 @@ To learn more, see [GitHub Pages Help](https://docs.github.com/en/pages/getting-
 
 - **MDN**
    - [Publishing your website](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/learn/getting_started_with_the_web/publishing_your_website/index.md)
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
