@@ -21,6 +21,9 @@ title: Introduction to the DOM API
 
   > "The worst thing you can do is to ignore your mistakes. Don't get into the bad habit of error amnesia. You should be learning from your mistakes and the only way to learn from your mistakes is to pay attention to them." ~ Douglas Crockford
 
+  > Those who cannot remember the past are condemned to repeat it.
+  > Jorge Santayana
+
   The import steps are:
 
   - Make sure to pay attention to the bugs and errors in your code
