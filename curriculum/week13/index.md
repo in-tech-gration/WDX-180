@@ -77,8 +77,8 @@ title: Week 13 | Intermediate JavaScript
   **Resources**
 
   - Servers that return JSON data:
-    - [Chuck Norris Jokes](https://api.chucknorris.io/jokes/random)
-    - [Cat Facts](https://catfact.ninja/fact)
+    - [Chuck Norris Jokes](https://api.chucknorris.io/jokes/random){:target="_blank"}
+    - [Cat Facts](https://catfact.ninja/fact){:target="_blank"}
 
   - Lectures Code:
     - [Promises](./assets/intechgration-io-promises.zip){:target="_blank"}
