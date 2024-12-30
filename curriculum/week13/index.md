@@ -74,11 +74,11 @@ title: Week 13 | Intermediate JavaScript
 
   _(Image from [https://www.alexlintu.com/what-is-a-promise/](https://www.alexlintu.com/what-is-a-promise/){:target="_blank"})_
 
-### Summary
+<!-- Summary -->
+
+### Exercises
 
   Finish all the exercises found on this [repository](https://github.com/in-tech-gration/promises-exercises){:target="_blank"}.
-
-<!-- Exercises -->
 
 <!-- Extra Resources -->
 
