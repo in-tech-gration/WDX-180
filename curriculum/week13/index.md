@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 17/10/2024</span>
+  <span>Updated: 30/12/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -42,17 +42,18 @@ title: Week 13 | Intermediate JavaScript
 
 ---
 
-<!-- Week 13 - Day 1 | Intermediate JavaScript -->
+<!-- Week 13 - Day 1 | JavaScript Promises -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 13 - Day 1</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 13 - Day 1</span> | JavaScript Promises</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: JavaScript Promises**
   - **Practice**
+  - **Exercises**
   - **Work on Project (Group/Personal)**
 
 ### Study Plan
@@ -73,7 +74,9 @@ title: Week 13 | Intermediate JavaScript
 
   _(Image from [https://www.alexlintu.com/what-is-a-promise/](https://www.alexlintu.com/what-is-a-promise/){:target="_blank"})_
 
-<!-- Summary -->
+### Summary
+
+  Finish all the exercises found on this [repository](https://github.com/in-tech-gration/promises-exercises)_blank.
 
 <!-- Exercises -->
 
