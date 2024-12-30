@@ -76,7 +76,7 @@ title: Week 13 | Intermediate JavaScript
 
 ### Summary
 
-  Finish all the exercises found on this [repository](https://github.com/in-tech-gration/promises-exercises)_blank.
+  Finish all the exercises found on this [repository](https://github.com/in-tech-gration/promises-exercises){:target="_blank"}.
 
 <!-- Exercises -->
 
