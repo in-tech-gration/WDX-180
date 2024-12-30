@@ -74,6 +74,15 @@ title: Week 13 | Intermediate JavaScript
 
   _(Image from [https://www.alexlintu.com/what-is-a-promise/](https://www.alexlintu.com/what-is-a-promise/){:target="_blank"})_
 
+  **Resources**
+
+  - Lectures Diagrams:
+    - [Promises (in real life)](./assets/1_2lVkfUxpad7Y_2Y0K3ToLQ.png){:target="_blank"}
+    - [Promises (states)](./assets/Ekran-Resmi-2020-06-06-12.21.27.png){:target="_blank"}
+    - [Promises (states)](./assets/1_3S0Y1DQJe-NsUXHdNl8gHg.png){:target="_blank"}
+    - [Definition of 'Pending'](./assets/Google.Define.Pending.jpg){:target="_blank"}
+    - [Excalidraw](./assets/Promise.Diagram.png){:target="_blank"}
+
 <!-- Summary -->
 
 ### Exercises
