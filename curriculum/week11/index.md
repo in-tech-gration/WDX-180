@@ -23,7 +23,7 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
   </h2>
 
-  <span>Updated: 28/2/2024</span>
+  <span>Updated: 30/12/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -138,7 +138,9 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Try to complete as many exercises as you can from the [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#exercises){:target="_blank"} repository, and don't forget to star the [original repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"} if you enjoyed them and found them helpful.
 
 ### Extra Resources
 
