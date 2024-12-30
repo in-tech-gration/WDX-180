@@ -76,12 +76,21 @@ title: Week 13 | Intermediate JavaScript
 
   **Resources**
 
+  - Servers that return JSON data:
+    - [Chuck Norris Jokes](https://api.chucknorris.io/jokes/random)
+    - [Cat Facts](https://catfact.ninja/fact)
+
+  - Lectures Code:
+    - [Promises](./assets/intechgration-io-promises.zip){:target="_blank"}
+    - [Functions: The Chickend and the Eff](./assets/intechgration-io-functions-chicken-egg.zip){:target="_blank"}
+
   - Lectures Diagrams:
     - [Promises (in real life)](./assets/1_2lVkfUxpad7Y_2Y0K3ToLQ.png){:target="_blank"}
     - [Promises (states)](./assets/Ekran-Resmi-2020-06-06-12.21.27.png){:target="_blank"}
     - [Promises (states)](./assets/1_3S0Y1DQJe-NsUXHdNl8gHg.png){:target="_blank"}
     - [Definition of 'Pending'](./assets/Google.Define.Pending.jpg){:target="_blank"}
     - [Excalidraw](./assets/Promise.Diagram.png){:target="_blank"}
+    - [Server-Client Headers](./assets/Server.Client.Headers.png){:target="_blank"}
 
 <!-- Summary -->
 
