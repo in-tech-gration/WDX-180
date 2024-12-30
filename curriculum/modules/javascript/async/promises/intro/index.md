@@ -40,6 +40,8 @@ title: Introduction to Promises
 
 ### Exercises
 
+  Try to complete as many exercises as you can from the [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#exercises){:target="_blank"} repository, and don't forget to star the [original repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"} if you enjoyed them and found them helpful.
+
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
