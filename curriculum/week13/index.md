@@ -231,7 +231,42 @@ title: Week 13 | Intermediate JavaScript
 
 
 
-<!-- Summary -->
+### Summary
+
+  Here is an AI-generated summary of the lectures:
+
+  **Lecture 1: Promises**
+
+  1. **Creating promises**: The instructor explains how to create promises using the `Promise` constructor and provides examples.
+
+  2. **Handling promise errors**: He demonstrates how to handle promise errors using `.catch()` or `.finally()`.
+
+  3. **Chaining promises**: The discussion covers chaining promises together using the `.then()` method.
+
+  4. **Combining promises**: The instructor shows how to combine multiple promises into a single promise using methods like `Promise.all()` and `Promise.race()`.
+
+  5. **Performance measurement**: He mentions the importance of measuring performance in JavaScript and provides a link to an MDN API for timing functions.
+
+  6. **Timing promise execution**: The discussion highlights that there's no way to guarantee the exact time it takes for promises to execute, even on the same machine.
+
+  The meeting also touches upon related topics, such as:
+
+  * Creating arrow functions with single statements
+  * Combining multiple promise-based functions into a single function
+
+  **Lecture 2: Scope**
+
+  1. The concept of scope in JavaScript is important to understand.
+
+  2. There are different types of scope: global, function, and block scope.
+
+  3. Variables declared with `var` have function scope, while variables declared with `let` or `const` have block scope.
+
+  4. Lexical scoping (also known as static scoping) is a way of resolving variable references in JavaScript.
+
+  5. It's not necessary to know the term "lexical scoping" to understand how scope works in JavaScript; just learn the rules and you'll be fine.
+
+  6. Naming variables can help with understanding scope, especially when working with complex code.
 
 ### Exercises
 
