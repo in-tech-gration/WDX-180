@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 30/12/2024</span>
+  <span>Updated: 7/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -97,6 +97,12 @@ title: Week 13 | Intermediate JavaScript
 ### Exercises
 
   Finish all the exercises found on this [repository](https://github.com/in-tech-gration/promises-exercises){:target="_blank"}.
+
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
@@ -199,20 +205,22 @@ title: Week 13 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 13 - Day 3 | Intermediate JavaScript -->
+<!-- Week 13 - Day 3 | Promises & Scope -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 13 - Day 3</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 13 - Day 3</span> | Promises & Scope</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: Promises & Scope**
   - **Practice**
   - **Work on Project (Group/Personal)**
 
-<!-- Study Plan -->
+### Study Plan
+
+  ![](./assets/Knock.Knock.png)
 
 <!-- Summary -->
 
