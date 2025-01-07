@@ -12,8 +12,8 @@ schedule:
       # file://./../modules/javascript/web_apis/cssom/intro/index.md
       module: javascript/web_apis/cssom/intro/
     3: # Intermediate JavaScript
-      # file://./../modules/javascript/misc/_w13d03.md
-      module: javascript/misc/_w13d03.md
+      # file://./../modules/javascript/misc/_w13d03/_w13d03.md
+      module: javascript/misc/_w13d03/_w13d03.md
     4: # Advanced CSS Sorcery + JavaScript 
       # file://./../modules/css/misc/advanced_css/index.md
       module: css/misc/advanced_css/
