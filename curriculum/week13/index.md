@@ -231,6 +231,8 @@ title: Week 13 | Intermediate JavaScript
 
 
 
+  - **Recommended reading:** read the full articles about [var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var){:target="_blank"}, [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let){:target="_blank"} and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"} on MDN and share your questions on our Slack forum or leave a comment below.
+
 ### Summary
 
   Here is an AI-generated summary of the lectures:
