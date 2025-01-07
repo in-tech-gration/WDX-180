@@ -278,6 +278,18 @@ title: Week 13 | Intermediate JavaScript
 
   ![](./assets/var-let-const.jpg)
 
+  - Study the behavior of the following code, and make sure to understand the mechanics behind it and be able to explain this during a coding interview (practice by explaining this to an imaginary person or to a class mate):
+
+  ```js
+  console.log(a);
+  var a = 42;
+  console.log(a);
+
+  console.log(b);
+  let b = 42;
+  console.log(b);
+  ```
+
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
