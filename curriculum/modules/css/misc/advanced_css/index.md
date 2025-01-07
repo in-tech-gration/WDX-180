@@ -52,6 +52,10 @@ title: Advanced CSS
 
 ### Exercises
 
+  - Build a replica of the [**var/let/const table**](./assets/var-let-const.jpg){:target="_blank"} using HTML and CSS. Sprinkle the table with some JavaScript if you feel like it. 
+
+  ![](./assets/var-let-const.jpg)
+
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
