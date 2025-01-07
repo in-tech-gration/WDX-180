@@ -222,11 +222,35 @@ title: Week 13 | Intermediate JavaScript
 
   ![](./assets/Knock.Knock.png)
 
+  Your instructor will share the video lectures with you. The first part of the lecture is about Promises and error handling, while the second part is all about `scope` in JavaScript and different ways to define variables.  
+
+  > A new term needs a proper Google search for its original definition:
+  > 
+  > **Scope:** *“the extent of the area or subject matter that something deals with or to which it is relevant.”*  
+  > *Example: "we widened the scope of our investigation"*  
+
+
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-<!-- Extra Resources -->
+  - Practice with Promises and what you've learned from the lectures
+
+  - Build a replica of the [**var/let/const table**](./assets/var-let-const.jpg){:target="_blank"} using HTML and CSS. Sprinkle the table with some JavaScript if you feel like it.
+
+  ![](./assets/var-let-const.jpg)
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+### Extra Resources
+
+  - [Measuring performance](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now){:target="_blank"} (Performance.now())
+
+  - [Page Marker: Draw on the Web Chrome Extension](https://chromewebstore.google.com/detail/page-marker-draw-on-web/jfiihjeimjpkpoaekpdpllpaeichkiod){:target="_blank"}
 
 <!-- Sources and Attributions -->
   
