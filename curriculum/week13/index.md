@@ -363,6 +363,28 @@ title: Week 13 | Intermediate JavaScript
 
   ![](./assets/var-let-const.jpg)
 
+  You can use some emojis for the ❌ and ✅ or you can recreate them using plain CSS!
+
+  - [Check Mark](https://emojipedia.org/check-mark-button){:target="_blank"}
+  - [Cross Mark](https://emojipedia.org/cross-mark){:target="_blank"}
+
+  If you go with the CSS route for the symbols, you can use the following HTML entities
+  and find some CSS rules to apply colors, background, borders, circles, etc. to these characters
+
+
+  - `<span>&check;</span>`
+  - `<span>&CircleTimes;</span>`
+
+  Refs:
+
+
+  - [Unicode Character “⊗” (U+2297)](https://www.compart.com/en/unicode/U+2297){:target="_blank"}
+  - [Unicode Character “✓” (U+2713)](https://www.compart.com/en/unicode/U+2713){:target="_blank"}
+
+  You can of course, build the structure in many ways, but the `<table>` element is the most appropriate here.
+  In case you've started building using another element, feel free to do so, and we'll check how different layouts
+  and structure look later on.
+
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d04.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).

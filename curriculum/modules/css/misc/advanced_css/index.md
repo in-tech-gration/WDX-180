@@ -56,6 +56,24 @@ title: Advanced CSS
 
   ![](./assets/var-let-const.jpg)
 
+  You can use some emojis for the ❌ and ✅ or you can recreate them using plain CSS!
+
+  - [Check Mark](https://emojipedia.org/check-mark-button){:target="_blank"}
+  - [Cross Mark](https://emojipedia.org/cross-mark){:target="_blank"}
+
+  If you go with the CSS route for the symbols, you can use the following HTML entities
+  and find some CSS rules to apply colors, background, borders, circles, etc. to these characters
+  - `<span>&check;</span>`
+  - `<span>&CircleTimes;</span>`
+
+  Refs:
+  - [Unicode Character “⊗” (U+2297)](https://www.compart.com/en/unicode/U+2297){:target="_blank"}
+  - [Unicode Character “✓” (U+2713)](https://www.compart.com/en/unicode/U+2713){:target="_blank"}
+
+  You can of course, build the structure in many ways, but the `<table>` element is the most appropriate here.
+  In case you've started building using another element, feel free to do so, and we'll check how different layouts
+  and structure look later on.
+
 ### Extra Resources
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
