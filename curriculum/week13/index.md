@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 8/1/2025</span>
+  <span>Updated: 9/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -415,11 +415,29 @@ title: Week 13 | Intermediate JavaScript
   - **Practice**
   - **Work on Project (Group/Personal)**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1**:
+    - Variable scope and use of the `window` object as a global namespace.
+    - Naming variables in a way that shows intent and protects our code
+  - **Part 2**:
+    - Variable declarations, function definitions and function expressions
+    - Scoping rules
+
+  Practice on the topics covered and explore the concepts by trying things out in your own code.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+<!-- ### Extra Resources -->
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
