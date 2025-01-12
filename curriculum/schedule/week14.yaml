@@ -9,8 +9,8 @@ schedule:
       # file://./../modules/javascript/core/es6/destructure-spread.md
       module: javascript/core/es6/destructure-spread.md
     2: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w14d02/_w14d02.md
+      module: javascript/misc/_w14d02/_w14d02.md
     3: # Templating
       # file://./../modules/generics/intermediate-generic.md
       module: generics/intermediate-generic.md

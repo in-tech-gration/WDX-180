@@ -25,7 +25,7 @@ title: Week 14 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 12/1/2025</span>
+  <span>Updated: 13/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -116,18 +116,20 @@ title: Week 14 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 14 - Day 2 | Group Project -->
+<!-- Week 14 - Day 2 | Data Transformations in JS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 14 - Day 2</span> | Group Project</h2>
+      <span class="summary-day">Week 14 - Day 2</span> | Data Transformations in JS</h2>
   </summary>
 
 ### Schedule
 
   - **Work on Project (Group/Personal)**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - Watch our recorded live session on [Handling Data Transformations in JavaScript apps (using Quokka)](https://www.youtube.com/watch?v=CAp3avcHYCM){:target="_blank"}
 
 <!-- Summary -->
 
