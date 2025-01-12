@@ -5,8 +5,8 @@ title: Intermediate JavaScript
 schedule: 
   days:
     1: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/core/es6/destructure-spread.md
+      module: javascript/core/es6/destructure-spread.md
     2: # 
       # file://./../modules/generics/group-project-generic.md
       module: generics/group-project-generic.md

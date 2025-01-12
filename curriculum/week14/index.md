@@ -23,7 +23,7 @@ title: Week 14 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 14/1/2024</span>
+  <span>Updated: 12/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -40,20 +40,29 @@ title: Week 14 | Intermediate JavaScript
 
 ---
 
-<!-- Week 14 - Day 1 | Intermediate JavaScript -->
+<!-- Week 14 - Day 1 | ECMAScript 6 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 14 - Day 1</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 14 - Day 1</span> | ECMAScript 6</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: Features of (ECMAScript) ES6**
   - **Practice**
   - **Work on Project (Group/Personal)**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1**:
+    - ES6: Function Hoisting & Destructuring Assignment
+  - **Part 2**:
+    - ES6: Spread Operator
+
+  Practice on the topics covered and explore the concepts by trying things out in your own code.
 
 <!-- Summary -->
 
@@ -174,3 +183,15 @@ title: Week 14 | Intermediate JavaScript
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
