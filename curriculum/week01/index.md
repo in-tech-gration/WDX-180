@@ -374,6 +374,8 @@ Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gratio
 
   - Watch: [Behind the Scenes with your Browser (Scott Hanselman)](https://www.youtube.com/watch?v=CGgTuCH4V6U){:target="_blank"}
 
+  - Watch [Asymmetric Encryption (By Simply explained)](){:target="_blank"} to learn more about `public-key cryptography` and related concepts such as `private` and `public keys`, `asymmetric` and `symmetric encryption`. (A big thanks to [Mubashra Irshad](https://github.com/mubashra21c/) for reviewing and suggesting this resource.)
+
 #### The Internet & the World Wide Web
 
 

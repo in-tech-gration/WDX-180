@@ -4243,6 +4243,69 @@
       "language": [
         "en"
       ]
+    },
+    "asymmetric-encryption---simply-explained": {
+      "type": "YouTube",
+      "duration": 280,
+      "title": "Asymmetric Encryption - Simply explained",
+      "date": "30/10/2017",
+      "youtube": {
+        "id": "AQDCe585Lnc",
+        "channel_id": "UCnxrdFPXJMeHru_b4Q_vTPQ",
+        "channel_title": "Simply Explained",
+        "thumbnail_url": "https://i.ytimg.com/vi/AQDCe585Lnc/sddefault.jpg"
+      },
+      "tags": [
+        "learning",
+        "cryptography",
+        "dummies",
+        "beginner",
+        "protection",
+        "comprehension",
+        "secure",
+        "RSA",
+        "lesson",
+        "algorithm",
+        "research",
+        "key",
+        "knowledge",
+        "introduction",
+        "safe",
+        "understand",
+        "encryption",
+        "asymmetric",
+        "simpler",
+        "educate",
+        "schooling",
+        "privacy",
+        "comrpehend",
+        "free",
+        "self-improvement",
+        "data",
+        "plain english",
+        "public key",
+        "simply",
+        "basics",
+        "information",
+        "learn",
+        "simple",
+        "education",
+        "getting started",
+        "explained",
+        "security",
+        "https",
+        "school",
+        "private key",
+        "symmetric"
+      ],
+      "language": [
+        "en"
+      ],
+      "reviewers": [
+        {
+          "github": "mubashra21c"
+        }
+      ]
     }
   },
   "creators": {}

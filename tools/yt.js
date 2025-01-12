@@ -300,7 +300,8 @@ function init() {
   
   const vid = args.values["get-video-info"];
 
-  getYouTubeVideoInfo({ vid, log: true });
+  getYouTubeVideoInfo({ vid, log: true })
+  .catch( error => {}); // Let's not leave this unhandled
 
 }
 
