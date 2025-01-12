@@ -13,3 +13,5 @@ title: Intermediate JavaScript
 ### Summary
 
 ### Exercises
+
+### Extra Resources
