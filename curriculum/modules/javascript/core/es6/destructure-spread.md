@@ -19,6 +19,8 @@ title: ECMAScript 6
 
   Practice on the topics covered and explore the concepts by trying things out in your own code.
 
+  _Photo by [olia danilevich](https://www.pexels.com/photo/back-view-of-a-boy-sitting-on-grey-chair-while-using-his-laptop-computers-4974916/)_
+
 ### Summary
 
 ### Exercises

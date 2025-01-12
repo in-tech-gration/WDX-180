@@ -8,7 +8,7 @@ title: Week 14 | Intermediate JavaScript
   <span class="week-prefix">Week 14 |</span> Intermediate JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/pexels-olia-danilevich-4974916.jpg" />
 
 <div class="week-controls">
 
@@ -65,6 +65,8 @@ title: Week 14 | Intermediate JavaScript
     - ES6: Spread Operator
 
   Practice on the topics covered and explore the concepts by trying things out in your own code.
+
+  _Photo by [olia danilevich](https://www.pexels.com/photo/back-view-of-a-boy-sitting-on-grey-chair-while-using-his-laptop-computers-4974916/)_
 
 <!-- Summary -->
 
