@@ -8,6 +8,8 @@ title: Week 14 | Intermediate JavaScript
   <span class="week-prefix">Week 14 |</span> Intermediate JavaScript
 </h1>
 
+{{ SGEN:HEADER_IMAGE }}
+
 <div class="week-controls">
 
   {% assign week_num = 14 | to_integer %}
