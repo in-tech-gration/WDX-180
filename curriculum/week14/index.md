@@ -125,7 +125,8 @@ title: Week 14 | Intermediate JavaScript
 
 ### Schedule
 
-  - **Work on Project (Group/Personal)**
+  - **Practice on yesterday's topics and share your questions**
+  - **Watch lecture on data transformations**
 
 ### Study Plan
 
