@@ -5,15 +5,15 @@ header_image: week14/pexels-olia-danilevich-4974916.jpg
 # title: Functional Programming 1, Templating, JavaScript Frameworks
 schedule: 
   days:
-    1: # 
+    1: # ECMAScript 6: Spread Parameters, Spread Operator, Destructuring Assignment
       # file://./../modules/javascript/core/es6/destructure-spread.md
       module: javascript/core/es6/destructure-spread.md
     2: # 
       # file://./../modules/javascript/misc/_w14d02/_w14d02.md
       module: javascript/misc/_w14d02/_w14d02.md
-    3: # Templating
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+    3: # Script Loading
+      # file://./../modules/javascript/misc/_w14d03/_w14d03.md
+      module: javascript/misc/_w14d03/_w14d03.md
     4: # 
       # file://./../modules/generics/group-project-generic.md
       module: generics/group-project-generic.md
