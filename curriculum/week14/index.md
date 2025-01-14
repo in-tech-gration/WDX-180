@@ -25,7 +25,7 @@ title: Week 14 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 14/1/2025</span>
+  <span>Updated: 15/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -172,6 +172,18 @@ title: Week 14 | Intermediate JavaScript
   - If the type of a `<script>` is something other than `"text/javascript"` the code will not execute: `<script type="text/ops">`
   - `Cache Busting`: just add `?something=here` after the filepath, eg. `<script src="app.js?version=2.3">`
 
+  > **Cache:** Oxford Languages and Google defines it as follows:
+  >
+  > (noun) "A collection of items of the same type stored in a hidden or inaccessible place."
+  >
+  > (noun: computing) "An auxiliary memory from which high-speed retrieval is possible."
+  >
+  > (verb) "Store away in hiding or for future use."
+  >
+  > (verb: computing) "Store (data) in a cache memory."
+
+
+
   - Ways to clean the cache manually:
     - (A) Through the Browser settings
     - (B) Through the `DevTools: Command Palette > Clear Site Data`
@@ -216,22 +228,215 @@ title: Week 14 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 14 - Day 4 | Group Project -->
+<!-- Week 14 - Day 4 | Practice: Destructure & Iterate -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 14 - Day 4</span> | Group Project</h2>
+      <span class="summary-day">Week 14 - Day 4</span> | Practice: Destructure & Iterate</h2>
   </summary>
 
 ### Schedule
 
-  - **Work on Project (Group/Personal)**
+  - **Solve the coding challenges and share your questions**
+
+<!-- ### Study Plan -->
+
+
+
+<!-- ### Summary -->
+
+
 
 <!-- Study Plan -->
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+**Here are today's activities from the `Turing School of Software Engineering`:**
+
+## ES6 Destructuring
+
+
+
+[“Destructuring”](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) allows you to pull out data from arrays and objects into distinct variables with concise syntax.
+
+**Round 1:** Given an object, in one line, assign variables to the values of the object using different names than the keys already in the object.
+
+```js
+var object = {name: 'elvis', title: 'hip swinger'}
+
+// YOUR CODE HERE...
+
+// console.log(person) => 'elvis'
+// console.log(job) => 'hip swinger'
+```
+
+**Round 2:** What if I want to grab the values of the first and second elements of a given array using variables, and then swap the values of those variables?
+
+```js
+var items = ['apple', 'banana', 'pear']
+
+// Currently, I would get the following returns:
+console.log(a) => 'apple'
+console.log(b) => 'banana'
+
+// Assign variables using ES6 so that we get (note, you cannot just make a completely new array):
+console.log(a) => 'banana';
+console.log(b) => 'apple';
+```
+
+**Round 3:** Given an object, write one line of code that assigns variables to the keys.
+
+```js
+var object = {
+  user: 'brenna',
+  id: 1,
+  date: 'monday',
+  module: 3
+}
+
+// console.log(user) => ‘brenna’
+```
+
+**Round 4:** Given an object with nested objects, write one line of code that assigns variables to the keys.
+
+```js
+var object1 = {
+  user: 'elvis',
+  address: {
+    city: 'denver',
+    state: 'colorado'
+  },
+  id: 1
+}
+```
+
+**Round 5:** Given an object, in one line of code pull out the individual keys to be accessible directly.
+
+```js
+var object = {name: 'elvis', title: 'hip swinger'}
+
+// console.log(name) => 'elvis'
+// console.log(title) => 'hip swinger'
+```
+
+**Round 6:** Given a crazy array of objects with nested objects, iterate over it and grab just the artist and the third album title.
+
+```js
+var singers = [
+  {
+    artist: 'Elvis',
+    albums: {
+      album1: 'this first title for Elvis',
+      album2: 'another second title for Elvis',
+      album3: 'third title for Elvis'
+    }
+  },
+  {
+    artist: 'Cher',
+    albums: {
+      album1: 'this first title for Cher',
+      album2: 'another second title for Cher',
+      album3: 'third title for Cher'
+    }
+  }
+]
+
+// 'Artist: Elvis, Third Album: third title for Elvis'
+// 'Artist: Cher, Third Album: third title for Cher'
+```
+
+## Approaching Problems Many Ways
+
+
+
+**Learning Goals**
+
+- Develop a deeper understanding of iterator methods
+- Reduce the risk of being too attached to one iterator method OR avoiding an iterator method
+- Compare and contrast iterator methods by using different iterators to achieve the same output
+- Practice using console logs effectively as part of your workflow
+- Take note as scope issues arise
+
+Given the following array, you will be solving the same challenge three times today. Each time, you will be told which iterator method(s) you’re allowed to use.
+
+```js
+const ninetiesToys = [
+  {
+      name: "Tamagotchi",
+      releaseYear: 1996,
+      price: 15.99
+  },
+  {
+      name: "Furby",
+      releaseYear: 1998,
+      price: 29.99
+  },
+  {
+      name: "Super Soaker",
+      releaseYear: 1989,
+      price: 19.99
+  },
+  {
+      name: "Pogs",
+      releaseYear: 1991,
+      price: 5.99
+  },
+  {
+      name: "Game Boy",
+      releaseYear: 1989,
+      price: 89.99
+  }
+];
+```
+
+**Round 1:** Write a function `findCheapToys` that uses `forEach` and returns an array of toy names that cost less than $20. You may not use any other iterator methods.
+
+**Round 2:** Solve the prompt using a `filter` and `map`. You may not use any other iterator methods.
+
+**Round 3:** Solve the prompt using a `reduce`. You may not use any other iterator methods.
+
+**Plot Twist**
+
+One by one, go back to each round’s solution and refactor it so that the `ninetiesToys` data set is passed as an argument when you invoke the function. This allows the same function to be used with multiple data sets.
+
+Ensure it still works for your `ninetiesToys` data. Then, copy/paste the `eightiesToys` dataset below at the top of your file and invoke the refactored solution with the `eightiesToys` data passed as the argument. Ensure the function gives the correct result. Consider how this changed the steps of that solution.
+
+```js
+const eightiesToys = [
+  {
+    name: "Rubik's Cube",
+    releaseYear: 1980,
+    price: 9.99
+  },
+  {
+    name: "Transformers",
+    releaseYear: 1984,
+    price: 19.99
+  },
+  {
+    name: "My Little Pony",
+    releaseYear: 1983,
+    price: 12.99
+  },
+  {
+    name: "Cabbage Patch Kids",
+    releaseYear: 1982,
+    price: 24.99
+  },
+  {
+    name: "Nintendo Entertainment System",
+    releaseYear: 1985,
+    price: 89.99
+  },
+  {
+    name: "He-Man and the Masters of the Universe",
+    releaseYear: 1982,
+    price: 14.99
+  }
+];
+```
 
 <!-- Extra Resources -->
 
