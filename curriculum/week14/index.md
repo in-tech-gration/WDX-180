@@ -169,15 +169,13 @@ title: Week 14 | Intermediate JavaScript
 
   **Lecture Notes:**
 
-    - If the type of a `<script>` is something other than `"text/javascript"` the code will not execute: `<script type="text/ops">`
-    - `Cache Busting`: just add `?something=here` after the filepath, eg. `<script src="app.js?version=2.3">`
+  - If the type of a `<script>` is something other than `"text/javascript"` the code will not execute: `<script type="text/ops">`
+  - `Cache Busting`: just add `?something=here` after the filepath, eg. `<script src="app.js?version=2.3">`
 
-    - Ways to clean the cache manually:
-      - (A) Through the Browser settings
-      - (B) Through the `DevTools: Command Palette > Clear Site Data`
-      - (C) Browser Feature: Hard Reload/Refresh, Right click on Reload > Empty Cache and Reload
-
-
+  - Ways to clean the cache manually:
+    - (A) Through the Browser settings
+    - (B) Through the `DevTools: Command Palette > Clear Site Data`
+    - (C) Browser Feature: Hard Reload/Refresh, Right click on Reload > Empty Cache and Reload
 
   - Visited links can be styled with CSS [`:visited`](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited){:target="_blank"}
 
@@ -190,25 +188,21 @@ title: Week 14 | Intermediate JavaScript
 
   **Study Material:**
 
-    - [The `<script>` at MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script){:target="_blank"}
+  - [The `<script>` at MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script){:target="_blank"}
 
-    - [What is the difference between async and defer in script loading?](https://www.30secondsofcode.org/html/s/async-defer/){:target="_blank"}
+  - [What is the difference between async and defer in script loading?](https://www.30secondsofcode.org/html/s/async-defer/){:target="_blank"}
 
-    - [What's The Difference Between Async & Defer?](https://pagespeedchecklist.com/async-and-defer){:target="_blank"}
+  - [What's The Difference Between Async & Defer?](https://pagespeedchecklist.com/async-and-defer){:target="_blank"}
 
-    - [JavaScript Loading Priorities in Chrome](https://addyosmani.com/blog/script-priorities/){:target="_blank"}
-
-
+  - [JavaScript Loading Priorities in Chrome](https://addyosmani.com/blog/script-priorities/){:target="_blank"}
 
   **Resources & further reading:**
 
-    - [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types){:target="_blank"}
+  - [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types){:target="_blank"}
 
-    - [Async vs Defer attributes in JavaScript](https://www.linkedin.com/pulse/async-vs-defer-attributes-javascript-diwaker-mishra/)  
-    
-    - [\<script\> async, defer, async defer, module, nomodule, src, inline \- the cheat sheet](https://gist.github.com/jakub-g/385ee6b41085303a53ad92c7c8afd7a6) 
-
-
+  - [Async vs Defer attributes in JavaScript](https://www.linkedin.com/pulse/async-vs-defer-attributes-javascript-diwaker-mishra/)  
+  
+  - [\<script\> async, defer, async defer, module, nomodule, src, inline \- the cheat sheet](https://gist.github.com/jakub-g/385ee6b41085303a53ad92c7c8afd7a6)
 
 <!-- Summary -->
 
