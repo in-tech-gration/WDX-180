@@ -18,8 +18,8 @@ schedule:
       # file://./../modules/javascript/misc/_w14d04/_w14d04.md
       module: javascript/misc/_w14d04/_w14d04.md
     5: # Let's Build jQuery
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w14d05/_w14d05.md
+      module: javascript/misc/_w14d05/_w14d05.md
 
 # ---
 # DAY 1: What is Functional Programming?

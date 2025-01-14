@@ -438,6 +438,12 @@ const eightiesToys = [
 ];
 ```
 
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week14/progress/progress.draft.w14.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -446,20 +452,34 @@ const eightiesToys = [
 
 <hr class="mt-1">
 
-<!-- Week 14 - Day 5 | Intermediate JavaScript -->
+<!-- Week 14 - Day 5 | Git & GitHub -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 14 - Day 5</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 14 - Day 5</span> | Git & GitHub</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - Part 1: Git, GitHub, Branches and Git Workflow.
+  - Part 2: Resolving merge conflicts and Debugging CSS
+
+  **Lecture Notes:**
+
+  - Git & GitHub Best Practices & Tips  
+
+    - Create a real copy of the project folder from time to time, to ensure that you have a working backup in case s**t happens
+
+    - Run `git status` to check the current branch and the status of the branch
+
+    - Run `git pull` to download changes from the remote repo
 
 <!-- Summary -->
 
