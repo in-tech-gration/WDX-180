@@ -84,16 +84,14 @@ title: Week 15 | Intermediate JavaScript
 
   In the first lecture, we try to answer some of the following questions and check whether we are up-to-date with some important Frontend concepts:
 
-    - What is Browser-Caching?
-    - What is Cache Busting?  
-    - What is Server-Caching?
-    - What is rendering?
-    - What are Backend languages?
-    - What is dynamic content?
-    - What are the steps of `<script>` parsing in the Browser?
-    - What is defer/async?
-
-
+  - What is Browser-Caching?
+  - What is Cache Busting?  
+  - What is Server-Caching?
+  - What is rendering?
+  - What are Backend languages?
+  - What is dynamic content?
+  - What are the steps of `<script>` parsing in the Browser?
+  - What is defer/async?
 
   Next, the first lecture explores the `arguments` object that is used inside function definitions to access all the arguments passed to the function, even if they are not declared as parameters.
 
