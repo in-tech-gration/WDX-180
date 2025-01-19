@@ -62,6 +62,8 @@ title: Week 15 | Intermediate JavaScript
   - **Part 1:** Check your Frontend knowledge / Learn about the `arguments` object
   - **Part 2:** ECMAScript 6 Modules (`import/export`)
 
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week15/assets/code){:target="_blank"}
+
   **Suggested material for study:**
 
   - The Function [Arguments Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"}
@@ -78,7 +80,33 @@ title: Week 15 | Intermediate JavaScript
   - [Prefetching resources in the browser](https://www.30secondsofcode.org/html/s/prefetching-resources/){:target="_blank"}  
   - [https://v8.dev/features/modules](https://v8.dev/features/modules){:target="_blank"}
 
-<!-- Summary -->
+### Summary
+
+  In the first lecture, we try to answer some of the following questions and check whether we are up-to-date with some important Frontend concepts:
+
+    - What is Browser-Caching?
+    - What is Cache Busting?  
+    - What is Server-Caching?
+    - What is rendering?
+    - What are Backend languages?
+    - What is dynamic content?
+    - What are the steps of `<script>` parsing in the Browser?
+    - What is defer/async?
+
+
+
+  Next, the first lecture explores the `arguments` object that is used inside function definitions to access all the arguments passed to the function, even if they are not declared as parameters.
+
+  In the second lecture we explore JavaScript modules and imports:
+
+  1. Basic import and export statements
+  2. Using the `import` statement with curly braces (`{}`)
+  3. Dynamic imports using the `import()` function
+  4. Using `async/await` with dynamic imports
+  5. Handling errors and rejections when importing modules
+
+  The lecture also covers examples of how to use dynamic imports to preload modules, such as importing a module when the mouse cursor is close 
+  to an element on the screen.
 
 <!-- Exercises -->
 
