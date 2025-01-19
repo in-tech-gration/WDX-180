@@ -8,7 +8,7 @@ title: Week 15 | Intermediate JavaScript
   <span class="week-prefix">Week 15 |</span> Intermediate JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/pexels-goumbik-574073.jpg" />
 
 <div class="week-controls">
 
@@ -116,18 +116,27 @@ title: Week 15 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 15 - Day 2 | Group Project -->
+<!-- Week 15 - Day 2 | iframe, eval & syntax highlighting -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 15 - Day 2</span> | Group Project</h2>
+      <span class="summary-day">Week 15 - Day 2</span> | iframe, eval & syntax highlighting</h2>
   </summary>
 
 ### Schedule
 
-  - **Work on Project (Group/Personal)**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  First of all, some theory. Start by reading about `iframe` and `eval` (or as some people call it, `evil()`):
+
+  - [eval @ W3Schools (gear 1 :car:)](https://www.w3schools.com/jsref/jsref_eval.asp){:target="_blank"}
+  - [eval @ MDN (gear 5 :racing_car:)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval){:target="_blank"}
+
+  - [iframe @ W3Schools (gear 1 :car:)](https://www.w3schools.com/tags/tag_iframe.ASP){:target="_blank"}
+  - [iframe @ MDN (gear 5 :racing_car:)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe){:target="_blank"}
 
 <!-- Summary -->
 

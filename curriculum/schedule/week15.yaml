@@ -1,16 +1,16 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript
+header_image: week15/pexels-goumbik-574073.jpg
 # title: JavaScript Intermediate Part 2 - Software Patterns & TypeScript
 schedule: 
   days:
     1: # 
       # file://./../modules/javascript/misc/_w15d01/_w15d01.md
       module: javascript/misc/_w15d01/_w15d01.md
-      # module: generics/intermediate-generic.md
     2: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w15d02/_w15d02.md
+      module: javascript/misc/_w15d02/_w15d02.md
     3: # Templating
       # file://./../modules/generics/intermediate-generic.md
       module: generics/intermediate-generic.md
