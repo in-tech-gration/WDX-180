@@ -106,9 +106,26 @@ title: Week 15 | Intermediate JavaScript
   The lecture also covers examples of how to use dynamic imports to preload modules, such as importing a module when the mouse cursor is close 
   to an element on the screen.
 
-<!-- Exercises -->
+### Exercises
 
-<!-- Extra Resources -->
+  - Complete the [MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules){:target="_blank"} on Modules and share your code and questions on Slack  
+  - Try to implement modules on your personal/group project(s)  
+  - Try to implement dynamic module loading when the mouse cursor is close to the button about to be clicked (you can try the mouseenter, mousemove events)
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week15/progress/progress.draft.w15.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+### Extra Resources
+
+  - Read [Good Code, is a love letter to the next developer who will maintain it](https://addyosmani.com/blog/good-code/){:target="_blank"} by Addy Osmani
+
+  ---
+
+
+
+  _Photo by [Lukas](https://www.pexels.com/photo/turned-on-laptop-computer-574073/)_
 
 <!-- Sources and Attributions -->
   
@@ -132,15 +149,32 @@ title: Week 15 | Intermediate JavaScript
 
   First of all, some theory. Start by reading about `iframe` and `eval` (or as some people call it, `evil()`):
 
-  - [eval @ W3Schools (gear 1 :car:)](https://www.w3schools.com/jsref/jsref_eval.asp){:target="_blank"}
-  - [eval @ MDN (gear 5 :racing_car:)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval){:target="_blank"}
+  - [eval @ W3Schools](https://www.w3schools.com/jsref/jsref_eval.asp){:target="_blank"}
+  - [eval @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval){:target="_blank"}
 
-  - [iframe @ W3Schools (gear 1 :car:)](https://www.w3schools.com/tags/tag_iframe.ASP){:target="_blank"}
-  - [iframe @ MDN (gear 5 :racing_car:)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe){:target="_blank"}
+  - [iframe @ W3Schools](https://www.w3schools.com/tags/tag_iframe.ASP){:target="_blank"}
+  - [iframe @ MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  The challenge for today is to build an exact replica of this [reference table](https://cdn.hashnode.com/res/hashnode/image/upload/v1658225167119/MxOGBQkWE.jpg) using HTML and CSS.
+
+  For each row of the table, the user must be able to click on it and some sample code must be displayed that shows the difference between the 3 ways of declaring a variable and the particular feature (e.g. function scope, hoisting, etc.). See the screenshot below for an idea on how to display the code. It's up to you to find the most appropriate solution. Feel free to experiment and also come up with various ways to do this.
+
+  ![](./assets/var.let.const.jpg)
+
+  The code must be syntax highlighted. You **must** use the [prism.js library](https://prismjs.com/#examples) for that and pick the `tomorrow night` theme. 
+
+  You can optionally go one step further and make the code runnable. You can experiment with things like `eval`, `iframe` or anything you can think of or find on StackOverflow. You might also want to experiment with ready-made libraries like [Flems](https://flems.io/).
+
+  Good luck!
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week15/progress/progress.draft.w15.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
