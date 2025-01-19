@@ -8,6 +8,8 @@ title: Week 15 | Intermediate JavaScript
   <span class="week-prefix">Week 15 |</span> Intermediate JavaScript
 </h1>
 
+{{ SGEN:HEADER_IMAGE }}
+
 <div class="week-controls">
 
   {% assign week_num = 15 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 15 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 21/1/2024</span>
+  <span>Updated: 20/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -40,20 +42,41 @@ title: Week 15 | Intermediate JavaScript
 
 ---
 
-<!-- Week 15 - Day 1 | Intermediate JavaScript -->
+<!-- Week 15 - Day 1 | ES6 Modules & The Arguments Object -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 15 - Day 1</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 15 - Day 1</span> | ES6 Modules & The Arguments Object</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** Check your Frontend knowledge / Learn about the `arguments` object
+  - **Part 2:** ECMAScript 6 Modules (`import/export`)
+
+  **Suggested material for study:**
+
+  - The Function [Arguments Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"}
+  - [Rest Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters){:target="_blank"}
+  -[Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters){:target="_blank"}
+
+  - Modules  
+    - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules){:target="_blank"}  
+    - [export statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export){:target="_blank"}  
+    - [import statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import){:target="_blank"}
+
+  **References & Resources:**
+
+  - [Prefetching resources in the browser](https://www.30secondsofcode.org/html/s/prefetching-resources/){:target="_blank"}  
+  - [https://v8.dev/features/modules](https://v8.dev/features/modules){:target="_blank"}
 
 <!-- Summary -->
 
@@ -174,3 +197,15 @@ title: Week 15 | Intermediate JavaScript
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
