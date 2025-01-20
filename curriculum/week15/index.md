@@ -25,7 +25,7 @@ title: Week 15 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 20/1/2025</span>
+  <span>Updated: 21/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -184,24 +184,44 @@ title: Week 15 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 15 - Day 3 | Intermediate JavaScript -->
+<!-- Week 15 - Day 3 | Event Propagation & Delegation -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 15 - Day 3</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 15 - Day 3</span> | Event Propagation & Delegation</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - Part 1: **Events & Event Propagation**
+  - Part 2: **Event Propagation & Event Delegation**
+
+  The lecture code can be found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code){:target="_blank"} _([Download link](https://downgit.github.io/#/home?url=https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code){:target="_blank"})_
+
+  - **Study** the [Event Flow diagram](https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-flow-h2){:target="_blank"} (again) to understand what happens every single time an event is triggered.  
+
+  - **Study and experiment** with the [code](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/events.part.01){:target="_blank"} that we’ve created during the first session.   
+
+  - **Study and practice** some of the events we’ve covered and mentioned: *click, dblclick, contextmenu, mouseover.* If you find some other cool events, please share it!
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - **Finish** the 3 tasks found in the [**Target Practice Exercise**](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/target-practice){:target="_blank"} _([Download link](https://downgit.github.io/#/home?url=https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/target-practice){:target="_blank"})_
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week15/progress/progress.draft.w15.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
@@ -211,15 +231,17 @@ title: Week 15 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 15 - Day 4 | Group Project -->
+<!-- Week 15 - Day 4 | Intermediate JavaScript -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 15 - Day 4</span> | Group Project</h2>
+      <span class="summary-day">Week 15 - Day 4</span> | Intermediate JavaScript</h2>
   </summary>
 
 ### Schedule
 
+  - **Lecture: Intermediate JavaScript**
+  - **Practice**
   - **Work on Project (Group/Personal)**
 
 <!-- Study Plan -->
