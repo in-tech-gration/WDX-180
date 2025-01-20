@@ -295,13 +295,37 @@ title: Week 15 | Intermediate JavaScript
   - Part 1: Events & target vs currentTarget
   - Part 2: Events & Stopping Propagation, Creating a Modal
 
-  Here's the code from the lectures:
+  - Learn about [removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener){:target="_blank"}  
+
+  - HTMLElement.**className [(MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) (Read/Write)**  
+    - **document.querySelector(“h1”).className \=== \<h1 class=”THIS VALUE HERE”\>**  
+  - HTMLElement.**nodeName [(MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeName) (Read-only)**  
+    - **nodeName,** gives you the tag name in UPPERCASE e.g. **HEADER \=== \<header\>, H1 \=== \<h1\>, BUTTON \=== \<button\>, DIV \=== \<div\>**  
+  - **event.target is ALWAYS the element that triggered the event**, e.g. the button or any element that was clicked.  
+  - **event.currentTarget is the element that has the eventListener added to it.**  
+    - **CURRENTTARGET.addEventListener( event, function(event){**  
+    -   **event.currentTarget \=== CURRENTTARGET**  
+    - **})**  
+  - **event.stopPropagation() [(MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation):** stops the event flow (propagation) from moving forward. Can happen from within an Event Listener at any step (capturing, bubbling).
+
+  **Code**
 
   - The [Accept Cookies Modal example](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d05/assets/code/cookies-modal){:target="_blank"}
 
+<!-- ### Summary -->
+
+
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Study, practice and try to solve the counter challenge
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week15/progress/progress.draft.w15.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
