@@ -275,20 +275,29 @@ title: Week 15 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 15 - Day 5 | Intermediate JavaScript -->
+<!-- Week 15 - Day 5 | Events Part 2 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 15 - Day 5</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 15 - Day 5</span> | Events Part 2</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - Part 1: Events & target vs currentTarget
+  - Part 2: Events & Stopping Propagation, Creating a Modal
+
+  Here's the code from the lectures:
+
+  - The [Accept Cookies Modal example](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d05/assets/code/cookies-modal){:target="_blank"}
 
 <!-- Summary -->
 

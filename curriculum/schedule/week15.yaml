@@ -20,8 +20,7 @@ schedule:
       module: generics/intermediate-generic.md
     5: # 
       # file://./../modules/javascript/misc/_w15d05/_w15d05.md
-      # module: javascript/misc/_w15d05/_w15d05.md
-      module: generics/intermediate-generic.md
+      module: javascript/misc/_w15d05/_w15d05.md
 
 # ---
 # Patterns: Simple PubSub
