@@ -210,20 +210,37 @@ title: Week 15 | Intermediate JavaScript
 
   - **Study and experiment** with the [code](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/events.part.01){:target="_blank"} that we’ve created during the first session.   
 
-  - **Study and practice** some of the events we’ve covered and mentioned: *click, dblclick, contextmenu, mouseover.* If you find some other cool events, please share it!
+  - **Study and practice** some of the events we’ve covered and mentioned: *click, dblclick, contextmenu, mouseover.* If you find some other cool events, please share it!  
+
+  - **Check** the MDN documentation on the [*addEventListener*](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener){:target="_blank"}  
+
+  - What about the `event` object properties? Make sure to find about all of them.
+
+  - Explore the [visibilitychange](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event){:target="_blank"} event.
 
 <!-- Summary -->
 
 ### Exercises
 
-  - **Finish** the 3 tasks found in the [**Target Practice Exercise**](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/target-practice){:target="_blank"} _([Download link](https://downgit.github.io/#/home?url=https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/target-practice){:target="_blank"})_
+  - **Finish** the 3 tasks found in the [**Target Practice Exercise**](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/target-practice){:target="_blank"} _([Download link](https://downgit.github.io/#/home?url=https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/target-practice){:target="_blank"})_  
+
+  - **Study the code** that we’ve created during the 2nd session ([Poor man’s Excel](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/poor.mans.excel){:target="_blank"}) and try to **recreate a table** that contains inputs that the user can update.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week15/progress/progress.draft.w15.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  - [JavaScript Reserved Keywords](https://www.w3schools.com/js/js_reserved.asp){:target="_blank"}  
+
+  - [Event Propagation](https://dmitripavlutin.com/javascript-event-delegation/){:target="_blank"}  
+
+  - Explore `Custom Events`:
+    - [Custom Events](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent){:target="_blank"}
+    - [Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events){:target="_blank"}
+
 
 <!-- Sources and Attributions -->
   
