@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+#game {
+  width: 500px;
+  height: 400px;
+  background: hotpink;
+  cursor: crosshair;
+
+  /* The easiest way to center an element horizontally and vertically: */
+  display: grid;
+  place-items: center;
+}
+
+#target {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
