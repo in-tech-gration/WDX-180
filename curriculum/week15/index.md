@@ -302,11 +302,14 @@ title: Week 15 | Intermediate JavaScript
   - HTMLElement.**nodeName [(MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeName){:target="_blank"} (Read-only)**  
     - **nodeName,** gives you the tag name in UPPERCASE e.g. **HEADER \=== \<header\>, H1 \=== \<h1\>, BUTTON \=== \<button\>, DIV \=== \<div\>**  
   - **event.target is ALWAYS the element that triggered the event**, e.g. the button or any element that was clicked.  
-  - **event.currentTarget is the element that has the eventListener added to it.**  
-    - **CURRENTTARGET.addEventListener( event, function(event){**  
-    -   **event.currentTarget \=== CURRENTTARGET**  
-    - **})**  
   - **event.stopPropagation() [(MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation){:target="_blank"}:** stops the event flow (propagation) from moving forward. Can happen from within an Event Listener at any step (capturing, bubbling).
+  - **event.currentTarget is the element that has the eventListener added to it.**
+
+  ```js
+  CURRENTTARGET.addEventListener( event, function(event){  
+    event.currentTarget === CURRENTTARGET  
+  })  
+  ```
 
   **Code**
 
