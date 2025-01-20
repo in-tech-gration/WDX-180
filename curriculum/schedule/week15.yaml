@@ -11,15 +11,15 @@ schedule:
     2: # 
       # file://./../modules/javascript/misc/_w15d02/_w15d02.md
       module: javascript/misc/_w15d02/_w15d02.md
-    3: # Templating
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+    3: # 
+      # file://./../modules/javascript/misc/_w15d03/_w15d03.md
+      module: javascript/misc/_w15d03/_w15d03.md
     4: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
-    5: # Let's Build jQuery
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w15d04/_w15d04.md
+      module: javascript/misc/_w15d04/_w15d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w15d05/_w15d05.md
+      module: javascript/misc/_w15d05/_w15d05.md
 
 # ---
 # Patterns: Simple PubSub
