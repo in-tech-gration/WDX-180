@@ -16,8 +16,7 @@ schedule:
       module: javascript/misc/_w15d03/_w15d03.md
     4: # 
       # file://./../modules/javascript/misc/_w15d04/_w15d04.md
-      # module: javascript/misc/_w15d04/_w15d04.md
-      module: generics/intermediate-generic.md
+      module: javascript/misc/_w15d04/_w15d04.md
     5: # 
       # file://./../modules/javascript/misc/_w15d05/_w15d05.md
       module: javascript/misc/_w15d05/_w15d05.md

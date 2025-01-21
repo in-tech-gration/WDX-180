@@ -248,18 +248,18 @@ title: Week 15 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 15 - Day 4 | Intermediate JavaScript -->
+<!-- Week 15 - Day 4 | Events Recap -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 15 - Day 4</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 15 - Day 4</span> | Events Recap</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Re-watch yesterday's lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
