@@ -1,11 +1,11 @@
 ---
-title: Week 15 | Intermediate JavaScript
+title: Week 15 | JavaScript Events
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 15-Intermediate JavaScript | slugify }}">
-  <span class="week-prefix">Week 15 |</span> Intermediate JavaScript
+<h1 id="{{ Week 15-JavaScript Events | slugify }}">
+  <span class="week-prefix">Week 15 |</span> JavaScript Events
 </h1>
 
 <img src="assets/pexels-goumbik-574073.jpg" />
@@ -25,7 +25,7 @@ title: Week 15 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 21/1/2025</span>
+  <span>Updated: 22/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -206,6 +206,41 @@ title: Week 15 | Intermediate JavaScript
 
   The lecture code can be found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code){:target="_blank"} _([Download link](https://downgit.github.io/#/home?url=https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code){:target="_blank"})_
 
+  **Lecture Notes:**
+
+  - The `event` object:  
+    - The *event* object becomes available automatically inside an event handler function:
+
+  ```js
+  document.body.addEventListener("click", function(){
+    console.log( event ); // `event` is here, even though we never declared it!
+  });  
+  ```
+
+  - If you want to supply a custom name for the *event* object, you should also supply a parameter name and change both occurrences (parameter+usage of the parameter):
+
+  ```js
+  function clickHandler( ev ){ console.log(ev); }  
+  ```
+
+
+  - Best practices: ALWAYS supply the event parameter and use meaningful and descriptive names, e.g. `event`, `eventObject`, etc.  
+
+  - `event.target` is ALWAYS the element that triggered the event  
+
+  - `addEventListener` (alarm) listens on the (outgoing) bubbling phase of the event flow (propagation)  
+
+  - Unregistering Inline (Anonymous) Event Handlers:
+
+  ```js
+  document.addEventListener('click', function register(e){ // 1) Name the function
+    if condition
+      document.removeEventListener('click', register) // 2) Use the function name to remove it
+  });
+  ```
+
+  **Study Material:**
+
   - **Study** the [Event Flow diagram](https://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-flow-h2){:target="_blank"} (again) to understand what happens every single time an event is triggered.  
 
   - **Study and experiment** with the [code](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w15d03/assets/code/events.part.01){:target="_blank"} that we’ve created during the first session.   
@@ -236,6 +271,8 @@ title: Week 15 | Intermediate JavaScript
   - [JavaScript Reserved Keywords](https://www.w3schools.com/js/js_reserved.asp){:target="_blank"}  
 
   - [Event Propagation](https://dmitripavlutin.com/javascript-event-delegation/){:target="_blank"}  
+
+  - [JavaScript Key Codes (interactive)](https://www.toptal.com/developers/keycode){:target="_blank"}
 
   - Explore `Custom Events`:
     - [Custom Events](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent){:target="_blank"}

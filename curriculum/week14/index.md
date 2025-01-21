@@ -1,11 +1,11 @@
 ---
-title: Week 14 | Intermediate JavaScript
+title: Week 14 | ECMAScript 6
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 14-Intermediate JavaScript | slugify }}">
-  <span class="week-prefix">Week 14 |</span> Intermediate JavaScript
+<h1 id="{{ Week 14-ECMAScript 6 | slugify }}">
+  <span class="week-prefix">Week 14 |</span> ECMAScript 6
 </h1>
 
 <img src="assets/pexels-olia-danilevich-4974916.jpg" />
@@ -25,7 +25,7 @@ title: Week 14 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 15/1/2025</span>
+  <span>Updated: 22/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
