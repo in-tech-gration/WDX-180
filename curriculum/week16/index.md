@@ -371,11 +371,11 @@ title: Week 16 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 16 - Day 3 | ? -->
+<!-- Week 16 - Day 3 | Object Creators -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 16 - Day 3</span> | ?</h2>
+      <span class="summary-day">Week 16 - Day 3</span> | Object Creators</h2>
   </summary>
 
 ### Schedule
@@ -388,8 +388,8 @@ title: Week 16 | Intermediate JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Event Debugging & Tools
+  - **Part 2:** Objects, Object.freeze, Object Creators
 
   **Takeaways:** 
 
@@ -426,11 +426,11 @@ title: Week 16 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 16 - Day 4 | ? -->
+<!-- Week 16 - Day 4 | Objects: Study & Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 16 - Day 4</span> | ?</h2>
+      <span class="summary-day">Week 16 - Day 4</span> | Objects: Study & Practice</h2>
   </summary>
 
 ### Schedule
@@ -439,18 +439,7 @@ title: Week 16 | Intermediate JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-### Study Plan
-
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** 
-  - **Part 2:**
-
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Suggested material for study:**
-
-  **References & Resources:**
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -464,11 +453,11 @@ title: Week 16 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 16 - Day 5 | ? -->
+<!-- Week 16 - Day 5 | Object Creators and their Toolset -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 16 - Day 5</span> | ?</h2>
+      <span class="summary-day">Week 16 - Day 5</span> | Object Creators and their Toolset</h2>
   </summary>
 
 ### Schedule
@@ -492,14 +481,14 @@ title: Week 16 | Intermediate JavaScript
   **Suggested material for study and practice:**
 
   - **Practice on the [Object Creator function](https://codepen.io/kostasx/pen/eYXMqXW?editors=0012) (and its Toolset)**  
-  - **Solve the [Murdle Board challenge](https://replit.com/@kostasx1/02022024#script.js)**
+  - **Solve the [Murdle Board challenge](https://replit.com/@kostasx1/02022024#script.js){:target="_blank"}**
 
   **References & Resources:**
 
-  - [**pointer-events**](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) **(CSS): disable click-type events**  
-  - [**HTMLElement.classList**](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)**:** contains()  
+  - [**pointer-events**](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events){:target="_blank"} **(CSS): disable click-type events**  
+  - [**HTMLElement.classList**](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList){:target="_blank"}**:** contains()  
   - **document.querySelector()**: returns a single element (the first one it finds)  
-  - [**document.querySelectorAll()**](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll): returns a list of elements  
+  - [**document.querySelectorAll()**](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll){:target="_blank"}: returns a list of elements  
   - **Problem Solving Rule(s):**  
     - Break down the problem into many simple ones  
     - Work on a simplified version of the problem
