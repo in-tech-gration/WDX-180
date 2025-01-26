@@ -94,7 +94,13 @@ title: Week 16 | Intermediate JavaScript
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by [cottonbro studio](https://www.pexels.com/photo/hands-typing-on-a-laptop-keyboard-5474294/)_
 
 <!-- Sources and Attributions -->
   
