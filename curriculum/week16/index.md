@@ -62,20 +62,28 @@ title: Week 16 | Intermediate JavaScript
   - **Part 1:** Event Handling and managing multiple listeners
   - **Part 2:** Understanding `stopPropagation()`, `preventDefault()` and the difference between `event.target` and `event.currentTarget`
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week16/assets/code/day01/index.html){:target="_blank"}
+
+  **Lecture Notes:**
+
+  - The **2nd argument** to addEventListener( type, **FUNCTION** ) is often referred to as a **callback function** and/or an **event handler**.  
+    - 1) Keep a note of these terms. 
+    - 2) Explain or describe what these terms mean in your own words. 
+    - 3) You should be able to answer the question “What is a callback function?” and/or “What is an event handler?” in a technical interview.  
+  - Real-life use case of `useCapture`?  
+    - [GitHub search](https://github.com/HumanSignal/label-studio/blob/fb8eddd5a9f6d92b68a74f44bda61207b574291d/web/libs/editor/src/tools/MagicWand.js#L262){:target="_blank"} (real-life example search with great comments)
 
   **Suggested material for study & practice:**
 
   - [mouseenter/leave + mouseover/out](https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave){:target="_blank"}   
   - Discover events: `touchstartstart`, `touchend`, `touchmove` and other.  
   - Learn how to use the VSCode *Rename Symbol* feature.  
-  - **Finish the Target Practice**: [https://codepen.io/kostasx/pen/yLwzYEX?editors=0010](https://codepen.io/kostasx/pen/yLwzYEX?editors=0010)  
   - Understand the difference between [stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation){:target="_blank"} and [stopImmediatePropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation){:target="_blank"}
 
   **References & Resources:**
 
   - **Best Practices**: **prefer const** with object values  
-  - **Best Practices**: XRAY Rule. Don’t pass expressions as arguments to functions, e.g. `alert( 5 * 45 / 4\- 5 );` Store the argument value in a variable, display (xray) the variable and pass the variable to the function: `const val = 5 * 45 / 4; console.log(val); alert(val);`  
+  - **Best Practices**: XRAY Rule. Don’t pass expressions as arguments to functions, e.g. `someFunction( 5 * 45 / 4 );` Store the argument value in a variable, display (xray) the variable and pass the variable to the function: `const val = 5 * 45 / 4; console.log(val); someFunction(val);`  
   - [Events Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/Events){:target="_blank"}  
   - `event.preventDefault()`: in the case of an `<a\>` tag, it prevents the redirection.  
     - The default behaviour that will be prevented differs from element to element and from event to event.  
