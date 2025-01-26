@@ -22,13 +22,14 @@ schedule:
       module: javascript/misc/_w15d05/_w15d05.md
 
 # ---
-# Patterns: Simple PubSub
-# Patterns: Observer
+# DAY 04: Patterns: Simple PubSub / Observer
 # STUDY: https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/design_patterns/observer
 # STUDY: Design Patterns: Observer and Publish-Subscribe
 # https://www.youtube.com/watch?v=72bdaDl4KLM
 # STUDY: https://www.wikiwand.com/en/Observer_pattern
 # STUDY: https://www.wikiwand.com/en/Publish%E2%80%93subscribe_pattern
+
+# https://www.patterns.dev/vanilla/observer-pattern (Convert to vanilla JS)
 
 # Observer Design Pattern in Javascript | Design Patterns Tutorial
 # https://www.youtube.com/watch?v=T-xfEbDORng

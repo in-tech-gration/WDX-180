@@ -1,24 +1,25 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript
+header_image: week16/pexels-cottonbro-5474294.jpg
 # title: Web APIs Part 3
 schedule: 
   days:
-    1: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+    1: # More Events
+      # file://./../modules/javascript/misc/_w16d01/_w16d01.md
+      module: javascript/misc/_w16d01/_w16d01.md
     2: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w16d02/_w16d02.md
+      module: javascript/misc/_w16d02/_w16d02.md
     3: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w16d03/_w16d03.md
+      module: javascript/misc/_w16d03/_w16d03.md
     4: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w16d04/_w16d04.md
+      module: javascript/misc/_w16d04/_w16d04.md
     5: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w16d05/_w16d05.md
+      module: javascript/misc/_w16d05/_w16d05.md
 
 # ---
 
