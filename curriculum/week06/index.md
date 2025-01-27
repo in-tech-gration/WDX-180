@@ -11,6 +11,8 @@ load_script_js_via_src:
   <span class="week-prefix">Week 06 |</span> CSS Frameworks & Intro to Programming
 </h1>
 
+{{ SGEN:HEADER_IMAGE }}
+
 <div class="week-controls">
 
   {% assign week_num = 06 | to_integer %}
@@ -26,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 27/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -149,11 +151,11 @@ load_script_js_via_src:
 
 <hr class="mt-1">
 
-<!-- Week 06 - Day 2 | How To Make A Website With Tailwind CSS -->
+<!-- Week 06 - Day 2 | Make A Website With Tailwind CSS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 06 - Day 2</span> | How To Make A Website With Tailwind CSS</h2>
+      <span class="summary-day">Week 06 - Day 2</span> | Make A Website With Tailwind CSS</h2>
   </summary>
 
 ### Schedule

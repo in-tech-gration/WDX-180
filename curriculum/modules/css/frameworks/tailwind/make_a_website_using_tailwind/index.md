@@ -1,5 +1,5 @@
 ---
-title: How To Make A Website With Tailwind CSS
+title: Make A Website With Tailwind CSS
 ---
 
 ### Schedule
