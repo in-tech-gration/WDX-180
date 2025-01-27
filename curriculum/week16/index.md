@@ -480,15 +480,12 @@ title: Week 16 | Intermediate JavaScript
   - **Part 1:** Solving a Murdle Mystery / Solving Click Event Mysteries 
   - **Part 2:** Object Creators and their Toolset (and `this`)
 
-  You can find the lecture code [here](){:target="_blank"}
-
-  - Object Creators and Object Toolkits  
-    - [Codepen](https://codepen.io/kostasx/pen/eYXMqXW?editors=0012)
+  You can find the lecture code [here for part 1](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part1-murlde-mystery/){:target="_blank"} and [here for part 2](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part2-objects/){:target="_blank"}
 
   **Suggested material for study and practice:**
 
-  - **Practice on the [Object Creator function](https://codepen.io/kostasx/pen/eYXMqXW?editors=0012) (and its Toolset)**  
-  - **Solve the [Murdle Board challenge](https://replit.com/@kostasx1/02022024#script.js){:target="_blank"}**
+  - **Solve the Murdle Board challenge** (check code of part 1 of the lecture)
+  - **Practice on the Object Creator function and its Toolset** (check code from part 2 of the lecture)
 
   **References & Resources:**
 

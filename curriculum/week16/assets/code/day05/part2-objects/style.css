@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.game {
+  padding: 1rem;
+  background: orange;
+  /* pointer-events: none; */
+}
+.game,
+.cell {
+  border: 2px solid;
+}
+.cell {
+  height: 2rem;
+  background: skyblue;
+  /* pointer-events: auto; */
+}
