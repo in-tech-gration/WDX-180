@@ -25,7 +25,7 @@ title: Week 16 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 27/1/2025</span>
+  <span>Updated: 28/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -122,6 +122,8 @@ title: Week 16 | Intermediate JavaScript
   - **Practice on the topics and share your questions**
 
 ### Study Plan
+
+  Today's topic is about the three different ways of adding event handlers to HTML elements: using the `onevent` HTML attribute, using the `onevent` Element property and using the `addEventListener` method. It might be a bit confusing at first, but let's dive in and see how the three of them behave.
 
   **What is the difference between onevent handlers and addEventListener?**
 
