@@ -508,6 +508,8 @@ If you're new to JavaScript or programming in general, this lecture might be hel
   - **Part 1:** Solving a Murdle Mystery / Solving Click Event Mysteries 
   - **Part 2:** Object Creators and their Toolset (and `this`)
 
+  Go through the [Murdle tutorial](https://murdle.com/?mode=tutorial){:target="_blank"}
+
   You can find the lecture code [here for part 1](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part1-murlde-mystery/){:target="_blank"} and [here for part 2](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part2-objects/){:target="_blank"}
 
   **Suggested material for study and practice:**
