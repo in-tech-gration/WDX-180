@@ -400,21 +400,19 @@ title: Week 16 | Intermediate JavaScript
 
 
 
-  You can find the lecture code [here](){:target="_blank"}
-
   **Suggested material for study & practice:**
 
-  - Check the [Event Listeners on the DevTools](https://umaar.com/dev-tips/24-view-event-listeners/)  
-  - Check the [getEventListeners()](https://developer.chrome.com/docs/devtools/console/utilities#getEventListeners-function)  
+  - Check the [Event Listeners on the DevTools](https://umaar.com/dev-tips/24-view-event-listeners/){:target="_blank"}  
+  - Check the [getEventListeners()](https://developer.chrome.com/docs/devtools/console/utilities#getEventListeners-function){:target="_blank"}  
   - Why does the **performance.eventCounts.get("click")** show 0 at the first click?
 
   **References & Resources:**
 
-  - [**Primitives**](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)  
-  - [**auto-boxing behavior**](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)**:** *“Primitives have no methods but still behave as if they do. When properties are accessed on primitives, JavaScript auto-boxes the value into a wrapper object and accesses the property on that object instead.”*  
-  - [**console.dir**](https://developer.mozilla.org/en-US/docs/Web/API/console/dir_static)  
-  - [**delete**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)  
-  - [**Object.freeze()**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
+  - [**Primitives**](https://developer.mozilla.org/en-US/docs/Glossary/Primitive){:target="_blank"}  
+  - [**auto-boxing behavior**](https://developer.mozilla.org/en-US/docs/Glossary/Primitive){:target="_blank"}**:** *“Primitives have no methods but still behave as if they do. When properties are accessed on primitives, JavaScript auto-boxes the value into a wrapper object and accesses the property on that object instead.”*  
+  - [**console.dir**](https://developer.mozilla.org/en-US/docs/Web/API/console/dir_static){:target="_blank"}  
+  - [**delete**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete){:target="_blank"}  
+  - [**Object.freeze()**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze){:target="_blank"}
 
 <!-- Summary -->
 
