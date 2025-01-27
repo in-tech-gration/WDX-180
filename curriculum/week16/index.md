@@ -414,7 +414,35 @@ title: Week 16 | Intermediate JavaScript
   - [**delete**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete){:target="_blank"}  
   - [**Object.freeze()**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze){:target="_blank"}
 
-<!-- Summary -->
+### Summary
+
+Part 1:
+
+- 1. **Discussion on Reference vs Copy**: the difference between reference and copy when assigning values to variables in JavaScript.
+
+- 2. **Use of `const` keyword**: using the `const` keyword to declare variables that should not be reassigned, and how it can help avoid unexpected changes to variable values.
+
+- 3. **Example with objects and primitives**: examples with objects and primitives (like numbers) to illustrate the difference between reference and copy.
+
+- 4. **Understanding function calls**: understanding what value a function call returns.
+
+Part 2:
+
+Here's a brief summary of the main points covered:
+
+- 1. **Creating objects**: in JavaScript, objects can be created using the `new` keyword followed by a function name.
+
+- 2. **Constructor functions**: introducing the concept of constructor functions, which are special types of functions that return an object when called with the `new` keyword.
+
+- 3. **Using constructor functions to create objects**: The lecturer demonstrates how to use a constructor function to create multiple objects with similar properties and methods.
+
+Some key takeaways from this lecture include:
+
+* Using a constructor function can simplify the process of creating multiple objects with shared properties and methods.
+* Constructor functions are useful when you need to create objects that have a specific structure or behavior.
+* Experimenting with code examples is an important part of learning programming concepts, as it helps solidify understanding and builds familiarity.
+
+If you're new to JavaScript or programming in general, this lecture might be helpful for getting started with the basics of object-oriented programming (OOP) concepts.
 
 <!-- Exercises -->
 
