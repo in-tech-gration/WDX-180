@@ -1,0 +1,28 @@
+.game {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  border: 1px solid;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  user-select: none;
+}
+.cell:hover {
+  background: #00000022;
+}
+.game.win {
+  background: limegreen;
+}
+.game.lose {
+  background: tomato;
+}

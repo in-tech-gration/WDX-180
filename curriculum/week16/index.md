@@ -397,10 +397,8 @@ title: Week 16 | Intermediate JavaScript
 
   **Takeaways:** 
 
-    - Treat all function parameters as read-only values.
-    - Understand the difference between `copied values` and `references`.
-
-
+  - Treat all function parameters as read-only values.
+  - Understand the difference between `copied values` and `references`.
 
   **Suggested material for study & practice:**
 
