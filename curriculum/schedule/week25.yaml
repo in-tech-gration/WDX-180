@@ -7,9 +7,9 @@ schedule:
     1: # 
       # file://./../modules/generics/study-practice-generic.md
       module: generics/study-practice-generic.md
-    2: # More 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
+    2: # Scrum
+      # file://./../modules/generics/scrum.md
+      module: generics/scrum.md
     3: # 
       # file://./../modules/generics/study-practice-generic.md
       module: generics/study-practice-generic.md
