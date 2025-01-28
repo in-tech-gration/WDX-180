@@ -1,13 +1,21 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: NodeJS 1
+# title: 
+# header_image: week16/pexels-cottonbro-5474294.jpg
 schedule: 
   days:
-    # file://./day01.md
-    Monday: day01.md
-    Tuesday: day02.md
-    Wednesday: day03.md
-    # More Express here?
-    Thursday: ../module/javascript/
-    # More Express here?
-    Friday: ../module/javascript/
+    1: # 
+      # file://./../modules/javascript/misc/_w17d01/_w17d01.md
+      module: javascript/misc/_w17d01/_w17d01.md
+    2: # 
+      # file://./../modules/javascript/misc/_w17d02/_w17d02.md
+      module: javascript/misc/_w17d02/_w17d02.md
+    3: # Objects
+      # file://./../modules/javascript/misc/_w17d03/_w17d03.md
+      module: javascript/misc/_w17d03/_w17d03.md
+    4: # Objects
+      # file://./../modules/javascript/misc/_w17d04/_w17d04.md
+      module: javascript/misc/_w17d04/_w17d04.md
+    5: # Object Creators and their Toolset
+      # file://./../modules/javascript/misc/_w17d05/_w17d05.md
+      module: javascript/misc/_w17d05/_w17d05.md
