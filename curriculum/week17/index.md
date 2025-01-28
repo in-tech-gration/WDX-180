@@ -62,7 +62,7 @@ title: Week 17 | Objects
   - **Part 1:** Object Creators (1/2)
   - **Part 2:** Object Creators (2/2)
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week17/assets/code/day01){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
@@ -175,7 +175,7 @@ title: Week 17 | Objects
   - **Part 1:** Q&A
   - **Part 2:** The Real Function Constructors and prototype
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week17/assets/code/day03){:target="_blank"}
 
   **Lecture Notes:**
 
@@ -269,7 +269,7 @@ title: Week 17 | Objects
   - Object.*  
   - Function chaining
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week17/assets/code/day05){:target="_blank"}
 
   **Lecture Notes:**
 
