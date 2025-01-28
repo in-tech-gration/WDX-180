@@ -2,14 +2,15 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 # title: JavaScript Advanced 1
 title: "Advanced JavaScript"
+header_image: week16/pexels-cottonbro-6804077.jpg
 schedule: 
   days:
     1: # 
       # file://./../modules/generics/study-practice-generic.md
       module: generics/study-practice-generic.md
     2: # Scrum
-      # file://./../modules/generics/scrum.md
-      module: generics/scrum.md
+      # file://./../modules/generics/scrum/scrum.md
+      module: generics/scrum/scrum.md
     3: # 
       # file://./../modules/generics/study-practice-generic.md
       module: generics/study-practice-generic.md

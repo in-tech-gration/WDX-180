@@ -38,4 +38,8 @@ title: The Scrum Framework
 
 ### Summary
 
-### Exercises
+### Sources and Attributions
+
+  ---
+
+  _Photo by [cottonbro studio](https://www.pexels.com/photo/manager-considering-project-strategy-by-the-task-board-6804077/)_

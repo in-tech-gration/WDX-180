@@ -8,7 +8,7 @@ title: Week 25 | Advanced JavaScript
   <span class="week-prefix">Week 25 |</span> Advanced JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/pexels-cottonbro-6804077.jpg" />
 
 <div class="week-controls">
 
@@ -117,7 +117,13 @@ title: Week 25 | Advanced JavaScript
 
 <!-- Extra Resources -->
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+  ---
+
+
+
+  _Photo by [cottonbro studio](https://www.pexels.com/photo/manager-considering-project-strategy-by-the-task-board-6804077/)_
   
 </details>
 
