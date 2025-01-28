@@ -155,11 +155,11 @@ title: Week 17 | Objects
 
 <hr class="mt-1">
 
-<!-- Week 17 - Day 3 |  -->
+<!-- Week 17 - Day 3 | The Real Constructors & Prototype -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 17 - Day 3</span> | </h2>
+      <span class="summary-day">Week 17 - Day 3</span> | The Real Constructors & Prototype</h2>
   </summary>
 
 ### Schedule
@@ -172,16 +172,39 @@ title: Week 17 | Objects
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Q&A
+  - **Part 2:** The Real Function Constructors and prototype
 
   You can find the lecture code [here](){:target="_blank"}
 
   **Lecture Notes:**
 
+  - In HTML, placing a `<button>` element inside a `<form>` element, (automatically) makes the button a submit mechanism. When you click it, the form gets submitted to the server and the page reloads. That’s the *default Behaviour*.   
+    - Ways to prevent a button inside a form submitting the form:  
+      - 1) (HTML) Add a `type=”button”` to the `<button>`  
+      - 2) (JS) Add an `event.preventDefault()` to the click handler of the `<button>`  
+      - 3) (JS) Add an event handler on the form “submit” event and use the `event.preventDefault()` ( form => event listener on “submit”)   
+  - The new keyword (always before a function call) turns the function call into a constructor call. The function that was called starts behaving differently (from an ordinary function call): **someFn() vs new someFn()**  
+    - What changes with the new keyword?  
+      - 1) We get a new object returned from the call (no need for return statement). Most of the times, we don’t want a return statement. The constructor always returns the object.  
+  - Functions that are intended to be used as constructors (called with the new keyword) **should ALWAYS START WITH A CAPITAL LETTER**.
+
   **Suggested material for study & practice:**
 
-  **References & Resources:**
+  - Study the MDN article on [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#form){:target="_blank"} and learn more about it.  
+    - What is the [form attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#form){:target="_blank"} all about?  
+  - [Expressions and Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators){:target="_blank"}  
+  - Study the [Operators’ Precedence table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table){:target="_blank"}  
+    - define **precedence**: *“the condition of being considered more important than someone or something else; **priority** in **importance**, order, or rank.”*  
+  - Study about the [hidden attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden){:target="_blank"}  
+  - Manipulate HTML attributes via JS: setAttribute( key, value ), removeAttribute( key ), [toggleAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute){:target="_blank"} ( key ), getAttribute( key )  
+  - [Off-by-one Error (Obi-wan)](https://www.wikiwand.com/en/Off-by-one_error){:target="_blank"}  
+  - **Practice**: think of 3 different types of objects  
+    - Declare a single object  
+    - Separate unique and shared properties  
+    - Define the constructor  
+    - Define the prototype  
+    - Just start simple and go more advanced with the 2nd and 3rd object
 
 <!-- Summary -->
 
@@ -195,21 +218,22 @@ title: Week 17 | Objects
 
 <hr class="mt-1">
 
-<!-- Week 17 - Day 4 |  -->
+<!-- Week 17 - Day 4 | The Murdle Table Coding Challenge -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 17 - Day 4</span> | </h2>
+      <span class="summary-day">Week 17 - Day 4</span> | The Murdle Table Coding Challenge</h2>
   </summary>
 
 ### Schedule
 
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
+  - **Complete the Coding Challenge**
 
 ### Study Plan
 
-  **Suggested material for study & practice:**
+  ![](./assets/detective.logico.2.png)
+
+  Here's today's [coding challenge](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/murdle_table/). 
 
 <!-- Summary -->
 
@@ -223,11 +247,11 @@ title: Week 17 | Objects
 
 <hr class="mt-1">
 
-<!-- Week 17 - Day 5 |  -->
+<!-- Week 17 - Day 5 | Constructors & Prototype -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 17 - Day 5</span> | </h2>
+      <span class="summary-day">Week 17 - Day 5</span> | Constructors & Prototype</h2>
   </summary>
 
 ### Schedule
@@ -240,16 +264,37 @@ title: Week 17 | Objects
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - Static Object Methods  
+  - Built-in constructed objects  
+  - Object.*  
+  - Function chaining
 
   You can find the lecture code [here](){:target="_blank"}
 
   **Lecture Notes:**
 
+  - *Can we update the prototype of built-in objects?*  
+    - ***Yes, but you SHOULD NEVER DO IT!***
+
   **Suggested material for study & practice:**
 
+  - **Read:** [https://exercism.org/tracks/javascript/concepts/classes](https://exercism.org/tracks/javascript/concepts/classes){:target="_blank"} (**don’t read about Classes today**)  
+  - **Complete the exercises** here: [https://basescripts.com/mastering-javascript-prototype-and-inheritance-coding-exercises-test-your-skills](https://basescripts.com/mastering-javascript-prototype-and-inheritance-coding-exercises-test-your-skills){:target="_blank"}
+
   **References & Resources:**
+
+  - **CSS:** user-select: none will disable the automatic selection on click/double click  
+  - CSS: Don’t use the tag name in your class names, e.g. don’t do .divTableCell, just use .tableCell. Also, don’t use property values in your class names, e.g. .redHeader {} because the values might change in the future.   
+  - [DOMContentLoaded event](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event){:target="_blank"}  
+  - the [.constructor property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor){:target="_blank"} of objects is a reference to the constructor Function  
+  - [**The dunder proto**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto){:target="_blank"}: \_ \_ proto \_ \_  
+  - NEVER EVER update the \_ \_ proto \_\_  
+  - NEVER EVER use the \_ \_ proto \_ \_ in production (it’s just an educational feature)  
+  - The [Function.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype){:target="_blank"} property  
+  - Every single built-in object has its own constructor: new Array(), new Object(), new Date(), new Promise(), etc. and of course their own prototype: Array.prototype, Object.prototype, Date.prototype, etc.  
+  - [Prototype diagram](https://i.imgur.com/2rP4eLG_d.webp?maxwidth=1520&fidelity=grand){:target="_blank"}  
+  - [Prototype diagram from PyTutor](https://pythontutor.com/render.html#code=function%20Like%28%20numOfLikes%20%29%7B%0A%20%20this.numberOfLikes%20%3D%20numOfLikes%3B%0A%7D%0ALike.prototype.getLikes%20%3D%20function%28%29%7B%0A%20%20return%20this.numberOfLikes%3B%0A%7D%0ALike.prototype.version%20%3D%2042%3B%0Aconst%20l1%20%3D%20new%20Like%28100%29%3B%0Aconst%20l2%20%3D%20new%20Like%28200%29%3B&cumulative=false&curInstr=8&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false){:target="_blank"}  
+    - Diagram: [JS checking at different levels for a property](https://pythontutor.com/render.html#code=function%20ArrayV2%28array%29%20%7B%0A%20%20this.array%20%3D%20array%3B%0A%7D%0AArrayV2.prototype.getArray%20%3D%20function%28%29%20%7B%0A%20%20return%20this.array%3B%0A%7D%0Aconst%20a1%20%3D%20new%20ArrayV2%28%5B10,%2020,%2030,%205%5D%29%3B%0Aconst%20a2%20%3D%20new%20ArrayV2%28%5B9,8,7%5D%29%3B%0Aa1.getArray%20%3D%20function%28%29%20%7B%0A%20%20return%20%22Custom!%22%3B%0A%7D&cumulative=false&curInstr=8&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false){:target="_blank"}
 
 <!-- Summary -->
 
