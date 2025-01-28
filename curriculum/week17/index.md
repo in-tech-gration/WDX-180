@@ -128,21 +128,20 @@ title: Week 17 | Objects
 
 <hr class="mt-1">
 
-<!-- Week 17 - Day 2 |  -->
+<!-- Week 17 - Day 2 | The Tweeter Coding Challenge -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 17 - Day 2</span> | </h2>
+      <span class="summary-day">Week 17 - Day 2</span> | The Tweeter Coding Challenge</h2>
   </summary>
 
 ### Schedule
 
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
+  - **Complete the Coding Challenge**
 
 ### Study Plan
 
-  **Suggested material for study & practice:**
+  Here's today's [coding challenge](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/misc/tweeter_practice/). 
 
 <!-- Summary -->
 
