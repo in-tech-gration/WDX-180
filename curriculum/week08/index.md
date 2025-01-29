@@ -8,6 +8,8 @@ title: Week 08 | JavaScript Core 2
   <span class="week-prefix">Week 08 |</span> JavaScript Core 2
 </h1>
 
+<img src="assets/header--cookie-the-pom-gySMaocSdqs-unsplash.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 08 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 08 | JavaScript Core 2
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 29/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
