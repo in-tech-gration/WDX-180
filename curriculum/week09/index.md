@@ -8,6 +8,8 @@ title: Week 09 | JavaScript Core 3
   <span class="week-prefix">Week 09 |</span> JavaScript Core 3
 </h1>
 
+<img src="assets/header--mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 09 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 09 | JavaScript Core 3
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 29/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
