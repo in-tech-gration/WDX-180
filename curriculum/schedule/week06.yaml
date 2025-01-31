@@ -1,6 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: CSS Frameworks & Intro to Programming
+header_image: week06/assets/pexels-sevenstormphotography-439416.jpg
 schedule:
   days:
     1: # ✅ Tailwind 1

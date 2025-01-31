@@ -11,7 +11,7 @@ load_script_js_via_src:
   <span class="week-prefix">Week 06 |</span> CSS Frameworks & Intro to Programming
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/pexels-sevenstormphotography-439416.jpg" />
 
 <div class="week-controls">
 
@@ -28,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 27/1/2025</span>
+  <span>Updated: 31/1/2025</span>
 
   <h2 class="week-controls__next_week">
 

@@ -5,19 +5,20 @@ title: Intermediate JavaScript
 schedule: 
   days:
     1: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w18d01/_w18d01.md
+      module: javascript/misc/_w18d01/_w18d01.md
     2: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w18d02/_w18d02.md
+      module: javascript/misc/_w18d02/_w18d02.md
     3: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w18d03/_w18d03.md
+      module: javascript/misc/_w18d03/_w18d03.md
     4: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w18d04/_w18d04.md
+      module: javascript/misc/_w18d04/_w18d04.md
     5: # 
-      # file://./../modules/generics/intermediate-generic.md
-      module: generics/intermediate-generic.md
+      # file://./../modules/javascript/misc/_w18d05/_w18d05.md
+      module: javascript/misc/_w18d05/_w18d05.md
+
 # Learn MongoDB in 10 minutes
-# https://www.linkedin.com/feed/update/urn:li:activity:7114385483496886272/?utm_source=share&utm_medium=member_desktop
+# https://www.linkedin.com/feed/update/urn:li:activity:7114385483496886272/
