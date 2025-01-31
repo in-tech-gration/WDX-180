@@ -97,3 +97,5 @@ title: Introduction to Tailwind CSS
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
   
   - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)
+
+  _Photo by [SevenStorm JUHASZIMRUS](https://www.pexels.com/photo/green-and-yellow-crane-439416/)_
