@@ -146,11 +146,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 2 |  -->
+<!-- Week 18 - Day 2 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 2</span> | </h2>
+      <span class="summary-day">Week 18 - Day 2</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -172,11 +172,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 3 |  -->
+<!-- Week 18 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 3</span> | </h2>
+      <span class="summary-day">Week 18 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -210,11 +210,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 4 |  -->
+<!-- Week 18 - Day 4 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 4</span> | </h2>
+      <span class="summary-day">Week 18 - Day 4</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -236,11 +236,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 5 |  -->
+<!-- Week 18 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 5</span> | </h2>
+      <span class="summary-day">Week 18 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
