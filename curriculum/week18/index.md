@@ -146,11 +146,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 2 | TBA -->
+<!-- Week 18 - Day 2 | The Observer Pattern -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 18 - Day 2</span> | The Observer Pattern</h2>
   </summary>
 
 ### Schedule
@@ -158,11 +158,55 @@ title: Week 18 | Intermediate JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  [![](./assets/PubSubNoTime.jpg)](https://youtu.be/fRpYNR_vM5A){:target="_blank"}
+
+  Watch our lecture on: [Intro to Design Patterns: A Simple Implementation of the Observer Pattern in JavaScript](https://youtu.be/fRpYNR_vM5A){:target="_blank"}
+
+  **References and resources for further study:**
+
+  - [The Observer Pattern](https://refactoring.guru/design-patterns/observer){:target="_blank"}
+  - [CRUD explained in 1 minute](https://www.youtube.com/shorts/AkDe3weBBsY){:target="_blank"}
+  - [Private Properties in ES6 Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties){:target="_blank"}
+  - [What is a Complex System?](https://www.youtube.com/watch?v=vp8v2Udd_PM){:target="_blank"} 
+  - [Water CSS](https://watercss.kognise.dev){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Your task for this week is to try and replicate all the features of the Countries Quiz game that we've covered on [Week 18, Day 01](https://in-tech-gration.github.io/WDX-180/curriculum/week18/){:target="_blank"}:
+
+  - Star quiz button
+  - Timer
+  - List of Continents and countries found (and not found)
+  - Pause timer button
+  - Disable timer button
+  - Help box
+  - Give up button
+  - Guesses counter
+  - Advanced: show missing countries 
+  - Your extra features!?
+
+  ![](./assets/Countries.Quiz.Features/help.jpg)
+
+  ![](./assets/Countries.Quiz.Features/pause.and.resume.quiz.jpg)
+
+  ![](./assets/Countries.Quiz.Features/scoring.and.points.jpg)
+
+  ![](./assets/Countries.Quiz.Features/take.quiz.without.timer.jpg)
+
+  ![](./assets/Countries.Quiz.Features/timer.and.giveup.jpg)
+
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/country-quiz){:target="_blank"}
+
+  The original game can be found [here](https://www.jetpunk.com/quizzes/how-many-countries-can-you-name){:target="_blank"}.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
