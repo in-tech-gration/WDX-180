@@ -155,6 +155,7 @@ title: Week 18 | Intermediate JavaScript
 
 ### Schedule
 
+  - **Watch the lecture**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
@@ -200,6 +201,8 @@ title: Week 18 | Intermediate JavaScript
   ![](./assets/Countries.Quiz.Features/timer.and.giveup.jpg)
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/country-quiz){:target="_blank"}
+
+  Perhaps you can try using the Observer pattern on the quiz game? That would definitely be a great challenge. Give it a try!
 
   The original game can be found [here](https://www.jetpunk.com/quizzes/how-many-countries-can-you-name){:target="_blank"}.
 
