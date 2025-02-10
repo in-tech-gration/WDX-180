@@ -165,6 +165,8 @@ title: Week 18 | Intermediate JavaScript
 
   Watch our lecture on: [Intro to Design Patterns: A Simple Implementation of the Observer Pattern in JavaScript](https://youtu.be/fRpYNR_vM5A){:target="_blank"}
 
+  The lecture code can be found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/computer_science/design_patterns/observer_pattern/source_code){:target="_blank"}.
+
   **References and resources for further study:**
 
   - [The Observer Pattern](https://refactoring.guru/design-patterns/observer){:target="_blank"}
