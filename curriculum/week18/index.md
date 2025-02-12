@@ -372,7 +372,6 @@ title: Week 18 | Intermediate JavaScript
 
   - [Array.prototype.reduce() at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce){:target="_blank"}
   - [Functional JavaScript: How to use array reduce for more than just numbers](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/){:target="_blank"}
-  - [](){:target="_blank"}
 
 <!-- Summary -->
 
