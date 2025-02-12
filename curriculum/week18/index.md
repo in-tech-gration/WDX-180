@@ -281,15 +281,34 @@ title: Week 18 | Intermediate JavaScript
 
   - **Best Practices:**  
     - Object rule: dynamic property names ALWAYS inside `[ brackets ]`. Don’t use the . notation. Tip: name your objects like, studentsObj, productsObject, etc.  
+    - **Prefer isSomething conditionals than !isSomething (is NOT something)**  
     - **ALWAYS handle error cases** in development  
       - **BREAK THE CODE intentionally,** handle it and **ALWAYS give some user-friendly feedback** to the users  
   - `JSON.stringify` will discard functions  
-    - In the case of an Array containing functions, they are converted to null to avoid breaking the Array length and indices.
+    - In the case of an Array containing functions, they are converted to null to avoid breaking the Array length and indices.  
+
+  - Study and understand the following code:
+
+  ```js
+  const list = [ 10, 20, 30 ];  
+  function reducer(accumulator, arrayValue, arrayIndex){  
+      console.log(accumulator, arrayValue, arrayIndex);  
+        // Try: debugger;  
+      // Change the accumulator:  
+      accumulator.count = arrayIndex;  
+      return accumulator;  
+  }   
+  const initialAcc = {}  
+  list.reduce( reducer, initialAcc );  
+  ```
 
   **References & Resources:**
 
   - [Study the calc()](https://css-tricks.com/a-couple-of-use-cases-for-calc/){:target="_blank"}  
-
+ 
+   - Check for compatibility on [caniuse.com](https://caniuse.com/?search=attr()){:target="_blank"}  
+    - the [attr()](https://developer.mozilla.org/en-US/docs/Web/CSS/attr#browser_compatibility){:target="_blank"}  
+ 
   - Try: `for..of` with `index`:  
     - [Adding an Index to the for...of Loop](https://medium.com/@_DandyLyons/how-to-use-a-js-for-of-loop-with-an-index-a4675ed22351#42db){:target="_blank"}  
 
@@ -307,7 +326,16 @@ title: Week 18 | Intermediate JavaScript
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Solve the [TextNode Challenge](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/exercises/day03/textnode-challenge){:target="_blank"}
+    - `ELEMENT.querySelector` targets HTML `<elements>`  
+    - We need something different for targeting the text inside those elements
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
