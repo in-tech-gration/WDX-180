@@ -240,11 +240,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 3 | TBA -->
+<!-- Week 18 - Day 3 | Intermediate JavaScript -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 18 - Day 3</span> | Intermediate JavaScript</h2>
   </summary>
 
 ### Schedule
@@ -260,7 +260,7 @@ title: Week 18 | Intermediate JavaScript
   - **Part 1:** Q&A on several topics such how `JSON.stringify` deals with functions, the difference between `null` and `undefined`, CSS pseudo-elements and the `attr()` rule, debugging a search box algorithm and more!
   - **Part 2:** We continue debugging and improving the search algorithm, learn about `Number.isInteger` method and `isNaN`, and also learn some cool advanced DOM manipulation methods and properties.
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/day03){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
