@@ -25,7 +25,7 @@ title: Week 18 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 12/2/2025</span>
+  <span>Updated: 13/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -345,19 +345,34 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 4 | TBA -->
+<!-- Week 18 - Day 4 | Deconstructing Array reduce -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 18 - Day 4</span> | Deconstructing Array reduce</h2>
   </summary>
 
 ### Schedule
 
+  - **Watch the lecture**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  [![](./assets/deconstructing.jpg)](){:target="_blank"}
+
+  It's time to take a deep dive and deconstruct the notorious `reduce` Array function in JavaScript. It's probably one of the most difficult array methods to grasp and at the same time one of the most powerful and flexible ones. You can replace and recreate almost all other array methods with `Array.prototype.reduce` so pay close attention!
+
+  [Video](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"}   
+
+  Here's a [**link**](./reduce-visualization/index.html){:target="_blank"} to a nice, animated visualization of `Array.prototype.reduce` by the amazing `Joshua Comeau`. Please give [his GitHub repo](https://github.com/joshwcomeau/reduce-visualization/tree/master){:target="_blank"} a star!
+
+  **References and resources for further study:**
+
+  - [Array.prototype.reduce() at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce){:target="_blank"}
+  - [Functional JavaScript: How to use array reduce for more than just numbers](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/){:target="_blank"}
+  - [](){:target="_blank"}
 
 <!-- Summary -->
 
