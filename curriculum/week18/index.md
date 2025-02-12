@@ -366,7 +366,7 @@ title: Week 18 | Intermediate JavaScript
 
   - Watch the [video](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"} (74min)
 
-  Here's a [**link**](./reduce-visualization/index.html){:target="_blank"} to a nice, animated visualization of `Array.prototype.reduce` by the amazing `Joshua Comeau`. Please give [his GitHub repo](https://github.com/joshwcomeau/reduce-visualization/tree/master){:target="_blank"} a star!
+  Here's a [link](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/core/arrays/deconstructing_array_reduce/reduce-visualization/){:target="_blank"} to a nice, animated visualization of `Array.prototype.reduce` by the amazing `Joshua Comeau`. Please give [his GitHub repo](https://github.com/joshwcomeau/reduce-visualization/tree/master){:target="_blank"} a star!
 
   **References and resources for further study:**
 
