@@ -10,11 +10,11 @@ title: "Deconstructing Array reduce"
 
 ### Study Plan
 
-  [![](./assets/deconstructing.jpg)](){:target="_blank"}
+  [![](./assets/deconstructing.jpg)](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"}
 
   It's time to take a deep dive and deconstruct the notorious `reduce` Array function in JavaScript. It's probably one of the most difficult array methods to grasp and at the same time one of the most powerful and flexible ones. You can replace and recreate almost all other array methods with `Array.prototype.reduce` so pay close attention!
 
-  [Video](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"}   
+  - Watch the [video](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"} (74min)   
 
   Here's a [**link**](./reduce-visualization/index.html){:target="_blank"} to a nice, animated visualization of `Array.prototype.reduce` by the amazing `Joshua Comeau`. Please give [his GitHub repo](https://github.com/joshwcomeau/reduce-visualization/tree/master){:target="_blank"} a star!
 
