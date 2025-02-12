@@ -5,13 +5,13 @@ header_image: week18/pexels-gabby-k-7412035.jpg
 # title: Node.js 2 & NoSQL Databases
 schedule: 
   days:
-    1: # 
+    1: # Recreate Countries of the World Quiz Game
       # file://./../modules/javascript/misc/_w18d01/_w18d01.md
       module: javascript/misc/_w18d01/_w18d01.md
-    2: # 
+    2: # The Observer Pattern
       # file://./../modules/javascript/misc/_w18d02/_w18d02.md
       module: javascript/misc/_w18d02/_w18d02.md
-    3: # 
+    3: # Q&A: Intermediate JavaScript
       # file://./../modules/javascript/misc/_w18d03/_w18d03.md
       module: javascript/misc/_w18d03/_w18d03.md
     4: # 

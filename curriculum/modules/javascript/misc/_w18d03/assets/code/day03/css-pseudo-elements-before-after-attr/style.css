@@ -1,0 +1,16 @@
+:root {
+  --width: 300px;
+}
+div::before {
+  border: 1px solid;
+  content: attr(cite);
+}
+div::after {
+  border: 1px solid;
+  content: attr(debug);
+}
+main {
+  background: deeppink;
+  color: white;
+  width: calc( 100vh / 2 - 50px );
+}
