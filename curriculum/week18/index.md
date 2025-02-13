@@ -385,11 +385,11 @@ title: Week 18 | Intermediate JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 18 - Day 5 | TBA -->
+<!-- Week 18 - Day 5 | ES6 Classes & Web Components  -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 18 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 18 - Day 5</span> | ES6 Classes & Web Components </h2>
   </summary>
 
 ### Schedule
@@ -406,15 +406,43 @@ title: Week 18 | Intermediate JavaScript
   - ES6 Classes and extending them via the `extends` keyword
   - Native Web Components
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/day05){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
+  - What is a function constructor:  
+    - 1) Defining and calling a function with the new keyword, e.g. new MyFunction(). Any function called with the new keyword will create **custom** new objects.  
+    - 2) new Function(), new Object(), new Promise(), new Array(), new String(), new Number() => they create new objects of a **specific** type.
+  - Remember: Don’t put a return statement inside a Function constructor  
+  - Classes: just a new syntax for the Function constructor and the prototype mechanism for creating multiple objects  
+    - class keyword is lowercase, the class Name is always in PascalCase:   
+      - `class MyCoolClass {}`  
+      - `class Car{}`   
+  - All HTML element objects (in JS) extend the `HTMLElement` class:  
+    - `class HTMLDivElement extends HTMLElement {}`  
+    - `class HTMLParagraphElement extends HTMLElement {}`  
+    - `class HTMLHeadingElement extends HTMLElement {}`
+
   **References & Resources:**
+
+  - [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes){:target="_blank"}   
+
+  - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement){:target="_blank"}  
+
+  - [Custom HTML Elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Practice by building Classes and your own custom Web Components.
+
+  - Find an extensive article about function constructor and learn about the **return statement**.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 

@@ -17,7 +17,7 @@ schedule:
     4: # Deconstructing Array.prototype.reduce
       # file://./../modules/javascript/core/arrays/deconstructing_array_reduce/index.md
       module: javascript/core/arrays/deconstructing_array_reduce/index.md
-    5: # 
+    5: # ES6 Classes & Web Components
       # file://./../modules/javascript/misc/_w18d05/_w18d05.md
       module: javascript/misc/_w18d05/_w18d05.md
 
