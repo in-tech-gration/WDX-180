@@ -25,7 +25,7 @@ title: Week 18 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 13/2/2025</span>
+  <span>Updated: 14/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -402,8 +402,9 @@ title: Week 18 | Intermediate JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - Function constructors and Prototype
+  - ES6 Classes and extending them via the `extends` keyword
+  - Native Web Components
 
   You can find the lecture code [here](){:target="_blank"}
 
