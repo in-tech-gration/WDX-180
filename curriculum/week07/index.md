@@ -25,7 +25,7 @@ title: Week 07 | JavaScript Core 1
 
   </h2>
 
-  <span>Updated: 29/1/2025</span>
+  <span>Updated: 15/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -48,8 +48,6 @@ title: Week 07 | JavaScript Core 1
     <h2>
       <span class="summary-day">Week 07 - Day 1</span> | Just Enough JavaScript - Part 1</h2>
   </summary>
-
-![](./assets/learning.with.study.lenses.jpg)
 
 ### Schedule
 
@@ -101,7 +99,14 @@ title: Week 07 | JavaScript Core 1
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+  ---
+
+
+
+  _Photo by [Andrew Neel](https://unsplash.com/@andrewtneel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/macbook-pro-white-ceramic-mugand-black-smartphone-on-table-cckf4TsHAuw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
+
   
 </details>
 

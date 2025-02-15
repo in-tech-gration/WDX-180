@@ -5,19 +5,19 @@ header_image: week07/assets/header--andrew-neel-cckf4TsHAuw-unsplash.jpg
 schedule: 
 
   days:
-    1: # 
+    1: # Just enough JavaScript - Part 1
       # file://./../modules/javascript/denepo/just-enough-javascript/part-01/index.md
       module: javascript/denepo/just-enough-javascript/part-01/
-    2: # 
+    2: # Just enough JavaScript - Part 2
       # file://./../modules/javascript/denepo/just-enough-javascript/part-02/index.md
       module: javascript/denepo/just-enough-javascript/part-02/
-    3: # 
+    3: # Just enough JavaScript - Part 3
       # file://./../modules/javascript/denepo/just-enough-javascript/part-03/index.md
       module: javascript/denepo/just-enough-javascript/part-03/
-    4: # 
+    4: # Just enough JavaScript - Part 4
       # file://./../modules/javascript/denepo/just-enough-javascript/part-04/index.md
       module: javascript/denepo/just-enough-javascript/part-04/
-    5: # 
+    5: # Just enough JavaScript - Part 5
       # file://./../modules/javascript/denepo/just-enough-javascript/part-05/index.md
       module: javascript/denepo/just-enough-javascript/part-05/
 
