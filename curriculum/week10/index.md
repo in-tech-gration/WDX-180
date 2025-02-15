@@ -1,12 +1,14 @@
 ---
-title: Week 10 | Web APIs 1 | DOM
+title: Week 10 | Web APIs 1: DOM
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 10-Web APIs 1 | DOM | slugify }}">
+<h1 id="{{ Week 10-Web APIs 1: DOM | slugify }}">
   <span class="week-prefix">Week 10 |</span> Web APIs 1: DOM
 </h1>
+
+<img src="assets/iewek-gnos-hhUx08PuYpc-unsplash.jpg" />
 
 <div class="week-controls">
 
@@ -23,7 +25,7 @@ title: Week 10 | Web APIs 1 | DOM
 
   </h2>
 
-  <span>Updated: 27/12/2023</span>
+  <span>Updated: 15/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -67,6 +69,11 @@ title: Week 10 | Web APIs 1 | DOM
   Under the `user/` folder, you'll find a new `bug_journal/` folder that contains a sample file called `BUG_JOURNAL.draft.md`.  Copy this file, rename it to `BUG_JOURNAL.md` and **start tracking your bugs** from now on. You'll find a small example inside the draft (you can remove it from your copy) to give you an idea on what to look for and how to document each bug. There's a long and short version of bug reporting. Use the one that fits your style and mode of operation.
 
   > "The worst thing you can do is to ignore your mistakes. Don't get into the bad habit of error amnesia. You should be learning from your mistakes and the only way to learn from your mistakes is to pay attention to them." ~ Douglas Crockford
+
+
+
+  > Those who cannot remember the past are condemned to repeat it.
+  > Jorge Santayana
 
 
 
@@ -121,7 +128,13 @@ title: Week 10 | Web APIs 1 | DOM
 
 <!-- Extra Resources -->
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+---
+
+
+
+_Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/macbook-pro-on-white-wooden-desk-hhUx08PuYpc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
   
 </details>
 

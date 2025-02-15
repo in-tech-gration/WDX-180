@@ -83,3 +83,7 @@ title: Introduction to the DOM API
 ### Extra Resources
 
 ### Sources and Attributions
+
+---
+
+_Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/macbook-pro-on-white-wooden-desk-hhUx08PuYpc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
