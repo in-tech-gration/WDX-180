@@ -67,3 +67,8 @@ title: Functions Part 1
   - [5.3: Functions and Return @ The Coding Train](https://www.youtube.com/watch?v=qRnUBiTJ66Y){:target="_blank"}
 
 ### Sources and Attributions
+
+---
+
+_Photo by [Mohammad Rahmani](https://unsplash.com/@afgprogrammer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/black-flat-screen-computer-monitor-8qEB0fTe9Vw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
+      
