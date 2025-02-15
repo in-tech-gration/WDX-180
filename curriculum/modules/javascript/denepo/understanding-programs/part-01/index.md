@@ -50,3 +50,9 @@ title: Understanding Programs - Part 1
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
 ### Sources and Attributions
+
+---
+
+_Photo by [Cookie the Pom](https://unsplash.com/@cookiethepom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/brown-and-white-long-coated-small-dog-wearing-eyeglasses-on-black-laptop-computer-gySMaocSdqs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
+      
+

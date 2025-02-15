@@ -20,12 +20,12 @@ title: Week 08 | JavaScript Core 2
 
       {% assign previous_week_num = 08 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
     {% endif %}
 
   </h2>
 
-  <span>Updated: 29/1/2025</span>
+  <span>Updated: 15/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -33,7 +33,7 @@ title: Week 08 | JavaScript Core 2
 
       {% assign next_week_num = 08 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
-      <a href="/WDX-180/curriculum/week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
     {% endif %}
 
   </h2>
@@ -61,7 +61,7 @@ title: Week 08 | JavaScript Core 2
 
   This Module is about "Understanding Programs". It's not enough just to know the language features in JS. Before you can write good programs you need to learn how to understand code that you did not write. The following module contains a handful of sections that provide you a good amount of JavaScript programs and a lot of tools,methods and good practices on how to properly understand programs written by others!
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
+  In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
 
   **Launching Study Lenses and following the material**
 
@@ -86,7 +86,13 @@ title: Week 08 | JavaScript Core 2
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+---
+
+
+
+_Photo by [Cookie the Pom](https://unsplash.com/@cookiethepom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/brown-and-white-long-coated-small-dog-wearing-eyeglasses-on-black-laptop-computer-gySMaocSdqs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
   
 </details>
 
@@ -109,7 +115,7 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Understanding Programs"
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **5-logging-state**
   - **6-tracing-backwards**
@@ -148,7 +154,7 @@ title: Week 08 | JavaScript Core 2
 
   This Module is about "Developing Programs". Now it's finally time to put those skills into action! Hop on the material provided and you'll soon be able to start writing programs from a blank page!
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
+  In order to follow the material, you will need to install and use the `study-lenses` tool. [Here are the instructions](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/){:target="_blank"} in case you've missed them.
 
   **Launching Study Lenses and following the material**
 
@@ -194,7 +200,7 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Developing Programs"
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **3-fixing-bugs**
   - **4-modifying-programs**
@@ -231,7 +237,7 @@ title: Week 08 | JavaScript Core 2
 
   In this Module, we are continuing our journey into "Developing Programs"
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
+  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **6-from-spec**
   - **7-reverse-engineering**
@@ -253,6 +259,8 @@ title: Week 08 | JavaScript Core 2
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+
 
 ---
 
