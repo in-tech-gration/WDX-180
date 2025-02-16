@@ -5,17 +5,17 @@ title: React JS
 schedule: 
   days:
     1: # 
-      # file://./../modules/generics/react-js-generic.md
-      module: generics/react-js-generic.md
+      # file://./../modules/javascript/misc/_w21d01/_w21d01.md
+      module: javascript/misc/_w21d01/_w21d01.md
     2: # 
       # file://./../modules/javascript/frameworks/react/quickstart/part-01.md
       module: javascript/frameworks/react/quickstart/part-01.md
     3: # 
-      # file://./../modules/generics/react-js-generic.md
-      module: generics/react-js-generic.md
+      # file://./../modules/javascript/misc/_w21d03/_w21d03.md
+      module: javascript/misc/_w21d03/_w21d03.md
     4: # 
       # file://./../modules/javascript/frameworks/react/quickstart/part-02.md
       module: javascript/frameworks/react/quickstart/part-02.md
     5: # 
-      # file://./../modules/generics/react-js-generic.md
-      module: generics/react-js-generic.md
+      # file://./../modules/javascript/misc/_w21d05/_w21d05.md
+      module: javascript/misc/_w21d05/_w21d05.md

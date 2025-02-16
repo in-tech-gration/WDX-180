@@ -6,17 +6,17 @@ header_image: week16/pexels-cottonbro-6804077.jpg
 schedule: 
   days:
     1: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
-    2: # Scrum
-      # file://./../modules/generics/scrum/scrum.md
-      module: generics/scrum/scrum.md
+      # file://./../modules/javascript/misc/_w25d01/_w25d01.md
+      module: javascript/misc/_w25d01/_w25d01.md
+    2: # 
+      # file://./../modules/javascript/misc/_w25d02/_w25d02.md
+      module: javascript/misc/_w25d02/_w25d02.md
     3: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
+      # file://./../modules/javascript/misc/_w25d03/_w25d03.md
+      module: javascript/misc/_w25d03/_w25d03.md
     4: # 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
+      # file://./../modules/javascript/misc/_w25d04/_w25d04.md
+      module: javascript/misc/_w25d04/_w25d04.md
     5: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
+      # file://./../modules/javascript/misc/_w25d05/_w25d05.md
+      module: javascript/misc/_w25d05/_w25d05.md

@@ -4,17 +4,17 @@ title: "Advanced JavaScript"
 schedule: 
   days:
     1: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
-    2: # More 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
+      # file://./../modules/javascript/misc/_w35d01/_w35d01.md
+      module: javascript/misc/_w35d01/_w35d01.md
+    2: # 
+      # file://./../modules/javascript/misc/_w35d02/_w35d02.md
+      module: javascript/misc/_w35d02/_w35d02.md
     3: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
+      # file://./../modules/javascript/misc/_w35d03/_w35d03.md
+      module: javascript/misc/_w35d03/_w35d03.md
     4: # 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
+      # file://./../modules/javascript/misc/_w35d04/_w35d04.md
+      module: javascript/misc/_w35d04/_w35d04.md
     5: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
+      # file://./../modules/javascript/misc/_w35d05/_w35d05.md
+      module: javascript/misc/_w35d05/_w35d05.md
