@@ -5,10 +5,10 @@ title: Node JS
 header_image: week19/assets/Intro.to.Node.jpg
 schedule: 
   days:
-    1: # 
+    1: # Introduction to Node.JS
       # file://./../modules/javascript/misc/_w19d01/_w19d01.md
       module: javascript/misc/_w19d01/_w19d01.md
-    2: # 
+    2: # Node.JS Practice
       # file://./../modules/javascript/misc/_w19d02/_w19d02.md
       module: javascript/misc/_w19d02/_w19d02.md
     3: # 

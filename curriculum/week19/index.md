@@ -189,11 +189,11 @@ title: Week 19 | Node JS
 
 <hr class="mt-1">
 
-<!-- Week 19 - Day 2 | TBA -->
+<!-- Week 19 - Day 2 | Node.JS Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 19 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 19 - Day 2</span> | Node.JS Practice</h2>
   </summary>
 
 ### Schedule
@@ -201,7 +201,10 @@ title: Week 19 | Node JS
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - Watch (or re-watch) yesterday's lecture 
+  - Complete all the coding challenges and exercises from Day 01
 
 <!-- Summary -->
 
