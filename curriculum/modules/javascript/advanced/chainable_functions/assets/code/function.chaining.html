@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Chaining</title>
+  <style>
+    html { color-scheme: dark;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    .fancy {
+      border: 4px dashed orangered;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our own jQuery</h1>
+  <h2 class="first">Subtitle</h2>
+  <h2 class="second">Subtitle (second)</h2>
+
+  <script>
+    // $(EL).css().css().attr().on();
+    $("h2.first") // $h2 is a reminder that I get a jQuery object
+      .css("color", "red")
+      .css("background", "green")
+      .css("padding", "1rem")
+      .attr("class", "fancy")
+      .on("click", ()=>{
+        console.log("Clicked!");
+      });
+  </script>
+  <script>
+    function xQuery(cssSelector){
+      const el = document.querySelector(cssSelector);
+      const obj = {
+        css,
+        attr, 
+        on,
+      }
+      function on(eventType, handler){
+        el.addEventListener(eventType, handler);
+        return obj;
+      }
+      function attr(attr, value){
+          el.setAttribute(attr,value);
+          // el.classList.add(value);
+          return obj;
+      }
+      function css(prop, value){
+        el.style[prop] = value;
+        return obj;
+      }
+      return obj;
+    }
+
+    xQuery("h2.second")
+    .css("padding", "1rem")
+    .css("background", "green")
+    .attr("data-custom", "debug")
+    .attr("class", "fancy")
+    .css("color","red")
+    .on("click", ()=>{
+      console.log("Clicked!");
+    })
+    .on("mouseenter", ()=>{
+      console.log("Hovered!");
+    })
+
+    xQuery("h1")
+    .css("background","gold")
+    .css("color","black")
+    .css("fontFamily","Arial");
+
+    // function animate(param){}
+    // animate("box")
+    // .moveToLeft()
+    // .moveToRight()
+    // .blink();
+
+</script>
+
+</body>
+</html>

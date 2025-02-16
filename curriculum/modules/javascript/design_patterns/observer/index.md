@@ -1,3 +1,7 @@
+---
+title: "Design Patterns - The Observer Pattern"
+---
+
 ## Design Patterns: Observer (Behavioral)
 
 ![Observer](./Observer.png)
