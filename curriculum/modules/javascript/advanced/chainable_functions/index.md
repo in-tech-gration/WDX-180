@@ -11,7 +11,7 @@ Watch the lecture (part 1): [Chainable Functions](https://youtu.be/jSI8SU5yeag){
 
 ## Lecture Code
 
-  - The source code for our very own simple implementation of jQuery can be found here: [xQuery](){:target="_blank"}
+  - The source code for our very own simple implementation of jQuery can be found here: [xQuery](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/advanced/chainable_functions/assets/code){:target="_blank"}
 
   **A chain of simple Object Properties:**
 
@@ -234,8 +234,3 @@ Watch the lecture (part 1): [Chainable Functions](https://youtu.be/jSI8SU5yeag){
   // TIPS: Start at the top level: lets(), make sure everything works, then move on to the next
   // layers (lets().learn(), lets().learn().print(), lets().learn().about(), etc.) and move forward in baby steps, using console.logging at each step:  
   ```
-
-## References
-
-  [](){:target="_blank"}
-
