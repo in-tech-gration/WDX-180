@@ -1,5 +1,5 @@
 ---
-title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch API
+title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
@@ -7,6 +7,8 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 <h1 id="{{ Week 11-Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
   <span class="week-prefix">Week 11 |</span> Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
 </h1>
+
+<img src="assets/pexels-roman-odintsov-12725452.jpg" />
 
 <div class="week-controls">
 
@@ -23,7 +25,7 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
   </h2>
 
-  <span>Updated: 30/12/2024</span>
+  <span>Updated: 16/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -94,6 +96,12 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
   - [30 Days Of JavaScript: JSON](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/16_Day_JSON/16_day_json.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/16_Day_JSON/16_day_json.md){:target="_blank"}
 
   Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
+
+  ---
+
+
+
+_Photo by [ROMAN ODINTSOV](https://www.pexels.com/photo/a-a-customer-receiving-a-food-delivery-12725452/){:target="_blank"} on [Pexels](https://www.pexels.com/photo/a-a-customer-receiving-a-food-delivery-12725452/){:target="_blank"}_
   
 </details>
 
@@ -141,6 +149,11 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 ### Exercises
 
   Try to complete as many exercises as you can from the [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#exercises){:target="_blank"} repository, and don't forget to star the [original repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"} if you enjoyed them and found them helpful.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
@@ -397,6 +410,8 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+
 
 ---
 
