@@ -1,6 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: React JS
+# header_image: week23/FILE.jpg
 # title: Group Project, Tech Interview & Job Hunt
 schedule: 
   days:
