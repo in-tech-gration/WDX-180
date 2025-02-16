@@ -5,20 +5,20 @@ title: React JS
 schedule: 
   days:
     1: # 
-      # file://./../modules/generics/react-js-generic.md
-      module: generics/react-js-generic.md
+      # file://./../modules/javascript/misc/_w23d01/_w23d01.md
+      module: javascript/misc/_w23d01/_w23d01.md
     2: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w23d02/_w23d02.md
+      module: javascript/misc/_w23d02/_w23d02.md
     3: # 
-      # file://./../modules/generics/react-js-generic.md
-      module: generics/react-js-generic.md
+      # file://./../modules/javascript/misc/_w23d03/_w23d03.md
+      module: javascript/misc/_w23d03/_w23d03.md
     4: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+      # file://./../modules/javascript/misc/_w23d04/_w23d04.md
+      module: javascript/misc/_w23d04/_w23d04.md
     5: # 
-      # file://./../modules/generics/react-js-generic.md
-      module: generics/react-js-generic.md
+      # file://./../modules/javascript/misc/_w23d05/_w23d05.md
+      module: javascript/misc/_w23d05/_w23d05.md
 # XMLHttpRequest:
 # function makeAJAXCall(methodType, url, callback){
 #    var xhr = new XMLHttpRequest();
