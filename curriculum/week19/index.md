@@ -25,7 +25,7 @@ title: Week 19 | Node JS
 
   </h2>
 
-  <span>Updated: 16/2/2025</span>
+  <span>Updated: 19/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -218,35 +218,44 @@ title: Week 19 | Node JS
 
 <hr class="mt-1">
 
-<!-- Week 19 - Day 3 | TBA -->
+<!-- Week 19 - Day 3 | The FileSystem (fs) Module -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 19 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 19 - Day 3</span> | The FileSystem (fs) Module</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  1. **Continue studying** the Node.js introductory presentation from where we left off during our last lecture: The `fs` module: [https://learn.js.org/learn/nodejs/introduction.html#/15](https://learn.js.org/learn/nodejs/introduction.html#/15){:target="_blank"}
 
-  - **Part 1:** 
-  - **Part 2:**
+  2. Make sure to read and practice **building a basic web server** using Node.js according to the [official document](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs#an-example-nodejs-application)_blank.
 
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  3. **Install [https://github.com/workshopper/learnyounode](https://github.com/workshopper/learnyounode)** *(if you haven’t done it already)* **and complete exercises 3, 4 and 5 (MY FIRST I/O, MY FIRST ASYNC I/O, FILTERED LS)**
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - **Create a Nodejs app that displays a list of programming languages along with information about them (creator(s), date of birth, etc.)**  
+    - `node lang.js` => be creative with the output 🙂
+
+  - **Create a Todo App using Nodejs:**  
+    - You should be able to run the app from the command line:  
+      - *node todo.js “Buy milk”*  
+      - *node todo.js “Go to the gym”*  
+    - The app should then store the Task (“Buy milk”) along with the date in a JSON file (todo.json)  
+    - When you run *node todo.js* (without any arguments) you should get a list of the todo tasks that are stored in the JSON file
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week19/progress/progress.draft.w19.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
