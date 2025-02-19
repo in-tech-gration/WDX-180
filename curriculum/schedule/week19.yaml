@@ -11,10 +11,10 @@ schedule:
     2: # Node.JS Practice
       # file://./../modules/javascript/misc/_w19d02/_w19d02.md
       module: javascript/misc/_w19d02/_w19d02.md
-    3: # 
+    3: # The Filesystem (fs) Module
       # file://./../modules/javascript/misc/_w19d03/_w19d03.md
       module: javascript/misc/_w19d03/_w19d03.md
-    4: # 
+    4: # Learnyounode Practice
       # file://./../modules/javascript/misc/_w19d04/_w19d04.md
       module: javascript/misc/_w19d04/_w19d04.md
     5: # 
