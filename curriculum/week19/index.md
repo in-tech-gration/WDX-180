@@ -335,8 +335,6 @@ title: Week 19 | Node JS
 
   - **Part 2:** Node.js, the HTTP module, `localhost` and creating a web server (120min)
 
-  You can find the lecture code [here](){:target="_blank"}
-
   You can find the lecture diagrams and code [here](){:target="_blank"}
 
   **Study and practice:**
