@@ -28,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 31/1/2025</span>
+  <span>Updated: 25/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -137,7 +137,9 @@ load_script_js_via_src:
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  - [Tailwind CSS Tutorial for Beginners (2023)](https://www.youtube.com/watch?v=G5YDmWNU_tc){:target="_blank"} (YouTube, 45min)
 
 ### Sources and Attributions
 
@@ -146,6 +148,8 @@ load_script_js_via_src:
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
   
   - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)
+
+  - Thanks to [Mubashra Irshad](https://github.com/mubashra21c){:target="_blank"} for reviewing and suggesting the `Tailwind CSS Tutorial for Beginners`.
 
   _Photo by [SevenStorm JUHASZIMRUS](https://www.pexels.com/photo/green-and-yellow-crane-439416/)_
   
@@ -969,6 +973,8 @@ load_script_js_via_src:
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+
 
 ---
 
