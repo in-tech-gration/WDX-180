@@ -47,7 +47,7 @@
   - [**Week 16**: Intermediate JavaScript: Events & Objects](week16/index.md)
   - [**Week 17**: Intermediate JavaScript: Objects](week17/index.md)
   - [**Week 18**: Intermediate JavaScript](week18/index.md)
-  - [**Week 19**: Node JS](week19/index.md)
+  - [**Week 19**: Introduction to Node JS](week19/index.md)
   - [**Week 20**: Node JS](week20/index.md)
   - [**Week 21**: React JS](week21/index.md)
   - [**Week 22**: React JS](week22/index.md)
