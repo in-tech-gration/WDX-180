@@ -1,11 +1,11 @@
 ---
-title: Week 20 | Node JS
+title: Week 20 | Node JS Web Server
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 20-Node JS | slugify }}">
-  <span class="week-prefix">Week 20 |</span> Node JS
+<h1 id="{{ Week 20-Node JS Web Server | slugify }}">
+  <span class="week-prefix">Week 20 |</span> Node JS Web Server
 </h1>
 
 <img src="assets/nodejs-web-server.jpg" />

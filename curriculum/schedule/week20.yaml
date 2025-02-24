@@ -1,6 +1,6 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: Node JS
+title: Node JS Web Server
 # header_image: week20/FILE.jpg
 header_image: week20/assets/nodejs-web-server.jpg
 schedule: 
