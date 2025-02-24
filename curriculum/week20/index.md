@@ -25,7 +25,7 @@ title: Week 20 | Node JS Web Server
 
   </h2>
 
-  <span>Updated: 24/2/2025</span>
+  <span>Updated: 25/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -139,11 +139,11 @@ title: Week 20 | Node JS Web Server
 
 <hr class="mt-1">
 
-<!-- Week 20 - Day 2 | TBA -->
+<!-- Week 20 - Day 2 | Node.JS Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 20 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 20 - Day 2</span> | Node.JS Practice</h2>
   </summary>
 
 ### Schedule
@@ -151,11 +151,53 @@ title: Week 20 | Node JS Web Server
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Here's the plan for today: **build things!**
+
+  Scroll down to the `Exercises` section and start coding.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - 1) Create a basic Nodejs Webserver that serves a simple HTML form with an email and password input fields. You must be able to login successfully using the email "admin@gmail.com" and password "1234" and land on an admin page (be creative) otherwise get redirected to an unauthorized page.
+
+  - 2) Try out the fetch API in Node.js: replace `kostasx` with your GitHub username
+
+  ```js
+  const URL = "https://api.github.com/users/kostasx";
+  fetch(URL)
+    .then((response) => response.json())
+    .then((data) => {
+      // console.log the name, company and location from the data
+      // In the following format "<name> is currently working at <company> and is based in <location>", example "Kostas Minaidis is working at Intechgration.io and is based in Athens, Greece / Berlin, Germany"
+    })
+    .catch((error) => console.error("Error:", error));
+  ```
+
+  - 3) Integrate the above code into a [web server](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs#an-example-nodejs-application){:target="_blank"}. 
+
+  - 4) Create another Nodejs Web server that displays fetches and displays jokes from the following API:
+
+    - [https://v2.jokeapi.dev/joke/Programming](https://v2.jokeapi.dev/joke/Programming){:target="_blank"}
+    - [https://sv443.net/jokeapi/v2/](https://sv443.net/jokeapi/v2/){:target="_blank"}
+
+  - 5) [Download this JSON](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week20/assets/day02/countries.json){:target="_blank"} and create a Nodejs webserver that accepts a request through the URL with the name of a country and searches through the JSON to find information for that country. It then sends back the appropriate object to the client in either JSON or HTML format
+
+  - :bulb: Remember to always handle errors in a graceful and informative manner: console.log(error) is not enough! :warning:
+
+  ```js
+  const result = await fetch(url)
+      .then((response) => { return response.json(); })
+      .then((data) => { return data; })
+      .catch((err) => { console.log(err); }); // <= This one should also return something useful back
+  ```
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week20/progress/progress.draft.w20.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
