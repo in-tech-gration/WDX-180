@@ -90,6 +90,8 @@ title: Introduction to Tailwind CSS
 
 ### Extra Resources
 
+  - [Tailwind CSS Tutorial for Beginners (2023)](https://www.youtube.com/watch?v=G5YDmWNU_tc){:target="_blank"} (YouTube, 45min)
+
 ### Sources and Attributions
 
   - [What Is A CSS Framework?](https://elementor.com/resources/glossary/what-is-a-css-framework/)
@@ -97,5 +99,7 @@ title: Introduction to Tailwind CSS
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
   
   - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)
+
+  - Thanks to [Mubashra Irshad](https://github.com/mubashra21c){:target="_blank"} for reviewing and suggesting the `Tailwind CSS Tutorial for Beginners`.
 
   _Photo by [SevenStorm JUHASZIMRUS](https://www.pexels.com/photo/green-and-yellow-crane-439416/)_
