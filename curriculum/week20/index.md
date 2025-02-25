@@ -25,7 +25,7 @@ title: Week 20 | Node JS Web Server
 
   </h2>
 
-  <span>Updated: 25/2/2025</span>
+  <span>Updated: 26/2/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -207,44 +207,136 @@ title: Week 20 | Node JS Web Server
 
 <hr class="mt-1">
 
-<!-- Week 20 - Day 3 | TBA -->
+<!-- Week 20 - Day 3 | Introduction to Express.js -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 20 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 20 - Day 3</span> | Introduction to Express.js</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  ![](./assets/express.jpg)
 
-  - **Part 1:** 
-  - **Part 2:**
+  - Study (read **and** practice) the [**Introducing Express**](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#introducing_express){:target="_blank"} section from MDN's `Web Frameworks` documentation page.
 
-  You can find the lecture code [here](){:target="_blank"}
+  **Express CRUD App**
 
-  **Lecture Notes & Questions:**
+  - Create a folder and run the following commands
 
-  **References & Resources:**
+  ```bash
+  npm init -y
+  npm install express body-parser uuid
+  ```
+
+  - Now create a file name `app.js` and paste the following code:
+
+  ```js
+  const express = require('express')
+  const bodyParser = require('body-parser');
+  const { v4: uuidv4 } = require('uuid');
+
+  const tasks = [
+    { 
+      id: 0, 
+      title: 'homework', 
+      completed: false 
+    }, 
+    { 
+      id: 1, 
+      title: 'study', 
+      completed: false 
+    }, 
+    { 
+      id: 2, 
+      title: 'cook', 
+      completed: false 
+    }, 
+    { 
+      id: 3,
+      title: 'clean',
+      completed: false 
+    },
+    { 
+      id: 4, 
+      title: 'laundry', 
+      completed: false 
+    }
+  ]
+  // CRUD todo app 
+
+  const app = express();
+  app.use(bodyParser.json());
+
+  app.get('/', function (req, res) {
+      res.send('Hello World')
+  })
+  // R - Read done
+  app.get('/tasks', (req, res) => {
+      res.json(tasks)
+  })
+
+  // C - Create 
+  app.post('/tasks', (request, response) => {
+      console.log(request.body.title)
+      // { id: 0, title: 'homework', completed: false }
+      const newTask = {
+          id : uuidv4(),
+          title: request.body.title,
+          completed: false
+      }
+      tasks.push(newTask);
+      response.json(tasks);
+  });
+
+  // U - Update
+  app.put('/tasks/:title', (request, response) => {
+    // { id: 0, title: 'homework', completed: true }
+    const result = tasks.find(({ title }) => title === request.params.title );
+
+    if(!result) {
+      return response.status(404).json({ 
+        error: `task ${request.params.title} not found`
+      }) 
+    }
+
+    result.completed = true;
+    response.send(tasks);
+
+  });
+
+  // D - Delete?
+
+  app.listen(3003, () => {
+      console.log('Server running on port 3003')
+  })
+  ```
+
+  - Run the app using `node app.js`. An Express web server should be up and running at `http://localhost:3003/tasks`. Explore the code, make sure to understand exactly what's happening in each line and move on to the `Exercises` section once done.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Challenge: Implement the `DELETE` CRUD operation in `app.js` and make sure that all CRUD operations behave as expected.
+
+  - Challenge: Use the browser's `Fetch API` to make a POST fetch request to add (create) a new todo task. Use a `DELETE` and an `UPDATE` HTTP request (again via Fetch API) to delete and update a task.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week20/progress/progress.draft.w20.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
-  ---
+  - [THE BEGINNER’S GUIDE: Understanding Node.js & Express.js fundamentals](https://medium.com/@LindaVivah/the-beginners-guide-understanding-node-js-express-js-fundamentals-e15493462be1){:target="_blank"}
 
-
-
-  _Photo by []()_
-
+  - [How to structure an Express.js REST API with best practices](https://blog.treblle.com/egergr/){:target="_blank"}
 
 <!-- Sources and Attributions -->
   
