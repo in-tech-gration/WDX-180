@@ -8,10 +8,10 @@ schedule:
     1: # Web Server with Node.JS
       # file://./../modules/javascript/misc/_w20d01/w20d01.md
       module: javascript/misc/_w20d01/_w20d01.md
-    2: # 
+    2: # Node.JS Practice
       # file://./../modules/javascript/misc/_w20d02/_w20d02.md
       module: javascript/misc/_w20d02/_w20d02.md
-    3: # 
+    3: # Introduction to Express.JS
       # file://./../modules/javascript/misc/_w20d03/_w20d03.md
       module: javascript/misc/_w20d03/_w20d03.md
     4: # Tiny Web Server Refactoring: Node.js + CodeSmells
