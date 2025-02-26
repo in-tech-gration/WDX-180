@@ -496,11 +496,11 @@ title: Week 20 | Node JS Web Server
 
 <hr class="mt-1">
 
-<!-- Week 20 - Day 5 | TBA -->
+<!-- Week 20 - Day 5 | CRUD Operations in Express.JS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 20 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 20 - Day 5</span> | CRUD Operations in Express.JS</h2>
   </summary>
 
 ### Schedule
@@ -513,27 +513,70 @@ title: Week 20 | Node JS Web Server
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** CRUD Operations with ExpressJS (Part 1) 
+  - **Part 2:** CRUD Operations with ExpressJS (Part 2)
 
   You can find the lecture code [here](){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
+  - The **fs module can only read files** of all sorts (even .js) but **does not execute** the code found inside these files!   
+
+  - `JSON.parse()` will parse a JSON string but **will not execute any code** and cannot parse JS, only JSON.  
+
+  - `Auth*`:  
+    - Authentication (`AuthN`): let the system know **who you are**  
+    - Authorization (`AuthZ`): let the system give you special permissions (**what you can do** on the system)  
+
+  - NodeJS Modules: 2 ways of importing/exporting modules  
+    - CommonJS: **modules.exports = {}** + **require()**  
+    - ESM: **export + import**  
+      - **Example:**  
+        - `const express = require("express"); // CommonJS`  
+        - `import express from "express"; // ESModules`  
+
+  - JS/Node project setup:  
+    - `npm init` and `npm install <module(s)>` => **ONCE per PROJECT**  
+    - **Basic Express App setup:**  
+      - `mkdir my-express-app`  
+      - `cd my-express-app`  
+      - `npm init` => manual process where you supply some basic information about the project  
+      - `npm init -y`  
+      - Recipe: `package.json` <= created by `npm init`  
+      - Ingredients: express, cors  
+        - `npm install express cors`  
+        - OR: `npm i express cors`  
+        - OR: `npm i express`  
+        - `npm i cors`  
+
+  - **QUESTION:** When should we use the **object literal** vs the Constructor (or a class)?  
+    - `tasks.push({ content: “Learn JS”, completed: false })`  
+      - Use the **object literal syntax** when the object structure is simple  
+      - Use the **object literal syntax** when you are not handling too many instances  
+      - Use the **object literal syntax** when you create the object in a few places  
+    - `tasks.push( new Task(“Learn JS”) )`;  
+      - Use the Constructor/class syntax when the object structure is **complex**  
+      - Use the Constructor/class syntax when there is a lot of default properties  
+      - Use the Constructor/class syntax when you are creating many instances  
+      - Use the Constructor/class syntax when you are creating objects in many places in your code
+
   **References & Resources:**
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - **Tracing the program execution** and understanding how each part works: Comment every single line of code in the example that we’ve looked at. Each comment should describe exactly what each line does.  
+    - If any line of code is unclear or ambiguous, drop a question on Slack or leave a comment. 
 
-  ---
+  - **Convert function constructors into classes**: for example **function Task** can be transformed into a **class Task**
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week20/progress/progress.draft.w20.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
