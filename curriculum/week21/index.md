@@ -8,13 +8,14 @@ title: Week 21 | React JS
   <span class="week-prefix">Week 21 |</span> React JS
 </h1>
 
+<img src="assets/introduction-to-react.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 21 | to_integer %}
 
   <h2 class="week-controls__previous_week">
 
-    
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 21 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,11 +25,10 @@ title: Week 21 | React JS
 
   </h2>
 
-  <span>Updated: 5/3/2024</span>
+  <span>Updated: 3/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 21 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -42,20 +42,52 @@ title: Week 21 | React JS
 
 ---
 
-<!-- Week 21 - Day 1 | React JS -->
+<!-- Week 21 - Day 1 | Intro to React - Lecture -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 21 - Day 1</span> | React JS</h2>
+      <span class="summary-day">Week 21 - Day 1</span> | Intro to React - Lecture</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+    - History
+    - Front-End Frameworks
+    - Abstractions
+    - Modularization
+    - Custom elements
+    - Reusability
+    - Single Responsibility Principle
+    - Higher Abstraction Thinking
+    - JSX & Transpilers
+    - Adding React to a Website
+    - React Core, React DOM & React Native
+    - Babel
+    - Creating a Component
+
+  - **Part 2:** 
+    - Layout
+    - Tidied markup
+    - React project setup && frameworks
+    - Vite setup
+    - React Strick Mode
+    - Steps for Component creation
+    - React Fragments
+
+  You can find the lecture code (created using `vite`) [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
@@ -428,11 +460,11 @@ export default function ShoppingList() {
 
 <hr class="mt-1">
 
-<!-- Week 21 - Day 3 | React JS -->
+<!-- Week 21 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 21 - Day 3</span> | React JS</h2>
+      <span class="summary-day">Week 21 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -762,11 +794,11 @@ button {
 
 <hr class="mt-1">
 
-<!-- Week 21 - Day 5 | React JS -->
+<!-- Week 21 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 21 - Day 5</span> | React JS</h2>
+      <span class="summary-day">Week 21 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -792,3 +824,15 @@ button {
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
