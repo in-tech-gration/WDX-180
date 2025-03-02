@@ -1,11 +1,10 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: React JS
-# header_image: week21/FILE.jpg
-# title: React 2, Firebase 
+header_image: week21/introduction-to-react.jpg
 schedule: 
   days:
-    1: # 
+    1: # Introduction to React
       # file://./../modules/javascript/misc/_w21d01/_w21d01.md
       module: javascript/misc/_w21d01/_w21d01.md
     2: # 

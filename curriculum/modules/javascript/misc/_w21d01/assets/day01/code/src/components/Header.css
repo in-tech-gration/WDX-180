@@ -1,0 +1,7 @@
+header {
+  padding: 1rem;
+  border: 2px solid indigo;
+}
+header a {
+  margin: 1rem;
+}
