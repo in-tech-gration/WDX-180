@@ -83,7 +83,7 @@ title: Week 21 | React JS
     - Steps for Component creation
     - React Fragments
 
-  You can find the lecture code (created using `vite`) [here](){:target="_blank"}
+  You can find the lecture code (created using `vite`) [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day01/code){:target="_blank"} and the lecture diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day01/diagrams){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
@@ -469,17 +469,35 @@ export default function ShoppingList() {
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by []()_
+
 
 <!-- Sources and Attributions -->
   
@@ -803,17 +821,35 @@ button {
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by []()_
+
 
 <!-- Sources and Attributions -->
   
