@@ -1,4 +1,4 @@
-# BackChat Challenge
+# BackChat React.js Challenge
 
 **Instructions:**
 
