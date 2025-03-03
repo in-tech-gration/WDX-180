@@ -1,0 +1,32 @@
+/* Grid CSS - This is the important stuff! */
+.my-grid {
+  /* this creates the grid: */
+  display: grid;
+  /* it has three columns... the 2nd column is 3 times the size of    
+  each of the other two */
+  grid-template-columns: 1fr 3fr 1fr;
+  /* it has three rows... the 1st and 3rd take their height from their 
+  content, while the middle one fills the remaining height */
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 0.5rem;
+  height: 100vh;
+  /* it will fill the height of the browser window */
+}
+
+.site-header,
+.site-footer {
+  grid-column: span 3;
+  /* span across three columns */
+}
+
+/* Cosmetic CSS */
+.my-grid {
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.my-grid > * {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}

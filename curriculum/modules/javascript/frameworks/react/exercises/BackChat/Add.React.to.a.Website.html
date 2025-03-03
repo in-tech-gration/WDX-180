@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static HTML + React</title>
+  </head>
+  <body>
+    <h1>Subtitle</h1>
+    <footer>Footer</footer>
+    <div id="root" style="border: 1px solid hotpink"></div>
+
+    <!-- React Core -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <!-- React displays things in the DOM (Browser), contains a global object called ReactDOM -->
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <!-- Babel: JSX => JS -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Switching from JS to JSX -->
+    <script type="text/babel">
+      // Create a Component (2 ways: Classes + Functions)
+      // <Header /> => function Header
+      // <YouTube /> => function YouTube
+      // 1st Req: PascalCase, YouTube, GoogleMaps...
+      function Header() {
+        // 2nd Req: return some XML (HTML-like syntax)
+        return <div>Hello World</div>;
+      }
+      // <App/>
+      function App() {
+        return (
+          <div>
+            <h1>App</h1>
+            <Header />
+            <MainArea></MainArea>
+            <Footer></Footer>
+          </div>
+        );
+      }
+      // <Footer />
+      function Footer() {
+        return <footer>Copyright &copy; 2024</footer>;
+      }
+      // <MainArea />
+      function MainArea() {
+        return (
+          <main>
+            <p>Lorem Ipsum...</p>
+          </main>
+        );
+      }
+
+      // Plant that Component into our pot: #root
+      // 1) Grab the HTML element
+      const rootEl = document.querySelector('#root');
+      const root = ReactDOM.createRoot(rootEl);
+      root.render(<App />);
+    </script>
+  </body>
+</html>
