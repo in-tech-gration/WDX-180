@@ -11,4 +11,4 @@ Convert the `Back to top` elements and the `Chat` to React Components and render
   - Consult [this file](./Add.React.to.a.Website.html) or [this sample code](./example.html) in order to initialize a React app this way or check [this guide](https://nextjs.org/learn/react-foundations/getting-started-with-react){:target="_blank"}.
 
 - Solve this exercise by creating a new React project using `Vite`*.
-  - _*Watch [this video](https://www.youtube.com/watch?v=xDz2d3e6_08){:target="_blank"} in case you want to refresh your memory_
+  - _*Watch [this video](https://www.youtube.com/watch?v=xDz2d3e6_08) in case you want to refresh your memory_
