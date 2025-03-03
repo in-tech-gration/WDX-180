@@ -292,6 +292,13 @@ export default function ShoppingList() {
 
 <!-- </Sandpack> -->
 
+### Exercises
+
+  Complete the following coding challenges:
+
+  - [](){:target="_blank"}
+  - [](){:target="_blank"}
+
 ### Extra Resources
 
 - [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
