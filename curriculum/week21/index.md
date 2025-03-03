@@ -480,8 +480,8 @@ export default function ShoppingList() {
 
   Complete the following coding challenges:
 
-  - [](){:target="_blank"}
-  - [](){:target="_blank"}
+  - [BackChat](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/frameworks/react/exercises/BackChat/README.md){:target="_blank"}
+  - [Holy Grail](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/frameworks/react/exercises/HolyGrail/README.md){:target="_blank"}
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week21/progress/progress.draft.w21.d02.csv**
 
@@ -491,6 +491,7 @@ export default function ShoppingList() {
 ### Extra Resources
 
 - [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
+- Vimeo trailers you can embed without login: [https://vimeo.com/ondemand/browse](https://vimeo.com/ondemand/browse){:target="_blank"}
 
 ### Sources and Attributions
 
