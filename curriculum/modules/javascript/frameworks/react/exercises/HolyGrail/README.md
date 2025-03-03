@@ -1,4 +1,4 @@
-# HolyGrail Challenge
+# HolyGrail React.js Challenge
 
 **Instructions:**
 
