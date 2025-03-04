@@ -532,6 +532,8 @@ export default function ShoppingList() {
 
 ### Study Plan
 
+  ![](./assets/day03/How.React.Works.png)
+
   Your instructor will share the video lectures with you. Here are the topics covered:
 
   - **Part 1:** Lecture Topics (**thanks to Aris Giotis ❤️**)
@@ -599,7 +601,7 @@ export default function ShoppingList() {
     - Exercise description: 1:02:38
     - Share & embed: 1:04:18
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day03/code){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
@@ -608,6 +610,8 @@ export default function ShoppingList() {
   **References & Resources:**
 
   - [**The JS Modules**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules){:target="_blank"}
+  - [Online React jsx to javascript transformer using babel-cli](https://infoheap.com/online-react-jsx-to-javascript/){:target="_blank"}
+  - [HTML-to-JSX](https://transform.tools/html-to-jsx){:target="_blank"}
 
 ### Summary
 
