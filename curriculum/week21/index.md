@@ -1009,7 +1009,7 @@ button {
     - MDN falsy values: 01:52:23
     - Exercise description: 01:58:16
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day05/code){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
