@@ -8,13 +8,14 @@ title: Week 22 | React JS
   <span class="week-prefix">Week 22 |</span> React JS
 </h1>
 
+{{ SGEN:HEADER_IMAGE }}
+
 <div class="week-controls">
 
   {% assign week_num = 22 | to_integer %}
 
   <h2 class="week-controls__previous_week">
 
-    
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 22 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,11 +25,10 @@ title: Week 22 | React JS
 
   </h2>
 
-  <span>Updated: 31/1/2024</span>
+  <span>Updated: 10/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 22 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -42,18 +42,121 @@ title: Week 22 | React JS
 
 ---
 
-<!-- Week 22 - Day 1 | React JS -->
+<!-- Week 22 - Day 1 | React: PropTypes & Loops -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 22 - Day 1</span> | React JS</h2>
+      <span class="summary-day">Week 22 - Day 1</span> | React: PropTypes & Loops</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** Video highlights (thanks to Aris Giotis ❤️):
+    - `npm install` and npm packages 03:03
+    - Lazy loading for `imports` 05:17
+    - Importing local files 08:26
+    - Importing npm packages 09:21
+    - The `package.json` file: 10:44
+    - The `npm init -y` command: 12:15
+    - The `node_modules` folder: 15:47
+    - The `npm install -g` command: 17:57
+    - About dependencies: 25:15
+    - CSS import: 30:32
+    - Question: .gitignore file: 35:11
+    - `node_modules` is a local thing: 35:45
+    - Inject 2 React apps to the same codebase: 37:25
+
+  - **Part 2:** Video highlights (thanks to Aris Giotis ❤️):
+    - 3rd party package: tailwind CSS: 00:11
+    - Importing Tailwind via CDN: 06:11
+    - Importing Tailwind via `npx tailwindcss init -p`: 17:54
+    - Exercise: 56:33
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  - **Questions**  
+    - What does the **-p** flag in **npx tailwindcss init --help** do?  
+      - Instead of relying on ChatGPT, you can check the tool’s own documentation: running **npx tailwindcss init --help** produces the following help info: **-p, --postcss => Initialize a `postcss.config.js` file**  
+    - `<span onClick={()=> activateVideo()}></span> vs <span onClick={activateVideo}></span>`  
+
+  - **Resources**
+    - [VSCode HTML to JSX Extension](https://marketplace.visualstudio.com/items?itemName=riazxrazor.html-to-jsx)  
+    - Try the [UUID package](https://www.npmjs.com/package/uuid) for creating unique IDs  
+    - Popular CSS libraries:  
+      - Bootstrap  
+      - Tailwind  
+        - Install Tailwind in a React Vite app: [https://tailwindcss.com/docs/guides/vite](https://tailwindcss.com/docs/guides/vite)  
+    - [Convert JSX to JavaScript](https://infoheap.com/online-react-jsx-to-javascript/)  
+    - **PropTypes**:   
+      - [Example from the old docs](https://legacy.reactjs.org/docs/typechecking-with-proptypes.html) / [prop-types package](https://www.npmjs.com/package/prop-types)  
+      - The new docs recommend that you prefer TypeScript instead of PropTypes for type checking, but sometimes you might not want to use TS, so PropTypes is a good alternative  
+    - **SPA: Single Page Application**  
+      - One HTML file (to rule them all), and a React app running on this HTML page, which can have thousands of virtual pages.  
+    - **JS: Importing Modules** (JS files)  
+      - **CommonJS** syntax: `module.exports = ...`, `require("./lib.js")`  
+      - **JS Modules**: `export`, `import` (*lazy loading version of import)  
+        - Lazy loading aka load-on-demand  
+      - A) `import Component from "./path/subfolder/localfile.js"` (local imports)  
+      - b) `import React from "react"` (npm package <= npm install)  
+      - Creating a `package.json` (recipe), `dependencies` (ingredients)  
+      - Quickly create a basic `package.json`, using the `npm init -y`  
+        - Start installing module/packages  
+        - `npm install colors` => downloads the package and stores it in the ingredients folder, aka `node_modules`  
+      - `npm install -g colors` => download the package in the global `node_modules` => Downloaded to `node_modules/colors`  
+      - **The `node_modules` is a local thing. You should NEVER upload it anywhere**, `GitHub`, `npmjs`, `server`. You share dependencies (node_modules) through the `package.json`. When `npm install` is run, it reads the `package.json` and downloads all the `dependencies` and `devDependencies`.  
+    - 🤓[**Developer’s Lorem Ipsum generator**](https://developer-ipsum.netlify.app/){:target="_blank"}
+
+  - **Study / Practice**
+
+    - [Read all about rendering lists](https://react.dev/learn/rendering-lists#rules-of-keys){:target="_blank"} in React and **what to watch out** for  
+    - Idea for a Group React project: a Component where the user types numbers that are colored red (among blue ones)  => CAPTCHA => Password validator  
+    -   => When colors play an important part in your app, take into   
+    -   consideration color deficiencies (A11y 101)  
+    - **Try installing Bootstrap on a Vite React project**  
+    - **Why not supplying PropTypes for BlogPost?**  
+    - **Convert this [HTML app](https://codepen.io/kostasx/pen/VwNaybz?editors=1000){:target="_blank"} into a React (Twitter clone)**  
+      - **Extra step, loop over and display the ‘Who to follow’ and ‘trends’ section**
+
+<!-- Summary -->
+
+### Exercises
+
+  - Complete the Twitter React Challenge
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week22/progress/progress.draft.w22.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 22 - Day 2 | TBA -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 22 - Day 2</span> | TBA</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
@@ -69,16 +172,62 @@ title: Week 22 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 22 - Day 2 | Group Project -->
+<!-- Week 22 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 22 - Day 2</span> | Group Project</h2>
+      <span class="summary-day">Week 22 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by []()_
+
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 22 - Day 4 | TBA -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 22 - Day 4</span> | TBA</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
@@ -94,78 +243,44 @@ title: Week 22 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 22 - Day 3 | React JS -->
+<!-- Week 22 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 22 - Day 3</span> | React JS</h2>
+      <span class="summary-day">Week 22 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
 
-<!-- Sources and Attributions -->
-  
-</details>
+  ---
 
-<hr class="mt-1">
 
-<!-- Week 22 - Day 4 | Group Project -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 22 - Day 4</span> | Group Project</h2>
-  </summary>
 
-### Schedule
+  _Photo by []()_
 
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 22 - Day 5 | React JS -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 22 - Day 5</span> | React JS</h2>
-  </summary>
-
-### Schedule
-
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -176,3 +291,15 @@ title: Week 22 | React JS
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
