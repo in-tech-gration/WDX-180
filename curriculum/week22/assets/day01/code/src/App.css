@@ -1,0 +1,12 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  background: #ddd;
+  color: #333;
+}
+.cookie-notice {
+  border: 1px solid;
+  padding: 0.25rem 1rem;
+}
