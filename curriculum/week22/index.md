@@ -8,7 +8,7 @@ title: Week 22 | React JS
   <span class="week-prefix">Week 22 |</span> React JS
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/React.js.jpg" />
 
 <div class="week-controls">
 
