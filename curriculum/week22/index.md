@@ -144,11 +144,11 @@ title: Week 22 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 22 - Day 2 | TBA -->
+<!-- Week 22 - Day 2 | React.JS Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 22 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 22 - Day 2</span> | React.JS Practice</h2>
   </summary>
 
 ### Schedule
@@ -156,11 +156,30 @@ title: Week 22 | React JS
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Here's the recommended plan for today: move straight to the [Exercises](#exercises) section below and start practicing your React skills!
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Start a React Vite project from scratch and connect it to a GitHub repository.
+  - Enable Tailwind by following the guide here: [https://tailwindcss.com/docs/guides/vite](https://tailwindcss.com/docs/guides/vite){:target="_blank"}
+  - Install the [handy VSCode extension](https://marketplace.visualstudio.com/items?itemName=riazxrazor.html-to-jsx){:target="_blank"} that converts copy-pasted HTML to JSX
+  - Install [prop-types package](https://www.npmjs.com/package/prop-types){:target="_blank"}
+  - Start moving the code from the [Twitter HTML clone](https://raw.githubusercontent.com/in-tech-gration/WDX-180/refs/heads/main/curriculum/week22/assets/day01/exercises/Twitter.Clone.html){:target="_blank"} to your JSX app.
+
+  - Bonus points: 
+    - Each Tweet should not be repeated. There should be a `<Tweet />` Component that you will loop over (create an Array of tweet objects and use that).
+    - Ideally, you should have a strict check on the PropTypes of the `<Tweet />` component
+    - Each Trend should ideally be a single Component (with its own `propTypes`) that repeats based on a loop
+    - Each Follower should ideally be a single Component (with its own `propTypes`) that repeats based on a loop
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week22/progress/progress.draft.w22.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
