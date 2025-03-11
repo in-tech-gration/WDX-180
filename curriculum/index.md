@@ -49,10 +49,10 @@
   - [**Week 18**: Intermediate JavaScript](week18/index.md)
   - [**Week 19**: Introduction to Node JS](week19/index.md)
   - [**Week 20**: Web Servers with Node JS](week20/index.md)
-  - [**Week 21**: React JS - An Introduction](week21/index.md)
-  - [**Week 22**: React JS](week22/index.md)
-  - [**Week 23**: React JS](week23/index.md)
-  - [**Week 24**: React JS](week24/index.md)
+  - [**Week 21**: ⚛️ React JS - An Introduction](week21/index.md)
+  - [**Week 22**: ⚛️ React JS](week22/index.md)
+  - [**Week 23**: ⚛️ React JS](week23/index.md)
+  - [**Week 24**: ⚛️ React JS](week24/index.md)
 
 ### Advanced: WDX 180°
 
