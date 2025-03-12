@@ -25,7 +25,7 @@ title: Week 22 | React JS
 
   </h2>
 
-  <span>Updated: 11/3/2025</span>
+  <span>Updated: 12/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -264,11 +264,11 @@ title: Week 22 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 22 - Day 4 | TBA -->
+<!-- Week 22 - Day 4 | React State -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 22 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 22 - Day 4</span> | React State</h2>
   </summary>
 
 ### Schedule
@@ -276,7 +276,20 @@ title: Week 22 | React JS
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Here's the recommended schedule for today:
+
+  ```js
+  const [ studyA, setStudyA ] = useState("https://react.dev/learn/state-a-components-memory");
+  const [ studyB, setStudyB ] = useState("https://react.dev/reference/react/useState");
+
+  const [ practiceA, setPracticeA ] = useState("Complete the Traffic Light exercise (manual state transition)");
+  const [ practiceB, setPracticeB ] = useState("Complete the Traffic Light exercise (automatic (timer-based) state transition)");
+  ```
+
+  - Remember the (React) rule: **State updates ===> Component re-renders**  
+    - State updates via the `useState` setter function: `const [ getter, setter ] = useState();`
 
 <!-- Summary -->
 
