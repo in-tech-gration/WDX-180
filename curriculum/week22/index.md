@@ -368,6 +368,12 @@ title: Week 22 | React JS
 
   **References & Resources:**
 
+  > "You can pass the next state directly, or a function that calculates it from the previous state: setAge(a => a + 1);"
+
+
+
+  ~ [Source](https://react.dev/reference/react/useState#setstate-caveats){:target="_blank"}
+
   - **State rule #1: (!!!)**  
     - **NEVER directly update or modify the state variables:**  
       - **const [ counter, setCounter ] = useState(0);**  
