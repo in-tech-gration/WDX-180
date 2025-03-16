@@ -1,8 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: React JS
-# header_image: week23/FILE.jpg
-# title: Group Project, Tech Interview & Job Hunt
+header_image: week22/React.js.jpg
 schedule: 
   days:
     1: # 
@@ -20,6 +19,7 @@ schedule:
     5: # 
       # file://./../modules/javascript/misc/_w23d05/_w23d05.md
       module: javascript/misc/_w23d05/_w23d05.md
+
 # XMLHttpRequest:
 # function makeAJAXCall(methodType, url, callback){
 #    var xhr = new XMLHttpRequest();
