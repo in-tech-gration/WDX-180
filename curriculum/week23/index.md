@@ -73,7 +73,7 @@ title: Week 23 | React JS
 
   - **Hooks**  
     - [**React Hooks Lifecycle**](https://wavez.github.io/react-hooks-lifecycle/){:target="_blank"}  
-      - [**Another view of the Component lifecycle**](){:target="_blank"}  
+      - [**Another view of the Component lifecycle**](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week23/assets/day01/diagrams/ReactHooksLifecycle.png){:target="_blank"}  
     - **A family of built-in functions in React that:**  
       - **are prefixed with “use”: useState, useRef, useEffect**  
       - **should ONLY be used inside Component functions**  
