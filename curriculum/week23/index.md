@@ -25,7 +25,7 @@ title: Week 23 | React JS
 
   </h2>
 
-  <span>Updated: 17/3/2025</span>
+  <span>Updated: 18/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -42,11 +42,11 @@ title: Week 23 | React JS
 
 ---
 
-<!-- Week 23 - Day 1 | React Hooks: useRef & useEffect -->
+<!-- Week 23 - Day 1 | React Hooks: useState, useRef & useEffect -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 23 - Day 1</span> | React Hooks: useRef & useEffect</h2>
+      <span class="summary-day">Week 23 - Day 1</span> | React Hooks: useState, useRef & useEffect</h2>
   </summary>
 
 ### Schedule
@@ -60,7 +60,7 @@ title: Week 23 | React JS
   Your instructor will share the video lectures with you. Here are the topics covered:
 
   - **Part 1:** useState Hook
-  - **Part 2:** useRef Hook
+  - **Part 2:** useRef & useEffect Hooks
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day01/code){:target="_blank"}
 
@@ -122,11 +122,11 @@ title: Week 23 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 23 - Day 2 | TBA -->
+<!-- Week 23 - Day 2 | More about useState & useEffect -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 23 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 23 - Day 2</span> | More about useState & useEffect</h2>
   </summary>
 
 ### Schedule
@@ -134,7 +134,23 @@ title: Week 23 | React JS
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  In the last lecture, you were introduced to the `useState`, `useRef` and `useEffect` hooks.
+
+  Today, we recommend that you study the following material to understand more about
+  how these hooks work and how to avoid common beginner mistakes as well as taking
+  a peek behind the algorithm that checks whether the `state` has changed in order 
+  to re-render a Component.
+
+  Grab a hot cup of coffee ☕️ (or tea), remove all distractions, and dive into the following
+  resources:
+
+  - [Preserving and Resetting State](https://react.dev/learn/preserving-and-resetting-state){:target="_blank"}   
+  - [All useEffect Mistakes Every Junior React Developer Makes](https://www.youtube.com/watch?v=QQYeipc_cik){:target="_blank"}   
+  - [Demystifying Object.is and prevState in React useState](https://www.valentinog.com/blog/react-object-is/){:target="_blank"}
+
+  Enjoy and don't forget to share your questions and comments.
 
 <!-- Summary -->
 
