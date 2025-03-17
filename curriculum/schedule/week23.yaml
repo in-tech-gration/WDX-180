@@ -4,10 +4,10 @@ title: React JS
 header_image: week23/React.js.jpg
 schedule: 
   days:
-    1: # 
+    1: # useState/useEffect/useRef
       # file://./../modules/javascript/misc/_w23d01/_w23d01.md
       module: javascript/misc/_w23d01/_w23d01.md
-    2: # 
+    2: # useState/useEffect
       # file://./../modules/javascript/misc/_w23d02/_w23d02.md
       module: javascript/misc/_w23d02/_w23d02.md
     3: # 
