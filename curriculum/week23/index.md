@@ -184,7 +184,7 @@ title: Week 23 | React JS
   - **Part 1:** useEffect & Fetch API
   - **Part 2:** Context API
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day03/code){:target="_blank"}
 
   **Lecture Notes:**
 
