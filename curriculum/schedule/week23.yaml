@@ -10,7 +10,7 @@ schedule:
     2: # useState/useEffect
       # file://./../modules/javascript/misc/_w23d02/_w23d02.md
       module: javascript/misc/_w23d02/_w23d02.md
-    3: # 
+    3: # useEffect, Fetch API & Context API
       # file://./../modules/javascript/misc/_w23d03/_w23d03.md
       module: javascript/misc/_w23d03/_w23d03.md
     4: # 

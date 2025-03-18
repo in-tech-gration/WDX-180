@@ -25,7 +25,7 @@ title: Week 23 | React JS
 
   </h2>
 
-  <span>Updated: 18/3/2025</span>
+  <span>Updated: 19/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -164,11 +164,11 @@ title: Week 23 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 23 - Day 3 | TBA -->
+<!-- Week 23 - Day 3 | useEffect, Fetch API & Context API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 23 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 23 - Day 3</span> | useEffect, Fetch API & Context API</h2>
   </summary>
 
 ### Schedule
@@ -181,27 +181,62 @@ title: Week 23 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** useEffect & Fetch API
+  - **Part 2:** Context API
 
   You can find the lecture code [here](){:target="_blank"}
 
-  **Lecture Notes & Questions:**
+  **Lecture Notes:**
+
+  - `Context API` can wrap any kind of JSX content, …but, can **only be used** by Components (via the `useContext` hook).  
+
+  - **Tips**  
+    - Try to limit the scope of your Context Provider to avoid unnecessary re-renders.
+
+  - **Questions**  
+    - _Why instead of using useRef to hold the value of a variable during re-renders, not declaring a variable outside of the Component?_  
+      - The best thing you can do is try things out!  
+      - Make sure to try the experiment with multiple instances of the same Component: `<Button /><Button />...`  
+    - _Why instead of Global state, e.g. useContext or Redux not use localStorage?_  
+      - Same as above: try it! You'll learn a lot from this experiments.
 
   **References & Resources:**
 
+  - [**REST Countries JSON API**](https://restcountries.com/v3.1/name/japan){:target="_blank"}  
+  - **Fetching Libraries**  
+    - [**https://swr.vercel.app/**](https://swr.vercel.app/){:target="_blank"}  
+    - [**https://tanstack.com/query/latest**](https://tanstack.com/query/latest){:target="_blank"}  
+    - [**RTK Query**](https://redux-toolkit.js.org/rtk-query/overview){:target="_blank"}  
+  - **State Rule: NEVER update the state value directly.**  
+    - **Use the state setter and ALWAYS return a NEW value**  
+      - **DON’T: prevState.push(42)**   
+      - **DO: [...prevState, 42] or prevState.concat(42)**  
+  - [**React DevTools Extension**](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi){:target="_blank"}  
+  - [**CodeGrepper Extension for the Browser**](https://www.grepper.com/){:target="_blank"}  
+  - [**FakeStore API**](https://fakestoreapi.com/docs){:target="_blank"}  
+  - [**JSON Formatter Extension**](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa){:target="_blank"}  
+  - **Get GitHub profile through JSON API:**  
+    - [**https://api.github.com/users/**](https://api.github.com/users/){:target="_blank"}**`<GitHub Username>`**  
+  - **useEffect callback rules:**  
+    - **These useEffect callbacks are sensitive to their own Component’s re-renders (DOM Update means the Component that contains the useEffect)**  
+    - `useEffect( function runsAfterEveryDOMUpdate(){} )`  
+    - `useEffect( function runsOnceAfterFirstDOMUpdate(){},[] )`  
+    - `useEffect( function runsAfterInitialDOMUpdateAndWhenDependenciesChange(){},[stateA, propCounterB, stateB] )`
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - Clean up the demo `App.jsx` files and split your Components and Context into different files.  
+  - Add the functionality to remove a product as well  
+  - **Advanced**: try to update a product
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week23/progress/progress.draft.w23.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
