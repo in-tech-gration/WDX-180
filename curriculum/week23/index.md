@@ -272,7 +272,7 @@ title: Week 23 | React JS
 
   **First things first...**
 
-  - Give a "heart" to the [original Codepen](https://codepen.io/esco69/pen/pNXqXx){:target="_blank"}
+  - Give a "heart" ❤️ to the [original Codepen](https://codepen.io/esco69/pen/pNXqXx){:target="_blank"}
 
   **Instructions**
 
