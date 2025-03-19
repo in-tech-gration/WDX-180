@@ -25,7 +25,7 @@ title: Week 23 | React JS
 
   </h2>
 
-  <span>Updated: 19/3/2025</span>
+  <span>Updated: 20/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -244,11 +244,11 @@ title: Week 23 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 23 - Day 4 | TBA -->
+<!-- Week 23 - Day 4 | ReactCommerce Challenge -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 23 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 23 - Day 4</span> | ReactCommerce Challenge</h2>
   </summary>
 
 ### Schedule
@@ -256,11 +256,55 @@ title: Week 23 | React JS
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Go straight to the `Exercises Section` and start the coding challenge!
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  **The ReactCommerce Coding Challenge**
+
+  You have applied for a React developer job at a tech company. The lead Frontend developer has sent you the following challenge to complete today in order to get hired.
+
+  Good luck!
+
+  **First things first...**
+
+  - Give a "heart" to the [original Codepen](https://codepen.io/esco69/pen/pNXqXx){:target="_blank"}
+
+  **Instructions**
+
+  Your task is to convert this [HTML/CSS page](){:target="_blank"} into a functional React app.
+
+  Here is an [online demo](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/react-commerce-challenge/final/) of the app.
+
+  Here are the tasks:
+
+  - 1. Split the web page into the following React Components:
+
+    - `<Header />`
+      - Contains the `<Logo />`, `<NavMenu />` and top-right `<HamburgerMenu />` which contains the products bubble (showing 5 currently)
+    - `<ProductsHeader />`: contains the `<Results />` Component which displays "BAGS" and the number of products found (6 results). The number 6 should be dynamic, based on the number of Products (length of some array?) and not a hardcoded string as it is now. It also contains a `<Close />` Component (the X)
+    - A loop that displays 6 `<Product />` Components.
+    - Each Component should be placed in its own folder along with a .css file that contains the relevant CSS styling.
+
+  - 2. When you click on the heart of each `<Product />` Component, the heart icon should toggle between the black and white version based on whether the product has been liked or not.
+  - 3. When you click on the shopping cart icon of each product, the bubble at the top right should update (increment when clicked once, decrement when clicked again and so forth). When the selected product is in the shopping cart, the icon should be black or golden otherwise.
+  - 4. The data for each product should come from a JSON file. You should use the Fetch API inside a `useEffect` hook to fetch the data. You can use the Fakestore API to get some fake product details and replace each Lorem ipsum.
+
+  **Hints**
+
+  - Move the generic CSS styling into the index.css
+  - Move the `<link>` inside the index.html
+  - Use [https://transform.tools/html-to-jsx](https://transform.tools/html-to-jsx){:target="_blank"} or [https://marketplace.visualstudio.com/items?itemName=riazxrazor.html-to-jsx](https://marketplace.visualstudio.com/items?itemName=riazxrazor.html-to-jsx){:target="_blank"} to convert HTML int o JSX
+  - The Product's price, like status, description and image should be passed as Props from a parent Component. The initial products data should be stored in a JSON file locally that will be fetched using a useEffect hook during the initial mount of some parent component. The JSON should be placed inside the public folder, and named products.json.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week23/progress/progress.draft.w23.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
