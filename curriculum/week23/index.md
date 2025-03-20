@@ -25,7 +25,7 @@ title: Week 23 | React JS
 
   </h2>
 
-  <span>Updated: 20/3/2025</span>
+  <span>Updated: 21/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -314,11 +314,11 @@ title: Week 23 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 23 - Day 5 | TBA -->
+<!-- Week 23 - Day 5 | Context API & useReducer -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 23 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 23 - Day 5</span> | Context API & useReducer</h2>
   </summary>
 
 ### Schedule
@@ -331,27 +331,38 @@ title: Week 23 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Handling Errors, Context API and useReducer (Part 1) 
+  - **Part 2:** Handling Errors, Context API and useReducer (Part 2)
 
   You can find the lecture code [here](){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
+  - useEffect Rules: **Your callback (side effect) function must NEVER BE async**  
+
+  - Tips  
+    - If you want to debug and x-ray your HTTP responses, you can temporarily switch to the **response.text()** method when using the Fetch API.
+
   **References & Resources:**
+
+  - [useReducer](https://react.dev/reference/react/useReducer){:target="_blank"}
+  - Nice experimental API: [JSON placeholder](https://jsonplaceholder.typicode.com/users){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - Study and complete the exercises included within for the following React.dev doc pages:  
+    - [useReducer](https://react.dev/reference/react/useReducer){:target="_blank"}  
+    - [Extracting State Logic into a Reducer](https://react.dev/learn/extracting-state-logic-into-a-reducer){:target="_blank"}  
+    - [Scaling Up with Reducer and Context](https://react.dev/learn/scaling-up-with-reducer-and-context){:target="_blank"}
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week23/progress/progress.draft.w23.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
