@@ -334,7 +334,7 @@ title: Week 23 | React JS
   - **Part 1:** Handling Errors, Context API and useReducer (Part 1) 
   - **Part 2:** Handling Errors, Context API and useReducer (Part 2)
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day05/code){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
