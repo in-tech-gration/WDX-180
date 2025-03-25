@@ -148,7 +148,7 @@ You'll find the requirements/specifications and some guidelines here:
 
 [https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
 
-Good luck! :sunglasses:
+Good luck! 😎
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week24/progress/progress.draft.w24.d03.csv**
 
