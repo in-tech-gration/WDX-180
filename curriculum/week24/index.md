@@ -25,7 +25,7 @@ title: Week 24 | React JS
 
   </h2>
 
-  <span>Updated: 23/3/2025</span>
+  <span>Updated: 26/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -90,11 +90,11 @@ title: Week 24 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 24 - Day 2 | TBA -->
+<!-- Week 24 - Day 2 | React Study: useEffect -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 24 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 24 - Day 2</span> | React Study: useEffect</h2>
   </summary>
 
 ### Schedule
@@ -102,7 +102,11 @@ title: Week 24 | React JS
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  The plan for today is to finish the study of the article by `Dan Abramov*`:
+
+  - [**A Complete Guide to useEffect**](https://overreacted.io/a-complete-guide-to-useeffect/){:target="_blank"}
 
 <!-- Summary -->
 
@@ -116,68 +120,40 @@ title: Week 24 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 24 - Day 3 | TBA -->
+<!-- Week 24 - Day 3 | Coding Challenge: React Quiz -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 24 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 24 - Day 3</span> | Coding Challenge: React Quiz</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** 
-  - **Part 2:**
-
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  Go straight to the **Exercises** section below and start on your final React challenge to complete the 2nd part of WDX180.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+Today and the rest of this week is all about practicing your React skills.
 
-  ---
+The main goal is to deliver a fully functional React quiz app by the end of the week and receive your digital certificates*.
 
+You'll find the requirements/specifications and some guidelines here:
 
+[https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
 
-  _Photo by []()_
+Good luck! :sunglasses:
 
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week24/progress/progress.draft.w24.d03.csv**
 
-<!-- Sources and Attributions -->
-  
-</details>
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
-<hr class="mt-1">
-
-<!-- Week 24 - Day 4 | TBA -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 24 - Day 4</span> | TBA</h2>
-  </summary>
-
-### Schedule
-
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
 
 <!-- Extra Resources -->
 
@@ -187,44 +163,81 @@ title: Week 24 | React JS
 
 <hr class="mt-1">
 
-<!-- Week 24 - Day 5 | TBA -->
+<!-- Week 24 - Day 4 | Coding Challenge: React Quiz -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 24 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 24 - Day 4</span> | Coding Challenge: React Quiz</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** 
-  - **Part 2:**
-
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  Continue working on the React Coding Challenge (Quiz) to complete the 2nd part of WDX180.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+The main goal is to deliver a fully functional React quiz app by the end of the week and receive your digital certificates*.
 
-  ---
+You'll find the requirements/specifications and some guidelines here:
+
+[https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
+
+Good luck! :sunglasses:
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week24/progress/progress.draft.w24.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
+<!-- Extra Resources -->
 
-  _Photo by []()_
+<!-- Sources and Attributions -->
+  
+</details>
 
+<hr class="mt-1">
+
+<!-- Week 24 - Day 5 | Coding Challenge: React Quiz -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 24 - Day 5</span> | Coding Challenge: React Quiz</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Continue working on the React Coding Challenge (Quiz) to complete the 2nd part of WDX180.
+
+<!-- Summary -->
+
+### Exercises
+
+The main goal is to deliver a fully functional React quiz app by the end of the week and receive your digital certificates*.
+
+You'll find the requirements/specifications and some guidelines here:
+
+[https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/exercises/simple-quiz/){:target="_blank"}
+
+Good luck! :sunglasses:
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week24/progress/progress.draft.w24.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   

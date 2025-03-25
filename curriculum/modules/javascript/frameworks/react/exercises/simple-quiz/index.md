@@ -12,9 +12,7 @@ We have a simple yet fun project to get your hands on! A simple quiz is all that
 
 Follow [this link](https://www.youtube.com/watch?v=3YUI2S7iot8){:target="_blank"} to see a video on how we want your quiz game to look like! 
 
-You can also try the quiz game online through [this link](https://belikeyou.gr/63431/extras/epanelave-i-epanalave-tha-vreis-ton-sosto-typo-prostaktikis-10-rimaton-poy-oloi-kanoyn-lathos.html){:target="_blank"}. 
-
-(_Note: the page and the quiz are in greek, but don't let that bother you. It's all about playing around and grasping the basic functionality._) 
+(_Note: the quiz is in greek, but don't let that bother you._) 
 
 ## Requirements
 
