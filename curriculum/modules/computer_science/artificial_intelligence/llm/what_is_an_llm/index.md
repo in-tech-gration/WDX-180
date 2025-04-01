@@ -32,6 +32,8 @@ title: Module title
 
   - [LLM Explained \| What is LLM](https://www.youtube.com/watch?v=67_aMPDk2zw){:target="_blank"} (YouTube: 4min)
 
+  - [Large Language Models explained briefly (3Blue1Brown)](https://www.youtube.com/watch?v=LPZh9BOjkQs){:target="_blank"}
+
   - Last, but not least, download and read the [Compact Guide to Large Language Models](https://pages.databricks.com/rs/094-YMS-629/images/compact-guide-to-large-language-models.pdf){:target="_blank"} eBook by `DataBricks`.
   - If the link is not available, you can download the eBook from [this page](https://www.databricks.com/resources/ebook/tap-full-potential-llm){:target="_blank"}
 
