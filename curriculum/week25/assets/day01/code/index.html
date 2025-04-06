@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage APIs</title>
+  </head>
+  <body>
+    <style>
+      body.dark {
+        background: black;
+        color: white;
+      }
+    </style>
+    <h1>Web Storage APIs</h1>
+    <img />
+    <script>
+      const img64 = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEDmlDQ1BrQ0dDb2xvclNwYWNlR2VuZXJpY1JHQgAAOI2NVV1oHFUUPpu5syskzoPUpqaSDv41lLRsUtGE2uj+ZbNt3CyTbLRBkMns3Z1pJjPj/KRpKT4UQRDBqOCT4P9bwSchaqvtiy2itFCiBIMo+ND6R6HSFwnruTOzu5O4a73L3PnmnO9+595z7t4LkLgsW5beJQIsGq4t5dPis8fmxMQ6dMF90A190C0rjpUqlSYBG+PCv9rt7yDG3tf2t/f/Z+uuUEcBiN2F2Kw4yiLiZQD+FcWyXYAEQfvICddi+AnEO2ycIOISw7UAVxieD/Cyz5mRMohfRSwoqoz+xNuIB+cj9loEB3Pw2448NaitKSLLRck2q5pOI9O9g/t/tkXda8Tbg0+PszB9FN8DuPaXKnKW4YcQn1Xk3HSIry5ps8UQ/2W5aQnxIwBdu7yFcgrxPsRjVXu8HOh0qao30cArp9SZZxDfg3h1wTzKxu5E/LUxX5wKdX5SnAzmDx4A4OIqLbB69yMesE1pKojLjVdoNsfyiPi45hZmAn3uLWdpOtfQOaVmikEs7ovj8hFWpz7EV6mel0L9Xy23FMYlPYZenAx0yDB1/PX6dledmQjikjkXCxqMJS9WtfFCyH9XtSekEF+2dH+P4tzITduTygGfv58a5VCTH5PtXD7EFZiNyUDBhHnsFTBgE0SQIA9pfFtgo6cKGuhooeilaKH41eDs38Ip+f4At1Rq/sjr6NEwQqb/I/DQqsLvaFUjvAx+eWirddAJZnAj1DFJL0mSg/gcIpPkMBkhoyCSJ8lTZIxk0TpKDjXHliJzZPO50dR5ASNSnzeLvIvod0HG/mdkmOC0z8VKnzcQ2M/Yz2vKldduXjp9bleLu0ZWn7vWc+l0JGcaai10yNrUnXLP/8Jf59ewX+c3Wgz+B34Df+vbVrc16zTMVgp9um9bxEfzPU5kPqUtVWxhs6OiWTVW+gIfywB9uXi7CGcGW/zk98k/kmvJ95IfJn/j3uQ+4c5zn3Kfcd+AyF3gLnJfcl9xH3OfR2rUee80a+6vo7EK5mmXUdyfQlrYLTwoZIU9wsPCZEtP6BWGhAlhL3p2N6sTjRdduwbHsG9kq32sgBepc+xurLPW4T9URpYGJ3ym4+8zA05u44QjST8ZIoVtu3qE7fWmdn5LPdqvgcZz8Ww8BWJ8X3w0PhQ/wnCDGd+LvlHs8dRy6bLLDuKMaZ20tZrqisPJ5ONiCq8yKhYM5cCgKOu66Lsc0aYOtZdo5QCwezI4wm9J/v0X23mlZXOfBjj8Jzv3WrY5D+CsA9D7aMs2gGfjve8ArD6mePZSeCfEYt8CONWDw8FXTxrPqx/r9Vt4biXeANh8vV7/+/16ffMD1N8AuKD/A/8leAvFY9bLAAAAeGVYSWZNTQAqAAAACAAFARIAAwAAAAEAAQAAARoABQAAAAEAAABKARsABQAAAAEAAABSASgAAwAAAAEAAgAAh2kABAAAAAEAAABaAAAAAAAAAEgAAAABAAAASAAAAAEAAqACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAAAQdIdCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNi4wLjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgoZXuEHAAAFXklEQVRYCY2XzUvVTRTH52qB2otkappRK/8C9R9ISNBVG1e60LW7QGhvQkufIKNVILRQ0EVufIsUTF3oSjcuIhBtoW2CLNCa53xOz3eY333uhQbmznk/Z86cOfO7pd+/f0cbgVEqlXwFFwwh5wML14oM8prg5QNZ+NKR/SvVBEWXogUamLW1taGmpkbsworsr1+/3JFkcoc5LMWSKcRKkeWOga9c+RMr8NevX8PZ2Vn48eOH26mvrw+3b98Ozc3N7hzi5eVlCkSOoWvnwG43JwiGAcxu5Pjk5CS8f/8+LC0t+Qqej/b29tDb2xsePXrk6927d51NIGRNNqWTcGqALLDm8+LiwmRi/PbtW5yamqJICtN2HO/cueMTuJyPDroMbOW28afJLgtMBOX84OAg9vT0uHFLc7x3717EWV1d3f8cQoOHTENDg/O7u7vj/v5+IQg5VkAUViEAOd/e3k5O7t+/Hy2NCWe3dkSFmWcAWXREw1aeCW2atRCAnLNzKbe2tsampqZoZ5xo4lVb7fxdp6WlJelgs1IQHoDSggDnprRj4Pr168kIZ85RdHR0xJs3byZ6Y2Oj0zgGAlZgN27cSDjHoZqwwkxZTzWg3avgSKGcjI+Px8nJSTd87dq15AA4D1Dw8+fP45MnT1wOGw8ePHAY23kWOH7PABExjo+PC07YKbv5+PGj86em/nF8YWEhPn782GH4g4ODcX5+3vHp6WmXXV9fd5yitKucChMfDHymGtDuZ2ZmkhKGSSFrZ2dn/PTpkyuurq76+urVK+fBf/PmTYF3eHiYdi0bBIIsPhj49AyoIkGGhoZciOtElaOgQiIbR0dHrszPixcvUgCvX79O9M+fP8dbt24lO9hgqlcMDw+n88d3jWl616O1rq2tmWxILZZuyGS8ffs22C4c5ke9HphOp2HnHWZnZx2Fjhw2vn//7jTLoLdxaPhOjxH9/cuXL97TgTVopYzNzU1vzefn565odSCRMDc3F+yGOG5NKNi9dxhdy6wH8PPnT7eND+xbZv/o6/z39vY8VW1tbSm1JuFwXvmisXLtuJY5TbBuBLjt1mW4xuD4YuC78rtqUn8zdDyVZEnv34waGeFJZVhUvopuxePnZ3c47O7uho2NjfDhw4cwMDDgtcKT3N/f7zR4yCDLmaMrOxjVccqX87iPjNPT09RueUyM6VO3YGVlxeX08/Lly5R64Hwga/6ifR/4G4ItPWC0dHwx8O0ZMNij5T1nKELoGiMjI8GaiFAvSCF2nQS6zOjoqOPsEB52rI6chg8yAw2+B4AQSF9fnwsRAALWRoNFG7q6usLOzk6wXhDevXvnMvpQARG8uLjoMtwCdNDFBkObwocCY63YivWeqxWbc4snxomJCU8t3czOPR0BsLros2fPXFbPOTZoxRaAy1dsxXRBXcf8MVIbHRsbi0+fPnUD6nK2qcj1zK+oeMiigwzXsdpjRCf0DBAACCN/jnla8/tMj7h69ap/9eilxAkwvR5e3kfQ1fNc9TnGuaayUP5Bws7UROzcUupxnuOCkUVHNwi58k8z+fTvAXbPhKggdIYo559kcgK9fIpn/b/wSba1teXZxbYcay0EUB5EtY9SFWkeADRePI5CdVHpo1SOtXoN5BkQQ5mgJlSYuUOccd5M4JwHjI4+wSrtXD79n5EpFFqm5SvdVd1x/TFZXl72Z7vaHxPu+cOHD0P5HxN85AMfjPTXTEwxnGmNAtyykpoNeKW/Zvwto8NZHbgp+r6+BWRba8EHKa/I+M+5DBIEinxkiCY9rfAttc7HObhkc6eSZy1VCgClXDlXgC5jWuWEVXC5vmRzW8j+C/lquX/NeVT2AAAAAElFTkSuQmCC";
+    </script>  
+    <script>
+      const THEME = "theme";
+      const LANG  = "lang";
+      const BASKET = "basket";
+
+      try {
+
+      console.log(localStorage.length);
+      // .length: Number of key/value pairs stored
+      // .clear(): Clears EVERYTHING! Be careful.
+
+      // .setItem( KEY, VALUE );
+      // localStorage.setItem( "theme", "dark" );
+      // localStorage.setItem( THEME, "dark" );
+      // localStorage.setItem( "lang", "english" );
+      // localStorage.setItem( LANG, "english" );
+      // localStorage.setItem("password", "12345");
+
+      // .removeItem( KEY );
+      // localStorage.removeItem("password");
+      // console.log(localStorage);
+
+      // .getItem( KEY ) => null when not found
+      const theme = localStorage.getItem(THEME);
+      if ( theme === null ){
+        // Deal with the error
+        console.log("No theme found");
+      } else {
+        // Deal with successfull key retrieval
+        // console.log({ theme });
+        document.body.setAttribute("class", theme);
+      }
+
+      // Store a shopping cart basket
+      const shoppingList = [
+        { name: "soap", items: 3, price: 3 },
+        { name: "coffee", items: 1, price: 15 }
+      ];
+      const shoppingListJSONString = JSON.stringify(shoppingList);
+      // console.log(shoppingListJSONString);
+      localStorage.setItem( BASKET, shoppingListJSONString );
+      const basketJSONString = localStorage.getItem(BASKET);
+      // console.log(basketJSONString[0]);
+      const basketData = JSON.parse(basketJSONString);
+      console.log(basketData);
+      basketData.forEach( item =>{
+        document.body.innerHTML += `<h2>${item.name}</h2>`;
+      });
+
+      // Storing non-text/binary information to localStorage:
+      // localStorage.setItem("img", img64);
+      const img64src = localStorage.getItem("img");
+      const img = document.querySelector("img");
+      // MIME TYPE: cat/subcat, e.g. image/jpeg, text/html
+      img.setAttribute("src","data:image/png;base64," + img64src);
+
+      // for ( let i = 0; i < 1_000_000; i++){
+      //   localStorage.setItem("large" + i, "AAAAAAAAAAAA");
+      // }
+
+        localStorage.setItem("tiny", "Do I fit here???");
+      } catch(e){
+        document.body.innerHTML += `<div>${e.message}</div>`;
+        console.log(e.name, e.name === "QuotaExceededError", e.name === "SecurityError" );
+      }
+      console.log("EoF");
+
+      window.addEventListener("storage", (e) => {
+        console.log(">>>");
+        console.log(e.key);
+        console.log(e.oldValue);
+        console.log(e.newValue);
+        console.log(e.timeStamp);
+        console.log(">>>");
+      });
+    </script>  
+  </body>
+</html>
+
+<!--
+  Origin for default LiveServer environment:
+  
+  1) http://
+  2) 127.0.0.1
+  3) 5500
+
+  http://127.0.0.1:5500
+-->
