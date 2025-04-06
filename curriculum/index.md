@@ -56,7 +56,7 @@
 
 ### Advanced: WDX 180°
 
-  - [**Week 25**: Advanced JavaScript](week25/index.md)
+  - [**Week 25**: Web APIs](week25/index.md)
   - [**Week 26**: Advanced JavaScript](week26/index.md)
   - [**Week 27**: Advanced JavaScript](week27/index.md)
   - [**Week 28**: Advanced JavaScript](week28/index.md)
