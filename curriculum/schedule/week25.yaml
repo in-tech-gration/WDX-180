@@ -9,8 +9,8 @@ schedule:
       # file://./../modules/javascript/misc/_w25d01/_w25d01.md
       module: javascript/misc/_w25d01/_w25d01.md
     2: # 
-      # file://./../modules/javascript/misc/_w25d02/_w25d02.md
-      module: javascript/misc/_w25d02/_w25d02.md
+      # file://./../modules/generics/scrum/scrum.md
+      module: generics/scrum/scrum.md
     3: # 
       # file://./../modules/javascript/misc/_w25d03/_w25d03.md
       module: javascript/misc/_w25d03/_w25d03.md
