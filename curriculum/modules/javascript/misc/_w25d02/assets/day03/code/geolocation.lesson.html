@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolocation API</title>
+  <style>
+    html {
+      color-scheme: light dark;
+    }
+
+    /* System Fonts as used by GitHub */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+  </style>
+  <!-- LEAFLET CODE -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+  <h1>Geolocation</h1>
+  <div id="map" style="height: 300px"></div>
+  <style>
+    .blinking {
+      height: 32px;
+      /* animation: fade 1s infinite alternate; */
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.5;
+      }
+    }
+  </style>
+  <form>
+    <label>Search Address:
+      <input type="search" placeholder="Enter address "/>
+    </label>
+    <button>Show on Map</button>
+  </form>
+  <button id="stop-track-btn">Stop Tracking</button>
+  <script>
+    const lat = 52.5104635;
+    const lon = 13.4569669;
+    let map = null;
+    // 1) Check whether Geolocation API is currently supported by the browser
+    const isThisTheBrowser = typeof window !== "undefined" && window.navigator;
+    let marker;
+    let watchId = null;
+    let address = null;
+
+    if (isThisTheBrowser && "geolocation" in window.navigator) {
+      // 2) We can start tracking the device geolocation
+      console.log("Let's roll!");
+      function showCoordsOnMap(lat, lon) {
+        // Does something with the lat and lon
+        console.log("showCoordsOnMap()", lat, lon);
+        // setView([lat,lon], zoomLevel)
+        const newLatLng = new L.LatLng(lat, lon);
+        marker.setLatLng(newLatLng);
+        map.panTo([lat, lon]);
+        // map.flyTo([lat,lon]);
+
+        // L.marker([lat+0.0001,lon]).addTo(map);
+        // L.marker([lat,lon+0.0002]).addTo(map);
+      }
+      function getAddressFromCoords(lat, lon) {
+        const API = "6615c8c690e9d875887510bln03e550";
+        const URL = `https://geocode.maps.co/reverse?lat=${lat}&lon=${lon}&api_key=${API}`;
+        fetch(URL)
+        .then( response => response.json() )
+        .then( data =>{
+          console.log(data);
+          document.querySelector("h1")
+          .innerHTML += ": " + data.display_name;
+        })
+        .catch( error =>{
+          console.log("Ops!", error);
+        })
+      }
+      // getCurrentPosition(successCallback[,errorCallback,optionsObject])
+      function success(position) {
+        // console.log("Success!");
+        const { latitude: lat, longitude: lon } = position.coords
+        // Initialize Leaflet map once:
+        if (map === null) {
+          map = L.map('map').setView([lat, lon], 4);
+          L.tileLayer(
+            'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            {
+              maxZoom: 19,
+              attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }
+          )
+            .addTo(map);
+
+          // Default pin icon:
+          // marker = L.marker([lat, lon]).addTo(map);
+
+          marker = L.marker([lat, lon], {
+            icon: L.icon({
+              iconAnchor: [25, 25],
+              iconUrl: 'https://pngimg.com/uploads/taxi/taxi_PNG5.png',
+              className: 'blinking'
+            })
+          }).addTo(map);
+
+          const circle = L.circle([lat, lon], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 10
+          }).addTo(map);
+        }
+
+        // console.log(lat, lon);
+        // I am ready to do something with the geolocation (position)
+        // Once we have the coordinates we can do all sorts of things: point in a map, get more information about the place, etc.
+        const datetime = new Date(position.timestamp);
+        // console.log(datetime);
+        showCoordsOnMap(lat, lon);
+        // Get Address from lat,lon
+        getAddressFromCoords(lat, lon);
+      }
+      function error(positionError) {
+        // console.log(positionError.code, positionError.message);
+        if (positionError.code === 1) {
+          console.log("[TAXI:APP][CODE:TA32] No permission");
+          document.body.innerHTML += "Error: " + positionError.message;
+          return;
+        }
+        if (positionError.code === 2) {
+
+        }
+        // Check error 3
+        // Handle all other cases:
+      }
+      // Let's combine Web Storage API with Geolocation API, shall we?
+      // - Save geolocation coordinates and information in localStorage
+      // - Save images? (base64)
+      // - Save Home +100
+      // - Save a history of locations, (e.g. while walking, travelling)
+      // - Save shops, museums, etc.
+
+      // Get lat/lon once:
+      navigator.geolocation.getCurrentPosition(success, error);
+
+      // Live Tracking lat/lon:
+      // watchPosition() => returns an ID
+      // watchId = navigator.geolocation.watchPosition(success, error);
+
+    } else {
+      console.error("Geolocation not supported by the browser.");
+      // Display something to the user.
+    }
+
+    // console.log({ watchId });
+    document.querySelector("#stop-track-btn")
+      .addEventListener("click", () => {
+        if (watchId !== null) {
+          navigator.geolocation.clearWatch(watchId);
+        }
+      });
+
+  </script>
+</body>
+
+</html>
