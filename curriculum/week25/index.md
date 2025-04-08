@@ -25,7 +25,7 @@ title: Week 25 | Advanced JavaScript: Web APIs
 
   </h2>
 
-  <span>Updated: 7/4/2025</span>
+  <span>Updated: 8/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
