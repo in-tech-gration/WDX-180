@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media API</title>
+</head>
+<body>
+  <h1>Media API</h1>
+
+  <h2>Brazil Journey</h2>
+
+  <style>
+    #video-container {
+      position: relative;
+      border: 10px solid black;
+      height: 200px;
+      width: 400px;
+      background: black;
+    }
+    video {
+      position: absolute;
+      /* opacity: 0.2; */
+    }
+  </style>
+  <div id="video-container">
+    <video 
+      id="instructional"
+      height="200px"
+      width="400px"
+      controlsDIS
+      posterDIS="poster.jpg"
+      src="./lesson1.mp4"></video>
+  </div> 
+
+    <button id="play">Play</button>
+    <style>
+      #play, #pause {
+        cursor: pointer;
+      }
+      #pause {
+        background: black;
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+    </style>
+    <button id="pause">&times;</button>
+    <button id="mid-vid">Middle of the film</button>
+    <button id="next" disabled>Next Lesson</button>
+    <ul>
+      <li id="lesson-1">
+        <span>👀</span> Lesson 1: Cute Kitty
+        <span>(Current)</span>
+      </li>
+      <li id="lesson-2" style="opacity: 0.4">
+        <span>&times;</span> Lesson 2: Something
+        <span>(Incomplete)</span>
+      </li>
+      <li id="lesson-3" style="opacity: 0.4">
+        <span>&times;</span> Lesson 3: APIs
+        <span>(Incomplete)</span>
+      </li>
+    </ul>
+
+    <script>
+      const checkEmoji = "✅";
+      const video = document.querySelector("#instructional");
+      const playBtn = document.querySelector("#play");
+      const pauseBtn = document.querySelector("#pause");
+      const midVidBtn = document.querySelector("#mid-vid");
+      // .muted => Boolean => whether the video is in mute mode
+      // console.log(video.muted);
+      video.setAttribute("controls", true);
+
+      let mid = 0;
+      console.log(video.duration, mid); // NaN
+      // Right here, the video duration is not yet available to the JS
+      // Use a special event for getting this information:
+      document.body.style.transition = "background 2s ease";
+
+      video.addEventListener("play", (e)=> {
+        document.body.style.background = "black";
+        console.log(e.type);
+      })
+      video.addEventListener("pause", (e)=> {
+        document.body.style.background = "white";
+        console.log(e.type);
+      })
+      video.addEventListener("loadedmetadata", (e)=> {
+        mid = Math.round(video.duration / 2);
+        // console.log(e.type);
+        // console.log(video.duration);
+        console.log(mid);
+      });
+      let index = 1;
+      video.addEventListener("ended", e =>{
+        console.log(e.type);
+        const li = document.querySelector("li:first-child");
+        const emojiEl = li.querySelector("span:first-child");
+        const status = li.querySelector("span:last-child");
+        emojiEl.textContent = checkEmoji;
+        status.textContent = "(Complete)";
+        // Practice: load next video or provide a Next lesson button in order to move forward in the course
+        index = index + 1;
+        const newSrc = "lesson" + index + ".mp4";
+        console.log({ newSrc });
+        video.setAttribute("src", newSrc);
+        // Exercise: we need to enable the Next Lesson button and have the user click it to move on to the next video instead of automatically switching to the next video.
+        // Task: change the Lesson li text to highlight the current lesson
+      });
+
+      // How can I change the video file for the element?
+      // - Next Button => onclick =>
+      // - src="lesson1.mp4" => lesson2.mp4 ? 
+      // - Routing => Move to another page, e.g. lesson2.html
+      // - Index for name? index++
+      // "lesson" + index + ".mp4"; 
+      // src => setAttribute("src", ....)
+
+      video.addEventListener("timeupdate", e =>{
+        console.log(e.type);
+        // Task: keep track of the currentTime and store it in localStorage. When the user reloads, start the video from the stored time.
+        // Task: To display the current progress of the video.
+        // Example: https://codepen.io/jo-asakura/pen/NWWrWj
+      });
+
+      // Practice: play around with the volume property. Use a nicer, cooler volume indicator and also change the volume through some other cool UI.
+        
+      midVidBtn.addEventListener("dblclick", ()=>{
+        // Total Duration in ': video.duration
+        // Current play head: video.currentTime
+        // const mid = Math.round(video.duration / 2);
+        try {
+          video.currentTime = mid;
+        } catch(e){
+          console.log("Ops!", e.message);
+          // Try something, recover from the error or try getting the value again, etc.
+        }
+        console.log("Code here...");
+      });
+      video.addEventListener("click", ()=>{
+        video.play();
+        video.style.opacity = 1;
+      });
+      playBtn.addEventListener("click", ()=>{
+        // Check: video.paused
+        video.play();
+        video.style.opacity = 1;
+        // setTimeout(()=>{
+        //   video.style.opacity = 0.2;
+        //   video.pause();
+        // }, 3000); 
+      });
+      pauseBtn.addEventListener("click", ()=>{
+        // Check: video.paused
+        // Practice: check and switch the Play/Pause styling based on the video status, e.g. paused or !paused
+        // video.style.opacity = 0.2;
+        video.pause();
+        pauseBtn.style.background = "tomato";
+      });
+      
+
+    </script>
+
+    <small style="color:gray">
+      Video by Pressmaster: https://www.pexels.com/video/group-of-woman-doing-a-synchronize-floor-exercise-3209766/
+    </small>
+</body>
+</html>
