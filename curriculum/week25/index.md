@@ -25,7 +25,7 @@ title: Week 25 | Advanced JavaScript: Web APIs
 
   </h2>
 
-  <span>Updated: 9/4/2025</span>
+  <span>Updated: 10/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -344,11 +344,11 @@ title: Week 25 | Advanced JavaScript: Web APIs
 
 <hr class="mt-1">
 
-<!-- Week 25 - Day 5 | TBA -->
+<!-- Week 25 - Day 5 | Media API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 25 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 25 - Day 5</span> | Media API</h2>
   </summary>
 
 ### Schedule
@@ -361,8 +361,16 @@ title: Week 25 | Advanced JavaScript: Web APIs
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Local Storage & Media Web APIs
+  - **Part 2:** Media Web API
+
+  Key points:
+
+  - Understand the basics of local storage and its limitations.
+  - Learn how to use the media API to control video and audio elements.
+  - Use custom HTML and CSS to create a unique interface for video playback.
+  - Take advantage of the media API's methods and properties to enhance user experience.
+  - Don't rely solely on local storage; consider using server-side storage solutions for more complex applications.
 
   You can find the lecture code [here](){:target="_blank"}
 
