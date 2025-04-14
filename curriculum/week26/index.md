@@ -59,10 +59,9 @@ title: Week 26 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Canvas API**
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week26/assets/canvas.html){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
