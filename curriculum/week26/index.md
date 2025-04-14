@@ -67,13 +67,11 @@ title: Week 26 | Advanced JavaScript
 
   **References & Resources:**
 
-    - [**CanvasRenderingContext2D**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}  
-      - [**fillRect**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect){:target="_blank"}  
-      - [**clearRect**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect){:target="_blank"}  
-      - [**arc()**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc){:target="_blank"}  
-      - *more to explore...*  
-
-
+  - [**CanvasRenderingContext2D**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}  
+    - [**fillRect**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect){:target="_blank"}  
+    - [**clearRect**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect){:target="_blank"}  
+    - [**arc()**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc){:target="_blank"}  
+    - *more to explore...*  
   - The Photoshop clone built with Canvas API: [photopea](https://www.photopea.com/){:target="_blank"}
 
 <!-- Summary -->
