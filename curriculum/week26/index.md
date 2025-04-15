@@ -163,7 +163,7 @@ title: Week 26 | Advanced JavaScript
 
   - Canvas API: Part 2
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week26/assets/day03/code){:target="_blank"} and other resources (diagrams, etc.) [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week26/assets/day03){:target="_blank"}.
 
   **Questions**
 
@@ -209,6 +209,7 @@ title: Week 26 | Advanced JavaScript
 
 ### Exercises
 
+  - Draw the [Jamaican flag](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week26/assets/day03/exercises/Jamaica.jpg){:target="_blank"} and a [Pac-man figure](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week26/assets/day03/exercises/PACMAN.jpg){:target="_blank"} using Canvas API!
   - Let’s learn about how Canvas pixels actually behave on different screen sizes and especially when the screen compresses/squeezes the canvas  
   - Build an API that allows us to select and manipulate canvas elements  
   - Draw a chessboard using Canvas and loops  
