@@ -189,8 +189,7 @@ title: Week 26 | Advanced JavaScript
   - [pseudo-3D engine for canvas & SVG](https://zzz.dog/){:target="_blank"}  
   - [Heatmap example](https://static.wingify.com/gcp/uploads/sites/3/2019/03/Img-1-1.png){:target="_blank"}  
   - [Mary’s Quiz version](https://java-script-questions-quiz.vercel.app/){:target="_blank"}  
-  - [Leon’s canvas experiments](https://33ad77cc-69f8-4684-9651-33b717238480-00-28p9kelvg9uxl.worf.replit.dev/){:target="_blank"}  
-  - [Fabric.js](http://Fabric.js){:target="_blank"}  
+  - [Fabric.js](https://fabricjs.com/){:target="_blank"}  
     - A library that allows you to select specific shapes or canvas elements and manipulate.  
   - [https://p5js.org/](https://p5js.org/){:target="_blank"} (Just check this out\!)  
     - Make sure to bookmark: [Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw){:target="_blank"}  
