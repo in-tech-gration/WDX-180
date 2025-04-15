@@ -25,7 +25,7 @@ title: Week 26 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 14/4/2025</span>
+  <span>Updated: 15/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -95,11 +95,11 @@ title: Week 26 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 26 - Day 2 | TBA -->
+<!-- Week 26 - Day 2 | Canvas API Exploration -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 26 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 26 - Day 2</span> | Canvas API Exploration</h2>
   </summary>
 
 ### Schedule
@@ -107,7 +107,30 @@ title: Week 26 | Advanced JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - Today is Canvas API exploration day. Make sure to work on the tasks and challenges that we came up with yesterday and explore new ways to use the Canvas API. Here's a repo with lots of cool resources and demos: [Awesome Canvas](https://github.com/raphamorim/awesome-canvas){:target="_blank"}
+
+  - Some highlights:
+    - [30.000 particles](https://codepen.io/soulwire/full/DdGRYG){:target="_blank"}
+    - [Inception](https://raphamorim.io/canvas-experiments/inception){:target="_blank"}
+    - [Pirates love daisies](https://pirateslovedaisies.com/){:target="_blank"} (game)
+
+  **Have fun and share your experience (bugs and frustrations included)!** 
+
+  **`npm install virus`**
+
+  `npm` now hosts more than 2.4 million packages! So many npm packages, so many things to worry about! Here are a couple of ways to check the integrity, safety and reliability for npm packages, both for Node and JavaScript:
+
+  - 1) Install [npq](https://www.npmjs.com/package/npq){:target="_blank"} and run checks before installing: `npq install react`
+
+  ![](./assets/npm.sec.npq.jpg)
+
+  - 2) Check for the health of an npm package in [here](https://snyk.io/advisor/){:target="_blank"}. [Example](https://snyk.io/advisor/npm-package/react-smooth-range-input){:target="_blank"}
+
+  - 3) Install [snyk](https://www.npmjs.com/package/snyk){:target="_blank"} and run some tests using `snyk test`
+
+  ![](./assets/npm.sec.snyk.jpg)
 
 <!-- Summary -->
 
