@@ -1,0 +1,19 @@
+body {
+  background: #efefef;
+  font-family: Poppins;
+  line-height: 1.5;
+}
+h2 {
+  font-weight: normal;
+}
+canvas {
+  border: 1px solid black;
+}
+canvas {
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);  
+}
+
+canvas#wireframe {
+  background-color: #fefefe;
+}

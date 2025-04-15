@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas API 2/2</title>
+  <style>
+    html {
+      color-scheme: dark light;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Canvas API 2/2</h1>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    // Checking for Support: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage#checking_for_support
+    function draw() {
+
+      // TODO: Figure out LiveServer bug
+      // const canvasEl = document.createElement("canvas"); 
+      // canvasEl.setAttribute("id","canvas");
+      // document.body.appendChild(canvasEl); 
+
+      const canvas = document.querySelector("#canvas");
+      canvas.style.border = "2px solid red";
+      canvas.style.position = "relative";
+      canvas.width = 400;
+      canvas.height = 300;
+      let ctx;
+
+      function basic() {
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(200, 150, 100, 100);
+
+        ctx.globalAlpha = 0.25; // 25% opacity / 75% transparency
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 50, 100, 100);
+
+        ctx.globalAlpha = 1; // 100% opacity / 0% transparency
+        ctx.fillStyle = "orange";
+        ctx.fillRect(80, 30, 100, 100);
+      }
+      function saveRestore() {
+
+        ctx.fillRect(0, 0, 150, 150); // Draw a Black rectangle with default settings
+        ctx.save(); // Save the original default state
+
+        ctx.fillStyle = "blue"; // Make changes to saved settings
+        // ctx.globalAlpha = 1;
+        ctx.fillRect(15, 15, 120, 120); // Draw a Blue rectangle with new settings
+        ctx.save(); // Save the current state
+
+        ctx.fillStyle = "gray"; // Make changes to saved settings
+        ctx.globalAlpha = 0.5;
+        ctx.fillRect(30, 30, 90, 90); // Draw a 50%-White rectangle with newest settings
+        // ctx.save();
+        // ctx.clearRect(0,0,400,400);
+
+        ctx.restore(); // Restore to previous state
+        ctx.fillRect(45, 45, 60, 60); // Draw a rectangle with restored Blue setting
+        // ctx.fillRect(0, 0, 1400, 1400); // Draw a rectangle with restored Blue setting
+
+        ctx.restore(); // Restore to original state
+        ctx.fillRect(60, 60, 30, 30); // Draw a rectangle with restored Black setting
+      }
+      // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Transformations#a_translate_example
+      function translate() {
+
+        const rows = 3;
+        const cols = 3;
+        // Looping 3 times,  for every single iteration of this loop...
+        for (let i = 0; i < rows; i++) {
+          // ...we're looping 3 more times (3x3=9)
+          for (let j = 0; j < cols; j++) {
+            ctx.save();
+            ctx.fillStyle = `rgb(${51 * i} ${255 - 51 * i} 255)`;
+            ctx.translate(10 + j * 50, 10 + i * 50);
+            ctx.fillRect(0, 0, 25, 25);
+            ctx.restore();
+          }
+        }
+      }
+      // B) More advanced animation method:
+      let x = 0;
+      let y = 0;
+      function animate(){
+        // console.log("animate()",x,y);
+
+        ctx.clearRect(0,0,400,300);
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(x, y, 50, 50);
+        x += 0.1;
+        y += 0.1;
+        if ( x > 400 || y > 300 ){
+          return
+        }
+        // ctx.fillRect(350, 0, 50, 50); 
+        // ctx.fillRect(350, 250, 50, 50); // CHALLENGE/EXERCISE
+        // window.cancelAnimationFrame(id)
+        const id = window.requestAnimationFrame(animate); // => a better way to do this: animate();
+      }
+
+      // A) Cheap animation in JS in 5 lines of code:
+      let left = 0;
+      // setInterval(()=>{
+      //   left += 1;
+      //   canvas.style.left = left + "px";
+      // },100);
+
+      // setTimeout(()=>{
+      //   left += 300;
+      //   canvas.style.left = left + "px";
+      // },3000);
+
+      if (canvas.getContext) {
+        // canvas.width = document.documentElement.clientWidth;
+        // canvas.height = document.documentElement.clientHeight;
+        ctx = canvas.getContext("2d");
+        // basic();
+        // saveRestore();
+        // translate();
+        animate();
+
+      } else {
+        // Showing a message to the user
+      }
+    }
+    draw();
+  </script>
+
+
+</body>
+
+</html>
