@@ -8,7 +8,7 @@ title: Week 26 | Advanced JavaScript
   <span class="week-prefix">Week 26 |</span> Advanced JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/kelli-tungay-Sj0nhVIb4eY-unsplash.jpg" />
 
 <div class="week-controls">
 
@@ -87,7 +87,13 @@ title: Week 26 | Advanced JavaScript
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by [Kelli Tungay](https://unsplash.com/photos/assorted-color-paints-and-paint-brushes-Sj0nhVIb4eY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplas)_      
 
 <!-- Sources and Attributions -->
   

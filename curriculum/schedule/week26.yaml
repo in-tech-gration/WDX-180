@@ -1,6 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Advanced JavaScript"
+header_image: week26/kelli-tungay-Sj0nhVIb4eY-unsplash.jpg
 schedule: 
   days:
     1: # 
