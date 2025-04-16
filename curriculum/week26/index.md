@@ -25,7 +25,7 @@ title: Week 26 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 15/4/2025</span>
+  <span>Updated: 16/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -228,11 +228,11 @@ title: Week 26 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 26 - Day 4 | TBA -->
+<!-- Week 26 - Day 4 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 26 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 26 - Day 4</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -240,7 +240,14 @@ title: Week 26 | Advanced JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  You should dedicate this day to do a recap on the material
+  we've covered so far and practice by applying all the concepts 
+  that you've learned and completing all the exercises and coding
+  challenges that are left unfinished.
+
+  Good luck!
 
 <!-- Summary -->
 
