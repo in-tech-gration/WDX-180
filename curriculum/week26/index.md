@@ -287,7 +287,7 @@ title: Week 26 | Advanced JavaScript
   - **Part 1:** SVG
   - **Part 2:** Canvas API & ImageData
 
-  You can find the lecture code along with the SVG files [here](){:target="_blank"}
+  You can find the lecture code along with the SVG files [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week26/assets/day05/code){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
