@@ -25,7 +25,7 @@ title: Week 26 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 16/4/2025</span>
+  <span>Updated: 18/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -267,11 +267,11 @@ title: Week 26 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 26 - Day 5 | TBA -->
+<!-- Week 26 - Day 5 | Canvas, SVG & ImageData -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 26 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 26 - Day 5</span> | Canvas, SVG & ImageData</h2>
   </summary>
 
 ### Schedule
@@ -284,27 +284,45 @@ title: Week 26 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** SVG
+  - **Part 2:** Canvas API & ImageData
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code along with the SVG files [here](){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
   **References & Resources:**
 
+  - [**getBoundingClientRect()**](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect){:target="_blank"}  
+    - This will only work with DOM elements (HTML/SVG) and NOT Canvas shapes  
+    - [**DOMRect**](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect){:target="_blank"}  
+    - [**DOMRect constructor**](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect/DOMRect){:target="_blank"}  
+  - [**CanvasRenderingContext2D**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}  
+  - [**getImageData()**](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData){:target="_blank"}  
+  - [**Uint8ClampedArray**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray){:target="_blank"}  
+  - **Undraw: [SVG Images](https://undraw.co/){:target="_blank"}**  
+  - [**Photopea for Vector graphics**](https://www.vectorpea.com/){:target="_blank"}  
+  - **How to include an SVG**  
+    - **Copy paste the `<svg>` code**  
+    - **Load via an `<img src=”image.svg”>` tag**  
+    - **Fetch the SVG** (you can manipulate the SVG and not have the SVG code in your page)  
+  - [quadraticCurveTo](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/quadraticCurveTo){:target="_blank"}  
+  - [bezierCurveTo](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierC){:target="_blank"}  
+    - Perhaps start with the easier W3Schools:  
+      - [https://www.w3schools.com/jsref/canvas\_beziercurveto.asp](https://www.w3schools.com/jsref/canvas_beziercurveto.asp){:target="_blank"}  
+    - ...and end at MDN  
+  - [Canvas in NodeJS](https://github.com/Automattic/node-canvas){:target="_blank"}  
+  - [HTML2Canvas](https://html2canvas.hertzen.com/){:target="_blank"}
+
+  - [Saving Images](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas#saving_images){:target="_blank"}
+
+  - [Optimizing Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas){:target="_blank"}
+
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  ---
-
-
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   

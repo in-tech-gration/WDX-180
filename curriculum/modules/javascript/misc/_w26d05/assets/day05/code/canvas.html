@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html { color-scheme: dark light; }
+  </style>
+</head>
+<body>
+  <h1>Hello World!</h1>  
+  <canvas id="ball-game"></canvas>
+  <canvas id="output"></canvas>
+  <img id="dynamic" src="https://masterpiecer-images.s3.yandex.net/14b8a0fac0dd11eeab5aba0d8cad0506:3" width="600" height="150" />
+  <script>
+    const img = document.querySelector("#dynamic");
+    const ballGameCanvas = document.querySelector("#ball-game");
+    ballGameCanvas.style.border = "2px solid hotpink";
+    ballGameCanvas.width = 600;
+    // ballGameCanvas.width = window.innerWidth;
+    ballGameCanvas.height = 150;
+    // ballGameCanvas.height = window.innerHeight;
+
+    const output = document.querySelector("#output");
+    output.style.border = "2px solid orange";
+    output.width = 600;
+    // output.width = window.innerWidth;
+    output.height = 150;
+    const ctx2 = output.getContext("2d");
+    ctx2.fillStyle = "orange";
+    ctx2.fillRect(100,30,100,100);
+
+    const ctx = ballGameCanvas.getContext("2d");
+    // ctx.globalAlpha = 0;   => #00000000
+    // ctx.globalAlpha = 0.5; // => #FF0000FF
+    ctx.fillStyle = "#FF0000"; // #RRGGBB => 0-255 => Hex => 255 == FF
+    ctx.fillRect(0,0,100,100);
+    // console.log(ctx);
+    // ctx.save();
+
+    // Get Pixel Canvas Data:
+    const imageData = ctx.getImageData( 0, 0, 100, 100);
+    // console.log(imageData.height, imageData.width);
+    const { data } = imageData;
+    // console.log(data);
+    const firstPixel = [data[0],data[1],data[2],data[3]];
+    console.log(firstPixel);
+    const secondPixel = [data[4],data[5],data[6],data[7]];
+    console.log(secondPixel);
+    // ... 39999, data[39999] last pixel's A(lpha) value
+
+    const imgSrc = ballGameCanvas.toDataURL("image/jpeg"); // Canvas ImageData => JPEG (encoded base64)
+    img.src = imgSrc;
+
+    // 255,0,0,255,255,0,0,255 => [255,0,0,255], [255,0,0,255]
+    for ( let i = 0; i < data.length; i += 4 ){
+      // console.log(i, i+1, i+2, i+3);
+      //             R          G          B         A
+      // console.log( data[i], data[i+1], data[i+2], data[i+3] );
+      data[i] = 128; // R
+      data[i+1] = 255; // G
+      data[i+2] = 128; // B
+      data[i+3] = 255; // A
+    }
+
+    ctx2.putImageData(imageData,140,20);
+
+    // An unsigned long representing the actual height, in pixels, of the ImageData.
+    // "unsigned" => A number that does not have a sign in front of it: 100 (that is not +100, -100)
+    // "signed" => -33, 45 == +45
+    // data is a list of pixels that each is made up of 4 numbers: 
+    // R: 255
+    // G: 0
+    // B: 0
+    // A: 255 (Opacity)
+
+  </script>
+
+</body>
+</html>
