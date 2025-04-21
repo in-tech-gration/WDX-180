@@ -8,7 +8,7 @@ title: Week 27 | Advanced JavaScript
   <span class="week-prefix">Week 27 |</span> Advanced JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/battleship.png" />
 
 <div class="week-controls">
 
@@ -62,7 +62,7 @@ title: Week 27 | Advanced JavaScript
   - **Part 1:** Debugging Canvas API
   - **Part 2:** Drag and Drop API
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week27/assets/day01/drag-and-drop.html){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
