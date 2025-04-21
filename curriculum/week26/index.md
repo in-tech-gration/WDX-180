@@ -25,7 +25,7 @@ title: Week 26 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 18/4/2025</span>
+  <span>Updated: 21/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -60,6 +60,8 @@ title: Week 26 | Advanced JavaScript
   Your instructor will share the video lectures with you. Here are the topics covered:
 
   - **Canvas API**
+
+  ![](./assets/Bob.Ross.webp)
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week26/assets/canvas.html){:target="_blank"}
 

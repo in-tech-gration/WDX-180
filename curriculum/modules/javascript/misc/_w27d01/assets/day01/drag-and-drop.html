@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag-n-Drop API</title>
+</head>
+<body>
+  <style>
+    #draggable, #cool { border: 2px solid indigo; padding: 1rem; width: 200px; }
+    #drop-target { border: 2px solid green; padding: 1rem; width: 300px; margin-top: 1rem; }
+    #draggable {
+      background: indigo;
+      color: white;
+    }
+    #cool {
+      background: skyblue;
+      border-color: skyblue;
+    }
+  </style>
+  <h1 draggable="true">Drag-n-Drop API</h1>  
+  <a href="https://google.com">Google</a>
+
+  <div id="draggable" draggable="true"> Draggable Element </div>
+  <div id="cool" draggable="true">Cool</div>
+  <div id="drop-target" draggable="true"> Drop Target </div>
+  <script>
+    document.querySelector("a")
+    .addEventListener("click", event =>{
+      event.preventDefault();
+    })
+  </script>
+  <script>
+    const dropTarget = document.querySelector("#drop-target");
+    const draggable  = document.querySelector("#draggable");
+    const coolEl  = document.querySelector("#cool");
+
+    function handleDragOver( event ){ 
+      // console.log(event.type);
+      event.preventDefault(); 
+    }
+    dropTarget.addEventListener( "dragover", handleDragOver );
+
+    function onDragStart(event){
+      // console.log(event.target.getAttribute("id"));
+      const d = new Date();
+      const currentTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+      //                          format:MIME   data
+      // text/html, text/css, image/jpeg, image/png, application/json
+      // event.dataTransfer.setData( "text/plain", "Some data at " + currentTime );
+      event.dataTransfer.setData( "text/plain", event.target.getAttribute("id") );
+    }
+
+    draggable.addEventListener("dragstart", onDragStart);
+    coolEl.addEventListener("dragstart", onDragStart);
+
+    dropTarget.addEventListener("drop", event =>{
+      // console.log(event.type, event.dataTransfer.dropEffect);
+      const draggableId = event.dataTransfer.getData( "text/plain" );
+      // console.log(draggableId);
+      const droppedEl = document.querySelector("#" + draggableId);
+      // console.log(droppedEl);
+      event.currentTarget.appendChild(droppedEl);
+
+      // const newEl = document.createElement("div");
+      // newEl.setAttribute("id", draggableId);
+      // newEl.innerHTML = droppedEl.innerHTML;
+      // droppedEl.remove();
+      // event.currentTarget.appendChild(newEl);
+      // console.log(this); // Will not work with arrow function
+      // console.log(event.currentTarget);
+
+      // draggable.remove();
+      // dropTarget.remove();
+    });
+
+  </script>
+</body>
+</html>
