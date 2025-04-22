@@ -25,7 +25,7 @@ title: Week 27 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 21/4/2025</span>
+  <span>Updated: 23/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -101,11 +101,11 @@ title: Week 27 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 2 | TBA -->
+<!-- Week 27 - Day 2 | Drag and Drop A11y -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 27 - Day 2</span> | Drag and Drop A11y</h2>
   </summary>
 
 ### Schedule
@@ -113,7 +113,17 @@ title: Week 27 | Advanced JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Today you should spend some time on ♿ accessibility, because Drag-n-Drop can become a problem, not a feature when `A11y` is not properly taken care of. Here are some recommended articles to read and some code to study and explore:
+
+  - [Are Drag and Drop Functions Allowed by WCAG?](https://accessibleweb.com/question-answer/are-drag-and-drop-functions-allowed-by-wcag/){:target="_blank"}
+  - [Accessible Drag and Drop](https://liferay.design/articles/2023/accessible-drag-drop/){:target="_blank"}
+  - [W3C Best Practices: Drag and Drop](https://www.w3.org/wiki/PF/ARIA/BestPractices/DragDrop){:target="_blank"}
+  - [4 Major Patterns for Accessible Drag and Drop](https://medium.com/salesforce-ux/4-major-patterns-for-accessible-drag-and-drop-1d43f64ebf09){:target="_blank"}
+  - [Salesforce DnD A11y Patterns](https://salesforce-ux.github.io/dnd-a11y-patterns/#/){:target="_blank"}
+    - [GitHub: Salesforce DnD A11y Patterns](https://github.com/salesforce-ux/dnd-a11y-patterns){:target="_blank"}
+  - [CodePen Project: Accessible Drag and Drop by Drew Lee](https://codepen.io/drewlee/project/editor/XWNLeE){:target="_blank"}
 
 <!-- Summary -->
 
