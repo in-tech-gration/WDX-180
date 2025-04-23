@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FileReader</title>
+  <style>
+    html {
+      color-scheme: dark light;
+    }
+    #drop {
+      width: 200px;
+      height: 200px;
+      background: #f9f9f999;
+      border: 4px dashed #000;
+      display: flex;
+      color: black;
+      margin-top: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>FileReader</h1>
+
+  <!-- A) Access file(s) -->
+  <input 
+    type="file" 
+    name="uploaded_file" 
+    id="upload" 
+    multiple />
+
+  <!-- B) Access file(s) -->
+  <div id="drop">
+    Drop your files
+  </div>
+
+  <!-- Using the <input type="file" /> to read user-selected files -->
+  <script type="module">
+    const input = document.querySelector("input#upload");
+
+    input.addEventListener("change", event =>{
+      // console.log(event.type, event.target.files);
+      const fileList = event.target.files;
+      // console.log(fileList); // length and [index] notation (~Array)
+      const fileA = fileList[0];
+      const fileB = fileList[1];
+      // console.log( fileA, fileB );
+      // console.log( fileList );
+
+      // Loop over dropped files: @@iterable
+      const fileArray = [...fileList];
+      // fileArray.map( f => console.log(f) );
+      // Array.from(fileList).forEach( file => console.log(file) );
+      // for ( const file of fileList ){
+      //   console.log( file.size );
+      // }
+      // Normal for...loop (for i, i<fileList.length; i++)
+
+      // PRACTICE: Explore Canvas + File APIs
+      // PRACTICE: Display File statistics using plain HTML/CSS
+      function createFileTable(){
+        const canvas = document.createElement('canvas');
+        canvas.width = 700;
+        canvas.height = 400;
+        document.body.appendChild(canvas);
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'white';
+        ctx.font = '20px Arial';
+        for (let i = 0; i < fileList.length; i++) {
+          const file = fileList[i];
+          // Change color from green to read based on the size
+          // 100 => green, 1500 => red
+          const red = Math.floor(file.size / 1500 * 255);
+          const green = 255 - red;
+          ctx.fillStyle = `rgb(${red}, ${green}, 0)`;
+          ctx.fillRect(250, 10 + i * 30, file.size / 10, 20);
+          ctx.fillStyle = 'white';
+          ctx.fillText(file.name, 10, 30 + i * 30);
+          ctx.fillText(file.size, 200, 30 + i * 30);
+        }
+      }
+      createFileTable();
+
+      const p = document.createElement("p");
+      p.innerHTML = `
+        File name: ${fileA.name} <br/>
+        File size: ${fileA.size} <br/>
+        File modification: ${fileA.lastModified}
+      `
+      document.body.appendChild(p);
+
+    });
+    
+  </script>
+
+  <script type="module">
+    const img = localStorage.getItem("image:cache");
+    if ( img ){
+      const imgEl = document.createElement("img");
+      imgEl.src = img;
+      imgEl.width = 100;
+      document.body.appendChild(imgEl);
+    }
+  </script>  
+
+  <!-- Using the Drag and Drop API to read user-selected files  -->
+  <script type="module">
+    const drop = document.querySelector("#drop");
+    function preventDefault(event){
+      event.preventDefault();
+    }
+    drop.addEventListener("dragover", preventDefault);
+    drop.addEventListener("dragenter", preventDefault);
+    drop.addEventListener("drop", event =>{
+      event.preventDefault();
+      const fileList = event.dataTransfer.files; 
+      // console.log(fileList);
+      const fileA = fileList[0];
+
+      // FileReader API: Use it to read File objects
+      const fileReader = new FileReader();
+      // console.log(fileReader);
+      // fileReader.onload = function(){}
+      fileReader.addEventListener("load", function(event){
+        const contents = event.target.result; 
+        // console.log(typeof contents, contents);
+        // Step 1: Turn CSV into JSON:
+        function csvToJSON(contents){
+          const lines = contents.split('\n');
+          const headers = lines[0].split(',');
+          const products = [];
+          for (let i = 1; i < lines.length; i++) {
+            const values = lines[i].split(',');
+            const product = {};
+            for (let j = 0; j < headers.length; j++) {
+              product[headers[j]] = values[j];
+            }
+            products.push(product);
+          }
+          // console.log(products);
+          return products;
+        }
+        // Step 2: Use the Canvas API to create some statistics
+        function paintData(products){
+          const canvas = document.createElement('canvas');
+          canvas.width = 400;
+          canvas.height = 400;
+          document.body.appendChild(canvas);
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = 'black';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.fillStyle = 'white';
+          ctx.font = '20px Arial';
+          for (let i = 0; i < products.length; i++) {
+            const product = products[i];
+            // Lowest price is 100, highest price is 1500
+            // Change color from green to read based on the price
+            // 100 => green, 1500 => red
+            const red = Math.floor(product.Price / 1500 * 255);
+            const green = 255 - red;
+            ctx.fillStyle = `rgb(${red}, ${green}, 0)`;
+            ctx.fillRect(250, 10 + i * 30, product.Price / 10, 20);
+            ctx.fillStyle = 'white';
+            ctx.fillText(product.Product, 10, 30 + i * 30);
+            ctx.fillText(product.Price, 200, 30 + i * 30);
+          }
+        }
+        console.log("fileA contents loaded!", fileA.type);
+        if ( fileA.type === "text/csv" ){
+          const products = csvToJSON(contents);
+          paintData(products);
+        }
+        if ( fileA.type === "image/png" || fileA.type === "image/jpeg" ){
+          // console.log("An image!", contents);
+          const img = document.createElement("img");
+          localStorage.setItem("image:cache", contents);
+          img.src = contents; // <img src="file.jpeg" />
+          img.width = 200;
+          document.body.appendChild(img);
+        }
+
+      })
+      // fileReader.onerror = function(){}
+      fileReader.addEventListener("error", function(e){
+        console.log({e});
+      })
+      fileReader.addEventListener("progress", function(e){
+        console.log("Progress",{e});
+      })
+      // PRACTICE: Try to load a big file 250MB+ and see what happens
+      // during the 'progress' event.
+      // fileReader.readAsText(fileA); // <= Start the "file reading" process
+      fileReader.readAsDataURL(fileA);
+
+
+    })
+
+  </script>
+
+  <!--
+
+    REFERENCE:
+
+    Reading files from the user's system:
+
+    - We need the user to grant access to specific files or folders
+    - We can use these methods to get access to a file:
+      - A) <input />
+      - B) A drop (HTML) target
+    - Once we get some file(s), we can manipulate and access them in the form of:
+      - File (or Blob)
+      - FileList (list of File objects)
+
+    null <= Object <= EventTarget <= FileReader
+  --> 
+</body>
+
+</html>

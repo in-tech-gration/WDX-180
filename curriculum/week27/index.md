@@ -137,11 +137,11 @@ title: Week 27 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 3 | TBA -->
+<!-- Week 27 - Day 3 | FileReader API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 27 - Day 3</span> | FileReader API</h2>
   </summary>
 
 ### Schedule
@@ -154,27 +154,47 @@ title: Week 27 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** FileReader API
+  - **Part 2:** FileReader API
 
   You can find the lecture code [here](){:target="_blank"}
 
-  **Lecture Notes & Questions:**
-
   **References & Resources:**
+
+  - **Drag-n-Drop in the real world**  
+    - [**Outdoors fast food ordering system**](https://www.youtube.com/watch?v=ooH9LYAEGyY){:target="_blank"}  
+  - **VSCode User Snippets**  
+    - **Preferences > Configure User Snippets**  
+  - [**FileReader**](https://developer.mozilla.org/en-US/docs/Web/API/FileReader){:target="_blank"}**:** *“The FileReader object lets web applications asynchronously read the contents of files from the users’ computer.”*  
+    - [FileList](https://developer.mozilla.org/en-US/docs/Web/API/FileList){:target="_blank"}: *“...used for a list of files”*  
+      - *The prototype of FileList uncovers this property:* [**Symbol(Symbol.iterator)**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator){:target="_blank"}:ƒ values()  
+        - This gives an object the ability to iterate (loop) over its values through **[...object]** or **for..of** loop.  
+      - [File](https://developer.mozilla.org/en-US/docs/Web/API/File){:target="_blank"}: *“The File interface provides information about files and allows JavaScript in a web page to access their content.”*  
+  - [`<input type=”file” />`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file){:target="_blank"}  
+    - Limit file types: accept="image/jpeg, image/png"  
+  - [**DataTransfer**](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer){:target="_blank"}: *“The DataTransfer object is used to hold the data that is being dragged during a drag and drop operation.”*  
+  - [ElectronJS](https://www.electronjs.org/){:target="_blank"}: Turn any website or web app into a cross-platform Desktop application  
+  - Base64:   
+    - `<img src="file.jpeg" \>`  
+    - Base64/DataURL => file.jpeg => Read the contents => Convert them into a String  
+    - `<img src="base64:AAAAAAAAAABBBBBBBBCCCCC" \>`
+  - [Online Base64 Encoder/Decoder](https://www.base64encode.org/){:target="_blank"}
+  - [FileReader](https://flaviocopes.com/filereader/){:target="_blank"} 
+  - [https://javascript.info/file](https://javascript.info/file){:target="_blank"}
+  - [File API](https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  Build on the examples we’ve worked on and share any questions or apps that you’ve built.
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
