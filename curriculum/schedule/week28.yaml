@@ -1,6 +1,6 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Advanced JavaScript"
+title: "Battleship Game"
 header_image: week28/battleship-game.png
 schedule: 
   days:
