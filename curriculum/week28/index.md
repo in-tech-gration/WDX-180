@@ -63,7 +63,7 @@ title: Week 28 | Advanced JavaScript
 
   - **Part 2:** We continue our discussion on the IIFE pattern, debug some Battleship algorithm implementation that deals with the game board and try to come up with some abstractions that will help us deal with the complexity of the game requirements.
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week28/assets/day01/code){:target="_blank"}
 
   **Lecture Notes:**
 
