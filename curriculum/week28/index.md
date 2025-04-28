@@ -25,7 +25,7 @@ title: Week 28 | Battleship Game
 
   </h2>
 
-  <span>Updated: 27/4/2025</span>
+  <span>Updated: 29/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -111,11 +111,11 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 2 |  -->
+<!-- Week 28 - Day 2 | WebSockets for Multi-Player Games -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 2</span> | </h2>
+      <span class="summary-day">Week 28 - Day 2</span> | WebSockets for Multi-Player Games</h2>
   </summary>
 
 ### Schedule
@@ -123,7 +123,21 @@ title: Week 28 | Battleship Game
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Here's an interesting question: how will our human battleship players be able to play the game together online?
+
+  There are quite a few options available, but one of the most prominent technologies these days is **WebSockets**.
+
+  ![](./assets/websockets.png)
+
+  Here are a few resources for studying WebSockets today and experimenting with some code that will prepare us for the Battleship implementation:
+
+  - [WebSockets Explained](https://www.youtube.com/embed/2Nt-ZrNP22A){:target="_blank"} 
+
+  - [WebSockets (javascript.info)](https://javascript.info/websocket){:target="_blank"}
+
+  - [In 5 minutes learn HTML5 WebSockets](https://www.youtube.com/watch?v=WDowDtfWiGQ){:target="_blank"}
 
 <!-- Summary -->
 
@@ -137,11 +151,11 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 3 |  -->
+<!-- Week 28 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 3</span> | </h2>
+      <span class="summary-day">Week 28 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -182,11 +196,11 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 4 |  -->
+<!-- Week 28 - Day 4 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 4</span> | </h2>
+      <span class="summary-day">Week 28 - Day 4</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -208,11 +222,11 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 5 |  -->
+<!-- Week 28 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 5</span> | </h2>
+      <span class="summary-day">Week 28 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
