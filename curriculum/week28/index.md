@@ -184,7 +184,7 @@ title: Week 28 | Battleship Game
 
 ### Exercises
 
-  Download the [exercise file](){:target="_blank"} and start solving each exercise found inside the labelled statements (`make_all_the_keys_lowercase`, `convert_the_array_into_a_dict`, and so forth) and ensure that the tests pass.  
+  Download the [exercise file](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week28/assets/day03/jqpilot.exercises.js){:target="_blank"} and start solving each exercise found inside the labelled statements (`make_all_the_keys_lowercase`, `convert_the_array_into_a_dict`, and so forth) and ensure that the tests pass.  
 
   You can execute and run the exercise file, either in the browser or using `Node.js`: `node --watch jqpilot.exerices.js`
 
