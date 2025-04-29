@@ -25,7 +25,7 @@ title: Week 28 | Battleship Game
 
   </h2>
 
-  <span>Updated: 29/4/2025</span>
+  <span>Updated: 30/4/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -163,44 +163,37 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 3 | TBA -->
+<!-- Week 28 - Day 3 | Coding Challenge: Data Wrangling -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 28 - Day 3</span> | Coding Challenge: Data Wrangling</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
-  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  ![](./assets/data.wrangling.png)
 
-  - **Part 1:** 
-  - **Part 2:**
-
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  Jump straight to the `Exercises` section below and solve the data wrangling exercises!
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  Download the [exercise file](){:target="_blank"} and start solving each exercise found inside the labelled statements (`make_all_the_keys_lowercase`, `convert_the_array_into_a_dict`, and so forth) and ensure that the tests pass.  
 
-  ---
+  You can execute and run the exercise file, either in the browser or using `Node.js`: `node --watch jqpilot.exerices.js`
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week28/progress/progress.draft.w28.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
