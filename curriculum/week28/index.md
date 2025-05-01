@@ -25,7 +25,7 @@ title: Week 28 | Battleship Game
 
   </h2>
 
-  <span>Updated: 30/4/2025</span>
+  <span>Updated: 1/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -201,11 +201,11 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 4 | TBA -->
+<!-- Week 28 - Day 4 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 28 - Day 4</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -213,7 +213,14 @@ title: Week 28 | Battleship Game
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Practice on the concepts that we've covered so far this week
+  and build upon them.
+
+  Focus on finding solutions to the Battleship game requirements,
+  improving and refactoring the code to make it more readable, 
+  and ready to be scaled.
 
 <!-- Summary -->
 
