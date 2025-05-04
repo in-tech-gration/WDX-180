@@ -62,7 +62,7 @@ title: Week 29 | Battleship Game - Round 2
   - Building a Battleship game with JavaScript - Part 5 
   - Building a Battleship game with JavaScript - Part 6
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week29/assets/day01/code){:target="_blank"}
 
   **Study & Practice**
 
