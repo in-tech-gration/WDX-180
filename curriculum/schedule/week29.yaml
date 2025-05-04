@@ -1,7 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-# title: "Thinking outside the box: CLI, Browser Extensions & ElectronJS"
-title: "Advanced JavaScript"
+title: "Battleship Game - Round 2"
+# header_image: week29/header.png
 schedule: 
   days:
     1: # 
@@ -26,6 +26,8 @@ schedule:
 # https://marketplace.visualstudio.com/items?itemName=Alexey-Strakh.stackoverflow-search
 # https://marketplace.visualstudio.com/items?itemName=kameshkotwani.bing-search
 # https://marketplace.visualstudio.com/items?itemName=kameshkotwani.google-search
+
+# "Thinking outside the box: CLI, Browser Extensions & ElectronJS"
 
 ## Day 1 | Bookmarklets, ...
 # STUDY: https://github.com/shystruk/search-bookmarklet
