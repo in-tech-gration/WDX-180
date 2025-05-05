@@ -60,7 +60,7 @@
   - [**Week 26**: Canvas API](week26/index.md)
   - [**Week 27**: Advanced JavaScript](week27/index.md)
   - [**Week 28**: Building a Battleship Game in JS](week28/index.md)
-  - [**Week 29**: Building a Battleship Game in JS - Round 2](week29/index.md)
+  - [**Week 29**: Data Structures & Algorithms](week29/index.md)
   - [**Week 30**: Advanced JavaScript](week30/index.md)
   - [**Week 31**: Advanced JavaScript](week31/index.md)
   - [**Week 32**: Advanced JavaScript](week32/index.md)
