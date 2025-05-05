@@ -8,14 +8,14 @@ schedule:
       # file://./../modules/javascript/misc/_w29d01/_w29d01.md
       module: javascript/misc/_w29d01/_w29d01.md
     2: # 
-      # file://./../modules/javascript/misc/_w29d02/_w29d02.md
-      module: javascript/misc/_w29d02/_w29d02.md
+      # file://./../modules/computer_science/data_structures/dsa_01/index.md 
+      module: computer_science/data_structures/dsa_01/index.md
     3: # 
-      # file://./../modules/javascript/misc/_w29d03/_w29d03.md
-      module: javascript/misc/_w29d03/_w29d03.md
+      # file://./../modules/computer_science/data_structures/dsa_02/index.md 
+      module: computer_science/data_structures/dsa_02/index.md
     4: # 
-      # file://./../modules/javascript/misc/_w29d04/_w29d04.md
-      module: javascript/misc/_w29d04/_w29d04.md
+      # file://./../modules/computer_science/data_structures/dsa_03/index.md 
+      module: computer_science/data_structures/dsa_03/index.md
     5: # 
       # file://./../modules/javascript/misc/_w29d05/_w29d05.md
       module: javascript/misc/_w29d05/_w29d05.md
