@@ -25,7 +25,7 @@ title: Week 29 | Battleship Game - Round 2
 
   </h2>
 
-  <span>Updated: 6/5/2025</span>
+  <span>Updated: 9/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -248,11 +248,11 @@ title: Week 29 | Battleship Game - Round 2
 
 <hr class="mt-1">
 
-<!-- Week 29 - Day 5 | TBA -->
+<!-- Week 29 - Day 5 | Battleship Game: Final Remarks -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 29 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 29 - Day 5</span> | Battleship Game: Final Remarks</h2>
   </summary>
 
 ### Schedule
@@ -265,27 +265,56 @@ title: Week 29 | Battleship Game - Round 2
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Battleship Game - Part 7** 
+  - **Battleship Game - Part 8**
 
   You can find the lecture code [here](){:target="_blank"}
 
-  **Lecture Notes & Questions:**
+  **Lecture Notes:**
+
+  **Lecture Questions:**
+
+  - Should I combine Tailwind and Bootstrap?  
+    - **Be very careful** and use it only as a **last resort** (my take: avoid)  
+    - Try UI Kits like [Shadcn/ui](https://ui.shadcn.com/){:target="_blank"}, Material UI, etc.  
+      - Search for CSS UI Kits or Tailwind UI Kits or Bootstrap UI Kits  
+    - Search for Tailwind-based Components (or sets of Components), or Tailwind-based Templates, etc.  
+    - If you are using React, you can try CSS Modules or other CSS utilities.  
+    - You can try and find how you can confine some CSS (e.g. a framework like Bootstrap) under a specific class.  
+    - Do a research on native CSS “scoping”:  
+      - [https://developer.mozilla.org/en-US/docs/Web/CSS/:scope](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope){:target="_blank"}  
+      - [https://developer.mozilla.org/en-US/docs/Web/CSS/@scope#browser_compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/@scope#browser_compatibility){:target="_blank"}
 
   **References & Resources:**
 
+  - **Ways to avoid API keys and other sensitive information leaking to a public/private repo**  
+    - Use a script or a library that checks for sensitive information before pushing  
+    - Check your Version Control provider (BitBucket, GitLab, GitHub) for an option:  
+      - [GitHub: About secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning){:target="_blank"}  
+    - Use [environmental variables](https://kinsta.com/knowledgebase/what-is-an-environment-variable/){:target="_blank"} but be careful as there are types of env variables that have some code pushed  
+    - Use **.gitignore** for preventing certain files or folders getting pushed  
+    - Whenever you detect a leakage or a breach you should always revoke/cancel your keys and update your passwords.  
+  - [https://haveibeenpwned.com/](https://haveibeenpwned.com/){:target="_blank"}  
+  - Ways to work with immutable data (and avoid object reference bugs and errors, e.g. “shallow copy”)  
+    - Use a library ([https://immerjs.github.io/immer/](https://immerjs.github.io/immer/)){:target="_blank"}  
+    - **Object.freeze()** (make sure to check the deep vs shallow freeze sections)  
+    - Use [structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone){:target="_blank"}  
+  - [Nice selection of free graphics](https://www.freepik.com/search?format=search&last_filter=selection&last_value=1&query=ship&selection=1&type=vector){:target="_blank"}
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - Finish up the game!  
+    - Complete the mini version (2x2, with 2 ship types)  
+    - Move on to a 4x4 version, then test and continue to the 10x10 final version
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week29/progress/progress.draft.w29.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
