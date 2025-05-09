@@ -268,7 +268,7 @@ title: Week 29 | Battleship Game - Round 2
   - **Battleship Game - Part 7** 
   - **Battleship Game - Part 8**
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week29/assets/day05/code){:target="_blank"}
 
   **Lecture Notes:**
 
