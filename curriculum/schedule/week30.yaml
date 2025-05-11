@@ -1,9 +1,10 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Advanced JavaScript"
+title: "TypeScript"
+header_image: week30/TS01.jpg
 schedule: 
   days:
-    1: # 
+    1: # TypeScript 01
       # file://./../modules/javascript/misc/_w30d01/_w30d01.md
       module: javascript/misc/_w30d01/_w30d01.md
     2: # 
