@@ -25,7 +25,7 @@ title: Week 30 | TypeScript
 
   </h2>
 
-  <span>Updated: 11/5/2025</span>
+  <span>Updated: 13/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -117,11 +117,11 @@ title: Week 30 | TypeScript
 
 <hr class="mt-1">
 
-<!-- Week 30 - Day 2 | TBA -->
+<!-- Week 30 - Day 2 | Exploring the Visibility API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 30 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 30 - Day 2</span> | Exploring the Visibility API</h2>
   </summary>
 
 ### Schedule
@@ -129,7 +129,21 @@ title: Week 30 | TypeScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  [Here's some code](){:target="_blank"} to study and practice today.
+
+  - Tasks:
+    - Read and understand what the code does
+    - Test the code (press the play button and switch to another Tab to see how the app behaves differently)
+    - Does this remind you of chat applications (like Slack) that provide some notification when the chat Tab is out of focus?
+    - Learn more about the Visibility Web API
+    - Enforce `ts-check` and apply as many `JSDoc` types as you can
+    - Improve the code and add comments
+    - Share your version and questions!
+    - **Have fun and enjoy!** :smiley:
+
+  - Some [amazing tips](https://twitter.com/wesbos/status/1790072655913050579){:target="_blank"} from Wes Bos for `<textarea>`'s. Completely mind-blowing CSS like `ex units`, `lh units` and more. Check it out!
 
 <!-- Summary -->
 
