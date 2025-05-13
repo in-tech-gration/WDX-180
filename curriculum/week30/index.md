@@ -25,7 +25,7 @@ title: Week 30 | TypeScript
 
   </h2>
 
-  <span>Updated: 13/5/2025</span>
+  <span>Updated: 14/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -157,11 +157,11 @@ title: Week 30 | TypeScript
 
 <hr class="mt-1">
 
-<!-- Week 30 - Day 3 | TBA -->
+<!-- Week 30 - Day 3 | TypeScript: A Language is born -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 30 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 30 - Day 3</span> | TypeScript: A Language is born</h2>
   </summary>
 
 ### Schedule
@@ -181,20 +181,49 @@ title: Week 30 | TypeScript
 
   **Lecture Notes & Questions:**
 
-  **References & Resources:**
+  - How to transpile TypeScript  
+    - On-the-fly in-the-browser transpilation via Babel (ts-in-the-browser.html)  
+    - ~~Install TypeScript compiler globally: **npm install -g tsc**~~  
+      - Search: for global tsc install (?)  
+    - Install TypeScript compiler locally: npm install tsc (in a project folder)  
+    - Use another compiler (babel, SWC, etc.)  
+  - Use TS in a project (manual)  
+    - 1) initialize the project as an npm project (create a basic package.json)  
+    - 1.1) `npm init` (and follow the instructions)  
+    - 1.2) `npm init -y` (quickly run the command with the default options)  
+    - Ready to run `npm install` in your project  
+    - 2) `npm install typescript`  
+    - 3) Use npx tsc to compile: \`npx tsc file.ts\`  
+    - 3.1) `npx tsc filea.ts fileb.ts`  
+    - 3.2) `npx tsc *.ts` (transpile all .ts files)  
+  - Use TS in a project (auto)  
+    - Using Vite:  
+      - [Pick your template of choice](https://vitejs.dev/guide/#trying-vite-online) (e.g. React, Vue, React TypeScript, etc.)  
+      - `npm create vite@latest <PROJECT\_NAME\> -- --template <TEMPLATE_NAME>`  
+      - Example: `npm create vite@latest **basics** -- --template **vanilla-ts**`
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - **Explore TypeScript:** [https://www.typescriptlang.org/](https://www.typescriptlang.org/){:target="_blank"}  
 
-  ---
+  - **Create and work on a vite TypeScript project**  
+
+  - Experiment with TypeScript in the [TS playground](https://www.typescriptlang.org/play/){:target="_blank"}  
+
+  - Study: [Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/){:target="_blank"}
+
+  - Study: [Learn TypeScript in 30 Minutes](https://tutorialzine.com/2016/07/learn-typescript-in-30-minutes){:target="_blank"}
+
+  - Work through the **exercises** found in this [**WDX module**](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/typescript/exercises/){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week30/progress/progress.draft.w30.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   

@@ -1,0 +1,11 @@
+{
+  "name": "ts-basics",
+  "version": "1.1.0",
+  "main": "app.silly.js",
+  "keywords": [],
+  "author": "kostasx",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
