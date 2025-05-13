@@ -183,8 +183,8 @@ title: Week 30 | TypeScript
 
   - How to transpile TypeScript  
     - On-the-fly in-the-browser transpilation via Babel (ts-in-the-browser.html)  
-    - ~~Install TypeScript compiler globally: **npm install -g tsc**~~  
-      - Search: for global tsc install (?)  
+    - Install TypeScript compiler globally: **npm install -g tsc**  
+      - Search: for global tsc install  
     - Install TypeScript compiler locally: npm install tsc (in a project folder)  
     - Use another compiler (babel, SWC, etc.)  
   - Use TS in a project (manual)  
@@ -199,7 +199,7 @@ title: Week 30 | TypeScript
   - Use TS in a project (auto)  
     - Using Vite:  
       - [Pick your template of choice](https://vitejs.dev/guide/#trying-vite-online) (e.g. React, Vue, React TypeScript, etc.)  
-      - `npm create vite@latest <PROJECT\_NAME\> -- --template <TEMPLATE_NAME>`  
+      - `npm create vite@latest <PROJECT_NAME> -- --template <TEMPLATE_NAME>`  
       - Example: `npm create vite@latest **basics** -- --template **vanilla-ts**`
 
 <!-- Summary -->
