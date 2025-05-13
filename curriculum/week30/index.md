@@ -174,10 +174,10 @@ title: Week 30 | TypeScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** How transpiled languages like TypeScript work. Building a mock language: SillyScript.
+  - **Part 2:** TypeScript.
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week30/assets/day03/code){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week30/assets/day03/diagrams){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
