@@ -25,7 +25,7 @@ title: Week 30 | TypeScript
 
   </h2>
 
-  <span>Updated: 14/5/2025</span>
+  <span>Updated: 15/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -231,11 +231,11 @@ title: Week 30 | TypeScript
 
 <hr class="mt-1">
 
-<!-- Week 30 - Day 4 | TBA -->
+<!-- Week 30 - Day 4 | TypeScript: Theory & Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 30 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 30 - Day 4</span> | TypeScript: Theory & Practice</h2>
   </summary>
 
 ### Schedule
@@ -243,7 +243,9 @@ title: Week 30 | TypeScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Go through the [Learn Typescript (with Ania Kubow)](https://scrimba.com/learn/typescript){:target="_blank"} interactive Scrimba course and then work on as many exercises as you can on [https://typescript-exercises.github.io/](https://typescript-exercises.github.io/){:target="_blank"}. Make use of the hints and links provided.
 
 <!-- Summary -->
 
