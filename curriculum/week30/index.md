@@ -25,7 +25,7 @@ title: Week 30 | TypeScript
 
   </h2>
 
-  <span>Updated: 15/5/2025</span>
+  <span>Updated: 16/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -259,11 +259,11 @@ title: Week 30 | TypeScript
 
 <hr class="mt-1">
 
-<!-- Week 30 - Day 5 | TBA -->
+<!-- Week 30 - Day 5 | TypeScript & React -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 30 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 30 - Day 5</span> | TypeScript & React</h2>
   </summary>
 
 ### Schedule
@@ -276,27 +276,74 @@ title: Week 30 | TypeScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** More TypeScript
+  - **Part 2:** TypeScript & React
 
   You can find the lecture code [here](){:target="_blank"}
 
-  **Lecture Notes & Questions:**
+  **Questions:**
+
+  - Does the union order matter? `number | string`   
+    - No  
+  - What about PropTypes with TSX  
+    - When you are using TSX, just prefer the TS types and forget the PropTypes.
+
+  **Tips**
+
+  - **Treat ALL warnings as errors!**  
+    - You can set this on TypeScript and ESLint  
+    - In general, as you are coding, when you see the “yellow-ish” warnings in the console, stop and fix them (treat them as errors)  
+  - `getMonth()` returns 0-11 or NaN (all these are of type “number”)  
+    - new Date("XXX").[getMonth](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth)() => NaN
 
   **References & Resources:**
 
+  - **Turn all Warnings to Errors:**  
+    - **Settings > Search for** `typescript.reportStyleChecksAsWarnings` > turn this to true  
+    - Turn unreachable code (e.g. infinite loops) into errors:  
+      - `tsconfig.json` => `"allowUnreachableCode": false`  
+  - Working with decimals  
+    - [https://mikemcl.github.io/decimal.js/](https://mikemcl.github.io/decimal.js/){:target="_blank"}  
+    - [https://mikemcl.github.io/big.js/](https://mikemcl.github.io/big.js/){:target="_blank"}  
+  - [TypeScript: Ranges](https://catchts.com/range-numbers){:target="_blank"}  
+  - Great point of resource for TypeScript (+React) related issues and tips:  
+    - [https://bobbyhadz.com/](https://bobbyhadz.com/){:target="_blank"}  
+    - Google focus on a domain: `<KEYWORDS>` `site:bobbyhadz.com`  
+  - React TypeScript types:  
+    - Elements (`<div>...</div>`) => JSX.Element  
+  - [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/){:target="_blank"} (reference of types)
+
+  - **React (JSX) to TypeScript (TSX)**
+    - [Props](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example){:target="_blank"}
+    - [Components](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components){:target="_blank"}
+    - [Hooks](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/hooks){:target="_blank"}
+    - [Forms and Events](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forms_and_events){:target="_blank"}
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Study and practice the following:
+
+  - [**TypeScript: never**](https://www.typescriptlang.org/docs/handbook/2/functions.html#never){:target="_blank"}  
+    - Can you come up (or find) some more examples?   
+  - [**TypeScript: Union Types (|)**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types){:target="_blank"}**:** *“A union type is a type formed from two or more other types, representing values that may be any one of those types.”*  
+  - [**TypeScript: Type Assertions**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions){:target="_blank"} (as Type)  
+  - [**TypeScript: Literal Types**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types){:target="_blank"}  
+  - **Try out TSX with PropTypes:** what happens if we combine TS types AND PropTypes for the Props checking  
+  - **TypeScript:React** [**Props**](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example){:target="_blank"}  
+  - **Try out TS, React and TSX [online with Babel](https://babeljs.io/repl){:target="_blank"}**
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week30/progress/progress.draft.w30.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
-  ---
+  - [TypeScript Origins: The Documentary](https://www.youtube.com/watch?v=U6s2pdxebSo){:target="_blank"}
 
-
-
-  _Photo by []()_
-
+  - [Let's Learn TypeScript! (with Orta Therox) — Learn With Jason](https://www.youtube.com/watch?v=BHYgpbPC4wM){:target="_blank"}
 
 <!-- Sources and Attributions -->
   
