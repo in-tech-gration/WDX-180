@@ -279,7 +279,7 @@ title: Week 30 | TypeScript
   - **Part 1:** More TypeScript
   - **Part 2:** TypeScript & React
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week30/assets/day05/code){:target="_blank"} and the diagram over [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week30/assets/day05/JSX.and.TS.bring.TSX.png){:target="_blank"}
 
   **Questions:**
 
@@ -327,7 +327,7 @@ title: Week 30 | TypeScript
 
   - [**TypeScript: never**](https://www.typescriptlang.org/docs/handbook/2/functions.html#never){:target="_blank"}  
     - Can you come up (or find) some more examples?   
-  - [**TypeScript: Union Types (|)**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types){:target="_blank"}**:** *“A union type is a type formed from two or more other types, representing values that may be any one of those types.”*  
+  - [**TypeScript: Union Types (\|)**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types){:target="_blank"}**:** *“A union type is a type formed from two or more other types, representing values that may be any one of those types.”*  
   - [**TypeScript: Type Assertions**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions){:target="_blank"} (as Type)  
   - [**TypeScript: Literal Types**](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types){:target="_blank"}  
   - **Try out TSX with PropTypes:** what happens if we combine TS types AND PropTypes for the Props checking  
