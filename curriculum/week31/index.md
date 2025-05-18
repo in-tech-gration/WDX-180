@@ -90,15 +90,16 @@ title: Week 31 | Advanced JavaScript
 
 ### Exercises
 
-  - [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof){:target="_blank"}  
-  - [Sparse Arrays (vs Dense Arrays)](https://2ality.com/2012/06/dense-arrays.html)  
+  - **Study:** [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof){:target="_blank"}  
+  - **Study:** [Sparse Arrays (vs Dense Arrays)](https://2ality.com/2012/06/dense-arrays.html)  
     - Also follow and read this blog and his books, articles and videos  
   - [Study private properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties)  
   - Investigate (more) on the difference between: **if ( obj.prop ) and if ( “prop” in obj )**  
     - *“A property may be present in an object but have value undefined. Therefore, x in obj is not the same as obj.x \!== undefined.” \~ The in operator @ [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in#description)*  
   - Try the following:  
     - Create a class (e.g. Cat, Fish) and/or constructor and then create instances of Cat and Fish (e.g. siameseCat) and try using the **object instanceof Cat** check.  
-  - [Array Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array)  
+  - **Study:** [Array Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array)  
+
   - [**Start this TypeScript course**](https://www.totaltypescript.com/tutorials/beginners-typescript)
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week31/progress/progress.draft.w31.d01.csv**
