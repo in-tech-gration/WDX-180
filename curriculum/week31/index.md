@@ -25,7 +25,7 @@ title: Week 31 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 18/5/2025</span>
+  <span>Updated: 19/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
