@@ -114,11 +114,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 2 |  -->
+<!-- Week 31 - Day 2 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 2</span> | </h2>
+      <span class="summary-day">Week 31 - Day 2</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -140,11 +140,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 3 |  -->
+<!-- Week 31 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 3</span> | </h2>
+      <span class="summary-day">Week 31 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -185,11 +185,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 4 |  -->
+<!-- Week 31 - Day 4 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 4</span> | </h2>
+      <span class="summary-day">Week 31 - Day 4</span> | TBA</h2>
   </summary>
 
 ### Schedule
@@ -211,11 +211,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 5 |  -->
+<!-- Week 31 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 5</span> | </h2>
+      <span class="summary-day">Week 31 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
