@@ -1,7 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Advanced JavaScript"
-# header_image: week31/diorama.jpg
+header_image: week31/diorama.jpg
 schedule: 
   days:
     1: # 

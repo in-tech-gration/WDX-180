@@ -8,7 +8,7 @@ title: Week 31 | Advanced JavaScript
   <span class="week-prefix">Week 31 |</span> Advanced JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/diorama.jpg" />
 
 <div class="week-controls">
 
