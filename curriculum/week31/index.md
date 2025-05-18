@@ -62,7 +62,7 @@ title: Week 31 | Advanced JavaScript
   - **Part 1:** TypeScript, Objects Constructors & Instances
   - **Part 2:** TypeScript, Objects Constructors & Instances
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day01/code){:target="_blank"} and the diagram [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week31/assets/day01/20.05.2024-Object.Hierarchies.png){:target="_blank"}.
 
   **References & Resources:**
 
