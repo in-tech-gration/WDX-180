@@ -25,7 +25,7 @@ title: Week 31 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 19/5/2025</span>
+  <span>Updated: 20/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -115,11 +115,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 2 | TBA -->
+<!-- Week 31 - Day 2 | Expenses Chart Challenge -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 31 - Day 2</span> | Expenses Chart Challenge</h2>
   </summary>
 
 ### Schedule
@@ -127,11 +127,33 @@ title: Week 31 | Advanced JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Study the following TypeScript concepts and then scroll down
+  to the `Exercises` section to start your Frontend coding challenge.
+
+  - [TypeScript Generics explained with pets](https://maddev.netlify.app/development/typescript_generics/){:target="_blank"}
+
+  - [Generic Types](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-types){:target="_blank"}
+
+  - Try TypeScript with [ts-node](https://www.npmjs.com/package/ts-node){:target="_blank"}, a TypeScript execution engine and REPL for Node.js.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  ![](./assets/expenses.chart.jpg)
+
+  Time for a Frontend coding challenge!
+
+  In this challenge, you'll create a bar chart component from scratch.
+
+  Visit the [Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt){:target="_blank"} web page and start hacking!
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week31/progress/progress.draft.w31.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
