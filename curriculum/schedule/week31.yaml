@@ -4,7 +4,7 @@ title: "Advanced JavaScript"
 header_image: week31/diorama.jpg
 schedule: 
   days:
-    1: # 
+    1: # Object Constructors & Instances
       # file://./../modules/javascript/misc/_w31d01/_w31d01.md
       module: javascript/misc/_w31d01/_w31d01.md
     2: # 
