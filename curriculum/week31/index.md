@@ -249,11 +249,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 4 | TBA -->
+<!-- Week 31 - Day 4 | Expenses Chart - React Twist -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 31 - Day 4</span> | Expenses Chart - React Twist</h2>
   </summary>
 
 ### Schedule
@@ -261,11 +261,29 @@ title: Week 31 | Advanced JavaScript
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Go straight to the `Exercises` section below and 
+  start coding!
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  ![](./assets/expenses.chart.jpg)
+
+  If you haven't completed the [Frontend Mentor Expenses Chart](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt){:target="_blank"} coding challenge from day 02, now it's time to do so.
+
+  If you have already completed the challenge, here's the next one:
+
+  **Implement the Expenses Chart in React!**
+
+  You can download the exercise resources and instructions [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day02) as well.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week31/progress/progress.draft.w31.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
@@ -275,11 +293,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 5 | TBA -->
+<!-- Week 31 - Day 5 | Testing -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 31 - Day 5</span> | Testing</h2>
   </summary>
 
 ### Schedule

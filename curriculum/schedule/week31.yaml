@@ -10,12 +10,12 @@ schedule:
     2: # Expenses Chart Challenge & TS Generics
       # file://./../modules/javascript/misc/_w31d02/_w31d02.md
       module: javascript/misc/_w31d02/_w31d02.md
-    3: # 
+    3: # Object Primitives, Falsy values & Sets
       # file://./../modules/javascript/misc/_w31d03/_w31d03.md
       module: javascript/misc/_w31d03/_w31d03.md
-    4: # 
+    4: # Expenses Chart Challenge in React
       # file://./../modules/javascript/misc/_w31d04/_w31d04.md
       module: javascript/misc/_w31d04/_w31d04.md
-    5: # 
+    5: # Testing
       # file://./../modules/javascript/misc/_w31d05/_w31d05.md
       module: javascript/misc/_w31d05/_w31d05.md
