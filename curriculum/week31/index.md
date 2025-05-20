@@ -313,9 +313,7 @@ title: Week 31 | Advanced JavaScript
   - **Part 1:** Testing
   - **Part 2:** Testing React Apps
 
-  <!-- You can find the lecture code [here](){:target="_blank"} -->
-
-
+  You can find the lecture code [here](){:target="_blank"} and the diagram [here](){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
