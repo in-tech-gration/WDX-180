@@ -313,7 +313,9 @@ title: Week 31 | Advanced JavaScript
   - **Part 1:** Testing
   - **Part 2:** Testing React Apps
 
-  You can find the lecture code [here](){:target="_blank"}
+  <!-- You can find the lecture code [here](){:target="_blank"} -->
+
+
 
   **Lecture Notes & Questions:**
 
@@ -351,7 +353,7 @@ title: Week 31 | Advanced JavaScript
   - **Challenge:** How to run ts-node and have it execute .ts files without errors!  
     - [https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node](https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node){:target="_blank"}  
   - Study:  
-    - [Basic Terminologies of Software Testing](https://www.appsierra.com/blog/terminologies-of-software-testing){:target="_blank"}
+    - [Basic Terminologies of Software Testing](https://web.archive.org/web/20241114033228/https://www.appsierra.com/blog/terminologies-of-software-testing){:target="_blank"}
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week31/progress/progress.draft.w31.d05.csv**
 
