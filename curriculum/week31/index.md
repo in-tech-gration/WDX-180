@@ -150,6 +150,8 @@ title: Week 31 | Advanced JavaScript
 
   Visit the [Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt){:target="_blank"} web page and start hacking!
 
+  You can also download the exercise resources and instructions [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day02){:target="_blank"}.
+
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week31/progress/progress.draft.w31.d02.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
@@ -163,11 +165,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 3 | TBA -->
+<!-- Week 31 - Day 3 | Object Wrappers, Falsy Values & Sets -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 31 - Day 3</span> | Object Wrappers, Falsy Values & Sets</h2>
   </summary>
 
 ### Schedule
@@ -180,27 +182,66 @@ title: Week 31 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Primitive Objects
+  - **Part 2:** Object Wrappers, Falsy Values & Sets
 
   You can find the lecture code [here](){:target="_blank"}
 
-  **Lecture Notes & Questions:**
-
   **References & Resources:**
+
+  - **Bookmarks you MUST have as a JS developer:**  
+    - [**Primitive Values in JS**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values){:target="_blank"}  
+    - [**Operator Precedence Table**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table){:target="_blank"}  
+    - [**Falsy values**](https://developer.mozilla.org/en-US/docs/Glossary/Falsy){:target="_blank"}  
+  - typeof (unary) operator always returns a string   
+  - If you need to go past the Number.MAX_SAFE_INTEGER, use the BigInt notation:  
+    - Instead of: `(9007199254740991+1) === (9007199254740991+2) === true`???  
+    - Do this: `(9007199254740991n+1n) === (9007199254740991n+2n)`  
+      - turn Number(s) into BigInt(s) by placing the n at the end of the number  
+  - With floating point numbers (aka decimals), be extra careful.  
+    - Consider using a library like decimal.js or big.js  
+  - Use the _ notation for large integers: 10_000_000  
+  - 0/-0 are the only falsy number values (When coerced to a Boolean they produce false)  
+  - “” empty string is the only falsy String value (when coerced to a Boolean it produces false)  
+  - Value type conversion can happen in 2 ways:  
+    - Explicitly: String(5);  
+    - **Implicitly**: 5 + “”; => “5”  
+      - Another example: if/while/switch/dowhile  
+      - if ( 5 ){ ... } => if ( **5 => Boolean(5) => true** ){ ... }  
+  - You will probably never have to deal (or find) Object Wrapped Primitives in any codebase.  
+  - When ES6 came out (?) a bunch of new objects were introduced:  
+    - Set  
+    - WeakSet  
+    - Map  
+    - WeakMap  
+    - Special kind of Arrays: [Indexed Collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#indexed_collections){:target="_blank"} (mainly for working with binary data)  
+  - Some Constructor Functions can be used without the new keyword:  
+    - Date(), new Date(), Error(), new Error()   
+  - Others are pretty strict and will throw an Error  
+    - Promise, Set, etc.  
+  - Others are completely forbidden (illegal constructors)  
+    - new HTMLElement() will throw an error
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  **Study Guide**
 
-  ---
+  - **Discover Set(s) and its methods:**  
+    - `values()` *(similar to Object.values())*  
+    - `keys()` *(similar to Object.keys())*  
+    - `entries()` *(similar to Object.entries())*  
+    - `forEach()`   
+    - Try using Sets with **Object references**  
+    - Try and google for an introductory video on Math and Set Theory
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week31/progress/progress.draft.w31.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
