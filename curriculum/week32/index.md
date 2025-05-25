@@ -62,7 +62,7 @@ title: Week 32 | Testing
   - **Part 1:** TypeScript & Testing FTW
   - **Part 2:** TypeScript & Testing FTW
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day01/code){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
