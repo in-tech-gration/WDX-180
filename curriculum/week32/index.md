@@ -68,9 +68,9 @@ title: Week 32 | Testing
 
   - **TypeScript + React:**  
     - **How to define types for hooks:**  
-      - **const r = useState<POSSIBLE_TYPES_HERE>(INITIAL_VALUE)**  
-        - **const r = useState<string|null|number>(null)**  
-        - **const r = useRef<HTMLFormElement|null>(null)**  
+      - `const r = useState<POSSIBLE_TYPES_HERE>(INITIAL_VALUE)`  
+      - `const r = useState<string|null|number>(null)`  
+      - `const r = useRef<HTMLFormElement|null>(null)`  
   - **(method) ParentNode.querySelector<Element>(selectors: string): Element | null (+4 overloads)**  
     - This is the TypeScript *signature* for the documentQuerySelector()  
     - **ParentNode:** this is the TS type for the Object that contains this method  
