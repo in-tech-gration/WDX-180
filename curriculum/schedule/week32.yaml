@@ -1,10 +1,11 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 # title: "Introduction to AI, Machine Learning & Tensorflow.js"
-title: "Advanced JavaScript"
+title: "Testing"
+header_image: week32/pc.crash.test.jpeg
 schedule: 
   days:
-    1: # 
+    1: # Testing
       # file://./../modules/javascript/misc/_w32d01/_w32d01.md
       module: javascript/misc/_w32d01/_w32d01.md
     2: # 
