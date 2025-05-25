@@ -89,9 +89,9 @@ title: Week 32 | Testing
     ```js
     /**  
      * @vitest-environment jsdom  
-      */  
+     */  
     ```
-    
+
     - Alternatives exist through the configuration files *(vite.config.json, vitest.config.json or vitest.config.ts???, ts.config.json, etc.)*  
       - Check the docs: [https://vitest.dev/config/\#environment](https://vitest.dev/config/#environment){:target="_blank"}  
   - Vitest: you can either skip certain tests or focus on individual tests by using the following methods on the it(), describe() and test() methods of vitest:  
