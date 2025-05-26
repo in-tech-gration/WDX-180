@@ -151,6 +151,8 @@ title: Week 32 | Testing
 
 ### Schedule
 
+  ![](./assets/day02/woman.coder.png)
+
   - **Practice on the topics and share your questions**
 
 ### Study Plan
