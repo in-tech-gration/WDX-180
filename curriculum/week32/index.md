@@ -142,19 +142,23 @@ title: Week 32 | Testing
 
 <hr class="mt-1">
 
-<!-- Week 32 - Day 2 | TBA -->
+<!-- Week 32 - Day 2 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 32 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 32 - Day 2</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
 
-  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Today is practice day. Practice on the topics covered yesterday
+  and share your thoughts, questions and insights.
+
+  Happy hacking!
 
 <!-- Summary -->
 
