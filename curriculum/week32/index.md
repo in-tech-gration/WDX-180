@@ -194,20 +194,18 @@ title: Week 32 | Testing
   - **Part 1:** Asynchronous code and the HTMLImageElement
   - **Part 2:** Promises and more asynchronous mysteries
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day03/code){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day03){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
   **References & Resources:**
 
-    - **Events** are *things* that happen during the lifecycle of a web application and these are events triggered by the user or the system (either the browser or external actors, e.g. a server sending a message);  
-    - [JS Modules are deferred by default](https://x.com/addyosmani/status/1233346105842122754){:target="_blank"}  
-    - [Async vs Defer - Network Optimisation for Web Apps](https://preetiroshan.hashnode.dev/async-vs-defer-network-optimisation-for-web-apps){:target="_blank"}  
-    - `new Image()` creates a new `HTMLImageElement` object (go check MDN on that)  
-      - [HTMLImageElement: complete property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/complete){:target="_blank"}  
-    - [**Progressive JPEG images**](https://www.hostinger.com/tutorials/website/improving-website-performance-using-progressive-jpeg-images){:target="_blank"}
-
-
+  - **Events** are *things* that happen during the lifecycle of a web application and these are events triggered by the user or the system (either the browser or external actors, e.g. a server sending a message);  
+  - [JS Modules are deferred by default](https://x.com/addyosmani/status/1233346105842122754){:target="_blank"}  
+  - [Async vs Defer - Network Optimisation for Web Apps](https://preetiroshan.hashnode.dev/async-vs-defer-network-optimisation-for-web-apps){:target="_blank"}  
+  - `new Image()` creates a new `HTMLImageElement` object (go check MDN on that)  
+    - [HTMLImageElement: complete property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/complete){:target="_blank"}  
+  - [**Progressive JPEG images**](https://www.hostinger.com/tutorials/website/improving-website-performance-using-progressive-jpeg-images){:target="_blank"}
 
 <!-- Summary -->
 
