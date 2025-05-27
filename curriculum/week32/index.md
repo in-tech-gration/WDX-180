@@ -25,7 +25,7 @@ title: Week 32 | Testing
 
   </h2>
 
-  <span>Updated: 26/5/2025</span>
+  <span>Updated: 28/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -174,11 +174,11 @@ title: Week 32 | Testing
 
 <hr class="mt-1">
 
-<!-- Week 32 - Day 3 | TBA -->
+<!-- Week 32 - Day 3 | Async Mysteries -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 32 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 32 - Day 3</span> | Async Mysteries</h2>
   </summary>
 
 ### Schedule
@@ -191,8 +191,8 @@ title: Week 32 | Testing
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Asynchronous code and the HTMLImageElement
+  - **Part 2:** Promises and more asynchronous mysteries
 
   You can find the lecture code [here](){:target="_blank"}
 
@@ -200,18 +200,35 @@ title: Week 32 | Testing
 
   **References & Resources:**
 
+    - **Events** are *things* that happen during the lifecycle of a web application and these are events triggered by the user or the system (either the browser or external actors, e.g. a server sending a message);  
+    - [JS Modules are deferred by default](https://x.com/addyosmani/status/1233346105842122754){:target="_blank"}  
+    - [Async vs Defer - Network Optimisation for Web Apps](https://preetiroshan.hashnode.dev/async-vs-defer-network-optimisation-for-web-apps){:target="_blank"}  
+    - `new Image()` creates a new `HTMLImageElement` object (go check MDN on that)  
+      - [HTMLImageElement: complete property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/complete){:target="_blank"}  
+    - [**Progressive JPEG images**](https://www.hostinger.com/tutorials/website/improving-website-performance-using-progressive-jpeg-images){:target="_blank"}
+
+
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - **Challenge:** make sure to start the game or display a Start Game button or run any code when ALL the images have been loaded. (game.js)  
+    - **Tricky part:** how to **deal with some errors** that might happen. Example: make sure that some image URLs are correct (and therefore loaded) and some URLs are misspelled, instead of image.jpg, write image.jpgZZZ or iiii.jpg   
+      - In cases like these, we tend to inform the user and act accordingly: retry loading the images that were not loaded, or run the code without using them.   
+  - **CHALLENGE:** How can you get access to all the loaded images (when they have loaded) in the callback function?  
+  - **CHALLENGE:** Try displaying a percentage loader while the images are loading.  
+    - When the first one has loaded, show: 33%  
+    - When the 2nd, show: 66%  
+    - When all of them show: 100%  
+    - Or use a loading spinner so that the users know that something is loading.
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   

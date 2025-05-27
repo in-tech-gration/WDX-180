@@ -8,7 +8,7 @@ schedule:
     1: # Testing
       # file://./../modules/javascript/misc/_w32d01/_w32d01.md
       module: javascript/misc/_w32d01/_w32d01.md
-    2: # 
+    2: # Practice Day
       # file://./../modules/javascript/misc/_w32d02/_w32d02.md
       module: javascript/misc/_w32d02/_w32d02.md
     3: # 
