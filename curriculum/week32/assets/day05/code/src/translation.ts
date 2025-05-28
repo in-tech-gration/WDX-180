@@ -1,0 +1,1 @@
+export const priceError = "Wrong price make it a number";

@@ -11,7 +11,7 @@ schedule:
     2: # Practice Day
       # file://./../modules/javascript/misc/_w32d02/_w32d02.md
       module: javascript/misc/_w32d02/_w32d02.md
-    3: # 
+    3: # Testing & Async Mysteries
       # file://./../modules/javascript/misc/_w32d03/_w32d03.md
       module: javascript/misc/_w32d03/_w32d03.md
     4: # 

@@ -25,7 +25,7 @@ title: Week 32 | Testing
 
   </h2>
 
-  <span>Updated: 28/5/2025</span>
+  <span>Updated: 29/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -234,11 +234,11 @@ title: Week 32 | Testing
 
 <hr class="mt-1">
 
-<!-- Week 32 - Day 4 | TBA -->
+<!-- Week 32 - Day 4 | JS Functions & Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 32 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 32 - Day 4</span> | JS Functions & Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -246,7 +246,10 @@ title: Week 32 | Testing
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Take a few minutes to check out [this video](https://www.youtube.com/watch?v=cMt9U6kCWsM){:target="_blank"} about the different types of JS functions
+  and practice by creating at least 2 or 3 examples of your own for each mode.
 
 <!-- Summary -->
 
