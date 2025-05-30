@@ -25,7 +25,7 @@ title: Week 32 | Testing
 
   </h2>
 
-  <span>Updated: 29/5/2025</span>
+  <span>Updated: 30/5/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -263,11 +263,11 @@ title: Week 32 | Testing
 
 <hr class="mt-1">
 
-<!-- Week 32 - Day 5 | TBA -->
+<!-- Week 32 - Day 5 | End-to-End Testing & TDD -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 32 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 32 - Day 5</span> | End-to-End Testing & TDD</h2>
   </summary>
 
 ### Schedule
@@ -280,27 +280,51 @@ title: Week 32 | Testing
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Handling Streams of incoming data in Node.js
+  - **Part 2:** End-to-End Testing and Test Driven Development (TDD)
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day05/code){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day05){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
   **References & Resources:**
 
+    - **Testing:**  
+      - **AAA: Arrange, Act, Assert Pattern**  
+      - **RTL: [getByTestId](https://testing-library.com/docs/queries/bytestid/){:target="_blank"}**  
+      - **ALWAYS BREAK YOUR TESTS AND MAKE SURE THAT THEY FAIL**  
+    - **GitHub: when you are viewing a repo, press the . to go into VSCode Dev mode**  
+    - **Supabase tests:** [https://github.dev/supabase/supabase/tree/master/tests](https://github.dev/supabase/supabase/tree/master/tests){:target="_blank"}  
+    - Screenshot regression testing  
+    - [https://www.cypress.io/](https://www.cypress.io/){:target="_blank"} (Integration/Component/E2E)  
+    - **Nightwatch**  
+    - **Playwright**  
+    - **RTL also supports: [Snapshot Testing](https://radixweb.com/blog/snapshot-testing-in-react-testing-library#What){:target="_blank"}**  
+    - [**Test-Driven-Development (TDD)**](https://en.wikipedia.org/wiki/Test-driven_development){:target="_blank"}  
+      - [**RedGreen Diagram**](https://www.icterra.com/wp-content/uploads/2020/01/Test_01-1.png){:target="_blank"}  
+    - [**FizzBuzz**](https://en.wikipedia.org/wiki/Fizz_buzz){:target="_blank"}
+
+
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - **Research and study the AAA**  
+  - **PRACTICE:**  
+    - Take the node.js file and handle a GET request. When a simple GET request gets in, respond back with a text/html type and send back a simple HTML page with a form (having two input fields, email, password)  
+    - Once you submit the form an HTTP POST request will be made to the server.  
+      - Handle this POST request (almost done for you) and send a message back to the user. You can send them back their own information for confirmation.  
+  - Study and practice based on this article: [**A really simple example of TDD in JavaScript**](https://learnitmyway.com/tdd-example/){:target="_blank"}  
+  - **Try to find and practice on the “99 bottles of beer” song test**  
+    - [**Sandi Metz**](https://sandimetz.com/99bottles-sample-js){:target="_blank"} has some great workshops
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
