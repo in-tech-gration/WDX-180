@@ -1,9 +1,10 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Advanced JavaScript"
+title: "Intro to Databases"
+header_image: week33/intro-to-databases.jpg
 schedule: 
   days:
-    1: # 
+    1: # Introduction to Databases
       # file://./../modules/javascript/misc/_w33d01/_w33d01.md
       module: javascript/misc/_w33d01/_w33d01.md
     2: # 

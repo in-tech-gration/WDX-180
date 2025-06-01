@@ -1,12 +1,14 @@
 ---
-title: Week 33 | Advanced JavaScript
+title: Week 33 | Intro to Databases
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 33-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 33 |</span> Advanced JavaScript
+<h1 id="{{ Week 33-Intro to Databases | slugify }}">
+  <span class="week-prefix">Week 33 |</span> Intro to Databases
 </h1>
+
+<img src="assets/intro-to-databases.jpg" />
 
 <div class="week-controls">
 
@@ -14,7 +16,6 @@ title: Week 33 | Advanced JavaScript
 
   <h2 class="week-controls__previous_week">
 
-    
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 33 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,11 +25,10 @@ title: Week 33 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 1/2/2024</span>
+  <span>Updated: 2/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 33 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -42,17 +42,108 @@ title: Week 33 | Advanced JavaScript
 
 ---
 
-<!-- Week 33 - Day 1 | Study & Practice -->
+<!-- Week 33 - Day 1 | Introduction to Databases -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 33 - Day 1</span> | Study & Practice</h2>
+      <span class="summary-day">Week 33 - Day 1</span> | Introduction to Databases</h2>
   </summary>
 
 ### Schedule
 
-  - **Study & Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** Gravatars and hashes.
+  - **Part 2:** Intro to Relational Databases
+  - **Part 3:** Intro to Relational Databases
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
+
+  - [**A Shelfish Starter Guide to Databases**](https://maggieappleton.com/databases){:target="_blank"}  
+  - Try SQL online (no DB installation on your system required)  
+    - [https://sqlfiddle.com](https://sqlfiddle.com){:target="_blank"} (Select SQLite)  
+    - [https://www.db-fiddle.com](https://www.db-fiddle.com){:target="_blank"} (Select SQLite)  
+  - [SQL at W3Schools](https://www.w3schools.com/sql/default.asp){:target="_blank"}  
+  - [**The School Database as a Spreadsheet**](https://docs.google.com/spreadsheets/d/1DeTyspgfT-38JbufGDw_pV5arDF2UanVJ3qDFIiZmmY/edit?usp=sharing){:target="_blank"}  
+  - [Gravatar](https://gravatar.com/){:target="_blank"}  
+    - [https://docs.gravatar.com/api/avatars/images/](https://docs.gravatar.com/api/avatars/images/){:target="_blank"}  
+    - [https://docs.gravatar.com/api/profiles/](https://docs.gravatar.com/api/profiles/){:target="_blank"}  
+  - Calculate SHA256 using the CLI:  
+    - `echo -n somestring | sha256sum`  
+  - How we store information in a relational database:  
+    - **Find the Entities you need:** Think about the type of data you want to store (think *Entities*, the types of things we want to store: products, movies, students, transactions, accounts, gravatars)  
+      - define Entity: *“a thing with distinct and independent existence.”*  
+    - **Think about the specific properties that describe these Entities**  
+    - **Create Tables for each of these Entities**  
+      - **You have to come up a very specific and precise *Schema*** (aka Shape): boils down to number of columns, name of these columns and the data types (integers, strings)  
+    - **Think and describe the relationship between those Entities**   
+      - One-to-Many, One-to-One, Many-to-Many  
+  - [The SQL ISO Standard](https://en.wikipedia.org/wiki/SQL:2023){:target="_blank"}  
+  - [List of relational database management systems](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems){:target="_blank"}  
+  - [SQL.js](https://sql.js.org/#/){:target="_blank"} (SQLite compiled from C to JS (webassembly))  
+    - [SQLite available data types](https://sqlite.org/datatype3.html){:target="_blank"}  
+    - Cheatsheets:  
+      - [https://vhernando.github.io/sqlite3-cheat-sheet](https://vhernando.github.io/sqlite3-cheat-sheet){:target="_blank"}  
+      - [https://www.sqlitetutorial.net/sqlite-cheat-sheet/](https://www.sqlitetutorial.net/sqlite-cheat-sheet/){:target="_blank"}
+
+<!-- Summary -->
+
+### Exercises
+
+  - Watch and try all the examples in this video: [SQL Tutorial for Beginners \| SQL Crash Course](https://www.youtube.com/watch?v=2kHV2_CXJ38){:target="_blank"}  
+  - Google for examples (real-life) of all the SQL relations (1-1, 1-m, m-m)  
+  - [**https://sqlfiddle.com/**](https://sqlfiddle.com/){:target="_blank"}  
+  - [**https://www.db-fiddle.com/**](https://www.db-fiddle.com/){:target="_blank"}  
+  - **Challenge: add a phone table to the School Database with a 1-1 relation**  
+  - Study this SO thread to learn more about secure DB IDs:  
+    - [Exposing database IDs \- security risk?](https://stackoverflow.com/questions/396164/exposing-database-ids-security-risk){:target="_blank"}  
+  - How to use Gravatar to display users’ avatar on your app based on their email, without exposing their email  
+    - 1) First you have to get the user’s email **(always with consent)**  
+    - 2) Calculate a **special hash** based on their email:  
+      - [https://docs.gravatar.com/api/avatars/hash/](https://docs.gravatar.com/api/avatars/hash/){:target="_blank"}   
+      - [https://www.gravatar.com/avatar/**3b3be63a4c2a439b013787725dfce802**?d=identicon](https://www.gravatar.com/avatar/3b3be63a4c2a439b013787725dfce802?d=identicon){:target="_blank"}  
+      - One-way hash: email => hash  
+      - There’s no way to get the email <= hash (no other way round)  
+      - Guide for [Node.js](https://docs.gravatar.com/api/avatars/node/){:target="_blank"}  
+      - [SHA256 for the Browser](https://www.30secondsofcode.org/js/s/hash-sha-256/){:target="_blank"}  
+  - Study the resources  
+  - Install [SQLite](https://sqlite.org/){:target="_blank"} on your system and explore the [Getting Started](https://sqlite.org/cli.html){:target="_blank"} CLI guide  
+    - Don’t forget: While exploring new technologies, try to be active on Slack!
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 33 - Day 2 | TBA -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 33 - Day 2</span> | TBA</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
@@ -68,18 +159,62 @@ title: Week 33 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 33 - Day 2 | Live Session -->
+<!-- Week 33 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 33 - Day 2</span> | Live Session</h2>
+      <span class="summary-day">Week 33 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Live Session**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by []()_
+
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 33 - Day 4 | TBA -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 33 - Day 4</span> | TBA</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
@@ -95,78 +230,44 @@ title: Week 33 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 33 - Day 3 | Study & Practice -->
+<!-- Week 33 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 33 - Day 3</span> | Study & Practice</h2>
+      <span class="summary-day">Week 33 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Study & Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
 
-<!-- Sources and Attributions -->
-  
-</details>
+  ---
 
-<hr class="mt-1">
 
-<!-- Week 33 - Day 4 | Live Session -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 33 - Day 4</span> | Live Session</h2>
-  </summary>
 
-### Schedule
+  _Photo by []()_
 
-  - **Live Session**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 33 - Day 5 | Study & Practice -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 33 - Day 5</span> | Study & Practice</h2>
-  </summary>
-
-### Schedule
-
-  - **Study & Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -177,3 +278,15 @@ title: Week 33 | Advanced JavaScript
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
