@@ -63,10 +63,6 @@ title: Week 33 | Intro to Databases
   - **Part 2:** Intro to Relational Databases
   - **Part 3:** Intro to Relational Databases
 
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
   **References & Resources:**
 
   - [**A Shelfish Starter Guide to Databases**](https://maggieappleton.com/databases){:target="_blank"}  
