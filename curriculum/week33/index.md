@@ -25,7 +25,7 @@ title: Week 33 | Intro to Databases
 
   </h2>
 
-  <span>Updated: 3/6/2025</span>
+  <span>Updated: 4/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -174,11 +174,11 @@ title: Week 33 | Intro to Databases
 
 <hr class="mt-1">
 
-<!-- Week 33 - Day 3 | TBA -->
+<!-- Week 33 - Day 3 | SQLite -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 33 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 33 - Day 3</span> | SQLite</h2>
   </summary>
 
 ### Schedule
@@ -189,29 +189,63 @@ title: Week 33 | Intro to Databases
 
 ### Study Plan
 
+  ![](./assets/SQLite.jpg)
+
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Relational Databases - A Full stack overview 
+  - **Part 2:** SQLite & The Database Murder Mystery
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture diagrams [here](){:target="_blank"}
 
   **Lecture Notes & Questions:**
 
+  - CLI: `sqlite3`
+    - `.help`
+    - `.quit`
+    - Create a new DB: `sqlite3 test.db`
+
+  **Lecture Questions:**
+
+  - What is the difference between SQL and MySQL?  
+    - **SQL** is the Structured Query Language **standard**  
+    - **MySQL** is a **Database** and a **variation of the SQL**  
+      - **Software + SQL: a DB server that speaks a particular dialect of SQL**  
+    - **SQLite is a Database software and a SQL dialect**  
+    -  **MySQL, SQLite, PostgreSQL, SQL Server are RDBMS**  
+  - What Database should I learn or use?  
+    - Try to stick with either MySQL or **PostgreSQL (through Supabase)**  
+      - *MariaDB is the open source version of MySQL*  
+  - *After I install SQLite on Windows, there’s no sqlite3 or sqlite command available. What’s going on?*  
+    - Check the PATH configuration:   
+      - [https://www.tutorialspoint.com/sqlite/sqlite\_installation.htm](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm){:target="_blank"}  
+      - [https://www.linkedin.com/pulse/part-5-how-install-sqlite-your-machine-windows-linux-mac-julles/](https://www.linkedin.com/pulse/part-5-how-install-sqlite-your-machine-windows-linux-mac-julles/){:target="_blank"}  
+      - [https://stackoverflow.com/a/46042259/4861760](https://stackoverflow.com/a/46042259/4861760){:target="_blank"}
+
   **References & Resources:**
+
+  - Star this repo please: [https://github.com/NUKnightLab/sql-mysteries](https://github.com/NUKnightLab/sql-mysteries){:target="_blank"}  
+  - Some cloud SQL services: [https://gist.github.com/bmaupin/0ce79806467804fdbbf8761970511b8c](https://gist.github.com/bmaupin/0ce79806467804fdbbf8761970511b8c){:target="_blank"}  
+  - VSCode Extension: [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"}  
+  - [Visual JOIN](https://joins.spathon.com/){:target="_blank"}
+  - [DB Browser for SQLite](https://sqlitebrowser.org/){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - Solve the DB Mystery game: [https://in-tech-gration.github.io/database-mysteries/](https://in-tech-gration.github.io/database-mysteries/){:target="_blank"}
 
-  ---
+  - Design the Schema for what your Smartphone’s Contact table looks like and start adding entries and querying. Think how your phone will look up a number when you write the name. SMS => Emily => query => 6912345678 => Send message.   
+
+  - Try: [https://selectstarsql.com/](https://selectstarsql.com/){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
