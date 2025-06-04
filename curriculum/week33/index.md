@@ -25,7 +25,7 @@ title: Week 33 | Intro to Databases
 
   </h2>
 
-  <span>Updated: 4/6/2025</span>
+  <span>Updated: 5/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -253,11 +253,11 @@ title: Week 33 | Intro to Databases
 
 <hr class="mt-1">
 
-<!-- Week 33 - Day 4 | TBA -->
+<!-- Week 33 - Day 4 | SQL Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 33 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 33 - Day 4</span> | SQL Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -265,11 +265,33 @@ title: Week 33 | Intro to Databases
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  ![](./assets/sql.boy.png)
+
+  Time to earn your first SQL certificate!
+
+  Head over to the `Exercises` section below and start
+  the Solo Learn SQL course.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  - Time to earn your first SQL certificate! Try to complete the [Solo Learn SQL intro course](https://www.sololearn.com/en/learn/courses/sql-introduction){:target="_blank"}.
+
+  - Done with SoloLearn? On with [SQLite Tutorial](https://www.tutorialspoint.com/sqlite/index.htm){:target="_blank"}.
+
+  - **SQL Commands**
+
+  ![](./assets/sql-commands.jpg)
+
+  - A nice resource for [SQL](https://www.atlassian.com/data/sql){:target="_blank"} and [SQL joins](https://www.atlassian.com/data/sql/sql-join-types-explained-visually){:target="_blank"} also check [inner join](https://dataschool.com/how-to-teach-people-sql/inner-join-animated/){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d04.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 

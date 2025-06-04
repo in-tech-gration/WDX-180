@@ -10,7 +10,7 @@ schedule:
     2: # More Databases
       # file://./../modules/javascript/misc/_w33d02/_w33d02.md
       module: javascript/misc/_w33d02/_w33d02.md
-    3: # 
+    3: # SQLite
       # file://./../modules/javascript/misc/_w33d03/_w33d03.md
       module: javascript/misc/_w33d03/_w33d03.md
     4: # 
