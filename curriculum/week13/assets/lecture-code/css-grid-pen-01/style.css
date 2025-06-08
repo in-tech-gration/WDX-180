@@ -1,0 +1,9 @@
+html { color-scheme: dark; }
+body { font-size: 2rem; margin: 0; }
+.grid { 
+  outline: 1px solid hotpink;
+  margin: 2rem;
+}
+.item {
+  outline: 1px solid gray;
+}

@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 9/1/2025</span>
+  <span>Updated: 9/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -325,6 +325,23 @@ title: Week 13 | Intermediate JavaScript
   Let's begin by reading about [What is a Software Post-Mortem and How Do You Write One?](https://www.freecodecamp.org/news/what-is-a-software-post-mortem/){:target="_blank"}
 
   After having read the article, open up the code [found here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/post_mortem){:target="_blank"} debug the program and write a short post mortem.
+
+  When you're done, take a short break and move on to the next section, where
+  we switch gears and learn about the all powerful **CSS Grid**.  
+
+  ---
+
+
+
+  **Introduction to CSS Grid**
+
+  ![](./assets/CSS.Grid.png)
+
+  - Watch the lecture [here](){:target="_blank"}.
+
+  - Study the code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/lecture-code){:target="_blank"}
+
+  - Practice on CSS Grid by recreating the layouts depicted in the images found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/css-grid-practice){:target="_blank"}
 
   ---
 

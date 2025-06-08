@@ -18,6 +18,21 @@ title: Advanced CSS
 
   After having read the article, open up the code [found here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/post_mortem){:target="_blank"} debug the program and write a short post mortem.
 
+  When you're done, take a short break and move on to the next section, where
+  we switch gears and learn about the all powerful **CSS Grid**.  
+
+  ---
+
+  **Introduction to CSS Grid**
+
+  ![](./assets/CSS.Grid.png)
+
+  - Watch the lecture [here](){:target="_blank"}.
+
+  - Study the code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/lecture-code){:target="_blank"}
+
+  - Practice on CSS Grid by recreating the layouts depicted in the images found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/css-grid-practice){:target="_blank"}
+
   ---
 
   Next, we are going to explore some pretty useful and cool CSS features (that you probably didn't know exist). Let's go!

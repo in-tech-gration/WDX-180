@@ -1,0 +1,45 @@
+html { color-scheme: dark; }
+body { font-size: 2rem; margin: 0; }
+.grid { 
+  outline: 1px solid hotpink;
+  margin: 2rem;
+  display: grid;
+/*   height: 250px; */
+  width: 1000px;
+  /*   grid-template-rows: row-1-size row-2-size ... */
+  grid-template-rows: 100px 50px;
+  /* For any rows created automatically, set the height to...   */
+  grid-auto-rows: 70px;
+}
+.item {
+  outline: 1px solid gray;
+}
+/* COLUMNS: */
+.grid {
+/*   grid-template-columns: col-1-size col-2-size ... */
+  grid-template-columns: 300px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 200px 400px 100px;
+  grid-template-columns: 200px 200px 200px 200px;
+  /* 1000px => 4 (fractions) => 1000px / 4 => 250px    */
+  /*  1000px => 5 => 1000px / 5 => 200px   */
+  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+/*   grid-template-columns: repeat( number_of_times, size ); */
+  grid-template-columns: 1fr 2fr repeat( 2, 1fr );
+}
+.tic {
+  margin: 1rem auto;
+  outline: 1px solid green;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat( 3, 1fr );
+}
+.tic .item {
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+}
