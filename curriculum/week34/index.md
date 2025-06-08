@@ -1,11 +1,11 @@
 ---
-title: Week 34 | Advanced JavaScript
+title: Week 34 | Mini CMS Project
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 34-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 34 |</span> Advanced JavaScript
+<h1 id="{{ Week 34-Mini CMS Project | slugify }}">
+  <span class="week-prefix">Week 34 |</span> Mini CMS Project
 </h1>
 
 <img src="assets/mini.cms.jpg" />
