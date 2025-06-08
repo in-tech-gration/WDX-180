@@ -65,7 +65,7 @@
   - [**Week 31**: Advanced JavaScript](week31/index.md)
   - [**Week 32**: Testing](week32/index.md)
   - [**Week 33**: Intro to Databases](week33/index.md)
-  - [**Week 34**: Advanced JavaScript](week34/index.md)
+  - [**Week 34**: Mini CMS Project](week34/index.md)
   - [**Week 35**: Advanced JavaScript](week35/index.md)
   - [**Week 36**: Advanced JavaScript](week36/index.md)
   - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_

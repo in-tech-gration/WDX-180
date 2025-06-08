@@ -1,10 +1,10 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Advanced JavaScript"
-# header_image: week34/header.jpg
+title: "Mini CMS Project"
+header_image: week34/mini.cms.jpg
 schedule: 
   days:
-    1: # 
+    1: # Mini CMS - Part 1
       # file://./../modules/javascript/misc/_w34d01/_w34d01.md
       module: javascript/misc/_w34d01/_w34d01.md
     2: # 
