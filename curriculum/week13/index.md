@@ -337,10 +337,8 @@ title: Week 13 | Intermediate JavaScript
 
   ![](./assets/CSS.Grid.png)
 
-  - Watch the lecture [here](){:target="_blank"}.
-
+  - Watch the lecture [here](https://youtu.be/9164u4MbdHo){:target="_blank"}.
   - Study the code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/lecture-code){:target="_blank"}
-
   - Practice on CSS Grid by recreating the layouts depicted in the images found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/css-grid-practice){:target="_blank"}
 
   ---
