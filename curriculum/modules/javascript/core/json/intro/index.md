@@ -15,14 +15,16 @@ title: Introduction to JSON
 
   ---
 
-  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
+  ![](./assets/douglas.crockford.discoverer.of.JSON.png)
 
   <!-- SGEN:META:PROGRESS:task=Read 'Introduction to JSON' -->
   - Read [**Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"} to learn about the world's most popular data format. JSON, which stands for `JavaScript Object Notation`, is a plain text, lightweight data format that can be used across different systems and programming languages.
 
 ### Summary
 
-  🌕 You are extraordinary. You know a light-weight data format which you may use to store data or to send it an HTTP server. Now do some exercises for your brain and for your muscle.
+  🌕 You are extraordinary. You now know about this light-weight data format which you can use to store data or send it to an HTTP server. Now, let's do some exercises for your brain and your muscle.
+
+  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
 
 ### Exercises
 
