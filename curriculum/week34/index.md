@@ -25,7 +25,7 @@ title: Week 34 | Mini CMS Project
 
   </h2>
 
-  <span>Updated: 9/6/2025</span>
+  <span>Updated: 10/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -88,11 +88,11 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 2 | TBA -->
+<!-- Week 34 - Day 2 | System Design -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 34 - Day 2</span> | System Design</h2>
   </summary>
 
 ### Schedule
@@ -100,7 +100,23 @@ title: Week 34 | Mini CMS Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  ![](./assets/system.design.jpg)
+
+  Since we are going to be designing our Database soon, here are two really
+  interesting videos that will walk you through designing a system 
+  (an Instagram-like app in one case, a calendar app in the other). 
+
+  You can learn a lot from this process, such as thinking about the system 
+  from a high level and breaking it up in different modules and deciding 
+  on the Database entities (tables) and Schema (columns and types).
+
+  Enjoy and gain some insights!
+
+  - [Design Instagram: 30'](https://www.youtube.com/watch?v=VJpfO6KdyWE){:target="_blank"} 
+
+  - [Design Calendar Application: 25'](https://www.youtube.com/watch?v=39eAITqeu7g){:target="_blank"}
 
 <!-- Summary -->
 
