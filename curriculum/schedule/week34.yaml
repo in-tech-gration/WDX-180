@@ -7,7 +7,7 @@ schedule:
     1: # Mini CMS - Part 1
       # file://./../modules/javascript/misc/_w34d01/_w34d01.md
       module: javascript/misc/_w34d01/_w34d01.md
-    2: # 
+    2: # System Design
       # file://./../modules/javascript/misc/_w34d02/_w34d02.md
       module: javascript/misc/_w34d02/_w34d02.md
     3: # 

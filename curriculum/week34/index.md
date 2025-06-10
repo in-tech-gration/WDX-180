@@ -25,7 +25,7 @@ title: Week 34 | Mini CMS Project
 
   </h2>
 
-  <span>Updated: 10/6/2025</span>
+  <span>Updated: 11/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -130,11 +130,11 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 3 | TBA -->
+<!-- Week 34 - Day 3 | Object Relational Mapping -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 34 - Day 3</span> | Object Relational Mapping</h2>
   </summary>
 
 ### Schedule
@@ -145,29 +145,42 @@ title: Week 34 | Mini CMS Project
 
 ### Study Plan
 
+  ![](./assets/modular.architecture.jpg)
+
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Databases & ORMs (Object Relational Mapping)
+  - **Part 2:** Modular architecture and creating and populating Database tables with data
 
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/7a20932556ee71cef0efe498161aaadfcb0d2e17){:target="_blank"}
 
   **References & Resources:**
 
+  - [Dark Reader Chrome and Firefox extension](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?authuser=1){:target="_blank"}  
+    - [GitHub](https://github.com/darkreader/darkreader){:target="_blank"}  
+    - [**ORM: Object–relational mapping**](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping){:target="_blank"}  
+      - **Examples of ORMs:**  
+        - [https://sequelize.org/](https://sequelize.org/){:target="_blank"}  
+        - [https://www.npmjs.com/package/sqlite3orm\#selectinsertupdatedelete-using-daos](https://www.npmjs.com/package/sqlite3orm#selectinsertupdatedelete-using-daos){:target="_blank"}  
+        - [https://www.npmjs.com/package/@mikro-orm/better-sqlite](https://www.npmjs.com/package/@mikro-orm/better-sqlite){:target="_blank"}  
+        - [https://github.com/thebinarysearchtree/flyweight](https://github.com/thebinarysearchtree/flyweight){:target="_blank"}  
+    - Modular Architecture  
+      - [Think simple](https://o.quizlet.com/8.9Oa8PTRRKzrhUh-bE8mA_b.jpg){:target="_blank"}  
+      - Google for  “modular architecture”
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - Search for patterns to connect the web server module and the database module  
+  - Study the `sqlite3` API documentation
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week34/progress/progress.draft.w34.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
