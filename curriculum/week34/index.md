@@ -25,7 +25,7 @@ title: Week 34 | Mini CMS Project
 
   </h2>
 
-  <span>Updated: 11/6/2025</span>
+  <span>Updated: 12/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -188,11 +188,11 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 4 | TBA -->
+<!-- Week 34 - Day 4 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 34 - Day 4</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -200,7 +200,11 @@ title: Week 34 | Mini CMS Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Today is practice day. Practice on the topics and coding challenges
+  for the Mini CMS project we are working on and spend some time on MDN
+  and other Internet resources to read more about the technologies involved.
 
 <!-- Summary -->
 
