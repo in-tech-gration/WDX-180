@@ -240,7 +240,7 @@ title: Week 34 | Mini CMS Project
 
   Take this opportunity and try to work on the CMS project (you can find the code to start from [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w34d05/assets){:target="_blank"}) to accomplish the following tasks:
 
-  - Create a new `src/db/basic.ts` file and paste the official `sqlite3` example found here: https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage. We'll just keep the other database-related files aside for now.
+  - Create a new `src/db/basic.ts` file and paste the official `sqlite3` example found here: [https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage](https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage){:target="_blank"}. We'll just keep the other database-related files aside for now.
 
   - Instead of creating a sample `lorem` table, like the example, update the code and create 2 tables that will hold our CMS `Users` and their Blog `Posts`. Make sure that these two tables have a one-to-many relation, where one `User` can create many `Posts`. Make use of the `Primary/Foreign Keys` to connect the two tables and populate then with a few sample users and posts. ChatGPT can help you come up with some sample user names, blog post titles and sample content.
 
