@@ -227,8 +227,6 @@ title: Week 34 | Mini CMS Project
 
 ### Schedule
 
-  - **Watch the lectures**
-  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
