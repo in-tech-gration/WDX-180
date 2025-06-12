@@ -25,7 +25,7 @@ title: Week 34 | Mini CMS Project
 
   </h2>
 
-  <span>Updated: 12/6/2025</span>
+  <span>Updated: 13/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -233,20 +233,77 @@ title: Week 34 | Mini CMS Project
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** 
-  - **Part 2:**
-
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  Let's practice! Skip to the `Exercises` section below for 
+  a guide on what to code today.
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Take this opportunity and try to work on the CMS project (you can find the code to start from [here](){:target="_blank"}) to accomplish the following tasks:
+
+  - Create a new `src/db/basic.ts` file and paste the official `sqlite3` example found here: https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage. We'll just keep the other database-related files aside for now.
+
+  - Instead of creating a sample `lorem` table, like the example, update the code and create 2 tables that will hold our CMS `Users` and their Blog `Posts`. Make sure that these two tables have a one-to-many relation, where one `User` can create many `Posts`. Make use of the `Primary/Foreign Keys` to connect the two tables and populate then with a few sample users and posts. ChatGPT can help you come up with some sample user names, blog post titles and sample content.
+
+  - Think carefully about the Schema of these two tables (column names and value types).
+
+  - Rename `src/index.ts` to `src/web.ts` and create a new file named `src/index.ts`. Find a way to import both the `src/db/basic.ts` and `src/web.ts` into `src/index.ts` and "wire" them up correctly so that the web server starts listening when the database has been initialized and the table creation (CREATE TABLE) and population (INSERT INTO) have completed. You will have to create some functions and of course make use of some callbacks in order to achieve that. 
+
+  - Create another route named `/blog` that will read the contents of the `Posts` table and send the contents back to the user in the form of an HTML page.
+
+  Here is some code to get you started:
+
+  index.mjs:
+
+  ```js
+  import webInit from "./web.mjs";
+  import dbInit from "./db.mjs";
+
+  dbInit( webInit );
+  ```
+
+  web.mjs:
+
+  ```js
+  export default function webInit(db){
+    console.log("Web server initialized!");
+    function listen(){
+      console.log("Table:", db);
+    }
+    listen();
+  }
+  ```
+
+  db.mjs
+
+  ```js
+  export default function dbInit(cb){
+    console.log("Database server initialized!");
+    setTimeout(()=>{
+      console.log("Table ready!");
+      cb({ table: "Users" });
+    },500);
+  }
+  ```
+
+  Run: `node index.mjs`
+
+  Output:
+
+  ```
+  Database server initialized!
+  Table ready!
+  Web server initialized!
+  Table: { table: 'Users' }
+  ```
+
+  That's it!
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week34/progress/progress.draft.w34.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 

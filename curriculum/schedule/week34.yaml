@@ -13,9 +13,9 @@ schedule:
     3: # ORM
       # file://./../modules/javascript/misc/_w34d03/_w34d03.md
       module: javascript/misc/_w34d03/_w34d03.md
-    4: # 
+    4: # Practice Day
       # file://./../modules/javascript/misc/_w34d04/_w34d04.md
       module: javascript/misc/_w34d04/_w34d04.md
-    5: # 
+    5: # Mini CMS Coding
       # file://./../modules/javascript/misc/_w34d05/_w34d05.md
       module: javascript/misc/_w34d05/_w34d05.md
