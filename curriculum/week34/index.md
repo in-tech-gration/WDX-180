@@ -218,11 +218,11 @@ title: Week 34 | Mini CMS Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 5 | TBA -->
+<!-- Week 34 - Day 5 | Mini CMS: Database Connection -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 34 - Day 5</span> | Mini CMS: Database Connection</h2>
   </summary>
 
 ### Schedule
@@ -240,7 +240,7 @@ title: Week 34 | Mini CMS Project
 
 ### Exercises
 
-  Take this opportunity and try to work on the CMS project (you can find the code to start from [here](){:target="_blank"}) to accomplish the following tasks:
+  Take this opportunity and try to work on the CMS project (you can find the code to start from [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/_w34d05/assets){:target="_blank"}) to accomplish the following tasks:
 
   - Create a new `src/db/basic.ts` file and paste the official `sqlite3` example found here: https://github.com/TryGhost/node-sqlite3?tab=readme-ov-file#usage. We'll just keep the other database-related files aside for now.
 
