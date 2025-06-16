@@ -98,23 +98,35 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 2 | TBA -->
+<!-- Week 35 - Day 2 | Mini CMS Project -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 2</span> | TBA</h2>
+      <span class="summary-day">Week 35 - Day 2</span> | Mini CMS Project</h2>
   </summary>
 
 ### Schedule
 
-  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Yesterday, we returned some HTML from the web server (web.ts). This was just a simple template String literal. We can abstract this in a function for better re-usability.
+
+  The web server checks the pathname using a basic if conditional and returns a custom HTML. By adding more paths, this code will become complicated and bloated. Maybe you can think of an abstraction so that the request pathname => appropriate HTML works better than the current implementation.
+
+  Starting from [this code](https://github.com/in-tech-gration/build-a-cms-2024/tree/595a9d765bccd8418c7d20926f7730d4b70e7b64){:target="_blank"} on the CMS repository, (1) create a function that returns the HTML content based on the pathname and some dynamic values. (2) Create an abstraction over the server router: `pathname => load data => render HTML`
+
+  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 

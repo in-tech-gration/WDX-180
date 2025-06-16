@@ -4,7 +4,7 @@ title: "Advanced JavaScript"
 # header_image: week35/header.jpg
 schedule: 
   days:
-    1: # 
+    1: # MiniCMS
       # file://./../modules/javascript/misc/_w35d01/_w35d01.md
       module: javascript/misc/_w35d01/_w35d01.md
     2: # 
