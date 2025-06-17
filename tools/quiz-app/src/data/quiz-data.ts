@@ -1,5 +1,3 @@
-"use client"
-
 import type { QuizDataStructure } from "@/types/quiz"
 
 export const quizData: QuizDataStructure = {

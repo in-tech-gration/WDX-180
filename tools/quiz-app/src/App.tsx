@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-// @ts-expect-error ...
 const metadata = {
   title: "Quiz Master - Test Your Web Development Knowledge",
   description:
