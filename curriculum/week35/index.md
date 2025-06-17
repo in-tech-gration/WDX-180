@@ -136,11 +136,11 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 3 | Mini CMS Project -->
+<!-- Week 35 - Day 3 | Promises -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 3</span> | Mini CMS Project</h2>
+      <span class="summary-day">Week 35 - Day 3</span> | Promises</h2>
   </summary>
 
 ### Schedule
