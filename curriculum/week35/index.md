@@ -25,7 +25,7 @@ title: Week 35 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 16/6/2025</span>
+  <span>Updated: 18/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -136,11 +136,11 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 3 | TBA -->
+<!-- Week 35 - Day 3 | Mini CMS Project -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 35 - Day 3</span> | Mini CMS Project</h2>
   </summary>
 
 ### Schedule
@@ -153,27 +153,29 @@ title: Week 35 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** More about Promises & the Promise Constructor
+  - **Part 2:** Chaining Promises
 
-  You can find the lecture code [here](){:target="_blank"}
-
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promises.js){:target="_blank"} and [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promised.to.answer.questions.js){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - **Study:** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise){:target="_blank"}  
+    - It’s important that you go through the whole document and probably more than once to fully understand the Promise concept.  
+      - Equally important to run all the examples mentioned there and tweak them to experiment with variations to get an even better and deeper understanding.  
+    - Explore number `#11` from the promises.js reference  
+      - Ref: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch){:target="_blank"}  
+      - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all){:target="_blank"}  
+      - Check all the static `Promise.*` methods
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
