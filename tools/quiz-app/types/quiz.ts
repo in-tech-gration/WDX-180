@@ -4,7 +4,7 @@ export interface Question {
   correctAnswer: number
   level: "easy" | "medium" | "hard"
   code?: {
-    language: string
+    language: "javascript" | "html" | "css" | "jsx"
     content: string
   }
 }

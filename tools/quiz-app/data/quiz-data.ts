@@ -26,16 +26,17 @@ export const quizData: QuizDataStructure = {
           level: "medium",
           code: {
             language: "html",
-            content: `<article>
-  <header>
-    <h2>Understanding React Hooks</h2>
-    <p>Published on March 15, 2024</p>
-  </header>
-  <p>React Hooks allow you to use state and other React features...</p>
-  <footer>
-    <p>Tags: React, JavaScript, Web Development</p>
-  </footer>
-</article>`,
+            content: `
+            <article>
+              <header>
+                <h2>Understanding React Hooks</h2>
+                <p>Published on March 15, 2024</p>
+              </header>
+              <p>React Hooks allow you to use state and other React features...</p>
+              <footer>
+                <p>Tags: React, JavaScript, Web Development</p>
+              </footer>
+            </article>`,
           },
         },
         {
@@ -57,18 +58,19 @@ export const quizData: QuizDataStructure = {
           level: "easy",
           code: {
             language: "html",
-            content: `<form>
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
-  
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-  
-  <button type="submit">Sign Up</button>
-</form>`,
+            content: `
+              <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Sign Up</button>
+              </form>`,
           },
         },
         {
@@ -98,25 +100,26 @@ export const quizData: QuizDataStructure = {
           level: "medium",
           code: {
             language: "css",
-            content: `.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  gap: 20px;
-  height: 100vh;
-}
+            content: `
+              .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+                gap: 20px;
+                height: 100vh;
+              }
 
-.header {
-  grid-column: 1 / -1;
-}
+              .header {
+                grid-column: 1 / -1;
+              }
 
-.sidebar {
-  grid-column: 1;
-}
+              .sidebar {
+                grid-column: 1;
+              }
 
-.main {
-  grid-column: 2;
-}`,
+              .main {
+                grid-column: 2;
+              }`,
           },
         },
         {
@@ -149,19 +152,20 @@ export const quizData: QuizDataStructure = {
           level: "medium",
           code: {
             language: "css",
-            content: `.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  gap: 20px;
-}
+            content: `
+              .flex-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 20px;
+              }
 
-.flex-item {
-  padding: 20px;
-  background-color: #3498db;
-  border-radius: 8px;
-}`,
+              .flex-item {
+                padding: 20px;
+                background-color: #3498db;
+                border-radius: 8px;
+              }`,
           },
         },
       ],
@@ -169,7 +173,7 @@ export const quizData: QuizDataStructure = {
   },
   javascript: {
     promises: {
-      title: "JavaScript Promises",
+      title: "Promises",
       description: "Asynchronous programming with Promises",
       questions: [
         {
@@ -190,23 +194,23 @@ export const quizData: QuizDataStructure = {
           level: "hard",
           code: {
             language: "javascript",
-            content: `console.log("Loading...");
+            content: `
+              console.log("Loading...");
+              const fetchData = () => {
+                return new Promise((resolve, reject) => {
+                  setTimeout(() => {
+                    resolve("Success!");
+                  }, 1000);
+                });
+              };
 
-const fetchData = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Success!");
-    }, 1000);
-  });
-};
-
-fetchData()
-  .then(result => {
-    console.log(result);
-  })
-  .catch(error => {
-    console.log("Error occurred");
-  });`,
+              fetchData()
+                .then(result => {
+                  console.log(result);
+                })
+                .catch(error => {
+                  console.log("Error occurred");
+                });`,
           },
         },
         {
@@ -218,7 +222,7 @@ fetchData()
       ],
     },
     arrays: {
-      title: "JavaScript Arrays",
+      title: "Arrays",
       description: "Array methods and manipulation",
       questions: [
         {
@@ -234,17 +238,71 @@ fetchData()
           level: "medium",
           code: {
             language: "javascript",
-            content: `const numbers = [1, 2, 3, 4, 5];
+            content: `
+              const numbers = [1, 2, 3, 4, 5];
 
-const result = numbers
-  .map(num => num * 2)
-  .filter(num => num <= 10);
+              const result = numbers
+                .map(num => num * 2)
+                .filter(num => num <= 10);
 
-console.log(result);`,
+              console.log(result);`,
           },
         },
       ],
     },
+    hoisting: {
+      title: "Hoisting",
+      description: "",
+      questions: [
+        {
+          question: "Question: What is the purpose of hoisting in JavaScript?",
+          options: [
+            "Enhancing code readability",
+            "Optimizing code execution",
+            "Handling variable and function declarations before code execution"
+          ],
+          correctAnswer: 2,
+          level: "medium",
+        },
+        {
+          question: "",
+          options: [
+            "",
+            "",
+            ""
+          ],
+          correctAnswer: -1,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: ``,
+          }
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined, 30, 25",
+            "25, 30, 25",
+            "25, undefined, 30"
+          ],
+          correctAnswer: 0,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              var m = 25;
+              function demo() {
+                console.log(m);
+                var m = 30;
+                console.log(m);
+              }
+              demo();
+              console.log(m);
+            `,
+          }
+        },
+      ]
+    }
   },
   react: {
     hooks: {
@@ -265,29 +323,31 @@ console.log(result);`,
             "The count will reset to 0",
             "Nothing will happen",
           ],
-          correctAnswer: 1,
+          correctAnswer: 0,
           level: "medium",
           code: {
             language: "jsx",
-            content: `import React, { useState } from 'react';
+            content: `
+            
+              import React, { useState } from 'react';
 
-function Counter() {
-  const [count, setCount] = useState(0);
+              function Counter() {
+                const [count, setCount] = useState(0);
 
-  const handleClick = () => {
-    setCount(count + 1);
-    setCount(count + 1);
-  };
+                const handleClick = () => {
+                  setCount(prevCount => prevCount + 1);
+                  setCount(prevCount => prevCount + 1);
+                };
 
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={handleClick}>
-        Increment
-      </button>
-    </div>
-  );
-}`,
+                return (
+                  <div>
+                    <p>Count: {count}</p>
+                    <button onClick={handleClick}>
+                      Increment
+                    </button>
+                  </div>
+                );
+              }`,
           },
         },
         {
@@ -320,26 +380,27 @@ function Counter() {
           level: "easy",
           code: {
             language: "jsx",
-            content: `function Parent() {
-  const message = "Hello from parent!";
-  const user = { name: "John", age: 25 };
+            content: `
+              function Parent() {
+                const message = "Hello from parent!";
+                const user = { name: "John", age: 25 };
 
-  return (
-    <div>
-      <Child greeting={message} userInfo={user} />
-    </div>
-  );
-}
+                return (
+                  <div>
+                    <Child greeting={message} userInfo={user} />
+                  </div>
+                );
+              }
 
-function Child({ greeting, userInfo }) {
-  return (
-    <div>
-      <h1>{greeting}</h1>
-      <p>Name: {userInfo.name}</p>
-      <p>Age: {userInfo.age}</p>
-    </div>
-  );
-}`,
+              function Child({ greeting, userInfo }) {
+                return (
+                  <div>
+                    <h1>{greeting}</h1>
+                    <p>Name: {userInfo.name}</p>
+                    <p>Age: {userInfo.age}</p>
+                  </div>
+                );
+              }`,
           },
         },
       ],

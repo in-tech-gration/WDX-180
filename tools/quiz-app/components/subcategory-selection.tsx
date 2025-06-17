@@ -10,7 +10,7 @@ import { quizData } from "@/data/quiz-data"
 import { getQuizHistoryForTopic } from "@/utils/quiz-storage"
 import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
-import type { QuizHistory } from "@/types/quiz"
+import type { Question, QuizHistory } from "@/types/quiz"
 
 interface SubcategorySelectionProps {
   category: string
@@ -19,6 +19,7 @@ interface SubcategorySelectionProps {
 }
 
 export default function SubcategorySelection({ category, onSelectSubcategory, onBack }: SubcategorySelectionProps) {
+
   const { t } = useTranslation()
   const subcategories = quizData[category] || {}
   const [quizHistories, setQuizHistories] = useState<Record<string, QuizHistory | null>>({})
@@ -32,7 +33,8 @@ export default function SubcategorySelection({ category, onSelectSubcategory, on
     setQuizHistories(histories)
   }, [category, subcategories])
 
-  const getDominantDifficulty = (questions: any[]) => {
+  const getDominantDifficulty = (questions: Question[]) => {
+
     const counts = { easy: 0, medium: 0, hard: 0 }
     questions.forEach((q) => counts[q.level]++)
 
@@ -99,7 +101,10 @@ export default function SubcategorySelection({ category, onSelectSubcategory, on
               >
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
-                    <CardTitle className="text-lg flex-1">{t(`quiz.${category}.${subcategoryKey}.title`)}</CardTitle>
+                    <CardTitle className="text-lg flex-1">
+                      {quizData[category][subcategoryKey].title}
+                      {/* {t(`quiz.${category}.${subcategoryKey}.title`)} */}
+                    </CardTitle>
                     <Badge variant={getDifficultyColor(dominantDifficulty)} className="ml-2 capitalize">
                       {t(`common.${dominantDifficulty}`)}
                     </Badge>
@@ -107,7 +112,8 @@ export default function SubcategorySelection({ category, onSelectSubcategory, on
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    {t(`quiz.${category}.${subcategoryKey}.description`)}
+                    {quizData[category][subcategoryKey].description}
+                    {/* {t(`quiz.${category}.${subcategoryKey}.description`)} */}
                   </p>
 
                   <div className="space-y-3">
@@ -142,13 +148,12 @@ export default function SubcategorySelection({ category, onSelectSubcategory, on
                         <div className="flex justify-between items-center text-sm">
                           <span className="text-gray-600 dark:text-gray-300">{t("subcategory.successRate")}</span>
                           <span
-                            className={`font-medium ${
-                              successRate >= 80
-                                ? "text-green-600 dark:text-green-400"
-                                : successRate >= 60
-                                  ? "text-yellow-600 dark:text-yellow-400"
-                                  : "text-red-600 dark:text-red-400"
-                            }`}
+                            className={`font-medium ${successRate >= 80
+                              ? "text-green-600 dark:text-green-400"
+                              : successRate >= 60
+                                ? "text-yellow-600 dark:text-yellow-400"
+                                : "text-red-600 dark:text-red-400"
+                              }`}
                           >
                             {successRate}%
                           </span>

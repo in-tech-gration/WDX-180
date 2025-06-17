@@ -1,8 +1,19 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Copy, Check } from "lucide-react"
+import Prism from "prismjs"
+import { trimContent } from "@/utils/utils"
+
+// Import Prism themes and languages
+import "prismjs/themes/prism-tomorrow.css"
+import "prismjs/components/prism-markup"
+import "prismjs/components/prism-css"
+import "prismjs/components/prism-javascript"
+import "prismjs/components/prism-jsx"
+import "prismjs/components/prism-typescript"
+import "prismjs/components/prism-tsx"
 
 interface CodeBlockProps {
   language: string
@@ -11,6 +22,7 @@ interface CodeBlockProps {
 
 export default function CodeBlock({ language, content }: CodeBlockProps) {
   const [copied, setCopied] = useState(false)
+  const codeRef = useRef<HTMLElement>(null)
 
   const handleCopy = async () => {
     try {
@@ -25,6 +37,7 @@ export default function CodeBlock({ language, content }: CodeBlockProps) {
   const getLanguageColor = (lang: string) => {
     switch (lang.toLowerCase()) {
       case "html":
+      case "markup":
         return "text-orange-600 dark:text-orange-400"
       case "css":
         return "text-blue-600 dark:text-blue-400"
@@ -33,94 +46,37 @@ export default function CodeBlock({ language, content }: CodeBlockProps) {
         return "text-yellow-600 dark:text-yellow-400"
       case "jsx":
       case "tsx":
+      case "typescript":
         return "text-cyan-600 dark:text-cyan-400"
       default:
         return "text-gray-600 dark:text-gray-400"
     }
   }
 
-  const highlightCode = (code: string, lang: string) => {
-    let highlighted = code
-
-    if (lang === "html") {
-      // HTML tags
-      highlighted = highlighted.replace(
-        /(&lt;\/?)([a-zA-Z][a-zA-Z0-9]*)(.*?)(&gt;)/g,
-        '<span class="text-blue-600 dark:text-blue-400">$1$2</span><span class="text-green-600 dark:text-green-400">$3</span><span class="text-blue-600 dark:text-blue-400">$4</span>',
-      )
-      // Attributes
-      highlighted = highlighted.replace(
-        /(\w+)=("[^"]*")/g,
-        '<span class="text-purple-600 dark:text-purple-400">$1</span>=<span class="text-green-600 dark:text-green-400">$2</span>',
-      )
-    } else if (lang === "css") {
-      // CSS selectors
-      highlighted = highlighted.replace(
-        /^([.#]?[a-zA-Z-]+)(\s*{)/gm,
-        '<span class="text-blue-600 dark:text-blue-400">$1</span>$2',
-      )
-      // CSS properties
-      highlighted = highlighted.replace(
-        /(\s+)([a-zA-Z-]+)(:)/g,
-        '$1<span class="text-purple-600 dark:text-purple-400">$2</span>$3',
-      )
-      // CSS values
-      highlighted = highlighted.replace(
-        /(:\s*)([^;]+)(;)/g,
-        '$1<span class="text-green-600 dark:text-green-400">$2</span>$3',
-      )
-    } else if (lang === "javascript" || lang === "js" || lang === "jsx" || lang === "tsx") {
-      // Keywords
-      highlighted = highlighted.replace(
-        /\b(const|let|var|function|return|if|else|for|while|class|import|export|from|default|async|await|try|catch|finally|throw|new|this|super|extends|static|public|private|protected)\b/g,
-        '<span class="text-purple-600 dark:text-purple-400">$1</span>',
-      )
-
-      // React/JSX specific
-      highlighted = highlighted.replace(
-        /\b(useState|useEffect|useContext|useReducer|useCallback|useMemo|useRef|React|Component|Fragment)\b/g,
-        '<span class="text-cyan-600 dark:text-cyan-400">$1</span>',
-      )
-
-      // Strings (handle both single and double quotes)
-      highlighted = highlighted.replace(
-        /(['"`])((?:(?!\1)[^\\]|\\.)*)(\1)/g,
-        '<span class="text-green-600 dark:text-green-400">$1$2$3</span>',
-      )
-
-      // Numbers
-      highlighted = highlighted.replace(
-        /\b(\d+\.?\d*)\b/g,
-        '<span class="text-orange-600 dark:text-orange-400">$1</span>',
-      )
-
-      // Comments (single line)
-      highlighted = highlighted.replace(/(\/\/.*$)/gm, '<span class="text-gray-500 dark:text-gray-400">$1</span>')
-
-      // Comments (multi-line)
-      highlighted = highlighted.replace(
-        /(\/\*[\s\S]*?\*\/)/g,
-        '<span class="text-gray-500 dark:text-gray-400">$1</span>',
-      )
-
-      // Method calls
-      highlighted = highlighted.replace(
-        /\.([a-zA-Z_$][a-zA-Z0-9_$]*)\(/g,
-        '.<span class="text-blue-600 dark:text-blue-400">$1</span>(',
-      )
-
-      // Console methods
-      highlighted = highlighted.replace(/\b(console)\./g, '<span class="text-red-600 dark:text-red-400">$1</span>.')
-
-      // Boolean values
-      highlighted = highlighted.replace(
-        /\b(true|false|null|undefined)\b/g,
-        '<span class="text-orange-600 dark:text-orange-400">$1</span>',
-      )
+  const getPrismLanguage = (lang: string) => {
+    switch (lang.toLowerCase()) {
+      case "html":
+        return "markup"
+      case "js":
+        return "javascript"
+      default:
+        return lang.toLowerCase()
     }
-
-    return highlighted
   }
+
+  useEffect(() => {
+    if (codeRef.current) {
+      // Set the language class for Prism
+      const prismLang = getPrismLanguage(language)
+      codeRef.current.className = `language-${prismLang}`
+      codeRef.current.textContent = trimContent(content);
+
+      // Highlight the code
+      Prism.highlightElement(codeRef.current)
+    }
+  }, [content, language]);
+
+  const trimmedContent = trimContent(content);
 
   return (
     <div className="relative bg-gray-900 dark:bg-gray-950 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
@@ -134,14 +90,11 @@ export default function CodeBlock({ language, content }: CodeBlockProps) {
 
       {/* Code Content */}
       <div className="p-4 overflow-x-auto">
-        <pre className="text-sm text-gray-100 dark:text-gray-200 font-mono leading-relaxed">
-          <code
-            dangerouslySetInnerHTML={{
-              __html: highlightCode(content.replace(/</g, "&lt;").replace(/>/g, "&gt;"), language),
-            }}
-          />
+        <pre className="text-sm font-mono leading-relaxed !bg-transparent !m-0">
+          <code ref={codeRef} className={`language-${getPrismLanguage(language)} !bg-transparent`}>{trimmedContent}</code>
         </pre>
       </div>
+
     </div>
   )
 }

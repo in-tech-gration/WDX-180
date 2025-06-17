@@ -31,7 +31,7 @@ export default function SplashScreen({ onStart }: SplashScreenProps) {
             <p className="text-gray-600 dark:text-gray-300 mb-6">{t("splash.subtitle")}</p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 mb-8">
+          {/* <div className="grid grid-cols-2 gap-4 mb-8">
             <div className="flex flex-col items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
               <Code className="h-8 w-8 text-green-600 dark:text-green-400 mb-2" />
               <span className="text-sm font-medium">{t("splash.multipleTopics")}</span>
@@ -40,11 +40,11 @@ export default function SplashScreen({ onStart }: SplashScreenProps) {
               <Zap className="h-8 w-8 text-yellow-600 dark:text-yellow-400 mb-2" />
               <span className="text-sm font-medium">{t("splash.quickFun")}</span>
             </div>
-          </div>
+          </div> */}
 
           <Button
             onClick={onStart}
-            className="w-full text-lg py-6 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600"
+            className="w-full text-lg py-6 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 dark:text-white"
           >
             {t("splash.startQuiz")}
           </Button>

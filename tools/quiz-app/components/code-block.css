@@ -1,0 +1,133 @@
+/* Custom CSS to override Prism theme colors for better dark mode support */
+:global(.token.comment),
+:global(.token.prolog),
+:global(.token.doctype),
+:global(.token.cdata) {
+  color: #6b7280 !important;
+}
+
+:global(.token.punctuation) {
+  color: #9ca3af !important;
+}
+
+:global(.token.property),
+:global(.token.tag),
+:global(.token.boolean),
+:global(.token.number),
+:global(.token.constant),
+:global(.token.symbol),
+:global(.token.deleted) {
+  color: #f97316 !important;
+}
+
+:global(.token.selector),
+:global(.token.attr-name),
+:global(.token.string),
+:global(.token.char),
+:global(.token.builtin),
+:global(.token.inserted) {
+  color: #10b981 !important;
+}
+
+:global(.token.operator),
+:global(.token.entity),
+:global(.token.url),
+:global(.language-css .token.string),
+:global(.style .token.string) {
+  color: #06b6d4 !important;
+}
+
+:global(.token.atrule),
+:global(.token.attr-value),
+:global(.token.keyword) {
+  color: #8b5cf6 !important;
+}
+
+:global(.token.function),
+:global(.token.class-name) {
+  color: #3b82f6 !important;
+}
+
+:global(.token.regex),
+:global(.token.important),
+:global(.token.variable) {
+  color: #ef4444 !important;
+}
+
+/* React/JSX specific tokens */
+:global(.token.script) {
+  color: #e5e7eb !important;
+}
+
+:global(.token.script .token.keyword) {
+  color: #8b5cf6 !important;
+}
+
+/* HTML attribute highlighting */
+:global(.token.attr-name) {
+  color: #f59e0b !important;
+}
+
+:global(.token.attr-value) {
+  color: #10b981 !important;
+}
+
+/* CSS property and value highlighting */
+:global(.language-css .token.property) {
+  color: #8b5cf6 !important;
+}
+
+:global(.language-css .token.string),
+:global(.language-css .token.url) {
+  color: #10b981 !important;
+}
+
+/* JavaScript/JSX specific */
+:global(.language-javascript .token.keyword),
+:global(.language-jsx .token.keyword) {
+  color: #8b5cf6 !important;
+}
+
+:global(.language-javascript .token.function),
+:global(.language-jsx .token.function) {
+  color: #3b82f6 !important;
+}
+
+:global(.language-javascript .token.string),
+:global(.language-jsx .token.string) {
+  color: #10b981 !important;
+}
+
+:global(.language-javascript .token.number),
+:global(.language-jsx .token.number) {
+  color: #f97316 !important;
+}
+
+:global(.language-javascript .token.boolean),
+:global(.language-jsx .token.boolean) {
+  color: #f97316 !important;
+}
+
+/* JSX tag highlighting */
+:global(.language-jsx .token.tag .token.tag) {
+  color: #06b6d4 !important;
+}
+
+:global(.language-jsx .token.tag .token.punctuation) {
+  color: #06b6d4 !important;
+}
+
+/* TypeScript/TSX */
+:global(.language-typescript .token.keyword),
+:global(.language-tsx .token.keyword) {
+  color: #8b5cf6 !important;
+}
+
+:global(.language-tsx .token.tag .token.tag) {
+  color: #06b6d4 !important;
+}
+
+/* Console highlighting */
+:global(.token.console) {
+  color: #ef4444 !important;
+}

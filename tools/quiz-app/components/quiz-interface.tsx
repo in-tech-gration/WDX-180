@@ -208,6 +208,7 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
+        
       </div>
     </div>
   )

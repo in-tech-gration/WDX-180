@@ -57,3 +57,45 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Prism.js theme overrides for better integration */
+pre[class*="language-"] {
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+code[class*="language-"] {
+  background: transparent !important;
+  color: #e5e7eb !important;
+  font-family: "Fira Code", "Monaco", "Cascadia Code", "Roboto Mono", monospace !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Ensure code blocks don't have conflicting styles */
+.code-block pre {
+  background: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Custom scrollbar for code blocks */
+.code-block pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.code-block pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.code-block pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.code-block pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
