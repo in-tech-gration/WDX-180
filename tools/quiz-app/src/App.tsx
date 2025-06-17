@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
+// @ts-expect-error ...
 const metadata = {
   title: "Quiz Master - Test Your Web Development Knowledge",
   description:
@@ -8,16 +9,16 @@ const metadata = {
 }
 
 import { useState, useEffect } from "react"
-import { ThemeProvider } from "./components/theme-provider"
-import { I18nProvider } from "./components/i18n-provider"
-import SplashScreen from "./components/splash-screen"
-import CategorySelection from "./components/category-selection"
-import SubcategorySelection from "./components/subcategory-selection"
-import QuizInterface from "./components/quiz-interface"
-import ResultsScreen from "./components/results-screen"
+import { ThemeProvider } from "@/components/theme-provider"
+import { I18nProvider } from "@/components/i18n-provider"
+import SplashScreen from "@/components/splash-screen"
+import CategorySelection from "@/components/category-selection"
+import SubcategorySelection from "@/components/subcategory-selection"
+import QuizInterface from "@/components/quiz-interface"
+import ResultsScreen from "@/components/results-screen"
 import type { QuizData, QuizProgress, QuizResult } from "./types/quiz"
 import { quizData } from "./data/quiz-data"
-import { updateQuizProgress, updateQuizResult } from "./utils/quiz-storage"
+import { updateQuizProgress, updateQuizResult } from "@/utils/quiz-storage"
 // FIREBASE:
 import { initializeApp } from "firebase/app";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
@@ -25,7 +26,7 @@ import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { firebaseConfig } from "./firebase.config.ts";
-import LoginBlock from "./components/login-block";
+import LoginBlock from "@/components/login-block";
 // import ThemeToggle from "./components/theme-toggle"
 
 // Your web app's Firebase configuration

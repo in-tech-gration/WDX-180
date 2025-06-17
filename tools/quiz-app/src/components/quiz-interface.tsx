@@ -164,7 +164,7 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
 
             {/* Question buttons */}
             <div className="relative flex justify-start md:justify-between flex-wrap">
-              {quiz.questions.map((question, index) => (
+              {quiz.questions.map((_question, index) => (
                 <button
                   key={index}
                   onClick={() => handleQuestionJump(index)}
