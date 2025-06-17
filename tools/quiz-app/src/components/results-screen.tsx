@@ -1,12 +1,10 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Progress } from "@/components/ui/progress"
+import { Button } from "../components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
+import { Badge } from "../components/ui/badge"
+import { Progress } from "../components/ui/progress"
 import { Trophy, RotateCcw, Home, CheckCircle, XCircle } from "lucide-react"
 import { useTranslation } from "react-i18next"
-import type { QuizResult } from "@/types/quiz"
+import type { QuizResult } from "../types/quiz"
 import { useWindowSize } from "react-use";
 import Confetti from "react-confetti";
 

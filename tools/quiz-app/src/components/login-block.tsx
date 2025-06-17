@@ -1,9 +1,11 @@
-"use client"
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-import { FormEvent, useRef } from "react"
-import { Card, CardContent } from "@/components/ui/card"
+import { useRef } from "react"
+import type { FormEvent } from "react"
+import { Card, CardContent } from "../components/ui/card"
 import { useTranslation } from "react-i18next"
-import { signInWithEmailAndPassword, Auth } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import type { Auth } from "firebase/auth";
 
 export default function LoginBlock({ auth }: { auth: Auth }) {
 

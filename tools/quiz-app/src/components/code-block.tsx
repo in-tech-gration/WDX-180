@@ -1,10 +1,8 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 import { Copy, Check } from "lucide-react"
 import Prism from "prismjs"
-import { trimContent } from "@/utils/utils"
+import { trimContent } from "../utils/utils"
 
 // Import Prism themes and languages
 import "prismjs/themes/prism-tomorrow.css"

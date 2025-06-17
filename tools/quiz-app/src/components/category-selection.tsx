@@ -1,11 +1,9 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "../components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { ArrowLeft, Code, Palette, Zap, Component } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { quizData } from "../data/quiz-data";
-import { Category } from "@/types/quiz"
+import type { Category } from "../types/quiz"
 
 interface CategorySelectionProps {
   onSelectCategory: (category: string) => void

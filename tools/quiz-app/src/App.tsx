@@ -1,25 +1,32 @@
-"use client"
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+const metadata = {
+  title: "Quiz Master - Test Your Web Development Knowledge",
+  description:
+    "Interactive quiz app for HTML, CSS, JavaScript, and React. Test your skills with multiple choice questions across different difficulty levels.",
+    generator: 'v0.dev'
+}
 
 import { useState, useEffect } from "react"
-import { ThemeProvider } from "@/components/theme-provider"
-import { I18nProvider } from "@/components/i18n-provider"
-import SplashScreen from "@/components/splash-screen"
-import CategorySelection from "@/components/category-selection"
-import SubcategorySelection from "@/components/subcategory-selection"
-import QuizInterface from "@/components/quiz-interface"
-import ResultsScreen from "@/components/results-screen"
-import type { QuizData, QuizProgress, QuizResult } from "@/types/quiz"
-import { quizData } from "@/data/quiz-data"
-import { updateQuizProgress, updateQuizResult } from "@/utils/quiz-storage"
+import { ThemeProvider } from "./components/theme-provider"
+import { I18nProvider } from "./components/i18n-provider"
+import SplashScreen from "./components/splash-screen"
+import CategorySelection from "./components/category-selection"
+import SubcategorySelection from "./components/subcategory-selection"
+import QuizInterface from "./components/quiz-interface"
+import ResultsScreen from "./components/results-screen"
+import type { QuizData, QuizProgress, QuizResult } from "./types/quiz"
+import { quizData } from "./data/quiz-data"
+import { updateQuizProgress, updateQuizResult } from "./utils/quiz-storage"
 // FIREBASE:
 import { initializeApp } from "firebase/app";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { firebaseConfig } from "../firebase.config";
-import LoginBlock from "../components/login-block";
-import ThemeToggle from "@/components/theme-toggle"
+import { firebaseConfig } from "./firebase.config.ts";
+import LoginBlock from "./components/login-block";
+// import ThemeToggle from "./components/theme-toggle"
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -53,7 +60,7 @@ export default function Home() {
       setCurrentQuiz(quizData[progress.category]?.[progress.subcategory])
       setAppState("quiz")
     }
-  }, [])
+  }, []);
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category)
@@ -130,10 +137,9 @@ export default function Home() {
   }, []);
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
+    <ThemeProvider defaultTheme="system" >
       <I18nProvider>
         <div className="min-h-screen bg-background text-foreground">
-
           <div className="max-w-4xl m-auto justify-between py-2 flex flex-col sm:flex-row gap-2 sm:gap-8">
 
             {isLoggedIn && (
@@ -148,7 +154,7 @@ export default function Home() {
                   Logout
                 </button>
               )}
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
             </div>
 
           </div>

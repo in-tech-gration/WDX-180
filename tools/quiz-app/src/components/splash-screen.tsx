@@ -1,7 +1,5 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "../components/ui/button"
+import { Card, CardContent } from "../components/ui/card"
 import { Brain, Code, Zap } from "lucide-react"
 import { useTranslation } from "react-i18next"
 
