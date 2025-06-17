@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, FormEvent, useRef } from "react"
+import { useState, useEffect } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { I18nProvider } from "@/components/i18n-provider"
 import SplashScreen from "@/components/splash-screen"
@@ -13,11 +13,13 @@ import { quizData } from "@/data/quiz-data"
 import { updateQuizProgress, updateQuizResult } from "@/utils/quiz-storage"
 // FIREBASE:
 import { initializeApp } from "firebase/app";
-import { getAuth, signOut, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { firebaseConfig } from "../firebase.config";
+import LoginBlock from "../components/login-block";
+import ThemeToggle from "@/components/theme-toggle"
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -39,7 +41,6 @@ export default function Home() {
   const [quizResult, setQuizResult] = useState<QuizResult | null>(null)
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState<{ userEmail: string } | null>(null);
-  const form = useRef<HTMLFormElement | null>(null);
 
   // Load saved progress from localStorage
   useEffect(() => {
@@ -99,29 +100,6 @@ export default function Home() {
     localStorage.removeItem("quiz-progress")
   }
 
-  function login(event: FormEvent<HTMLFormElement>) {
-
-    event.preventDefault();
-    const email = form.current?.email.value;
-    const password = form.current?.password.value;
-    const hasEmailAndPassword = email && password;
-
-    if (!hasEmailAndPassword) {
-      return false;
-    }
-
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        // console.log('User signed in:', user.email);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-      });
-  }
-
   function logout() {
 
     signOut(auth).then(() => {
@@ -156,22 +134,12 @@ export default function Home() {
       <I18nProvider>
         <div className="min-h-screen bg-background text-foreground">
 
+          <div className="absolute top-4 right-4">
+            <ThemeToggle />
+          </div>
+
           {!isLoggedIn && (
-            <div className="flex items-center justify-center p-4">
-              <form ref={form} onSubmit={login} className="max-w-md">
-                <p>
-                  <label htmlFor="">
-                    <input name="email" type="text" placeholder="email" className="p-2" defaultValue="" />
-                  </label>
-                </p>
-                <p>
-                  <label htmlFor="">
-                    <input name="password" type="text" placeholder="password" className="p-2" defaultValue="" />
-                  </label>
-                </p>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Login</button>
-              </form>
-            </div>
+            <LoginBlock auth={auth} />
           )}
 
           {isLoggedIn && (

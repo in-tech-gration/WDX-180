@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Brain, Code, Zap } from "lucide-react"
-import ThemeToggle from "./theme-toggle"
 import { useTranslation } from "react-i18next"
 
 interface SplashScreenProps {
@@ -15,9 +14,6 @@ export default function SplashScreen({ onStart }: SplashScreenProps) {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
-      <div className="absolute top-4 right-4">
-        <ThemeToggle />
-      </div>
 
       <Card className="w-full max-w-md text-center shadow-xl">
         <CardContent className="p-8">
