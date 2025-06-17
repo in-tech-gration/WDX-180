@@ -5,5 +5,10 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "quiz-app",
+  build: {
+    outDir: "../../quiz-app/",
+    emptyOutDir: true
+  },
   plugins: [react(), tailwindcss(), tsconfigPaths()],
 })
