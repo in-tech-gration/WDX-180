@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  distDir: "v1",
+  distDir: "../../_site/v1/",
   eslint: {
     ignoreDuringBuilds: true,
   },
