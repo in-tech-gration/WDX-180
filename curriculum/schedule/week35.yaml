@@ -7,7 +7,7 @@ schedule:
     1: # MiniCMS
       # file://./../modules/javascript/misc/_w35d01/_w35d01.md
       module: javascript/misc/_w35d01/_w35d01.md
-    2: # 
+    2: # MiniCMS
       # file://./../modules/javascript/misc/_w35d02/_w35d02.md
       module: javascript/misc/_w35d02/_w35d02.md
     3: # 

@@ -5,7 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "quiz-app",
+  base: "WDX-180/quiz-app",
   build: {
     outDir: "../../quiz-app/",
     emptyOutDir: true
