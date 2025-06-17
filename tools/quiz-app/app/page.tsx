@@ -134,15 +134,15 @@ export default function Home() {
       <I18nProvider>
         <div className="min-h-screen bg-background text-foreground">
 
-          <div className="max-w-4xl m-auto justify-between py-2 flex gap-8">
+          <div className="max-w-4xl m-auto justify-between py-2 flex flex-col sm:flex-row gap-2 sm:gap-8">
 
             {isLoggedIn && (
-              <div className="flex items-center justify-center gap-8">
+              <div className="flex items-center justify-center gap-8 pl-4">
                 <p>Logged in: <span className="font-bold">{currentUser?.userEmail}</span></p>
               </div>
             )}
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-between px-4">
               {isLoggedIn && (
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded-full" onClick={logout}>
                   Logout

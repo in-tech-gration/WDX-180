@@ -92,15 +92,14 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-col sm:flex-row">
             <Button variant="ghost" onClick={onBack} className="flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
               {t("quiz.backToTopics")}
             </Button>
             <div className="flex items-center gap-2">
               <h1 className="text-xl font-bold capitalize">
-                {t(`category.${currentProgress.category}.name`)} -{" "}
-                {t(`quiz.${currentProgress.category}.${currentProgress.subcategory}.title`)}
+                {t(`category.${currentProgress.category}.name`)} -{" "} {quiz.title}
               </h1>
               <Badge
                 variant={
@@ -148,7 +147,7 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
                 <Button
                   key={index}
                   variant={currentProgress.answers[currentProgress.currentQuestion] === index ? "default" : "outline"}
-                  className="w-full text-left justify-start h-auto p-4 dark:text-white text-lg"
+                  className="w-full text-left justify-start h-auto p-4 dark:text-white text-lg whitespace-normal"
                   onClick={() => handleAnswerSelect(index)}
                 >
                   <span className="mr-3 font-bold">{String.fromCharCode(65 + index)}.</span>
@@ -163,10 +162,10 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
         <div className="mb-6">
           <div className="relative">
             {/* Background line */}
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-gray-300 via-gray-400 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600 transform -translate-y-1/2"></div>
+            <div className="absolute hidden md:block top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-gray-300 via-gray-400 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600 transform -translate-y-1/2"></div>
 
             {/* Question buttons */}
-            <div className="relative flex justify-between">
+            <div className="relative flex justify-start md:justify-between flex-wrap">
               {quiz.questions.map((question, index) => (
                 <button
                   key={index}

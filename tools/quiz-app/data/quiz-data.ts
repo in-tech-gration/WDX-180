@@ -5,7 +5,7 @@ import type { QuizDataStructure } from "@/types/quiz"
 export const quizData: QuizDataStructure = {
   html: {
     semantic: {
-      title: "HTML Semantic Elements",
+      title: "Semantic Elements",
       disabled: true,
       description: "Test your knowledge of semantic HTML elements",
       questions: [
@@ -49,7 +49,7 @@ export const quizData: QuizDataStructure = {
       ],
     },
     forms: {
-      title: "HTML Forms",
+      title: "Forms",
       disabled: true,
       description: "Learn about HTML form elements and attributes",
       questions: [
@@ -87,7 +87,7 @@ export const quizData: QuizDataStructure = {
   css: {
     grid: {
       disabled: true,
-      title: "CSS Grid Layout",
+      title: "CSS Grid",
       description: "Master CSS Grid layout system",
       questions: [
         {
@@ -134,7 +134,7 @@ export const quizData: QuizDataStructure = {
       ],
     },
     flexbox: {
-      title: "CSS Flexbox",
+      title: "Flexbox",
       disabled: true,
       description: "Understanding flexible box layout",
       questions: [
@@ -275,7 +275,8 @@ export const quizData: QuizDataStructure = {
           options: [
             "let",
             "const",
-            "both"
+            "both",
+            "none",
           ],
           correctAnswer: 2,
           level: "medium",
