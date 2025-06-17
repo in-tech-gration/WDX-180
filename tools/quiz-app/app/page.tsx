@@ -110,10 +110,10 @@ export default function Home() {
 
   }
 
-  useEffect(() => {
+  useEffect(function onAuthStateChangedHandler() {
+
     const stopListening = onAuthStateChanged(auth,
       authUser => {
-
         if (authUser) {
           // User is signed in, see docs for a list of available properties
           // https://firebase.google.com/docs/reference/js/firebase.User
@@ -134,19 +134,27 @@ export default function Home() {
       <I18nProvider>
         <div className="min-h-screen bg-background text-foreground">
 
-          <div className="absolute top-4 right-4">
-            <ThemeToggle />
+          <div className="max-w-4xl m-auto justify-between py-2 flex gap-8">
+
+            {isLoggedIn && (
+              <div className="flex items-center justify-center gap-8">
+                <p>Logged in: <span className="font-bold">{currentUser?.userEmail}</span></p>
+              </div>
+            )}
+
+            <div className="flex gap-4">
+              {isLoggedIn && (
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded-full" onClick={logout}>
+                  Logout
+                </button>
+              )}
+              <ThemeToggle />
+            </div>
+
           </div>
 
           {!isLoggedIn && (
             <LoginBlock auth={auth} />
-          )}
-
-          {isLoggedIn && (
-            <div className="flex items-center justify-center p-4 gap-8">
-              <p>Logged in as: <span className="font-bold">{currentUser?.userEmail}</span></p>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={logout}>Logout</button>
-            </div>
           )}
 
           {appState === "splash" && isLoggedIn && (

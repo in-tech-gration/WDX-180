@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import ThemeToggle from "./theme-toggle"
 import CodeBlock from "./code-block"
 import { useTranslation } from "react-i18next"
 import type { QuizData, QuizProgress, QuizResult } from "@/types/quiz"
@@ -20,11 +19,12 @@ interface QuizInterfaceProps {
 }
 
 export default function QuizInterface({ quiz, progress, onComplete, onUpdateProgress, onBack }: QuizInterfaceProps) {
+
   const { t } = useTranslation()
   const [currentProgress, setCurrentProgress] = useState(progress)
   const currentQuestion = quiz.questions[currentProgress.currentQuestion]
   const totalQuestions = quiz.questions.length
-  const progressPercentage = ((currentProgress.currentQuestion + 1) / totalQuestions) * 100
+  const progressPercentage = ((currentProgress.currentQuestion + 1) / totalQuestions) * 100;
 
   useEffect(() => {
     localStorage.setItem("quiz-progress", JSON.stringify(currentProgress))
@@ -115,7 +115,6 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
               </Badge>
             </div>
           </div>
-          <ThemeToggle />
         </div>
 
         {/* Progress Bar */}
@@ -149,7 +148,7 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
                 <Button
                   key={index}
                   variant={currentProgress.answers[currentProgress.currentQuestion] === index ? "default" : "outline"}
-                  className="w-full text-left justify-start h-auto p-4"
+                  className="w-full text-left justify-start h-auto p-4 dark:text-white text-lg"
                   onClick={() => handleAnswerSelect(index)}
                 >
                   <span className="mr-3 font-bold">{String.fromCharCode(65 + index)}.</span>
@@ -172,13 +171,12 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
                 <button
                   key={index}
                   onClick={() => handleQuestionJump(index)}
-                  className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-sm font-medium transition-colors relative ${
-                    index === currentProgress.currentQuestion
-                      ? "bg-blue-600 text-white border-blue-600 dark:bg-blue-600 dark:text-white"
-                      : currentProgress.answers[index] !== undefined
-                        ? "bg-green-500 text-white border-green-600 dark:bg-green-600 dark:text-white"
-                        : "bg-white text-gray-700 border-gray-400 hover:bg-gray-50 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-700"
-                  }`}
+                  className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-sm font-medium transition-colors relative ${index === currentProgress.currentQuestion
+                    ? "bg-blue-600 text-white border-blue-600 dark:bg-blue-600 dark:text-white"
+                    : currentProgress.answers[index] !== undefined
+                      ? "bg-green-500 text-white border-green-600 dark:bg-green-600 dark:text-white"
+                      : "bg-white text-gray-700 border-gray-400 hover:bg-gray-50 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-700"
+                    }`}
                 >
                   {index + 1}
                   {/* Code indicator */}
@@ -208,7 +206,7 @@ export default function QuizInterface({ quiz, progress, onComplete, onUpdateProg
             <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
-        
+
       </div>
     </div>
   )

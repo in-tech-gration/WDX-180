@@ -62,7 +62,6 @@ export default function LoginBlock({ auth }: { auth: Auth }) {
                       id="email"
                       name="email"
                       placeholder="email"
-                      defaultValue=""
                       type="email"
                       required
                       autoComplete="email"
@@ -87,7 +86,6 @@ export default function LoginBlock({ auth }: { auth: Auth }) {
                       id="password"
                       name="password"
                       placeholder="password"
-                      defaultValue=""
                       type="password"
                       required
                       autoComplete="current-password"

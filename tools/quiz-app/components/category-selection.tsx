@@ -3,36 +3,30 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft, Code, Palette, Zap, Component } from "lucide-react"
-import ThemeToggle from "./theme-toggle"
 import { useTranslation } from "react-i18next"
+import { quizData } from "../data/quiz-data";
+import { Category } from "@/types/quiz"
 
 interface CategorySelectionProps {
   onSelectCategory: (category: string) => void
   onBack: () => void
 }
 
-const categories = [
-  {
-    id: "html",
-    icon: Code,
-    color: "bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400",
-  },
-  {
-    id: "css",
-    icon: Palette,
-    color: "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400",
-  },
-  {
-    id: "javascript",
-    icon: Zap,
-    color: "bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400",
-  },
-  {
-    id: "react",
-    icon: Component,
-    color: "bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-400",
-  },
-]
+const categoryIcons = {
+  html: Code,
+  css: Palette,
+  javascript: Zap,
+  react: Component
+}
+
+const categoryColors = {
+  html: "bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400",
+  css: "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400",
+  javascript: "bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400",
+  react: "bg-cyan-100 dark:bg-cyan-900 text-cyan-600 dark:text-cyan-400",
+}
+
+const categories = Object.keys(quizData) as Category[];
 
 export default function CategorySelection({ onSelectCategory, onBack }: CategorySelectionProps) {
   const { t } = useTranslation()
@@ -45,7 +39,6 @@ export default function CategorySelection({ onSelectCategory, onBack }: Category
             <ArrowLeft className="h-4 w-4" />
             {t("common.back")}
           </Button>
-          <ThemeToggle />
         </div>
 
         <div className="text-center mb-8">
@@ -55,23 +48,24 @@ export default function CategorySelection({ onSelectCategory, onBack }: Category
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((category) => {
-            const IconComponent = category.icon
+
+            const IconComponent = categoryIcons[category];
             return (
               <Card
-                key={category.id}
+                key={category}
                 className="cursor-pointer hover:shadow-lg transition-shadow duration-200 hover:scale-105 transform"
-                onClick={() => onSelectCategory(category.id)}
+                onClick={() => onSelectCategory(category)}
               >
                 <CardHeader className="text-center">
                   <div className="flex justify-center mb-4">
-                    <div className={`p-4 rounded-full ${category.color}`}>
+                    <div className={`p-4 rounded-full ${categoryColors[category]}`}>
                       <IconComponent className="h-8 w-8" />
                     </div>
                   </div>
-                  <CardTitle className="text-xl">{t(`category.${category.id}.name`)}</CardTitle>
+                  <CardTitle className="text-xl">{t(`category.${category}.name`)}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-600 dark:text-gray-300">{t(`category.${category.id}.description`)}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{t(`category.${category}.description`)}</p>
                 </CardContent>
               </Card>
             )

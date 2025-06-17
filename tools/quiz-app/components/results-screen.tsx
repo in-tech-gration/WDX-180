@@ -5,9 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Trophy, RotateCcw, Home, CheckCircle, XCircle } from "lucide-react"
-import ThemeToggle from "./theme-toggle"
 import { useTranslation } from "react-i18next"
 import type { QuizResult } from "@/types/quiz"
+import { useWindowSize } from "react-use";
+import Confetti from "react-confetti";
 
 interface ResultsScreenProps {
   result: QuizResult
@@ -16,7 +17,10 @@ interface ResultsScreenProps {
 }
 
 export default function ResultsScreen({ result, onRestart, onRetakeQuiz }: ResultsScreenProps) {
-  const { t } = useTranslation()
+
+  const { t } = useTranslation();
+  const { width, height } = useWindowSize();
+
   const percentage = Math.round((result.correctAnswers / result.totalQuestions) * 100)
   const completionTimeMinutes = Math.round(result.completionTime / 60000)
 
@@ -43,9 +47,13 @@ export default function ResultsScreen({ result, onRestart, onRetakeQuiz }: Resul
   return (
     <div className="min-h-screen p-4 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-end mb-6">
-          <ThemeToggle />
-        </div>
+
+        {percentage >= 90 && (
+          <Confetti
+            width={width}
+            height={height}
+          />
+        )}
 
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">

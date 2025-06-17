@@ -1,3 +1,5 @@
+export type Category = "html" | "css" | "javascript" | "react";
+
 export interface Question {
   question: string
   options: string[]
@@ -10,6 +12,7 @@ export interface Question {
 }
 
 export interface QuizData {
+  disabled?: boolean;
   title: string
   description: string
   questions: Question[]

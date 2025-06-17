@@ -6,6 +6,7 @@ export const quizData: QuizDataStructure = {
   html: {
     semantic: {
       title: "HTML Semantic Elements",
+      disabled: true,
       description: "Test your knowledge of semantic HTML elements",
       questions: [
         {
@@ -49,6 +50,7 @@ export const quizData: QuizDataStructure = {
     },
     forms: {
       title: "HTML Forms",
+      disabled: true,
       description: "Learn about HTML form elements and attributes",
       questions: [
         {
@@ -84,6 +86,7 @@ export const quizData: QuizDataStructure = {
   },
   css: {
     grid: {
+      disabled: true,
       title: "CSS Grid Layout",
       description: "Master CSS Grid layout system",
       questions: [
@@ -132,6 +135,7 @@ export const quizData: QuizDataStructure = {
     },
     flexbox: {
       title: "CSS Flexbox",
+      disabled: true,
       description: "Understanding flexible box layout",
       questions: [
         {
@@ -173,6 +177,7 @@ export const quizData: QuizDataStructure = {
   },
   javascript: {
     promises: {
+      disabled: true,
       title: "Promises",
       description: "Asynchronous programming with Promises",
       questions: [
@@ -222,6 +227,7 @@ export const quizData: QuizDataStructure = {
       ],
     },
     arrays: {
+      disabled: true,
       title: "Arrays",
       description: "Array methods and manipulation",
       questions: [
@@ -265,18 +271,331 @@ export const quizData: QuizDataStructure = {
           level: "medium",
         },
         {
-          question: "",
+          question: "Which keyword has block-level scope in JavaScript and does not exhibit hoisting like var?",
           options: [
-            "",
-            "",
-            ""
+            "let",
+            "const",
+            "both"
           ],
-          correctAnswer: -1,
+          correctAnswer: 2,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "ReferenceError",
+            "undefined and 20",
+            "20 and 20"
+          ],
+          correctAnswer: 0,
           level: "medium",
           code: {
             language: "javascript",
-            content: ``,
+            content: `
+              console.log(b);
+              let b = 20;
+              console.log(b);
+            `,
           }
+        },
+        {
+          question: "What happens during the hoisting phase for variable declarations with var?",
+          options: [
+            "Initialization is moved to the top of the scope",
+            "Only declaration is moved to the top of the scope",
+            "Entire variable assignment is moved to the top of the file"
+          ],
+          correctAnswer: 1,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined and 15",
+            "ReferenceError",
+            "15 and 15"
+          ],
+          correctAnswer: 0,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              console.log(c);
+              var c = 15;
+              console.log(c);
+            `,
+          }
+        },
+        {
+          question: "In JavaScript, are function declarations hoisted before or after variable declarations?",
+          options: [
+            "Before",
+            "After",
+            "It depends on the specific scenario"
+          ],
+          correctAnswer: 0,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "Hi!",
+            "ReferenceError",
+            "undefined"
+          ],
+          correctAnswer: 0,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              sayHi();
+
+              function sayHi() {
+                console.log("Hi!");
+              }
+            `,
+          }
+        },
+        {
+          question: "Do function expressions assigned to variables get hoisted like function declarations?",
+          options: [
+            "Yes",
+            "No",
+          ],
+          correctAnswer: 1,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "ReferenceError",
+            "Greetings!",
+            "undefined",
+          ],
+          correctAnswer: 2,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              console.log(greet);
+              var greet = function() {
+                console.log("Greetings!");
+              };
+            `,
+          }
+        },
+        {
+          question: "How does JavaScript handle the hoisting of duplicated function declarations?",
+          options: [
+            "Raises an error",
+            "Overwrites the previous declaration",
+            "Appends the new declaration"
+          ],
+          correctAnswer: 1,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined, 20, 10",
+            "10, 20, 10",
+            "10, undefined, 20",
+            "10, undefined, undefined",
+            "10, 20, undefined",
+          ],
+          correctAnswer: 0,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              var a = 10;
+              function example() {
+                console.log(a);
+                var a = 20;
+                console.log(a);
+              }
+              example();
+              console.log(a);
+            `,
+          }
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined and 25",
+            "25 and 25",
+            "ReferenceError",
+          ],
+          correctAnswer: 2,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              if (true) {
+                console.log(d);
+                let d = 25;
+                console.log(d);
+              }
+            `,
+          }
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined and 30",
+            "ReferenceError",
+            "30 and 30",
+          ],
+          correctAnswer: 1,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              console.log(x);
+              let x = 30;
+              console.log(x);            
+            `,
+          }
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "35 and 35",
+            "ReferenceError",
+            "undefined and 35",
+          ],
+          correctAnswer: 2,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              function test() {
+                console.log(y);
+                var y = 35;
+                console.log(y);
+              }
+              test();
+            `,
+          }
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined, Nested, undefined",
+            "ReferenceError",
+            "undefined, Nested, Nested",
+          ],
+          correctAnswer: 2,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              function demo() {
+                console.log(z);
+                if (true) {
+                  var z = "Nested";
+                  console.log(z);
+                }
+                console.log(z);
+              }
+
+              demo();
+            `,
+          }
+        },
+        {
+          question: "Can function declarations be hoisted inside block-level scopes?",
+          options: [
+            "Yes",
+            "No",
+          ],
+          correctAnswer: 0,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "ReferenceError",
+            "undefined, 40, 45",
+            "undefined, 45, 45",
+          ],
+          correctAnswer: 1,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              console.log(i);
+              var i = 40;
+              console.log(i);
+              var i = 45;
+              console.log(i);
+            `,
+          }
+        },
+        {
+          question: "Can you hoist function declarations inside a function?",
+          options: [
+            "Yes",
+            "No",
+          ],
+          correctAnswer: 0,
+          level: "medium",
+        },
+        {
+          question: "Can you hoist function expressions inside a function?",
+          options: [
+            "Yes",
+            "No",
+          ],
+          correctAnswer: 1,
+          level: "medium",
+        },
+        {
+          question: "What is the output of the following code?",
+          options: [
+            "undefined, Inner, undefined",
+            "ReferenceError",
+            "undefined, Inner, Inner",
+          ],
+          correctAnswer: 2,
+          level: "medium",
+          code: {
+            language: "javascript",
+            content: `
+              function outerFunction() {
+                console.log(innerVar);
+                if (true) {
+                  var innerVar = "Inner";
+                  console.log(innerVar);
+                }
+                console.log(innerVar);
+              }
+
+              outerFunction();
+            `,
+          }
+        },
+        {
+          question: "Which keyword is associated with block-scoped variables in JavaScript?",
+          options: [
+            "var",
+            "let",
+            "const",
+            "let and const",
+            "let and var",
+          ],
+          correctAnswer: 3,
+          level: "medium",
+        },
+        {
+          question: "How are function expressions hoisted in JavaScript?",
+          options: [
+            "Only the variable declaration is hoisted",
+            "Both the variable declaration and the function body are hoisted",
+            "Function expressions are not hoisted",
+          ],
+          correctAnswer: 0,
+          level: "medium",
         },
         {
           question: "What is the output of the following code?",
@@ -307,6 +626,7 @@ export const quizData: QuizDataStructure = {
   react: {
     hooks: {
       title: "React Hooks",
+      disabled: true,
       description: "Understanding React Hooks",
       questions: [
         {
@@ -365,6 +685,7 @@ export const quizData: QuizDataStructure = {
     },
     components: {
       title: "React Components",
+      disabled: true,
       description: "Component creation and lifecycle",
       questions: [
         {
