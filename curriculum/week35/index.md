@@ -25,7 +25,7 @@ title: Week 35 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 18/6/2025</span>
+  <span>Updated: 19/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -183,19 +183,23 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 4 | TBA -->
+<!-- Week 35 - Day 4 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 4</span> | TBA</h2>
+      <span class="summary-day">Week 35 - Day 4</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
 
-  - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Today is practice day. Practice on the topics covered so far
+  and share your thoughts, questions and insights.
+
+  Happy hacking!
 
 <!-- Summary -->
 

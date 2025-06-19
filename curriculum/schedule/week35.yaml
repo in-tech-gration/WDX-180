@@ -10,10 +10,10 @@ schedule:
     2: # MiniCMS
       # file://./../modules/javascript/misc/_w35d02/_w35d02.md
       module: javascript/misc/_w35d02/_w35d02.md
-    3: # 
+    3: # Promises
       # file://./../modules/javascript/misc/_w35d03/_w35d03.md
       module: javascript/misc/_w35d03/_w35d03.md
-    4: # 
+    4: # Practice Day
       # file://./../modules/javascript/misc/_w35d04/_w35d04.md
       module: javascript/misc/_w35d04/_w35d04.md
     5: # 
