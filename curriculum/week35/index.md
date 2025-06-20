@@ -25,7 +25,7 @@ title: Week 35 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 19/6/2025</span>
+  <span>Updated: 20/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -213,11 +213,11 @@ title: Week 35 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 5 | TBA -->
+<!-- Week 35 - Day 5 | Q&A and Mini CMS Project -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 35 - Day 5</span> | Q&A and Mini CMS Project</h2>
   </summary>
 
 ### Schedule
@@ -230,27 +230,41 @@ title: Week 35 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Logical AND and OR operators. How do we connect a domain to our hosted app? Website analytics.
+  - **Part 2:** SQL Injection. Mini CMS project: Creating a form for creating content.
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/4f942b64b86ff5164e8aa5d2bb516676134a8ca6){:target="_blank"} and the logical operator code [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/4f942b64b86ff5164e8aa5d2bb516676134a8ca6/learn/logical.operators.js){:target="_blank"}.
 
-  **Lecture Notes & Questions:**
+  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.  
 
   **References & Resources:**
 
+  - [SQLite Injection Attacks](https://www.tutlane.com/tutorial/sqlite/sqlite-injection-attacks){:target="_blank"}  
+  - [process.cwd()](https://nodejs.org/api/process.html#processcwd){:target="_blank"}, [__dirname](https://nodejs.org/docs/latest/api/modules.html#__dirname){:target="_blank"}, [__filename](https://nodejs.org/docs/latest/api/modules.html#__filename){:target="_blank"}  
+  - [https://stackoverflow.com/a/9874415/4861760](https://stackoverflow.com/a/9874415/4861760){:target="_blank"} `process.cwd()` vs `__dirname`  
+  - [https://nodejs.org/api/path.html#pathsep](https://nodejs.org/api/path.html#pathsep){:target="_blank"}  
+  - [https://nodejs.org/api/path.html#pathnormalizepath](https://nodejs.org/api/path.html#pathnormalizepath){:target="_blank"}  
+  - [https://nodejs.org/api/path.html#pathbasenamepath-suffix](https://nodejs.org/api/path.html#pathbasenamepath-suffix){:target="_blank"}
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - Highly recommended challenges:  
+    - Turn callback-based async functions into Promise-based functions  
+      - Work with both **.then().catch().finally()** and **async/await/try/catch/finally** syntax  
+        - Try to *promisify:*  
+          - Node.js fs methods, e.g. turn these `fs.writeFile(cb)`, `fs.readFile(cb)` into something like await `writeFileP()`, `await readFileP(filename)`  
+          - The navigator.geolocation methods: [getCurrentPosition](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition){:target="_blank"}  
+          - The `new Image()` load/error callbacks  
+          - The [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest){:target="_blank"} object
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week35/progress/progress.draft.w35.d05.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
