@@ -1,7 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-# title: TBA
-title: "Advanced JavaScript"
+title: "Mini CMS"
+header_image: week36/mini.cms.jpg
 schedule: 
   days:
     1: # 

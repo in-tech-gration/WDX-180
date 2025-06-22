@@ -1,12 +1,14 @@
 ---
-title: Week 36 | Advanced JavaScript
+title: Week 36 | Mini CMS
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 36-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 36 |</span> Advanced JavaScript
+<h1 id="{{ Week 36-Mini CMS | slugify }}">
+  <span class="week-prefix">Week 36 |</span> Mini CMS
 </h1>
+
+<img src="assets/mini.cms.jpg" />
 
 <div class="week-controls">
 
@@ -14,7 +16,6 @@ title: Week 36 | Advanced JavaScript
 
   <h2 class="week-controls__previous_week">
 
-    
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 36 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,11 +25,10 @@ title: Week 36 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 1/2/2024</span>
+  <span>Updated: 23/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 36 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -42,17 +42,66 @@ title: Week 36 | Advanced JavaScript
 
 ---
 
-<!-- Week 36 - Day 1 | Study & Practice -->
+<!-- Week 36 - Day 1 | Mini CMS Project -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 1</span> | Study & Practice</h2>
+      <span class="summary-day">Week 36 - Day 1</span> | Mini CMS Project</h2>
   </summary>
 
 ### Schedule
 
-  - **Study & Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** Creating a POST Controller for handling the creation of new Blog posts
+  - **Part 2:** Creating a View and a Controller for displaying all the available Blog posts in our Database.
+
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/85d63328668637dec30266c944dc5da927770f2a){:target="_blank"}
+
+  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
+
+  **References & Resources:**
+
+  - [SQL Constraints](https://www.tutorialspoint.com/sqlite/sqlite_constraints.htm){:target="_blank"}  
+  - [HTTP Status Codes Reference](https://httpstatuses.io/){:target="_blank"}  
+  - Date: [toLocaleTimeString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString){:target="_blank"}, [toLocaleDateString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString){:target="_blank"}
+
+<!-- Summary -->
+
+### Exercises
+
+  **CHALLENGE:** Find out how you can automatically redirect the user to the newly created Post page.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week36/progress/progress.draft.w36.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 36 - Day 2 | TBA -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 36 - Day 2</span> | TBA</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
@@ -68,18 +117,62 @@ title: Week 36 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 2 | Live Session -->
+<!-- Week 36 - Day 3 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 2</span> | Live Session</h2>
+      <span class="summary-day">Week 36 - Day 3</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Live Session**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by []()_
+
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 36 - Day 4 | TBA -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 36 - Day 4</span> | TBA</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
 <!-- Study Plan -->
 
@@ -95,78 +188,44 @@ title: Week 36 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 3 | Study & Practice -->
+<!-- Week 36 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 3</span> | Study & Practice</h2>
+      <span class="summary-day">Week 36 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Study & Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
 
-<!-- Sources and Attributions -->
-  
-</details>
+  ---
 
-<hr class="mt-1">
 
-<!-- Week 36 - Day 4 | Live Session -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 36 - Day 4</span> | Live Session</h2>
-  </summary>
 
-### Schedule
+  _Photo by []()_
 
-  - **Live Session**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 36 - Day 5 | Study & Practice -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 36 - Day 5</span> | Study & Practice</h2>
-  </summary>
-
-### Schedule
-
-  - **Study & Practice**
-  - **Work on Project (Group/Personal)**
-
-<!-- Study Plan -->
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -177,3 +236,15 @@ title: Week 36 | Advanced JavaScript
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
