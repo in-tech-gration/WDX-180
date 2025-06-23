@@ -4,10 +4,10 @@ title: "Mini CMS"
 header_image: week36/mini.cms.jpg
 schedule: 
   days:
-    1: # 
+    1: # Mini CMS: Create Post / List Posts
       # file://./../modules/javascript/misc/_w36d01/_w36d01.md
       module: javascript/misc/_w36d01/_w36d01.md
-    2: # 
+    2: # Practice Day
       # file://./../modules/javascript/misc/_w36d02/_w36d02.md
       module: javascript/misc/_w36d02/_w36d02.md
     3: # 
