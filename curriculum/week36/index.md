@@ -25,7 +25,7 @@ title: Week 36 | Mini CMS
 
   </h2>
 
-  <span>Updated: 24/6/2025</span>
+  <span>Updated: 25/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -121,11 +121,11 @@ title: Week 36 | Mini CMS
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 3 | TBA -->
+<!-- Week 36 - Day 3 | Authentication -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 3</span> | TBA</h2>
+      <span class="summary-day">Week 36 - Day 3</span> | Authentication</h2>
   </summary>
 
 ### Schedule
@@ -138,27 +138,25 @@ title: Week 36 | Mini CMS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-  - **Part 2:**
+  - **Part 1:** Work on the Home Page Controller
+  - **Part 2:** Authentication
 
-  You can find the lecture code [here](){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/7ae3568842a082682b7c363eff0bd00ba856f486){:target="_blank"}
+
+  **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
 
   **Lecture Notes & Questions:**
 
   **References & Resources:**
 
+  - Authentication (AuthN) vs Authorization (AuthZ)  
+    - [https://www.cloudflare.com/learning/access-management/authn-vs-authz/](https://www.cloudflare.com/learning/access-management/authn-vs-authz/){:target="_blank"}
+
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  ---
-
-
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   

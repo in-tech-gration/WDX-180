@@ -10,7 +10,7 @@ schedule:
     2: # Practice Day
       # file://./../modules/javascript/misc/_w36d02/_w36d02.md
       module: javascript/misc/_w36d02/_w36d02.md
-    3: # 
+    3: # Auth
       # file://./../modules/javascript/misc/_w36d03/_w36d03.md
       module: javascript/misc/_w36d03/_w36d03.md
     4: # 
