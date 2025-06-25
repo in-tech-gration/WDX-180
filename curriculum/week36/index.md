@@ -136,6 +136,8 @@ title: Week 36 | Mini CMS
 
 ### Study Plan
 
+  ![](./assets/day03/knight.guard.jpg)
+
   Your instructor will share the video lectures with you. Here are the topics covered:
 
   - **Part 1:** Work on the Home Page Controller
