@@ -216,18 +216,18 @@ title: Week 36 | Mini CMS
   - **Part 1:** Authentication & Security
   - **Part 2:** Authentication & Security
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/9dd8f9d4cd986ccddce5578c0d59415e42b7391b){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week36/assets/day05)_blank.
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/tree/9dd8f9d4cd986ccddce5578c0d59415e42b7391b){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week36/assets/day05){:target="_blank"}.
 
   **Important:** The code link above, points to a particular commit in the repository. Click the `Code` => `Download Zip` button on GitHub, to download the code as it was in that exact commit.
   **References & Resources:**
 
-  - [POST Method details](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) (encoding, etc.)  
-    - [Percent encoding](https://en.wikipedia.org/wiki/Percent-encoding)  
+  - [POST Method details](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST){:target="_blank"} (encoding, etc.)  
+    - [Percent encoding](https://en.wikipedia.org/wiki/Percent-encoding){:target="_blank"}  
     - Base64 Encoding/Decoding  
-      - [https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa)  
-      - [https://developer.mozilla.org/en-US/docs/Web/API/Window/atob](https://developer.mozilla.org/en-US/docs/Web/API/Window/atob)  
+      - [https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa){:target="_blank"}  
+      - [https://developer.mozilla.org/en-US/docs/Web/API/Window/atob](https://developer.mozilla.org/en-US/docs/Web/API/Window/atob){:target="_blank"}  
     - Be very careful with the test data and accounts that you use during development/debugging. It’s important for this data and accounts not ending up in production. (Especially the DB accounts with weak passwords)  
-    - [HTTP Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)  
+    - [HTTP Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie){:target="_blank"}  
     - **ALWAYS REMEMBER: "No data from the browser is trustworthy"**  
     - **When the user logs out, the cookie must always be removed or invalidated.**
 
