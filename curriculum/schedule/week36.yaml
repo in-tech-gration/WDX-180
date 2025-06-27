@@ -13,10 +13,10 @@ schedule:
     3: # Auth
       # file://./../modules/javascript/misc/_w36d03/_w36d03.md
       module: javascript/misc/_w36d03/_w36d03.md
-    4: # 
+    4: # Practice Day
       # file://./../modules/javascript/misc/_w36d04/_w36d04.md
       module: javascript/misc/_w36d04/_w36d04.md
-    5: # 
+    5: # Protected Routes
       # file://./../modules/javascript/misc/_w36d05/_w36d05.md
       module: javascript/misc/_w36d05/_w36d05.md
 
