@@ -1,11 +1,11 @@
 ---
-title: Week 26 | Advanced JavaScript
+title: Week 26 | Advanced JavaScript: Web APIs
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 26-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 26 |</span> Advanced JavaScript
+<h1 id="{{ Week 26-Advanced JavaScript: Web APIs | slugify }}">
+  <span class="week-prefix">Week 26 |</span> Advanced JavaScript: Web APIs
 </h1>
 
 <img src="assets/kelli-tungay-Sj0nhVIb4eY-unsplash.jpg" />
@@ -25,7 +25,7 @@ title: Week 26 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 21/4/2025</span>
+  <span>Updated: 30/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
