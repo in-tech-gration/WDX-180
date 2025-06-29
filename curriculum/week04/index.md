@@ -8,7 +8,7 @@ title: Week 04 | CSS 2 & Performance
   <span class="week-prefix">Week 04 |</span> CSS 2 & Performance
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/css.layouts.jpg" />
 
 <div class="week-controls">
 
@@ -25,7 +25,7 @@ title: Week 04 | CSS 2 & Performance
 
   </h2>
 
-  <span>Updated: 28/11/2024</span>
+  <span>Updated: 30/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
