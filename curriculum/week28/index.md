@@ -25,7 +25,7 @@ title: Week 28 | Battleship Game
 
   </h2>
 
-  <span>Updated: 1/5/2025</span>
+  <span>Updated: 30/6/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -234,44 +234,33 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 5 | TBA -->
+<!-- Week 28 - Day 5 | Games using Canvas API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 5</span> | TBA</h2>
+      <span class="summary-day">Week 28 - Day 5</span> | Games using Canvas API</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
+  It's a great idea to study some tutorial videos on building games that are based on the Canvas API and grab some ideas and good practices such as using the prototype and more.
 
-  - **Part 1:** 
-  - **Part 2:**
+  Here are two fantastic videos to study and replicate:
 
-  You can find the lecture code [here](){:target="_blank"}
+  [Mary Live Codes A JavaScript Game From Scratch](https://www.youtube.com/watch?v=hbKN-9o5_Z0){:target="_blank"}
 
-  **Lecture Notes & Questions:**
-
-  **References & Resources:**
+  [Coding an HTML5 Canvas Game (Pong) with JS in 5 min 30 sec](https://www.youtube.com/watch?v=KoWqdEACyLI){:target="_blank"}
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  ---
-
-
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
