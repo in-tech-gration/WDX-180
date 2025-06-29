@@ -1,10 +1,44 @@
 ---
-title: Week 2
+title: Week 2 | HTML, Accessibility & Git
 ---
 
-# Week 2 | HTML, Accessibility & Git
+<hr class="mb-0">
 
-_(Updated: 18/09/2023)_
+<h1 id="{{ Week 16-Intermediate JavaScript | slugify }}">
+  <span class="week-prefix">Week 2 |</span> HTML, Accessibility & Git
+</h1>
+
+<div class="week-controls">
+
+  {% assign week_num = 2 | to_integer %}
+
+  <h2 class="week-controls__previous_week">
+
+    {% if week_num > 0 %}
+
+      {% assign previous_week_num = 2 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+    {% endif %}
+
+  </h2>
+
+  <span>Updated: 30/06/2025</span>
+
+  <h2 class="week-controls__next_week">
+
+    {% if week_num <= 36 %}
+
+      {% assign next_week_num = 2 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+    {% endif %}
+
+  </h2>
+
+</div>
+
+---
 
 <!-- Week 2 - Day 1 | Git -->
 <details markdown="1">
