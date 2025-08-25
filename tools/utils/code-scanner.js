@@ -41,7 +41,7 @@ function countInFile(filepath) {
       plugins: ['typescript', 'jsx']
     });
   } catch (err) {
-    console.warn(`⚠️  Skipping invalid file: ${filepath}`);
+    // console.warn(`⚠️  Skipping invalid file: ${filepath}`);
     return;
   }
 
