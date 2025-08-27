@@ -28,9 +28,7 @@
 
 <!-- RESOURCES IN ARABIC -->
 <details markdown="1">
-  <summary><h3>RESOURCES IN ARABIC</h3></summary>
-
-  <!-- الموارد باللغة العربية -->
+  <summary><h3>RESOURCES IN ARABIC / المصادر باللغة العربية</h3></summary>
 
 # General
 
