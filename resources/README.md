@@ -21,6 +21,9 @@
 
   A big thanks to the following people for reviewing and suggesting  multilingual resources:
 
+  - Arabic:
+    - **Omar Hassan**
+    - **Alaadeen Hijazi**
   - Turkish:
     - **Çetin Çakıroğlu**: [GitHub](https://github.com/cetincakiroglu)
   - Farsi/Persian:
@@ -29,8 +32,6 @@
 <!-- RESOURCES IN ARABIC -->
 <details markdown="1">
   <summary><h3>RESOURCES IN ARABIC / المصادر باللغة العربية</h3></summary>
-
-# General
 
   - HTML
     - [Learn HTML In Arabic 2021](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji)
@@ -64,6 +65,8 @@
     - [How To Become A Front-End Monster](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzTQ5TBsxkF2bZ4djZetUba)
     - [Multilingual Website Best Practice](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxNQiUCxhjfDM8STo1_Dl8c)
     - [Learn Website Wireframing](https://www.youtube.com/playlist?list=PLDoPjvoNmBAxQFcU0t_rjaL0geUX47VtL)
+    - [خارطة الطريق لتعلم برمجة الويب (Web Roadmap)](https://www.youtube.com/watch?v=8TFge6bfbzQ)
+    - [شرح تفصيلي لخارطة الطريق لتعلم البرمجة وتداخلاتها من واقع سوق العمل (Roadmap for learning programming)](https://www.youtube.com/watch?v=sWCQMMfP8p8)
   - Computer Science
     - [Intro To Programming](https://www.youtube.com/playlist?list=PLDoPjvoNmBAwGClt7wqdUOfqZbq_f2Uek)
   - Command Line Interface
@@ -76,6 +79,7 @@
   **YouTube Channels**
 
   - [Elzero Web School](https://www.youtube.com/@ElzeroWebSchool)
+  - [Programming Advices](https://www.youtube.com/@ProgrammingAdvices)
 
 </details>
 
@@ -129,7 +133,12 @@
 <details markdown="1">
   <summary><h3>RESOURCES IN GREEK</h3></summary>
 
-  **Coming soon...**
+  - TypeScript
+    - [Εισαγωγή στην TypeScript](https://youtu.be/Er_a-NwKMws)
+
+  **YouTube Channels**
+
+  - [Kostas Minaidis](https://www.youtube.com/@kostas_x)
 
 </details>
 
