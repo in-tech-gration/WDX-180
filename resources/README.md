@@ -29,6 +29,8 @@
   - Farsi/Persian:
     - **Nima Saghikalhori**: [GitHub](https://github.com/nimasaghi-dev)
 
+  Feel free to contribute by reaching out to us or by opening a Pull Request on this [GitHub repo](https://github.com/in-tech-gration/WDX-180/blob/main/resources/README.md).
+
 <!-- RESOURCES IN ARABIC -->
 <details markdown="1">
   <summary><h3>RESOURCES IN ARABIC / المصادر باللغة العربية</h3></summary>
@@ -131,7 +133,7 @@
 
 <!-- RESOURCES IN GREEK -->
 <details markdown="1">
-  <summary><h3>RESOURCES IN GREEK</h3></summary>
+  <summary><h3>RESOURCES IN GREEK / Υλικό στα Ελληνικά</h3></summary>
 
   - TypeScript
     - [Εισαγωγή στην TypeScript](https://youtu.be/Er_a-NwKMws)
