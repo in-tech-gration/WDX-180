@@ -70,7 +70,7 @@
 
 <!-- RESOURCES IN FARSI -->
 <details markdown="1">
-  <summary><h3>RESOURCES IN FARSI</h3></summary>
+  <summary><h3>RESOURCES IN FARSI / منابع به زبان فارسی</h3></summary>
 
   - HTML
   - CSS
