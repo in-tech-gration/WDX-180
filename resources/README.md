@@ -121,9 +121,16 @@
   - TypeScript
     - [Εισαγωγή στην TypeScript](https://youtu.be/Er_a-NwKMws)
 
+  - JavaScript
+    - [Οδηγός JavaScript στα Ελληνικά](https://javascript.gr/)
+
   **YouTube Channels**
 
   - [Kostas Minaidis](https://www.youtube.com/@kostas_x)
+  - [CodeGRow](https://www.youtube.com/@CodeGRrow)
+  - [Gerasimos Tsiamalos](https://www.youtube.com/@tsiger)
+  - [Tech and Code In Greek](https://www.youtube.com/@TechandCodeInGreek)
+  - [DigiSolutions Tutorials](https://www.youtube.com/@digisolutech)
 
 </details>
 

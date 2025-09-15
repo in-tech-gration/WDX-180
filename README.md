@@ -312,6 +312,7 @@ Our lovely contributors _(feel free to give them a follow/subscribe/like as a ge
 - **Mubashra Irshad**: [GitHub](https://github.com/mubashra21c)
 - [**PlethoraThemes**](https://plethorathemes.com/)
 - **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
+- **Dimitris**: [GitHub](https://github.com/dimitriost1)
 
 ---
 
