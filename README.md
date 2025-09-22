@@ -57,8 +57,15 @@
     - `GitHub` is a web-based platform for `version control` & collaboration on code projects.
   - [StackOverflow](https://stackoverflow.com/){:target="_blank"}
     - `StackOverflow` is a Q&A site for programmers.
+  - [Netlify](https://www.netlify.com/){:target="_blank"}
+    - `Netlify` lets you host your websites and applications for free.
   - [Codesandbox](https://codesandbox.io/){:target="_blank"}
     - An online code editor that gives you the ability to share your code with a single web address.
+
+  **Want more?**
+  
+  - [Codepen](https://codepen.io){:target="_blank"}
+    - Another popular code editor that gives you the ability to share your code with a single web address.
 </details>
 
 <!-- SETUP -->
