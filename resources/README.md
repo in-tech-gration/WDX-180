@@ -86,6 +86,8 @@
   - React.js
     - [آموزش کامل React 2022 (Playlist: React JS training course (introduction to advanced): React JS in simple but fundamental language)](https://www.youtube.com/playlist?list=PLi3_QQ40Q-sxthNSXMSRDWsqqtu8Su9Gy)
     - [دوره آموزش react js (مقدماتی تا پیشرفته) : ری اکت جی اس به زبان ساده اما اصولی](https://www.youtube.com/watch?v=51FdCRVJLXs)
+  - Frontend
+    - [Afghan Geeks - افغان گیکس](https://www.youtube.com/@AfghanGeeks)
   - Computer Science
     - Networking
       - [Networking به زبان ساده |\ هرچی باید از شبکه بدونی](https://www.youtube.com/watch?v=Yv7iRZVKsMk)
