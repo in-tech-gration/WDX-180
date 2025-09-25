@@ -145,7 +145,7 @@ Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gratio
 
   - [Download: **Primer on Character Encodings** Guide](https://roadmap.sh/guides/character-encodings){:target="_blank"}
 
-  ![""](https://roadmap.sh/guides/character-encodings.png)
+  ![""](assets/character-encodings-2mpp0.png)
 
   - [Watch: **Images, Pixels and RGB**](https://www.youtube.com/watch?v=15aqFQQVBWU){:target="_blank"}
     - Duration: 6min
