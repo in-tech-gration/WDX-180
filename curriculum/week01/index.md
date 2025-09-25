@@ -68,7 +68,7 @@ We encourage you to **help and support each other** but in a constructive and he
 
 ### Setting up
 
-**Required extension:** Before you start your week, make sure to install the following Extension for VSCode: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack){:target="_blank"}. 
+**Required extension:** Before you start your week, make sure to install the following Extension for [VSCode](https://code.visualstudio.com/){:target="_blank"}: [VSCode WDX Extension Pack](https://marketplace.visualstudio.com/items?itemName=kostasx.vscode-wdx-extension-pack){:target="_blank"}. 
 
 This is an `Extension Pack`, which automatically installs various extensions that are recommended for your first steps. Check the **Included Extensions** section to find out more about the extensions.
 
