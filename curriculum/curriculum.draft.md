@@ -24,6 +24,16 @@
 
 ## Syllabus
 
+<hr style="margin-bottom:0" />
+
+<div class="center opacity-50 opacity-100:hover">
+
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="curriculum-v1.0">this link</a>.
+
+</div>
+
+<hr />
+
 {{ SGEN:Syllabus }}
 
 ---
