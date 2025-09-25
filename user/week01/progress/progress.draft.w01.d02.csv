@@ -1,19 +1,19 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-1,2,How the Internet Works,Watch: the 'What is the Internet?' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Internet Works,Watch: the 'The Internet: Wires Cables & Wifi' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Internet Works,Watch: the 'The Internet: IP Addresses & DNS' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Internet Works,Watch: the 'The Internet: Packets Routing & Reliability' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Internet Works,Read 'How the Internet works',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Internet Works,Watch: the 'How the Internet Works in 5 Minutes' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'The Internet: HTTP & HTML' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Read: 'How the web works',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Read: 'What is a web server?',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Read: 'What is a URL?',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Read: 'What is a Domain Name?',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'What is Localhost?' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Internet Works,Site Blocking: block the 'budgetsaresexy.com' website through the hosts file,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Complete the 'Absolute vs Relative URLs' test,Beginner,0-10,FALSE,Copy responses.json to user/week01/exercises/day02/Absolute_vs_Relative_URLs folder. Commit and push your changes and then Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'How a web browser builds and displays a web page' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'The Internet: Encryption & Public Keys' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'The Internet: Cybersecurity & Crime' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,2,How the Web Works,Watch: the 'The Internet: How Search Works' video,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Watch: the 'What is the Internet?' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Watch: the 'The Internet: Wires Cables & Wifi' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Watch: the 'The Internet: IP Addresses & DNS' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Watch: the 'The Internet: Packets Routing & Reliability' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Read 'How the Internet works',Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Watch: the 'How the Internet Works in 5 Minutes' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Watch: the 'The Internet: HTTP & HTML' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Read: 'How the web works',Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Read: 'What is a web server?',Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Read: 'What is a URL?',Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Read: 'What is a Domain Name?',Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Watch: the 'What is Localhost?' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Internet Works,Site Blocking: block the 'budgetsaresexy.com' website through the hosts file,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Complete the 'Absolute vs Relative URLs' test,Beginner,0-10,TRUE,Copy responses.json to user/week01/exercises/day02/Absolute_vs_Relative_URLs folder. Commit and push your changes and then Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Watch: the 'How a web browser builds and displays a web page' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Watch: the 'The Internet: Encryption & Public Keys' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Watch: the 'The Internet: Cybersecurity & Crime' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,2,How the Web Works,Watch: the 'The Internet: How Search Works' video,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
