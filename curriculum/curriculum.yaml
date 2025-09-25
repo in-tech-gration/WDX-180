@@ -132,11 +132,11 @@ Syllabus:
       weeks:
         25: # file:///./schedule/week25.yaml
           # title: "JavaScript Advanced 1"
-          title: "Advanced JavaScript"
+          title: "Web APIs"
           open: true
         26: # file:///./schedule/week26.yaml
           # title: "JavaScript Advanced 2, TypeScript Advanced"
-          title: "Advanced JavaScript"
+          title: "Canvas API"
           open: true
         27: # file:///./schedule/week27.yaml
           # title: "Node.js 3 & Relational Databases"
@@ -144,15 +144,15 @@ Syllabus:
           open: true
         28: # file:///./schedule/week28.yaml
           # title: "Express.js, REST APIs & GraphQL"
-          title: "Advanced JavaScript"
+          title: "Building a Battleship Game in JS"
           open: true
         29: # file:///./schedule/week29.yaml
           # title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
-          title: "Advanced JavaScript"
+          title: "Data Structures & Algorithms"
           open: true
         30: # file:///./schedule/week30.yaml
           # title: "Functional Programming 2, Software Principles & Reading Academic Papers"
-          title: "Advanced JavaScript"
+          title: "TypeScript"
           open: true
         31: # file:///./schedule/week31.yaml
           # title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
@@ -160,23 +160,23 @@ Syllabus:
           open: true
         32: # file:///./schedule/week32.yaml
           # title: "Introduction to AI, Machine Learning & Tensorflow.js"
-          title: "Advanced JavaScript"
+          title: "Testing"
           open: true
         33: # file:///./schedule/week33.yaml
           # title: "Introduction to Data Science & Danfo.js"
-          title: "Advanced JavaScript"
+          title: "Intro to Databases"
           open: true
         34: # file:///./schedule/week34.yaml
           # title: "Blockchain & Web3"
-          title: "Advanced JavaScript"
+          title: "Mini CMS Project"
           open: true
         35: # file:///./schedule/week35.yaml
           # title: "Solo Project"
-          title: "Advanced JavaScript"
+          title: "Mini CMS Project"
           open: true
         36: # file:///./schedule/week36.yaml
           # title: "Solo Project"
-          title: "Advanced JavaScript"
+          title: "Mini CMS Project"
           open: true
         37: # file:///./schedule/week37.yaml
           title: The Road Ahead
