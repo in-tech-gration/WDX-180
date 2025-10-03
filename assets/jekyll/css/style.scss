@@ -51,6 +51,15 @@ summary {
 .mb-0 {
   margin-bottom: 0 !important;
 }
+.opacity-50 {
+  opacity: 0.5;
+}
+:hover.opacity-100\:hover {
+  opacity: 1 !important;
+}
+.center {
+  text-align: center;
+}
 
 //>>> TYPOGRAPHY <<<//
 p, a {

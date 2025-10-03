@@ -41,6 +41,12 @@
 
   - Run: `sgen pages/README.yaml` from the root directory.
 
+## Jekyll | How to | Update & Compile the Curriculum Page?
+
+  - Edit `/curriculum/curriculum.yaml`
+  - Run `sgen curriculum/curriculum.yaml`
+  - The output is based on the `/curriculum/curriculum.draft.md` template.
+
 ## Jekyll | How to | Change Website Styling (CSS)
 
   Edit the following file:

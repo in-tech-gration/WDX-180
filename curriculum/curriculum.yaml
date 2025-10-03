@@ -59,25 +59,25 @@ Syllabus:
           open: true
         14: # Functional Programming 1, Templating, JavaScript Frameworks (15/01/2024 - 19/01/204)
           # file:///./schedule/week14.yaml
-          title: "Intermediate JavaScript"
+          title: "Intermediate JavaScript: ECMAScript 6"
           # title: "Functional Programming 1, Templating, JavaScript Frameworks"
           open: true
           # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
         15: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml
           # title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
-          title: "Intermediate JavaScript"
+          title: "Intermediate JavaScript: Events"
           open: true
           # MEMOIZATION
         16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
           # file:///./schedule/week16.yaml
           # title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
-          title: "Intermediate JavaScript"
+          title: "Intermediate JavaScript: Events & Objects"
           open: true
         17: # Node.js 1 (12/02/2024 - 16/02/2024)
           # file:///./schedule/week18.yaml
           # title: "Node.js 1"
-          title: "Intermediate JavaScript"
+          title: "Intermediate JavaScript: Objects"
           open: true
         18: # Node.js 2 & NoSQL Databases (19/02/2024 - 23/02/2024)
           # file:///./schedule/week19.yaml
@@ -97,34 +97,34 @@ Syllabus:
         19: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
           # file:///./schedule/week15.yaml
           # title: "Data Structures & Algorithms"
-          title: "Node JS"
+          title: "Introduction to Node JS"
           open: true
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
         20: # React 1 (26/02/2024 - 01/03/2024)
           # file:///./schedule/week20.yaml
           # title: "React 1"
-          title: "Node JS"
+          title: "Web Servers with Node JS"
           open: true
         21: # React 2 (04/03/2024 - 08/03/2024)
           # file:///./schedule/week21.yaml
           # title: "React 2, Firebase"
-          title: "React JS"
+          title: "⚛️ React JS - An Introduction"
           open: true
         22: # React 3 (11/03/2024 - 15/03/2024)
           # file:///./schedule/week22.yaml
           # title: "React 3, Redux & Tech Interview"
-          title: "React JS"
+          title: "⚛️ React JS"
           open: true
         23: # Group Project, Tech Interviews, Job Hunt (18/03/2024 - 22/03/2024)
           # file:///./schedule/week23.yaml
           # title: "Group Project, Tech Interview & Job Hunt"
-          title: "React JS"
+          title: "⚛️ React JS"
           open: true
         24: # Group Project (25/03/2024 - 29/03/2024)
           # file:///./schedule/week24.yaml
           # title: "Group Project"
-          title: "React JS"
+          title: "⚛️ React JS"
           open: true
   Advanced:
     title: "Advanced: WDX 180°"
@@ -132,11 +132,11 @@ Syllabus:
       weeks:
         25: # file:///./schedule/week25.yaml
           # title: "JavaScript Advanced 1"
-          title: "Advanced JavaScript"
+          title: "Web APIs"
           open: true
         26: # file:///./schedule/week26.yaml
           # title: "JavaScript Advanced 2, TypeScript Advanced"
-          title: "Advanced JavaScript"
+          title: "Canvas API"
           open: true
         27: # file:///./schedule/week27.yaml
           # title: "Node.js 3 & Relational Databases"
@@ -144,15 +144,15 @@ Syllabus:
           open: true
         28: # file:///./schedule/week28.yaml
           # title: "Express.js, REST APIs & GraphQL"
-          title: "Advanced JavaScript"
+          title: "Building a Battleship Game in JS"
           open: true
         29: # file:///./schedule/week29.yaml
           # title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
-          title: "Advanced JavaScript"
+          title: "Data Structures & Algorithms"
           open: true
         30: # file:///./schedule/week30.yaml
           # title: "Functional Programming 2, Software Principles & Reading Academic Papers"
-          title: "Advanced JavaScript"
+          title: "TypeScript"
           open: true
         31: # file:///./schedule/week31.yaml
           # title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
@@ -160,23 +160,23 @@ Syllabus:
           open: true
         32: # file:///./schedule/week32.yaml
           # title: "Introduction to AI, Machine Learning & Tensorflow.js"
-          title: "Advanced JavaScript"
+          title: "Testing"
           open: true
         33: # file:///./schedule/week33.yaml
           # title: "Introduction to Data Science & Danfo.js"
-          title: "Advanced JavaScript"
+          title: "Intro to Databases"
           open: true
         34: # file:///./schedule/week34.yaml
           # title: "Blockchain & Web3"
-          title: "Advanced JavaScript"
+          title: "Mini CMS Project"
           open: true
         35: # file:///./schedule/week35.yaml
           # title: "Solo Project"
-          title: "Advanced JavaScript"
+          title: "Mini CMS Project"
           open: true
         36: # file:///./schedule/week36.yaml
           # title: "Solo Project"
-          title: "Advanced JavaScript"
+          title: "Mini CMS Project"
           open: true
         37: # file:///./schedule/week37.yaml
           title: The Road Ahead
