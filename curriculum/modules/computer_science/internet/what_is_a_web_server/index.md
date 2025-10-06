@@ -16,7 +16,7 @@ In this article, we explain what web servers are, how web servers work, and why 
       <th scope="row">Prerequisites:</th>
       <td>
         You should already know
-        <a href="/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        <a href="../how_the_internet_works"
           >how the Internet works</a
         >, and
         <a
