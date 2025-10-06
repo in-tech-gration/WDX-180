@@ -6,7 +6,7 @@ page-type: learn-faq
 
 # What is a URL?
 
-_(Updated: 14/08/2023)_
+_(Updated: 06/10/2025)_
 
 This article discusses Uniform Resource Locators (URLs), explaining what they are and how they're structured.
 

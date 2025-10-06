@@ -6,7 +6,7 @@ page-type: learn-faq
 
 # What is a web server?
 
-_(Updated: 14/08/2023)_
+_(Updated: 06/10/2025)_
 
 In this article, we explain what web servers are, how web servers work, and why they are important.
 

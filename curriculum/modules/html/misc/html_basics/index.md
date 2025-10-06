@@ -18,7 +18,7 @@ An **element** is a part of a webpage. In [XML](https://developer.mozilla.org/en
 
 ![Example: in <p class="nice">Hello world!</p>, '<p class="nice">' is an opening tag, 'class="nice"' is an attribute and its value, 'Hello world!' is enclosed text content, and '</p>' is a closing tag.](assets/anatomy-of-an-html-element.png)
 
-In short, **in [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) a **tag** is used for creating an [element](https://developer.mozilla.org/en-US/docs/Glossary/Element)**.
+In short, **in [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) a `<tag>` is used for creating an [element](https://developer.mozilla.org/en-US/docs/Glossary/Element)**.
 
 The enclosing **tags** can turn a word or an image into a [**hyperlink**](#links) _(more on this later)_, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
 
