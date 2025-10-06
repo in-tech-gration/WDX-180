@@ -12,7 +12,7 @@ other:
 
 # What will your website look like?
 
-_(Updated: 14/08/2023)_
+_(Updated: 06/10/2025)_
 
 _What will your website look like?_ discusses the planning and design work you have to do for your website before writing code, including "What information does my website offer?", "What fonts and colors do I want?", and "What does my site do?"
 
@@ -148,17 +148,11 @@ To make files talk to one another, you have to provide a file path between them 
 > **Accessibility concerns:** Authoring meaningful alternate descriptions
 >
 > An `alt` attribute's value should clearly and concisely describe the image's content. It should not describe the presence of the image itself or the file name of the image. If the `alt` attribute is purposefully left off because the image has no textual equivalent, consider alternate methods to present what the image is trying to communicate.
->
-> **Don't**
->
-> ```html example-bad 
-> <img alt="image" src="penguin.jpg" />
-> ```
->
-> *Do*
-> ```html example-good
-> <img alt="A Rockhopper Penguin standing on a beach." src="penguin.jpg" />
-> ```
+> <br/><br/>
+> ❌ **Don't**: `<img alt="image" src="penguin.jpg" />`
+> <br/><br/>
+> ✅ *Do*: `<img alt="A Rockhopper Penguin standing on a beach." src="penguin.jpg" />`
+> <br/><br/>
 > When an `alt` attribute is not present on an image, some screen readers may announce the image's file name instead. This can be a confusing experience if the file name isn't representative of the image's contents. [_Source_](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions)
 
 6. Save your HTML file, then load it in your web browser (double-click the file). You should see your new webpage displaying your image!
