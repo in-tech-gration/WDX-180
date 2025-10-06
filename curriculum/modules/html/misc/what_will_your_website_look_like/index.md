@@ -179,6 +179,12 @@ That is about it for now. Your folder structure should look something like this:
 
 ![A file structure in macOS finder, showing an images folder with an image in, empty scripts and styles folders, and an index.html file](assets/file-structure.png)
 
+## Submission: Upload the website to your user exercises folder
+
+Once you've completed the guide above and recreated the structure locally on your computer, make sure to upload it under your `user/` folder of your forked `WDX-180` repository.
+
+Here is a [short video](https://youtu.be/IF9mgVU0aHY){:target="_blank"} on how to do that.
+
 ---
 
 ### Sources and Attributions
@@ -190,3 +196,14 @@ That is about it for now. Your folder structure should look something like this:
     - [UX](https://developer.mozilla.org/en-US/docs/Glossary/UX) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/glossary/ux/index.md)
     - [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) [(Permalink)](https://github.com/mdn/content/blob/5ce6d5b38ec46374bbbf50b84b6105b5d1750911/files/en-us/learn/getting_started_with_the_web/dealing_with_files/index.md)
     - [`<img>`: The Image Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions) [(Permalink)](https://github.com/mdn/content/blob/5ce6d5b38ec46374bbbf50b84b6105b5d1750911/files/en-us/web/html/element/img/index.md)
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
