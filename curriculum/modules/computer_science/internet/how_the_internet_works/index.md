@@ -146,6 +146,4 @@ They can therefore be accessed by authorized members from different physical loc
 
 ---
 
-Copyright 2023 Intechgration.io
-
 This post is licensed under the GNU General Public License version 3 (GPLv3).

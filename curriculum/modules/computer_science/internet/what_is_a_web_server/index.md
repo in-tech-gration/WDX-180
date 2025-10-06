@@ -20,7 +20,7 @@ In this article, we explain what web servers are, how web servers work, and why 
           >how the Internet works</a
         >, and
         <a
-          href="/en-US/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines"
+          href="../web_mechanics/pages_sites_servers_and_search_engines/"
           >understand the difference between a web page, a website, a web
           server, and a search engine</a
         >.
