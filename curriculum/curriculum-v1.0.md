@@ -28,7 +28,7 @@
 
 <div class="center opacity-50 opacity-100:hover">
 
-  You are viewing v2.0 of this content. To go back to v1.0 click <a href="curriculum-v1.0">this link</a>.
+  You are viewing v1.0 of this content. To go back to v2.0 click <a href="index.html">this link</a>.
 
 </div>
 

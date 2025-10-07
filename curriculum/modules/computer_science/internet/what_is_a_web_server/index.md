@@ -6,7 +6,7 @@ page-type: learn-faq
 
 # What is a web server?
 
-_(Updated: 14/08/2023)_
+_(Updated: 06/10/2025)_
 
 In this article, we explain what web servers are, how web servers work, and why they are important.
 
@@ -16,11 +16,11 @@ In this article, we explain what web servers are, how web servers work, and why 
       <th scope="row">Prerequisites:</th>
       <td>
         You should already know
-        <a href="/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        <a href="../how_the_internet_works"
           >how the Internet works</a
         >, and
         <a
-          href="/en-US/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines"
+          href="../web_mechanics/pages_sites_servers_and_search_engines/"
           >understand the difference between a web page, a website, a web
           server, and a search engine</a
         >.

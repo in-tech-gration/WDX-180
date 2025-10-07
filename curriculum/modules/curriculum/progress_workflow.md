@@ -10,6 +10,8 @@ _(Updated: 29/09/2023)_
 
   Now that you have joined WDX, you'll have to keep track of your Progress each day of each week. In order to do so, below you will find the steps required to do, after you have successfully forked WDX-180 repository and cloned it locally!
 
+> 💡 If you are just starting out and still feel unfamiliar with command line tools and `git`, you should first check [this guide](../curriculum/how_to_update_your_progress/index.md){:target="_blank"} that will help you update your progress files through GitHub's website.
+
 ### Prerequisites
 
   Since the progress files are using the `CSV` (Comma Separated Values) format, it is probably a good idea to become familiar with this data format.

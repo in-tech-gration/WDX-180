@@ -6,7 +6,7 @@ page-type: learn-faq
 
 # What is a URL?
 
-_(Updated: 14/08/2023)_
+_(Updated: 06/10/2025)_
 
 This article discusses Uniform Resource Locators (URLs), explaining what they are and how they're structured.
 
@@ -16,14 +16,14 @@ This article discusses Uniform Resource Locators (URLs), explaining what they ar
       <th scope="row">Prerequisites:</th>
       <td>
         You need to first know
-        <a href="/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work"
+        <a href="../how_the_internet_works"
           >how the Internet works</a
         >,
-        <a href="/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server"
+        <a href="../what_is_a_web_server/"
           >what a Web server is</a
         >
         and
-        <a href="/en-US/docs/Learn/Common_questions/Web_mechanics/What_are_hyperlinks"
+        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_are_hyperlinks"
           >the concepts behind links on the web</a
         >.
       </td>

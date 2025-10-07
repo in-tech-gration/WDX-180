@@ -4,12 +4,15 @@ favicon: sitemap.png
 
 # WDX 180° | SITEMAP
 
+Updated: _(06/10/2025)_
+
   - **Instructors**
     - [Onboarding](https://in-tech-gration.github.io/WDX-180/staff/onboarding/instructors){:target="_blank"}
 
   - **Content**
     - [Integrating Interactive Coding Playgrounds (Flems)](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/){:target="_blank"}
     - [Build your GitHub Profile](https://in-tech-gration.github.io/WDX-180/curriculum/modules/pro/github-profile/index.html){:target="_blank"}
+    - [Multilingual Resources](https://in-tech-gration.github.io/WDX-180/resources/){:target="_blank"}
 
   - **Exercises**
     - **HTML**

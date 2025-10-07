@@ -12,7 +12,7 @@ other:
 
 # What will your website look like?
 
-_(Updated: 14/08/2023)_
+_(Updated: 06/10/2025)_
 
 _What will your website look like?_ discusses the planning and design work you have to do for your website before writing code, including "What information does my website offer?", "What fonts and colors do I want?", and "What does my site do?"
 
@@ -148,17 +148,11 @@ To make files talk to one another, you have to provide a file path between them 
 > **Accessibility concerns:** Authoring meaningful alternate descriptions
 >
 > An `alt` attribute's value should clearly and concisely describe the image's content. It should not describe the presence of the image itself or the file name of the image. If the `alt` attribute is purposefully left off because the image has no textual equivalent, consider alternate methods to present what the image is trying to communicate.
->
-> **Don't**
->
-> ```html example-bad 
-> <img alt="image" src="penguin.jpg" />
-> ```
->
-> *Do*
-> ```html example-good
-> <img alt="A Rockhopper Penguin standing on a beach." src="penguin.jpg" />
-> ```
+> <br/><br/>
+> ❌ **Don't**: `<img alt="image" src="penguin.jpg" />`
+> <br/><br/>
+> ✅ *Do*: `<img alt="A Rockhopper Penguin standing on a beach." src="penguin.jpg" />`
+> <br/><br/>
 > When an `alt` attribute is not present on an image, some screen readers may announce the image's file name instead. This can be a confusing experience if the file name isn't representative of the image's contents. [_Source_](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions)
 
 6. Save your HTML file, then load it in your web browser (double-click the file). You should see your new webpage displaying your image!
@@ -185,6 +179,12 @@ That is about it for now. Your folder structure should look something like this:
 
 ![A file structure in macOS finder, showing an images folder with an image in, empty scripts and styles folders, and an index.html file](assets/file-structure.png)
 
+## Submission: Upload the website to your user exercises folder
+
+Once you've completed the guide above and recreated the structure locally on your computer, make sure to upload it under your `user/` folder of your forked `WDX-180` repository.
+
+Here is a [short video](https://youtu.be/IF9mgVU0aHY){:target="_blank"} on how to do that.
+
 ---
 
 ### Sources and Attributions
@@ -196,3 +196,14 @@ That is about it for now. Your folder structure should look something like this:
     - [UX](https://developer.mozilla.org/en-US/docs/Glossary/UX) [(Permalink)](https://github.com/mdn/content/blob/10387e1345e60f93e939b873e953b8ae85557362/files/en-us/glossary/ux/index.md)
     - [Dealing with files](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files) [(Permalink)](https://github.com/mdn/content/blob/5ce6d5b38ec46374bbbf50b84b6105b5d1750911/files/en-us/learn/getting_started_with_the_web/dealing_with_files/index.md)
     - [`<img>`: The Image Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#authoring_meaningful_alternate_descriptions) [(Permalink)](https://github.com/mdn/content/blob/5ce6d5b38ec46374bbbf50b84b6105b5d1750911/files/en-us/web/html/element/img/index.md)
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
