@@ -1,0 +1,39 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: CSS Frameworks & Intro to Programming
+header_image: week06/assets/pexels-sevenstormphotography-439416.jpg
+schedule:
+  days:
+    1: # ✅ Tailwind 1
+      # file://./../modules/css/frameworks/tailwind/intro/index.md
+      module: css/frameworks/tailwind/intro
+    2: # ✅ Tailwind 2
+      # file://./../modules/css/frameworks/tailwind/make_a_website_using_tailwind/index.md
+      module: css/frameworks/tailwind/make_a_website_using_tailwind
+    3: # ✅ What is programming?
+      # file://./../modules/javascript/denepo/what-is-programming/index.md
+      module: javascript/denepo/what-is-programming
+    4: # What is JavaScript?
+      # file://./../modules/javascript/denepo/what-is-javascript/index.md
+      module: javascript/denepo/what-is-javascript
+    5: # Split Day 4 into 2? Perhaps add some more things from DeNepo?
+      # file://./../modules/javascript/denepo/predictive_stepping/index.md
+      module: javascript/denepo/predictive_stepping
+
+# ---
+
+# Day 05: Add: Flow Chart Example
+# https://www.youtube.com/watch?v=h736bEHkT_Y
+# Check slides: Flow Chart Example/
+
+# Day 3: Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
+# Day3: TODO: STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
+
+# TODO: Check whether the following DeNepo material can be integrated (dispersed) throughout this week's content:
+# 1) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming
+# 2) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/README.md
+# 3) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/some-history.md
+# 4) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/1-the-developers
+# 5) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/2-the-computer
+# 6) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/3-the-users
+# 7) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/4-data-in-data-out

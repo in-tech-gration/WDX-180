@@ -17,7 +17,7 @@ The aim of this skill test is to assess whether you understand [backgrounds and 
 In this task, we want you to add a background, border, and some simple styling to a page header:
 
 1. Give the box a 5px black solid border, with rounded corners of 10px.
-2. Add a background image (use the URL `balloons.jpg`) and size it so that it covers the box.
+2. Add a background image (use [`balloons.jpg`](./assets/balloons.jpg)) and size it so that it covers the box.
 3. Give the `<h2>` a semi-transparent black background color, and make the text white.
 
 Copy and paste the code below in a file named `backgrounds1.html`.
@@ -73,7 +73,7 @@ When you're ready, move the files in the following path `user/week03/exercises/d
 In this task, we want you to add background images, a border, and some other styling to a decorative box:
 
 - Give the box a 5px lightblue border and round the top left corner 20px and the bottom right corner 40px.
-- The heading uses the `star.png` image as a background image, with a single centered star on the left and a repeating pattern of stars on the right.
+- The heading uses the [`star.png`](./assets/star.png) image as a background image, with a single centered star on the left and a repeating pattern of stars on the right.
 - Make sure that the heading text does not overlay the image, and that it is centered — you will need to use techniques learned in previous lessons to achieve this.
 
 Copy and paste the code below in a file named `backgrounds2.html`.

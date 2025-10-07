@@ -1,0 +1,12 @@
+{
+  "study": {
+    "openIn": "jsTutor",
+    "flowchart": false,
+    "variables": false,
+    "loopGuard": false,
+    "ask": false,
+    "table": false,
+    "blanks": false,
+    "writeme": false
+  }
+}

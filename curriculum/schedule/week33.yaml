@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Intro to Databases"
+header_image: week33/intro-to-databases.jpg
+schedule: 
+  days:
+    1: # Introduction to Databases
+      # file://./../modules/javascript/misc/_w33d01/_w33d01.md
+      module: javascript/misc/_w33d01/_w33d01.md
+    2: # More Databases
+      # file://./../modules/javascript/misc/_w33d02/_w33d02.md
+      module: javascript/misc/_w33d02/_w33d02.md
+    3: # SQLite
+      # file://./../modules/javascript/misc/_w33d03/_w33d03.md
+      module: javascript/misc/_w33d03/_w33d03.md
+    4: # 
+      # file://./../modules/javascript/misc/_w33d04/_w33d04.md
+      module: javascript/misc/_w33d04/_w33d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w33d05/_w33d05.md
+      module: javascript/misc/_w33d05/_w33d05.md

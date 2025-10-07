@@ -1,0 +1,21 @@
+html {
+  color-scheme: dark;
+}
+aside, .list, .message, main {
+  outline: 1px solid gray;
+}
+section { 
+  display: flex;
+}
+aside {
+  width: 30%;
+}
+main {
+  flex-grow: 1;
+}
+li { cursor: pointer; }
+li:hover { opacity: 0.7; }
+.message {
+  min-height: 100px;
+  
+}

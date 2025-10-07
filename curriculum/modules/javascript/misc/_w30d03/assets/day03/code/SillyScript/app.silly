@@ -1,0 +1,16 @@
+def add( a, b ){
+  print( a + b );
+}
+
+def hello(msg){
+  print(msg);
+}
+
+add(40,2);
+hello("Hello world!");
+
+// const str = "definition" => "functioninition"
+
+// MathScript:
+// 0.1 + 0.2 = 0.3
+// Converts to: ( 0.1 * 10 ) + ( 0.2 * 10 ) === ( 0.3 * 10 )

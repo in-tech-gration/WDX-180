@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+
+    <title>multiplication</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section>
+      <form id="calculator">
+        <label><input id="left" type="number" value="0" /></label>
+        *
+        <label><input id="right" type="number" value="0" /> </label>
+      </form>
+
+      <hr />
+
+      <text>your output:</text>
+      <pre id="product"></pre>
+
+      <hr />
+
+      <text>expected output:</text>
+      <pre id="secret-solution"></pre>
+    </section>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./app.re.js" type="module"></script>
+  </body>
+</html>

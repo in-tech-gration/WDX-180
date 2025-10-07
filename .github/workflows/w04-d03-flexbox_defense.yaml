@@ -1,0 +1,21 @@
+name: "Week 04 - Day 3 CSS 2 & Performance | Test Exercise: 'Flexbox Defense'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day03/flexbox_defense/**
+jobs:
+  flexbox_defense:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Flexbox Defense' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day03/flexbox_defense/flexbox-defense.png"
+          fail: true

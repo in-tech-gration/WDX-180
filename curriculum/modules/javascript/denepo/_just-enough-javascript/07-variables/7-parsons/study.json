@@ -1,0 +1,9 @@
+{
+  "--defaults": {
+    ".js": "parsons"
+  },
+  "parsons": {
+    "run": true,
+    "trace": true
+  }
+}

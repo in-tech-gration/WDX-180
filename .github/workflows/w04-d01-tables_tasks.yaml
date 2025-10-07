@@ -1,0 +1,21 @@
+name: "Week 04 - Day 1 CSS 2 & Performance | Test Exercise: 'Test your skills: Tables'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day01/tables_tasks/**
+jobs:
+  tables_tasks:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Test your skills: Tables' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/tables_tasks/table.html"
+          fail: true

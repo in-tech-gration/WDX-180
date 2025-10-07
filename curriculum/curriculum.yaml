@@ -1,3 +1,4 @@
+version: 0.1.1
 input: curriculum/curriculum.draft.md
 output: curriculum/index.md
 messages:
@@ -5,93 +6,194 @@ messages:
 Syllabus:
   Beginner:
     title: "Beginner: WDX 60°"
-    subtitle: ""
+    subtitle: "Intro to Web Development, HTML, CSS and JavaScript"
     schedule:
       weeks: # Can also be 'days'
-        1: 
+        1: # file:///./schedule/week01.yaml
           title: "Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript"
           open: true
-        2: 
+        2: # file:///./schedule/week02.yaml
           title: "HTML, Accessibility & Git"
           open: true
-        3: 
+        3: # file:///./schedule/week03.yaml
           title: "CSS, Accessibility & more Git"
           open: true
-        4: 
+        4: # file:///./schedule/week04.yaml
           title: "CSS 2 & Performance"
-        5: 
-          title: "CSS Frameworks"
-        6: 
+          open: true
+        5: # file:///./schedule/week05.yaml
+          title: "Mockup CSS Challenge"
+          open: true
+        6: # file:///./schedule/week06.yaml
+          title: "CSS Frameworks & Intro to Programming"
+          open: true
+        7: # file:///./schedule/week07.yaml (20/11/2023 - 24/11/2023)
           title: "JavaScript Core 1"
-        7: 
+          open: true
+        8: # file:///./schedule/week08.yaml (27/11/2023 - 01/12/2023)
           title: "JavaScript Core 2"
-        8: 
+          open: true
+        9: # file:///./schedule/week09.yaml (04/12/2023 - 08/12/2023)
           title: "JavaScript Core 3"
-        9: 
-          title: "Web APIs 1: DOM, Events, Asynchronous Programming & Ajax"
-        10: 
-          title: "Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop"
-        11: 
-          title: "Functional Programming 1, Clean Code & Testing"
-        12: 
-          title: "Templating, JavaScript Frameworks & Git Workflow"
-          # title: "Deploying our Applications & Group Project"
+          open: true
+        10: # file:///./schedule/week10.yaml (11/12/2023 - 15/12/2023)
+          title: "Web APIs 1: DOM API & Events"
+          # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
+          open: true
+        11: # file:///./schedule/week11.yaml (18/12/2023 - 22/12/2023)
+          title: "Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API"
+          open: true
+          # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
+        12: # file:///./schedule/week12.yaml (XMAS Project)
+          title: "Practice Week"
+          open: true
   Intermediate:
     title: "Intermediate: WDX 120°"
     schedule:
       weeks:
-        13:
-          title: "JavaScript Intermediate 1 & Git"
-        14:
-          title: "Data Structures"
-        15:
-          title: "Algorithms"
-        16:
-          title: "Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more"
-        17:
-          title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
-        18:
-          title: "Node.js 1"
-        19:
-          title: "Node.js 2, NoSQL Databases & Docker"
-        20:
-          title: "React 1"
-        21:
-          title: "React 2, Firebase"
-        22:
-          title: "React 3, Redux & Tech Interview"
-        23:
-          title: "Group Project, Tech Interview & Job Hunt"
-        24:
-          title: "Group Project"
+        13: # JavaScript Intermediate 1 & Git (08/01/2024 - 12/01/2024)
+          # file:///./schedule/week13.yaml
+          title: "Intermediate JavaScript: Promises & Scope (var, let, const)"
+          # TODO: ES6
+          # Clean Code, Testing, Workflow, Deploying your app
+          open: true
+        14: # Functional Programming 1, Templating, JavaScript Frameworks (15/01/2024 - 19/01/204)
+          # file:///./schedule/week14.yaml
+          title: "Intermediate JavaScript: ECMAScript 6"
+          # title: "Functional Programming 1, Templating, JavaScript Frameworks"
+          open: true
+          # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
+        15: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
+          # file:///./schedule/week17.yaml
+          # title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
+          title: "Intermediate JavaScript: Events"
+          open: true
+          # MEMOIZATION
+        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
+          # file:///./schedule/week16.yaml
+          # title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
+          title: "Intermediate JavaScript: Events & Objects"
+          open: true
+        17: # Node.js 1 (12/02/2024 - 16/02/2024)
+          # file:///./schedule/week18.yaml
+          # title: "Node.js 1"
+          title: "Intermediate JavaScript: Objects"
+          open: true
+        18: # Node.js 2 & NoSQL Databases (19/02/2024 - 23/02/2024)
+          # file:///./schedule/week19.yaml
+          # title: "Node.js 2 & NoSQL Databases"
+          title: "Intermediate JavaScript"
+          open: true
+          # TODO: STUDY: https://www.kdnuggets.com/5-steps-getting-started-with-sql
+          # STUDY: https://www.sql-practice.com/
+          # STUDY: https://sql.js.org/examples/GUI/index.html
+          # STUDY: https://sqlbolt.com/
+          # STUDY: https://www.db-fiddle.com/
+          # STUDY: https://github.com/btholt/complete-intro-to-sql
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/03-sqlite.md
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/01-tables.md
+          # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
+        19: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
+          # file:///./schedule/week15.yaml
+          # title: "Data Structures & Algorithms"
+          title: "Introduction to Node JS"
+          open: true
+          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
+          # STUDY: https://github.com/btholt/complete-intro-to-computer-science
+        20: # React 1 (26/02/2024 - 01/03/2024)
+          # file:///./schedule/week20.yaml
+          # title: "React 1"
+          title: "Web Servers with Node JS"
+          open: true
+        21: # React 2 (04/03/2024 - 08/03/2024)
+          # file:///./schedule/week21.yaml
+          # title: "React 2, Firebase"
+          title: "⚛️ React JS - An Introduction"
+          open: true
+        22: # React 3 (11/03/2024 - 15/03/2024)
+          # file:///./schedule/week22.yaml
+          # title: "React 3, Redux & Tech Interview"
+          title: "⚛️ React JS"
+          open: true
+        23: # Group Project, Tech Interviews, Job Hunt (18/03/2024 - 22/03/2024)
+          # file:///./schedule/week23.yaml
+          # title: "Group Project, Tech Interview & Job Hunt"
+          title: "⚛️ React JS"
+          open: true
+        24: # Group Project (25/03/2024 - 29/03/2024)
+          # file:///./schedule/week24.yaml
+          # title: "Group Project"
+          title: "⚛️ React JS"
+          open: true
   Advanced:
     title: "Advanced: WDX 180°"
     schedule:
       weeks:
-        25:
-          title: "JavaScript Advanced 1"
-        26:
-          title: "JavaScript Advanced 2, TypeScript Advanced"
-        27:
-          title: "Node.js 3 & Relational Databases"
-        28:
-          title: "Express.js, REST APIs & GraphQL"
-        29:
-          title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
-        30:
-          title: "Functional Programming 2, Software Principles & Reading Academic Papers"
-        31:
-          title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
-        32:
-          title: "Introduction to AI, Machine Learning & Tensorflow.js"
-        33:
-          title: "Introduction to Data Science & Danfo.js"
-        34:
-          title: "Blockchain & Web3"
-        35:
-          title: "Solo Project"
-        36:
-          title: "Solo Project"
-        37:
+        25: # file:///./schedule/week25.yaml
+          # title: "JavaScript Advanced 1"
+          title: "Web APIs"
+          open: true
+        26: # file:///./schedule/week26.yaml
+          # title: "JavaScript Advanced 2, TypeScript Advanced"
+          title: "Canvas API"
+          open: true
+        27: # file:///./schedule/week27.yaml
+          # title: "Node.js 3 & Relational Databases"
+          title: "Advanced JavaScript"
+          open: true
+        28: # file:///./schedule/week28.yaml
+          # title: "Express.js, REST APIs & GraphQL"
+          title: "Building a Battleship Game in JS"
+          open: true
+        29: # file:///./schedule/week29.yaml
+          # title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
+          title: "Data Structures & Algorithms"
+          open: true
+        30: # file:///./schedule/week30.yaml
+          # title: "Functional Programming 2, Software Principles & Reading Academic Papers"
+          title: "TypeScript"
+          open: true
+        31: # file:///./schedule/week31.yaml
+          # title: "Content Management Systems, WordPress, Eleventy & Serverless Architecture"
+          title: "Advanced JavaScript"
+          open: true
+        32: # file:///./schedule/week32.yaml
+          # title: "Introduction to AI, Machine Learning & Tensorflow.js"
+          title: "Testing"
+          open: true
+        33: # file:///./schedule/week33.yaml
+          # title: "Introduction to Data Science & Danfo.js"
+          title: "Intro to Databases"
+          open: true
+        34: # file:///./schedule/week34.yaml
+          # title: "Blockchain & Web3"
+          title: "Mini CMS Project"
+          open: true
+        35: # file:///./schedule/week35.yaml
+          # title: "Solo Project"
+          title: "Mini CMS Project"
+          open: true
+        36: # file:///./schedule/week36.yaml
+          # title: "Solo Project"
+          title: "Mini CMS Project"
+          open: true
+        37: # file:///./schedule/week37.yaml
           title: The Road Ahead
           no_unit: true
+
+# ---
+
+# CHANGELOG
+
+## [0.1.1] - 07/12/2023: Updated Weeks 10 and 11
+### REMOVED: Week 10: Removed Asynchronous Programming & Ajax
+### REMOVED: Week 11: Removed Web Storage and Media APIs
+## [0.1.0]: https://github.com/in-tech-gration/WDX-180/blob/21faf10c25cdd520fa5b8edf9d47f14a69caae47/curriculum/curriculum.yaml 
+
+# TODO: SQL: https://eventloop.gr/LearnSQL/index.html#/
+# +Murder Mystery
+
+# TODO: Add Chrome Extensions to z-index/stacking-context related modules
+# https://chromewebstore.google.com/detail/css-stacking-context-insp/apjeljpachdcjkgnamgppgfkmddadcki
+# https://chromewebstore.google.com/detail/z-context/jigamimbjojkdgnlldajknogfgncplbh

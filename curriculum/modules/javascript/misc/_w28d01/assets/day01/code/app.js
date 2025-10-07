@@ -1,0 +1,5 @@
+function lib(){
+  
+}
+
+lib()

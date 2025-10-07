@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Mini CMS"
+# header_image: week35/header.jpg
+schedule: 
+  days:
+    1: # MiniCMS
+      # file://./../modules/javascript/misc/_w35d01/_w35d01.md
+      module: javascript/misc/_w35d01/_w35d01.md
+    2: # MiniCMS
+      # file://./../modules/javascript/misc/_w35d02/_w35d02.md
+      module: javascript/misc/_w35d02/_w35d02.md
+    3: # Promises
+      # file://./../modules/javascript/misc/_w35d03/_w35d03.md
+      module: javascript/misc/_w35d03/_w35d03.md
+    4: # Practice Day
+      # file://./../modules/javascript/misc/_w35d04/_w35d04.md
+      module: javascript/misc/_w35d04/_w35d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w35d05/_w35d05.md
+      module: javascript/misc/_w35d05/_w35d05.md

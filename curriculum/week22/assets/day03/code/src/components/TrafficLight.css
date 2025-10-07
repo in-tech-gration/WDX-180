@@ -1,0 +1,26 @@
+#red {
+  background: transparent;
+}
+#red.active {
+  background: red;
+}
+#orange {
+  background: transparent;
+}
+#orange.active {
+  background: orange;
+}
+#green {
+  background: transparent;
+}
+#green.active {
+  background: green;
+}
+.sign {
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  margin: 1rem 0;
+  padding: 0.25rem;
+  border-radius: 50%;
+}

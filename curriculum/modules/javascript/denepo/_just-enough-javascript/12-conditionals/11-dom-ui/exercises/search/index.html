@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+
+    <title>search</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <form id="search-input">
+      <label>Does <input id="text" type="text" /></label>
+      <label>include<input id="query" type="text" /></label>
+      ?
+      <br />
+      <label>case-sensitive: <input id="sensitive" type="checkbox" /></label>
+    </form>
+
+    <hr />
+
+    <pre id="search-result" class="computery"></pre>
+
+    <hr />
+
+    secret solution:
+
+    <pre id="secret-solution" class="computery"></pre>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./app.re.js" type="module"></script>
+  </body>
+</html>

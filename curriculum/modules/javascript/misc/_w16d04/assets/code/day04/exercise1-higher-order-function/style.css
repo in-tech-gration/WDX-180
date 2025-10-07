@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #00000033;
+}
+
+button {
+  width: 500px;
+  height: 50px;
+  background: red;
+  font-size: 2rem;
+  color: white;
+  border: none;
+}

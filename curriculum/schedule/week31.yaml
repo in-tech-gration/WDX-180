@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Advanced JavaScript"
+header_image: week31/diorama.jpg
+schedule: 
+  days:
+    1: # Object Constructors & Instances
+      # file://./../modules/javascript/misc/_w31d01/_w31d01.md
+      module: javascript/misc/_w31d01/_w31d01.md
+    2: # Expenses Chart Challenge & TS Generics
+      # file://./../modules/javascript/misc/_w31d02/_w31d02.md
+      module: javascript/misc/_w31d02/_w31d02.md
+    3: # Object Primitives, Falsy values & Sets
+      # file://./../modules/javascript/misc/_w31d03/_w31d03.md
+      module: javascript/misc/_w31d03/_w31d03.md
+    4: # Expenses Chart Challenge in React
+      # file://./../modules/javascript/misc/_w31d04/_w31d04.md
+      module: javascript/misc/_w31d04/_w31d04.md
+    5: # Testing
+      # file://./../modules/javascript/misc/_w31d05/_w31d05.md
+      module: javascript/misc/_w31d05/_w31d05.md

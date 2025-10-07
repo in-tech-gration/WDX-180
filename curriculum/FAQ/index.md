@@ -1,6 +1,7 @@
 ---
 load_script_js: 
   - setup_faq.js
+  - animated.bubbles.js
   - libs/fuse-6.6.2.js
   # Using CDN version: https://cdn.jsdelivr.net/npm/fuse.js@6.6.2
   - libs/tagify-4.17.9.js
@@ -101,6 +102,16 @@ Q: **I try to use npm install but i get prompted that the term is not recognized
 > 2) No, as mentioned during our welcoming session, live Q&As for this week will happen on Wednesday and Friday.
 
 ---
+
+**Questions, comments, suggestions? Please leave them on the comment section below.**
+
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
 
 <!-- 
   **Tags: [ "operating system", "WDX180", "npm", "npm install", "update", "git", "git clone", "clone", "ssh", "config", "windows", "bash", "terminal", "youtube", "video", "progress", "repository", "commit", "URL", "authenticity", "vscode", "folder" ]** 

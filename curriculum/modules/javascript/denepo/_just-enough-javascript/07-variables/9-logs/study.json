@@ -1,0 +1,8 @@
+{
+  "--defaults": {
+    "directory": "loggercise"
+  },
+  "loggercise": {
+    "save": true
+  }
+}

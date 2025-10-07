@@ -1,0 +1,38 @@
+html { color-scheme: dark; }
+body { font-size: 2rem; margin: 0; }
+.grid { 
+  outline: 1px solid hotpink;
+  margin: 2rem;
+  display: grid;
+  height: 250px;
+  /*  HORIZONTAL ALIGNMENT:  */
+  /*   justify-content: stretch; */
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  
+  /* VERTICAL ALIGNMENT:    */
+  align-items: stretch;
+  align-items: start;
+  align-items: end;
+  align-items: center;
+  
+  place-items: center start;
+  place-items: center;
+
+}
+.item {
+  outline: 1px solid gray;
+}
+
+section {
+  border: 1px solid orange;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+
+  display: grid;
+  place-items: center;
+/*   justify-items: center;
+  align-items: center; */
+}

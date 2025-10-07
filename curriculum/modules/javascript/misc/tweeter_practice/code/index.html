@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tailwind CSS - Twitter Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="bg-grey-light font-sans">
+  
+    <header class="hero bg-cover h-24"></header>
+
+    <!-- Avatar -->
+    <div class="bg-white shadow">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center lg:relative">
+            <div class="w-full lg:w-1/4">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/tt_tailwind_logo.jpg" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <ul class="list-reset flex">
+                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent border-teal">
+                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
+                            <div class="text-sm font-bold tracking-tight mb-1">Tweets</div>
+                            <div class="text-lg tracking-tight font-bold text-teal">60</div>
+                        </a>
+                    </li>
+                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
+                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
+                            <div class="text-sm font-bold tracking-tight mb-1">Following</div>
+                            <div class="text-lg tracking-tight font-bold hover:text-teal">4</div>
+                        </a>
+                    </li>
+                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
+                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
+                            <div class="text-sm font-bold tracking-tight mb-1">Followers</div>
+                            <div class="text-lg tracking-tight font-bold hover:text-teal">3,810</div>
+                        </a>
+                    </li>
+                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
+                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
+                            <div class="text-sm font-bold tracking-tight mb-1">Likes</div>
+                            <div class="text-lg tracking-tight font-bold hover:text-teal">9</div>
+                        </a>
+                    </li>
+                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
+                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
+                            <div class="text-sm font-bold tracking-tight mb-1">Moments</div>
+                            <div class="text-lg tracking-tight font-bold hover:text-teal">1</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full lg:w-1/4 flex my-4 lg:my-0 lg:justify-end items-center">
+                <div class="mr-6">
+                    <button class="bg-teal hover:bg-teal-dark text-white font-medium py-2 px-4 rounded-full">Following</button>
+                </div>
+                <div>
+                    <a href="#" class="text-grey-dark"><i class="fa fa-ellipsis-v fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto flex flex-col lg:flex-row mt-3 text-sm leading-normal">
+
+        <div class="lg:w-1/4"></div>
+
+        <!-- Tweets -->
+        <div class="w-full lg:w-1/2 bg-white mb-4">
+          
+            <div class="p-3 text-lg font-bold border-b border-solid border-grey-light">
+              <a href="#" class="text-black mr-6 no-underline hover-underline">Tweets</a>
+              <a href="#" class="mr-6 text-teal no-underline hover:underline">Tweets &amp; Replies</a>
+              <a href="#" class="text-teal no-underline hover:underline">Media</a>
+            </div>
+          
+            <form id="tweet-form" class="border p-4">
+              <input id="title" class="border p-2 w-full mb-2" type="text" placeholder="Enter title...">
+              <input id="body" class="border p-2 w-full mb-2" type="text" placeholder="Enter tweet...">
+              <button class="px-4 py-1 bg-green-200 font-bold">Tweet</button>
+            </form>
+            <hr />
+          
+            <div class="tweets">
+            </div>
+        </div>
+
+        <div class="lg:w-1/4"></div>
+
+      
+    </div>
+
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

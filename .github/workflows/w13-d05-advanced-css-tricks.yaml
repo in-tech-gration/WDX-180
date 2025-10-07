@@ -1,0 +1,21 @@
+name: "Week 13 - Day 5 Intermediate JavaScript | Test Exercise: 'Advanced CSS Tricks'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week13/exercises/day05/advanced-css-tricks/**
+jobs:
+  advanced-css-tricks:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Advanced CSS Tricks' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week13/exercises/day05/advanced-css-tricks/advanced-css-tricks.html"
+          fail: true

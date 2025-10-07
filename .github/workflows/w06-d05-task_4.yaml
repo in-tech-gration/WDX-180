@@ -1,0 +1,21 @@
+name: "Week 06 - Day 5 JavaScript Core 1 | Test Exercise: 'Properties and Methods of JavaScript Arrays'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week06/exercises/day05/task_4/**
+jobs:
+  task_4:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Properties and Methods of JavaScript Arrays' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week06/exercises/day05/task_4/properties-and-methods-of-arrays.js, user/week06/exercises/day05/task_4/properties-and-methods-of-arrays.html"
+          fail: true

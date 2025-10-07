@@ -1,0 +1,61 @@
+#output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+p {
+  color: white;
+  width: 100%;
+  padding: 24px;
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+  background: #1d1e22;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+p.mark {
+  background-image: linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.06)
+  );
+  background-color: #ffffff;
+  text-decoration: line-through;
+  color: #222222;
+}
+
+label{
+  font-size: 32px;
+  font-weight:bold;
+}
+
+input[type="text"] {
+  display:inline-block;
+  background-color: #ffffff;
+  color: #222222;
+  border: 2px solid #dddddd;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+  width: 50%;
+  box-sizing: border-box;
+  margin:15px;
+}
+
+button {
+  display:inline-block;
+  background-color: #ffffff;
+  color: #222222;
+  border: 2px solid #222222;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin:15px;
+}

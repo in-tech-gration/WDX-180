@@ -1,0 +1,51 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: HTML, Accessibility & Git
+schedule: 
+  days:
+  
+    1: # Git
+      # file://./../modules/
+      module: 
+
+    2: # Intro to HTML
+      # file://./../modules/
+      module: 
+
+    3: # HTML Tables
+      # file://./../modules/
+      module: 
+
+    4: # HTML Forms
+      # file://./../modules/
+      module: 
+
+    5: # HTML Forms & Accessibility
+      # file://./../modules/
+      module: 
+
+# ---
+
+# TODO: Day1: Add to this week: File Paths: https://www.kirupa.com/html5/all_about_file_paths.htm
+
+# TODO: Day 1: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/02-html
+# TODO: STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/blob/main/lessons/07-other-stuff-you-should-know/B-git-and-github.md
+
+# TODO: Day 2: INTEGRATE: First Part (HTML) of https://russmaxdesign.github.io/maxdesign-slides/02-css/202-common-terms.html#/
+# TODO: INTEGRATE: https://caninclude.glitch.me/caninclude?child=div&parent=p (https://github.com/CyberLight/caninclude-v2) (Add Star Repo reminder) Complement with: https://css-tricks.com/can-include-a-certain-html-element-within-another-certain-html-element/
+
+# TODO: Day 5: Addition: What you need to know about forms and placeholders
+# PLACEHOLDERS ARE NOT LABELS AND DO NOT GET TRANSLATED -- START TYPING AND THEN FORGET WHAT THE INPUT IS FOR? Also, placeholders are not read by some assistive technology
+
+# Day 5: Integrate Emmet Guide + Interactive Exercise?
+# https://dev.to/ziratsu/emmet-crash-course-gjm
+# https://github.com/ecole-du-web/Emmet-Crash-Course/tree/main
+
+# TEST & SUGGEST: https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator (SAR: Mary)
+
+# TODO: GIT LESSON PROBLEMS: (Student support)
+# ...stuck with "Set up GitBash as your default terminal in VSCode" that bash option does not appear in the dropdown menu?
+# File -> Preferences -> Settings (or press on Ctrl+,)
+# User -> Features -> Terminal
+# Click and add "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+# Save and Restart VS code. Bash terminal will reflect on the terminal.

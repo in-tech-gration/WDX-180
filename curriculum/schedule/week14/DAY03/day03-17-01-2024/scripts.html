@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scripts</title>
+  <script>
+    console.log("Inside <head>");
+  </script>
+</head>
+<body>
+
+  <h2>A</h2>
+  <script defer src="./heavy.js?v=4"></script>
+  <h2>B</h2>
+
+  <h1>Scripts &amp; Modules</h1>
+  <h2>Subtitle</h2>
+  <!-- MIME TYPE: type/subtype -->
+  <script>
+    console.log("2nd <script>");
+    const h1 = document.querySelector("h1");
+    h1.textContent = "Scripts & Modules (via JS)";
+  </script>
+  <!-- When JS is disabled, show this content: -->
+  <noscript>
+    You are missing on some amazing JS-based features.
+  </noscript>
+
+  <script>
+    console.log("Extra JS!");
+  </script>
+  <!-- <script src="./script-b.js"></script> -->
+
+  <!-- CACHE BUSTING: -->
+  <!-- <script src="./heavy.js?version=2"></script> -->
+  <!-- http://127.0.0.01/heavy.js -->
+
+</body>
+</html>

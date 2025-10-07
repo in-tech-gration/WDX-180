@@ -1,0 +1,13 @@
+.level-1 {
+  background: limegreen;
+  padding: 1rem;
+}
+.level-2 {
+  background: orange;
+  padding: 1rem;
+}
+button.level-3 {
+  background: hotpink;
+  width: 100%;
+  color: white;
+}

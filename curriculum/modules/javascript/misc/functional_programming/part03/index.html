@@ -1,0 +1,1072 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/codemirror/codemirror.css">
+	<link rel="stylesheet" href="../assets/app/site.css">
+	<title>Functional Programming in Javascript: Part 3</title>
+	<script type="text/javascript">
+		// Adds the implementation for Array.prototype.concatAll()
+		function defineConcatAll() {
+			Array.prototype.concatAll = function () {
+				var results = [];
+
+				this.forEach(function(subArray) {
+					results.push.apply(results, subArray);
+				});
+
+				return results;
+			};
+		}
+
+		/**
+		 * Add the implementation for Array.prototype.concatMap()
+		 */
+		function defineConcatMap() {
+			Array.prototype.concatMap = function(fnc) {
+				return this.
+					map(function (e) {
+						return fnc(e);
+					}).
+					// apply the concatAll function to flatten the two-dimensional array
+					concatAll();
+			};
+		}
+
+		/**
+		 * This function will be executed at the begining of each verifier function
+		 */
+		function preVerifierHook() {
+			// Add helpers to prevent 'undefined is not a function' like errors
+			defineConcatAll();
+			defineConcatMap();
+		}
+	</script>
+</head>
+<body>
+<div class="content">
+  <!-- ***************************** GRAB ANSWERS ***************************** -->
+	<!-- <div class="grab-answers">
+		<p>This is an interactive learning course with exercises you fill out right in the browser. <b>If you just want to browse the content click the button below</b>:</p>
+		<button class="green-button show-answers">Show all the answers so I can just browse.</button>
+	</div> -->
+  <h1 class="center">Functional Programming in Javascript: Part 3</h1>
+
+  <p>This is the third and last part of the series of  interactive exercises focusing on training yourself to use functional
+    programming to manipulate collections. In the previous part, we defined a new function to the Array prototype called
+    <b>concatMap()</b>, which combines the map() and our concatAll() functions, and we dive into one of the most useful
+    functions in JavaScript, the <b>reduce()</b> function! Lastly, we are going to learn another useful function of the
+    Array prototype, called <b>zip()</b>, which will help us do even more complex and powerful queries!
+  </p>
+
+  <h2>Finishing the Interactive Exercises</h2>
+
+  <p>This isn't just a tutorial, it's a
+    <b>series of interactive exercises that you can fill out right in your browser!</b> It's easy to finish the
+    exercises. Just edit the code and press "Run." If the code works, a new exercise will appear below. Otherwise an
+    error will appear.
+  </p>
+  <p><b>Note:</b> Use the "F4" key to toggle full screen mode for each editor.</p>
+
+  <p>This tutorial may have bugs, so if you get into a weird state or you're sure you've got the right answer but
+    can't move on, just refresh your browser. If you're using a modern browser, and if you're here I assume you are,
+    the state of your exercises will be saved. If you want, you can also
+    <a href="javascript:localStorage.newState = ''; document.location.reload();">restart the lab.</a></p>
+
+  <p>
+		The content of this series is part of the online tutorial 
+		<a href="https://reactivex.io/learnrx/" target="_blank">Functional Programming in Javascript</a>, which mainly focuses
+		on <a href="https://reactivex.io/" target="_blank">Microsoft's Reactive Extensions (Rx) Library for Javascript</a>.
+		Make sure to star <a href="https://github.com/ReactiveX/learnrx" target="_blank">this repository</a> over at GitHub!
+  </p>
+  <div class="grab-answers">
+    <p>Your answers will be saved in local storage. Use the buttons below if you want to transfer them to another machine:</p>
+    <button class="green-button get-answer">Get Answers as JSON</button>
+    <button class="blue-button set-answer">Set JSON Answers</button>
+  </div>
+
+  <h2>Working with Arrays</h2>
+
+  <!-- ************************* LESSON ************************* -->
+	<div class="lesson" style="visibility: visible">
+		<h3>Zipping Arrays</h3>
+		<p>Sometimes we need to combine two arrays by progressively taking an item from each and combining the pair. If you
+			visualize a zipper, where each side is an array, and each tooth is an item, you'll have a good idea of how the zip
+			operation works.</p>
+		<h4>Exercise 21: Combine videos and bookmarks by index</h4>
+
+		<p>Use a for loop to traverse the videos and bookmarks array at the same time. For each video and bookmark pair,
+			create a {videoId, bookmarkId} pair and add it to the videoIdAndBookmarkIdPairs array.</p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var videos = [
+						{
+							"id": 70111470,
+							"title": "Die Hard",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 654356453,
+							"title": "Bad Boys",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						},
+						{
+							"id": 65432445,
+							"title": "The Chamber",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 675465,
+							"title": "Fracture",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						}
+					],
+					bookmarks = [
+						{id: 470, time: 23432},
+						{id: 453, time: 234324},
+						{id: 445, time: 987834}
+					],
+				counter,
+				videoIdAndBookmarkIdPairs = [];
+
+				for(counter = 0; counter < Math.min(videos.length, bookmarks.length); counter++) {
+					// Insert code here to create a {videoId, bookmarkId} pair and add it to the videoIdAndBookmarkIdPairs array.
+				}
+
+				return videoIdAndBookmarkIdPairs;
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Zip imperatively
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					pairs = fun(),
+					got,
+					expected = '[{"videoId":65432445,"bookmarkId":445},{"videoId":70111470,"bookmarkId":470},{"videoId":654356453,"bookmarkId":453}]';
+
+				pairs = pairs.sortBy(function(v) { return v.videoId });
+				got = JSON.stringify(pairs);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var videos = [
+						{
+							"id": 70111470,
+							"title": "Die Hard",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 654356453,
+							"title": "Bad Boys",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						},
+						{
+							"id": 65432445,
+							"title": "The Chamber",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 675465,
+							"title": "Fracture",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						}
+					],
+					bookmarks = [
+						{id: 470, time: 23432},
+						{id: 453, time: 234324},
+						{id: 445, time: 987834}
+					],
+				counter,
+				videoIdAndBookmarkIdPairs = [];
+
+				for(counter = 0; counter < Math.min(videos.length, bookmarks.length); counter++) {
+				  videoIdAndBookmarkIdPairs.push({videoId: videos[counter].id, bookmarkId: bookmarks[counter].id});
+				}
+
+				return videoIdAndBookmarkIdPairs;
+			}
+		</pre>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 22: Implement zip</h4>
+
+		<p>Let's add a static zip() function to the Array type. The zip function accepts a combiner function, traverses each
+			array at the same time, and calls the combiner function on the current item on the left-hand-side and
+			right-hand-side. The zip function requires an item from each array in order to call the combiner function,
+			therefore the array returned by zip will only be as large as the smallest input array.
+
+		<p>
+		<textarea class="code" rows="40" cols="80">
+			// JSON.stringify(Array.zip([1,2,3],[4,5,6], function(left, right) { return left + right })) === '[5,7,9]'
+
+			Array.zip = function(left, right, combinerFunction) {
+				var counter,
+					results = [];
+
+				for(counter = 0; counter < Math.min(left.length, right.length); counter++) {
+					// Add code here to apply the combinerFunction to the left and right-hand items in the respective arrays
+				}
+
+				return results;
+			};
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Implement zip
+			function(str) {
+				preVerifierHook();
+				var fun = eval(str),
+					left = [1,2,3],
+					right = [4,5,6],
+					sum = Array.zip(left, right, function(left, right){ return left + right; }),
+					expected = '[5,7,9]';
+
+				if (JSON.stringify(sum) !== expected) {
+					showLessonErrorMessage(expected, JSON.stringify(sum));
+				}
+			}
+		</pre>
+		<pre class="answer">
+			// JSON.stringify(Array.zip([1,2,3],[4,5,6], function(left, right) { return left + right })) === '[5,7,9]'
+
+			Array.zip = function(left, right, combinerFunction) {
+				var counter,
+					results = [];
+
+				for(counter = 0; counter < Math.min(left.length, right.length); counter++) {
+					results.push(combinerFunction(left[counter],right[counter]));
+				}
+
+				return results;
+			};
+        </pre>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 23: Combine videos and bookmarks by index</h4>
+
+		<p>Let's repeat exercise 21, but this time lets use your new zip() function. For each video and bookmark pair,
+			create a {videoId, bookmarkId} pair.</p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var videos = [
+						{
+							"id": 70111470,
+							"title": "Die Hard",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 654356453,
+							"title": "Bad Boys",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						},
+						{
+							"id": 65432445,
+							"title": "The Chamber",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 675465,
+							"title": "Fracture",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						}
+					],
+					bookmarks = [
+						{id: 470, time: 23432},
+						{id: 453, time: 234324},
+						{id: 445, time: 987834}
+					];
+
+				return Array.
+					zip( //... finish this expression
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Combine videos and bookmarks
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					pairs = fun(),
+					got,
+					expected = '[{"videoId":65432445,"bookmarkId":445},{"videoId":70111470,"bookmarkId":470},{"videoId":654356453,"bookmarkId":453}]';
+
+				pairs = pairs.sortBy(function(v) { return v.videoId });
+				got = JSON.stringify(pairs);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var videos = [
+						{
+							"id": 70111470,
+							"title": "Die Hard",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 654356453,
+							"title": "Bad Boys",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						},
+						{
+							"id": 65432445,
+							"title": "The Chamber",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 4.0,
+						},
+						{
+							"id": 675465,
+							"title": "Fracture",
+							"boxart": "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
+							"uri": "http://api.netflix.com/catalog/titles/movies/70111470",
+							"rating": 5.0,
+						}
+					],
+					bookmarks = [
+						{id: 470, time: 23432},
+						{id: 453, time: 234324},
+						{id: 445, time: 987834}
+					];
+
+				return Array.
+					zip(
+					  videos,
+					  bookmarks,
+					  function(video, bookmark) {
+						return {videoId: video.id, bookmarkId: bookmark.id};
+					  });
+			}
+        </pre>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 24: Retrieve each video's id, title, middle interesting moment time, and <i>smallest</i> box art url.</h4>
+
+		<p>This is a variation of the problem we solved earlier. This time each video has an interesting moments collection,
+			each representing a time during which a screenshot is interesting or representative of the title as a whole. Notice
+			that both the boxarts and interestingMoments arrays are located at the same depth in the tree. Retrieve the time of
+			the middle interesting moment and the smallest box art url <i>simultaneously</i> with zip(). Return an {id, title,
+			time, url} object for each video.</p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var movieLists = [
+						{
+							name: "New Releases",
+							videos: [
+								{
+									"id": 70111470,
+									"title": "Die Hard",
+									"boxarts": [
+										{ width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"interestingMoments": [
+										{ type: "End", time:213432 },
+										{ type: "Start", time: 64534 },
+										{ type: "Middle", time: 323133}
+									]
+								},
+								{
+									"id": 654356453,
+									"title": "Bad Boys",
+									"boxarts": [
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+										{ width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"interestingMoments": [
+										{ type: "End", time:54654754 },
+										{ type: "Start", time: 43524243 },
+										{ type: "Middle", time: 6575665}
+									]
+								}
+							]
+						},
+						{
+							name: "Instant Queue",
+							videos: [
+								{
+									"id": 65432445,
+									"title": "The Chamber",
+									"boxarts": [
+										{ width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"interestingMoments": [
+										{ type: "End", time:132423 },
+										{ type: "Start", time: 54637425 },
+										{ type: "Middle", time: 3452343}
+									]
+								},
+								{
+									"id": 675465,
+									"title": "Fracture",
+									"boxarts": [
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+										{ width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+										{ width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"interestingMoments": [
+										{ type: "End", time:45632456 },
+										{ type: "Start", time: 234534 },
+										{ type: "Middle", time: 3453434}
+									]
+								}
+							]
+						}
+					];
+
+				//------------ COMPLETE THIS EXPRESSION --------------
+				return movieLists.
+					concatMap(function(movieList) {
+
+					});
+
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<pre class="verifier">
+			// Find id, title, smallest box art, and bookmark id
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					videos = fun(),
+					got,
+					expected = '[{"id":675465,"title":"Fracture","time":3453434,"url":"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg"},{"id":65432445,"title":"The Chamber","time":3452343,"url":"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg"},{"id":70111470,"title":"Die Hard","time":323133,"url":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg"},{"id":654356453,"title":"Bad Boys","time":6575665,"url":"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg"}]';
+
+				videos = videos.sortBy(function(v) { return v.id });
+				got = JSON.stringify(videos);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var movieLists = [
+						{
+							name: "New Releases",
+							videos: [
+								{
+									"id": 70111470,
+									"title": "Die Hard",
+									"boxarts": [
+										{ width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"interestingMoments": [
+										{ type: "End", time:213432 },
+										{ type: "Start", time: 64534 },
+										{ type: "Middle", time: 323133}
+									]
+								},
+								{
+									"id": 654356453,
+									"title": "Bad Boys",
+									"boxarts": [
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+										{ width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"interestingMoments": [
+										{ type: "End", time:54654754 },
+										{ type: "Start", time: 43524243 },
+										{ type: "Middle", time: 6575665}
+									]
+								}
+							]
+						},
+						{
+							name: "Instant Queue",
+							videos: [
+								{
+									"id": 65432445,
+									"title": "The Chamber",
+									"boxarts": [
+										{ width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"interestingMoments": [
+										{ type: "End", time:132423 },
+										{ type: "Start", time: 54637425 },
+										{ type: "Middle", time: 3452343}
+									]
+								},
+								{
+									"id": 675465,
+									"title": "Fracture",
+									"boxarts": [
+										{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+										{ width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+										{ width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"interestingMoments": [
+										{ type: "End", time:45632456 },
+										{ type: "Start", time: 234534 },
+										{ type: "Middle", time: 3453434}
+									]
+								}
+							]
+						}
+					];
+
+				//------------ COMPLETE THIS EXPRESSION --------------
+				return movieLists.concatMap(function(movieList) {
+					return movieList.videos.concatMap(function(video) {
+						return Array.zip(
+							video.boxarts.reduce(function(acc,curr) {
+								if (acc.width * acc.height < curr.width * curr.height) {
+							  	  	return acc;
+								}
+								else {
+							  		return curr;
+								}
+						  	}),
+							video.interestingMoments.filter(function(interestingMoment) {
+								return interestingMoment.type === "Middle";
+							}),
+						  	function(boxart, interestingMoment) {
+								return {id: video.id, title: video.title, time: interestingMoment.time, url: boxart.url};
+						  	});
+					});
+				});
+			}
+		</pre>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h3>Powerful Queries</h3>
+
+		<p>Now that we've learned the five operators let's flex our muscles and write some powerful queries.</p>
+
+		<h4>Exercise 25: Converting from Arrays to Trees</h4>
+
+		<p>When information is organized in a tree like a JSON expression, relationships point from parent to child. In
+			relational systems like databases, relationships point from children to their parents. Both ways of organizing
+			information are equivalent, and depending on the circumstances, we might get data organized in one way or
+			another. It may surprise you to learn that you can use the 5 query functions you already know to easily convert
+			between these representations. In other words, <b>not only can you query arrays from trees, you can query trees
+				from arrays</b>.</p>
+
+		<p>We have 2 arrays each containing lists, and videos respectively. Each video has a listId field indicating its
+			parent list. We want to build an array of list objects, each with a name and a videos array. The videos array
+			will contain the video's id and title. In other words we want to build the following structure:</p>
+        <pre>
+			[
+				{
+					"name": "New Releases",
+					"videos": [
+						{
+							"id": 65432445,
+							"title": "The Chamber"
+						},
+						{
+							"id": 675465,
+							"title": "Fracture"
+						}
+					]
+				},
+				{
+					"name": "Thrillers",
+					"videos": [
+						{
+							"id": 70111470,
+							"title": "Die Hard"
+						},
+						{
+							"id": 654356453,
+							"title": "Bad Boys"
+						}
+					]
+				}
+			]
+        </pre>
+		<p><b>Note: please make sure when creating objects (both lists and videos) that you add properties in the same order
+			as above. This doesn't impact the correctness of your code, but the verifier expects properties to be created in
+			this order.</b></p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var lists = [
+						{
+							"id": 5434364,
+							"name": "New Releases"
+						},
+						{
+							"id": 65456475,
+							"name": "Thrillers"
+						}
+					],
+					videos = [
+						{
+							"listId": 5434364,
+							"id": 65432445,
+							"title": "The Chamber"
+						},
+						{
+							"listId": 5434364,
+							"id": 675465,
+							"title": "Fracture"
+						},
+						{
+							"listId": 65456475,
+							"id": 70111470,
+							"title": "Die Hard"
+						},
+						{
+							"listId": 65456475,
+							"id": 654356453,
+							"title": "Bad Boys"
+						}
+					];
+
+				return lists. // complete this expression
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+        <pre class="verifier">
+			// Combine videos and bookmarks
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					pairs = fun(),
+					got,
+					expected = '[{"name":"New Releases","videos":[{"id":65432445,"title":"The Chamber"},{"id":675465,"title":"Fracture"}]},{"name":"Thrillers","videos":[{"id":70111470,"title":"Die Hard"},{"id":654356453,"title":"Bad Boys"}]}]';
+
+				got = JSON.stringify(pairs);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var lists = [
+						{
+							"id": 5434364,
+							"name": "New Releases"
+						},
+						{
+							"id": 65456475,
+							name: "Thrillers"
+						}
+					],
+					videos = [
+						{
+							"listId": 5434364,
+							"id": 65432445,
+							"title": "The Chamber"
+						},
+						{
+							"listId": 5434364,
+							"id": 675465,
+							"title": "Fracture"
+						},
+						{
+							"listId": 65456475,
+							"id": 70111470,
+							"title": "Die Hard"
+						},
+						{
+							"listId": 65456475,
+							"id": 654356453,
+							"title": "Bad Boys"
+						}
+					];
+
+				return lists.map(function(list) {
+					return {
+						name: list.name,
+						videos:
+							videos.
+								filter(function(video) {
+									return video.listId === list.id;
+								}).
+								map(function(video) {
+									return {id: video.id, title: video.title};
+								})
+					};
+				});
+			}
+        </pre>
+		<p class="post">Looks like you figured out that you can use map and filter to <i>join</i> two different arrays by a
+			key. Now let's try a more complex example...</p>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 26: Converting from Arrays to <i>Deeper</i> Trees</h4>
+
+		<p>Let's try creating a deeper tree structure. This time we have 4 separate arrays each containing lists, videos,
+			boxarts, and bookmarks respectively. Each object has a parent id, indicating its parent. We want to build an
+			array of list objects, each with a name and a videos array. The videos array will contain the video's id, title,
+			bookmark time, and smallest boxart url. In other words we want to build the following structure:</p>
+        <pre>
+			[
+				{
+					"name": "New Releases",
+					"videos": [
+						{
+							"id": 65432445,
+							"title": "The Chamber",
+							"time": 32432,
+							"boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg"
+						},
+						{
+							"id": 675465,
+							"title": "Fracture",
+							"time": 3534543,
+							"boxart": "http://cdn-0.nflximg.com/images/2891/Fracture120.jpg"
+						}
+					]
+				},
+				{
+					"name": "Thrillers",
+					"videos": [
+						{
+							"id": 70111470,
+							"title": "Die Hard",
+							"time": 645243,
+							"boxart": "http://cdn-0.nflximg.com/images/2891/DieHard150.jpg"
+						},
+						{
+							"id": 654356453,
+							"title": "Bad Boys",
+							"time": 984934,
+							"boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg"
+						}
+					]
+				}
+			]
+        </pre>
+
+		<p><b>Note: please make sure when creating objects (both lists and videos) that you add properties in the same order
+			as above. This doesn't impact the correctness of your code, but the verifier expects properties to be created in
+			this order.</b></p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var lists = [
+						{
+							"id": 5434364,
+							"name": "New Releases"
+						},
+						{
+							"id": 65456475,
+							name: "Thrillers"
+						}
+					],
+					videos = [
+						{
+							"listId": 5434364,
+							"id": 65432445,
+							"title": "The Chamber"
+						},
+						{
+							"listId": 5434364,
+							"id": 675465,
+							"title": "Fracture"
+						},
+						{
+							"listId": 65456475,
+							"id": 70111470,
+							"title": "Die Hard"
+						},
+						{
+							"listId": 65456475,
+							"id": 654356453,
+							"title": "Bad Boys"
+						}
+					],
+					boxarts = [
+						{ videoId: 65432445, width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+						{ videoId: 65432445, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" },
+						{ videoId: 675465, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+						{ videoId: 675465, width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+						{ videoId: 675465, width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+						{ videoId: 70111470, width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+						{ videoId: 70111470, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" },
+						{ videoId: 654356453, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+						{ videoId: 654356453, width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+					],
+					bookmarks = [
+						{ videoId: 65432445, time: 32432 },
+						{ videoId: 675465, time: 3534543 },
+						{ videoId: 70111470, time: 645243 },
+						{ videoId: 654356453, time: 984934 }
+					];
+
+				return lists. // complete this expression
+
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output">
+		</div>
+		<pre class="verifier">
+			// Combine videos and bookmarks
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					pairs = fun(),
+					got,
+					expected = '[{"name":"New Releases","videos":[{"id":65432445,"title":"The Chamber","time":32432,"boxart":"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg"},{"id":675465,"title":"Fracture","time":3534543,"boxart":"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg"}]},{"name":"Thrillers","videos":[{"id":70111470,"title":"Die Hard","time":645243,"boxart":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg"},{"id":654356453,"title":"Bad Boys","time":984934,"boxart":"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg"}]}]';
+
+				got = JSON.stringify(pairs);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+        <pre class="answer">
+			function() {
+				var lists = [
+						{
+							"id": 5434364,
+							"name": "New Releases"
+						},
+						{
+							"id": 65456475,
+							name: "Thrillers"
+						}
+					],
+					videos = [
+						{
+							"listId": 5434364,
+							"id": 65432445,
+							"title": "The Chamber"
+						},
+						{
+							"listId": 5434364,
+							"id": 675465,
+							"title": "Fracture"
+						},
+						{
+							"listId": 65456475,
+							"id": 70111470,
+							"title": "Die Hard"
+						},
+						{
+							"listId": 65456475,
+							"id": 654356453,
+							"title": "Bad Boys"
+						}
+					],
+					boxarts = [
+						{ videoId: 65432445, width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+						{ videoId: 65432445, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" },
+						{ videoId: 675465, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+						{ videoId: 675465, width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+						{ videoId: 675465, width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+						{ videoId: 70111470, width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+						{ videoId: 70111470, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" },
+						{ videoId: 654356453, width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+						{ videoId: 654356453, width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+					],
+					bookmarks = [
+						{ videoId: 65432445, time: 32432 },
+						{ videoId: 675465, time: 3534543 },
+						{ videoId: 70111470, time: 645243 },
+						{ videoId: 654356453, time: 984934 }
+					];
+
+				return lists.map(function(list) {
+					return {
+						name: list.name,
+						videos:
+							videos.
+								filter(function(video) {
+									return video.listId === list.id;
+								}).
+								concatMap(function(video) {
+									return Array.zip(
+										bookmarks.filter(function(bookmark) {
+											return bookmark.videoId === video.id;
+										}),
+										boxarts.filter(function(boxart) {
+											return boxart.videoId === video.id;
+										}).
+										reduce(function(acc,curr) {
+											return acc.width * acc.height < curr.width * curr.height ? acc : curr;
+										}),
+										function(bookmark, boxart) {
+											return { id: video.id, title: video.title, time: bookmark.time, boxart: boxart.url };
+										});
+							})
+					};
+				});
+
+			}
+        </pre>
+		<p class="post">Wow! That's a large query, but the code is still small relative to the amount of work it's doing. If
+			we rewrote this query with a series of loops our code would be much less self-describing. Loops don't give the
+			reader any information about the kind of operation being performed. Every time you see a loop, you need to
+			carefully read through the code to find out what's being done. Is it a projection? A filter? A reduction? Why
+			use loops for querying data when we've demonstrated that the 5 functions can be used to create virtually any
+			output we want?</p>
+	</div>
+
+	<div class="lesson">
+
+		<h2>Congratulations!</h2>
+
+		<p>You've made it this far and completed our three part tutorial, but you're not done. Learning is an on-going process. Go out and start
+			using the functions you've learned in your day-to-day coding!
+		</p>
+	</div>
+</div>
+
+<script src="../assets/app/wordlist.js"></script>
+<script src="../assets/codemirror/codemirror.js"></script>
+<script src="../assets/codemirror/matchbrackets.js"></script>
+<script src="../assets/app/javascript.js"></script>
+
+<script src="https://unpkg.com/@reactivex/rxjs@5.5.10/dist/global/Rx.js"></script>
+
+<script src="../assets/jquery/jquery-1.10.2.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/app/grab_answers.js"></script>
+<script src="../assets/app/show_answers.js"></script>
+
+<script src="../assets/app/utils.js"></script>
+<script src="../assets/app/main.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37739914-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+// Code below to show all answers when query parameter showAnswers is true
+const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+const showAnswers = Boolean(urlParams.get('showAnswers'));
+
+if (showAnswers) {
+	setTimeout(function() {
+		$(".lesson").each(function(cnt,item) {
+			var go = $(".go", item)[0],
+					code = $(".code", item)[0],
+					answer = $(".answer", item).text(),
+					post = $(".post", item)[0],
+					codeMirror = window.codeMirrors[cnt];
+
+			// Prevents the screen from freezing 
+			setTimeout(function(){
+					// Copy from code element if no answer is required for a lesson
+					if (answer === "") answer = $(code).text();
+					// Save code only if the lesson has any
+					if (codeMirror != null) {
+							codeMirror.setValue(answer);
+							codeMirror.save();
+					}
+					item.style.visibility = "visible";
+					if (post !== undefined) {
+							post.style.visibility = "visible";
+					}
+			}, 1);
+	});
+	}, 1000);
+}
+
+
+</script>
+</body>
+</html>

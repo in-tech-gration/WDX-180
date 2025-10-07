@@ -8,3 +8,12 @@ node_modules
 CURRICULUM.x 
 .personal/
 teaching/cohorts
+
+curriculum/modules/**/denepo/**/*.mp4
+
+# Local Jekyll Build:
+_site/
+Gemfile
+Gemfile.lock
+.sass-cache/
+.jekyll-metadata

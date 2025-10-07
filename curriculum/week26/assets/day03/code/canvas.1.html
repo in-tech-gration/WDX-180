@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas API</title>
+  <style>
+    html { color-scheme: dark light; }
+  </style>
+    
+</head>
+<body>
+  <h1>Canvas API</h1>
+
+  <div id="second-container" style="display: none; padding: 0.2rem;">
+    <canvas width="500" height="200" id="second"></canvas>
+  </div>
+
+  <canvas Xwidth="600" Xheight="300" id="paintme" style="border: 2px solid deeppink; margin-left: 1rem; background-color: white;">
+  </canvas>
+
+  <script>
+    // Get access to the HTML <canvas> element
+    const canvas = document.querySelector("#paintme");
+    canvas.width = 600;  // window.innerWidth - 20;
+    canvas.height = 300; // window.innerHeight - 20;
+    // EXERCISE: Find how to dynamically get the window viewport width and height WITHOUT the scrollbars w/h.
+
+    // Get access to the canvas context
+    const context = canvas.getContext("2d"); // context || ctx
+    // Start giving instructions to the painter
+    // context.fillRect(x,y,width,height)
+    // Where did the black color come from?
+    // It's the default color.
+    // console.log( context.fillStyle ); // #000000
+    context.fillStyle = "#000000"; // <= Invisible, implicit fillStyle
+    context.fillRect(40, 40, 540, 220);
+    context.fillStyle = "#FF0000"; // #RRGGBB
+    context.fillRect(0,0,300,150); 
+    const x = 200;
+    const y = 100;
+    const width = 600;
+    const height = 300;
+    // EXERCISE: Find the perfect half-size, middle erase rectangle
+    context.clearRect(x,y,200,100);
+    // context.clearRect(x, y, width/2, height/2);
+    context.fillStyle = "#00FF00";
+    // context.fillRect(0,0,100,100);
+
+    console.log( context.strokeStyle ); // #000000 <= default stroke color
+    context.lineWidth = 20;
+    context.strokeStyle = "#0077FF";
+    context.strokeRect(300,150,260,130);
+    context.fillStyle = "orange";
+    context.fillRect(300,150,260,130);
+
+    context.fillStyle = "green";
+    context.lineWidth = 5;
+    context.font = "80px Arial"
+    // context.strokeText( "TEXT", 50, 250 );
+    context.fillText( "TEXT", 50, 250 );
+
+    // PATHS:
+    // A simple diagonal line
+    context.beginPath();
+    context.moveTo(0,0);
+    context.lineTo(600,300);
+    context.stroke();
+    context.closePath();
+
+    // A simple triangle
+    context.beginPath();
+    context.moveTo(30,30);
+    context.lineTo(300,250);
+    context.lineTo(30,250);
+    context.lineTo(30,30);
+    context.fillStyle = "indigo";
+    context.fill();
+    context.closePath();
+
+    // Arc:
+    context.beginPath();
+    // π 3.14159....
+    context.strokeStyle = "green";
+    const radians = Math.PI * 2;
+    context.arc( 300, 150, 130, 0, radians );
+    context.stroke();
+    context.closePath();
+
+    // Ticking clock with circular seconds
+    // let c = 0;
+    // setInterval(()=>{
+    //   context.beginPath();
+    //   context.strokeStyle = "red";
+    //   c += 0.1;
+    //   const radians = Math.PI * c;
+    //   context.arc( 300, 150, 30, 0, radians );
+    //   context.stroke();
+    //   context.closePath();
+    // }, 1000);
+
+    // EXERCISE/CHALLENGE: Combine the Media API with Canvas API
+    // and draw a circular progress indicator
+
+    // How can we draw in Canvas?
+    // EXERCISE/PRACTICE:
+    // 1) Track mouse movement + mouse buttons
+    document.addEventListener("mousemove", e =>{
+      // console.log(e.clientX,e.clientY);
+      // context.fillRect(e.clientX,e.clientY,10,10);
+    });
+    document.addEventListener("mousedown", e =>{
+      // console.log(e.type);
+    });
+    document.addEventListener("mouseup", e =>{
+      // console.log(e.type);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // EXERCISE: Create some abstractions over common canvas patterns:
+    function drawStrokeFillRect({ x, y, width, height, color, thickness,strokeColor } ){
+
+    }
+    drawStrokeFillRect({ x: 0, y: 0, width: 300, height: 150, color: "red", thickness: 10, strokeColor: "blue" });
+
+    // You can create your own language:
+    // "pick red"; => JS => context.fillStyle = "red";
+    // "draw box"; => JS => context.fillRect(...);
+    // "draw circle";
+
+    // You can re-create HTML
+    // "<div>Text</div>" => JS => fillRect(), fillText()
+
+    // EXERCISE: Try to work with relative units and in relation to the viewport dimensions (responsiveness in mind)
+    /*
+    const boxWidth = "50%";
+    const boxHeightPercent = 25;
+    fillRect(0,0,boxWidth,boxHeight);
+    "50%" => "50" => 50 => 50 / 100 => 0.5 => 600 * 0.5
+    */
+  </script>
+  <script type="disabled">
+    //-- Canvas #2
+    const canvas2 = document.querySelector("#second");
+    const painter = canvas2.getContext("2d");
+    painter.fillRect(40, 40, 400, 100);
+  </script>
+
+</body>
+</html>

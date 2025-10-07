@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+
+    <title>calculator</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <form id="inputs">
+      <input id="left" type="number" value="0" />
+
+      <select id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+      </select>
+
+      <input id="right" type="number" value="0" />
+    </form>
+
+    <hr />
+
+    <pre id="result" class="computery"></pre>
+
+    <hr />
+
+    secret solution:
+
+    <pre id="secret-solution" class="computery"></pre>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./app.re.js" type="module"></script>
+  </body>
+</html>

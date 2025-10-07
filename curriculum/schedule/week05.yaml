@@ -1,0 +1,57 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: CSS Frameworks
+schedule: 
+  days:
+    1: # ✅ Group Project: Practice HTML Form Input Fields  
+      # file://./../modules/frontend/input_fields_practice/index.md
+      module: frontend/input_fields_practice
+      # TODO: REVIEW: file://./../modules/accessibility/improving_website_accessibility_practice/index.md
+
+    2: # ✅ Flappy App - Day 1
+      # file://./../modules/css/misc/flappy_app_practice/index.md
+      module: css/misc/flappy_app_practice
+
+    3: # ✅ Flappy App - Day 2
+      # file://./../modules/css/misc/flappy_app_practice/day02.md
+      module: css/misc/flappy_app_practice/day02.md
+
+    4: # ✅ Flappy App - Day 3
+      # file://./../modules/css/misc/flappy_app_practice/day03.md
+      module: css/misc/flappy_app_practice/day03.md
+ 
+    5: # ✅ Flappy App - Day 4
+      # file://./../modules/css/misc/flappy_app_practice/day04.md
+      module: css/misc/flappy_app_practice/day04.md
+
+# ---
+
+# TODO: Part 16 of the Flappy App: Make sure that the image has the same height with the Features table, just like the Mockup
+
+# TODO: STUDY: Utility-based CSS library & organizing your CSS
+# 1) https://dev.to/akshay_rajput/how-i-made-my-own-css-framework-akin-to-tailwindcss-29e2
+# 2) To convert from SCSS to CSS: https://www.sassmeister.com/
+# STUDY: Building a “utility-first” design system
+# https://uxdesign.cc/building-utility-first-design-systems-part-1-52ce020630b
+# - Common language
+# - Structure: https://miro.medium.com/v2/resize:fit:4800/format:webp/1*lblnLqvDC2myrRS-QC2EUg.png
+# - Colors / Screens (breakpoints) / Spacing / Typography / Components
+
+# TODO: STUDY + PRACTICE: A11y => Skip to Content Link
+# https://css-tricks.com/how-to-create-a-skip-to-content-link/
+# https://codepen.io/team/css-tricks/pen/jOPBQZw
+# https://www.a11yproject.com/
+
+# TODO: STUDY
+# https://thesassway.com/the-pros-and-cons-of-utility-first-css/
+# https://littlelines.com/blog/2019/04/30/component-vs-utility-based-css-design-systems
+# https://tailwindcss.com/docs/utility-first
+# https://johnpolacek.github.io/the-case-for-atomic-css/
+# https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project
+# https://github.com/GibbonEdu/core/issues/805
+# https://getbootstrap.com/docs/4.0/about/history/
+# https://dev.to/yongdev/brief-history-of-bootstrap-3gi6
+# https://cleancommit.io/blog/why-we-use-tailwind-css-as-our-primary-framework/
+# https://stackoverflow.blog/2021/09/06/scaling-front-end-design-with-a-design-system/
+# https://www.quora.com/Why-should-we-use-front-end-CSS-frameworks
+# https://innovation.ebayinc.com/tech/engineering/how-our-css-framework-helps-enforce-accessibility/

@@ -13,7 +13,7 @@ const {
 } = require("./utils");
 // const CSVFileValidator = require("csv-file-validator"); // Temporarily disabling original library due to local bug fixing 
 // const CSVFileValidator   = require("./libs/csv-file-validator/src/csv-file-validator");
-const { parse } = require("csv/sync");
+const { parse, stringify} = require("csv/sync");
 
 // 1) OUR FUNCTIONS: ===========================================================
 
@@ -248,6 +248,138 @@ function validateArgsAndDisplayAvailableOptions(args, options) {
   }
 }
 
+/**
+ * Gets all 'progress.draft.wXX.dYY.csv' files inside a 'progress' folder for minWeek <= week <= maxWeek inside the 'dir' folder
+ * @param {*} dir `
+ * @param {*} minWeek 
+ * @param {*} maxWeek 
+ * @returns a string array of all 'progress.draft.wXX.dYY.csv' files
+ */
+function getProgressDraftCsvFilesFromDir(dir, minWeek, maxWeek) {
+  let files = [];
+  
+  // Convert minWeek and maxWeek to two-digit strings (e.g., '01', '36')
+  const minWeekStr = String(minWeek).padStart(2, '0');
+  const maxWeekStr = String(maxWeek).padStart(2, '0');
+
+  // Read items in the current directory
+  const items = fs.readdirSync(dir);
+
+  for (const item of items) {
+    const itemPath = path.join(dir, item);
+    const stats = fs.statSync(itemPath);
+
+    // Check if item is a directory and follows the 'weekXX' naming pattern
+    if (stats.isDirectory()) {
+      if (item.startsWith('week')) { 
+        const weekNumber = item.slice(4); // Extract 'XX' part (the number) from 'weekXX'
+        
+        // Process directories within the range minWeek to maxWeek
+        if (weekNumber >= minWeekStr && weekNumber <= maxWeekStr) {
+          console.log(`Processing directory: ${item}`);
+          files = files.concat(getProgressDraftCsvFilesFromDir(itemPath, minWeek, maxWeek));
+        }
+      } else if (item === "progress") {
+        files = files.concat(getProgressDraftCsvFilesFromDir(itemPath, minWeek, maxWeek))
+      }
+    } else if (path.extname(itemPath) === '.csv' && itemPath.includes('progress.draft.w')) {
+      // Add CSV files to the list
+      files.push(itemPath);
+    }
+  }
+
+  return files;
+}
+
+/**
+ * Merges all csv files inside 'files' parameter and writes them to the 'outputFile' path
+ * @param {*} files 
+ * @param {*} outputFile 
+ * @param {boolean} forImport boolean if the outputFile.csv should be for Supabase Database import
+ */
+function mergeCsvFiles(files, outputFile, forImport=false) {
+  let combinedData = [];
+  let headers = null;
+
+  // Loop through all files
+  for (const file of files) {
+    const fileContent = fs.readFileSync(file, 'utf-8');
+
+    // Parse the CSV file content
+    const parsed = parse(fileContent, {
+      columns: true, // Treat the first row as headers
+      skip_empty_lines: true
+    });
+
+    if (!headers) {
+      headers = Object.keys(parsed[0]); // Get headers from the first file
+      if (forImport) {
+        headers.push('course');        // Add the new 'course' column
+        combinedData.push(headers.map(header => header.toLowerCase()));       // Add headers in lowerCase to the output data
+      } else {
+        combinedData.push(headers);       // Add headers to the output data
+      }
+    }
+
+    // Add all rows from the current file to the combinedData, and add the 'course' column
+    parsed.forEach(row => {
+      const rowWithCourse = headers.map(header => {
+        // If the csv should be imported to Supabase Database, change columns to be according to the database model
+        if (forImport) {
+          // If it's the new 'course' column, add the value 'wdx-180'
+          if (header === 'course') {
+            return 'wdx-180';
+          }
+          // If it's the 'confidence' column, change value to '0'
+          if (header === 'Confidence') {
+            return '0'
+          }
+          // If it's the 'day' column and value is 'Weekend' change it to '6' 
+          if (header === 'Day' && row[header] === 'Weekend') {
+            return '6'
+          }
+        }
+        return row[header];
+      });
+      combinedData.push(rowWithCourse);
+    });
+  }
+
+  // Stringify the combined data back to CSV format
+  const outputCsv = stringify(combinedData);
+
+  // Write the merged CSV data to the output file
+  fs.writeFileSync(outputFile, outputCsv);
+
+  console.log(`All CSV files have been merged into: ${outputFile}`);
+}
+
+/**
+ * @description Merges all progress.draft.csv's inside inputDirectory from the specific term (Beginner, Intermediate, Advanced) into a single CSV.
+ * @param {*} inputDirectory 
+ * @param {*} term 
+ */
+function mergeProgressDraftCsvFilesOfTermForSupabaseImport(inputDirectory, term) {
+  let minWeek, maxWeek;
+  if (term === "beginner") {
+    minWeek = 1;
+    maxWeek = 12;
+  } else if (term === "intermediate") {
+    minWeek = 13;
+    maxWeek = 24;
+  } else if (term === "advanced") {
+    minWeek = 25;
+    maxWeek = 36;
+  }
+  const csvFiles = getProgressDraftCsvFilesFromDir(inputDirectory, minWeek, maxWeek);
+
+  if (csvFiles.length > 0) {
+    mergeCsvFiles(csvFiles, `${inputDirectory}/progress.draft.${term}.csv`, true);
+  } else {
+    console.log(`No 'progress.draft.wXX.dYY.csv' files found inside ${inputDirectory} folder.`);
+  }
+}
+
 // 2) OUR VARIABLES: ===========================================================
 
 const options = {
@@ -258,6 +390,14 @@ const options = {
   "validate-schema": {
     type: "string",
     short: "s",
+  },
+  "term": {
+    type: "string",
+    short: "t",
+  },
+  "merge": {
+    type: "string",
+    short: "m",
   }
 }
 
@@ -278,6 +418,8 @@ function init() {
 
   const lintOption = args.values["lint"];
   const validateSchemaOption = args.values["validate-schema"];
+  const termOption = args.values["term"];
+  const mergeOption = args.values["merge"];
 
   if (lintOption && typeof lintOption === "string") {
     return lintCSVFile(lintOption)
@@ -285,6 +427,21 @@ function init() {
 
   if (validateSchemaOption && typeof validateSchemaOption === "string") {
     return validateCSVSchema(validateSchemaOption);
+  }
+
+  if (mergeOption && typeof mergeOption === "string") {
+    if (termOption && typeof termOption === "string") {
+      const terms = ["beginner", "intermediate", "advanced"];
+      if (!terms.includes(termOption)) {
+        console.log(`The "--term/-t" option can be one of the following "${terms}".`);
+        process.exit();
+      }
+      console.log(`Going to merge the csv's inside folder '${mergeOption}' into '${termOption}.csv'`);
+      mergeProgressDraftCsvFilesOfTermForSupabaseImport(mergeOption, termOption);
+    } else {
+      console.log(`Please provide the "--term/-t" option as well`);
+      process.exit();
+    }
   }
 
 }

@@ -1,0 +1,76 @@
+# Quiz
+
+> #todo
+
+## Enter Something 1
+
+Do these programs have the same behavior? (_data in, data out_)
+
+<table>
+<tr>
+<td>
+
+### Program 1
+
+</td>
+<td>
+
+### Program 2
+
+</td>
+</tr>
+<tr>
+<td>
+
+```js
+'use strict';
+
+let a = prompt('');
+
+let b = '';
+if (a === null) {
+  b = 'good bye';
+} else if (a === '') {
+  b = 'nothing?!';
+} else {
+  b = 'thank you!';
+}
+
+alert(b);
+```
+
+</td>
+<td>
+
+```js
+'use strict';
+
+let a = prompt('');
+
+let b = '';
+if (a === '') {
+  b = 'nothing?!';
+} else if (a !== null) {
+  b = 'thank you!';
+} else {
+  b = 'good bye';
+}
+
+alert(b);
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+---
+
+<details>
+<summary><strong>check it</strong></summary>
+<br>
+
+✔ Yup!
+
+</details>

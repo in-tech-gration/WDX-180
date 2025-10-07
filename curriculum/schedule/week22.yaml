@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: React JS
+header_image: week22/React.js.jpg
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/misc/_w22d01/_w22d01.md
+      module: javascript/misc/_w22d01/_w22d01.md
+    2: # React.js Practice
+      # file://./../modules/javascript/misc/_w22d02/_w22d02.md
+      module: javascript/misc/_w22d02/_w22d02.md
+    3: # 
+      # file://./../modules/javascript/misc/_w22d03/_w22d03.md
+      module: javascript/misc/_w22d03/_w22d03.md
+    4: # 
+      # file://./../modules/javascript/misc/_w22d04/_w22d04.md
+      module: javascript/misc/_w22d04/_w22d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w22d05/_w22d05.md
+      module: javascript/misc/_w22d05/_w22d05.md

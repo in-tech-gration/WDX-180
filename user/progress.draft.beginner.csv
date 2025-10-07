@@ -1,0 +1,252 @@
+week,day,concept,task,level,confidence,completed,instructions,course
+1,1,Setting up: Markdown,Watch the 'What is markdown?' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE ,wdx-180
+1,1,Setting up: CSV,Complete the 'Understanding CSV Files' challenge,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,1,Setting up: Slack,Connect on Slack: https://intechgration.slack.com,Beginner,0,FALSE,Say hello to us on Slack!,wdx-180
+1,1,Setting up: GitHub,Watched the 'WDX-180 - Setting up: SSH Keys Cloning repo & update progress' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,1,Setting up: WDX,Fork WDX repository,Beginner,0,FALSE,Paste forked repo URL,wdx-180
+1,1,Setting up: WDX,Enable GitHub Pages on forked WDX repository,Beginner,0,FALSE,Paste GitHub Page URL here (https://your_username.github.io/WDX-180),wdx-180
+1,1,Setting up: Code editor,Install VSCode,Beginner,0,FALSE,Updated FALSE to TRUE in the COMPLETED column,wdx-180
+1,1,Setting up: Code editor,Install VSCode WDX Extension Pack,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,1,Setting up: Node,Install Node.js (LTS),Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,1,Setting up: Version Control,Install Git,Beginner,0,FALSE,Run git --version and paste the output of the command here,wdx-180
+1,1,Setting up: Productivity,Install Wikiwand Browser Extension: https://www.wikiwand.com/,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,1,Computing Basics,Complete the 'Decode the secret message' challenge,Beginner,0,FALSE,Paste the secret message here,wdx-180
+1,1,Setting up: GitHub,Watched the 'WDX-180: Keeping our forked repository up-to-date and in-sync with the original repo' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Watch: the 'What is the Internet?' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Watch: the 'The Internet: Wires Cables & Wifi' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Watch: the 'The Internet: IP Addresses & DNS' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Watch: the 'The Internet: Packets Routing & Reliability' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Read 'How the Internet works',Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Watch: the 'How the Internet Works in 5 Minutes' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Watch: the 'The Internet: HTTP & HTML' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Read: 'How the web works',Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Read: 'What is a web server?',Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Read: 'What is a URL?',Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Read: 'What is a Domain Name?',Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Watch: the 'What is Localhost?' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Internet Works,Site Blocking: block the 'budgetsaresexy.com' website through the hosts file,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Complete the 'Absolute vs Relative URLs' test,Beginner,0,FALSE,Copy responses.json to user/week01/exercises/day02/Absolute_vs_Relative_URLs folder. Commit and push your changes and then Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Watch: the 'How a web browser builds and displays a web page' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Watch: the 'The Internet: Encryption & Public Keys' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Watch: the 'The Internet: Cybersecurity & Crime' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,2,How the Web Works,Watch: the 'The Internet: How Search Works' video,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,3,HTML,Bookmark 'htmlreference.io',Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE,wdx-180
+1,3,HTML,Complete the '1-parent-child' exercise,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/1-parent-child.,wdx-180
+1,3,HTML,Complete the 'HTML Attributes' exercise,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/2-html-attributes.,wdx-180
+1,3,HTML,Complete the 'Semantic HTML' exercise,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/3-semantic-html.,wdx-180
+1,3,HTML,Complete the 'markdowntutorial.com' exercise,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE.,wdx-180
+1,4,CSS,Styling the worlds first website,Beginner,0,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Paste the URL of the webpage in here.,wdx-180
+1,5,JavaScript in a Day,Complete the 'Largest Number Checker' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+1,5,JavaScript in a Day,Complete the 'Landscape Mode Checker' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+1,5,JavaScript in a Day,Complete the 'Simple Quiz' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+1,5,JavaScript in a Day,Complete the 'Schnick-Schnack-Schnuck' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,1,Version Control: Git & GitHub,Watch 'Git Tutorial For Dummies' and code along,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,1,Version Control: Git & GitHub,Follow the steps mentioned in the 'Git Tutorial For Dummies' video and recreate the repository under your GitHub account,Beginner,0,FALSE,Paste the full GitHub URL of the gitVideo repository,wdx-180
+2,1,Version Control: Git & GitHub,Watch 'Git and GitHub for Beginners - Crash Course',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,1,Version Control: Git & GitHub,Sign up with GitHub,Beginner,0,FALSE,Paste GitHub username,wdx-180
+2,1,Version Control: Git & GitHub,Set up SSH keys for GitHub,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,1,Version Control: Git & GitHub,Create a (demo-repo) GitHub repository,Beginner,0,FALSE,Paste GitHub repository URL,wdx-180
+2,1,Version Control: Git & GitHub,Create a profile README on GitHub following this guide: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme,Beginner,0,FALSE,Paste GitHub readme URL e.g. https://github.com/kostasx/kostasx,wdx-180
+2,2,HTML,Active learning: Inspecting a simple example,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: Experiment with character encoding,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: The description's use in search engines,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: applying CSS and JavaScript to a page,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: Giving our content structure,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: Marking up an unordered list,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: Marking up an ordered list,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: Marking up our recipe page,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Test your skills: HTML text fundamentals (3x Tasks),Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: creating your own example link,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Active learning: creating a navigation menu,Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,2,HTML,Test your skills: Creating hyperlinks (3x Tasks),Beginner,0,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: Creating your first table' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: table headers' first exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: table headers' second exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: colgroup and col' second exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: Adding a caption' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: Adding table structure' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Active learning: playing with scope and headers' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,3,HTML Tables,Complete the 'Structuring planet data' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+2,4,HTML Forms,Complete the 'Active learning: Implementing our form HTML' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the first-form.html file and update the CONFIDENCE column ,wdx-180
+2,4,HTML Forms,Complete the 'Basic form styling' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the first-form-styled.html file and update the CONFIDENCE column,wdx-180
+2,4,HTML Forms,Complete the 'Active learning: building a form structure' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the payment-form.html file and update the CONFIDENCE column,wdx-180
+2,4,HTML Forms,Complete the 'Test your skills: Form structure' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the form-structure1-download.html file and update the CONFIDENCE column,wdx-180
+2,4,HTML Forms,Complete the 'Test_your_skills:_Basic_controls' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the files and update the CONFIDENCE column,wdx-180
+2,5,HTML Forms,Complete the 'Test_your_skills:_HTML5_controls' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the files and update the CONFIDENCE column,wdx-180
+2,5,HTML Forms,Complete the 'Test your skills: Other controls' challenge,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column / submit the files and update the CONFIDENCE column,wdx-180
+2,5,HTML & Accessibility,Complete the 'Lets create a Weblog' exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column. Update the CONFIDENCE column to reflect your confidence level at this point. Paste the URL of your Blog here. ,wdx-180
+3,1,Git,Complete the 'Practice time: New Feature List' and commit and push a file 'new-feature-list.md',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column. Add file 'new-feature-list.md' under user/week03/exercises/day01/.,wdx-180
+3,1,Git,Complete the 'Learn Git Branching' interactive game,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column.,wdx-180
+3,2,CSS,Read 'What is CSS',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,2,CSS,Read 'Getting started with CSS',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,2,CSS,Read 'How CSS is structured',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,2,CSS,Read 'How CSS works',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,2,CSS,Complete the exercise 'Styling a biography page',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day02/styling_a_biography_page/'),wdx-180
+3,3,CSS,Read 'CSS Selectors',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,3,CSS,Read 'Type class and ID selectors',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,3,CSS,Read 'Attribute Selectors',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,3,CSS,Read 'Pseudo-classes and Pseudo-elements',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,3,CSS,Read 'Combinators',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,3,CSS,Complete the game 'CSS Diner',Beginner,0,FALSE,Upload your screenshot to the corresponding folder ('/user/week03/exercises/day03/'),wdx-180
+3,3,CSS,Complete the exercise 'Test your skills: Selectors',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day03/selectors_tasks/'),wdx-180
+3,4,CSS,Read 'Cascade and Inheritance',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,4,CSS,Complete the exercise 'Test your skills: The Cascade',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day04/cascade_tasks/'),wdx-180
+3,4,CSS,Read 'The box model',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,4,CSS,Complete the exercise 'Test your skills: The box model',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day04/box_model_tasks/'),wdx-180
+3,5,CSS,Read 'Backgrounds and borders',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,5,CSS,Complete the exercise 'Test your skills: Backgrounds and borders',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day05/test_your_skills_backgrounds_and_borders/'),wdx-180
+3,5,CSS,Read 'Overflowing content',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,5,CSS,Complete the exercise 'Test your skills: Overflow',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day05/overflow_tasks/'),wdx-180
+3,5,CSS,Read 'CSS Values and units',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,5,CSS,Complete the exercise 'Test your skills: Values and units',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day05/values_tasks/'),wdx-180
+3,5,CSS,Read 'Sizing items in CSS',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,5,CSS,Complete the exercise 'Test your skills: Sizing',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day05/sizing_tasks/'),wdx-180
+3,5,CSS,Read 'Images media and form elements',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,5,CSS,Complete the exercise 'Test your skills: Images and form elements',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/day05/images_tasks/'),wdx-180
+3,6,CSS,Read 'Handling different text directions',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+3,6,CSS,Complete the exercise 'Test your skills: Writing modes and logical properties',Beginner,0,FALSE,Upload the required assets to the corresponding folder ('/user/week03/exercises/weekend/writing_modes_tasks/'),wdx-180
+4,1,CSS 2 & Performance,Read 'Styling tables',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,1,CSS 2 & Performance,Read 'Debugging CSS',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,1,CSS 2 & Performance,Read 'Organizing your CSS',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,1,CSS 2 & Performance,Complete the 'Recreate Azure HTML Table',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day01/azure_table/ folder,wdx-180
+4,1,CSS 2 & Performance,Complete the 'Recreate German HTML Table',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day01/german_table/ folder,wdx-180
+4,1,CSS 2 & Performance,Complete the exercise 'Test your skills: Tables',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day01/tables_tasks/ folder,wdx-180
+4,1,CSS 2 & Performance,Complete the exercise 'Fundamental CSS comprehension',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day01/fundamental_css_comprehension/ folder,wdx-180
+4,1,CSS 2 & Performance,EXTRAS: Complete the exercise 'Creating fancy letterheaded paper',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day01/creating_fancy_letterheaded_paper/ folder,wdx-180
+4,1,CSS 2 & Performance,EXTRAS: Complete the exercise 'A cool-looking box',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day01/a_cool_looking_box/ folder,wdx-180
+4,2,CSS 2 & Performance: Styling Text,Read 'Fundamental text and font styling',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,2,CSS 2 & Performance: Styling Text,Read 'Styling lists',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,2,CSS 2 & Performance: Styling Text,Read 'Styling links',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,2,CSS 2 & Performance: Styling Text,Read 'Web fonts',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,2,CSS 2 & Performance: Styling Text,Complete the exercise 'Typesetting a community school homepage',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day02/typesetting_a_homepage/ folder,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Read 'Introduction to CSS layout',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Read 'Normal Flow',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Read 'Positioning',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Complete the 'Learn Flexbox' Scrimba tutorial,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Complete the exercise 'Test your skills: Positioning',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day03/position_skills/ folder,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Play 'Flexbox Defense' and take a screenshot named 'flexbox-defense.png' of your progress,Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day03/flexbox_defense/ folder,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Play 'Flexbox Froggy' and take a screenshot named 'flexbox-froggy.png' of your progress,Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day03/flexbox_froggy/ folder,wdx-180
+4,3,CSS 2 & Performance: CSS Layout Part 1,Complete the exercise 'Test your skills: Flexbox',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day03/flexbox_skills/ folder,wdx-180
+4,4,CSS 2 & Performance: CSS Layout Part 2,Read 'Responsive Design',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,4,CSS 2 & Performance: CSS Layout Part 2,Read 'Beginner's guide to media queries',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,4,CSS 2 & Performance: CSS Layout Part 2,Read 'Legacy layout methods',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,4,CSS 2 & Performance: CSS Layout Part 2,Read 'Supporting older browsers',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,4,CSS 2 & Performance: CSS Layout Part 2,Complete 'Test your skills: Responsive web design and media queries',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day04/rwd_skills/ folder,wdx-180
+4,4,CSS 2 & Performance: CSS Layout Part 2,EXTRAS: EXTRAS: Complete the exercise 'Fundamental layout comprehension',Beginner,0,FALSE,Upload the required assets to the user/week04/exercises/day04/fundamental_layout_comprehension/ folder,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Read 'The why of web performance',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Read 'What is web performance?',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Read 'Perceived performance',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Watch 'CSS Preprocessors',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Install the 'Live Sass Compiler' VSCode extension,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Watch the 'Learn Sass In 20 Minutes' video and code along,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+4,5,CSS 2 & Performance: Web Performance & CSS Pre-processors,Complete the exercise with Google Lighthouse,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+5,1,CSS Frameworks: Practice with Form Input fields,Complete the 'Form Input Field' practice challenge,Beginner,0,FALSE,Upload the required assets to the user/week05/exercises/day01/input_fields_practice/ folder,wdx-180
+5,2,CSS Frameworks: Flappy App - Day 1,Watch the 'Flappy App reconstruction' and keep notes,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+5,3,CSS Frameworks: Flappy App - Day 2,Recreate the FlappyApp with the help of your notes and the video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+5,4,CSS Frameworks: Flappy App - Day 3,Recreate the FlappyApp without going back to the video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,1,CSS Frameworks & Intro to Programming: Introduction to Tailwind CSS,Watch 'Tailwind in 100 seconds',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,1,CSS Frameworks & Intro to Programming: Introduction to Tailwind CSS,Recreate the example from the 'Tailwind CSS Introduction' video and place it in a folder named 'tailwind_intro',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,1,CSS Frameworks & Intro to Programming: Introduction to Tailwind CSS,Recreate the example from the 'Tailwind CSS - why CSS utility classes save so much time' video and place it in a folder named 'utility_classes',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,2,CSS Frameworks & Intro to Programming: How To Make A Website With Tailwind CSS,Complete the 'Make a Website with Tailwind CSS' challenge and paste the URL of the website at the last column (replacing the instructions),Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,3,CSS Frameworks & Intro to Programming: What is Programming?,Read 'What is programming?',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,3,CSS Frameworks & Intro to Programming: What is Programming?,Watch 'Thinking like a Computer' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,3,CSS Frameworks & Intro to Programming: What is Programming?,Install study-lenses on your machine,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,3,CSS Frameworks & Intro to Programming: What is Programming?,Run study-lenses on the hello-world.js file and explore various lenses,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Read 'JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Read 'Some History',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Read 'Developers',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Read 'The Computer',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Read 'Users',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Read 'Data In Data Out: I/O',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Explore Study Lenses,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,4,CSS Frameworks & Intro to Programming: What is JavaScript?,Practice 'Program Explaining',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,5,CSS Frameworks & Intro to Programming: Predictive Stepping,Watch the 'Predictive Stepping' sessions with Evan Cole,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+6,5,CSS Frameworks & Intro to Programming: Predictive Stepping,Go through the 'Predictive Stepping' material and work on the exercises,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '00-errors' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '01-comments-and-logs' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '02-primitive-values' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '03-operators' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '04-booleans' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '05-strings' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '06-undefined' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,2,JavaScript Core 1: Just Enough JavaScript - Part 2,Explore the '07-variables' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,2,JavaScript Core 1: Just Enough JavaScript - Part 2,Explore the '08-null' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '09-interactions' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '10-numbers' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '11-block-scope' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,3,JavaScript Core 1: Just Enough JavaScript - Part 3,Explore the '12-conditionals' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,4,JavaScript Core 1: Just Enough JavaScript - Part 4,Explore the '13-while-loops' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,4,JavaScript Core 1: Just Enough JavaScript - Part 4,Explore the '14-review-quiz' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,5,JavaScript Core 1: Just Enough JavaScript - Part 5,Explore the '15-for-of-loops' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,5,JavaScript Core 1: Just Enough JavaScript - Part 5,Explore the '16-break' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+7,5,JavaScript Core 1: Just Enough JavaScript - Part 5,Explore the '17-continue' section of 'Just Enough JavaScript',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,1,JavaScript Core 2: Understanding Programs - Part 1,Explore the '0-let-vs-const' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,1,JavaScript Core 2: Understanding Programs - Part 1,Explore the '1-predicting-execution' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,1,JavaScript Core 2: Understanding Programs - Part 1,Explore the '2-reading-programs' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,1,JavaScript Core 2: Understanding Programs - Part 1,Explore the '3-plain-text-programs' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,1,JavaScript Core 2: Understanding Programs - Part 1,Explore the '4-describing-programs' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,2,JavaScript Core 2: Understanding Programs - Part 2,Explore the '5-logging-state' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,2,JavaScript Core 2: Understanding Programs - Part 2,Explore the '6-tracing-backwards' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,2,JavaScript Core 2: Understanding Programs - Part 2,Explore the '7-naming-variables' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,2,JavaScript Core 2: Understanding Programs - Part 2,Explore the '8-code-review' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,2,JavaScript Core 2: Understanding Programs - Part 2,Explore the 'z-challenge' section of 'Understanding Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,3,JavaScript Core 2: Developing Programs - Part 1,Explore the '0-pair-programming' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,3,JavaScript Core 2: Developing Programs - Part 1,Explore the '1-linting' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,3,JavaScript Core 2: Developing Programs - Part 1,Explore the '2-fixing-errors' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,4,JavaScript Core 2: Developing Programs - Part 2,Explore the '3-fixing-bugs' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,4,JavaScript Core 2: Developing Programs - Part 2,Explore the '4-modifying-programs' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,4,JavaScript Core 2: Developing Programs - Part 2,Explore the '5-refactoring' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,5,JavaScript Core 2: Developing Programs - Part 3,Explore the '6-from-spec' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,5,JavaScript Core 2: Developing Programs - Part 3,Explore the '7-reverse-engineering' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+8,5,JavaScript Core 2: Developing Programs - Part 3,Explore the '8-imagining-programs' section of 'Developing Programs',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,1,JavaScript Core 3: Functions Part 1,Watch the 'JavaScript Functions In 90 Seconds' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,1,JavaScript Core 3: Functions Part 1,Watch the 'Function Basics' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,1,JavaScript Core 3: Functions Part 1,Complete the exercises found inside the '1-functions' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,1,JavaScript Core 3: Functions Part 1,Complete the exercises found inside the '2-documenting-functions' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,1,JavaScript Core 3: Functions Part 1,Complete the exercises found inside the '4-local-param-parent' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,2,JavaScript Core 3: Functions Part 2,Complete the exercises found inside the '1-calling-functions' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,2,JavaScript Core 3: Functions Part 2,Complete the exercises found inside the '3-refactoring-functions' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,2,JavaScript Core 3: Functions Part 2,Complete the exercises found inside the '4-reverse-engineering' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,3,JavaScript Core 3: Arrays Part 1,Complete the exercises found inside the '1-isolate' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,3,JavaScript Core 3: Arrays Part 1,Complete the exercises found inside the '2-practice' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,3,JavaScript Core 3: Arrays Part 1,Complete the exercises found inside the '3-integrate' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,4,JavaScript Core 3: Arrays Part 2,Complete the exercises found inside the '1-isolate' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,4,JavaScript Core 3: Arrays Part 2,Complete the exercises found inside the '2-practice' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,4,JavaScript Core 3: Arrays Part 2,Complete the exercises found inside the '3-implicit-return' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,5,JavaScript Core 3: Objects Part 1,Complete the exercises found inside the '1-isolate' module,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+9,5,JavaScript Core 3: Objects Part 1,Complete the Flexbox Object exercise,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Complete the interactive tutorials at 'Get started with viewing and changing the DOM',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 1 - What is the DOM' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 2 - Getting the Elements in the DOM' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 3 - Querying the Document' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 4 - Creating and adding elements' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 5 - Removing Elements' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 6 - Modifying Elements Classes' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,1,Web APIs 1: DOM: Introduction to the DOM API,Watch and replicate 'Lesson 7 - Working with Attributes' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,2,Web APIs 1: DOM: DOM Manipulation - Part 01,Read 'Document Object Model (DOM) Manipulation - Part 01',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,2,Web APIs 1: DOM: DOM Manipulation - Part 01,Complete the exercise 'Simple Manipulation - Part 01',Beginner,0,FALSE,Upload the required assets to the user/week10/exercises/day02/simple_manipulation/ folder,wdx-180
+10,3,Web APIs 1: DOM: DOM Manipulation - Part 02,Read 'Document Object Model (DOM) Manipulation - Part 02',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,3,Web APIs 1: DOM: DOM Manipulation - Part 02,Complete the exercise 'Simple Manipulation - Part 02',Beginner,0,FALSE,Upload the required assets to the user/week10/exercises/day03/simple_manipulation/ folder,wdx-180
+10,3,Web APIs 1: DOM: DOM Manipulation - Part 02,Complete the exercise 'DOM Mini Project',Beginner,0,FALSE,Upload the required assets to the user/week10/exercises/day03/dom_mini_project/ folder,wdx-180
+10,4,Web APIs 1: DOM: DOM Manipulation - Part 03,Read 'Document Object Model (DOM) Manipulation - Part 03',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,4,Web APIs 1: DOM: DOM Manipulation - Part 03,Complete the exercise 'Number Generator',Beginner,0,FALSE,Upload the required assets to the user/week10/exercises/day04/number_generator/ folder,wdx-180
+10,4,Web APIs 1: DOM: DOM Manipulation - Part 03,Complete the exercise 'Countries List',Beginner,0,FALSE,Upload the required assets to the user/week10/exercises/day04/countries_list/ folder,wdx-180
+10,4,Web APIs 1: DOM: DOM Manipulation - Part 03,Complete the exercise 'Asabeneh's Challenge',Beginner,0,FALSE,Upload the required assets to the user/week10/exercises/day04/asabeneh_challenge/ folder,wdx-180
+10,5,Web APIs 1: DOM: Introduction to Events,Watch and replicate 'Lesson 8 - DOM Event Basics' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+10,5,Web APIs 1: DOM: Introduction to Events,Watch and replicate 'Lesson 9 - Using Event Delegation and the Event Object' part from the 'JavaScript DOM Manipulation Mastery' video,Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,1,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to JSON,Read 'Introduction to JSON',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,1,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to JSON,Complete the exercise 'JSON Basics',Beginner,0,FALSE,Upload the required assets to the user/week11/exercises/day01/json_basics/ folder,wdx-180
+11,2,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Promises,Read 'Promises and Callbacks',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,2,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Promises,Watch 'Async JavaScript & Callback Functions',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,2,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Promises,Watch 'JavaScript Promises',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Watch 'JavaScript Fetch API 👨🏻‍💻 in 1 Minute',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Read 'Fetch API',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Watch 'Fetch API',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,3,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Fetch API,Complete the exercise 'Fetch Basics',Beginner,0,FALSE,Upload the required assets to the user/week11/exercises/day03/fetch_basics/ folder,wdx-180
+11,4,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Async/Await,Watch 'JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,4,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Async/Await,Read 'Introduction to Async/Await',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,4,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Introduction to Async/Await,Watch 'Async Await vs. Promises',Beginner,0,FALSE,Update FALSE to TRUE in the COMPLETED column,wdx-180
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'WaitForResult',Beginner,0,FALSE,Upload the required assets to the user/week11/exercises/day05/wait_for_result/ folder,wdx-180
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'Promise Refactoring',Beginner,0,FALSE,Upload the required assets to the user/week11/exercises/day05/promise_refactoring/ folder,wdx-180
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'Wikipedia API',Beginner,0,FALSE,Upload the required assets to the user/week11/exercises/day05/wikipedia_api/ folder,wdx-180
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'Bitcoin Wallet API',Beginner,0,FALSE,Upload the required assets to the user/week11/exercises/day05/bitcoin_wallet/ folder,wdx-180

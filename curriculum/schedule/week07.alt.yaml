@@ -1,0 +1,22 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Core 1
+schedule: 
+
+  days:
+    1: # Introduction to JavaScript
+      # Topics: var, let, const, Numbers, Booleans, Strings, Control Flow (if), Loops (while, for) 
+      # file://./../modules/javascript/core/intro/index.md
+      module: javascript/core/intro
+    2: # Introduction to Functions
+      # Topics: Functions (normal, arrow, higher-order), Scope, Built-ins
+      # file://./../modules/javascript/core/functions/intro_to_functions/index.md
+      module: javascript/core/functions/intro_to_functions
+    3: # Introduction to Objects
+      # file://./../modules/javascript/core/objects/intro_to_objects/index.md
+      module: javascript/core/objects/intro_to_objects
+    4: # Introduction to Arrays
+      # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
+      module: javascript/core/arrays/intro_to_arrays
+    5: # ?Exercism
+      module: javascript/core

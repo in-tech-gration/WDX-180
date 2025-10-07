@@ -1,0 +1,5 @@
+Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'WaitForResult',Beginner,0-10,FALSE,Upload the required assets to the user/week11/exercises/day05/wait_for_result/ folder
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'Promise Refactoring',Beginner,0-10,FALSE,Upload the required assets to the user/week11/exercises/day05/promise_refactoring/ folder
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'Wikipedia API',Beginner,0-10,FALSE,Upload the required assets to the user/week11/exercises/day05/wikipedia_api/ folder
+11,5,Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API: Async Recap & Practice,Complete the exercise 'Bitcoin Wallet API',Beginner,0-10,FALSE,Upload the required assets to the user/week11/exercises/day05/bitcoin_wallet/ folder

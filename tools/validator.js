@@ -22,6 +22,9 @@ const {
   getYouTubeListIdParts 
 } = require("./utils");
 
+// SOME CONSTANTS:
+const WEEKEND_FILENAME = "WEEKEND";
+
 // 1) OUR FUNCTIONS: ===========================================================
 
 /**
@@ -437,9 +440,12 @@ function initializeChecks(){
     warn("No markdown file passed as argument.")
     process.exit();
   }
-  
+
+  info(`Validating ${markdownFilePath}`);
+
+  const isWeekendFile = path.parse(path.basename(markdownFilePath)).name === WEEKEND_FILENAME;
+
   const isInCurriculumFolder  = isCurriculumFolder( markdownFilePath );
-  console.log({ isInCurriculumFolder });
   const markdownContent       = fs.readFileSync(markdownFilePath, 'utf8');
   const frontmatter           = getFrontmatterFromMarkdown( markdownContent );
   const markdownBody          = getMarkdownBody( markdownContent );
@@ -543,6 +549,8 @@ function initializeChecks(){
   checkProgressRefs( markdownBody, markdownFilePath, isInCurriculumFolder );
 
   // TODO: Check that all `<details>` contain the markdown="1" attribute
+
+  // TODO: CHECK: FOR CORRECT MARKDOWN LINKS THAT CONTAIN ESCAPED CHARACTERS (e.g. |)
   
   // TODO: CHECK: LINKS INSIDE TABLES: https://github.com/mdn/content/edit/main/files/en-us/learn/css/building_blocks/values_and_units/index.md
   // https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units

@@ -1,10 +1,44 @@
 ---
-title: Week 2
+title: Week 2 | HTML, Accessibility & Git
 ---
 
-# Week 2 | HTML, Accessibility & Git
+<hr class="mb-0">
 
-_(Updated: 18/09/2023)_
+<h1 id="{{ Week 16-Intermediate JavaScript | slugify }}">
+  <span class="week-prefix">Week 2 |</span> HTML, Accessibility & Git
+</h1>
+
+<div class="week-controls">
+
+  {% assign week_num = 2 | to_integer %}
+
+  <h2 class="week-controls__previous_week">
+
+    {% if week_num > 0 %}
+
+      {% assign previous_week_num = 2 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+    {% endif %}
+
+  </h2>
+
+  <span>Updated: 30/06/2025</span>
+
+  <h2 class="week-controls__next_week">
+
+    {% if week_num <= 36 %}
+
+      {% assign next_week_num = 2 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+    {% endif %}
+
+  </h2>
+
+</div>
+
+---
 
 <!-- Week 2 - Day 1 | Git -->
 <details markdown="1">
@@ -43,6 +77,12 @@ _(Updated: 18/09/2023)_
     - Select the `View` tab and, in `Advanced settings`, select `Show hidden files, folders, and drives` and OK.
   - **References:**
     - [View hidden files and folders in Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5){:target="_blank"}
+
+  ---
+
+  **What is Version Control and why do we need it? Why do most professional developers and teams use Git and GitHub?**
+
+  - Let's find out with this [**What is Git and Github? Source Control —Coding For Beginners**](https://www.youtube.com/watch?v=3bchX_7ANQc){:target="_blank"} video.
 
   ---
 
@@ -145,7 +185,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -156,6 +196,8 @@ _(Updated: 18/09/2023)_
   - [Git SSH keys simplified and how to setup on GitHub](https://inspirezone.tech/git-ssh-keys-simplified/)
 
 </details>
+
+<hr class="mt-1">
 
 <!-- Week 2 - Day 2 | HTML -->
 <details markdown="1">
@@ -171,7 +213,7 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/HTML_Basics/index.md). 
+  During Week 1, we covered some of the [basics of HTML](../modules/html/misc/html_basics/). 
   Now, it's time to dive deeper into HTML. 
 
   HTML elements can be distinguished by default into 2 broad categories, **block** and **inline** elements. This fundamental display property of HTML elements, affects their placement on the page and how they stack against each other. 
@@ -217,12 +259,14 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
 ### Sources and Attributions
 </details>
+
+<hr class="mt-1">
 
 <!-- Week 2 - Day 3 | HTML Tables -->
 <details markdown="1">
@@ -280,7 +324,7 @@ _(Updated: 18/09/2023)_
     - **Description:** In our table assessment, we provide you with some data on the planets in our solar system, and get you to structure it into an HTML table.
     - **Submission:** You should place the files related to this exercise in the `user/week02/exercises/day03/Structuring_planet_data` folder.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -292,6 +336,8 @@ _(Updated: 18/09/2023)_
     - [HTML tables](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables){:target="_blank"} / [Permalink](https://github.com/mdn/content/blob/7073233dfed28e7c2fb325d2bb378075763d81b9/files/en-us/learn/html/tables/index.md){:target="_blank"}
 
 </details>
+
+<hr class="mt-1">
 
 <!-- Week 2 - Day 4 | HTML Forms -->
 <details markdown="1">
@@ -347,7 +393,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -360,6 +406,8 @@ _(Updated: 18/09/2023)_
     - [Accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility) / [Permalink](https://github.com/mdn/content/blob/26f68076bcd8e3d5893cffcd9c1c01ff949318a9/files/en-us/learn/accessibility/index.md)
 
 </details>
+
+<hr class="mt-1">
 
 <!-- Week 2 - Day 5 | HTML Form Controls & Accessibility -->
 <details markdown="1">
@@ -396,7 +444,33 @@ _(Updated: 18/09/2023)_
 
   Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. Beyond mechanical use, it's important to learn how to use these technologies **responsibly** so that all readers might use your creations on the web. To help you achieve this, this module will cover general best practices (which are demonstrated throughout the HTML, CSS and JavaScript topics), [cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing){:target="_blank"}, and some tips on enforcing accessibility from the start. We'll cover accessibility in special detail. This is probably the **most important aspect of web development**.
 
+  Before moving forward, some important facts about disabilities and some disturbing facts about the state of the Web:
+
+  > "More than **1 billion**" of the world's population are estimated to live with some form of disability. **110 million** have very highly significant difficulties in functioning."
+
+  > "In 2021, out of 1 million websites tested, 97.4% home pages had detectable accessibility failures." ~ Source: WebAIM
+
+  Let these facts be a constant reminder for our responsibility and ethical obligations as Web developers.
+
   **Overview**
+
+  When building `User Interfaces` with Frontend technologies such as HTML, CSS and JavaScript, developers must strive for usability and accessibility. 
+
+  According to [W3C](https://www.w3.org/WAI/fundamentals/accessibility-intro/), _"Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them."_
+
+  Web accessibility also benefits people without disabilities, for example:
+
+  - People using mobile phones, smart watches, smart TVs, and other devices with small screens, different input modes, etc.
+
+  - Older people with changing abilities due to ageing
+
+  - People with “temporary disabilities” such as a broken arm or lost glasses
+
+  - People with “situational limitations” such as in bright sunlight or in an environment where they cannot listen to audio
+
+  - People using a slow Internet connection, or who have limited or expensive bandwidth
+
+  _"Making the web accessible benefits individuals, businesses, and society. International web standards define what is needed for accessibility."_
 
   When someone describes a site as "accessible", they mean that any user can use all its features and content, regardless of how the user accesses the web — even and especially users with physical or mental impairments.
 
@@ -404,7 +478,9 @@ _(Updated: 18/09/2023)_
   - Applications should be understandable and usable by people regardless of auditory, visual, physical, or cognitive abilities.
   - Sites should also not cause harm: web features like motion can cause migraines or epileptic seizures.
 
-  **By default, HTML is accessible, if used correctly.** Web accessibility involves ensuring that content remains accessible, regardless of who and how the web is accessed.
+  - Watch the [**The Internet's Accessibility Problem — and How To Fix It**](https://www.youtube.com/watch?v=QWPWgaDqbZI){:target="_blank"} TED talk by Clive Loseby to understand how serious the problem of accessible Web is.
+
+  There are good news also. **By default, HTML is accessible, if used correctly.** Web accessibility involves ensuring that content remains accessible, regardless of who and how the web is accessed.
 
   The Browser Accessibility developer tools (like for example the Firefox Accessibility Inspector or the Chrome DevTools Accessibility panel) are very useful tools for checking out accessibility issues on web pages. The following video provides a nice introduction to the Firefox Accessibility Inspector:
 
@@ -422,6 +498,8 @@ _(Updated: 18/09/2023)_
 
   - Watch as many lessons as you can from the [Start Building Accessible Web Applications Today](https://egghead.io/courses/start-building-accessible-web-applications-today){:target="_blank"} excellent excellent series of video tutorials by Marcy Sutton.
 
+  [![](./assets/accessibility.is.our.responsibility.jpg)](https://www.youtube.com/watch?v=E66RCBAUk8A)
+  
   **See also:**
 
   Check out the following resources and make sure to cover the material included in there as you progress in this course and your web development journey:
@@ -438,15 +516,28 @@ _(Updated: 18/09/2023)_
 
   Now it's time to gather all this knowledge around HTML _(and GitHub)_, build your own (accessible) Blog and take it online. Follow the instructions found [here](./exercises/lets_create_a_weblog/index.md). You might need to spend a few extra hours during the weekend to improve and finalize your Blog.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
 ### Sources and Attributions
 </details>
 
+<hr class="mt-1">
+
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you! 
 
 ## Week 2 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>

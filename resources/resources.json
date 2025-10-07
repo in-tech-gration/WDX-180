@@ -1,5 +1,5 @@
 {
-  "$schema": "./resources.schema.json",
+  "$schema": "./schemas/resources.schema.json",
   "resources": {
     "how-computers-work-binary-data": {
       "title": "How Computers Work: Binary & Data",
@@ -2195,10 +2195,2117 @@
         "en"
       ]
     },
-    "learngitbranching" : {
+    "learngitbranching": {
       "type": "Interactive Tutorial",
       "identifier": "https://learngitbranching.js.org/",
-      "tags": [ "git", "branches", "interactive" ]
+      "tags": [
+        "git",
+        "branches",
+        "interactive"
+      ]
+    },
+    "git-remotes-fundamentals": {
+      "type": "YouTube",
+      "duration": 632,
+      "title": "Git Remotes Fundamentals",
+      "date": "05/02/2018",
+      "youtube": {
+        "id": "5ctkqMqG6G4",
+        "channel_id": "UCtRaaXKGn_rrLIkkrARKYXA",
+        "channel_title": "CraftQuest",
+        "thumbnail_url": "https://i.ytimg.com/vi/5ctkqMqG6G4/sddefault.jpg"
+      },
+      "tags": [
+        "Git",
+        "Remotes in git",
+        "Git version control",
+        "Git remotes",
+        "mijingo"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "the-internets-accessibility-problem-and-how-to-fix-it-clive-loseby-ted": {
+      "type": "YouTube",
+      "duration": 813,
+      "title": "The Internet's Accessibility Problem — and How To Fix It | Clive Loseby | TED",
+      "date": "17/01/2023",
+      "youtube": {
+        "id": "QWPWgaDqbZI",
+        "channel_id": "UCAuUUnT6oDeKwE6v1NGQxug",
+        "channel_title": "TED",
+        "thumbnail_url": "https://i.ytimg.com/vi/QWPWgaDqbZI/sddefault.jpg"
+      },
+      "tags": [
+        "A11y",
+        "TEDTalk",
+        "TEDTalks",
+        "TED Talk",
+        "TED Talks",
+        "TED",
+        "technology",
+        "design",
+        "TEDx",
+        "Internet",
+        "disability",
+        "Clive Loseby"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "dom-api---javascript-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 2537,
+      "title": "DOM API - JavaScript Tutorial for beginners",
+      "date": "17/10/2023",
+      "youtube": {
+        "id": "wbQLEXg_urE",
+        "channel_id": "UCHa8J-xnRYOg5VuudfWpBgg",
+        "channel_title": "ColorCode",
+        "thumbnail_url": "https://i.ytimg.com/vi/wbQLEXg_urE/sddefault.jpg"
+      },
+      "tags": [
+        "#JavaScriptDOM",
+        "#DOMManipulation",
+        "#FrontEndDevelopment",
+        "#WebDevTips",
+        "#JSProgrammingTricks",
+        "#WebDesignWithJavaScript",
+        "#CodingLikeAPro",
+        "#JavaScriptFundamentals",
+        "#WebDevelopmentTutorial",
+        "#JavaScriptExplained",
+        "#DOMManipulationGuide",
+        "#DocumentObjectModel",
+        "#WebProgrammingTips",
+        "#JSWebDevelopment",
+        "#CodingSkills",
+        "#JavaScriptForBeginners",
+        "#FrontEndJS",
+        "#WebDevelopmentTools",
+        "#JavaScriptSkills",
+        "#CodingPro",
+        "#JavaScript101",
+        "#ProgrammingWithJS",
+        "#JStutorial",
+        "DOMAPI",
+        "JSDomAPI",
+        "JS dom",
+        "Web development",
+        "ReactJS",
+        "VueJS",
+        "AngularJS",
+        "Svelte",
+        "JS"
+      ],
+      "language": [
+        "en"
+      ],
+      "level": "Advanced",
+      "reviewers": [
+        {
+          "rating": 0.4,
+          "review": "  feedback regarding the video i will rate it 5/10 for beginner.\n\n          - this tutorial is good for some one who already know dom. ( but still i dont like it)\n          - the way of teaching and tool are bit advance.\n          - for demo he used console i believe it can be still completed for some  who are still new to JS\n          - he also used bind()method totally advance topic.\n          - like other 50%  tutorials on youtube i feel like he was only solving the problem but not telling what is the problem\n          - he also uses some short hands\n          - i might like it more if he would  start for the basics APIs  like getElementById() or querySeletor() (ok he went with the sequences of CRUD)\n          in collusion he is not explain in depth. there could be many thing added into 42''min video be he was more talkative(i felt bored) and distractive\n        \n          he is good content creator i have watched almost all his videos of \"10 things Js developers should know but doesn't know\" but still i didnt like this video not for the beginner not for intermediates.\n        \n          i couldnt make any notes and didn't learn anything new in 42 mins"
+        }
+      ]
+    },
+    "javascript-tutorial-for-beginners-learn-javascript-in-1-hour": {
+      "type": "YouTube",
+      "duration": 2897,
+      "title": "JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour",
+      "date": "24/04/2018",
+      "youtube": {
+        "id": "W6NZfCO5SIk",
+        "channel_id": "UCWv7vMbMWH4-V0ZXdmDpPBA",
+        "channel_title": "Programming with Mosh",
+        "thumbnail_url": "https://i.ytimg.com/vi/W6NZfCO5SIk/sddefault.jpg"
+      },
+      "tags": [
+        "javascript tutorial",
+        "javascript for beginners",
+        "learn javascript for beginners",
+        "javascript basics",
+        "javascript course",
+        "javascript crash course",
+        "javascript programming",
+        "learn javascript",
+        "learning javascript",
+        "programming tutorial",
+        "js tutorial",
+        "javascript",
+        "javascript tutorial for beginners",
+        "javascript tutorials",
+        "javascript beginners",
+        "java script tutorial",
+        "javascript 2019",
+        "javascript lesson",
+        "web development",
+        "mosh hamedani",
+        "front end",
+        "javascript functions",
+        "code with mosh"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "terminal-commands-for-web-developers": {
+      "type": "YouTube",
+      "duration": 705,
+      "title": "Terminal Commands for Web Developers",
+      "date": "15/06/2020",
+      "youtube": {
+        "id": "YSj30jnvxKo",
+        "channel_id": "UCTBGXCJHORQjivtgtMsmkAQ",
+        "channel_title": "Steve Griffith - Prof3ssorSt3v3",
+        "thumbnail_url": "https://i.ytimg.com/vi/YSj30jnvxKo/sddefault.jpg"
+      },
+      "tags": [
+        "MAD9013",
+        "MAD9014",
+        "MAD9022",
+        "web development",
+        "steve flix",
+        "steveflix",
+        "web dev",
+        "professor steve",
+        "prof3ssorSt3v3",
+        "linux terminal",
+        "macos terminal",
+        "how to use the terminal",
+        "cli",
+        "terminal commands",
+        "WLS",
+        "windows linux subsystem",
+        "linux terminal commands",
+        "macos terminal commands",
+        "windows terminal commands",
+        "command prompt",
+        "bash shell",
+        "z shell",
+        "zsh",
+        "cd",
+        "ls",
+        "cp",
+        "mv",
+        "touch",
+        "rm",
+        "rmdir",
+        "mkdir",
+        "pwd"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "different-ways-to-open-chrome-devtools-devtools-tips": {
+      "type": "YouTube",
+      "duration": 283,
+      "title": "Different ways to open Chrome DevTools | DevTools Tips",
+      "date": "27/10/2022",
+      "youtube": {
+        "id": "X65TAP8a530",
+        "channel_id": "UCnUYZLuoy1rq1aVMwx4aTzw",
+        "channel_title": "Chrome for Developers",
+        "thumbnail_url": "https://i.ytimg.com/vi/X65TAP8a530/sddefault.jpg"
+      },
+      "tags": [
+        "Chrome",
+        "Developers",
+        "Google",
+        "Web",
+        "Chrome Devtools",
+        "chrome developer tools",
+        "intro to devtools tips",
+        "what are devtools tips",
+        "how to use devtools tips",
+        "devtools tips tutorial",
+        "devtools",
+        "chrome",
+        "developer",
+        "developers",
+        "google developer",
+        "google developers",
+        "google chrome developers",
+        "chrome developer",
+        "chrome developers",
+        "google chrome",
+        "Jecelyn Yeen",
+        "different ways to open devtools",
+        "how to open devtools",
+        "the different ways to open devtools"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "html-vs-dom-lets-debug-them": {
+      "type": "YouTube",
+      "duration": 312,
+      "title": "HTML vs DOM? Let’s debug them",
+      "date": "26/10/2023",
+      "youtube": {
+        "id": "J-02VNxE7lE",
+        "channel_id": "UCnUYZLuoy1rq1aVMwx4aTzw",
+        "channel_title": "Chrome for Developers",
+        "thumbnail_url": "https://i.ytimg.com/vi/J-02VNxE7lE/sddefault.jpg"
+      },
+      "tags": [
+        "Chrome",
+        "Developers",
+        "Google",
+        "Web",
+        "Chrome Devtools",
+        "chrome developer tools",
+        "intro to devtools tips",
+        "what are devtools tips",
+        "how to use devtools tips",
+        "devtools tips tutorial",
+        "devtools",
+        "chrome",
+        "developer",
+        "developers",
+        "google developer",
+        "google developers",
+        "google chrome developers",
+        "chrome developer",
+        "chrome developers",
+        "google chrome",
+        "Jecelyn Yeen"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "vscode-tailwindcss": {
+      "type": "VSCode Extension",
+      "identifier": "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+      "tags": [
+        "Tailwind",
+        "VSCode"
+      ]
+    },
+    "tailwind-in-100-seconds": {
+      "type": "YouTube",
+      "duration": 141,
+      "title": "Tailwind in 100 Seconds",
+      "date": "26/08/2021",
+      "youtube": {
+        "id": "mr15Xzb1Ook",
+        "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+        "channel_title": "Fireship",
+        "thumbnail_url": "https://i.ytimg.com/vi/mr15Xzb1Ook/sddefault.jpg"
+      },
+      "tags": [
+        "app development",
+        "lesson",
+        "tailwind",
+        "tailwindcss",
+        "webdev",
+        "web design",
+        "css"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "how-to-make-a-website-with-tailwind-css-step-by-step-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 1880,
+      "title": "How To Make A Website With Tailwind CSS Step By Step Tutorial For Beginners",
+      "date": "10/02/2023",
+      "youtube": {
+        "id": "8eQwgc9nc64",
+        "channel_id": "UCkjoHfkLEy7ZT4bA2myJ8xA",
+        "channel_title": "GreatStack",
+        "thumbnail_url": "https://i.ytimg.com/vi/8eQwgc9nc64/sddefault.jpg"
+      },
+      "tags": [
+        "web design",
+        "web development",
+        "website design for beginners",
+        "HTML and CSS",
+        "HTML website",
+        "How to make a website using HTML",
+        "tailwind css",
+        "tailwind css tutorial",
+        "tailwind css tutorial for beginners",
+        "tailwind css website",
+        "tailwind css web design",
+        "web design tailwind",
+        "responsive web design tailwind css",
+        "tailwind css project",
+        "web design project"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "tailwind-css---why-css-utility-classes-save-so-much-time": {
+      "type": "YouTube",
+      "duration": 1015,
+      "title": "Tailwind CSS - why CSS utility classes save so much time",
+      "date": "09/07/2021",
+      "youtube": {
+        "id": "oU5ar0dmQEY",
+        "channel_id": "UCVTlvUkGslCV_h-nSAId8Sw",
+        "channel_title": "LearnCode.academy",
+        "thumbnail_url": "https://i.ytimg.com/vi/oU5ar0dmQEY/sddefault.jpg"
+      },
+      "tags": [
+        "tailwind css",
+        "tailwind css tutorial",
+        "tailwindcss tutorial",
+        "tailwind css react",
+        "tailwind css crash course",
+        "tailwindcss purgecss",
+        "tailwind css purge css",
+        "purge css classes",
+        "how to use tailwind css in html",
+        "css tutorial",
+        "tailwinds css",
+        "tailwind tutorial",
+        "tailwind tutorial 2021",
+        "tailwind css purgecss",
+        "tailwind 2021",
+        "tailwind tutorial for beginners",
+        "Tailwind css vue"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "learn-sass-in-20-minutes-sass-crash-course": {
+      "type": "YouTube",
+      "duration": 1182,
+      "title": "Learn Sass In 20 Minutes | Sass Crash Course",
+      "date": "13/03/2019",
+      "youtube": {
+        "id": "Zz6eOVaaelI",
+        "channel_id": "UClb90NQQcskPUGDIXsQEz5Q",
+        "channel_title": "developedbyed",
+        "thumbnail_url": "https://i.ytimg.com/vi/Zz6eOVaaelI/sddefault.jpg"
+      },
+      "tags": [
+        "learn sass",
+        "learn sass css",
+        "learn scss",
+        "sass tutorial",
+        "scss tutorial",
+        "sass tutorial 2018",
+        "how to install sass",
+        "visual studio code sass",
+        "visual studio code scss",
+        "visual studio code",
+        "free sass tutorials",
+        "scss tutorial for beginners",
+        "how to install sass css",
+        "free sass course",
+        "Learn Sass In 20 Minutes",
+        "sass in 20 minutes",
+        "sass course",
+        "sass compiler"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "why-i-use-the-bem-naming-convention-for-my-css": {
+      "type": "YouTube",
+      "duration": 423,
+      "title": "Why I use the BEM naming convention for my CSS",
+      "date": "09/11/2018",
+      "youtube": {
+        "id": "SLjHSVwXYq4",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/SLjHSVwXYq4/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "tutorial",
+        "html",
+        "css",
+        "css bem",
+        "bem naming convention",
+        "css bem naming",
+        "css bem methodology",
+        "css bem best practice",
+        "css bem examples",
+        "why i use bem",
+        "css naming conventions",
+        "css naming conventions best practices",
+        "css naming classes"
+      ]
+    },
+    "cs-discoveries-introduction-to-arrays": {
+      "type": "YouTube",
+      "duration": 227,
+      "title": "CS Discoveries: Introduction to Arrays",
+      "date": "28/02/2018",
+      "youtube": {
+        "id": "seBDTeZmb-k",
+        "channel_id": "UCJyEBMU1xVP2be1-AoGS1BA",
+        "channel_title": "Code.org",
+        "thumbnail_url": "https://i.ytimg.com/vi/seBDTeZmb-k/sddefault.jpg"
+      },
+      "tags": [
+        "Code.org",
+        "computer science",
+        "code",
+        "Hour of Code"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "https-developer-mozilla-org-en-us-docs-learn-getting-started-with-the-web-java-script-basics": {
+      "identifier": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics",
+      "type": "MDN",
+      "module": [
+        "curriculum/week01/resources/JavaScript_Basics/index.md",
+        "curriculum/week01/resources/What_is_JavaScript/index.md"
+      ]
+    },
+    "what-is-javascript-creator-brendan-eich-explains": {
+      "type": "YouTube",
+      "duration": 73,
+      "title": "What is JavaScript? Creator Brendan Eich explains",
+      "date": "21/05/2018",
+      "youtube": {
+        "id": "kB32-Cvj0X4",
+        "channel_id": "UC46BCt0WGx7_BHvkSlQnEFw",
+        "channel_title": "InfoWorld",
+        "thumbnail_url": "https://i.ytimg.com/vi/kB32-Cvj0X4/sddefault.jpg"
+      },
+      "tags": [
+        "computer",
+        "technology",
+        "IT",
+        "tech",
+        "javascript",
+        "Brendan Eich",
+        "programming",
+        "computer language",
+        "coding",
+        "programmers",
+        "coders"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "a-brief-history-of-javascript-talk-by-brendan-eich-creator-of-javascript": {
+      "type": "YouTube",
+      "duration": 1075,
+      "title": "A Brief History of JavaScript, talk by Brendan Eich (creator of JavaScript)",
+      "date": "27/04/2018",
+      "youtube": {
+        "id": "qKJP93dWn40",
+        "channel_id": "UC8butISFwT-Wl7EV0hUK0BQ",
+        "channel_title": "freeCodeCamp.org",
+        "thumbnail_url": "https://i.ytimg.com/vi/qKJP93dWn40/sddefault.jpg"
+      },
+      "tags": [
+        "learn to code",
+        "programming",
+        "coding",
+        "javascript",
+        "web development",
+        "web design",
+        "tutorial",
+        "python",
+        "android",
+        "security",
+        "testing",
+        "coding tutorial",
+        "javascript tutorial",
+        "web development tutorial",
+        "html",
+        "css",
+        "design",
+        "html tutorial",
+        "css tutorial",
+        "learn to program",
+        "learn how to code",
+        "learn how to program",
+        "get a programmer job",
+        "get a developer job",
+        "python tutorial",
+        "android tutorial",
+        "linux",
+        "learn programming",
+        "learn coding",
+        "linux tutorial",
+        "learn linux"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "intro-to-databases-1-overview": {
+      "type": "YouTube",
+      "duration": 526,
+      "title": "Intro to Databases 1 Overview",
+      "date": "23/05/2013",
+      "youtube": {
+        "id": "D98mNPLccSg",
+        "channel_id": "UCkgGZlIeBM7rjwNBcVee3WQ",
+        "channel_title": "Al Zimmerman",
+        "thumbnail_url": "https://i.ytimg.com/vi/D98mNPLccSg/sddefault.jpg"
+      },
+      "tags": [
+        "Database",
+        "databases",
+        "relational database",
+        "data",
+        "information",
+        "big data",
+        "tables",
+        "entitity",
+        "entities",
+        "attributes",
+        "record",
+        "records",
+        "relationships"
+      ]
+    },
+    "2-just-enough-javascript13-while-loops09-infinite-loopsguidemp4": {
+      "type": "YouTube",
+      "duration": 305,
+      "title": "./2-just-enough-javascript/13-while-loops/09-infinite-loops/guide.mp4",
+      "date": "24/11/2023",
+      "youtube": {
+        "id": "rj2R5oy8xIw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/rj2R5oy8xIw/sddefault.jpg"
+      }
+    },
+    "quokka-the-javascript-scratchpad": {
+      "type": "YouTube",
+      "duration": 688,
+      "title": "Quokka | The JavaScript Scratchpad",
+      "date": "08/03/2021",
+      "youtube": {
+        "id": "f_sEWa5hA0Q",
+        "channel_id": "UC29ju8bIPH5as8OGnQzwJyA",
+        "channel_title": "Traversy Media",
+        "thumbnail_url": "https://i.ytimg.com/vi/f_sEWa5hA0Q/sddefault.jpg"
+      },
+      "tags": [
+        "quokka",
+        "quokka.js",
+        "javascript",
+        "vscode",
+        "vs code",
+        "vscode extensions"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "javascript-dom-manipulation-mastery-a-comprehensive-guide": {
+      "type": "YouTube",
+      "duration": 5133,
+      "title": "JavaScript DOM Manipulation Mastery: A Comprehensive Guide",
+      "date": "11/07/2023",
+      "youtube": {
+        "id": "BGkc6dKUZ84",
+        "channel_id": "UC8lxnUR_CzruT2KA6cb7p0Q",
+        "channel_title": "Envato Tuts+",
+        "thumbnail_url": "https://i.ytimg.com/vi/BGkc6dKUZ84/sddefault.jpg"
+      },
+      "tags": [
+        "javascript dom",
+        "javascript dom tutorial",
+        "javascript dom crash course",
+        "javascript",
+        "add classes in javascript",
+        "what is the website dom",
+        "javascript parent",
+        "website node",
+        "javascript tutorials",
+        "tutorial javascript",
+        "what is dom",
+        "dom",
+        "simple javascript",
+        "what is the dom",
+        "js",
+        "javascript crash course",
+        "javascript for beginners",
+        "dom explained",
+        "javascript node",
+        "js tutorial",
+        "javascript tutorial",
+        "javascript course",
+        "javascript course full",
+        "javascript course for intermediate"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "introduction-to-javascript-objects": {
+      "type": "YouTube",
+      "duration": 231,
+      "title": "Introduction to JavaScript Objects",
+      "date": "12/11/2020",
+      "youtube": {
+        "id": "OJBlJI1vEK8",
+        "channel_id": "UCpaabVZEeuXqlv8VPQvtTdQ",
+        "channel_title": "SkillsReactor",
+        "thumbnail_url": "https://i.ytimg.com/vi/OJBlJI1vEK8/sddefault.jpg"
+      },
+      "tags": [
+        "javascript objects",
+        "learn javascript",
+        "what are objects in javascript",
+        "what are javascript objects",
+        "create objects in javascript",
+        "how to create objects in javascript",
+        "javascript objects for beginners",
+        "javascript tutorial 2020",
+        "learn javascript programming for beginners",
+        "javascript objects explained",
+        "javascript objects and methods",
+        "Javascript objects tutorial"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "discovering-javascript-object-notation-with-douglas-crockford": {
+      "type": "YouTube",
+      "duration": 428,
+      "title": "Discovering JavaScript Object Notation with Douglas Crockford",
+      "date": "29/03/2012",
+      "youtube": {
+        "id": "kc8BAR7SHJI",
+        "channel_id": "UCSVKswAwikRd8ZS3AmSnuKg",
+        "channel_title": "ieeeComputerSociety",
+        "thumbnail_url": "https://i.ytimg.com/vi/kc8BAR7SHJI/sddefault.jpg"
+      },
+      "tags": [
+        "JSON",
+        "JavaScript",
+        "XML",
+        "Douglas Crockford"
+      ]
+    },
+    "select-all-siblings-of-an-element-using-has": {
+      "type": "YouTube",
+      "duration": 60,
+      "title": "Select all siblings of an element using :has()",
+      "date": "22/11/2023",
+      "youtube": {
+        "id": "Ue3VUsZwAJ0",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/Ue3VUsZwAJ0/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "css",
+        "front-end",
+        "frontend",
+        "html",
+        "tutorial"
+      ]
+    },
+    "what-is-a-software-post-mortem": {
+      "type": "Blog Post",
+      "identifier": "https://www.freecodecamp.org/news/what-is-a-software-post-mortem/"
+    },
+    "react-workshop-2024---routing-101---intechgrationio": {
+      "type": "YouTube",
+      "duration": 2206,
+      "title": "React Workshop 2024 - Routing 101 - intechgration.io",
+      "date": "04/05/2024",
+      "youtube": {
+        "id": "X2QC1NpGl7M",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/X2QC1NpGl7M/sddefault.jpg"
+      },
+      "tags": [
+        "react",
+        "routing",
+        "software",
+        "javascript",
+        "dom",
+        "router",
+        "beginner",
+        "wdx180",
+        "intechgration",
+        "coding",
+        "coder",
+        "web dev",
+        "development",
+        "frontend",
+        "basics",
+        "fundamentals",
+        "libraries",
+        "react router dom",
+        "software development",
+        "patterns",
+        "software patterns",
+        "browser",
+        "newbie",
+        "learn",
+        "learning",
+        "js",
+        "web",
+        "programming",
+        "progreammer"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "nextjs---integrating-inline-javascript-using-the-script-component": {
+      "type": "YouTube",
+      "duration": 167,
+      "title": "Next.js - Integrating inline JavaScript using the Script Component",
+      "date": "14/09/2023",
+      "youtube": {
+        "id": "kZUlzDcfWyE",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/kZUlzDcfWyE/sddefault.jpg"
+      },
+      "tags": [
+        "javascript",
+        "js",
+        "frontend",
+        "fullstack",
+        "next.js",
+        "nextjs",
+        "next",
+        "web dev",
+        "web",
+        "web developer",
+        "inline",
+        "inline script",
+        "script",
+        "olark",
+        "integration",
+        "beginner",
+        "backend",
+        "programmer",
+        "software",
+        "software developer",
+        "third-party scripts"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx-180---setting-up-forking-the-repo-and-enabling-github-pages": {
+      "type": "YouTube",
+      "duration": 356,
+      "title": "WDX-180 - Setting up: Forking the repo and enabling GitHub Pages",
+      "date": "21/09/2023",
+      "youtube": {
+        "id": "xqGlWAHjtcM",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/xqGlWAHjtcM/sddefault.jpg"
+      },
+      "language": [
+        "en"
+      ]
+    },
+    "wdx-180---setting-up-ssh-keys-cloning-repo-update-progress": {
+      "type": "YouTube",
+      "duration": 1673,
+      "title": "WDX-180 - Setting up: SSH Keys, Cloning repo & update progress",
+      "date": "21/09/2023",
+      "youtube": {
+        "id": "S9Qg3Ltf__c",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/S9Qg3Ltf__c/sddefault.jpg"
+      },
+      "tags": [
+        "intechgration.io",
+        "wdx180"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "vscode-working-efficiently-with-csv-files": {
+      "type": "YouTube",
+      "duration": 430,
+      "title": "VSCode: Working efficiently with CSV files",
+      "date": "21/09/2023",
+      "youtube": {
+        "id": "6biPbWK2Mtw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/6biPbWK2Mtw/sddefault.jpg"
+      },
+      "tags": [
+        "html",
+        "html5",
+        "beginner",
+        "intechgration",
+        "web development",
+        "web developer",
+        "software",
+        "frontend",
+        "wdx",
+        "wdx180",
+        "intechgration.io",
+        "newbie",
+        "introduction",
+        "vscode",
+        "visual studio code",
+        "tutorial",
+        "software developer",
+        "programmer",
+        "code",
+        "coding",
+        "learning",
+        "csv",
+        "excel",
+        "extensions",
+        "spreadsheet"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "video-editing-with-davinci-resolve-cutting-and-exporting-part-of-a-video": {
+      "type": "YouTube",
+      "duration": 235,
+      "title": "Video editing with DaVinci Resolve: Cutting and exporting part of a video",
+      "date": "23/09/2023",
+      "youtube": {
+        "id": "BmetqCoqPa0",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/BmetqCoqPa0/sddefault.jpg"
+      },
+      "tags": [
+        "davinci",
+        "resolve",
+        "DaVinci resolve",
+        "video editing",
+        "free",
+        "beginner",
+        "tutorial",
+        "learning",
+        "editing",
+        "cutting",
+        "format",
+        "video format",
+        "youtube",
+        "editor"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "introduction-to-github-pages": {
+      "type": "YouTube",
+      "duration": 2465,
+      "title": "Introduction to GitHub Pages",
+      "date": "24/09/2023",
+      "youtube": {
+        "id": "nERHeT53MIw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/nERHeT53MIw/sddefault.jpg"
+      },
+      "tags": [
+        "wdx180",
+        "wdx",
+        "intechgration",
+        "intechgration.io",
+        "web development",
+        "web development x",
+        "free",
+        "learning",
+        "github",
+        "github pages",
+        "hosting",
+        "deploy",
+        "actions",
+        "vscode",
+        "visual studio code",
+        "frontend",
+        "software",
+        "software development",
+        "beginner",
+        "website",
+        "web pages",
+        "deploying",
+        "free hosting",
+        "programmer",
+        "coder",
+        "coding",
+        "git",
+        "high level overview",
+        "newbie",
+        "dummy",
+        "dummies",
+        "simple"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx-180-keeping-our-forked-repository-up-to-date-and-in-sync-with-the-original-repo": {
+      "type": "YouTube",
+      "duration": 1098,
+      "title": "WDX-180: Keeping our forked repository up-to-date and in-sync with the original repo",
+      "date": "27/09/2023",
+      "youtube": {
+        "id": "CAek8fVB70M",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/CAek8fVB70M/sddefault.jpg"
+      },
+      "tags": [
+        "intechgration.io",
+        "wdx180",
+        "web development x",
+        "web development",
+        "free course"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx180---live-session-the-internet-the-web-and-you-the-frontend-developer": {
+      "type": "YouTube",
+      "duration": 2396,
+      "title": "WDX180 - Live Session: The Internet, The Web and you, the Frontend Developer",
+      "date": "03/10/2023",
+      "youtube": {
+        "id": "JtNmSHnirfY",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/JtNmSHnirfY/sddefault.jpg"
+      },
+      "tags": [
+        "frontend",
+        "beginner",
+        "newbie",
+        "internet",
+        "web",
+        "web development",
+        "introduction",
+        "intechgration.io",
+        "learning",
+        "coder",
+        "programmer",
+        "learn",
+        "www",
+        "email",
+        "basics",
+        "wdx180",
+        "beginner course",
+        "html",
+        "css",
+        "http",
+        "js",
+        "javascript",
+        "for dummies"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx-180---setting-up-vscode-for-efficiently-working-with-the-exercises": {
+      "type": "YouTube",
+      "duration": 509,
+      "title": "WDX-180 - Setting up VSCode for efficiently working with the exercises",
+      "date": "06/10/2023",
+      "youtube": {
+        "id": "n7wkAp9_bqw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/n7wkAp9_bqw/sddefault.jpg"
+      },
+      "tags": [
+        "wdx180",
+        "beginner",
+        "vscode",
+        "efficient",
+        "setup",
+        "environment",
+        "exercises",
+        "learning",
+        "coding",
+        "web development",
+        "developer",
+        "coder",
+        "solution",
+        "intechgration.io"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx180---qa---permitted-html-element-content": {
+      "type": "YouTube",
+      "duration": 424,
+      "title": "WDX180 - Q&A - Permitted HTML Element Content",
+      "date": "22/10/2023",
+      "youtube": {
+        "id": "BSbucg7E1-Q",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/BSbucg7E1-Q/sddefault.jpg"
+      },
+      "tags": [
+        "html",
+        "beginner",
+        "wdx180",
+        "intechgration.io",
+        "web development",
+        "permitted content",
+        "w3c",
+        "validation",
+        "best practices",
+        "learning",
+        "web developer",
+        "coder",
+        "coding",
+        "programming",
+        "frontend",
+        "check",
+        "mdn",
+        "mozilla",
+        "mozilla developer network",
+        "documentation",
+        "html entities"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "davinci-resolve-creating-playback-progress-indicators": {
+      "type": "YouTube",
+      "duration": 803,
+      "title": "DaVinci Resolve | Creating Playback Progress Indicators",
+      "date": "29/10/2023",
+      "youtube": {
+        "id": "gmAm5R7GUxE",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/gmAm5R7GUxE/sddefault.jpg"
+      },
+      "tags": [
+        "intechgration",
+        "video editing",
+        "beginner",
+        "kostas minaidis",
+        "kostasx",
+        "video",
+        "tutorial",
+        "Davinci resolve",
+        "davinci resolve beginner",
+        "davinci resolve 18",
+        "davinci resolve",
+        "davinci resolve tutorial",
+        "progress",
+        "loading indicator",
+        "expression",
+        "lua",
+        "programming",
+        "scripting",
+        "davinci scripts",
+        "editing tips",
+        "how to edit",
+        "learn video",
+        "video tutorials",
+        "resolve",
+        "davinci",
+        "resolve basics"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "vscode---writing-html-faster-using-emmet-abbreviations": {
+      "type": "YouTube",
+      "duration": 403,
+      "title": "VSCode - Writing HTML faster using Emmet Abbreviations",
+      "date": "09/11/2023",
+      "youtube": {
+        "id": "g0F2XKGH4LY",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/g0F2XKGH4LY/sddefault.jpg"
+      },
+      "tags": [
+        "vscode",
+        "web development",
+        "html",
+        "emmet",
+        "abbreviations",
+        "shorthand",
+        "faster",
+        "quicker",
+        "learning",
+        "beginner",
+        "frontend",
+        "visual studio code",
+        "emmet abbreviations",
+        "coder",
+        "programming",
+        "intechgration",
+        "wdx180",
+        "software",
+        "developer",
+        "web dev",
+        "quick",
+        "quick coding"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx180---study-lenses-guide": {
+      "type": "YouTube",
+      "duration": 698,
+      "title": "WDX180 - Study Lenses Guide",
+      "date": "12/11/2023",
+      "youtube": {
+        "id": "5uCJBiQ7MkA",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/5uCJBiQ7MkA/sddefault.jpg"
+      },
+      "tags": [
+        "study lenses",
+        "study",
+        "lenses",
+        "wdx180",
+        "wdx",
+        "learning",
+        "beginner",
+        "javascript",
+        "course",
+        "free",
+        "coder",
+        "software",
+        "studying code"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx180---welcome-to-javascript---part-1": {
+      "type": "YouTube",
+      "duration": 2732,
+      "title": "WDX180 - Welcome to JavaScript - Part 1",
+      "date": "12/11/2023",
+      "youtube": {
+        "id": "Lc68CtuMuTM",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/Lc68CtuMuTM/sddefault.jpg"
+      }
+    },
+    "wdx180---lets-learn-css-the-position-property": {
+      "type": "YouTube",
+      "duration": 6427,
+      "title": "WDX180 - Let's Learn CSS: the position property",
+      "date": "12/11/2023",
+      "youtube": {
+        "id": "3IpzdyJ2YY0",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/3IpzdyJ2YY0/sddefault.jpg"
+      },
+      "tags": [
+        "css",
+        "position",
+        "sticky",
+        "relative",
+        "absolute",
+        "fixed",
+        "static",
+        "wdx180",
+        "web development",
+        "developer",
+        "software",
+        "frontend",
+        "intechgration",
+        "learning",
+        "learn",
+        "study",
+        "beginner",
+        "course",
+        "curriculum",
+        "web developer",
+        "coder",
+        "coding",
+        "programming",
+        "z-index",
+        "transition",
+        "web"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "flappyapp-challenge---part-09-main-scenery": {
+      "type": "YouTube",
+      "duration": 432,
+      "title": "FlappyApp Challenge - Part 09 Main Scenery",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "6JiAJnJiB0Q",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/6JiAJnJiB0Q/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-11-main-lorem": {
+      "type": "YouTube",
+      "duration": 182,
+      "title": "FlappyApp Challenge - Part 11 Main Lorem",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "BwDuMkNHSX0",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/BwDuMkNHSX0/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-7-recreating-flappy-logo": {
+      "type": "YouTube",
+      "duration": 999,
+      "title": "FlappyApp Challenge - Part 7 Recreating Flappy Logo",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "DHA6gf7m-5w",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/DHA6gf7m-5w/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-2-folder-structure": {
+      "type": "YouTube",
+      "duration": 317,
+      "title": "FlappyApp Challenge - Part 2 Folder Structure",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "EW2T7T_hdCw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/EW2T7T_hdCw/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-14-footer": {
+      "type": "YouTube",
+      "duration": 823,
+      "title": "FlappyApp Challenge - Part 14 Footer",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "H4NZXGN1dEo",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/H4NZXGN1dEo/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-15-setting-max-width": {
+      "type": "YouTube",
+      "duration": 968,
+      "title": "FlappyApp Challenge - Part 15 Setting Max Width",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "JsePsnojX3E",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/JsePsnojX3E/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-4-google-web-fonts": {
+      "type": "YouTube",
+      "duration": 303,
+      "title": "FlappyApp Challenge - Part 4 Google Web Fonts",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "KiyRDMBgDlY",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/KiyRDMBgDlY/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-10-main-section-features-table": {
+      "type": "YouTube",
+      "duration": 934,
+      "title": "FlappyApp Challenge - Part 10 Main Section: Features Table",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "PD-nVpWBLys",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/PD-nVpWBLys/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-3-planning": {
+      "type": "YouTube",
+      "duration": 1683,
+      "title": "FlappyApp Challenge - Part 3 Planning",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "UHCootaxTOs",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/UHCootaxTOs/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-1-setup": {
+      "type": "YouTube",
+      "duration": 184,
+      "title": "FlappyApp Challenge - Part 1 Setup",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "UYHiXrUOhk4",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/UYHiXrUOhk4/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-16-ribbon-decoration": {
+      "type": "YouTube",
+      "duration": 326,
+      "title": "FlappyApp Challenge - Part 16 Ribbon Decoration",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "Z41buBbpMKs",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/Z41buBbpMKs/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-6-defining-columns": {
+      "type": "YouTube",
+      "duration": 1493,
+      "title": "FlappyApp Challenge - Part 6 Defining Columns",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "kNSRmEuwxnU",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/kNSRmEuwxnU/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---intro": {
+      "type": "YouTube",
+      "duration": 82,
+      "title": "FlappyApp Challenge - Intro",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "mhTtjqa0a44",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/mhTtjqa0a44/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-5-content-containers": {
+      "type": "YouTube",
+      "duration": 545,
+      "title": "FlappyApp Challenge - Part 5 Content Containers",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "qdP5WY0WWfw",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/qdP5WY0WWfw/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-13-centering-main-content": {
+      "type": "YouTube",
+      "duration": 300,
+      "title": "FlappyApp Challenge - Part 13 Centering Main Content",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "rC4FwmrV6_I",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/rC4FwmrV6_I/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-8-navigation-menu": {
+      "type": "YouTube",
+      "duration": 1151,
+      "title": "FlappyApp Challenge - Part 8 Navigation Menu",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "rgegTdHVCHk",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/rgegTdHVCHk/sddefault.jpg"
+      }
+    },
+    "flappyapp-challenge---part-12-centering-navigation": {
+      "type": "YouTube",
+      "duration": 530,
+      "title": "FlappyApp Challenge - Part 12 Centering Navigation",
+      "date": "13/11/2023",
+      "youtube": {
+        "id": "vdQsmHDNCj4",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/vdQsmHDNCj4/sddefault.jpg"
+      }
+    },
+    "please-explain-what-is-meant-by-frontend-and-backend": {
+      "type": "YouTube",
+      "duration": 199,
+      "title": "Please explain: What is meant by Frontend and Backend?",
+      "date": "27/11/2023",
+      "youtube": {
+        "id": "1FXOpjJl8DY",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/1FXOpjJl8DY/sddefault.jpg"
+      },
+      "tags": [
+        "frontend",
+        "backend",
+        "please explain",
+        "eli5",
+        "beginner",
+        "software",
+        "development",
+        "learn",
+        "newbie",
+        "web development",
+        "web dev",
+        "questions",
+        "teach",
+        "intechgration",
+        "WDX180"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "real-life-coding-integrating-rtk-query-into-a-react-application-kiptrak-1": {
+      "type": "YouTube",
+      "duration": 3916,
+      "title": "Real-life Coding: Integrating RTK Query into a React application (KipTrak #1)",
+      "date": "27/11/2023",
+      "youtube": {
+        "id": "gda1_DnBrlA",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/gda1_DnBrlA/sddefault.jpg"
+      },
+      "tags": [
+        "javascript",
+        "redux",
+        "express",
+        "nodejs",
+        "node",
+        "frontend",
+        "real-life",
+        "coding",
+        "programming",
+        "full-stack",
+        "rtk",
+        "rtk query",
+        "js",
+        "expressjs",
+        "queries",
+        "api",
+        "json",
+        "debugging",
+        "senior",
+        "engineer",
+        "programmer",
+        "learning",
+        "learn",
+        "irl",
+        "react",
+        "vscode"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "real-life-coding-high-level-overview-of-the-app-kiptrak-0": {
+      "type": "YouTube",
+      "duration": 798,
+      "title": "Real-life Coding: High Level Overview of the App (KipTrak #0)",
+      "date": "27/11/2023",
+      "youtube": {
+        "id": "nCD3F9nVxV8",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/nCD3F9nVxV8/sddefault.jpg"
+      },
+      "tags": [
+        "javascript",
+        "js",
+        "react",
+        "real-life",
+        "irl",
+        "coding",
+        "senior",
+        "engineer",
+        "engineering",
+        "frontend",
+        "learn",
+        "intechgration",
+        "web development",
+        "spreadsheet"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "real-life-coding-integrating-spreadsheets-into-a-react-application-kiptrak-2": {
+      "type": "YouTube",
+      "duration": 4124,
+      "title": "Real-life Coding: Integrating Spreadsheets into a React application (KipTrak #2)",
+      "date": "27/11/2023",
+      "youtube": {
+        "id": "XcAofKtaXJA",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/XcAofKtaXJA/sddefault.jpg"
+      },
+      "tags": [
+        "javascript",
+        "frontend",
+        "real-life",
+        "coding",
+        "programming",
+        "full-stack",
+        "js",
+        "queries",
+        "api",
+        "json",
+        "debugging",
+        "senior",
+        "engineer",
+        "programmer",
+        "learning",
+        "learn",
+        "irl",
+        "react",
+        "vscode",
+        "react-datasheet-grid",
+        "spreadsheet",
+        "reactjs",
+        "typescript",
+        "spa",
+        "single page application",
+        "integrating",
+        "excel",
+        "csv"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "real-life-coding-implementing-a-select-column-for-react-datasheet-grid-kiptrak-3": {
+      "type": "YouTube",
+      "duration": 3450,
+      "title": "Real-life Coding: Implementing a Select Column for React Datasheet Grid (KipTrak #3)",
+      "date": "27/11/2023",
+      "youtube": {
+        "id": "lt-60N6XvSU",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/lt-60N6XvSU/sddefault.jpg"
+      },
+      "tags": [
+        "javascript",
+        "frontend",
+        "real-life",
+        "coding",
+        "programming",
+        "full-stack",
+        "js",
+        "queries",
+        "api",
+        "json",
+        "debugging",
+        "senior",
+        "engineer",
+        "programmer",
+        "learning",
+        "learn",
+        "irl",
+        "react",
+        "vscode",
+        "react-datasheet-grid",
+        "spreadsheet",
+        "reactjs",
+        "typescript",
+        "spa",
+        "single page application",
+        "integrating",
+        "excel",
+        "csv",
+        "datasheet",
+        "react datasheet grid",
+        "rdg",
+        "datasheet-grid",
+        "react csv"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "css-for-beginners-making-sense-of-flexbox": {
+      "type": "YouTube",
+      "duration": 7347,
+      "title": "CSS for Beginners: Making Sense of Flexbox",
+      "date": "28/11/2023",
+      "youtube": {
+        "id": "sgQVwd2IL9A",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/sgQVwd2IL9A/sddefault.jpg"
+      },
+      "tags": [
+        "css",
+        "frontend",
+        "flexbox",
+        "beginner",
+        "newbie",
+        "intechgration",
+        "kostasx",
+        "kostas minaidis",
+        "flex",
+        "html",
+        "web development",
+        "basics",
+        "fundamentals",
+        "in-depth",
+        "align-content",
+        "justify-content",
+        "display flex",
+        "flexbox items",
+        "flex-direction",
+        "align-items",
+        "main axis",
+        "cross axis",
+        "introduction",
+        "coding",
+        "coder",
+        "layouts",
+        "cascading stylesheets",
+        "intro",
+        "dummies"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "introduction-to-the-internet-the-web-and-html-for-absolute-beginners": {
+      "type": "YouTube",
+      "duration": 5818,
+      "title": "Introduction to the Internet, the Web and HTML for Absolute Beginners",
+      "date": "03/12/2023",
+      "youtube": {
+        "id": "S6GbPxXdhmI",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/S6GbPxXdhmI/sddefault.jpg"
+      },
+      "tags": [
+        "html",
+        "beginner",
+        "internet",
+        "web",
+        "www",
+        "birth of the internet",
+        "lan",
+        "local area networks",
+        "computer networks",
+        "netlify",
+        "hosting",
+        "server",
+        "newbie",
+        "absolute beginner",
+        "for dummies",
+        "hypertext",
+        "html tags",
+        "html elements",
+        "intro",
+        "introduction",
+        "frontend",
+        "programming",
+        "coding",
+        "coder",
+        "code",
+        "software development",
+        "web development",
+        "dns",
+        "ip",
+        "domain name system",
+        "understanding",
+        "intechgration",
+        "school",
+        "start"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "what-is-an-api-simplified": {
+      "type": "YouTube",
+      "duration": 1701,
+      "title": "What is an API? (simplified)",
+      "date": "07/12/2023",
+      "youtube": {
+        "id": "6nTGRB6eTaE",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/6nTGRB6eTaE/sddefault.jpg"
+      },
+      "tags": [
+        "API",
+        "REST",
+        "REST API",
+        "JSON API",
+        "JSON",
+        "JSON Formatter",
+        "restcountries",
+        "Fetch API",
+        "Application",
+        "Programming",
+        "Interface",
+        "Application Programming Interface",
+        "intechgration",
+        "wdx180",
+        "restful",
+        "programming",
+        "learning",
+        "beginner",
+        "coder",
+        "coding",
+        "tech",
+        "newbie",
+        "for dummies",
+        "simplified",
+        "simple"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "celebrating-cohort-0x02-completion-of-wdx180---part-1": {
+      "type": "YouTube",
+      "duration": 1759,
+      "title": "Celebrating Cohort 0x02 (Completion of WDX180 - Part 1)",
+      "date": "24/12/2023",
+      "youtube": {
+        "id": "wKxPBpYe2Wk",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/wKxPBpYe2Wk/sddefault.jpg"
+      }
+    },
+    "real-life-coding-css-transformations-live-dom-modifications-via-devtools": {
+      "type": "YouTube",
+      "duration": 2242,
+      "title": "Real-life coding: CSS transformations & live DOM modifications via DevTools",
+      "date": "26/12/2023",
+      "youtube": {
+        "id": "V35U5YPnS0c",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/V35U5YPnS0c/sddefault.jpg"
+      },
+      "tags": [
+        "devtools",
+        "css",
+        "intermediate",
+        "real life",
+        "irl",
+        "real life coding",
+        "coding",
+        "programming",
+        "HTML",
+        "CSS",
+        "html",
+        "frontend",
+        "web development",
+        "challenges",
+        "real challenges",
+        "real code",
+        "transform",
+        "transform-origin",
+        "local overrides",
+        "chrome",
+        "browser",
+        "rotate",
+        "intechgration",
+        "kostasx"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "real-life-coding-implementing-api-crud-with-redux-toolkit-kiptrak-4": {
+      "type": "YouTube",
+      "duration": 3065,
+      "title": "Real-life Coding: Implementing API CRUD with Redux Toolkit (KipTrak #4)",
+      "date": "03/01/2024",
+      "youtube": {
+        "id": "jDJ6r--gRLU",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/jDJ6r--gRLU/sddefault.jpg"
+      },
+      "tags": [
+        "javascript",
+        "redux",
+        "node",
+        "frontend",
+        "real-life",
+        "coding",
+        "programming",
+        "full-stack",
+        "rtk",
+        "rtk query",
+        "js",
+        "expressjs",
+        "queries",
+        "api",
+        "json",
+        "debugging",
+        "senior",
+        "engineer",
+        "programmer",
+        "learning",
+        "learn",
+        "irl",
+        "react",
+        "vscode",
+        "crud",
+        "rest",
+        "createApi",
+        "mutation"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "react-tricks-find-the-appropriate-typescript-type-for-an-event-quickly": {
+      "type": "YouTube",
+      "duration": 190,
+      "title": "React Tricks: Find the appropriate TypeScript type for an Event quickly",
+      "date": "10/01/2024",
+      "youtube": {
+        "id": "CPf_wX3OZZI",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/CPf_wX3OZZI/sddefault.jpg"
+      },
+      "tags": [
+        "react",
+        "reactjs",
+        "tip",
+        "trick",
+        "typescript",
+        "event",
+        "infer",
+        "event object",
+        "quick",
+        "frontend",
+        "javascript",
+        "event handler",
+        "onsubmit",
+        "onchange",
+        "input",
+        "form",
+        "interface",
+        "type checking",
+        "easy"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx180---lets-learn-javascript-dom-nodes-and-other-furry-creatures": {
+      "type": "YouTube",
+      "duration": 2438,
+      "title": "WDX180 - Let's learn JavaScript: DOM Nodes and other furry creatures",
+      "date": "02/02/2024",
+      "youtube": {
+        "id": "p2o0fXSzVWc",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/p2o0fXSzVWc/sddefault.jpg"
+      },
+      "tags": [
+        "frontend",
+        "beginner",
+        "newbie",
+        "intechgration",
+        "kostasx",
+        "kostas minaidis",
+        "html",
+        "web development",
+        "basics",
+        "fundamentals",
+        "in-depth",
+        "introduction",
+        "coding",
+        "coder",
+        "intro",
+        "dummies",
+        "DOM",
+        "js",
+        "javascript",
+        "ECMAScript",
+        "DOM Nodes",
+        "Text Nodes",
+        "DOM Elements",
+        "DOM Traversal",
+        "DOM Manipulation",
+        "childNodes",
+        "Text",
+        "Text Constructor",
+        "nextSibling",
+        "nextElementSibling",
+        "lastChild",
+        "Document Object Model",
+        "tree",
+        "hierarchy",
+        "DOM tree"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "create-a-new-react-project-using-vite-2024": {
+      "type": "YouTube",
+      "duration": 206,
+      "title": "Create a new React project using Vite (2024)",
+      "date": "28/02/2024",
+      "youtube": {
+        "id": "xDz2d3e6_08",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/xDz2d3e6_08/sddefault.jpg"
+      }
+    },
+    "git-bash-tutorial-git-bash-basics-git-and-github-tutorial-devops-training-edureka": {
+      "type": "YouTube",
+      "duration": 1506,
+      "title": "Git Bash Tutorial | Git Bash Basics | Git and GitHub Tutorial | DevOps Training | Edureka",
+      "date": "15/03/2021",
+      "youtube": {
+        "id": "iGutIN5t9Mo",
+        "channel_id": "UCkw4JCwteGrDHIsyIIKo4tQ",
+        "channel_title": "edureka!",
+        "thumbnail_url": "https://i.ytimg.com/vi/iGutIN5t9Mo/sddefault.jpg"
+      },
+      "tags": [
+        "yt:cc=on",
+        "git bash tutorial",
+        "git bash",
+        "git bash basics",
+        "what is github",
+        "git bash commands",
+        "git bash github",
+        "git bash setup",
+        "github tutorial",
+        "how to use git bash to push to github",
+        "git bash commit",
+        "git and github tutorial",
+        "Git bash commit and push",
+        "git",
+        "github",
+        "what is git",
+        "git tutorial",
+        "git tutorial for beginners",
+        "github tutorial for beginners",
+        "what is git repository",
+        "git add",
+        "git branching",
+        "git commands",
+        "git init",
+        "git edureka",
+        "devops tools",
+        "edureka devops",
+        "edureka"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "asymmetric-encryption---simply-explained": {
+      "type": "YouTube",
+      "duration": 280,
+      "title": "Asymmetric Encryption - Simply explained",
+      "date": "30/10/2017",
+      "youtube": {
+        "id": "AQDCe585Lnc",
+        "channel_id": "UCnxrdFPXJMeHru_b4Q_vTPQ",
+        "channel_title": "Simply Explained",
+        "thumbnail_url": "https://i.ytimg.com/vi/AQDCe585Lnc/sddefault.jpg"
+      },
+      "tags": [
+        "learning",
+        "cryptography",
+        "dummies",
+        "beginner",
+        "protection",
+        "comprehension",
+        "secure",
+        "RSA",
+        "lesson",
+        "algorithm",
+        "research",
+        "key",
+        "knowledge",
+        "introduction",
+        "safe",
+        "understand",
+        "encryption",
+        "asymmetric",
+        "simpler",
+        "educate",
+        "schooling",
+        "privacy",
+        "comrpehend",
+        "free",
+        "self-improvement",
+        "data",
+        "plain english",
+        "public key",
+        "simply",
+        "basics",
+        "information",
+        "learn",
+        "simple",
+        "education",
+        "getting started",
+        "explained",
+        "security",
+        "https",
+        "school",
+        "private key",
+        "symmetric"
+      ],
+      "language": [
+        "en"
+      ],
+      "reviewers": [
+        {
+          "github": "mubashra21c"
+        }
+      ]
     }
   },
   "creators": {}

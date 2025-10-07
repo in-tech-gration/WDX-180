@@ -1,0 +1,38 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: ECMAScript 6 
+header_image: week14/pexels-olia-danilevich-4974916.jpg
+# title: Functional Programming 1, Templating, JavaScript Frameworks
+schedule: 
+  days:
+    1: # ECMAScript 6: Spread Parameters, Spread Operator, Destructuring Assignment
+      # file://./../modules/javascript/core/es6/destructure-spread.md
+      module: javascript/core/es6/destructure-spread.md
+    2: # 
+      # file://./../modules/javascript/misc/_w14d02/_w14d02.md
+      module: javascript/misc/_w14d02/_w14d02.md
+    3: # Script Loading
+      # file://./../modules/javascript/misc/_w14d03/_w14d03.md
+      module: javascript/misc/_w14d03/_w14d03.md
+    4: # 
+      # file://./../modules/javascript/misc/_w14d04/_w14d04.md
+      module: javascript/misc/_w14d04/_w14d04.md
+    5: # Let's Build jQuery
+      # file://./../modules/javascript/misc/_w14d05/_w14d05.md
+      module: javascript/misc/_w14d05/_w14d05.md
+
+# ---
+# DAY 1: What is Functional Programming?
+# First https://reactivex.io/learnrx/ exercises
+
+# DAY 2: More https://reactivex.io/learnrx/
+
+# DAY 3: HTML Templates, Template Literals and other patterns (type="text/x-template", Mustache)
+# ```html
+# <script type="text/x-template">
+#   Let's change {{ this_placeholder }} with different values!
+# </script>
+# ```
+# file:///Users/kostasx/Drive/EVENTLOOP.PRIVATE/BOOTCAMP/INTECHGRATION/STUDY/KevlinHenneyTemplate.jpeg
+
+# DAY 5: $(), chaining, on("click"), text(), val(), html(), load(), css()

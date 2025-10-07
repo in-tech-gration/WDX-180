@@ -1,0 +1,22 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: React JS
+# header_image: week24/FILE.jpg
+# title: Group Project
+schedule: 
+  days:
+    1: # Dan Abramov: useEffect 
+      # file://./../modules/javascript/misc/_w24d01/_w24d01.md
+      module: javascript/misc/_w24d01/_w24d01.md
+    2: # Dan Abramov: useEffect
+      # file://./../modules/javascript/misc/_w24d02/_w24d02.md
+      module: javascript/misc/_w24d02/_w24d02.md
+    3: # React Quiz Coding Challenge
+      # file://./../modules/javascript/misc/_w24d03/_w24d03.md
+      module: javascript/misc/_w24d03/_w24d03.md
+    4: # React Quiz Coding Challenge
+      # file://./../modules/javascript/misc/_w24d04/_w24d04.md
+      module: javascript/misc/_w24d04/_w24d04.md
+    5: # React Quiz Coding Challenge
+      # file://./../modules/javascript/misc/_w24d05/_w24d05.md
+      module: javascript/misc/_w24d05/_w24d05.md

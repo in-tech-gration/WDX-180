@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: React JS
+header_image: week21/introduction-to-react.jpg
+schedule: 
+  days:
+    1: # Introduction to React
+      # file://./../modules/javascript/misc/_w21d01/_w21d01.md
+      module: javascript/misc/_w21d01/_w21d01.md
+    2: # 
+      # file://./../modules/javascript/frameworks/react/quickstart/part-01.md
+      module: javascript/frameworks/react/quickstart/part-01.md
+    3: # 
+      # file://./../modules/javascript/misc/_w21d03/_w21d03.md
+      module: javascript/misc/_w21d03/_w21d03.md
+    4: # 
+      # file://./../modules/javascript/frameworks/react/quickstart/part-02.md
+      module: javascript/frameworks/react/quickstart/part-02.md
+    5: # 
+      # file://./../modules/javascript/misc/_w21d05/_w21d05.md
+      module: javascript/misc/_w21d05/_w21d05.md

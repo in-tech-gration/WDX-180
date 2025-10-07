@@ -1,0 +1,21 @@
+name: "Week 04 - Day 1 CSS 2 & Performance | Test Exercise: 'Fundamental CSS comprehension'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day01/fundamental_css_comprehension/**
+jobs:
+  fundamental_css_comprehension:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Fundamental CSS comprehension' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day01/fundamental_css_comprehension/index.html, user/week04/exercises/day01/fundamental_css_comprehension/styles.css, user/week04/exercises/day01/fundamental_css_comprehension/chris.jpg"
+          fail: true

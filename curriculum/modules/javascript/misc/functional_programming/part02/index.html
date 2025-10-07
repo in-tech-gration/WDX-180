@@ -1,0 +1,1099 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/codemirror/codemirror.css">
+	<link rel="stylesheet" href="../assets/app/site.css">
+	<title>Functional Programming in Javascript: Part 2</title>
+	<script type="text/javascript">
+		// Adds the implementation for Array.prototype.concatAll()
+		function defineConcatAll() {
+			Array.prototype.concatAll = function () {
+				var results = [];
+
+				this.forEach(function(subArray) {
+					results.push.apply(results, subArray);
+				});
+
+				return results;
+			};
+		}
+
+		/**
+		 * Add the implementation for Array.prototype.concatMap()
+		 */
+		function defineConcatMap() {
+			Array.prototype.concatMap = function(fnc) {
+				return this.
+					map(function (e) {
+						return fnc(e);
+					}).
+					// apply the concatAll function to flatten the two-dimensional array
+					concatAll();
+			};
+		}
+
+		/**
+		 * This function will be executed at the begining of each verifier function
+		 */
+		function preVerifierHook() {
+			// Add helpers to prevent 'undefined is not a function' like errors
+			defineConcatAll();
+			defineConcatMap();
+		}
+	</script>
+</head>
+<body>
+<div class="content">
+  <!-- ***************************** GRAB ANSWERS ***************************** -->
+	<!-- <div class="grab-answers">
+		<p>This is an interactive learning course with exercises you fill out right in the browser. <b>If you just want to browse the content click the button below</b>:</p>
+		<button class="green-button show-answers">Show all the answers so I can just browse.</button>
+	</div> -->
+  <h1 class="center">Functional Programming in Javascript: Part 2</h1>
+
+  <p>This is the second part of the series of  interactive exercises focusing on training yourself to use functional
+    programming to manipulate collections. In the previous part, we focused on the more common and basic functions
+    (<b>map()</b> and <b>filter()</b>) plus we defined a new function to the Array prototype called <b>concatAll()</b>!
+    Now we are going to define a new function combining map() and concatAll() and learn another important function.
+    The notorious <b>reduce()</b>!
+  </p>
+  
+  <h2>Finishing the Interactive Exercises</h2>
+
+  <p>This isn't just a tutorial, it's a
+    <b>series of interactive exercises that you can fill out right in your browser!</b> It's easy to finish the
+    exercises. Just edit the code and press "Run." If the code works, a new exercise will appear below. Otherwise an
+    error will appear.
+  </p>
+  <p><b>Note:</b> Use the "F4" key to toggle full screen mode for each editor.</p>
+
+  <p>This tutorial may have bugs, so if you get into a weird state or you're sure you've got the right answer but
+    can't move on, just refresh your browser. If you're using a modern browser, and if you're here I assume you are,
+    the state of your exercises will be saved. If you want, you can also
+    <a href="javascript:localStorage.newState = ''; document.location.reload();">restart the lab.</a></p>
+
+  <p>
+		The content of this series is part of the online tutorial 
+		<a href="https://reactivex.io/learnrx/" target="_blank">Functional Programming in Javascript</a>, which mainly focuses
+		on <a href="https://reactivex.io/" target="_blank">Microsoft's Reactive Extensions (Rx) Library for Javascript</a>.
+		Make sure to star <a href="https://github.com/ReactiveX/learnrx" target="_blank">this repository</a> over at GitHub!
+  </p>
+  <div class="grab-answers">
+    <p>Your answers will be saved in local storage. Use the buttons below if you want to transfer them to another machine:</p>
+    <button class="green-button get-answer">Get Answers as JSON</button>
+    <button class="blue-button set-answer">Set JSON Answers</button>
+  </div>
+
+  <h2>Working with Arrays</h2>
+
+  <!-- ************************* LESSON ************************* -->
+	<div class="lesson" style="visibility: visible">
+		<h4>Exercise 13: Implement concatMap()</h4>
+
+		<p>Nearly every time we flatten a tree we chain map() and concatAll(). Sometimes, if we're dealing with a tree
+			several levels deep, we'll repeat this combination many times in our code. To save on typing, let's create a
+			concatMap function that's just a map operation, followed by a concatAll.</p>
+		<textarea class="code" rows="20" cols="80">
+			Array.prototype.concatMap = function(projectionFunctionThatReturnsArray) {
+				return this.
+					map(function(item) {
+						// ------------   INSERT CODE HERE!  ----------------------------
+						// Apply the projection function to each item. The projection
+						// function will return a new child array. This will create a
+						// two-dimensional array.
+						// ------------   INSERT CODE HERE!  ----------------------------
+					}).
+					// apply the concatAll function to flatten the two-dimensional array
+					concatAll();
+			};
+
+			/*
+				var spanishFrenchEnglishWords = [ ["cero","rien","zero"], ["uno","un","one"], ["dos","deux","two"] ];
+				// collect all the words for each number, in every language, in a single, flat list
+				var allWords = [0,1,2].
+					concatMap(function(index) {
+						return spanishFrenchEnglishWords[index];
+					});
+
+				return JSON.stringify(allWords) === '["cero","rien","zero","uno","un","one","dos","deux","two"]';
+			*/
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Implement concatAll
+			function(str) {
+				preVerifierHook();
+				var fun = eval(str),
+					spanishFrenchEnglishWords = [ ["cero","rien","zero"], ["uno","un","one"], ["dos","deux","two"] ],
+					allWords = [0,1,2],
+					result,
+					expected = '["cero","rien","zero","uno","un","one","dos","deux","two"]';
+
+
+				var allWords = [0,1,2].
+					concatMap(function(index) {
+						return spanishFrenchEnglishWords[index];
+					});
+
+				if (JSON.stringify(allWords) !== expected) {
+					throw "Expected " + expected;
+				}
+			}
+		</pre>
+		<pre class="answer">
+			Array.prototype.concatMap = function(projectionFunctionThatReturnsArray) {
+				return this.
+					map(function(item) {
+						return projectionFunctionThatReturnsArray(item);
+					}).
+					// apply the concatAll function to flatten the two-dimensional array
+					concatAll();
+			};
+
+			/*
+				var spanishFrenchEnglishWords = [ ["cero","rien","zero"], ["uno","un","one"], ["dos","deux","two"] ];
+				// collect all the words for each number, in every language, in a single, flat list
+				var allWords = [0,1,2].
+					concatMap(function(index) {
+						return spanishFrenchEnglishWords[index];
+					});
+
+				return JSON.stringify(allWords) === '["cero","rien","zero","uno","un","one","dos","deux","two"]';
+			*/
+		</pre>
+
+
+		<p class="post">Now, instead of using map().concatAll() to flatten a tree, we can just use concatMap helper
+			function.</p>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 14: Use concatMap() to retrieve id, title, and 150x200 box art url for every video</h4>
+
+		<p>Let's repeat the exercise we just performed. However this time we'll simplify the code by replacing the
+			map().concatAll() calls with concatMap().</p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var movieLists = [
+						{
+							name: "Instant Queue",
+							videos : [
+								{
+									"id": 70111470,
+									"title": "Die Hard",
+									"boxarts": [
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"bookmark": []
+								},
+								{
+									"id": 654356453,
+									"title": "Bad Boys",
+									"boxarts": [
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" }
+
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"bookmark": [{ id: 432534, time: 65876586 }]
+								}
+							]
+						},
+						{
+							name: "New Releases",
+							videos: [
+								{
+									"id": 65432445,
+									"title": "The Chamber",
+									"boxarts": [
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"bookmark": []
+								},
+								{
+									"id": 675465,
+									"title": "Fracture",
+									"boxarts": [
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+										{ width: 300, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"bookmark": [{ id: 432534, time: 65876586 }]
+								}
+							]
+						}
+					];
+
+
+				// Use one or more concatMap, map, and filter calls to create an array with the following items
+				// [
+				//	 {"id": 675465, "title": "Fracture", "boxart": "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+				//	 {"id": 65432445, "title": "The Chamber", "boxart": "http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
+				//	 {"id": 654356453, "title": "Bad Boys", "boxart": "http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" },
+				//	 {"id": 70111470, "title": "Die Hard", "boxart": "http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" }
+				// ];
+
+				return movieLists // Complete this expression!
+
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+
+		<pre class="verifier">
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					videos = fun(),
+					got,
+					expected = JSON.stringify([
+						{"id": 675465,"title": "Fracture","boxart":"http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+						{"id": 65432445,"title": "The Chamber","boxart":"http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
+						{"id": 654356453,"title": "Bad Boys","boxart":"http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" },
+						{"id": 70111470,"title": "Die Hard","boxart":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" }
+					].sortBy(function(v) { return v.id }));
+
+				videos = videos.sortBy(function(v) { return v.id });
+				got = JSON.stringify(videos);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var movieLists = [
+						{
+							name: "Instant Queue",
+							videos : [
+								{
+									"id": 70111470,
+									"title": "Die Hard",
+									"boxarts": [
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"bookmark": []
+								},
+								{
+									"id": 654356453,
+									"title": "Bad Boys",
+									"boxarts": [
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/BadBoys150.jpg" }
+
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"bookmark": [{ id: 432534, time: 65876586 }]
+								}
+							]
+						},
+						{
+							name: "New Releases",
+							videos: [
+								{
+									"id": 65432445,
+									"title": "The Chamber",
+									"boxarts": [
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/TheChamber150.jpg" },
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 4.0,
+									"bookmark": []
+								},
+								{
+									"id": 675465,
+									"title": "Fracture",
+									"boxarts": [
+										{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+										{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+										{ width: 300, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+									],
+									"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+									"rating": 5.0,
+									"bookmark": [{ id: 432534, time: 65876586 }]
+								}
+							]
+						}
+					];
+
+				return movieLists.concatMap(function(movieList) {
+					return movieList.videos.concatMap(function(video) {
+						return video.boxarts.
+							filter(function(boxart) {
+								return boxart.width === 150 && boxart.height === 200;
+						  	}).
+						  	map(function(boxart) {
+								return {id: video.id, title: video.title, boxart: boxart.url};
+							});
+					  });
+				  });
+			}
+		</pre>
+		<p class="post">It's a very common pattern to see several nested concatMap operations, with the last operation being a
+			map. You can think of this pattern as the functional version of a nested forEach.</p>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h3>Reducing Arrays</h3>
+		<p>Sometimes we need to perform an operation on more than one item in the array <i>at the same time</i>. For example,
+			let's say we need to find the largest integer in an array. We can't use a filter() operation, because it only
+			examines one item at a time. To find the largest integer we need to compare items in the array to each other.
+		</p>
+		<p>One approach could be to select an item in the array as the <i>assumed</i> largest number (perhaps the first item),
+			and then compare that value to every other item in the array. Each time we come across a number that was larger than
+			our assumed largest number, we'd replace it with the larger value, and continue the process until the entire array
+			was traversed.</p>
+		<p>If we replaced the specific size comparison with a closure, we could write a function that handled the array
+			traversal process for us. At each step our function would apply the closure to the last value and the current value
+			and use the result as the last value the next time. Finally we'd be left with only one value. This process is known
+			as <i>reducing</i> because we reduce many values to a single value.</p>
+
+		<h4>Exercise 15: Use forEach to find the largest box art</h4>
+
+		<p>In this example we use forEach to find the largest box art. Each time we examine a new boxart we update a
+			variable with the currently known maximumSize. If the boxart is smaller than the maximum size, we discard it. If
+			it's larger, we keep track of it. Finally we're left with a single boxart which must necessarily be the
+			largest.</p>
+		<textarea class="code" rows="15" cols="80">
+			function() {
+				var boxarts = [
+						{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+						{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+						{ width: 300, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+						{ width: 425, height: 150, url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+					],
+					currentSize,
+					maxSize = -1,
+					largestBoxart;
+
+				boxarts.forEach(function(boxart) {
+					currentSize = boxart.width * boxart.height;
+					if (currentSize > maxSize) {
+						largestBoxart = boxart;
+						maxSize = currentSize;
+					}
+				});
+
+				return largestBoxart;
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Find largest box art
+			function(str){
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					boxart = fun(),
+					got = JSON.stringify(boxart),
+					expected = JSON.stringify({ width: 425, height:150, url:"http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" });
+
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var boxarts = [
+						{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+						{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+						{ width: 300, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+						{ width: 425, height: 150, url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+					],
+					currentSize,
+					maxSize = -1,
+					largestBoxart;
+
+				boxarts.forEach(function(boxart) {
+					currentSize = boxart.width * boxart.height;
+					if (currentSize > maxSize) {
+						largestBoxart = boxart;
+						maxSize = currentSize;
+					}
+				});
+
+				return largestBoxart;
+			}
+		</pre>
+		<p class="post">This process is a reduction because we're using the information we derived from the last computation
+			to calculate the current value. However in the example above, we still have to specify the method of traversal.
+			Wouldn't it be nice if we could just specify what operation we wanted to perform on the last and current value?
+			Let's create a helper function to perform reductions on arrays.</p>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 16: Implement reduce()</h4>
+
+		<p>Let's add a reduce() function to the Array type. Like map. Take note this is <b>different from the reduce in ES5</b>, which returns a value instead of an Array! </p>
+		<textarea class="code" rows="40" cols="80">
+			// [1,2,3].reduce(function(accumulatedValue, currentValue) { return accumulatedValue + currentValue; }); === [6];
+			// [1,2,3].reduce(function(accumulatedValue, currentValue) { return accumulatedValue + currentValue; }, 10); === [16];
+
+			Array.prototype.reduce = function(combiner, initialValue) {
+				var counter,
+					accumulatedValue;
+
+				// If the array is empty, do nothing
+				if (this.length === 0) {
+					return this;
+				}
+				else {
+					// If the user didn't pass an initial value, use the first item.
+					if (arguments.length === 1) {
+						counter = 1;
+						accumulatedValue = this[0];
+					}
+					else if (arguments.length >= 2) {
+						counter = 0;
+						accumulatedValue = initialValue;
+					}
+					else {
+						throw "Invalid arguments.";
+					}
+
+					// Loop through the array, feeding the current value and the result of
+					// the previous computation back into the combiner function until
+					// we've exhausted the entire array and are left with only one value.
+					while(counter < this.length) {
+						accumulatedValue = combiner(accumulatedValue, this[counter])
+						counter++;
+					}
+
+					return [accumulatedValue];
+				}
+			};
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Implement reduce
+			function(str) {
+				preVerifierHook();
+				var fun = eval(str),
+					numbers = [1,2,3],
+					sum = numbers.reduce(function(acc,curr) { return acc + curr }),
+					expected = JSON.stringify([6]),
+					sum2 = numbers.reduce(function(acc,curr) { return acc + curr },10),
+					expected2 = JSON.stringify([16]);
+
+				if (JSON.stringify(sum) !== expected) {
+					throw "Expected that [1,2,3].reduce(function(accumulated,current) { return accumulated + current; }) === [6]. Instead got " + JSON.stringify(sum);
+				}
+				if (JSON.stringify(sum2) !== expected2) {
+					throw "Expected that [1,2,3].reduce(function(accumulated,current) { return accumulated + current; }, 10) === [16]. Instead got " + JSON.stringify(sum2);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			// [1,2,3].reduce(function(accumulatedValue, currentValue) { return accumulatedValue + currentValue; }); === [6];
+			// [1,2,3].reduce(function(accumulatedValue, currentValue) { return accumulatedValue + currentValue; }, 10); === [16];
+
+			Array.prototype.reduce = function(combiner, initialValue) {
+				var counter,
+					accumulatedValue;
+
+				// If the array is empty, do nothing
+				if (this.length === 0) {
+					return this;
+				}
+				else {
+					// If the user didn't pass an initial value, use the first item.
+					if (arguments.length === 1) {
+						counter = 1;
+						accumulatedValue = this[0];
+					}
+					else if (arguments.length >= 2) {
+						counter = 0;
+						accumulatedValue = initialValue;
+					}
+					else {
+						throw "Invalid arguments.";
+					}
+
+					// Loop through the array, feeding the current value and the result of
+					// the previous computation back into the combiner function until
+					// we've exhausted the entire array and are left with only one function.
+					while(counter < this.length) {
+						accumulatedValue = combiner(accumulatedValue, this[counter])
+						counter++;
+					}
+
+					return [accumulatedValue];
+				}
+			};
+		</pre>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson"><h4>Exercise 17: Retrieve the largest rating.</h4>
+
+		<p>Let's use our new reduce function to isolate the largest value in an array of ratings.</p>
+		<textarea class="code" rows="15" cols="80">
+			function() {
+				var ratings = [2,3,1,4,5];
+
+				// You should return an array containing only the largest rating. Remember that reduce always
+				// returns an array with one item.
+				return ratings.
+					reduce   // Complete this expression
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			 // Find largest rating
+			function(str){
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					boxarts = fun(),
+					got = JSON.stringify(boxarts),
+					expected = JSON.stringify([5]);
+
+
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var ratings = [2,3,1,4,5];
+
+				return ratings.
+				  reduce(function(acc, curr) {
+					if(acc > curr) {
+					  return acc;
+					}
+					else {
+					  return curr;
+					}
+				  });
+			}
+		</pre>
+		<p class="post">Nice work. Now let's try combining reduce() with our other functions to build more complex
+			queries.</p>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 18: Retrieve url of the largest boxart</h4>
+
+		<p>Let's try combining reduce() with map() to reduce multiple boxart objects to a single value: the url of the
+			largest box art.</p>
+		<textarea class="code" rows="15" cols="80">
+			function() {
+				var boxarts = [
+						{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+						{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+						{ width: 300, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+						{ width: 425, height: 150, url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+					];
+
+				// You should return an array containing only the URL of the largest box art. Remember that reduce always
+				// returns an array with one item.
+				return boxarts.
+					reduce   // Complete this expression
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Find largest box art with reduce
+			function(str){
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					boxarts = fun(),
+					got = JSON.stringify(boxarts),
+					expected = JSON.stringify(["http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"]);
+
+
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var boxarts = [
+						{ width: 200, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+						{ width: 150, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg" },
+						{ width: 300, height: 200, url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" },
+						{ width: 425, height: 150, url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg" }
+					];
+
+				return boxarts.
+				  reduce(function(acc,curr) {
+					if (acc.width * acc.height > curr.width * curr.height) {
+					  return acc;
+					}
+					else {
+					  return curr;
+					}
+				  }).
+				  map(function(boxart) {
+					return boxart.url;
+				  });
+			}
+		</pre>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 19: Reducing with an initial value</h4>
+
+		<p>Sometimes when we reduce an array, we want the reduced value to be a different type than the items stored in the
+			array. Let's say we have an array of videos and we want to reduce them to a single map where the key is the
+			video id and the value is the video's title.</p>
+
+		<textarea id="q18" class="code" rows="15" cols="80">
+			function() {
+				var videos = [
+					{
+						"id": 65432445,
+						"title": "The Chamber"
+					},
+					{
+						"id": 675465,
+						"title": "Fracture"
+					},
+					{
+						"id": 70111470,
+						"title": "Die Hard"
+					},
+					{
+						"id": 654356453,
+						"title": "Bad Boys"
+					}
+				];
+
+				// Expecting this output...
+				// [
+				//	 {
+				//		 "65432445": "The Chamber",
+				//		 "675465": "Fracture",
+				//		 "70111470": "Die Hard",
+				//		 "654356453": "Bad Boys"
+				//	 }
+				// ]
+				return videos.
+					reduce(function(accumulatedMap, video) {
+					var obj = {};
+
+					// ----- INSERT CODE TO ADD THE VIDEO TITLE TO THE ----
+					// ----- NEW MAP USING THE VIDEO ID AS THE KEY	 ----
+
+					// Object.assign() takes all of the enumerable properties from
+					// the object listed in its second argument (obj) and assigns them
+					// to the object listed in its first argument (accumulatedMap).
+					return Object.assign(accumulatedMap, obj);
+					},
+					// Use an empty map as the initial value instead of the first item in
+					// the list.
+					{});
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output"></div>
+		<pre class="verifier">
+			// Reducing with an initial value
+			function(str){
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					videoMap = fun()[0],
+					expected = [
+						{
+							"65432445": "The Chamber",
+							"675465": "Fracture",
+							"70111470": "Die Hard",
+							"654356453": "Bad Boys"
+						}
+					];
+
+				if (!(videoMap["65432445"] === "The Chamber" && videoMap["675465"] === "Fracture" && videoMap["70111470"] === "Die Hard" && videoMap["654356453"] === "Bad Boys")) {
+					throw "Expected " + JSON.stringify(expected);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var videos = [
+					{
+						"id": 65432445,
+						"title": "The Chamber"
+					},
+					{
+						"id": 675465,
+						"title": "Fracture"
+					},
+					{
+						"id": 70111470,
+						"title": "Die Hard"
+					},
+					{
+						"id": 654356453,
+						"title": "Bad Boys"
+					}
+				];
+
+				// Expecting this output...
+				// [
+				//     {
+				//         "65432445": "The Chamber",
+				//         "675465": "Fracture",
+				//         "70111470": "Die Hard",
+				//         "654356453": "Bad Boys"
+				//     }
+				// ]
+				return videos.
+					reduce(function(accumulatedMap, video) {
+					var obj = {};
+
+					// ----- INSERT CODE TO ADD THE VIDEO TITLE TO THE ----
+					// ----- NEW MAP USING THE VIDEO ID AS THE KEY	 ----
+					obj[video.id] = video.title;
+
+					// Object.assign() takes all of the enumerable properties from
+					// the object listed in its second argument (obj) and assigns them
+					// to the object listed in its first argument (accumulatedMap).
+					return Object.assign(accumulatedMap, obj);
+					},
+					// Use an empty map as the initial value instead of the first item in
+					// the list.
+					{});
+			}
+		</pre>
+
+		<p class="post">Nice work. Now let's try combining reduce() with our other functions to build more complex
+			queries.</p>
+	</div>
+
+
+
+
+	<!-- ************************* LESSON ************************* -->
+	<div class="lesson">
+		<h4>Exercise 20: Retrieve the id, title, and <i>smallest</i> box art url for every video.</h4>
+
+		<p>This is a variation of the problem we solved earlier, where we retrieved the url of the boxart with a width of
+			150px. This time we'll use reduce() instead of filter() to retrieve the <i>smallest</i> box art in the boxarts
+			array.</p>
+		<textarea class="code" rows="60" cols="80">
+			function() {
+				var movieLists = [
+					{
+						name: "New Releases",
+						videos: [
+							{
+								"id": 70111470,
+								"title": "Die Hard",
+								"boxarts": [
+									{ width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 4.0,
+								"bookmark": []
+							},
+							{
+								"id": 654356453,
+								"title": "Bad Boys",
+								"boxarts": [
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+									{ width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 5.0,
+								"bookmark": [{ id:432534, time:65876586 }]
+							}
+						]
+					},
+					{
+						name: "Thrillers",
+						videos: [
+							{
+								"id": 65432445,
+								"title": "The Chamber",
+								"boxarts": [
+									{ width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 4.0,
+								"bookmark": []
+							},
+							{
+								"id": 675465,
+								"title": "Fracture",
+								"boxarts": [
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+									{ width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+									{ width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 5.0,
+								"bookmark": [{ id:432534, time:65876586 }]
+							}
+						]
+					}
+				];
+
+
+				// Use one or more concatMap, map, and reduce calls to create an array with the following items (order matters)
+				// [
+				//	 {"id": 675465,"title": "Fracture","boxart":"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+				//	 {"id": 65432445,"title": "The Chamber","boxart":"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+				//	 {"id": 654356453,"title": "Bad Boys","boxart":"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" },
+				//	 {"id": 70111470,"title": "Die Hard","boxart":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" }
+				// ];
+
+				return movieLists.
+					concatMap(function(movieList) {
+
+					})
+
+			}
+		</textarea>
+		<button class="go">Run</button>
+		<button class="showAnswer">Show Answer</button>
+		<button class="fullScreen">Enter Fullscreen</button>
+		<div class="output">
+		</div>
+		<pre class="verifier">
+			// Find the id, title, and smallest box art.
+			function(str) {
+				preVerifierHook();
+				var fun = eval("(" + str + ")"),
+					videos = fun(),
+					got,
+					expected = JSON.stringify([
+						{"id": 675465,"title": "Fracture","boxart":"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+						{"id": 65432445,"title": "The Chamber","boxart":"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+						{"id": 654356453,"title": "Bad Boys","boxart":"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" },
+						{"id": 70111470,"title": "Die Hard","boxart":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" }
+					].sortBy(function(v) { return v.id }));
+
+				if (str.indexOf('[0]') !== -1){
+					throw "You're not allowed to index into the array. You might be creating the object too early. Instead of using an indexer to get the boxart out of the array, try adding a call to map() and creating the object inside the projection function.";
+				}
+				videos = videos.sortBy(function(v) { return v.id });
+				got = JSON.stringify(videos);
+				if (got !== expected) {
+					showLessonErrorMessage(expected, got);
+				}
+			}
+		</pre>
+		<pre class="answer">
+			function() {
+				var movieLists = [
+					{
+						name: "New Releases",
+						videos: [
+							{
+								"id": 70111470,
+								"title": "Die Hard",
+								"boxarts": [
+									{ width: 150, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" },
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/DieHard200.jpg" }
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 4.0,
+								"bookmark": []
+							},
+							{
+								"id": 654356453,
+								"title": "Bad Boys",
+								"boxarts": [
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys200.jpg" },
+									{ width: 140, height:200, url:"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" }
+
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 5.0,
+								"bookmark": [{ id:432534, time:65876586 }]
+							}
+						]
+					},
+					{
+						name: "Thrillers",
+						videos: [
+							{
+								"id": 65432445,
+								"title": "The Chamber",
+								"boxarts": [
+									{ width: 130, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/TheChamber200.jpg" }
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 4.0,
+								"bookmark": []
+							},
+							{
+								"id": 675465,
+								"title": "Fracture",
+								"boxarts": [
+									{ width: 200, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture200.jpg" },
+									{ width: 120, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+									{ width: 300, height:200, url:"http://cdn-0.nflximg.com/images/2891/Fracture300.jpg" }
+								],
+								"url": "http://api.netflix.com/catalog/titles/movies/70111470",
+								"rating": 5.0,
+								"bookmark": [{ id:432534, time:65876586 }]
+							}
+						]
+					}
+				];
+
+
+				// Use one or more concatMap, map, and reduce calls to create an array with the following items (order matters)
+				// [
+				//     {"id": 675465,"title": "Fracture","boxart":"http://cdn-0.nflximg.com/images/2891/Fracture120.jpg" },
+				//     {"id": 65432445,"title": "The Chamber","boxart":"http://cdn-0.nflximg.com/images/2891/TheChamber130.jpg" },
+				//     {"id": 654356453,"title": "Bad Boys","boxart":"http://cdn-0.nflximg.com/images/2891/BadBoys140.jpg" },
+				//     {"id": 70111470,"title": "Die Hard","boxart":"http://cdn-0.nflximg.com/images/2891/DieHard150.jpg" }
+				// ];
+
+				return movieLists.concatMap(function(movieList) {
+				  return movieList.videos.concatMap(function(video) {
+				    return video.boxarts.
+					  reduce(function(acc,curr) {
+						if (acc.width * acc.height < curr.width * curr.height) {
+						  return acc;
+						}
+						else {
+						  return curr;
+						}
+					  }).
+					  map(function(boxart) {
+						return {id: video.id, title: video.title, boxart: boxart.url};
+					  });
+				  });
+				});
+
+			}
+		</pre>
+
+    <p class="post">Fantastic job! Not only did you got more experienced into using map(), filter(), concatAll() and 
+      concatMap(), but you've also learned new ways of retrieving data from a collections with the use of reduce()!
+      We still have a little bit more to cover the basic functions that are essential for deeply understanding the 
+      concepts of functional programming. Click the following link to move onto <a href="https://in-tech-gration.github.io/learn-functional-programming/part3/">the next part</a></p>
+	</div>
+</div>
+
+<script src="../assets/app/wordlist.js"></script>
+<script src="../assets/codemirror/codemirror.js"></script>
+<script src="../assets/codemirror/matchbrackets.js"></script>
+<script src="../assets/app/javascript.js"></script>
+
+<script src="https://unpkg.com/@reactivex/rxjs@5.5.10/dist/global/Rx.js"></script>
+
+<script src="../assets/jquery/jquery-1.10.2.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/app/grab_answers.js"></script>
+<script src="../assets/app/show_answers.js"></script>
+
+<script src="../assets/app/utils.js"></script>
+<script src="../assets/app/main.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37739914-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+// Code below to show all answers when query parameter showAnswers is true
+const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+const showAnswers = Boolean(urlParams.get('showAnswers'));
+
+if (showAnswers) {
+	setTimeout(function() {
+		$(".lesson").each(function(cnt,item) {
+			var go = $(".go", item)[0],
+					code = $(".code", item)[0],
+					answer = $(".answer", item).text(),
+					post = $(".post", item)[0],
+					codeMirror = window.codeMirrors[cnt];
+
+			// Prevents the screen from freezing 
+			setTimeout(function(){
+					// Copy from code element if no answer is required for a lesson
+					if (answer === "") answer = $(code).text();
+					// Save code only if the lesson has any
+					if (codeMirror != null) {
+							codeMirror.setValue(answer);
+							codeMirror.save();
+					}
+					item.style.visibility = "visible";
+					if (post !== undefined) {
+							post.style.visibility = "visible";
+					}
+			}, 1);
+	});
+	}, 1000);
+}
+
+</script>
+</body>
+</html>

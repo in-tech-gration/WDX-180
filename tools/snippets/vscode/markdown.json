@@ -1,0 +1,31 @@
+{
+	"WDX:Study Lenses Installation": {
+		"prefix": "wdx:lenses2",
+		"body": [
+			"https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/"
+		],
+		"description": "JS"
+	},
+  "WDX:Kramdown target _blank": {
+    "prefix": "_blank",
+    "body": [
+      "{:target=\"_blank\"}"
+    ],
+    "description": "WDX:Kramdown target _blank"
+  },
+  "SGEN META EXERCISE 1": {
+    "prefix": "sgen-meta-ex-1",
+    "body": [
+      "<!-- SGEN:META:PROGRESS:task=Complete the exercise '${1:title}'|user_folder=${2:folder} -->",
+      "<!-- SGEN:META:TESTS:name=Test Exercise: '${1:title}'|type=exist|user_folder=${2:folder}|files=${3:files} -->"
+    ],
+    "description": "Adds 2 comments with SGEN:META:PROGRESS and SGEN:META:TESTS (for type='exist' tests) for WDX exercises."
+  },
+  "SGEN META PROGRESS": {
+    "prefix": "sgen-meta-prog",
+    "body": [
+      "<!-- SGEN:META:PROGRESS:task=${1:title} -->"
+    ],
+    "description": "Adds 1 comment with SGEN:META:PROGRESS <task>"
+  }
+}

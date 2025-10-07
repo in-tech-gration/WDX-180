@@ -24,51 +24,61 @@
 
 ## Syllabus
 
+<hr style="margin-bottom:0" />
+
+<div class="center opacity-50 opacity-100:hover">
+
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="curriculum-v1.0">this link</a>.
+
+</div>
+
+<hr />
+
 ### Beginner: WDX 60°
 
   - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/index.md)
   - [**Week 02**: HTML, Accessibility & Git](week02/index.md)
   - [**Week 03**: CSS, Accessibility & more Git](week03/index.md)
-  - [**Week 04**: CSS 2 & Performance](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 05**: CSS Frameworks](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 06**: JavaScript Core 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 07**: JavaScript Core 2](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 08**: JavaScript Core 3](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 09**: Web APIs 1: DOM, Events, Asynchronous Programming & Ajax](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 10**: Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media, Drag and Drop](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 11**: Functional Programming 1, Clean Code & Testing](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 12**: Templating, JavaScript Frameworks & Git Workflow](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 04**: CSS 2 & Performance](week04/index.md)
+  - [**Week 05**: Mockup CSS Challenge](week05/index.md)
+  - [**Week 06**: CSS Frameworks & Intro to Programming](week06/index.md)
+  - [**Week 07**: JavaScript Core 1](week07/index.md)
+  - [**Week 08**: JavaScript Core 2](week08/index.md)
+  - [**Week 09**: JavaScript Core 3](week09/index.md)
+  - [**Week 10**: Web APIs 1: DOM API & Events](week10/index.md)
+  - [**Week 11**: Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API](week11/index.md)
+  - [**Week 12**: Practice Week](week12/index.md)
 
 ### Intermediate: WDX 120°
 
-  - [**Week 13**: JavaScript Intermediate 1 & Git](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 14**: Data Structures](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 15**: Algorithms](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 16**: Web APIs 3: Geolocation, Canvas, Audio API, Web Workers & more](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 17**: JavaScript Intermediate 2: Software Patterns & TypeScript](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 18**: Node.js 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 19**: Node.js 2, NoSQL Databases & Docker](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 20**: React 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 21**: React 2, Firebase](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 22**: React 3, Redux & Tech Interview](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 23**: Group Project, Tech Interview & Job Hunt](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 24**: Group Project](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 13**: Intermediate JavaScript: Promises & Scope (var, let, const)](week13/index.md)
+  - [**Week 14**: Intermediate JavaScript: ECMAScript 6](week14/index.md)
+  - [**Week 15**: Intermediate JavaScript: Events](week15/index.md)
+  - [**Week 16**: Intermediate JavaScript: Events & Objects](week16/index.md)
+  - [**Week 17**: Intermediate JavaScript: Objects](week17/index.md)
+  - [**Week 18**: Intermediate JavaScript](week18/index.md)
+  - [**Week 19**: Introduction to Node JS](week19/index.md)
+  - [**Week 20**: Web Servers with Node JS](week20/index.md)
+  - [**Week 21**: ⚛️ React JS - An Introduction](week21/index.md)
+  - [**Week 22**: ⚛️ React JS](week22/index.md)
+  - [**Week 23**: ⚛️ React JS](week23/index.md)
+  - [**Week 24**: ⚛️ React JS](week24/index.md)
 
 ### Advanced: WDX 180°
 
-  - [**Week 25**: JavaScript Advanced 1](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 26**: JavaScript Advanced 2, TypeScript Advanced](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 27**: Node.js 3 & Relational Databases](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 28**: Express.js, REST APIs & GraphQL](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 29**: Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 30**: Functional Programming 2, Software Principles & Reading Academic Papers](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 31**: Content Management Systems, WordPress, Eleventy & Serverless Architecture](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 32**: Introduction to AI, Machine Learning & Tensorflow.js](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 33**: Introduction to Data Science & Danfo.js](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 34**: Blockchain & Web3](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 35**: Solo Project](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**Week 36**: Solo Project](#) _(🔒 Stay tuned! This module is on the way.)_
-  - [**The Road Ahead**](#) _(🔒 Stay tuned! This module is on the way.)_
+  - [**Week 25**: Web APIs](week25/index.md)
+  - [**Week 26**: Canvas API](week26/index.md)
+  - [**Week 27**: Advanced JavaScript](week27/index.md)
+  - [**Week 28**: Building a Battleship Game in JS](week28/index.md)
+  - [**Week 29**: Data Structures & Algorithms](week29/index.md)
+  - [**Week 30**: TypeScript](week30/index.md)
+  - [**Week 31**: Advanced JavaScript](week31/index.md)
+  - [**Week 32**: Testing](week32/index.md)
+  - [**Week 33**: Intro to Databases](week33/index.md)
+  - [**Week 34**: Mini CMS Project](week34/index.md)
+  - [**Week 35**: Mini CMS Project](week35/index.md)
+  - [**Week 36**: Mini CMS Project](week36/index.md)
+  - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
 

@@ -41,6 +41,8 @@ The CSS [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/backgrou
 
 We'll return to how the shorthand works later in the tutorial, but first let's have a look at the different things you can do with backgrounds in CSS, by looking at the individual background properties.
 
+> At this point, you might be wondering about the `rgba( COLOR, COLOR, COLOR, ALPHA_CHANNEL )` syntax in the example above. This is an old (legacy) syntax, which has been superseded by the newer `rgb()` syntax that supports alpha channel values as well (alpha channels set the opacity/transparency of the selected color). If your want to read more about this, check the following articles: [**rgba() and hsla() are legacy functions and aliases in modern browsers**](https://www.stefanjudis.com/today-i-learned/rgba-and-hsla-are-legacy-and-aliases-in-modern-browsers/) and [**Legacy syntax: comma-separated values**](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#legacy_syntax_comma-separated_values).
+
 ### Background colors
 
 The [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color){:target="_blank"} property defines the background color on any element in CSS. The property accepts any valid [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value){:target="_blank"}. A `background-color` extends underneath the content and padding box of the element.
@@ -63,7 +65,7 @@ In the example below, we have used various color values to add a background colo
 
 ### Background images
 
-The [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image){:target="_blank"} property enables the display of an image in the background of an element. In the example below, we have two boxes — one has a background image which is larger than the box ([balloons.jpg](https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg)){:target="_blank"}, the other has a small image of a single star ([star.png](https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png)){:target="_blank"}.
+The [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image){:target="_blank"} property enables the display of an image in the background of an element. In the example below, we have two boxes — one has a background image which is larger than the box ([balloons.jpg](https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg){:target="_blank"}), the other has a small image of a single star ([star.png](https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png){:target="_blank"}).
 
 This example demonstrates two things about background images. By default, the large image is not scaled down to fit the box, so we only see a small corner of it, whereas the small image is tiled to fill the box.
 

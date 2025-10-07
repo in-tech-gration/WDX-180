@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "TypeScript"
+header_image: week30/TS01.jpg
+schedule: 
+  days:
+    1: # TypeScript 01
+      # file://./../modules/javascript/misc/_w30d01/_w30d01.md
+      module: javascript/misc/_w30d01/_w30d01.md
+    2: # TypeScript 02
+      # file://./../modules/javascript/misc/_w30d02/_w30d02.md
+      module: javascript/misc/_w30d02/_w30d02.md
+    3: # 
+      # file://./../modules/javascript/misc/_w30d03/_w30d03.md
+      module: javascript/misc/_w30d03/_w30d03.md
+    4: # 
+      # file://./../modules/javascript/misc/_w30d04/_w30d04.md
+      module: javascript/misc/_w30d04/_w30d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w30d05/_w30d05.md
+      module: javascript/misc/_w30d05/_w30d05.md

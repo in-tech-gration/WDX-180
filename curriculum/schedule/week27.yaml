@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Advanced JavaScript"
+header_image: week27/battleship.png
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/misc/_w27d01/_w27d01.md
+      module: javascript/misc/_w27d01/_w27d01.md
+    2: # 
+      # file://./../modules/javascript/misc/_w27d02/_w27d02.md
+      module: javascript/misc/_w27d02/_w27d02.md
+    3: # 
+      # file://./../modules/javascript/misc/_w27d03/_w27d03.md
+      module: javascript/misc/_w27d03/_w27d03.md
+    4: # 
+      # file://./../modules/javascript/misc/_w27d04/_w27d04.md
+      module: javascript/misc/_w27d04/_w27d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w27d05/_w27d05.md
+      module: javascript/misc/_w27d05/_w27d05.md

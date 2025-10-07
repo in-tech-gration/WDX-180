@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The arguments object</title>
+</head>
+<body>
+  <h1>The arguments object</h1>
+  <script>
+    // When we declare a function:
+    // function name( parameterA, parameterB )
+    // p is for placeholder
+    function add(a,b){
+      // 0 => falsy => false
+      // 1...n => truthy => true
+      // if ( !arguments.length ){
+      const numberOfParameters = add.length;
+      // console.log({ numberOfParameters });
+      const numberOfValuesPassed = arguments.length;
+      // console.log({ numberOfValuesPassed, numberOfParameters })
+      if ( numberOfParameters !== numberOfValuesPassed ){
+        throw new Error("Inconsistent arg/param");
+      }
+      // if ( numberOfValuesPassed.length !== 3 ){
+      //   throw new Error("Require exactly 2 arguments. Got " + arguments.length);
+      // }
+      return a+b;
+    }
+    // When we call the function:
+    // add( argumentA, argumentB )
+    // a is for actual value
+    const sum = add(3,4);
+    // console.log(sum);
+
+    function addAnyNumberOfArgs(){
+      // console.log(arguments.length);
+      // console.log(arguments);
+      let result = 0;
+      console.log({ result });
+      for ( const arg of arguments ){
+        console.log(arg);
+        result += arg;
+        // === result = result + arg;
+      }
+      // Reduce +1
+      // += +1
+      return result;
+    }
+
+    console.log( addAnyNumberOfArgs(1,2,1,2,1,100,200) );
+  </script>
+</body>
+</html>

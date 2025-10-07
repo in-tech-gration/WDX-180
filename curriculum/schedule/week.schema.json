@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$comment": "Understanding JSON Schema: https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf / Inspiration: https://github.com/pyvideo/data/blob/main/writethedocs-na-2018/videos/audience-market-product-bob-watson-write-the-docs-portland-2018.json / YAML: https://github.com/redhat-developer/vscode-yaml",
+  "definitions": {
+    "git_commands": {
+      "type": "string",
+      "$ref": "../../resources/schemas/git.json#/commands"
+    },
+    "concepts": {
+      "type": "string",
+      "enum": [
+        "Version Control",
+        "Git Branches"
+      ]
+    },
+    "schedule_units": {
+      "type": "number"
+    },
+    "weekdays" : {
+      "type": "string", 
+      "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] 
+    },
+    "weekdays_numeric" : {
+      "type": "string", 
+      "enum": ["1","2","3","4","5"] 
+    }
+  },
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "object",
+      "oneOf": [
+        {
+          "required": [ "days" ]
+        },
+        {
+          "required": [ "extra" ]
+        }
+      ],
+      "properties" : {
+        "days" : {
+          "type": "object",
+          "propertyNames": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/weekdays"
+              },
+              { 
+                "$ref": "#/definitions/weekdays_numeric"
+              }
+            ]
+          },
+          "patternProperties": {
+            "^(1|2|3|4|5|Monday|Tuesday|Wednesday|Thursday|Friday)$": { "anyOf": [
+              { "type": "string" },
+              { 
+                "type": "object",
+                "properties": {
+                  "module": {},
+                  "technical": {
+                    "type": "array",
+                    "items" : {
+                      "$ref": "#/definitions/git_commands"
+                    }
+                  },
+                  "concepts": {
+                    "type": "array",
+                    "items" : {
+                      "anyOf": [
+                        { "$ref": "../../resources/schemas/terms.json#/terms" },
+                        { "$ref": "../../resources/schemas/git.json#/concepts" }
+                      ]
+                    }
+                  }
+                },
+                "additionalProperties":false
+              }
+              ] 
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "title",
+    "schedule"
+  ],
+  "dependencies": {
+  }
+
+}

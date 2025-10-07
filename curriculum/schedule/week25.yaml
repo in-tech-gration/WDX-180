@@ -1,0 +1,22 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+# title: JavaScript Advanced 1
+title: "Advanced JavaScript: Web APIs"
+header_image: week16/pexels-cottonbro-6804077.jpg
+schedule: 
+  days:
+    1: # 
+      # file://./../modules/javascript/misc/_w25d01/_w25d01.md
+      module: javascript/misc/_w25d01/_w25d01.md
+    2: # 
+      # file://./../modules/generics/scrum/scrum.md
+      module: generics/scrum/scrum.md
+    3: # 
+      # file://./../modules/javascript/misc/_w25d03/_w25d03.md
+      module: javascript/misc/_w25d03/_w25d03.md
+    4: # 
+      # file://./../modules/javascript/web_apis/dom/dom_nodes/index.md
+      module: javascript/web_apis/dom/dom_nodes/index.md
+    5: # 
+      # file://./../modules/javascript/misc/_w25d05/_w25d05.md
+      module: javascript/misc/_w25d05/_w25d05.md

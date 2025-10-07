@@ -1,5 +1,5 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-1,5,JavaScript,Complete the 'Largest Number Checker' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,5,JavaScript,Complete the 'Landscape Mode Checker' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,5,JavaScript,Complete the 'Simple Quiz' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,5,JavaScript,Complete the 'Schnick-Schnack-Schnuck' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,5,JavaScript in a Day,Complete the 'Largest Number Checker' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+1,5,JavaScript in a Day,Complete the 'Landscape Mode Checker' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+1,5,JavaScript in a Day,Complete the 'Simple Quiz' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+1,5,JavaScript in a Day,Complete the 'Schnick-Schnack-Schnuck' exercise,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

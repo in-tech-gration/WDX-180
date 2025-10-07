@@ -1,0 +1,34 @@
+Week, Day, Concept, Task, Level, Confidence, Completed, Instructions
+13, 1,Even,Hand, -, 0-10, FALSE, -
+18, 1, Common Core Modules, Import 'os' and 'path' modules, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 1, Custom Modules, Create and import a custom module, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 1, Common Core Modules, Import 'fs' module, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 1, 'fs' module," File manipulation (create,read,write,delete)", Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 1, 'fs' module,Use file streams for large files., Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 1, Asynchronous development, Use 'async' and 'await' operators, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 2, Node Package Manager, Install NPM package globally, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 2, Node Package Manager, Get familiar with 'npm init' and 'package.json', Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 2, Node Package Manager, Install/Uninstall NPM package for production and development environment, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 2, Events Core Module, Emit and listen for events on a NodeJS project, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 2, Events Core Module, Handle events with the EventEmitter class, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 2, Events Core Module, Build a custom logEvents module for event handling, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, Common Core Modules, Import 'http' module and start a simple web server, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, NodeJS Web Server, Get familiar with basic routing concepts, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, NodeJS Web Server, Serve different type of files (JSON - text - images), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, NodeJS Web Server, Log requests and errors, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, ExpressJS, What is ExpressJS framework and install it, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 3, ExpressJS, Handle routing using ExpressJS (routers - redirects - sending files - etc), Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 4, ExpressJS, What is middleware. Using built-in and third party middlewares, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 4, ExpressJS, Create a custom middleware, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 4, Express Router, Create and apply a router, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 4, Resource Access, What is the CORS mechanism, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 4, Express Router, Create and use a REST API router, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 5, MVC, What is the MVC and apply the pattern to your code structure, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 5, User Authentication, Simulate a users database, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 5, User Authentication, Create a register controller and store securely a new users password, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+18, 5, User Authentication, Create an authentication controller, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+19, 1, User Authentication, Understand the JWT concept and use it to for user authentication, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+19, 1, User Authentication, Create a refresh token controller and a logout controller, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+19, 1, User Authorization, Understand the differences between Authentication and Authorization, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+19, 1, User Authorization, Define User Roles for authorization, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column
+19, 1, User Authorization, Apply User Roles to the existing JWT mechanism, Beginner, 0-10, FALSE, Update FALSE to TRUE in the COMPLETED column

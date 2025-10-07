@@ -1,0 +1,97 @@
+input: curriculum/schedule/week01.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: Introduction to the Web and Web Technologies
+schedule: 
+  days:
+    1: # Basics of Computing
+      # file://./../modules/computer_science/misc/basics_of_computing/index.md
+      module: computer_science/misc/basics_of_computing
+    2: # The Internet and the Web
+      # file://./../modules/computer_science/internet/www/how_the_internet_and_the_web_works/index.md
+      module: computer_science/internet/www/how_the_internet_and_the_web_works
+    3: # HTML In a Day
+      # file://./../modules/html/misc/html_in_a_day/index.md
+      module: html/misc/html_in_a_day
+    4: # CSS In a Day
+      # file://./../modules/css/misc/css_in_a_day/index.md
+      module: css/misc/css_in_a_day
+    5: # JavaScript in a Day
+      # file://./../modules/javascript/misc/javascript_in_a_day/index.md
+      module: javascript/misc/javascript_in_a_day
+
+# ---
+
+# TODO: Integrate our own fork of: https://github.com/in-tech-gration/mothereff.in/
+# Mentioned on Day 2 (https://mothereff.in/binary-ascii)
+
+# TODO: Integrate our own fork of: https://mothereff.in/js-variables on Day 5
+
+# ! FIX BROKEN LINK: ON DAY 2
+# https://in-tech-gration.github.io/WDX-180/curriculum/week01/EXTRAS.md#day-02---internet--the-web
+# > If you want another take on the localhost subject, take a look at the Networking - What is Localhost, 127.0.0.1, and Loopback in TCPIP? video found in the Extras <== This one
+
+# TODO: Integrate: Numeric Conversions | Decimal, Binary & Hexadecimal
+# https://www.youtube.com/watch?v=Jy_6odFi3l4 (214 in decimal, binary, hexadecimal)
+
+# TODO: Day 3: Organize your Bookmark bar! HTML > htmlreference.io
+
+# TODO: Day 4: Organize your Bookmark bar! CSS > htmlreference.io
+
+# TODO: Day 5: Integrate: Computer Science Basics: Sequences, Selections, and Loops
+# https://www.youtube.com/watch?v=eSYeHlwDCNA
+
+# TODO: MAIN README?
+# Important concept (about this course): learn how to test your code!
+# There will be no manual evaluation/assessment from your instructor(s)
+
+# TODO: Day 5 REPLACE THIS WITH AN EASIER INTRO TO JS 
+
+# TODO: Day 3: INTEGRATE: https://russmaxdesign.github.io/maxdesign-slides/01-html/106-creating-document.html#/
+
+# TODO: Add common beginner mistakes in HTML language syntax:
+# 1) Improper Tag Spacing + No indentation
+# < html >
+# < head >
+# </head >
+# </html>
+# 2) Closing Tag Slash misplacement
+# <a>Link<a/>
+# 3) Improper Opening/Closing Order
+# <h2><u>This is my first page</h2></u>
+# 4) Improper Indentation (IRL:Student)
+# <header>
+#   <div>
+#   <div>
+#     <div>
+#   <h1>Title</h1>
+# <a href="">Link</a>
+# </div>
+#   </div>
+
+# TODO: Add Cryptography Basics Video
+# W01D01: What is Cryptography? https://www.youtube.com/watch?v=Kf9KjCKmDcU
+
+# TODO: Web Oversimplified
+# https://learn.js.org/WebOversimplified/index.html#/
+
+# TODO: How Encryption Keys Work - with Chris Bishop
+# https://www.youtube.com/watch?v=EDTx3meIeT0
+
+# BINARY GAMES:
+# (5/5) https://learningcontent.cisco.com/games/binary/index.html
+# https://classic.csunplugged.org/activities/binary-numbers/
+# https://games.penjee.com/binary-bonanza/ ?
+# https://games.penjee.com/binary-bonanza/
+
+# The Internet, The Web and HTML for Absolute Beginners
+# https://youtu.be/S6GbPxXdhmI (97min)
+
+# TODO: INTEGRATE? BREAK INTO 2 WEEKS? ADD TO EXTRAS?
+# What is a Protocol? (Deepdive)
+# https://www.youtube.com/watch?v=d-zn-wv4Di8
+# VPNs, Proxies and Secure Tunnels Explained (Deepdive)
+# https://www.youtube.com/watch?v=32KKwgF67Ho
+# Computer Networking (Deepdive)
+# https://www.youtube.com/watch?v=6G14NrjekLQ
+# What is a Server? (Deepdive)
+# https://www.youtube.com/watch?v=VXmvM2QtuMU

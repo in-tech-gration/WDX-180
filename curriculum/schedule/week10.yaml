@@ -1,0 +1,30 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: "Web APIs 1: DOM"
+header_image: week10/assets/iewek-gnos-hhUx08PuYpc-unsplash.jpg
+schedule: 
+  days:
+    1: # Introduction to the DOM API
+      # file://./../modules/javascript/web_apis/dom/intro/index.md
+      module: javascript/web_apis/dom/intro
+    2: # DOM Manipulation Part 01
+      # file://./../modules/javascript/web_apis/dom/manipulation/part-01/index.md
+      module: javascript/web_apis/dom/manipulation/part-01
+    3: # DOM Manipulation part 02
+      # file://./../modules/javascript/web_apis/dom/manipulation/part-02/index.md
+      module: javascript/web_apis/dom/manipulation/part-02
+    4: # DOM Manipulation Part 03
+      # file://./../modules/javascript/web_apis/dom/manipulation/part-03/index.md
+      module: javascript/web_apis/dom/manipulation/part-03
+    5: # Events + DOM Project
+      # file://./../modules/javascript/web_apis/events/intro/index.md
+      module: javascript/web_apis/events/intro
+      
+
+# --
+
+# onevent="" vs .onevent vs addEventListener
+# DOM Exercise: Web Scraping your favorite page!
+
+# DAY 1: "Whats is the dev tools workspace and how to use it?"
+# https://youtu.be/J-02VNxE7lE?t=279

@@ -1,0 +1,21 @@
+name: "Week 11 - Day 5 Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | Test Exercise: 'Promise Refactoring'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week11/exercises/day05/promise_refactoring/**
+jobs:
+  promise_refactoring:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Promise Refactoring' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week11/exercises/day05/promise_refactoring/index.html, user/week11/exercises/day05/promise_refactoring/styles.css, user/week11/exercises/day05/promise_refactoring/index.js"
+          fail: true

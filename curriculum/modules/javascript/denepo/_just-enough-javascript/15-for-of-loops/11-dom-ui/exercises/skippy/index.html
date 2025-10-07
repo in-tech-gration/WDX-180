@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+
+    <title>skippy</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <form id="skippable">
+      Skip
+      <label>every <input id="skip-size" type="number" value="0" /></label>
+      characters
+      <label>in <input id="phrase" type="text" /> </label>
+      .
+    </form>
+
+    <hr />
+
+    <pre id="skipped" class="computery"></pre>
+
+    <hr />
+
+    secret solution:
+
+    <pre id="secret-solution" class="computery"></pre>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./app.re.js" type="module"></script>
+  </body>
+</html>

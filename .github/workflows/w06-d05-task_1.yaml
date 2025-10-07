@@ -1,0 +1,21 @@
+name: "Week 06 - Day 5 JavaScript Core 1 | Test Exercise: 'Declaring JavaScript Arrays'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week06/exercises/day05/task_1/**
+jobs:
+  task_1:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Declaring JavaScript Arrays' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week06/exercises/day05/task_1/declaring-arrays.js, user/week06/exercises/day05/task_1/declaring-arrays.html"
+          fail: true

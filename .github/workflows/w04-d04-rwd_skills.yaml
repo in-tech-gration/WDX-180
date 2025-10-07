@@ -1,0 +1,21 @@
+name: "Week 04 - Day 4 CSS 2 & Performance | Test Exercise: 'Test your skills: Responsive web design and media queries'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week04/exercises/day04/rwd_skills/**
+jobs:
+  rwd_skills:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Test your skills: Responsive web design and media queries' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week04/exercises/day04/rwd_skills/rwd-download.html"
+          fail: true

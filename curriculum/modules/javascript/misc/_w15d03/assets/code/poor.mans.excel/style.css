@@ -1,0 +1,16 @@
+table {
+  border: 2px solid black;
+/*   border-collapse: collapse; */
+  background: limegreen !important;
+  padding: 1rem;
+}
+td {
+  border: 2px solid black;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  background: indigo;
+  color: white;
+}
+tr {
+  /* WTF?    */
+}

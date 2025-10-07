@@ -1,0 +1,21 @@
+name: "Week 10 - Day 4 Web APIs 1: DOM | Test Exercise: 'Asabeneh's Challenge'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week10/exercises/day04/asabeneh_challenge/**
+jobs:
+  asabeneh_challenge:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Asabeneh's Challenge' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week10/exercises/day04/asabeneh_challenge/index.html, user/week10/exercises/day04/asabeneh_challenge/script.js"
+          fail: true

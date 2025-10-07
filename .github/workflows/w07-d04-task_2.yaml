@@ -1,0 +1,21 @@
+name: "Week 07 - Day 4 JavaScript Core 1 | Test Exercise: 'Indexing JavaScript Arrays'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week07/exercises/day04/task_2/**
+jobs:
+  task_2:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Indexing JavaScript Arrays' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week07/exercises/day04/task_2/indexing-arrays.js, user/week07/exercises/day04/task_2/indexing-arrays.html"
+          fail: true

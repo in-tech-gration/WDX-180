@@ -1,0 +1,34 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: React JS
+header_image: week23/React.js.jpg
+schedule: 
+  days:
+    1: # useState/useEffect/useRef
+      # file://./../modules/javascript/misc/_w23d01/_w23d01.md
+      module: javascript/misc/_w23d01/_w23d01.md
+    2: # useState/useEffect
+      # file://./../modules/javascript/misc/_w23d02/_w23d02.md
+      module: javascript/misc/_w23d02/_w23d02.md
+    3: # useEffect, Fetch API & Context API
+      # file://./../modules/javascript/misc/_w23d03/_w23d03.md
+      module: javascript/misc/_w23d03/_w23d03.md
+    4: # ReactCommerce Coding Challenge
+      # file://./../modules/javascript/misc/_w23d04/_w23d04.md
+      module: javascript/misc/_w23d04/_w23d04.md
+    5: # 
+      # file://./../modules/javascript/misc/_w23d05/_w23d05.md
+      module: javascript/misc/_w23d05/_w23d05.md
+
+# XMLHttpRequest:
+# function makeAJAXCall(methodType, url, callback){
+#    var xhr = new XMLHttpRequest();
+#    xhr.withCredentials = true;
+#    xhr.open("GET", url, true);
+#    xhr.onreadystatechange = function(){
+#          if (xhr.readyState === 4 && xhr.state === 200){
+#              callback(xhr.response);
+#          } 
+#      }
+#      xhr.send();
+# }

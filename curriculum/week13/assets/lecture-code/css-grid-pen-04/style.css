@@ -1,0 +1,55 @@
+html { color-scheme: dark; }
+body { font-size: 2rem; margin: 0; }
+.grid { 
+  outline: 1px solid hotpink;
+  margin: 2rem;
+  display: grid;
+  width: 1000px;
+}
+.item {
+  outline: 1px solid gray;
+}
+.grid {
+  grid-template-columns: 1fr 1fr 1fr;
+/*   grid-template-columns: repeat(3, 100px); */
+  grid-auto-rows: 100px;
+}
+#two {
+  background: orange;
+  /* Make it span 2 columns */
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
+  /* grid-row: start / end */
+  grid-row: 1 / 2;
+  /*  grid-column: start / end  */
+  grid-column: 2 / 4;
+  
+  /* grid-area: row-start / column-start / row-end / column-end; */
+  grid-area: 1 / 2 / 2 / 4;
+
+  /* Make it span 2 rows */
+/*   grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+ */
+  
+  /* Make it span 2 rows and 2 columns */
+/*   grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4; */
+}
+
+#three {
+  background: green;
+  /* Start: 2, End: 4 */
+  grid-row: 2 / 4;
+  /* End: 1 / 3  */
+  grid-column: 1 / 3;
+  /* Calculate and use negative values:  */
+  /*   grid-column: -4 / -2; */
+}

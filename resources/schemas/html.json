@@ -1,0 +1,22 @@
+{
+    "elements": {
+        "type": "string",
+        "enum": [
+            "html",
+            "body"
+        ]
+    },
+    "attributes" : {
+
+    },
+    "concepts": {
+      "type": "string",
+      "enum": [
+        "HTML",
+        "Markup Language",
+        "HyperText"
+      ]
+    },
+    "references":{
+    }
+}

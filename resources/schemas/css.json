@@ -1,0 +1,20 @@
+{
+    "rules": {
+        "type": "string",
+        "enum": [
+            "text",
+            "color"
+        ]
+    },
+    "concepts": {
+      "type": "string",
+      "enum": [
+        "CSS",
+        "Inheritance",
+        "Specificity",
+        "Cascade"
+      ]
+    },
+    "references":{
+    }
+}

@@ -1,0 +1,21 @@
+name: "Week 07 - Day 4 JavaScript Core 1 | Test Exercise: 'Modifying JavaScript Arrays'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week07/exercises/day04/task_3/**
+jobs:
+  task_3:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Modifying JavaScript Arrays' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week07/exercises/day04/task_3/modifying-arrays.js, user/week07/exercises/day04/task_3/modifying-arrays.html"
+          fail: true

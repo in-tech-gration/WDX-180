@@ -1,0 +1,114 @@
+[
+  {
+    "name": "box-model.png",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/box-model.png",
+    "sha": "9cc8e7db8c318d647f3af13273c8a8d4c10149ab",
+    "size": 12321,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/box-model.png?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/box-model.png",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/9cc8e7db8c318d647f3af13273c8a8d4c10149ab",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/box-model.png",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/box-model.png?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/9cc8e7db8c318d647f3af13273c8a8d4c10149ab",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/box-model.png"
+    }
+  },
+  {
+    "name": "boxes.jpg",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/boxes.jpg",
+    "sha": "1ce5ba505193e30ba5d14b031dece870e47b5c0d",
+    "size": 49276,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/boxes.jpg?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/boxes.jpg",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/1ce5ba505193e30ba5d14b031dece870e47b5c0d",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/boxes.jpg",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/boxes.jpg?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/1ce5ba505193e30ba5d14b031dece870e47b5c0d",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/boxes.jpg"
+    }
+  },
+  {
+    "name": "css-declaration-small.png",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/css-declaration-small.png",
+    "sha": "0b5790892d5a79eca0e6474fd2ebc91ea92747ba",
+    "size": 7603,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/css-declaration-small.png?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/css-declaration-small.png",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/0b5790892d5a79eca0e6474fd2ebc91ea92747ba",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/css-declaration-small.png",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/css-declaration-small.png?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/0b5790892d5a79eca0e6474fd2ebc91ea92747ba",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/css-declaration-small.png"
+    }
+  },
+  {
+    "name": "index.md",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/index.md",
+    "sha": "fbb47e4999abb8c73e0b298d65a9c90955922bd1",
+    "size": 15745,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/index.md?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/index.md",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/fbb47e4999abb8c73e0b298d65a9c90955922bd1",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/index.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/index.md?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/fbb47e4999abb8c73e0b298d65a9c90955922bd1",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/index.md"
+    }
+  },
+  {
+    "name": "website-screenshot-final.png",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-final.png",
+    "sha": "04ab2e5afce7701b1a74231c80d267fc6d245f4e",
+    "size": 53141,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-final.png?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-final.png",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/04ab2e5afce7701b1a74231c80d267fc6d245f4e",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-final.png",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-final.png?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/04ab2e5afce7701b1a74231c80d267fc6d245f4e",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-final.png"
+    }
+  },
+  {
+    "name": "website-screenshot-font-small.png",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-font-small.png",
+    "sha": "62fd2fcdbef52e9fe43e4fe447943f106d727580",
+    "size": 52225,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-font-small.png?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-font-small.png",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/62fd2fcdbef52e9fe43e4fe447943f106d727580",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-font-small.png",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-font-small.png?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/62fd2fcdbef52e9fe43e4fe447943f106d727580",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-font-small.png"
+    }
+  },
+  {
+    "name": "website-screenshot-styled.png",
+    "path": "files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-styled.png",
+    "sha": "6b19cbf186d87e1b455f24978da7676d41ce9fe5",
+    "size": 46291,
+    "url": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-styled.png?ref=main",
+    "html_url": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-styled.png",
+    "git_url": "https://api.github.com/repos/mdn/content/git/blobs/6b19cbf186d87e1b455f24978da7676d41ce9fe5",
+    "download_url": "https://raw.githubusercontent.com/mdn/content/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-styled.png",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/mdn/content/contents/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-styled.png?ref=main",
+      "git": "https://api.github.com/repos/mdn/content/git/blobs/6b19cbf186d87e1b455f24978da7676d41ce9fe5",
+      "html": "https://github.com/mdn/content/blob/main/files/en-us/learn/getting_started_with_the_web/css_basics/website-screenshot-styled.png"
+    }
+  }
+]

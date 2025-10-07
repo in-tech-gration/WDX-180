@@ -1,0 +1,7 @@
+.app-component h1 {
+  border: 2px solid orange;
+  padding: 1rem;
+}
+.app-component p {
+  border: 1px solid;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>madlib</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div>
+      <form id="user-words">
+        <label>noun: <input id="noun" type="text" /> </label>
+        <br />
+        <label>verb: <input id="verb" type="text" /> </label>
+        <br />
+        <label>adjective: <input id="adjective" type="text" /> </label>
+      </form>
+
+      <hr />
+
+      <pre id="funny-sentence" class="computery"></pre>
+
+      <hr />
+
+      <code>secret solution:</code>
+
+      <pre id="secret-solution" class="computery"></pre>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./solution.re.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+name: "Week 06 - Day 2 JavaScript Core 1 | Test Exercise: 'JavaScript Variables'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week06/exercises/day02/task_5/**
+jobs:
+  task_5:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'JavaScript Variables' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week06/exercises/day02/task_5/variables.js, user/week06/exercises/day02/task_5/variables.html"
+          fail: true

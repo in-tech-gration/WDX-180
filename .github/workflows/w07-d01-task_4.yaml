@@ -1,0 +1,21 @@
+name: "Week 07 - Day 1 JavaScript Core 1 | Test Exercise: 'JavaScript Strings'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week07/exercises/day01/task_4/**
+jobs:
+  task_4:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'JavaScript Strings' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week07/exercises/day01/task_4/strings.js, user/week07/exercises/day01/task_4/strings.html"
+          fail: true

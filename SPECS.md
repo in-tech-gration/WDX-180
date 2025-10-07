@@ -1,3 +1,9 @@
+# WDX-180 | Technical Details & Specifications
+
+---
+
+>> JEKYLL
+
 ## Jekyll | About the main website and GitHub Pages
 
   Website: https://in-tech-gration.github.io/WDX-180/
@@ -9,6 +15,7 @@
   ├── curriculum
   ├── README.md
   ├── _config.yml
+  ├── _offline.yml
   └── assets
       ├── WDX.Header.Alternative.jpg
       ├── WDX.Header.jpg
@@ -16,7 +23,54 @@
       └── jekyll
   ```
 
-### Jekyll | How to | Include CSS & JS in a markdown file
+  - **offline.yml** is used to build a local GitHub Pages site, excluding some folders that are not needed for offline usage by the students
+
+  > "By default, Jekyll doesn't build files or folders that:
+  > 
+  > are located in a folder called `/node_modules` or `/vendor`
+  >
+  > start with _, ., or #
+  >
+  > end with ~
+  >
+  > are excluded by the exclude setting in your configuration file
+  >
+  > If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
+
+## Jekyll | How to | Update & Compile the Home Page?
+
+  - Run: `sgen pages/README.yaml` from the root directory.
+
+## Jekyll | How to | Update & Compile the Curriculum Page?
+
+  - Edit `/curriculum/curriculum.yaml`
+  - Run `sgen curriculum/curriculum.yaml`
+  - The output is based on the `/curriculum/curriculum.draft.md` template.
+
+## Jekyll | How to | Change Website Styling (CSS)
+
+  Edit the following file:
+
+  - `assets/jekyll/css/style.scss`
+
+## Jekyll | How to | Change Website Layout (HTML)
+
+  Edit the following files:
+
+  - `assets/jekyll/_layouts/default.html` (Main HTML file)
+  - `assets/jekyll/_includes/` (Includes)
+
+  Edit Frontmatter:
+
+  ```markdown
+  ---
+  layout: v2
+  ---
+  ```
+
+  Make sure that a file v2.html exists in: `/assets/jekyll/_layouts/v2.html`
+
+## Jekyll | How to | Include CSS & JS in a markdown file
 
   **Q: How do I load a CSS file in a particular markdown file?**
 
@@ -38,6 +92,8 @@
 
   A: You will need to include the JS filename in a Front matter property named `load_script_js`:
 
+  The JS files must be placed inside `assets/jekyll/_includes/`. If this is a JS library it must be placed inside `assets/jekyll/_includes/libs/`.
+
   ```markdown
   ---
   load_script_js: 
@@ -50,7 +106,9 @@
 
   The JS files must be placed in the `assets/jekyll/_includes/` folder.
 
-### Jekyll | How to | Create markdown links that open in a new Tab
+  The code that injects both CSS and JS inside Jekyll-generated files can be found at the bottom of this template: `assets/jekyll/_layouts/default.html`
+
+## Jekyll | How to | Create markdown links that open in a new Tab
 
   Markdown for GitHub Pages (Kramdown) supports links that open in a new Tab:
 
@@ -66,13 +124,106 @@
     "body": [
       "{:target=\"_blank\"}"
     ],
-    "description": "WDX:Kramdown target _blank"
+    "description": "SGEN:Kramdown target _blank"
   },
   ```
 
-### Jekyll | How to | Prevent build on GitHub Pages
+## Jekyll | How to | Prevent build on GitHub Pages
 
   Just include a `.nojekyll` file in the repo.
+
+## Jekyll | How to | Build Locally
+
+  - Follow the instructions on installing Jekyll:
+    - https://jekyllrb.com/docs/installation/macos/
+    - https://jekyllrb.com/docs/installation/windows/
+    - https://jekyllrb.com/docs/installation/ubuntu/
+
+  - Create a `Gemfile`:
+
+  ```
+  source "https://rubygems.org"
+
+  gem 'github-pages', group: :jekyll_plugins
+  gem "webrick", "~> 1.8"
+
+  # gem 'github-pages'
+  # gem "jekyll-readme-index", "~> 0.3.0"
+  # gem "jekyll-theme-midnight", "= 0.2.0"
+  # gem "jekyll-sass-converter", "= 1.5.2"
+  ```
+
+  - Run:
+    - `bundle add webrick`
+    - `bundle install`
+    - `bundle exec jekyll _3.9.3_ serve`
+    - or `npm run build:jekyll`
+
+  REFERENCES:
+
+  - https://github.com/github/pages-gem
+  - https://github.com/github/pages-gem
+  - https://github.com/orgs/community/discussions/37669
+  - https://pages.github.com/versions/
+
+## Jekyll | How to | Add custom attributes to Markdown links
+
+  `![](./assets/image.jpg){:style="width:100%"}`
+
+## Jekyll | How to | Create interactive coding playground (inline)
+
+  Instructions: [https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/)
+
+  Related Assets:
+
+  - /assets/js/flems/flems_init.js
+  - /assets/jekyll/css/style.scss (Check: // FLEMS CODE SECTIONS)
+  - /assets/js/flems/flems.html
+
+## Jekyll | How to | Add Comments Widget (Utteranc.es)
+
+  Just add the following:
+
+
+  ```markdown
+  **Questions, comments, suggestions? Please leave them on the comment section below.**
+
+  <script src="https://utteranc.es/client.js"
+    repo="in-tech-gration/WDX-180"
+    issue-term="pathname"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+  </script>
+  ```
+
+## Jekyll | How to | Properly add Syntax Highlighting for JSX
+
+  - Put code inside {% raw %} {% endraw %}
+
+## Jekyll | How to | Enable/Disable Animated Bubbles Effect?
+
+  How can I disabled the Animated Bubbles effect found on the FAQ page?
+
+  > Remove the following line form the Frontmatter section:
+  - animated.bubbles.js
+
+  How can I enable it on another page?
+
+  > Add the following line to the Frontmatter section:
+  - animated.bubbles.js
+
+## Jekyll | How to | Embed YouTube Videos?
+
+  _(work in progress)_
+
+## Jekyll | How to | Add a Header Image for each Week?
+
+  In the yaml file (e.g. `week13.yaml`) add a new YAML property named `header_image:` and add the full path. The `sgen` tool will automatically detect the image path and will copy the file to the appropriate weekly folder.
+
+## Jekyll | How to | Add a Quiz?
+
+  Take a look at the contents of `curriculum/week01/exercises/Absolute_vs_Relative_URLs/index.md`
 
 ---
 

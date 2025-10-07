@@ -3,22 +3,72 @@
 
 @import "jekyll-theme-midnight";
 
+:root {
+  --font-family-system: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  --highlighted: #c6a213  !important;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --secondary-color: #9d9c9c;
+  --headings-font-family: "Poppins", sans-serif;
+  --vibrant: #ffcc00;
+
+  --code-color: #ef6200;
+  --code-font-size: 1rem;
+
+  --blockquote-color: #b7afaa;
+  --blockquote-bg-color: rgba(0, 0, 0, 0.2);
+  --blockquote-border-color: #3e3c3c;
+
+  --side-nav-bottom-color: gray;
+
+  --details-border-color: gray;
+  --details-border-left-color: var(--vibrant);
+  --details-bg-color: #343333;
+  --light-theme-color:   linear-gradient(#2a2a29, #1c1c1c);
+  --dark-theme-color:    #000;
+
+  --max-width: 780px;
+  
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family);
   font-size: 16px;
 }
-
-.bold-title {
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 900;
-
+.main-section {
+  max-width: var(--max-width);
+}
+summary {
+  display: list-item;
 }
 
-// TYPOGRAPHY
+//>>> UTILITY CLASSES <<<//
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+:hover.opacity-100\:hover {
+  opacity: 1 !important;
+}
+.center {
+  text-align: center;
+}
+
+//>>> TYPOGRAPHY <<<//
 p, a {
   font-size: 1.2rem;
   line-height: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font-family) !important;
 }
 
 h1 {
@@ -36,13 +86,65 @@ h3 {
   line-height: 2.1rem;
 }
 
+.bold-title {
+
+  font-family: var(--font-family);
+  font-weight: 900;
+
+}
+body.wrapper{
+position: relative;}
+
+// HOME PAGE
+.__page details {
+  margin-bottom: 1rem;
+}
+#hamburger-btn {
+  font-size: 2rem;
+  color: var(--vibrant);
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 2000;
+  @media (min-width: 1200px) {
+    display: none; 
+  }
+}
 // Side Navigation
 nav#side-toc {
-
   position: fixed;
   left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
   padding-left: 1rem;
-  
+  padding-top: 3rem;
+  background-image: var(--light-theme-color);
+  display: none; 
+  @media (min-width: 1200px) {
+    display: block; 
+    width:20vw;
+  }
+  &.dark-theme {
+  background: var(--dark-theme-color);
+  }
+}
+
+nav#side-toc li.active:before {
+  content: "\21E8";
+  color: var(--vibrant);
+}
+nav#side-toc li.active {
+  opacity: 1;
+}
+nav#side-toc li.active a {
+  outline: none;
+}
+nav#side-toc li {
+  opacity: 0.4;
 }
 
 //>> CODE HIGHLIGHT SECTIONS:
@@ -55,16 +157,14 @@ pre.highlight code {
 //<< CODE HIGHLIGHT SECTIONS:
 
 //>> SIDE NAVIGATION (ToC) RESPONSIVENESS
-nav#side-toc{
-  width: 20vw;
-  padding-left: 0.75rem
-}
+
 nav#side-toc > ul{
   padding-left: 0;
+  width: fit-content;
 }
 nav#side-toc > ul > li {
   padding: 5px ;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--side-nav-bottom-color);
 }
 nav#side-toc > ul > li > p,
 nav#side-toc > ul > li > a {
@@ -72,30 +172,110 @@ nav#side-toc > ul > li > a {
 }
 //<< SIDE NAVIGATION (ToC) RESPONSIVENESS
 
-// <summary> Styling
-summary {
+//>> MAIN NAVIGATION
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.week-controls h1 {
+  margin: 0;
+}
+.week-controls h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.25;
+  cursor: pointer;
+  transition: all 200ms ease;
+  position: relative;
+  width: 25%;
+}
+.week-controls h2:nth-of-type(1) {
+  left: 10px;
+}
+.week-controls h2:nth-of-type(2) {
+  right: 10px;
+  text-align: right;
+}
+.week-controls h2:nth-of-type(2) {
+  right: 10px;
+ 
+ }
+ .week-controls h2:nth-of-type(1) {
+  left: 10px;
+ 
+ }
+ .week-controls h2:nth-of-type(1):hover {
+     left: 0;
+     opacity: 1;
+ }
+ .week-controls h2:nth-of-type(2):hover {
+     right: 0;
+     opacity: 1;
+ }
+ .week-controls h2 a {
+  color: #e8e8e8;
+}
+.maintained-by {
+  display: flex;
+  justify-content: space-between;
+}
+
+//>> <summary> Styling
+.main-section > summary {
   display: list-item;
 }
-summary > h2,
-summary > h3 {
+.main-section > summary > h2,
+.main-section > summary > h3 {
   display: inline-block;
   cursor: pointer;
 }
-summary > h3:hover {
+.main-section > summary > h2 {
+  font-size: 1.5rem;
+}
+.main-section > summary > h3:hover {
   color: white;
 }
+.main-section > details > summary + h3 {
+  margin-top: 1rem;
+}
+.main-section > details > summary { 
+  cursor: pointer;
+  border: 1px solid var(--details-border-color);
+  padding: 1rem 0 1rem 1rem;
+  border-left: 4px solid var(--details-border-left-color);
+  background: var(--details-bg-color);
+  transition: all 400ms ease;
+}
+
+.main-section > details[open] > summary,
+.main-section > details > summary:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 20px rgba(0,0,0,0.5);
+  border-top-color: white;
+  border-bottom-color: white;
+  border-right-color: white;
+}
+
+.main-section > details > summary > * {
+  display: inline;
+}
+//<< <summary> Styling
 
 // BLOCK QUOTES:
 blockquote {
   font-style: inherit;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--blockquote-bg-color);
   padding: 1rem;
   margin: 1rem 0;
-  border-left: 3px solid #3e3c3c;
+  border-left: 3px solid var(--blockquote-border-color);
 }
 blockquote p {
   margin-bottom: auto;
-  color: #B7AFAA;
+  color: var(--blockquote-color);
   font-size: 1rem;
 }
 
@@ -104,18 +284,46 @@ ul {
 }
 
 code {
-  font-size: 1rem;
-  color: #ef6200;
+  font-size: var(--code-font-size);
+  color: var(--code-color);
   margin: 0;
   padding: 4px;
 }
-
 .credits-highlighted {
-  color: #c6a213 !important;
+  color: var(--highlighted);
 }
 
 section.main-section {
   margin-top: 1rem;
+}
+section.main-section h1 {
+  font-family: var(--font-family-system);
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 4.2rem;
+}
+section.main-section h1 .week-prefix {
+  font-weight: 300;  
+}
+section.main-section h3 {
+  font-weight: 300;
+}
+section.main-section h4 {
+  font-size: 1.2rem;
+}
+section #title {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+section #title .ctrl-back-forward,
+section #title .empty {
+  width: 33%;
+}
+// Fixing Jekyll inconsistencies with <li> elements that do not generate <p>
+section.main-section li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 .ctrl-back-forward {
@@ -130,4 +338,91 @@ section.main-section {
 }
 .ctrl-back-forward > div:hover {
   opacity: 1;
+}
+
+.summary-day {
+  color: var(--secondary-color);
+}
+
+// FLEMS CODE SECTIONS
+a[href="#flems-enable"] {
+  background: yellowgreen;
+  color: black;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  transition: all 200ms linear;
+}
+a[href="#flems-enable"]:hover {
+  color: white;
+  background: darkgreen;
+}
+.wdx-flems-editor {
+  margin-top: 1rem;
+  border-top: 10px solid yellowgreen;
+  box-shadow: 6px 16px 24px rgba(0,0,0,0.7);
+}
+
+// DARK THEME:
+body.dark-theme {
+  background: var(--dark-theme-color);
+}
+
+body.dark-theme .main-section > details > summary {
+  background: black;
+  border-color: #666 !important;
+  border-left-color: var(--details-border-left-color) !important;
+}
+
+body.dark-theme hr {
+  opacity: 0.3;
+}
+
+// THEME TOGGLER:
+#theme-toggler {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#theme-toggler label {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #222;
+  overflow: hidden;
+  cursor: pointer;
+}
+#theme-toggler label:before, #theme-toggler label:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 3.5px;
+  left: 3.5px;
+  transition: 0.5s ease;
+}
+#theme-toggler label:before {
+  background-color: var(--vibrant);
+}
+#theme-toggler label:after {
+  background-color: #222;
+  left: -15px;
+  transform: scale(0.00001);
+}
+#theme-toggler input[type=checkbox] {
+  display: none;
+}
+#theme-toggler input[type=checkbox]:checked + label:before {
+  background-color: #FFF;
+  transform: translateX(20px);
+}
+#theme-toggler input[type=checkbox]:checked + label:after {
+  transform: translateX(30px) scale(1);
 }

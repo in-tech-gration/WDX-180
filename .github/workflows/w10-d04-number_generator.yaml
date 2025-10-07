@@ -1,0 +1,21 @@
+name: "Week 10 - Day 4 Web APIs 1: DOM | Test Exercise: 'Number Generator'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week10/exercises/day04/number_generator/**
+jobs:
+  number_generator:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Number Generator' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week10/exercises/day04/number_generator/index.html, user/week10/exercises/day04/number_generator/script.js"
+          fail: true

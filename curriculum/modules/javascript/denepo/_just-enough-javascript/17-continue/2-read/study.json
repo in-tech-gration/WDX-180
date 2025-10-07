@@ -1,0 +1,15 @@
+{
+  "--defaults": {
+    ".js": "highlight"
+  },
+  "highlight": {
+    "run": false,
+    "debug": false,
+    "trace": false,
+    "openIn": false,
+    "table": false,
+    "ask": {
+      "alert": true
+    }
+  }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slack Visibility Feature</title>
+</head>
+
+<body>
+  <audio src="slack.mp3"></audio>
+  <button id="start">Play audio</button>
+  <p>
+    Sound will play only when the browser Tab loses focus. Hit the <strong>Play audio</strong> button and switch focus to another Tab.
+  </p>
+  <script>
+    /**
+   * Add notification badge (pill) to favicon in browser tab
+   * @url stackoverflow.com/questions/65719387/
+   */
+    class Badger {
+      constructor(options) {
+        Object.assign(
+          this, {
+          backgroundColor: "#f00",
+          color: "#fff",
+          size: 0.8,      // 0..1 (Scale in respect to the favicon image size)
+          position: "ne", // Position inside favicon "n", "e", "s", "w", "ne", "nw", "se", "sw"
+          radius: 8,      // Border radius
+          src: "",        // Favicon source (dafaults to the <link> icon href)
+          onChange() { },
+        },
+          options
+        );
+        this.canvas = document.createElement("canvas");
+        if (!this.faviconEL) {
+          this.faviconEL = document.createElement("link");
+          this.faviconEL.setAttribute("href", "favicon.ico");
+          this.faviconEL.setAttribute("type", "image/x-icon");
+          this.faviconEL.setAttribute("rel", "shortcut icon");
+          document.getElementsByTagName('head')[0].appendChild(this.faviconEL);
+          console.log(this.faviconEL);
+        }
+        this.src = this.src || this.faviconEL.getAttribute("href");
+        this.ctx = this.canvas.getContext("2d");
+      }
+
+      faviconEL = document.querySelector("link[rel$=icon]");
+
+      _drawIcon() {
+        this.ctx.clearRect(0, 0, this.faviconSize, this.faviconSize);
+        this.ctx.drawImage(this.img, 0, 0, this.faviconSize, this.faviconSize);
+      }
+
+      _drawShape() {
+        const r = this.radius;
+        const xa = this.offset.x;
+        const ya = this.offset.y;
+        const xb = this.offset.x + this.badgeSize;
+        const yb = this.offset.y + this.badgeSize;
+        this.ctx.beginPath();
+        this.ctx.moveTo(xb - r, ya);
+        this.ctx.quadraticCurveTo(xb, ya, xb, ya + r);
+        this.ctx.lineTo(xb, yb - r);
+        this.ctx.quadraticCurveTo(xb, yb, xb - r, yb);
+        this.ctx.lineTo(xa + r, yb);
+        this.ctx.quadraticCurveTo(xa, yb, xa, yb - r);
+        this.ctx.lineTo(xa, ya + r);
+        this.ctx.quadraticCurveTo(xa, ya, xa + r, ya);
+        this.ctx.fillStyle = this.backgroundColor;
+        this.ctx.fill();
+        this.ctx.closePath();
+      }
+
+      _drawVal() {
+        const margin = (this.badgeSize * 0.18) / 2;
+        this.ctx.beginPath();
+        this.ctx.textBaseline = "middle";
+        this.ctx.textAlign = "center";
+        this.ctx.font = `bold ${this.badgeSize * 0.82}px Arial`;
+        this.ctx.fillStyle = this.color;
+        this.ctx.fillText(this.value, this.badgeSize / 2 + this.offset.x, this.badgeSize / 2 + this.offset.y + margin);
+        this.ctx.closePath();
+      }
+
+      _drawFavicon() {
+        this.faviconEL.setAttribute("href", this.dataURL);
+      }
+
+      _draw() {
+        this._drawIcon();
+        if (this.value) this._drawShape();
+        if (this.value) this._drawVal();
+        this._drawFavicon();
+      }
+
+      _setup() {
+        this.faviconSize = this.img.naturalWidth;
+        this.badgeSize = this.faviconSize * this.size;
+        this.canvas.width = this.faviconSize;
+        this.canvas.height = this.faviconSize;
+        const sd = this.faviconSize - this.badgeSize;
+        const sd2 = sd / 2;
+        this.offset = {
+          n: { x: sd2, y: 0 },
+          e: { x: sd, y: sd2 },
+          s: { x: sd2, y: sd },
+          w: { x: 0, y: sd2 },
+          nw: { x: 0, y: 0 },
+          ne: { x: sd, y: 0 },
+          sw: { x: 0, y: sd },
+          se: { x: sd, y: sd },
+        }[this.position];
+      }
+
+      // Public functions / methods:
+
+      update() {
+        this._value = Math.min(99, parseInt(this._value, 10));
+        if (this.img) {
+          this._draw();
+          if (this.onChange) this.onChange.call(this);
+        } else {
+          this.img = new Image();
+          this.img.addEventListener("load", () => {
+            this._setup();
+            this._draw();
+            if (this.onChange) this.onChange.call(this);
+          });
+          this.img.src = this.src;
+        }
+      }
+
+      get dataURL() {
+        return this.canvas.toDataURL();
+      }
+
+      get value() {
+        return this._value;
+      }
+
+      set value(val) {
+        this._value = val;
+        this.update();
+      }
+    }
+    function createFavicon() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 16;
+      canvas.height = 16;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = "skyblue";
+      ctx.fillRect(0, 0, 16, 16);
+      var link = document.createElement('link');
+      link.type = 'image/x-icon';
+      link.rel = 'shortcut icon';
+      link.href = canvas.toDataURL("image/x-icon");
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+
+    createFavicon();
+    // https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API
+    const audio = document.querySelector("audio");
+    const playButton = document.querySelector("#start");
+
+    let userClicked = false;
+    let isHidden = false;
+    let messages = 0;
+
+    playButton.addEventListener("click", handleToggle, { once: true });
+
+    // Toggle playing states and record that the user started audio
+    function handleToggle() {
+
+      const myBadgerOptions = {}; // See: constructor for customization options
+      const myBadger = new Badger(myBadgerOptions);
+
+      userClicked = true;
+      if (audio.paused) {
+        audio.play();
+        playButton.textContent = "Pause audio";
+
+        // New messages:
+        setInterval(function () {
+
+          const msg = "New message at " + new Date();
+          const el = document.createElement("p");
+          el.textContent = msg;
+          document.body.appendChild(el)
+          // Live update value example:
+          myBadger.value = ++messages;
+          if (isHidden) {
+            audio.play();
+          }
+        }, 3000)
+
+      } else {
+        audio.pause();
+        playButton.textContent = "Play audio";
+      }
+    }
+
+    // Handle page visibility changes
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        isHidden = true;
+      } else {
+        isHidden = false;
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

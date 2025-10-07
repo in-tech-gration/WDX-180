@@ -1,0 +1,21 @@
+name: "Week 11 - Day 3 Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | Test Exercise: 'Fetch Basics'"
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - user/week11/exercises/day03/fetch_basics/**
+jobs:
+  fetch_basics:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: "Test Exercise: 'Fetch Basics' > Check solution files existence"
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "user/week11/exercises/day03/fetch_basics/fetch.html, user/week11/exercises/day03/fetch_basics/fetch.js"
+          fail: true
