@@ -3,7 +3,7 @@
 ## Testing Audio, Video & Screen-sharing
 
   Before using Slack for online communication, especially
-  when using Slack's [Huddle](){:target="_blank"} feature,
+  when using Slack's [Huddle](https://slack.com/help/articles/4402059015315-Use-huddles-in-Slack){:target="_blank"} feature,
   we must ensure that our audio (microphone), video (web camera)
   and screen sharing capabilities all work as expected.
 
