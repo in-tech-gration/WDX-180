@@ -122,6 +122,7 @@
       - [Windows](https://slack.com/downloads/windows){:target="_blank"} (109MB)
       - [Mac](https://slack.com/downloads/mac){:target="_blank"} (160MB)
       - [Linux (*_beta_)](https://slack.com/downloads/linux){:target="_blank"} (81MB)
+    - You should check out the dedicated page we have created for Slack over [here](./curriculum/modules/curriculum/communication/slack/){:target="_blank"}.
 
   - **Communication:** [Zoom client](https://zoom.us/support/download){:target="_blank"} and [Google Meet](https://meet.google.com/) are used to attend the live lectures and student sessions.
     - You can do a quick video/audio check for Google Meet, following the directions [found here](https://support.google.com/meet/answer/10409699?hl=en){:target="_blank"}. Video is optional, but **audio (good quality microphone) is mandatory**. 
