@@ -81,7 +81,7 @@ title: How the Internet & the World Wide Web works
     - Level: Beginner
     - Captions: Yes
 
-  - [Read:**How the web works**](../modules/computer_science/internet/how_the_web_works/index.md)
+  - [Read: **How the web works**](../modules/computer_science/internet/how_the_web_works/index.md)
     - Level: Beginner
 
   - [Read: **What is a web server?**](../modules/computer_science/internet/what_is_a_web_server/index.md)
