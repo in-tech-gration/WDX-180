@@ -380,23 +380,23 @@ title: Week 2 | HTML, Accessibility & Git
 
   **Introductory guides:**
 
-  - [Read: **Your first form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
+  - [Read: **Your first form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form){:target="_blank"} and complete all the challenges _(e.g. Active Learning sections, etc.)_.
     - **Description:** The first article in our series provides you with your very first experience of creating a web form, including designing a simple form, implementing it using the right HTML form controls and other HTML elements, adding some very simple styling via CSS, and describing how data is sent to a server. 
     - **Level:** Beginner
 
-  - [Read: **How to structure a web form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
+  - [Read: **How to structure a web form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form){:target="_blank"} and complete all the challenges _(e.g. Active Learning sections, etc.)_.
     - **Description:** With the basics out of the way, we'll now look in more detail at the elements used to provide structure and meaning to the different parts of a form.
     - **Level:** Beginner
 
-  - [Complete the: **Test your skills: Form structure** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form)
+  - Complete the: [**Building a form structure** challenge](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/How_to_structure_a_web_form#building_a_form_structure){:target="_blank"} coding challenge on the MDN page. _(See attached screenshot below)_
+
+  [![](./assets/Building.a.form.structure.exercise.jpg)](./assets/Building.a.form.structure.exercise.jpg){:target="_blank"}
 
   **The different form controls:**
 
-  - [Read: **Basic native form controls**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls)
+  - Follow the [**Basic native form controls**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls){:target="_blank"} MDN article guide and code along.
     - **Description:** In this particular article, we will look at the original set of form controls, available in all browsers since the early days of the web.
     - **Level:** Beginner
-
-  - [Complete the: **Test your skills: Basic controls** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/Test_your_skills:_Basic_controls)
 
 <!-- ### Summary -->
 
