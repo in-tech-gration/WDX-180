@@ -8,6 +8,8 @@ title: Week 2 | HTML, Accessibility & Git
   <span class="week-prefix">Week 2 |</span> HTML, Accessibility & Git
 </h1>
 
+<img src="assets/html.forms.and.tables.jpg">
+
 <div class="week-controls">
 
   {% assign week_num = 2 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 2 | HTML, Accessibility & Git
 
   </h2>
 
-  <span>Updated: 30/06/2025</span>
+  <span>Updated: 19/10/2025</span>
 
   <h2 class="week-controls__next_week">
 

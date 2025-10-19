@@ -25,7 +25,7 @@ title: Week 03 | CSS, Accessibility & Git
 
   </h2>
 
-  <span>Updated: 10/11/2023</span>
+  <span>Updated: 19/10/2025</span>
 
   <h2 class="week-controls__next_week">
 
