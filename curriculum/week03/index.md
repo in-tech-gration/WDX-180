@@ -8,6 +8,8 @@ title: Week 03 | CSS, Accessibility & Git
   <span class="week-prefix">Week 03 |</span> CSS, Accessibility & Git
 </h1>
 
+<img src="assets/css.inheritance.cascading.box.model.jpg">
+
 <div class="week-controls">
 
   {% assign week_num = 03 | to_integer %}
