@@ -1,5 +1,7 @@
 ---
 title: More Git
+version: 0.1.1
+date_updated: 21.10.2025
 ---
 
 
@@ -80,7 +82,7 @@ title: More Git
   ```
 
   💡 That's the basic logic behind this exercise!
-  
+
   > Note: It's a good practice to check the **status** of our repository after any alteration!!
 
   After you're finished with your list, do not forget to push it your `user` folder in your forked WDX repository!
