@@ -37,6 +37,7 @@ date_updated: 21.10.2025
     - Duration: 10min
     - Level: Beginner
     - Captions: Yes
+    - ⚠️ **Note:** The video is a bit old (but still highly relevant), so you will be seeing terms like `Master branch` or `(master)` a lot. The default branch these days is called the `main branch`.
   
   ---
 
