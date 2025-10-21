@@ -1,13 +1,13 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-2,2,HTML,Active learning: Inspecting a simple example,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: Experiment with character encoding,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: The description's use in search engines,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: applying CSS and JavaScript to a page,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: Giving our content structure,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: Marking up an unordered list,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: Marking up an ordered list,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: Marking up our recipe page,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Test your skills: HTML text fundamentals (3x Tasks),Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: creating your own example link,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Active learning: creating a navigation menu,Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
-2,2,HTML,Test your skills: Creating hyperlinks (3x Tasks),Beginner,0-10,FALSE,Submit your exercise in the appropriate folder. Stage - Commit - Push. Replace this field with the exercise solution URL
+2,2,HTML,Active learning: Inspecting a simple example,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: Experiment with character encoding,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: The description's use in search engines,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: applying CSS and JavaScript to a page,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: Giving our content structure,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: Marking up an unordered list,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: Marking up an ordered list,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: Marking up our recipe page,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Test your skills: HTML text fundamentals (3x Tasks),Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: creating your own example link,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Active learning: creating a navigation menu,Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
+2,2,HTML,Test your skills: Creating hyperlinks (3x Tasks),Beginner,10,TRUE,https://github.com/Tugba-Yilmaz/WDX-180/tree/main/user/week02/exercises/day02
