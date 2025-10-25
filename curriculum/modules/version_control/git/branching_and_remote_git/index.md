@@ -1,5 +1,7 @@
 ---
 title: More Git
+version: 0.1.1
+date_updated: 21.10.2025
 ---
 
 
@@ -35,6 +37,7 @@ title: More Git
     - Duration: 10min
     - Level: Beginner
     - Captions: Yes
+    - ⚠️ **Note:** The video is a bit old (but still highly relevant), so you will be seeing terms like `Master branch` or `(master)` a lot. The default branch these days is called the `main branch`.
   
   ---
 
@@ -50,6 +53,36 @@ title: More Git
   - command2
   - action2
   ```
+
+  **Still confused?**
+
+  Just to give you a hint, think about how you would start
+  your working day if you were asked to create a new feature.
+
+  Of course, you would need to run `git status` to check your
+  current status and `git pull` to download any updates from
+  the remote repo.
+
+  So, you'll probably want to add those comments to the `new-feature-list.md`
+  file:
+
+  ```
+  - git status
+  - git pull
+  ```
+
+  Next, you want to create a new branch and `checkout` or `switch`
+  to that branch and start working safely. Once again, commands
+  like `git branch -a` to check what branches already exist, is
+  a good candidate for the list:
+
+  ```
+  - git status
+  - git pull
+  - git branch -a
+  ```
+
+  💡 That's the basic logic behind this exercise!
 
   > Note: It's a good practice to check the **status** of our repository after any alteration!!
 
