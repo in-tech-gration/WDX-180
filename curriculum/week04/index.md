@@ -25,7 +25,7 @@ title: Week 04 | CSS 2 & Performance
 
   </h2>
 
-  <span>Updated: 30/6/2025</span>
+  <span>Updated: 27/10/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -87,7 +87,7 @@ title: Week 04 | CSS 2 & Performance
 
   ![](assets/german_table.jpg)
 
-  - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks){:target="_blank"}
+  - [MDN's Assessment: **Test your skills: Tables**](/WDX-180/curriculum/modules/css/misc/tables_tasks){:target="_blank"}
 
   - [MDN's Assessment: **Fundamental CSS comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension){:target="_blank"}
 
