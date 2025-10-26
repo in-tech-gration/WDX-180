@@ -8,13 +8,13 @@ In this assessment, you'll get some more practice in creating cool-looking boxes
 
 <table>
   <tbody>
-    <tr>
+    <!-- <tr>
       <th scope="row">Prerequisites:</th>
       <td>
         Before attempting this assessment you should have already worked
         through all the articles in this module.
       </td>
-    </tr>
+    </tr> -->
     <tr>
       <th scope="row">Objective:</th>
       <td>
@@ -29,7 +29,7 @@ In this assessment, you'll get some more practice in creating cool-looking boxes
 
 To get this assessment started, you should:
 
-- Make local copies of the starting [HTML](https://github.com/mdn/learning-area/blob/main/css/styling-boxes/cool-information-box-start/index.html){:target="_blank"} and [CSS](https://github.com/mdn/learning-area/blob/main/css/styling-boxes/cool-information-box-start/style.css){:target="_blank"} — save them as `index.html` and `style.css` in a new directory.
+- Make local copies of the starting [HTML](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/css/building_blocks/a_cool_looking_box/assets/index.html){:target="_blank"} and [CSS](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/css/building_blocks/a_cool_looking_box/assets/style.css){:target="_blank"} — save them as `index.html` and `style.css` in a new directory.
 
 <!-- Alternatively, you could use a site like [JSBin](https://jsbin.com/) or [Glitch](https://glitch.com/) to do your assessment. You could paste the HTML and fill in the CSS into one of these online editors. If the online editor you are using doesn't have a separate CSS panel, feel free to put it in a `<style>` element in the head of the document. -->
 
