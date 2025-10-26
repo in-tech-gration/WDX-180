@@ -53,6 +53,6 @@ title: Styling Tables, Debugging and Organizing CSS
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'A cool-looking box'|user_folder=a_cool_looking_box -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'A cool-looking box'|type=exist|user_folder=a_cool_looking_box|files=index.html,styles.css -->
-  - [MDN's Assessment: **A cool-looking box**](/WDX-180/curriculum/modules/css/building_blocks//a_cool_looking_box){:target="_blank"}
+  - [MDN's Assessment: **A cool-looking box**](/WDX-180/curriculum/modules/css/building_blocks/a_cool_looking_box){:target="_blank"}
 
 ### Sources and Attributions
