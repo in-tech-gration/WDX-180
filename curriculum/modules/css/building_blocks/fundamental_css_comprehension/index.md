@@ -4,17 +4,17 @@ slug: Learn/CSS/Building_blocks/Fundamental_CSS_comprehension
 page-type: learn-module-assessment
 ---
 
-You've covered a lot in this module, so it must feel good to have reached the end! The final step before you move on is to attempt the assessment for the module — this involves a number of related exercises that must be completed in order to create the final design — a business card/gamer card/social media profile.
+The final step before you move on is to attempt the assessment for the module — this involves a number of related exercises that must be completed in order to create the final design — a business card/gamer card/social media profile.
 
 <table>
   <tbody>
-    <tr>
+    <!-- <tr>
       <th scope="row">Prerequisites:</th>
       <td>
         Before attempting this assessment you should have already worked through
         all the articles in this module.
       </td>
-    </tr>
+    </tr> -->
     <tr>
       <th scope="row">Objective:</th>
       <td>

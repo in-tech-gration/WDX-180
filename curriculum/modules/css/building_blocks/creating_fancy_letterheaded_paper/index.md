@@ -8,13 +8,13 @@ If you want to make the right impression, writing a letter on nice letterheaded 
 
 <table>
   <tbody>
-    <tr>
+    <!-- <tr>
       <th scope="row">Prerequisites:</th>
       <td>
         Before attempting this assessment you should have already worked through
         all the articles in this module.
       </td>
-    </tr>
+    </tr> -->
     <tr>
       <th scope="row">Objective:</th>
       <td>
