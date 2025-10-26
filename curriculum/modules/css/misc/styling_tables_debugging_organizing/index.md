@@ -39,7 +39,7 @@ title: Styling Tables, Debugging and Organizing CSS
 
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Test your skills: Tables'|user_folder=tables_tasks -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Test your skills: Tables'|type=exist|user_folder=tables_tasks|files=table.html -->
-  - [MDN's Assessment: **Test your skills: Tables**](/WDX-180/curriculum/modules/css/misc/table_tasks){:target="_blank"}
+  - [MDN's Assessment: **Test your skills: Tables**](/WDX-180/curriculum/modules/css/misc/tables_tasks){:target="_blank"}
   
   <!-- SGEN:META:PROGRESS:task=Complete the exercise 'Fundamental CSS comprehension'|user_folder=fundamental_css_comprehension -->
   <!-- SGEN:META:TESTS:name=Test Exercise: 'Fundamental CSS comprehension'|type=exist|user_folder=fundamental_css_comprehension|files=index.html,styles.css,chris.jpg -->
