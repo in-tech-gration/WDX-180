@@ -4,6 +4,8 @@ slug: Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper
 page-type: learn-module-assessment
 ---
 
+# Creating a Fancy Letterheader Paper
+
 If you want to make the right impression, writing a letter on nice letterheaded paper can be a really good start. In this assessment we'll challenge you to create an online template to achieve such a look.
 
 <table>

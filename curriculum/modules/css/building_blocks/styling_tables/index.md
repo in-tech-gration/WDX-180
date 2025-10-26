@@ -4,11 +4,13 @@ slug: Learn/CSS/Building_blocks/Styling_tables
 page-type: learn-module-chapter
 ---
 
+# Styling Tables
+
 Styling an HTML table isn't the most glamorous job in the world, but sometimes we all have to do it. This article provides a guide to making HTML tables look good, with some specific table styling techniques highlighted.
 
 <table>
   <tbody>
-    <tr>
+    <!-- <tr>
       <th scope="row">Prerequisites:</th>
       <td>
         HTML basics (study
@@ -18,7 +20,7 @@ Styling an HTML table isn't the most glamorous job in the world, but sometimes w
         <a href="/en-US/docs/Learn/HTML/Tables">HTML tables</a>, and an idea of
         how CSS works (study CSS first steps.)
       </td>
-    </tr>
+    </tr> -->
     <tr>
       <th scope="row">Objective:</th>
       <td>To learn how to effectively style HTML tables.</td>

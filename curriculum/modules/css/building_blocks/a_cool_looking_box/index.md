@@ -4,6 +4,8 @@ slug: Learn/CSS/Building_blocks/A_cool_looking_box
 page-type: learn-module-assessment
 ---
 
+# A Cool Looking Box
+
 In this assessment, you'll get some more practice in creating cool-looking boxes by trying to create an eye-catching box.
 
 <table>

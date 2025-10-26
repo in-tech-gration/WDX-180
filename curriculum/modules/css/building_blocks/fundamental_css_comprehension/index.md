@@ -4,6 +4,8 @@ slug: Learn/CSS/Building_blocks/Fundamental_CSS_comprehension
 page-type: learn-module-assessment
 ---
 
+# Fundamental CSS Comprehension
+
 The final step before you move on is to attempt the assessment for the module — this involves a number of related exercises that must be completed in order to create the final design — a business card/gamer card/social media profile.
 
 <table>
