@@ -2,6 +2,7 @@
 title: Styling tables
 slug: Learn/CSS/Building_blocks/Styling_tables
 page-type: learn-module-chapter
+URL: https://github.com/in-tech-gration/content/tree/main/files/en-us/learn/css/building_blocks/styling_tables
 ---
 
 # Styling Tables

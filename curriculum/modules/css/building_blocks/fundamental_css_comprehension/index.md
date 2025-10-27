@@ -2,6 +2,7 @@
 title: Fundamental CSS comprehension
 slug: Learn/CSS/Building_blocks/Fundamental_CSS_comprehension
 page-type: learn-module-assessment
+URL: https://github.com/in-tech-gration/content/tree/main/files/en-us/learn/css/building_blocks/fundamental_css_comprehension
 ---
 
 # Fundamental CSS Comprehension
