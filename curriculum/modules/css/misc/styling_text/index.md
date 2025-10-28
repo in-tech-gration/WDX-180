@@ -2,8 +2,6 @@
 title: Styling Text
 ---
 
-![](./assets/Dali.on.Fonts.jpg)
-
 ### Schedule
 
   - [Study](#study-plan-1)
