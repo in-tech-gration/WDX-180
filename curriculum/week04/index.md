@@ -25,7 +25,7 @@ title: Week 04 | CSS 2 & Performance
 
   </h2>
 
-  <span>Updated: 28/10/2025</span>
+  <span>Updated: 29/10/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -197,6 +197,8 @@ title: Week 04 | CSS 2 & Performance
     - **Level:** Beginner
 
   **CSS Flexbox**
+
+  ![](./assets/flexbox.superhero.jpg)
 
   - Watch our [**CSS for Beginners: Making Sense of Flexbox**](https://www.youtube.com/watch?v=sgQVwd2IL9A){:target="_blank"} video to learn about one of the most powerful CSS technologies, allowing you to create 90% of the layouts that you see out there.
 
