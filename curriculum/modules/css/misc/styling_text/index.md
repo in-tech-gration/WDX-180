@@ -20,7 +20,11 @@ title: Styling Text
 
   ---
 
-  With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
+  With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. 
+  
+  ![](./assets/Dali.on.Fonts.jpg)
+
+  Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
 
   <!-- SGEN:META:PROGRESS:task=Read 'Fundamental text and font styling' -->
   - [Read : **Fundamental text and font styling**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals){:target="_blank"}

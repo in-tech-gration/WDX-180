@@ -59,7 +59,6 @@ There are a number of web apps that emulate a website development environment, a
 Try playing with some of these examples to find out which one works best for you:
 
 - [JSFiddle](https://jsfiddle.net/){:target="_blank"}
-- [Glitch](https://glitch.com/){:target="_blank"}
 - [JS Bin](https://jsbin.com/){:target="_blank"}
 - [CodePen](https://codepen.io/){:target="_blank"}
 

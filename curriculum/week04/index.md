@@ -25,7 +25,7 @@ title: Week 04 | CSS 2 & Performance
 
   </h2>
 
-  <span>Updated: 30/6/2025</span>
+  <span>Updated: 29/10/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -87,9 +87,9 @@ title: Week 04 | CSS 2 & Performance
 
   ![](assets/german_table.jpg)
 
-  - [MDN's Assessment: **Test your skills: Tables**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks){:target="_blank"}
+  - [MDN's Assessment: **Test your skills: Tables**](/WDX-180/curriculum/modules/css/misc/tables_tasks){:target="_blank"}
 
-  - [MDN's Assessment: **Fundamental CSS comprehension**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension){:target="_blank"}
+  - [MDN's Assessment: **Fundamental CSS comprehension**](/WDX-180/curriculum/modules/css/building_blocks/fundamental_css_comprehension){:target="_blank"}
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week04/progress/progress.draft.w04.d01.csv**
 
@@ -98,9 +98,9 @@ title: Week 04 | CSS 2 & Performance
 
 ### Extra Resources
 
-  - [MDN's Assessment: **Creating fancy letterheaded paper**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper){:target="_blank"}
+  - [MDN's Assessment: **Creating fancy letterheaded paper**](/WDX-180/curriculum/modules/css/building_blocks/creating_fancy_letterheaded_paper){:target="_blank"}
 
-  - [MDN's Assessment: **A cool-looking box**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box){:target="_blank"}
+  - [MDN's Assessment: **A cool-looking box**](/WDX-180/curriculum/modules/css/building_blocks//a_cool_looking_box){:target="_blank"}
 
 <!-- Sources and Attributions -->
   
@@ -137,7 +137,11 @@ title: Week 04 | CSS 2 & Performance
 
 
 
-  With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
+  With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. 
+
+  ![](./assets/Dali.on.Fonts.jpg)
+
+  Here we look at text styling fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
 
   - [Read : **Fundamental text and font styling**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals){:target="_blank"}
     - Level: Beginner
@@ -193,6 +197,8 @@ title: Week 04 | CSS 2 & Performance
     - **Level:** Beginner
 
   **CSS Flexbox**
+
+  ![](./assets/flexbox.superhero.jpg)
 
   - Watch our [**CSS for Beginners: Making Sense of Flexbox**](https://www.youtube.com/watch?v=sgQVwd2IL9A){:target="_blank"} video to learn about one of the most powerful CSS technologies, allowing you to create 90% of the layouts that you see out there.
 
