@@ -1,0 +1,15 @@
+{
+	"exercise_path": "user/week01/exercises/day02/Absolute_vs_Relative_URLs",
+	"responses": {
+		"Question 1: What is a URL?": "A) Uniform Resource Locator",
+		"Question 2: Which of the following statements best describes an absolute URL?": "B) A URL that includes the full path to a resource, including the protocol and domain.",
+		"Question 3: In an absolute URL like “https://www.example.com/page.html,” what does “https://” represent?": "C) The protocol or scheme.",
+		"Question 4: Which scenario is most suitable for using a relative URL?": "B) Linking to a resource within the same website.",
+		"Question 5: What is the advantage of using relative URLs over absolute URLs?": "C) They are easier to remember and manage.",
+		"Question 6: In a URL like “/images/pic.jpg,” what does the initial “/” symbol indicate?": "B) The root directory of the website.",
+		"Question 7: If you’re on the page “http://www.example.com/subfolder/page.html,” and you want to link to “http://www.example.com/otherpage.html,” which type of URL would you use?": "A) Absolute URL",
+		"Question 8: Which type of URL tends to break if the domain structure changes?": "A) Absolute URL",
+		"Question 9: When might it be necessary to use an absolute URL instead of a relative URL?": "B) When linking to external resources like images on another domain.",
+		"Question 10: Which type of URL typically requires more characters to represent?": "A) Absolute URL"
+	}
+}

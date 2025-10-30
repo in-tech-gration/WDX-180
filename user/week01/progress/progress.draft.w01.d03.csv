@@ -1,6 +1,6 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-1,3,HTML,Bookmark 'htmlreference.io',Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE
-1,3,HTML,Complete the '1-parent-child' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/1-parent-child.
-1,3,HTML,Complete the 'HTML Attributes' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/2-html-attributes.
-1,3,HTML,Complete the 'Semantic HTML' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/3-semantic-html.
-1,3,HTML,Complete the 'markdowntutorial.com' exercise,Beginner,0-10,FALSE,Update CONFIDENCE column. Change COMPLETED column to TRUE.
+1,3,HTML,Bookmark 'htmlreference.io',Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE
+1,3,HTML,Complete the '1-parent-child' exercise,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/1-parent-child.
+1,3,HTML,Complete the 'HTML Attributes' exercise,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/2-html-attributes.
+1,3,HTML,Complete the 'Semantic HTML' exercise,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE. Store solution in appropriate folder: /user/week01/exercises/day03/3-semantic-html.
+1,3,HTML,Complete the 'markdowntutorial.com' exercise,Beginner,0-10,TRUE,Update CONFIDENCE column. Change COMPLETED column to TRUE.
