@@ -21,6 +21,8 @@ title: CSS Layout Part 1
     - **Level:** Beginner
 
   **CSS Flexbox**
+
+  ![](./assets/flexbox.superhero.jpg)
   
   - Watch our [**CSS for Beginners: Making Sense of Flexbox**](https://www.youtube.com/watch?v=sgQVwd2IL9A){:target="_blank"} video to learn about one of the most powerful CSS technologies, allowing you to create 90% of the layouts that you see out there.
 
