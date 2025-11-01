@@ -1,0 +1,49 @@
+html {
+	font-family: 'Bitcount Grid Single', monospace;
+	font-size: 80px;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0 100px 100px 100px;
+	background-color: #00bbff;
+}
+
+h1 {
+	font-size: 150px;
+	font-family: 'Italianno', cursive;
+	text-align: center;
+	text-shadow: 30px 30px 50px black;
+}
+
+a {
+	background-color: yellow;
+	text-shadow: 3 3 10px rgb(255, 0, 0);
+}
+
+p {
+	font-size: 80px;
+	margin: 50px;
+	padding: 20px;
+	background-color: #ff00ff;
+	border: 5px solid rgb(255, 0, 0);
+}
+
+dl {
+	margin: 50px;
+	padding: 20px;
+	background-color: #1eff00;
+	border: 5px solid black;
+	background-image: url("../images/firefox-icon.jpg");
+}
+
+dd {
+	font-size: 50px;
+	margin: 20px;
+}
+
+dt {
+	font-size: 70px;
+	font-weight: bold;
+}
