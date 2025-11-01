@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>3. Semantic HTML - HTML, CSS and Git Exercises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/week1.css" />
+    <link rel="stylesheet" href="/css/message.css" />
+    <link rel="stylesheet" href="/css/result.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="site-header">
+        <header role="banner">Messages</header>
+      </div>
+      <div class="messages">
+        <article class="article">
+          <div class="message__author">Won</div>
+          <main role="main">Where should we meet later?</main>
+          <span class="message__time"><time datetime="2018-03-25">Mar 25, 2018 7:25pm</time></span>
+		</article>
+        <article class="article">
+          <div class="message__author">Luke</div>
+          <main role="main">
+            Let's meet at the <a href="https://goo.gl/maps/aza4h9nUBhn">iCafe</a> in Merchant City.
+          </main>
+          <span class="message__time"><time datetime="2018-03-25">Mar 25, 2018 7:35pm</time></span>
+        </article>
+        <article class="article">
+          <div class="message__author">Won</div>
+          <main role="main">
+            Ok! <img src="https://media.giphy.com/media/l41K4KlVE8dgozf8I/giphy.gif" alt="GIF" />
+          </main>
+          <span class="message__time"><time datetime="2018-03-25">Mar 25, 2018 7:38pm</time></span>
+        </article>
+      </div>
+      <div id="result" class="result"></div>
+    </div>
+    <script defer src="/js/3-result.js"></script>
+  </body>
+</html>
