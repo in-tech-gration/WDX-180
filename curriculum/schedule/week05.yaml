@@ -1,6 +1,7 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: CSS Frameworks
+header_image: week05/assets/css-frameworks.jpg
 schedule: 
   days:
     1: # ✅ Group Project: Practice HTML Form Input Fields  
