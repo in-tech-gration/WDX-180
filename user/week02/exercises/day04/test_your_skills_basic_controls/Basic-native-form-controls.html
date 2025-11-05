@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/test-your-skills-basic-controls" method="post">
+      <section>
+        <input
+          type="text"
+          id="comment"
+          name="comment"
+          value="I'm a text field"
+        />
+        <input
+          type="text"
+          id="comment2"
+          name="comment"
+          focus
+          value="I'm a text field"
+        />
+        <input
+          type="text"
+          id="comment3"
+          name="comment"
+          disabled
+          value="I'm a text field"
+        />
+        <input type="password" id="pwd" name="pwd" />
+        <input
+          type="hidden"
+          id="timestamp"
+          name="timestamp"
+          value="1286705410"
+        />
+        <p>
+          <input
+            type="checkbox"
+            id="questionOne"
+            name="subscribe"
+            value="yes"
+            unchecked
+          />
+          <label for="questionOne">this is a checkbox unchecked</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            id="questionTwo"
+            name="subscribe"
+            value="yes"
+            checked
+          />
+          <label for="questionTwo">this is a checkbox checked</label>
+        </p>
+      </section>
+      <fieldset>
+        <legend>Choose all the vegetables you like to eat</legend>
+        <ul>
+          <li>
+            <label for="carrots">Carrots</label>
+            <input
+              type="checkbox"
+              id="carrots"
+              name="vegetable"
+              value="carrots"
+              checked
+            />
+          </li>
+          <li>
+            <label for="peas">Peas</label>
+            <input type="checkbox" id="peas" name="vegetable" value="peas" />
+          </li>
+          <li>
+            <label for="cabbage">Cabbage</label>
+            <input
+              type="checkbox"
+              id="cabbage"
+              name="vegetable"
+              value="cabbage"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <section>
+        <p>
+          <input type="radio" id="soup" name="meal" value="soup" checked />
+          <label for="soup">Soup</label>
+        </p>
+      </section>
+      <fieldset>
+        <legend>What is your favorite meal?</legend>
+        <ul>
+          <li>
+            <label for="soup">Soup</label>
+            <input type="radio" id="soup" name="meal" value="soup" checked />
+          </li>
+          <li>
+            <label for="curry">Curry</label>
+            <input type="radio" id="curry" name="meal" value="curry" />
+          </li>
+          <li>
+            <label for="pizza">Pizza</label>
+            <input type="radio" id="pizza" name="meal" value="pizza" />
+          </li>
+        </ul>
+      </fieldset>
+      <section>
+        <p>Using &lt;input></p>
+        <p>
+          <input type="submit" value="Submit this form" />
+          <input type="reset" value="Reset this form" />
+          <input type="button" value="Do Nothing without JavaScript" />
+        </p>
+        <p>Using &lt;button></p>
+        <p>
+          <button type="submit">Submit this form</button>
+          <button type="reset">Reset this form</button>
+          <button type="button">Do Nothing without JavaScript</button>
+        </p>
+      </section>
+      <section>
+        <p>
+          <button type="submit">
+            This a <br /><strong>submit button</strong>
+          </button>
+        </p>
+        <p>
+          <input type="submit" value="This is a submit button" />
+        </p>
+        <p>
+          <button type="reset">
+            This a <br /><strong>reset button</strong>
+          </button>
+        </p>
+        <p>
+          <input type="reset" value="This is a reset button" />
+        </p>
+        <p>
+          <button type="button">
+            This an <br /><strong>anonymous button</strong>
+          </button>
+        </p>
+        <p>
+          <input type="button" value="This is an anonymous button" />
+        </p>
+      </section>
+	  <section>
+		<input type="image" alt="Click me!" src="my-img.jpg" width="80" height="80" />
+	  </section>
+	  <section>
+		<input type="file" name="file" id="file" accept="image/*" multiple />
+	  </section>
+    </form>
+  </body>
+</html>
