@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Backgrounds and Borders: Task 2</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 300px;
+        padding: 0.5em;
+		border: lightblue 5px solid;
+		border-top-left-radius: 20px;
+		border-bottom-right-radius: 40px;
+      }
+	  h2 {
+		background-image: url(image.png), url(image.png);
+		background-repeat: no-repeat, repeat-y;
+		background-position: left center, right center;
+		padding-left: 50px;
+		padding-right: 50px;
+		text-align: center;
+	  }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <h2>Backgrounds &amp; Borders</h2>
+    </div>
+  </body>
+</html>
