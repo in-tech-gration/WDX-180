@@ -4306,6 +4306,27 @@
           "github": "mubashra21c"
         }
       ]
+    },
+    "git-version-control-workshop": {
+      "type": "YouTube",
+      "duration": 1991,
+      "title": "Git Version Control Workshop!",
+      "date": "05/10/2020",
+      "youtube": {
+        "id": "Ci2pqR8RJzc",
+        "channel_id": "UCa6kP6qEgN6VL1lraEiybmw",
+        "channel_title": "Anna Skoulikari",
+        "thumbnail_url": "https://i.ytimg.com/vi/Ci2pqR8RJzc/sddefault.jpg"
+      },
+      "language": [
+        "en"
+      ],
+      "reviewers": [
+        {
+          "github": "https://github.com/asterisg",
+          "review": "Works on masters. Works on macOS. Requires basic understanding of UNIX file system. No example of working with a remote repo."
+        }
+      ]
     }
   },
   "creators": {}
