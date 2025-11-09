@@ -32,7 +32,7 @@ This article will recap some CSS layout features such as different `display` val
 CSS page layout techniques allow us to take elements contained in a web page and control where they're positioned relative to the following factors: their default position in normal layout flow, the other elements around them, their parent container, and the main viewport/window. The page layout techniques we'll be covering in more detail in this module are:
 
 - Normal flow
-- The {{cssxref("display")}} property
+- The [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"} property
 - Flexbox
 - Grid
 - Floats
@@ -72,29 +72,29 @@ For many of the elements on your page, the normal flow will create exactly the l
 
 The methods that can change how elements are laid out in CSS are:
 
-- **The {{cssxref("display")}} property** — Standard values such as `block`, `inline` or `inline-block` can change how elements behave in normal flow, for example, by making a block-level element behave like an inline-level element (see [Types of CSS boxes](/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes) for more information). We also have entire layout methods that are enabled via specific `display` values, for example, [CSS Grid](/en-US/docs/Learn/CSS/CSS_layout/Grids) and [Flexbox](/en-US/docs/Learn/CSS/CSS_layout/Flexbox), which alter how child elements are laid out inside their parents.
-- **Floats** — Applying a {{cssxref("float")}} value such as `left` can cause block-level elements to wrap along one side of an element, like the way images sometimes have text floating around them in magazine layouts.
-- **The {{cssxref("position")}} property** — Allows you to precisely control the placement of boxes inside other boxes. `static` positioning is the default in normal flow, but you can cause elements to be laid out differently using other values, for example, as fixed to the top of the browser viewport.
+- **The [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"} property** — Standard values such as `block`, `inline` or `inline-block` can change how elements behave in normal flow, for example, by making a block-level element behave like an inline-level element (see [Types of CSS boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#block_and_inline_boxes){:target="_blank"} for more information). We also have entire layout methods that are enabled via specific `display` values, for example, [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids){:target="_blank"} and [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"}, which alter how child elements are laid out inside their parents.
+- **Floats** — Applying a [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float){:target="_blank"} value such as `left` can cause block-level elements to wrap along one side of an element, like the way images sometimes have text floating around them in magazine layouts.
+- **The [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position){:target="_blank"} property** — Allows you to precisely control the placement of boxes inside other boxes. `static` positioning is the default in normal flow, but you can cause elements to be laid out differently using other values, for example, as fixed to the top of the browser viewport.
 - **Table layout** — Features designed for styling parts of an HTML table can be used on non-table elements using `display: table` and associated properties.
-- **Multi-column layout** — The [Multi-column layout](/en-US/docs/Web/CSS/CSS_multicol_layout) properties can cause the content of a block to layout in columns, as you might see in a newspaper.
+- **Multi-column layout** — The [Multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_multicol_layout){:target="_blank"} properties can cause the content of a block to layout in columns, as you might see in a newspaper.
 
 ## The display property
 
-The main methods for achieving page layout in CSS all involve specifying values for the `display` property. This property allows us to change the default way something displays. Everything in normal flow has a default value for `display`; i.e., a default way that elements are set to behave. For example, the fact that paragraphs in English display one below the other is because they are styled with `display: block`. If you create a link around some text inside a paragraph, that link remains inline with the rest of the text, and doesn't break onto a new line. This is because the {{htmlelement("a")}} element is `display: inline` by default.
+The main methods for achieving page layout in CSS all involve specifying values for the `display` property. This property allows us to change the default way something displays. Everything in normal flow has a default value for `display`; i.e., a default way that elements are set to behave. For example, the fact that paragraphs in English display one below the other is because they are styled with `display: block`. If you create a link around some text inside a paragraph, that link remains inline with the rest of the text, and doesn't break onto a new line. This is because the [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a){:target="_blank"} element is `display: inline` by default.
 
-You can change this default display behavior. For example, the {{htmlelement("li")}} element is `display: block` by default, meaning that list items display one below the other in our English document. If we were to change the display value to `inline` they would display next to each other, as words would do in a sentence. The fact that you can change the value of `display` for any element means that you can pick HTML elements for their semantic meaning without being concerned about how they will look. The way they look is something that you can change.
+You can change this default display behavior. For example, the [`<li>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li){:target="_blank"} element is `display: block` by default, meaning that list items display one below the other in our English document. If we were to change the display value to `inline` they would display next to each other, as words would do in a sentence. The fact that you can change the value of `display` for any element means that you can pick HTML elements for their semantic meaning without being concerned about how they will look. The way they look is something that you can change.
 
 In addition to being able to change the default presentation by turning an item from `block` to `inline` and vice versa, there are some more involved layout methods that start out as a value of `display`. However, when using these you will generally need to invoke additional properties. The two values most important for our discussion of layout are `display: flex` and `display: grid`.
 
 ## Flexbox
 
-Flexbox is the short name for the [Flexible Box Layout](/en-US/docs/Web/CSS/CSS_flexible_box_layout) CSS module, designed to make it easy for us to lay things out in one dimension — either as a row or as a column. To use flexbox, you apply `display: flex` to the parent element of the elements you want to lay out; all its direct children then become _flex items_. We can see this in a simple example.
+Flexbox is the short name for the [Flexible Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout){:target="_blank"} CSS module, designed to make it easy for us to lay things out in one dimension — either as a row or as a column. To use flexbox, you apply `display: flex` to the parent element of the elements you want to lay out; all its direct children then become _flex items_. We can see this in a simple example.
 
 ### Setting display: flex
 
-The HTML markup below gives us a containing element with a class of `wrapper`, inside of which are three {{htmlelement("div")}} elements. By default these would display as block elements, that is, below one another in our English language document.
+The HTML markup below gives us a containing element with a class of `wrapper`, inside of which are three [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"} elements. By default these would display as block elements, that is, below one another in our English language document.
 
-However, if we add `display: flex` to the parent, the three items now arrange themselves into columns. This is due to them becoming _flex items_ and being affected by some initial values that flexbox sets on the flex container. They are displayed in a row because the property {{cssxref("flex-direction")}} of the parent element has an initial value of `row`. They all appear to stretch in height because the property {{cssxref("align-items")}} of their parent element has an initial value of `stretch`. This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item. The items all line up at the start of the container, leaving any extra space at the end of the row.
+However, if we add `display: flex` to the parent, the three items now arrange themselves into columns. This is due to them becoming _flex items_ and being affected by some initial values that flexbox sets on the flex container. They are displayed in a row because the property [`flex-direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction){:target="_blank"} of the parent element has an initial value of `row`. They all appear to stretch in height because the property [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items){:target="_blank"} of their parent element has an initial value of `stretch`. This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item. The items all line up at the start of the container, leaving any extra space at the end of the row.
 
 ```css hidden
 * {
@@ -127,7 +127,7 @@ However, if we add `display: flex` to the parent, the three items now arrange th
 
 In addition to properties that can be applied to a _flex container_, there are also properties that can be applied to _flex items_. These properties, among other things, can change the way that items _flex_, enabling them to expand or contract according to available space.
 
-As a simple example, we can add the {{cssxref("flex")}} property to all of our child items, and give it a value of `1`. This will cause all of the items to grow and fill the container, rather than leaving space at the end. If there is more space then the items will become wider; if there is less space they will become narrower. In addition, if you add another element to the markup, the other items will all become smaller to make space for it; the items all together continue taking up all the space.
+As a simple example, we can add the [`flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex){:target="_blank"} property to all of our child items, and give it a value of `1`. This will cause all of the items to grow and fill the container, rather than leaving space at the end. If there is more space then the items will become wider; if there is less space they will become narrower. In addition, if you add another element to the markup, the other items will all become smaller to make space for it; the items all together continue taking up all the space.
 
 ```css hidden
 * {
@@ -160,7 +160,7 @@ As a simple example, we can add the {{cssxref("flex")}} property to all of our c
 
 {{ EmbedLiveSample('Setting_the_flex_property', '300', '200') }}
 
-> **Note:** This has been a very short introduction to what is possible in Flexbox. To find out more, see our [Flexbox](/en-US/docs/Learn/CSS/CSS_layout/Flexbox) article.
+> **Note:** This has been a very short introduction to what is possible in Flexbox. To find out more, see our [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"} article.
 
 ## Grid Layout
 
@@ -168,7 +168,7 @@ While flexbox is designed for one-dimensional layout, Grid Layout is designed fo
 
 ### Setting display: grid
 
-Similar to flexbox, we enable Grid Layout with its specific display value — `display: grid`. The below example uses similar markup to the flex example, with a container and some child elements. In addition to using `display: grid`, we also define some row and column _tracks_ for the parent using the {{cssxref("grid-template-rows")}} and {{cssxref("grid-template-columns")}} properties respectively. We've defined three columns, each of `1fr`, as well as two rows of `100px`. We don't need to put any rules on the child elements; they're automatically placed into the cells our grid's created.
+Similar to flexbox, we enable Grid Layout with its specific display value — `display: grid`. The below example uses similar markup to the flex example, with a container and some child elements. In addition to using `display: grid`, we also define some row and column _tracks_ for the parent using the [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows){:target="_blank"} and [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns){:target="_blank"} properties respectively. We've defined three columns, each of `1fr`, as well as two rows of `100px`. We don't need to put any rules on the child elements; they're automatically placed into the cells our grid's created.
 
 ```css hidden
 * {
@@ -206,7 +206,7 @@ Similar to flexbox, we enable Grid Layout with its specific display value — `d
 
 ### Placing items on the grid
 
-Once you have a grid, you can explicitly place your items on it, rather than relying on the auto-placement behavior seen above. In the next example below, we've defined the same grid, but this time with three child items. We've set the start and end line of each item using the {{cssxref("grid-column")}} and {{cssxref("grid-row")}} properties. This causes the items to span multiple tracks.
+Once you have a grid, you can explicitly place your items on it, rather than relying on the auto-placement behavior seen above. In the next example below, we've defined the same grid, but this time with three child items. We've set the start and end line of each item using the [`grid-column`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column){:target="_blank"} and [`grid-row`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row){:target="_blank"} properties. This causes the items to span multiple tracks.
 
 ```css hidden
 * {
@@ -254,7 +254,7 @@ Once you have a grid, you can explicitly place your items on it, rather than rel
 
 {{ EmbedLiveSample('Placing_items_on_the_grid', '300', '330') }}
 
-> **Note:** These two examples reveal just a small sample of the power of Grid layout. To learn more, see our [Grid Layout](/en-US/docs/Learn/CSS/CSS_layout/Grids) article.
+> **Note:** These two examples reveal just a small sample of the power of Grid layout. To learn more, see our [Grid Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids){:target="_blank"} article.
 
 The rest of this guide covers other layout methods that are less important for the main layout of your page, but still help to achieve specific tasks. By understanding the nature of each layout task you will soon find that when you look at a particular component of your design, the type of layout most suitable for it will often be clear.
 
@@ -262,14 +262,14 @@ The rest of this guide covers other layout methods that are less important for t
 
 Floating an element changes the behavior of that element and the block level elements that follow it in normal flow. The floated element is moved to the left or right and removed from normal flow, and the surrounding content _floats_ around it.
 
-The {{cssxref("float")}} property has four possible values:
+The [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float){:target="_blank"} property has four possible values:
 
 - `left` — Floats the element to the left.
 - `right` — Floats the element to the right.
 - `none` — Specifies no floating at all. This is the default value.
 - `inherit` — Specifies that the value of the `float` property should be inherited from the element's parent element.
 
-In the example below, we float a `<div>` left and give it a {{cssxref("margin")}} on the right to push the surrounding text away from it. This gives us the effect of text wrapped around the boxed element, and is most of what you need to know about floats as used in modern web design.
+In the example below, we float a `<div>` left and give it a [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"} on the right to push the surrounding text away from it. This gives us the effect of text wrapped around the boxed element, and is most of what you need to know about floats as used in modern web design.
 
 ```css hidden
 body {
@@ -320,13 +320,13 @@ p {
 
 {{ EmbedLiveSample('Floats', '100%', 600) }}
 
-> **Note:** Floats are fully explained in our lesson on the [float and clear](/en-US/docs/Learn/CSS/CSS_layout/Floats) properties. Prior to techniques such as Flexbox and Grid Layout, floats were used as a method of creating column layouts. You may still come across these methods on the web; we will cover these in the lesson on [legacy layout methods](/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods).
+> **Note:** Floats are fully explained in our lesson on the [float and clear](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats){:target="_blank"} properties. Prior to techniques such as Flexbox and Grid Layout, floats were used as a method of creating column layouts. You may still come across these methods on the web; we will cover these in the lesson on [legacy layout methods](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods){:target="_blank"}.
 
 ## Positioning techniques
 
 Positioning allows you to move an element from where it would otherwise be placed in normal flow over to another location. Positioning isn't a method for creating the main layouts of a page; it's more about managing and fine-tuning the position of specific items on a page.
 
-There are, however, useful techniques for obtaining specific layout patterns that rely on the {{cssxref("position")}} property. Understanding positioning also helps in understanding normal flow, and what it means to move an item out of the normal flow.
+There are, however, useful techniques for obtaining specific layout patterns that rely on the [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position){:target="_blank"} property. Understanding positioning also helps in understanding normal flow, and what it means to move an item out of the normal flow.
 
 There are five types of positioning you should know about:
 
@@ -388,7 +388,7 @@ Relative positioning allows you to offset an item from its default position in n
 }
 ```
 
-Here we give our middle paragraph a {{cssxref("position")}} value of `relative`. This doesn't do anything on its own, so we also add {{cssxref("top")}} and {{cssxref("left")}} properties. These serve to move the affected element down and to the right. This might seem like the opposite of what you were expecting, but you need to think of it as the element being pushed on its left and top sides, which results in it moving right and down.
+Here we give our middle paragraph a [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position){:target="_blank"} value of `relative`. This doesn't do anything on its own, so we also add [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top){:target="_blank"} and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left){:target="_blank"} properties. These serve to move the affected element down and to the right. This might seem like the opposite of what you were expecting, but you need to think of it as the element being pushed on its left and top sides, which results in it moving right and down.
 
 Adding this code will give the following result:
 
@@ -441,7 +441,7 @@ Going back to our original non-positioned example, we could add the following CS
 }
 ```
 
-Here we give our middle paragraph a {{cssxref("position")}} value of `absolute` and the same {{cssxref("top")}} and {{cssxref("left")}} properties as before. Adding this code will produce the following result:
+Here we give our middle paragraph a [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position){:target="_blank"} value of `absolute` and the same [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top){:target="_blank"} and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left){:target="_blank"} properties as before. Adding this code will produce the following result:
 
 ```html hidden
 <h1>Absolute positioning</h1>
@@ -475,7 +475,7 @@ p {
 
 {{ EmbedLiveSample('Absolute_positioning', '100%', 300) }}
 
-This is very different! The positioned element has now been completely separated from the rest of the page layout and sits over the top of it. The other two paragraphs now sit together as if their positioned sibling doesn't exist. The {{cssxref("top")}} and {{cssxref("left")}} properties have a different effect on absolutely positioned elements than they do on relatively positioned elements. In this case, the offsets have been calculated from the top and left of the page. It is possible to change the parent element that becomes this container and we will take a look at that in the lesson on [positioning](/en-US/docs/Learn/CSS/CSS_layout/Positioning).
+This is very different! The positioned element has now been completely separated from the rest of the page layout and sits over the top of it. The other two paragraphs now sit together as if their positioned sibling doesn't exist. The [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top){:target="_blank"} and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left){:target="_blank"} properties have a different effect on absolutely positioned elements than they do on relatively positioned elements. In this case, the offsets have been calculated from the top and left of the page. It is possible to change the parent element that becomes this container and we will take a look at that in the lesson on [positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}.
 
 ### Fixed positioning
 
@@ -603,7 +603,7 @@ body {
 
 {{ EmbedLiveSample('Sticky_positioning', '100%', 200) }}
 
-> **Note:** To find out more about positioning, see our [Positioning](/en-US/docs/Learn/CSS/CSS_layout/Positioning) article.
+> **Note:** To find out more about positioning, see our [Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"} article.
 
 ## Table layout
 
@@ -613,7 +613,7 @@ The way that a table looks on a webpage when you use table markup is due to a se
 
 The example below shows one such use. It must be noted, that using CSS tables for layout should be considered a legacy method at this point, and should only be used to support old browsers that lack support for Flexbox or Grid.
 
-Let's look at an example. First, some simple markup that creates an HTML form. Each input element has a label, and we've also included a caption inside a paragraph. Each label/input pair is wrapped in a {{htmlelement("div")}} for layout purposes.
+Let's look at an example. First, some simple markup that creates an HTML form. Each input element has a label, and we've also included a caption inside a paragraph. Each label/input pair is wrapped in a [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"} for layout purposes.
 
 ```html
 <form>
@@ -633,9 +633,9 @@ Let's look at an example. First, some simple markup that creates an HTML form. E
 </form>
 ```
 
-As for the CSS, most of it's fairly ordinary except for the uses of the {{cssxref("display")}} property. The {{htmlelement("form")}}, {{htmlelement("div")}}s, and {{htmlelement("label")}}s and {{htmlelement("input")}}s have been told to display like a table, table rows, and table cells respectively. Basically, they'll act like HTML table markup, causing the labels and inputs to line up nicely by default. All we then have to do is add a bit of sizing, margin, etc., to make everything look a bit nicer and we're done.
+As for the CSS, most of it's fairly ordinary except for the uses of the [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"} property. The [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form){:target="_blank"}, [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"}s, and [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label){:target="_blank"}s and [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input){:target="_blank"}s have been told to display like a table, table rows, and table cells respectively. Basically, they'll act like HTML table markup, causing the labels and inputs to line up nicely by default. All we then have to do is add a bit of sizing, margin, etc., to make everything look a bit nicer and we're done.
 
-You'll notice that the caption paragraph has been given `display: table-caption;`, which makes it act like a table {{htmlelement("caption")}}, and `caption-side: bottom;` to tell the caption to sit on the bottom of the table for styling purposes, even though the markup is before the `<input>` elements in the source. This allows for a nice bit of flexibility.
+You'll notice that the caption paragraph has been given `display: table-caption;`, which makes it act like a table [`<caption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption){:target="_blank"}, and `caption-side: bottom;` to tell the caption to sit on the bottom of the table for styling purposes, even though the markup is before the `<input>` elements in the source. This allows for a nice bit of flexibility.
 
 ```css
 html {
@@ -680,7 +680,7 @@ This gives us the following result:
 
 {{ EmbedLiveSample('Table_layout', '100%', '200') }}
 
-You can also see this example live at [css-tables-example.html](https://mdn.github.io/learning-area/css/styling-boxes/box-model-recap/css-tables-example.html) (see the [source code](https://github.com/mdn/learning-area/blob/main/css/styling-boxes/box-model-recap/css-tables-example.html) too.)
+You can also see this example live at [css-tables-example.html](https://mdn.github.io/learning-area/css/styling-boxes/box-model-recap/css-tables-example.html){:target="_blank"} (see the [source code](https://github.com/mdn/learning-area/blob/main/css/styling-boxes/box-model-recap/css-tables-example.html){:target="_blank"} too.)
 
 > **Note:** Table layout, unlike the other topics of this page, won't be further covered in this module due to its legacy application.
 
@@ -688,7 +688,7 @@ You can also see this example live at [css-tables-example.html](https://mdn.gith
 
 The multi-column layout CSS module provides us a way to lay out content in columns, similar to how text flows in a newspaper. While reading up and down columns is less useful in a web context due to the users having to scroll up and down, arranging content into columns can, nevertheless, be a useful technique.
 
-To turn a block into a multi-column container, we use either the {{cssxref("column-count")}} property, which tells the browser _how many_ columns we would like to have, or the {{cssxref("column-width")}} property, which tells the browser to fill the container with as many columns as possible of a _specified width_.
+To turn a block into a multi-column container, we use either the [`column-count`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-count){:target="_blank"} property, which tells the browser _how many_ columns we would like to have, or the [`column-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-width){:target="_blank"} property, which tells the browser to fill the container with as many columns as possible of a _specified width_.
 
 In the below example, we start with a block of HTML inside a containing `<div>` element with a class of `container`.
 
@@ -740,4 +740,3 @@ body {
 
 This article has provided a brief summary of all the layout technologies you should know about. Read on for more information on each individual technology!
 
-{{NextMenu("Learn/CSS/CSS_layout/Normal_Flow", "Learn/CSS/CSS_layout")}}
