@@ -4327,6 +4327,70 @@
           "review": "Works on masters. Works on macOS. Requires basic understanding of UNIX file system. No example of working with a remote repo."
         }
       ]
+    },
+    "wdx180-live-sessions---html-css-flexbox-basics-for-beginners-quick-intro": {
+      "type": "YouTube",
+      "duration": 4942,
+      "title": "WDX180 Live Sessions - HTML, CSS & Flexbox basics for beginners (Quick intro)",
+      "date": "01/11/2024",
+      "youtube": {
+        "id": "jfJLL4FeBpE",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/jfJLL4FeBpE/sddefault.jpg"
+      },
+      "tags": [
+        "WDX",
+        "WDX180",
+        "intechgration",
+        "web development",
+        "beginner",
+        "coding",
+        "learning",
+        "learn",
+        "web dev",
+        "developer",
+        "programming",
+        "frontend",
+        "deploy",
+        "free",
+        "how to",
+        "code",
+        "coder",
+        "HTML",
+        "server",
+        "web server",
+        "Internet",
+        "web",
+        "course",
+        "repo",
+        "website",
+        "newbie",
+        "html",
+        "html5",
+        "css",
+        "css3",
+        "basics",
+        "fundamentals",
+        "flexbox",
+        "justify-content",
+        "align-items",
+        "flex",
+        "box model",
+        "box",
+        "box-sizing",
+        "border-box",
+        "block elements",
+        "inline elements",
+        "block vs inline",
+        "line height",
+        "inline browser",
+        "vscode",
+        "relative units"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
