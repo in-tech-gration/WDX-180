@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: gray;
+      }
+      table {
+        table-layout: fixed;
+        width: 90%;
+        border-collapse: collapse;
+      }
+      tr th {
+        background-color: rgba(0, 85, 255, 0.8);
+        color: white;
+        text-align: left;
+        padding: 0.6em;
+      }
+      td {
+		border-bottom: 1px solid rgba(0, 85, 255, 0.8);
+        padding: 0.6em;
+		vertical-align: middle;
+      }
+	  tr :nth-child(2) {
+		width: 35%;
+	  }
+      tr th:nth-child(even) {
+        background-color: rgba(0, 85, 255, 1);
+      }
+	  tr td:nth-child(1), td:nth-child(4) {
+		border-right: 1px solid rgba(0, 85, 255, 1);
+	  }
+	  tr td:nth-child(1) {
+		border-left: 1px solid rgba(0, 85, 255, 1);
+	  }
+	  tr th:nth-child(3) {
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+	  }
+    </style>
+  </head>
+  <body>
+    <h1>Course details for Azure Fundamentals</h1>
+    <p>1 Introductory-led training course</p>
+    <table>
+      <tr>
+        <th scope="col">Exam titles</th>
+        <th scope="col">Course title / training titles</th>
+        <th scope="col">Course ID</th>
+        <th scope="col">Course Duration</th>
+      </tr>
+      <tr>
+        <td>
+          <p>Microsoft Azure Fundamentals</p>
+          <a href="www.google.com">EXAM AZ-900</a>
+        </td>
+        <td>Microsoft Azure Fundamentals</td>
+        <td>AZ-900T01</td>
+        <td>1 Day</td>
+      </tr>
+    </table>
+  </body>
+</html>

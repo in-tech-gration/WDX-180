@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table {
+			table-layout: fixed;
+			width: 60%;
+			border-collapse: collapse;
+		}
+		caption {
+			font-weight: bold;
+			margin-bottom: 0.5em;
+		}
+		thead {
+			border-top: 3px solid black;
+			border-bottom: 3px solid black;
+		}
+		tbody {
+			border-bottom: 3px solid black;
+		}
+		th, td {
+			text-align: left;
+		}
+		th[scope="col"], th[scope="row"] {
+			background-color: rgb(61, 184, 174);
+			color: white;
+		}
+		tbody tr:nth-child(odd) {
+			background-color: lightgray;
+		}
+		span {
+			color : rgb(152, 2, 2);
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>
+			Definite Articles in the Nominative and Dative Cases
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col"></th>
+				<th scope="col">masculine</th>
+				<th scope="col">feminine</th>
+				<th scope="col">neuter</th>
+				<th scope="col">plural</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">nominative</th>
+				<td>der Mann</td>
+				<td>die Frau</td>
+				<td>das Kind</td>
+				<td>die Kinder</td>
+			</tr>
+			<tr>
+				<th scope="row">dative</th>
+				<td>dem Mann</td>
+				<td>der Frau</td>
+				<td>dem Kind</td>
+				<td>den Kinder<span>n</span></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
