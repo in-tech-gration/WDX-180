@@ -4391,6 +4391,54 @@
       "language": [
         "en"
       ]
+    },
+    "wdx180---live-sessions-introduction-to-css-grid": {
+      "type": "YouTube",
+      "duration": 7866,
+      "title": "WDX180 - Live Sessions: Introduction to CSS Grid",
+      "date": "08/06/2025",
+      "youtube": {
+        "id": "9164u4MbdHo",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/9164u4MbdHo/sddefault.jpg"
+      },
+      "tags": [
+        "css",
+        "css grid",
+        "grid",
+        "layout",
+        "ui",
+        "user interface",
+        "frontend",
+        "learning",
+        "intro",
+        "introduction",
+        "coding",
+        "Kostas Minaidis",
+        "WDX180",
+        "WDX",
+        "Web Development X",
+        "web dev",
+        "developer",
+        "learn",
+        "code",
+        "coder",
+        "programmer",
+        "grid-template-columns",
+        "grid-template-rows",
+        "grid-auto-rows",
+        "CSS GRID",
+        "CSS Grid",
+        "HTML",
+        "CSS",
+        "UI",
+        "software",
+        "development"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}
