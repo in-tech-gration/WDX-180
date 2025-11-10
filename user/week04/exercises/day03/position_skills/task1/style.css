@@ -1,0 +1,33 @@
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0.5em;
+  border: 5px solid #cccccc;
+  position: relative;
+}
+
+.target {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #663398;
+  padding: 1em;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  /* Add styles here */
+}
+
+.target {
+  /* Add styles here */
+}
