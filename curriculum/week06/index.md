@@ -28,11 +28,11 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 25/2/2025</span>
+  <span>Updated: 10/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 06 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -201,16 +201,21 @@ load_script_js_via_src:
 
 ### Exercises
 
-  - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
+  - Complete the **How to Make a Website with Tailwind CSS** challenge and update the progress sheet.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d02.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
 
-  - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"}
+  <!-- Web server is down -->
+
+
+  <!-- - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"} -->
+
+
 
   - [Read: **10 Reasons To Use TailwindCSS In Your Next Project**](https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project){:target="_blank"}
 
@@ -352,7 +357,7 @@ load_script_js_via_src:
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d03.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
@@ -844,9 +849,9 @@ load_script_js_via_src:
 
   **Explore Study Lenses**
 
-  Continue your exploration of the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
+  Continue your exploration of the `study-lenses` tool. Follow the [instructions here](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/) to set up Study Lenses (v2) on your System (if you haven't done that already).
 
-  Then run the following commands on your local copy of the `WDX-180` repo:
+  Then the following commands on your local copy of the `WDX-180` repo:
 
   - `lenses2 curriculum/week06/exercises/exploring-study-lenses`
 
@@ -904,7 +909,7 @@ load_script_js_via_src:
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d04.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
