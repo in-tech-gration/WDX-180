@@ -1,0 +1,125 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: "Georgia", "Times New Roman", "serif";
+	font-size: 20px;
+	letter-spacing: 0.02em;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+  line-height: 1.6;
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* header and footer */
+
+header {
+  border-bottom: 5px solid #aa6666;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 0em;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+a {
+  color: #aa6666;
+}
+
+a:visited {
+  color: #121f81;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #dd8888;
+  text-decoration: none;
+}
+
+a[href^="http"]::after {
+	content: "";
+	display: inline-block;
+	height: 0.6em;
+	width: 0.6em;
+	margin-left: 0.2em;
+
+	background-size: 100%;
+	background-image: url(image.png);
+
+}
+
+li {
+	line-height: 1.6;
+	margin-bottom: 0em;
+	list-style-type: square;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+}
+
+nav li {
+	margin-bottom: 1em;
+	padding: 0;
+	list-style-type: none;
+	font-family: "Roboto Slab", serif;
+	font-weight: 1000;
+	text-transform: uppercase;
+	border: #aa6666 2px solid;
+	text-align: center;
+
+}
+
+nav a {
+	flex: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+	text-decoration: none;
+	outline-color: transparent;
+	text-align: center;
+	line-height: 3;
+}
+
+nav a:hover {
+  background-color: #aa6666;
+  color: white;
+}
