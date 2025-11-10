@@ -164,11 +164,11 @@ load_script_js_via_src:
 
 <hr class="mt-1">
 
-<!-- Week 06 - Day 2 | Make A Website With Tailwind CSS -->
+<!-- Week 06 - Day 2 | How to Make A Website With Tailwind CSS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 06 - Day 2</span> | Make A Website With Tailwind CSS</h2>
+      <span class="summary-day">Week 06 - Day 2</span> | How to Make A Website With Tailwind CSS</h2>
   </summary>
 
 ### Schedule
