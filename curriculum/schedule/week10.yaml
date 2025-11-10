@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Web APIs 1: DOM"
 header_image: week10/assets/iewek-gnos-hhUx08PuYpc-unsplash.jpg
+version: 2.0
 schedule: 
   days:
     1: # Introduction to the DOM API

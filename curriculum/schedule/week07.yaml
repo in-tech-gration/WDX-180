@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 1
 header_image: week07/assets/header--andrew-neel-cckf4TsHAuw-unsplash.jpg
+version: 2.0
 schedule: 
 
   days:
