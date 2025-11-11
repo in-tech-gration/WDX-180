@@ -1,0 +1,8 @@
+{
+	"exercise_path": "user/week04/exercises/day04/quick-CSS-refresher",
+	"responses": {
+		"Question 2: What is this CSS property doing: display: none;?": "C) Makes an element not display any images",
+		"Question 1: What is this CSS property doing: color: rgba( 255, 255, 255, 0.5 )?": "C) Apply a fully transparent red border to an element",
+		"Question 3: What is this CSS property doing: border: 1rem dotted rgb(255,0,0)?": "D) Apply a dotted red border to an element"
+	}
+}
