@@ -34,21 +34,14 @@
 
     <!-- add meta tag for translated version -->
     {% assign current_page = page.url | replace:'/','' | replace:'..','' %}
-    {% for hebrew_page in site.data.he_sitemap.contents %}
-      {% assign hebrew_page_source_url = hebrew_page.english_url | replace:'/','' | replace:'..','' %}
-      {% if current_page == hebrew_page_source_url %}
-    <link rel="alternate" hreflang="en" href="{{ page.url }}">
-    <link rel="alternate" hreflang="he" href="/he/{{ hebrew_page.url  }}">
-      {% endif %}
-    {% endfor %}
 
   </head>
 
   <body>
     <div id="column">
       <div class="header">
-        <a href="/"><img class="logo" src="imgs/favicon-256.png"></a>
-        <a href="/"><div class="title">Select Star SQL</div></a>
+        <a href="index.html"><img class="logo" src="imgs/favicon-256.png"></a>
+        <a href="index.html"><div class="title">Select Star SQL</div></a>
       </div>
       <div class="content">
         {{content}}
