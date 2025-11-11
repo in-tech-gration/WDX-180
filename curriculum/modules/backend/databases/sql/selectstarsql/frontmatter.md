@@ -35,7 +35,7 @@ The raw data is available as a csv for <a href="data/tx_deathrow_full.csv">downl
 FROM executions
 LIMIT 3"></sql-exercise>
 
-On one level, the data is simply a part of a mundane programming book. On another, each row represents immense suffering, lives lost, and in some cases amazing redemption and acceptance. In preparing for this dataset, I was deeply moved by a number of the statements and found myself re-evaluating my position on capital punishment. I hope that as we examine the data, you too will contemplate the deeper issues at play.
+On one level, the data is simply a part of a mundane programming book. On another, each row represents immense suffering, lives lost, and in some cases amazing redemption and acceptance. <strong>In preparing for this dataset, I was deeply moved by a number of the statements and found myself re-evaluating my position on capital punishment. I hope that as we examine the data, you too will contemplate the deeper issues at play</strong>.
 
 <br>
 <a name="technicals"></a>
@@ -50,6 +50,6 @@ On one level, the data is simply a part of a mundane programming book. On anothe
 ## Credits and Contact
 For corrections and suggestions, please write me (Kao) at zichongkao@gmail.com. You can find out more about me at <a href="http://kaomorphism.com">Kaomorphism</a>.
 
-<a href="https://thepitz.io/">Noam Castel</a> and Jowan Vogel did an amazing job on the <a href="/he/">Hebrew</a> and <a href="/nl">Dutch</a> translations. Please reach out to them for kudos and suggestions, or if you are interested translating it into other languages.
+Since you are viewing an integrated version of `SelectStarSQL` into the [WDX-180 learning platform](https://in-tech-gration.github.io/WDX-180/), feel free to raise an issue over at our [Discussion](https://github.com/in-tech-gration/WDX-180/discussions) board.
 
 Much thanks to Sonja Lea Heinze, Quinn Batten, and <a href="https://nickretallack.com">Nicholas Retallack</a> for providing valuable feedback.
