@@ -1,11 +1,11 @@
 ---
-title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
+title: Week 11 | Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 11-Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
-  <span class="week-prefix">Week 11 |</span> Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
+<h1 id="{{ Week 11-Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
+  <span class="week-prefix">Week 11 |</span> Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API
 </h1>
 
 <img src="assets/pexels-roman-odintsov-12725452.jpg" />
@@ -25,11 +25,11 @@ title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch 
 
   </h2>
 
-  <span>Updated: 9/6/2025</span>
+  <span>Updated: 11/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 11 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
