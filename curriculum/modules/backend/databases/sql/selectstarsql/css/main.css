@@ -312,3 +312,11 @@ sql-exercise .sqlExInputArea input {
     border: thin solid black;
     border-radius: 4px;
 }
+
+sql-exercise input.sql-exercise-submit {
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+sql-exercise input.sql-exercise-submit:hover {
+  box-shadow: 0 2px 6px #00000066;
+}
