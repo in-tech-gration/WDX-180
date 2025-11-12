@@ -130,13 +130,13 @@ It is worthwhile to step back and think about the different ways the computer ha
 
 <sql-exercise
   data-question="Find the average length (based on character count) of last statements in the dataset."
-  data-comment='This exercise illustrates that you can compose functions. Look up the <a href="http://sqlite.org/lang_corefunc.html">documentation</a> to figure out which function which returns the number of characters in a string.'
+  data-comment='This exercise illustrates that you can compose functions. Look up the <a target="_blank" href="http://sqlite.org/lang_corefunc.html">documentation</a> to figure out which function which returns the number of characters in a string.'
   data-default-text=""
   data-solution='SELECT AVG(LENGTH(last_statement)) FROM executions'></sql-exercise>
 
 <sql-exercise
   data-question="List all the counties in the dataset without duplication."
-  data-comment="We can get unique entries by using <code>SELECT DISTINCT</code>. See <a href='https://www.w3schools.com/sql/sql_distinct.asp'>documentation.</a>"
+  data-comment="We can get unique entries by using <code>SELECT DISTINCT</code>. See <a target='_blank' href='https://www.w3schools.com/sql/sql_distinct.asp'>documentation.</a>"
   data-default-text=""
   data-solution='SELECT DISTINCT county FROM executions'></sql-exercise>
 
