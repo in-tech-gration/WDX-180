@@ -191,10 +191,10 @@ Is it surprising that Harris (home to the city of Houston), Dallas, Bexar and Ta
 But breaking this tail down further, we realize that Harris county accounts for most of the delta. It only has 16.4% of the population, but 23.1% of the executions. That's almost 50% more than it's supposed to have.
 
 Numerous studies have examined why Harris county has been so prolific and several factors have been suggested:
- - <p>Prosecutions have been <a href="https://web.archive.org/web/20191227235319/https://www.citylab.com/equity/2014/09/one-texas-county-is-responsible-for-most-of-the-executions-in-the-entire-us/380705/">organized and well-financed</a>, while defenses have been court-financed and poorly-incentivized. <a href="https://houstonlawreview.org/article/3874.pdf">(Source, see p49)</a>
- - <p>The long-time district attorney was <a href="https://www.chron.com/news/houston-texas/article/Former-DA-ran-powerful-death-penalty-machine-1833545.php">determined and enthusiastic about the death penalty</a>.
- - <p>Judges in Texas are elected, and the population has supported the death penalty. <a href="https://priceonomics.com/why-has-texas-executed-so-many-inmates/">(Source)</a>
- - <p>Checks and balances in the Harris county judicial system have not worked. <a href="https://houstonlawreview.org/article/3874-the-problem-of-rubber-stamping-in-state-capital-habeas-proceedings-a-harris-county-case-study">(Source, see p929)</a></p>
+ - <p>Prosecutions have been <a target="_blank" href="https://web.archive.org/web/20191227235319/https://www.citylab.com/equity/2014/09/one-texas-county-is-responsible-for-most-of-the-executions-in-the-entire-us/380705/">organized and well-financed</a>, while defenses have been court-financed and poorly-incentivized. <a target="_blank" href="https://houstonlawreview.org/article/3874.pdf">(Source, see p49)</a>
+ - <p>The long-time district attorney was <a target="_blank" href="https://www.chron.com/news/houston-texas/article/Former-DA-ran-powerful-death-penalty-machine-1833545.php">determined and enthusiastic about the death penalty</a>.
+ - <p>Judges in Texas are elected, and the population has supported the death penalty. <a target="_blank" href="https://priceonomics.com/why-has-texas-executed-so-many-inmates/">(Source)</a>
+ - <p>Checks and balances in the Harris county judicial system have not worked. <a target="_blank" href="https://houstonlawreview.org/article/3874-the-problem-of-rubber-stamping-in-state-capital-habeas-proceedings-a-harris-county-case-study">(Source, see p929)</a></p>
 
 <br>
 <a name="recap"></a>
@@ -204,7 +204,7 @@ In this section, we've learned to aggregate over groups and to use nesting to us
 <a name="mapreduce"></a>
 <div class="sideNote">
   <h3>MapReduce</h3>
-  <p>An interesting addendum is that we've actually just learned to do MapReduce in SQL. MapReduce is a famous programming paradigm which views computations as occurring in a "map" and "reduce" step. You can learn more about MapReduce <a href="https://stackoverflow.com/questions/28982/simple-explanation-of-mapreduce">here</a>.</p>
+  <p>An interesting addendum is that we've actually just learned to do MapReduce in SQL. MapReduce is a famous programming paradigm which views computations as occurring in a "map" and "reduce" step. You can learn more about MapReduce <a target="_blank" href="https://stackoverflow.com/questions/28982/simple-explanation-of-mapreduce">here</a>.</p>
   <p>The <a href="beazley.html">Beazley</a> chapter was all about mapping because it showed us how to map various operations out to all the rows. For example, <code>SELECT LENGTH(last_statement) FROM executions</code> maps the length function out to all the rows. This chapter showed us how to reduce various groups of data using aggregation functions; and the previous <a href="innocence.html">Claims of Innocence</a> chapter was just a special case in which the entire table is one group.</p>
 </div>
 
