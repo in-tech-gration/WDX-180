@@ -589,7 +589,7 @@ load_script_js_via_src:
   so interesting.
 
   - [simplilearn](https://www.youtube.com/watch?v=6ENWOVc-64c){:target="_blank"}
-  - [wierd history of js](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb){:target="_blank"}
+  - [weird history of js](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb){:target="_blank"}
   - [from Brendan Eich himself](https://www.youtube.com/watch?v=3-9fnjzmXWA){:target="_blank"}
   - [springboard](https://www.springboard.com/blog/data-science/history-of-javascript/){:target="_blank"}
 
