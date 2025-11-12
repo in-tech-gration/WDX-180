@@ -3,6 +3,9 @@ title: Introduction to CSS layout
 slug: Learn/CSS/CSS_layout/Introduction
 page-type: learn-module-chapter
 source: https://github.com/in-tech-gration/content/blob/main/files/en-us/learn/css/css_layout/introduction/index.md
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 This article will recap some CSS layout features such as different `display` values, as well as introduce some new concepts.
@@ -46,6 +49,10 @@ Each technique has its uses, advantages, and disadvantages. No technique is desi
 
 Normal flow is how the browser lays out HTML pages by default when you do nothing to control page layout. Let's look at a quick HTML example:
 
+```css
+html { color-scheme: dark; }
+```
+
 ```html
 <p>I love my cat.</p>
 
@@ -58,9 +65,13 @@ Normal flow is how the browser lays out HTML pages by default when you do nothin
 <p>The end!</p>
 ```
 
-By default, the browser will display this code as follows:
+Click the `Click for preview` button below to see how the browser will display this code by default:
 
-{{ EmbedLiveSample('Normal_flow', '100%', 200) }}
+[&#9658; Click for preview](#flems-enable) 
+
+<!-- By default, the browser will display this code as follows: -->
+
+<!-- {{ EmbedLiveSample('Normal_flow', '100%', 200) }} -->
 
 Note how the HTML is displayed in the exact order in which it appears in the source code, with elements stacked on top of one another — the first paragraph, followed by the unordered list, followed by the second paragraph.
 
@@ -96,20 +107,18 @@ The HTML markup below gives us a containing element with a class of `wrapper`, i
 
 However, if we add `display: flex` to the parent, the three items now arrange themselves into columns. This is due to them becoming _flex items_ and being affected by some initial values that flexbox sets on the flex container. They are displayed in a row because the property [`flex-direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction){:target="_blank"} of the parent element has an initial value of `row`. They all appear to stretch in height because the property [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items){:target="_blank"} of their parent element has an initial value of `stretch`. This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item. The items all line up at the start of the container, leaving any extra space at the end of the row.
 
-```css hidden
+```css
+.wrapper {
+  display: flex;
+}
+/* Styling CSS: */
+html { color-scheme: dark; }
 * {
   box-sizing: border-box;
 }
 .wrapper > div {
-  border-radius: 5px;
-  background-color: rgb(207, 232, 220);
+  border: 2px solid white;
   padding: 1em;
-}
-```
-
-```css
-.wrapper {
-  display: flex;
 }
 ```
 
@@ -121,24 +130,15 @@ However, if we add `display: flex` to the parent, the three items now arrange th
 </div>
 ```
 
-{{ EmbedLiveSample('Setting_display_flex', '300', '200') }}
+[&#9658; Click for preview](#flems-enable) 
+
+<!-- {{ EmbedLiveSample('Setting_display_flex', '300', '200') }} -->
 
 ### Setting the flex property
 
 In addition to properties that can be applied to a _flex container_, there are also properties that can be applied to _flex items_. These properties, among other things, can change the way that items _flex_, enabling them to expand or contract according to available space.
 
 As a simple example, we can add the [`flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex){:target="_blank"} property to all of our child items, and give it a value of `1`. This will cause all of the items to grow and fill the container, rather than leaving space at the end. If there is more space then the items will become wider; if there is less space they will become narrower. In addition, if you add another element to the markup, the other items will all become smaller to make space for it; the items all together continue taking up all the space.
-
-```css hidden
-* {
-  box-sizing: border-box;
-}
-.wrapper > div {
-  border-radius: 5px;
-  background-color: rgb(207, 232, 220);
-  padding: 1em;
-}
-```
 
 ```css
 .wrapper {
@@ -148,6 +148,15 @@ As a simple example, we can add the [`flex`](https://developer.mozilla.org/en-US
 .wrapper > div {
   flex: 1;
 }
+/* Styling CSS: */
+html { color-scheme: dark; }
+* {
+  box-sizing: border-box;
+}
+.wrapper > div {
+  border: 2px solid white;
+  padding: 1em;
+}
 ```
 
 ```html
@@ -158,7 +167,9 @@ As a simple example, we can add the [`flex`](https://developer.mozilla.org/en-US
 </div>
 ```
 
-{{ EmbedLiveSample('Setting_the_flex_property', '300', '200') }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Setting_the_flex_property', '300', '200') }} -->
 
 > **Note:** This has been a very short introduction to what is possible in Flexbox. To find out more, see our [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox){:target="_blank"} article.
 
@@ -170,24 +181,21 @@ While flexbox is designed for one-dimensional layout, Grid Layout is designed fo
 
 Similar to flexbox, we enable Grid Layout with its specific display value — `display: grid`. The below example uses similar markup to the flex example, with a container and some child elements. In addition to using `display: grid`, we also define some row and column _tracks_ for the parent using the [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows){:target="_blank"} and [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns){:target="_blank"} properties respectively. We've defined three columns, each of `1fr`, as well as two rows of `100px`. We don't need to put any rules on the child elements; they're automatically placed into the cells our grid's created.
 
-```css hidden
-* {
-  box-sizing: border-box;
-}
-
-.wrapper > div {
-  border-radius: 5px;
-  background-color: rgb(207, 232, 220);
-  padding: 1em;
-}
-```
-
 ```css
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
   gap: 10px;
+}
+/* Styling CSS: */
+html { color-scheme: dark; }
+* {
+  box-sizing: border-box;
+}
+.wrapper > div {
+  border: 2px solid white;
+  padding: 1em;
 }
 ```
 
@@ -202,23 +210,13 @@ Similar to flexbox, we enable Grid Layout with its specific display value — `d
 </div>
 ```
 
-{{ EmbedLiveSample('Setting_display_grid', '300', '330') }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Setting_display_grid', '300', '330') }} -->
 
 ### Placing items on the grid
 
 Once you have a grid, you can explicitly place your items on it, rather than relying on the auto-placement behavior seen above. In the next example below, we've defined the same grid, but this time with three child items. We've set the start and end line of each item using the [`grid-column`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column){:target="_blank"} and [`grid-row`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row){:target="_blank"} properties. This causes the items to span multiple tracks.
-
-```css hidden
-* {
-  box-sizing: border-box;
-}
-
-.wrapper > div {
-  border-radius: 5px;
-  background-color: rgb(207, 232, 220);
-  padding: 1em;
-}
-```
 
 ```css
 .wrapper {
@@ -242,6 +240,15 @@ Once you have a grid, you can explicitly place your items on it, rather than rel
   grid-row: 2;
   grid-column: 3;
 }
+/* Styling CSS: */
+html { color-scheme: dark; }
+* {
+  box-sizing: border-box;
+}
+.wrapper > div {
+  border: 2px solid white;
+  padding: 1em;
+}
 ```
 
 ```html
@@ -252,7 +259,9 @@ Once you have a grid, you can explicitly place your items on it, rather than rel
 </div>
 ```
 
-{{ EmbedLiveSample('Placing_items_on_the_grid', '300', '330') }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Placing_items_on_the_grid', '300', '330') }} -->
 
 > **Note:** These two examples reveal just a small sample of the power of Grid layout. To learn more, see our [Grid Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids){:target="_blank"} article.
 
@@ -270,26 +279,6 @@ The [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float){:target="_
 - `inherit` — Specifies that the value of the `float` property should be inherited from the element's parent element.
 
 In the example below, we float a `<div>` left and give it a [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin){:target="_blank"} on the right to push the surrounding text away from it. This gives us the effect of text wrapped around the boxed element, and is most of what you need to know about floats as used in modern web design.
-
-```css hidden
-body {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-p {
-  line-height: 2;
-  word-spacing: 0.1rem;
-}
-
-.box {
-  background-color: rgb(207, 232, 220);
-  border: 2px solid rgb(79, 185, 227);
-  padding: 10px;
-  border-radius: 5px;
-}
-```
 
 ```html
 <h1>Simple float example</h1>
@@ -316,9 +305,29 @@ p {
   height: 150px;
   margin-right: 30px;
 }
+/* CSS Styling: */
+html { color-scheme: dark; }
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 2;
+  word-spacing: 0.1rem;
+}
+
+.box {
+  background-color: indigo;
+  padding: 10px;
+  border-radius: 5px;
+}
 ```
 
-{{ EmbedLiveSample('Floats', '100%', 600) }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Floats', '100%', 600) }} -->
 
 > **Note:** Floats are fully explained in our lesson on the [float and clear](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats){:target="_blank"} properties. Prior to techniques such as Flexbox and Grid Layout, floats were used as a method of creating column layouts. You may still come across these methods on the web; we will cover these in the lesson on [legacy layout methods](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods){:target="_blank"}.
 
@@ -363,18 +372,17 @@ p {
   margin: 10px;
   border-radius: 5px;
 }
-```
-
-```css hidden
+/* CSS Styling: */
 .positioned {
-  background: rgba(255, 84, 104, 0.3);
-  border: 2px solid rgb(255, 84, 104);
+  background: limegreen;
 }
 ```
 
-The rendered output is as follows:
+[&#9658; Click for preview](#flems-enable)
 
-{{ EmbedLiveSample('Simple_positioning_example', '100%', 300) }}
+<!-- The rendered output is as follows: -->
+
+<!-- {{ EmbedLiveSample('Simple_positioning_example', '100%', 300) }} -->
 
 ### Relative positioning
 
@@ -392,7 +400,7 @@ Here we give our middle paragraph a [`position`](https://developer.mozilla.org/e
 
 Adding this code will give the following result:
 
-```html hidden
+```html
 <h1>Relative positioning</h1>
 
 <p>I am a basic block level element.</p>
@@ -400,7 +408,7 @@ Adding this code will give the following result:
 <p>I am a basic block level element.</p>
 ```
 
-```css hidden
+```css 
 body {
   width: 500px;
   margin: 0 auto;
@@ -413,19 +421,17 @@ p {
   margin: 10px;
   border-radius: 5px;
 }
-```
-
-```css hidden
 .positioned {
   position: relative;
-  background: rgba(255, 84, 104, 0.3);
-  border: 2px solid rgb(255, 84, 104);
+  background: limegreen;
   top: 30px;
   left: 30px;
 }
 ```
 
-{{ EmbedLiveSample('Relative_positioning', '100%', 300) }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Relative_positioning', '100%', 300) }} -->
 
 ### Absolute positioning
 
@@ -438,20 +444,8 @@ Going back to our original non-positioned example, we could add the following CS
   position: absolute;
   top: 30px;
   left: 30px;
+  background: limegreen;
 }
-```
-
-Here we give our middle paragraph a [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position){:target="_blank"} value of `absolute` and the same [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top){:target="_blank"} and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left){:target="_blank"} properties as before. Adding this code will produce the following result:
-
-```html hidden
-<h1>Absolute positioning</h1>
-
-<p>I am a basic block level element.</p>
-<p class="positioned">This is my absolutely positioned element.</p>
-<p>I am a basic block level element.</p>
-```
-
-```css hidden
 body {
   width: 500px;
   margin: 0 auto;
@@ -466,14 +460,19 @@ p {
 }
 ```
 
-```css hidden
-.positioned {
-  background: rgba(255, 84, 104, 0.3);
-  border: 2px solid rgb(255, 84, 104);
-}
+Here we give our middle paragraph a [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position){:target="_blank"} value of `absolute` and the same [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top){:target="_blank"} and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left){:target="_blank"} properties as before. Adding this code will produce the following result:
+
+```html
+<h1>Absolute positioning</h1>
+
+<p>I am a basic block level element.</p>
+<p class="positioned">This is my absolutely positioned element.</p>
+<p>I am a basic block level element.</p>
 ```
 
-{{ EmbedLiveSample('Absolute_positioning', '100%', 300) }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Absolute_positioning', '100%', 300) }} -->
 
 This is very different! The positioned element has now been completely separated from the rest of the page layout and sits over the top of it. The other two paragraphs now sit together as if their positioned sibling doesn't exist. The [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top){:target="_blank"} and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left){:target="_blank"} properties have a different effect on absolutely positioned elements than they do on relatively positioned elements. In this case, the offsets have been calculated from the top and left of the page. It is possible to change the parent element that becomes this container and we will take a look at that in the lesson on [positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}.
 
@@ -509,36 +508,32 @@ For this example, our HTML contains three paragraphs of text so that we can scro
 </p>
 ```
 
-```css hidden
-body {
-  width: 500px;
-  margin: 0 auto;
-}
-
-.positioned {
-  background: rgba(255, 84, 104, 0.3);
-  border: 2px solid rgb(255, 84, 104);
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
-```
-
 ```css
 .positioned {
   position: fixed;
   top: 30px;
   left: 30px;
+  background: indigo;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
 }
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+html { color-scheme: dark; }
 ```
 
-{{ EmbedLiveSample('Fixed_positioning', '100%', 200) }}
+[&#9658; Click for preview](#flems-enable)
+
+<!-- {{ EmbedLiveSample('Fixed_positioning', '100%', 200) }} -->
 
 ### Sticky positioning
 
 Sticky positioning is the final positioning method that we have at our disposal. It mixes relative positioning with fixed positioning. When an item has `position: sticky`, it'll scroll in normal flow until it hits offsets from the viewport that we have defined. At that point, it becomes "stuck" as if it had `position: fixed` applied.
 
-```html hidden
+```html
 <h1>Sticky positioning</h1>
 
 <p>
@@ -578,30 +573,29 @@ Sticky positioning is the final positioning method that we have at our disposal.
 </p>
 ```
 
-```css hidden
+```css
+html { color-scheme: dark; }
 body {
   width: 500px;
   margin: 0 auto;
+  height: 1500px;
 }
 
 .positioned {
-  background: rgba(255, 84, 104, 0.3);
-  border: 2px solid rgb(255, 84, 104);
+  position: sticky;
+  top: 30px;
+  left: 30px;
+
+  background: limegreen;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
 }
 ```
 
-```css
-.positioned {
-  position: sticky;
-  top: 30px;
-  left: 30px;
-}
-```
+[&#9658; Click for preview](#flems-enable)
 
-{{ EmbedLiveSample('Sticky_positioning', '100%', 200) }}
+<!-- {{ EmbedLiveSample('Sticky_positioning', '100%', 200) }} -->
 
 > **Note:** To find out more about positioning, see our [Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"} article.
 
@@ -633,13 +627,10 @@ Let's look at an example. First, some simple markup that creates an HTML form. E
 </form>
 ```
 
-As for the CSS, most of it's fairly ordinary except for the uses of the [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"} property. The [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form){:target="_blank"}, [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"}s, and [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label){:target="_blank"}s and [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input){:target="_blank"}s have been told to display like a table, table rows, and table cells respectively. Basically, they'll act like HTML table markup, causing the labels and inputs to line up nicely by default. All we then have to do is add a bit of sizing, margin, etc., to make everything look a bit nicer and we're done.
-
-You'll notice that the caption paragraph has been given `display: table-caption;`, which makes it act like a table [`<caption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption){:target="_blank"}, and `caption-side: bottom;` to tell the caption to sit on the bottom of the table for styling purposes, even though the markup is before the `<input>` elements in the source. This allows for a nice bit of flexibility.
-
 ```css
 html {
   font-family: sans-serif;
+  color-scheme: dark;
 }
 
 form {
@@ -678,7 +669,13 @@ form p {
 
 This gives us the following result:
 
-{{ EmbedLiveSample('Table_layout', '100%', '200') }}
+[&#9658; Click for preview](#flems-enable)
+
+As for the CSS, most of it's fairly ordinary except for the uses of the [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display){:target="_blank"} property. The [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form){:target="_blank"}, [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div){:target="_blank"}s, and [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label){:target="_blank"}s and [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input){:target="_blank"}s have been told to display like a table, table rows, and table cells respectively. Basically, they'll act like HTML table markup, causing the labels and inputs to line up nicely by default. All we then have to do is add a bit of sizing, margin, etc., to make everything look a bit nicer and we're done.
+
+You'll notice that the caption paragraph has been given `display: table-caption;`, which makes it act like a table [`<caption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption){:target="_blank"}, and `caption-side: bottom;` to tell the caption to sit on the bottom of the table for styling purposes, even though the markup is before the `<input>` elements in the source. This allows for a nice bit of flexibility.
+
+<!-- {{ EmbedLiveSample('Table_layout', '100%', '200') }} -->
 
 You can also see this example live at [css-tables-example.html](https://mdn.github.io/learning-area/css/styling-boxes/box-model-recap/css-tables-example.html){:target="_blank"} (see the [source code](https://github.com/mdn/learning-area/blob/main/css/styling-boxes/box-model-recap/css-tables-example.html){:target="_blank"} too.)
 
@@ -719,22 +716,22 @@ In the below example, we start with a block of HTML inside a containing `<div>` 
 </div>
 ```
 
-We're using a `column-width` of 200 pixels on that container, causing the browser to create as many 200 pixel columns as will fit. Whatever space is left between the columns will be shared.
+We're using a `column-width` of 100 pixels on that container, causing the browser to create as many 100 pixel columns as will fit. Whatever space is left between the columns will be shared.
 
-```css hidden
+```css
+.container {
+  column-width: 100px;
+}
 body {
   max-width: 800px;
   margin: 0 auto;
 }
+html { color-scheme: dark; }
 ```
 
-```css
-.container {
-  column-width: 200px;
-}
-```
+[&#9658; Click for preview](#flems-enable)
 
-{{ EmbedLiveSample('Multi-column_layout', '100%', 250) }}
+<!-- {{ EmbedLiveSample('Multi-column_layout', '100%', 250) }} -->
 
 ## Summary
 

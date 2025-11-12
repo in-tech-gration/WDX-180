@@ -187,7 +187,7 @@ title: Week 04 | CSS 2 & Performance
 
 ### Study Plan
 
-  - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction){:target="_blank"}
+  - [Read: **Introduction to CSS layout**](../modules/mdn/learn/css/css_layout/introduction/index.html){:target="_blank"}
     - **Level:** Beginner
 
   - [Read: **Normal Flow**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow){:target="_blank"}

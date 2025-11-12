@@ -3,6 +3,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: CSS 2 & Performance
 header_image: week04/css.layouts.jpg
+version: 2.0
 schedule: 
   days:
     "1": # Styling Tables, Debugging and Organizing CSS
