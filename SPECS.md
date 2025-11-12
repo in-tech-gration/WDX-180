@@ -178,9 +178,9 @@
 
   Related Assets:
 
-  - /assets/js/flems/flems_init.js
-  - /assets/jekyll/css/style.scss (Check: // FLEMS CODE SECTIONS)
-  - /assets/js/flems/flems.html
+  - file://./assets/js/flems/flems_init.js
+  - file://./assets/jekyll/css/style.scss (Check: // FLEMS CODE SECTIONS)
+  - file://./assets/js/flems/flems.html
 
 ## Jekyll | How to | Add Comments Widget (Utteranc.es)
 
