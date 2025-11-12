@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Validation Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>this is the input box</h1>
+    <div class="container">
+      <label class="instruction__label" for="text_input"
+        >Enter your message:</label
+      >
+      <input
+        type="text"
+		maxlength="30"
+        pattern="[A-Za-z0-9!@_\-\$\(\)\s]{1,30}"
+        id="text_input"
+        placeholder="Please input text here"
+      />
+      <label class="input__count__label" for="text_input"
+        >0/30 characters</label
+      >
+    </div>
+  </body>
+</html>
