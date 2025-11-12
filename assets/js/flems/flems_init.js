@@ -179,6 +179,7 @@
     });
   }
 
+  // Find all [flems-enable] buttons and initialize event listeners
   function init() {
     console.log("Flem initialization...");
 
@@ -202,7 +203,9 @@
     }
   }
 
+  // Run init() when DOM content has been loaded:
   document.addEventListener("DOMContentLoaded", (event) => {
     init();
   });
+
 })();
