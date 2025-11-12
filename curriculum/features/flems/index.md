@@ -49,9 +49,10 @@ console.log( a * b );
 
 [&#9658; Live coding](#flems-enable)
 
+**Live Example #2:**
 
 ```js
 console.log(Math.random());
 ```
 
-[&#9658; Live coding](#flems-enable)
+[&#9658; Live coding #2](#flems-enable)

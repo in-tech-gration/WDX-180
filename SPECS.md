@@ -159,6 +159,8 @@
     - `bundle exec jekyll _3.9.3_ serve`
     - or `npm run build:jekyll`
 
+  Build is created in `_site` folder.
+
   REFERENCES:
 
   - https://github.com/github/pages-gem
@@ -172,7 +174,7 @@
 
 ## Jekyll | How to | Create interactive coding playground (inline)
 
-  Instructions: [https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/)
+  [Instructions](https://in-tech-gration.github.io/WDX-180/curriculum/features/flems/)
 
   Related Assets:
 
