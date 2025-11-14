@@ -1,0 +1,151 @@
+
+$main__color: rgb(23, 212, 212);
+
+html{
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	background-color: rgb(32, 32, 32);
+	border-image-source: url("../images/border.png");
+	border-image-slice: 50;
+	border-image-width: 15px 0 0 0;
+	border-image-repeat: repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	display: flex;
+	width: 1100px;
+	color: $main__color;
+	justify-content: space-between;
+	div {
+		font-size: 3em;
+		margin: 1em;
+		margin-left: 0em;
+		img {
+			width: 1em;
+		}
+	}
+	ul {
+		margin: 3em;
+		margin-right: 0em;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		li {
+			list-style-type: none;
+			a {
+				text-decoration: none;
+				color: $main__color;
+				padding: 1em;
+				border-bottom: 0.3em solid $main__color;
+				&:hover {
+					color:white;
+					border-bottom: 0.3em solid white;
+				}
+			}
+			&:nth-child(1) {
+				a {
+					padding-left: 0em;
+				}
+			}
+			&:nth-child(5) {
+				a {
+					padding-right: 0em;
+				}
+			}
+		}
+	}
+}
+main {
+	margin-top: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	div{
+		width: 1100px;
+	}
+	.ii {
+		display: flex;
+		justify-content: space-between;
+		img {
+			border: 0.4em solid black;
+		}
+		ul {
+			padding: 0em;
+			margin: 0em;
+			display: flex;
+			flex-direction: column;
+			li {
+				list-style-type: none;
+				width: 20em;
+				a {
+					height: inherit;
+					display: block;
+					text-decoration: none;
+					color: black;
+					background-color: $main__color;
+					font-weight: 800;
+					font-size: 1.1em;
+					padding: 1em;
+					text-align: center;
+					span {
+						color: white;
+					}
+					&:hover {
+						color: $main__color;
+						background-color: black;
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: rgb(32, 32, 32);
+	border-image-source: url("../images/border.png");
+	border-image-slice: 50;
+	border-image-width: 15px 0 0 0;
+	border-image-repeat: repeat;
+	div {
+		width: 1100px;
+		ul {
+			margin-top: 2em;
+			margin-bottom: 2em;
+			padding: 0em;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			max-height: 18em;
+			li {
+				list-style-type: none;
+				a {
+					height: inherit;
+					display: block;
+					text-decoration: none;
+					color: $main__color;
+					font-weight: 800;
+					padding: 1em;
+					text-align: left;
+					border-left: 0.3em solid $main__color;
+					&:hover {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+
+	.cr {
+		font-weight: bolder;
+		background-color: $main__color;
+		text-align: center;
+		font-size: 0.8em;
+	}
+}

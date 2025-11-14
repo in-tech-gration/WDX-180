@@ -1,0 +1,144 @@
+html {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: rgb(32, 32, 32);
+  border-image-source: url("../images/border.png");
+  border-image-slice: 50;
+  border-image-width: 15px 0 0 0;
+  border-image-repeat: repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  width: 1100px;
+  color: rgb(23, 212, 212);
+  justify-content: space-between;
+}
+.header div {
+  font-size: 3em;
+  margin: 1em;
+  margin-left: 0em;
+}
+.header div img {
+  width: 1em;
+}
+.header ul {
+  margin: 3em;
+  margin-right: 0em;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header ul li {
+  list-style-type: none;
+}
+.header ul li a {
+  text-decoration: none;
+  color: rgb(23, 212, 212);
+  padding: 1em;
+  border-bottom: 0.3em solid rgb(23, 212, 212);
+}
+.header ul li a:hover {
+  color: white;
+  border-bottom: 0.3em solid white;
+}
+.header ul li:nth-child(1) a {
+  padding-left: 0em;
+}
+.header ul li:nth-child(5) a {
+  padding-right: 0em;
+}
+
+main {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main div {
+  width: 1100px;
+}
+main .ii {
+  display: flex;
+  justify-content: space-between;
+}
+main .ii img {
+  border: 0.4em solid black;
+}
+main .ii ul {
+  padding: 0em;
+  margin: 0em;
+  display: flex;
+  flex-direction: column;
+}
+main .ii ul li {
+  list-style-type: none;
+  width: 20em;
+}
+main .ii ul li a {
+  height: inherit;
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(23, 212, 212);
+  font-weight: 800;
+  font-size: 1.1em;
+  padding: 1em;
+  text-align: center;
+}
+main .ii ul li a span {
+  color: white;
+}
+main .ii ul li a:hover {
+  color: rgb(23, 212, 212);
+  background-color: black;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(32, 32, 32);
+  border-image-source: url("../images/border.png");
+  border-image-slice: 50;
+  border-image-width: 15px 0 0 0;
+  border-image-repeat: repeat;
+}
+footer div {
+  width: 1100px;
+}
+footer div ul {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 18em;
+}
+footer div ul li {
+  list-style-type: none;
+}
+footer div ul li a {
+  height: inherit;
+  display: block;
+  text-decoration: none;
+  color: rgb(23, 212, 212);
+  font-weight: 800;
+  padding: 1em;
+  text-align: left;
+  border-left: 0.3em solid rgb(23, 212, 212);
+}
+footer div ul li a:hover {
+  color: white;
+}
+footer .cr {
+  font-weight: bolder;
+  background-color: rgb(23, 212, 212);
+  text-align: center;
+  font-size: 0.8em;
+}/*# sourceMappingURL=style.css.map */
