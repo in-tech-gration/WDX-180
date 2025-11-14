@@ -1,0 +1,149 @@
+$main_color: #00cccc;
+$main_dark_color: #2b2d33;
+$pic_border_color: #8a8b8d;
+$white_color: white;
+
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	background-color: $main_dark_color;
+}
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+footer {
+	background-color: $main_dark_color;
+}
+
+.container {
+	// border: 3px solid orange;
+	width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+#header_with_logo{
+	justify-content: space-between;
+	align-items: center;
+	color: $main_color;
+	#logo {
+		font-size: 3rem;
+		padding: 2rem;
+		letter-spacing: 0.2rem;
+		font-weight: 700;
+		img {
+			margin: 0 -1.2rem -1rem -1rem;
+			position: relative;
+		}
+	}
+	ul {
+		display: flex;
+		li {
+			padding: 0 1rem 1rem 1rem;
+			border-bottom: 4px solid $main_color;
+			&:hover {
+				border-bottom-color: $white_color;
+				color: $white_color;
+				cursor: pointer;
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+#feature{
+	justify-content: space-between;
+	img {
+		// width: 70%;
+		border: 2px solid $main_dark_color;
+		outline: 1px solid $pic_border_color;
+	}
+	ul {
+		font-size: 1rem;
+		li {
+			border: 1px solid $pic_border_color;
+			padding: 1rem 3.5rem;
+			text-align: center;
+			font-weight: 700;
+			background-color: $main_color;
+			letter-spacing: 0.1rem;
+			span {
+				color: $white_color;
+			}
+			&:hover {
+				background-color: $main_dark_color;
+				color: $main_color;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+#links {
+	color: $main_color;
+	justify-content: space-between;
+	font-weight: 700;
+	ul {
+		margin: 2rem 0;
+		border-left: 3px solid $main_color;
+		li {
+			padding: 0 0 1rem 2rem;
+			letter-spacing: 0.1rem;
+			&:last-child {
+				padding-bottom: 0;
+			}
+			&:hover {
+				color: $white_color;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+#copyright {
+	margin: 2rem auto;
+	background-color: $main_color;
+	font-weight: 700;
+	justify-content: center;
+	p {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+/*
+	1. color is not correct
+	2. body has a margin to be 0.
+	3. body need to be 100vh.
+	4. main need to be flex-grow: 1.
+	5. footer need three colume.
+	6. about the picture, if the margin is negetive, then it will close to the letter
+	7. use position reletive to make the picture show above the letter.
+	8. big img have two border, one is black, one is well you can pick from the inspector.
+	9. the ul on the left's padding is different on the top/bottom left/right
+	9. ul on the left have the border and have the border in the li
+	10. set the letter spacing for the ul
+	11. using margin left and right auto to make the container center
+
+
+*/
