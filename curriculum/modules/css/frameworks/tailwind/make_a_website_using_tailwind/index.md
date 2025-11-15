@@ -1,5 +1,5 @@
 ---
-title: Make A Website With Tailwind CSS
+title: How to Make A Website With Tailwind CSS
 ---
 
 ### Schedule
@@ -32,12 +32,13 @@ title: Make A Website With Tailwind CSS
 
 ### Exercises
 
-  <!-- SGEN:META:PROGRESS:task=Complete the 'Make a Website with Tailwind CSS' challenge and paste the URL of the website at the last column (replacing the instructions) -->
-  - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
+  <!-- SGEN:META:PROGRESS:task=Complete the 'How to Make a Website with Tailwind CSS' challenge and paste the URL of the website at the last column (replacing the instructions) -->
+  - Complete the **How to Make a Website with Tailwind CSS** challenge and update the progress sheet.
 
 ### Extra Resources
 
-  - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"}
+  <!-- Web server is down -->
+  <!-- - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"} -->
 
   - [Read: **10 Reasons To Use TailwindCSS In Your Next Project**](https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project){:target="_blank"}
   

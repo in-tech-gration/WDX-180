@@ -4306,6 +4306,139 @@
           "github": "mubashra21c"
         }
       ]
+    },
+    "git-version-control-workshop": {
+      "type": "YouTube",
+      "duration": 1991,
+      "title": "Git Version Control Workshop!",
+      "date": "05/10/2020",
+      "youtube": {
+        "id": "Ci2pqR8RJzc",
+        "channel_id": "UCa6kP6qEgN6VL1lraEiybmw",
+        "channel_title": "Anna Skoulikari",
+        "thumbnail_url": "https://i.ytimg.com/vi/Ci2pqR8RJzc/sddefault.jpg"
+      },
+      "language": [
+        "en"
+      ],
+      "reviewers": [
+        {
+          "github": "https://github.com/asterisg",
+          "review": "Works on masters. Works on macOS. Requires basic understanding of UNIX file system. No example of working with a remote repo."
+        }
+      ]
+    },
+    "wdx180-live-sessions---html-css-flexbox-basics-for-beginners-quick-intro": {
+      "type": "YouTube",
+      "duration": 4942,
+      "title": "WDX180 Live Sessions - HTML, CSS & Flexbox basics for beginners (Quick intro)",
+      "date": "01/11/2024",
+      "youtube": {
+        "id": "jfJLL4FeBpE",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/jfJLL4FeBpE/sddefault.jpg"
+      },
+      "tags": [
+        "WDX",
+        "WDX180",
+        "intechgration",
+        "web development",
+        "beginner",
+        "coding",
+        "learning",
+        "learn",
+        "web dev",
+        "developer",
+        "programming",
+        "frontend",
+        "deploy",
+        "free",
+        "how to",
+        "code",
+        "coder",
+        "HTML",
+        "server",
+        "web server",
+        "Internet",
+        "web",
+        "course",
+        "repo",
+        "website",
+        "newbie",
+        "html",
+        "html5",
+        "css",
+        "css3",
+        "basics",
+        "fundamentals",
+        "flexbox",
+        "justify-content",
+        "align-items",
+        "flex",
+        "box model",
+        "box",
+        "box-sizing",
+        "border-box",
+        "block elements",
+        "inline elements",
+        "block vs inline",
+        "line height",
+        "inline browser",
+        "vscode",
+        "relative units"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "wdx180---live-sessions-introduction-to-css-grid": {
+      "type": "YouTube",
+      "duration": 7866,
+      "title": "WDX180 - Live Sessions: Introduction to CSS Grid",
+      "date": "08/06/2025",
+      "youtube": {
+        "id": "9164u4MbdHo",
+        "channel_id": "UCQackSPQdLdcVwfHaydsSAA",
+        "channel_title": "in-tech-gration",
+        "thumbnail_url": "https://i.ytimg.com/vi/9164u4MbdHo/sddefault.jpg"
+      },
+      "tags": [
+        "css",
+        "css grid",
+        "grid",
+        "layout",
+        "ui",
+        "user interface",
+        "frontend",
+        "learning",
+        "intro",
+        "introduction",
+        "coding",
+        "Kostas Minaidis",
+        "WDX180",
+        "WDX",
+        "Web Development X",
+        "web dev",
+        "developer",
+        "learn",
+        "code",
+        "coder",
+        "programmer",
+        "grid-template-columns",
+        "grid-template-rows",
+        "grid-auto-rows",
+        "CSS GRID",
+        "CSS Grid",
+        "HTML",
+        "CSS",
+        "UI",
+        "software",
+        "development"
+      ],
+      "language": [
+        "en"
+      ]
     }
   },
   "creators": {}

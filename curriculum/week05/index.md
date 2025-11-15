@@ -8,6 +8,8 @@ title: Week 05 | CSS Frameworks
   <span class="week-prefix">Week 05 |</span> CSS Frameworks
 </h1>
 
+<img src="assets/css-frameworks.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 05 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 05 | CSS Frameworks
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 2/11/2025</span>
 
   <h2 class="week-controls__next_week">
 

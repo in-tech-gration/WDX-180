@@ -1,6 +1,6 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API"
+title: "Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API"
 header_image: week11/assets/pexels-roman-odintsov-12725452.jpg
 schedule: 
   days:

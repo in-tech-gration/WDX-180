@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 3
 header_image: week09/assets/header--mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg
+version: 2.0
 schedule: 
   days:
     1: # Functions 1

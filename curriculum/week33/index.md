@@ -25,11 +25,11 @@ title: Week 33 | Intro to Databases
 
   </h2>
 
-  <span>Updated: 6/6/2025</span>
+  <span>Updated: 12/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 33 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -157,7 +157,7 @@ title: Week 33 | Intro to Databases
 
   When you are done going through the theory, jump into practice through this interactive SQL book:
 
-  - [Select Star SQL](https://selectstarsql.com){:target="_blank"}
+  - [Select Star SQL](https://in-tech-gration.github.io/WDX-180/curriculum/modules/backend/databases/sql/selectstarsql/){:target="_blank"}
 
   - Here's the repository with the code accompanying the "SQL Crash Course"
     - [https://github.com/in-tech-gration/sql-crash-course](https://github.com/in-tech-gration/sql-crash-course){:target="_blank"}
@@ -238,7 +238,7 @@ title: Week 33 | Intro to Databases
 
   - Design the Schema for what your Smartphone’s Contact table looks like and start adding entries and querying. Think how your phone will look up a number when you write the name. SMS => Emily => query => 6912345678 => Send message.   
 
-  - Try: [https://selectstarsql.com/](https://selectstarsql.com/){:target="_blank"}
+  - Try the [Select Star SQL](https://in-tech-gration.github.io/WDX-180/curriculum/modules/backend/databases/sql/selectstarsql/){:target="_blank"} challenge (and give the project a star [here](https://github.com/zichongkao/selectstarsql){:target="_blank"})
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d03.csv**
 

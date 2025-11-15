@@ -49,9 +49,29 @@ console.log( a * b );
 
 [&#9658; Live coding](#flems-enable)
 
+**Live Example #2:**
 
 ```js
 console.log(Math.random());
 ```
+
+[&#9658; Live coding #2](#flems-enable)
+
+**Live Example #3: HTML, CSS and JavaScript**
+
+```html
+<div>
+  <h2>Heading 2</h2>
+  <p>Paragraph</p>
+</div>
+```
+
+```css
+* { outline: 2px solid red;}
+```
+
+  ```js
+  console.log('Hello JS!');
+  ```
 
 [&#9658; Live coding](#flems-enable)

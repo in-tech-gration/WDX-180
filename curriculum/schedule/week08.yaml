@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: JavaScript Core 2
 header_image: week08/assets/header--cookie-the-pom-gySMaocSdqs-unsplash.jpg
+version: 2.0
 schedule: 
 
   days:

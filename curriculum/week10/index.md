@@ -40,6 +40,13 @@ title: "Week 10 | Web APIs 1: DOM"
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
 <!-- Week 10 - Day 1 | Introduction to the DOM API -->

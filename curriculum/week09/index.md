@@ -40,6 +40,13 @@ title: Week 09 | JavaScript Core 3
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
 <!-- Week 09 - Day 1 | Functions Part 1 -->
