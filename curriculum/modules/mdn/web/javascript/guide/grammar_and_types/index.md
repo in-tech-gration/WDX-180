@@ -26,8 +26,7 @@ In JavaScript, instructions are called [statements](https://developer.mozilla.or
 
 A semicolon is not necessary after a statement if it is written on its own line. But if more than one statement on a line is desired, then they _must_ be separated by semicolons.
 
-> [!NOTE]
-> ECMAScript also has rules for automatic insertion of semicolons ([ASI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion){:target="_blank"}) to end statements. (For more information, see the detailed reference about JavaScript's [lexical grammar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar){:target="_blank"}.){:target="_blank"}
+> ECMAScript also has rules for automatic insertion of semicolons ([ASI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#automatic_semicolon_insertion){:target="_blank"}) to end statements. (For more information, see the detailed reference about JavaScript's [lexical grammar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar){:target="_blank"}.)
 
 It is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.
 
@@ -60,7 +59,6 @@ In this case, you need to break up the `*/` pattern. For example, by inserting a
 
 Comments behave like whitespace, and are discarded during script execution.
 
-> [!NOTE]
 > You might also see a third type of comment syntax at the start of some JavaScript files, which looks something like this: `#!/usr/bin/env node`.
 >
 > This is called **hashbang comment** syntax, and is a special comment used to specify the path to a particular JavaScript engine that should execute the script. See [Hashbang comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#hashbang_comments){:target="_blank"} for more details.
