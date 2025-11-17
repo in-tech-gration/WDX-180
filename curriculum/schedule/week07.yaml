@@ -17,10 +17,12 @@ schedule:
       module: mdn/web/javascript/guide/loops_and_iteration/
     4: # JavaScript - Functions 1
       # file://./../modules/mdn/web/javascript/guide/
-      module: mdn/web/javascript/guide/
+      # module: mdn/web/javascript/guide/
+      module: work-in-progress/
     5: # JavaScript - Functions 2
       # file://./../modules/mdn/web/javascript/guide/
-      module: mdn/web/javascript/guide/
+      # module: mdn/web/javascript/guide/
+      module: work-in-progress/
 
 # ---
 

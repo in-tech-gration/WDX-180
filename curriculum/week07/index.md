@@ -1467,6 +1467,61 @@ for (const [key, val] of Object.entries(obj)) {
 
 <hr class="mt-1">
 
+<!-- Week 07 - Day 4 | Work in Progress -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 07 - Day 4</span> | Work in Progress</h2>
+  </summary>
+
+<!-- Schedule -->
+
+### Study Plan
+
+#### Work in progress...
+
+
+
+  **Stay tuned**
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 07 - Day 5 | Work in Progress -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 07 - Day 5</span> | Work in Progress</h2>
+  </summary>
+
+<!-- Schedule -->
+
+### Study Plan
+
+#### Work in progress...
+
+
+
+  **Stay tuned**
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
 
 
 <hr class="mt-1">
