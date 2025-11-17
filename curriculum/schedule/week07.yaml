@@ -6,9 +6,9 @@ version: 2.0
 schedule: 
 
   days:
-    1: # Just enough JavaScript - Part 1
-      # file://./../modules/javascript/denepo/just-enough-javascript/part-01/index.md
-      module: javascript/denepo/just-enough-javascript/part-01/
+    1: # JavaScript - Grammar & Types
+      # file://./../modules/javascript/core/grammar_and_types/index.md
+      module: javascript/core/grammar_and_types/
     2: # Just enough JavaScript - Part 2
       # file://./../modules/javascript/denepo/just-enough-javascript/part-02/index.md
       module: javascript/denepo/just-enough-javascript/part-02/

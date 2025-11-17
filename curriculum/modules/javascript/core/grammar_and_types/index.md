@@ -3,11 +3,11 @@ title: JavaScript - Grammar and types
 based-on: /curriculum/modules/mdn/web/javascript/guide/grammar_and_types/index.md
 ---
 
-# Grammar and Types
+### Study Plan
 
 This chapter discusses JavaScript's basic grammar, variable declarations, data types and literals.
 
-## Basics
+**Basics**
 
 JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.
 
@@ -29,7 +29,7 @@ It is considered best practice, however, to always write a semicolon after a sta
 
 The source text of JavaScript script gets scanned from left to right, and is converted into a sequence of input elements which are _tokens_, _control characters_, _line terminators_, _comments_, or [whitespace](https://developer.mozilla.org/en-US/docs/Glossary/Whitespace){:target="_blank"}. (Spaces, tabs, and newline characters are considered whitespace.)
 
-## Comments
+**Comments**
 
 The syntax of **comments** is the same as in C++ and in many other languages:
 
@@ -60,7 +60,7 @@ Comments behave like whitespace, and are discarded during script execution.
 >
 > This is called **hashbang comment** syntax, and is a special comment used to specify the path to a particular JavaScript engine that should execute the script. See [Hashbang comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#hashbang_comments){:target="_blank"} for more details.
 
-## Declarations
+**Declarations**
 
 JavaScript has three kinds of variable declarations.
 
@@ -71,7 +71,7 @@ JavaScript has three kinds of variable declarations.
 - [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"}
   - : Declares a block-scoped, read-only named constant.
 
-### Variables
+**Variables**
 
 You use variables as symbolic names for values in your application. The names of variables, called [identifiers](https://developer.mozilla.org/en-US/docs/Glossary/Identifier){:target="_blank"}, conform to certain rules.
 
@@ -81,7 +81,7 @@ You can use most Unicode letters such as `å` and `ü` in identifiers. (For more
 
 Some examples of legal names are `Number_hits`, `temp99`, `$credit`, and `_name`.
 
-### Declaring variables
+**Declaring variables**
 
 You can declare a variable in two ways:
 
@@ -92,7 +92,7 @@ You can declare variables to unpack values using the [destructuring](https://dev
 
 Variables should always be declared before they are used. JavaScript used to allow assigning to undeclared variables, which creates an **[undeclared global](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#description){:target="_blank"}** variable. This is an error in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#assigning_to_undeclared_variables){:target="_blank"} and should be avoided altogether.
 
-### Declaration and initialization
+**Declaration and initialization**
 
 In a statement like `let x = 42`, the `let x` part is called a _declaration_, and the `= 42` part is called an _initializer_. The declaration allows the variable to be accessed later in code without throwing a [ReferenceError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError){:target="_blank"}, while the initializer assigns a value to the variable. In `var` and `let` declarations, the initializer is optional. If a variable is declared without an initializer, it is assigned the value [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined){:target="_blank"}.
 
@@ -110,7 +110,7 @@ In essence, `let x = 42` is equivalent to `let x; x = 42`.
 const x; // SyntaxError: Missing initializer in const declaration
 ```
 
-### Variable scope
+**Variable scope**
 
 A variable may belong to one of the following [scopes](https://developer.mozilla.org/en-US/docs/Glossary/Scope){:target="_blank"}:
 
@@ -144,7 +144,7 @@ if (true) {
 console.log(x); // x is 5
 ```
 
-### Variable hoisting
+**Variable hoisting**
 
 `var`-declared variables are [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting){:target="_blank"}, meaning you can refer to the variable anywhere in its scope, even if its declaration isn't reached yet. You can see `var` declarations as being "lifted" to the top of its function or global scope. However, if you access a variable before it's declared, the value is always `undefined`, because only its _declaration_ and _default initialization (with `undefined`)_ is hoisted, but not its _value assignment_.
 
@@ -186,7 +186,7 @@ let y = 3;
 
 Unlike `var` declarations, which only hoist the declaration but not its value, [function declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_hoisting){:target="_blank"} are hoisted entirely — you can safely call the function anywhere in its scope. See the [hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting){:target="_blank"} glossary entry for more discussion.
 
-### Global variables
+**Global variables**
 
 Global variables are in fact properties of the _global object_.
 
@@ -194,7 +194,7 @@ In web pages, the global object is [window](https://developer.mozilla.org/en-US/
 
 Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the `window` or `frame` name. For example, if a variable called `phoneNumber` is declared in a document, you can refer to this variable from an `iframe` as `parent.phoneNumber`.
 
-### Constants
+**Constants**
 
 You can create a read-only, named constant with the [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"} keyword. The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign (`$`), and can contain alphabetic, numeric, or underscore characters.
 
@@ -234,9 +234,9 @@ MY_ARRAY.push("JAVASCRIPT");
 console.log(MY_ARRAY); // ['HTML', 'CSS', 'JAVASCRIPT'];
 ```
 
-## Data structures and types
+**Data structures and types**
 
-### Data types
+**Data types**
 
 The latest ECMAScript standard defines eight data types:
 
@@ -253,7 +253,7 @@ The latest ECMAScript standard defines eight data types:
 
 Although these data types are relatively few, they enable you to perform useful operations with your applications. [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions){:target="_blank"} are the other fundamental elements of the language. While functions are technically a kind of object, you can think of objects as named containers for values, and functions as procedures that your script can perform.
 
-### Data type conversion
+**Data type conversion**
 
 JavaScript is a _dynamically typed_ language. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
 
@@ -271,7 +271,7 @@ answer = "Thanks for all the fish!";
 
 Because JavaScript is dynamically typed, this assignment does not cause an error message.
 
-### Numbers and the '+' operator
+**Numbers and the '+' operator**
 
 In expressions involving numeric and string values with the `+` operator, JavaScript converts numeric values to strings. For example, consider the following statements:
 
@@ -288,7 +288,7 @@ With all other operators, JavaScript does _not_ convert numeric values to string
 "37" * 7; // 259
 ```
 
-### Converting strings to numbers
+**Converting strings to numbers**
 
 In the case that a value representing a number is in memory as a string, there are methods for conversion.
 
