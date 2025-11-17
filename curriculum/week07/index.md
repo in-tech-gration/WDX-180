@@ -399,22 +399,16 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 
 <hr class="mt-1">
 
-<!-- Week 07 - Day 2 | Work in Progress -->
+<!-- Week 07 - Day 2 | Control flow and error handling -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 07 - Day 2</span> | Work in Progress</h2>
+      <span class="summary-day">Week 07 - Day 2</span> | Control flow and error handling</h2>
   </summary>
 
 <!-- Schedule -->
 
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
+<!-- Study Plan -->
 
 <!-- Summary -->
 
