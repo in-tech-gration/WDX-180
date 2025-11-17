@@ -1,22 +1,20 @@
 ---
-title: Control flow and error handling
-slug: Web/JavaScript/Guide/Control_flow_and_error_handling
-page-type: guide
-sidebar: jssidebar
+title: JavaScript - Control Flow & Error Handling
+Source: https://github.com/in-tech-gration/content/tree/main/files/en-us/web/javascript/guide/control_flow_and_error_handling
 ---
 
-{{PreviousNext("Web/JavaScript/Guide/Grammar_and_types", "Web/JavaScript/Guide/Loops_and_iteration")}}
+### Study Plan
 
 JavaScript supports a compact set of statements, specifically
 control flow statements, that you can use to incorporate a great deal of interactivity
 in your application. This chapter provides an overview of these statements.
 
-The [JavaScript reference](/en-US/docs/Web/JavaScript/Reference/Statements)
+The [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements){:target="_blank"}
 contains exhaustive details about the statements in this chapter. The semicolon
 (`;`) character is used to separate statements in JavaScript code.
 
 Any JavaScript expression is also a statement.
-See [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)
+See [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators){:target="_blank"}
 for complete information about expressions.
 
 ## Block statement
@@ -46,8 +44,7 @@ while (x < 10) {
 
 Here, `{ x++; }` is the block statement.
 
-> [!NOTE]
-> [`var`](/en-US/docs/Web/JavaScript/Reference/Statements/var)-declared variables are not block-scoped, but are scoped to the containing function or script, and the effects of setting them persist beyond the block itself. For example:
+> [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var){:target="_blank"}-declared variables are not block-scoped, but are scoped to the containing function or script, and the effects of setting them persist beyond the block itself. For example:
 >
 > ```js
 > var x = 1;
@@ -59,7 +56,7 @@ Here, `{ x++; }` is the block statement.
 >
 > This outputs `2` because the `var x` statement within the block is in the same scope as the `var x` statement before the block. (In C or Java, the equivalent code would have output `1`.)
 >
-> This scoping effect can be mitigated by using {{jsxref("Statements/let", "let")}} or {{jsxref("Statements/const", "const")}}.
+> This scoping effect can be mitigated by using [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let){:target="_blank"} or [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"}.
 
 ## Conditional statements
 
@@ -84,7 +81,7 @@ if (condition) {
 ```
 
 Here, the `condition` can be any expression that evaluates to
-`true` or `false`. (See [Boolean](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description)
+`true` or `false`. (See [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description){:target="_blank"}
 for an explanation of what evaluates to `true` and `false`.)
 
 If `condition` evaluates to `true`,
@@ -129,17 +126,18 @@ if (condition) {
 
 In general it's good practice to not have an `if...else` with an assignment like `x = y` as a condition:
 
-```js-nolint example-bad
+<!-- ```js-nolint example-bad -->
+```js
 if (x = y) {
   // statements here
 }
 ```
 
-However, in the rare case you find yourself wanting to do something like that, the [`while`](/en-US/docs/Web/JavaScript/Reference/Statements/while) documentation has a [Using an assignment as a condition](/en-US/docs/Web/JavaScript/Reference/Statements/while#using_an_assignment_as_a_condition) section with guidance on a general best-practice syntax you should know about and follow.
+However, in the rare case you find yourself wanting to do something like that, the [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while){:target="_blank"} documentation has a [Using an assignment as a condition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while#using_an_assignment_as_a_condition){:target="_blank"} section with guidance on a general best-practice syntax you should know about and follow.
 
 #### Falsy values
 
-The following values evaluate to `false` (also known as [Falsy](/en-US/docs/Glossary/Falsy) values):
+The following values evaluate to `false` (also known as [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy){:target="_blank"} values):
 
 - `false`
 - `undefined`
@@ -151,10 +149,9 @@ The following values evaluate to `false` (also known as [Falsy](/en-US/docs/Glos
 All other values—including all objects—evaluate to `true` when passed to a
 conditional statement.
 
-> [!NOTE]
 > Do not confuse the primitive boolean values
 > `true` and `false` with the true and false values of the
-> {{jsxref("Boolean")}} object!
+> [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean){:target="_blank"} object!
 >
 > For example:
 >
@@ -280,8 +277,8 @@ are created equal. While it is common to throw numbers or strings as errors, it 
 frequently more effective to use one of the exception types specifically created for
 this purpose:
 
-- [ECMAScript exceptions](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types)
-- [`DOMException`](/en-US/docs/Web/API/DOMException)
+- [ECMAScript exceptions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types){:target="_blank"}
+- [`DOMException`](https://developer.mozilla.org/en-US/docs/Web/API/DOMException){:target="_blank"}
 
 ### throw statement
 
@@ -360,7 +357,8 @@ try {
 You can use a `catch` block to handle all exceptions that may be generated
 in the `try` block.
 
-```js-nolint
+<!-- ```js-nolint -->
+```js
 catch (exception) {
   statements
 }
@@ -387,7 +385,6 @@ try {
 }
 ```
 
-> [!NOTE]
 > When logging errors to the console inside
 > a `catch` block, using `console.error()` rather than
 > `console.log()` is advised for debugging. It formats the message as an
@@ -495,8 +492,8 @@ If an inner `try` block does _not_ have a corresponding
 2. the enclosing `try...catch` statement's `catch` block is
    checked for a match.
 
-For more information, see [nested try-blocks](/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#nested_try_blocks)
-on the [`try...catch`](/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+For more information, see [nested try-blocks](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#nested_try_blocks){:target="_blank"}
+on the [`try...catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch){:target="_blank"}
 reference page.
 
 ### Utilizing Error objects
@@ -532,4 +529,3 @@ try {
 }
 ```
 
-{{PreviousNext("Web/JavaScript/Guide/Grammar_and_types", "Web/JavaScript/Guide/Loops_and_iteration")}}
