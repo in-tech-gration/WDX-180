@@ -1,8 +1,2 @@
 Week,Day,Concept,Task,Level,Confidence,Completed,Instructions
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '00-errors' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '01-comments-and-logs' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '02-primitive-values' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '03-operators' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '04-booleans' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '05-strings' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
-7,1,JavaScript Core 1: Just Enough JavaScript - Part 1,Explore the '06-undefined' section of 'Just Enough JavaScript',Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column
+7,1,JavaScript Core 1: JavaScript - Grammar and types,Study the Grammar and Types,Beginner,0-10,FALSE,Update FALSE to TRUE in the COMPLETED column

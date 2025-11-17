@@ -314,3 +314,6 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 // Note: the parentheses are added for clarity, not required.
 ```
 
+### Exercises
+
+  <!-- SGEN:META:PROGRESS:task=Study the Grammar and Types -->
