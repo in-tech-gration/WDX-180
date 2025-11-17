@@ -103,22 +103,53 @@ function removeNoteBlocks(textContent) {
   <!-- ```js-nolint example-bad -->
   ```js
 
+  and replace all occurrences of:
+
+  ```js example-bad
+
+  with the following:
+
+  <!-- ```js example-bad -->
+  ```js
+
 */
 function replaceJsNolintBlocks(textContent) {
 
-  const jsNolintRegex = /```js-nolint( [^\n`]*)?\n/g;
+  const jsNolintRegex = /```js-nolint(.*)\n/g;
+  
+  const jsNolintMatches = textContent.matchAll(jsNolintRegex);
+  if (jsNolintMatches) {
+    for (const match of jsNolintMatches) {
+      ok("\nFound: " + match[0]);
+      const replacement = `<!-- \`\`\`js-nolint${match[1]} -->\n\`\`\`js\n`;
+      textContent = textContent.replace(match[0], replacement);
+    }
+  }
 
-  const matches = textContent.matchAll(jsNolintRegex);
+  const jsNolintExampleBadRegex = /```js-nolint example-bad(.*)\n/g;
+  
+  const jsNolintExampleBadMatches = textContent.matchAll(jsNolintExampleBadRegex);
+  if (jsNolintExampleBadMatches) {
+    for (const match of jsNolintExampleBadMatches) {
+      ok("\nFound: " + match[0]);
+      const replacement = `<!-- \`\`\`js-nolint example-bad${match[1]} -->\n\`\`\`js\n`;
+      textContent = textContent.replace(match[0], replacement);
+    }
+  }
 
-  if (matches) {
-    for (const match of matches) {
-      const replacement = `<!-- \`\`\`js-nolint${match[1] ? match[1] : ""} -->\n\`\`\`js\n`;
-      ok("Replacing: " + match[0] + " with " + replacement);
+  const jsExampleBadRegex = /```js example-bad(.*)\n/g;
+  
+  const jsExampleBadMatches = textContent.matchAll(jsExampleBadRegex);
+  if (jsExampleBadMatches) {
+    for (const match of jsExampleBadMatches) {
+      ok("\nFound: " + match[0]);
+      const replacement = `<!-- \`\`\`js example-bad${match[1]} -->\n\`\`\`js\n`;
       textContent = textContent.replace(match[0], replacement);
     }
   }
 
   return textContent;
+
 
 }
 
