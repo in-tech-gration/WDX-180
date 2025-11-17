@@ -1,6 +1,9 @@
 ---
 title: JavaScript - Control Flow & Error Handling
 Source: https://github.com/in-tech-gration/content/tree/main/files/en-us/web/javascript/guide/control_flow_and_error_handling
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 ### Study Plan
@@ -17,7 +20,7 @@ Any JavaScript expression is also a statement.
 See [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators){:target="_blank"}
 for complete information about expressions.
 
-## Block statement
+**Block statement**
 
 The most basic statement is a _block statement_, which is used to group
 statements. The block is delimited by a pair of curly braces:
@@ -31,16 +34,19 @@ statements. The block is delimited by a pair of curly braces:
 }
 ```
 
-### Example
+**Example**
 
 Block statements are commonly used with control flow statements (`if`,
 `for`, `while`).
 
 ```js
+let x = 0;
 while (x < 10) {
   x++;
 }
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 Here, `{ x++; }` is the block statement.
 
@@ -58,13 +64,13 @@ Here, `{ x++; }` is the block statement.
 >
 > This scoping effect can be mitigated by using [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let){:target="_blank"} or [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const){:target="_blank"}.
 
-## Conditional statements
+**Conditional statements**
 
 A conditional statement is a set of commands that executes if a specified condition is
 true. JavaScript supports two conditional statements: `if...else` and
 `switch`.
 
-### if...else statement
+**if...else statement**
 
 Use the `if` statement to execute a statement if a logical condition is
 `true`. Use the optional `else` clause to execute a statement if
@@ -109,7 +115,7 @@ In the case of multiple conditions, only the first logical condition which evalu
 `true` will be executed. To execute multiple statements, group them within a
 block statement (`{ /* … */ }`).
 
-#### Best practice
+**Best practice**
 
 In general, it's good practice to always use block statements—_especially_ when
 nesting `if` statements:
@@ -135,7 +141,7 @@ if (x = y) {
 
 However, in the rare case you find yourself wanting to do something like that, the [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while){:target="_blank"} documentation has a [Using an assignment as a condition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while#using_an_assignment_as_a_condition){:target="_blank"} section with guidance on a general best-practice syntax you should know about and follow.
 
-#### Falsy values
+**Falsy values**
 
 The following values evaluate to `false` (also known as [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy){:target="_blank"} values):
 
@@ -165,7 +171,7 @@ conditional statement.
 > }
 > ```
 
-#### Example
+**Example**
 
 In the following example, the function `checkData` returns `true`
 if the number of characters in a `Text` object is three. Otherwise, it
@@ -183,7 +189,7 @@ function checkData() {
 }
 ```
 
-### switch statement
+**switch statement**
 
 A `switch` statement allows a program to evaluate an expression and attempt
 to match the expression's value to a `case` label. If a match is found, the
@@ -219,7 +225,7 @@ JavaScript evaluates the above switch statement as follows:
   - (By convention, the `default` clause is written as the last clause,
     but it does not need to be so.)
 
-#### break statements
+**break statements**
 
 The optional `break` statement associated with each `case` clause
 ensures that the program breaks out of `switch` once the matched statement is
@@ -227,7 +233,7 @@ executed, and then continues execution at the statement following `switch`.
 If `break` is omitted, the program continues execution inside the
 `switch` statement (and will execute statements under the next `case`, and so on).
 
-##### Example
+**Example**
 
 In the following example, if `fruitType` evaluates to
 `"Bananas"`, the program matches the value with `case "Bananas"`
@@ -262,7 +268,7 @@ switch (fruitType) {
 console.log("Is there anything else you'd like?");
 ```
 
-## Exception handling statements
+**Exception handling statements**
 
 You can throw exceptions using the `throw` statement and handle them using
 the `try...catch` statements.
@@ -270,7 +276,7 @@ the `try...catch` statements.
 - [`throw` statement](#throw_statement)
 - [`try...catch` statement](#try...catch_statement)
 
-### Exception types
+**Exception types**
 
 Just about any object can be thrown in JavaScript. Nevertheless, not all thrown objects
 are created equal. While it is common to throw numbers or strings as errors, it is
@@ -280,7 +286,7 @@ this purpose:
 - [ECMAScript exceptions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#error_types){:target="_blank"}
 - [`DOMException`](https://developer.mozilla.org/en-US/docs/Web/API/DOMException){:target="_blank"}
 
-### throw statement
+**throw statement**
 
 Use the `throw` statement to throw an exception. A `throw`
 statement specifies the value to be thrown:
@@ -303,7 +309,7 @@ throw {
 };
 ```
 
-### try...catch statement
+**try...catch statement**
 
 The `try...catch` statement marks a block of statements to try, and
 specifies one or more responses should an exception be thrown. If an exception is
@@ -352,7 +358,7 @@ try {
 }
 ```
 
-#### The catch block
+**The catch block**
 
 You can use a `catch` block to handle all exceptions that may be generated
 in the `try` block.
@@ -390,7 +396,7 @@ try {
 > `console.log()` is advised for debugging. It formats the message as an
 > error, and adds it to the list of error messages generated by the page.
 
-#### The finally block
+**The finally block**
 
 The `finally` block contains statements to be executed _after_ the
 `try` and `catch` blocks execute. Additionally, the
@@ -481,7 +487,7 @@ try {
 // false
 ```
 
-#### Nesting try...catch statements
+**Nesting try...catch statements**
 
 You can nest one or more `try...catch` statements.
 
@@ -496,7 +502,7 @@ For more information, see [nested try-blocks](https://developer.mozilla.org/en-U
 on the [`try...catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch){:target="_blank"}
 reference page.
 
-### Utilizing Error objects
+**Utilizing Error objects**
 
 Depending on the type of error, you may be able to use the `name` and
 `message` properties to get a more refined message.
