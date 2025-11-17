@@ -395,40 +395,28 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 
 <hr class="mt-1">
 
-<!-- Week 07 - Day 2 | Just Enough JavaScript - Part 2 -->
+<!-- Week 07 - Day 2 | Work in Progress -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 07 - Day 2</span> | Just Enough JavaScript - Part 2</h2>
+      <span class="summary-day">Week 07 - Day 2</span> | Work in Progress</h2>
   </summary>
 
-### Schedule
-
-  - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+<!-- Schedule -->
 
 ### Study Plan
 
-  In this Module, we are continuing our journey into "Just enough JavaScript".
+#### Work in progress...
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
-  - **07-variables**
-  - **08-null**
 
-  Here's a reminder on how to launch `study lenses`:
-
-  - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  **Stay tuned**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -436,42 +424,28 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 
 <hr class="mt-1">
 
-<!-- Week 07 - Day 3 | Just Enough JavaScript - Part 3 -->
+<!-- Week 07 - Day 3 | Work in Progress -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 07 - Day 3</span> | Just Enough JavaScript - Part 3</h2>
+      <span class="summary-day">Week 07 - Day 3</span> | Work in Progress</h2>
   </summary>
 
-### Schedule
-
-  - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+<!-- Schedule -->
 
 ### Study Plan
 
-  In this Module, we are continuing our journey into "Just enough JavaScript".
+#### Work in progress...
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
-  - **09-interactions**
-  - **10-numbers**
-  - **11-block-scope**
-  - **12-conditionals**
 
-  Here's a reminder on how to launch `study lenses`:
-
-  - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  **Stay tuned**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -479,40 +453,28 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 
 <hr class="mt-1">
 
-<!-- Week 07 - Day 4 | Just Enough JavaScript - Part 4 -->
+<!-- Week 07 - Day 4 | Work in Progress -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 07 - Day 4</span> | Just Enough JavaScript - Part 4</h2>
+      <span class="summary-day">Week 07 - Day 4</span> | Work in Progress</h2>
   </summary>
 
-### Schedule
-
-  - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+<!-- Schedule -->
 
 ### Study Plan
 
-  In this Module, we are continuing our journey into "Just enough JavaScript".
+#### Work in progress...
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
-  - **13-while-loops**
-  - **14-review-quiz**
 
-  Here's a reminder on how to launch `study lenses`:
-
-  - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  **Stay tuned**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -520,41 +482,28 @@ An alternative method of retrieving a number from a string is with the `+` (unar
 
 <hr class="mt-1">
 
-<!-- Week 07 - Day 5 | Just Enough JavaScript - Part 5 -->
+<!-- Week 07 - Day 5 | Work in Progress -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 07 - Day 5</span> | Just Enough JavaScript - Part 5</h2>
+      <span class="summary-day">Week 07 - Day 5</span> | Work in Progress</h2>
   </summary>
 
-### Schedule
-
-  - [Study](#study-plan-NN)
-  - [Exercises](#exercises-NN)
-  - [Extra Resources](#extra-resources-NN)
+<!-- Schedule -->
 
 ### Study Plan
 
-  In this Module, we are continuing our journey into "Just enough JavaScript".
+#### Work in progress...
 
-  Make sure to follow the guides on [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
-  - **15-for-of-loops**
-  - **16-break**
-  - **17-continue**
 
-  Here's a reminder on how to launch `study lenses`:
-
-  - `cd WDX-180/`
-  - `lenses2 curriculum/modules/javascript/denepo/_just-enough-javascript/`
+  **Stay tuned**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-### Extra Resources
-
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
