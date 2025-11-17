@@ -64,6 +64,83 @@ function removeTemplateContent(textContent) {
 
 }
 
+/**
+ * 
+ * @description: Removes all occurrences of single lines: > [!NOTE]
+ */
+function removeNoteBlocks(textContent) {
+
+  const noteBlockRegex = /> \[!NOTE\].*\n/g;
+
+  const noteBlockMatches = textContent.matchAll(noteBlockRegex);
+
+  if (noteBlockMatches) {
+    for (const match of noteBlockMatches) {
+      ok("\nFound: " + match[0]);
+      textContent = textContent.replace(match[0], "");
+    }
+  }
+
+  return textContent;
+
+}
+
+/*
+  Replaces all occurrences of:
+  
+  ```js-nolint 
+  
+  with the following:
+  <!-- ```js-nolint -->
+  ```js
+
+  and replaces all occurrences of:
+
+  ```js-nolint example-bad
+
+  with the following:
+
+  <!-- ```js-nolint example-bad -->
+  ```js
+
+*/
+function replaceJsNolintBlocks(textContent) {
+
+  const jsNolintRegex = /```js-nolint( [^\n`]*)?\n/g;
+
+  const matches = textContent.matchAll(jsNolintRegex);
+
+  if (matches) {
+    for (const match of matches) {
+      const replacement = `<!-- \`\`\`js-nolint${match[1] ? match[1] : ""} -->\n\`\`\`js\n`;
+      ok("Replacing: " + match[0] + " with " + replacement);
+      textContent = textContent.replace(match[0], replacement);
+    }
+  }
+
+  return textContent;
+
+}
+
+/*
+  Removes: {{PreviousNext("Web/JavaScript/Guide/Grammar_and_types", "Web/JavaScript/Guide/Loops_and_iteration")}}
+*/
+function removePreviousNextLinks(textContent) {
+  
+  const previousNextRegex = /\{\{PreviousNext\((?:"[^"]+"(?:,\s*)?)+\)\}\}\n/g;
+  const previousNextMatches = textContent.matchAll(previousNextRegex);
+  
+  if (previousNextMatches) {
+    for (const match of previousNextMatches) {
+      ok("\nFound: " + match[0]);
+      textContent = textContent.replace(match[0], "");
+    }
+  }
+
+  return textContent;
+
+}
+
 function replaceHTMLGlossaryLinks(textContent, fileName) {
 
   // Thank you ChatGPT! 
@@ -724,6 +801,9 @@ function parseYariDynamicContent(textContent, fileName) {
   // Run this first:
   updatedTextContent = replaceHTMLGlossaryLinks(updatedTextContent, fileName);
   // Then run this one:
+  updatedTextContent = removeNoteBlocks(updatedTextContent);
+  updatedTextContent = removePreviousNextLinks(updatedTextContent);
+  updatedTextContent = replaceJsNolintBlocks(updatedTextContent);
   updatedTextContent = replaceGlossaryLinks(updatedTextContent, fileName);
   updatedTextContent = removeTemplateContent(updatedTextContent);
   updatedTextContent = parseMDNLinks(updatedTextContent);
