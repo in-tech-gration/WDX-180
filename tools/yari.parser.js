@@ -17,6 +17,54 @@ const {
 
 // 1) OUR FUNCTIONS: ===========================================================
 
+/*
+ * @description: Replaces all markdown headings (#, ##, ###, etc.) with emphasis (**text**) but also keep markdown headings as commented HTML:
+  # Heading 1 
+  
+  will become:
+
+  <!-- # Heading 1 -->
+  **Heading 1**
+
+  ## Heading 2
+
+  will become:
+
+  <!-- ## Heading 2 -->
+  **Heading 2**
+*/
+function replaceMarkdownHeadings(textContent) {
+
+  // The following regex captures markdown headings from level 1 to 6, only at the beginning of a line
+  // Replace the regex to also capture headings with leading spaces
+  const headingRegex = /^\s*(#{1,6})\s+(.*)$/gm;
+
+  const replacedContent = textContent.replace(headingRegex, (match, hashes, headingText) => {
+    const emphasisText = `**${headingText.trim()}**`;
+    const commentedHeading = `<!-- ${hashes} ${headingText.trim()} -->`;
+    return `${commentedHeading}\n${emphasisText}`;
+  });
+  return replacedContent;
+}
+
+/**
+ * @description: Cleans up FrontMatter content if needed from the following entries:
+ * slug: <STRING>
+ * page-type: <STRING>
+ * sidebar: <STRING>
+ * @param {*} textContent 
+ */
+function cleanUpFrontMatter(textContent) {
+  const { content, data: fm } = matter(textContent);
+  // Remove unwanted entries:
+  delete fm.slug;
+  delete fm["page-type"];
+  delete fm.sidebar;
+  // Recreate Frontmatter section as plain markdown text:
+  const fmText = createFrontMatterMarkdownFromObject(fm);
+  return fmText + content;
+}
+
 /**
  * TODO: ADD TESTS
  * @param {string} textContent 
@@ -115,7 +163,10 @@ function removeNoteBlocks(textContent) {
 */
 function replaceJsNolintBlocks(textContent) {
 
-  const jsNolintRegex = /```js-nolint(.*)\n/g;
+  // The following regex matches ```js-nolint blocks but also <!-- ```js-nolint -->
+  // Replace it so that it only captures ```js-nolint blocks (not commented ones)
+  // const jsNolintRegex = /```js-nolint(.*)\n/g;
+  const jsNolintRegex = /(?<!<!--\s)```js-nolint(.*)\n/g;
   
   const jsNolintMatches = textContent.matchAll(jsNolintRegex);
   if (jsNolintMatches) {
@@ -126,7 +177,8 @@ function replaceJsNolintBlocks(textContent) {
     }
   }
 
-  const jsNolintExampleBadRegex = /```js-nolint example-bad(.*)\n/g;
+  const jsNolintExampleBadRegex = /(?<!<!--\s)```js-nolint example-bad(.*)\n/g;
+  
   
   const jsNolintExampleBadMatches = textContent.matchAll(jsNolintExampleBadRegex);
   if (jsNolintExampleBadMatches) {
@@ -137,7 +189,7 @@ function replaceJsNolintBlocks(textContent) {
     }
   }
 
-  const jsExampleBadRegex = /```js example-bad(.*)\n/g;
+  const jsExampleBadRegex = /(?<!<!--\s)```js example-bad(.*)\n/g;
   
   const jsExampleBadMatches = textContent.matchAll(jsExampleBadRegex);
   if (jsExampleBadMatches) {
@@ -259,9 +311,10 @@ function replaceDOMXrefLinks(textContent, fileName) {
     let baseLink = "https://developer.mozilla.org/en-US/docs/Web/API/";
     let link = "";
 
-    // const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
+    const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
 
     // TODO: UPDATE TO REFLECT Document/ FOLDER FOR LOCAL OFFLINE FILES
+    // [DISABLED]
     if (false && fs.existsSync(glossaryDirectory)) {
 
       // Count the number of remaining path segments
@@ -328,9 +381,10 @@ function replaceJSXrefLinks(textContent, filename) {
     let baseLink = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/";
     let link = "";
 
-    // const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
+    const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);
 
     // TODO: UPDATE TO REFLECT Document/ FOLDER FOR LOCAL OFFLINE FILES
+    // [DISABLED]
     if (false && fs.existsSync(glossaryDirectory)) {
 
       // Count the number of remaining path segments
@@ -820,6 +874,28 @@ function parseExternalLinks(textContent) {
   return textContent;
 }
 
+/**
+ * @description: adds the following entries to the frontmatter section (as a YAML array):
+ * load_script_js_via_src:
+ *   - flems/flems.html
+ *   - flems/flems_init.js
+ * @param {*} textContent 
+ */
+function addFlemsLiveCodingScriptsToFrontMatter(textContent) {
+  // Parse markdown and separate Frontmatter and main content:
+  const { content, data: fm } = matter(textContent);
+  // Make sure that the entries end up as 3 lines instead of the following 1 line:
+  // load_script_js_via_src: flems/flems.html,flems/flems_init.js
+  fm.load_script_js_via_src = [
+    "flems/flems.html",
+    "flems/flems_init.js"
+  ];
+  // Recreate Frontmatter section as plain markdown text:
+  const fmText = createFrontMatterMarkdownFromObject(fm);
+  return fmText + content;
+
+}
+
 // 2) OUR VARIABLES: ===========================================================
 
 // 3) ACTION!!! ================================================================
@@ -832,6 +908,14 @@ function parseYariDynamicContent(textContent, fileName) {
   // Run this first:
   updatedTextContent = replaceHTMLGlossaryLinks(updatedTextContent, fileName);
   // Then run this one:
+  if ( isReplaceMarkdownHeadings ) {
+    updatedTextContent = replaceMarkdownHeadings(updatedTextContent);
+  }
+  if ( isFlemsLiveCodingScripts ) {
+    updatedTextContent = addFlemsLiveCodingScriptsToFrontMatter(updatedTextContent);
+  }
+  // Then run the rest of the parsers:  
+  updatedTextContent = cleanUpFrontMatter(updatedTextContent);
   updatedTextContent = removeNoteBlocks(updatedTextContent);
   updatedTextContent = removePreviousNextLinks(updatedTextContent);
   updatedTextContent = replaceJsNolintBlocks(updatedTextContent);
@@ -863,7 +947,66 @@ if (require.main === module) {
   // console.log("This script was imported as a module.");
 }
 
-function init() {
+let isReplaceMarkdownHeadings = true;
+let isFlemsLiveCodingScripts = false;
+
+/**
+ * @description: Asks the user whether they want to enable the 'replaceMarkdownHeadings' option using native Node.js modules (readline)
+ */
+function askForReplacingMarkdownHeadings() {
+
+  return new Promise((resolve) => {
+
+    const readline = require('readline');
+
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question('Do you want to enable the "replaceMarkdownHeadings" option? (Y/n): ', (answer) => {
+      if (answer.toLowerCase() === 'n' || answer.toLowerCase() === 'no') {
+        isReplaceMarkdownHeadings = false;
+        info('The "replaceMarkdownHeadings" option remains disabled.');
+      } else {
+        ok('The "replaceMarkdownHeadings" option is enabled.');
+      }
+      rl.close();
+      resolve();
+    });
+
+  });
+
+}
+
+/**
+ * @description: Asks the user whether they want to enable the 'isFlemsLiveCodingScripts' option using native Node.js modules (readline)
+ */
+function askForEnablingFlemsLiveCodingScripts() {
+  return new Promise((resolve) => {
+
+    const readline = require('readline');
+
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question('Do you want to enable the "isFlemsLiveCodingScripts" option? (y/N): ', (answer) => {
+      if (answer.toLowerCase() === 'y' || answer.toLowerCase() === 'yes') {
+        isFlemsLiveCodingScripts = true;
+        ok('The "isFlemsLiveCodingScripts" option is enabled.');
+      } else {
+        info('The "isFlemsLiveCodingScripts" option remains disabled.');
+      }
+      rl.close();
+      resolve();
+    });
+
+  });
+}
+
+async function init() {
 
   const fileName = process.argv[2];
 
@@ -874,7 +1017,24 @@ function init() {
 
   try {
 
+    // Ask the user whether the want to enable the 'replaceMarkdownHeadings' option using a dropdown prompt:
+
     console.log(`Processing ${fileName}`);
+    
+    await askForReplacingMarkdownHeadings();
+    await askForEnablingFlemsLiveCodingScripts();
+
+    if ( isReplaceMarkdownHeadings ) {
+      console.log("The 'replaceMarkdownHeadings' option is enabled.");
+    } else {
+      console.log("The 'replaceMarkdownHeadings' option is disabled.");
+    }
+
+    if ( isFlemsLiveCodingScripts ) {
+      console.log("The 'isFlemsLiveCodingScripts' option is enabled.");
+    } else {
+      console.log("The 'isFlemsLiveCodingScripts' option is disabled.");
+    }
 
     const file = fs.readFileSync(fileName, "utf-8");
     fs.writeFileSync(fileName, parseYariDynamicContent(file, fileName), "utf8");

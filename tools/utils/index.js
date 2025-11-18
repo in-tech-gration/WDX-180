@@ -212,6 +212,19 @@ function createFrontMatterMarkdownFromObject( fmObj ){
     fmText = [
       "---",
       ...fmObjEntries.map(([key, value]) => {
+
+        // If the type is Array make sure to use YAML list format:
+        // entry:
+        //  - valueA
+        //  - valueB
+        if ( Array.isArray(value) ) {
+          let arrayText = `${key}:\n`;
+          value.forEach( item => {
+            arrayText += `  - ${item}\n`;
+          });
+          return arrayText.trimEnd();
+        }
+        
         return `${key}: ${value}`
       }),
       "---"

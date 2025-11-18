@@ -1,5 +1,8 @@
 ---
 title: JavaScript - Functions
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 
