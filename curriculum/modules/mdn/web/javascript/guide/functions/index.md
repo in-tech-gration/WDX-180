@@ -1,8 +1,5 @@
 ---
-title: Functions
-slug: Web/JavaScript/Guide/Functions
-page-type: guide
-sidebar: jssidebar
+title: JavaScript - Functions
 ---
 
 
