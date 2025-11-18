@@ -5,17 +5,16 @@ page-type: guide
 sidebar: jssidebar
 ---
 
-{{PreviousNext("Web/JavaScript/Guide/Loops_and_iteration", "Web/JavaScript/Guide/Expressions_and_operators")}}
 
 Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
 
-See also the [exhaustive reference chapter about JavaScript functions](/en-US/docs/Web/JavaScript/Reference/Functions) to get to know the details.
+See also the [exhaustive reference chapter about JavaScript functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions){:target="_blank"} to get to know the details.
 
-## Defining functions
+**Defining functions**
 
-### Function declarations
+**Function declarations**
 
-A **function definition** (also called a **function declaration**, or **function statement**) consists of the [`function`](/en-US/docs/Web/JavaScript/Reference/Statements/function) keyword, followed by:
+A **function definition** (also called a **function declaration**, or **function statement**) consists of the [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function){:target="_blank"} keyword, followed by:
 
 - The name of the function.
 - A list of parameters to the function, enclosed in parentheses and separated by commas.
@@ -29,7 +28,7 @@ function square(number) {
 }
 ```
 
-The function `square` takes one parameter, called `number`. The function consists of one statement that says to return the parameter of the function (that is, `number`) multiplied by itself. The [`return`](/en-US/docs/Web/JavaScript/Reference/Statements/return) statement specifies the value returned by the function, which is `number * number`.
+The function `square` takes one parameter, called `number`. The function consists of one statement that says to return the parameter of the function (that is, `number`) multiplied by itself. The [`return`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return){:target="_blank"} statement specifies the value returned by the function, which is `number * number`.
 
 Parameters are essentially passed to functions **by value** — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, **the change is not reflected globally or in the code which called that function**.
 
@@ -78,9 +77,9 @@ function addSquares(a, b) {
 
 See [function scopes and closures](#function_scopes_and_closures) for more information.
 
-### Function expressions
+**Function expressions**
 
-While the function declaration above is syntactically a statement, functions can also be created by a [function expression](/en-US/docs/Web/JavaScript/Reference/Operators/function).
+While the function declaration above is syntactically a statement, functions can also be created by a [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function){:target="_blank"}.
 
 Such a function can be **anonymous**; it does not have to have a name. For example, the function `square` could have been defined as:
 
@@ -131,11 +130,11 @@ if (num === 0) {
 }
 ```
 
-In addition to defining functions as described here, you can also use the {{jsxref("Function")}} constructor to create functions from a string at runtime, much like {{jsxref("Global_Objects/eval", "eval()")}}.
+In addition to defining functions as described here, you can also use the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} constructor to create functions from a string at runtime, much like [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval){:target="_blank"}.
 
-A **method** is a function that is a property of an object. Read more about objects and methods in [Working with objects](/en-US/docs/Web/JavaScript/Guide/Working_with_objects).
+A **method** is a function that is a property of an object. Read more about objects and methods in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}.
 
-## Calling functions
+**Calling functions**
 
 _Defining_ a function does not _execute_ it. Defining it names the function and specifies what to do when the function is called.
 
@@ -149,7 +148,7 @@ The preceding statement calls the function with an argument of `5`. The function
 
 Functions must be _in scope_ when they are called, but the function declaration can be [hoisted](#function_hoisting) (appear below the call in the code). The scope of a function declaration is the function in which it is declared (or the entire program, if it is declared at the top level).
 
-The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The `showProps()` function (defined in [Working with objects](/en-US/docs/Web/JavaScript/Guide/Working_with_objects#objects_and_properties)) is an example of a function that takes an object as an argument.
+The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The `showProps()` function (defined in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#objects_and_properties){:target="_blank"}){:target="_blank"} is an example of a function that takes an object as an argument.
 
 A function can call itself. For example, here is a function that computes factorials recursively:
 
@@ -174,9 +173,9 @@ console.log(factorial(5)); // 120
 
 There are other ways to call functions. There are often cases where a function needs to be called dynamically, or the number of arguments to a function vary, or in which the context of the function call needs to be set to a specific object determined at runtime.
 
-It turns out that _functions are themselves objects_ — and in turn, these objects have methods. (See the {{jsxref("Function")}} object.) The [`call()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [`apply()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) methods can be used to achieve this goal.
+It turns out that _functions are themselves objects_ — and in turn, these objects have methods. (See the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} object.) The [`call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call){:target="_blank"} and [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply){:target="_blank"} methods can be used to achieve this goal.
 
-### Function hoisting
+**Function hoisting**
 
 Consider the example below:
 
@@ -201,14 +200,15 @@ console.log(square(5)); // 25
 
 Function hoisting only works with function _declarations_ — not with function _expressions_. The following code will not work:
 
-```js example-bad
+<!-- ```js example-bad -->
+```js
 console.log(square(5)); // ReferenceError: Cannot access 'square' before initialization
 const square = function (n) {
   return n * n;
 };
 ```
 
-### Recursion
+**Recursion**
 
 A function can refer to and call itself. It can be referred to either by the function expression or declaration's name, or via any in-scope variable that refers to the function object. For example, consider the following function definition:
 
@@ -247,7 +247,7 @@ function loop(x) {
 loop(0);
 ```
 
-However, some algorithms cannot be simple iterative loops. For example, getting all the nodes of a tree structure (such as the [DOM](/en-US/docs/Web/API/Document_Object_Model)) is easier via recursion:
+However, some algorithms cannot be simple iterative loops. For example, getting all the nodes of a tree structure (such as the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model){:target="_blank"}){:target="_blank"} is easier via recursion:
 
 ```js
 function walkTree(node) {
@@ -289,9 +289,9 @@ foo(3);
 // end: 3
 ```
 
-### Immediately Invoked Function Expressions (IIFE)
+**Immediately Invoked Function Expressions (IIFE)**
 
-An [Immediately Invoked Function Expression (IIFE)](/en-US/docs/Glossary/IIFE) is a code pattern that directly calls a function defined as an expression. It looks like this:
+An [Immediately Invoked Function Expression (IIFE)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE){:target="_blank"} is a code pattern that directly calls a function defined as an expression. It looks like this:
 
 ```js
 (function () {
@@ -309,11 +309,11 @@ Instead of saving the function in a variable, the function is immediately invoke
 - It creates an extra [scope](#function_scopes_and_closures) of variables, which helps to confine variables to the place where they are useful.
 - It is now an _expression_ instead of a sequence of _statements_. This allows you to write complex computation logic when initializing variables.
 
-For more information, see the [IIFE](/en-US/docs/Glossary/IIFE) glossary entry.
+For more information, see the [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE){:target="_blank"} glossary entry.
 
-## Function scopes and closures
+**Function scopes and closures**
 
-Functions form a [scope](/en-US/docs/Glossary/Scope) for variables—this means variables defined inside a function cannot be accessed from anywhere outside the function. The function scope inherits from all the upper scopes. For example, a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access. On the other hand, the parent function (and any other parent scope) does _not_ have access to the variables and functions defined inside the inner function. This provides a sort of encapsulation for the variables in the inner function.
+Functions form a [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope){:target="_blank"} for variables—this means variables defined inside a function cannot be accessed from anywhere outside the function. The function scope inherits from all the upper scopes. For example, a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access. On the other hand, the parent function (and any other parent scope) does _not_ have access to the variables and functions defined inside the inner function. This provides a sort of encapsulation for the variables in the inner function.
 
 ```js
 // The following variables are defined in the global scope
@@ -343,7 +343,7 @@ function getScore() {
 console.log(getScore()); // "Chamakh scored 5"
 ```
 
-### Closures
+**Closures**
 
 We also refer to the function body as a _closure_. A closure is any piece of source code (most commonly, a function) that refers to some variables, and the closure "remembers" these variables even when the scope in which these variables were declared has exited.
 
@@ -429,7 +429,7 @@ console.log(getCode()); // "0]Eal(eh&2"
 
 In the code above, we use the [IIFE](#immediately_invoked_function_expressions_iife) pattern. Within this IIFE scope, two values exist: a variable `apiCode` and an unnamed function that gets returned and gets assigned to the variable `getCode`. `apiCode` is in the scope of the returned unnamed function but not in the scope of any other part of the program, so there is no way for reading the value of `apiCode` apart from via the `getCode` function.
 
-### Multiply-nested functions
+**Multiply-nested functions**
 
 Functions can be multiply-nested. For example:
 
@@ -460,7 +460,7 @@ In this example, `C` accesses `B`'s `y` and `A`'s `x`. This can be done because:
 
 The reverse, however, is not true. `A` cannot access `C`, because `A` cannot access any argument or variable of `B`, which `C` is a variable of. Thus, `C` remains private to only `B`.
 
-### Name conflicts
+**Name conflicts**
 
 When two arguments or variables in the scopes of a closure have the same name, there is a _name conflict_. More nested scopes take precedence. So, the innermost scope takes the highest precedence, while the outermost scope takes the lowest. This is the scope chain. The first on the chain is the innermost scope, and the last is the outermost scope. Consider the following:
 
@@ -478,7 +478,7 @@ console.log(outside()(10)); // 20 (instead of 10)
 
 The name conflict happens at the statement `return x * 2` and is between `inside`'s parameter `x` and `outside`'s variable `x`. The scope chain here is `inside` => `outside` => global object. Therefore, `inside`'s `x` takes precedences over `outside`'s `x`, and `20` (`inside`'s `x`) is returned instead of `10` (`outside`'s `x`).
 
-## Using the arguments object
+**Using the arguments object**
 
 The arguments of a function are maintained in an array-like object. Within a function, you can address the arguments passed to it as follows:
 
@@ -516,16 +516,15 @@ console.log(myConcat(". ", "sage", "basil", "oregano", "pepper", "parsley"));
 // "sage. basil. oregano. pepper. parsley. "
 ```
 
-> [!NOTE]
 > The `arguments` variable is "array-like", but not an array. It is array-like in that it has a numbered index and a `length` property. However, it does _not_ possess all of the array-manipulation methods.
 
-See the {{jsxref("Function")}} object in the JavaScript reference for more information.
+See the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} object in the JavaScript reference for more information.
 
-## Function parameters
+**Function parameters**
 
 There are two special kinds of parameter syntax: _default parameters_ and _rest parameters_.
 
-### Default parameters
+**Default parameters**
 
 In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.
 
@@ -552,11 +551,11 @@ function multiply(a, b = 1) {
 console.log(multiply(5)); // 5
 ```
 
-For more details, see [default parameters](/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) in the reference.
+For more details, see [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters){:target="_blank"} in the reference.
 
-### Rest parameters
+**Rest parameters**
 
-The [rest parameter](/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) syntax allows us to represent an indefinite number of arguments as an array.
+The [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters){:target="_blank"} syntax allows us to represent an indefinite number of arguments as an array.
 
 In the following example, the function `multiply` uses _rest parameters_ to collect arguments from the second one to the end. The function then multiplies these by the first argument.
 
@@ -569,13 +568,13 @@ const arr = multiply(2, 1, 2, 3);
 console.log(arr); // [2, 4, 6]
 ```
 
-## Arrow functions
+**Arrow functions**
 
-An [arrow function expression](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) (also called a _fat arrow_ to distinguish from a hypothetical `->` syntax in future JavaScript) has a shorter syntax compared to function expressions and does not have its own [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this), [`arguments`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments), [`super`](/en-US/docs/Web/JavaScript/Reference/Operators/super), or [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target). Arrow functions are always anonymous.
+An [arrow function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions){:target="_blank"} (also called a _fat arrow_ to distinguish from a hypothetical `->` syntax in future JavaScript) has a shorter syntax compared to function expressions and does not have its own [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this){:target="_blank"}, [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments){:target="_blank"}, [`super`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super){:target="_blank"}, or [`new.target`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target){:target="_blank"}. Arrow functions are always anonymous.
 
 Two factors influenced the introduction of arrow functions: _shorter functions_ and _non-binding_ of `this`.
 
-### Shorter functions
+**Shorter functions**
 
 In some functional patterns, shorter functions are welcome. Compare:
 
@@ -593,9 +592,9 @@ const a3 = a.map((s) => s.length);
 console.log(a3); // [8, 6, 7, 9]
 ```
 
-### No separate this
+**No separate this**
 
-Until arrow functions, every new function defined its own [`this`](/en-US/docs/Web/JavaScript/Reference/Operators/this) value (a new object in the case of a constructor, undefined in [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode) function calls, the base object if the function is called as an "object method", etc.). This proved to be less than ideal with an object-oriented style of programming.
+Until arrow functions, every new function defined its own [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this){:target="_blank"} value (a new object in the case of a constructor, undefined in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode){:target="_blank"} function calls, the base object if the function is called as an "object method", etc.). This proved to be less than ideal with an object-oriented style of programming.
 
 ```js
 function Person() {
@@ -630,7 +629,7 @@ function Person() {
 }
 ```
 
-Alternatively, a [bound function](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) could be created so that the proper `this` value would be passed to the `growUp()` function.
+Alternatively, a [bound function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind){:target="_blank"} could be created so that the proper `this` value would be passed to the `growUp()` function.
 
 An arrow function does not have its own `this`; the `this` value of the enclosing execution context is used. Thus, in the following code, the `this` within the function that is passed to `setInterval` has the same value as `this` in the enclosing function:
 
@@ -646,4 +645,3 @@ function Person() {
 const p = new Person();
 ```
 
-{{PreviousNext("Web/JavaScript/Guide/Loops_and_iteration", "Web/JavaScript/Guide/Expressions_and_operators")}}
