@@ -28,6 +28,10 @@ function square(number) {
 }
 ```
 
+Go ahead, try it out! Click the `Live coding` button below and try to call the 
+`square` function with a couple of different values, store them in a variable
+and display the variable using `console.log()` or `alert()`.
+
 [&#9658; Live coding](#flems-enable)
 
 The function `square` takes one parameter, called `number`. The function consists of one statement that says to return the parameter of the function (that is, `number`) multiplied by itself. The [`return`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return){:target="_blank"} statement specifies the value returned by the function, which is `number * number`.
@@ -49,8 +53,10 @@ const myCar = {
 
 console.log(myCar.make); // "Honda"
 myFunc(myCar);
-console.log(myCar.make); // "Toyota"
+console.log(myCar.make); // What do you think this log will output?
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 When you pass an array as a parameter, if the function changes any of the array's values, that change is visible outside the function, as shown in the following example:
 
@@ -63,8 +69,10 @@ const arr = [45];
 
 console.log(arr[0]); // 45
 myFunc(arr);
-console.log(arr[0]); // 30
+console.log(arr[0]); // What do you think this log will output?
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 Function declarations and expressions can be nested, which forms a _scope chain_. For example:
 
@@ -93,6 +101,8 @@ const square = function (number) {
 console.log(square(4)); // 16
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 However, a name _can_ be provided with a function expression. Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces:
 
 ```js
@@ -101,7 +111,14 @@ const factorial = function fac(n) {
 };
 
 console.log(factorial(3)); // 6
+console.log(factorial(4)); // What do you think this log will output?
 ```
+
+Think about how the code will execute on the second call (4) and try
+to predict the result. Then, hit the `Live coding` button below to
+check your assumptions.
+
+[&#9658; Live coding](#flems-enable)
 
 Function expressions are convenient when passing a function as an argument to another function. The following example defines a `map` function that should receive a function as first argument and an array as second argument. Then, it is called with a function defined by a function expression:
 
@@ -120,6 +137,8 @@ const cubedNumbers = map(function (x) {
 }, numbers);
 console.log(cubedNumbers); // [0, 1, 8, 125, 1000]
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 In JavaScript, a function can be defined based on a condition. For example, the following function definition defines `myFunc` only if `num` equals `0`:
 
@@ -161,17 +180,17 @@ function factorial(n) {
   }
   return n * factorial(n - 1);
 }
-```
 
-You could then compute the factorials of `1` through `5` as follows:
+// You could then compute the factorials of `1` through `5` as follows:
 
-```js
 console.log(factorial(1)); // 1
 console.log(factorial(2)); // 2
 console.log(factorial(3)); // 6
 console.log(factorial(4)); // 24
 console.log(factorial(5)); // 120
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 There are other ways to call functions. There are often cases where a function needs to be called dynamically, or the number of arguments to a function vary, or in which the context of the function call needs to be set to a specific object determined at runtime.
 
@@ -291,6 +310,8 @@ foo(3);
 // end: 3
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 **Immediately Invoked Function Expressions (IIFE)**
 
 An [Immediately Invoked Function Expression (IIFE)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE){:target="_blank"} is a code pattern that directly calls a function defined as an expression. It looks like this:
@@ -345,6 +366,8 @@ function getScore() {
 console.log(getScore()); // "Chamakh scored 5"
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 **Closures**
 
 We also refer to the function body as a _closure_. A closure is any piece of source code (most commonly, a function) that refers to some variables, and the closure "remembers" these variables even when the scope in which these variables were declared has exited.
@@ -371,6 +394,8 @@ const myPet = pet("Vivie");
 
 console.log(myPet()); // "Vivie"
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 It can be much more complex than the code above. An object containing methods for manipulating the inner variables of the outer function can be returned.
 
@@ -415,6 +440,8 @@ console.log(pet.getSex()); // male
 console.log(pet.getName()); // Oliver
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 In the code above, the `name` variable of the outer function is accessible to the inner functions, and there is no other way to access the inner variables except through the inner functions. The inner variables of the inner functions act as safe stores for the outer arguments and variables. They hold "persistent" and "encapsulated" data for the inner functions to work with. The functions do not even have to be assigned to a variable, or have a name.
 
 ```js
@@ -428,6 +455,8 @@ const getCode = (function () {
 
 console.log(getCode()); // "0]Eal(eh&2"
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 In the code above, we use the [IIFE](#immediately_invoked_function_expressions_iife) pattern. Within this IIFE scope, two values exist: a variable `apiCode` and an unnamed function that gets returned and gets assigned to the variable `getCode`. `apiCode` is in the scope of the returned unnamed function but not in the scope of any other part of the program, so there is no way for reading the value of `apiCode` apart from via the `getCode` function.
 
@@ -453,6 +482,8 @@ function A(x) {
 }
 A(1); // Logs 6 (which is 1 + 2 + 3)
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 In this example, `C` accesses `B`'s `y` and `A`'s `x`. This can be done because:
 
@@ -503,11 +534,8 @@ function myConcat(separator) {
   }
   return result;
 }
-```
 
-You can pass any number of arguments to this function, and it concatenates each argument into a string "list":
-
-```js
+// You can pass any number of arguments to this function, and it concatenates each argument into a string "list":
 console.log(myConcat(", ", "red", "orange", "blue"));
 // "red, orange, blue, "
 
@@ -517,6 +545,8 @@ console.log(myConcat("; ", "elephant", "giraffe", "lion", "cheetah"));
 console.log(myConcat(". ", "sage", "basil", "oregano", "pepper", "parsley"));
 // "sage. basil. oregano. pepper. parsley. "
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 > The `arguments` variable is "array-like", but not an array. It is array-like in that it has a numbered index and a `length` property. However, it does _not_ possess all of the array-manipulation methods.
 
@@ -543,6 +573,8 @@ function multiply(a, b) {
 console.log(multiply(5)); // 5
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 With _default parameters_, a manual check in the function body is no longer necessary. You can put `1` as the default value for `b` in the function head:
 
 ```js
@@ -552,6 +584,8 @@ function multiply(a, b = 1) {
 
 console.log(multiply(5)); // 5
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 For more details, see [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters){:target="_blank"} in the reference.
 
@@ -569,6 +603,8 @@ function multiply(multiplier, ...theArgs) {
 const arr = multiply(2, 1, 2, 3);
 console.log(arr); // [2, 4, 6]
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 **Arrow functions**
 
@@ -593,6 +629,8 @@ const a3 = a.map((s) => s.length);
 
 console.log(a3); // [8, 6, 7, 9]
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 **No separate this**
 
