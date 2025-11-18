@@ -25,6 +25,8 @@ function square(number) {
 }
 ```
 
+[&#9658; Live coding](#flems-enable)
+
 The function `square` takes one parameter, called `number`. The function consists of one statement that says to return the parameter of the function (that is, `number`) multiplied by itself. The [`return`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return){:target="_blank"} statement specifies the value returned by the function, which is `number * number`.
 
 Parameters are essentially passed to functions **by value** — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, **the change is not reflected globally or in the code which called that function**.
