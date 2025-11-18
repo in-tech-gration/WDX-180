@@ -42,7 +42,7 @@ function replaceMarkdownHeadings(textContent) {
   const replacedContent = textContent.replace(headingRegex, (match, hashes, headingText) => {
     const emphasisText = `**${headingText.trim()}**`;
     const commentedHeading = `<!-- ${hashes} ${headingText.trim()} -->`;
-    return `${commentedHeading}\n${emphasisText}`;
+    return `\n${commentedHeading}\n${emphasisText}`;
   });
   return replacedContent;
 }

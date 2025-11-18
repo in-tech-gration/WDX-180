@@ -18,10 +18,9 @@ schedule:
     4: # JavaScript - Functions 1
       # file://./../modules/javascript/core/functions/mdn/functions-1.md
       module: javascript/core/functions/mdn/functions-1.md
-    5: # JavaScript - Expressions & Operators
-      # file://./../modules/mdn/web/javascript/guide/
-      # module: mdn/web/javascript/guide/
-      module: work-in-progress/
+    5: # JavaScript - Expressions & Operators 1
+      # file://./../modules/javascript/core/functions/mdn/expressions_and_operators-1.md
+      module: javascript/core/functions/mdn/expressions_and_operators-1.md
 
 # ---
 
