@@ -1,0 +1,21 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Core 3
+header_image: week09/assets/header--mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg
+schedule: 
+  days:
+    1: # Functions 1
+      # file://./../modules/javascript/core/functions/inside-js/functions-part-1/index.md
+      module: javascript/core/functions/inside-js/functions-part-1
+    2: # Functions 2
+      # file://./../modules/javascript/core/functions/inside-js/functions-part-2.md
+      module: javascript/core/functions/inside-js/functions-part-2.md
+    3: # Arrays 1
+      # file://./../modules/javascript/core/arrays/inside-js/arrays-part-1.md
+      module: javascript/core/arrays/inside-js/arrays-part-1.md
+    4: # Arrays 2
+      # file://./../modules/javascript/core/arrays/inside-js/arrays-part-2.md
+      module: javascript/core/arrays/inside-js/arrays-part-2.md
+    5: # Objects 1
+      # file://./../modules/javascript/core/objects/inside-js/objects-part-1.md
+      module: javascript/core/objects/inside-js/objects-part-1.md
