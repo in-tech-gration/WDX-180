@@ -1,0 +1,22 @@
+input: curriculum/schedule/weekly.draft.md
+daily_input: curriculum/schedule/daily.draft.md
+title: JavaScript Core 2
+header_image: week08/assets/header--cookie-the-pom-gySMaocSdqs-unsplash.jpg
+schedule: 
+
+  days:
+    1: # DENEPO: UNDERSTANDING PROGRAMS 1
+      # file://./../modules/javascript/denepo/understanding-programs/part-01/index.md
+      module: javascript/denepo/understanding-programs/part-01
+    2: # DENEPO: UNDERSTANDING PROGRAMS 2
+      # file://./../modules/javascript/denepo/understanding-programs/part-02/index.md
+      module: javascript/denepo/understanding-programs/part-02
+    3: # DENEPO: DEVELOPING PROGRAMS 1
+      # file://./../modules/javascript/denepo/developing-programs/part-01/index.md
+      module: javascript/denepo/developing-programs/part-01
+    4: # DENEPO: DEVELOPING PROGRAMS 2
+      # file://./../modules/javascript/denepo/developing-programs/part-02/index.md
+      module: javascript/denepo/developing-programs/part-02
+    5: # DENEPO: DEVELOPING PROGRAMS 3
+      # file://./../modules/javascript/denepo/developing-programs/part-03/index.md
+      module: javascript/denepo/developing-programs/part-03
