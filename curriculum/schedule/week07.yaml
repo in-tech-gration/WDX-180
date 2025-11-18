@@ -16,7 +16,7 @@ schedule:
       # file://./../modules/mdn/web/javascript/guide/loops_and_iteration/index.md
       module: mdn/web/javascript/guide/loops_and_iteration/
     4: # JavaScript - Functions 1
-      # file://./../modules/javascript/core/functions/mdn/index.md
+      # file://./../modules/javascript/core/functions/mdn/functions-1.md
       module: javascript/core/functions/mdn/functions-1.md
     5: # JavaScript - Expressions & Operators
       # file://./../modules/mdn/web/javascript/guide/

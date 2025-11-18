@@ -7,8 +7,8 @@ schedule:
 
   days:
     1: # JavaScript - Functions 2
-      # file://./../modules/*/index.md
-      module: work-in-progress/
+      # file://./../modules/javascript/core/functions/mdn/functions-2.md
+      module: javascript/core/functions/mdn/functions-2.md
     2: # 
       # file://./../modules/*/index.md
       module: work-in-progress/

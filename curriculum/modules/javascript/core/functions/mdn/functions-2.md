@@ -410,3 +410,7 @@ function Person() {
 
 const p = new Person();
 ```
+
+<!-- ### Exercises -->
+
+<!-- SGEN:META:PROGRESS:task=Study the Functions 2 module and practice -->

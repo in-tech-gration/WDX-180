@@ -472,3 +472,6 @@ for (const [key, val] of Object.entries(obj)) {
 
 [&#9658; Live coding](#flems-enable)
 
+<!-- ### Exercises -->
+
+<!-- SGEN:META:PROGRESS:task=Study the Loops and Iteration module and practice -->

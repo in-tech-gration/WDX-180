@@ -283,3 +283,7 @@ console.log(arr); // [2, 4, 6]
 ```
 
 [&#9658; Live coding](#flems-enable)
+
+<!-- ### Exercises -->
+
+<!-- SGEN:META:PROGRESS:task=Study the Functions 1 module and practice -->
