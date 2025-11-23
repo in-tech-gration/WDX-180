@@ -40,6 +40,13 @@ title: "{{ SGEN:WEEK }} | {{ SGEN:TITLE }}"
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
 {{ SGEN:WEEKLY_CONTENT }}

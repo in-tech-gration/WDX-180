@@ -6,18 +6,18 @@ version: 2.0
 schedule: 
 
   days:
-    1: # DENEPO: UNDERSTANDING PROGRAMS 1
-      # file://./../modules/javascript/denepo/understanding-programs/part-01/index.md
-      module: javascript/denepo/understanding-programs/part-01
-    2: # DENEPO: UNDERSTANDING PROGRAMS 2
-      # file://./../modules/javascript/denepo/understanding-programs/part-02/index.md
-      module: javascript/denepo/understanding-programs/part-02
-    3: # DENEPO: DEVELOPING PROGRAMS 1
-      # file://./../modules/javascript/denepo/developing-programs/part-01/index.md
-      module: javascript/denepo/developing-programs/part-01
-    4: # DENEPO: DEVELOPING PROGRAMS 2
-      # file://./../modules/javascript/denepo/developing-programs/part-02/index.md
-      module: javascript/denepo/developing-programs/part-02
-    5: # DENEPO: DEVELOPING PROGRAMS 3
-      # file://./../modules/javascript/denepo/developing-programs/part-03/index.md
-      module: javascript/denepo/developing-programs/part-03
+    1: # JavaScript - Functions 2
+      # file://./../modules/javascript/core/functions/mdn/functions-2.md
+      module: javascript/core/functions/mdn/functions-2.md
+    2: # 
+      # file://./../modules/*/index.md
+      module: work-in-progress/
+    3: # 
+      # file://./../modules/*/index.md
+      module: work-in-progress/
+    4: # 
+      # file://./../modules/*/index.md
+      module: work-in-progress/
+    5: # 
+      # file://./../modules/*/index.md
+      module: work-in-progress/
