@@ -28,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 23/11/2025</span>
+  <span>Updated: 24/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
