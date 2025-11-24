@@ -76,6 +76,8 @@
     let containsJS;
     let containsJSX;
 
+    console.log(codeContainers);
+
     codeContainers.forEach( codeContainer =>{
       if ( !codeContainer.classList.contains("highlighter-rouge") ){
         return false;
@@ -86,20 +88,23 @@
       // Initialize JavaScript, React(JSX) or HTML Code Playgrounds:
       // Check for both language-js and language-javascript classes.
       const parentClassList = codeContainer.classList;
-      containsJS =
-        parentClassList.contains("language-js") ||
-        parentClassList.contains("language-javascript");
       containsJSX = parentClassList.contains("language-jsx");
       containsHTML = parentClassList.contains("language-html");
       containsCSS  = parentClassList.contains("language-css");
-  
-      if (containsJS) {
-        console.log("Initializing JS Flems playground...");
-  
-        files.push({
-          name: "playground.js",
-          content: `\n${code}\n`,
-        });
+
+      if ( !containsJS ){
+        containsJS =
+          parentClassList.contains("language-js") ||
+          parentClassList.contains("language-javascript");
+    
+        if (containsJS) {
+          console.log("Initializing JS Flems playground...");
+    
+          files.push({
+            name: "playground.js",
+            content: `\n${code}\n`,
+          });
+        }
       }
   
       if (containsCSS) {
