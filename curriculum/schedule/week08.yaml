@@ -10,8 +10,8 @@ schedule:
       # file://./../modules/javascript/core/functions/mdn/functions-2.md
       module: javascript/core/functions/mdn/functions-2.md
     2: # Expressions & Operators 2
-      # file://./../modules/javascript/core/functions/mdn/expressions_and_operators-2.md
-      module: javascript/core/functions/mdn/expressions_and_operators-2.md
+      # file://./../modules/javascript/core/expressions_and_operators/expressions_and_operators-2.md
+      module: javascript/core/expressions_and_operators/expressions_and_operators-2.md
     3: # 
       # file://./../modules/*/index.md
       module: work-in-progress/
