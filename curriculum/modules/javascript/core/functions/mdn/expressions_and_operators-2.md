@@ -203,4 +203,6 @@ This chapter describes more of JavaScript's expressions and operators.
 
   The [working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"} guide goes into more details about object properties.
 
+<!-- ### Exercises -->
+
 <!-- SGEN:META:PROGRESS:task=Study the Expressions and Operators 2 module and practice -->

@@ -443,4 +443,6 @@ This chapter describes more of JavaScript's expressions and operators.
   super.functionOnParent(args);
   ```
 
+<!-- ### Exercises -->
+
 <!-- SGEN:META:PROGRESS:task=Study the Expressions and Operators 3 module and practice -->
