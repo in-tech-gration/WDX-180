@@ -55,27 +55,27 @@
 
 ### Week 07 - JavaScript Core 1
 
-  - Day 01: Just Enough JavaScript - Part 1 (DeNepo)
-  - Day 02: Just Enough JavaScript - Part 2 (DeNepo)
-  - Day 03: Just Enough JavaScript - Part 3 (DeNepo)
-  - Day 04: Just Enough JavaScript - Part 4 (DeNepo)
-  - Day 05: Just Enough JavaScript - Part 5 (DeNepo)
+  - Day 01: JavaScript Core 1: Grammar & Types (MDN)
+  - Day 02: JavaScript Core 1: Control flow & Error Handling (MDN)
+  - Day 03: JavaScript Core 1: Loops and Iteration (MDN)
+  - Day 04: JavaScript Core 1: Functions 1 (MDN)
+  - Day 05: JavaScript Core 1: Expressions & Operators 1 (MDN)
 
 ### Week 08 - JavaScript Core 2
 
-  - Day 01: Understanding Programs - Part 1 (DeNepo)
-  - Day 02: Understanding Programs - Part 2 (DeNepo)
-  - Day 03: Developing Programs - Part 1 (DeNepo)
-  - Day 04: Developing Programs - Part 2 (DeNepo)
-  - Day 05: Developing Programs - Part 3 (DeNepo)
+  - Day 01: JavaScript Core 2
+  - Day 02: JavaScript Core 2
+  - Day 03: JavaScript Core 2
+  - Day 04: JavaScript Core 2
+  - Day 05: JavaScript Core 2
 
 ### Week 09 - JavaScript Core 3
 
-  - Day 01: Functions Part 1
-  - Day 02: Functions Part 2
-  - Day 03: Arrays Part 1
-  - Day 04: Arrays Part 2
-  - Day 05: Objects Part 1
+  - Day 01: JavaScript Core 3
+  - Day 02: JavaScript Core 3
+  - Day 03: JavaScript Core 3
+  - Day 04: JavaScript Core 3
+  - Day 05: JavaScript Core 3
 
 ### Week 10 - Web APIs 1: DOM
 
