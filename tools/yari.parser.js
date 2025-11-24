@@ -379,6 +379,9 @@ function replaceJSXrefLinks(textContent, filename) {
     // TODO: Replace MDN domain with local resources/glossary path if available
     // TODO: Find when Global_Objects path is needed (.../Reference/Global_Objects/...)
     let baseLink = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/";
+    if ( p1.startsWith("Math.") ){
+      baseLink = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/";
+    }
     let link = "";
 
     const glossaryDirectory = path.join(__dirname, '..', "resources", "glossary", `${p1}.md`);

@@ -190,60 +190,60 @@ source: https://github.com/in-tech-gration/content/blob/main/files/en-us/web/jav
     </thead>
     <tbody>
       <tr>
-        <td>{{jsxref("Math.abs", "abs()")}}</td>
+        <td>[abs()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs){:target="_blank"}</td>
         <td>Absolute value</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.sin", "sin()")}},
-          {{jsxref("Math.cos", "cos()")}},
-          {{jsxref("Math.tan", "tan()")}}
+          [sin()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin){:target="_blank"},
+          [cos()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cos){:target="_blank"},
+          [tan()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tan){:target="_blank"}
         </td>
         <td>Standard trigonometric functions; with the argument in radians.</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.asin", "asin()")}},
-          {{jsxref("Math.acos", "acos()")}},
-          {{jsxref("Math.atan", "atan()")}},
-          {{jsxref("Math.atan2", "atan2()")}}
+          [asin()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asin){:target="_blank"},
+          [acos()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos){:target="_blank"},
+          [atan()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan){:target="_blank"},
+          [atan2()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2){:target="_blank"}
         </td>
         <td>Inverse trigonometric functions; return values in radians.</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.sinh", "sinh()")}},
-          {{jsxref("Math.cosh", "cosh()")}},
-          {{jsxref("Math.tanh", "tanh()")}}
+          [sinh()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh){:target="_blank"},
+          [cosh()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh){:target="_blank"},
+          [tanh()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh){:target="_blank"}
         </td>
         <td>Hyperbolic functions; argument in hyperbolic angle.</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.asinh", "asinh()")}},
-          {{jsxref("Math.acosh", "acosh()")}},
-          {{jsxref("Math.atanh", "atanh()")}}
+          [asinh()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh){:target="_blank"},
+          [acosh()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh){:target="_blank"},
+          [atanh()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh){:target="_blank"}
         </td>
         <td>Inverse hyperbolic functions; return values in hyperbolic angle.</td>
       </tr>
       <tr>
         <td>
           <p>
-            {{jsxref("Math.pow", "pow()")}},
-            {{jsxref("Math.exp", "exp()")}},
-            {{jsxref("Math.expm1", "expm1()")}},
-            {{jsxref("Math.log", "log()")}},
-            {{jsxref("Math.log10", "log10()")}},
-            {{jsxref("Math.log1p", "log1p()")}},
-            {{jsxref("Math.log2", "log2()")}}
+            [pow()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow){:target="_blank"},
+            [exp()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/exp){:target="_blank"},
+            [expm1()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1){:target="_blank"},
+            [log()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log){:target="_blank"},
+            [log10()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10){:target="_blank"},
+            [log1p()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p){:target="_blank"},
+            [log2()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2){:target="_blank"}
           </p>
         </td>
         <td>Exponential and logarithmic functions.</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.floor", "floor()")}},
-          {{jsxref("Math.ceil", "ceil()")}}
+          [floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor){:target="_blank"},
+          [ceil()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil){:target="_blank"}
         </td>
         <td>
           Returns the largest/smallest integer less/greater than or equal to an
@@ -252,8 +252,8 @@ source: https://github.com/in-tech-gration/content/blob/main/files/en-us/web/jav
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.min", "min()")}},
-          {{jsxref("Math.max", "max()")}}
+          [min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min){:target="_blank"},
+          [max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max){:target="_blank"}
         </td>
         <td>
           Returns the minimum or maximum (respectively) value of a comma separated
@@ -261,29 +261,29 @@ source: https://github.com/in-tech-gration/content/blob/main/files/en-us/web/jav
         </td>
       </tr>
       <tr>
-        <td>{{jsxref("Math.random", "random()")}}</td>
+        <td>[random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random){:target="_blank"}</td>
         <td>Returns a random number between 0 and 1.</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.round", "round()")}},
-          {{jsxref("Math.fround", "fround()")}},
-          {{jsxref("Math.trunc", "trunc()")}},
+          [round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round){:target="_blank"},
+          [fround()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/fround){:target="_blank"},
+          [trunc()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc){:target="_blank"},
         </td>
         <td>Rounding and truncation functions.</td>
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.sqrt", "sqrt()")}},
-          {{jsxref("Math.cbrt", "cbrt()")}},
-          {{jsxref("Math.hypot", "hypot()")}}
+          [sqrt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt){:target="_blank"},
+          [cbrt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt){:target="_blank"},
+          [hypot()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot){:target="_blank"}
         </td>
         <td>
           Square root, cube root, Square root of the sum of square arguments.
         </td>
       </tr>
       <tr>
-        <td>{{jsxref("Math.sign", "sign()")}}</td>
+        <td>[sign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign){:target="_blank"}</td>
         <td>
           The sign of a number, indicating whether the number is positive,
           negative or zero.
@@ -291,7 +291,7 @@ source: https://github.com/in-tech-gration/content/blob/main/files/en-us/web/jav
       </tr>
       <tr>
         <td>
-          {{jsxref("Math.clz32", "clz32()")}},<br />{{jsxref("Math.imul", "imul()")}}
+          [clz32()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32){:target="_blank"},<br />[imul()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul){:target="_blank"}
         </td>
         <td>
           Number of leading zero bits in the 32-bit binary representation.<br />The
