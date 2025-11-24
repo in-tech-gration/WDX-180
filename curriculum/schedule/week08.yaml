@@ -15,9 +15,9 @@ schedule:
     3: # JavaScript - Numbers & Strings
       # file://./../modules/mdn/web/javascript/guide/numbers_and_strings/index.md
       module: mdn/web/javascript/guide/numbers_and_strings/
-    4: # 
-      # file://./../modules/*/index.md
-      module: work-in-progress/
+    4: # JavaScript - Representing Dates & Times
+      # file://./../modules/mdn/web/javascript/guide/representing_dates_times/index.md
+      module: mdn/web/javascript/guide/representing_dates_times/
     5: # 
       # file://./../modules/*/index.md
       module: work-in-progress/
