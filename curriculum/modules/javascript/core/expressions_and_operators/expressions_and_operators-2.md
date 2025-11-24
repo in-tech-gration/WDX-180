@@ -8,7 +8,7 @@ Source: https://github.com/in-tech-gration/content/tree/main/files/en-us/web/jav
 
 ### Study Plan
 
-This chapter describes more of JavaScript's expressions and operators.
+  This chapter describes more of JavaScript's expressions and operators.
 
 <!-- ### Destructuring -->
 **Destructuring**

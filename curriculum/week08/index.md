@@ -496,7 +496,7 @@ const p = new Person();
 
 ### Study Plan
 
-This chapter describes more of JavaScript's expressions and operators.
+  This chapter describes more of JavaScript's expressions and operators.
 
 <!-- ### Destructuring -->
 
