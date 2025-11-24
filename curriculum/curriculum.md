@@ -98,7 +98,25 @@
     - Basic Expressions
     - Grouping operator
     - Property accessor
-  - Day 03: JavaScript Core 2
+  - Day 03: JavaScript Core 2: Numbers & Strings
+    - Numbers
+    - Decimal Numbers
+    - Binary Numbers
+    - Octal Numbers
+    - Hex Numbers
+    - Exponentiation
+    - Numeric separators
+    - Number Object
+    - Math Object
+    - BigIngs
+    - Strings
+    - String Literals
+    - Hex escape sequences
+    - Unicode escape sequences
+    - String Objects
+    - Template Literals
+    - Multi-lines
+    - Embedded Expressions
   - Day 04: JavaScript Core 2
   - Day 05: JavaScript Core 2
 
