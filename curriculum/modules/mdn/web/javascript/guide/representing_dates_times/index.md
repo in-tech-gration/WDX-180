@@ -1,8 +1,9 @@
----
+  ---
 title: Representing dates & times
 slug: Web/JavaScript/Guide/Representing_dates_times
 page-type: guide
 sidebar: jssidebar
+source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 ---
 
 {{PreviousNext("Web/JavaScript/Guide/Numbers_and_strings", "Web/JavaScript/Guide/Regular_expressions")}}
@@ -111,5 +112,63 @@ The following statements build a string value based on the time. The first state
 The next statement appends a `minute` value to `temp`. If the value of `minute` is less than 10, the conditional expression adds a string with a preceding zero; otherwise it adds a string with a demarcating colon. Then a statement appends a seconds value to `temp` in the same way.
 
 Finally, a conditional expression appends "P.M." to `temp` if `hour` is 12 or greater; otherwise, it appends "A.M." to `temp`.
+
+<!-- The following sections were appended from: https://github.com/in-tech-gration/content/blob/main/files/en-us/web/javascript/reference/global_objects/date/index.md -->
+
+### Several ways to create a Date object
+
+The following examples show several ways to create JavaScript dates:
+
+> [!NOTE]
+> Creating a date from a string has a lot of behavior inconsistencies. See [date time string format](#date_time_string_format) for caveats on using different formats.
+
+```js
+const today = new Date();
+const birthday = new Date("December 17, 1995 03:24:00"); // DISCOURAGED: may not work in all runtimes
+const birthday2 = new Date("1995-12-17T03:24:00"); // This is standardized and will work reliably
+const birthday3 = new Date(1995, 11, 17); // the month is 0-indexed
+const birthday4 = new Date(1995, 11, 17, 3, 24, 0);
+const birthday5 = new Date(628021800000); // passing epoch timestamp
+```
+
+### Calculating elapsed time
+
+The following examples show how to determine the elapsed time between two JavaScript dates in milliseconds.
+
+Due to the differing lengths of days (due to daylight saving changeover), months, and years, expressing elapsed time in units greater than hours, minutes, and seconds requires addressing a number of issues, and should be thoroughly researched before being attempted.
+
+```js
+// Using Date objects
+const start = Date.now();
+
+// The event to time goes here:
+doSomethingForALongTime();
+const end = Date.now();
+const elapsed = end - start; // elapsed time in milliseconds
+```
+
+```js
+// Using built-in methods
+const start = new Date();
+
+// The event to time goes here:
+doSomethingForALongTime();
+const end = new Date();
+const elapsed = end.getTime() - start.getTime(); // elapsed time in milliseconds
+```
+
+```js
+// To test a function and get back its return
+function printElapsedTime(testFn) {
+  const startTime = Date.now();
+  const result = testFn();
+  const endTime = Date.now();
+
+  console.log(`Elapsed time: ${String(endTime - startTime)} milliseconds`);
+  return result;
+}
+
+const yourFunctionReturn = printElapsedTime(yourFunction);
+```
 
 {{PreviousNext("Web/JavaScript/Guide/Numbers_and_strings", "Web/JavaScript/Guide/Regular_expressions")}}
