@@ -4,6 +4,8 @@
 
 ## 2024-2025 (v1.0)
 
+>> BEGINNER
+
 ### Week 01 - Intro to Computing/Internet/WWW/HTML/CSS/JavaScript
 
   - Day 01: Onboarding and basics of Computing
@@ -59,12 +61,43 @@
   - Day 02: JavaScript Core 1: Control flow & Error Handling (MDN)
   - Day 03: JavaScript Core 1: Loops and Iteration (MDN)
   - Day 04: JavaScript Core 1: Functions 1 (MDN)
+    - Defining Functions
+    - Function Declarations
+    - Function Expressions
+    - Calling Functions
+    - Function Hoisting
+    - Function parameters
+    - Default parameters
+    - Rest parameters
   - Day 05: JavaScript Core 1: Expressions & Operators 1 (MDN)
+    - Assignment Operators
+    - Assigning to Properties
+    - Comparison Operators
+    - Arithmetic Operators
+    - Logical Operators
+    - String Operators
+    - Conditional (ternary) Operators
+    - Unary Operators
+    - delete
+    - Deleting Array elements
+    - typeof
+    - Grouping Operator
 
 ### Week 08 - JavaScript Core 2
 
-  - Day 01: JavaScript Core 2
-  - Day 02: JavaScript Core 2
+  - Day 01: JavaScript Core 2: Functions 2
+  - Day 02: JavaScript Core 2: Expressions & Operators 2 (MDN)
+    - Destructuring
+    - String Operators
+    - Comma operator
+    - Unary operators
+    - void
+    - Relational operators
+    - in
+    - instanceof
+    - Basic Expressions
+    - Grouping operator
+    - Property accessor
   - Day 03: JavaScript Core 2
   - Day 04: JavaScript Core 2
   - Day 05: JavaScript Core 2
@@ -100,6 +133,9 @@
   - Day 03: -
   - Day 04: -
   - Day 05: -
+
+
+>> INTERMEDIATE
 
 ### Week 13 - Intermediate JavaScript 
 
@@ -196,6 +232,9 @@
   - Day 03: Coding Challenge: React Quiz
   - Day 04: Coding Challenge: React Quiz
   - Day 05: Coding Challenge: React Quiz
+
+
+>> ADVANCED
 
 ### Week 25 - Advanced JavaScript: Web APIs
 
