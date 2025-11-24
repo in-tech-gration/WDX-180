@@ -48,6 +48,8 @@ This chapter describes more of JavaScript's expressions and operators.
   console.log("my " + "string"); // console logs the string "my string".
   ```
 
+  [&#9658; Live coding](#flems-enable)
+
   The shorthand assignment operator `+=` can also be used to concatenate strings.
 
   For example,
@@ -78,6 +80,8 @@ This chapter describes more of JavaScript's expressions and operators.
     console.log(`a[${i}][${j}]= ${a[i][j]}`);
   }
   ```
+
+  [&#9658; Live coding](#flems-enable)
 
 <!-- ## Unary operators -->
 **Unary operators**
