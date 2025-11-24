@@ -723,8 +723,6 @@ const p = new Person();
 
 
 
-<!-- SGEN:META:PROGRESS:task=Study the Expressions and Operators 2 module and practice -->
-
 <!-- Summary -->
 
 <!-- Exercises -->
