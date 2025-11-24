@@ -12,9 +12,9 @@ schedule:
     2: # Expressions & Operators 2
       # file://./../modules/javascript/core/expressions_and_operators/expressions_and_operators-2.md
       module: javascript/core/expressions_and_operators/expressions_and_operators-2.md
-    3: # 
-      # file://./../modules/*/index.md
-      module: work-in-progress/
+    3: # JavaScript - Numbers & Strings
+      # file://./../modules/mdn/web/javascript/guide/numbers_and_strings/index.md
+      module: mdn/web/javascript/guide/numbers_and_strings/
     4: # 
       # file://./../modules/*/index.md
       module: work-in-progress/
