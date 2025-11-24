@@ -6,7 +6,7 @@ load_script_js_via_src:
   - flems/flems_init.js
 ---
 
-## Study Plan 
+### Study Plan 
 
 <!-- ## Date object -->
 **Date object**
@@ -90,6 +90,9 @@ ipoDate.setTime(Date.parse("Aug 9, 1995"));
 
 In the following example, the function `JSClock()` returns the time in the format of a digital clock.
 
+Click the `Live coding` button and try to use the `JSClock` function along
+with the built-in `setInterval` function to log the time every second.
+
 ```js
 function JSClock() {
   const time = new Date();
@@ -142,8 +145,9 @@ The following examples show how to determine the elapsed time between two JavaSc
 
 Due to the differing lengths of days (due to daylight saving changeover), months, and years, expressing elapsed time in units greater than hours, minutes, and seconds requires addressing a number of issues, and should be thoroughly researched before being attempted.
 
+**Using Date objects:**
+
 ```js
-// Using Date objects
 const start = Date.now();
 
 // The event to time goes here:
@@ -152,8 +156,9 @@ const end = Date.now();
 const elapsed = end - start; // elapsed time in milliseconds
 ```
 
+**Using built-in methods:**
+
 ```js
-// Using built-in methods
 const start = new Date();
 
 // The event to time goes here:
@@ -162,8 +167,9 @@ const end = new Date();
 const elapsed = end.getTime() - start.getTime(); // elapsed time in milliseconds
 ```
 
+**To test a function and get back its return:**
+
 ```js
-// To test a function and get back its return
 function printElapsedTime(testFn) {
   const startTime = Date.now();
   const result = testFn();
@@ -171,6 +177,10 @@ function printElapsedTime(testFn) {
 
   console.log(`Elapsed time: ${String(endTime - startTime)} milliseconds`);
   return result;
+}
+
+function yourFunction(){
+  // Write some slow code in here (for loop, etc.)
 }
 
 const yourFunctionReturn = printElapsedTime(yourFunction);
