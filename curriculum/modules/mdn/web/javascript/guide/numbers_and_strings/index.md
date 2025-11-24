@@ -291,7 +291,9 @@ source: https://github.com/in-tech-gration/content/blob/main/files/en-us/web/jav
       </tr>
       <tr>
         <td>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul" target="_blank">clz32()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32){:target="_blank"},<br />[imul()</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32" target="_blank">clz32()</a>
+          <br/>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul" target="_blank">imul()</a>
         </td>
         <td>
           Number of leading zero bits in the 32-bit binary representation.<br />The
