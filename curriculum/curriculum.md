@@ -4,6 +4,8 @@
 
 ## 2024-2025 (v1.0)
 
+>> BEGINNER
+
 ### Week 01 - Intro to Computing/Internet/WWW/HTML/CSS/JavaScript
 
   - Day 01: Onboarding and basics of Computing
@@ -55,27 +57,76 @@
 
 ### Week 07 - JavaScript Core 1
 
-  - Day 01: Just Enough JavaScript - Part 1 (DeNepo)
-  - Day 02: Just Enough JavaScript - Part 2 (DeNepo)
-  - Day 03: Just Enough JavaScript - Part 3 (DeNepo)
-  - Day 04: Just Enough JavaScript - Part 4 (DeNepo)
-  - Day 05: Just Enough JavaScript - Part 5 (DeNepo)
+  - Day 01: JavaScript Core 1: Grammar & Types (MDN)
+  - Day 02: JavaScript Core 1: Control flow & Error Handling (MDN)
+  - Day 03: JavaScript Core 1: Loops and Iteration (MDN)
+  - Day 04: JavaScript Core 1: Functions 1 (MDN)
+    - Defining Functions
+    - Function Declarations
+    - Function Expressions
+    - Calling Functions
+    - Function Hoisting
+    - Function parameters
+    - Default parameters
+    - Rest parameters
+  - Day 05: JavaScript Core 1: Expressions & Operators 1 (MDN)
+    - Assignment Operators
+    - Assigning to Properties
+    - Comparison Operators
+    - Arithmetic Operators
+    - Logical Operators
+    - String Operators
+    - Conditional (ternary) Operators
+    - Unary Operators
+    - delete
+    - Deleting Array elements
+    - typeof
+    - Grouping Operator
 
 ### Week 08 - JavaScript Core 2
 
-  - Day 01: Understanding Programs - Part 1 (DeNepo)
-  - Day 02: Understanding Programs - Part 2 (DeNepo)
-  - Day 03: Developing Programs - Part 1 (DeNepo)
-  - Day 04: Developing Programs - Part 2 (DeNepo)
-  - Day 05: Developing Programs - Part 3 (DeNepo)
+  - Day 01: JavaScript Core 2: Functions 2
+  - Day 02: JavaScript Core 2: Expressions & Operators 2 (MDN)
+    - Destructuring
+    - String Operators
+    - Comma operator
+    - Unary operators
+    - void
+    - Relational operators
+    - in
+    - instanceof
+    - Basic Expressions
+    - Grouping operator
+    - Property accessor
+  - Day 03: JavaScript Core 2: Numbers & Strings
+    - Numbers
+    - Decimal Numbers
+    - Binary Numbers
+    - Octal Numbers
+    - Hex Numbers
+    - Exponentiation
+    - Numeric separators
+    - Number Object
+    - Math Object
+    - BigIngs
+    - Strings
+    - String Literals
+    - Hex escape sequences
+    - Unicode escape sequences
+    - String Objects
+    - Template Literals
+    - Multi-lines
+    - Embedded Expressions
+  - Day 04: JavaScript Core 2
+  - Day 05: JavaScript Core 2
 
 ### Week 09 - JavaScript Core 3
 
-  - Day 01: Functions Part 1
-  - Day 02: Functions Part 2
-  - Day 03: Arrays Part 1
-  - Day 04: Arrays Part 2
-  - Day 05: Objects Part 1
+  - Day 01: JavaScript Core 3
+  - Day 02: JavaScript Core 3
+  - Day 03: JavaScript Core 3
+  - Day 04: JavaScript Core 3
+  - Day 05: JavaScript Core 3
 
 ### Week 10 - Web APIs 1: DOM
 
@@ -100,6 +151,9 @@
   - Day 03: -
   - Day 04: -
   - Day 05: -
+
+
+>> INTERMEDIATE
 
 ### Week 13 - Intermediate JavaScript 
 
@@ -196,6 +250,9 @@
   - Day 03: Coding Challenge: React Quiz
   - Day 04: Coding Challenge: React Quiz
   - Day 05: Coding Challenge: React Quiz
+
+
+>> ADVANCED
 
 ### Week 25 - Advanced JavaScript: Web APIs
 

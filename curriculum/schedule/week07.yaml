@@ -19,44 +19,5 @@ schedule:
       # file://./../modules/javascript/core/functions/mdn/functions-1.md
       module: javascript/core/functions/mdn/functions-1.md
     5: # JavaScript - Expressions & Operators 1
-      # file://./../modules/javascript/core/functions/mdn/expressions_and_operators-1.md
-      module: javascript/core/functions/mdn/expressions_and_operators-1.md
-
-# ---
-
-# TODO: Integrate
-# The Main Debug Loop (mindset)
-# 
-# "...involves breaking down the problem into very small pieces. Small enough such that you’re writing 1-3 lines of code at a time. Every time you write one of these small chunks, you run the program. Usually it doesn’t work, and you try again. Slowly, you accrete code that you’ve convinced yourself works. You build up the whole solution iteratively.
-# The keys are two fold: you’re building incrementally, and you’re validating as you go. As you gain experience, you work on more and more complex systems. But this mindset scales to problems of any complexity—you just have to break them down more.
-# This is the main debug loop. Write code, run code. Running the code is the validation. ~ https://dropbox.tech/frontend/the-programmer-mindset-main-debug-loop
-
-# TODO: Programming Quote: ""Both writing and programming can be described as the translation of a high-level idea into low level sentences or statements."
-# Felienne Hermans & Marlies Aldewereld
-
-# Day 01: Q: "anybody installed lenses2? im stuck at installing."
-# A: "its done ok after npm install and not npm i. I also deleted the folders and did it from the start."
-# >> Q: "are we going to use checkout main to return to main or stay on branch lenses2?"
-
-# http://localhost:4600/curriculum/modules/javascript/denepo/_just-enough-javascript/02-primitive-values/syntax/exercises/four-lines-of-code.js?--defaults
-# Share the pictures you've taken with your classmates and have a discussion while comparing your screenshots!
-
-# TODO: UPDATE study-lenses: Download Canvas Picture!
-
-
-# TODO: Day 1?
-# Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
-# STUDY: https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/43
-
-# TODO: Day 2? SLACK QUIZ: https://github.com/in-tech-gration/TeachMeJavaScriptLikeIm5/tree/main/5-operators
-
-# TODO: STUDY & INTEGRATE: Objects
-# https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/41
-# https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/42/3
-# EXERCISE: https://codepen.io/kostasx/pen/vQMwKp?editors=0011
-
-# TODO: Integrate?
-# while loop exercise (using document.write instead):
-# https://www.w3schools.com/js/tryit.asp?filename=tryjs_while
-# for loop (using document.write instead):
-# https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for
+      # file://./../modules/javascript/core/expressions_and_operators/expressions_and_operators-1.md
+      module: javascript/core/expressions_and_operators/expressions_and_operators-1.md

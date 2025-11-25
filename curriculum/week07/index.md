@@ -28,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 18/11/2025</span>
+  <span>Updated: 24/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -1486,284 +1486,284 @@ for (const [key, val] of Object.entries(obj)) {
 
 ### Study Plan
 
-Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
+  Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
 
-See also the [exhaustive reference chapter about JavaScript functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions){:target="_blank"} to get to know the details.
+  See also the [exhaustive reference chapter about JavaScript functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions){:target="_blank"} to get to know the details.
 
 **Defining functions**
 
 **Function declarations**
 
-A **function definition** (also called a **function declaration**, or **function statement**) consists of the [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function){:target="_blank"} keyword, followed by:
+  A **function definition** (also called a **function declaration**, or **function statement**) consists of the [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function){:target="_blank"} keyword, followed by:
 
-- The name of the function.
-- A list of parameters to the function, enclosed in parentheses and separated by commas.
-- The JavaScript statements that define the function, enclosed in curly braces, `{ /* … */ }`.
+  - The name of the function.
+  - A list of parameters to the function, enclosed in parentheses and separated by commas.
+  - The JavaScript statements that define the function, enclosed in curly braces, `{ /* … */ }`.
 
-For example, the following code defines a function named `square`:
+  For example, the following code defines a function named `square`:
 
-```js
-function square(number) {
-  return number * number;
-}
-```
-
-Go ahead, try it out! Click the `Live coding` button below and try to call the 
-`square` function with a couple of different values, store them in a variable
-and display the variable using `console.log()` or `alert()`.
-
-[&#9658; Live coding](#flems-enable)
-
-The function `square` takes one parameter, called `number`. The function consists of one statement that says to return the parameter of the function (that is, `number`) multiplied by itself. The [`return`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return){:target="_blank"} statement specifies the value returned by the function, which is `number * number`.
-
-Parameters are essentially passed to functions **by value** — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, **the change is not reflected globally or in the code which called that function**.
-
-When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function, as shown in the following example:
-
-```js
-function myFunc(theObject) {
-  theObject.make = "Toyota";
-}
-
-const myCar = {
-  make: "Honda",
-  model: "Accord",
-  year: 1998,
-};
-
-console.log(myCar.make); // "Honda"
-myFunc(myCar);
-console.log(myCar.make); // What do you think this log will output?
-```
-
-[&#9658; Live coding](#flems-enable)
-
-When you pass an array as a parameter, if the function changes any of the array's values, that change is visible outside the function, as shown in the following example:
-
-```js
-function myFunc(theArr) {
-  theArr[0] = 30;
-}
-
-const arr = [45];
-
-console.log(arr[0]); // 45
-myFunc(arr);
-console.log(arr[0]); // What do you think this log will output?
-```
-
-[&#9658; Live coding](#flems-enable)
-
-Function declarations and expressions can be nested, which forms a _scope chain_. For example:
-
-```js
-function addSquares(a, b) {
-  function square(x) {
-    return x * x;
+  ```js
+  function square(number) {
+    return number * number;
   }
-  return square(a) + square(b);
-}
-```
+  ```
 
-See [function scopes and closures](#function_scopes_and_closures) for more information.
+  Go ahead, try it out! Click the `Live coding` button below and try to call the 
+  `square` function with a couple of different values, store them in a variable
+  and display the variable using `console.log()` or `alert()`.
+
+  [&#9658; Live coding](#flems-enable)
+
+  The function `square` takes one parameter, called `number`. The function consists of one statement that says to return the parameter of the function (that is, `number`) multiplied by itself. The [`return`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return){:target="_blank"} statement specifies the value returned by the function, which is `number * number`.
+
+  Parameters are essentially passed to functions **by value** — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, **the change is not reflected globally or in the code which called that function**.
+
+  When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function, as shown in the following example:
+
+  ```js
+  function myFunc(theObject) {
+    theObject.make = "Toyota";
+  }
+
+  const myCar = {
+    make: "Honda",
+    model: "Accord",
+    year: 1998,
+  };
+
+  console.log(myCar.make); // "Honda"
+  myFunc(myCar);
+  console.log(myCar.make); // What do you think this log will output?
+  ```
+
+  [&#9658; Live coding](#flems-enable)
+
+  When you pass an array as a parameter, if the function changes any of the array's values, that change is visible outside the function, as shown in the following example:
+
+  ```js
+  function myFunc(theArr) {
+    theArr[0] = 30;
+  }
+
+  const arr = [45];
+
+  console.log(arr[0]); // 45
+  myFunc(arr);
+  console.log(arr[0]); // What do you think this log will output?
+  ```
+
+  [&#9658; Live coding](#flems-enable)
+
+  Function declarations and expressions can be nested, which forms a _scope chain_. For example:
+
+  ```js
+  function addSquares(a, b) {
+    function square(x) {
+      return x * x;
+    }
+    return square(a) + square(b);
+  }
+  ```
+
+  See [function scopes and closures](#function_scopes_and_closures) for more information.
 
 **Function expressions**
 
-While the function declaration above is syntactically a statement, functions can also be created by a [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function){:target="_blank"}.
+  While the function declaration above is syntactically a statement, functions can also be created by a [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function){:target="_blank"}.
 
-Such a function can be **anonymous**; it does not have to have a name. For example, the function `square` could have been defined as:
+  Such a function can be **anonymous**; it does not have to have a name. For example, the function `square` could have been defined as:
 
-```js
-const square = function (number) {
-  return number * number;
-};
-
-console.log(square(4)); // 16
-```
-
-[&#9658; Live coding](#flems-enable)
-
-However, a name _can_ be provided with a function expression. Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces:
-
-```js
-const factorial = function fac(n) {
-  return n < 2 ? 1 : n * fac(n - 1);
-};
-
-console.log(factorial(3)); // 6
-console.log(factorial(4)); // What do you think this log will output?
-```
-
-Think about how the code will execute on the second call (4) and try
-to predict the result. Then, hit the `Live coding` button below to
-check your assumptions.
-
-[&#9658; Live coding](#flems-enable)
-
-Function expressions are convenient when passing a function as an argument to another function. The following example defines a `map` function that should receive a function as first argument and an array as second argument. Then, it is called with a function defined by a function expression:
-
-```js
-function map(f, a) {
-  const result = new Array(a.length);
-  for (let i = 0; i < a.length; i++) {
-    result[i] = f(a[i]);
-  }
-  return result;
-}
-
-const numbers = [0, 1, 2, 5, 10];
-const cubedNumbers = map(function (x) {
-  return x * x * x;
-}, numbers);
-console.log(cubedNumbers); // [0, 1, 8, 125, 1000]
-```
-
-[&#9658; Live coding](#flems-enable)
-
-In JavaScript, a function can be defined based on a condition. For example, the following function definition defines `myFunc` only if `num` equals `0`:
-
-```js
-let myFunc;
-if (num === 0) {
-  myFunc = function (theObject) {
-    theObject.make = "Toyota";
+  ```js
+  const square = function (number) {
+    return number * number;
   };
-}
-```
 
-In addition to defining functions as described here, you can also use the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} constructor to create functions from a string at runtime, much like [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval){:target="_blank"}.
+  console.log(square(4)); // 16
+  ```
 
-A **method** is a function that is a property of an object. Read more about objects and methods in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}.
+  [&#9658; Live coding](#flems-enable)
+
+  However, a name _can_ be provided with a function expression. Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces:
+
+  ```js
+  const factorial = function fac(n) {
+    return n < 2 ? 1 : n * fac(n - 1);
+  };
+
+  console.log(factorial(3)); // 6
+  console.log(factorial(4)); // What do you think this log will output?
+  ```
+
+  Think about how the code will execute on the second call (4) and try
+  to predict the result. Then, hit the `Live coding` button below to
+  check your assumptions.
+
+  [&#9658; Live coding](#flems-enable)
+
+  Function expressions are convenient when passing a function as an argument to another function. The following example defines a `map` function that should receive a function as first argument and an array as second argument. Then, it is called with a function defined by a function expression:
+
+  ```js
+  function map(f, a) {
+    const result = new Array(a.length);
+    for (let i = 0; i < a.length; i++) {
+      result[i] = f(a[i]);
+    }
+    return result;
+  }
+
+  const numbers = [0, 1, 2, 5, 10];
+  const cubedNumbers = map(function (x) {
+    return x * x * x;
+  }, numbers);
+  console.log(cubedNumbers); // [0, 1, 8, 125, 1000]
+  ```
+
+  [&#9658; Live coding](#flems-enable)
+
+  In JavaScript, a function can be defined based on a condition. For example, the following function definition defines `myFunc` only if `num` equals `0`:
+
+  ```js
+  let myFunc;
+  if (num === 0) {
+    myFunc = function (theObject) {
+      theObject.make = "Toyota";
+    };
+  }
+  ```
+
+  In addition to defining functions as described here, you can also use the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} constructor to create functions from a string at runtime, much like [eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval){:target="_blank"}.
+
+  A **method** is a function that is a property of an object. Read more about objects and methods in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}.
 
 **Calling functions**
 
-_Defining_ a function does not _execute_ it. Defining it names the function and specifies what to do when the function is called.
+  _Defining_ a function does not _execute_ it. Defining it names the function and specifies what to do when the function is called.
 
-**Calling** the function actually performs the specified actions with the indicated parameters. For example, if you define the function `square`, you could call it as follows:
+  **Calling** the function actually performs the specified actions with the indicated parameters. For example, if you define the function `square`, you could call it as follows:
 
-```js
-square(5);
-```
+  ```js
+  square(5);
+  ```
 
-The preceding statement calls the function with an argument of `5`. The function executes its statements and returns the value `25`.
+  The preceding statement calls the function with an argument of `5`. The function executes its statements and returns the value `25`.
 
-Functions must be _in scope_ when they are called, but the function declaration can be [hoisted](#function_hoisting) (appear below the call in the code). The scope of a function declaration is the function in which it is declared (or the entire program, if it is declared at the top level).
+  Functions must be _in scope_ when they are called, but the function declaration can be [hoisted](#function_hoisting) (appear below the call in the code). The scope of a function declaration is the function in which it is declared (or the entire program, if it is declared at the top level).
 
-The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The `showProps()` function (defined in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#objects_and_properties){:target="_blank"}){:target="_blank"} is an example of a function that takes an object as an argument.
+  The arguments of a function are not limited to strings and numbers. You can pass whole objects to a function. The `showProps()` function (defined in [Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#objects_and_properties){:target="_blank"}){:target="_blank"} is an example of a function that takes an object as an argument.
 
-A function can call itself. For example, here is a function that computes factorials recursively:
+  A function can call itself. For example, here is a function that computes factorials recursively:
 
-```js
-function factorial(n) {
-  if (n === 0 || n === 1) {
-    return 1;
+  ```js
+  function factorial(n) {
+    if (n === 0 || n === 1) {
+      return 1;
+    }
+    return n * factorial(n - 1);
   }
-  return n * factorial(n - 1);
-}
 
-// You could then compute the factorials of `1` through `5` as follows:
+  // You could then compute the factorials of `1` through `5` as follows:
 
-console.log(factorial(1)); // 1
-console.log(factorial(2)); // 2
-console.log(factorial(3)); // 6
-console.log(factorial(4)); // 24
-console.log(factorial(5)); // 120
-```
+  console.log(factorial(1)); // 1
+  console.log(factorial(2)); // 2
+  console.log(factorial(3)); // 6
+  console.log(factorial(4)); // 24
+  console.log(factorial(5)); // 120
+  ```
 
-[&#9658; Live coding](#flems-enable)
+  [&#9658; Live coding](#flems-enable)
 
-There are other ways to call functions. There are often cases where a function needs to be called dynamically, or the number of arguments to a function vary, or in which the context of the function call needs to be set to a specific object determined at runtime.
+  There are other ways to call functions. There are often cases where a function needs to be called dynamically, or the number of arguments to a function vary, or in which the context of the function call needs to be set to a specific object determined at runtime.
 
-It turns out that _functions are themselves objects_ — and in turn, these objects have methods. (See the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} object.) The [`call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call){:target="_blank"} and [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply){:target="_blank"} methods can be used to achieve this goal.
+  It turns out that _functions are themselves objects_ — and in turn, these objects have methods. (See the [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function){:target="_blank"} object.) The [`call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call){:target="_blank"} and [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply){:target="_blank"} methods can be used to achieve this goal.
 
 **Function hoisting**
 
-Consider the example below:
+  Consider the example below:
 
-```js
-console.log(square(5)); // 25
+  ```js
+  console.log(square(5)); // 25
 
-function square(n) {
-  return n * n;
-}
-```
+  function square(n) {
+    return n * n;
+  }
+  ```
 
-This code runs without any error, despite the `square()` function being called before it's declared. This is because the JavaScript interpreter hoists the entire function declaration to the top of the current scope, so the code above is equivalent to:
+  This code runs without any error, despite the `square()` function being called before it's declared. This is because the JavaScript interpreter hoists the entire function declaration to the top of the current scope, so the code above is equivalent to:
 
-```js
-// All function declarations are effectively at the top of the scope
-function square(n) {
-  return n * n;
-}
+  ```js
+  // All function declarations are effectively at the top of the scope
+  function square(n) {
+    return n * n;
+  }
 
-console.log(square(5)); // 25
-```
+  console.log(square(5)); // 25
+  ```
 
-Function hoisting only works with function _declarations_ — not with function _expressions_. The following code will not work:
+  Function hoisting only works with function _declarations_ — not with function _expressions_. The following code will not work:
 
-<!-- ```js example-bad -->
+  <!-- ```js example-bad -->
 
 
-```js
-console.log(square(5)); // ReferenceError: Cannot access 'square' before initialization
-const square = function (n) {
-  return n * n;
-};
-```
+  ```js
+  console.log(square(5)); // ReferenceError: Cannot access 'square' before initialization
+  const square = function (n) {
+    return n * n;
+  };
+  ```
 
 **Function parameters**
 
-There are two special kinds of parameter syntax: _default parameters_ and _rest parameters_.
+  There are two special kinds of parameter syntax: _default parameters_ and _rest parameters_.
 
 **Default parameters**
 
-In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.
+  In JavaScript, parameters of functions default to `undefined`. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.
 
-In the past, the general strategy for setting defaults was to test parameter values in the body of the function and assign a value if they are `undefined`.
+  In the past, the general strategy for setting defaults was to test parameter values in the body of the function and assign a value if they are `undefined`.
 
-In the following example, if no value is provided for `b`, its value would be `undefined` when evaluating `a*b`, and a call to `multiply` would normally have returned `NaN`. However, this is prevented by the second line in this example:
+  In the following example, if no value is provided for `b`, its value would be `undefined` when evaluating `a*b`, and a call to `multiply` would normally have returned `NaN`. However, this is prevented by the second line in this example:
 
-```js
-function multiply(a, b) {
-  b = typeof b !== "undefined" ? b : 1;
-  return a * b;
-}
+  ```js
+  function multiply(a, b) {
+    b = typeof b !== "undefined" ? b : 1;
+    return a * b;
+  }
 
-console.log(multiply(5)); // 5
-```
+  console.log(multiply(5)); // 5
+  ```
 
-[&#9658; Live coding](#flems-enable)
+  [&#9658; Live coding](#flems-enable)
 
-With _default parameters_, a manual check in the function body is no longer necessary. You can put `1` as the default value for `b` in the function head:
+  With _default parameters_, a manual check in the function body is no longer necessary. You can put `1` as the default value for `b` in the function head:
 
-```js
-function multiply(a, b = 1) {
-  return a * b;
-}
+  ```js
+  function multiply(a, b = 1) {
+    return a * b;
+  }
 
-console.log(multiply(5)); // 5
-```
+  console.log(multiply(5)); // 5
+  ```
 
-[&#9658; Live coding](#flems-enable)
+  [&#9658; Live coding](#flems-enable)
 
-For more details, see [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters){:target="_blank"} in the reference.
+  For more details, see [default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters){:target="_blank"} in the reference.
 
 **Rest parameters**
 
-The [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters){:target="_blank"} syntax allows us to represent an indefinite number of arguments as an array.
+  The [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters){:target="_blank"} syntax allows us to represent an indefinite number of arguments as an array.
 
-In the following example, the function `multiply` uses _rest parameters_ to collect arguments from the second one to the end. The function then multiplies these by the first argument.
+  In the following example, the function `multiply` uses _rest parameters_ to collect arguments from the second one to the end. The function then multiplies these by the first argument.
 
-```js
-function multiply(multiplier, ...theArgs) {
-  return theArgs.map((x) => multiplier * x);
-}
+  ```js
+  function multiply(multiplier, ...theArgs) {
+    return theArgs.map((x) => multiplier * x);
+  }
 
-const arr = multiply(2, 1, 2, 3);
-console.log(arr); // [2, 4, 6]
-```
+  const arr = multiply(2, 1, 2, 3);
+  console.log(arr); // [2, 4, 6]
+  ```
 
-[&#9658; Live coding](#flems-enable)
+  [&#9658; Live coding](#flems-enable)
 
 <!-- ### Exercises -->
 
@@ -1792,83 +1792,83 @@ console.log(arr); // [2, 4, 6]
 
 ### Study Plan
 
-This chapter describes JavaScript's expressions and operators, including assignment, comparison, arithmetic, logical, string, ternary and more.
+  This chapter describes JavaScript's expressions and operators, including assignment, comparison, arithmetic, logical, string, ternary and more.
 
-At a high level, an _expression_ is a valid unit of code that resolves to a value. There are two types of expressions: those that have side effects (such as assigning values) and those that purely _evaluate_.
+  At a high level, an _expression_ is a valid unit of code that resolves to a value. There are two types of expressions: those that have side effects (such as assigning values) and those that purely _evaluate_.
 
-The expression `x = 7` is an example of the first type. This expression uses the `=` _operator_ to assign the value seven to the variable `x`. The expression itself evaluates to `7`.
+  The expression `x = 7` is an example of the first type. This expression uses the `=` _operator_ to assign the value seven to the variable `x`. The expression itself evaluates to `7`.
 
-The expression `3 + 4` is an example of the second type. This expression uses the `+` operator to add `3` and `4` together and produces a value, `7`. However, if it's not eventually part of a bigger construct (for example, a [variable declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations){:target="_blank"} like `const z = 3 + 4`), its result will be immediately discarded — this is usually a programmer mistake because the evaluation doesn't produce any effects.
+  The expression `3 + 4` is an example of the second type. This expression uses the `+` operator to add `3` and `4` together and produces a value, `7`. However, if it's not eventually part of a bigger construct (for example, a [variable declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations){:target="_blank"} like `const z = 3 + 4`), its result will be immediately discarded — this is usually a programmer mistake because the evaluation doesn't produce any effects.
 
-As the examples above also illustrate, all complex expressions are joined by _operators_, such as `=` and `+`. In this section, we will introduce the following operators:
+  As the examples above also illustrate, all complex expressions are joined by _operators_, such as `=` and `+`. In this section, we will introduce the following operators:
 
-- [Assignment operators](#assignment_operators)
-- [Comparison operators](#comparison_operators)
-- [Arithmetic operators](#arithmetic_operators)
-- [Logical operators](#logical_operators)
-- [String operators](#string_operators)
-- [Conditional (ternary) operator](#conditional_ternary_operator)
-- [Unary operators](#unary_operators)
-- [Relational operators](#relational_operators)
+  - [Assignment operators](#assignment_operators)
+  - [Comparison operators](#comparison_operators)
+  - [Arithmetic operators](#arithmetic_operators)
+  - [Logical operators](#logical_operators)
+  - [String operators](#string_operators)
+  - [Conditional (ternary) operator](#conditional_ternary_operator)
+  - [Unary operators](#unary_operators)
+  - [Relational operators](#relational_operators)
 
-These operators join operands either formed by higher-precedence operators or one of the [basic expressions](#basic_expressions). A complete and detailed list of operators and expressions is also available in the [reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators){:target="_blank"}.
+  These operators join operands either formed by higher-precedence operators or one of the [basic expressions](#basic_expressions). A complete and detailed list of operators and expressions is also available in the [reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators){:target="_blank"}.
 
-The _precedence_ of operators determines the order they are applied when evaluating an expression. For example:
+  The _precedence_ of operators determines the order they are applied when evaluating an expression. For example:
 
-```js
-const x = 1 + 2 * 3;
-const y = 2 * 3 + 1;
-```
+  ```js
+  const x = 1 + 2 * 3;
+  const y = 2 * 3 + 1;
+  ```
 
-Despite `*` and `+` coming in different orders, both expressions would result in `7` because `*` has precedence over `+`, so the `*`-joined expression will always be evaluated first. You can override operator precedence by using parentheses (which creates a [grouped expression](#grouping_operator) — the basic expression). To see a complete table of operator precedence as well as various caveats, see the [Operator Precedence Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table){:target="_blank"} page.
+  Despite `*` and `+` coming in different orders, both expressions would result in `7` because `*` has precedence over `+`, so the `*`-joined expression will always be evaluated first. You can override operator precedence by using parentheses (which creates a [grouped expression](#grouping_operator) — the basic expression). To see a complete table of operator precedence as well as various caveats, see the [Operator Precedence Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table){:target="_blank"} page.
 
-JavaScript has both _binary_ and _unary_ operators, and one special ternary operator, the conditional operator.
-A binary operator requires two operands, one before the operator and one after the operator:
+  JavaScript has both _binary_ and _unary_ operators, and one special ternary operator, the conditional operator.
+  A binary operator requires two operands, one before the operator and one after the operator:
 
-```plain
-operand1 operator operand2
-```
+  ```plain
+  operand1 operator operand2
+  ```
 
-For example, `3 + 4` or `x * y`. This form is called an _infix_ binary operator, because the operator is placed between two operands. All binary operators in JavaScript are infix.
+  For example, `3 + 4` or `x * y`. This form is called an _infix_ binary operator, because the operator is placed between two operands. All binary operators in JavaScript are infix.
 
-A unary operator requires a single operand, either before or after the operator:
+  A unary operator requires a single operand, either before or after the operator:
 
-```plain
-operator operand
-operand operator
-```
+  ```plain
+  operator operand
+  operand operator
+  ```
 
-For example, `x++` or `++x`. The `operator operand` form is called a _prefix_ unary operator, and the `operand operator` form is called a _postfix_ unary operator. `++` and `--` are the only postfix operators in JavaScript — all other operators, like `!`, `typeof`, etc. are prefix.
+  For example, `x++` or `++x`. The `operator operand` form is called a _prefix_ unary operator, and the `operand operator` form is called a _postfix_ unary operator. `++` and `--` are the only postfix operators in JavaScript — all other operators, like `!`, `typeof`, etc. are prefix.
 
 <!-- ## Assignment operators -->
 
 
 **Assignment operators**
 
-An assignment operator assigns a value to its left operand based on the value of its right operand.
-The simple assignment operator is equal (`=`), which assigns the value of its right operand to its left operand.
-That is, `x = f()` is an assignment expression that assigns the value of `f()` to `x`.
+  An assignment operator assigns a value to its left operand based on the value of its right operand.
+  The simple assignment operator is equal (`=`), which assigns the value of its right operand to its left operand.
+  That is, `x = f()` is an assignment expression that assigns the value of `f()` to `x`.
 
-There are also compound assignment operators that are shorthand for the operations listed in the following table:
+  There are also compound assignment operators that are shorthand for the operations listed in the following table:
 
-| Name                                                                                                              | Shorthand operator | Meaning            |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------ |
-| [Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment){:target="_blank"}                                           | `x = f()`          | `x = f()`          |
-| [Addition assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment){:target="_blank"}                         | `x += f()`         | `x = x + f()`      |
-| [Subtraction assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment){:target="_blank"}                   | `x -= f()`         | `x = x - f()`      |
-| [Multiplication assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment){:target="_blank"}             | `x *= f()`         | `x = x * f()`      |
-| [Division assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment){:target="_blank"}                         | `x /= f()`         | `x = x / f()`      |
-| [Remainder assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment){:target="_blank"}                       | `x %= f()`         | `x = x % f()`      |
-| [Exponentiation assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment){:target="_blank"}             | `x **= f()`        | `x = x ** f()`     |
-| [Left shift assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment){:target="_blank"}                     | `x <<= f()`        | `x = x << f()`     |
-| [Right shift assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment){:target="_blank"}                   | `x >>= f()`        | `x = x >> f()`     |
-| [Unsigned right shift assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment){:target="_blank"} | `x >>>= f()`       | `x = x >>> f()`    |
-| [Bitwise AND assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment){:target="_blank"}                   | `x &= f()`         | `x = x & f()`      |
-| [Bitwise XOR assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment){:target="_blank"}                   | `x ^= f()`         | `x = x ^ f()`      |
-| [Bitwise OR assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment){:target="_blank"}                     | `x \|= f()`        | `x = x \| f()`     |
-| [Logical AND assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment){:target="_blank"}                   | `x &&= f()`        | `x && (x = f())`   |
-| [Logical OR assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment){:target="_blank"}                     | `x \|\|= f()`      | `x \|\| (x = f())` |
-| [Nullish coalescing assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment){:target="_blank"}     | `x ??= f()`        | `x ?? (x = f())`   |
+  | Name                                                                                                              | Shorthand operator | Meaning            |
+  | ----------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------ |
+  | [Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment){:target="_blank"}                                           | `x = f()`          | `x = f()`          |
+  | [Addition assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment){:target="_blank"}                         | `x += f()`         | `x = x + f()`      |
+  | [Subtraction assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment){:target="_blank"}                   | `x -= f()`         | `x = x - f()`      |
+  | [Multiplication assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment){:target="_blank"}             | `x *= f()`         | `x = x * f()`      |
+  | [Division assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment){:target="_blank"}                         | `x /= f()`         | `x = x / f()`      |
+  | [Remainder assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment){:target="_blank"}                       | `x %= f()`         | `x = x % f()`      |
+  | [Exponentiation assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment){:target="_blank"}             | `x **= f()`        | `x = x ** f()`     |
+  | [Left shift assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment){:target="_blank"}                     | `x <<= f()`        | `x = x << f()`     |
+  | [Right shift assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment){:target="_blank"}                   | `x >>= f()`        | `x = x >> f()`     |
+  | [Unsigned right shift assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment){:target="_blank"} | `x >>>= f()`       | `x = x >>> f()`    |
+  | [Bitwise AND assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment){:target="_blank"}                   | `x &= f()`         | `x = x & f()`      |
+  | [Bitwise XOR assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment){:target="_blank"}                   | `x ^= f()`         | `x = x ^ f()`      |
+  | [Bitwise OR assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment){:target="_blank"}                     | `x \|= f()`        | `x = x \| f()`     |
+  | [Logical AND assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment){:target="_blank"}                   | `x &&= f()`        | `x && (x = f())`   |
+  | [Logical OR assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment){:target="_blank"}                     | `x \|\|= f()`      | `x \|\| (x = f())` |
+  | [Nullish coalescing assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment){:target="_blank"}     | `x ??= f()`        | `x ?? (x = f())`   |
 
 
 
@@ -1877,165 +1877,165 @@ There are also compound assignment operators that are shorthand for the operatio
 
 **Assigning to properties**
 
-If an expression evaluates to an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}, then the left-hand side of an assignment expression may make assignments to properties of that expression.
-For example:
+  If an expression evaluates to an [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}, then the left-hand side of an assignment expression may make assignments to properties of that expression.
+  For example:
 
-```js
-const obj = {};
+  ```js
+  const obj = {};
 
-obj.x = 3;
-console.log(obj.x); // Prints 3.
-console.log(obj); // Prints { x: 3 }.
+  obj.x = 3;
+  console.log(obj.x); // Prints 3.
+  console.log(obj); // Prints { x: 3 }.
 
-const key = "y";
-obj[key] = 5;
-console.log(obj[key]); // Prints 5.
-console.log(obj); // Prints { x: 3, y: 5 }.
-```
+  const key = "y";
+  obj[key] = 5;
+  console.log(obj[key]); // Prints 5.
+  console.log(obj); // Prints { x: 3, y: 5 }.
+  ```
 
-For more information about objects, read [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}.
+  For more information about objects, read [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"}.
 
-If an expression does not evaluate to an object, then assignments to properties of that expression do not assign:
+  If an expression does not evaluate to an object, then assignments to properties of that expression do not assign:
 
-```js
-const val = 0;
-val.x = 3;
+  ```js
+  const val = 0;
+  val.x = 3;
 
-console.log(val.x); // Prints undefined.
-console.log(val); // Prints 0.
-```
+  console.log(val.x); // Prints undefined.
+  console.log(val); // Prints 0.
+  ```
 
-In [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#converting_mistakes_into_errors){:target="_blank"}, the code above throws, because one cannot assign properties to primitives.
+  In [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#converting_mistakes_into_errors){:target="_blank"}, the code above throws, because one cannot assign properties to primitives.
 
-It is an error to assign values to unmodifiable properties or to properties of an expression without properties (`null` or `undefined`).
+  It is an error to assign values to unmodifiable properties or to properties of an expression without properties (`null` or `undefined`).
 
 <!-- ## Comparison operators -->
 
 
 **Comparison operators**
 
-A comparison operator compares its operands and returns a logical value based on whether the comparison is true.
-The operands can be numerical, string, logical, or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"} values.
-Strings are compared based on standard lexicographical ordering, using Unicode values.
-In most cases, if the two operands are not of the same type, JavaScript attempts to convert them to an appropriate type for the comparison.
-This behavior generally results in comparing the operands numerically.
-The sole exceptions to type conversion within comparisons involve the `===` and `!==` operators, which perform strict equality and inequality comparisons.
-These operators do not attempt to convert the operands to compatible types before checking equality.
-The following table describes the comparison operators in terms of this sample code:
+  A comparison operator compares its operands and returns a logical value based on whether the comparison is true.
+  The operands can be numerical, string, logical, or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects){:target="_blank"} values.
+  Strings are compared based on standard lexicographical ordering, using Unicode values.
+  In most cases, if the two operands are not of the same type, JavaScript attempts to convert them to an appropriate type for the comparison.
+  This behavior generally results in comparing the operands numerically.
+  The sole exceptions to type conversion within comparisons involve the `===` and `!==` operators, which perform strict equality and inequality comparisons.
+  These operators do not attempt to convert the operands to compatible types before checking equality.
+  The following table describes the comparison operators in terms of this sample code:
 
-```js
-const var1 = 3;
-const var2 = 4;
-```
+  ```js
+  const var1 = 3;
+  const var2 = 4;
+  ```
 
-<table class="standard-table">
-  <caption>
-    Comparison operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Description</th>
-      <th scope="col">Examples returning true</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Equality">Equal</a> (<code>==</code>)
-      </td>
-      <td>Returns <code>true</code> if the operands are equal.</td>
-      <td>
-        <code>3 == var1</code>
-        <p><code>"3" == var1</code></p>
-        <code>3 == '3'</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Inequality">Not equal</a> (<code>!=</code>)
-      </td>
-      <td>Returns <code>true</code> if the operands are not equal.</td>
-      <td>
-        <code>var1 != 4<br />var2 != "3"</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality">Strict equal</a> (<code>===</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the operands are equal and of the same
-        type. See also [Object.is](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is){:target="_blank"} and
-        <a href="/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness">sameness in JS</a>.
-      </td>
-      <td><code>3 === var1</code></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality">Strict not equal</a> (<code>!==</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the operands are of the same type but not equal, or are of different type.
-      </td>
-      <td>
-        <code>var1 !== "3"<br />3 !== '3'</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than">Greater than</a> (<code>></code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is greater than the right operand.
-      </td>
-      <td>
-        <code>var2 > var1<br />"12" > 2</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal">Greater than or equal</a>
-        (<code>>=</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is greater than or equal to the right operand.
-      </td>
-      <td>
-        <code>var2 >= var1<br />var1 >= 3</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Less_than">Less than</a>
-        (<code>&#x3C;</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is less than the right operand.
-      </td>
-      <td>
-        <code>var1 &#x3C; var2<br />"2" &#x3C; 12</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal">Less than or equal</a>
-        (<code>&#x3C;=</code>)
-      </td>
-      <td>
-        Returns <code>true</code> if the left operand is less than or equal to the right operand.
-      </td>
-      <td>
-        <code>var1 &#x3C;= var2<br />var2 &#x3C;= 5</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <table class="standard-table">
+    <caption>
+      Comparison operators
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Operator</th>
+        <th scope="col">Description</th>
+        <th scope="col">Examples returning true</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Equality">Equal</a> (<code>==</code>)
+        </td>
+        <td>Returns <code>true</code> if the operands are equal.</td>
+        <td>
+          <code>3 == var1</code>
+          <p><code>"3" == var1</code></p>
+          <code>3 == '3'</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Inequality">Not equal</a> (<code>!=</code>)
+        </td>
+        <td>Returns <code>true</code> if the operands are not equal.</td>
+        <td>
+          <code>var1 != 4<br />var2 != "3"</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality">Strict equal</a> (<code>===</code>)
+        </td>
+        <td>
+          Returns <code>true</code> if the operands are equal and of the same
+          type. See also [Object.is](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is){:target="_blank"} and
+          <a href="/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness">sameness in JS</a>.
+        </td>
+        <td><code>3 === var1</code></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality">Strict not equal</a> (<code>!==</code>)
+        </td>
+        <td>
+          Returns <code>true</code> if the operands are of the same type but not equal, or are of different type.
+        </td>
+        <td>
+          <code>var1 !== "3"<br />3 !== '3'</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than">Greater than</a> (<code>></code>)
+        </td>
+        <td>
+          Returns <code>true</code> if the left operand is greater than the right operand.
+        </td>
+        <td>
+          <code>var2 > var1<br />"12" > 2</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal">Greater than or equal</a>
+          (<code>>=</code>)
+        </td>
+        <td>
+          Returns <code>true</code> if the left operand is greater than or equal to the right operand.
+        </td>
+        <td>
+          <code>var2 >= var1<br />var1 >= 3</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Less_than">Less than</a>
+          (<code>&#x3C;</code>)
+        </td>
+        <td>
+          Returns <code>true</code> if the left operand is less than the right operand.
+        </td>
+        <td>
+          <code>var1 &#x3C; var2<br />"2" &#x3C; 12</code>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal">Less than or equal</a>
+          (<code>&#x3C;=</code>)
+        </td>
+        <td>
+          Returns <code>true</code> if the left operand is less than or equal to the right operand.
+        </td>
+        <td>
+          <code>var1 &#x3C;= var2<br />var2 &#x3C;= 5</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 
 
-> `=>` is not a comparison operator but rather is the notation
-> for [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions){:target="_blank"}.
+  > `=>` is not a comparison operator but rather is the notation
+  > for [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions){:target="_blank"}.
 
 
 
@@ -2044,100 +2044,100 @@ const var2 = 4;
 
 **Arithmetic operators**
 
-An arithmetic operator takes numerical values (either literals or variables) as their operands and returns a single numerical value.
-The standard arithmetic operators are addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
-These operators work as they do in most other programming languages when used with floating point numbers (in particular, note that division by zero produces [Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity){:target="_blank"}). For example:
+  An arithmetic operator takes numerical values (either literals or variables) as their operands and returns a single numerical value.
+  The standard arithmetic operators are addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
+  These operators work as they do in most other programming languages when used with floating point numbers (in particular, note that division by zero produces [Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity){:target="_blank"}). For example:
 
-```js
-1 / 2; // 0.5
-1 / 2 === 1.0 / 2.0; // this is true
-```
+  ```js
+  1 / 2; // 0.5
+  1 / 2 === 1.0 / 2.0; // this is true
+  ```
 
-In addition to the standard arithmetic operations (`+`, `-`, `*`, `/`), JavaScript provides the arithmetic operators listed in the following table:
+  In addition to the standard arithmetic operations (`+`, `-`, `*`, `/`), JavaScript provides the arithmetic operators listed in the following table:
 
-<table class="fullwidth-table">
-  <caption>
-    Arithmetic operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Description</th>
-      <th scope="col">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Remainder">Remainder</a> (<code>%</code>)
-      </td>
-      <td>
-        Binary operator. Returns the integer remainder of dividing the two operands.
-      </td>
-      <td>12 % 5 returns 2.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Increment">Increment</a> (<code>++</code>)
-      </td>
-      <td>
-        Unary operator. Adds one to its operand. If used as a prefix operator
-        (<code>++x</code>), returns the value of its operand after adding one;
-        if used as a postfix operator (<code>x++</code>), returns the value of
-        its operand before adding one.
-      </td>
-      <td>
-        If <code>x</code> is 3, then <code>++x</code> sets <code>x</code> to 4
-        and returns 4, whereas <code>x++</code> returns 3 and, only then, sets <code>x</code> to 4.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Decrement">Decrement</a> (<code>--</code>)
-      </td>
-      <td>
-        Unary operator. Subtracts one from its operand.
-        The return value is analogous to that for the increment operator.
-      </td>
-      <td>
-        If <code>x</code> is 3, then <code>--x</code> sets <code>x</code> to 2
-        and returns 2, whereas <code>x--</code> returns 3 and, only then, sets <code>x</code> to 2.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation">Unary negation</a> (<code>-</code>)
-      </td>
-      <td>Unary operator. Returns the negation of its operand.</td>
-      <td>If <code>x</code> is 3, then <code>-x</code> returns -3.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus">Unary plus</a> (<code>+</code>)
-      </td>
-      <td>
-        Unary operator. Attempts to <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_coercion">convert the operand to a number</a>, if it is not already.
-      </td>
-      <td>
-        <p><code>+"3"</code> returns <code>3</code>.</p>
-        <p><code>+true</code> returns <code>1</code>.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation">Exponentiation operator</a> (<code>**</code>)
-      </td>
-      <td>
-        Calculates the <code>base</code> to the <code>exponent</code> power,
-        that is, <code>base^exponent</code>
-      </td>
-      <td>
-        <code>2 ** 3</code> returns <code>8</code>.<br /><code>10 ** -1</code>
-        returns <code>0.1</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <table class="fullwidth-table">
+    <caption>
+      Arithmetic operators
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Operator</th>
+        <th scope="col">Description</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Remainder">Remainder</a> (<code>%</code>)
+        </td>
+        <td>
+          Binary operator. Returns the integer remainder of dividing the two operands.
+        </td>
+        <td>12 % 5 returns 2.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Increment">Increment</a> (<code>++</code>)
+        </td>
+        <td>
+          Unary operator. Adds one to its operand. If used as a prefix operator
+          (<code>++x</code>), returns the value of its operand after adding one;
+          if used as a postfix operator (<code>x++</code>), returns the value of
+          its operand before adding one.
+        </td>
+        <td>
+          If <code>x</code> is 3, then <code>++x</code> sets <code>x</code> to 4
+          and returns 4, whereas <code>x++</code> returns 3 and, only then, sets <code>x</code> to 4.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Decrement">Decrement</a> (<code>--</code>)
+        </td>
+        <td>
+          Unary operator. Subtracts one from its operand.
+          The return value is analogous to that for the increment operator.
+        </td>
+        <td>
+          If <code>x</code> is 3, then <code>--x</code> sets <code>x</code> to 2
+          and returns 2, whereas <code>x--</code> returns 3 and, only then, sets <code>x</code> to 2.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation">Unary negation</a> (<code>-</code>)
+        </td>
+        <td>Unary operator. Returns the negation of its operand.</td>
+        <td>If <code>x</code> is 3, then <code>-x</code> returns -3.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus">Unary plus</a> (<code>+</code>)
+        </td>
+        <td>
+          Unary operator. Attempts to <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_coercion">convert the operand to a number</a>, if it is not already.
+        </td>
+        <td>
+          <p><code>+"3"</code> returns <code>3</code>.</p>
+          <p><code>+true</code> returns <code>1</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation">Exponentiation operator</a> (<code>**</code>)
+        </td>
+        <td>
+          Calculates the <code>base</code> to the <code>exponent</code> power,
+          that is, <code>base^exponent</code>
+        </td>
+        <td>
+          <code>2 ** 3</code> returns <code>8</code>.<br /><code>10 ** -1</code>
+          returns <code>0.1</code>.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 
 
@@ -2146,322 +2146,322 @@ In addition to the standard arithmetic operations (`+`, `-`, `*`, `/`), JavaScri
 
 **Logical operators**
 
-Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value.
-However, the `&&`, `||`, and `??` operators actually return the value of one of the specified operands, so if these
-operators are used with non-Boolean values, they may return a non-Boolean value. As such, they are more adequately called "value selection operators".
-The logical operators are described in the following table.
+  Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value.
+  However, the `&&`, `||`, and `??` operators actually return the value of one of the specified operands, so if these
+  operators are used with non-Boolean values, they may return a non-Boolean value. As such, they are more adequately called "value selection operators".
+  The logical operators are described in the following table.
 
-<table class="fullwidth-table">
-  <caption>
-    Logical operators
-  </caption>
-  <thead>
-    <tr>
-      <th scope="col">Operator</th>
-      <th scope="col">Usage</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND">Logical AND</a> (<code>&#x26;&#x26;</code>)
-      </td>
-      <td><code>expr1 &#x26;&#x26; expr2</code></td>
-      <td>
-        Returns <code>expr1</code> if it can be converted to <code>false</code>;
-        otherwise, returns <code>expr2</code>. Thus, when used with Boolean
-        values, <code>&#x26;&#x26;</code> returns <code>true</code> if both
-        operands are true; otherwise, returns <code>false</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR">Logical OR</a> (<code>||</code>)
-      </td>
-      <td><code>expr1 || expr2</code></td>
-      <td>
-        Returns <code>expr1</code> if it can be converted to <code>true</code>;
-        otherwise, returns <code>expr2</code>. Thus, when used with Boolean
-        values, <code>||</code> returns <code>true</code> if either operand is
-        true; if both are false, returns <code>false</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing">Nullish coalescing operator</a> (<code>??</code>)
-      </td>
-      <td><code>expr1 ?? expr2</code></td>
-      <td>
-        Returns <code>expr1</code> if it is neither <code>null</code> nor
-        <code>undefined</code>; otherwise, returns <code>expr2</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT">Logical NOT</a> (<code>!</code>)
-      </td>
-      <td><code>!expr</code></td>
-      <td>
-        Returns <code>false</code> if its single operand can be converted
-        to <code>true</code>; otherwise, returns <code>true</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <table class="fullwidth-table">
+    <caption>
+      Logical operators
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Operator</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND">Logical AND</a> (<code>&#x26;&#x26;</code>)
+        </td>
+        <td><code>expr1 &#x26;&#x26; expr2</code></td>
+        <td>
+          Returns <code>expr1</code> if it can be converted to <code>false</code>;
+          otherwise, returns <code>expr2</code>. Thus, when used with Boolean
+          values, <code>&#x26;&#x26;</code> returns <code>true</code> if both
+          operands are true; otherwise, returns <code>false</code>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR">Logical OR</a> (<code>||</code>)
+        </td>
+        <td><code>expr1 || expr2</code></td>
+        <td>
+          Returns <code>expr1</code> if it can be converted to <code>true</code>;
+          otherwise, returns <code>expr2</code>. Thus, when used with Boolean
+          values, <code>||</code> returns <code>true</code> if either operand is
+          true; if both are false, returns <code>false</code>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing">Nullish coalescing operator</a> (<code>??</code>)
+        </td>
+        <td><code>expr1 ?? expr2</code></td>
+        <td>
+          Returns <code>expr1</code> if it is neither <code>null</code> nor
+          <code>undefined</code>; otherwise, returns <code>expr2</code>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT">Logical NOT</a> (<code>!</code>)
+        </td>
+        <td><code>!expr</code></td>
+        <td>
+          Returns <code>false</code> if its single operand can be converted
+          to <code>true</code>; otherwise, returns <code>true</code>.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 
 
-Examples of expressions that can be converted to `false` are those that evaluate to `null`, `0`, `0n`, `NaN`, the empty string (`""`), or `undefined`.
+  Examples of expressions that can be converted to `false` are those that evaluate to `null`, `0`, `0n`, `NaN`, the empty string (`""`), or `undefined`.
 
-The following code shows examples of the `&&` (logical AND) operator.
+  The following code shows examples of the `&&` (logical AND) operator.
 
-```js
-const a1 = true && true; // t && t returns true
-const a2 = true && false; // t && f returns false
-const a3 = false && true; // f && t returns false
-const a4 = false && 3 === 4; // f && f returns false
-const a5 = "Cat" && "Dog"; // t && t returns Dog
-const a6 = false && "Cat"; // f && t returns false
-const a7 = "Cat" && false; // t && f returns false
-```
+  ```js
+  const a1 = true && true; // t && t returns true
+  const a2 = true && false; // t && f returns false
+  const a3 = false && true; // f && t returns false
+  const a4 = false && 3 === 4; // f && f returns false
+  const a5 = "Cat" && "Dog"; // t && t returns Dog
+  const a6 = false && "Cat"; // f && t returns false
+  const a7 = "Cat" && false; // t && f returns false
+  ```
 
-The following code shows examples of the `||` (logical OR) operator.
+  The following code shows examples of the `||` (logical OR) operator.
 
-```js
-const o1 = true || true; // t || t returns true
-const o2 = false || true; // f || t returns true
-const o3 = true || false; // t || f returns true
-const o4 = false || 3 === 4; // f || f returns false
-const o5 = "Cat" || "Dog"; // t || t returns Cat
-const o6 = false || "Cat"; // f || t returns Cat
-const o7 = "Cat" || false; // t || f returns Cat
-```
+  ```js
+  const o1 = true || true; // t || t returns true
+  const o2 = false || true; // f || t returns true
+  const o3 = true || false; // t || f returns true
+  const o4 = false || 3 === 4; // f || f returns false
+  const o5 = "Cat" || "Dog"; // t || t returns Cat
+  const o6 = false || "Cat"; // f || t returns Cat
+  const o7 = "Cat" || false; // t || f returns Cat
+  ```
 
-The following code shows examples of the `??` (nullish coalescing) operator.
+  The following code shows examples of the `??` (nullish coalescing) operator.
 
-```js
-const n1 = null ?? 1; // 1
-const n2 = undefined ?? 2; // 2
-const n3 = false ?? 3; // false
-const n4 = 0 ?? 4; // 0
-```
+  ```js
+  const n1 = null ?? 1; // 1
+  const n2 = undefined ?? 2; // 2
+  const n3 = false ?? 3; // false
+  const n4 = 0 ?? 4; // 0
+  ```
 
-Note how `??` works like `||`, but it only returns the second expression when the first one is "[nullish](https://developer.mozilla.org/en-US/docs/Glossary/Nullish){:target="_blank"}", i.e., [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null){:target="_blank"} or [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined){:target="_blank"}. `??` is a better alternative than `||` for setting defaults for values that might be `null` or `undefined`, in particular when values like `''` or `0` are valid values and the default should not apply.
+  Note how `??` works like `||`, but it only returns the second expression when the first one is "[nullish](https://developer.mozilla.org/en-US/docs/Glossary/Nullish){:target="_blank"}", i.e., [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null){:target="_blank"} or [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined){:target="_blank"}. `??` is a better alternative than `||` for setting defaults for values that might be `null` or `undefined`, in particular when values like `''` or `0` are valid values and the default should not apply.
 
-The following code shows examples of the `!` (logical NOT) operator.
+  The following code shows examples of the `!` (logical NOT) operator.
 
-```js
-const n1 = !true; // !t returns false
-const n2 = !false; // !f returns true
-const n3 = !"Cat"; // !t returns false
-```
+  ```js
+  const n1 = !true; // !t returns false
+  const n2 = !false; // !f returns true
+  const n3 = !"Cat"; // !t returns false
+  ```
 
 <!-- ## String operators -->
 
 
 **String operators**
 
-In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.
+  In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.
 
-For example,
+  For example,
 
-```js
-console.log("my " + "string"); // console logs the string "my string".
-```
+  ```js
+  console.log("my " + "string"); // console logs the string "my string".
+  ```
 
-The shorthand assignment operator `+=` can also be used to concatenate strings.
+  The shorthand assignment operator `+=` can also be used to concatenate strings.
 
-For example,
+  For example,
 
-```js
-let myString = "alpha";
-myString += "bet"; // evaluates to "alphabet" and assigns this value to myString.
-```
+  ```js
+  let myString = "alpha";
+  myString += "bet"; // evaluates to "alphabet" and assigns this value to myString.
+  ```
 
 <!-- ## Conditional (ternary) operator -->
 
 
 **Conditional (ternary) operator**
 
-The [conditional operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator){:target="_blank"}
-is the only JavaScript operator that takes three operands.
-The operator can have one of two values based on a condition.
-The syntax is:
+  The [conditional operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator){:target="_blank"}
+  is the only JavaScript operator that takes three operands.
+  The operator can have one of two values based on a condition.
+  The syntax is:
 
-<!-- ```js-nolint -->
+  <!-- ```js-nolint -->
 
 
-```js
-condition ? val1 : val2
-```
+  ```js
+  condition ? val1 : val2
+  ```
 
-If `condition` is true, the operator has the value of `val1`.
-Otherwise it has the value of `val2`. You can use the conditional operator anywhere you would use a standard operator.
+  If `condition` is true, the operator has the value of `val1`.
+  Otherwise it has the value of `val2`. You can use the conditional operator anywhere you would use a standard operator.
 
-For example,
+  For example,
 
-```js
-const status = age >= 18 ? "adult" : "minor";
-```
+  ```js
+  const status = age >= 18 ? "adult" : "minor";
+  ```
 
-This statement assigns the value "adult" to the variable `status` if
-`age` is eighteen or more. Otherwise, it assigns the value "minor" to
-`status`.
+  This statement assigns the value "adult" to the variable `status` if
+  `age` is eighteen or more. Otherwise, it assigns the value "minor" to
+  `status`.
 
 <!-- ## Unary operators -->
 
 
 **Unary operators**
 
-A unary operation is an operation with only one operand.
+  A unary operation is an operation with only one operand.
 
 <!-- ### delete -->
 
 
 **delete**
 
-The [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete){:target="_blank"} operator deletes an object's property.
-The syntax is:
+  The [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete){:target="_blank"} operator deletes an object's property.
+  The syntax is:
 
-```js
-delete object.property;
-delete object[propertyKey];
-delete objectName[index];
-```
+  ```js
+  delete object.property;
+  delete object[propertyKey];
+  delete objectName[index];
+  ```
 
-where `object` is the name of an object, `property` is an existing property, and `propertyKey` is a string or symbol referring to an existing property.
+  where `object` is the name of an object, `property` is an existing property, and `propertyKey` is a string or symbol referring to an existing property.
 
-If the `delete` operator succeeds, it removes the property from the object.
-Trying to access it afterwards will yield `undefined`.
-The `delete` operator returns `true` if the operation is possible; it returns `false` if the operation is not possible.
+  If the `delete` operator succeeds, it removes the property from the object.
+  Trying to access it afterwards will yield `undefined`.
+  The `delete` operator returns `true` if the operation is possible; it returns `false` if the operation is not possible.
 
-```js
-delete Math.PI; // returns false (cannot delete non-configurable properties)
+  ```js
+  delete Math.PI; // returns false (cannot delete non-configurable properties)
 
-const myObj = { h: 4 };
-delete myObj.h; // returns true (can delete user-defined properties)
-```
+  const myObj = { h: 4 };
+  delete myObj.h; // returns true (can delete user-defined properties)
+  ```
 
 <!-- #### Deleting array elements -->
 
 
 **Deleting array elements**
 
-Since arrays are just objects, it's technically possible to `delete` elements from them.
-This is, however, regarded as a bad practice — try to avoid it.
-When you delete an array property, the array length is not affected and other elements are not re-indexed.
-To achieve that behavior, it is much better to just overwrite the element with the value `undefined`.
-To actually manipulate the array, use the various array methods such as [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice){:target="_blank"}.
+  Since arrays are just objects, it's technically possible to `delete` elements from them.
+  This is, however, regarded as a bad practice — try to avoid it.
+  When you delete an array property, the array length is not affected and other elements are not re-indexed.
+  To achieve that behavior, it is much better to just overwrite the element with the value `undefined`.
+  To actually manipulate the array, use the various array methods such as [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice){:target="_blank"}.
 
 <!-- ### typeof -->
 
 
 **typeof**
 
-The [`typeof` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof){:target="_blank"} returns a string indicating the type of the unevaluated operand.
-`operand` is the string, variable, keyword, or object for which the type is to be returned.
-The parentheses are optional.
+  The [`typeof` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof){:target="_blank"} returns a string indicating the type of the unevaluated operand.
+  `operand` is the string, variable, keyword, or object for which the type is to be returned.
+  The parentheses are optional.
 
-Suppose you define the following variables:
+  Suppose you define the following variables:
 
-```js
-const myFun = () => 5 + 2;
-const shape = "round";
-const size = 1;
-const foo = ["Apple", "Mango", "Orange"];
-const today = new Date();
-```
+  ```js
+  const myFun = () => 5 + 2;
+  const shape = "round";
+  const size = 1;
+  const foo = ["Apple", "Mango", "Orange"];
+  const today = new Date();
+  ```
 
-The `typeof` operator returns the following results for these variables:
+  The `typeof` operator returns the following results for these variables:
 
-```js
-typeof myFun; // returns "function"
-typeof shape; // returns "string"
-typeof size; // returns "number"
-typeof foo; // returns "object"
-typeof today; // returns "object"
-typeof doesntExist; // returns "undefined"
-```
+  ```js
+  typeof myFun; // returns "function"
+  typeof shape; // returns "string"
+  typeof size; // returns "number"
+  typeof foo; // returns "object"
+  typeof today; // returns "object"
+  typeof doesntExist; // returns "undefined"
+  ```
 
-For the keywords `true` and `null`, the `typeof`
-operator returns the following results:
+  For the keywords `true` and `null`, the `typeof`
+  operator returns the following results:
 
-```js
-typeof true; // returns "boolean"
-typeof null; // returns "object"
-```
+  ```js
+  typeof true; // returns "boolean"
+  typeof null; // returns "object"
+  ```
 
-For a number or string, the `typeof` operator returns the following results:
+  For a number or string, the `typeof` operator returns the following results:
 
-```js
-typeof 62; // returns "number"
-typeof "Hello world"; // returns "string"
-```
+  ```js
+  typeof 62; // returns "number"
+  typeof "Hello world"; // returns "string"
+  ```
 
-For property values, the `typeof` operator returns the type of value the
-property contains:
+  For property values, the `typeof` operator returns the type of value the
+  property contains:
 
-```js
-typeof document.lastModified; // returns "string"
-typeof window.length; // returns "number"
-typeof Math.LN2; // returns "number"
-```
+  ```js
+  typeof document.lastModified; // returns "string"
+  typeof window.length; // returns "number"
+  typeof Math.LN2; // returns "number"
+  ```
 
-For methods and functions, the `typeof` operator returns results as follows:
+  For methods and functions, the `typeof` operator returns results as follows:
 
-```js
-typeof blur; // returns "function"
-typeof parseInt; // returns "function"
-typeof shape.split; // returns "function"
-```
+  ```js
+  typeof blur; // returns "function"
+  typeof parseInt; // returns "function"
+  typeof shape.split; // returns "function"
+  ```
 
-For predefined objects, the `typeof` operator returns results as follows:
+  For predefined objects, the `typeof` operator returns results as follows:
 
-```js
-typeof Date; // returns "function"
-typeof Function; // returns "function"
-typeof Math; // returns "object"
-typeof Option; // returns "function"
-typeof String; // returns "function"
-```
+  ```js
+  typeof Date; // returns "function"
+  typeof Function; // returns "function"
+  typeof Math; // returns "object"
+  typeof Option; // returns "function"
+  typeof String; // returns "function"
+  ```
 
 <!-- ## Basic expressions -->
 
 
 **Basic expressions**
 
-All operators eventually operate on one or more basic expressions. These basic expressions include [identifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations){:target="_blank"} and [literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals){:target="_blank"}, but there are a few other kinds as well. They are briefly introduced below, and their semantics are described in detail in their respective reference sections.
+  All operators eventually operate on one or more basic expressions. These basic expressions include [identifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations){:target="_blank"} and [literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#literals){:target="_blank"}, but there are a few other kinds as well. They are briefly introduced below, and their semantics are described in detail in their respective reference sections.
 
 <!-- ### Grouping operator -->
 
 
 **Grouping operator**
 
-The grouping operator `( )` controls the precedence of evaluation in
-expressions. For example, you can override multiplication and division first, then
-addition and subtraction to evaluate addition first.
+  The grouping operator `( )` controls the precedence of evaluation in
+  expressions. For example, you can override multiplication and division first, then
+  addition and subtraction to evaluate addition first.
 
-<!-- ```js-nolint -->
+  <!-- ```js-nolint -->
 
 
-```js
-const a = 1;
-const b = 2;
-const c = 3;
+  ```js
+  const a = 1;
+  const b = 2;
+  const c = 3;
 
-// default precedence
-a + b * c; // 7
-// evaluated by default like this
-a + (b * c); // 7
+  // default precedence
+  a + b * c; // 7
+  // evaluated by default like this
+  a + (b * c); // 7
 
-// now overriding precedence
-// addition before multiplication
-(a + b) * c; // 9
+  // now overriding precedence
+  // addition before multiplication
+  (a + b) * c; // 9
 
-// which is equivalent to
-a * c + b * c; // 9
-```
+  // which is equivalent to
+  a * c + b * c; // 9
+  ```
 
 <!-- ### Exercises -->
 

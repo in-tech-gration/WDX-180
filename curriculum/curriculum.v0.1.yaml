@@ -1,4 +1,4 @@
-version: 2.0
+version: 0.1.1
 input: curriculum/curriculum.draft.md
 output: curriculum/index.md
 messages:
@@ -27,20 +27,20 @@ Syllabus:
         6: # file:///./schedule/week06.yaml
           title: "CSS Frameworks & Intro to Programming"
           open: true
-        7: # file:///./schedule/week07.yaml
+        7: # file:///./schedule/week07.yaml (20/11/2023 - 24/11/2023)
           title: "JavaScript Core 1"
           open: true
-        8: # file:///./schedule/week08.yaml 
+        8: # file:///./schedule/week08.yaml (27/11/2023 - 01/12/2023)
           title: "JavaScript Core 2"
           open: true
-        9: # file:///./schedule/week09.yaml
+        9: # file:///./schedule/week09.yaml (04/12/2023 - 08/12/2023)
           title: "JavaScript Core 3"
           open: true
-        10: # file:///./schedule/week10.yaml
+        10: # file:///./schedule/week10.yaml (11/12/2023 - 15/12/2023)
           title: "Web APIs 1: DOM API & Events"
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/05-putting-it-all-together
           open: true
-        11: # file:///./schedule/week11.yaml
+        11: # file:///./schedule/week11.yaml (18/12/2023 - 22/12/2023)
           title: "Web APIs 2: Asynchronous Programming, Promises, JSON & Fetch API"
           open: true
           # STUDY: https://github.com/in-tech-gration/complete-intro-to-web-dev-v3/tree/main/lessons/06-talking-to-servers
@@ -51,35 +51,35 @@ Syllabus:
     title: "Intermediate: WDX 120°"
     schedule:
       weeks:
-        13: # JavaScript Intermediate 1 & Git
+        13: # JavaScript Intermediate 1 & Git (08/01/2024 - 12/01/2024)
           # file:///./schedule/week13.yaml
           title: "Intermediate JavaScript: Promises & Scope (var, let, const)"
           # TODO: ES6
           # Clean Code, Testing, Workflow, Deploying your app
           open: true
-        14: # Functional Programming 1, Templating, JavaScript Frameworks
+        14: # Functional Programming 1, Templating, JavaScript Frameworks (15/01/2024 - 19/01/204)
           # file:///./schedule/week14.yaml
           title: "Intermediate JavaScript: ECMAScript 6"
           # title: "Functional Programming 1, Templating, JavaScript Frameworks"
           open: true
           # STUDY: See /modules/javascript/frameworks/jquery/build_your_first_javascript_library/index.md
-        15: # JavaScript Intermediate 2: Software Patterns & TypeScript
+        15: # JavaScript Intermediate 2: Software Patterns & TypeScript (05/02/2024 - 09/02/2024)
           # file:///./schedule/week17.yaml
           # title: "JavaScript Intermediate 2: Software Patterns & TypeScript"
           title: "Intermediate JavaScript: Events"
           open: true
           # MEMOIZATION
-        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more
+        16: # Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more (29/01/2024 - 02/02/204)
           # file:///./schedule/week16.yaml
           # title: "Web APIs 3: Geolocation, Canvas, Audio API, Drag and Drop, Web Workers & more"
           title: "Intermediate JavaScript: Events & Objects"
           open: true
-        17: # Node.js 1
+        17: # Node.js 1 (12/02/2024 - 16/02/2024)
           # file:///./schedule/week18.yaml
           # title: "Node.js 1"
           title: "Intermediate JavaScript: Objects"
           open: true
-        18: # Node.js 2 & NoSQL Databases
+        18: # Node.js 2 & NoSQL Databases (19/02/2024 - 23/02/2024)
           # file:///./schedule/week19.yaml
           # title: "Node.js 2 & NoSQL Databases"
           title: "Intermediate JavaScript"
@@ -94,34 +94,34 @@ Syllabus:
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/02-sql.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/01-tables.md
           # STUDY: https://github.com/rubymonsters/webapps-for-beginners/blob/main/source/15-databases/04-orm.md
-        19: # Data Structures & Algorithms
+        19: # Data Structures & Algorithms (22/01/2024 - 26/01/2024)
           # file:///./schedule/week15.yaml
           # title: "Data Structures & Algorithms"
           title: "Introduction to Node JS"
           open: true
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
           # STUDY: https://github.com/btholt/complete-intro-to-computer-science
-        20: # React 1 
+        20: # React 1 (26/02/2024 - 01/03/2024)
           # file:///./schedule/week20.yaml
           # title: "React 1"
           title: "Web Servers with Node JS"
           open: true
-        21: # React 2 
+        21: # React 2 (04/03/2024 - 08/03/2024)
           # file:///./schedule/week21.yaml
           # title: "React 2, Firebase"
           title: "⚛️ React JS - An Introduction"
           open: true
-        22: # React 3
+        22: # React 3 (11/03/2024 - 15/03/2024)
           # file:///./schedule/week22.yaml
           # title: "React 3, Redux & Tech Interview"
           title: "⚛️ React JS"
           open: true
-        23: # Group Project, Tech Interviews, Job Hunt
+        23: # Group Project, Tech Interviews, Job Hunt (18/03/2024 - 22/03/2024)
           # file:///./schedule/week23.yaml
           # title: "Group Project, Tech Interview & Job Hunt"
           title: "⚛️ React JS"
           open: true
-        24: # Group Project 
+        24: # Group Project (25/03/2024 - 29/03/2024)
           # file:///./schedule/week24.yaml
           # title: "Group Project"
           title: "⚛️ React JS"
@@ -189,4 +189,11 @@ Syllabus:
 ## [0.1.1] - 07/12/2023: Updated Weeks 10 and 11
 ### REMOVED: Week 10: Removed Asynchronous Programming & Ajax
 ### REMOVED: Week 11: Removed Web Storage and Media APIs
-## [0.1.0]: https://github.com/in-tech-gration/WDX-180/blob/21faf10c25cdd520fa5b8edf9d47f14a69caae47/curriculum/curriculum.yaml
+## [0.1.0]: https://github.com/in-tech-gration/WDX-180/blob/21faf10c25cdd520fa5b8edf9d47f14a69caae47/curriculum/curriculum.yaml 
+
+# TODO: SQL: https://eventloop.gr/LearnSQL/index.html#/
+# +Murder Mystery
+
+# TODO: Add Chrome Extensions to z-index/stacking-context related modules
+# https://chromewebstore.google.com/detail/css-stacking-context-insp/apjeljpachdcjkgnamgppgfkmddadcki
+# https://chromewebstore.google.com/detail/z-context/jigamimbjojkdgnlldajknogfgncplbh

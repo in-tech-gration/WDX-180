@@ -9,15 +9,15 @@ schedule:
     1: # JavaScript - Functions 2
       # file://./../modules/javascript/core/functions/mdn/functions-2.md
       module: javascript/core/functions/mdn/functions-2.md
-    2: # 
-      # file://./../modules/*/index.md
-      module: work-in-progress/
-    3: # 
-      # file://./../modules/*/index.md
-      module: work-in-progress/
-    4: # 
-      # file://./../modules/*/index.md
-      module: work-in-progress/
+    2: # Expressions & Operators 2
+      # file://./../modules/javascript/core/expressions_and_operators/expressions_and_operators-2.md
+      module: javascript/core/expressions_and_operators/expressions_and_operators-2.md
+    3: # JavaScript - Numbers & Strings
+      # file://./../modules/mdn/web/javascript/guide/numbers_and_strings/index.md
+      module: mdn/web/javascript/guide/numbers_and_strings/
+    4: # JavaScript - Representing Dates & Times
+      # file://./../modules/mdn/web/javascript/guide/representing_dates_times/index.md
+      module: mdn/web/javascript/guide/representing_dates_times/
     5: # 
       # file://./../modules/*/index.md
       module: work-in-progress/

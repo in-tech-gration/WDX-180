@@ -48,7 +48,7 @@ function loop(x) {
 loop(0);
 ```
 
-However, some algorithms cannot be simple iterative loops. For example, getting all the nodes of a tree structure (such as the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model){:target="_blank"}){:target="_blank"} is easier via recursion:
+However, some algorithms cannot be simple iterative loops. For example, getting all the nodes of a tree structure (such as the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model){:target="_blank"}) is easier via recursion:
 
 ```js
 function walkTree(node) {
