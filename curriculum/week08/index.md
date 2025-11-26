@@ -28,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 26/11/2025</span>
+  <span>Updated: 27/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -1439,7 +1439,7 @@ Finally, a conditional expression appends "P.M." to `temp` if `hour` is 12 or gr
 
 The following examples show several ways to create JavaScript dates:
 
-> Creating a date from a string has a lot of behavior inconsistencies. See [date time string format](#date_time_string_format) for caveats on using different formats.
+<!-- > Creating a date from a string has a lot of behavior inconsistencies. See [date time string format](#date_time_string_format) for caveats on using different formats. -->
 
 
 
@@ -1451,6 +1451,8 @@ const birthday3 = new Date(1995, 11, 17); // the month is 0-indexed
 const birthday4 = new Date(1995, 11, 17, 3, 24, 0);
 const birthday5 = new Date(628021800000); // passing epoch timestamp
 ```
+
+Also, check out [Date Time String Format](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-time-string-format){:target="_blank"}.
 
 <!-- ### Calculating elapsed time -->
 
