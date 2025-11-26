@@ -16,7 +16,7 @@ load_script_js_via_src:
 <!-- SGEN:META:PROGRESS:task=Read 'Intro to Arrays' -->
 #### Intro to Arrays
 
-  ![](./assets/flat-design-devops-illustration.jpg)
+  ![](./assets/flat-design-devops-illustration-3d.jpg)
 
   <!-- SGEN:META:PROGRESS:task=Watch 'CS Discoveries: Introduction to Arrays' -->
   [Watch **CS Discoveries: Introduction to Arrays**](https://www.youtube.com/watch?v=seBDTeZmb-k){:target="_blank"}

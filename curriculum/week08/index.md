@@ -1541,7 +1541,7 @@ const yourFunctionReturn = printElapsedTime(yourFunction);
 
 
 
-  ![](./assets/flat-design-devops-illustration.jpg)
+  ![](./assets/flat-design-devops-illustration-3d.jpg)
 
   [Watch **CS Discoveries: Introduction to Arrays**](https://www.youtube.com/watch?v=seBDTeZmb-k){:target="_blank"}
 
