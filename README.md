@@ -316,6 +316,7 @@ The curriculum draws heavily on the following amazing resources:
 
 Our lovely contributors _(feel free to give them a follow/subscribe/like as a gesture of appreciation)_:
 
+- **Nicolas Wickens**: [GitHub](https://github.com/NicolasWickens)
 - **Walaa Medhat**: [GitHub](https://github.com/walaamedhat)
 - **Maria Karavazaki**: [GitHub](https://github.com/MariaKar1991)
 - **Mubashra Irshad**: [GitHub](https://github.com/mubashra21c)
