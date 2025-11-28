@@ -1,5 +1,5 @@
 ---
-title: Intro to Arrays
+title: JavaScript - Intro to Arrays
 load_script_js_via_src:
   - flems/flems.html
   - flems/flems_init.js
@@ -16,12 +16,14 @@ load_script_js_via_src:
 <!-- SGEN:META:PROGRESS:task=Read 'Intro to Arrays' -->
 #### Intro to Arrays
 
-  ![](./assets/flat-design-devops-illustration.jpg)
+  ![](./assets/flat-design-devops-illustration-3d.jpg)
 
   <!-- SGEN:META:PROGRESS:task=Watch 'CS Discoveries: Introduction to Arrays' -->
   [Watch **CS Discoveries: Introduction to Arrays**](https://www.youtube.com/watch?v=seBDTeZmb-k){:target="_blank"}
 
-  Objects are unordered collections of data using keys and values. Arrays, in contrast, are **ordered collections of data**. If you put something in an array, it has an order. For example, you might a list of the days of the week.
+  <!-- Objects are unordered collections of data using keys and values. Arrays, in contrast, are **ordered collections of data**. If you put something in an array, it has an order. For example, you might a list of the days of the week. -->
+
+  Arrays, in JavaScript, are **ordered collections of data**. If you put something in an array, it has an order. For example, you might a list of the days of the week.
 
   ```javascript
   const daysOfTheWeek = [

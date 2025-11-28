@@ -18,6 +18,6 @@ schedule:
     4: # JavaScript - Representing Dates & Times
       # file://./../modules/mdn/web/javascript/guide/representing_dates_times/index.md
       module: mdn/web/javascript/guide/representing_dates_times/
-    5: # 
-      # file://./../modules/*/index.md
-      module: work-in-progress/
+    5: # JavaScript - Introduction to Arrays
+      # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
+      module: javascript/core/arrays/intro_to_arrays
