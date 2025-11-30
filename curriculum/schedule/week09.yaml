@@ -5,12 +5,12 @@ header_image: week09/assets/header--mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg
 version: 2.0
 schedule: 
   days:
-    1: # 
-      # file://./../modules/javascript/core/functions/inside-js/functions-part-1/index.md
-      module: work-in-progress/
-    2: # 
-      # file://./../modules/javascript/core/functions/inside-js/functions-part-2.md
-      module: work-in-progress/
+    1: # Indexed Collections 1
+      # file://./../modules/javascript/core/arrays/indexed_collections/indexed_collections_1.md
+      module: javascript/core/arrays/indexed_collections/indexed_collections_1.md
+    2: # Indexed Collections 2
+      # file://./../modules/javascript/core/arrays/indexed_collections/indexed_collections_2.md
+      module: javascript/core/arrays/indexed_collections/indexed_collections_2.md
     3: # 
       # file://./../modules/javascript/core/arrays/inside-js/arrays-part-1.md
       module: work-in-progress/
