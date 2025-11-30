@@ -659,9 +659,9 @@ You can transform back and forth between arrays and other data structures.
   // }
   ```
 
-  Note that the returned object references the _same_ elements as the original array (not [deep copies](https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy){:target="_blank"}){:target="_blank"}. Changing the internal structure of these elements will be reflected in both the original array and the returned object.
+  Note that the returned object references the _same_ elements as the original array (not [deep copies](https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy){:target="_blank"}). Changing the internal structure of these elements will be reflected in both the original array and the returned object.
 
-  If you can't use a string as the key, for example, if the information to group is associated with an object that might change, then you can instead use [Map.groupBy()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/groupBy){:target="_blank"}. This is very similar to `Object.groupBy()` except that it groups the elements of the array into a [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map){:target="_blank"} that can use an arbitrary value ([object](https://developer.mozilla.org/en-US/docs/Glossary/Object){:target="_blank"} or [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive){:target="_blank"}){:target="_blank"} as a key.
+  If you can't use a string as the key, for example, if the information to group is associated with an object that might change, then you can instead use [Map.groupBy()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/groupBy){:target="_blank"}. This is very similar to `Object.groupBy()` except that it groups the elements of the array into a [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map){:target="_blank"} that can use an arbitrary value ([object](https://developer.mozilla.org/en-US/docs/Glossary/Object){:target="_blank"} or [primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive){:target="_blank"}) as a key.
 
 <!-- ## Sparse arrays -->
 
