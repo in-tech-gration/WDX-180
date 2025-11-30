@@ -793,7 +793,10 @@ You can transform back and forth between arrays and other data structures.
 
   But you can call them indirectly using [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call){:target="_blank"}.
 
-  ```js example-good
+  <!-- ```js example-good -->
+
+
+  ```js
   function printArguments() {
     Array.prototype.forEach.call(arguments, (item) => {
       console.log(item);
