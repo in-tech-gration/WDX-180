@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Working with objects
+title: JavaScript - Working with Objects 2
 load_script_js_via_src:
   - flems/flems.html
   - flems/flems_init.js
@@ -8,7 +8,7 @@ load_script_js_via_src:
 ### Study Plan
 
 <!-- WDX:SGEN:PROGRESS:task=Watch 'JavaScript Getters and Setters | Mosh' -->
-- [Watch **JavaScript Getters and Setters**](){:target="_blank"}
+- [Watch **JavaScript Getters and Setters**](https://www.youtube.com/watch?v=bl98dm7vJt0){:target="_blank"}
   - Level: Beginner
   - Duration: 7min
   - Captions: Yes

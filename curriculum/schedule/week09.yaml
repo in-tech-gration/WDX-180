@@ -11,12 +11,12 @@ schedule:
     2: # Indexed Collections 2
       # file://./../modules/javascript/core/arrays/indexed_collections/indexed_collections_2.md
       module: javascript/core/arrays/indexed_collections/indexed_collections_2.md
-    3: # 
-      # file://./../modules/javascript/core/arrays/inside-js/arrays-part-1.md
-      module: work-in-progress/
-    4: # 
-      # file://./../modules/javascript/core/arrays/inside-js/arrays-part-2.md
-      module: work-in-progress/
+    3: # Working with Objects 1
+      # file://./../modules/javascript/core/objects/working_with_objects/working_with_objects_1.md
+      module: javascript/core/objects/working_with_objects/working_with_objects_1.md
+    4: # Working with Objects 2
+      # file://./../modules/javascript/core/objects/working_with_objects/working_with_objects_2.md
+      module: javascript/core/objects/working_with_objects/working_with_objects_2.md
     5: # 
       # file://./../modules/javascript/core/objects/inside-js/objects-part-1.md
       module: work-in-progress/
