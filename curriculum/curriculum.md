@@ -117,16 +117,16 @@
     - Template Literals
     - Multi-lines
     - Embedded Expressions
-  - Day 04: JavaScript Core 2
-  - Day 05: JavaScript Core 2
+  - Day 04: JavaScript Core 2: Representing Dates & Times (MDN)
+  - Day 05: JavaScript Core 2: Intro to Arrays
 
 ### Week 09 - JavaScript Core 3
 
-  - Day 01: JavaScript Core 3
-  - Day 02: JavaScript Core 3
-  - Day 03: JavaScript Core 3
-  - Day 04: JavaScript Core 3
-  - Day 05: JavaScript Core 3
+  - Day 01: JavaScript Core 3: Arrays 1 (MDN)
+  - Day 02: JavaScript Core 3: Arrays 2 (MDN)
+  - Day 03: JavaScript Core 3: Working with Objects 1 (MDN+)
+  - Day 04: JavaScript Core 3: Working with Objects 2 (MDN+)
+  - Day 05: JavaScript Core 3: 
 
 ### Week 10 - Web APIs 1: DOM
 
