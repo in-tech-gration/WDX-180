@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Working with objects 1
+title: JavaScript - Working with Objects 1
 load_script_js_via_src:
   - flems/flems.html
   - flems/flems_init.js
