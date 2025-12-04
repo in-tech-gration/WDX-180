@@ -18,26 +18,5 @@ schedule:
       # file://./../modules/javascript/core/objects/working_with_objects/working_with_objects_2.md
       module: javascript/core/objects/working_with_objects/working_with_objects_2.md
     5: # 
-      # file://./../modules/javascript/core/objects/inside-js/objects-part-1.md
-      module: work-in-progress/
-
-# ---
-
-# Remove: https://github.com/in-tech-gration/welcome-to-js/blob/main/printing-code.mp4
-
-# TODO: Add Priorities to start of Week 07?
-# https://github.com/DeNepo/architecture#priorities
-# Day 5: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
-
-# # STUDY: https://arrayexplorer.netlify.app/
-# ??? node validate
-
-# DAY 05: OBJECTS:
-# https://codepen.io/kostasx/pen/GLPrNz?editors=0010
-# https://codepen.io/kostasx/pen/RYKMzj?editors=0011
-
-# Add Extras to this week:
-# - https://github.com/DeNepo/unit-testing/tree/main/2-functions
-# - https://github.com/DeNepo/unit-testing/tree/main/3-documenting-functions
-# - https://github.com/DeNepo/unit-testing/tree/main/6-reference-vs-value
-# - https://github.com/DeNepo/unit-testing/tree/main/7-side-effects 
+      # file://./../modules/javascript/core/objects/object_practice/index.md
+      module: javascript/core/objects/object_practice/
