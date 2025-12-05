@@ -27,6 +27,6 @@ load_script_js_via_src:
 
   Download the following file and try to solve all the exercises:
 
-  [Array & Object Practice](){:target="_blank"}
+  [Array & Object Practice](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week09/assets/Object.Exercises.js){:target="_blank"}
 
 <!-- SGEN:META:PROGRESS:task=Complete all the exercises in the Arrays & Objects Practice module -->

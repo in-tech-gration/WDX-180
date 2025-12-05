@@ -1325,7 +1325,7 @@ In addition to objects that are predefined in the browser, you can define your o
 
   Download the following file and try to solve all the exercises:
 
-  [Array & Object Practice](){:target="_blank"}
+  [Array & Object Practice](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week09/assets/Object.Exercises.js){:target="_blank"}
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week09/progress/progress.draft.w09.d05.csv**
 
