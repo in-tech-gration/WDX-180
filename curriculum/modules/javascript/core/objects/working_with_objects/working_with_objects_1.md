@@ -1,17 +1,23 @@
 ---
-title: JavaScript - Working with objects
+title: JavaScript - Working with Objects 1
 load_script_js_via_src:
   - flems/flems.html
   - flems/flems_init.js
-source: https://github.com/in-tech-gration/content/tree/main/files/en-us/web/javascript/guide/working_with_objects
 ---
 
+### Study Plan
 
 JavaScript is designed on an object-based paradigm. An object is a collection of [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript){:target="_blank"}, and a property is an association between a name (or _key_) and a value. A property's value can be a function, in which case the property is known as a [method](https://developer.mozilla.org/en-US/docs/Glossary/Method){:target="_blank"}.
 
 Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
 
 In addition to objects that are predefined in the browser, you can define your own objects. This chapter describes how to use objects, properties, and methods, and how to create your own objects.
+
+<!-- WDX:SGEN:PROGRESS:task=Watch 'Javascript Objects Explained' -->
+- [Watch **Javascript Objects Explained**](https://www.youtube.com/watch?v=rLPwCAqyCAE){:target="_blank"}
+  - Level: Beginner
+  - Duration: 23min
+  - Captions: Yes
 
 <!-- ## Creating new objects -->
 **Creating new objects**
@@ -59,117 +65,6 @@ In addition to objects that are predefined in the browser, you can define your o
   ```
 
   Objects created with initializers are called _plain objects_, because they are instances of [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object){:target="_blank"}, but not any other object type. Some object types have special initializer syntaxes — for example, [array initializers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#array_literals){:target="_blank"} and [regex literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions#creating_a_regular_expression){:target="_blank"}.
-
-<!-- ### Using a constructor function -->
-**Using a constructor function**
-
-  Alternatively, you can create an object with these two steps:
-
-  1. Define the object type by writing a constructor function. There is a strong convention, with good reason, to use a capital initial letter.
-  2. Create an instance of the object with [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new){:target="_blank"}.
-
-  To define an object type, create a function for the object type that specifies its name, properties, and methods. For example, suppose you want to create an object type for cars. You want this type of object to be called `Car`, and you want it to have properties for make, model, and year. To do this, you would write the following function:
-
-  ```js
-  function Car(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-  }
-  ```
-
-  Notice the use of `this` to assign values to the object's properties based on the values passed to the function.
-
-  Now you can create an object called `myCar` as follows:
-
-  ```js
-  const myCar = new Car("Eagle", "Talon TSi", 1993);
-  ```
-
-  This statement creates `myCar` and assigns it the specified values for its properties. Then the value of `myCar.make` is the string `"Eagle"`, `myCar.model` is the string `"Talon TSi"`, `myCar.year` is the integer `1993`, and so on. The order of arguments and parameters should be the same.
-
-  You can create any number of `Car` objects by calls to `new`. For example,
-
-  ```js
-  const randCar = new Car("Nissan", "300ZX", 1992);
-  const kenCar = new Car("Mazda", "Miata", 1990);
-  ```
-
-  An object can have a property that is itself another object. For example, suppose you define an object called `Person` as follows:
-
-  ```js
-  function Person(name, age, sex) {
-    this.name = name;
-    this.age = age;
-    this.sex = sex;
-  }
-  ```
-
-  and then instantiate two new `Person` objects as follows:
-
-  ```js
-  const rand = new Person("Rand McKinnon", 33, "M");
-  const ken = new Person("Ken Jones", 39, "M");
-  ```
-
-  Then, you can rewrite the definition of `Car` to include an `owner` property that takes a `Person` object, as follows:
-
-  ```js
-  function Car(make, model, year, owner) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.owner = owner;
-  }
-  ```
-
-  To instantiate the new objects, you then use the following:
-
-  ```js
-  const car1 = new Car("Eagle", "Talon TSi", 1993, rand);
-  const car2 = new Car("Nissan", "300ZX", 1992, ken);
-  ```
-
-  Notice that instead of passing a literal string or integer value when creating the new objects, the above statements pass the objects `rand` and `ken` as the arguments for the owners. Then if you want to find out the name of the owner of `car2`, you can access the following property:
-
-  ```js
-  car2.owner.name;
-  ```
-
-  You can always add a property to a previously defined object. For example, the statement
-
-  ```js
-  car1.color = "black";
-  ```
-
-  adds a property `color` to `car1`, and assigns it a value of `"black"`. However, this does not affect any other objects. To add the new property to all objects of the same type, you have to add the property to the definition of the `Car` object type.
-
-  You can also use the [`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes){:target="_blank"} syntax instead of the `function` syntax to define a constructor function. For more information, see the [class guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes){:target="_blank"}.
-
-<!-- ### Using the Object.create() method -->
-**Using the Object.create() method**
-
-  Objects can also be created using the [Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create){:target="_blank"} method. This method can be very useful, because it allows you to choose the [prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain){:target="_blank"} object for the object you want to create, without having to define a constructor function.
-
-  ```js
-  // Animal properties and method encapsulation
-  const Animal = {
-    type: "Invertebrates", // Default value of properties
-    displayType() {
-      // Method which will display type of Animal
-      console.log(this.type);
-    },
-  };
-
-  // Create new animal type called `animal`
-  const animal = Object.create(Animal);
-  animal.displayType(); // Logs: Invertebrates
-
-  // Create new animal type called fish
-  const fish = Object.create(Animal);
-  fish.type = "Fishes";
-  fish.displayType(); // Logs: Fishes
-  ```
 
 <!-- ## Objects and properties -->
 **Objects and properties**
@@ -345,21 +240,6 @@ In addition to objects that are predefined in the browser, you can define your o
   console.log("a" in myObj); // false
   ```
 
-<!-- ## Inheritance -->
-**Inheritance**
-
-  All objects in JavaScript inherit from at least one other object. The object being inherited from is known as the prototype, and the inherited properties can be found in the `prototype` object of the constructor. See [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain){:target="_blank"} for more information.
-
-<!-- ### Defining properties for all objects of one type -->
-**Defining properties for all objects of one type**
-
-  You can add a property to all objects created through a certain [constructor](#using_a_constructor_function) using the [`prototype`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype){:target="_blank"} property. This defines a property that is shared by all objects of the specified type, rather than by just one instance of the object. The following code adds a `color` property to all objects of type `Car`, and then reads the property's value from an instance `car1`.
-
-  ```js
-  Car.prototype.color = "red";
-  console.log(car1.color); // "red"
-  ```
-
 <!-- ## Defining methods -->
 **Defining methods**
 
@@ -386,24 +266,6 @@ In addition to objects that are predefined in the browser, you can define your o
 
   ```js
   objectName.methodName(params);
-  ```
-
-**Defining methods on the Prototype**
-
-  Methods are typically defined on the `prototype` object of the constructor, so that all objects of the same type share the same method. For example, you can define a function that formats and displays the properties of the previously-defined `Car` objects.
-
-  ```js
-  Car.prototype.displayCar = function () {
-    const result = `A Beautiful ${this.year} ${this.make} ${this.model}`;
-    console.log(result);
-  };
-  ```
-
-  Notice the use of `this` to refer to the object to which the method belongs. Then you can call the `displayCar` method for each of the objects as follows:
-
-  ```js
-  car1.displayCar();
-  car2.displayCar();
   ```
 
 <!-- ### Using this for object references -->
@@ -437,97 +299,6 @@ In addition to objects that are predefined in the browser, you can define your o
 
   `this` is a "hidden parameter" of a function call that's passed in by specifying the object before the function that was called. For example, in `Manager.sayHi()`, `this` is the `Manager` object, because `Manager` comes before the function `sayHi()`. If you access the same function from another object, `this` will change as well. If you use other methods to call the function, like [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call){:target="_blank"} or [Reflect.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/apply){:target="_blank"}, you can explicitly pass the value of `this` as an argument.
 
-<!-- ## Defining getters and setters -->
-**Defining getters and setters**
+<!-- ### Exercises -->
 
-  A [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get){:target="_blank"} is a function associated with a property that gets the value of a specific property. A [setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set){:target="_blank"} is a function associated with a property that sets the value of a specific property. Together, they can indirectly represent the value of a property.
-
-  Getters and setters can be either
-
-  - defined within [object initializers](#using_object_initializers), or
-  - added later to any existing object.
-
-  Within [object initializers](#using_object_initializers), getters and setters are defined like regular [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions){:target="_blank"}, but prefixed with the keywords `get` or `set`. The getter method must not expect a parameter, while the setter method expects exactly one parameter (the new value to set). For instance:
-
-  ```js
-  const myObj = {
-    a: 7,
-    get b() {
-      return this.a + 1;
-    },
-    set c(x) {
-      this.a = x / 2;
-    },
-  };
-
-  console.log(myObj.a); // 7
-  console.log(myObj.b); // 8, returned from the get b() method
-  myObj.c = 50; // Calls the set c(x) method
-  console.log(myObj.a); // 25
-  ```
-
-  The `myObj` object's properties are:
-
-  - `myObj.a` — a number
-  - `myObj.b` — a getter that returns `myObj.a` plus 1
-  - `myObj.c` — a setter that sets the value of `myObj.a` to half of the value `myObj.c` is being set to
-
-  Getters and setters can also be added to an object at any time after creation using the [Object.defineProperties()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties){:target="_blank"} method. This method's first parameter is the object on which you want to define the getter or setter. The second parameter is an object whose property names are the getter or setter names, and whose property values are objects for defining the getter or setter functions. Here's an example that defines the same getter and setter used in the previous example:
-
-  ```js
-  const myObj = { a: 0 };
-
-  Object.defineProperties(myObj, {
-    b: {
-      get() {
-        return this.a + 1;
-      },
-    },
-    c: {
-      set(x) {
-        this.a = x / 2;
-      },
-    },
-  });
-
-  myObj.c = 10; // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
-  console.log(myObj.b); // Runs the getter, which yields a + 1 or 6
-  ```
-
-  Which of the two forms to choose depends on your programming style and task at hand. If you can change the definition of the original object, you will probably define getters and setters through the original initializer. This form is more compact and natural. However, if you need to add getters and setters later — maybe because you did not write the particular object — then the second form is the only possible form. The second form better represents the dynamic nature of JavaScript, but it can make the code hard to read and understand.
-
-<!-- ## Comparing objects -->
-**Comparing objects**
-
-  In JavaScript, objects are a reference type. Two distinct objects are never equal, even if they have the same properties. Only comparing the same object reference with itself yields true.
-
-  ```js
-  // Two variables, two distinct objects with the same properties
-  const fruit = { name: "apple" };
-  const anotherFruit = { name: "apple" };
-
-  fruit == anotherFruit; // return false
-  fruit === anotherFruit; // return false
-  ```
-
-  ```js
-  // Two variables, a single object
-  const fruit = { name: "apple" };
-  const anotherFruit = fruit; // Assign fruit object reference to anotherFruit
-
-  // Here fruit and anotherFruit are pointing to same object
-  fruit == anotherFruit; // return true
-  fruit === anotherFruit; // return true
-
-  fruit.name = "grape";
-  console.log(anotherFruit); // { name: "grape" }; not { name: "apple" }
-  ```
-
-  For more information about comparison operators, see [equality operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality_operators){:target="_blank"}.
-
-<!-- ## See also -->
-**See also**
-
-- [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain){:target="_blank"}
-- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes){:target="_blank"}
-
+<!-- SGEN:META:PROGRESS:task=Study the Working with Objects 1 module and practice -->
