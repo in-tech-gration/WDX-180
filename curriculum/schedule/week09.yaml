@@ -17,6 +17,6 @@ schedule:
     4: # Working with Objects 2
       # file://./../modules/javascript/core/objects/working_with_objects/working_with_objects_2.md
       module: javascript/core/objects/working_with_objects/working_with_objects_2.md
-    5: # 
+    5: # Arrays & Objects Practice
       # file://./../modules/javascript/core/objects/object_practice/index.md
       module: javascript/core/objects/object_practice/

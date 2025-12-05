@@ -1292,11 +1292,11 @@ In addition to objects that are predefined in the browser, you can define your o
 
 <hr class="mt-1">
 
-<!-- Week 09 - Day 5 | JavaScript - Object Practice -->
+<!-- Week 09 - Day 5 | JavaScript - Array & Object Practice -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 09 - Day 5</span> | JavaScript - Object Practice</h2>
+      <span class="summary-day">Week 09 - Day 5</span> | JavaScript - Array & Object Practice</h2>
   </summary>
 
 ### Schedule
@@ -1321,9 +1321,11 @@ In addition to objects that are predefined in the browser, you can define your o
 
   ![](./assets/coder-archer.jpg)
 
+  **Let's practice Arrays and Objects!**
+
   Download the following file and try to solve all the exercises:
 
-  [Object Practice](){:target="_blank"}
+  [Array & Object Practice](){:target="_blank"}
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week09/progress/progress.draft.w09.d05.csv**
 

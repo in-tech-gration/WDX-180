@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Object Practice
+title: JavaScript - Array & Object Practice
 load_script_js_via_src:
   - flems/flems.html
   - flems/flems_init.js
@@ -23,8 +23,10 @@ load_script_js_via_src:
 
   ![](./assets/coder-archer.jpg)
 
+  **Let's practice Arrays and Objects!**
+
   Download the following file and try to solve all the exercises:
 
-  [Object Practice](){:target="_blank"}
+  [Array & Object Practice](){:target="_blank"}
 
-<!-- SGEN:META:PROGRESS:task=Complete all the exercises in the Objects Practice module -->
+<!-- SGEN:META:PROGRESS:task=Complete all the exercises in the Arrays & Objects Practice module -->
