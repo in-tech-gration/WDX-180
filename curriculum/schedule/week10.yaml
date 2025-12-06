@@ -20,12 +20,3 @@ schedule:
     5: # Events + DOM Project
       # file://./../modules/javascript/web_apis/events/intro/index.md
       module: javascript/web_apis/events/intro
-      
-
-# --
-
-# onevent="" vs .onevent vs addEventListener
-# DOM Exercise: Web Scraping your favorite page!
-
-# DAY 1: "Whats is the dev tools workspace and how to use it?"
-# https://youtu.be/J-02VNxE7lE?t=279

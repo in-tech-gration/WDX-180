@@ -19,15 +19,6 @@ title: Introduction to Events
 
   ---
 
-  <!-- DEPRECATED -->
-
-  <!-- - Now Let's use the `study-lenses` tool to study "Just enough DOM":
-
-    - Sync your forked WDX-180 repo with the original repo
-    - Download the changes locally by running: `git pull`
-    - Run `npm run update:submodules`
-    - `lenses2 curriculum/modules/javascript/denepo/inside-javascript/02-just-enough-dom` -->
-
 ### Summary
 
 ### Exercises
