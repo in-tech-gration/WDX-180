@@ -248,7 +248,7 @@ You can screenshot any individual node in the DOM Tree using **Capture node scre
 
 1. The screenshot will be saved to your downloads.
 
-   {% Img src="image/cGQxYFGJrUUaUZyWhyt9yo5gHhs1/uIMeY1flDrlSBhvYqU5b.png", alt="Node screenshot saved to downloads.", width="800", height="296", class="screenshot" %}
+   ![Node screenshot saved to downloads. (class: screenshot)](image/cGQxYFGJrUUaUZyWhyt9yo5gHhs1/uIMeY1flDrlSBhvYqU5b.png)
 
 ### Reorder DOM nodes {: #reorder }
 

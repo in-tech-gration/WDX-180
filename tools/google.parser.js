@@ -13,29 +13,30 @@
 // From: {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/KKCw924Jst5jW1qmPnHa.png", alt="Method.", width="800", height="402" %}
 // To: ![Method.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/KKCw924Jst5jW1qmPnHa.png)
 // - Replaces the original file with the transformed content: node google.parser.js path/to/markdown-file.md will overwrite the specified file
+// From: {% Img src="image/cGQxYFGJrUUaUZyWhyt9yo5gHhs1/uIMeY1flDrlSBhvYqU5b.png", alt="Node screenshot saved to downloads.", width="800", height="296", class="screenshot" %}
+// To: ![Node screenshot saved to downloads. (class: screenshot)](image/cGQxYFGJrUUaUZyWhyt9yo5gHhs1/uIMeY1flDrlSBhvYqU5b.png)
 
 const fs = require('fs');
 const path = require('path');
 
 // Function to transform the markdown content
-function transformContent(content) {
-    const imgPattern = /\{\%\s*Img\s+src="([^"]+)",\s*alt="([^"]+)",\s*width="\d+",\s*height="\d+"\s*\%\}/g;
-    return content.replace(imgPattern, (match, src, alt) => {
+function transformMarkdown(content) {
+    const imgTagPattern = /\{\%\s*Img\s+src="([^"]+)",\s*alt="([^"]+)",\s*width="\d+",\s*height="\d+"(?:,\s*class="([^"]+)")?\s*\%\}/g;
+
+    return content.replace(imgTagPattern, (match, src, alt, className) => {
+        if (className) {
+            return `![${alt} (class: ${className})](${src})`;
+        }
         return `![${alt}](${src})`;
     });
 }
 
-// Main function to read, transform, and write back the file
+// Main function to read, transform, and write the markdown file
 function processMarkdownFile(filePath) {
     try {
-        // Read the file content
         const absolutePath = path.resolve(filePath);
-        let content = fs.readFileSync(absolutePath, 'utf-8');
-
-        // Transform the content
-        const transformedContent = transformContent(content);
-
-        // Write back the transformed content to the same file
+        const fileContent = fs.readFileSync(absolutePath, 'utf-8');
+        const transformedContent = transformMarkdown(fileContent);
         fs.writeFileSync(absolutePath, transformedContent, 'utf-8');
         console.log(`File processed successfully: ${absolutePath}`);
     } catch (error) {
@@ -46,9 +47,10 @@ function processMarkdownFile(filePath) {
 // Get the file path from command line arguments
 const args = process.argv.slice(2);
 if (args.length !== 1) {
-    console.error('Usage: node google.parser.js path/to/markdown-file.md');
+    console.error('Usage: node google.parser.js <path-to-markdown-file>');
     process.exit(1);
 }
 
 const markdownFilePath = args[0];
 processMarkdownFile(markdownFilePath);
+
