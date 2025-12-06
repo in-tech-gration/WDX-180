@@ -207,9 +207,7 @@ To edit nodes as HTML with syntax highlighting and autocomplete, select **Edit a
 
    ![Autocompletion of HTML tags.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/B7kQKGGUGf3S2ERmF5dc.png)
 
-    {% Aside %}
-    **Note**: Additionally, DevTools can autocomplete DOM properties.
-    {% endAside %}
+    > **Note**: Additionally, DevTools can autocomplete DOM properties.
 
 1. Select the `li` element from the autocomplete menu and type `>`. DevTools automatically adds the closing `</li>` tag after the cursor.
 
