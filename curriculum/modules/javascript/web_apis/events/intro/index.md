@@ -27,7 +27,7 @@ title: Introduction to Events
   and code files:
 
   <!-- TODO: Review + Add Practice -->
-  - Watch lessons 8-9* from [**DOM API - JavaScript Tutorial for beginners**](https://youtu.be/wbQLEXg_urE){:target="_blank"} and try to replicate as much as you can in your local environment.
+  - Watch [**DOM API - JavaScript Tutorial for beginners**](https://youtu.be/wbQLEXg_urE){:target="_blank"} and try to replicate as much as you can in your local environment.
     - **Duration:** 42min
     - **Level:** Beginner
 
