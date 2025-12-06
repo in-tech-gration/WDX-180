@@ -1,7 +1,7 @@
 exercise1: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise1;
+  // break exercise1;
 
   // Instructions: 
   // Complete the function named getBusinessAddress that receives an Object 
@@ -22,6 +22,7 @@ exercise1: {
 
   function getBusinessAddress(business) {
     // Your code goes here...
+    return `${business.address.street}, number ${business.address.number}, ${business.address.zipCode}`;
   }
 
   const output = getBusinessAddress(business);
@@ -40,7 +41,7 @@ exercise1: {
 exercise2: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise2;
+  // break exercise2;
 
   // Instructions: 
   // Write a function named getEmployeeInfo that receives an Object representing
@@ -58,6 +59,7 @@ exercise2: {
 
   function getEmployeeInfo(employee) {
     // Your code goes here...
+    return (`${employee.firstName} ${employee.lastName} - ${employee.jobTitle}`);
   }
 
   const output = getEmployeeInfo(employee);
@@ -76,7 +78,7 @@ exercise2: {
 exercise3: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise3;
+  // break exercise3;
 
   // Instructions: 
   // Write a function named canDriveCar that receives 2 parameters:
@@ -102,6 +104,11 @@ exercise3: {
 
   function canDriveCar(user, car) {
     // Your code goes here...
+    if (user.age >= 18 || car.engineCC < 1000) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   const output = canDriveCar(user, car);
@@ -120,7 +127,7 @@ exercise3: {
 exercise4: {  
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise4;
+  // break exercise4;
 
   // Instructions: 
   // Write a function named getUserObject that receives 3 parameters:
@@ -141,6 +148,10 @@ exercise4: {
 
   function getUserObject(firstName, lastName, age) {
     // Your code goes here...
+    return {
+      name: `${firstName} ${lastName}`,
+      age: age
+    };
   }
 
   const output = getUserObject(firstName, lastName, age);
@@ -158,7 +169,7 @@ exercise4: {
 exercise5: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise5;
+  // break exercise5;
   
   // Instructions:   
   // Write a function named getDevelopers that receives an Array of employees as parameter.
@@ -182,6 +193,7 @@ exercise5: {
 
   function getDevelopers(employees) {
     // Your code goes here...
+    return employees.filter(employee => employee.job === "developer");
   }
 
   const output = getDevelopers(employees);
@@ -202,7 +214,7 @@ exercise5: {
 exercise6: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise6;
+  // break exercise6;
 
   // Instructions: 
   // Write a function named arrayToObject that receives an 
@@ -222,6 +234,13 @@ exercise6: {
 
   function arrayToObject(arr) {
     // Your code goes here...
+    let expectedObj = {};
+    for (let i = 0; i < arr.length; i++) {
+      if (!(arr[i] in expectedObj)) {
+        expectedObj[arr[i]] = i;
+      }
+    }
+    return expectedObj;
   }
 
   const output = arrayToObject(fruits);
@@ -240,7 +259,7 @@ exercise6: {
 exercise6: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise6;
+  // break exercise6;
 
   // Instructions:
   // Write a function named pickFields that receives 2 parameters:
@@ -266,6 +285,13 @@ exercise6: {
 
   function pickFields(data, fields) {
     // Your code goes here...
+    let result = {};
+    for (let i = 0; i < fields.length; i++) {
+      if (data.hasOwnProperty(fields[i])) {
+        result[fields[i]] = data[fields[i]];
+      }
+    }
+    return result;
   }
 
   const output = pickFields(data, fields);
@@ -284,7 +310,7 @@ exercise6: {
 exercise7: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise7;
+  // break exercise7;
 
   // Instructions:
   // Write a function named getHighestPaidEmployee that receives 2 parameters:
@@ -312,6 +338,17 @@ exercise7: {
 
   function getHighestPaidEmployee(employees, departmentId) {
     // Your code goes here... 
+    let highestPaidEmployee = undefined;
+    let highestSalary = 0;
+    for (let i = 0; i < employees.length; i++) {
+      if (employees[i].departmentId === departmentId) {
+        if (employees[i].salary > highestSalary) {
+          highestSalary = employees[i].salary;
+          highestPaidEmployee = employees[i].name;
+        }
+      }
+    }
+    return highestPaidEmployee;
   }
 
   const output = getHighestPaidEmployee(employees, departmentId);
@@ -331,7 +368,7 @@ exercise7: {
 exercise8: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise8;
+  // break exercise8;
 
   // Instructions:
   // Write a function named flipObject that receives an Object 
@@ -354,6 +391,16 @@ exercise8: {
 
   function flipObject(obj) {
     // Your code goes here...
+    let newObj = {};
+    for (let job of Object.values(obj)) {
+      if (!newObj.hasOwnProperty(job)) {
+        newObj[job] = [];
+      }
+    }
+    for (let person in obj) {
+      newObj[obj[person]].push(person);
+    }
+    return newObj;
   }
 
   const output = flipObject(people);
@@ -371,7 +418,7 @@ exercise8: {
 exercise9: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise9;
+  // break exercise9;
 
   // Instructions:
   // Write a function named extractElementsBetweenPositions that receives 3 parameters:
@@ -390,6 +437,11 @@ exercise9: {
 
   function extractElementsBetweenPositions(numbers, n, m) {
     // Your code goes here...
+    let result = [];
+    for (let i = n; i <= m; i++) {
+      result.push(numbers[i]);
+    }
+    return result;
   }
 
   const output = extractElementsBetweenPositions(numbers, n, m);
@@ -422,6 +474,13 @@ exercise10: {
 
   function getLongestString(strings) {
     // Your code goes here... 
+    let result = "";
+    for (let i = 0; i < strings.length; i++) {
+      if (strings[i].length > result.length) {
+        result = strings[i];
+      }
+    }
+    return result;
   }
 
   const output = getLongestString(strings);
@@ -439,7 +498,7 @@ exercise10: {
 exercise11: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise11;
+  // break exercise11;
 
   // Instructions:
   // Write a function named doubleNumbers that takes an array of numbers 
@@ -453,6 +512,11 @@ exercise11: {
 
   function doubleNumbers(numbers) {
     // Your code goes here...
+    let result = [];
+    for (let i = 0; i < numbers.length; i++) {
+      result.push(numbers[i] * 2);
+    }
+    return result;
   }
 
   const output = doubleNumbers(numbers);
@@ -471,7 +535,7 @@ exercise11: {
 exercise12: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise12;
+  // break exercise12;
 
   // Instructions:
   // Write a function named mergeObjects that takes two objects as parameters 
@@ -498,6 +562,14 @@ exercise12: {
 
   function mergeObjects(obj1, obj2) {
     // Your code goes here...
+    let mergedObj = {};
+    for (let key in obj1) {
+      mergedObj[key] = obj1[key];
+    }
+    for (let key in obj2) {
+      mergedObj[key] = obj2[key];
+    }
+    return mergedObj;
   }
 
   const output = mergeObjects(obj1, obj2);
@@ -515,7 +587,7 @@ exercise12: {
 exercise13: {
 
   // ⚠️ Comment out the break statement to run this exercise
-  break exercise13;
+  // break exercise13;
 
   // Instructions:
   // Write a function named groupByProperty that takes an array of objects 
@@ -544,6 +616,15 @@ exercise13: {
 
   function groupByProperty(items, property) {
     // Your code goes here...
+    let groupedObj = {};
+    for (let item of items) {
+      let key = item[property];
+      if (!groupedObj.hasOwnProperty(key)) {
+        groupedObj[key] = [];
+      }
+      groupedObj[key].push(item);
+    }
+    return groupedObj;
   }
 
   const output = groupByProperty(items, property);
