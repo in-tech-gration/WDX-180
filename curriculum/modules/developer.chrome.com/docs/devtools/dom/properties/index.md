@@ -1,9 +1,8 @@
 ---
-layout: "layouts/doc-post.njk"
-title: "View the properties of DOM objects"
-date: 2022-05-05
-#updated: YYYY-MM-DD
-description: "View and filter properties of DOM objects."
+__layout__: layouts/doc-post.njk
+title: View the properties of DOM objects
+date: 2022-05-05T00:00:00.000Z
+description: View and filter properties of DOM objects.
 authors:
   - sofiayem
 tags:
