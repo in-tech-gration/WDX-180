@@ -32,13 +32,13 @@ and investigate that node.
 1. Right-click **Michelangelo** below and select **Inspect**.
      * Michelangelo
      * Raphael
-     {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/psbHIPohm8wsZkGA7WXl.png", alt="Inspecting a node", width="800", height="780" %}
+     ![Inspecting a node](image/BrQidfK9jaQyIHwdw91aVpkPiib2/psbHIPohm8wsZkGA7WXl.png)
      The **Elements** panel of DevTools opens.
      `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.
-     {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/Cz2LKMmJ3sVjkDdfW4i8.png", alt="Highlighting the Michelangelo< node", width="800", height="483" %}
+     ![Highlighting the Michelangelo< node](image/BrQidfK9jaQyIHwdw91aVpkPiib2/Cz2LKMmJ3sVjkDdfW4i8.png)
 1. Click the **Inspect** icon in the top-left corner of
    DevTools.
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/2canqdvrgnHBayY1VsLM.png", alt="The Inspect icon", width="800", height="545" %}
+   ![The Inspect icon](image/BrQidfK9jaQyIHwdw91aVpkPiib2/2canqdvrgnHBayY1VsLM.png)
 1. Click the **Tokyo** text below.
      * Tokyo
      * Beirut
@@ -61,11 +61,11 @@ keyboard.
      * Paul
      * John
 
-     {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/6hDrHKpnSMFwCdugWuXR.png", alt="Inspecting the Ringo node", width="800", height="545" %}
+     ![Inspecting the Ringo node](image/BrQidfK9jaQyIHwdw91aVpkPiib2/6hDrHKpnSMFwCdugWuXR.png)
 
 1. Press the <kbd>Up</kbd> arrow key 2 times. `<ul>` is selected.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/2rwp1VpNq4vDNAM0Q9hR.png", alt="Inspecting the ul node", width="800", height="545" %}
+   ![Inspecting the ul node](image/BrQidfK9jaQyIHwdw91aVpkPiib2/2rwp1VpNq4vDNAM0Q9hR.png)
 
 1. Press the <kbd>Left</kbd> arrow key. The `<ul>` list collapses.
 1. Press the <kbd>Left</kbd> arrow key again. The parent of the `<ul>` node
@@ -95,12 +95,12 @@ After completing the instructions at the bottom of the page you should jump back
 
 With rulers above and to the left of your viewport, you can measure the width and height of an element when you hover over it in the **Elements** panel.
 
-{% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/DsBqSHZFNeUcr1a1oKd7.png", alt="Rulers.", width="800", height="552" %}
+![Rulers.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/DsBqSHZFNeUcr1a1oKd7.png)
 
 Enable the rulers in one of two ways:
 
 - Press <kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Mac) to open the **Command menu**, type `Show rulers on hover`, and press <kbd>Enter</kbd>.
-- Check {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/9gzXiTYY0nZzBxGI6KrV.svg", alt="Settings.", width="24", height="24" %} **Settings** > **Preferences** > **Elements** > **Show rulers on hover**.
+- Check ![Settings.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/9gzXiTYY0nZzBxGI6KrV.svg) **Settings** > **Preferences** > **Elements** > **Show rulers on hover**.
 
 The sizing unit of the rulers is pixels.
 
@@ -113,15 +113,15 @@ You can search the DOM Tree by string, CSS selector, or XPath selector.
    The Search bar opens at the bottom of the DOM Tree.
 1. Type `The Moon is a Harsh Mistress`. The last sentence is highlighted in the DOM Tree.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/qigo04bdlo2evHazfIAp.png", alt="Highlighting the query in the Search bar", width="800", height="545" %}
+   ![Highlighting the query in the Search bar](image/BrQidfK9jaQyIHwdw91aVpkPiib2/qigo04bdlo2evHazfIAp.png)
 
 As mentioned above, the Search bar also supports CSS and XPath selectors.
 
 The **Elements** panel selects the first matching result in the DOM tree and rolls it into view in the viewport. By default, this happens as you type. If you always work with long search queries, you can make DevTools run search only when you press <kbd>Enter</kbd>.
 
-To avoid unnecessary jumps between nodes, clear the {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/9gzXiTYY0nZzBxGI6KrV.svg", alt="Settings.", width="24", height="24" %} **Settings** > **Preferences** > **Global** > **Search as you type** checkbox.
+To avoid unnecessary jumps between nodes, clear the ![Settings.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/9gzXiTYY0nZzBxGI6KrV.svg) **Settings** > **Preferences** > **Global** > **Search as you type** checkbox.
 
-{% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/BKcshLBj0EI1OahoEXbS.png", alt="Cleared Search as you type checkbox in Settings.", width="800", height="425" %}
+![Cleared Search as you type checkbox in Settings.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/BKcshLBj0EI1OahoEXbS.png)
 
 ## Edit the DOM {: #edit }
 
@@ -139,7 +139,7 @@ To edit a node's content, double-click the content in the DOM Tree.
 1. In the DOM Tree, double-click `Michelle`. In other words, double-click the text between
    `<li>` and `</li>`. The text is highlighted blue to indicate that it's selected.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/6izVzx17nim6eDn96Vhd.png", alt="Editing the text", width="800", height="545" %}
+   ![Editing the text](image/BrQidfK9jaQyIHwdw91aVpkPiib2/6izVzx17nim6eDn96Vhd.png)
 
 1. Delete `Michelle`, type `Leela`, then press <kbd>Enter</kbd> to confirm the change. The text
    above changes from **Michelle** to **Leela**.
@@ -157,17 +157,17 @@ below to learn how to add attributes to a node.
 1. Double-click `<li>`. The text is highlighted to indicate that the
    node is selected.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/U5cgUXHsZ3H9vnL9TmQ0.png", alt="Editing the node", width="800", height="545" %}
+   ![Editing the node](image/BrQidfK9jaQyIHwdw91aVpkPiib2/U5cgUXHsZ3H9vnL9TmQ0.png)
 
 1. Press the <kbd>Right</kbd> arrow key, add a space, type
    `style="background-color:gold"`, and then press <kbd>Enter</kbd>. The background color
    of the node changes to gold.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/7SKDEvndWzq2KPSketg1.png", alt="Adding a style attribute to the node", width="800", height="545" %}
+   ![Adding a style attribute to the node](image/BrQidfK9jaQyIHwdw91aVpkPiib2/7SKDEvndWzq2KPSketg1.png)
 
 You can also use the **Edit attribute** right-click option.
 
-{% Img src="image/cGQxYFGJrUUaUZyWhyt9yo5gHhs1/3OB9C2lU8bm77eTsDXxB.png", alt="Right-click options with edit attribute highlighted.", width="260", height="464" %}
+![Right-click options with edit attribute highlighted.](image/cGQxYFGJrUUaUZyWhyt9yo5gHhs1/3OB9C2lU8bm77eTsDXxB.png)
 
 ### Edit node type {: #type }
 
@@ -184,7 +184,7 @@ To edit a node's type, double-click the type and then type in the new type.
 1. Delete `li`, type `button`, then press <kbd>Enter</kbd>. The `<li>` node changes to a `<button>`
    node.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/nbdyNWefo9fqESvfWdha.png", alt="Changing the node type to button", width="800", height="545" %}
+   ![Changing the node type to button](image/BrQidfK9jaQyIHwdw91aVpkPiib2/nbdyNWefo9fqESvfWdha.png)
 
 ### Edit as HTML {: #as-html }
 
@@ -199,11 +199,11 @@ To edit nodes as HTML with syntax highlighting and autocomplete, select **Edit a
 
 1. In the **Elements** panel, right-click the current node and select **Edit as HTML** from the drop-down menu.
 
-   {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/2If7eY0I3aNpQcb1fAZg.png", alt="The drop-down menu of a node.", width="800", height="747" %}
+   ![The drop-down menu of a node.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/2If7eY0I3aNpQcb1fAZg.png)
 
 1. Press <kbd>Enter</kbd> to start a new line and start typing `<l`. DevTool highlights HTML syntax and autocompletes tags for you.
 
-   {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/B7kQKGGUGf3S2ERmF5dc.png", alt="Autocompletion of HTML tags.", width="800", height="645" %}
+   ![Autocompletion of HTML tags.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/B7kQKGGUGf3S2ERmF5dc.png)
 
     {% Aside %}
     **Note**: Additionally, DevTools can autocomplete DOM properties.
@@ -211,11 +211,11 @@ To edit nodes as HTML with syntax highlighting and autocomplete, select **Edit a
 
 1. Select the `li` element from the autocomplete menu and type `>`. DevTools automatically adds the closing `</li>` tag after the cursor.
 
-   {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/26XrzZDhuvL4KcUGDSvU.png", alt="DevTools closes the tag automatically.", width="800", height="678" %}
+   ![DevTools closes the tag automatically.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/26XrzZDhuvL4KcUGDSvU.png)
 
 1. Type `Sheldon` inside the tag and press <kbd>Control</kbd> / <kbd>Command</kbd> + <kbd>Enter</kbd> to apply changes.
 
-   {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/unvKWSLDvzoh7kHZoWbK.png", alt="Applying changes.", width="800", height="678" %}
+   ![Applying changes.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/unvKWSLDvzoh7kHZoWbK.png)
 
 ### Duplicate a node {: #duplicate }
 
@@ -230,7 +230,7 @@ You can duplicate an element using the **Duplicate element** right-click option.
 
 1. In the **Elements** panel, right-click `<li>Nana</li>` and select **Duplicate element** from the drop-down menu.
 
-   {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/u3iK5J8RvHmLY4G6OfJe.png", alt="The Duplicate element option highlighted in the drop-down.", width="800", height="663" %}
+   ![The Duplicate element option highlighted in the drop-down.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/u3iK5J8RvHmLY4G6OfJe.png)
 
 1. Return to the page. The list item has been instantly duplicated.
 
@@ -244,7 +244,7 @@ You can screenshot any individual node in the DOM Tree using **Capture node scre
 
 1. In the **Elements** panel, right-click the image URL and select **Capture node screenshot** from the drop-down menu.
 
-   {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/HcMn8iVlx1e53ceGST23.png", alt="A node screenshot being captured.", width="800", height="663" %}
+   ![A node screenshot being captured.](image/NJdAV9UgKuN8AhoaPBquL7giZQo1/HcMn8iVlx1e53ceGST23.png)
 
 1. The screenshot will be saved to your downloads.
 
@@ -266,7 +266,7 @@ Drag nodes to reorder them.
 
 1. In the DOM Tree, drag `<li>Elvis Presley</li>` to the top of the list.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/qD6OQFkcxcKkOZJxHlqB.png", alt="Dragging the node to the top of the list", width="800", height="592" %}
+   ![Dragging the node to the top of the list](image/BrQidfK9jaQyIHwdw91aVpkPiib2/qD6OQFkcxcKkOZJxHlqB.png)
 
 ### Force state {: #state }
 
@@ -306,7 +306,7 @@ Press <kbd>H</kbd> to hide a node.
 
 1. Press the <kbd>H</kbd> key. The node is hidden. You can also right-click the node and use the **Hide element** option.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/ynrZooiPHy2DUBbdGL3k.png", alt="What the node looks like in the DOM Tree after it's hidden", width="800", height="545" %}
+   ![What the node looks like in the DOM Tree after it's hidden](image/BrQidfK9jaQyIHwdw91aVpkPiib2/ynrZooiPHy2DUBbdGL3k.png)
 
 1. Press the <kbd>H</kbd> key again. The node is shown again.
 
@@ -343,13 +343,13 @@ node in the Console with the variable `$0`.
 1. Type `$0` and press the <kbd>Enter</kbd> key. The result of the expression shows that
    `$0` evaluates to `<li>The Left Hand of Darkness</li>`.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/y3AQHZHbv25cRX1AJt4E.png", alt="The result of the first $0 expression in the Console", width="800", height="636" %}
+   ![The result of the first $0 expression in the Console](image/BrQidfK9jaQyIHwdw91aVpkPiib2/y3AQHZHbv25cRX1AJt4E.png)
 
 1. Hover over the result. The node is highlighted in the viewport.
 1. Click `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then press
    <kbd>Enter</kbd> again. Now, `$0` evaluates to `<li>Dune</li>`.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/AJpUgl9zL9w4skXkaDEE.png", alt="The result of the second $0 expression in the Console", width="800", height="636" %}
+   ![The result of the second $0 expression in the Console](image/BrQidfK9jaQyIHwdw91aVpkPiib2/AJpUgl9zL9w4skXkaDEE.png)
 
 ### Store as global variable {: #global }
 
@@ -365,7 +365,7 @@ If you need to refer back to a node many times, store it as a global variable.
 1. Type `temp1` in the Console and then press <kbd>Enter</kbd>. The result of the expression
    shows that the variable evaluates to the node.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/hDCScCM1db0EnAM0VYAZ.png", alt="The result of the temp1 expression", width="800", height="636" %}
+   ![The result of the temp1 expression](image/BrQidfK9jaQyIHwdw91aVpkPiib2/hDCScCM1db0EnAM0VYAZ.png)
 
 ### Copy JS path {: #path }
 
@@ -383,7 +383,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
    paste the expression into the Console.
 1. Press <kbd>Enter</kbd> to evaluate the expression.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/r2zpHdCY7TQ0mMzRg3Ov.png", alt="The result of the Copy JS Path expression", width="800", height="636" %}
+   ![The result of the Copy JS Path expression](image/BrQidfK9jaQyIHwdw91aVpkPiib2/r2zpHdCY7TQ0mMzRg3Ov.png)
 
 ## Break on DOM changes {: #breakpoints }
 
@@ -490,7 +490,7 @@ instructions below to complete the section.
    back up so that you can see the **Magritte** node.
    See [Appendix: Missing options](#options) if you can't see the **Scroll into view** option.
 
-   {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/FBb3y3CzDXA5P0sNEuyd.png", alt="Scroll into view", width="800", height="603" %}
+   ![Scroll into view](image/BrQidfK9jaQyIHwdw91aVpkPiib2/FBb3y3CzDXA5P0sNEuyd.png)
 
 ## Appendix: Missing options {: #options }
 
@@ -498,4 +498,4 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 and then select an option from the context menu that pops up. If you don't see the specified
 option in the context menu, try right-clicking away from the node text.
 
-{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/t4SYwbs3B0dqdnS2WSC2.png", alt="Where to click if you're not seeing all the options", width="800", height="545" %}
+![Where to click if you're not seeing all the options](image/BrQidfK9jaQyIHwdw91aVpkPiib2/t4SYwbs3B0dqdnS2WSC2.png)
