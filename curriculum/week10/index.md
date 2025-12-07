@@ -1,5 +1,5 @@
 ---
-title: "Week 10 | Web APIs 1: DOM"
+title: Week 10 | Web APIs 1: DOM
 ---
 
 <hr class="mb-0">
@@ -25,11 +25,11 @@ title: "Week 10 | Web APIs 1: DOM"
 
   </h2>
 
-  <span>Updated: 06/10/2025</span>
+  <span>Updated: 6/12/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 10 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -192,7 +192,7 @@ _Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&u
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week10/progress/progress.draft.w10.d02.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
@@ -264,7 +264,7 @@ _Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&u
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week10/progress/progress.draft.w10.d03.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
@@ -338,7 +338,7 @@ _Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&u
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week10/progress/progress.draft.w10.d04.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
@@ -381,16 +381,25 @@ _Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&u
 
   _*Starting from `LESSON 8: DOM EVENT BASICS` around 01:04:46 up to the end of the video_
 
+  After watching the video and practice all the concepts in your local 
+  environment, take notes and a long break to let all this knowledge 
+  consolidate.
+
+  Then, prepare a hot cup of tea or coffee and prepare to dive once more
+  into the DOM API by watching the following video, while taking notes
+  and stopping at times to practice what you see in your local environment
+  and code files:
+
+  <!-- TODO: Review + Add Practice -->
+
+
+  - Watch [**DOM API - JavaScript Tutorial for beginners**](https://youtu.be/wbQLEXg_urE){:target="_blank"} and try to replicate as much as you can in your local environment.
+    - **Duration:** 42min
+    - **Level:** Beginner
+
   ---
 
 
-
-  - Now Let's use the `study-lenses` tool to study "Just enough DOM":
-
-    - Sync your forked WDX-180 repo with the original repo
-    - Download the changes locally by running: `git pull`
-    - Run `npm run update:submodules`
-    - `lenses2 curriculum/modules/javascript/denepo/inside-javascript/02-just-enough-dom`
 
 <!-- Summary -->
 
