@@ -25,7 +25,7 @@ title: Week 10 | Web APIs 1: DOM
 
   </h2>
 
-  <span>Updated: 6/12/2025</span>
+  <span>Updated: 8/12/2025</span>
 
   <h2 class="week-controls__next_week">
 
