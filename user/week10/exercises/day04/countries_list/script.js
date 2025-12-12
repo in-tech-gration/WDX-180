@@ -194,5 +194,41 @@ const countries = [
   'Zimbabwe'
 ]
 
-console.log(countries);
+// console.log(countries);
 // INSERT YOUR CODE HERE
+
+const h2 = document.querySelector("h2");
+h2.style.textAlign = "center";
+h2.style.margin = "0px";
+h2.style.letterSpacing = "5px";
+const h3s = document.querySelectorAll("h3");
+h3s.forEach((h3) => {
+	h3.style.textAlign = "center";
+	h3.style.fontSize = "10px";
+	h3.style.margin = "0px";
+	h3.style.fontWeight = "normal";
+});
+h3s[h3s.length - 1].style.marginBottom = "30px";
+const h4 = document.querySelector("h4");
+h4.textContent = `Total number of countries: ${countries.length}`;
+h4.style.textAlign = "center";
+h4.style.fontSize = "12px";
+h4.style.margin = "0px";
+const wrapper = document.querySelector(".countries-wrapper");
+wrapper.style.display = "flex";
+wrapper.style.flexWrap = "wrap";
+
+countries.forEach((country, index) => {
+	const countryDiv = document.createElement("div");
+	countryDiv.textContent = country.toUpperCase();
+	countryDiv.style.fontWeight = "bold";
+	countryDiv.style.border = "1px solid gray";
+	countryDiv.style.width = "130px";
+	countryDiv.style.height = "130px";
+	countryDiv.style.display = "flex";
+	countryDiv.style.textAlign = "center";
+	countryDiv.style.justifyContent = "center";
+	countryDiv.style.alignItems = "center";
+	countryDiv.style.margin = "3px";
+	wrapper.appendChild(countryDiv);
+});
