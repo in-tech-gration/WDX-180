@@ -336,7 +336,7 @@ function createKeywords() {
 	const keywordsWrapper = document.querySelector("#keywordsWrapper");
 	const ul = document.createElement("ul");
 	keywordsWrapper.appendChild(ul);
-	ul.textContent = "keywords";
+	ul.textContent = "Keywords: ";
 	asabenehChallenges2020.keywords.forEach(keyword => {
 		const li = document.createElement("li");
 		li.textContent = keyword;
@@ -353,6 +353,15 @@ function updateDateTime() {
 }
 
 /*--------------------------------style-----------------------------*/
+
+function setPageStyle() {
+	const wrapper = document.querySelector(".wrapper");
+	wrapper.style.maxWidth = "1100px";
+	wrapper.style.margin = "0 auto";
+	wrapper.style.padding = "20px";
+	wrapper.style.boxSizing = "border-box";
+	wrapper.style.fontFamily = "Arial, sans-serif";
+}
 
 function setTitleStyle() {
 	const titleWrapper = document.querySelector("#titleWrapper");
@@ -405,6 +414,79 @@ function setBodyStyle() {
 	});
 }
 
+function setAuthorStyle() {
+	const authorWrapper = document.querySelector("#authorWrapper");
+	authorWrapper.style.border = "2px solid black";
+	authorWrapper.style.display = "flex";
+	authorWrapper.style.flexDirection = "column";
+	authorWrapper.style.alignItems = "center";
+	authorWrapper.style.justifyContent = "center";
+	authorWrapper.style.padding = "20px";
+	authorWrapper.style.marginTop = "20px";
+	const authorName = document.querySelector("#authorName");
+	authorName.style.fontFamily = "Arial, sans-serif";
+	authorName.style.textAlign = "center";
+	const socialLinks = authorWrapper.querySelectorAll("a");
+	socialLinks.forEach(link => {
+		link.style.margin = "0 20px";
+		link.style.fontSize = "36px";
+		link.style.color = "black";
+		link.style.textDecoration = "none";
+	});
+	const bio = authorWrapper.querySelector("p");
+	bio.style.fontFamily = "Arial, sans-serif";
+	bio.style.textAlign = "center";
+}
+
+function setFooterStyle() {
+	const footerWrapper = document.querySelector("#footerWrapper");
+	footerWrapper.style.border = "2px solid black";
+	footerWrapper.style.display = "flex";
+	footerWrapper.style.justifyContent = "space-around";
+	footerWrapper.style.padding = "20px";
+	footerWrapper.style.marginTop = "20px";
+	const uls = footerWrapper.querySelectorAll("ul");
+	uls.forEach(ul => {
+		ul.style.listStyleType = "none";
+		ul.style.padding = "0";
+		ul.style.fontFamily = "Arial, sans-serif";
+		ul.style.fontWeight = "bold";
+	});
+	const lis = footerWrapper.querySelectorAll("ul li");
+	lis.forEach(li => {
+		li.style.fontWeight = "normal";
+		li.style.marginTop = "10px";
+	});
+}
+
+function setKeywordsStyle() {
+	const keywordsWrapper = document.querySelector("#keywordsWrapper");
+	keywordsWrapper.style.border = "2px solid black";
+	keywordsWrapper.style.marginTop = "20px";
+	keywordsWrapper.style.padding = "20px";
+	const ul = keywordsWrapper.querySelector("ul");
+	ul.style.listStyleType = "none";
+	ul.style.padding = "0";
+	ul.style.display = "flex";
+	ul.style.flexWrap = "wrap";
+	ul.style.justifyContent = "center";
+	ul.style.alignItems = "center";
+	ul.style.fontWeight = "bold";
+	ul.style.fontFamily = "Arial, sans-serif";
+	ul.style.fontSize = "18px";
+	const lis = ul.querySelectorAll("li");
+	lis.forEach(li => {
+		li.style.border = "1px solid gray";
+		li.style.borderRadius = "5px";
+		li.style.padding = "5px 10px";
+		li.style.margin = "5px";
+		li.style.fontFamily = "Arial, sans-serif";
+		li.style.fontWeight = "normal";
+		li.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+		li.style.hover = "pointer";
+	});
+}
+
 const wrapper = document.querySelector(".wrapper");
 createTitleWrapper();
 createTitle();
@@ -418,8 +500,9 @@ createKeywordsWrapper();
 createKeywords();
 setInterval(updateDateTime, 1000);
 // set the style
+setPageStyle();
 setTitleStyle();
 setBodyStyle();
-// setAuthorStyle();
-// setFooterStyle();
-// setKeywordsStyle();
+setAuthorStyle();
+setFooterStyle();
+setKeywordsStyle();
