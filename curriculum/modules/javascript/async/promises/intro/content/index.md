@@ -95,8 +95,10 @@ We can create a promise using the Promise constructor. We can create a new promi
 const promise = new Promise((resolve, reject) => {
   resolve('success')
   reject('failure')
-})
+});
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```js
 // Promise
@@ -117,6 +119,8 @@ doPromise
   })
   .catch(error => console.log(error))
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```sh
 ["HTML", "CSS", "JS"]
@@ -144,6 +148,8 @@ doPromise
   })
   .catch(error => console.error(error))
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```sh
 Something wrong has happened
