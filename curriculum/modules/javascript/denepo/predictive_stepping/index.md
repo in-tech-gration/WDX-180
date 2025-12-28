@@ -12,9 +12,7 @@ title: Predictive Stepping
 
   **Predictive Stepping:** Practice predicting each step of program execution, using your browser's debugger to check your predictions every step of the way.
 
-  In order to follow the material, you will need to install and use the `study-lenses` tool. Here are the instructions:
-
-  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
+  In order to follow the material, you will need to install and use the `study-lenses` tool. Follow the instructions from {{ SGEN:MODULE_LINK:javascript/denepo/setting-up-study-lenses/index.md }} to set up Study Lenses (v2) on your System (if you haven't done that already).
 
   **Launching Study Lenses and following the material**
 
