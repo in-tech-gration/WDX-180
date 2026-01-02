@@ -82,7 +82,7 @@ title: Week 13 | Intermediate JavaScript
 
   - Lectures Code:
     - [Promises](./assets/intechgration-io-promises.zip){:target="_blank"}
-    - [Functions: The Chickend and the Eff](./assets/intechgration-io-functions-chicken-egg.zip){:target="_blank"}
+    - [Functions: The Chicken and the Egg](./assets/intechgration-io-functions-chicken-egg.zip){:target="_blank"}
 
   - Lectures Diagrams:
     - [Promises (in real life)](./assets/1_2lVkfUxpad7Y_2Y0K3ToLQ.png){:target="_blank"}
