@@ -100,14 +100,14 @@ title: Week 13 | Intermediate JavaScript
 
   No need to worry. You can always use the `json-server` for that! All you need is to run the following command while you are still connected to the Internet: `npx json-server db.json` 
 
-  The command will do 2 things: It will ask you to install the `json-server` on your machine and then create a sample `db.json` file under the current folder and start running a JSON server under the default port (3000).
+  The command will do 2 things: It will ask you to install the `json-server` on your machine and then create a sample `db.json` file under the current folder and start running a JSON server under the default port (3000). The server is responsible for dynamically serving the contents of the `db.json` file through different routes: `/posts`, `/comments`, `/profile`.
 
   You can now practice by connecting to the server on the default port, or run it on a custom port using: `npx json-server db.json --port <CUSTOM_PORT_NUMBER>`.
 
   You can study the `db.json` file structure and add any custom JSON data you like to practice on. You can also run `npx json-server --help` to check all the available features of the `json-server` module. 
 
   Happy (offline) hacking! 
-  
+
 <!-- Summary -->
 
 ### Exercises
