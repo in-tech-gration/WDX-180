@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="index.js" defer></script>
+  </head>
+  <body>
+    <script src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/js/exercise.pack.js"></script>
+    <link
+      rel="stylesheet"
+      src="https://in-tech-gration.github.io/WDX-180/curriculum/assets/css/exercise.pack.css"
+    />
+    <div class="wallet">
+      <p class="address">
+        <strong>Address:</strong>
+        <span>13hQVEstgo4iPQZv9C7VELnLWF7UWtF4Q3</span>
+      </p>
+      <p class="balance">
+        <strong>Balance:</strong>
+        <span>0</span> BTC
+      </p>
+      <p class="btcprice">
+        <strong>BTC/USD: </strong>
+        <span>0</span>
+      </p>
+      <p class="usd">
+        <strong>USD: </strong>
+        <span>0</span>
+      </p>
+      <button id="getBalance">Get Balance</button>
+    </div>
+    <div class="apis">
+      <h3>APIs</h3>
+      <p>
+        <span>
+          Get Bitcoin Address Information (Balance, etc.)
+          <a
+            target="_blank"
+            href="https://www.blockchain.com/api/blockchain_api"
+            >Blockchain.info</a
+          >
+          <br />
+          <strong
+            >https://blockchain.info/balance?active=[ADDRESS]&cors=true</strong
+          >
+          <br />
+          <a
+            target="_blank"
+            href="https://blockchain.info/balance?active=13hQVEstgo4iPQZv9C7VELnLWF7UWtF4Q3&cors=true"
+            >Example</a
+          >
+        </span>
+      </p>
+
+      <p>
+        <span>
+          Get Bitcoin Price
+          <a
+            target="_blank"
+            href="https://www.blockchain.com/explorer/api/exchange_rates_api"
+            >Exchange Rates API</a
+          >
+          <strong
+            ><a href="https://blockchain.info/ticker" target="_blank"
+              >https://blockchain.info/ticker</a
+            ></strong
+          >
+        </span>
+      </p>
+    </div>
+  </body>
+</html>

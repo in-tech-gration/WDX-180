@@ -1,0 +1,25 @@
+.wallet {
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 16px;
+    box-shadow: 0px 0px 32px rgba(0,0,0,0.2);
+    background: #f2f2f2;
+    padding: 20px;
+  }
+  #getBalance {
+    padding: 10px;
+    background: black;
+    color: white;
+    float: right;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .apis {
+    width: 400px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-style:italic;
+  }
