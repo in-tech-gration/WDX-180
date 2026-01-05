@@ -1,5 +1,8 @@
 ---
 title: Promises and Callbacks
+load_script_js_via_src:
+  - flems/flems.html
+  - flems/flems_init.js
 ---
 
 # Promises and Callbacks
@@ -12,9 +15,11 @@ A Promise is a way to handle asynchronous operations in JavaScript. It allows ha
 
 A Promise is in one of these states:
 
-- pending: initial state, neither fulfilled nor rejected.
-- fulfilled: meaning that the operation completed successfully.
-- rejected: meaning that the operation failed.
+- **pending**: initial state, neither fulfilled nor rejected.
+- **fulfilled**: meaning that the operation completed successfully.
+- **rejected**: meaning that the operation failed.
+
+![](../assets/Promise.States.jpg)
 
 A pending promise can either be fulfilled with a value, or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise's then method are called. (If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.)
 
@@ -25,51 +30,56 @@ As the Promise.prototype.then() and Promise.prototype.catch() methods return pro
 To understand promise very well let us understand callback first. Let's see the following callbacks. From the following code blocks you will notice, the difference between callback and promises.
 
 - call back
-  Let us see a callback function which can take two parameters. The first parameter is err and the second is result. If the err parameter is false, there will not be error other wise it will return an error.
+  Let us see a callback function which can take two parameters. The first parameter is `err` and the second is `result`. If the `err` parameter is false, there will not be error other wise it will return an error.
 
-In this case the err has a value and it will return the err block.
+In this case the `err` has a value and it will return the `err` block.
 
 ```js
-//Callback
-const doSomething = callback => {
+// Callback
+const doSomething = (callback) => {
   setTimeout(() => {
     const skills = ['HTML', 'CSS', 'JS']
     callback('It did not go well', skills)
   }, 2000)
 }
 
-const callback = (err, result) => {
+const dummyFunction = (err, result) => {
   if (err) {
-    return console.log(err)
+    return console.log(err); // <- We'll end up here...
   }
-  return console.log(result)
+  return console.log(result);
 }
 
-doSomething(callback)
+// dummyFunction passed as callback
+doSomething(dummyFunction);
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```sh
 // after 2 seconds it will print
 It did not go well
 ```
 
-In this case the err is false and it will return the else block which is the result.
+In this case the `err` is `false` and it will return the else block which is the result.
 
 ```js
-const doSomething = callback => {
+const doSomething = (callback) => {
   setTimeout(() => {
-    const skills = ['HTML', 'CSS', 'JS']
-    callback(false, skills)
+    const skills = ['HTML', 'CSS', 'JS'];
+    callback(false, skills);
   }, 2000)
 }
 
 doSomething((err, result) => {
   if (err) {
-    return console.log(err)
+    return console.log(err);
   }
-  return console.log(result)
+  return console.log(result); // We'll end up here...
 })
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```sh
 // after 2 seconds it will print the skills
@@ -85,8 +95,10 @@ We can create a promise using the Promise constructor. We can create a new promi
 const promise = new Promise((resolve, reject) => {
   resolve('success')
   reject('failure')
-})
+});
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```js
 // Promise
@@ -107,6 +119,8 @@ doPromise
   })
   .catch(error => console.log(error))
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```sh
 ["HTML", "CSS", "JS"]
@@ -134,6 +148,8 @@ doPromise
   })
   .catch(error => console.error(error))
 ```
+
+[&#9658; Live coding](#flems-enable)
 
 ```sh
 Something wrong has happened

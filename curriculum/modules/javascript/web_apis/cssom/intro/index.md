@@ -67,6 +67,32 @@ date: 11/12/2023
     - `media`
     - `keyText`
 
+  **FAQ**
+
+  > Here are some questions that we've accumulated from students going over the topics covered in this module.
+
+  - **Question:** _What does "paint" mean? Is it a feature of the browser? Does the browser use `Canvas` to paint the DOM? How does it "paint" the pixels?_
+    - **Answer:** The term "paint" refers to an internal Browser feature. The way browsers "paint" everything on the main browser window is something that is hidden away from us. It is not to be confused with the `Canvas API` which is an HTML element with drawing/painting capabilities and an accompanying JavaScript API, and a topic that we will covered in a future Module.
+  
+  - **Question:** _Is `CSSStyleDeclaration` a special type of object? I feel like I don't fully understand the object model in JS._
+    - **Answer:** `CSSStyleDeclaration` is actually an [`Interface`](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration){:target="_blank"}, a kind of a blueprint, if you will, based on which a special type of Object is created. This is a concept that will be covered in upcoming Modules of the Intermediate and Advanced parts of the course.
+
+  - **Question:** _When we use JavaScript, are the CSS styles applied inline? Because it seems so. If we have a rule in our project not to use inline styling, how are we going to handle this? Should we use CSS classes instead?_
+    - **Answer:** When you use the `.style` Element property, you are actually applying inline styling to the Element. But, that's not always a bad thing, and it's a widely used pattern when styling must be updated dynamically (via JS).
+
+  - _Should we use CSS classes instead?_: That's another approach that you can use if you definitely want to avoid inline styling for some reason. Here's one way of injecting CSS styling by dynamically creating a `<style>` element and appending it to the `<head>` element of our page:
+
+  ```js
+  const style = document.createElement("style");
+  style.textContent = `
+    .someClass { 
+      background: black;
+      color: white;
+    }
+  `
+  document.head.appendChild(style);
+  ```
+
 ### Summary
 
 ### Exercises

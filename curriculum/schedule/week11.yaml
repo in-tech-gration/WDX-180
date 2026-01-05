@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API"
 header_image: week11/assets/pexels-roman-odintsov-12725452.jpg
+version: 2.0
 schedule: 
   days:
     1: # JSON
@@ -21,36 +22,3 @@ schedule:
       module: javascript/async/misc/practice/
       
 
-# ---
-
-# Day 5: Tip of the day (related to <video>)
-# => # YouTube Speed-up Shortcuts
-# Fetch to OMDB: https://codepen.io/kostasx/pen/XyRdgX?editors=0010
-# Error Handling with Promises: https://codepen.io/kostasx/pen/oJjENo?editors=0011
-# Async / Await: https://codepen.io/kostasx/pen/oaXpYd?editors=0011
-
-# DAY 3: Install https://marketplace.visualstudio.com/items?itemName=humao.rest-client
-
-# Day 3:
-# https://eventloop.gr/Education/TechTalentSchool/javascript/intermediate.html#/11
-# https://jsonplaceholder.typicode.com/
-# When HTTP Content-Type is not application/json: https://backend-omega-seven.vercel.app/api/getjoke
-# Extension: 
-# JSON Storage: 
-# - https://jsonbin.io/quick-store
-# - https://jsonblob.com/
-# - https://www.npoint.io/
-
-## JSON & the Fetch API
-# - STUDY AND PRACTICE: JSON Manipulaton via JS
-# > https://github.com/lpmi-13/jq-pilot
-
-# PRACTICE: DOM to JSON: /BOOTCAMP/EXERCISES/@JAVASRIPT/DOM.to.JSON.Exercise/solution.js
-
-# DAY 4: 
-# - Asynchronous Code: callbacks, promises, async/await [ CB9-FJ: COVERED ]
-#   http://eventloop.gr/Education/TechTalentSchool/javascript/advanced.html#/3
-# https://codepen.io/kostasx/pen/NONQgL?editors=0011  
-#   Exercises: 
-#     - /CB9/EXERCISES/Async-Await-Exercise-001.html
-#     - /CB9/EXERCISES/Async-Await-Exercise-002.html
