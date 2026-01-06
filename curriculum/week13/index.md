@@ -25,11 +25,11 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 9/6/2025</span>
+  <span>Updated: 7/1/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 13 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -79,6 +79,7 @@ title: Week 13 | Intermediate JavaScript
   - Servers that return JSON data:
     - [Chuck Norris Jokes](https://api.chucknorris.io/jokes/random){:target="_blank"}
     - [Cat Facts](https://catfact.ninja/fact){:target="_blank"}
+    - Check out the **Working offline** section below for running a local JSON server even when you have no Internet connectivity.
 
   - Lectures Code:
     - [Promises](./assets/intechgration-io-promises.zip){:target="_blank"}
@@ -117,7 +118,7 @@ title: Week 13 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d01.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
@@ -205,6 +206,8 @@ title: Week 13 | Intermediate JavaScript
   **FAQ**
 
   > Here are some questions that we've accumulated from students going over the topics covered in this module.
+
+
 
   - **Question:** _What does "paint" mean? Is it a feature of the browser? Does the browser use `Canvas` to paint the DOM? How does it "paint" the pixels?_
     - **Answer:** The term "paint" refers to an internal Browser feature. The way browsers "paint" everything on the main browser window is something that is hidden away from us. It is not to be confused with the `Canvas API` which is an HTML element with drawing/painting capabilities and an accompanying JavaScript API, and a topic that we will covered in a future Module.
@@ -330,7 +333,7 @@ title: Week 13 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d03.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
@@ -444,7 +447,7 @@ title: Week 13 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d04.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
@@ -493,7 +496,7 @@ title: Week 13 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week13/progress/progress.draft.w13.d05.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
