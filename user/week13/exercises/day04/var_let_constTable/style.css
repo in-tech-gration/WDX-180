@@ -1,0 +1,195 @@
+
+.container1 {
+	border: black solid 2px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	text-align: center;
+	height: 800px;
+	width: 600px;
+}
+
+.container1 div {
+	border: rgb(255, 0, 0) solid 1px;
+	display: grid;
+	place-items: center;
+}
+
+.container2 {
+	display: grid;
+	border: black solid 2px;
+	grid-template-areas:
+		". var let const"
+		"text1 tick1 tick2 tick3"
+		"text2 tick4 tick5 tick6"
+		"text3 tick7 tick8 tick9"
+		"text4 tick10 tick11 tick12"
+		"text5 tick13 tick14 tick15"
+		"text6 tick16 tick17 tick18";
+	height: 800px;
+	width: 600px;
+	text-align: center;
+}
+
+.container2 #var {
+	grid-area: var;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #let {
+	grid-area: let;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #const {
+	grid-area: const;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #text1 {
+	grid-area: text1;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #text2 {
+	grid-area: text2;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #text3 {
+	grid-area: text3;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #text4 {
+	grid-area: text4;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #text5 {
+	grid-area: text5;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #text6 {
+	grid-area: text6;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick1 {
+	grid-area: tick1;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick2 {
+	grid-area: tick2;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick3 {
+	grid-area: tick3;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick4 {
+	grid-area: tick4;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick5 {
+	grid-area: tick5;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick6 {
+	grid-area: tick6;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick7 {
+	grid-area: tick7;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick8 {
+	grid-area: tick8;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick9 {
+	grid-area: tick9;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick10 {
+	grid-area: tick10;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick11 {
+	grid-area: tick11;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick12 {
+	grid-area: tick12;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick13 {
+	grid-area: tick13;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick14 {
+	grid-area: tick14;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick15 {
+	grid-area: tick15;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick16 {
+	grid-area: tick16;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick17 {
+	grid-area: tick17;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
+.container2 #tick18 {
+	grid-area: tick18;
+	display: grid;
+	place-items: center;
+	border: red solid 1px;
+}
