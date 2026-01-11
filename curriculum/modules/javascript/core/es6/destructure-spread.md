@@ -48,8 +48,8 @@ title: ECMAScript 6
   - [Number.isInteger()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger){:target="_blank"}  
 
   - **Safer Array Methods:**
-    - `Array.sort()` (❌ AVOID), Prefer: [Array.toSorted()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted){:target="_blank"}  
-    - `Array.reverse()` (❌ AVOID), Prefer: [Array.toReversed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed){:target="_blank"}
+    - `Array.sort()` (❌ AVOID), Prefer: ✅ [Array.toSorted()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted){:target="_blank"}  
+    - `Array.reverse()` (❌ AVOID), Prefer: ✅ [Array.toReversed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed){:target="_blank"}
 
   ---
 
