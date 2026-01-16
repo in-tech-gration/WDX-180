@@ -48,4 +48,3 @@ logo.addEventListener("click", () => {
  wrapper.scrollTop = 0;
    jobBg.style.background = bg;
 });
-test
