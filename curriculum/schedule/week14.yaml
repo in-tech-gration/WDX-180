@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: ECMAScript 6 
 header_image: week14/pexels-olia-danilevich-4974916.jpg
+version: 2.0
 # title: Functional Programming 1, Templating, JavaScript Frameworks
 schedule: 
   days:

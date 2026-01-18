@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript 
 header_image: week13/assets/colorful.03.png
+version: 2.0
 schedule: 
   days:
     1: # Intermediate JavaScript
