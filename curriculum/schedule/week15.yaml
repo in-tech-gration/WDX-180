@@ -9,7 +9,7 @@ schedule:
     1: # The arguments Objects & ES6 Modules
       # file://./../modules/javascript/misc/_w15d01/_w15d01.md
       module: javascript/misc/_w15d01/_w15d01.md
-    2: # 
+    2: # eval, iframe and syntax highlight challenge
       # file://./../modules/javascript/misc/_w15d02/_w15d02.md
       module: javascript/misc/_w15d02/_w15d02.md
     3: # 
