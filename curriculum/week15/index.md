@@ -25,7 +25,7 @@ title: Week 15 | JavaScript Events
 
   </h2>
 
-  <span>Updated: 18/1/2026</span>
+  <span>Updated: 19/1/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -66,7 +66,7 @@ title: Week 15 | JavaScript Events
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Learn about the `arguments` object
+  - **Part 1:** Check your Frontend knowledge / Learn about the `arguments` object
   - **Part 2:** ECMAScript 6 Modules (`import/export`)
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week15/assets/code){:target="_blank"}
@@ -166,15 +166,15 @@ title: Week 15 | JavaScript Events
 
 ### Exercises
 
-  The challenge for today is to build an exact replica of this [reference table](https://cdn.hashnode.com/res/hashnode/image/upload/v1658225167119/MxOGBQkWE.jpg) using HTML and CSS.
+  The challenge for today is to build an exact replica of this [reference table](https://cdn.hashnode.com/res/hashnode/image/upload/v1658225167119/MxOGBQkWE.jpg){:target="_blank"} using HTML and CSS.
 
   For each row of the table, the user must be able to click on it and some sample code must be displayed that shows the difference between the 3 ways of declaring a variable and the particular feature (e.g. function scope, hoisting, etc.). See the screenshot below for an idea on how to display the code. It's up to you to find the most appropriate solution. Feel free to experiment and also come up with various ways to do this.
 
   ![](./assets/var.let.const.jpg)
 
-  The code must be syntax highlighted. You **must** use the [prism.js library](https://prismjs.com/#examples) for that and pick the `tomorrow night` theme. 
+  The code must be syntax highlighted. You **must** use the [prism.js library](https://prismjs.com/#examples){:target="_blank"} for that and pick the `tomorrow night` theme. 
 
-  You can optionally go one step further and make the code runnable. You can experiment with things like `eval`, `iframe` or anything you can think of or find on StackOverflow. You might also want to experiment with ready-made libraries like [Flems](https://flems.io/).
+  You can optionally go one step further and make the code runnable. You can experiment with things like `eval`, `iframe` or anything you can think of or find on StackOverflow. You might also want to experiment with ready-made libraries like [Flems](https://flems.io/){:target="_blank"}.
 
   Good luck!
 
