@@ -1,7 +1,3 @@
-//$(document).ready(function() {
-//$('.search-box').focus();
-//});
-
 // LOAD DATA:
 // fetch("resources.json")
 // .then( response => response.json() )
