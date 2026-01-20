@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/* HELPER CLASSES */
+.debug { border: 2px solid hotpink; }
+
 :root {
   --body-bg-color: #e5ecef;
   --theme-bg-color: #fafafb;
