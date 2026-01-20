@@ -2,6 +2,16 @@
 //$('.search-box').focus();
 //});
 
+// LOAD DATA:
+// fetch("resources.json")
+// .then( response => response.json() )
+// .then( data => {
+//     console.log(data);
+// })
+// .catch( error => {
+//    console.log(error); 
+// });
+
 const wrapper = document.querySelector(".wrapper");
 const header = document.querySelector(".header");
 
