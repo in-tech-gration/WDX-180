@@ -96,18 +96,7 @@ title: What is Programming?
 
   **Installing Study Lenses**
 
-  1. Run the following commands in your terminal while inside the root folder of your forked `WDX-180` repository:
-
-  - `git submodule init`
-  - `npm run update:submodules`
-
-  2. Follow the steps described below to install `study-lenses` globally on your machine:
-
-  {{ SGEN:MODULE:javascript/denepo/setting-up-study-lenses/index.md }}
-
-  > If you are experiencing issues while installing and running `study-lenses`, there's an alternative. You can visit [this link](https://welcome-to-js.onrender.com/0-study-lenses/README.md?--defaults#1){:target="_blank"} to run `study-lense` as an online service. 
-  > 
-  > **It's important** to note, that the service might require a few minutes to launch when visiting the link for the first time, as the servers running the app tend to go to `sleep mode` when they are not being accessed by any users for a long period of time. 
+  Follow the instructions from {{ SGEN:MODULE_LINK:javascript/denepo/setting-up-study-lenses/index.md }} to set up Study Lenses (v2) on your System.
 
   **Watch a short introduction to Study Lenses**
 

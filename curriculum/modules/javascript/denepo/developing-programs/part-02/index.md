@@ -25,7 +25,7 @@ content:
 
   In this Module, we are continuing our journey into "Developing Programs"
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System** and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
+  Make sure to follow the guides on {{ SGEN:MODULE_LINK:javascript/denepo/setting-up-study-lenses/index.md }} and **Launching Study Lenses and following the material** from Part 1 and then go through the following sections:
 
   - **3-fixing-bugs**
   - **4-modifying-programs**
