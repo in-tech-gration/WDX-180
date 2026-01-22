@@ -1841,6 +1841,12 @@
       ],
       "language": [
         "en"
+      ],
+      "reviewers": [
+        {
+          "github": "https://github.com/asterisg",
+          "review": "As the guy on the video mentions 'This video is not on how to be a git newbie, but how to be a git expert.' All in all, great video, very explanatory, in-depth analysis of all the basic git features that a developer is gonna come across and gets it all covered in under an hour. However, since the video is suited for people with intermediate experience on git, this video in my opinion can be used as a later recap/revision on the tool and to clarify some of the features it provides. Mostly, due to the fact that there are no screenshots/clips using the commands on a terminal, I think it requires a great understanding of both git and the linux terminal."
+        }
       ]
     },
     "the-undersea-cable-that-linked-the-world": {
