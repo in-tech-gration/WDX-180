@@ -2210,6 +2210,19 @@
         "interactive"
       ]
     },
+    "getting-started-what-is-git": {
+      "identifier": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F",
+      "title": "What is Git?",
+      "type": "Official Documentation",
+      "tags": [
+        "git"
+      ],
+      "reviewers": [
+        {
+          "rating": 0.8
+        }
+      ]
+    },
     "git-remotes-fundamentals": {
       "type": "YouTube",
       "duration": 632,
