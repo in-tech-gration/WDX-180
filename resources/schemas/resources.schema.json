@@ -19,16 +19,17 @@
         "edX Course",
         "Interactive Tutorial",
         "MDN",
+        "Official Documentation",
         "Podcast",
         "Quora",
         "StackOverflow",
         "Tool",
         "Udacity Course",
         "Video",
+        "VSCode Extension",
         "Web Page",
         "YouTube Playlist",
-        "YouTube",
-        "VSCode Extension"
+        "YouTube"
       ]
     },
     "languages": {

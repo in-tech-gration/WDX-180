@@ -1,3 +1,7 @@
+import "./ui/header/logo.js";
+import "./ui/header/headerMenu.js";
+import "./ui/header/userSettings.js";
+import "./ui/sidebar.js";
 // LOAD DATA:
 // fetch("resources.json")
 // .then( response => response.json() )
@@ -11,7 +15,6 @@
 // VARIABLE DECLARATION
 const wrapper = document.querySelector(".wrapper");
 const header = document.querySelector(".header");
-const toggleButton = document.querySelector(".dark-light");
 const jobCards = document.querySelectorAll(".job-card");
 const logo = document.querySelector(".logo");
 const jobLogos = document.querySelector(".job-logos");
@@ -25,10 +28,6 @@ const displayShadow = (e) => {
   e.target.scrollTop > 30
     ? header.classList.add("header-shadow")
     : header.classList.remove("header-shadow");
-}
-
-const toggleDarkMode = () => {
-  document.body.classList.toggle("dark-mode");
 }
 
 const displaySingleCard = (jobCard) => {
@@ -62,6 +61,5 @@ const scrollToTop = () => {
 
 // INTERACTIONS
 wrapper.addEventListener("scroll", displayShadow);
-toggleButton.addEventListener("click", toggleDarkMode);
 jobCards.forEach(renderCards);
 logo.addEventListener("click", scrollToTop);
