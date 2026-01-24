@@ -20,6 +20,7 @@ const userSettingsEl = document.querySelector(".user-settings");
 userSettingsEl.innerHTML = html;
 
 const toggleButton = document.querySelector(".dark-light");
+document.body.classList.add("dark-mode");
 
 const toggleDarkMode = () => {
   document.body.classList.toggle("dark-mode");
