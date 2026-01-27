@@ -2,6 +2,8 @@ import "./ui/header/logo.js";
 import "./ui/header/headerMenu.js";
 import "./ui/header/userSettings.js";
 import "./ui/sidebar.js";
+// import "./ui/searchMenu.js";
+
 // LOAD DATA:
 // fetch("resources.json")
 // .then( response => response.json() )
