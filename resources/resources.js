@@ -3,14 +3,14 @@ import "./ui/header/headerMenu.js";
 import "./ui/header/userSettings.js";
 import "./ui/sidebar.js";
 // LOAD DATA:
-// fetch("resources.json")
-// .then( response => response.json() )
-// .then( data => {
-//     console.log(data);
-// })
-// .catch( error => {
-//    console.log(error); 
-// });
+ fetch("resources.json")
+.then( response => response.json() )
+.then( data => {
+    console.log(data);
+})
+.catch( error => {
+   console.log(error); 
+});
 
 // VARIABLE DECLARATION
 const wrapper = document.querySelector(".wrapper");
