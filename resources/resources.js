@@ -1,14 +1,16 @@
 import "./ui/header/logo.js";
 import "./ui/header/headerMenu.js";
 import "./ui/header/userSettings.js";
-import "./ui/sidebar.js";
-// import "./ui/searchMenu.js";
+import renderSidebar from "./ui/sidebar.js";
+import renderSearchMenu from "./ui/searchMenu.js";
 
 // LOAD DATA:
  fetch("resources.json")
 .then( response => response.json() )
 .then( data => {
-    console.log(data);
+    // console.log(data.resources); // Our resources are available right here
+    renderSidebar(data);
+    renderSearchMenu(data);
 })
 .catch( error => {
    console.log(error); 
