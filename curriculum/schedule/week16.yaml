@@ -12,7 +12,7 @@ schedule:
     2: # 
       # file://./../modules/javascript/misc/_w16d02/_w16d02.md
       module: javascript/misc/_w16d02/_w16d02.md
-    3: # Objects
+    3: # Objects, Object.freeze and Object Creators
       # file://./../modules/javascript/misc/_w16d03/_w16d03.md
       module: javascript/misc/_w16d03/_w16d03.md
     4: # Objects

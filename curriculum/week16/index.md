@@ -25,11 +25,11 @@ title: Week 16 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 28/1/2025</span>
+  <span>Updated: 28/1/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 16 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 16 | Intermediate JavaScript
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -390,8 +397,7 @@ title: Week 16 | Intermediate JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Event Debugging & Tools
-  - **Part 2:** Objects, Object.freeze, Object Creators
+  - Objects, Object.freeze, Object Creators
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day03){:target="_blank"}
 
