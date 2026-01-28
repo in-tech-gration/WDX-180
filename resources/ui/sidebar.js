@@ -20,7 +20,7 @@ function findTypeRepeat(data, types) {
         counter++;
       }
     });
-    let entry = { type: type, count: counter, checked: false };
+    let entry = { type: type, count: counter, checked: true };
     entries.push(entry);
   });
   console.log(entries);
@@ -49,9 +49,22 @@ function loopForEntries(entries) {
   return entriesHTML;
 }
 
-// function searchButton(data){
+function searchButton(data){
+  let inputElement = document.querySelector(".alert input");
+  let buttonElement  = document.querySelector(".alert button");
+  let searchResult;
+  buttonElement.addEventListener("click", () => {
+    searchResult = {};
+    Object.entries(data.resources).forEach(([key, value]) => {
+      if (key.includes(inputElement.value)) {
+        searchResult[key] = value;
+      }
+    });
+  });
+  return searchResult;
+}
 
-// }
+
 
 function renderSidebar(data) {
   console.log(data.resources);
@@ -80,6 +93,8 @@ function renderSidebar(data) {
 
 
   searchTypeEl.innerHTML = html;
+  let searchResult = searchButton(data);// this might be useful later
+  let checkResult = checkResult(data, searchResult);
 }
 
 export default renderSidebar;
