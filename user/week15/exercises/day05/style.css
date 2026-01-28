@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+}
+header {
+  background: skyblue;
+  padding: 1rem;
+}
+main {
+  background: limegreen;
+  flex-grow: 1;
+}
+footer {
+  background: orange;
+  padding: 1rem;
+}
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000099;
+  /* CENTER BOTH IN v AND h   */
+  place-items:center;
+  display: none;
+}
+.modal {
+  position: relative;
+  background: white;
+  width: 35vw;
+  height: 35vw;
+  display: grid;
+  place-items:center;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: tomato;
+  color: white;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  cursor:pointer;
+}
