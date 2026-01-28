@@ -4,7 +4,7 @@ console.clear();
 
 Setup:
 
-- Download the Codepen: Click the "Export" button (bottom right) and select "Export .ZIP"
+- Download the Code
 - Open it in your local environment (e.g. VSCode with Live Server)
 - Follow the instructions below:
 
