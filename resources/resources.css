@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 @import url("./ui/sidebar.css");
+@import url("./ui/searchMenu.css");
 /* @import url("./ui/searchMenu.css"); */
 /* TODO: add the rest of the CSS imports */
 
@@ -198,7 +199,7 @@ body {
   padding: 30px 40px;
   overflow: auto;
 }
-
+/* 
 .search-menu {
   height: 56px;
   white-space: nowrap;
@@ -292,7 +293,7 @@ body {
 }
 .search.item:last-child {
   left: 185px;
-}
+} */
 
 .main-container {
   display: flex;
