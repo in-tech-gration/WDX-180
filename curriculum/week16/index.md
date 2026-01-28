@@ -422,25 +422,25 @@ title: Week 16 | Intermediate JavaScript
 
 ### Summary
 
-Part 1:
-
-- 1. **Discussion on Reference vs Copy**: the difference between reference and copy when assigning values to variables in JavaScript.
-
-- 2. **Use of `const` keyword**: using the `const` keyword to declare variables that should not be reassigned, and how it can help avoid unexpected changes to variable values.
-
-- 3. **Example with objects and primitives**: examples with objects and primitives (like numbers) to illustrate the difference between reference and copy.
-
-- 4. **Understanding function calls**: understanding what value a function call returns.
-
-Part 2:
-
 Here's a brief summary of the main points covered:
 
-- 1. **Creating objects**: in JavaScript, objects can be created using the `new` keyword followed by a function name.
+- **Discussion on Reference vs Copy**: the difference between reference and copy when assigning values to variables in JavaScript.
 
-- 2. **Constructor functions**: introducing the concept of constructor functions, which are special types of functions that return an object when called with the `new` keyword.
+<!-- - **Use of `const` keyword**: using the `const` keyword to declare variables that should not be reassigned, and how it can help avoid unexpected changes to variable values. -->
 
-- 3. **Using constructor functions to create objects**: The lecturer demonstrates how to use a constructor function to create multiple objects with similar properties and methods.
+
+
+- **Example with objects and primitives**: examples with objects and primitives (like numbers) to illustrate the difference between reference and copy.
+
+<!-- - **Understanding function calls**: understanding what value a function call returns. -->
+
+
+
+- **Creating objects**: in JavaScript, objects can be created using the `new` keyword followed by a function name.
+
+- **Constructor functions**: introducing the concept of constructor functions, which are special types of functions that return an object when called with the `new` keyword.
+
+- **Using constructor functions to create objects**: The lecturer demonstrates how to use a constructor function to create multiple objects with similar properties and methods.
 
 Some key takeaways from this lecture include:
 
