@@ -113,8 +113,10 @@ function sidebarAPI(data, resources) {
   let entriesHTML = loopForEntries(entries);
   // this function will insert HTML
   insertHTML(entriesHTML);
+  // this function make the check boxes work and filter the result
   checkResult(resources);
-  searchButton(data); // this might be useful later
+  // this function make the search button work
+  searchButton(data);
 }
 
 function renderSidebar(data) {
