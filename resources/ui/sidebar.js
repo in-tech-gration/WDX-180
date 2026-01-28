@@ -1,6 +1,5 @@
 // We need access to the JSON data, 'data.resources'
 
-
 function findType(resources) {
   let types = [];
   Object.values(resources).forEach((resource) => {
@@ -67,7 +66,6 @@ function insertHTML(entriesHTML) {
 }
 
 function checkResult(resources) {
-  console.log(resources);
   document.querySelector(".job-wrapper").addEventListener("click", (event) => {
     if (event.target.id.includes("resource")) {
       let checkboxes = document.querySelectorAll(".job-wrapper input");
@@ -84,34 +82,29 @@ function checkResult(resources) {
             }
           });
         }
-      })
-      console.log(checkedResult);
+      });
+      console.log(checkedResult);// necessary to keep, to show the result.
     }
   });
 }
 
-function searchButton(data, resources) {
+function searchButton(data) {
   let inputElement = document.querySelector(".alert input");
   let buttonElement = document.querySelector(".alert button");
   let searchResult;
+
   buttonElement.addEventListener("click", () => {
     searchResult = {};
-    if (inputElement.value) {
-      Object.entries(resources).forEach(([key, value]) => {
-        if (key.includes(inputElement.value)) {
-          searchResult[key] = value;
-        }
-      });
-    } else {
-      searchResult = data.resources;
-    }
-    // console.log(searchResult);
+    Object.entries(data.resources).forEach(([key, value]) => {
+      if (key.includes(inputElement.value)) {
+        searchResult[key] = value;
+      }
+    });
     sidebarAPI(data, searchResult);
   });
 }
 
 function sidebarAPI(data, resources) {
-  console.log("entered");
   // this function find how many types do we have, return an array of types we have
   let types = findType(resources);
   // this function find how many times each type repeat, return an array of object of the info of each type
@@ -121,11 +114,10 @@ function sidebarAPI(data, resources) {
   // this function will insert HTML
   insertHTML(entriesHTML);
   checkResult(resources);
-  searchButton(data, resources); // this might be useful later
+  searchButton(data); // this might be useful later
 }
 
 function renderSidebar(data) {
-  // console.log(data.resources);
   sidebarAPI(data, data.resources);
 }
 
