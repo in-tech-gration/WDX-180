@@ -25,7 +25,7 @@ title: Week 16 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 28/1/2026</span>
+  <span>Updated: 29/1/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -509,12 +509,12 @@ If you're new to JavaScript or programming in general, this lecture might be hel
 
 ### Study Plan
 
+  First, go through the [Murdle tutorial](https://murdle.com/?mode=tutorial){:target="_blank"}. It's really fun and will help you understand the JavaScript tasks mentioned in the lecture.
+
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Solving a Murdle Mystery / Solving Click Event Mysteries 
-  - **Part 2:** Object Creators and their Toolset (and `this`)
-
-  Go through the [Murdle tutorial](https://murdle.com/?mode=tutorial){:target="_blank"}
+  - Solving Click Event Mysteries (JavaScript) based on the [Murdle Mystery](https://murdle.com/){:target="_blank"} game.
+  - Object Creators and their Toolset (and `this`)
 
   You can find the lecture code [here for part 1](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part1-murlde-mystery/){:target="_blank"} and [here for part 2](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week16/assets/code/day05/part2-objects/){:target="_blank"}
 
