@@ -4,7 +4,7 @@ console.clear();
 
 Setup:
 
-- Download the Code
+- Download the code
 - Open it in your local environment (e.g. VSCode with Live Server)
 - Follow the instructions below:
 
