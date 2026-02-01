@@ -3,7 +3,6 @@ daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript
 header_image: week16/pexels-cottonbro-5474294.jpg
 version: 2.0
-# title: Web APIs Part 3
 schedule: 
   days:
     1: # More Events
