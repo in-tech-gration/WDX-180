@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Objects
 header_image: week16/pexels-thisisengineering-3861972.jpg
+version: 2.0
 schedule: 
   days:
     1: # Object Creators

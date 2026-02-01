@@ -25,11 +25,11 @@ title: Week 17 | Objects
 
   </h2>
 
-  <span>Updated: 29/1/2025</span>
+  <span>Updated: 1/2/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 17 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 17 | Objects
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -57,10 +64,7 @@ title: Week 17 | Objects
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Part 1:** Object Creators (1/2)
-  - **Part 2:** Object Creators (2/2)
+  Your instructor will share the video lectures with you. Here are the topics covered: Object creators (constructors), globalThis, understanding `[object Object]` and more. 
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week17/assets/code/day01){:target="_blank"}
 
@@ -292,6 +296,7 @@ title: Week 17 | Objects
   - NEVER EVER use the \_ \_ proto \_ \_ in production (it’s just an educational feature)  
   - The [Function.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype){:target="_blank"} property  
   - Every single built-in object has its own constructor: new Array(), new Object(), new Date(), new Promise(), etc. and of course their own prototype: Array.prototype, Object.prototype, Date.prototype, etc.  
+  <!-- - [Prototype diagram](https://i.imgur.com/2rP4eLG_d.webp?maxwidth=1520&fidelity=grand){:target="_blank"}   -->
   - [Prototype diagram from PyTutor](https://pythontutor.com/render.html#code=function%20Like%28%20numOfLikes%20%29%7B%0A%20%20this.numberOfLikes%20%3D%20numOfLikes%3B%0A%7D%0ALike.prototype.getLikes%20%3D%20function%28%29%7B%0A%20%20return%20this.numberOfLikes%3B%0A%7D%0ALike.prototype.version%20%3D%2042%3B%0Aconst%20l1%20%3D%20new%20Like%28100%29%3B%0Aconst%20l2%20%3D%20new%20Like%28200%29%3B&cumulative=false&curInstr=8&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false){:target="_blank"}  
     - Diagram: [JS checking at different levels for a property](https://pythontutor.com/render.html#code=function%20ArrayV2%28array%29%20%7B%0A%20%20this.array%20%3D%20array%3B%0A%7D%0AArrayV2.prototype.getArray%20%3D%20function%28%29%20%7B%0A%20%20return%20this.array%3B%0A%7D%0Aconst%20a1%20%3D%20new%20ArrayV2%28%5B10,%2020,%2030,%205%5D%29%3B%0Aconst%20a2%20%3D%20new%20ArrayV2%28%5B9,8,7%5D%29%3B%0Aa1.getArray%20%3D%20function%28%29%20%7B%0A%20%20return%20%22Custom!%22%3B%0A%7D&cumulative=false&curInstr=8&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false){:target="_blank"}
 
