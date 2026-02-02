@@ -19,16 +19,3 @@ schedule:
     5: # 
       # file://./../modules/javascript/misc/_w23d05/_w23d05.md
       module: javascript/misc/_w23d05/_w23d05.md
-
-# XMLHttpRequest:
-# function makeAJAXCall(methodType, url, callback){
-#    var xhr = new XMLHttpRequest();
-#    xhr.withCredentials = true;
-#    xhr.open("GET", url, true);
-#    xhr.onreadystatechange = function(){
-#          if (xhr.readyState === 4 && xhr.state === 200){
-#              callback(xhr.response);
-#          } 
-#      }
-#      xhr.send();
-# }
