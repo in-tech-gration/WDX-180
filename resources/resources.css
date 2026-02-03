@@ -2,6 +2,7 @@
 
 @import url("./ui/sidebar.css");
 @import url("./ui/searchMenu.css");
+@import url("./ui/singleCard.css");
 /* @import url("./ui/searchMenu.css"); */
 /* TODO: add the rest of the CSS imports */
 
@@ -443,7 +444,7 @@ body {
   }
 }
 
-.job-card {
+/* .job-card {
   padding: 20px 16px;
   background-color: var(--header-bg-color);
   border-radius: 8px;
@@ -472,7 +473,7 @@ body {
 .job-card-header {
   display: flex;
   align-items: flex-start;
-}
+} */
 
 .overview-card:hover {
   background: #2b2ecf;
