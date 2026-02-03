@@ -1,5 +1,5 @@
 // We need access to the JSON data, 'data.resources'
-import renderSearchResults from "./searchResults.js";
+import checkResult from "./checkbox.js";
 
 function findType(resources) {
   let types = [];
@@ -66,34 +66,34 @@ function insertHTML(entriesHTML) {
   searchTypeEl.innerHTML = html;
 }
 
-function checkResult(resources) {
-  document.querySelector(".job-wrapper").addEventListener("click", (event) => {
+// function checkResult(resources) {
+//   document.querySelector(".job-wrapper").addEventListener("click", (event) => {
 
-    const target = event.target;
-    const hasResourceId = target.id.includes("resource");
+//     const target = event.target;
+//     const hasResourceId = target.id.includes("resource");
 
-    if (hasResourceId) {
+//     if (hasResourceId) {
 
-      let checkboxes = document.querySelectorAll(".job-wrapper input");
-      let checkedResult = {};
-      checkboxes.forEach((checkbox) => {
-        const labelElement = document.querySelector(
-          `.type-container label[for='${checkbox.id}']`,
-        );
-        let checkedText = labelElement.textContent;
-        if (checkbox.checked === true) {
-          Object.entries(resources).forEach(([key, value]) => {
-            if (value.type === checkedText) {
-              checkedResult[key] = value;
-            }
-          });
-        }
-      });
-      console.log(checkedResult);// necessary to keep, to show the result.
-      renderSearchResults(checkedResult);
-    }
-  });
-}
+//       let checkboxes = document.querySelectorAll(".job-wrapper input");
+//       let checkedResult = {};
+//       checkboxes.forEach((checkbox) => {
+//         const labelElement = document.querySelector(
+//           `.type-container label[for='${checkbox.id}']`,
+//         );
+//         let checkedText = labelElement.textContent;
+//         if (checkbox.checked === true) {
+//           Object.entries(resources).forEach(([key, value]) => {
+//             if (value.type === checkedText) {
+//               checkedResult[key] = value;
+//             }
+//           });
+//         }
+//       });
+//       console.log(checkedResult);// necessary to keep, to show the result.
+//       renderSearchResults(checkedResult);
+//     }
+//   });
+// }
 
 function searchButton(data) {
   let inputElement = document.querySelector(".alert input");
