@@ -1,6 +1,11 @@
 // We need access to the JSON data, 'data.resources'
 import { checkResult } from "./checkbox.js";
 import  { searchButton }  from "./searchButton.js";
+/**
+ * Find unique resource types.
+ * @param {Object} resources - The resources object from JSON data.
+ * @return {Array<string>} Array of unique types.
+ */
 
 function findType(resources) {
   let types = [];
@@ -12,6 +17,12 @@ function findType(resources) {
   return types;
 }
 
+/**
+ * Count occurrences of each type.
+ * @param {Object} resources - The resources object from JSON data.
+ * @param {Array<string>} types - Array of unique types.
+ * @return {Array<Object>} Array of objects with type, count, and checked status.
+ */
 function findTypeRepeat(resources, types) {
   let counter;
   let entries = [];
@@ -28,6 +39,11 @@ function findTypeRepeat(resources, types) {
   return entries;
 }
 
+/**
+ * Generate HTML for the entries.
+ * @param {Array<Object>} entries - Array of objects with type, count, and checked status.
+ * @return {string} HTML string for the entries.
+ */
 function loopForEntries(entries) {
   let entriesHTML = "";
   let counter = 0;
@@ -49,6 +65,9 @@ function loopForEntries(entries) {
   return entriesHTML;
 }
 
+/** Insert the generated HTML into the sidebar.
+ * @param {string} entriesHTML - HTML string for the entries.
+ */
 function insertHTML(entriesHTML) {
   const html = `
   <div class="alert">
@@ -67,63 +86,12 @@ function insertHTML(entriesHTML) {
   searchTypeEl.innerHTML = html;
 }
 
-// function checkResult(resources) {
-//   document.querySelector(".job-wrapper").addEventListener("click", (event) => {
-
-//     const target = event.target;
-//     const hasResourceId = target.id.includes("resource");
-
-//     if (hasResourceId) {
-
-//       let checkboxes = document.querySelectorAll(".job-wrapper input");
-//       let checkedResult = {};
-//       checkboxes.forEach((checkbox) => {
-//         const labelElement = document.querySelector(
-//           `.type-container label[for='${checkbox.id}']`,
-//         );
-//         let checkedText = labelElement.textContent;
-//         if (checkbox.checked === true) {
-//           Object.entries(resources).forEach(([key, value]) => {
-//             if (value.type === checkedText) {
-//               checkedResult[key] = value;
-//             }
-//           });
-//         }
-//       });
-//       console.log(checkedResult);// necessary to keep, to show the result.
-//       renderSearchResults(checkedResult);
-//     }
-//   });
-// }
-
-// function searchButton(data) {
-//   let inputElement = document.querySelector(".alert input");
-//   let buttonElement = document.querySelector(".alert button");
-//   let searchResult;
-
-//   buttonElement.addEventListener("click", () => {
-//     searchResult = {};
-//     Object.entries(data.resources).forEach(([key, value]) => {
-//       if (key.includes(inputElement.value)) {
-//         searchResult[key] = value;
-//       }
-//     });
-//     sidebarAPI(data, searchResult);
-//   });
-// }
-
 export function sidebarAPI(data, resources) {
-  // this function find how many types do we have, return an array of types we have
   let types = findType(resources);
-  // this function find how many times each type repeat, return an array of object of the info of each type
   let entries = findTypeRepeat(resources, types);
-  // this function iterate though the array and put it into the HTML, return the HTML
   let entriesHTML = loopForEntries(entries);
-  // this function will insert HTML
   insertHTML(entriesHTML);
-  // this function make the check boxes work and filter the result
   checkResult(resources);
-  // this function make the search button work
   searchButton(data);
 }
 
