@@ -1,4 +1,5 @@
 // We need access to the JSON data, 'data.resources'
+import renderSearchResults from "./searchResults.js";
 
 function findType(resources) {
   let types = [];
@@ -67,7 +68,12 @@ function insertHTML(entriesHTML) {
 
 function checkResult(resources) {
   document.querySelector(".job-wrapper").addEventListener("click", (event) => {
-    if (event.target.id.includes("resource")) {
+
+    const target = event.target;
+    const hasResourceId = target.id.includes("resource");
+
+    if (hasResourceId) {
+
       let checkboxes = document.querySelectorAll(".job-wrapper input");
       let checkedResult = {};
       checkboxes.forEach((checkbox) => {
@@ -84,6 +90,7 @@ function checkResult(resources) {
         }
       });
       console.log(checkedResult);// necessary to keep, to show the result.
+      renderSearchResults(checkedResult);
     }
   });
 }

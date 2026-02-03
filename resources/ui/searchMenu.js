@@ -2,7 +2,7 @@
 
 function renderSearchMenu(data){
 
-  console.log(data.resources);
+  // console.log(data.resources);
 
   // 1) Define the HTML Content
   const html = `

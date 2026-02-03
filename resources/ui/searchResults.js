@@ -1,6 +1,5 @@
-export default function renderSearchResults(data){
+export default function renderSearchResults(resources){
 
-  console.log("renderSearchResults()");
   const startFrom = 0; // -> 10 -> 10 -> ...
   const endAt = 10; // -> 20 -> 30 -> ...
 
@@ -9,10 +8,11 @@ export default function renderSearchResults(data){
   // Object.values(OBJECT) => Array of the OBJECT's values
   // Play around with Object.keys(), Object.entries(), Object.values()
   let entriesHTML = "";
-  const entries = Object.values(data.resources);
+  // Uncaught TypeError: Cannot convert undefined or null to object
+  const entries = Object.values(resources);
   const first10entries = entries.slice(startFrom, endAt);
   for ( const entry of  first10entries ){
-    console.log(entry);
+    // console.log(entry);
     entriesHTML += `<li>${entry.title}</li>`;
   }
 
@@ -21,12 +21,12 @@ export default function renderSearchResults(data){
   // 2) Create a counter, increment, use modulo % (for pagination)
   // 3) Create a counter and break on 10
   // let counter = 1;
-  // for ( const entry in data.resources ){
+  // for ( const entry in resources ){
   //   if ( counter === 11 ){
   //     break;
   //   }
   //   // console.log(entry); // Object key (property)
-  //   console.log(counter, data.resources[entry]); // Object value
+  //   console.log(counter, resources[entry]); // Object value
   //   counter++;
   // }
 

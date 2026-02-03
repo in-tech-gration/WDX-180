@@ -12,7 +12,7 @@ import renderSearchResults from "./ui/searchResults.js";
     // console.log(data.resources); // Our resources are available right here
     renderSidebar(data);
     renderSearchMenu(data);
-    renderSearchResults(data);
+    renderSearchResults(data.resources);
 })
 .catch( error => {
    console.log(error); 
