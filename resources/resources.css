@@ -102,6 +102,10 @@ body {
   background-color: var(--inactive-color);
   color: var(--subtitle-color);
 }
+.dark-mode .search-type .alert input {
+  background-color: var(--theme-bg-color);
+  color: var(--body-color);
+}
 
 .job {
   display: flex;
