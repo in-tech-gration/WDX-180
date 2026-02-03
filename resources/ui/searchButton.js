@@ -16,7 +16,6 @@ export function searchButton(data) {
 				searchResult[key] = value;
 			}
 		});
-		console.log(sidebarAPI)
 		sidebarAPI(data, searchResult);
 	});
 }

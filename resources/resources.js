@@ -3,7 +3,6 @@ import "./ui/header/headerMenu.js";
 import "./ui/header/userSettings.js";
 import renderSidebar from "./ui/sidebar.js";
 import renderSearchMenu from "./ui/searchMenu.js";
-import renderSearchResults from "./ui/searchResults.js";
 
 // LOAD DATA:
  fetch("resources.json")
@@ -12,7 +11,6 @@ import renderSearchResults from "./ui/searchResults.js";
     // console.log(data.resources); // Our resources are available right here
     renderSidebar(data);
     renderSearchMenu(data);
-    renderSearchResults(data.resources);
 })
 .catch( error => {
    console.log(error); 

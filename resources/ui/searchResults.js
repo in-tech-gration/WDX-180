@@ -1,5 +1,6 @@
-export default function renderSearchResults(resources){
+import { genSingleCardHTML } from "./singleCard.js";
 
+export default function renderSearchResults(resources) {
   const startFrom = 0; // -> 10 -> 10 -> ...
   const endAt = 10; // -> 20 -> 30 -> ...
 
@@ -11,9 +12,10 @@ export default function renderSearchResults(resources){
   // Uncaught TypeError: Cannot convert undefined or null to object
   const entries = Object.values(resources);
   const first10entries = entries.slice(startFrom, endAt);
-  for ( const entry of  first10entries ){
+  for (const entry of first10entries) {
     // console.log(entry);
-    entriesHTML += `<li>${entry.title}</li>`;
+    let tempHTML = genSingleCardHTML(entry);
+    entriesHTML += tempHTML;
   }
 
   // Pagination: 10 of 160 -> 20 of 160 -> 30 of 160
@@ -30,12 +32,6 @@ export default function renderSearchResults(resources){
   //   counter++;
   // }
 
-  const el = document.querySelector("#search-results");
-  const html = `
-    <ul>${entriesHTML}</ul>
-    <button disabled>Prev 10</button>
-    <button>Next 10</button>
-  `
-  el.innerHTML = html;
-
+  const el = document.querySelector(".job-cards");
+  el.innerHTML = entriesHTML;
 }
