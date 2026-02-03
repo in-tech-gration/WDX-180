@@ -1,6 +1,6 @@
 import renderSearchResults from "./searchResults.js";
 
-export default function checkResult(resources) {
+export function checkResult(resources) {
   document.querySelector(".job-wrapper").addEventListener("click", (event) => {
 
 	const target = event.target;

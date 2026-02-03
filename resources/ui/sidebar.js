@@ -1,5 +1,6 @@
 // We need access to the JSON data, 'data.resources'
-import checkResult from "./checkbox.js";
+import { checkResult } from "./checkbox.js";
+import  { searchButton }  from "./searchButton.js";
 
 function findType(resources) {
   let types = [];
@@ -95,23 +96,23 @@ function insertHTML(entriesHTML) {
 //   });
 // }
 
-function searchButton(data) {
-  let inputElement = document.querySelector(".alert input");
-  let buttonElement = document.querySelector(".alert button");
-  let searchResult;
+// function searchButton(data) {
+//   let inputElement = document.querySelector(".alert input");
+//   let buttonElement = document.querySelector(".alert button");
+//   let searchResult;
 
-  buttonElement.addEventListener("click", () => {
-    searchResult = {};
-    Object.entries(data.resources).forEach(([key, value]) => {
-      if (key.includes(inputElement.value)) {
-        searchResult[key] = value;
-      }
-    });
-    sidebarAPI(data, searchResult);
-  });
-}
+//   buttonElement.addEventListener("click", () => {
+//     searchResult = {};
+//     Object.entries(data.resources).forEach(([key, value]) => {
+//       if (key.includes(inputElement.value)) {
+//         searchResult[key] = value;
+//       }
+//     });
+//     sidebarAPI(data, searchResult);
+//   });
+// }
 
-function sidebarAPI(data, resources) {
+export function sidebarAPI(data, resources) {
   // this function find how many types do we have, return an array of types we have
   let types = findType(resources);
   // this function find how many times each type repeat, return an array of object of the info of each type
