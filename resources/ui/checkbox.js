@@ -1,5 +1,9 @@
 import renderSearchResults from "./searchResults.js";
 
+/**
+ * Handle checkbox click events to filter resources.
+ * @param {Object} resources - The resources object from JSON data.
+ */
 export function checkResult(resources) {
   document.querySelector(".job-wrapper").addEventListener("click", (event) => {
 
