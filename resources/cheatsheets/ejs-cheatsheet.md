@@ -17,6 +17,8 @@ original: https://raw.githubusercontent.com/Fechin/reference/refs/heads/main/sou
 
 <!-- NOTE: EJS does not have Prettier support, so manually format and add a prettier-ignore above broken code blocks -->
 
+> Forked from: [https://github.com/Fechin/reference/blob/main/source/_posts/ejs.md](https://github.com/Fechin/reference/blob/main/source/_posts/ejs.md)
+
 ## Get Started { .cols-3 }
 
 ### Hello world
