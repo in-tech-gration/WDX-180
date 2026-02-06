@@ -3,6 +3,7 @@ daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript
 header_image: week18/pexels-gabby-k-7412035.jpg
 # title: Node.js 2 & NoSQL Databases
+version: 2.0
 schedule: 
   days:
     1: # Recreate Countries of the World Quiz Game
@@ -20,6 +21,3 @@ schedule:
     5: # ES6 Classes & Web Components
       # file://./../modules/javascript/misc/_w18d05/_w18d05.md
       module: javascript/misc/_w18d05/_w18d05.md
-
-# Learn MongoDB in 10 minutes
-# https://www.linkedin.com/feed/update/urn:li:activity:7114385483496886272/
