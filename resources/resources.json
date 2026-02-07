@@ -1,6 +1,15 @@
 {
   "$schema": "./schemas/resources.schema.json",
   "resources": {
+    "ejs-cheatsheet": {
+      "title": "EJS (Embedded JavaScript) Cheatsheet",
+      "type": "Cheatsheet",
+      "creator": ["https://github.com/Fechin"],
+      "identifier": "https://github.com/in-tech-gration/WDX-180/blob/main/resources/cheatsheets/ejs-cheatsheet.md",
+      "terms": [
+        "Templating"
+      ]
+    },
     "how-computers-work-binary-data": {
       "title": "How Computers Work: Binary & Data",
       "creator": [

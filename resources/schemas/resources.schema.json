@@ -15,6 +15,7 @@
       "enum": [
         "Audio",
         "Blog Post",
+        "Cheatsheet",
         "Coursera Course",
         "edX Course",
         "Interactive Tutorial",
