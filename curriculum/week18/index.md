@@ -262,10 +262,9 @@ title: Week 18 | Intermediate JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Q&A on several topics such how `JSON.stringify` deals with functions, what are `Circular References`, the difference between `null` and `undefined`, CSS pseudo-elements and the `attr()` rule, debugging a search box algorithm and more!
-  - **Part 2:** We continue debugging and improving the search algorithm, learn about `Number.isInteger` method and `isNaN`, and also learn some cool advanced DOM manipulation methods and properties.
+  - Q&A on several topics such how `JSON.stringify` deals with functions, what are `Circular References`, the difference between `null` and `undefined`, CSS pseudo-elements and the `attr()` rule and more!
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/day03){:target="_blank"}
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/day03/creating-functions-using-new-function-and-json-function-hack){:target="_blank"} and [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/code/day03/css-pseudo-elements-before-after-attr){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
@@ -290,22 +289,7 @@ title: Week 18 | Intermediate JavaScript
     - **ALWAYS handle error cases** in development  
       - **BREAK THE CODE intentionally,** handle it and **ALWAYS give some user-friendly feedback** to the users  
   - `JSON.stringify` will discard functions  
-    - In the case of an Array containing functions, they are converted to null to avoid breaking the Array length and indices.  
-
-  - Study and understand the following code:
-
-  ```js
-  const list = [ 10, 20, 30 ];  
-  function reducer(accumulator, arrayValue, arrayIndex){  
-      console.log(accumulator, arrayValue, arrayIndex);  
-        // Try: debugger;  
-      // Change the accumulator:  
-      accumulator.count = arrayIndex;  
-      return accumulator;  
-  }   
-  const initialAcc = {}  
-  list.reduce( reducer, initialAcc );  
-  ```
+    - In the case of an Array containing functions, they are converted to null to avoid breaking the Array length and indices.
 
   **References & Resources:**
 
@@ -331,15 +315,7 @@ title: Week 18 | Intermediate JavaScript
 
 <!-- Summary -->
 
-### Exercises
-
-  - Solve the [TextNode Challenge](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week18/assets/exercises/day03/textnode-challenge){:target="_blank"}
-    - `ELEMENT.querySelector` targets HTML `<elements>`  
-    - We need something different for targeting the text inside those elements
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d03.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 
