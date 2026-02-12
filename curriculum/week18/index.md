@@ -25,11 +25,11 @@ title: Week 18 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 14/2/2025</span>
+  <span>Updated: 12/2/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 18 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 18 | Intermediate JavaScript
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -129,7 +136,7 @@ title: Week 18 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d01.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 ### Extra Resources
@@ -229,7 +236,7 @@ title: Week 18 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d02.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
@@ -334,7 +341,7 @@ title: Week 18 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d03.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
@@ -363,6 +370,8 @@ title: Week 18 | Intermediate JavaScript
   [![](./assets/deconstructing.jpg)](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"}
 
   It's time to take a deep dive and deconstruct the notorious `reduce` Array function in JavaScript. It's probably one of the most difficult array methods to grasp and at the same time one of the most powerful and flexible ones. You can replace and recreate almost all other array methods with `Array.prototype.reduce` so pay close attention!
+
+  - Watch the [lecture](https://www.youtube.com/watch?v=CZ5rMWN0XHk){:target="_blank"} (1h 38min)
 
   - Watch the [video](https://www.youtube.com/watch?v=s02LsdIKhVY){:target="_blank"} (74min)
 
@@ -441,7 +450,7 @@ title: Week 18 | Intermediate JavaScript
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week18/progress/progress.draft.w18.d05.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
 
 
 <!-- Extra Resources -->
