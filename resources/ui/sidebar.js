@@ -1,6 +1,8 @@
 // We need access to the JSON data, 'data.resources'
 import { checkResult } from "./checkbox.js";
 import  { searchButton }  from "./searchButton.js";
+import renderSearchResults from "./searchResults.js";
+
 /**
  * Find unique resource types.
  * @param {Object} resources - The resources object from JSON data.
@@ -93,6 +95,7 @@ export function sidebarAPI(data, resources) {
   insertHTML(entriesHTML);
   checkResult(resources);
   searchButton(data);
+  renderSearchResults(resources);
 }
 
 function renderSidebar(data) {

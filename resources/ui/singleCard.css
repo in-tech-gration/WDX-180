@@ -1,0 +1,30 @@
+.job-card {
+  padding: 20px 16px;
+  background-color: var(--header-bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.job-card:hover {
+  transform: scale(1.02);
+}
+.job-card svg {
+  width: 46px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.job-card-title {
+  font-weight: 600;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.job-card-subtitle {
+  color: var(--subtitle-color);
+  font-size: 13px;
+  margin-top: 14px;
+  line-height: 1.6em;
+}
+.job-card-header {
+  display: flex;
+  align-items: flex-start;
+}
