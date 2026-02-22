@@ -2,7 +2,6 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Intermediate JavaScript
 header_image: week18/pexels-gabby-k-7412035.jpg
-# title: Node.js 2 & NoSQL Databases
 version: 2.0
 schedule: 
   days:

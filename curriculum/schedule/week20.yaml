@@ -1,8 +1,8 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: Node JS Web Server
-# header_image: week20/FILE.jpg
 header_image: week20/assets/nodejs-web-server.jpg
+version: 2.0
 schedule: 
   days:
     1: # Web Server with Node.JS
@@ -20,5 +20,3 @@ schedule:
     5: # 
       # file://./../modules/javascript/misc/_w20d05/_w20d05.md
       module: javascript/misc/_w20d05/_w20d05.md
-# REACT:
-# STUDY: How React Works (https://github.com/in-tech-gration/how-react-works)
