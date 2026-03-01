@@ -66,18 +66,18 @@ title: Week 21 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-    - History of React & Front-End Frameworks
-    - Abstractions, Modularization & Reusability
-    - Single Responsibility Principle & Higher Abstraction Thinking
-    - Custom elements
-    - JSX & Transpilers
-    - Adding React to a Website
-    - React Core, React DOM & React Native
-    - Creating a Component
-    - React project setup && frameworks
-    - React Strict Mode
-    - Steps for Component creation
-    - React Fragments
+  - History of React & Front-End Frameworks
+  - Abstractions, Modularization & Reusability
+  - Single Responsibility Principle & Higher Abstraction Thinking
+  - Custom elements
+  - JSX & Transpilers
+  - Adding React to a Website
+  - React Core, React DOM & React Native
+  - Creating a Component
+  - React project setup && frameworks
+  - React Strict Mode
+  - Steps for Component creation
+  - React Fragments
 
   You can find the lecture code (created using `vite`) [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day01/code){:target="_blank"} and the lecture diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day01/diagrams){:target="_blank"}.
 
