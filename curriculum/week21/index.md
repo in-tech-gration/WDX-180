@@ -25,11 +25,11 @@ title: Week 21 | React JS
 
   </h2>
 
-  <span>Updated: 7/3/2025</span>
+  <span>Updated: 2/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 21 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 21 | React JS
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -59,27 +66,16 @@ title: Week 21 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** 
-    - History
-    - Front-End Frameworks
-    - Abstractions
-    - Modularization
+    - History of React & Front-End Frameworks
+    - Abstractions, Modularization & Reusability
+    - Single Responsibility Principle & Higher Abstraction Thinking
     - Custom elements
-    - Reusability
-    - Single Responsibility Principle
-    - Higher Abstraction Thinking
     - JSX & Transpilers
     - Adding React to a Website
     - React Core, React DOM & React Native
-    - Babel
     - Creating a Component
-
-  - **Part 2:** 
-    - Layout
-    - Tidied markup
     - React project setup && frameworks
-    - Vite setup
-    - React Strick Mode
+    - React Strict Mode
     - Steps for Component creation
     - React Fragments
 
@@ -112,14 +108,12 @@ title: Week 21 | React JS
 
   - The [old React docs](https://legacy.reactjs.org/){:target="_blank"} (Outdated, but useful from time to time.)  
   - The [new React docs](https://react.dev/){:target="_blank"} (Preferred. Make sure to bookmark!)  
-  - Browser Extension for drawing on the page: [**Page Marker Draw on Web**](https://chromewebstore.google.com/detail/page-marker-draw-on-web/jfiihjeimjpkpoaekpdpllpaeichkiod){:target="_blank"}  
   - [**Progressive Web Apps**](https://web.dev/explore/progressive-web-apps){:target="_blank"} *(before going deeper into the native mobile application development, you might want to check this first.)*  
   - [**ElectronJS**](https://www.electronjs.org/){:target="_blank"} *(mentioned during the lecture)* allows you to developer Desktop apps (that do not require a browser) using HTML, CSS and JS (+JS libraries like React). VSCode, Skype, Slack and other applications are ElectronJS apps.  
   - [Add React in a minute](https://legacy.reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute){:target="_blank"} (a bit outdated, from the old docs)  
   - [ReactPDF](https://react-pdf.org/){:target="_blank"}  
   - [ReactThreeFiber](https://github.com/pmndrs/react-three-fiber){:target="_blank"} (for rendering 3D graphics)  
   - [Remotion](https://www.remotion.dev/){:target="_blank"}: create videos using React  
-  - [WebNapkin](https://webnapkin.netlify.app/){:target="_blank"}: a simple drawing tool (work-in-progress) made in React  
   - Optimizing images (for free): [**TinyPNG**](https://tinypng.com/){:target="_blank"} *(also **supports other formats such as JPG** not just PNG)*  
     - If you have a Mac, you can also use [ImageOptim](https://imageoptim.com/mac){:target="_blank"}  
   - How can you create a new React project?  
@@ -487,7 +481,6 @@ export default function ShoppingList() {
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 ### Extra Resources
 
 - [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
@@ -632,7 +625,6 @@ export default function ShoppingList() {
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week21/progress/progress.draft.w21.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
