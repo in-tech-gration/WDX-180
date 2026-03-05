@@ -25,7 +25,7 @@ title: Week 21 | React JS
 
   </h2>
 
-  <span>Updated: 2/3/2026</span>
+  <span>Updated: 5/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
