@@ -958,48 +958,17 @@ button {
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Lecture Topics (**thanks to Aris Giotis ❤️**) 
-    - Question: What is the best tech stack: 23:10
-    - Question: Translation API: 34:33
-    - React questions: 37:39
-    - Question: Resource about spread syntax: 40:48
-    - Question: PropTypes: 50:16
-    - classNames vs class: 58:48
-    - console.log to fully trace your app: 1:13:08
-    - Props drilling: 1:15:14
-    - Spread operator: 1:20:01
-    - 2 syntaxes: 1:23:21
-    - No fragments for single element: 1:37:27
-    - CSS classes & inline styling: 1:38:00
-    - Explicit CSS import: 1:39:50
-    - Global CSS & static + dynamic HTML: 1:41:57
-    - Use CSS classes: 1:42:40
-
-  - **Part 2:** Lecture Topics (**thanks to Aris Giotis ❤️**)
-    - htmlFor attribute: 02:00
-    - Codepen: Cookie notice snippet: 04:39
-    - HTML to JSX online transformer: 05:41
-    - JSX commenting: 06:33
-    - HTML to JSX extension: 09:34
-    - Inline styling: 12:46
-    - Components can have any custom props: 25:29
-    - camelCase: 27:46
-    - Why use inline styling in React: 33:30
-    - JSX is transformed into HTML: 41:53
-    - Good practice: Avoid more cognitive load, use positive statements: 48:15
-    - Undraw: 01:02:50
-    - Importing img: 01:11:47
-    - Question: Template literals: 01:21:49
-    - HTML entity for apostrophe: 01:31:28
-    - Conditional Rendering: 01:31:59
-    - One solution: 01:31:59
-    - Use && or ? : operators: 01:36:09
-    - Question: When to use each operator: 01:40:50
-    - Guard operator: 01:43:10
-    - How && is working inside if statement: 01:48:10
-    - Careful with falsy values in JSX: 01:51:07
-    - MDN falsy values: 01:52:23
-    - Exercise description: 01:58:16
+  - Lecture Topics 
+    - classNames vs class
+    - Props drilling
+    - Spread operator
+    - CSS classes & inline styling
+    - Explicit CSS import
+    - Global CSS & static + dynamic HTML
+    - htmlFor attribute
+    - JSX commenting
+    - Importing img
+    - Conditional Rendering
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day05/code){:target="_blank"}
 
