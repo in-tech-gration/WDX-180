@@ -25,11 +25,11 @@ title: Week 22 | React JS
 
   </h2>
 
-  <span>Updated: 13/3/2025</span>
+  <span>Updated: 9/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 22 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -39,6 +39,13 @@ title: Week 22 | React JS
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -59,26 +66,25 @@ title: Week 22 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Video highlights (thanks to Aris Giotis ❤️):
-    - `npm install` and npm packages 03:03
-    - Lazy loading for `imports` 05:17
-    - Importing local files 08:26
-    - Importing npm packages 09:21
-    - The `package.json` file: 10:44
-    - The `npm init -y` command: 12:15
-    - The `node_modules` folder: 15:47
-    - The `npm install -g` command: 17:57
-    - About dependencies: 25:15
-    - CSS import: 30:32
-    - Question: .gitignore file: 35:11
-    - `node_modules` is a local thing: 35:45
-    - Inject 2 React apps to the same codebase: 37:25
+  - Component props & PropTypes
+  - Injecting 2 React apps to the same codebase: 
+  - 3rd party package: tailwind CSS 
+  - Importing Tailwind via CDN 
+  - Importing Tailwind via `npx tailwindcss init -p`
+  - Looping in JSX
+  - Exercise
 
-  - **Part 2:** Video highlights (thanks to Aris Giotis ❤️):
-    - 3rd party package: tailwind CSS: 00:11
-    - Importing Tailwind via CDN: 06:11
-    - Importing Tailwind via `npx tailwindcss init -p`: 17:54
-    - Exercise: 56:33
+  - `npm install` and npm packages 
+  - Lazy loading for `imports` 
+  - Importing local files 
+  - Importing npm packages 
+  - The `package.json` file 
+  - The `npm init -y` command 
+  - The `node_modules` folder 
+  - The `npm install -g` command 
+  - About dependencies
+  - CSS import
+  - `node_modules` is a local thing
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week22/assets/day01/code){:target="_blank"}
 
@@ -135,7 +141,6 @@ title: Week 22 | React JS
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -179,7 +184,6 @@ title: Week 22 | React JS
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week22/progress/progress.draft.w22.d02.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -254,7 +258,6 @@ title: Week 22 | React JS
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week22/progress/progress.draft.w22.d03.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
