@@ -25,7 +25,7 @@ title: Week 22 | React JS
 
   </h2>
 
-  <span>Updated: 9/3/2026</span>
+  <span>Updated: 11/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -210,8 +210,8 @@ title: Week 22 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** DOM, VirtualDOM and State in React
-  - **Part 2:** Rendering Components and useState
+  - DOM, VirtualDOM and State in React
+  - Rendering Components and the `useState` hook
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week22/assets/day03/code){:target="_blank"}
 
