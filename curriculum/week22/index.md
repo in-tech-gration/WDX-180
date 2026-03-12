@@ -25,7 +25,7 @@ title: Week 22 | React JS
 
   </h2>
 
-  <span>Updated: 11/3/2026</span>
+  <span>Updated: 13/3/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -323,17 +323,14 @@ title: Week 22 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Video highlights (thanks to Aris Giotis ❤️):
-    - Q&A: Dates, timezones, setTimeout & setInterval
-    - Accessing previous and next State
-    - Cycling through values and the Modulo % operator
-    - Closures
-    - Debugging
-    - Tracking Component re-rendering
-
-  - **Part 2:** Video highlights (thanks to Aris Giotis ❤️):
-    - Closures and stale State
-    - Routing, a high-level overview
+  - Q&A: Dates, timezones, setTimeout & setInterval
+  - Accessing previous and next State
+  - Cycling through values and the Modulo % operator
+  - Closures
+  - Debugging
+  - Tracking Component re-rendering
+  - Closures and stale State
+  - Routing, a high-level overview
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week22/assets/day05/code){:target="_blank"}
 
