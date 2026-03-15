@@ -66,8 +66,8 @@ title: Week 23 | React JS
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** useState Hook
-  - **Part 2:** useRef & useEffect Hooks
+  - `useState` Hook
+  - `useRef` & `useEffect` Hooks
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week23/assets/day01/code){:target="_blank"}
 

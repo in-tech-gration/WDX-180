@@ -1,0 +1,4 @@
+---
+exclude_files_from_deletion:
+- v1.0.md
+- WEEKEND.md
