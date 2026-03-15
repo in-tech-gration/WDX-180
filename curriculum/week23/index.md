@@ -84,7 +84,10 @@ title: Week 23 | React JS
     - **A family of built-in functions in React that:**  
       - **are prefixed with “use”: useState, useRef, useEffect**  
       - **should ONLY be used inside Component functions**  
-      - **should NOT be conditionally executed**  
+      - **should NOT be conditionally executed**
+
+  ![](./assets/react-hooks-lifecycle-screenshot.jpg)
+
   - **JavaScript:**  
     - **Highly recommended: [https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md){:target="_blank"}**  
       - I don’t believe *“Async and Performance”* and *“ES6 and Beyond”* are relevant today as they are a bit outdated these days, so you can skip them.  
