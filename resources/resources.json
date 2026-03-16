@@ -4468,6 +4468,31 @@
       "language": [
         "en"
       ]
+    },
+    "typescript-cheat-sheets": {
+      "title": "TypeScript Cheat Sheets",
+      "type": "Cheatsheet",
+      "format": "application/zip",
+      "identifier": "https://www.typescriptlang.org/cheatsheets/",
+      "download": "curriculum/modules/javascript/typescript/docs/typescript-cheat-sheets.zip",
+      "size": 4167053,
+      "tags": [
+        "typescript",
+        "cheatsheet"
+      ]
+    },
+    "typescript-notes-for-professionals": {
+      "title": "TypeScript Notes for Professionals",
+      "type": "Official Documentation",
+      "format": "application/pdf",
+      "identifier": "https://www.goalkicker.com/TypeScriptBook2/TypeScriptNotesForProfessionals.pdf",
+      "download": "curriculum/modules/javascript/typescript/docs/TypeScriptNotesForProfessionals.pdf",
+      "size": 1199247,
+      "tags": [
+        "typescript",
+        "documentation",
+        "notes"
+      ]
     }
   },
   "creators": {}
