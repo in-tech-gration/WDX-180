@@ -49,7 +49,7 @@ Below, you can find a small list of questions around React that you can use for 
 
 - You can use a drawing tool like [Excalidraw](){:target="_blank"} to draw the React Component tree and State hierarchy.
 
-Here's one suggested architecture for the app:
+Here's one suggested architecture for the app using the [Context API](https://react.dev/learn/passing-data-deeply-with-context#context-an-alternative-to-passing-props)_blank. If you don't feel too confident working with the [Context API](https://react.dev/learn/passing-data-deeply-with-context#context-an-alternative-to-passing-props){:target="_blank"} at this point, you can try passing the state through [props](https://react.dev/learn/passing-props-to-a-component){:target="_blank"}:
 
 ![](./assets/Quiz.Components.01.excalidraw.png)
 
