@@ -185,6 +185,20 @@ Good luck! 😎
 
   Continue working on the React Coding Challenge (Quiz) to complete the 2nd part of WDX180.
 
+  If you want to take a short break from the coding challenge and dive deeper into React's internals, take a look at some (or all) of the following posts:
+
+  - [You might not need useEffect()](https://www.youtube.com/watch?v=V1f8MOQiHRw){:target="_blank"}
+
+  - [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect){:target="_blank"}
+
+  - [Why I Don’t Use useEffect In My React Components](https://www.youtube.com/watch?v=MFj_S0Nof90){:target="_blank"}
+
+  - [Every Beginner React Developer Makes This Mistake With State](https://www.youtube.com/watch?v=tz0fDABt67g){:target="_blank"}
+
+  - [You're Doing React Hooks Wrong, Probably](https://www.youtube.com/watch?v=56_OUG-0wgI){:target="_blank"}
+
+  The least you can do for now, is bookmark all of these resources and dedicate a few hours to study them at some point.
+
 <!-- Summary -->
 
 ### Exercises
