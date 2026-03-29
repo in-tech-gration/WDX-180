@@ -66,8 +66,7 @@ title: Week 25 | Advanced JavaScript - Web APIs
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Web Storage APIs
-  - **Part 2:** Web Storage APIs
+  - Web Storage APIs: `localStorage` and `sessionStorage`
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week25/assets/day01/code/index.html){:target="_blank"} and all other assets [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week25/assets){:target="_blank"}.
 
@@ -222,8 +221,8 @@ title: Week 25 | Advanced JavaScript - Web APIs
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** The Geolocation API
-  - **Part 2:** Combining the Geolocation API with OpenStreet Maps.
+  - The Geolocation API
+  - Combining the Geolocation API with OpenStreet Maps.
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week25/assets/day03/code){:target="_blank"}
 
@@ -366,8 +365,7 @@ title: Week 25 | Advanced JavaScript - Web APIs
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Local Storage & Media Web APIs
-  - **Part 2:** Media Web API
+  - Media Web API
 
   Key points:
 
