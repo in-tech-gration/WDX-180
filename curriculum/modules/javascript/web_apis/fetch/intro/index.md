@@ -39,7 +39,7 @@ title: Introduction to Fetch API
 
 ### Extra Resources
 
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+  - Watch: [Get started with the Fetch API](https://www.youtube.com/watch?v=Ncs6QI4Z5BE){:target="_blank"} (8min)
 
 ### Sources and Attributions
 
