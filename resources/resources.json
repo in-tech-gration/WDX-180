@@ -4,7 +4,9 @@
     "ejs-cheatsheet": {
       "title": "EJS (Embedded JavaScript) Cheatsheet",
       "type": "Cheatsheet",
-      "creator": ["https://github.com/Fechin"],
+      "creator": [
+        "https://github.com/Fechin"
+      ],
       "identifier": "https://github.com/in-tech-gration/WDX-180/blob/main/resources/cheatsheets/ejs-cheatsheet.md",
       "terms": [
         "Templating"
@@ -4492,6 +4494,28 @@
         "typescript",
         "documentation",
         "notes"
+      ]
+    },
+    "get-started-with-the-fetch-api": {
+      "type": "YouTube",
+      "duration": 514,
+      "title": "Get started with the Fetch API",
+      "date": "17/07/2017",
+      "youtube": {
+        "id": "Ncs6QI4Z5BE",
+        "channel_id": "UCTiRXlOapSWfu02rtOdaGvA",
+        "channel_title": "Jad Joubran",
+        "thumbnail_url": "https://i.ytimg.com/vi/Ncs6QI4Z5BE/sddefault.jpg"
+      },
+      "tags": [
+        "fetch",
+        "javascript",
+        "best practices",
+        "modern web",
+        "ES2015"
+      ],
+      "language": [
+        "en"
       ]
     }
   },
