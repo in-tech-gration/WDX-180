@@ -291,8 +291,7 @@ title: Week 26 | Advanced JavaScript - Web APIs
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** SVG
-  - **Part 2:** Canvas API & ImageData
+  - Canvas API & ImageData
 
   You can find the lecture code along with the SVG files [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week26/assets/day05/code){:target="_blank"}
 
