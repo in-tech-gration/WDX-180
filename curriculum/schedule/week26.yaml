@@ -2,20 +2,21 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Advanced JavaScript - Web APIs"
 header_image: week26/kelli-tungay-Sj0nhVIb4eY-unsplash.jpg
+version: 2.0
 schedule: 
   days:
-    1: # 
+    1: # Canvas API
       # file://./../modules/javascript/misc/_w26d01/_w26d01.md
       module: javascript/misc/_w26d01/_w26d01.md
-    2: # 
+    2: # Canvas API
       # file://./../modules/javascript/misc/_w26d02/_w26d02.md
       module: javascript/misc/_w26d02/_w26d02.md
-    3: # 
+    3: # Canvas API
       # file://./../modules/javascript/misc/_w26d03/_w26d03.md
       module: javascript/misc/_w26d03/_w26d03.md
-    4: # 
+    4: # Canvas API
       # file://./../modules/javascript/misc/_w26d04/_w26d04.md
       module: javascript/misc/_w26d04/_w26d04.md
-    5: # 
+    5: # Canvas API
       # file://./../modules/javascript/misc/_w26d05/_w26d05.md
       module: javascript/misc/_w26d05/_w26d05.md
