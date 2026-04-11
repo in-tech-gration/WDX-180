@@ -5,16 +5,16 @@ header_image: week27/Web.APIs.png
 version: 2.0
 schedule: 
   days:
-    1: # 
+    1: # Debugging Canvas API & Drag and Drop API
       # file://./../modules/javascript/misc/_w27d01/_w27d01.md
       module: javascript/misc/_w27d01/_w27d01.md
-    2: # 
+    2: # Drag and Drop API & A11y
       # file://./../modules/javascript/misc/_w27d02/_w27d02.md
       module: javascript/misc/_w27d02/_w27d02.md
-    3: # 
+    3: # FileReader API
       # file://./../modules/javascript/misc/_w27d03/_w27d03.md
       module: javascript/misc/_w27d03/_w27d03.md
-    4: # 
+    4: # Practice Day
       # file://./../modules/javascript/misc/_w27d04/_w27d04.md
       module: javascript/misc/_w27d04/_w27d04.md
     5: # 

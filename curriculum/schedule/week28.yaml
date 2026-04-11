@@ -5,18 +5,18 @@ header_image: week28/battleship-game.png
 version: 2.0
 schedule: 
   days:
-    1: # 
+    1: # Battleship Game
       # file://./../modules/javascript/misc/_w28d01/_w28d01.md
       module: javascript/misc/_w28d01/_w28d01.md
-    2: # 
+    2: # WebSockets
       # file://./../modules/javascript/misc/_w28d02/_w28d02.md
       module: javascript/misc/_w28d02/_w28d02.md
-    3: # 
+    3: # Data Wrangling
       # file://./../modules/javascript/misc/_w28d03/_w28d03.md
       module: javascript/misc/_w28d03/_w28d03.md
-    4: # 
+    4: # Practice Day
       # file://./../modules/javascript/misc/_w28d04/_w28d04.md
       module: javascript/misc/_w28d04/_w28d04.md
-    5: # 
+    5: # Games using Canvas API
       # file://./../modules/javascript/misc/_w28d05/_w28d05.md
       module: javascript/misc/_w28d05/_w28d05.md
