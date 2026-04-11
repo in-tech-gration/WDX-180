@@ -11,12 +11,12 @@ schedule:
     2: # Drag and Drop API & A11y
       # file://./../modules/javascript/misc/_w27d02/_w27d02.md
       module: javascript/misc/_w27d02/_w27d02.md
-    3: # FileReader API
-      # file://./../modules/javascript/misc/_w27d03/_w27d03.md
-      module: javascript/misc/_w27d03/_w27d03.md
-    4: # Practice Day
-      # file://./../modules/javascript/misc/_w27d04/_w27d04.md
-      module: javascript/misc/_w27d04/_w27d04.md
-    5: # Solving Software Challenges
+    3: # Solving Software Challenges
       # file://./../modules/javascript/misc/_w27d05/_w27d05.md
       module: javascript/misc/_w27d05/_w27d05.md
+    4: # FileReader API
+      # file://./../modules/javascript/misc/_w27d03/_w27d03.md
+      module: javascript/misc/_w27d03/_w27d03.md
+    5: # Practice Day
+      # file://./../modules/javascript/misc/_w27d04/_w27d04.md
+      module: javascript/misc/_w27d04/_w27d04.md

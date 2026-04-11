@@ -135,11 +135,64 @@ title: Week 27 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 3 | FileReader API -->
+<!-- Week 27 - Day 3 | Solving Software Challenges -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 3</span> | FileReader API</h2>
+      <span class="summary-day">Week 27 - Day 3</span> | Solving Software Challenges</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  > "Please build 'this' thing!"
+
+
+
+  How do you approach a new software challenge? How do you solve a novel problem? Here are some **tips and resources for solving software challenges/problems**:
+
+  - **Break/split the problem into smaller problems/tasks**  
+  - **Work on a simpler version of a problem**  
+    - This rule applies both to the original problem and the sub-problems  
+    - Stop and think whether the code that you wrote will scale and work equally well with a more advanced version of the problem   
+  - Plan & design  
+    - Use diagrams  
+    - Use pen and paper  
+    - Think outside the code  
+  - Whenever you are working on a challenge that involves something that will be displayed to the user(s), you can begin by working out the problem of displaying the app  
+    - For displaying things, Frontend devs have a lot of opportunities and lots of different technologies at their hand:  
+      - SVG (XML-based Vector graphics)  
+      - HTML + CSS  
+      - Canvas API  
+      - Images (bitmap)  
+      - Media such as `<video />`, `<audio />`  
+      - WebGL (?)
+
+  Study: [How to Solve Problems](https://www.naftaliharris.com/blog/problem-solving/){:target="_blank"}
+
+  Study: [Coding Math: Episode 58 - Array Math](https://www.youtube.com/watch?v=75Cbkoo4Gwg){:target="_blank"}
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 27 - Day 4 | FileReader API -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 27 - Day 4</span> | FileReader API</h2>
   </summary>
 
 ### Schedule
@@ -186,7 +239,7 @@ title: Week 27 | Advanced JavaScript
 
   Build on the examples we’ve worked on and share any questions or apps that you’ve built.
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d03.csv**
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week27/progress/progress.draft.w27.d04.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
@@ -198,11 +251,11 @@ title: Week 27 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 4 | Practice Day -->
+<!-- Week 27 - Day 5 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 4</span> | Practice Day</h2>
+      <span class="summary-day">Week 27 - Day 5</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -214,59 +267,6 @@ title: Week 27 | Advanced JavaScript
 
   Practice on the concepts that we've covered so far this week
   and build upon them.
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 27 - Day 5 | Solving Software Challenges -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 27 - Day 5</span> | Solving Software Challenges</h2>
-  </summary>
-
-### Schedule
-
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  > "Please build 'this' thing!"
-
-
-
-  How do you approach a new software challenge? How do you solve a novel problem? Here are some **tips and resources for solving software challenges/problems**:
-
-  - **Break/split the problem into smaller problems/tasks**  
-  - **Work on a simpler version of a problem**  
-    - This rule applies both to the original problem and the sub-problems  
-    - Stop and think whether the code that you wrote will scale and work equally well with a more advanced version of the problem   
-  - Plan & design  
-    - Use diagrams  
-    - Use pen and paper  
-    - Think outside the code  
-  - Whenever you are working on a challenge that involves something that will be displayed to the user(s), you can begin by working out the problem of displaying the app  
-    - For displaying things, Frontend devs have a lot of opportunities and lots of different technologies at their hand:  
-      - SVG (XML-based Vector graphics)  
-      - HTML + CSS  
-      - Canvas API  
-      - Images (bitmap)  
-      - Media such as `<video />`, `<audio />`  
-      - WebGL (?)
-
-  Study: [How to Solve Problems](https://www.naftaliharris.com/blog/problem-solving/){:target="_blank"}
-
-  Study: [Coding Math: Episode 58 - Array Math](https://www.youtube.com/watch?v=75Cbkoo4Gwg){:target="_blank"}
 
 <!-- Summary -->
 
