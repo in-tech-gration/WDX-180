@@ -68,7 +68,7 @@
 
   - [**Week 25**: Web APIs](week25/index.md)
   - [**Week 26**: Canvas API](week26/index.md)
-  - [**Week 27**: Advanced JavaScript](week27/index.md)
+  - [**Week 27**: More Web APIs](week27/index.md)
   - [**Week 28**: Building a Battleship Game in JS](week28/index.md)
   - [**Week 29**: Data Structures & Algorithms](week29/index.md)
   - [**Week 30**: TypeScript](week30/index.md)
