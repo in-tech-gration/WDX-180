@@ -1,11 +1,11 @@
 ---
-title: Week 27 | Advanced JavaScript
+title: Week 27 | More Web APIs
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 27-Advanced JavaScript | slugify }}">
-  <span class="week-prefix">Week 27 |</span> Advanced JavaScript
+<h1 id="{{ Week 27-More Web APIs | slugify }}">
+  <span class="week-prefix">Week 27 |</span> More Web APIs
 </h1>
 
 <img src="assets/Web.APIs.png" />
@@ -25,7 +25,7 @@ title: Week 27 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 11/4/2026</span>
+  <span>Updated: 12/4/2026</span>
 
   <h2 class="week-controls__next_week">
 

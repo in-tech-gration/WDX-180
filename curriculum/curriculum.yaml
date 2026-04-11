@@ -140,7 +140,7 @@ Syllabus:
           open: true
         27: # file:///./schedule/week27.yaml
           # title: "Node.js 3 & Relational Databases"
-          title: "Advanced JavaScript"
+          title: "More Web APIs"
           open: true
         28: # file:///./schedule/week28.yaml
           # title: "Express.js, REST APIs & GraphQL"
