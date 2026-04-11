@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Advanced JavaScript"
 header_image: week27/battleship.png
+version: 2.0
 schedule: 
   days:
     1: # 
