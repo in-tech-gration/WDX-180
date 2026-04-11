@@ -8,7 +8,7 @@ title: Week 27 | Advanced JavaScript
   <span class="week-prefix">Week 27 |</span> Advanced JavaScript
 </h1>
 
-<img src="assets/battleship.png" />
+<img src="assets/Web.APIs.png" />
 
 <div class="week-controls">
 
