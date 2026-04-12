@@ -66,8 +66,7 @@ title: Week 31 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** TypeScript, Objects Constructors & Instances
-  - **Part 2:** TypeScript, Objects Constructors & Instances
+  - TypeScript, Objects Constructors & Instances
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day01/code){:target="_blank"} and the diagram [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week31/assets/day01/20.05.2024-Object.Hierarchies.png){:target="_blank"}.
 
@@ -187,8 +186,8 @@ title: Week 31 | Advanced JavaScript
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Primitive Objects
-  - **Part 2:** Object Wrappers, Falsy Values & Sets
+  - Primitive Objects
+  - Object Wrappers, Falsy Values & Sets
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week31/assets/day03/code/index.js){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day03){:target="_blank"}.
 
