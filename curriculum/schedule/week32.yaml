@@ -7,17 +7,17 @@ version: 2.0
 schedule: 
   days:
     1: # Testing
+      # file://./../modules/javascript/misc/_w31d05/_w31d05.md
+      module: javascript/misc/_w31d05/_w31d05.md
+    2: # Testing
       # file://./../modules/javascript/misc/_w32d01/_w32d01.md
       module: javascript/misc/_w32d01/_w32d01.md
-    2: # Practice Day
+    3: # Practice Day
       # file://./../modules/javascript/misc/_w32d02/_w32d02.md
       module: javascript/misc/_w32d02/_w32d02.md
-    3: # Testing & Async Mysteries
+    4: # Testing & Async Mysteries
       # file://./../modules/javascript/misc/_w32d03/_w32d03.md
       module: javascript/misc/_w32d03/_w32d03.md
-    4: # The Different Types of JS Functions Explained
-      # file://./../modules/javascript/misc/_w32d04/_w32d04.md
-      module: javascript/misc/_w32d04/_w32d04.md
     5: # E2E Testing & TDD
       # file://./../modules/javascript/misc/_w32d05/_w32d05.md
       module: javascript/misc/_w32d05/_w32d05.md
