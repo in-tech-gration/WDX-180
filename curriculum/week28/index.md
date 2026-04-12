@@ -66,8 +66,8 @@ title: Week 28 | Battleship Game
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** More about Promises & the Promise Constructor
-  - **Part 2:** Chaining Promises
+  - More about Promises & the Promise Constructor
+  - Chaining Promises
 
   You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promises.js){:target="_blank"} and [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promised.to.answer.questions.js){:target="_blank"}
 
