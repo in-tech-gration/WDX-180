@@ -25,7 +25,7 @@ title: Week 28 | Battleship Game
 
   </h2>
 
-  <span>Updated: 11/4/2026</span>
+  <span>Updated: 12/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -49,11 +49,11 @@ title: Week 28 | Battleship Game
 
 ---
 
-<!-- Week 28 - Day 1 | Battleship Game - Part 2 -->
+<!-- Week 28 - Day 1 | Promises -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 1</span> | Battleship Game - Part 2</h2>
+      <span class="summary-day">Week 28 - Day 1</span> | Promises</h2>
   </summary>
 
 ### Schedule
@@ -66,51 +66,28 @@ title: Week 28 | Battleship Game
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** We continue on our Battleship game by coming up with more requirements and game rules and ways and ideas to implement them. We also take a look at error handling and creating custom errors by extending the native `Error` constructor in JavaScript. Last, but not least, we explore the IIFE pattern: Immediately Invoked Function Expression, which is one of the most powerful and widely used JS patterns.
+  - **Part 1:** More about Promises & the Promise Constructor
+  - **Part 2:** Chaining Promises
 
-  - **Part 2:** We continue our discussion on the IIFE pattern, debug some Battleship algorithm implementation that deals with the game board and try to come up with some abstractions that will help us deal with the complexity of the game requirements.
-
-  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week28/assets/day01/code){:target="_blank"}
-
-  **Lecture Notes:**
-
-  **Questions**
-
-  - How can we limit the number of exposed global variables?  
-    - Use Modules (import/export)  
-  - How can we protect our code from global variable conflicts?  
-    - Avoid common names (e.g. user, password, secret, initGame, initApp, init)  
-    - Prefix your global variables with something very specific, e.g. bgameUser, bgameApp, etc.
-
-  **References & Resources:**
-
-  - Creating custom Errors  
-    - [Custom errors, extending Error](https://javascript.info/custom-errors){:target="_blank"}  
-  - [IIFE: Immediately Invoked Function Expression](https://developer.mozilla.org/en-US/docs/Glossary/IIFE){:target="_blank"}  
-  - **getBoundingClientRect()**: “An object providing information about the size of an element and its position relative to the viewport” [(MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect){:target="_blank"}  
-    - returns [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect){:target="_blank"}  
-  - Debugging techniques:  
-    - Comment/Uncomment lines and check and compare behavior (before/after)   
-    - Change the order of lines and see what happens  
-    - `console.log` everything!  
-    - Manually trace the code
-
-  **Tips for production apps:**  
-    - Handle errors  
-    - Minimize the code required to run the app  
+  You can find the lecture code [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promises.js){:target="_blank"} and [here](https://github.com/in-tech-gration/build-a-cms-2024/blob/1be5da1820e55ec486aa9d7adfb60a3d53ed57bc/learn/promised.to.answer.questions.js){:target="_blank"}
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
 
-### Extra Resources
+  - **Study:** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise){:target="_blank"}  
+    - It’s important that you go through the whole document and probably more than once to fully understand the Promise concept.  
+      - Equally important to run all the examples mentioned there and tweak them to experiment with variations to get an even better and deeper understanding.  
+    - Explore number `#11` from the promises.js reference  
+      - Ref: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch){:target="_blank"}  
+      - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise/all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all){:target="_blank"}  
+      - Check all the static `Promise.*` methods
 
-  ---
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week28/progress/progress.draft.w28.d01.csv**
 
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
-  _Photo by []()_
-
+<!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
   
@@ -132,9 +109,7 @@ title: Week 28 | Battleship Game
 
 ### Study Plan
 
-  Here's an interesting question: how will our human battleship players be able to play the game together online?
-
-  There are quite a few options available, but one of the most prominent technologies these days is **WebSockets**.
+  One of the most prominent technologies that allow the Frontend to establish a two-way communication with the Backend is `WebSockets`. 
 
   ![](./assets/websockets.png)
 
@@ -150,7 +125,7 @@ title: Week 28 | Battleship Game
 
   _(From the [Node.js](https://nodejs.org/en/learn/getting-started/websocket#what-is-a-websocket){:target="_blank"} documentation)_
 
-  Here are a few resources for studying WebSockets today and experimenting with some code that will prepare us for the Battleship implementation:
+  Here are a few resources for studying WebSockets today and experimenting with some code:
 
   - [WebSockets Explained](https://www.youtube.com/embed/2Nt-ZrNP22A){:target="_blank"} 
 
@@ -224,10 +199,6 @@ title: Week 28 | Battleship Game
   Practice on the concepts that we've covered so far this week
   and build upon them.
 
-  Focus on finding solutions to the Battleship game requirements,
-  improving and refactoring the code to make it more readable, 
-  and ready to be scaled.
-
 <!-- Summary -->
 
 <!-- Exercises -->
@@ -240,11 +211,11 @@ title: Week 28 | Battleship Game
 
 <hr class="mt-1">
 
-<!-- Week 28 - Day 5 | Games using Canvas API -->
+<!-- Week 28 - Day 5 | JS Functions & Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 28 - Day 5</span> | Games using Canvas API</h2>
+      <span class="summary-day">Week 28 - Day 5</span> | JS Functions & Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -254,13 +225,8 @@ title: Week 28 | Battleship Game
 
 ### Study Plan
 
-  It's a great idea to study some tutorial videos on building games that are based on the Canvas API and grab some ideas and good practices such as using the prototype and more.
-
-  Here are two fantastic videos to study and replicate:
-
-  [Mary Live Codes A JavaScript Game From Scratch](https://www.youtube.com/watch?v=hbKN-9o5_Z0){:target="_blank"}
-
-  [Coding an HTML5 Canvas Game (Pong) with JS in 5 min 30 sec](https://www.youtube.com/watch?v=KoWqdEACyLI){:target="_blank"}
+  Take a few minutes to check out [this video](https://www.youtube.com/watch?v=cMt9U6kCWsM){:target="_blank"} about the different types of JS functions
+  and practice by creating at least 2 or 3 examples of your own for each mode.
 
 <!-- Summary -->
 
