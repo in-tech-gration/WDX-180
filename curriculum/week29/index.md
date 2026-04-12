@@ -1,14 +1,14 @@
 ---
-title: Week 29 | Battleship Game - Round 2
+title: Week 29 | Algorithms & Data Structures
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 29-Battleship Game - Round 2 | slugify }}">
-  <span class="week-prefix">Week 29 |</span> Battleship Game - Round 2
+<h1 id="{{ Week 29-Algorithms & Data Structures | slugify }}">
+  <span class="week-prefix">Week 29 |</span> Algorithms & Data Structures
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/algorithms.and.data.structures.png" />
 
 <div class="week-controls">
 
@@ -25,11 +25,11 @@ title: Week 29 | Battleship Game - Round 2
 
   </h2>
 
-  <span>Updated: 9/5/2025</span>
+  <span>Updated: 12/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 29 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -40,54 +40,20 @@ title: Week 29 | Battleship Game - Round 2
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
-<!-- Week 29 - Day 1 | Battleship Game -->
+<!-- Week 29 - Day 1 | Data Structures & Algorithms - Part 1 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 29 - Day 1</span> | Battleship Game</h2>
-  </summary>
-
-### Schedule
-
-  - **Watch the lectures**
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - Building a Battleship game with JavaScript - Part 5 
-  - Building a Battleship game with JavaScript - Part 6
-
-  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week29/assets/day01/code){:target="_blank"}
-
-  **Study & Practice**
-
-  - Think about a way to display the columns and rows (A, B, C... 1, 2, 3)  
-    - Start by hardcoding the cols/rows, then implement a dynamic way that scales  
-    - Consider both HTML and Canvas solutions and think about the pros and cons of each solution  
-    - Try to leave the player canvas functionality and code out of it. The decorative code that displays the cols and rows should not affect the **main game** functionality.
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 29 - Day 2 | Data Structures & Algorithms - Part 1 -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 29 - Day 2</span> | Data Structures & Algorithms - Part 1</h2>
+      <span class="summary-day">Week 29 - Day 1</span> | Data Structures & Algorithms - Part 1</h2>
   </summary>
 
 ### Schedule
@@ -135,10 +101,9 @@ title: Week 29 | Battleship Game - Round 2
   Make sure to implement and test every single data structure and algorithm
   on your local environment, either in the Browser or through Node.js.
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week29/progress/progress.draft.w29.d02.csv**
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week29/progress/progress.draft.w29.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -148,11 +113,11 @@ title: Week 29 | Battleship Game - Round 2
 
 <hr class="mt-1">
 
-<!-- Week 29 - Day 3 | Data Structures & Algorithms - Part 2 -->
+<!-- Week 29 - Day 2 | Data Structures & Algorithms - Part 2 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 29 - Day 3</span> | Data Structures & Algorithms - Part 2</h2>
+      <span class="summary-day">Week 29 - Day 2</span> | Data Structures & Algorithms - Part 2</h2>
   </summary>
 
 ### Schedule
@@ -186,10 +151,38 @@ title: Week 29 | Battleship Game - Round 2
   Make sure to implement and test every single data structure and algorithm
   on your local environment, either in the Browser or through Node.js.
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week29/progress/progress.draft.w29.d03.csv**
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week29/progress/progress.draft.w29.d02.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 29 - Day 3 | Practice Day -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 29 - Day 3</span> | Practice Day</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Practice on the concepts that we've covered so far this week
+  and build upon them.
+
+<!-- Summary -->
+
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 
@@ -239,7 +232,6 @@ title: Week 29 | Battleship Game - Round 2
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -248,71 +240,26 @@ title: Week 29 | Battleship Game - Round 2
 
 <hr class="mt-1">
 
-<!-- Week 29 - Day 5 | Battleship Game: Final Remarks -->
+<!-- Week 29 - Day 5 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 29 - Day 5</span> | Battleship Game: Final Remarks</h2>
+      <span class="summary-day">Week 29 - Day 5</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
 
-  - **Watch the lectures**
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
 ### Study Plan
 
-  Your instructor will share the video lectures with you. Here are the topics covered:
-
-  - **Battleship Game - Part 7** 
-  - **Battleship Game - Part 8**
-
-  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week29/assets/day05/code){:target="_blank"}
-
-  **Lecture Notes:**
-
-  **Lecture Questions:**
-
-  - Should I combine Tailwind and Bootstrap?  
-    - **Be very careful** and use it only as a **last resort** (my take: avoid)  
-    - Try UI Kits like [Shadcn/ui](https://ui.shadcn.com/){:target="_blank"}, Material UI, etc.  
-      - Search for CSS UI Kits or Tailwind UI Kits or Bootstrap UI Kits  
-    - Search for Tailwind-based Components (or sets of Components), or Tailwind-based Templates, etc.  
-    - If you are using React, you can try CSS Modules or other CSS utilities.  
-    - You can try and find how you can confine some CSS (e.g. a framework like Bootstrap) under a specific class.  
-    - Do a research on native CSS “scoping”:  
-      - [https://developer.mozilla.org/en-US/docs/Web/CSS/:scope](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope){:target="_blank"}  
-      - [https://developer.mozilla.org/en-US/docs/Web/CSS/@scope#browser_compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/@scope#browser_compatibility){:target="_blank"}
-
-  **References & Resources:**
-
-  - **Ways to avoid API keys and other sensitive information leaking to a public/private repo**  
-    - Use a script or a library that checks for sensitive information before pushing  
-    - Check your Version Control provider (BitBucket, GitLab, GitHub) for an option:  
-      - [GitHub: About secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning){:target="_blank"}  
-    - Use [environmental variables](https://kinsta.com/knowledgebase/what-is-an-environment-variable/){:target="_blank"} but be careful as there are types of env variables that have some code pushed  
-    - Use **.gitignore** for preventing certain files or folders getting pushed  
-    - Whenever you detect a leakage or a breach you should always revoke/cancel your keys and update your passwords.  
-  - [https://haveibeenpwned.com/](https://haveibeenpwned.com/){:target="_blank"}  
-  - Ways to work with immutable data (and avoid object reference bugs and errors, e.g. “shallow copy”)  
-    - Use a library ([https://immerjs.github.io/immer/](https://immerjs.github.io/immer/)){:target="_blank"}  
-    - **Object.freeze()** (make sure to check the deep vs shallow freeze sections)  
-    - Use [structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone){:target="_blank"}  
-  - [Nice selection of free graphics](https://www.freepik.com/search?format=search&last_filter=selection&last_value=1&query=ship&selection=1&type=vector){:target="_blank"}
+  Practice on the concepts that we've covered so far this week
+  and build upon them.
 
 <!-- Summary -->
 
-### Exercises
-
-  - Finish up the game!  
-    - Complete the mini version (2x2, with 2 ship types)  
-    - Move on to a 4x4 version, then test and continue to the 10x10 final version
-
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week29/progress/progress.draft.w29.d05.csv**
-
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
+<!-- Exercises -->
 
 <!-- Extra Resources -->
 
