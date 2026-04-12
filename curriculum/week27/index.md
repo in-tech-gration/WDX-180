@@ -259,11 +259,11 @@ title: Week 27 | More Web APIs
 
 <hr class="mt-1">
 
-<!-- Week 27 - Day 5 | Practice Day -->
+<!-- Week 27 - Day 5 | Games using Canvas API -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 27 - Day 5</span> | Practice Day</h2>
+      <span class="summary-day">Week 27 - Day 5</span> | Games using Canvas API</h2>
   </summary>
 
 ### Schedule
@@ -273,8 +273,13 @@ title: Week 27 | More Web APIs
 
 ### Study Plan
 
-  Practice on the concepts that we've covered so far this week
-  and build upon them.
+  It's a great idea to study some tutorial videos on building games that are based on the Canvas API and grab some ideas and good practices such as using the prototype and more.
+
+  Here are two fantastic videos to study and replicate:
+
+  [Mary Live Codes A JavaScript Game From Scratch](https://www.youtube.com/watch?v=hbKN-9o5_Z0){:target="_blank"}
+
+  [Coding an HTML5 Canvas Game (Pong) with JS in 5 min 30 sec](https://www.youtube.com/watch?v=KoWqdEACyLI){:target="_blank"}
 
 <!-- Summary -->
 
