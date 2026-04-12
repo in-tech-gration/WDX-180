@@ -1,14 +1,14 @@
 ---
-title: Week 28 | Battleship Game
+title: Week 28 | Advanced JavaScript
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 28-Battleship Game | slugify }}">
-  <span class="week-prefix">Week 28 |</span> Battleship Game
+<h1 id="{{ Week 28-Advanced JavaScript | slugify }}">
+  <span class="week-prefix">Week 28 |</span> Advanced JavaScript
 </h1>
 
-<img src="assets/battleship-game.png" />
+{{ SGEN:HEADER_IMAGE }}
 
 <div class="week-controls">
 

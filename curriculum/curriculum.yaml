@@ -144,7 +144,7 @@ Syllabus:
           open: true
         28: # file:///./schedule/week28.yaml
           # title: "Express.js, REST APIs & GraphQL"
-          title: "Building a Battleship Game in JS"
+          title: "Advanced JavaScript"
           open: true
         29: # file:///./schedule/week29.yaml
           # title: "Thinking out-of-the-box: CLI, Browser Extensions & ElectronJS"
