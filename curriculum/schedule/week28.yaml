@@ -5,9 +5,9 @@ header_image: week28/battleship-game.png
 version: 2.0
 schedule: 
   days:
-    1: # Battleship Game
-      # file://./../modules/javascript/misc/_w28d01/_w28d01.md
-      module: javascript/misc/_w28d01/_w28d01.md
+    1: # Promises
+      # file://./../modules/javascript/misc/_w35d03/_w35d03.md
+      module: javascript/misc/_w35d03/_w35d03.md
     2: # WebSockets
       # file://./../modules/javascript/misc/_w28d02/_w28d02.md
       module: javascript/misc/_w28d02/_w28d02.md
@@ -17,4 +17,6 @@ schedule:
     4: # Practice Day
       # file://./../modules/javascript/misc/_w28d04/_w28d04.md
       module: javascript/misc/_w28d04/_w28d04.md
-    # 5: # 
+    5: # The Different Types of JS Functions Explained
+      # file://./../modules/javascript/misc/_w32d04/_w32d04.md
+      module: javascript/misc/_w32d04/_w32d04.md

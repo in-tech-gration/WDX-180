@@ -295,11 +295,11 @@ title: Week 31 | Advanced JavaScript
 
 <hr class="mt-1">
 
-<!-- Week 31 - Day 5 | JS Functions & Practice Day -->
+<!-- Week 31 - Day 5 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 31 - Day 5</span> | JS Functions & Practice Day</h2>
+      <span class="summary-day">Week 31 - Day 5</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -309,8 +309,8 @@ title: Week 31 | Advanced JavaScript
 
 ### Study Plan
 
-  Take a few minutes to check out [this video](https://www.youtube.com/watch?v=cMt9U6kCWsM){:target="_blank"} about the different types of JS functions
-  and practice by creating at least 2 or 3 examples of your own for each mode.
+  Practice on the concepts that we've covered so far this week
+  and build upon them.
 
 <!-- Summary -->
 
