@@ -25,11 +25,11 @@ title: Week 32 | Testing
 
   </h2>
 
-  <span>Updated: 30/5/2025</span>
+  <span>Updated: 12/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 32 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -40,6 +40,13 @@ title: Week 32 | Testing
 
 </div>
 
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
 ---
 
 <!-- Week 32 - Day 1 | Testing -->
@@ -47,6 +54,77 @@ title: Week 32 | Testing
   <summary>
     <h2>
       <span class="summary-day">Week 32 - Day 1</span> | Testing</h2>
+  </summary>
+
+### Schedule
+
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - Testing & Testing React Apps
+
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day05/code){:target="_blank"} and the diagram [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week31/assets/day05/Testing.Pyramid.png){:target="_blank"}.
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
+
+  - Colored console output?  
+    - Check this SO thread: [https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color](https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color){:target="_blank"}  
+  - **Testing pyramid** (Google for a couple of images and take a good look at a few of them)  
+  - Unit Tests:  
+    - Some things to consider:  
+      - Always implement as many tests as you can after developing a specific function or feature (before moving on to the next part of your code).  
+        - ALWAYS make sure to break your tests in order to test them (tests are code that should be tested)  
+      - Try to have a high test coverage, meaning all parts of the code should be tested.   
+      - Your functions must do one thing and one thing only  
+      - 1) They adhere to the **Single Responsibility Principle**  
+        - You can easily test if your functions follow this principle by picking a function and asking yourself to describe what this function is doing. If the description (your response) contains the word “and”, you should probably break this down into multiple functions. Example: “this function fetches the user data, calculates and displays the average rating.” You probably want to break this down into 3 functions: **fetchUserData(userId):userData => calculateAvgRating(userData):avgRating => renderData(avgRating):void => Expect to see the average rating in the screen**   
+        - There might be the case where you want to combine these units into a function: **displayAvgUserData()**  
+      - 2) Your functions should be pure, meaning they should have no side-effects (affecting parts of the code that is outside the function body).   
+        - A pure function is a function that accepts an input, treats this input (argument(s) **as a read-only (immutable) value,** and produces and returns some kind of output value. A pure function should always give the same output given the same input. 40,2 in => 42 out (ALWAYS)  
+        - A function that works with a global variable, or changes a variable that belongs to the outer scope is an impure function.  
+  - [ts-node](https://www.npmjs.com/package/ts-node#installation){:target="_blank"}  
+  - A real-life example from GitHub where application is complemented with thorough testing:  
+    - [Source code (a class with various methods [units])](https://github.com/sedhossein/pregex/blob/master/src/Pregex.php){:target="_blank"}  
+    - [Tests for each method [unit]](https://github.com/sedhossein/pregex/blob/master/tests/PregexTest.php){:target="_blank"}
+
+<!-- Summary -->
+
+### Exercises
+
+  - **Challenge:** optimize and improve the UTILS.test.js so that there is an Error or Success message at the end. If all the tests pass, you should see the number of tests that succeeded along with a green output and some emoji. If some of the tests fail, you should see some relevant information displayed in red with a X emoji.  
+    - Example: *`✅`* **All tests (5/5) completed successfully.**  
+    - Example: **❌Tests failed. Passed 3/5.**  
+  - **Challenge:** improve the test coverage of the UTILS.js by handling as many *edge cases* as you can (null, undefined, wrong types, large numbers, etc.).   
+  - **Challenge:** How to use tsc (or npx tsc) to target specific files? (and avoid tsc scanning node_modules, etc.)?  
+  - **Challenge:** How to run ts-node and have it execute .ts files without errors!  
+    - [https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node](https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node){:target="_blank"}  
+  - Study:  
+    - [Basic Terminologies of Software Testing](https://web.archive.org/web/20241114033228/https://www.appsierra.com/blog/terminologies-of-software-testing){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 32 - Day 2 | Testing -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 32 - Day 2</span> | Testing</h2>
   </summary>
 
 ### Schedule
@@ -129,10 +207,9 @@ title: Week 32 | Testing
     - The methods for testing whether these selected elements have a particular property, e.g. contain some text, etc.  
     - The methods for triggering actions, e.g. enter value in an input, click a button
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d01.csv**
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d02.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -142,11 +219,11 @@ title: Week 32 | Testing
 
 <hr class="mt-1">
 
-<!-- Week 32 - Day 2 | Practice Day -->
+<!-- Week 32 - Day 3 | Practice Day -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 32 - Day 2</span> | Practice Day</h2>
+      <span class="summary-day">Week 32 - Day 3</span> | Practice Day</h2>
   </summary>
 
 ### Schedule
@@ -174,11 +251,11 @@ title: Week 32 | Testing
 
 <hr class="mt-1">
 
-<!-- Week 32 - Day 3 | Async Mysteries -->
+<!-- Week 32 - Day 4 | Async Mysteries -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 32 - Day 3</span> | Async Mysteries</h2>
+      <span class="summary-day">Week 32 - Day 4</span> | Async Mysteries</h2>
   </summary>
 
 ### Schedule
@@ -221,39 +298,9 @@ title: Week 32 | Testing
     - When all of them show: 100%  
     - Or use a loading spinner so that the users know that something is loading.
 
-  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d03.csv**
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d04.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 32 - Day 4 | JS Functions & Practice Day -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 32 - Day 4</span> | JS Functions & Practice Day</h2>
-  </summary>
-
-### Schedule
-
-  - **Study the suggested material**
-  - **Practice on the topics and share your questions**
-
-### Study Plan
-
-  Take a few minutes to check out [this video](https://www.youtube.com/watch?v=cMt9U6kCWsM){:target="_blank"} about the different types of JS functions
-  and practice by creating at least 2 or 3 examples of your own for each mode.
-
-<!-- Summary -->
-
-<!-- Exercises -->
 
 <!-- Extra Resources -->
 
@@ -320,7 +367,6 @@ title: Week 32 | Testing
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d05.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
