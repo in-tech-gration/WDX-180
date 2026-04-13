@@ -168,15 +168,18 @@ Syllabus:
           open: true
         34: # file:///./schedule/week34.yaml
           # title: "Blockchain & Web3"
-          title: "Mini CMS Project"
+          # title: "Mini CMS Project" # (v1.0)
+          title: "Full Stack Challenge" 
           open: true
         35: # file:///./schedule/week35.yaml
           # title: "Solo Project"
-          title: "Mini CMS Project"
+          # title: "Mini CMS Project" # (v1.0)
+          title: "Full Stack Challenge"
           open: true
         36: # file:///./schedule/week36.yaml
           # title: "Solo Project"
-          title: "Mini CMS Project"
+          # title: "Mini CMS Project" # (v1.0)
+          title: "Full Stack Challenge"
           open: true
         37: # file:///./schedule/week37.yaml
           title: The Road Ahead

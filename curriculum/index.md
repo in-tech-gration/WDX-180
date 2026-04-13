@@ -69,15 +69,15 @@
   - [**Week 25**: Web APIs](week25/index.md)
   - [**Week 26**: Canvas API](week26/index.md)
   - [**Week 27**: More Web APIs](week27/index.md)
-  - [**Week 28**: Building a Battleship Game in JS](week28/index.md)
+  - [**Week 28**: Advanced JavaScript](week28/index.md)
   - [**Week 29**: Data Structures & Algorithms](week29/index.md)
   - [**Week 30**: TypeScript](week30/index.md)
   - [**Week 31**: Advanced JavaScript](week31/index.md)
   - [**Week 32**: Testing](week32/index.md)
   - [**Week 33**: Intro to Databases](week33/index.md)
-  - [**Week 34**: Mini CMS Project](week34/index.md)
-  - [**Week 35**: Mini CMS Project](week35/index.md)
-  - [**Week 36**: Mini CMS Project](week36/index.md)
+  - [**Week 34**: Full Stack Challenge](week34/index.md)
+  - [**Week 35**: Full Stack Challenge](week35/index.md)
+  - [**Week 36**: Full Stack Challenge](week36/index.md)
   - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
