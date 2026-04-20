@@ -8,7 +8,7 @@ title: Week 28 | Advanced JavaScript
   <span class="week-prefix">Week 28 |</span> Advanced JavaScript
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/promises.and.websockets.jpg" />
 
 <div class="week-controls">
 
@@ -25,7 +25,7 @@ title: Week 28 | Advanced JavaScript
 
   </h2>
 
-  <span>Updated: 12/4/2026</span>
+  <span>Updated: 21/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
