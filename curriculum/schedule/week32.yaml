@@ -1,6 +1,5 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-# title: "Introduction to AI, Machine Learning & Tensorflow.js"
 title: "Testing"
 header_image: week32/pc.crash.test.jpeg
 version: 2.0

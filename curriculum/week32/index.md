@@ -25,7 +25,7 @@ title: Week 32 | Testing
 
   </h2>
 
-  <span>Updated: 12/4/2026</span>
+  <span>Updated: 30/4/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -137,8 +137,7 @@ title: Week 32 | Testing
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** TypeScript & Testing FTW
-  - **Part 2:** TypeScript & Testing FTW
+  - TypeScript & Testing FTW
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day01/code){:target="_blank"}
 
@@ -268,8 +267,8 @@ title: Week 32 | Testing
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Asynchronous code and the HTMLImageElement
-  - **Part 2:** Promises and more asynchronous mysteries
+  - Asynchronous code and the HTMLImageElement
+  - Promises and more asynchronous mysteries
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day03/code){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day03){:target="_blank"}.
 
@@ -327,8 +326,8 @@ title: Week 32 | Testing
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - **Part 1:** Handling Streams of incoming data in Node.js
-  - **Part 2:** End-to-End Testing and Test Driven Development (TDD)
+  - Handling Streams of incoming data in Node.js
+  - End-to-End Testing and Test Driven Development (TDD)
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day05/code){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day05){:target="_blank"}.
 
