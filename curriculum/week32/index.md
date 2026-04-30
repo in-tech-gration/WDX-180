@@ -326,7 +326,6 @@ title: Week 32 | Testing
 
   Your instructor will share the video lectures with you. Here are the topics covered:
 
-  - Handling Streams of incoming data in Node.js
   - End-to-End Testing and Test Driven Development (TDD)
 
   You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day05/code){:target="_blank"} and the diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week32/assets/day05){:target="_blank"}.
@@ -356,12 +355,9 @@ title: Week 32 | Testing
 
   - **Research and study the AAA**  
   - **PRACTICE:**  
-    - Take the node.js file and handle a GET request. When a simple GET request gets in, respond back with a text/html type and send back a simple HTML page with a form (having two input fields, email, password)  
-    - Once you submit the form an HTTP POST request will be made to the server.  
-      - Handle this POST request (almost done for you) and send a message back to the user. You can send them back their own information for confirmation.  
-  - Study and practice based on this article: [**A really simple example of TDD in JavaScript**](https://learnitmyway.com/tdd-example/){:target="_blank"}  
-  - **Try to find and practice on the “99 bottles of beer” song test**  
-    - [**Sandi Metz**](https://sandimetz.com/99bottles-sample-js){:target="_blank"} has some great workshops
+    - Study and practice based on this article: [**A really simple example of TDD in JavaScript**](https://learnitmyway.com/tdd-example/){:target="_blank"}  
+    - **Try to find and practice on the “99 bottles of beer” song test**  
+      - [**Sandi Metz**](https://sandimetz.com/99bottles-sample-js){:target="_blank"} has some great workshops
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week32/progress/progress.draft.w32.d05.csv**
 
