@@ -8,7 +8,7 @@ title: Week 30 | TypeScript
   <span class="week-prefix">Week 30 |</span> TypeScript
 </h1>
 
-<img src="assets/TS01.jpg" />
+<img src="assets/TS01.GenAI.png" />
 
 <div class="week-controls">
 
