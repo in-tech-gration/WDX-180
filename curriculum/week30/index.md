@@ -25,7 +25,7 @@ title: Week 30 | TypeScript
 
   </h2>
 
-  <span>Updated: 1/5/2026</span>
+  <span>Updated: 7/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -252,7 +252,7 @@ title: Week 30 | TypeScript
 
 ### Study Plan
 
-  Go through the [Learn Typescript (with Ania Kubow)](https://scrimba.com/learn/typescript){:target="_blank"} interactive Scrimba course and then work on as many exercises as you can on [https://typescript-exercises.github.io/](https://typescript-exercises.github.io/){:target="_blank"}. Make use of the hints and links provided.
+  Go through the [Learn Typescript](https://scrimba.com/learn/typescript){:target="_blank"} interactive Scrimba course and then work on as many exercises as you can on [https://typescript-exercises.github.io/](https://typescript-exercises.github.io/){:target="_blank"}. Make use of the hints and links provided.
 
 <!-- Summary -->
 
