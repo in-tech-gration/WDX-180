@@ -25,7 +25,7 @@ title: Week 32 | Testing
 
   </h2>
 
-  <span>Updated: 30/4/2026</span>
+  <span>Updated: 20/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -68,7 +68,7 @@ title: Week 32 | Testing
 
   - Testing & Testing React Apps
 
-  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week31/assets/day05/code){:target="_blank"} and the diagram [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/week31/assets/day05/Testing.Pyramid.png){:target="_blank"}.
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/testing/intro_to_testing/code){:target="_blank"} and the diagram [here](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/testing/intro_to_testing/Testing.Pyramid.png){:target="_blank"}.
 
   **Lecture Notes & Questions:**
 
