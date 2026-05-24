@@ -25,7 +25,7 @@ title: Week 20 | Node JS Web Server
 
   </h2>
 
-  <span>Updated: 22/2/2026</span>
+  <span>Updated: 25/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -227,6 +227,9 @@ title: Week 20 | Node JS Web Server
 ### Study Plan
 
   ![](./assets/express.jpg)
+
+  - Watch the lecture: [A Quick Introduction to Express.JS](https://youtu.be/Dx8FJcLUwBI)
+    - Lecture code can be found [here]()
 
   - Study (read **and** practice) the [**Introducing Express**](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#introducing_express){:target="_blank"} section from MDN's `Web Frameworks` documentation page.
 
