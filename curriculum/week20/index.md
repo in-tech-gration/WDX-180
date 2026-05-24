@@ -228,8 +228,8 @@ title: Week 20 | Node JS Web Server
 
   ![](./assets/express.jpg)
 
-  - Watch the lecture: [A Quick Introduction to Express.JS](https://youtu.be/Dx8FJcLUwBI)
-    - Lecture code can be found [here]()
+  - Watch the lecture: [A Quick Introduction to Express.JS](https://youtu.be/Dx8FJcLUwBI){:target="_blank"}
+    - Lecture code can be found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week20/assets/day03/intro-to-express){:target="_blank"}
 
   - Study (read **and** practice) the [**Introducing Express**](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction#introducing_express){:target="_blank"} section from MDN's `Web Frameworks` documentation page.
 
