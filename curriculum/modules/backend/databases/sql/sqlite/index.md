@@ -70,9 +70,353 @@
 
   [![](./assets/chinook.data.model.png)](./assets/chinook.data.model.png){:target="_blank"}
 
+## Understanding Relationships
+
+  ```text
+  Artist
+    -> Album
+        -> Track
+
+  Customer
+    -> Invoice
+        -> InvoiceLine
+            -> Track
+  ```
+
+  This is the core idea of relational databases.
+
+  Instead of storing everything in one giant horrifying mega-table from the depths of corporate despair:
+
+  ```text
+  customer_name | customer_country | artist_name | album_name | song_name | genre | invoice_total
+  ```
+
+  …the data is normalized into separate related tables.
+
+  SQL then reconnects them using JOINs.
+
+  Which is elegant.
+
+  😜 Until somebody forgets a WHERE clause and accidentally returns 14 million rows. 
+
+## LESSON 1 — Reading Data
+
+  **Scenario**
+
+  Elena asks:
+
+  > “Can you show me all artists in the database?”
+
+  This is your first SQL query.
+
+  **Query**
+
+  ```sql
+  SELECT * FROM Artist;
+  ```
+
+  **Explanation**
+
+  - `SELECT`      -> Chooses columns.
+  - `*`           -> Means “all columns”.
+  - `FROM Artist` -> Reads data from the Artist table.
+
+  **Challenges:**
+
+  - Show all albums.
+  - Show the total count of artists and albums:
+
+## LESSON 1 — Reading Data (SOLUTIONS)
+
+  **Challenge**
+
+  Show all albums.
+
+  **Solution**
+
+  ```sql
+  SELECT * FROM Album;
+  ```
+
+  **Challenge**
+
+  Show the total count of artists and albums:
+
+  `SELECT COUNT(*) FROM Artist`
+  `SELECT COUNT(*) as TotalArtists FROM Artist`
+
+  `SELECT COUNT(*) FROM Album`
+  `SELECT COUNT(*) as TotalAlbums FROM Album`
+
+## LESSON 2 — Selecting Specific Columns
+
+  **Scenario**
+
+  Your boss says:
+
+  > “I do NOT need every column. I’m not printing the database onto papyrus.”
+
+  You only want artist names.
+
+  **Query**
+
+  ```sql
+  SELECT Name FROM Artist;
+  ```
+
+  **Explanation**
+
+  Instead of using `*`, we explicitly request only the columns we need.
+
+  This is faster, cleaner, and avoids sending unnecessary data.
+
+  Production systems love this.
+
+  Cloud bills also love this.
+
+  **Challenge**
+
+  Show:
+
+  * Album title
+  * Artist ID
+
+  from the Album table.
+
+## LESSON 2 — Selecting Specific Columns (SOLUTIONS)
+
+  **Challenge**
+
+  Show:
+
+  * Album title
+  * Artist ID
+
+  from the Album table.
+
+  **Solution**
+
+  ```sql
+  SELECT Title, ArtistId
+  FROM Album;
+  ```
+
+## LESSON 3 — Filtering Rows with WHERE
+
+  **Scenario**
+
+  Marketing wants all customers from Brazil.
+
+  Apparently Brazil buys a lot of Iron Maiden.
+
+  Reasonable.
+
+  **Query**
+
+  ```sql
+  SELECT * FROM Customer WHERE Country = 'Brazil';
+  ```
+
+  ⚠️ Watch out for "double" quotes.
+
+  **Explanation**
+
+  - `WHERE` -> Filters rows. Only rows matching the condition are returned.
+
+  **More Examples**
+
+  ```sql
+  SELECT *
+  FROM Track
+  WHERE Milliseconds > 300000;
+  ```
+
+  Songs longer than 5 minutes.
+
+  Invoices worth at least $10.
+
+  ```sql
+  SELECT *
+  FROM Invoice
+  WHERE Total >= 10;
+  ```
+
+## LESSON 4 — Sorting Results
+
+  **Scenario**
+
+  Finance wants the biggest invoices first.
+
+  Because humans enjoy sorting money from largest to smallest.
+
+  **Query**
+
+  ```sql
+  SELECT InvoiceId, Total
+  FROM Invoice
+  ORDER BY Total DESC;
+  ```
+
+  **Explanation**
+
+  - `ORDER BY` -> Sorts results.
+  - `DESC` -> Descending order. Largest values first.
+  - `ASC` -> Ascending order. Smallest values first.
+
+  **Challenge**
+
+  Show customers ordered alphabetically by last name.
+
+## LESSON 4 — Sorting Results (SOLUTIONS)
+
+  **Challenge**
+
+  Show customers ordered alphabetically by last name.
+
+  **Solution**
+
+  ```sql
+  SELECT FirstName, LastName
+  FROM Customer
+  ORDER BY LastName ASC;
+  ```
+
+## LESSON 5 — Limiting Results
+
+  **Scenario**
+
+  Your terminal now prints 400 rows.
+
+  Your laptop fan sounds like a helicopter preparing for takeoff.
+
+  You only need a preview.
+
+  **Query**
+
+  ```sql
+  SELECT *
+  FROM Track
+  LIMIT 5;
+  ```
+
+  **Explanation**
+
+  - `LIMIT` -> Restricts the number of returned rows. Very useful during development. 
+
+## LESSON 6 — Understanding JOINs
+
+  **Scenario**
+
+  Elena asks:
+
+  > “Show me albums with their artist names.”
+
+  Problem:
+
+  * Album table has `ArtistId`
+  * Artist table has the actual artist name
+
+  We need a JOIN.
+
+  **Query**
+
+  ```sql
+  SELECT Album.Title, Artist.Name
+  FROM Album
+  JOIN Artist
+    ON Album.ArtistId = Artist.ArtistId;
+  ```
+
+  **Explanation**
+
+  - `JOIN` -> Combines related tables.
+  - `ON` -> Defines how rows are matched.
+
+  This:
+
+  ```text
+  Album.ArtistId = Artist.ArtistId
+  ```
+
+  connects albums to artists.
+
+  This is the heart of relational databases.
+
+  Without joins, databases are just emotionally unavailable spreadsheets.
+
+  Click on the diagrams below to see a visual explanation of `INNER JOINS`:
+
+  [![]()](){:target="_blank"}    
+  [![]()](){:target="_blank"}    
+
+  file:///Users/kostasx/Downloads/Compendium/LiveShare/YOUTUBE/Chinook/SQL.JOIN.jpg
+
+  file:///Users/kostasx/Downloads/Compendium/LiveShare/YOUTUBE/Chinook/SQL.INNER.JOIN.jpg
+
+
+  ---
+
+  Specify Artist:
+
+  `SELECT Album.Title, Artist.Name FROM Album JOIN Artist ON Album.ArtistId = Artist.ArtistId WHERE Name = 'Metallica'`
+
+  SELECT    -> what to show
+  FROM      -> starting table
+  JOIN      -> attach tables
+  ON        -> matching rule
+  WHERE     -> filter rows
+  GROUP BY  -> make groups
+  HAVING    -> filter groups
+  ORDER BY  -> sort
+  LIMIT     -> reduce output
+
+  ---
+
+  ## Challenge
+
+  Show:
+
+  * Track name
+  * Album title
+
+  ---
+
+  ## Solution
+
+  ```sql
+  SELECT Track.Name, Album.Title
+  FROM Track
+  JOIN Album
+    ON Track.AlbumId = Album.AlbumId;
+  ```
+
+  ## (*) Challenge 
+  
+  Show:
+
+  * Album title
+  * Track name
+  * From specific Artist (Metallica 50)
+
+  `SELECT Album.Title, Track.Name FROM Album JOIN Track ON Album.AlbumId = Track.AlbumId WHERE Album.ArtistId = 50;`
+
 ## References & Resources
 
-  - [Chinook Database](https://github.com/lerocha/chinook-database)
+  - [Chinook Database](https://github.com/lerocha/chinook-database){:target="_blank"}
+
+  - Installing SQLite on your machine:
+    - macOS: `brew install sqlite`
+    - Ubuntu: `sudo apt install sqlite3`
+    - Verify Installation. Open terminal and type `sqlite3 --version`
+  - Opening the Database: `sqlite3 Chinook_Sqlite.sql`
+  - Useful commands:
+    - Show tables: `.tables`
+    - Show table structure: `.schema Artist`
+    - Make output readable: `.headers on` and `.mode column`
+
+  - [Answering Business Questions Using SQL](https://sandrajurela.com/posts/answering-business-questions-using-sql/chinook.html){:target="_blank"}
+
+  - Have fun exploring the [Netflix Sample Database](https://github.com/lerocha/netflixdb/releases){:target="_blank"}
 
 ---
 
