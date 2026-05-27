@@ -9,11 +9,70 @@
 
   [Chinook](https://github.com/lerocha/chinook-database/) is a sample database that contains a digital media store, including tables for artists, albums, media tracks, invoices and customers.
 
+  This guide will provide:
+
+  - A realistic workplace story
+  - Progressive SQL challenges (easy-to-hard)
+  - Explanations for every concept
+  - Practical business-style queries
+  - Various SQL concepts: joins, grouping, aggregation, sorting, filtering
+  - A proper initiation ritual into databases
+
 ## Getting started
 
-  1. Download the `Chinook` Database [here]()
+  1. Download the `Chinook` Database [here](https://raw.githubusercontent.com/in-tech-gration/WDX-180/refs/heads/main/curriculum/modules/backend/databases/sql/sqlite/Chinook_Sqlite.sql)
   2. Open [SQLime](https://sqlime.org) in your Browser (or in VSCode's integrated browser)
-  3. Import the `Chinook` database by clicking on `open file`.
+  3. Import the `Chinook` database file into `SQLime` by clicking on `open file`.
+  4. Follow the step-by-step guide below
+
+## Welcome to Chinook Records
+
+  You just got hired as a junior developer at **Chinook Records**, a digital music store.
+
+  Your boss, Elena, has exactly three moods:
+
+  1. Coffee
+  2. SQL
+  3. Panic
+
+  Today she walks into the office holding a spreadsheet like it personally insulted her family.
+
+  > “The reporting dashboard is broken! Marketing wants customer stats, finance wants revenue reports, and somehow nobody knows which artists actually make money. Welcome to the team.”
+
+  Congratulations.
+  You are now the person between civilization and 47 Excel files named:
+
+  ```text
+  final_v2_REAL_final_USE_THIS.xlsx
+  ```
+
+  Your mission is to learn SQLite by solving real business problems using the Chinook database.
+
+## Database Overview
+
+  The Chinook database contains these important tables:
+
+  | Table       | Purpose                          |
+  | ----------- | -------------------------------- |
+  | Artist      | Music artists                    |
+  | Album       | Albums created by artists        |
+  | Track       | Individual songs                 |
+  | Customer    | Customers of the store           |
+  | Invoice     | Customer purchases               |
+  | InvoiceLine | Individual items inside invoices |
+  | Genre       | Music genres                     |
+  | Employee    | Employees                        |
+  | Playlist    | Music playlists                  |
+
+  Click on the diagrams below to see a full-size visual overview of the table schemas and relations.
+
+  [![](./assets/chinook-schema.svg)](./assets/chinook-schema.svg){:target="_blank"}
+
+  [![](./assets/chinook.data.model.png)](./assets/chinook.data.model.png){:target="_blank"}
+
+## References & Resources
+
+  - [Chinook Database](https://github.com/lerocha/chinook-database)
 
 ---
 
