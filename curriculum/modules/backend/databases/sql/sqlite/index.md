@@ -398,6 +398,130 @@
     ON Track.AlbumId = Album.AlbumId;
   ```
 
+## LESSON 7 — Aggregations
+
+  **Scenario**
+
+  Finance asks:
+
+  > “How much money have we made in total?”
+
+  Now we use aggregate functions.
+
+  **Query**
+
+  ```sql
+  SELECT SUM(Total)
+  FROM Invoice;
+  ```
+
+  **Explanation**
+
+  - `SUM()` -> Adds values together.
+
+  **Other Aggregates**
+
+  ```sql
+  SELECT COUNT(*) FROM Customer;
+  ```
+
+  Counts rows.
+
+  ```sql
+  SELECT AVG(Total) FROM Invoice;
+  ```
+
+  Average invoice total.
+
+  ```sql
+  SELECT MAX(Total) FROM Invoice;
+  SELECT MIN(Total) FROM Invoice;
+  ```
+
+  Largest and smallest invoice.
+
+## LESSON 8 — GROUP BY
+
+  **Scenario**
+
+  Marketing asks:
+
+  > “Which countries generate the most customers?”
+
+  This is where SQL becomes genuinely powerful.
+
+  **Query**
+
+  ```sql
+  SELECT Country, COUNT(*) AS CustomerCount
+  FROM Customer
+  GROUP BY Country
+  ORDER BY CustomerCount DESC;
+  ```
+
+  **Explanation**
+
+  - `GROUP BY` -> Creates groups. Instead of counting all rows together, SQL counts rows inside each country.
+
+  **Result Example**
+
+  ```text
+  USA        13
+  Canada      8
+  Brazil      5
+  ```
+
+  **Challenge**
+
+  Which countries generate the most money?
+
+  ```sql
+  SELECT BillingCountry, SUM(Total) as CountryTotal 
+  FROM Invoice 
+  GROUP BY BillingCountry 
+  ORDER BY CountryTotal DESC;
+  ```
+
+  Which countries generate the most invoices?
+
+  ```sql
+  SELECT BillingCountry as Country, COUNT(*) as TotalInvoices 
+  FROM Invoice 
+  GROUP BY Country 
+  ORDER BY TotalInvoices DESC;
+  ```
+
+## LESSON 09 — Finding Top Customers
+
+  **Scenario:** Sales wants VIP customers. Who spends the most money?
+
+  **Query**
+
+  ```sql
+  SELECT
+    Customer.FirstName,
+    Customer.LastName,
+    SUM(Invoice.Total) AS TotalSpent
+  FROM Customer
+  JOIN Invoice
+    ON Customer.CustomerId = Invoice.CustomerId
+  GROUP BY Customer.CustomerId
+  ORDER BY TotalSpent DESC
+  LIMIT 10;
+  ```
+
+  **Explanation**
+
+  We:
+
+  1. Join customers to invoices
+  2. Sum invoice totals
+  3. Group per customer
+  4. Sort descending
+  5. Keep top 10
+
+  Classic business analytics.
+
 ## References & Resources
 
   - [Chinook Database](https://github.com/lerocha/chinook-database){:target="_blank"}
