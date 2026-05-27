@@ -657,6 +657,130 @@
 
   _([Source](https://joanney3h.github.io/code-posts/chinook-sql/){:target="_blank"})_
 
+## BONUS LESSON — Aliases & Final Challenge
+
+  **Scenario:** Your SQL is getting long. Like Tolkien novels, but with fewer dragons. Aliases help.
+
+  **Query**
+
+  ```sql
+  SELECT
+    ar.Name,
+    al.Title
+  FROM Album al
+  JOIN Artist ar
+    ON al.ArtistId = ar.ArtistId;
+  ```
+
+  **Explanation**
+
+  - `al` -> Alias for Album.
+  - `ar` -> Alias for Artist.
+
+  This makes queries shorter and easier to read.
+
+  Especially when joining 6+ tables.
+
+  Which eventually happens.
+
+  And then your SQL starts looking like somebody summoned ancient database spirits.
+
+  **Final Challenge**
+
+  Business Problem. Elena gives you one final task:
+
+  > “Find the top 5 genres by revenue.”
+
+  Requirements:
+
+  * Include genre name
+  * Include total revenue
+  * Highest revenue first
+
+  Try solving it yourself before reading the answer.
+
+## Final Challenge Solution
+
+  ```sql
+  SELECT
+    Genre.Name,
+    SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS Revenue
+  FROM InvoiceLine
+  JOIN Track
+    ON InvoiceLine.TrackId = Track.TrackId
+  JOIN Genre
+    ON Track.GenreId = Genre.GenreId
+  GROUP BY Genre.Name
+  ORDER BY Revenue DESC
+  LIMIT 5;
+  ```
+
+## What You Learned
+
+  You now know:
+
+  * SELECT
+  * FROM
+  * WHERE
+  * ORDER BY
+  * LIMIT
+  * JOIN
+  * GROUP BY
+  * Aggregate functions
+  * Aliases
+  * Business reporting queries
+
+  That already puts you ahead of a shocking amount of software systems currently held together by:
+
+  ```sql
+  SELECT *
+  ```
+
+  …and prayer.
+
+  **Final Advice**
+
+  SQL looks deceptively simple.
+
+  Then one day you write a query with:
+
+  * 8 joins
+  * 3 CTEs
+  * 2 window functions
+  * a recursive hierarchy
+  * and a performance issue that somehow only happens on Tuesdays
+
+  At that point:
+
+  Congratulations.
+
+  You are now a database engineer.
+
+## Suggested Next Topics
+
+  After mastering these basics, continue with:
+
+  1. INNER vs LEFT JOIN
+  2. Subqueries
+  3. Common Table Expressions (CTEs)
+  4. Window Functions
+  5. Indexes
+  6. Query Optimization
+  7. Transactions
+  8. Views
+  9. Foreign Keys
+  10. SQLite EXPLAIN QUERY PLAN
+
+  Try writing queries for:
+
+  * Top 10 longest songs
+  * Customers who never bought anything
+  * Artists with the most tracks
+  * Revenue per country
+  * Average song duration per genre
+  * Most purchased tracks
+  * Employees supporting the most customers
+  
 ## References & Resources
 
   - [Chinook Database](https://github.com/lerocha/chinook-database){:target="_blank"}
