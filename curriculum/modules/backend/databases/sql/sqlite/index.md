@@ -522,6 +522,57 @@
 
   Classic business analytics.
 
+## LESSON 10 — Multi-Table Business Query
+
+  **Scenario:** The CEO walks in. Which is never good. He asks:
+
+  > “Which artists generate the most revenue?”
+
+  Now we combine:
+
+  * joins
+  * aggregations
+  * grouping
+  * ordering
+
+  This is real reporting SQL.
+
+  **Query**
+
+  ```sql
+  SELECT
+    Artist.Name,
+    SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS Revenue
+  FROM InvoiceLine
+  JOIN Track
+    ON InvoiceLine.TrackId = Track.TrackId
+  JOIN Album
+    ON Track.AlbumId = Album.AlbumId
+  JOIN Artist
+    ON Album.ArtistId = Artist.ArtistId
+  GROUP BY Artist.Name
+  ORDER BY Revenue DESC;
+  ```
+
+  **Explanation**
+
+  We travel through the relationships:
+
+  ```text
+  InvoiceLine
+    -> Track
+        -> Album
+            -> Artist
+  ```
+
+  Then calculate revenue:
+
+  ```sql
+  UnitPrice * Quantity
+  ```
+
+  Then sum it per artist. This is how dashboards, analytics systems, and reporting backends work. Just with more meetings and worse coffee.
+
 ## References & Resources
 
   - [Chinook Database](https://github.com/lerocha/chinook-database){:target="_blank"}
