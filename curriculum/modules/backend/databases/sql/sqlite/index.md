@@ -346,42 +346,32 @@
 
   Click on the diagrams below to see a visual explanation of `INNER JOINS`:
 
-  [![]()](){:target="_blank"}    
-  [![]()](){:target="_blank"}    
+  [![](./assets/SQL.INNER.JOIN.jpg)](./assets/SQL.INNER.JOIN.jpg){:target="_blank"}    
 
-  file:///Users/kostasx/Downloads/Compendium/LiveShare/YOUTUBE/Chinook/SQL.JOIN.jpg
+  [![](./assets/SQL.JOIN.svg)](./assets/SQL.JOIN.svg){:target="_blank"}    
 
-  file:///Users/kostasx/Downloads/Compendium/LiveShare/YOUTUBE/Chinook/SQL.INNER.JOIN.jpg
+  **Order Matters**
 
+  Here is an ordered list to remind you about the correct command placement:
 
-  ---
+  - `SELECT`    -> what to show
+  - `FROM`      -> starting table
+  - `JOIN`      -> attach tables
+  - `ON`        -> matching rule
+  - `WHERE`     -> filter rows
+  - `GROUP BY`  -> make groups
+  - `HAVING`    -> filter groups
+  - `ORDER BY`  -> sort
+  - `LIMIT`     -> reduce output
 
-  Specify Artist:
-
-  `SELECT Album.Title, Artist.Name FROM Album JOIN Artist ON Album.ArtistId = Artist.ArtistId WHERE Name = 'Metallica'`
-
-  SELECT    -> what to show
-  FROM      -> starting table
-  JOIN      -> attach tables
-  ON        -> matching rule
-  WHERE     -> filter rows
-  GROUP BY  -> make groups
-  HAVING    -> filter groups
-  ORDER BY  -> sort
-  LIMIT     -> reduce output
-
-  ---
-
-  ## Challenge
+  **Challenge**
 
   Show:
 
   * Track name
   * Album title
 
-  ---
-
-  ## Solution
+  **Solution**
 
   ```sql
   SELECT Track.Name, Album.Title
@@ -390,15 +380,23 @@
     ON Track.AlbumId = Album.AlbumId;
   ```
 
-  ## (*) Challenge 
-  
+## LESSON 6 — Understanding JOINs (SOLUTIONS)
+
+  **Challenge**
+
   Show:
 
-  * Album title
   * Track name
-  * From specific Artist (Metallica 50)
+  * Album title
 
-  `SELECT Album.Title, Track.Name FROM Album JOIN Track ON Album.AlbumId = Track.AlbumId WHERE Album.ArtistId = 50;`
+  **Solution**
+
+  ```sql
+  SELECT Track.Name, Album.Title
+  FROM Track
+  JOIN Album
+    ON Track.AlbumId = Album.AlbumId;
+  ```
 
 ## References & Resources
 
