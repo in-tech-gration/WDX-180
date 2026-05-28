@@ -1,4 +1,11 @@
-# HTTP STATUS CODES
+# HTTP 
+
+### HyperText Transfer Protocol
+
+- [HTTP Status Codes](#http-status-codes)
+- [HTTP Request Methods](#http-request-methods)
+
+## HTTP STATUS CODES
 
 Reference database of HTTP Status Codes with their definitions and helpful code references all in one place. The content is an archived version of [`httpstatuses.com`](https://web.archive.org/web/20210211094248/https://httpstatuses.com/).
 
@@ -84,3 +91,25 @@ Reference database of HTTP Status Codes with their definitions and helpful code 
 *   [510 Not Extended](./510)
 *   [511 Network Authentication Required](./511)
 *   [599 Network Connect Timeout Error](./599)
+
+## HTTP REQUEST METHODS
+
+* [**GET**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET): The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should not contain a request content.
+
+* [**HEAD**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/HEAD): The HEAD method asks for a response identical to a GET request, but without a response body.
+
+* [**POST**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST): The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+
+* [**PUT**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PUT): The PUT method replaces all current representations of the target resource with the request content.
+
+* [**DELETE**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/DELETE): The DELETE method deletes the specified resource.
+
+* [**CONNECT**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/CONNECT): The CONNECT method establishes a tunnel to the server identified by the target resource.
+
+* [**OPTIONS**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/OPTIONS): The OPTIONS method describes the communication options for the target resource.
+
+* [**TRACE**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/TRACE): The TRACE method performs a message loop-back test along the path to the target resource.
+
+* [**PATCH**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PATCH): The PATCH method applies partial modifications to a resource.
+
+_(Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods){:target="_blank"})_
