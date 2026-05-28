@@ -59,7 +59,7 @@ Updated: _(28/05/2026)_
       - [Real-life coding](https://www.youtube.com/playlist?list=PLdo7hJB0agElB29_USaEp_wtd2cPuD71C){:target="_blank"}
   
   - **Resources**
-    - [HTTP Status Codes](){:target="_blank"}
+    - [HTTP Status Codes](https://in-tech-gration.github.io/WDX-180/pages/httpstatuses/){:target="_blank"}
 
   - **Tools & Interactive Environments**
     - [JSLinux (Linux in the Browser)](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/index.html)
