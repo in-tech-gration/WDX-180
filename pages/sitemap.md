@@ -4,7 +4,7 @@ favicon: sitemap.png
 
 # WDX 180° | SITEMAP
 
-Updated: _(06/10/2025)_
+Updated: _(28/05/2026)_
 
   - **Instructors**
     - [Onboarding](https://in-tech-gration.github.io/WDX-180/staff/onboarding/instructors){:target="_blank"}
@@ -40,6 +40,8 @@ Updated: _(06/10/2025)_
         - [JavaScript in JSX with curly braces](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/javascript-in-jsx-with-curly-braces/){:target="_blank"}
         - [Passing props to a component](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/passing-props-to-a-component/){:target="_blank"}
         - [Writing markup with JSX](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/frameworks/react/writing-markup-with-jsx/){:target="_blank"}
+    - **Databases**
+      - [Introduction to SQL (via SQLite)](https://in-tech-gration.github.io/WDX-180/curriculum/modules/backend/databases/sql/sqlite/index.html){:target="_blank"}
     - **Shorts/Tips**
       - [CSS: Hidden Scrollbar](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/tips/hidden_scrollbar/){:target="_blank"} (CSS tips hidden scrollbar)
       - [CSS: Simple Animation](https://in-tech-gration.github.io/WDX-180/curriculum/modules/css/tips/simple_animation/){:target="_blank"} (CSS tips simple animation)
@@ -56,6 +58,9 @@ Updated: _(06/10/2025)_
       - [Flappy Bird](https://www.youtube.com/playlist?list=PLdo7hJB0agEmTY9xT7EvzUkClAeAHJr9G){:target="_blank"}
       - [Real-life coding](https://www.youtube.com/playlist?list=PLdo7hJB0agElB29_USaEp_wtd2cPuD71C){:target="_blank"}
   
+  - **Resources**
+    - [HTTP Status Codes](){:target="_blank"}
+
   - **Tools & Interactive Environments**
     - [JSLinux (Linux in the Browser)](https://in-tech-gration.github.io/WDX-180/resources/vm/jslinux/index.html)
 
