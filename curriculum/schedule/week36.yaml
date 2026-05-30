@@ -6,17 +6,17 @@ version: 2.0
 schedule: 
   days:
     1: # 
-      # file://./../modules/curriculum/work_in_progress.md
-      module: curriculum/work_in_progress.md
-    2: # Practice Day
-      # file://./../modules/javascript/misc/_w36d02/_w36d02.md
-      module: javascript/misc/_w36d02/_w36d02.md
+      # file://./../modules/javascript/misc/fullstack/day11.md
+      module: javascript/misc/fullstack/day11.md
+    2: # 
+      # file://./../modules/javascript/misc/fullstack/day12.md
+      module: javascript/misc/fullstack/day12.md
     3: # 
-      # file://./../modules/curriculum/work_in_progress.md
-      module: curriculum/work_in_progress.md
-    4: # Practice Day
-      # file://./../modules/javascript/misc/_w36d04/_w36d04.md
-      module: javascript/misc/_w36d04/_w36d04.md
+      # file://./../modules/javascript/misc/fullstack/day13.md
+      module: javascript/misc/fullstack/day13.md
+    4: # 
+      # file://./../modules/javascript/misc/fullstack/day14.md
+      module: javascript/misc/fullstack/day14.md
     5: # 
-      # file://./../modules/curriculum/work_in_progress.md
-      module: curriculum/work_in_progress.md
+      # file://./../modules/javascript/misc/fullstack/day15.md
+      module: javascript/misc/fullstack/day15.md

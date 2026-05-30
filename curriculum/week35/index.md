@@ -49,22 +49,19 @@ title: Week 35 | Full Stack Project
 
 ---
 
-<!-- Week 35 - Day 1 | Work in Progress -->
+<!-- Week 35 - Day 1 | Full Stack Project - Day 06 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 1</span> | Work in Progress</h2>
+      <span class="summary-day">Week 35 - Day 1</span> | Full Stack Project - Day 06</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
 
-### Study Plan
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-#### Work in progress...
-
-
-
-  **Stay tuned**
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -78,22 +75,19 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 2 | Work in Progress -->
+<!-- Week 35 - Day 2 | Full Stack Project - Day 07 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 2</span> | Work in Progress</h2>
+      <span class="summary-day">Week 35 - Day 2</span> | Full Stack Project - Day 07</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
 
-### Study Plan
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-#### Work in progress...
-
-
-
-  **Stay tuned**
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -107,22 +101,19 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 3 | Work in Progress -->
+<!-- Week 35 - Day 3 | Full Stack Project - Day 08 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 3</span> | Work in Progress</h2>
+      <span class="summary-day">Week 35 - Day 3</span> | Full Stack Project - Day 08</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
 
-### Study Plan
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-#### Work in progress...
-
-
-
-  **Stay tuned**
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -136,22 +127,19 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 4 | Work in Progress -->
+<!-- Week 35 - Day 4 | Full Stack Project - Day 09 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 4</span> | Work in Progress</h2>
+      <span class="summary-day">Week 35 - Day 4</span> | Full Stack Project - Day 09</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
 
-### Study Plan
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-#### Work in progress...
-
-
-
-  **Stay tuned**
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -165,22 +153,19 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 5 | Work in Progress -->
+<!-- Week 35 - Day 5 | Full Stack Project - Day 10 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 5</span> | Work in Progress</h2>
+      <span class="summary-day">Week 35 - Day 5</span> | Full Stack Project - Day 10</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
 
-### Study Plan
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-#### Work in progress...
-
-
-
-  **Stay tuned**
+<!-- Study Plan -->
 
 <!-- Summary -->
 

@@ -49,40 +49,11 @@ title: Week 34 | Full Stack Project
 
 ---
 
-<!-- Week 34 - Day 1 | Work in Progress -->
+<!-- Week 34 - Day 1 | Full Stack Project - Day 01 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 1</span> | Work in Progress</h2>
-  </summary>
-
-<!-- Schedule -->
-
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 34 - Day 2 | System Design -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 34 - Day 2</span> | System Design</h2>
+      <span class="summary-day">Week 34 - Day 1</span> | Full Stack Project - Day 01</h2>
   </summary>
 
 ### Schedule
@@ -90,23 +61,7 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-### Study Plan
-
-  ![](./assets/system.design.jpg)
-
-  Since we are going to be designing our Database soon, here are two really
-  interesting videos that will walk you through designing a system 
-  (an Instagram-like app in one case, a calendar app in the other). 
-
-  You can learn a lot from this process, such as thinking about the system 
-  from a high level and breaking it up in different modules and deciding 
-  on the Database entities (tables) and Schema (columns and types).
-
-  Enjoy and gain some insights!
-
-  - [Design Instagram: 30'](https://www.youtube.com/watch?v=VJpfO6KdyWE){:target="_blank"} 
-
-  - [Design Calendar Application: 25'](https://www.youtube.com/watch?v=39eAITqeu7g){:target="_blank"}
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -120,40 +75,11 @@ title: Week 34 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 3 | Work in Progress -->
+<!-- Week 34 - Day 2 | Full Stack Project - Day 02 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 3</span> | Work in Progress</h2>
-  </summary>
-
-<!-- Schedule -->
-
-### Study Plan
-
-#### Work in progress...
-
-
-
-  **Stay tuned**
-
-<!-- Summary -->
-
-<!-- Exercises -->
-
-<!-- Extra Resources -->
-
-<!-- Sources and Attributions -->
-  
-</details>
-
-<hr class="mt-1">
-
-<!-- Week 34 - Day 4 | Practice Day -->
-<details markdown="1">
-  <summary>
-    <h2>
-      <span class="summary-day">Week 34 - Day 4</span> | Practice Day</h2>
+      <span class="summary-day">Week 34 - Day 2</span> | Full Stack Project - Day 02</h2>
   </summary>
 
 ### Schedule
@@ -161,11 +87,7 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-### Study Plan
-
-  Today is practice day. Practice on the topics and coding challenges
-  for the Mini CMS project we are working on and spend some time on MDN
-  and other Internet resources to read more about the technologies involved.
+<!-- Study Plan -->
 
 <!-- Summary -->
 
@@ -179,22 +101,71 @@ title: Week 34 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 5 | Work in Progress -->
+<!-- Week 34 - Day 3 | Full Stack Project - Day 03 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 5</span> | Work in Progress</h2>
+      <span class="summary-day">Week 34 - Day 3</span> | Full Stack Project - Day 03</h2>
   </summary>
 
-<!-- Schedule -->
+### Schedule
 
-### Study Plan
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-#### Work in progress...
+<!-- Study Plan -->
 
+<!-- Summary -->
 
+<!-- Exercises -->
 
-  **Stay tuned**
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 34 - Day 4 | Full Stack Project - Day 04 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 34 - Day 4</span> | Full Stack Project - Day 04</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+<!-- Study Plan -->
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+<!-- Extra Resources -->
+
+<!-- Sources and Attributions -->
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 34 - Day 5 | Full Stack Project - Day 05 -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 34 - Day 5</span> | Full Stack Project - Day 05</h2>
+  </summary>
+
+### Schedule
+
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
+
+<!-- Study Plan -->
 
 <!-- Summary -->
 
