@@ -834,20 +834,3 @@ Today you learned:
 Tomorrow we stop drawing diagrams and start storing real data in SQLite.
 
 The database will finally enter the chat. 😄
-
----
-
-# Preview of Day 03
-
-### Public Routes & Basic CRUD
-
-* Create the SQLite database
-* Create the Products table
-* Seed sample data
-* Build Product List page
-* Render products using EJS
-* Query SQLite from Node.js
-* Display dynamic records from the database
-* Optional: Sorting and filtering
-
-Tomorrow is the day our products stop living in JavaScript arrays and move into an actual database where they can enjoy the luxury of persistence.
