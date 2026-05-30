@@ -49,11 +49,11 @@ title: Week 34 | Full Stack Project
 
 ---
 
-<!-- Week 34 - Day 1 | Full Stack Project - Day 01 -->
+<!-- Week 34 - Day 1 | Full Stack Project - Part 1 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 1</span> | Full Stack Project - Day 01</h2>
+      <span class="summary-day">Week 34 - Day 1</span> | Full Stack Project - Part 1</h2>
   </summary>
 
 ### Schedule
@@ -61,7 +61,9 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 1 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day01.html)
 
 <!-- Summary -->
 
@@ -75,11 +77,11 @@ title: Week 34 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 2 | Full Stack Project - Day 02 -->
+<!-- Week 34 - Day 2 | Full Stack Project - Part 2 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 2</span> | Full Stack Project - Day 02</h2>
+      <span class="summary-day">Week 34 - Day 2</span> | Full Stack Project - Part 2</h2>
   </summary>
 
 ### Schedule
@@ -87,7 +89,9 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 2 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day02.html)
 
 <!-- Summary -->
 
@@ -101,11 +105,11 @@ title: Week 34 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 3 | Full Stack Project - Day 03 -->
+<!-- Week 34 - Day 3 | Full Stack Project - Part 3 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 3</span> | Full Stack Project - Day 03</h2>
+      <span class="summary-day">Week 34 - Day 3</span> | Full Stack Project - Part 3</h2>
   </summary>
 
 ### Schedule
@@ -113,7 +117,9 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 3 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day03.html)
 
 <!-- Summary -->
 
@@ -127,11 +133,11 @@ title: Week 34 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 4 | Full Stack Project - Day 04 -->
+<!-- Week 34 - Day 4 | Full Stack Project - Part 4 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 4</span> | Full Stack Project - Day 04</h2>
+      <span class="summary-day">Week 34 - Day 4</span> | Full Stack Project - Part 4</h2>
   </summary>
 
 ### Schedule
@@ -139,7 +145,9 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 4 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day04.html)
 
 <!-- Summary -->
 
@@ -153,11 +161,11 @@ title: Week 34 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 34 - Day 5 | Full Stack Project - Day 05 -->
+<!-- Week 34 - Day 5 | Full Stack Project - Part 5 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 34 - Day 5</span> | Full Stack Project - Day 05</h2>
+      <span class="summary-day">Week 34 - Day 5</span> | Full Stack Project - Part 5</h2>
   </summary>
 
 ### Schedule
@@ -165,7 +173,9 @@ title: Week 34 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 5 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day05.html)
 
 <!-- Summary -->
 
