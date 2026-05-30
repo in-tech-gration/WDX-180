@@ -155,12 +155,13 @@ cd express-crud
 npm init -y
 ```
 
-This creates:
+This creates a `package.json` that looks like this:
 
 ```json
 {
   "name": "express-crud",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  ...
 }
 ```
 
@@ -245,7 +246,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Server running...');
+  console.log('Server running at http://localhost:3000');
 });
 ```
 
@@ -487,11 +488,7 @@ const products = [
   { name: 'Mouse' },
   { name: 'Monitor' }
 ];
-```
 
----
-
-```javascript
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'Products',
