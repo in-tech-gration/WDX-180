@@ -2,6 +2,7 @@ input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Mini CMS Project"
 header_image: week34/mini.cms.jpg
+version: 2.0
 schedule: 
   days:
     1: # Mini CMS - Part 1

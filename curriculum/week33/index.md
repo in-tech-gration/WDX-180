@@ -25,7 +25,7 @@ title: Week 33 | Intro to Databases
 
   </h2>
 
-  <span>Updated: 12/11/2025</span>
+  <span>Updated: 30/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -39,6 +39,13 @@ title: Week 33 | Intro to Databases
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -119,7 +126,6 @@ title: Week 33 | Intro to Databases
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d01.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -244,7 +250,6 @@ title: Week 33 | Intro to Databases
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
-
 <!-- Extra Resources -->
 
 <!-- Sources and Attributions -->
@@ -291,7 +296,6 @@ title: Week 33 | Intro to Databases
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d04.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
@@ -363,7 +367,6 @@ title: Week 33 | Intro to Databases
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week33/progress/progress.draft.w33.d05.csv**
 
   You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
-
 
 <!-- Extra Resources -->
 
