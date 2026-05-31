@@ -78,7 +78,7 @@ keyboard
 
 System searches text fields.
 
-Example:
+Example (SQL):
 
 ```sql
 WHERE name LIKE '%keyboard%'
@@ -141,8 +141,7 @@ Example:
 Express:
 
 ```javascript
-const search =
-    req.query.search;
+const search = req.query.search;
 ```
 
 Result:
@@ -281,8 +280,7 @@ Route:
 ```javascript
 router.get('/', (req, res) => {
 
-    const search =
-        req.query.search || '';
+    const search = req.query.search || '';
 
     const stmt = db.prepare(`
         SELECT *
@@ -291,13 +289,9 @@ router.get('/', (req, res) => {
         ORDER BY id DESC
     `);
 
-    const products =
-        stmt.all(
-            `%${search}%`
-        );
+    const products = stmt.all(`%${search}%`);
 
-    res.render(
-        'products/list',
+    res.render('products/list',
         {
             products,
             search
@@ -376,8 +370,7 @@ OR description LIKE ?
 Example:
 
 ```javascript
-const term =
-    `%${search}%`;
+const term = `%${search}%`;
 
 stmt.all(
     term,
@@ -404,15 +397,8 @@ Show products above $100
 Form:
 
 ```html
-<label>
-
-Minimum Price
-
-<input
-    type="number"
-    name="minPrice"
->
-
+<label>Minimum Price
+  <input type="number" name="minPrice">
 </label>
 ```
 
@@ -439,10 +425,7 @@ WHERE price >= ?
 Route:
 
 ```javascript
-const minPrice =
-    Number(
-        req.query.minPrice
-    ) || 0;
+const minPrice = Number(req.query.minPrice) || 0;
 ```
 
 ---
@@ -467,6 +450,14 @@ FROM products
 WHERE
 name LIKE ?
 AND price >= ?
+```
+
+Or you can combine multiple OR and AND together selectively like so:
+
+```sql
+SELECT *
+FROM products
+WHERE (name LIKE ? OR description LIKE ?) AND price >= ?
 ```
 
 ---
@@ -498,15 +489,15 @@ Real applications rarely know which filters users will choose.
 Bad:
 
 ```javascript
-if(search) {
+if ( search ) {
     ...
 }
 
-if(minPrice) {
+if ( minPrice ) {
     ...
 }
 
-if(maxPrice) {
+if ( maxPrice ) {
     ...
 }
 ```
@@ -522,42 +513,23 @@ const conditions = [];
 const values = [];
 ```
 
----
-
 Search:
 
 ```javascript
-if(search) {
-
-    conditions.push(
-        '(name LIKE ? OR description LIKE ?)'
-    );
-
-    values.push(
-        `%${search}%`,
-        `%${search}%`
-    );
-
+if ( search ) {
+    conditions.push('(name LIKE ? OR description LIKE ?)');
+    values.push(`%${search}%`, `%${search}%`);
 }
 ```
-
----
 
 Min Price:
 
 ```javascript
-if(minPrice) {
-
-    conditions.push(
-        'price >= ?'
-    );
-
+if ( minPrice ) {
+    conditions.push('price >= ?');
     values.push(minPrice);
-
 }
 ```
-
----
 
 Build Query:
 
@@ -567,8 +539,6 @@ SELECT *
 FROM products
 `;
 ```
-
----
 
 Add Conditions:
 
@@ -772,8 +742,6 @@ Book Index
 
 Instead of reading every page.
 
----
-
 Create:
 
 ```sql
@@ -920,72 +888,6 @@ Validate everything.
 
 ---
 
-# Assignment
-
-## Exercise 1
-
-Add:
-
-```text
-Search by Name
-```
-
-to your CMS.
-
----
-
-## Exercise 2
-
-Extend search to include:
-
-```text
-Description
-```
-
----
-
-## Exercise 3
-
-Add:
-
-```text
-Minimum Price
-```
-
-filtering.
-
----
-
-## Exercise 4
-
-Combine:
-
-```text
-Search
-Price Filter
-Pagination
-```
-
-into a single route.
-
----
-
-## Exercise 5
-
-Preserve search state in:
-
-```text
-Pagination Links
-```
-
-and
-
-```text
-Search Inputs
-```
-
----
-
 # Bonus Challenge
 
 Add sorting:
@@ -1034,52 +936,6 @@ Today you learned:
 * Index fundamentals
 
 Search and filtering are often where a CRUD application begins to feel like a real product. Once users can quickly locate data, the application becomes dramatically more useful.
-
----
-
-# Suggested Syllabus Improvements
-
-At this point, I'd seriously consider introducing a dedicated **Refactoring & Architecture Day** before file uploads.
-
-Suggested insertion between Day 7 and Day 8:
-
-### Architecture Day
-
-Topics:
-
-* Controllers
-* Repositories
-* Services
-* Validation middleware
-* Error middleware
-* Environment variables
-* Configuration management
-
-Structure:
-
-```text
-Route
- ↓
-Controller
- ↓
-Service
- ↓
-Repository
- ↓
-Database
-```
-
-Most Node.js tutorials skip this entirely and accidentally teach students how to create 2,000-line route files.
-
-Another useful addition would be introducing:
-
-ESLint
-
-and
-
-Prettier
-
-during Week 1 instead of waiting until applications become larger. Good habits compound, just like technical debt. The only difference is that one eventually buys you freedom and the other buys you meetings. 😄
 
 ---
 
