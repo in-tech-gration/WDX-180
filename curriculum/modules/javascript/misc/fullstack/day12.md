@@ -7,8 +7,6 @@ load_script_js:
   - mermaid.js
 ---
 
-# WEEK 03 | DAY 02 (Day 12 of 15)
-
 # Authorization, Roles & Permissions
 
 ## Deciding What Users Are Allowed To Do
