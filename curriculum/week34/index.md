@@ -25,7 +25,7 @@ title: Week 34 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 30/5/2026</span>
+  <span>Updated: 31/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -63,7 +63,7 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 1 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day01.html)
+  - [Study Part 1 of the Full Stack Project series](../modules/javascript/misc/fullstack/day01.html)
 
 <!-- Summary -->
 
@@ -91,7 +91,7 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 2 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day02.html)
+  - [Study Part 2 of the Full Stack Project series](../modules/javascript/misc/fullstack/day02.html)
 
 <!-- Summary -->
 
@@ -119,7 +119,7 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 3 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day03.html)
+  - [Study Part 3 of the Full Stack Project series](../modules/javascript/misc/fullstack/day03.html)
 
 <!-- Summary -->
 
@@ -147,7 +147,7 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 4 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day04.html)
+  - [Study Part 4 of the Full Stack Project series](../modules/javascript/misc/fullstack/day04.html)
 
 <!-- Summary -->
 
@@ -175,7 +175,7 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 5 of the Full Stack Project series](/curriculum/modules/javascript/misc/fullstack/day05.html)
+  - [Study Part 5 of the Full Stack Project series](../modules/javascript/misc/fullstack/day05.html)
 
 <!-- Summary -->
 
