@@ -71,9 +71,9 @@ flowchart TD
 
 A[Products List]
 
-A --> B[/products/1]
-A --> C[/products/2]
-A --> D[/products/3]
+A --> B['/products/1']
+A --> C['/products/2']
+A --> D['/products/3']
 
 B --> E[Product Details]
 C --> E
@@ -490,6 +490,8 @@ Common Status Codes
 | 404  | Not Found    |
 | 500  | Server Error |
 
+Check all HTTP Status codes [here](https://in-tech-gration.github.io/WDX-180/pages/httpstatuses/){:target="_blank"}
+
 ---
 
 # Part 7 — Creating Product Links
@@ -514,13 +516,9 @@ Let's make them clickable.
 
 ```html
 <td>
-
-<a href="/products/<%= product.id %>">
-
-    <%= product.name %>
-
-</a>
-
+  <a href="/products/<%= product.id %>">
+      <%= product.name %>
+  </a>
 </td>
 ```
 
@@ -819,73 +817,6 @@ Product not found
 
 ---
 
-# Assignment
-
-## Exercise 1
-
-Create:
-
-```text
-GET /products/:id
-```
-
-that loads a product from SQLite.
-
----
-
-## Exercise 2
-
-Create:
-
-```text
-views/products/single.ejs
-```
-
-to display:
-
-* Name
-* Description
-* Price
-* Created Date
-
----
-
-## Exercise 3
-
-Update:
-
-```text
-views/products/list.ejs
-```
-
-to link each product name to its detail page.
-
----
-
-## Exercise 4
-
-Create a custom:
-
-```text
-404.ejs
-```
-
-page.
-
----
-
-## Exercise 5
-
-Validate:
-
-```javascript
-req.params.id
-```
-
-before querying the database.
-
----
-
 # Bonus Challenge
 
 Add navigation links:
@@ -948,3 +879,7 @@ Today you learned:
 * Database-driven navigation
 
 For the first time, users can move from a collection of records to a specific record. This is the same fundamental pattern used by Amazon product pages, GitHub repositories, YouTube videos, and countless other applications.
+
+---
+
+⚠️ A large part of the content of this module was created using Generative AI (ChatGPT). The synthetic (AI-generated) content was reviewed and curated by Kostas Minaidis.

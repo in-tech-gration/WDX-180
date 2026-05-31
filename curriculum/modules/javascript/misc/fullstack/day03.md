@@ -137,15 +137,20 @@ Examples:
 
 # Part 2 — Creating Our Database Structure
 
-Create:
+Make sure you have created the following files:
 
 ```text
-db/
-
-db.js
-setup.js
-products.sqlite
+├── db/
+    ├── db.js
+    ├── setup.js
+    └── products.sqlite
 ```
+
+At this point, it might be a good idea to install the following 
+VSCode extension for viewing your SQLite database directly through
+your code editor:
+
+[SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"}
 
 ---
 
@@ -158,11 +163,9 @@ express-crud/
 │   ├── db.js
 │   ├── setup.js
 │   └── products.sqlite
-
 ├── routes/
 ├── views/
 ├── public/
-
 └── index.js
 ```
 
@@ -256,6 +259,19 @@ appears inside your db folder.
 Congratulations.
 
 You now own a database.
+
+Alternatively, you can provide a nice package.json script for your colleagues.
+Add the following script in your `package.json`:
+
+```json
+  "scripts": {
+    "db:seed": "node db/setup.js"
+  },
+```
+
+You can now run `npm run db:seed` to initialize and seed the database.
+
+TIP: You can use the [SQLite Viewer extension](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"} to open the `products.sqlite` file and view the structure of the database
 
 ---
 
@@ -592,6 +608,7 @@ router.get('/', (req, res) => {
     const products = stmt.all();
 
     res.render('products/list', {
+        title: "Products",
         products
     });
 
@@ -610,7 +627,7 @@ Bad:
 ORDER BY ${req.query.sort}
 ```
 
-Could lead to SQL injection.
+Could lead to [SQL injection](https://portswigger.net/web-security/sql-injection){:target="_blank"}.
 
 Always whitelist allowed values.
 
@@ -637,9 +654,18 @@ Result:
 }
 ```
 
+Pass the `result` to the `res.render()` method as `total` property:
+
+```js
+res.render('products/list', {
+  // ...
+  total: result.total,
+});
+```
+
 ---
 
-Display:
+Display (in `list.ejs`):
 
 ```html
 <p>Total Products: <%= total %></p>
@@ -832,3 +858,7 @@ Today you learned:
 * How to render database records in EJS
 * How to validate sorting parameters
 * How to build the Read part of CRUD
+
+---
+
+⚠️ A large part of the content of this module was created using Generative AI (ChatGPT). The synthetic (AI-generated) content was reviewed and curated by Kostas Minaidis.

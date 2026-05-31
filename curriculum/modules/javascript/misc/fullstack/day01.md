@@ -212,17 +212,14 @@ Professional projects rely on predictable structure.
 
 ```text
 express-crud/
-
 ├── index.js
 ├── package.json
-
 ├── views/
 │   ├── layout.ejs
 │   ├── index.ejs
 │   └── partials/
 │       ├── header.ejs
 │       └── footer.ejs
-
 ├── public/
 │   └── css/
 │       └── style.css
@@ -823,3 +820,7 @@ Render an EJS page explaining:
 * What Express is
 * What EJS is
 * Why server-side rendering matters
+
+---
+
+⚠️ A large part of the content of this module was created using Generative AI (ChatGPT). The synthetic (AI-generated) content was reviewed and curated by Kostas Minaidis.

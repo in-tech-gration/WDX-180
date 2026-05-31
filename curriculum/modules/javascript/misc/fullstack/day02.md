@@ -187,7 +187,7 @@ Think of it as a database passport number.
 
 # Product Database Schema
 
-Our first schema:
+Our first schema (using SQL):
 
 ```sql
 CREATE TABLE products (
@@ -237,19 +237,7 @@ Most beginners create this:
 index.js
 ```
 
-And then add:
-
-```text
-index.js
-```
-
-And then add:
-
-```text
-index.js
-```
-
-Until the file reaches 4,000 lines.
+And then add code until the file reaches 4,000 lines.
 
 At this point the file becomes sentient and starts generating bugs.
 
@@ -261,16 +249,15 @@ Instead:
 
 ```text
 project/
-
-├── routes/
-├── views/
-├── db/
-├── public/
-├── config/
-└── index.js
+  ├── routes/
+  ├── views/
+  ├── db/
+  ├── public/
+  ├── config/
+  └── index.js
 ```
 
-Each folder has a single responsibility.
+Each folder has a **single responsibility**.
 
 ---
 
@@ -333,8 +320,10 @@ Business Logic
 Examples:
 
 ```javascript
-Product.findAll()
-Product.create()
+Product.findAll(); // <-- Read 
+Product.create(); // <-- Create
+Product.update(); // <-- Update
+Product.delete(); // <-- Delete
 ```
 
 ---
@@ -470,11 +459,10 @@ We create route modules.
 # Example Structure
 
 ```text
-routes/
-
-products.js
-users.js
-admin.js
+└── routes/
+   ├── products.js
+   ├── users.js
+   └── admin.js
 ```
 
 ---
@@ -496,6 +484,8 @@ module.exports = router;
 ---
 
 # Register Router
+
+`index.js`:
 
 ```javascript
 const productsRouter = require('./routes/products');
@@ -584,15 +574,12 @@ A --> F[Delete]
 Before creating templates, define them.
 
 ```text
-views/
-
-index.ejs
-product/
-
-    list.ejs
-    single.ejs
-    create.ejs
-    edit.ejs
+├── views/
+│   └── products/
+│       ├── list.ejs
+│       ├── single.ejs
+│       ├── create.ejs
+│       └── edit.ejs
 ```
 
 ---
@@ -603,12 +590,11 @@ Without structure:
 
 ```text
 views/
-
-index.ejs
-index2.ejs
-productPage.ejs
-newProduct.ejs
-test.ejs
+├── index.ejs
+├── index2.ejs
+├── productPage.ejs
+├── newProduct.ejs
+└── test.ejs
 ```
 
 Nobody knows what's happening.
@@ -625,9 +611,8 @@ Soon we'll add:
 
 ```text
 db/
-
-db.js
-setup.js
+├── db.js
+└── setup.js
 ```
 
 ---
@@ -678,7 +663,7 @@ Node.js now includes a built-in SQLite module.
 
 Documentation:
 
-[Node.js SQLite Documentation](https://nodejs.org/api/sqlite.html?utm_source=chatgpt.com)
+[Node.js SQLite Documentation](https://nodejs.org/api/sqlite.html)
 
 We'll begin with SQLite fundamentals first and later compare:
 
@@ -732,31 +717,18 @@ Create the following folder structure:
 
 ```text
 project/
-
-routes/
-views/
-public/
-db/
-config/
+├── routes/
+├── views/
+├── public/
+├── db/
+└── config/
 ```
 
 ---
 
 ## Exercise 2
 
-Move your homepage route into:
-
-```text
-routes/products.js
-```
-
-using Express Router.
-
----
-
-## Exercise 3
-
-Create placeholder routes:
+Read about [Route Parameters](https://expressjs.com/en/guide/routing/#route-parameters){:target="_blank"} in Express.JS and create placeholder routes:
 
 ```text
 GET /products
@@ -781,7 +753,7 @@ etc.
 
 ---
 
-## Exercise 4
+## Exercise 3
 
 Create a database design document.
 
@@ -834,3 +806,7 @@ Today you learned:
 Tomorrow we stop drawing diagrams and start storing real data in SQLite.
 
 The database will finally enter the chat. 😄
+
+---
+
+⚠️ A large part of the content of this module was created using Generative AI (ChatGPT). The synthetic (AI-generated) content was reviewed and curated by Kostas Minaidis.
