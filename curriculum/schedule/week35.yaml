@@ -1,21 +1,22 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
 title: "Full Stack Project"
+header_image: week34/mini.cms.jpg
 version: 2.0
 schedule: 
   days:
     1: # 
-      # file://./../modules/javascript/misc/fullstack/day06.md
-      module: javascript/misc/fullstack/day06.md
+      # file://./../modules/javascript/misc/_w35d01/_w35d01.md
+      module: javascript/misc/_w35d01/_w35d01.md
     2: # 
-      # file://./../modules/javascript/misc/fullstack/day07.md
-      module: javascript/misc/fullstack/day07.md
+      # file://./../modules/javascript/misc/_w35d02/_w35d02.md
+      module: javascript/misc/_w35d02/_w35d02.md
     3: # 
-      # file://./../modules/javascript/misc/fullstack/day08.md
-      module: javascript/misc/fullstack/day08.md
+      # file://./../modules/javascript/misc/_w35d03/_w35d03.md
+      module: javascript/misc/_w35d03/_w35d03.md
     4: # 
-      # file://./../modules/javascript/misc/fullstack/day09.md
-      module: javascript/misc/fullstack/day09.md
+      # file://./../modules/javascript/misc/_w35d04/_w35d04.md
+      module: javascript/misc/_w35d04/_w35d04.md
     5: # 
-      # file://./../modules/javascript/misc/fullstack/day10.md
-      module: javascript/misc/fullstack/day10.md
+      # file://./../modules/javascript/misc/_w35d05/_w35d05.md
+      module: javascript/misc/_w35d05/_w35d05.md
