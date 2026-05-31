@@ -557,11 +557,7 @@ edit.ejs
 
 look almost identical.
 
----
-
 Professional developers avoid duplication.
-
----
 
 Example Partial:
 
@@ -569,13 +565,9 @@ Example Partial:
 views/products/_form.ejs
 ```
 
----
-
 ```html
 <input name="name" value="<%= product?.name || '' %>">
 ```
-
----
 
 Create:
 
@@ -601,8 +593,6 @@ Less maintenance.
 
 Interesting concept:
 
----
-
 Create:
 
 ```http
@@ -617,8 +607,6 @@ creates:
 Two Products
 ```
 
----
-
 Update:
 
 ```http
@@ -632,8 +620,6 @@ results in:
 ```text
 Same Product State
 ```
-
----
 
 This property is called:
 
@@ -653,23 +639,16 @@ Imagine:
 /products/edit/999999
 ```
 
----
-
 Repository:
 
 ```javascript
-const result =
-    productRepository.update(...);
+const result = productRepository.update(...);
 ```
-
----
 
 Check:
 
 ```javascript
-if(
-    result.changes === 0
-) {
+if ( result.changes === 0) {
 
     return res
         .status(404)
@@ -694,15 +673,11 @@ Original Price
 $100
 ```
 
----
-
 User changes:
 
 ```text 
 $10
 ```
-
----
 
 Question:
 
@@ -715,8 +690,6 @@ Why?
 Most CRUD tutorials ignore this.
 
 Real businesses care deeply.
-
----
 
 Future systems often add:
 
@@ -784,68 +757,6 @@ before using them.
 
 ---
 
-# Assignment
-
-## Exercise 1
-
-Create:
-
-```text 
-GET /products/edit/:id
-```
-
-that loads an edit form.
-
----
-
-## Exercise 2
-
-Create:
-
-```text 
-POST /products/edit/:id
-```
-
-that updates the database.
-
----
-
-## Exercise 3
-
-Validate:
-
-* name
-* description
-* price
-
-before saving.
-
----
-
-## Exercise 4
-
-Redirect users back to:
-
-```text 
-/products/:id
-```
-
-after updating.
-
----
-
-## Exercise 5
-
-Extract shared form fields into:
-
-```text 
-_form.ejs
-```
-
-partial.
-
----
-
 # Bonus Challenge
 
 Add:
@@ -875,8 +786,7 @@ SET
     name = ?,
     description = ?,
     price = ?,
-    updated_at =
-        CURRENT_TIMESTAMP
+    updated_at = CURRENT_TIMESTAMP
 
 WHERE id = ?
 ```
