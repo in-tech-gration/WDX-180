@@ -8,7 +8,7 @@ title: Week 35 | Full Stack Project
   <span class="week-prefix">Week 35 |</span> Full Stack Project
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/mini.cms.jpg" />
 
 <div class="week-controls">
 
@@ -25,7 +25,7 @@ title: Week 35 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 30/5/2026</span>
+  <span>Updated: 31/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -49,11 +49,11 @@ title: Week 35 | Full Stack Project
 
 ---
 
-<!-- Week 35 - Day 1 | Full Stack Project - Day 06 -->
+<!-- Week 35 - Day 1 | Full Stack Project - Part 6 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 1</span> | Full Stack Project - Day 06</h2>
+      <span class="summary-day">Week 35 - Day 1</span> | Full Stack Project - Part 6</h2>
   </summary>
 
 ### Schedule
@@ -61,7 +61,9 @@ title: Week 35 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 6 of the Full Stack Project series](../modules/javascript/misc/fullstack/day06.html)
 
 <!-- Summary -->
 
@@ -75,11 +77,11 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 2 | Full Stack Project - Day 07 -->
+<!-- Week 35 - Day 2 | Full Stack Project - Part 7 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 2</span> | Full Stack Project - Day 07</h2>
+      <span class="summary-day">Week 35 - Day 2</span> | Full Stack Project - Part 7</h2>
   </summary>
 
 ### Schedule
@@ -87,7 +89,9 @@ title: Week 35 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 7 of the Full Stack Project series](../modules/javascript/misc/fullstack/day07.html)
 
 <!-- Summary -->
 
@@ -101,11 +105,11 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 3 | Full Stack Project - Day 08 -->
+<!-- Week 35 - Day 3 | Full Stack Project - Part 8 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 3</span> | Full Stack Project - Day 08</h2>
+      <span class="summary-day">Week 35 - Day 3</span> | Full Stack Project - Part 8</h2>
   </summary>
 
 ### Schedule
@@ -113,7 +117,9 @@ title: Week 35 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 8 of the Full Stack Project series](../modules/javascript/misc/fullstack/day08.html)
 
 <!-- Summary -->
 
@@ -127,11 +133,11 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 4 | Full Stack Project - Day 09 -->
+<!-- Week 35 - Day 4 | Full Stack Project - Part 9 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 4</span> | Full Stack Project - Day 09</h2>
+      <span class="summary-day">Week 35 - Day 4</span> | Full Stack Project - Part 9</h2>
   </summary>
 
 ### Schedule
@@ -139,7 +145,9 @@ title: Week 35 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 9 of the Full Stack Project series](../modules/javascript/misc/fullstack/day09.html)
 
 <!-- Summary -->
 
@@ -153,11 +161,11 @@ title: Week 35 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 35 - Day 5 | Full Stack Project - Day 10 -->
+<!-- Week 35 - Day 5 | Full Stack Project - Part 10 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 35 - Day 5</span> | Full Stack Project - Day 10</h2>
+      <span class="summary-day">Week 35 - Day 5</span> | Full Stack Project - Part 10</h2>
   </summary>
 
 ### Schedule
@@ -165,7 +173,9 @@ title: Week 35 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 10 of the Full Stack Project series](../modules/javascript/misc/fullstack/day10.html)
 
 <!-- Summary -->
 
