@@ -25,7 +25,7 @@ title: Week 36 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 31/5/2026</span>
+  <span>Updated: 1/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -63,6 +63,8 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
+  **Authentication & Login Systems**
+
   - [Study Part 11 of the Full Stack Project series](../modules/javascript/misc/fullstack/day11.html)
 
 <!-- Summary -->
@@ -91,6 +93,8 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
+  **Authorization, Roles & Permissions**
+
   - [Study Part 12 of the Full Stack Project series](../modules/javascript/misc/fullstack/day12.html)
 
 <!-- Summary -->
@@ -118,6 +122,8 @@ title: Week 36 | Full Stack Project
   - **Practice on the topics and share your questions**
 
 ### Study Plan
+
+  **Validation, Error Handling & Defensive Programming**
 
   - [Study Part 13 of the Full Stack Project series](../modules/javascript/misc/fullstack/day13.html)
 
