@@ -23,25 +23,25 @@ Deleting data is often irreversible.
 
 One careless query can transform:
 
-```text id="4u3v5z"
+```text 
 10,000 products
 ```
 
 into:
 
-```text id="uqr4m5"
+```text 
 0 products
 ```
 
 faster than you can say:
 
-```text id="wgq4p2"
+```text 
 "Do we have backups?"
 ```
 
 Today we implement the final piece of CRUD:
 
-```text id="97g4z9"
+```text 
 Create
 Read
 Update
@@ -70,7 +70,7 @@ By the end of this lesson, students will be able to:
 
 SQL provides:
 
-```sql id="6i5wz4"
+```sql 
 DELETE
 ```
 
@@ -80,7 +80,7 @@ for removing rows.
 
 Example:
 
-```sql id="2vcm7i"
+```sql 
 DELETE
 FROM products
 WHERE id = 5
@@ -88,7 +88,7 @@ WHERE id = 5
 
 Result:
 
-```text id="vw8kxy"
+```text 
 Product 5 no longer exists
 ```
 
@@ -96,7 +96,7 @@ Product 5 no longer exists
 
 Without:
 
-```sql id="33qoj0"
+```sql 
 WHERE id = 5
 ```
 
@@ -106,14 +106,14 @@ things become exciting.
 
 Example:
 
-```sql id="gl7v1k"
+```sql 
 DELETE
 FROM products
 ```
 
 Result:
 
-```text id="rjv4zj"
+```text 
 Entire table emptied
 ```
 
@@ -129,7 +129,7 @@ Usually only once.
 
 Bad:
 
-```html id="58h1xg"
+```html 
 <a href="/products/delete/5">
     Delete
 </a>
@@ -141,7 +141,7 @@ Why?
 
 Because:
 
-```http id="hzy53s"
+```http 
 GET
 ```
 
@@ -153,7 +153,7 @@ Search engines, crawlers, prefetchers, and browser tools may visit links automat
 
 You don't want:
 
-```text id="f74f8y"
+```text 
 Googlebot
 ```
 
@@ -176,7 +176,7 @@ Rule:
 
 First step:
 
-```http id="h8xv8o"
+```http 
 GET /products/delete/:id
 ```
 
@@ -184,7 +184,7 @@ GET /products/delete/:id
 
 Purpose:
 
-```text id="e4m6vi"
+```text 
 Show confirmation
 ```
 
@@ -192,7 +192,7 @@ Show confirmation
 
 Route:
 
-```javascript id="1o6l5f"
+```javascript 
 router.get(
     '/delete/:id',
     (req, res) => {
@@ -225,7 +225,7 @@ router.get(
 
 # Confirmation View
 
-```html id="my5wvu"
+```html 
 <h2>
 
 Delete Product
@@ -265,7 +265,7 @@ to delete:
 
 Result:
 
-```text id="1m9v4o"
+```text 
 Are you sure?
 ```
 
@@ -279,7 +279,7 @@ A simple but powerful safety mechanism.
 
 Route:
 
-```javascript id="smbngw"
+```javascript 
 router.post(
     '/delete/:id',
     (req, res) => {
@@ -300,7 +300,7 @@ router.post(
 
 Repository:
 
-```javascript id="jlwmwa"
+```javascript 
 function deleteById(id) {
 
     const stmt = db.prepare(`
@@ -318,7 +318,7 @@ function deleteById(id) {
 
 Notice:
 
-```sql id="ebstt9"
+```sql 
 WHERE id = ?
 ```
 
@@ -332,7 +332,7 @@ No exceptions.
 
 Repository:
 
-```javascript id="jfqjlwm"
+```javascript 
 const result =
     stmt.run(id);
 ```
@@ -341,7 +341,7 @@ const result =
 
 Returns:
 
-```javascript id="nxbzgs"
+```javascript 
 {
     changes: 1
 }
@@ -349,7 +349,7 @@ Returns:
 
 Meaning:
 
-```text id="f3a5t9"
+```text 
 One record deleted
 ```
 
@@ -357,7 +357,7 @@ One record deleted
 
 Or:
 
-```javascript id="h6rmw7"
+```javascript 
 {
     changes: 0
 }
@@ -365,7 +365,7 @@ Or:
 
 Meaning:
 
-```text id="2k7jlwm"
+```text 
 Nothing deleted
 ```
 
@@ -373,7 +373,7 @@ Nothing deleted
 
 Handle properly:
 
-```javascript id="7jy3zc"
+```javascript 
 if (
     result.changes === 0
 ) {
@@ -391,7 +391,7 @@ if (
 
 Product page:
 
-```html id="zhlx6h"
+```html 
 <a
 href="/products/delete/<%= product.id %>"
 >
@@ -405,7 +405,7 @@ Delete Product
 
 List page:
 
-```html id="5hjlwm"
+```html 
 <a
 href="/products/delete/<%= product.id %>"
 >
@@ -431,7 +431,7 @@ Mostly dangerous.
 
 Current behavior:
 
-```sql id="a3nmpr"
+```sql 
 DELETE
 FROM products
 WHERE id = ?
@@ -439,7 +439,7 @@ WHERE id = ?
 
 This is called:
 
-```text id="y6qu8o"
+```text 
 Hard Delete
 ```
 
@@ -447,7 +447,7 @@ Hard Delete
 
 Result:
 
-```text id="1kz4tg"
+```text 
 Data is physically removed
 ```
 
@@ -475,7 +475,7 @@ Many applications never truly delete.
 
 Instead:
 
-```sql id="cykpq9"
+```sql 
 ALTER TABLE products
 
 ADD COLUMN deleted_at DATETIME;
@@ -485,7 +485,7 @@ ADD COLUMN deleted_at DATETIME;
 
 Deleting becomes:
 
-```sql id="9lpn4r"
+```sql 
 UPDATE products
 
 SET deleted_at =
@@ -498,7 +498,7 @@ WHERE id = ?
 
 Record remains:
 
-```text id="ywy9zv"
+```text 
 In database
 ```
 
@@ -508,7 +508,7 @@ but is hidden.
 
 Query:
 
-```sql id="x7lm80"
+```sql 
 SELECT *
 FROM products
 WHERE deleted_at IS NULL
@@ -518,7 +518,7 @@ WHERE deleted_at IS NULL
 
 This is called:
 
-```text id="mvl3a7"
+```text 
 Soft Delete
 ```
 
@@ -528,7 +528,7 @@ Soft Delete
 
 Imagine:
 
-```text id="3e2h7p"
+```text 
 Employee deletes 500 products
 ```
 
@@ -536,7 +536,7 @@ Employee deletes 500 products
 
 Hard delete:
 
-```text id="ylnl7j"
+```text 
 Restore from backup
 ```
 
@@ -546,7 +546,7 @@ Potentially painful.
 
 Soft delete:
 
-```sql id="uq7uuk"
+```sql 
 UPDATE products
 
 SET deleted_at = NULL
@@ -564,7 +564,7 @@ Many enterprise systems default to soft deletes.
 
 Some applications provide:
 
-```text id="u7n5m5"
+```text 
 Trash
 Recycle Bin
 Archive
@@ -574,7 +574,7 @@ Archive
 
 Workflow:
 
-```mermaid id="v7td6k"
+```mermaid 
 flowchart LR
 
 A[Active Product]
@@ -609,7 +609,7 @@ Developers appreciate third chances.
 
 Suppose later:
 
-```text id="8mjlwm"
+```text 
 Products
 Orders
 ```
@@ -620,7 +620,7 @@ exist.
 
 Question:
 
-```text id="jlwmq7"
+```text 
 Can we delete a product
 referenced by orders?
 ```
@@ -629,7 +629,7 @@ referenced by orders?
 
 Potential problem:
 
-```text id="vup4xt"
+```text 
 Order references
 missing product
 ```
@@ -640,13 +640,13 @@ Broken data.
 
 Future solutions:
 
-```sql id="7ocn0k"
+```sql 
 ON DELETE CASCADE
 ```
 
 or:
 
-```sql id="jlwmk0"
+```sql 
 ON DELETE RESTRICT
 ```
 
@@ -658,7 +658,7 @@ We'll revisit this when relationships are introduced.
 
 Never trust:
 
-```javascript id="q4m1xt"
+```javascript 
 req.params.id
 ```
 
@@ -666,7 +666,7 @@ req.params.id
 
 Validate:
 
-```javascript id="vjlwmn"
+```javascript 
 const id =
     Number(
         req.params.id
@@ -689,7 +689,7 @@ if (
 
 Never assume:
 
-```text id="9lmz9t"
+```text 
 Delete requests
 are legitimate
 ```
@@ -702,7 +702,7 @@ Authentication and authorization will eventually become critical.
 
 After deletion:
 
-```text id="ebjlwm"
+```text 
 Product deleted successfully
 ```
 
@@ -712,7 +712,7 @@ is helpful.
 
 Simple redirect:
 
-```javascript id="jlwmx3"
+```javascript 
 res.redirect(
     '/products?deleted=1'
 );
@@ -722,7 +722,7 @@ res.redirect(
 
 View:
 
-```html id="jlwmz9"
+```html 
 <% if(deleted) { %>
 
 <div>
@@ -744,7 +744,7 @@ Users should always know what happened.
 
 Current:
 
-```http id="4wdwkj"
+```http 
 POST /products/delete/5
 ```
 
@@ -754,7 +754,7 @@ Works.
 
 True REST:
 
-```http id="rskl3d"
+```http 
 DELETE /products/5
 ```
 
@@ -762,7 +762,7 @@ DELETE /products/5
 
 Browsers don't support:
 
-```html id="2om5eu"
+```html 
 <form method="delete">
 ```
 
@@ -770,7 +770,7 @@ natively.
 
 So many applications use:
 
-```http id="jlwmw0"
+```http 
 POST
 ```
 
@@ -792,7 +792,7 @@ Catastrophic.
 
 Bad:
 
-```sql id="u9u0xv"
+```sql 
 DELETE
 FROM products
 ```
@@ -801,7 +801,7 @@ FROM products
 
 Good:
 
-```sql id="d1kh3j"
+```sql 
 DELETE
 FROM products
 WHERE id = ?
@@ -813,7 +813,7 @@ WHERE id = ?
 
 Bad:
 
-```http id="jlwmj3"
+```http 
 GET /delete/5
 ```
 
@@ -833,7 +833,7 @@ Confirmation pages save data.
 
 Always verify:
 
-```javascript id="bjlwm7"
+```javascript 
 result.changes
 ```
 
@@ -851,7 +851,7 @@ Soft deletes often provide a safer long-term solution.
 
 Create:
 
-```text id="jlwmn1"
+```text 
 GET /products/delete/:id
 ```
 
@@ -863,7 +863,7 @@ confirmation page.
 
 Create:
 
-```text id="jlwmn2"
+```text 
 POST /products/delete/:id
 ```
 
@@ -875,7 +875,7 @@ that removes the product.
 
 Handle:
 
-```text id="jlwmn3"
+```text 
 Missing Product
 ```
 
@@ -887,7 +887,7 @@ correctly.
 
 Add:
 
-```text id="jlwmn4"
+```text 
 Delete
 ```
 
@@ -899,7 +899,7 @@ links to list and detail pages.
 
 Display:
 
-```text id="jlwmn5"
+```text 
 Product deleted successfully
 ```
 
@@ -913,7 +913,7 @@ Implement soft deletes.
 
 Add:
 
-```sql id="jlwmn6"
+```sql 
 deleted_at DATETIME
 ```
 
@@ -923,7 +923,7 @@ to the table.
 
 Update deletion:
 
-```sql id="jlwmn7"
+```sql 
 UPDATE products
 
 SET deleted_at =
@@ -936,7 +936,7 @@ WHERE id = ?
 
 Update queries:
 
-```sql id="jlwmn8"
+```sql 
 WHERE deleted_at IS NULL
 ```
 
@@ -946,7 +946,7 @@ for all product listings.
 
 Add:
 
-```text id="jlwmn9"
+```text 
 Recycle Bin
 ```
 
@@ -956,7 +956,7 @@ page showing deleted products.
 
 Add:
 
-```text id="jlwmna"
+```text 
 Restore Product
 ```
 
@@ -984,7 +984,7 @@ Today you learned:
 
 Your CMS now supports the complete CRUD lifecycle:
 
-```text id="jlwmnb"
+```text 
 Create
 Read
 Update

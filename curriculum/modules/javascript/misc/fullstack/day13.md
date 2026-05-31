@@ -19,7 +19,7 @@ load_script_js:
 
 Until now we've assumed users submit:
 
-```text id="k2m8pv"
+```text 
 Valid Names
 Valid Prices
 Valid Emails
@@ -27,7 +27,7 @@ Valid Emails
 
 Reality looks more like:
 
-```text id="w4r7tx"
+```text 
 Price = banana
 
 Email = not-an-email
@@ -37,13 +37,13 @@ Name = ""
 
 Or:
 
-```text id="v8m2qw"
+```text 
 Price = -999999999
 ```
 
 Or:
 
-```text id="g5k4rx"
+```text 
 Name =
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
 ```
@@ -75,7 +75,7 @@ By the end of this lesson, students will be able to:
 
 Rule #1:
 
-```text id="z7v4pm"
+```text 
 Everything from the client
 is untrusted.
 ```
@@ -86,7 +86,7 @@ Everything.
 
 Including:
 
-```text id="u2m8rw"
+```text 
 Forms
 
 Cookies
@@ -102,7 +102,7 @@ Headers
 
 Assume every value is:
 
-```text id="n4k9tx"
+```text 
 Wrong
 
 Malicious
@@ -118,7 +118,7 @@ until proven otherwise.
 
 Example Product:
 
-```javascript id="k8v2pw"
+```javascript 
 {
     name:
         "Keyboard",
@@ -134,7 +134,7 @@ Possible checks:
 
 ### Required
 
-```text id="r1m5qt"
+```text 
 Name required
 ```
 
@@ -142,7 +142,7 @@ Name required
 
 ### Length
 
-```text id="h7v3rx"
+```text 
 Max 255 chars
 ```
 
@@ -150,7 +150,7 @@ Max 255 chars
 
 ### Numeric
 
-```text id="t5k8wp"
+```text 
 Price must be number
 ```
 
@@ -158,7 +158,7 @@ Price must be number
 
 ### Range
 
-```text id="f9m4qx"
+```text 
 Price > 0
 ```
 
@@ -166,7 +166,7 @@ Price > 0
 
 ### Format
 
-```text id="y3r7kv"
+```text 
 Valid email
 ```
 
@@ -180,7 +180,7 @@ Different validations solve different problems.
 
 Bad:
 
-```javascript id="g8k4rv"
+```javascript 
 router.post(
     '/products/create',
     (req, res) => {
@@ -201,7 +201,7 @@ router.post(
 
 Route becomes:
 
-```text id="x6m2qt"
+```text 
 Validation
 
 Database
@@ -221,7 +221,7 @@ Messy.
 
 Better:
 
-```javascript id="j4r8pw"
+```javascript 
 validateProduct(
     req.body
 );
@@ -237,7 +237,7 @@ Separation of concerns.
 
 Example:
 
-```javascript id="c7v1mx"
+```javascript 
 function validateProduct(
     data
 ) {
@@ -263,7 +263,7 @@ function validateProduct(
 
 Usage:
 
-```javascript id="m9k5qt"
+```javascript 
 const errors =
     validateProduct(
         req.body
@@ -274,7 +274,7 @@ const errors =
 
 Check:
 
-```javascript id="n3v8rw"
+```javascript 
 if(
     errors.length
 ) {
@@ -303,7 +303,7 @@ Testable.
 
 Example:
 
-```javascript id="q6m2tx"
+```javascript 
 if(
 
     name.length < 3
@@ -321,7 +321,7 @@ if(
 
 Example:
 
-```javascript id="w8r4pv"
+```javascript 
 if(
 
     name.length > 255
@@ -339,7 +339,7 @@ if(
 
 Protects against:
 
-```text id="f4k7qx"
+```text 
 Empty names
 
 Massive payloads
@@ -351,7 +351,7 @@ Massive payloads
 
 Current:
 
-```javascript id="r9m1tv"
+```javascript 
 price = "banana"
 ```
 
@@ -359,7 +359,7 @@ price = "banana"
 
 Convert:
 
-```javascript id="x5v8rp"
+```javascript 
 const numericPrice =
     Number(price);
 ```
@@ -368,7 +368,7 @@ const numericPrice =
 
 Validate:
 
-```javascript id="u7k3qw"
+```javascript 
 if(
 
     Number.isNaN(
@@ -388,7 +388,7 @@ if(
 
 Range:
 
-```javascript id="m4r9tx"
+```javascript 
 if(
 
     numericPrice <= 0
@@ -408,7 +408,7 @@ if(
 
 Simple check:
 
-```javascript id="y2k7pv"
+```javascript 
 email.includes('@')
 ```
 
@@ -420,7 +420,7 @@ Works poorly.
 
 Better:
 
-```javascript id="g6m4rw"
+```javascript 
 const emailRegex =
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 ```
@@ -429,7 +429,7 @@ const emailRegex =
 
 Validate:
 
-```javascript id="h8v1qx"
+```javascript 
 if(
     !emailRegex.test(
         email
@@ -459,7 +459,7 @@ These are different.
 
 User Error:
 
-```text id="p3m8tv"
+```text 
 Invalid Email
 ```
 
@@ -469,7 +469,7 @@ User can fix it.
 
 Server Error:
 
-```text id="d7v2qx"
+```text 
 Database Offline
 ```
 
@@ -479,7 +479,7 @@ User cannot.
 
 Response:
 
-```http id="j5k9rw"
+```http 
 400 Bad Request
 ```
 
@@ -489,7 +489,7 @@ for user problems.
 
 Response:
 
-```http id="u1m4pv"
+```http 
 500 Internal Server Error
 ```
 
@@ -505,7 +505,7 @@ Important distinction.
 
 Example:
 
-```javascript id="n8v3qt"
+```javascript 
 try {
 
     const product =
@@ -525,7 +525,7 @@ catch(error) {
 
 Without:
 
-```javascript id="k4r7pw"
+```javascript 
 try/catch
 ```
 
@@ -535,7 +535,7 @@ application may crash.
 
 With:
 
-```javascript id="v6m2rx"
+```javascript 
 try/catch
 ```
 
@@ -547,7 +547,7 @@ application can recover.
 
 Special middleware:
 
-```javascript id="f2k8tv"
+```javascript 
 function errorHandler(
 
     err,
@@ -577,7 +577,7 @@ function errorHandler(
 
 Register last:
 
-```javascript id="r7v1qx"
+```javascript 
 app.use(
     errorHandler
 );
@@ -593,7 +593,7 @@ Every unhandled error arrives here.
 
 Instead of:
 
-```javascript id="m5k3rw"
+```javascript 
 throw new Error(
     'Not Found'
 );
@@ -603,7 +603,7 @@ throw new Error(
 
 Create:
 
-```javascript id="x9v4pt"
+```javascript 
 class NotFoundError
 extends Error {}
 ```
@@ -612,7 +612,7 @@ extends Error {}
 
 Usage:
 
-```javascript id="u3m7qx"
+```javascript 
 throw new NotFoundError(
     'Product Missing'
 );
@@ -622,7 +622,7 @@ throw new NotFoundError(
 
 Handler:
 
-```javascript id="k7r2tv"
+```javascript 
 if(
 
     err instanceof
@@ -653,7 +653,7 @@ A critical distinction.
 
 Operational Error:
 
-```text id="g1m8qw"
+```text 
 Database unavailable
 
 Missing file
@@ -669,13 +669,13 @@ Handle gracefully.
 
 Programmer Error:
 
-```javascript id="j4v6rx"
+```javascript 
 user.name.toUpperCase()
 ```
 
 when:
 
-```javascript id="h2k9tv"
+```javascript 
 user === undefined
 ```
 
@@ -693,7 +693,7 @@ Understanding the difference helps with debugging and monitoring.
 
 Instead of:
 
-```javascript id="n7v3pw"
+```javascript 
 validateProduct()
 ```
 
@@ -703,7 +703,7 @@ inside every route.
 
 Middleware:
 
-```javascript id="y5m1qx"
+```javascript 
 function validateProductMiddleware(
 
     req,
@@ -741,7 +741,7 @@ function validateProductMiddleware(
 
 Route:
 
-```javascript id="w3k8tv"
+```javascript 
 router.post(
 
     '/products/create',
@@ -766,7 +766,7 @@ Validation fails.
 
 Bad:
 
-```text id="c6m2rw"
+```text 
 Everything disappears
 ```
 
@@ -774,7 +774,7 @@ Everything disappears
 
 Good:
 
-```javascript id="q9v4px"
+```javascript 
 res.render(
     'form',
     {
@@ -790,7 +790,7 @@ res.render(
 
 Input:
 
-```html id="m1k7tv"
+```html 
 value="<%= values.name %>"
 ```
 
@@ -804,7 +804,7 @@ Professional UX.
 
 Never do:
 
-```javascript id="p4v8qx"
+```javascript 
 catch(error) {
 
 }
@@ -818,7 +818,7 @@ Silent failures are terrible.
 
 Always log:
 
-```javascript id="t7m3rw"
+```javascript 
 console.error(
     error
 );
@@ -840,7 +840,7 @@ But logging is the beginning.
 
 Assume:
 
-```text id="k8v1pt"
+```text 
 Everything fails eventually.
 ```
 
@@ -848,7 +848,7 @@ Everything fails eventually.
 
 Examples:
 
-```text id="n5m7qx"
+```text 
 Database
 
 Network
@@ -876,7 +876,7 @@ Because you're realistic.
 
 Bad:
 
-```javascript id="v2k4rw"
+```javascript 
 required
 ```
 
@@ -894,7 +894,7 @@ Validate server-side too.
 
 Separate:
 
-```text id="x6m8tv"
+```text 
 Validation
 
 Database
@@ -910,7 +910,7 @@ into dedicated layers.
 
 Helpful:
 
-```text id="q3v7px"
+```text 
 Email required
 ```
 
@@ -918,7 +918,7 @@ Email required
 
 Not helpful:
 
-```text id="u9m2rw"
+```text 
 Something went wrong
 ```
 
@@ -944,7 +944,7 @@ Developers need useful logs.
 
 Create:
 
-```text id="w4k8tv"
+```text 
 validateProduct()
 ```
 
@@ -956,7 +956,7 @@ function.
 
 Validate:
 
-```text id="p7m1qx"
+```text 
 Name
 
 Description
@@ -978,7 +978,7 @@ Display validation messages in forms.
 
 Create:
 
-```text id="r3v6pw"
+```text 
 404.ejs
 
 500.ejs
@@ -992,7 +992,7 @@ error pages.
 
 Implement:
 
-```javascript id="j8m2tv"
+```javascript 
 errorHandler
 ```
 
@@ -1004,7 +1004,7 @@ middleware.
 
 Create:
 
-```text id="t5v9qx"
+```text 
 Validation Library
 ```
 
@@ -1012,7 +1012,7 @@ for your project.
 
 Example:
 
-```javascript id="n1k7rw"
+```javascript 
 validators/
 
 ├── product.js
@@ -1024,7 +1024,7 @@ validators/
 
 Usage:
 
-```javascript id="m7v4pt"
+```javascript 
 const errors =
     productValidator(
         req.body
@@ -1063,7 +1063,7 @@ If I were evolving this curriculum further, I would strongly consider introducin
 
 Topics:
 
-```text id="z8m3tv"
+```text 
 Unit Tests
 
 Integration Tests
@@ -1087,7 +1087,7 @@ SuperTest
 
 The reason is simple:
 
-```text id="c4v7qx"
+```text 
 Validation
 
 Authentication

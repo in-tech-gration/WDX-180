@@ -26,7 +26,7 @@ Lots of mistakes.
 
 If your application can only create products, eventually users start creating:
 
-```text id="j3d87a"
+```text
 Keyboard
 Keyboard v2
 Keyboard v3
@@ -63,7 +63,7 @@ By the end of this lesson, students will be able to:
 
 Current:
 
-```mermaid id="4n7wfo"
+```mermaid
 flowchart TD
 
 A[Product Page]
@@ -73,7 +73,7 @@ A --> B[View Product]
 
 After today:
 
-```mermaid id="h70v3z"
+```mermaid
 flowchart TD
 
 A[Product Page]
@@ -91,7 +91,7 @@ C --> D[View Updated Product]
 
 Creating records:
 
-```sql id="t6qv8q"
+```sql 
 INSERT INTO products (...)
 ```
 
@@ -101,7 +101,7 @@ adds new data.
 
 Updating records:
 
-```sql id="t4l94g"
+```sql 
 UPDATE products
 SET ...
 WHERE ...
@@ -115,7 +115,7 @@ Example:
 
 Before:
 
-```text id="2mjlwm"
+```text
 Mechanical Keyboard
 
 $89.99
@@ -125,7 +125,7 @@ $89.99
 
 After:
 
-```text id="1zyx3w"
+```text
 Mechanical Keyboard Pro
 
 $99.99
@@ -141,7 +141,7 @@ New values.
 
 Basic syntax:
 
-```sql id="4zh3wr"
+```sql
 UPDATE products
 
 SET
@@ -156,20 +156,20 @@ WHERE id = ?
 
 Very important:
 
-```sql id="e4yq5u"
+```sql
 WHERE id = ?
 ```
 
 Without it:
 
-```sql id="8u5u7n"
+```sql 
 UPDATE products
 SET price = 0
 ```
 
 becomes:
 
-```text id="dd3mxw"
+```text
 Every product now costs $0
 ```
 
@@ -183,7 +183,7 @@ Management usually does not.
 
 URL:
 
-```text id="7t5zw0"
+```text
 /products/edit/5
 ```
 
@@ -191,7 +191,7 @@ URL:
 
 Route:
 
-```javascript id="j1av3e"
+```javascript
 router.get('/edit/:id', (req, res) => {
 
     const product =
@@ -223,7 +223,7 @@ router.get('/edit/:id', (req, res) => {
 
 Users need to see:
 
-```text id="v4b25y"
+```text
 Current Values
 ```
 
@@ -233,7 +233,7 @@ before editing.
 
 Without loading:
 
-```html id="l9r0lx"
+```html
 Name:
 
 [____________]
@@ -243,7 +243,7 @@ Name:
 
 With loading:
 
-```html id="gkrj17"
+```html
 Name:
 
 [Mechanical Keyboard]
@@ -257,7 +257,7 @@ Much better.
 
 ## views/products/edit.ejs
 
-```html id="ix5mct"
+```html
 <h2>Edit Product</h2>
 
 <form
@@ -313,13 +313,13 @@ Much better.
 
 The form displays:
 
-```html id="xqwx2x"
+```html
 value="<%= product.name %>"
 ```
 
 instead of:
 
-```html id="mh0nmj"
+```html
 value=""
 ```
 
@@ -331,7 +331,7 @@ This is how nearly every edit form on the internet works.
 
 Route:
 
-```javascript id="c9czjn"
+```javascript
 router.post('/edit/:id', (req, res) => {
 
     const {
@@ -361,7 +361,7 @@ router.post('/edit/:id', (req, res) => {
 
 # Repository Function
 
-```javascript id="o5j3ya"
+```javascript
 function update(
     id,
     name,
@@ -396,7 +396,7 @@ function update(
 
 Example:
 
-```javascript id="rxv7i7"
+```javascript
 {
     changes: 1
 }
@@ -404,7 +404,7 @@ Example:
 
 Meaning:
 
-```text id="x4gl5d"
+```text 
 1 row updated
 ```
 
@@ -412,7 +412,7 @@ Meaning:
 
 If:
 
-```javascript id="kx3ovt"
+```javascript
 {
     changes: 0
 }
@@ -432,7 +432,7 @@ Updating requires validation just like creating.
 
 Bad:
 
-```javascript id="c68fuk"
+```javascript
 {
     name: '',
     price: ''
@@ -443,7 +443,7 @@ Bad:
 
 Bad:
 
-```javascript id="8g6csh"
+```javascript
 {
     name: 'Keyboard',
     price: -100
@@ -454,7 +454,7 @@ Bad:
 
 Validation:
 
-```javascript id="c31z0z"
+```javascript
 if (!name) {
 
     return res.render(
@@ -473,7 +473,7 @@ if (!name) {
 
 Price Validation:
 
-```javascript id="4m52u2"
+```javascript
 const numericPrice =
     Number(price);
 
@@ -494,7 +494,7 @@ if (
 
 Suppose:
 
-```text id="hy7dkg"
+```text
 Name OK
 
 Price Invalid
@@ -506,7 +506,7 @@ Validation fails.
 
 Bad UX:
 
-```text id="4rk26v"
+```text
 All form data disappears
 ```
 
@@ -514,7 +514,7 @@ All form data disappears
 
 Good UX:
 
-```javascript id="sdrslm"
+```javascript
 res.render(
     'products/edit',
     {
@@ -543,7 +543,7 @@ Users remain calm.
 
 Product page:
 
-```html id="5z67uc"
+```html
 <a
 href="/products/edit/<%= product.id %>"
 >
@@ -557,7 +557,7 @@ Edit Product
 
 List page:
 
-```html id="1x0n8x"
+```html
 <a
 href="/products/edit/<%= product.id %>"
 >
@@ -577,13 +577,13 @@ Now editing is accessible everywhere.
 
 Notice:
 
-```text id="ihw4a7"
+```text
 create.ejs
 ```
 
 and
 
-```text id="uk10d8"
+```text
 edit.ejs
 ```
 
@@ -597,13 +597,13 @@ Professional developers avoid duplication.
 
 Example Partial:
 
-```text id="11ikyz"
+```text
 views/products/_form.ejs
 ```
 
 ---
 
-```html id="zgu4a6"
+```html
 <input
     name="name"
     value="<%= product?.name || '' %>"
@@ -614,7 +614,7 @@ views/products/_form.ejs
 
 Create:
 
-```html id="xijy1d"
+```html
 <%- include(
     '_form',
     {
@@ -627,7 +627,7 @@ Create:
 
 Edit:
 
-```html id="c04j16"
+```html
 <%- include(
     '_form',
     {
@@ -654,7 +654,7 @@ Interesting concept:
 
 Create:
 
-```http id="7q9ttc"
+```http
 POST /products/create
 ```
 
@@ -662,7 +662,7 @@ twice
 
 creates:
 
-```text id="y3fx2r"
+```text
 Two Products
 ```
 
@@ -670,7 +670,7 @@ Two Products
 
 Update:
 
-```http id="tz90b3"
+```http
 POST /products/edit/5
 ```
 
@@ -678,7 +678,7 @@ with same values twice
 
 results in:
 
-```text id="nhvq3v"
+```text
 Same Product State
 ```
 
@@ -686,7 +686,7 @@ Same Product State
 
 This property is called:
 
-```text id="q7svlu"
+```text
 Idempotency
 ```
 
@@ -698,7 +698,7 @@ A useful concept for APIs.
 
 Imagine:
 
-```text id="s95f7v"
+```text
 /products/edit/999999
 ```
 
@@ -706,7 +706,7 @@ Imagine:
 
 Repository:
 
-```javascript id="mw7k65"
+```javascript
 const result =
     productRepository.update(...);
 ```
@@ -715,7 +715,7 @@ const result =
 
 Check:
 
-```javascript id="6e5s0g"
+```javascript
 if(
     result.changes === 0
 ) {
@@ -737,7 +737,7 @@ Verify.
 
 Imagine:
 
-```text id="9sgv7s"
+```text 
 Original Price
 
 $100
@@ -747,7 +747,7 @@ $100
 
 User changes:
 
-```text id="w4v7pv"
+```text 
 $10
 ```
 
@@ -755,7 +755,7 @@ $10
 
 Question:
 
-```text id="f1l6w9"
+```text 
 Who changed it?
 When?
 Why?
@@ -769,7 +769,7 @@ Real businesses care deeply.
 
 Future systems often add:
 
-```sql id="yhy7mb"
+```sql
 updated_at
 updated_by
 ```
@@ -786,7 +786,7 @@ We'll keep things simple for now.
 
 Bad:
 
-```sql id="jclc1m"
+```sql 
 UPDATE products
 SET price = 0
 ```
@@ -799,7 +799,7 @@ Dangerous.
 
 Bad:
 
-```javascript id="q2xj8y"
+```javascript 
 update(id)
 ```
 
@@ -825,7 +825,7 @@ Updates require validation just as much as creation.
 
 Validate:
 
-```javascript id="p3sru3"
+```javascript 
 req.params.id
 ```
 
@@ -839,7 +839,7 @@ before using them.
 
 Create:
 
-```text id="5l5t4f"
+```text 
 GET /products/edit/:id
 ```
 
@@ -851,7 +851,7 @@ that loads an edit form.
 
 Create:
 
-```text id="z67yzq"
+```text 
 POST /products/edit/:id
 ```
 
@@ -875,7 +875,7 @@ before saving.
 
 Redirect users back to:
 
-```text id="i7f0yu"
+```text 
 /products/:id
 ```
 
@@ -887,7 +887,7 @@ after updating.
 
 Extract shared form fields into:
 
-```text id="bhjicv"
+```text 
 _form.ejs
 ```
 
@@ -899,7 +899,7 @@ partial.
 
 Add:
 
-```sql id="42u8j6"
+```sql 
 updated_at
 ```
 
@@ -907,7 +907,7 @@ to the table.
 
 Schema:
 
-```sql id="bq8a7i"
+```sql 
 ALTER TABLE products
 
 ADD COLUMN updated_at DATETIME;
@@ -917,7 +917,7 @@ ADD COLUMN updated_at DATETIME;
 
 Update query:
 
-```sql id="14uzig"
+```sql 
 UPDATE products
 
 SET
@@ -932,7 +932,7 @@ WHERE id = ?
 
 Display:
 
-```text id="0ll3wc"
+```text 
 Last Updated:
 ```
 
@@ -958,7 +958,7 @@ Today you learned:
 
 At this point, your CMS can:
 
-```text id="kp18g8"
+```text
 Create Products
 Read Products
 Update Products

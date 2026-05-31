@@ -17,7 +17,7 @@ load_script_js:
 
 So far, our CMS stores:
 
-```text id="v9q4xk"
+```text 
 Name
 Description
 Price
@@ -25,7 +25,7 @@ Price
 
 But real products also need:
 
-```text id="kj3d8n"
+```text 
 Images
 PDF Manuals
 Datasheets
@@ -59,7 +59,7 @@ By the end of this lesson, students will be able to:
 
 Normal forms:
 
-```html id="i4q7xt"
+```html 
 <input
     name="name"
 >
@@ -67,7 +67,7 @@ Normal forms:
 
 send:
 
-```text id="qj8m6e"
+```text 
 Text
 ```
 
@@ -75,7 +75,7 @@ Text
 
 File inputs:
 
-```html id="m5s3rp"
+```html 
 <input
     type="file"
     name="image"
@@ -84,7 +84,7 @@ File inputs:
 
 send:
 
-```text id="8x1k9v"
+```text 
 Binary Data
 ```
 
@@ -92,13 +92,13 @@ Binary Data
 
 The browser must use:
 
-```text id="j4k0yu"
+```text 
 multipart/form-data
 ```
 
 instead of:
 
-```text id="w0a6dl"
+```text 
 application/x-www-form-urlencoded
 ```
 
@@ -108,7 +108,7 @@ application/x-www-form-urlencoded
 
 Regular request:
 
-```text id="u2r6nv"
+```text 
 name=keyboard
 price=89.99
 ```
@@ -117,7 +117,7 @@ price=89.99
 
 Multipart request:
 
-```text id="7c2txe"
+```text 
 name=keyboard
 
 [file bytes]
@@ -146,7 +146,7 @@ Multer
 
 Install:
 
-```bash id="uv1jz3"
+```bash 
 npm install multer
 ```
 
@@ -154,7 +154,7 @@ npm install multer
 
 Import:
 
-```javascript id="5g6u2r"
+```javascript 
 const multer =
     require('multer');
 ```
@@ -163,7 +163,7 @@ const multer =
 
 Create upload middleware:
 
-```javascript id="3y2j7f"
+```javascript 
 const upload =
     multer({
         dest: 'uploads/'
@@ -174,7 +174,7 @@ const upload =
 
 Now uploaded files are stored in:
 
-```text id="q7v8wr"
+```text 
 uploads/
 ```
 
@@ -186,7 +186,7 @@ directory.
 
 Edit product form:
 
-```html id="s4m1hz"
+```html 
 <form
     method="post"
     enctype="multipart/form-data"
@@ -210,13 +210,13 @@ Most common beginner mistake:
 
 Forgetting:
 
-```html id="w6r2tn"
+```html 
 enctype="multipart/form-data"
 ```
 
 Without it:
 
-```text id="t9k3qm"
+```text 
 File never arrives
 ```
 
@@ -226,7 +226,7 @@ File never arrives
 
 Route:
 
-```javascript id="f1x7ju"
+```javascript 
 router.post(
     '/edit/:id',
     upload.single('image'),
@@ -244,7 +244,7 @@ router.post(
 
 Multer places uploaded file inside:
 
-```javascript id="7m0kzs"
+```javascript 
 req.file
 ```
 
@@ -252,7 +252,7 @@ req.file
 
 Example:
 
-```javascript id="3d4vjh"
+```javascript 
 {
   filename:
     '5d8a7f6e9c3',
@@ -288,7 +288,7 @@ Useful properties:
 
 Do NOT store:
 
-```text id="y3k8rt"
+```text 
 Entire image
 ```
 
@@ -296,7 +296,7 @@ inside SQLite.
 
 Store:
 
-```text id="q0v2cm"
+```text 
 Filename
 ```
 
@@ -306,7 +306,7 @@ instead.
 
 Add column:
 
-```sql id="u5f7an"
+```sql 
 ALTER TABLE products
 
 ADD COLUMN image
@@ -317,7 +317,7 @@ TEXT;
 
 Example value:
 
-```text id="j9c1vb"
+```text 
 5d8a7f6e9c3.jpg
 ```
 
@@ -325,7 +325,7 @@ Example value:
 
 Repository:
 
-```javascript id="8h4smd"
+```javascript 
 UPDATE products
 
 SET image = ?
@@ -337,7 +337,7 @@ WHERE id = ?
 
 Database stores:
 
-```text id="3w7fqo"
+```text 
 Reference
 ```
 
@@ -355,7 +355,7 @@ Browser cannot access them yet.
 
 Expose uploads folder:
 
-```javascript id="x8m4ct"
+```javascript 
 app.use(
     '/uploads',
     express.static(
@@ -368,7 +368,7 @@ app.use(
 
 Example:
 
-```text id="q1f8wy"
+```text 
 /uploads/image.jpg
 ```
 
@@ -380,7 +380,7 @@ becomes publicly accessible.
 
 View:
 
-```html id="t6v5dr"
+```html 
 <img
     src="/uploads/<%= product.image %>"
     alt="<%= product.name %>"
@@ -391,7 +391,7 @@ View:
 
 Result:
 
-```text id="h2u9sb"
+```text 
 Product Image
 ```
 
@@ -403,7 +403,7 @@ appears on page.
 
 Default Multer names:
 
-```text id="g9x5jq"
+```text 
 7fa1c2f8b4...
 ```
 
@@ -413,7 +413,7 @@ Not ideal.
 
 Custom storage:
 
-```javascript id="m3t6cw"
+```javascript 
 const storage =
     multer.diskStorage({
 
@@ -443,7 +443,7 @@ const storage =
 
 Example:
 
-```text id="b7s0vh"
+```text 
 1712345678-keyboard.jpg
 ```
 
@@ -455,7 +455,7 @@ Much easier to debug.
 
 Dangerous:
 
-```text id="z4y6pf"
+```text 
 virus.exe
 ```
 
@@ -463,7 +463,7 @@ virus.exe
 
 Dangerous:
 
-```text id="j5v3ok"
+```text 
 shell.php
 ```
 
@@ -475,7 +475,7 @@ Accept only images.
 
 Example:
 
-```javascript id="y8n7ru"
+```javascript 
 fileFilter:
 (
     req,
@@ -510,7 +510,7 @@ Only image uploads allowed.
 
 Without limits:
 
-```text id="u6c9mr"
+```text 
 10GB upload
 ```
 
@@ -524,7 +524,7 @@ Not ideal.
 
 Limit:
 
-```javascript id="p8k2zx"
+```javascript 
 limits: {
 
     fileSize:
@@ -537,7 +537,7 @@ limits: {
 
 Equivalent:
 
-```text id="m7t4cf"
+```text 
 5 MB
 ```
 
@@ -553,7 +553,7 @@ Small enough to avoid abuse.
 
 Example:
 
-```text id="r2v5qn"
+```text 
 File too large
 ```
 
@@ -561,7 +561,7 @@ File too large
 
 Example:
 
-```text id="n0k7xh"
+```text 
 Wrong file type
 ```
 
@@ -569,7 +569,7 @@ Wrong file type
 
 Display errors:
 
-```javascript id="j1m9te"
+```javascript 
 return res.render(
     'products/edit',
     {
@@ -591,7 +591,7 @@ Users should know what happened.
 
 Current:
 
-```text id="p4j6wr"
+```text 
 Upload image
 ```
 
@@ -601,13 +601,13 @@ works.
 
 But:
 
-```text id="d9x1fu"
+```text 
 Upload second image
 ```
 
 leaves:
 
-```text id="u0k8av"
+```text 
 Old file
 ```
 
@@ -617,7 +617,7 @@ on disk.
 
 Result:
 
-```text id="c3r7my"
+```text 
 Unused files accumulate
 ```
 
@@ -625,7 +625,7 @@ Unused files accumulate
 
 Future improvement:
 
-```javascript id="g5w2lt"
+```javascript 
 fs.unlink(...)
 ```
 
@@ -641,7 +641,7 @@ We'll revisit cleanup strategies later.
 
 Never trust:
 
-```text id="m8u4zb"
+```text 
 Filename
 ```
 
@@ -649,7 +649,7 @@ Filename
 
 Never trust:
 
-```text id="t1r9kc"
+```text 
 File extension
 ```
 
@@ -657,7 +657,7 @@ File extension
 
 Never trust:
 
-```text id="v6j3oq"
+```text 
 MIME type alone
 ```
 
@@ -665,7 +665,7 @@ MIME type alone
 
 Real systems often inspect:
 
-```text id="e7q5ds"
+```text 
 Actual file contents
 ```
 
@@ -688,7 +688,7 @@ is sufficient.
 
 Current:
 
-```text id="y5k7hn"
+```text 
 Create Product
 ```
 
@@ -696,7 +696,7 @@ Create Product
 
 Enhanced:
 
-```text id="w8q2tr"
+```text 
 Create Product
 Upload Image
 ```
@@ -705,7 +705,7 @@ Upload Image
 
 Single form:
 
-```html id="k1m7vz"
+```html 
 <input
     type="text"
     name="name"
@@ -729,7 +729,7 @@ This is how many CMS platforms operate.
 
 Current:
 
-```sql id="p0u4cn"
+```sql 
 products
 
 image
@@ -741,7 +741,7 @@ One image.
 
 Future:
 
-```sql id="m7q3tw"
+```sql 
 product_images
 ```
 
@@ -751,7 +751,7 @@ table.
 
 Example:
 
-```text id="f9r1vs"
+```text 
 Product
 
 1
@@ -759,7 +759,7 @@ Product
 
 linked to:
 
-```text id="v4y8lb"
+```text 
 image1.jpg
 
 image2.jpg
@@ -781,7 +781,7 @@ We'll keep one image for now.
 
 Bad:
 
-```html id="d5m8rz"
+```html 
 <form method="post">
 ```
 
@@ -789,7 +789,7 @@ Bad:
 
 Must be:
 
-```html id="u3j1qx"
+```html 
 multipart/form-data
 ```
 
@@ -832,7 +832,7 @@ Unused files eventually consume storage.
 
 Install:
 
-```text id="e6t4wk"
+```text 
 Multer
 ```
 
@@ -844,7 +844,7 @@ and configure uploads.
 
 Add:
 
-```text id="g2r9nf"
+```text 
 Image Upload
 ```
 
@@ -862,7 +862,7 @@ Store uploaded filename in SQLite.
 
 Display uploaded image on:
 
-```text id="j8v5pm"
+```text 
 Product Details
 ```
 
@@ -874,7 +874,7 @@ page.
 
 Restrict uploads to:
 
-```text id="t7c1dx"
+```text 
 JPEG
 PNG
 WEBP
@@ -888,7 +888,7 @@ files.
 
 Create:
 
-```text id="s9k4zb"
+```text 
 product_images
 ```
 
@@ -896,7 +896,7 @@ table.
 
 Schema:
 
-```sql id="c5v7qn"
+```sql 
 CREATE TABLE product_images (
 
     id INTEGER PRIMARY KEY,
@@ -912,7 +912,7 @@ CREATE TABLE product_images (
 
 Allow:
 
-```text id="q3n8fr"
+```text 
 Multiple Images
 ```
 
@@ -922,7 +922,7 @@ per product.
 
 Use:
 
-```javascript id="u4m6jk"
+```javascript 
 upload.array(
     'images'
 )
@@ -930,7 +930,7 @@ upload.array(
 
 instead of:
 
-```javascript id="b2r9xp"
+```javascript 
 upload.single(
     'image'
 )
@@ -940,7 +940,7 @@ upload.single(
 
 Display gallery:
 
-```html id="v1x7wt"
+```html 
 <img ...>
 
 <img ...>
@@ -997,7 +997,7 @@ Most real CMS platforms become complex not because CRUD is difficult, but becaus
 
 I'd also strongly consider adding a dedicated day for:
 
-```text id="w6n3af"
+```text 
 Environment Variables
 Configuration
 Secrets

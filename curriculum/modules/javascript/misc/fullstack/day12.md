@@ -23,7 +23,7 @@ load_script_js:
 
 Yesterday we built:
 
-```text id="a7m2vx"
+```text 
 Login
 Logout
 Sessions
@@ -35,7 +35,7 @@ That's progress.
 
 Unfortunately:
 
-```text id="v3k9nw"
+```text 
 Every logged-in user
 can still do everything.
 ```
@@ -44,13 +44,13 @@ That's less ideal.
 
 Imagine:
 
-```text id="z5r8qp"
+```text 
 Intern
 ```
 
 accidentally deleting:
 
-```text id="g2m6uy"
+```text 
 Entire Product Catalog
 ```
 
@@ -80,7 +80,7 @@ By the end of this lesson, students will be able to:
 
 Yesterday:
 
-```text id="p4k8tn"
+```text 
 Are you logged in?
 ```
 
@@ -88,7 +88,7 @@ Are you logged in?
 
 Today:
 
-```text id="q1m7vw"
+```text 
 What are you allowed to do?
 ```
 
@@ -114,7 +114,7 @@ Authorization completes the picture.
 
 Add:
 
-```sql id="n3x7qw"
+```sql 
 ALTER TABLE users
 
 ADD COLUMN role TEXT
@@ -125,7 +125,7 @@ DEFAULT 'viewer';
 
 Possible values:
 
-```text id="u6v2kr"
+```text 
 admin
 editor
 viewer
@@ -135,7 +135,7 @@ viewer
 
 Example:
 
-```text id="s8p4jh"
+```text 
 admin@example.com
 
 admin
@@ -143,7 +143,7 @@ admin
 
 ---
 
-```text id="w2m9cv"
+```text 
 editor@example.com
 
 editor
@@ -151,7 +151,7 @@ editor
 
 ---
 
-```text id="f5k1zx"
+```text 
 viewer@example.com
 
 viewer
@@ -163,7 +163,7 @@ viewer
 
 Currently:
 
-```javascript id="r7m3yt"
+```javascript 
 req.session.userId
 ```
 
@@ -173,7 +173,7 @@ stores only ID.
 
 Load user:
 
-```javascript id="c2v8pq"
+```javascript 
 app.use(
     (
         req,
@@ -203,13 +203,13 @@ app.use(
 
 Now:
 
-```javascript id="x4q7mw"
+```javascript 
 req.user
 ```
 
 contains:
 
-```javascript id="n8k2tv"
+```javascript 
 {
     id: 1,
     email: 'admin@example.com',
@@ -227,7 +227,7 @@ Very useful.
 
 Authentication middleware:
 
-```javascript id="m6p1rx"
+```javascript 
 requireAuth()
 ```
 
@@ -235,7 +235,7 @@ requireAuth()
 
 Authorization middleware:
 
-```javascript id="e3k9nw"
+```javascript 
 requireRole()
 ```
 
@@ -243,7 +243,7 @@ requireRole()
 
 Example:
 
-```javascript id="y8v4qt"
+```javascript 
 function requireRole(
     role
 ) {
@@ -285,7 +285,7 @@ function requireRole(
 
 Usage:
 
-```javascript id="g7m2kp"
+```javascript 
 router.get(
 
     '/admin',
@@ -316,7 +316,7 @@ Only admins allowed.
 
 Authentication failure:
 
-```http id="r1k5wt"
+```http 
 401 Unauthorized
 ```
 
@@ -326,7 +326,7 @@ or redirect.
 
 Authorization failure:
 
-```http id="u9v3pm"
+```http 
 403 Forbidden
 ```
 
@@ -334,7 +334,7 @@ Authorization failure:
 
 Meaning:
 
-```text id="w7x2jq"
+```text 
 We know who you are.
 
 You are not allowed here.
@@ -369,7 +369,7 @@ Example:
 
 Routes:
 
-```javascript id="d4r8yv"
+```javascript 
 router.post(
 
     '/delete/:id',
@@ -394,7 +394,7 @@ Admins can.
 
 Current:
 
-```javascript id="f7k3nz"
+```javascript 
 role === 'admin'
 ```
 
@@ -404,13 +404,13 @@ works.
 
 But:
 
-```text id="q8v1mp"
+```text 
 admin
 ```
 
 should automatically inherit:
 
-```text id="y5r7kt"
+```text 
 editor
 viewer
 ```
@@ -421,7 +421,7 @@ permissions.
 
 Hierarchy:
 
-```text id="k2m4cw"
+```text 
 admin
 
   ↓
@@ -437,7 +437,7 @@ viewer
 
 Represent numerically:
 
-```javascript id="n6x9pq"
+```javascript 
 const roles = {
 
     viewer: 1,
@@ -453,7 +453,7 @@ const roles = {
 
 Middleware:
 
-```javascript id="z3v7rx"
+```javascript 
 if (
 
     roles[
@@ -485,7 +485,7 @@ Much more flexible.
 
 Bad:
 
-```html id="a4m8qk"
+```html 
 Delete Product
 ```
 
@@ -499,7 +499,7 @@ Even if route is protected.
 
 Better:
 
-```html id="j7p2wv"
+```html 
 <% if(
     user.role === 'admin'
 ) { %>
@@ -521,7 +521,7 @@ Users only see actions they can perform.
 
 Important:
 
-```text id="h1v6tz"
+```text 
 UI hiding
 ≠
 Security
@@ -541,13 +541,13 @@ Roles aren't always enough.
 
 Example:
 
-```text id="w3k7pu"
+```text 
 User A
 ```
 
 creates:
 
-```text id="v5r2nx"
+```text 
 Product A
 ```
 
@@ -557,7 +557,7 @@ Question:
 
 Can:
 
-```text id="g8m1qt"
+```text 
 User B
 ```
 
@@ -571,7 +571,7 @@ Maybe not.
 
 Add:
 
-```sql id="u4v9kx"
+```sql 
 created_by INTEGER
 ```
 
@@ -581,7 +581,7 @@ to products.
 
 Create:
 
-```javascript id="c6m8pr"
+```javascript 
 created_by =
     req.user.id
 ```
@@ -590,7 +590,7 @@ created_by =
 
 Check ownership:
 
-```javascript id="k2r7wx"
+```javascript 
 if (
 
     product.created_by
@@ -616,7 +616,7 @@ Very common pattern.
 
 Example:
 
-```text id="e9v4mq"
+```text 
 Admins
 ```
 
@@ -624,7 +624,7 @@ can edit everything.
 
 ---
 
-```text id="q6r8tx"
+```text 
 Editors
 ```
 
@@ -634,7 +634,7 @@ can edit their own.
 
 Logic:
 
-```javascript id="m1k5vz"
+```javascript 
 const canEdit =
 
     req.user.role
@@ -656,7 +656,7 @@ Real-world applications often combine both approaches.
 
 Dangerous:
 
-```html id="n7p4kw"
+```html 
 <select
     name="role"
 >
@@ -674,7 +674,7 @@ admin
 
 User submits:
 
-```text id="j2v8qr"
+```text 
 role=admin
 ```
 
@@ -688,7 +688,7 @@ They promoted themselves.
 
 Never trust:
 
-```text id="x5m1tn"
+```text 
 Client Input
 ```
 
@@ -706,7 +706,7 @@ Always.
 
 Bad:
 
-```javascript id="t9r2pv"
+```javascript 
 if(admin)
 ```
 
@@ -716,7 +716,7 @@ everywhere.
 
 Eventually:
 
-```text id="y7k4wx"
+```text 
 100 routes
 
 50 permission checks
@@ -728,7 +728,7 @@ becomes chaos.
 
 Create:
 
-```javascript id="p4m8qt"
+```javascript 
 permissions.js
 ```
 
@@ -736,7 +736,7 @@ permissions.js
 
 Example:
 
-```javascript id="k8v6rn"
+```javascript 
 module.exports = {
 
     canDeleteProduct(
@@ -767,7 +767,7 @@ Testable.
 
 Protected route:
 
-```javascript id="r3k7mw"
+```javascript 
 router.get(
 
     '/admin',
@@ -794,7 +794,7 @@ router.get(
 
 Only administrators see:
 
-```text id="q9m2pv"
+```text 
 System Settings
 
 User Management
@@ -818,7 +818,7 @@ Eventually systems grow.
 
 Example:
 
-```text id="g4v8qt"
+```text 
 Create Product
 
 Delete Product
@@ -834,13 +834,13 @@ View Analytics
 
 Instead of:
 
-```text id="h8k1rx"
+```text 
 role
 ```
 
 store:
 
-```text id="w5m7pv"
+```text 
 permissions
 ```
 
@@ -848,7 +848,7 @@ permissions
 
 Schema:
 
-```sql id="x2v6qt"
+```sql 
 permissions
 
 roles
@@ -860,13 +860,13 @@ role_permissions
 
 This becomes:
 
-```text id="f7k3wp"
+```text 
 Role-Based Access Control
 ```
 
 commonly called:
 
-```text id="m4r8qv"
+```text 
 RBAC
 ```
 
@@ -886,7 +886,7 @@ Used by:
 
 Never assume:
 
-```text id="r8k4tx"
+```text 
 Hidden Button
 =
 Security
@@ -896,7 +896,7 @@ Security
 
 Attackers can call:
 
-```http id="c3v7pw"
+```http 
 POST /products/delete/5
 ```
 
@@ -906,7 +906,7 @@ directly.
 
 Always validate permissions:
 
-```text id="y1m6qt"
+```text 
 On The Server
 ```
 
@@ -926,7 +926,7 @@ No exceptions.
 
 Bad:
 
-```html id="n6v2qr"
+```html 
 Hide Delete Button
 ```
 
@@ -934,7 +934,7 @@ Hide Delete Button
 
 Attackers can still call:
 
-```http id="z4k8wp"
+```http 
 POST /delete
 ```
 
@@ -958,7 +958,7 @@ Centralize it.
 
 Bad:
 
-```javascript id="w2r7kv"
+```javascript 
 if(user.id === 1)
 ```
 
@@ -972,7 +972,7 @@ Use roles.
 
 Sometimes:
 
-```text id="u7m1px"
+```text 
 User owns content
 ```
 
@@ -986,7 +986,7 @@ matters more than role.
 
 Add:
 
-```text id="v8r3kw"
+```text 
 role
 ```
 
@@ -998,7 +998,7 @@ column to users.
 
 Implement:
 
-```text id="x5k7qt"
+```text 
 requireRole()
 ```
 
@@ -1010,7 +1010,7 @@ middleware.
 
 Restrict:
 
-```text id="k2v4px"
+```text 
 Delete Product
 ```
 
@@ -1022,7 +1022,7 @@ to admins.
 
 Hide:
 
-```text id="t6m8qr"
+```text 
 Delete Button
 ```
 
@@ -1034,7 +1034,7 @@ for non-admins.
 
 Create:
 
-```text id="r1v7kt"
+```text 
 403.ejs
 ```
 
@@ -1046,7 +1046,7 @@ error page.
 
 Add:
 
-```sql id="q4m8wv"
+```sql 
 created_by
 ```
 
@@ -1056,7 +1056,7 @@ column to products.
 
 When creating:
 
-```javascript id="g7k2rx"
+```javascript 
 created_by =
     req.user.id
 ```
@@ -1065,7 +1065,7 @@ created_by =
 
 Allow:
 
-```text id="p9v3qt"
+```text 
 Admins
 ```
 
@@ -1075,7 +1075,7 @@ to edit all products.
 
 Allow:
 
-```text id="w3r8kv"
+```text 
 Editors
 ```
 

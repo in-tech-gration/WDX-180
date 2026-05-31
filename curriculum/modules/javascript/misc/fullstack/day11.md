@@ -17,7 +17,7 @@ load_script_js:
 
 Up until now, anyone can:
 
-```text id="k4n2vm"
+```text 
 Create Products
 Edit Products
 Delete Products
@@ -30,7 +30,7 @@ It's also a complete security disaster.
 
 Today we introduce:
 
-```text id="v8m7xp"
+```text 
 Authentication
 ```
 
@@ -67,13 +67,13 @@ These terms are often confused.
 
 Answers:
 
-```text id="m3r8uw"
+```text 
 Who are you?
 ```
 
 Example:
 
-```text id="uv9k2s"
+```text 
 Email
 Password
 ```
@@ -84,13 +84,13 @@ Password
 
 Answers:
 
-```text id="t7d5jp"
+```text 
 What are you allowed to do?
 ```
 
 Example:
 
-```text id="z6w3fa"
+```text 
 Admin
 Editor
 Viewer
@@ -100,7 +100,7 @@ Viewer
 
 Diagram:
 
-```mermaid id="g5h2nk"
+```mermaid 
 flowchart LR
 
 A[Login]
@@ -112,7 +112,7 @@ B --> C[Authorization]
 
 Today focuses on:
 
-```text id="d2q4xs"
+```text 
 Authentication
 ```
 
@@ -122,7 +122,7 @@ Authentication
 
 Bad:
 
-```sql id="h9w4zu"
+```sql 
 email
 
 password
@@ -130,7 +130,7 @@ password
 
 Stored:
 
-```text id="n5j2yt"
+```text 
 admin@example.com
 
 supersecret123
@@ -140,7 +140,7 @@ supersecret123
 
 Database leak:
 
-```text id="a7r1mv"
+```text 
 All passwords exposed
 ```
 
@@ -154,13 +154,13 @@ Very bad.
 
 Instead:
 
-```text id="y4c7pe"
+```text 
 supersecret123
 ```
 
 becomes:
 
-```text id="x3b8qo"
+```text 
 $2b$10$...
 ```
 
@@ -168,7 +168,7 @@ $2b$10$...
 
 This process is called:
 
-```text id="u8n6wd"
+```text 
 Hashing
 ```
 
@@ -176,7 +176,7 @@ Hashing
 
 Important:
 
-```text id="p4k2rc"
+```text 
 Hashes are one-way
 ```
 
@@ -194,7 +194,7 @@ bcrypt
 
 Install:
 
-```bash id="j6r9pw"
+```bash 
 npm install bcrypt
 ```
 
@@ -202,7 +202,7 @@ npm install bcrypt
 
 Import:
 
-```javascript id="r5y2hf"
+```javascript 
 const bcrypt =
     require('bcrypt');
 ```
@@ -211,7 +211,7 @@ const bcrypt =
 
 Hash password:
 
-```javascript id="m7u1kn"
+```javascript 
 const hash =
     await bcrypt.hash(
         password,
@@ -223,7 +223,7 @@ const hash =
 
 Example result:
 
-```text id="v1d7ma"
+```text 
 $2b$10$...
 ```
 
@@ -231,13 +231,13 @@ $2b$10$...
 
 Store:
 
-```text id="n9k3tx"
+```text 
 Hash
 ```
 
 not:
 
-```text id="h4q8ev"
+```text 
 Password
 ```
 
@@ -247,7 +247,7 @@ Password
 
 Schema:
 
-```sql id="e8m5qp"
+```sql 
 CREATE TABLE users (
 
     id INTEGER PRIMARY KEY,
@@ -263,7 +263,7 @@ CREATE TABLE users (
 
 Example:
 
-```text id="v5p3wo"
+```text 
 admin@example.com
 
 $2b$10$...
@@ -281,7 +281,7 @@ Ever.
 
 Example:
 
-```javascript id="p9w7jt"
+```javascript 
 const hash =
     await bcrypt.hash(
         'secret123',
@@ -293,7 +293,7 @@ const hash =
 
 Insert:
 
-```sql id="f4k6un"
+```sql 
 INSERT INTO users (
 
     email,
@@ -307,7 +307,7 @@ VALUES (?, ?)
 
 Store:
 
-```text id="r8m2cx"
+```text 
 admin@example.com
 
 hashed password
@@ -319,7 +319,7 @@ hashed password
 
 View:
 
-```html id="t2q5vh"
+```html 
 <h2>
 
 Login
@@ -363,7 +363,7 @@ Familiar.
 
 Route:
 
-```javascript id="k7v1nf"
+```javascript 
 router.post(
     '/login',
     async (
@@ -384,7 +384,7 @@ router.post(
 
 Lookup user:
 
-```javascript id="y5u2zb"
+```javascript 
 const user =
     userRepository
         .findByEmail(
@@ -396,7 +396,7 @@ const user =
 
 Verify password:
 
-```javascript id="u9h4qs"
+```javascript 
 const valid =
     await bcrypt.compare(
         password,
@@ -408,7 +408,7 @@ const valid =
 
 If:
 
-```javascript id="m4r8kn"
+```javascript 
 valid === true
 ```
 
@@ -418,7 +418,7 @@ Login succeeds.
 
 Otherwise:
 
-```text id="d7c3pw"
+```text 
 Invalid credentials
 ```
 
@@ -428,7 +428,7 @@ Invalid credentials
 
 After login:
 
-```text id="e1x7ty"
+```text 
 How does the server remember the user?
 ```
 
@@ -438,7 +438,7 @@ Good question.
 
 Answer:
 
-```text id="g8n2mw"
+```text 
 Sessions
 ```
 
@@ -446,7 +446,7 @@ Sessions
 
 Without sessions:
 
-```text id="q5u1hk"
+```text 
 Login
 Refresh
 Logged Out
@@ -464,7 +464,7 @@ Install:
 
 express-session
 
-```bash id="w3r8ku"
+```bash 
 npm install express-session
 ```
 
@@ -472,7 +472,7 @@ npm install express-session
 
 Configure:
 
-```javascript id="v6m4np"
+```javascript 
 const session =
     require(
         'express-session'
@@ -500,7 +500,7 @@ app.use(
 
 Now:
 
-```javascript id="z7t2mw"
+```javascript 
 req.session
 ```
 
@@ -512,7 +512,7 @@ exists.
 
 Successful login:
 
-```javascript id="f8p4qy"
+```javascript 
 req.session.userId =
     user.id;
 ```
@@ -521,7 +521,7 @@ req.session.userId =
 
 Example:
 
-```javascript id="y1n6rd"
+```javascript 
 req.session.userId = 1;
 ```
 
@@ -529,7 +529,7 @@ req.session.userId = 1;
 
 Server remembers:
 
-```text id="b3k9va"
+```text 
 User #1
 ```
 
@@ -545,7 +545,7 @@ Sessions require cookies.
 
 Browser receives:
 
-```text id="s5q1wm"
+```text 
 session-id
 ```
 
@@ -553,7 +553,7 @@ session-id
 
 Future requests:
 
-```text id="v8n4ku"
+```text 
 session-id
 ```
 
@@ -563,7 +563,7 @@ returned automatically.
 
 Diagram:
 
-```mermaid id="j2m8rc"
+```mermaid 
 flowchart LR
 
 A[Browser]
@@ -582,7 +582,7 @@ B --> A
 
 The browser stores:
 
-```text id="m6q5pe"
+```text 
 Session Identifier
 ```
 
@@ -594,7 +594,7 @@ not user data.
 
 Current:
 
-```text id="u1r7vk"
+```text 
 /products/create
 ```
 
@@ -604,7 +604,7 @@ accessible by everyone.
 
 Middleware:
 
-```javascript id="w4k9tx"
+```javascript 
 function requireAuth(
     req,
     res,
@@ -630,7 +630,7 @@ function requireAuth(
 
 Usage:
 
-```javascript id="r7p3mw"
+```javascript 
 router.get(
 
     '/create',
@@ -658,7 +658,7 @@ Now login is required.
 
 Route:
 
-```javascript id="x2m7kp"
+```javascript 
 router.post(
     '/logout',
     (
@@ -694,7 +694,7 @@ Simple.
 
 Middleware:
 
-```javascript id="y8n1fq"
+```javascript 
 app.use(
     (
         req,
@@ -715,7 +715,7 @@ app.use(
 
 View:
 
-```html id="m1p8zw"
+```html 
 <% if(userId) { %>
 
 Logged In
@@ -741,7 +741,7 @@ Never.
 
 Bad:
 
-```text id="k2v6jd"
+```text 
 123456
 ```
 
@@ -749,7 +749,7 @@ Bad:
 
 Bad:
 
-```text id="w8q3rn"
+```text 
 password
 ```
 
@@ -757,7 +757,7 @@ password
 
 Bad:
 
-```text id="x5n9mv"
+```text 
 qwerty
 ```
 
@@ -767,7 +767,7 @@ qwerty
 
 Protect with:
 
-```javascript id="r1m4kx"
+```javascript 
 httpOnly: true
 ```
 
@@ -779,7 +779,7 @@ cookies.
 
 Eventually implement:
 
-```text id="n7w2vp"
+```text 
 Rate Limiting
 ```
 
@@ -789,13 +789,13 @@ Rate Limiting
 
 Bad:
 
-```text id="a4r9cu"
+```text 
 Email not found
 ```
 
 versus:
 
-```text id="z8k5mh"
+```text 
 Wrong password
 ```
 
@@ -803,7 +803,7 @@ Wrong password
 
 Better:
 
-```text id="c3p7wy"
+```text 
 Invalid credentials
 ```
 
@@ -815,7 +815,7 @@ for both.
 
 Without authentication:
 
-```text id="e6m1kn"
+```text 
 Anyone edits everything
 ```
 
@@ -823,7 +823,7 @@ Anyone edits everything
 
 With authentication:
 
-```text id="u9r5px"
+```text 
 Users identified
 ```
 
@@ -831,7 +831,7 @@ Users identified
 
 Soon we'll add:
 
-```text id="f4k7jd"
+```text 
 Roles
 
 Permissions
@@ -885,7 +885,7 @@ Backend routes must also enforce authentication.
 
 Create:
 
-```text id="u5n2kw"
+```text 
 users
 ```
 
@@ -897,7 +897,7 @@ table.
 
 Create:
 
-```text id="v7m4xp"
+```text 
 /login
 ```
 
@@ -915,7 +915,7 @@ Hash passwords using bcrypt.
 
 Verify passwords using:
 
-```javascript id="z2q8mf"
+```javascript 
 bcrypt.compare()
 ```
 
@@ -925,7 +925,7 @@ bcrypt.compare()
 
 Protect:
 
-```text id="g6p3rw"
+```text 
 /products/create
 
 /products/edit
@@ -941,7 +941,7 @@ using authentication middleware.
 
 Create:
 
-```text id="y1k7vu"
+```text 
 /register
 ```
 
@@ -951,7 +951,7 @@ page.
 
 Workflow:
 
-```text id="v4m2px"
+```text 
 Email
 
 Password
@@ -969,7 +969,7 @@ Automatically log user in.
 
 Redirect:
 
-```text id="k9r6wd"
+```text 
 /products
 ```
 
@@ -1004,7 +1004,7 @@ This is a major milestone. The CMS is no longer just a data management tool—it
 
 At this point, I would strongly recommend inserting a dedicated day on:
 
-```text id="m8n5qx"
+```text 
 Environment Variables
 Configuration
 Secrets
@@ -1014,7 +1014,7 @@ before authentication.
 
 Students should understand:
 
-```text id="w3r7vk"
+```text 
 .env
 
 process.env
