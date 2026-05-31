@@ -294,8 +294,7 @@ URL:
 Express:
 
 ```javascript
-const page =
-    Number(req.query.page) || 1;
+const page = Number(req.query.page) || 1;
 ```
 
 Result:
@@ -308,18 +307,30 @@ page === 3
 
 # Part 5 — Building Pagination
 
+First, let's update our `db/setup.js` seeding script to add 30 more 
+dummy products and be able to test our pagination:
+
+```js
+// Let's create 30 rows to test pagination:
+for (let i = 1; i <= 30; i++) {
+  db.exec(`
+    INSERT INTO products (name, description, price)
+    VALUES
+    ('Product ${i}', 'Description for product ${i}', ${(i * 10).toFixed(2)});
+    `);
+}
+
+console.log('Database created successfully.');
+```
+
 Route:
 
 ```javascript
 router.get('/', (req, res) => {
 
-    const page =
-        Number(req.query.page) || 1;
-
+    const page = Number(req.query.page) || 1;
     const limit = 10;
-
-    const offset =
-        (page - 1) * limit;
+    const offset = (page - 1) * limit;
 
     const stmt = db.prepare(`
         SELECT *
@@ -329,14 +340,13 @@ router.get('/', (req, res) => {
         OFFSET ?
     `);
 
-    const products =
-        stmt.all(limit, offset);
+    const products = stmt.all(limit, offset);
 
-    res.render(
-        'products/list',
+    res.render('products/list',
         {
-            products,
-            page
+          // ...
+          products,
+          page
         }
     );
 
@@ -447,9 +457,7 @@ Impossible.
 Use:
 
 ```javascript
-Math.ceil(
-    totalRecords / limit
-)
+Math.ceil(totalRecords / limit)
 ```
 
 ---
@@ -471,13 +479,8 @@ Perfect.
 Route:
 
 ```javascript
-const totalRecords =
-    productRepository.count();
-
-const totalPages =
-    Math.ceil(
-        totalRecords / limit
-    );
+const totalRecords = productRepository.count();
+const totalPages = Math.ceil(totalRecords / limit);
 ```
 
 ---
@@ -485,12 +488,12 @@ const totalPages =
 Pass:
 
 ```javascript
-res.render(
-    'products/list',
+res.render('products/list',
     {
-        products,
-        page,
-        totalPages
+      // ...
+      products,
+      page,
+      totalPages
     }
 );
 ```
@@ -503,21 +506,11 @@ View:
 
 ```html
 <nav>
-
-<% for(
-    let i = 1;
-    i <= totalPages;
-    i++
-) { %>
-
+  <% for ( let i = 1; i <= totalPages; i++ ) { %>
     <a href="/products?page=<%= i %>">
-
-        <%= i %>
-
+      <%= i %>
     </a>
-
-<% } %>
-
+  <% } %>
 </nav>
 ```
 
@@ -564,16 +557,8 @@ Result:
 Previous:
 
 ```html
-<% if(page > 1) { %>
-
-<a
-href="/products?page=<%= page - 1 %>"
->
-
-Previous
-
-</a>
-
+<% if (page > 1) { %>
+  <a href="/products?page=<%= page - 1 %>">Previous</a>
 <% } %>
 ```
 
@@ -582,16 +567,8 @@ Previous
 Next:
 
 ```html
-<% if(page < totalPages) { %>
-
-<a
-href="/products?page=<%= page + 1 %>"
->
-
-Next
-
-</a>
-
+<% if (page < totalPages) { %>
+  <a href="/products?page=<%= page + 1 %>">Next</a>
 <% } %>
 ```
 
@@ -630,8 +607,7 @@ Bad URL:
 Validation:
 
 ```javascript
-let page =
-    Number(req.query.page);
+let page = Number(req.query.page);
 
 if (
     !Number.isInteger(page)
@@ -656,10 +632,8 @@ Example:
 Fix:
 
 ```javascript
-if(page > totalPages) {
-
+if (page > totalPages) {
     page = totalPages;
-
 }
 ```
 
@@ -670,14 +644,9 @@ if(page > totalPages) {
 Repository:
 
 ```javascript
-function findPage(
-    page,
-    limit
-) {
+function findPage( page, limit ) {
 
-    const offset =
-        (page - 1) * limit;
-
+    const offset = (page - 1) * limit;
     const stmt = db.prepare(`
         SELECT *
         FROM products
@@ -699,11 +668,10 @@ function findPage(
 Route:
 
 ```javascript
-const products =
-    productRepository.findPage(
-        page,
-        limit
-    );
+const products = productRepository.findPage(
+  page,
+  limit
+);
 ```
 
 Cleaner.
@@ -856,8 +824,7 @@ or another explicit column.
 Bad:
 
 ```javascript
-const page =
-    req.query.page;
+const page = req.query.page;
 ```
 
 Validate everything.
@@ -889,59 +856,6 @@ Use:
 ```javascript
 Math.ceil(...)
 ```
-
----
-
-# Assignment
-
-## Exercise 1
-
-Implement:
-
-```text
-/products?page=1
-```
-
-using LIMIT and OFFSET.
-
----
-
-## Exercise 2
-
-Display:
-
-```text
-10 products per page
-```
-
----
-
-## Exercise 3
-
-Add:
-
-```text
-Previous
-Next
-```
-
-navigation.
-
----
-
-## Exercise 4
-
-Display:
-
-```text
-Showing page X of Y
-```
-
----
-
-## Exercise 5
-
-Validate page numbers.
 
 ---
 
@@ -1001,44 +915,6 @@ Today you learned:
 * Offset vs Cursor pagination
 
 Most CRUD applications eventually need pagination. It's one of those features that seems trivial until you discover your database contains 500,000 rows and your browser tab has become a space heater.
-
----
-
-# Suggested Syllabus Improvements
-
-At this point in the course, I'd strongly consider inserting an extra day between today's lesson and Search/Filtering:
-
-### New Day: Validation & Architecture
-
-Topics:
-
-* Validation middleware
-* Centralized error handling
-* Repository pattern
-* Service layer introduction
-* Custom Error classes
-
-Example:
-
-```text
-Route
- ↓
-Controller
- ↓
-Service
- ↓
-Repository
- ↓
-Database
-```
-
-Students usually hit an architectural wall around Days 7–10. Introducing these concepts now prevents massive refactoring later.
-
-Another improvement would be replacing manual validation with:
-
-Zod
-
-or a similar schema validation library before authentication is introduced. By Week 3, forms, users, and APIs all benefit from having a proper validation strategy rather than dozens of scattered `if` statements.
 
 ---
 

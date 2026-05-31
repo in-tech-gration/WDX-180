@@ -25,7 +25,7 @@ title: Week 36 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 30/5/2026</span>
+  <span>Updated: 31/5/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -49,11 +49,11 @@ title: Week 36 | Full Stack Project
 
 ---
 
-<!-- Week 36 - Day 1 | Full Stack Project - Day 11 -->
+<!-- Week 36 - Day 1 | Full Stack Project - Part 11 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 1</span> | Full Stack Project - Day 11</h2>
+      <span class="summary-day">Week 36 - Day 1</span> | Full Stack Project - Part 11</h2>
   </summary>
 
 ### Schedule
@@ -61,7 +61,9 @@ title: Week 36 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 11 of the Full Stack Project series](../modules/javascript/misc/fullstack/day11.html)
 
 <!-- Summary -->
 
@@ -75,11 +77,11 @@ title: Week 36 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 2 | Full Stack Project - Day 12 -->
+<!-- Week 36 - Day 2 | Full Stack Project - Part 12 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 2</span> | Full Stack Project - Day 12</h2>
+      <span class="summary-day">Week 36 - Day 2</span> | Full Stack Project - Part 12</h2>
   </summary>
 
 ### Schedule
@@ -87,7 +89,9 @@ title: Week 36 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 12 of the Full Stack Project series](../modules/javascript/misc/fullstack/day12.html)
 
 <!-- Summary -->
 
@@ -101,11 +105,11 @@ title: Week 36 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 3 | Full Stack Project - Day 13 -->
+<!-- Week 36 - Day 3 | Full Stack Project - Part 13 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 3</span> | Full Stack Project - Day 13</h2>
+      <span class="summary-day">Week 36 - Day 3</span> | Full Stack Project - Part 13</h2>
   </summary>
 
 ### Schedule
@@ -113,7 +117,9 @@ title: Week 36 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 13 of the Full Stack Project series](../modules/javascript/misc/fullstack/day13.html)
 
 <!-- Summary -->
 
@@ -127,11 +133,11 @@ title: Week 36 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 4 | Full Stack Project - Day 14 -->
+<!-- Week 36 - Day 4 | Full Stack Project - Part 14 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 4</span> | Full Stack Project - Day 14</h2>
+      <span class="summary-day">Week 36 - Day 4</span> | Full Stack Project - Part 14</h2>
   </summary>
 
 ### Schedule
@@ -139,7 +145,9 @@ title: Week 36 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 14 of the Full Stack Project series](../modules/javascript/misc/fullstack/day14.html)
 
 <!-- Summary -->
 
@@ -153,11 +161,11 @@ title: Week 36 | Full Stack Project
 
 <hr class="mt-1">
 
-<!-- Week 36 - Day 5 | Full Stack Project - Day 15 -->
+<!-- Week 36 - Day 5 | Full Stack Project - Part 15 -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 36 - Day 5</span> | Full Stack Project - Day 15</h2>
+      <span class="summary-day">Week 36 - Day 5</span> | Full Stack Project - Part 15</h2>
   </summary>
 
 ### Schedule
@@ -165,7 +173,9 @@ title: Week 36 | Full Stack Project
   - **Study the suggested material**
   - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  - [Study Part 15 of the Full Stack Project series](../modules/javascript/misc/fullstack/day15.html)
 
 <!-- Summary -->
 
