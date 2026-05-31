@@ -194,23 +194,18 @@ Route:
 ```javascript
 router.get('/edit/:id', (req, res) => {
 
-    const product =
-        productRepository.findById(
-            req.params.id
-        );
+    const product = productRepository.findById(req.params.id);
 
     if (!product) {
-
         return res
             .status(404)
             .render('404');
-
     }
 
-    res.render(
-        'products/edit',
+    res.render('products/edit',
         {
-            product
+          title: "Edit Product",
+          product
         }
     );
 
@@ -428,9 +423,7 @@ Possibly because the product doesn't exist.
 
 Updating requires validation just like creating.
 
----
-
-Bad:
+❌ Bad:
 
 ```javascript
 {
@@ -439,9 +432,7 @@ Bad:
 }
 ```
 
----
-
-Bad:
+❌ Bad:
 
 ```javascript
 {
@@ -449,8 +440,6 @@ Bad:
     price: -100
 }
 ```
-
----
 
 Validation:
 
@@ -460,9 +449,9 @@ if (!name) {
     return res.render(
         'products/edit',
         {
-            error:
-                'Name is required.',
-            product: req.body
+          title: "Edit Product",
+          error: 'Name is required.',
+          product: req.body
         }
     );
 
@@ -474,17 +463,10 @@ if (!name) {
 Price Validation:
 
 ```javascript
-const numericPrice =
-    Number(price);
+const numericPrice = Number(price);
 
-if (
-    Number.isNaN(
-        numericPrice
-    )
-) {
-
+if (Number.isNaN(numericPrice)) {
     return res.render(...);
-
 }
 ```
 
@@ -518,9 +500,7 @@ Good UX:
 res.render(
     'products/edit',
     {
-        error:
-            'Invalid price',
-
+        error: 'Invalid price',
         product: {
             id,
             name,
@@ -544,13 +524,7 @@ Users remain calm.
 Product page:
 
 ```html
-<a
-href="/products/edit/<%= product.id %>"
->
-
-Edit Product
-
-</a>
+<a href="/products/edit/<%= product.id %>">Edit Product</a>
 ```
 
 ---
@@ -558,13 +532,7 @@ Edit Product
 List page:
 
 ```html
-<a
-href="/products/edit/<%= product.id %>"
->
-
-Edit
-
-</a>
+<a href="/products/edit/<%= product.id %>">Edit</a>
 ```
 
 ---
@@ -604,10 +572,7 @@ views/products/_form.ejs
 ---
 
 ```html
-<input
-    name="name"
-    value="<%= product?.name || '' %>"
->
+<input name="name" value="<%= product?.name || '' %>">
 ```
 
 ---
@@ -615,28 +580,14 @@ views/products/_form.ejs
 Create:
 
 ```html
-<%- include(
-    '_form',
-    {
-        product: {}
-    }
-) %>
+<%- include('_form',{ product: {} }) %>
 ```
-
----
 
 Edit:
 
 ```html
-<%- include(
-    '_form',
-    {
-        product
-    }
-) %>
+<%- include('_form',{ product }) %>
 ```
-
----
 
 One form.
 

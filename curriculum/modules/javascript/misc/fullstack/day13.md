@@ -778,9 +778,7 @@ Good:
 res.render(
     'form',
     {
-        values:
-            req.body,
-
+        product: req.body,
         errors
     }
 );
@@ -791,7 +789,7 @@ res.render(
 Input:
 
 ```html 
-value="<%= values.name %>"
+value="<%= product.name %>"
 ```
 
 ---

@@ -602,7 +602,7 @@ res.render(
     {
         title: 'Create Product',
         error: 'Invalid data',
-        values: req.body
+        product: req.body
     }
 );
 ```
@@ -612,7 +612,7 @@ res.render(
 View:
 
 ```html
-<input name="name" value="<%= values?.name || '' %>">
+<input name="name" value="<%= product?.name || '' %>">
 ```
 
 ---
@@ -621,7 +621,7 @@ Textarea:
 
 ```html
 <textarea name="description">
-  <%= values?.description || '' %>
+  <%= product?.description || '' %>
 </textarea>
 ```
 
