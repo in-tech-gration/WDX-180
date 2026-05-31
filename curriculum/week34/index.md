@@ -25,7 +25,7 @@ title: Week 34 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 31/5/2026</span>
+  <span>Updated: 1/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -63,6 +63,8 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
+  **Express + EJS Fundamentals**
+
   - [Study Part 1 of the Full Stack Project series](../modules/javascript/misc/fullstack/day01.html)
 
 <!-- Summary -->
@@ -90,6 +92,8 @@ title: Week 34 | Full Stack Project
   - **Practice on the topics and share your questions**
 
 ### Study Plan
+
+  **Planning, Architecture & Diagrams**
 
   - [Study Part 2 of the Full Stack Project series](../modules/javascript/misc/fullstack/day02.html)
 
@@ -119,6 +123,8 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
+  **Public Routes & Basic CRUD**
+
   - [Study Part 3 of the Full Stack Project series](../modules/javascript/misc/fullstack/day03.html)
 
 <!-- Summary -->
@@ -147,6 +153,8 @@ title: Week 34 | Full Stack Project
 
 ### Study Plan
 
+  **Single Product Pages & Database-Driven Routing**
+
   - [Study Part 4 of the Full Stack Project series](../modules/javascript/misc/fullstack/day04.html)
 
 <!-- Summary -->
@@ -174,6 +182,8 @@ title: Week 34 | Full Stack Project
   - **Practice on the topics and share your questions**
 
 ### Study Plan
+
+  **Creating Products (CREATE)**
 
   - [Study Part 5 of the Full Stack Project series](../modules/javascript/misc/fullstack/day05.html)
 

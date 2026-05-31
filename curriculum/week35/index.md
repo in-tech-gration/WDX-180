@@ -25,7 +25,7 @@ title: Week 35 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 31/5/2026</span>
+  <span>Updated: 1/6/2026</span>
 
   <h2 class="week-controls__next_week">
 
@@ -63,6 +63,8 @@ title: Week 35 | Full Stack Project
 
 ### Study Plan
 
+  **Pagination**
+
   - [Study Part 6 of the Full Stack Project series](../modules/javascript/misc/fullstack/day06.html)
 
 <!-- Summary -->
@@ -90,6 +92,8 @@ title: Week 35 | Full Stack Project
   - **Practice on the topics and share your questions**
 
 ### Study Plan
+
+  **Search & Filtering**
 
   - [Study Part 7 of the Full Stack Project series](../modules/javascript/misc/fullstack/day07.html)
 
@@ -119,6 +123,8 @@ title: Week 35 | Full Stack Project
 
 ### Study Plan
 
+  **Updating Products (UPDATE)**
+
   - [Study Part 8 of the Full Stack Project series](../modules/javascript/misc/fullstack/day08.html)
 
 <!-- Summary -->
@@ -147,6 +153,8 @@ title: Week 35 | Full Stack Project
 
 ### Study Plan
 
+  **Deleting Products (DELETE)**
+
   - [Study Part 9 of the Full Stack Project series](../modules/javascript/misc/fullstack/day09.html)
 
 <!-- Summary -->
@@ -174,6 +182,8 @@ title: Week 35 | Full Stack Project
   - **Practice on the topics and share your questions**
 
 ### Study Plan
+
+  **File Uploads & Image Management**
 
   - [Study Part 10 of the Full Stack Project series](../modules/javascript/misc/fullstack/day10.html)
 
