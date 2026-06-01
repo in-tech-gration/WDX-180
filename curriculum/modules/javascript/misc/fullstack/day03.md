@@ -157,6 +157,19 @@ load_script_js:
   └── index.js
   ```
 
+# Database Design
+
+  Since we are going to be designing our Database, here are two really 
+  interesting videos that walk you through designing a system. 
+  
+  You can learn a lot from this process, such as thinking about the system from 
+  a high level and breaking it up in different modules and deciding on the Database entities (tables) and Schema (columns and types).
+
+  Enjoy and gain some insights before moving on with creating our products Database.
+
+  [Design Instagram](https://www.youtube.com/watch?v=VJpfO6KdyWE){:target="_blank"}: 30' 
+  [Design Calendar Application](https://www.youtube.com/watch?v=39eAITqeu7g){:target="_blank"}: 25' 
+
 # Part 3 — Database Schema Design
 
   Our Products table:

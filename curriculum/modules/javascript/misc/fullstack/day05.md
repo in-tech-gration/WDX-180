@@ -1,5 +1,6 @@
 ---
 title: "Full Stack Project - Day 05"
+layout: v2
 load_script_js_via_src:
   - mermaid.min.js
 load_script_js: 

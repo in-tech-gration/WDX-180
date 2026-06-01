@@ -19,7 +19,7 @@ load_script_js:
 
 For fourteen days we've been building:
 
-```text id="k8m3tv"
+```text 
 CRUD
 
 SQLite
@@ -45,7 +45,7 @@ On your laptop.
 
 Unfortunately:
 
-```text id="u5v7qx"
+```text 
 Your laptop
 ≠
 The Internet
@@ -78,7 +78,7 @@ By the end of this lesson, students will be able to:
 
 Development:
 
-```text id="x2k8rw"
+```text 
 localhost
 
 Debugging
@@ -92,7 +92,7 @@ Experimental
 
 Production:
 
-```text id="w7m4qx"
+```text 
 Real Users
 
 Real Data
@@ -108,7 +108,7 @@ A surprising number of bugs only appear in production.
 
 Which is software's version of:
 
-```text id="r1v9pt"
+```text 
 "It worked yesterday."
 ```
 
@@ -118,7 +118,7 @@ Which is software's version of:
 
 Hardcoded:
 
-```javascript id="m4k7tv"
+```javascript 
 const secret =
     'super-secret';
 ```
@@ -131,7 +131,7 @@ Bad.
 
 Hardcoded:
 
-```javascript id="n8v2qx"
+```javascript 
 const database =
     './db.sqlite';
 ```
@@ -148,7 +148,7 @@ Use environment variables.
 
 Example:
 
-```env id="q3m8rw"
+```env 
 PORT=3000
 
 SESSION_SECRET=abc123
@@ -160,7 +160,7 @@ DATABASE_PATH=db.sqlite
 
 Access:
 
-```javascript id="u6k4pt"
+```javascript 
 process.env.PORT
 ```
 
@@ -180,7 +180,7 @@ Install:
 
 dotenv
 
-```bash id="t5v1qx"
+```bash 
 npm install dotenv
 ```
 
@@ -188,7 +188,7 @@ npm install dotenv
 
 Load:
 
-```javascript id="p8m7rw"
+```javascript 
 require('dotenv')
     .config();
 ```
@@ -197,13 +197,13 @@ require('dotenv')
 
 Now:
 
-```javascript id="y2k9tv"
+```javascript 
 process.env
 ```
 
 contains values from:
 
-```text id="r6v3qx"
+```text 
 .env
 ```
 
@@ -211,7 +211,7 @@ contains values from:
 
 Never commit:
 
-```text id="m1k8rw"
+```text 
 .env
 ```
 
@@ -223,7 +223,7 @@ Ever.
 
 Add:
 
-```gitignore id="x4v7pt"
+```gitignore 
 .env
 ```
 
@@ -235,7 +235,7 @@ immediately.
 
 Current:
 
-```javascript id="g7m2qx"
+```javascript 
 app.listen(
     3000
 );
@@ -245,7 +245,7 @@ app.listen(
 
 Better:
 
-```javascript id="w3k9rw"
+```javascript 
 app.listen(
     process.env.PORT
 );
@@ -263,7 +263,7 @@ Hardcoding eventually breaks.
 
 Users think:
 
-```text id="u9m4tv"
+```text 
 Internet
 
 ↓
@@ -275,7 +275,7 @@ Your App
 
 Reality:
 
-```text id="j2v8qx"
+```text 
 Internet
 
 ↓
@@ -299,7 +299,7 @@ Common reverse proxies:
 
 Responsibilities:
 
-```text id="n5k1rw"
+```text 
 HTTPS
 
 Load Balancing
@@ -319,7 +319,7 @@ Node focuses on application logic.
 
 Without HTTPS:
 
-```text id="v8m3pt"
+```text 
 Passwords
 
 Cookies
@@ -337,7 +337,7 @@ Very bad.
 
 HTTPS provides:
 
-```text id="c4v7qx"
+```text 
 Encryption
 ```
 
@@ -359,7 +359,7 @@ Let's Encrypt
 
 Development:
 
-```javascript id="z7m2rw"
+```javascript 
 cookie: {
 
     secure: false
@@ -371,7 +371,7 @@ cookie: {
 
 Production:
 
-```javascript id="r3v8pt"
+```javascript 
 cookie: {
 
     secure: true,
@@ -385,7 +385,7 @@ cookie: {
 
 Benefits:
 
-```text id="f6k1qx"
+```text 
 Better Session Protection
 ```
 
@@ -401,7 +401,7 @@ A huge security improvement.
 
 Development:
 
-```javascript id="j4m7rw"
+```javascript 
 console.log(
     'User created'
 );
@@ -417,7 +417,7 @@ Need more.
 
 Questions:
 
-```text id="n8v3qx"
+```text 
 Who logged in?
 
 When?
@@ -435,7 +435,7 @@ Logs answer these questions.
 
 Example:
 
-```javascript id="w2k9tv"
+```javascript 
 logger.info(
 
     'User login',
@@ -457,7 +457,7 @@ Structured logs become invaluable later.
 
 Question:
 
-```text id="p5m4rw"
+```text 
 Is the server healthy?
 ```
 
@@ -465,7 +465,7 @@ Is the server healthy?
 
 Question:
 
-```text id="x8v1pt"
+```text 
 Is memory usage growing?
 ```
 
@@ -473,7 +473,7 @@ Is memory usage growing?
 
 Question:
 
-```text id="u1k7qx"
+```text 
 Are users seeing errors?
 ```
 
@@ -485,7 +485,7 @@ Monitoring answers these.
 
 Without monitoring:
 
-```text id="m7v2rw"
+```text 
 You discover outages from angry users.
 ```
 
@@ -503,7 +503,7 @@ Node process crashes.
 
 Question:
 
-```text id="j9k4tv"
+```text 
 What restarts it?
 ```
 
@@ -517,7 +517,7 @@ PM2
 
 Install:
 
-```bash id="v3m8qx"
+```bash 
 npm install -g pm2
 ```
 
@@ -525,7 +525,7 @@ npm install -g pm2
 
 Run:
 
-```bash id="r6k1rw"
+```bash 
 pm2 start app.js
 ```
 
@@ -533,7 +533,7 @@ pm2 start app.js
 
 Benefits:
 
-```text id="f4v7pt"
+```text 
 Restart
 
 Monitoring
@@ -551,7 +551,7 @@ A production staple.
 
 Current:
 
-```text id="x2m9qw"
+```text 
 SQLite
 ```
 
@@ -561,7 +561,7 @@ SQLite is fantastic.
 
 But eventually:
 
-```text id="u7k4rw"
+```text 
 Multiple Servers
 ```
 
@@ -577,7 +577,7 @@ PostgreSQL
 
 Benefits:
 
-```text id="m5v8pt"
+```text 
 Scalability
 
 Concurrency
@@ -616,7 +616,7 @@ Cloud Providers:
 
 For beginners:
 
-```text id="h8m3qx"
+```text 
 Render
 
 Railway
@@ -634,7 +634,7 @@ Before launch:
 
 ### Security
 
-```text id="c3k7rw"
+```text 
 HTTPS
 
 Session Security
@@ -646,7 +646,7 @@ Password Hashing
 
 ### Configuration
 
-```text id="p9v2qt"
+```text 
 Environment Variables
 
 No Hardcoded Secrets
@@ -656,7 +656,7 @@ No Hardcoded Secrets
 
 ### Reliability
 
-```text id="w6m4px"
+```text 
 Logging
 
 Monitoring
@@ -668,7 +668,7 @@ Error Handling
 
 ### Data
 
-```text id="n1k8rw"
+```text 
 Database Backups
 ```
 
@@ -676,7 +676,7 @@ Database Backups
 
 ### Testing
 
-```text id="j5v3qt"
+```text 
 All Tests Passing
 ```
 
@@ -698,7 +698,7 @@ Let's review what students have built.
 
 Presentation Layer:
 
-```text id="x7m2rw"
+```text 
 EJS
 ```
 
@@ -706,7 +706,7 @@ EJS
 
 Application Layer:
 
-```text id="u4k9tv"
+```text 
 Express Routes
 
 Middleware
@@ -718,7 +718,7 @@ Validation
 
 Security Layer:
 
-```text id="m8v1qx"
+```text 
 Authentication
 
 Authorization
@@ -728,7 +728,7 @@ Authorization
 
 Persistence Layer:
 
-```text id="r2k7pw"
+```text 
 SQLite
 ```
 
@@ -736,7 +736,7 @@ SQLite
 
 Testing Layer:
 
-```text id="g6m3tv"
+```text 
 Vitest
 
 SuperTest
@@ -746,7 +746,7 @@ SuperTest
 
 Infrastructure Layer:
 
-```text id="f9v4qx"
+```text 
 Deployment
 
 Environment Variables
@@ -796,7 +796,7 @@ CKEditor
 
 Building:
 
-```text id="q4m8rw"
+```text 
 JSON APIs
 ```
 
@@ -836,7 +836,7 @@ Automated deployments.
 
 The biggest takeaway from this course isn't:
 
-```text id="w8k2tv"
+```text 
 Express
 
 SQLite
@@ -852,7 +852,7 @@ Those tools will change.
 
 The important lesson is understanding:
 
-```text id="u3m7qx"
+```text 
 Requests
 
 Responses
@@ -895,7 +895,7 @@ far more easily than someone who only memorized framework APIs.
 
 Never commit:
 
-```text id="m2v8rw"
+```text 
 .env
 ```
 
@@ -931,7 +931,7 @@ Hope is not a deployment strategy.
 
 Build:
 
-```text id="v5k4pt"
+```text 
 Mini CMS
 ```
 
@@ -939,7 +939,7 @@ containing:
 
 ### Authentication
 
-```text id="j8m2qx"
+```text 
 Login
 
 Logout
@@ -949,7 +949,7 @@ Logout
 
 ### Authorization
 
-```text id="r4v7tw"
+```text 
 Admin
 
 Editor
@@ -961,7 +961,7 @@ roles.
 
 ### Product Management
 
-```text id="f1k9rw"
+```text 
 Create
 
 Read
@@ -975,7 +975,7 @@ Delete
 
 ### Uploads
 
-```text id="u7m3qx"
+```text 
 Product Images
 ```
 
@@ -983,7 +983,7 @@ Product Images
 
 ### Validation
 
-```text id="n5v8pt"
+```text 
 Server-side Validation
 ```
 
@@ -991,7 +991,7 @@ Server-side Validation
 
 ### Testing
 
-```text id="g2k4rw"
+```text 
 Validation Tests
 
 Authorization Tests
@@ -1061,7 +1061,7 @@ Over 15 days you learned:
 
 A web application is ultimately a pipeline:
 
-```text id="c8m1qx"
+```text 
 Request
 
 ↓
