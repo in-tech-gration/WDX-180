@@ -67,6 +67,19 @@ title: Week 36 | Full Stack Project
 
   **Authentication & Login Systems**
 
+  By the end of this lesson, students will be able to:
+
+  * Understand authentication fundamentals
+  * Understand sessions
+  * Understand cookies
+  * Build login forms
+  * Hash passwords securely
+  * Verify user credentials
+  * Create authenticated sessions
+  * Protect routes
+  * Implement logout functionality
+  * Understand common authentication vulnerabilities
+
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
   - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
@@ -112,6 +125,18 @@ title: Week 36 | Full Stack Project
   Study Part 12 of the Full Stack Project series:
 
   **Authorization, Roles & Permissions**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand authorization
+  * Implement user roles
+  * Restrict route access
+  * Build authorization middleware
+  * Understand role hierarchies
+  * Hide unauthorized UI elements
+  * Prevent privilege escalation
+  * Understand ownership-based permissions
+  * Design scalable permission systems
 
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
@@ -159,6 +184,19 @@ title: Week 36 | Full Stack Project
 
   **Validation, Error Handling & Defensive Programming**
 
+  By the end of this lesson, students will be able to:
+
+  * Understand validation fundamentals
+  * Validate input safely
+  * Separate validation from business logic
+  * Handle application errors gracefully
+  * Create custom error middleware
+  * Understand operational vs programmer errors
+  * Build reusable validators
+  * Display validation feedback
+  * Understand defensive programming
+  * Design more reliable systems
+
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
   - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
@@ -205,6 +243,19 @@ title: Week 36 | Full Stack Project
 
   **Testing Express Applications**
 
+  By the end of this lesson, students will be able to:
+
+  * Understand software testing fundamentals
+  * Write unit tests
+  * Write integration tests
+  * Test Express routes
+  * Test validation logic
+  * Test authentication flows
+  * Mock dependencies
+  * Understand test isolation
+  * Build reliable applications
+  * Develop a testing mindset
+
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
   - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
@@ -250,6 +301,19 @@ title: Week 36 | Full Stack Project
   Study Part 15 of the Full Stack Project series:
 
   **Deployment, Production & Launching Your CMS**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand deployment fundamentals
+  * Prepare applications for production
+  * Use environment variables correctly
+  * Configure production databases
+  * Serve applications securely
+  * Understand reverse proxies
+  * Understand HTTPS
+  * Implement logging strategies
+  * Monitor applications
+  * Deploy a complete CMS
 
  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
