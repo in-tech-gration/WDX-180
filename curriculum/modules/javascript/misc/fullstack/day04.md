@@ -11,874 +11,774 @@ load_script_js:
 
 ## Moving Beyond Lists
 
-> Listing data is useful.
->
-> Viewing a single piece of data is essential.
+  > Listing data is useful.
+  >
+  > Viewing a single piece of data is essential.
 
-Yesterday, we built:
+  Yesterday, we built:
 
-```text
-GET /products
-```
+  ```text
+  GET /products
+  ```
 
-which displayed all products from SQLite.
+  which displayed all products from SQLite.
 
-Today, we're building:
+  Today, we're building:
 
-```text
-GET /products/:id
-```
+  ```text
+  GET /products/:id
+  ```
 
-This allows users to click on a specific product and view its details.
+  This allows users to click on a specific product and view its details.
 
-This is the first time we'll build truly dynamic routes.
-
----
+  This is the first time we'll build truly dynamic routes.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand route parameters
-* Retrieve URL parameters using Express
-* Query a database for a single record
-* Handle missing records gracefully
-* Build dynamic detail pages
-* Create reusable database queries
-* Understand 404 responses
-* Create database-driven navigation
-
----
+  * Understand route parameters
+  * Retrieve URL parameters using Express
+  * Query a database for a single record
+  * Handle missing records gracefully
+  * Build dynamic detail pages
+  * Create reusable database queries
+  * Understand 404 responses
+  * Create database-driven navigation
 
 # What We Are Building
 
-Current:
+  Current:
 
-```mermaid
-flowchart TD
+  ```mermaid
+  flowchart TD
 
-A[Products List]
+  A[Products List]
 
-A --> B[Keyboard]
-A --> C[Mouse]
-A --> D[Monitor]
-```
+  A --> B[Keyboard]
+  A --> C[Mouse]
+  A --> D[Monitor]
+  ```
 
-After today:
+  After today:
 
-```mermaid
-flowchart TD
+  ```mermaid
+  flowchart TD
 
-A[Products List]
+  A[Products List]
 
-A --> B['/products/1']
-A --> C['/products/2']
-A --> D['/products/3']
+  A --> B['/products/1']
+  A --> C['/products/2']
+  A --> D['/products/3']
 
-B --> E[Product Details]
-C --> E
-D --> E
-```
+  B --> E[Product Details]
+  C --> E
+  D --> E
+  ```
 
-Users can now navigate from the list page into individual product pages.
-
----
+  Users can now navigate from the list page into individual product pages.
 
 # Part 1 — Understanding Route Parameters
 
-Consider this URL:
+  Consider this URL:
 
-```text
-/products/42
-```
+  ```text
+  /products/42
+  ```
 
-The value:
+  The value:
 
-```text
-42
-```
+  ```text
+  42
+  ```
 
-changes depending on the product.
+  changes depending on the product.
 
-This is called a route parameter.
+  This is called a route parameter.
 
----
+  **Route Definition**
 
-## Route Definition
+  ```javascript
+  router.get('/products/:id', handler);
+  ```
 
-```javascript
-router.get('/products/:id', handler);
-```
+  The colon indicates:
 
-The colon indicates:
+  ```text
+  :id
+  ```
 
-```text
-:id
-```
+  is a variable.
 
-is a variable.
+  Examples:
 
----
+  ```text
+  /products/1
+  /products/2
+  /products/3
+  /products/999
+  ```
 
-Examples:
+  All match the same route.
 
-```text
-/products/1
-/products/2
-/products/3
-/products/999
-```
+  **Accessing Parameters**
 
-All match the same route.
+  Express places route parameters inside:
 
----
+  ```javascript
+  req.params
+  ```
 
-# Accessing Parameters
+  Example:
 
-Express places route parameters inside:
+  ```javascript
+  router.get('/:id', (req, res) => {
 
-```javascript
-req.params
-```
+      console.log(req.params);
 
-Example:
+  });
+  ```
 
-```javascript
-router.get('/:id', (req, res) => {
+  For:
 
-    console.log(req.params);
+  ```text
+  /products/42
+  ```
 
-});
-```
+  Output:
 
-For:
-
-```text
-/products/42
-```
-
-Output:
-
-```javascript
-{
-    id: '42'
-}
-```
-
----
+  ```javascript
+  {
+      id: '42'
+  }
+  ```
 
 # Part 2 — Building a Product Details Route
 
-Create:
+  Create:
 
-```javascript
-router.get('/:id', (req, res) => {
+  ```javascript
+  router.get('/:id', (req, res) => {
 
-    const id = req.params.id;
+      const id = req.params.id;
 
-    res.send(`Product ID: ${id}`);
+      res.send(`Product ID: ${id}`);
 
-});
-```
+  });
+  ```
 
----
+  Test:
 
-Test:
+  ```text
+  /products/1
+  ```
 
-```text
-/products/1
-```
+  Output:
 
-Output:
+  ```text
+  Product ID: 1
+  ```
 
-```text
-Product ID: 1
-```
+  Test:
 
----
+  ```text
+  /products/999
+  ```
 
-Test:
+  Output:
 
-```text
-/products/999
-```
+  ```text
+  Product ID: 999
+  ```
 
-Output:
-
-```text
-Product ID: 999
-```
-
-The route is now dynamic.
-
----
+  The route is now dynamic.
 
 # Part 3 — Querying a Single Product
 
-Our goal:
+  Our goal:
 
-```sql
-SELECT *
-FROM products
-WHERE id = ?
-```
+  ```sql
+  SELECT *
+  FROM products
+  WHERE id = ?
+  ```
 
----
+  **Why Use Placeholders?**
 
-## Why Use Placeholders?
+  ❌ Bad:
 
-Bad:
+  ```javascript
+  const query = `
+  SELECT *
+  FROM products
+  WHERE id = ${req.params.id}
+  `;
+  ```
 
-```javascript
-const query = `
-SELECT *
-FROM products
-WHERE id = ${req.params.id}
-`;
-```
+  This opens the door to SQL injection.
 
-This opens the door to SQL injection.
+  ✅ Good:
 
----
+  ```javascript
+  const stmt = db.prepare(`
+  SELECT *
+  FROM products
+  WHERE id = ?
+  `);
+  ```
 
-Good:
+  The database safely handles the value.
 
-```javascript
-const stmt = db.prepare(`
-SELECT *
-FROM products
-WHERE id = ?
-`);
-```
+  **Product Lookup**
 
-The database safely handles the value.
+  ```javascript
+  router.get('/:id', (req, res) => {
 
----
+      const id = req.params.id;
 
-# Product Lookup
+      const stmt = db.prepare(`
+          SELECT *
+          FROM products
+          WHERE id = ?
+      `);
 
-```javascript
-router.get('/:id', (req, res) => {
+      const product = stmt.get(id);
 
-    const id = req.params.id;
+      res.json(product);
 
-    const stmt = db.prepare(`
-        SELECT *
-        FROM products
-        WHERE id = ?
-    `);
+  });
+  ```
 
-    const product = stmt.get(id);
+  Example response:
 
-    res.json(product);
+  ```json
+  {
+    "id": 1,
+    "name": "Mechanical Keyboard",
+    "description": "RGB Gaming Keyboard",
+    "price": 89.99
+  }
+  ```
 
-});
-```
+  Success.
 
----
-
-Example response:
-
-```json
-{
-  "id": 1,
-  "name": "Mechanical Keyboard",
-  "description": "RGB Gaming Keyboard",
-  "price": 89.99
-}
-```
-
-Success.
-
-We are now reading individual records.
-
----
+  We are now reading individual records.
 
 # Part 4 — Rendering a Product View
 
-Returning JSON is useful.
+  Returning JSON is useful.
 
-Returning HTML is better for our CMS.
+  Returning HTML is better for our CMS.
 
----
+  **Route**
 
-## Route
+  ```javascript
+  router.get('/:id', (req, res) => {
 
-```javascript
-router.get('/:id', (req, res) => {
+      const stmt = db.prepare(`
+          SELECT *
+          FROM products
+          WHERE id = ?
+      `);
 
-    const stmt = db.prepare(`
-        SELECT *
-        FROM products
-        WHERE id = ?
-    `);
+      const product = stmt.get(req.params.id);
 
-    const product = stmt.get(req.params.id);
+      res.render('products/single', {
+          title: product.name,
+          product
+      });
 
-    res.render('products/single', {
-        title: product.name,
-        product
-    });
+  });
+  ```
 
-});
-```
+  **View**
 
----
+  ```html
+  <h2><%= product.name %></h2>
 
-## View
+  <p>
+      <strong>Price:</strong>
+      $<%= product.price %>
+  </p>
 
-```html
-<h2><%= product.name %></h2>
+  <p>
+      <%= product.description %>
+  </p>
+  ```
 
-<p>
-    <strong>Price:</strong>
-    $<%= product.price %>
-</p>
+  Result:
 
-<p>
-    <%= product.description %>
-</p>
-```
+  ```text
+  Mechanical Keyboard
 
----
+  Price: $89.99
 
-Result:
-
-```text
-Mechanical Keyboard
-
-Price: $89.99
-
-RGB Gaming Keyboard
-```
-
----
+  RGB Gaming Keyboard
+  ```
 
 # Part 5 — Handling Missing Products
 
-What happens if someone visits:
+  What happens if someone visits:
 
-```text
-/products/999999
-```
+  ```text
+  /products/999999
+  ```
 
-?
+  ?
 
-The database returns:
+  The database returns:
 
-```javascript
-undefined
-```
+  ```javascript
+  undefined
+  ```
 
-And Express crashes when we try:
+  And Express crashes when we try:
 
-```javascript
-product.name
-```
+  ```javascript
+  product.name
+  ```
 
-Oops.
+  Oops.
 
----
+  **Proper Error Handling**
 
-# Proper Error Handling
+  ```javascript
+  router.get('/:id', (req, res) => {
 
-```javascript
-router.get('/:id', (req, res) => {
+      const stmt = db.prepare(`
+          SELECT *
+          FROM products
+          WHERE id = ?
+      `);
 
-    const stmt = db.prepare(`
-        SELECT *
-        FROM products
-        WHERE id = ?
-    `);
+      const product = stmt.get(req.params.id);
 
-    const product = stmt.get(req.params.id);
+      if (!product) {
 
-    if (!product) {
+          return res.status(404).render(
+              '404',
+              {
+                  title: 'Not Found'
+              }
+          );
 
-        return res.status(404).render(
-            '404',
-            {
-                title: 'Not Found'
-            }
-        );
+      }
 
-    }
+      res.render('products/single', {
+          title: product.name,
+          product
+      });
 
-    res.render('products/single', {
-        title: product.name,
-        product
-    });
+  });
+  ```
 
-});
-```
+  **Why Error Handling Matters**
 
----
+  Users will:
 
-# Why Error Handling Matters
+  * Type invalid URLs
+  * Use outdated bookmarks
+  * Click broken links
 
-Users will:
+  Your application should survive all three.
 
-* Type invalid URLs
-* Use outdated bookmarks
-* Click broken links
-
-Your application should survive all three.
-
-And preferably survive your future self as well.
-
----
+  And preferably survive your future self as well.
 
 # Part 6 — Creating a 404 Page
 
-Create:
+  Create:
 
-```text
-views/404.ejs
-```
+  ```text
+  views/404.ejs
+  ```
 
----
+  ```html
+  <h1>404</h1>
 
-```html
-<h1>404</h1>
+  <p>
+      Product not found.
+  </p>
 
-<p>
-    Product not found.
-</p>
-
-<a href="/products">
-    Return to Products
-</a>
-```
-
----
+  <a href="/products">
+      Return to Products
+  </a>
+  ```
 
 # Understanding HTTP Status Codes
 
-When everything works:
+  When everything works:
 
-```javascript
-res.status(200)
-```
+  ```javascript
+  res.status(200)
+  ```
 
----
+  When something doesn't exist:
 
-When something doesn't exist:
+  ```javascript
+  res.status(404)
+  ```
 
-```javascript
-res.status(404)
-```
+  When the server crashes:
 
----
+  ```javascript
+  res.status(500)
+  ```
 
-When the server crashes:
+  Common Status Codes
 
-```javascript
-res.status(500)
-```
+  | Code | Meaning      |
+  | ---- | ------------ |
+  | 200  | Success      |
+  | 301  | Redirect     |
+  | 400  | Bad Request  |
+  | 401  | Unauthorized |
+  | 403  | Forbidden    |
+  | 404  | Not Found    |
+  | 500  | Server Error |
 
----
-
-Common Status Codes
-
-| Code | Meaning      |
-| ---- | ------------ |
-| 200  | Success      |
-| 301  | Redirect     |
-| 400  | Bad Request  |
-| 401  | Unauthorized |
-| 403  | Forbidden    |
-| 404  | Not Found    |
-| 500  | Server Error |
-
-Check all HTTP Status codes [here](https://in-tech-gration.github.io/WDX-180/pages/httpstatuses/){:target="_blank"}
-
----
+  Check all HTTP Status codes [here](https://in-tech-gration.github.io/WDX-180/pages/httpstatuses/){:target="_blank"}
 
 # Part 7 — Creating Product Links
 
-Our list page currently shows products.
+  Our list page currently shows products.
 
-Let's make them clickable.
+  Let's make them clickable.
 
----
+  **Before**
 
-## Before
-
-```html
-<td>
-    <%= product.name %>
-</td>
-```
-
----
-
-## After
-
-```html
-<td>
-  <a href="/products/<%= product.id %>">
+  ```html
+  <td>
       <%= product.name %>
+  </td>
+  ```
+
+  **After**
+
+  ```html
+  <td>
+    <a href="/products/<%= product.id %>">
+        <%= product.name %>
+    </a>
+  </td>
+  ```
+
+  Generated HTML:
+
+  ```html
+  <a href="/products/1">
+      Mechanical Keyboard
   </a>
-</td>
-```
+  ```
 
----
+  ---
 
-Generated HTML:
+  Now users can navigate:
 
-```html
-<a href="/products/1">
-    Mechanical Keyboard
-</a>
-```
-
----
-
-Now users can navigate:
-
-```text
-Products List
-    ↓
-Single Product
-```
-
----
+  ```text
+  Products List
+      ↓
+  Single Product
+  ```
 
 # Part 8 — Input Validation
 
-Route parameters come from users.
+  Route parameters come from users.
 
-Never assume they're valid.
+  Never assume they're valid.
 
----
+  Bad:
 
-Bad:
+  ```text
+  /products/banana
+  ```
 
-```text
-/products/banana
-```
+  Bad:
 
----
+  ```text
+  /products/abc123
+  ```
 
-Bad:
+  Bad:
 
-```text
-/products/abc123
-```
+  ```text
+  /products/$$$$$
+  ```
 
----
+  **Validation Example**
 
-Bad:
+  ```javascript
+  router.get('/:id', (req, res) => {
 
-```text
-/products/$$$$$
-```
+      const id = Number(req.params.id);
 
----
+      if (!Number.isInteger(id)) {
 
-# Validation Example
+          return res.status(400).send(
+              'Invalid Product ID'
+          );
 
-```javascript
-router.get('/:id', (req, res) => {
+      }
 
-    const id = Number(req.params.id);
+  });
+  ```
 
-    if (!Number.isInteger(id)) {
+  **Why Validate Early?**
 
-        return res.status(400).send(
-            'Invalid Product ID'
-        );
+  Bad data should be rejected immediately.
 
-    }
+  Benefits:
 
-});
-```
-
----
-
-# Why Validate Early?
-
-Bad data should be rejected immediately.
-
-Benefits:
-
-* Faster execution
-* Fewer bugs
-* Better security
-* Easier debugging
-
----
+  * Faster execution
+  * Fewer bugs
+  * Better security
+  * Easier debugging
 
 # Part 9 — Extracting Database Logic
 
-Current:
+  Current:
 
-```javascript
-router.get('/:id', () => {
+  ```javascript
+  router.get('/:id', () => {
 
-    const stmt = db.prepare(...);
+      const stmt = db.prepare(...);
 
-});
-```
+  });
+  ```
 
-Eventually:
+  Eventually:
 
-```javascript
-router.get(...)
-router.post(...)
-router.put(...)
-router.delete(...)
-```
+  ```javascript
+  router.get(...)
+  router.post(...)
+  router.put(...)
+  router.delete(...)
+  ```
 
-Each route repeats database logic.
+  Each route repeats database logic.
 
----
+  **Better Approach**
 
-# Better Approach
+  Create:
 
-Create:
+  ```text
+  db/productRepository.js
+  ```
 
-```text
-db/productRepository.js
-```
+  Example:
 
----
+  ```javascript
+  const db = require('./db');
 
-Example:
+  function findById(id) {
 
-```javascript
-const db = require('./db');
+      const stmt = db.prepare(`
+          SELECT *
+          FROM products
+          WHERE id = ?
+      `);
 
-function findById(id) {
+      return stmt.get(id);
 
-    const stmt = db.prepare(`
-        SELECT *
-        FROM products
-        WHERE id = ?
-    `);
+  }
 
-    return stmt.get(id);
+  module.exports = {
+      findById
+  };
+  ```
 
-}
+  Route:
 
-module.exports = {
-    findById
-};
-```
+  ```javascript
+  const productRepository =
+      require('../db/productRepository');
 
----
+  router.get('/:id', (req, res) => {
 
-Route:
+      const product =
+          productRepository.findById(
+              req.params.id
+          );
 
-```javascript
-const productRepository =
-    require('../db/productRepository');
+  });
+  ```
 
-router.get('/:id', (req, res) => {
+  Benefits:
 
-    const product =
-        productRepository.findById(
-            req.params.id
-        );
-
-});
-```
-
----
-
-Benefits:
-
-* Cleaner routes
-* Reusable queries
-* Easier testing
-* Easier maintenance
-
----
+  * Cleaner routes
+  * Reusable queries
+  * Easier testing
+  * Easier maintenance
 
 # Part 10 — Repository Pattern (Introduction)
 
-Many enterprise applications use:
+  Many enterprise applications use:
 
-```text
-Route
-    ↓
-Controller
-    ↓
-Repository
-    ↓
-Database
-```
+  ```text
+  Route
+      ↓
+  Controller
+      ↓
+  Repository
+      ↓
+  Database
+  ```
 
-Diagram:
+  Diagram:
 
-```mermaid
-flowchart LR
+  ```mermaid
+  flowchart LR
 
-A[Route]
+  A[Route]
 
-B[Repository]
+  B[Repository]
 
-C[(SQLite)]
+  C[(SQLite)]
 
-A --> B
-B --> C
-C --> B
-B --> A
-```
+  A --> B
+  B --> C
+  C --> B
+  B --> A
+  ```
 
-We won't fully implement this pattern yet.
+  We won't fully implement this pattern yet.
 
-But we're laying the foundation.
-
----
+  But we're laying the foundation.
 
 # Part 11 — Building Better URLs
 
-Compare:
+  Compare:
 
-Bad:
+  Bad:
 
-```text
-/products?id=12
-```
+  ```text
+  /products?id=12
+  ```
 
-Better:
+  Better:
 
-```text
-/products/12
-```
+  ```text
+  /products/12
+  ```
 
-This is called a RESTful URL.
+  This is called a RESTful URL.
 
-Benefits:
+  Benefits:
 
-* Cleaner
-* Easier to read
-* Easier to share
-* Better SEO
-
----
+  * Cleaner
+  * Easier to read
+  * Easier to share
+  * Better SEO
 
 # Common Beginner Mistakes
 
-## Forgetting to Validate IDs
+  **Forgetting to Validate IDs**
 
-Bad:
+  Bad:
 
-```javascript
-stmt.get(req.params.id);
-```
+  ```javascript
+  stmt.get(req.params.id);
+  ```
 
-without checking validity.
+  without checking validity.
 
----
+  **Forgetting 404 Handling**
 
-## Forgetting 404 Handling
+  Bad:
 
-Bad:
+  ```javascript
+  product.name
+  ```
 
-```javascript
-product.name
-```
+  when product doesn't exist.
 
-when product doesn't exist.
+  **Using String Concatenation**
 
----
+  Bad:
 
-## Using String Concatenation
+  ```javascript
+  WHERE id = ${id}
+  ```
 
-Bad:
+  Always use:
 
-```javascript
-WHERE id = ${id}
-```
+  ```javascript
+  WHERE id = ?
+  ```
 
-Always use:
+  **Returning Generic Errors**
 
-```javascript
-WHERE id = ?
-```
+  Bad:
 
----
+  ```javascript
+  Something went wrong
+  ```
 
-## Returning Generic Errors
+  Good:
 
-Bad:
-
-```javascript
-Something went wrong
-```
-
-Good:
-
-```javascript
-Product not found
-```
-
----
+  ```javascript
+  Product not found
+  ```
 
 # Bonus Challenge
 
-Add navigation links:
+  Add navigation links:
 
-```html
-Previous Product
+  ```html
+  Previous Product
 
-Next Product
-```
+  Next Product
+  ```
 
-Example:
+  Example:
 
-```text
-/products/10
-```
+  ```text
+  /products/10
+  ```
 
-shows:
+  shows:
 
-```text
-← Product 9
+  ```text
+  ← Product 9
 
-→ Product 11
-```
+  → Product 11
+  ```
 
-Hint:
+  Hint:
 
-```sql
-SELECT *
-FROM products
-WHERE id < ?
+  ```sql
+  SELECT *
+  FROM products
+  WHERE id < ?
 
-ORDER BY id DESC
-LIMIT 1
-```
+  ORDER BY id DESC
+  LIMIT 1
+  ```
 
-and
+  and
 
-```sql
-SELECT *
-FROM products
-WHERE id > ?
+  ```sql
+  SELECT *
+  FROM products
+  WHERE id > ?
 
-ORDER BY id ASC
-LIMIT 1
-```
-
----
+  ORDER BY id ASC
+  LIMIT 1
+  ```
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* Route parameters
-* Dynamic URLs
-* Reading a single record
-* Prepared SQL statements
-* Input validation
-* 404 handling
-* Repository pattern fundamentals
-* Database-driven navigation
+  * Route parameters
+  * Dynamic URLs
+  * Reading a single record
+  * Prepared SQL statements
+  * Input validation
+  * 404 handling
+  * Repository pattern fundamentals
+  * Database-driven navigation
 
-For the first time, users can move from a collection of records to a specific record. This is the same fundamental pattern used by Amazon product pages, GitHub repositories, YouTube videos, and countless other applications.
+  For the first time, users can move from a collection of records to a specific record. This is the same fundamental pattern used by Amazon product pages, GitHub repositories, YouTube videos, and countless other applications.
 
 ---
 

@@ -11,844 +11,748 @@ load_script_js:
 
 ## The First Half of CRUD
 
-> Reading data is useful.
->
-> Creating data is where applications become interactive.
+  > Reading data is useful.
+  >
+  > Creating data is where applications become interactive.
 
-Up until now, every product in our system was inserted manually through:
+  Up until now, every product in our system was inserted manually through:
 
-```sql
-INSERT INTO products (...)
-```
+  ```sql
+  INSERT INTO products (...)
+  ```
 
-Today we allow users to create products from the browser.
+  Today we allow users to create products from the browser.
 
-This is our first complete end-to-end workflow:
+  This is our first complete end-to-end workflow:
 
-```mermaid
-flowchart LR
+  ```mermaid
+  flowchart LR
 
-A[Browser Form]
-B[Express Route]
-C[Validation]
-D[(SQLite)]
+  A[Browser Form]
+  B[Express Route]
+  C[Validation]
+  D[(SQLite)]
 
-A --> B
-B --> C
-C --> D
-D --> B
-B --> A
-```
+  A --> B
+  B --> C
+  C --> D
+  D --> B
+  B --> A
+  ```
 
-This pattern will become the foundation for nearly everything we build.
-
----
+  This pattern will become the foundation for nearly everything we build.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Build HTML forms using EJS
-* Understand GET vs POST
-* Process form submissions
-* Parse form data using Express middleware
-* Validate user input
-* Insert records into SQLite
-* Handle validation errors
-* Redirect users after successful actions
-* Understand the POST-Redirect-GET pattern
-* Build the Create portion of CRUD
-
----
+  * Build HTML forms using EJS
+  * Understand GET vs POST
+  * Process form submissions
+  * Parse form data using Express middleware
+  * Validate user input
+  * Insert records into SQLite
+  * Handle validation errors
+  * Redirect users after successful actions
+  * Understand the POST-Redirect-GET pattern
+  * Build the Create portion of CRUD
 
 # Part 1 — Understanding Forms
 
-Most web applications revolve around forms.
+  Most web applications revolve around forms.
 
-Examples:
+  Examples:
 
-| Application | Form Purpose      |
-| ----------- | ----------------- |
-| Amazon      | Add Product       |
-| GitHub      | Create Repository |
-| Facebook    | Create Post       |
-| YouTube     | Upload Video      |
-| CMS         | Create Product    |
+  | Application | Form Purpose      |
+  | ----------- | ----------------- |
+  | Amazon      | Add Product       |
+  | GitHub      | Create Repository |
+  | Facebook    | Create Post       |
+  | YouTube     | Upload Video      |
+  | CMS         | Create Product    |
 
-A form allows users to send data to a server.
+  A form allows users to send data to a server.
 
----
+  ---
 
-# Anatomy of a Form
+  **Anatomy of a Form**
 
-```html
-<form action="/products/create" method="post">
+  ```html
+  <form action="/products/create" method="post">
 
-    <input
-        type="text"
-        name="name"
-    >
+      <input
+          type="text"
+          name="name"
+      >
 
-    <button type="submit">
-        Save
-    </button>
+      <button type="submit">
+          Save
+      </button>
 
-</form>
-```
+  </form>
+  ```
 
----
+  **Important Attributes**
 
-# Important Attributes
+  **action**
 
-## action
+  Defines where data is sent.
 
-Defines where data is sent.
+  ```html
+  action="/products/create"
+  ```
 
-```html
-action="/products/create"
-```
+  **method**
 
----
+  Defines how data is sent.
 
-## method
+  ```html
+  method="post"
+  ```
 
-Defines how data is sent.
+  **GET vs POST**
 
-```html
-method="post"
-```
+  **GET**
 
----
+  Used for:
 
-# GET vs POST
+  ```text
+  Reading data
+  ```
 
-## GET
+  Example:
 
-Used for:
+  ```http
+  GET /products
+  ```
 
-```text
-Reading data
-```
+  **POST**
 
-Example:
+  Used for:
 
-```http
-GET /products
-```
+  ```text
+  Creating data
+  ```
 
----
+  Example:
 
-## POST
+  ```http
+  POST /products/create
+  ```
 
-Used for:
+  Rule of thumb:
 
-```text
-Creating data
-```
-
-Example:
-
-```http
-POST /products/create
-```
-
----
-
-Rule of thumb:
-
-| Action | Method        |
-| ------ | ------------- |
-| Read   | GET           |
-| Create | POST          |
-| Update | POST / PUT    |
-| Delete | POST / DELETE |
-
----
+  | Action | Method        |
+  | ------ | ------------- |
+  | Read   | GET           |
+  | Create | POST          |
+  | Update | POST / PUT    |
+  | Delete | POST / DELETE |
 
 # Part 2 — Showing the Form
 
-Route:
+  Route:
 
-```javascript
-router.get('/create', (req, res) => {
+  ```javascript
+  router.get('/create', (req, res) => {
 
-    res.render('products/create', {
-        title: 'Create Product'
-    });
+      res.render('products/create', {
+          title: 'Create Product'
+      });
 
-});
-```
+  });
+  ```
 
----
+  View:
 
-View:
+  ```html
+  <h2>Create Product</h2>
 
-```html
-<h2>Create Product</h2>
+  <form
+      action="/products/create"
+      method="post"
+  >
 
-<form
-    action="/products/create"
-    method="post"
->
+      <div>
 
-    <div>
+          <label>Name</label>
 
-        <label>Name</label>
+          <input
+              type="text"
+              name="name"
+          >
 
-        <input
-            type="text"
-            name="name"
-        >
+      </div>
 
-    </div>
+      <div>
 
-    <div>
+          <label>Description</label>
 
-        <label>Description</label>
+          <textarea
+              name="description"
+          ></textarea>
 
-        <textarea
-            name="description"
-        ></textarea>
+      </div>
 
-    </div>
+      <div>
 
-    <div>
+          <label>Price</label>
 
-        <label>Price</label>
+          <input
+              type="number"
+              step="0.01"
+              name="price"
+          >
 
-        <input
-            type="number"
-            step="0.01"
-            name="price"
-        >
+      </div>
 
-    </div>
+      <button type="submit">
+          Save Product
+      </button>
 
-    <button type="submit">
-        Save Product
-    </button>
-
-</form>
-```
-
----
+  </form>
+  ```
 
 # Part 3 — Understanding req.body
 
-When a form is submitted:
+  When a form is submitted:
 
-```html
-<input name="name">
-```
+  ```html
+  <input name="name">
+  ```
 
-becomes:
+  becomes:
 
-```javascript
-req.body.name
-```
+  ```javascript
+  req.body.name
+  ```
 
----
+  Example:
 
-Example:
+  ```html
+  <input
+      name="name"
+      value="Keyboard"
+  >
+  ```
 
-```html
-<input
-    name="name"
-    value="Keyboard"
->
-```
+  Results in:
 
-Results in:
+  ```javascript
+  req.body
+  ```
 
-```javascript
-req.body
-```
+  containing:
 
-containing:
+  ```javascript
+  {
+      name: 'Keyboard'
+  }
+  ```
 
-```javascript
-{
-    name: 'Keyboard'
-}
-```
+  **Body Parsing Middleware**
 
----
+  Required:
 
-# Body Parsing Middleware
+  `index.js`:
 
-Required:
+  ```javascript
+  app.use(
+      express.urlencoded({
+          extended: true
+      })
+  );
+  ```
 
-`index.js`:
+  Without it:
 
-```javascript
-app.use(
-    express.urlencoded({
-        extended: true
-    })
-);
-```
+  ```javascript
+  req.body
+  ```
 
-Without it:
+  will be:
 
-```javascript
-req.body
-```
+  ```javascript
+  undefined
+  ```
 
-will be:
-
-```javascript
-undefined
-```
-
-Which leads to approximately seventeen minutes of confusion and a Stack Overflow search.
-
----
+  Which leads to approximately seventeen minutes of confusion and a Stack Overflow search.
 
 # Part 4 — Handling Form Submission
 
-Route:
+  Route:
 
-```javascript
-router.post('/create', (req, res) => {
+  ```javascript
+  router.post('/create', (req, res) => {
 
-    console.log(req.body);
+      console.log(req.body);
 
-    res.send('Form received');
+      res.send('Form received');
 
-});
-```
+  });
+  ```
 
----
+  Example Submission
 
-Example Submission
+  ```javascript
+  {
+      name: 'Keyboard',
+      description: 'RGB Keyboard',
+      price: '89.99'
+  }
+  ```
 
-```javascript
-{
-    name: 'Keyboard',
-    description: 'RGB Keyboard',
-    price: '89.99'
-}
-```
+  Notice:
 
-Notice:
+  ```javascript
+  price
+  ```
 
-```javascript
-price
-```
+  is a string.
 
-is a string.
+  Everything from forms arrives as text.
 
-Everything from forms arrives as text.
+  Always.
 
-Always.
+  Even numbers.
 
-Even numbers.
+  Even dates.
 
-Even dates.
-
-Even your hopes and dreams.
-
----
+  Even your hopes and dreams.
 
 # Part 5 — Inserting into SQLite
 
-SQL:
+  SQL:
 
-```sql
-INSERT INTO products (
-    name,
-    description,
-    price
-)
-VALUES (?, ?, ?)
-```
+  ```sql
+  INSERT INTO products (
+      name,
+      description,
+      price
+  )
+  VALUES (?, ?, ?)
+  ```
 
----
+  Route:
 
-Route:
+  ```javascript
+  router.post('/create', (req, res) => {
 
-```javascript
-router.post('/create', (req, res) => {
+      const {
+          name,
+          description,
+          price
+      } = req.body;
 
-    const {
-        name,
-        description,
-        price
-    } = req.body;
+      const stmt = db.prepare(`
+          INSERT INTO products (
+              name,
+              description,
+              price
+          )
+          VALUES (?, ?, ?)
+      `);
 
-    const stmt = db.prepare(`
-        INSERT INTO products (
-            name,
-            description,
-            price
-        )
-        VALUES (?, ?, ?)
-    `);
+      stmt.run(
+          name,
+          description,
+          price
+      );
 
-    stmt.run(
-        name,
-        description,
-        price
-    );
+      res.redirect('/products');
 
-    res.redirect('/products');
+  });
+  ```
 
-});
-```
+  **Why Redirect?**
 
----
+  Bad:
 
-# Why Redirect?
+  ```text
+  Submit Form
+  Refresh Browser
+  Submit Again
+  Duplicate Record
+  ```
 
-Bad:
+  Good:
 
-```text
-Submit Form
-Refresh Browser
-Submit Again
-Duplicate Record
-```
-
----
-
-Good:
-
-```text
-Submit Form
-Redirect
-Refresh Safely
-```
-
----
+  ```text
+  Submit Form
+  Redirect
+  Refresh Safely
+  ```
 
 # POST-Redirect-GET Pattern
 
-```mermaid
-flowchart LR
+  ```mermaid
+  flowchart LR
 
-A[Form]
-B[POST]
-C[(Database)]
-D[Redirect]
-E[GET]
+  A[Form]
+  B[POST]
+  C[(Database)]
+  D[Redirect]
+  E[GET]
 
-A --> B
-B --> C
-C --> D
-D --> E
-```
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  ```
 
-Most professional applications use this pattern.
-
----
+  Most professional applications use this pattern.
 
 # Part 6 — Input Validation
 
-Never trust user input.
+  Never trust user input.
 
-Never.
+  Never.
 
-Not even your own.
+  Not even your own.
 
-Especially your own.
+  Especially your own.
 
----
+  Bad Submission:
 
-Bad Submission:
+  ```javascript
+  {
+      name: '',
+      price: ''
+  }
+  ```
 
-```javascript
-{
-    name: '',
-    price: ''
-}
-```
+  Bad Submission:
 
----
+  ```javascript
+  {
+      name: 'Keyboard',
+      price: '-500'
+  }
+  ```
 
-Bad Submission:
+  Validation:
 
-```javascript
-{
-    name: 'Keyboard',
-    price: '-500'
-}
-```
+  ```javascript
+  if (!name) {
 
----
+      return res.render(
+          'products/create',
+          {
+              title: 'Create Product',
+              error: 'Name is required.'
+          }
+      );
 
-Validation:
+  }
+  ```
 
-```javascript
-if (!name) {
+  Price Validation
 
-    return res.render(
-        'products/create',
-        {
-            title: 'Create Product',
-            error: 'Name is required.'
-        }
-    );
+  ```javascript
+  const numericPrice = Number(price);
 
-}
-```
+  if ( Number.isNaN(numericPrice)) {
 
----
+      return res.render(
+          'products/create',
+          {
+              title: 'Create Product',
+              error: 'Price must be numeric.'
+          }
+      );
 
-Price Validation
+  }
+  ```
 
-```javascript
-const numericPrice = Number(price);
+  Positive Price Validation
 
-if ( Number.isNaN(numericPrice)) {
+  ```javascript
+  if (numericPrice <= 0) {
 
-    return res.render(
-        'products/create',
-        {
-            title: 'Create Product',
-            error: 'Price must be numeric.'
-        }
-    );
+      return res.render(
+          'products/create',
+          {
+              title: 'Create Product',
+              error:
+                  'Price must be greater than zero.'
+          }
+      );
 
-}
-```
-
----
-
-Positive Price Validation
-
-```javascript
-if (numericPrice <= 0) {
-
-    return res.render(
-        'products/create',
-        {
-            title: 'Create Product',
-            error:
-                'Price must be greater than zero.'
-        }
-    );
-
-}
-```
-
----
+  }
+  ```
 
 # Part 7 — Displaying Validation Errors
 
-Route:
+  Route:
 
-```javascript
-res.render(
-    'products/create',
-    {
-        title: 'Create Product',
-        error: 'Name is required.'
-    }
-);
-```
+  ```javascript
+  res.render(
+      'products/create',
+      {
+          title: 'Create Product',
+          error: 'Name is required.'
+      }
+  );
+  ```
 
----
+  View:
 
-View:
+  ```html
+  <% if ( typeof error !== "undefined" ) { %>
 
-```html
-<% if ( typeof error !== "undefined" ) { %>
+  <div class="error">
 
-<div class="error">
+      <%= error %>
 
-    <%= error %>
+  </div>
 
-</div>
+  <% } %>
+  ```
 
-<% } %>
-```
+  Result:
 
----
+  ```text
+  Name is required.
+  ```
 
-Result:
-
-```text
-Name is required.
-```
-
-appears above the form.
-
----
+  appears above the form.
 
 # Part 8 — Preserving Form Data
 
-A common beginner mistake:
+  A common beginner mistake:
 
-User submits:
+  User submits:
 
-```text
-Name
-Description
-Price
-```
+  ```text
+  Name
+  Description
+  Price
+  ```
 
-Validation fails.
+  Validation fails.
 
-Everything disappears.
+  Everything disappears.
 
-User cries.
+  User cries.
 
----
+  Better approach:
 
-Better approach:
+  ```javascript
+  res.render(
+      'products/create',
+      {
+          title: 'Create Product',
+          error: 'Invalid data',
+          product: req.body
+      }
+  );
+  ```
 
-```javascript
-res.render(
-    'products/create',
-    {
-        title: 'Create Product',
-        error: 'Invalid data',
-        product: req.body
-    }
-);
-```
+  View:
 
----
+  ```html
+  <input name="name" value="<%= product?.name || '' %>">
+  ```
 
-View:
+  Textarea:
 
-```html
-<input name="name" value="<%= product?.name || '' %>">
-```
+  ```html
+  <textarea name="description">
+    <%= product?.description || '' %>
+  </textarea>
+  ```
 
----
+  Now the form remains populated.
 
-Textarea:
-
-```html
-<textarea name="description">
-  <%= product?.description || '' %>
-</textarea>
-```
-
-Now the form remains populated.
-
-Professional UX.
-
----
+  Professional UX.
 
 # Part 9 — Creating a Repository Function
 
-Instead of:
+  Instead of:
 
-```javascript
-router.post(...)
-```
+  ```javascript
+  router.post(...)
+  ```
 
-containing SQL,
+  containing SQL,
 
-move SQL into:
+  move SQL into:
 
-```text
-db/productRepository.js
-```
+  ```text
+  db/productRepository.js
+  ```
 
----
+  Example:
 
-Example:
+  ```javascript
+  function create(
+      name,
+      description,
+      price
+  ) {
 
-```javascript
-function create(
-    name,
-    description,
-    price
-) {
+      const stmt = db.prepare(`
+          INSERT INTO products (
+              name,
+              description,
+              price
+          )
+          VALUES (?, ?, ?)
+      `);
 
-    const stmt = db.prepare(`
-        INSERT INTO products (
-            name,
-            description,
-            price
-        )
-        VALUES (?, ?, ?)
-    `);
+      return stmt.run(
+          name,
+          description,
+          price
+      );
 
-    return stmt.run(
-        name,
-        description,
-        price
-    );
+  }
+  ```
 
-}
-```
+  Route:
 
----
+  ```javascript
+  productRepository.create(
+      name,
+      description,
+      numericPrice
+  );
+  ```
 
-Route:
+  Cleaner.
 
-```javascript
-productRepository.create(
-    name,
-    description,
-    numericPrice
-);
-```
+  More maintainable.
 
-Cleaner.
-
-More maintainable.
-
-Easier to test.
-
----
+  Easier to test.
 
 # Part 10 — User Experience Improvements
 
-After creation:
+  After creation:
 
-```text
-Product saved successfully
-```
+  ```text
+  Product saved successfully
+  ```
 
-is helpful.
+  is helpful.
 
----
+  Simple example:
 
-Simple example:
+  `routes/products.js`:
 
-`routes/products.js`:
+  ```js
+  // POST /products/create
+  res.redirect('/products?success=1');
+  ```  
 
-```js
-// POST /products/create
-res.redirect('/products?success=1');
-```  
+  ```js
+  // GET /products
+  const success = req.query.success;
+  res.render('products/list', {
+    success,
+    // ...
+  });
+  ```
 
-```js
-// GET /products
-const success = req.query.success;
-res.render('products/list', {
-  success,
-  // ...
-});
-```
+  Display:
 
+  ```html
+  <% if ( success ) { %>
 
+  <div style="background: limegreen; color: white; display: inline-block">
+      Product created successfully.
+  </div>
 
----
+  <% } %>
+  ```
 
-Display:
+  Later we'll introduce:
 
-```html
-<% if ( success ) { %>
+  ```text
+  Flash Messages
+  ```
 
-<div style="background: limegreen; color: white; display: inline-block">
-    Product created successfully.
-</div>
-
-<% } %>
-```
-
----
-
-Later we'll introduce:
-
-```text
-Flash Messages
-```
-
-for this.
-
----
+  for this.
 
 # Part 11 — Understanding SQL INSERT Results
 
-Example:
+  Example:
 
-```javascript
-const result = stmt.run(...);
-```
+  ```javascript
+  const result = stmt.run(...);
+  ```
 
-Result:
+  Result:
 
-```javascript
-{
-    changes: 1,
-    lastInsertRowid: 11
-}
-```
+  ```javascript
+  {
+      changes: 1,
+      lastInsertRowid: 11
+  }
+  ```
 
-Useful when redirecting:
+  Useful when redirecting:
 
-```javascript
-res.redirect(`/products/${result.lastInsertRowid}`);
-```
-
----
+  ```javascript
+  res.redirect(`/products/${result.lastInsertRowid}`);
+  ```
 
 # Common Beginner Mistakes
 
-## Missing Middleware
+  **Missing Middleware**
 
-```javascript
-req.body
-```
+  ```javascript
+  req.body
+  ```
 
-undefined.
+  undefined.
 
----
+  **Forgetting Validation**
 
-## Forgetting Validation
+  Never trust:
 
-Never trust:
+  ```javascript
+  req.body
+  ```
 
-```javascript
-req.body
-```
+  directly.
 
-directly.
+  **Storing Strings as Numbers**
 
----
+  Always convert:
 
-## Storing Strings as Numbers
+  ```javascript
+  Number(price)
+  ```
 
-Always convert:
+  **Refreshing POST Pages**
 
-```javascript
-Number(price)
-```
+  Use:
 
----
+  ```javascript
+  res.redirect(...)
+  ```
 
-## Refreshing POST Pages
+  **Mixing Validation and SQL**
 
-Use:
-
-```javascript
-res.redirect(...)
-```
-
----
-
-## Mixing Validation and SQL
-
-Separate concerns whenever possible.
-
----
+  Separate concerns whenever possible.
 
 # Bonus Challenge
 
-After creating a product:
+  After creating a product:
 
-```javascript
-res.redirect(`/products/${id}`);
-```
+  ```javascript
+  res.redirect(`/products/${id}`);
+  ```
 
-where:
+  where:
 
-```javascript
-id
-```
+  ```javascript
+  id
+  ```
 
-is the newly created record.
+  is the newly created record.
 
-Users should immediately land on the product page they just created.
-
----
+  Users should immediately land on the product page they just created.
 
 # Key Takeaways
 

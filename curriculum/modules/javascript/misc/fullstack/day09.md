@@ -9,423 +9,326 @@ load_script_js:
 
 # Deleting Products (DELETE)
 
-## Completing CRUD
+  **Completing CRUD**
 
-> Creating data is easy.
->
-> Updating data is common.
->
-> Deleting data is where developers become nervous.
+  > Creating data is easy.
+  >
+  > Updating data is common.
+  >
+  > Deleting data is where developers become nervous.
 
-There is a reason many enterprise systems make deletion difficult.
+  There is a reason many enterprise systems make deletion difficult.
 
-Deleting data is often irreversible.
+  Deleting data is often irreversible.
 
-One careless query can transform:
+  One careless query can transform:
 
-```text 
-10,000 products
-```
+  ```text 
+  10,000 products
+  ```
 
-into:
+  into:
 
-```text 
-0 products
-```
+  ```text 
+  0 products
+  ```
 
-faster than you can say:
+  faster than you can say:
 
-```text 
-"Do we have backups?"
-```
+  ```text 
+  "Do we have backups?"
+  ```
 
-Today we implement the final piece of CRUD:
+  Today we implement the final piece of CRUD:
 
-```text 
-Create
-Read
-Update
-Delete
-```
-
----
+  - Create
+  - Read
+  - Update
+  - **Delete**
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand DELETE operations
-* Build delete workflows
-* Implement confirmation pages
-* Execute SQL DELETE statements
-* Handle missing records
-* Understand soft deletes
-* Understand hard deletes
-* Prevent accidental data loss
-* Build safer CRUD applications
-
----
+  * Understand DELETE operations
+  * Build delete workflows
+  * Implement confirmation pages
+  * Execute SQL DELETE statements
+  * Handle missing records
+  * Understand soft deletes
+  * Understand hard deletes
+  * Prevent accidental data loss
+  * Build safer CRUD applications
 
 # Part 1 — Understanding DELETE
 
-SQL provides:
+  SQL provides:
 
-```sql 
-DELETE
-```
+  ```sql 
+  DELETE
+  ```
 
-for removing rows.
+  for removing rows.
 
----
+  Example:
 
-Example:
+  ```sql 
+  DELETE
+  FROM products
+  WHERE id = 5
+  ```
 
-```sql 
-DELETE
-FROM products
-WHERE id = 5
-```
+  Result:
 
-Result:
+  ```text 
+  Product 5 no longer exists
+  ```
 
-```text 
-Product 5 no longer exists
-```
+  Without:
 
----
+  ```sql 
+  WHERE id = 5
+  ```
 
-Without:
+  things become exciting.
 
-```sql 
-WHERE id = 5
-```
+  Example:
 
-things become exciting.
+  ```sql 
+  DELETE
+  FROM products
+  ```
 
----
+  Result:
 
-Example:
+  ```text 
+  Entire table emptied
+  ```
 
-```sql 
-DELETE
-FROM products
-```
+  Every backend developer eventually learns to fear running SQL against production.
 
-Result:
-
-```text 
-Entire table emptied
-```
-
----
-
-Every backend developer eventually learns to fear running SQL against production.
-
-Usually only once.
-
----
+  Usually only once.
 
 # Part 2 — Why Not Delete with GET?
 
-Bad:
+  Bad:
 
-```html 
-<a href="/products/delete/5">
-    Delete
-</a>
-```
+  ```html 
+  <a href="/products/delete/5">
+      Delete
+  </a>
+  ```
 
----
+  Why?
 
-Why?
+  Because:
 
-Because:
+  ```http 
+  GET
+  ```
 
-```http 
-GET
-```
+  should not change data.
 
-should not change data.
+  Search engines, crawlers, prefetchers, and browser tools may visit links automatically.
 
----
+  You don't want:
 
-Search engines, crawlers, prefetchers, and browser tools may visit links automatically.
+  ```text 
+  Googlebot
+  ```
 
-You don't want:
+  accidentally deleting your inventory.
 
-```text 
-Googlebot
-```
+  Rule:
 
-accidentally deleting your inventory.
-
----
-
-Rule:
-
-| Action | Method        |
-| ------ | ------------- |
-| Read   | GET           |
-| Create | POST          |
-| Update | POST / PUT    |
-| Delete | POST / DELETE |
-
----
+  | Action | Method        |
+  | ------ | ------------- |
+  | Read   | GET           |
+  | Create | POST          |
+  | Update | POST / PUT    |
+  | Delete | POST / DELETE |
 
 # Part 3 — Confirmation Page
 
-First step:
+  First step:
 
-```http 
-GET /products/delete/:id
-```
+  ```http 
+  GET /products/delete/:id
+  ```
 
----
+  Purpose:
 
-Purpose:
+  ```text 
+  Show confirmation
+  ```
 
-```text 
-Show confirmation
-```
+  Route:
 
----
+  ```javascript 
+  router.get(
+      '/delete/:id',
+      (req, res) => {
 
-Route:
+          const product = productRepository.findById(req.params.id);
 
-```javascript 
-router.get(
-    '/delete/:id',
-    (req, res) => {
+          if (!product) {
+              return res
+                  .status(404)
+                  .render('404');
+          }
 
-        const product =
-            productRepository.findById(
-                req.params.id
-            );
-
-        if (!product) {
-
-            return res
-                .status(404)
-                .render('404');
-
-        }
-
-        res.render(
-            'products/delete',
-            {
+          res.render('products/delete',
+              {
+                title: "Delete Product",
                 product
-            }
-        );
+              }
+          );
 
-    }
-);
-```
+      }
+  );
+  ```
 
----
+  **Confirmation View**
 
-# Confirmation View
+  `views/products/delete.ejs`:
 
-```html 
-<h2>
+  ```html 
+  <h2>Delete Product</h2>
+  <p>Are you sure you want
+  to delete:
+  <strong><%= product.name %></strong>?
+  </p>
 
-Delete Product
+  <form
+      method="post"
+      action="/products/delete/<%= product.id %>"
+  >
+      <button type="submit">
+          Delete
+      </button>
+  </form>
+  ```
 
-</h2>
+  Result:
 
-<p>
+  ```text 
+  Are you sure?
+  ```
 
-Are you sure you want
-to delete:
+  before deletion.
 
-<strong>
-
-<%= product.name %>
-
-</strong>
-
-?
-
-</p>
-
-<form
-    method="post"
-    action="/products/delete/<%= product.id %>"
->
-
-    <button type="submit">
-
-        Delete
-
-    </button>
-
-</form>
-```
-
----
-
-Result:
-
-```text 
-Are you sure?
-```
-
-before deletion.
-
-A simple but powerful safety mechanism.
-
----
+  A simple but powerful safety mechanism.
 
 # Part 4 — Processing Deletion
 
-Route:
+  Route:
 
-```javascript 
-router.post(
-    '/delete/:id',
-    (req, res) => {
+  ```javascript 
+  router.delete('/delete/:id',
+      (req, res) => {
+          productRepository.deleteById(req.params.id);
+          res.redirect('/products');
+      }
+  );
+  ```
 
-        productRepository.delete(
-            req.params.id
-        );
+  Repository:
 
-        res.redirect(
-            '/products'
-        );
+  ```javascript 
+  function deleteById(id) {
 
-    }
-);
-```
+      const stmt = db.prepare(`
+          DELETE
+          FROM products
+          WHERE id = ?
+      `);
 
----
+      return stmt.run(id);
 
-Repository:
+  }
+  ```
 
-```javascript 
-function deleteById(id) {
+  Notice:
 
-    const stmt = db.prepare(`
-        DELETE
-        FROM products
-        WHERE id = ?
-    `);
+  ```sql 
+  WHERE id = ?
+  ```
 
-    return stmt.run(id);
+  Always.
 
-}
-```
-
----
-
-Notice:
-
-```sql 
-WHERE id = ?
-```
-
-Always.
-
-No exceptions.
-
----
+  No exceptions.
 
 # Part 5 — Checking Results
 
-Repository:
+  Repository:
 
-```javascript 
-const result =
-    stmt.run(id);
+  ```javascript 
+  const result = stmt.run(id);
 ```
 
----
+  Returns:
 
-Returns:
+  ```javascript 
+  {
+      changes: 1
+  }
+  ```
 
-```javascript 
-{
-    changes: 1
-}
-```
+  Meaning:
 
-Meaning:
+  ```text 
+  One record deleted
+  ```
 
-```text 
-One record deleted
-```
+  Or:
 
----
+  ```javascript 
+  {
+      changes: 0
+  }
+  ```
 
-Or:
+  Meaning:
 
-```javascript 
-{
-    changes: 0
-}
-```
+  ```text 
+  Nothing deleted
+  ```
 
-Meaning:
+  Handle properly:
 
-```text 
-Nothing deleted
-```
-
----
-
-Handle properly:
-
-```javascript 
-if (
-    result.changes === 0
-) {
-
-    return res
-        .status(404)
-        .render('404');
-
-}
-```
-
----
+  ```javascript 
+  if ( result.changes === 0 ) {
+      return res
+          .status(404)
+          .render('404');
+  }
+  ```
 
 # Part 6 — Adding Delete Buttons
 
-Product page:
+  Product page:
 
-```html 
-<a
-href="/products/delete/<%= product.id %>"
->
+  ```html 
+  <a href="/products/delete/<%= product.id %>">
+    Delete Product
+  </a>
+  ```
 
-Delete Product
+  List page:
 
-</a>
-```
+  ```html 
+  <a href="/products/delete/<%= product.id %>">
+    Delete
+  </a>
+  ```
 
----
+  Now every product can be removed.
 
-List page:
+  Dangerous.
 
-```html 
-<a
-href="/products/delete/<%= product.id %>"
->
+  Useful.
 
-Delete
-
-</a>
-```
-
----
-
-Now every product can be removed.
-
-Dangerous.
-
-Useful.
-
-Mostly dangerous.
-
----
+  Mostly dangerous.
 
 # Part 7 — Hard Deletes
 
