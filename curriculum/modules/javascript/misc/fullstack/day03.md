@@ -11,853 +11,767 @@ load_script_js:
 
 ## Building a Real Database-Driven Application
 
-> Yesterday we designed the blueprint.
->
-> Today we start pouring concrete.
+  > Yesterday we designed the blueprint.
+  >
+  > Today we start pouring concrete.
 
-Up until now, our products have lived inside JavaScript arrays:
+  Up until now, our products have lived inside JavaScript arrays:
 
-```javascript
-const products = [
-  { id: 1, name: 'Keyboard' },
-  { id: 2, name: 'Mouse' }
-];
-```
+  ```javascript
+  const products = [
+    { id: 1, name: 'Keyboard' },
+    { id: 2, name: 'Mouse' }
+  ];
+  ```
 
-This works until:
+  This works until:
 
-* The server restarts
-* The application crashes
-* Your laptop explodes
-* A user actually wants to save data
+  * The server restarts
+  * The application crashes
+  * Your laptop explodes
+  * A user actually wants to save data
 
-Today we solve that problem.
-
----
+  Today we solve that problem.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Create a SQLite database
-* Design and create tables
-* Seed a database with sample data
-* Connect Express to SQLite
-* Execute SQL queries
-* Display records using EJS
-* Understand basic CRUD database operations
-* Separate database logic from routes
-* Build the "Read" portion of a CMS
-
----
+  * Create a SQLite database
+  * Design and create tables
+  * Seed a database with sample data
+  * Connect Express to SQLite
+  * Execute SQL queries
+  * Display records using EJS
+  * Understand basic CRUD database operations
+  * Separate database logic from routes
+  * Build the "Read" portion of a CMS
 
 # What We Are Building Today
 
-Our application currently looks like this:
+  Our application currently looks like this:
 
-```mermaid
-flowchart LR
+  ```mermaid
+  flowchart LR
 
-A[Browser]
-B[Express]
-C[JavaScript Array]
+  A[Browser]
+  B[Express]
+  C[JavaScript Array]
 
-A --> B
-B --> C
-```
+  A --> B
+  B --> C
+  ```
 
-By the end of today:
+  By the end of today:
 
-```mermaid
-flowchart LR
+  ```mermaid
+  flowchart LR
 
-A[Browser]
-B[Express]
-C[SQLite Database]
+  A[Browser]
+  B[Express]
+  C[SQLite Database]
 
-A --> B
-B --> C
-```
+  A --> B
+  B --> C
+  ```
 
-We're replacing fake data with real persistence.
-
----
+  We're replacing fake data with real persistence.
 
 # Part 1 — What Is SQLite?
 
-SQLite is a relational database engine.
+  SQLite is a relational database engine.
 
-Unlike:
+  Unlike:
 
-* MySQL
-* PostgreSQL
-* SQL Server
+  * MySQL
+  * PostgreSQL
+  * SQL Server
 
-SQLite stores everything in a single file.
+  SQLite stores everything in a single file.
 
-Example:
+  Example:
 
-```text
-products.sqlite
-```
+  ```text
+  products.sqlite
+  ```
 
-That's the entire database.
+  That's the entire database.
 
-No server.
+  No server.
 
-No installation.
+  No installation.
 
-No configuration.
+  No configuration.
 
-No sacrifices to the DevOps gods.
-
----
+  No sacrifices to the DevOps gods.
 
 # Why SQLite?
 
-For learning and small applications, SQLite is fantastic.
+  For learning and small applications, SQLite is fantastic.
 
-Advantages:
+  Advantages:
 
-* Extremely lightweight
-* Fast
-* Easy setup
-* Portable
-* Used in production by major companies
+  * Extremely lightweight
+  * Fast
+  * Easy setup
+  * Portable
+  * Used in production by major companies
 
-Examples:
+  Examples:
 
-* Chrome
-* Firefox
-* Android
-* iOS
-* Discord
-
----
+  * Chrome
+  * Firefox
+  * Android
+  * iOS
+  * Discord
 
 # Part 2 — Creating Our Database Structure
 
-Make sure you have created the following files:
+  Make sure you have created the following files:
 
-```text
-├── db/
-    ├── db.js
-    ├── setup.js
-    └── products.sqlite
-```
+  ```text
+  ├── db/
+      ├── db.js
+      ├── setup.js
+      └── products.sqlite
+  ```
 
-At this point, it might be a good idea to install the following 
-VSCode extension for viewing your SQLite database directly through
-your code editor:
+  At this point, it might be a good idea to install the following 
+  VSCode extension for viewing your SQLite database directly through
+  your code editor:
 
-[SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"}
-
----
+  [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"}
 
 # Project Structure
 
-```text
-express-crud/
+  ```text
+  express-crud/
 
-├── db/
-│   ├── db.js
-│   ├── setup.js
-│   └── products.sqlite
-├── routes/
-├── views/
-├── public/
-└── index.js
-```
-
----
+  ├── db/
+  │   ├── db.js
+  │   ├── setup.js
+  │   └── products.sqlite
+  ├── routes/
+  ├── views/
+  ├── public/
+  └── index.js
+  ```
 
 # Part 3 — Database Schema Design
 
-Our Products table:
+  Our Products table:
 
-```sql
-CREATE TABLE products (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    description TEXT,
-    price REAL NOT NULL,
-    created DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-```
-
----
+  ```sql
+  CREATE TABLE products (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      description TEXT,
+      price REAL NOT NULL,
+      created DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
+  ```
 
 # Understanding the Schema
 
-| Column      | Type     | Purpose            |
-| ----------- | -------- | ------------------ |
-| id          | INTEGER  | Unique ID          |
-| name        | TEXT     | Product name       |
-| description | TEXT     | Product details    |
-| price       | REAL     | Product price      |
-| created     | DATETIME | Creation timestamp |
-
----
+  | Column      | Type     | Purpose            |
+  | ----------- | -------- | ------------------ |
+  | id          | INTEGER  | Unique ID          |
+  | name        | TEXT     | Product name       |
+  | description | TEXT     | Product details    |
+  | price       | REAL     | Product price      |
+  | created     | DATETIME | Creation timestamp |
 
 # Database Diagram
 
-```mermaid
-erDiagram
+  ```mermaid
+  erDiagram
 
-PRODUCTS {
-    INTEGER id PK
-    TEXT name
-    TEXT description
-    REAL price
-    DATETIME created
-}
-```
-
----
+  PRODUCTS {
+      INTEGER id PK
+      TEXT name
+      TEXT description
+      REAL price
+      DATETIME created
+  }
+  ```
 
 # Part 4 — Creating the Database
 
-## db/setup.js
+  **db/setup.js**:
 
-```javascript
-const sqlite = require('node:sqlite');
-const path = require('node:path');
+  ```javascript
+  const sqlite = require('node:sqlite');
+  const path = require('node:path');
 
-const dbPath = path.join(__dirname, 'products.sqlite');
+  const dbPath = path.join(__dirname, 'products.sqlite');
 
-const db = new sqlite.DatabaseSync(dbPath);
+  const db = new sqlite.DatabaseSync(dbPath);
 
-db.exec(`
-CREATE TABLE IF NOT EXISTS products (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    description TEXT,
-    price REAL NOT NULL,
-    created DATETIME DEFAULT CURRENT_TIMESTAMP
-);
-`);
+  db.exec(`
+  CREATE TABLE IF NOT EXISTS products (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      description TEXT,
+      price REAL NOT NULL,
+      created DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
+  `);
 
-console.log('Database created successfully.');
-```
+  console.log('Database created successfully.');
+  ```
 
----
+  **Running Setup**
 
-# Running Setup
+  ```bash
+  node db/setup.js
+  ```
 
-```bash
-node db/setup.js
-```
+  After running:
 
-After running:
+  ```text
+  products.sqlite
+  ```
 
-```text
-products.sqlite
-```
+  appears inside your db folder.
 
-appears inside your db folder.
+  Congratulations.
 
-Congratulations.
+  You now own a database.
 
-You now own a database.
+  Alternatively, you can provide a nice package.json script for your colleagues.
+  Add the following script in your `package.json`:
 
-Alternatively, you can provide a nice package.json script for your colleagues.
-Add the following script in your `package.json`:
+  ```json
+    "scripts": {
+      "db:seed": "node db/setup.js"
+    },
+  ```
 
-```json
-  "scripts": {
-    "db:seed": "node db/setup.js"
-  },
-```
+  You can now run `npm run db:seed` to initialize and seed the database.
 
-You can now run `npm run db:seed` to initialize and seed the database.
-
-TIP: You can use the [SQLite Viewer extension](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"} to open the `products.sqlite` file and view the structure of the database
-
----
+  TIP: You can use the [SQLite Viewer extension](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer){:target="_blank"} to open the `products.sqlite` file and view the structure of the database
 
 # Part 5 — Seeding Sample Data
 
-A database without data is just an expensive empty notebook.
+  A database without data is just an expensive empty notebook.
 
-Let's add products.
+  Let's add products.
 
----
+  **db/setup.js**:
 
-## db/setup.js
+  Extend it:
 
-Extend it:
+  ```javascript
+  db.exec(`
+  INSERT INTO products (name, description, price)
+  VALUES
+  ('Mechanical Keyboard', 'RGB Gaming Keyboard', 89.99),
 
-```javascript
-db.exec(`
-INSERT INTO products (name, description, price)
-VALUES
-('Mechanical Keyboard', 'RGB Gaming Keyboard', 89.99),
+  ('Wireless Mouse', 'Bluetooth Mouse', 24.99),
 
-('Wireless Mouse', 'Bluetooth Mouse', 24.99),
+  ('27 Inch Monitor', '4K IPS Display', 349.99);
+  `);
+  ```
 
-('27 Inch Monitor', '4K IPS Display', 349.99);
-`);
-```
+  **Verify the Data**
 
----
+  Install VSCode SQLite Viewer.
 
-# Verify the Data
+  Open:
 
-Install VSCode SQLite Viewer.
+  ```text
+  products.sqlite
+  ```
 
-Open:
+  You should see:
 
-```text
-products.sqlite
-```
-
-You should see:
-
-| id | name                |
-| -- | ------------------- |
-| 1  | Mechanical Keyboard |
-| 2  | Wireless Mouse      |
-| 3  | 27 Inch Monitor     |
-
----
+  | id | name                |
+  | -- | ------------------- |
+  | 1  | Mechanical Keyboard |
+  | 2  | Wireless Mouse      |
+  | 3  | 27 Inch Monitor     |
 
 # Part 6 — Creating a Database Connection Module
 
-Never connect directly inside routes.
+  Never connect directly inside routes.
 
-Bad:
+  Bad:
 
-```javascript
-router.get('/', () => {
+  ```javascript
+  router.get('/', () => {
 
-   const db = ...
+    const db = ...
 
-});
-```
+  });
+  ```
 
-Very quickly this becomes chaos.
+  Very quickly this becomes chaos.
 
----
+  **db/db.js**
 
-## db/db.js
+  ```javascript
+  const sqlite = require('node:sqlite');
+  const path = require('node:path');
 
-```javascript
-const sqlite = require('node:sqlite');
-const path = require('node:path');
+  const dbPath = path.join(__dirname, 'products.sqlite');
 
-const dbPath = path.join(__dirname, 'products.sqlite');
+  const db = new sqlite.DatabaseSync(dbPath);
 
-const db = new sqlite.DatabaseSync(dbPath);
-
-module.exports = db;
-```
-
----
+  module.exports = db;
+  ```
 
 # Why Create a Shared Connection?
 
-Benefits:
+  Benefits:
 
-* Reusable
-* Centralized
-* Easier maintenance
-* Easier testing
+  * Reusable
+  * Centralized
+  * Easier maintenance
+  * Easier testing
 
-Professional software engineers avoid duplication whenever possible.
-
----
+  Professional software engineers avoid duplication whenever possible.
 
 # Part 7 — Creating Product Routes
 
-## routes/products.js
+  **routes/products.js**:
 
-```javascript
-const express = require('express');
-const db = require('../db/db');
+  ```javascript
+  const express = require('express');
+  const db = require('../db/db');
 
-const router = express.Router();
-```
+  const router = express.Router();
+  ```
 
----
+  **Querying All Products**
 
-# Querying All Products
+  ```javascript
+  router.get('/', (req, res) => {
 
-```javascript
-router.get('/', (req, res) => {
+      const stmt = db.prepare(`
+          SELECT *
+          FROM products
+          ORDER BY id DESC
+      `);
 
-    const stmt = db.prepare(`
-        SELECT *
-        FROM products
-        ORDER BY id DESC
-    `);
+      const products = stmt.all();
 
-    const products = stmt.all();
+      res.render('products/list', {
+          title: 'Products',
+          products
+      });
 
-    res.render('products/list', {
-        title: 'Products',
-        products
-    });
+  });
+  ```
 
-});
-```
+  **What Happens Here?**
 
----
+  ```mermaid
+  flowchart LR
 
-# What Happens Here?
+  A[Browser]
 
-```mermaid
-flowchart LR
+  B[Route]
 
-A[Browser]
+  C[SQL Query]
 
-B[Route]
+  D[(SQLite)]
 
-C[SQL Query]
+  E[EJS]
 
-D[(SQLite)]
-
-E[EJS]
-
-A --> B
-B --> C
-C --> D
-D --> C
-C --> B
-B --> E
-E --> A
-```
-
----
+  A --> B
+  B --> C
+  C --> D
+  D --> C
+  C --> B
+  B --> E
+  E --> A
+  ```
 
 # Part 8 — Registering the Router
 
-## index.js
+  **index.js**:
 
-```javascript
-const productsRouter = require('./routes/products');
+  ```javascript
+  const productsRouter = require('./routes/products');
 
-app.use('/products', productsRouter);
-```
+  app.use('/products', productsRouter);
+  ```
 
-Now:
+  Now:
 
-```text
-http://localhost:3000/products
-```
+  ```text
+  http://localhost:3000/products
+  ```
 
-loads products from SQLite.
+  loads products from SQLite.
 
-Not JavaScript arrays.
+  Not JavaScript arrays.
 
-Not hardcoded values.
+  Not hardcoded values.
 
-Real database records.
-
----
+  Real database records.
 
 # Part 9 — Rendering Products
 
-## views/products/list.ejs
+  **views/products/list.ejs**:
 
-```html
-<h2>Products</h2>
+  ```html
+  <h2>Products</h2>
 
-<table>
+  <table>
 
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-
-  <tbody>
-
-    <% products.forEach(product => { %>
-
+    <thead>
       <tr>
-        <td><%= product.id %></td>
-        <td><%= product.name %></td>
-        <td>$<%= product.price %></td>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
       </tr>
+    </thead>
 
-    <% }) %>
+    <tbody>
 
-  </tbody>
+      <% products.forEach(product => { %>
 
-</table>
-```
+        <tr>
+          <td><%= product.id %></td>
+          <td><%= product.name %></td>
+          <td>$<%= product.price %></td>
+        </tr>
 
----
+      <% }) %>
 
-# Result
+    </tbody>
 
-Instead of:
+  </table>
+  ```
 
-```javascript
-const products = [...]
-```
+  **Result**
 
-we now have:
+  Instead of:
 
-```sql
-SELECT *
-FROM products
-```
+  ```javascript
+  const products = [...]
+  ```
 
-Powerful difference.
+  we now have:
 
-The data survives application restarts.
+  ```sql
+  SELECT *
+  FROM products
+  ```
 
----
+  Powerful difference.
+
+  The data survives application restarts.
 
 # Part 10 — Understanding SQL SELECT
 
-Most CRUD applications spend 90% of their time reading data.
+  Most CRUD applications spend 90% of their time reading data.
 
-Understanding SELECT is critical.
+  Understanding SELECT is critical.
 
----
+  **Select Everything**
 
-# Select Everything
+  ```sql
+  SELECT *
+  FROM products;
+  ```
 
-```sql
-SELECT *
-FROM products;
-```
+  **Select Specific Columns**
 
----
+  ```sql
+  SELECT
+      id,
+      name
+  FROM products;
+  ```
 
-# Select Specific Columns
+  **Sort Results**
 
-```sql
-SELECT
-    id,
-    name
-FROM products;
-```
+  ```sql
+  SELECT *
+  FROM products
+  ORDER BY price DESC;
+  ```
 
----
+  **Filter Results**
 
-# Sort Results
+  ```sql
+  SELECT *
+  FROM products
+  WHERE price > 100;
+  ```
 
-```sql
-SELECT *
-FROM products
-ORDER BY price DESC;
-```
+  **Limit Results**
 
----
-
-# Filter Results
-
-```sql
-SELECT *
-FROM products
-WHERE price > 100;
-```
-
----
-
-# Limit Results
-
-```sql
-SELECT *
-FROM products
-LIMIT 10;
-```
-
----
+  ```sql
+  SELECT *
+  FROM products
+  LIMIT 10;
+  ```
 
 # Part 11 — Adding Sorting
 
-Let's allow sorting.
+  Let's allow sorting.
 
-Example:
+  Example:
 
-```text
-/products?sort=name
-```
+  ```text
+  /products?sort=name
+  ```
 
----
+  **Route**
 
-## Route
+  ```javascript
+  router.get('/', (req, res) => {
 
-```javascript
-router.get('/', (req, res) => {
+      const sort = req.query.sort || 'id';
 
-    const sort = req.query.sort || 'id';
+      const allowed = [
+          'id',
+          'name',
+          'price'
+      ];
 
-    const allowed = [
-        'id',
-        'name',
-        'price'
-    ];
+      const column = allowed.includes(sort)
+          ? sort
+          : 'id';
 
-    const column = allowed.includes(sort)
-        ? sort
-        : 'id';
+      const stmt = db.prepare(`
+          SELECT *
+          FROM products
+          ORDER BY ${column}
+      `);
 
-    const stmt = db.prepare(`
-        SELECT *
-        FROM products
-        ORDER BY ${column}
-    `);
+      const products = stmt.all();
 
-    const products = stmt.all();
+      res.render('products/list', {
+          title: "Products",
+          products
+      });
 
-    res.render('products/list', {
-        title: "Products",
-        products
-    });
+  });
+  ```
 
-});
-```
+  **Why Validation Matters**
 
----
+  Never trust user input.
 
-# Why Validation Matters
+  Bad:
 
-Never trust user input.
+  ```javascript
+  ORDER BY ${req.query.sort}
+  ```
 
-Bad:
+  Could lead to [SQL injection](https://portswigger.net/web-security/sql-injection){:target="_blank"}.
 
-```javascript
-ORDER BY ${req.query.sort}
-```
-
-Could lead to [SQL injection](https://portswigger.net/web-security/sql-injection){:target="_blank"}.
-
-Always whitelist allowed values.
-
----
+  Always whitelist allowed values.
 
 # Part 12 — Adding Product Count
 
-Example:
+  Example:
 
-```javascript
-const countStmt = db.prepare(`
-    SELECT COUNT(*) AS total
-    FROM products
-`);
+  ```javascript
+  const countStmt = db.prepare(`
+      SELECT COUNT(*) AS total
+      FROM products
+  `);
 
-const result = countStmt.get();
-```
+  const result = countStmt.get();
+  ```
 
-Result:
+  Result:
 
-```javascript
-{
-   total: 3
-}
-```
+  ```javascript
+  {
+    total: 3
+  }
+  ```
 
-Pass the `result` to the `res.render()` method as `total` property:
+  Pass the `result` to the `res.render()` method as `total` property:
 
-```js
-res.render('products/list', {
-  // ...
-  total: result.total,
-});
-```
+  ```js
+  res.render('products/list', {
+    // ...
+    total: result.total,
+  });
+  ```
 
----
+  Display (in `list.ejs`):
 
-Display (in `list.ejs`):
-
-```html
-<p>Total Products: <%= total %></p>
-```
-
----
+  ```html
+  <p>Total Products: <%= total %></p>
+  ```
 
 # Part 13 — Route Planning for Tomorrow
 
-Today:
+  Today:
 
-```text
-GET /products
-```
+  ```text
+  GET /products
+  ```
 
-Tomorrow:
+  Tomorrow:
 
-```text
-GET /products/:id
-```
+  ```text
+  GET /products/:id
+  ```
 
----
+  ---
 
-Future:
+  Future:
 
-```text
-GET /products/create
-POST /products/create
+  ```text
+  GET /products/create
+  POST /products/create
 
-GET /products/edit/:id
-POST /products/edit/:id
+  GET /products/edit/:id
+  POST /products/edit/:id
 
-POST /products/delete/:id
-```
+  POST /products/delete/:id
+  ```
 
-We are gradually building toward full CRUD.
-
----
+  We are gradually building toward full [CRUD](https://www.youtube.com/shorts/AkDe3weBBsY).
 
 # Common Beginner Mistakes
 
-## 1. Running setup.js Multiple Times
+  **1. Running setup.js Multiple Times**
 
-This:
+  This:
 
-```sql
-INSERT ...
-```
+  ```sql
+  INSERT ...
+  ```
 
-runs every time.
+  runs every time.
 
-You may accidentally create duplicates.
+  You may accidentally create duplicates.
 
----
+  ---
 
-## 2. Creating Database Connections Everywhere
+  **2. Creating Database Connections Everywhere**
 
-Bad:
+  Bad:
 
-```javascript
-new Database()
-new Database()
-new Database()
-```
+  ```javascript
+  new Database()
+  new Database()
+  new Database()
+  ```
 
-Use one shared connection.
+  Use one shared connection.
 
----
+  ---
 
-## 3. Forgetting to Create Views
+  **3. Forgetting to Create Views**
 
-Error:
+  Error:
 
-```text
-Failed to lookup view
-```
+  ```text
+  Failed to lookup view
+  ```
 
-Usually means:
+  Usually means:
 
-```text
-views/products/list.ejs
-```
+  ```text
+  views/products/list.ejs
+  ```
 
-does not exist.
+  does not exist.
 
----
+  ---
 
-## 4. Using User Input in SQL
+  **4. Using User Input in SQL**
 
-Never:
+  Never:
 
-```javascript
-ORDER BY ${req.query.column}
-```
+  ```javascript
+  ORDER BY ${req.query.column}
+  ```
 
-without validation.
-
----
+  without validation.
 
 # Assignment
 
 ## Exercise 1
 
-Create:
+  Create:
 
-```text
-products.sqlite
-```
+  ```text
+  products.sqlite
+  ```
 
-and the Products table.
-
----
+  and the Products table.
 
 ## Exercise 2
 
-Seed at least:
+  Seed at least:
 
-```text
-10 products
-```
+  ```text
+  10 products
+  ```
 
-with realistic data.
-
----
+  with realistic data.
 
 ## Exercise 3
 
-Create:
+  Create:
 
-```text
-GET /products
-```
+  ```text
+  GET /products
+  ```
 
-that reads all products from SQLite.
-
----
+  that reads all products from SQLite.
 
 ## Exercise 4
 
-Render the results in an HTML table.
-
----
+  Render the results in an HTML table.
 
 ## Exercise 5
 
-Add sorting by:
+  Add sorting by:
 
-```text
-id
-name
-price
-```
+  ```text
+  id
+  name
+  price
+  ```
 
-using query parameters.
-
----
+  using query parameters.
 
 # Bonus Challenge
 
-Create:
+  Create:
 
-```text
-GET /products/expensive
-```
+  ```text
+  GET /products/expensive
+  ```
 
-that only shows products costing:
+  that only shows products costing:
 
-```text
-100+
-```
+  ```text
+  100+
+  ```
 
-using:
+  using:
 
-```sql
-WHERE price >= 100
-```
-
----
+  ```sql
+  WHERE price >= 100
+  ```
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* What SQLite is
-* How databases persist data
-* How to create tables
-* How to seed data
-* How to connect Express to SQLite
-* How to execute SQL queries
-* How to render database records in EJS
-* How to validate sorting parameters
-* How to build the Read part of CRUD
+  * What SQLite is
+  * How databases persist data
+  * How to create tables
+  * How to seed data
+  * How to connect Express to SQLite
+  * How to execute SQL queries
+  * How to render database records in EJS
+  * How to validate sorting parameters
+  * How to build the Read part of CRUD
 
 ---
 
