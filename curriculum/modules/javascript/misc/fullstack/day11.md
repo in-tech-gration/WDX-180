@@ -11,967 +11,905 @@ load_script_js:
 
 ## Knowing Who the User Is
 
-> CRUD applications manage data.
->
-> Real applications manage people.
+  > CRUD applications manage data.
+  >
+  > Real applications manage people.
 
-Up until now, anyone can:
+  Up until now, anyone can:
 
-```text 
-Create Products
-Edit Products
-Delete Products
-Upload Images
-```
+  ```text 
+  Create Products
+  Edit Products
+  Delete Products
+  Upload Images
+  ```
 
-This is convenient.
+  This is convenient.
 
-It's also a complete security disaster.
+  It's also a complete security disaster.
 
-Today we introduce:
+  Today we introduce:
 
-```text 
-Authentication
-```
+  ```text 
+  Authentication
+  ```
 
-the process of verifying who a user is.
+  the process of verifying who a user is.
 
-This is the beginning of turning our CMS into a multi-user application.
-
----
+  This is the beginning of turning our CMS into a multi-user application.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand authentication fundamentals
-* Understand sessions
-* Understand cookies
-* Build login forms
-* Hash passwords securely
-* Verify user credentials
-* Create authenticated sessions
-* Protect routes
-* Implement logout functionality
-* Understand common authentication vulnerabilities
-
----
+  * Understand authentication fundamentals
+  * Understand sessions
+  * Understand cookies
+  * Build login forms
+  * Hash passwords securely
+  * Verify user credentials
+  * Create authenticated sessions
+  * Protect routes
+  * Implement logout functionality
+  * Understand common authentication vulnerabilities
 
 # Part 1 — Authentication vs Authorization
 
-These terms are often confused.
+  These terms are often confused.
 
----
+  ---
 
-## Authentication
+  ## Authentication
 
-Answers:
+  Answers:
 
-```text 
-Who are you?
-```
+  ```text 
+  Who are you?
+  ```
 
-Example:
+  Example:
 
-```text 
-Email
-Password
-```
+  ```text 
+  Email
+  Password
+  ```
 
----
+  ---
 
-## Authorization
+  ## Authorization
 
-Answers:
+  Answers:
 
-```text 
-What are you allowed to do?
-```
+  ```text 
+  What are you allowed to do?
+  ```
 
-Example:
+  Example:
 
-```text 
-Admin
-Editor
-Viewer
-```
+  ```text 
+  Admin
+  Editor
+  Viewer
+  ```
 
----
+  ---
 
-Diagram:
+  Diagram:
 
-```mermaid 
-flowchart LR
+  ```mermaid 
+  flowchart LR
 
-A[Login]
+  A[Login]
 
-A --> B[Authentication]
+  A --> B[Authentication]
 
-B --> C[Authorization]
-```
+  B --> C[Authorization]
+  ```
 
-Today focuses on:
+  Today focuses on:
 
-```text 
-Authentication
-```
+  ```text 
+  Authentication
+  ```
 
----
+  ---
 
 # Part 2 — Why Passwords Must Never Be Stored Directly
 
-Bad:
+  Bad:
 
-```sql 
-email
+  ```sql 
+  email
 
-password
-```
+  password
+  ```
 
-Stored:
+  Stored:
 
-```text 
-admin@example.com
+  ```text 
+  admin@example.com
 
-supersecret123
-```
+  supersecret123
+  ```
 
----
+  ---
 
-Database leak:
+  Database leak:
 
-```text 
-All passwords exposed
-```
+  ```text 
+  All passwords exposed
+  ```
 
----
+  ---
 
-Very bad.
+  Very bad.
 
----
+  ---
 
-# Password Hashing
+  # Password Hashing
 
-Instead:
+  Instead:
 
-```text 
-supersecret123
-```
+  ```text 
+  supersecret123
+  ```
 
-becomes:
+  becomes:
 
-```text 
-$2b$10$...
-```
+  ```text 
+  $2b$10$...
+  ```
 
----
+  ---
 
-This process is called:
+  This process is called:
 
-```text 
-Hashing
-```
+  ```text 
+  Hashing
+  ```
 
----
+  ---
 
-Important:
+  Important:
 
-```text 
-Hashes are one-way
-```
+  ```text 
+  Hashes are one-way
+  ```
 
-You can verify them.
+  You can verify them.
 
-You cannot reverse them.
+  You cannot reverse them.
 
----
+  ---
 
 # Part 3 — Introducing bcrypt
 
-Most Express applications use:
+  Most Express applications use:
 
-bcrypt
+  bcrypt
 
-Install:
+  Install:
 
-```bash 
-npm install bcrypt
-```
+  ```bash 
+  npm install bcrypt
+  ```
 
----
+  ---
 
-Import:
+  Import:
 
-```javascript 
-const bcrypt =
-    require('bcrypt');
-```
+  ```javascript 
+  const bcrypt =
+      require('bcrypt');
+  ```
 
----
+  ---
 
-Hash password:
+  Hash password:
 
-```javascript 
-const hash =
-    await bcrypt.hash(
-        password,
-        10
-    );
-```
+  ```javascript 
+  const hash =
+      await bcrypt.hash(
+          password,
+          10
+      );
+  ```
 
----
+  ---
 
-Example result:
+  Example result:
 
-```text 
-$2b$10$...
-```
+  ```text 
+  $2b$10$...
+  ```
 
----
+  ---
 
-Store:
+  Store:
 
-```text 
-Hash
-```
+  ```text 
+  Hash
+  ```
 
-not:
+  not:
 
-```text 
-Password
-```
+  ```text 
+  Password
+  ```
 
----
+  ---
 
 # Part 4 — Creating a Users Table
 
-Schema:
+  Schema:
 
-```sql 
-CREATE TABLE users (
+  ```sql 
+  CREATE TABLE users (
 
-    id INTEGER PRIMARY KEY,
+      id INTEGER PRIMARY KEY,
 
-    email TEXT UNIQUE,
+      email TEXT UNIQUE,
 
-    password_hash TEXT
+      password_hash TEXT
 
-);
-```
+  );
+  ```
 
----
+  ---
 
-Example:
+  Example:
 
-```text 
-admin@example.com
+  ```text 
+  admin@example.com
 
-$2b$10$...
-```
+  $2b$10$...
+  ```
 
----
+  ---
 
-No plaintext passwords.
+  No plaintext passwords.
 
-Ever.
+  Ever.
 
----
+  ---
 
 # Part 5 — Creating the First User
 
-Example:
+  Example:
 
-```javascript 
-const hash =
-    await bcrypt.hash(
-        'secret123',
-        10
-    );
-```
+  ```javascript 
+  const hash =
+      await bcrypt.hash(
+          'secret123',
+          10
+      );
+  ```
 
----
+  ---
 
-Insert:
+  Insert:
 
-```sql 
-INSERT INTO users (
+  ```sql 
+  INSERT INTO users (
 
-    email,
-    password_hash
+      email,
+      password_hash
 
-)
-VALUES (?, ?)
-```
+  )
+  VALUES (?, ?)
+  ```
 
----
+  ---
 
-Store:
+  Store:
 
-```text 
-admin@example.com
+  ```text 
+  admin@example.com
 
-hashed password
-```
+  hashed password
+  ```
 
----
+  ---
 
 # Part 6 — Building the Login Form
 
-View:
+  View:
 
-```html 
-<h2>
+  ```html 
+  <h2>
 
-Login
+  Login
 
-</h2>
+  </h2>
 
-<form
-    method="post"
->
+  <form
+      method="post"
+  >
 
-    <input
-        type="email"
-        name="email"
-    >
+      <input
+          type="email"
+          name="email"
+      >
 
-    <input
-        type="password"
-        name="password"
-    >
+      <input
+          type="password"
+          name="password"
+      >
 
-    <button>
+      <button>
 
-        Login
+          Login
 
-    </button>
+      </button>
 
-</form>
-```
+  </form>
+  ```
 
----
+  ---
 
-Simple.
+  Simple.
 
-Professional.
+  Professional.
 
-Familiar.
+  Familiar.
 
----
+  ---
 
 # Part 7 — Verifying Credentials
 
-Route:
+  Route:
 
-```javascript 
-router.post(
-    '/login',
-    async (
-        req,
-        res
-    ) => {
+  ```javascript 
+  router.post(
+      '/login',
+      async (
+          req,
+          res
+      ) => {
 
-        const {
-            email,
-            password
-        } = req.body;
+          const {
+              email,
+              password
+          } = req.body;
 
-    }
-);
-```
+      }
+  );
+  ```
 
----
+  ---
 
-Lookup user:
+  Lookup user:
 
-```javascript 
-const user =
-    userRepository
-        .findByEmail(
-            email
-        );
-```
+  ```javascript 
+  const user =
+      userRepository
+          .findByEmail(
+              email
+          );
+  ```
 
----
+  ---
 
-Verify password:
+  Verify password:
 
-```javascript 
-const valid =
-    await bcrypt.compare(
-        password,
-        user.password_hash
-    );
-```
+  ```javascript 
+  const valid =
+      await bcrypt.compare(
+          password,
+          user.password_hash
+      );
+  ```
 
----
+  ---
 
-If:
+  If:
 
-```javascript 
-valid === true
-```
+  ```javascript 
+  valid === true
+  ```
 
-Login succeeds.
+  Login succeeds.
 
----
+  ---
 
-Otherwise:
+  Otherwise:
 
-```text 
-Invalid credentials
-```
+  ```text 
+  Invalid credentials
+  ```
 
----
+  ---
 
 # Part 8 — Sessions
 
-After login:
+  After login:
 
-```text 
-How does the server remember the user?
-```
+  ```text 
+  How does the server remember the user?
+  ```
 
-Good question.
+  Good question.
 
----
+  ---
 
-Answer:
+  Answer:
 
-```text 
-Sessions
-```
+  ```text 
+  Sessions
+  ```
 
----
+  ---
 
-Without sessions:
+  Without sessions:
 
-```text 
-Login
-Refresh
-Logged Out
-```
+  ```text 
+  Login
+  Refresh
+  Logged Out
+  ```
 
----
+  ---
 
-Not ideal.
+  Not ideal.
 
----
+  ---
 
 # Part 9 — Introducing express-session
 
-Install:
+  Install:
 
-express-session
+  express-session
 
-```bash 
-npm install express-session
-```
+  ```bash 
+  npm install express-session
+  ```
 
----
+  ---
 
-Configure:
+  Configure:
 
-```javascript 
-const session =
-    require(
-        'express-session'
-    );
+  ```javascript 
+  const session =
+      require(
+          'express-session'
+      );
 
-app.use(
+  app.use(
 
-    session({
+      session({
 
-        secret:
-            process.env
-                .SESSION_SECRET,
+          secret:
+              process.env
+                  .SESSION_SECRET,
 
-        resave: false,
+          resave: false,
 
-        saveUninitialized:
-            false
+          saveUninitialized:
+              false
 
-    })
+      })
 
-);
-```
+  );
+  ```
 
----
+  ---
 
-Now:
+  Now:
 
-```javascript 
-req.session
-```
+  ```javascript 
+  req.session
+  ```
 
-exists.
+  exists.
 
----
+  ---
 
 # Part 10 — Creating a Session
 
-Successful login:
+  Successful login:
 
-```javascript 
-req.session.userId =
-    user.id;
-```
+  ```javascript 
+  req.session.userId =
+      user.id;
+  ```
 
----
+  ---
 
-Example:
+  Example:
 
-```javascript 
-req.session.userId = 1;
-```
+  ```javascript 
+  req.session.userId = 1;
+  ```
 
----
+  ---
 
-Server remembers:
+  Server remembers:
 
-```text 
-User #1
-```
+  ```text 
+  User #1
+  ```
 
-between requests.
+  between requests.
 
----
+  ---
 
 # Part 11 — Cookies
 
-Sessions require cookies.
+  Sessions require cookies.
 
----
+  ---
 
-Browser receives:
+  Browser receives:
 
-```text 
-session-id
-```
+  ```text 
+  session-id
+  ```
 
----
+  ---
 
-Future requests:
+  Future requests:
 
-```text 
-session-id
-```
+  ```text 
+  session-id
+  ```
 
-returned automatically.
+  returned automatically.
 
----
+  ---
 
-Diagram:
+  Diagram:
 
-```mermaid 
-flowchart LR
+  ```mermaid 
+  flowchart LR
 
-A[Browser]
+  A[Browser]
 
-B[Cookie]
+  B[Cookie]
 
-C[Server Session]
+  C[Server Session]
 
-A --> B
-B --> C
-C --> B
-B --> A
-```
+  A --> B
+  B --> C
+  C --> B
+  B --> A
+  ```
 
----
+  ---
 
-The browser stores:
+  The browser stores:
 
-```text 
-Session Identifier
-```
+  ```text 
+  Session Identifier
+  ```
 
-not user data.
+  not user data.
 
----
+  ---
 
 # Part 12 — Protecting Routes
 
-Current:
+  Current:
 
-```text 
-/products/create
-```
+  ```text 
+  /products/create
+  ```
 
-accessible by everyone.
+  accessible by everyone.
 
----
+  ---
 
-Middleware:
+  Middleware:
 
-```javascript 
-function requireAuth(
-    req,
-    res,
-    next
-) {
+  ```javascript 
+  function requireAuth(
+      req,
+      res,
+      next
+  ) {
 
-    if(
-        !req.session.userId
-    ) {
+      if(
+          !req.session.userId
+      ) {
 
-        return res.redirect(
-            '/login'
-        );
+          return res.redirect(
+              '/login'
+          );
 
-    }
+      }
 
-    next();
+      next();
 
-}
-```
+  }
+  ```
 
----
+  ---
 
-Usage:
+  Usage:
 
-```javascript 
-router.get(
+  ```javascript 
+  router.get(
 
-    '/create',
+      '/create',
 
-    requireAuth,
+      requireAuth,
 
-    (
-        req,
-        res
-    ) => {
+      (
+          req,
+          res
+      ) => {
 
-        ...
-    }
+          ...
+      }
 
-);
-```
+  );
+  ```
 
----
+  ---
 
-Now login is required.
+  Now login is required.
 
----
+  ---
 
 # Part 13 — Logout
 
-Route:
+  Route:
 
-```javascript 
-router.post(
-    '/logout',
-    (
-        req,
-        res
-    ) => {
+  ```javascript 
+  router.post(
+      '/logout',
+      (
+          req,
+          res
+      ) => {
 
-        req.session.destroy(
-            () => {
+          req.session.destroy(
+              () => {
 
-                res.redirect(
-                    '/login'
-                );
+                  res.redirect(
+                      '/login'
+                  );
 
-            }
-        );
+              }
+          );
 
-    }
-);
-```
+      }
+  );
+  ```
 
----
+  ---
 
-Session removed.
+  Session removed.
 
-User logged out.
+  User logged out.
 
-Simple.
+  Simple.
 
----
+  ---
 
 # Part 14 — Displaying User Information
 
-Middleware:
+  Middleware:
 
-```javascript 
-app.use(
-    (
-        req,
-        res,
-        next
-    ) => {
+  ```javascript 
+  app.use(
+      (
+          req,
+          res,
+          next
+      ) => {
 
-        res.locals.userId =
-            req.session.userId;
+          res.locals.userId =
+              req.session.userId;
 
-        next();
+          next();
 
-    }
-);
-```
+      }
+  );
+  ```
 
----
+  ---
 
-View:
+  View:
 
-```html 
-<% if(userId) { %>
+  ```html 
+  <% if(userId) { %>
 
-Logged In
+  Logged In
 
-<% } %>
-```
+  <% } %>
+  ```
 
----
+  ---
 
-Navigation can now adapt.
+  Navigation can now adapt.
 
----
+  ---
 
 # Part 15 — Common Authentication Attacks
 
-## Plaintext Password Storage
+  ## Plaintext Password Storage
 
-Never.
+  Never.
 
----
+  ---
 
-## Weak Passwords
+  ## Weak Passwords
 
-Bad:
+  Bad:
 
-```text 
-123456
-```
+  ```text 
+  123456
+  ```
 
----
+  ---
 
-Bad:
+  Bad:
 
-```text 
-password
-```
+  ```text 
+  password
+  ```
 
----
+  ---
 
-Bad:
+  Bad:
 
-```text 
-qwerty
-```
+  ```text 
+  qwerty
+  ```
 
----
+  ---
 
-## Session Hijacking
+  ## Session Hijacking
 
-Protect with:
+  Protect with:
 
-```javascript 
-httpOnly: true
-```
+  ```javascript 
+  httpOnly: true
+  ```
 
-cookies.
+  cookies.
 
----
+  ---
 
-## Brute Force Attacks
+  ## Brute Force Attacks
 
-Eventually implement:
+  Eventually implement:
 
-```text 
-Rate Limiting
-```
+  ```text 
+  Rate Limiting
+  ```
 
----
+  ---
 
-## User Enumeration
+  ## User Enumeration
 
-Bad:
+  Bad:
 
-```text 
-Email not found
-```
+  ```text 
+  Email not found
+  ```
 
-versus:
+  versus:
 
-```text 
-Wrong password
-```
+  ```text 
+  Wrong password
+  ```
 
----
+  ---
 
-Better:
+  Better:
 
-```text 
-Invalid credentials
-```
+  ```text 
+  Invalid credentials
+  ```
 
-for both.
+  for both.
 
----
+  ---
 
 # Part 16 — Why Authentication Matters
 
-Without authentication:
+  Without authentication:
 
-```text 
-Anyone edits everything
-```
+  ```text 
+  Anyone edits everything
+  ```
 
----
+  ---
 
-With authentication:
+  With authentication:
 
-```text 
-Users identified
-```
+  ```text 
+  Users identified
+  ```
 
----
+  ---
 
-Soon we'll add:
+  Soon we'll add:
 
-```text 
-Roles
+  ```text 
+  Roles
 
-Permissions
+  Permissions
 
-Ownership
-```
+  Ownership
+  ```
 
-which build on today's foundation.
+  which build on today's foundation.
 
----
+  ---
 
 # Common Beginner Mistakes
 
-## Storing Passwords Directly
+  ## Storing Passwords Directly
 
-Never.
+  Never.
 
-Use bcrypt.
+  Use bcrypt.
 
----
+  ---
 
-## Creating Your Own Hashing Algorithm
+  ## Creating Your Own Hashing Algorithm
 
-Don't.
+  Don't.
 
-Use established libraries.
+  Use established libraries.
 
----
+  ---
 
-## Trusting Cookies
+  ## Trusting Cookies
 
-Always verify sessions server-side.
+  Always verify sessions server-side.
 
----
+  ---
 
-## Forgetting Logout
+  ## Forgetting Logout
 
-Sessions should be removable.
+  Sessions should be removable.
 
----
+  ---
 
-## Protecting Only Frontend Pages
+  ## Protecting Only Frontend Pages
 
-Backend routes must also enforce authentication.
+  Backend routes must also enforce authentication.
 
----
-
-# Assignment
-
-## Exercise 1
-
-Create:
-
-```text 
-users
-```
-
-table.
-
----
-
-## Exercise 2
-
-Create:
-
-```text 
-/login
-```
-
-form.
-
----
-
-## Exercise 3
-
-Hash passwords using bcrypt.
-
----
-
-## Exercise 4
-
-Verify passwords using:
-
-```javascript 
-bcrypt.compare()
-```
-
----
-
-## Exercise 5
-
-Protect:
-
-```text 
-/products/create
-
-/products/edit
-
-/products/delete
-```
-
-using authentication middleware.
-
----
+  ---
 
 # Bonus Challenge
 
-Create:
+  Create:
 
-```text 
-/register
-```
+  ```text 
+  /register
+  ```
 
-page.
+  page.
 
----
+  ---
 
-Workflow:
+  Workflow:
 
-```text 
-Email
+  ```text 
+  Email
 
-Password
+  Password
 
-Confirm Password
-```
+  Confirm Password
+  ```
 
----
+  ---
 
-Hash password.
+  Hash password.
 
-Create account.
+  Create account.
 
-Automatically log user in.
+  Automatically log user in.
 
-Redirect:
+  Redirect:
 
-```text 
-/products
-```
+  ```text 
+  /products
+  ```
 
 ---
 
@@ -983,20 +921,20 @@ You've just built the foundation of nearly every web application that exists.
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* Authentication
-* Password hashing
-* bcrypt
-* Sessions
-* Cookies
-* Login workflows
-* Logout workflows
-* Route protection
-* Authentication middleware
-* Security fundamentals
+  * Authentication
+  * Password hashing
+  * bcrypt
+  * Sessions
+  * Cookies
+  * Login workflows
+  * Logout workflows
+  * Route protection
+  * Authentication middleware
+  * Security fundamentals
 
-This is a major milestone. The CMS is no longer just a data management tool—it now understands users. That opens the door to permissions, roles, ownership, administration panels, and multi-user workflows that are common in professional web applications.
+  This is a major milestone. The CMS is no longer just a data management tool—it now understands users. That opens the door to permissions, roles, ownership, administration panels, and multi-user workflows that are common in professional web applications.
 
 ---
 
