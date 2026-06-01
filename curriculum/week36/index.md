@@ -63,9 +63,25 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
+  Study Part 11 of the Full Stack Project series:
+
   **Authentication & Login Systems**
 
-  - [Study Part 11 of the Full Stack Project series](../modules/javascript/misc/fullstack/day11.html)
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - ➡️ **Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}**
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -93,9 +109,25 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
+  Study Part 12 of the Full Stack Project series:
+
   **Authorization, Roles & Permissions**
 
-  - [Study Part 12 of the Full Stack Project series](../modules/javascript/misc/fullstack/day12.html)
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - ➡️ **Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}**
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -123,9 +155,25 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
+  Study Part 13 of the Full Stack Project series:
+
   **Validation, Error Handling & Defensive Programming**
 
-  - [Study Part 13 of the Full Stack Project series](../modules/javascript/misc/fullstack/day13.html)
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - ➡️ **Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}**
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -153,7 +201,25 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 14 of the Full Stack Project series](../modules/javascript/misc/fullstack/day14.html)
+  Study Part 14 of the Full Stack Project series:
+
+  **Testing Express Applications**
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - ➡️ **Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}**
+  - Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
 
 <!-- Summary -->
 
@@ -181,7 +247,25 @@ title: Week 36 | Full Stack Project
 
 ### Study Plan
 
-  - [Study Part 15 of the Full Stack Project series](../modules/javascript/misc/fullstack/day15.html)
+  Study Part 15 of the Full Stack Project series:
+
+  **Deployment, Production & Launching Your CMS**
+
+  - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 4 - [Single Product Pages & Database-Driven Routing](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 5 - [Creating Products (CREATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 6 - [Pagination](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 7 - [Search & Filtering](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 8 - [Updating Products (UPDATE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 9 - [Deleting Products (DELETE)](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 10 - [File Uploads & Image Management](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 11 - [Authentication & Login Systems](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 12 - [Authorization, Roles & Permissions](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 13 - [Validation, Error Handling & Defensive Programming](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - Part 14 - [Testing Express Applications](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
+  - ➡️ **Part 15 - [Deployment, Production & Launching Your CMS](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}**
 
 <!-- Summary -->
 
