@@ -722,30 +722,58 @@ load_script_js:
   Use:
 
   ```javascript 
-  upload.array(
-      'images'
-  )
+  upload.array('images')
   ```
 
   instead of:
 
   ```javascript 
-  upload.single(
-      'image'
-  )
+  upload.single('image')
   ```
 
   Display gallery:
 
   ```html 
   <img ...>
-
   <img ...>
-
   <img ...>
   ```
 
   under product details.
+
+  Here are some of the required steps and things to keep in mind in order to make this work:
+
+  - The `single.ejs` template must be updated so that an array called `images` that contains the image filenames must be passed in. You can iterate on EJS using the following syntax:
+
+  ```js
+  <% images.forEach( image =>{ %>
+    <%= image.filename %>
+  <% }) %>
+  ``` 
+
+  - The `productRepository.create()` must be updated in order to support adding the image filenames into the `product_images` table.
+    - A new repository method might be needed, in order to add the image filenames to the `product_images` table.
+
+  - The images passed in from the form, are accessible via `req.files` which is an array.
+
+
+  - The HTML form input must have the `multiple` attribute set: 
+
+  ```html
+  <input type="file" name="images" multiple>
+  ``` 
+
+  - In order to get all the rows from a `SELECT` SQL query, you must use the `all()` statement method:
+
+  ```js
+  const stmt = db.prepare(`
+      SELECT *
+      FROM product_images
+      WHERE product_id = ?
+    `);
+
+  const result = stmt.all(id);  
+  ```
 
   Congratulations.
 
