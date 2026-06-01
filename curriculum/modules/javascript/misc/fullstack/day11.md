@@ -9,6 +9,8 @@ load_script_js:
 
 # Authentication & Login Systems
 
+  https://deepwiki.com/expressjs/express/7-application-patterns-and-examples#authentication-pattern
+
 ## Knowing Who the User Is
 
   > CRUD applications manage data.
@@ -57,9 +59,7 @@ load_script_js:
 
   These terms are often confused.
 
-  ---
-
-  ## Authentication
+  **Authentication**
 
   Answers:
 
@@ -74,9 +74,7 @@ load_script_js:
   Password
   ```
 
-  ---
-
-  ## Authorization
+  **Authorization**
 
   Answers:
 
@@ -91,8 +89,6 @@ load_script_js:
   Editor
   Viewer
   ```
-
-  ---
 
   Diagram:
 
@@ -112,11 +108,9 @@ load_script_js:
   Authentication
   ```
 
-  ---
-
 # Part 2 — Why Passwords Must Never Be Stored Directly
 
-  Bad:
+  ❌ Bad:
 
   ```sql 
   email
@@ -132,21 +126,15 @@ load_script_js:
   supersecret123
   ```
 
-  ---
-
   Database leak:
 
   ```text 
   All passwords exposed
   ```
 
-  ---
-
   Very bad.
 
-  ---
-
-  # Password Hashing
+  **Password Hashing**
 
   Instead:
 
@@ -160,15 +148,11 @@ load_script_js:
   $2b$10$...
   ```
 
-  ---
-
   This process is called:
 
   ```text 
   Hashing
   ```
-
-  ---
 
   Important:
 
@@ -180,13 +164,13 @@ load_script_js:
 
   You cannot reverse them.
 
-  ---
+  Watch [this short video](https://www.youtube.com/watch?v=zt8Cocdy15c){:target="_blank"} to better understand password hashing. 
 
 # Part 3 — Introducing bcrypt
 
   Most Express applications use:
 
-  bcrypt
+  `bcrypt`
 
   Install:
 
@@ -194,36 +178,23 @@ load_script_js:
   npm install bcrypt
   ```
 
-  ---
-
   Import:
 
   ```javascript 
-  const bcrypt =
-      require('bcrypt');
+  const bcrypt = require('bcrypt');
   ```
-
-  ---
 
   Hash password:
 
   ```javascript 
-  const hash =
-      await bcrypt.hash(
-          password,
-          10
-      );
+  const hash = await bcrypt.hash(password, 10);
   ```
-
-  ---
 
   Example result:
 
   ```text 
   $2b$10$...
   ```
-
-  ---
 
   Store:
 
@@ -236,8 +207,6 @@ load_script_js:
   ```text 
   Password
   ```
-
-  ---
 
 # Part 4 — Creating a Users Table
 
@@ -255,8 +224,6 @@ load_script_js:
   );
   ```
 
-  ---
-
   Example:
 
   ```text 
@@ -265,41 +232,27 @@ load_script_js:
   $2b$10$...
   ```
 
-  ---
-
   No plaintext passwords.
 
   Ever.
-
-  ---
 
 # Part 5 — Creating the First User
 
   Example:
 
   ```javascript 
-  const hash =
-      await bcrypt.hash(
-          'secret123',
-          10
-      );
+  const hash = await bcrypt.hash('secret123', 10);
   ```
-
-  ---
 
   Insert:
 
   ```sql 
   INSERT INTO users (
-
       email,
       password_hash
-
   )
   VALUES (?, ?)
   ```
-
-  ---
 
   Store:
 
@@ -309,43 +262,45 @@ load_script_js:
   hashed password
   ```
 
-  ---
+  You can update the database seeding script to create 3 sample user accounts just to play around:
+
+  ```js
+  // CREATE 3 SAMPLE USERS:
+  db.exec(`
+    INSERT INTO users (email, password_hash)
+    VALUES
+    ('user1@example.com', '$2b$10$GFfVuIolc8j.qa0qGTWUJuxt/aYgAS0aoQzwIyFlwne0Hl7DtmTwO'),
+    ('user2@example.com', '$2b$10$aV4wATg2lRM1VpvuOAZT3ORuMMWI/BJf5bQ.F1sCH.cFp98dhfht.'),
+    ('user3@example.com', '$2b$10$TOSxG1AFzCKZBMhGqrf8L.sS9SdgxDUwZ6BCVFUUY8AWDTcuC/x3W');
+  `); 
+  ```
+
+  The 3 hashed passwords correspond to:
+
+  - `$2b$10$GFfVuIolc8j.qa0qGTWUJuxt/aYgAS0aoQzwIyFlwne0Hl7DtmTwO` -> `password1`
+  - `$2b$10$aV4wATg2lRM1VpvuOAZT3ORuMMWI/BJf5bQ.F1sCH.cFp98dhfht.` -> `password2`
+  - `$2b$10$TOSxG1AFzCKZBMhGqrf8L.sS9SdgxDUwZ6BCVFUUY8AWDTcuC/x3W` -> `password3`
 
 # Part 6 — Building the Login Form
 
-  View:
+  View: `views/login.ejs`:
 
   ```html 
-  <h2>
-
-  Login
-
-  </h2>
-
-  <form
-      method="post"
-  >
-
-      <input
-          type="email"
-          name="email"
-      >
-
-      <input
-          type="password"
-          name="password"
-      >
-
-      <button>
-
-          Login
-
-      </button>
-
+  <h2>Login</h2>
+  <form method="post" action="/login">
+      <input type="email" name="email">
+      <input type="password" name="password">
+      <button>Login</button>
   </form>
   ```
 
-  ---
+  ```js
+  app.get('/login', ( req, res )=>{
+    res.render("login", {
+      title: "Login"
+    })
+  });  
+  ```
 
   Simple.
 
@@ -353,72 +308,54 @@ load_script_js:
 
   Familiar.
 
-  ---
-
 # Part 7 — Verifying Credentials
+
+  `db/userRepository.js`:
+
+  ```js
+  const db = require('./db');
+
+  function findByEmail(email) {
+    const stmt = db.prepare(`
+        SELECT *
+        FROM users
+        WHERE email = ? 
+      `);
+
+    const result = stmt.get(email);
+    return result;
+  }
+
+  module.exports = {
+    findByEmail,
+  };  
+  ```
 
   Route:
 
   ```javascript 
-  router.post(
-      '/login',
-      async (
-          req,
-          res
-      ) => {
+  app.post('/login', async (req, res) => {
 
-          const {
-              email,
-              password
-          } = req.body;
+    const { email, password } = req.body;
+    // Lookup user:
+    const user = userRepository.findByEmail(email);
 
-      }
-  );
+    if ( !user ){
+      return res.send("User not found");
+    }
+
+    // Verify password:
+    const valid = await bcrypt.compare(password, user.password_hash);
+
+    // Invalid credentials
+    if ( !valid ){
+      return res.send("Unauthorized access");    
+    }
+    // Login succeeds.
+    res.send("Logged in successfully");
+
+  });
   ```
-
-  ---
-
-  Lookup user:
-
-  ```javascript 
-  const user =
-      userRepository
-          .findByEmail(
-              email
-          );
-  ```
-
-  ---
-
-  Verify password:
-
-  ```javascript 
-  const valid =
-      await bcrypt.compare(
-          password,
-          user.password_hash
-      );
-  ```
-
-  ---
-
-  If:
-
-  ```javascript 
-  valid === true
-  ```
-
-  Login succeeds.
-
-  ---
-
-  Otherwise:
-
-  ```text 
-  Invalid credentials
-  ```
-
-  ---
 
 # Part 8 — Sessions
 
@@ -428,17 +365,13 @@ load_script_js:
   How does the server remember the user?
   ```
 
-  Good question.
-
-  ---
+  Good question 🤔
 
   Answer:
 
   ```text 
   Sessions
   ```
-
-  ---
 
   Without sessions:
 
@@ -448,80 +381,62 @@ load_script_js:
   Logged Out
   ```
 
-  ---
-
   Not ideal.
-
-  ---
 
 # Part 9 — Introducing express-session
 
   Install:
 
-  express-session
+  `express-session`
 
   ```bash 
-  npm install express-session
+  npm install express-session 
   ```
-
-  ---
 
   Configure:
 
   ```javascript 
-  const session =
-      require(
-          'express-session'
-      );
+  const { loadEnvFile } = require('node:process');
+  const session = require('express-session');
 
   app.use(
-
       session({
-
-          secret:
-              process.env
-                  .SESSION_SECRET,
-
+          secret: process.env.SESSION_SECRET,
           resave: false,
-
-          saveUninitialized:
-              false
-
+          saveUninitialized: false
       })
-
   );
   ```
-
-  ---
 
   Now:
 
   ```javascript 
   req.session
   ```
+  
+  exists. Make sure to `console.log` it and ensure that it has been correctly enabled.
 
-  exists.
+  In order to set up `process.env.SESSION_SECRET`, you can create a `.env` file in the root of your project with the following content:
 
-  ---
+  ```env
+  SESSION_SECRET=your_secret_key_here
+  ```
+
+  _(Just make sure to use a safe secret key)_
 
 # Part 10 — Creating a Session
 
   Successful login:
 
   ```javascript 
-  req.session.userId =
-      user.id;
+  req.session.userId = user.id;
   ```
-
-  ---
 
   Example:
 
   ```javascript 
   req.session.userId = 1;
   ```
-
-  ---
 
   Server remembers:
 
@@ -531,21 +446,27 @@ load_script_js:
 
   between requests.
 
-  ---
+  Let's update the POST `/login` route and set the session once the user has logged in successfully:
+
+  ```js
+  app.post('/login', async (req, res) => {
+    // ...
+    req.session.userId = user.id; 
+    res.send("Logged in successfully");
+  });
+  ```
+
+  Check the `req.session` through a `console.log` after you have successfully logged in to ensure that everything works find up to this point.
 
 # Part 11 — Cookies
 
   Sessions require cookies.
-
-  ---
 
   Browser receives:
 
   ```text 
   session-id
   ```
-
-  ---
 
   Future requests:
 
@@ -554,8 +475,6 @@ load_script_js:
   ```
 
   returned automatically.
-
-  ---
 
   Diagram:
 
@@ -574,8 +493,6 @@ load_script_js:
   B --> A
   ```
 
-  ---
-
   The browser stores:
 
   ```text 
@@ -584,7 +501,9 @@ load_script_js:
 
   not user data.
 
-  ---
+  ![](./assets/session-based-auth.png)
+
+  _(Diagram from [ByteByteGo](https://blog.bytebytego.com/p/mastering-modern-authentication-cookies){:target="_blank"})_
 
 # Part 12 — Protecting Routes
 
@@ -596,87 +515,44 @@ load_script_js:
 
   accessible by everyone.
 
-  ---
-
-  Middleware:
+  Middleware (that will act as a protection layer):
 
   ```javascript 
-  function requireAuth(
-      req,
-      res,
-      next
-  ) {
-
-      if(
-          !req.session.userId
-      ) {
-
-          return res.redirect(
-              '/login'
-          );
-
+  function requireAuth( req, res, next ) {
+      if ( !req.session.userId ) {
+          return res.redirect( '/login' );
       }
-
       next();
-
   }
   ```
-
-  ---
 
   Usage:
 
   ```javascript 
-  router.get(
-
-      '/create',
-
+  router.get('/create',
       requireAuth,
-
-      (
-          req,
-          res
-      ) => {
-
+      (req,res) => {
           ...
       }
-
   );
   ```
 
-  ---
-
   Now login is required.
-
-  ---
 
 # Part 13 — Logout
 
   Route:
 
   ```javascript 
-  router.post(
-      '/logout',
-      (
-          req,
-          res
-      ) => {
-
-          req.session.destroy(
-              () => {
-
-                  res.redirect(
-                      '/login'
-                  );
-
-              }
-          );
-
-      }
+  app.get('/logout', (req,res) => {
+    req.session.destroy(() => {
+      res.redirect(
+          '/login'
+      );
+    });
+    }
   );
   ```
-
-  ---
 
   Session removed.
 
@@ -684,82 +560,60 @@ load_script_js:
 
   Simple.
 
-  ---
+  We just need to implement a button for the Logout now.
+
+  And it would also be nice to provide a confirmation before logging out.
 
 # Part 14 — Displaying User Information
 
   Middleware:
 
   ```javascript 
-  app.use(
-      (
-          req,
-          res,
-          next
-      ) => {
-
-          res.locals.userId =
-              req.session.userId;
-
-          next();
-
-      }
-  );
+  app.use((req,res,next) => {
+    res.locals.userId = req.session.userId;
+    next();
+  });
   ```
-
-  ---
 
   View:
 
   ```html 
-  <% if(userId) { %>
-
-  Logged In
-
+  <% if ( userId ) { %>
+    Logged In
+  <% } else { %>
+    Logged out
   <% } %>
   ```
 
-  ---
-
   Navigation can now adapt.
-
-  ---
 
 # Part 15 — Common Authentication Attacks
 
-  ## Plaintext Password Storage
+  **Plaintext Password Storage**
 
   Never.
 
-  ---
+  **Weak Passwords**
 
-  ## Weak Passwords
-
-  Bad:
+  ❌ Bad:
 
   ```text 
   123456
   ```
 
-  ---
-
-  Bad:
+  ❌ Bad:
 
   ```text 
   password
   ```
 
-  ---
-
-  Bad:
+  ❌ Bad:
 
   ```text 
   qwerty
   ```
 
-  ---
-
-  ## Session Hijacking
+  **Session Hijacking**
 
   Protect with:
 
@@ -769,9 +623,7 @@ load_script_js:
 
   cookies.
 
-  ---
-
-  ## Brute Force Attacks
+  **Brute Force Attacks**
 
   Eventually implement:
 
@@ -779,11 +631,9 @@ load_script_js:
   Rate Limiting
   ```
 
-  ---
+  **User Enumeration**
 
-  ## User Enumeration
-
-  Bad:
+  ❌ Bad:
 
   ```text 
   Email not found
@@ -795,17 +645,13 @@ load_script_js:
   Wrong password
   ```
 
-  ---
-
-  Better:
+  ✅ Better:
 
   ```text 
   Invalid credentials
   ```
 
   for both.
-
-  ---
 
 # Part 16 — Why Authentication Matters
 
@@ -815,65 +661,49 @@ load_script_js:
   Anyone edits everything
   ```
 
-  ---
-
   With authentication:
 
   ```text 
   Users identified
   ```
 
-  ---
-
   Soon we'll add:
 
   ```text 
   Roles
-
   Permissions
-
   Ownership
   ```
 
   which build on today's foundation.
 
-  ---
-
 # Common Beginner Mistakes
 
-  ## Storing Passwords Directly
+  **Storing Passwords Directly**
 
   Never.
 
-  Use bcrypt.
+  Use `bcrypt` (password hashing).
 
-  ---
-
-  ## Creating Your Own Hashing Algorithm
+  **Creating Your Own Hashing Algorithm**
 
   Don't.
 
   Use established libraries.
 
-  ---
-
-  ## Trusting Cookies
+  **Trusting Cookies**
 
   Always verify sessions server-side.
 
-  ---
-
-  ## Forgetting Logout
+  **Forgetting Logout**
 
   Sessions should be removable.
 
-  ---
-
-  ## Protecting Only Frontend Pages
+  **Protecting Only Frontend Pages**
 
   Backend routes must also enforce authentication.
 
-  ---
+  Always.
 
 # Bonus Challenge
 
@@ -885,39 +715,24 @@ load_script_js:
 
   page.
 
-  ---
-
   Workflow:
 
   ```text 
   Email
-
   Password
-
   Confirm Password
-  ```
-
-  ---
-
   Hash password.
-
   Create account.
-
   Automatically log user in.
-
   Redirect:
-
-  ```text 
   /products
   ```
 
----
+Warning: Make sure to stop users from registering an account with an email that already exists.
 
 Congratulations.
 
 You've just built the foundation of nearly every web application that exists.
-
----
 
 # Key Takeaways
 
