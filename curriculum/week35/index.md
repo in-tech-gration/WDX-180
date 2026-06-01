@@ -67,6 +67,18 @@ title: Week 35 | Full Stack Project
 
   **Pagination**
 
+  By the end of this lesson, students will be able to:
+
+  * Understand why pagination exists
+  * Implement OFFSET/LIMIT pagination
+  * Calculate page numbers
+  * Read query parameters
+  * Generate pagination links
+  * Display page counts
+  * Handle edge cases
+  * Understand the limitations of OFFSET pagination
+  * Compare OFFSET and Cursor Pagination
+
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
   - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
@@ -113,6 +125,19 @@ title: Week 35 | Full Stack Project
 
   **Search & Filtering**
 
+  By the end of this lesson, students will be able to:
+
+  * Understand search and filtering concepts
+  * Read query parameters
+  * Build dynamic SQL queries safely
+  * Use SQL WHERE clauses
+  * Implement keyword search
+  * Filter by price ranges
+  * Combine search with pagination
+  * Preserve filters between pages
+  * Understand SQL indexing fundamentals
+  * Avoid SQL injection vulnerabilities
+
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
   - Part 3 - [Public Routes & Basic CRUD](../modules/javascript/misc/fullstack/day03.html){:target="_blank"}
@@ -158,6 +183,18 @@ title: Week 35 | Full Stack Project
   Study Part 8 of the Full Stack Project series:
 
   **Updating Products (UPDATE)**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand the Update portion of CRUD
+  * Build edit forms
+  * Pre-populate forms with existing data
+  * Process update requests
+  * Execute SQL UPDATE statements
+  * Validate incoming data
+  * Handle missing records
+  * Reuse form templates
+  * Understand optimistic thinking versus defensive programming
 
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
@@ -262,6 +299,19 @@ title: Week 35 | Full Stack Project
   Study Part 10 of the Full Stack Project series:
 
   **File Uploads & Image Management**
+
+  By the end of this lesson, students will be able to:
+
+  * Understand multipart form submissions
+  * Upload files using Express
+  * Use Multer middleware
+  * Store uploaded files
+  * Validate uploads
+  * Restrict file types
+  * Generate unique filenames
+  * Associate files with database records
+  * Display uploaded images
+  * Understand common upload security concerns
 
   - Part 1 - [Express + EJS Fundamentals](../modules/javascript/misc/fullstack/day01.html){:target="_blank"}
   - Part 2 - [Planning, Architecture & Diagrams](../modules/javascript/misc/fullstack/day02.html){:target="_blank"}
