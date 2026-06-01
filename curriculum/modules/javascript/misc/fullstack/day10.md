@@ -11,1003 +11,761 @@ load_script_js:
 
 ## Working with Real Files
 
-> Text is easy.
->
-> Files are where web applications start getting interesting.
+  > Text is easy.
+  >
+  > Files are where web applications start getting interesting.
 
-So far, our CMS stores:
+  So far, our CMS stores:
 
-```text 
-Name
-Description
-Price
-```
+  ```text 
+  Name
+  Description
+  Price
+  ```
 
-But real products also need:
+  But real products also need:
 
-```text 
-Images
-PDF Manuals
-Datasheets
-Downloads
-```
+  ```text 
+  Images
+  PDF Manuals
+  Datasheets
+  Downloads
+  ```
 
-Today we'll learn how to upload files from a browser and store references to them in our database.
+  Today we'll learn how to upload files from a browser and store references to them in our database.
 
-This is one of the first features that makes a CRUD application feel like a professional CMS.
-
----
+  This is one of the first features that makes a CRUD application feel like a professional CMS.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand multipart form submissions
-* Upload files using Express
-* Use Multer middleware
-* Store uploaded files
-* Validate uploads
-* Restrict file types
-* Generate unique filenames
-* Associate files with database records
-* Display uploaded images
-* Understand common upload security concerns
-
----
+  * Understand multipart form submissions
+  * Upload files using Express
+  * Use Multer middleware
+  * Store uploaded files
+  * Validate uploads
+  * Restrict file types
+  * Generate unique filenames
+  * Associate files with database records
+  * Display uploaded images
+  * Understand common upload security concerns
 
 # Part 1 — Why File Uploads Are Different
 
-Normal forms:
+  Normal forms:
 
-```html 
-<input
-    name="name"
->
-```
+  ```html 
+  <input name="name">
+  ```
 
-send:
+  send:
 
-```text 
-Text
-```
+  ```text 
+  Text
+  ```
 
----
+  File inputs:
 
-File inputs:
+  ```html 
+  <input type="file" name="image">
+  ```
 
-```html 
-<input
-    type="file"
-    name="image"
->
-```
+  send:
 
-send:
+  ```text 
+  Binary Data
+  ```
 
-```text 
-Binary Data
-```
+  The browser must use:
 
----
+  ```text 
+  multipart/form-data
+  ```
 
-The browser must use:
+  instead of:
 
-```text 
-multipart/form-data
-```
-
-instead of:
-
-```text 
-application/x-www-form-urlencoded
-```
-
----
+  ```text 
+  application/x-www-form-urlencoded
+  ```
 
 # Part 2 — Understanding multipart/form-data
 
-Regular request:
+  Regular request:
 
-```text 
-name=keyboard
-price=89.99
-```
+  ```text 
+  name=keyboard
+  price=89.99
+  ```
 
----
+  ---
 
-Multipart request:
+  Multipart request:
 
-```text 
-name=keyboard
+  ```text 
+  name=keyboard
 
-[file bytes]
+  [file bytes]
 
-price=89.99
-```
+  price=89.99
+  ```
 
-Contains both:
+  Contains both:
 
-* Form fields
-* Files
+  * Form fields
+  * Files
 
----
+  ---
 
-Express cannot process this by default.
+  Express **cannot process this by default**.
 
-We need middleware.
-
----
+  We need **middleware**.
 
 # Part 3 — Introducing Multer
 
-The most common Express upload middleware is:
+  The most common Express upload middleware is:
 
-Multer
+  `Multer`
 
-Install:
+  Install:
 
-```bash 
-npm install multer
-```
+  ```bash 
+  npm install multer
+  ```
 
----
+  Import:
 
-Import:
+  ```javascript 
+  // index.js
+  const multer = require('multer');
+  ```
 
-```javascript 
-const multer =
-    require('multer');
-```
+  Create upload middleware:
 
----
+  ```javascript 
+  const upload = multer({ dest: 'uploads/' });
+  ```
 
-Create upload middleware:
+  Now uploaded files are stored in:
 
-```javascript 
-const upload =
-    multer({
-        dest: 'uploads/'
-    });
-```
+  ```text 
+  uploads/
+  ```
 
----
-
-Now uploaded files are stored in:
-
-```text 
-uploads/
-```
-
-directory.
-
----
+  directory.
 
 # Part 4 — Creating the Upload Form
 
-Edit product form:
+  Edit product form:
 
-```html 
-<form
-    method="post"
-    enctype="multipart/form-data"
->
+  ```html 
+  <form method="post" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <button>
+          Upload
+      </button>
+  </form>
+  ```
 
-    <input
-        type="file"
-        name="image"
-    >
+  Most common beginner mistake:
 
-    <button>
-        Upload
-    </button>
+  Forgetting:
 
-</form>
-```
+  ```html 
+  enctype="multipart/form-data"
+  ```
 
----
+  Without it:
 
-Most common beginner mistake:
-
-Forgetting:
-
-```html 
-enctype="multipart/form-data"
-```
-
-Without it:
-
-```text 
-File never arrives
-```
-
----
+  ```text 
+  File never arrives
+  ```
 
 # Part 5 — Processing Uploads
 
-Route:
+  Route:
 
-```javascript 
-router.post(
-    '/edit/:id',
-    upload.single('image'),
-    (req, res) => {
+  ```javascript 
+  router.post('/edit/:id',
+      // Multer Middleware for file uploading
+      upload.single('image'),
+      (req, res) => {
 
-        console.log(
-            req.file
-        );
+        // Contains information about the uploaded file
+        // handled by the Multer middleware
+        console.log(req.file);
 
-    }
-);
-```
+      }
+  );
+  ```
 
----
+  Multer places uploaded file inside:
 
-Multer places uploaded file inside:
+  ```javascript 
+  req.file
+  ```
 
-```javascript 
-req.file
-```
+  Example:
 
----
+  ```javascript 
+  {
+    filename:
+      '5d8a7f6e9c3',
 
-Example:
+    originalname:
+      'keyboard.jpg',
 
-```javascript 
-{
-  filename:
-    '5d8a7f6e9c3',
+    mimetype:
+      'image/jpeg',
 
-  originalname:
-    'keyboard.jpg',
+    size:
+      125000
+  }
+  ```
 
-  mimetype:
-    'image/jpeg',
+  **Understanding req.file**
 
-  size:
-    125000
-}
-```
+  Useful properties:
 
----
-
-# Understanding req.file
-
-Useful properties:
-
-| Property     | Purpose        |
-| ------------ | -------------- |
-| filename     | Generated name |
-| originalname | Original file  |
-| mimetype     | File type      |
-| size         | File size      |
-| path         | Stored path    |
-
----
+  | Property     | Purpose        |
+  | ------------ | -------------- |
+  | filename     | Generated name |
+  | originalname | Original file  |
+  | mimetype     | File type      |
+  | size         | File size      |
+  | path         | Stored path    |
 
 # Part 6 — Storing Image References
 
-Do NOT store:
+  Do NOT store:
 
-```text 
-Entire image
-```
+  ```text 
+  Entire image
+  ```
 
-inside SQLite.
+  inside SQLite.
 
-Store:
+  Store:
 
-```text 
-Filename
-```
+  ```text 
+  Filename
+  ```
 
-instead.
+  instead.
 
----
+  Add column:
 
-Add column:
+  ```sql 
+  ALTER TABLE products
 
-```sql 
-ALTER TABLE products
+  ADD COLUMN image TEXT;
+  ```
 
-ADD COLUMN image
-TEXT;
-```
+  Example value:
 
----
+  ```text 
+  5d8a7f6e9c3.jpg
+  ```
 
-Example value:
+  Repository:
 
-```text 
-5d8a7f6e9c3.jpg
-```
+  ```javascript 
+  UPDATE products
 
----
+  SET image = ?
 
-Repository:
+  WHERE id = ?
+  ```
 
-```javascript 
-UPDATE products
+  Database stores:
 
-SET image = ?
+  ```text 
+  Reference
+  ```
 
-WHERE id = ?
-```
-
----
-
-Database stores:
-
-```text 
-Reference
-```
-
-not file contents.
-
----
+  not file contents.
 
 # Part 7 — Serving Uploaded Files
 
-Files exist on disk.
+  Files exist on disk.
 
-Browser cannot access them yet.
+  Browser cannot access them yet.
 
----
+  Expose uploads folder:
 
-Expose uploads folder:
+  ```javascript 
+  app.use('/uploads', express.static('uploads'));
+  ```
 
-```javascript 
-app.use(
-    '/uploads',
-    express.static(
-        'uploads'
-    )
-);
-```
+  Example:
 
----
+  ```text 
+  /uploads/image.jpg
+  ```
 
-Example:
+  becomes publicly accessible.
 
-```text 
-/uploads/image.jpg
-```
+  **Displaying Images**
 
-becomes publicly accessible.
+  View:
 
----
+  ```html 
+  <img src="/uploads/<%= product.image %>" alt="<%= product.name %>">
+  ```
 
-# Displaying Images
+  Result:
 
-View:
+  ```text 
+  Product Image
+  ```
 
-```html 
-<img
-    src="/uploads/<%= product.image %>"
-    alt="<%= product.name %>"
->
-```
-
----
-
-Result:
-
-```text 
-Product Image
-```
-
-appears on page.
-
----
+  appears on page.
 
 # Part 8 — Generating Better Filenames
 
-Default Multer names:
+  Default Multer names:
 
-```text 
-7fa1c2f8b4...
-```
+  ```text 
+  7fa1c2f8b4...
+  ```
 
-Not ideal.
+  Not ideal.
 
----
+  [Custom storage](https://expressjs.com/en/resources/middleware/multer/#diskstorage){:target="_blank"}:
 
-Custom storage:
+  ```javascript 
+  const storage = multer.diskStorage({
+    destination: 'uploads/',
+    filename: ( req, file, cb ) => {
+      cb(
+        null,
+        Date.now() + '-' + file.originalname
+      );
+    }
+  });
+  const upload = multer({ storage });
+  ```
 
-```javascript 
-const storage =
-    multer.diskStorage({
+  Example:
 
-        destination:
-            'uploads/',
+  ```text 
+  1712345678-keyboard.jpg
+  ```
 
-        filename:
-            (
-                req,
-                file,
-                cb
-            ) => {
-
-                cb(
-                    null,
-                    Date.now()
-                    + '-'
-                    + file.originalname
-                );
-
-            }
-
-    });
-```
-
----
-
-Example:
-
-```text 
-1712345678-keyboard.jpg
-```
-
-Much easier to debug.
-
----
+  Much easier to debug.
 
 # Part 9 — Restricting File Types
 
-Dangerous:
+  Dangerous:
 
-```text 
-virus.exe
-```
+  ```text 
+  virus.exe
+  ```
 
----
+  Dangerous:
 
-Dangerous:
+  ```text 
+  shell.php
+  ```
 
-```text 
-shell.php
-```
+  [Accept only images via fileFilter](https://expressjs.com/en/resources/middleware/multer/#filefilter){:target="_blank"}.
 
----
+  Example:
 
-Accept only images.
+  ```javascript 
+  multer({
+    // ...
+    fileFilter:( req, file, cb) => {
+        const allowed =
+            [
+                'image/jpeg',
+                'image/png',
+                'image/webp'
+            ];
+        cb(
+            null,
+            allowed.includes(
+                file.mimetype
+            )
+        );
 
----
+    }
+  });
+  ```
 
-Example:
-
-```javascript 
-fileFilter:
-(
-    req,
-    file,
-    cb
-) => {
-
-    const allowed =
-        [
-            'image/jpeg',
-            'image/png',
-            'image/webp'
-        ];
-
-    cb(
-        null,
-        allowed.includes(
-            file.mimetype
-        )
-    );
-
-}
-```
-
----
-
-Only image uploads allowed.
-
----
+  Only image uploads allowed.
 
 # Part 10 — Limiting File Size
 
-Without limits:
+  Without limits:
 
-```text 
-10GB upload
-```
+  ```text 
+  10GB upload
+  ```
 
-Possible.
+  Possible.
 
----
+  Not ideal.
 
-Not ideal.
+  [Limit](https://expressjs.com/en/resources/middleware/multer/#limits){:target="_blank"}.
 
----
+  ```javascript 
+  multer({
+    // ...
+    limits: {
+      fileSize: 5 * 1024 * 1024
+    }
+  })
+  ```
 
-Limit:
+  Equivalent:
 
-```javascript 
-limits: {
+  ```text 
+  5 MB
+  ```
 
-    fileSize:
-        5 * 1024 * 1024
+  Large enough for images.
 
-}
-```
-
----
-
-Equivalent:
-
-```text 
-5 MB
-```
-
----
-
-Large enough for images.
-
-Small enough to avoid abuse.
-
----
+  Small enough to avoid abuse.
 
 # Part 11 — Handling Upload Errors
 
-Example:
+  Example:
 
-```text 
-File too large
-```
+  ```text 
+  File too large
+  ```
 
----
+  Example:
 
-Example:
+  ```text 
+  Wrong file type
+  ```
 
-```text 
-Wrong file type
-```
+  Handle errors:
 
----
+  ```js
+  const multer = require('multer');
+  const upload = multer({
+    limits: { ... }
+    // ...
+  })
 
-Display errors:
+  router.post("/edit", (req, res)=>{
+    upload.single("image")(req, res, err =>{
 
-```javascript 
-return res.render(
-    'products/edit',
-    {
-        error:
-            'Invalid file.'
-    }
-);
-```
+      let error;
 
----
+      if ( err instanceof multer.MulterError ){
+        // Handle Multer error...
+        error = "Invalid file";
+      }
+      // ...
 
-Never fail silently.
+      // Display errors:
+      return res.render('products/edit',
+          {
+            title: "Edit Product",
+            error,
+          }
+      );
+    });
+  });
+  ```
 
-Users should know what happened.
+  Never fail silently.
 
----
+  Users should know what happened.
 
 # Part 12 — Replacing Existing Images
 
-Current:
+  Current:
 
-```text 
-Upload image
-```
+  ```text 
+  Upload image
+  ```
 
-works.
+  works.
 
----
+  But:
 
-But:
+  ```text 
+  Upload second image
+  ```
 
-```text 
-Upload second image
-```
+  leaves:
 
-leaves:
+  ```text 
+  Old file
+  ```
 
-```text 
-Old file
-```
+  on disk.
 
-on disk.
+  Result:
 
----
+  ```text 
+  Unused files accumulate
+  ```
 
-Result:
+  Future improvement:
 
-```text 
-Unused files accumulate
-```
+  ```javascript 
+  fs.unlink(...)
+  ```
 
----
+  to remove old images.
 
-Future improvement:
-
-```javascript 
-fs.unlink(...)
-```
-
-to remove old images.
-
----
-
-We'll revisit cleanup strategies later.
-
----
+  We'll revisit cleanup strategies later.
 
 # Part 13 — Security Considerations
 
-Never trust:
+  Do you remember the  mantra _"Treat all user input as evil!"_
 
-```text 
-Filename
-```
+  ❌ Never trust:
 
----
+  ```text 
+  Filename
+  ```
 
-Never trust:
+  ❌ Never trust:
 
-```text 
-File extension
-```
+  ```text 
+  File extension
+  ```
 
----
+  ❌ Never trust:
 
-Never trust:
+  ```text 
+  MIME type alone
+  ```
 
-```text 
-MIME type alone
-```
+  Real systems often inspect:
 
----
+  ```text 
+  Actual file contents
+  ```
 
-Real systems often inspect:
+  before accepting uploads.
 
-```text 
-Actual file contents
-```
+  For our CMS:
 
-before accepting uploads.
+  * Restrict file types
+  * Restrict size
+  * Generate filenames
+  * Store outside source code
 
----
-
-For our CMS:
-
-* Restrict file types
-* Restrict size
-* Generate filenames
-* Store outside source code
-
-is sufficient.
-
----
+  is sufficient.
 
 # Part 14 — Product Creation with Images
 
-Current:
+  Current:
 
-```text 
-Create Product
-```
+  ```text 
+  Create Product
+  ```
 
----
+  Enhanced:
 
-Enhanced:
+  ```text 
+  Create Product
+  Upload Image
+  ```
 
-```text 
-Create Product
-Upload Image
-```
+  Single form:
 
----
+  ```html 
+  <input type="text" name="name">
+  <input type="file" name="image">
+  ```
 
-Single form:
+  Create product and image together.
 
-```html 
-<input
-    type="text"
-    name="name"
->
-
-<input
-    type="file"
-    name="image"
->
-```
-
----
-
-Create product and image together.
-
-This is how many CMS platforms operate.
-
----
+  This is how many CMS platforms operate.
 
 # Part 15 — Database Design Discussion
 
-Current:
+  Current:
 
-```sql 
-products
+  ```sql 
+  products
 
-image
-```
+  image
+  ```
 
-One image.
+  One image.
 
----
+  ```mermaid
+  erDiagram
+    products {
+      INTEGER id
+      TEXT name
+      TEXT description
+      REAL price
+      TEXT image
+    }
+  ```
 
-Future:
+  Future:
 
-```sql 
-product_images
-```
+  ```sql 
+  product_images
+  ```
 
-table.
+  table.
 
----
+  Example:
 
-Example:
+  ```text 
+  Product
 
-```text 
-Product
+  1
+  ```
 
-1
-```
+  linked to:
 
-linked to:
+  ```text 
+  image1.jpg
+  image2.jpg
+  image3.jpg
+  ```
 
-```text 
-image1.jpg
+  ```mermaid
+  erDiagram
+      products {
+          integer id PK
+          string name
+          text description
+      }
+      product_images {
+          integer id PK
+          integer product_id FK
+          string filename
+      }
+      products ||--o{ product_images : has
+  ```
 
-image2.jpg
+  This becomes important for galleries.
 
-image3.jpg
-```
-
----
-
-This becomes important for galleries.
-
-We'll keep one image for now.
-
----
+  We'll keep one image for now.
 
 # Common Beginner Mistakes
 
-## Forgetting enctype
+  **Forgetting enctype**
 
-Bad:
+  ❌ Bad:
 
-```html 
-<form method="post">
-```
+  ```html 
+  <form method="post">
+  ```
 
----
+  ✅ Must be:
 
-Must be:
+  ```html 
+  multipart/form-data
+  ```
 
-```html 
-multipart/form-data
-```
+  **Storing Images in SQLite**
 
----
+  Usually unnecessary.
 
-## Storing Images in SQLite
+  Store filenames instead.
 
-Usually unnecessary.
+  **No File Validation**
 
-Store filenames instead.
+  Always validate:
 
----
+  * Type
+  * Size
 
-## No File Validation
+  **Public Uploads Without Restrictions**
 
-Always validate:
+  Dangerous.
 
-* Type
-* Size
+  Never allow arbitrary uploads.
 
----
+  **Ignoring Cleanup**
 
-## Public Uploads Without Restrictions
-
-Dangerous.
-
-Never allow arbitrary uploads.
-
----
-
-## Ignoring Cleanup
-
-Unused files eventually consume storage.
-
----
-
-# Assignment
-
-## Exercise 1
-
-Install:
-
-```text 
-Multer
-```
-
-and configure uploads.
-
----
-
-## Exercise 2
-
-Add:
-
-```text 
-Image Upload
-```
-
-to product creation.
-
----
-
-## Exercise 3
-
-Store uploaded filename in SQLite.
-
----
-
-## Exercise 4
-
-Display uploaded image on:
-
-```text 
-Product Details
-```
-
-page.
-
----
-
-## Exercise 5
-
-Restrict uploads to:
-
-```text 
-JPEG
-PNG
-WEBP
-```
-
-files.
-
----
+  Unused files eventually consume storage.
 
 # Bonus Challenge
 
-Create:
+  Create:
 
-```text 
-product_images
-```
+  ```text 
+  product_images
+  ```
 
-table.
+  table.
 
-Schema:
+  Schema:
 
-```sql 
-CREATE TABLE product_images (
+  ```sql 
+  CREATE TABLE product_images (
 
-    id INTEGER PRIMARY KEY,
+      id INTEGER PRIMARY KEY,
 
-    product_id INTEGER,
+      product_id INTEGER,
 
-    filename TEXT
+      filename TEXT
 
-);
-```
+  );
+  ```
 
----
+  Allow:
 
-Allow:
+  ```text 
+  Multiple Images
+  ```
 
-```text 
-Multiple Images
-```
+  per product.
 
-per product.
+  Use:
 
----
+  ```javascript 
+  upload.array(
+      'images'
+  )
+  ```
 
-Use:
+  instead of:
 
-```javascript 
-upload.array(
-    'images'
-)
-```
+  ```javascript 
+  upload.single(
+      'image'
+  )
+  ```
 
-instead of:
+  Display gallery:
 
-```javascript 
-upload.single(
-    'image'
-)
-```
+  ```html 
+  <img ...>
 
----
+  <img ...>
 
-Display gallery:
+  <img ...>
+  ```
 
-```html 
-<img ...>
+  under product details.
 
-<img ...>
+  Congratulations.
 
-<img ...>
-```
-
-under product details.
-
-Congratulations.
-
-You've just crossed from simple CRUD into media management, one of the foundational capabilities of real-world CMS platforms.
-
----
+  You've just crossed from simple CRUD into media management, one of the foundational capabilities of real-world CMS platforms.
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* Multipart forms
-* Multer middleware
-* File uploads
-* Image management
-* File validation
-* Static file serving
-* Filename generation
-* Upload security
-* Database file references
+  * Multipart forms
+  * Multer middleware
+  * File uploads
+  * Image management
+  * File validation
+  * Static file serving
+  * Filename generation
+  * Upload security
+  * Database file references
 
-At this stage, the CMS can manage not only structured data but also media assets. This is a major step toward building applications that resemble WordPress, Shopify, Drupal, Ghost, and other production content management systems.
-
----
-
-# Suggested Syllabus Improvements
-
-This is the point where I'd consider splitting the course into two tracks:
-
-### Application Development Track
-
-* Authentication
-* Authorization
-* Sessions
-* Roles
-
-### CMS Track
-
-* Media Library
-* Categories
-* Tags
-* SEO
-* Content Publishing
-
-Most real CMS platforms become complex not because CRUD is difficult, but because content organization becomes difficult.
-
-I'd also strongly consider adding a dedicated day for:
-
-```text 
-Environment Variables
-Configuration
-Secrets
-```
-
-using:
-
-dotenv
-
-before authentication begins. In production systems, configuration management becomes critical very quickly, and students benefit enormously from learning it early.
+  At this stage, the CMS can manage not only structured data but also media assets. This is a major step toward building applications that resemble WordPress, Shopify, Drupal, Ghost, and other production content management systems.
 
 ---
 
