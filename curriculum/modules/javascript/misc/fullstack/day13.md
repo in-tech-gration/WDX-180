@@ -1037,65 +1037,19 @@ You now have the beginnings of a reusable application framework.
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* Input validation
-* Error handling
-* Validation middleware
-* Custom errors
-* Express error handlers
-* Defensive programming
-* Error classification
-* User-friendly feedback
-* Logging fundamentals
+  * Input validation
+  * Error handling
+  * Validation middleware
+  * Custom errors
+  * Express error handlers
+  * Defensive programming
+  * Error classification
+  * User-friendly feedback
+  * Logging fundamentals
 
-At this point, your CMS is no longer merely functional—it is becoming resilient. The difference between a hobby project and a production application is often not the happy path. It's how the system behaves when everything goes wrong.
-
----
-
-# Suggested Syllabus Improvements
-
-If I were evolving this curriculum further, I would strongly consider introducing:
-
-### Testing Before Day 14
-
-Topics:
-
-```text 
-Unit Tests
-
-Integration Tests
-
-Route Tests
-
-Validation Tests
-```
-
-Using:
-
-Vitest
-
-or
-
-Jest
-
-and
-
-SuperTest
-
-The reason is simple:
-
-```text 
-Validation
-
-Authentication
-
-Authorization
-```
-
-are exactly the kinds of features that tend to break quietly. Testing them early teaches students one of the most important lessons in professional software development:
-
-> If it's important enough to rely on, it's important enough to test.
+  At this point, your CMS is no longer merely functional—it is becoming resilient. The difference between a hobby project and a production application is often not the happy path. It's how the system behaves when everything goes wrong.
 
 ---
 

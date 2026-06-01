@@ -1089,19 +1089,19 @@ You have now implemented the foundations of content ownership used by many profe
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* Authorization
-* Roles
-* Permissions
-* Ownership
-* 403 responses
-* Permission middleware
-* Role hierarchies
-* Privilege escalation risks
-* RBAC fundamentals
+  * Authorization
+  * Roles
+  * Permissions
+  * Ownership
+  * 403 responses
+  * Permission middleware
+  * Role hierarchies
+  * Privilege escalation risks
+  * RBAC fundamentals
 
-The CMS now understands not only who users are, but also what they are allowed to do. This is one of the most important transitions from a simple application to a multi-user system suitable for real organizations.
+  The CMS now understands not only who users are, but also what they are allowed to do. This is one of the most important transitions from a simple application to a multi-user system suitable for real organizations.
 
 ---
 

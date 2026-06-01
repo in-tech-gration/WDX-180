@@ -1014,21 +1014,21 @@ These are the most security-sensitive parts of your CMS.
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* Unit testing
-* Integration testing
-* Vitest
-* SuperTest
-* Test isolation
-* Mocking
-* Coverage
-* CI fundamentals
-* Testing strategy
+  * Unit testing
+  * Integration testing
+  * Vitest
+  * SuperTest
+  * Test isolation
+  * Mocking
+  * Coverage
+  * CI fundamentals
+  * Testing strategy
 
-A professional application is not defined by how many features it has. It is defined by how confidently those features can be changed without breaking existing behavior. Testing is the mechanism that creates that confidence.
+  A professional application is not defined by how many features it has. It is defined by how confidently those features can be changed without breaking existing behavior. Testing is the mechanism that creates that confidence.
 
-At this stage, your CMS is no longer just functional and secure—it is becoming maintainable. That distinction becomes increasingly important as projects grow from hundreds of lines of code to tens of thousands.
+  At this stage, your CMS is no longer just functional and secure—it is becoming maintainable. That distinction becomes increasingly important as projects grow from hundreds of lines of code to tens of thousands.
 
 ---
 
