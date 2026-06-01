@@ -264,7 +264,7 @@ load_script_js:
 
   ```javascript 
   const result = stmt.run(id);
-```
+  ```
 
   Returns:
 
@@ -297,10 +297,11 @@ load_script_js:
   Handle properly:
 
   ```javascript 
+  // routes/products.js POST /delete/:id
   if ( result.changes === 0 ) {
       return res
           .status(404)
-          .render('404');
+          .render('404', { title: "Product not found" });
   }
   ```
 
@@ -332,571 +333,412 @@ load_script_js:
 
 # Part 7 — Hard Deletes
 
-Current behavior:
+  Current behavior:
 
-```sql 
-DELETE
-FROM products
-WHERE id = ?
-```
+  ```sql 
+  DELETE
+  FROM products
+  WHERE id = ?
+  ```
 
-This is called:
+  This is called:
 
-```text 
-Hard Delete
-```
+  ```text 
+  Hard Delete
+  ```
 
----
+  Result:
 
-Result:
+  ```text 
+  Data is physically removed
+  ```
 
-```text 
-Data is physically removed
-```
+  Advantages:
 
----
+  * Simple
+  * Fast
+  * Clean
 
-Advantages:
+  Disadvantages:
 
-* Simple
-* Fast
-* Clean
-
----
-
-Disadvantages:
-
-* Data gone forever
-* Difficult recovery
-* Auditing impossible
-
----
+  * Data gone forever
+  * Difficult recovery
+  * Auditing impossible
 
 # Part 8 — Soft Deletes
 
-Many applications never truly delete.
+  Many applications never truly delete.
 
-Instead:
+  Instead:
 
-```sql 
-ALTER TABLE products
+  ```sql 
+  ALTER TABLE products
 
-ADD COLUMN deleted_at DATETIME;
-```
+  ADD COLUMN deleted_at DATETIME;
+  ```
 
----
+  Deleting becomes:
 
-Deleting becomes:
+  ```sql 
+  UPDATE products
 
-```sql 
-UPDATE products
+  SET deleted_at = CURRENT_TIMESTAMP
 
-SET deleted_at =
-    CURRENT_TIMESTAMP
+  WHERE id = ?
+  ```
 
-WHERE id = ?
-```
+  Record remains:
 
----
+  ```text 
+  In database
+  ```
 
-Record remains:
+  but is hidden.
 
-```text 
-In database
-```
+  Query:
 
-but is hidden.
+  ```sql 
+  SELECT *
+  FROM products
+  WHERE deleted_at IS NULL
+  ```
 
----
+  This is called:
 
-Query:
-
-```sql 
-SELECT *
-FROM products
-WHERE deleted_at IS NULL
-```
-
----
-
-This is called:
-
-```text 
-Soft Delete
-```
-
----
+  ```text 
+  Soft Delete
+  ```
 
 # Why Large Systems Use Soft Deletes
 
-Imagine:
+  Imagine:
 
-```text 
-Employee deletes 500 products
-```
+  ```text 
+  Employee deletes 500 products
+  ```
 
----
+  Hard delete:
 
-Hard delete:
+  ```text 
+  Restore from backup
+  ```
 
-```text 
-Restore from backup
-```
+  Potentially painful.
 
-Potentially painful.
+  Soft delete:
 
----
+  ```sql 
+  UPDATE products
 
-Soft delete:
+  SET deleted_at = NULL
+  ```
 
-```sql 
-UPDATE products
+  Done.
 
-SET deleted_at = NULL
-```
-
-Done.
-
----
-
-Many enterprise systems default to soft deletes.
-
----
+  Many enterprise systems default to soft deletes.
 
 # Part 9 — Recycle Bin Pattern
 
-Some applications provide:
+  Some applications provide:
 
-```text 
-Trash
-Recycle Bin
-Archive
-```
+  ```text 
+  Trash
+  Recycle Bin
+  Archive
+  ```
 
----
+  Workflow:
 
-Workflow:
+  ```mermaid 
+  flowchart LR
 
-```mermaid 
-flowchart LR
+  A[Active Product]
 
-A[Active Product]
+  A --> B[Soft Delete]
 
-A --> B[Soft Delete]
+  B --> C[Recycle Bin]
 
-B --> C[Recycle Bin]
+  C --> D[Restore]
 
-C --> D[Restore]
+  C --> E[Permanent Delete]
+  ```
 
-C --> E[Permanent Delete]
-```
+  Examples:
 
----
+  * Gmail
+  * Google Drive
+  * Dropbox
+  * Notion
 
-Examples:
+  Users appreciate second chances.
 
-* Gmail
-* Google Drive
-* Dropbox
-* Notion
-
----
-
-Users appreciate second chances.
-
-Developers appreciate third chances.
-
----
+  Developers appreciate third chances.
 
 # Part 10 — Foreign Key Considerations
 
-Suppose later:
+  Suppose later:
 
-```text 
-Products
-Orders
-```
+  ```text 
+  Products
+  Orders
+  ```
 
-exist.
+  exist.
 
----
+  Question:
 
-Question:
+  ```text 
+  Can we delete a product
+  referenced by orders?
+  ```
 
-```text 
-Can we delete a product
-referenced by orders?
-```
+  Potential problem:
 
----
+  ```text 
+  Order references
+  missing product
+  ```
 
-Potential problem:
+  Broken data.
 
-```text 
-Order references
-missing product
-```
+  Future solutions:
 
-Broken data.
+  ```sql 
+  ON DELETE CASCADE
+  ```
 
----
+  or:
 
-Future solutions:
+  ```sql 
+  ON DELETE RESTRICT
+  ```
 
-```sql 
-ON DELETE CASCADE
-```
-
-or:
-
-```sql 
-ON DELETE RESTRICT
-```
-
-We'll revisit this when relationships are introduced.
-
----
+  We'll revisit this when relationships are introduced.
 
 # Part 11 — Security Thinking
 
-Never trust:
+  Never trust:
 
-```javascript 
-req.params.id
-```
+  ```javascript 
+  req.params.id
+  ```
 
----
+  Validate:
 
-Validate:
+  ```javascript 
+  const id = Number(req.params.id);
+  if ( !Number.isInteger(id) ) {
+      return res
+          .status(400)
+          .send(
+              'Invalid ID'
+          );
 
-```javascript 
-const id =
-    Number(
-        req.params.id
-    );
+  }
+  ```
 
-if (
-    !Number.isInteger(id)
-) {
+  Never assume:
 
-    return res
-        .status(400)
-        .send(
-            'Invalid ID'
-        );
+  ```text 
+  Delete requests
+  are legitimate
+  ```
 
-}
-```
-
----
-
-Never assume:
-
-```text 
-Delete requests
-are legitimate
-```
-
-Authentication and authorization will eventually become critical.
-
----
+  Authentication and authorization will eventually become critical.
 
 # Part 12 — UX Improvements
 
-After deletion:
+  After deletion:
 
-```text 
-Product deleted successfully
-```
+  ```text 
+  Product deleted successfully
+  ```
 
-is helpful.
+  is helpful.
 
----
+  Simple redirect:
 
-Simple redirect:
+  ```javascript 
+  res.redirect('/products?deleted=1');
+  ```
 
-```javascript 
-res.redirect(
-    '/products?deleted=1'
-);
-```
+  View:
 
----
+  ```html 
+  <% if(deleted) { %>
 
-View:
+  <div>
 
-```html 
-<% if(deleted) { %>
+  Product deleted.
 
-<div>
+  </div>
 
-Product deleted.
+  <% } %>
+  ```
 
-</div>
-
-<% } %>
-```
-
----
-
-Users should always know what happened.
-
----
+  Users should always know what happened.
 
 # Part 13 — RESTful Perspective
 
-Current:
+  Current:
 
-```http 
-POST /products/delete/5
-```
+  ```http 
+  POST /products/delete/5
+  ```
 
-Works.
+  Works.
 
----
+  True REST:
 
-True REST:
+  ```http 
+  DELETE /products/5
+  ```
 
-```http 
-DELETE /products/5
-```
+  Browsers don't support:
 
----
+  ```html 
+  <form method="delete">
+  ```
 
-Browsers don't support:
+  natively.
 
-```html 
-<form method="delete">
-```
+  So many applications use:
 
-natively.
+  ```http 
+  POST
+  ```
 
-So many applications use:
+  for deletes.
 
-```http 
-POST
-```
-
-for deletes.
-
----
-
-This is normal.
-
----
+  This is normal.
 
 # Common Beginner Mistakes
 
-## Forgetting WHERE
+  **Forgetting WHERE**
 
-Catastrophic.
+  Catastrophic.
 
----
+  ❌ Bad:
 
-Bad:
+  ```sql 
+  DELETE
+  FROM products
+  ```
 
-```sql 
-DELETE
-FROM products
-```
+  ✅ Good:
 
----
+  ```sql 
+  DELETE
+  FROM products
+  WHERE id = ?
+  ```
 
-Good:
+  **Deleting with GET**
 
-```sql 
-DELETE
-FROM products
-WHERE id = ?
-```
+  ❌ Bad:
 
----
+  ```http 
+  GET /delete/5
+  ```
 
-## Deleting with GET
+  Never perform destructive actions via GET.
 
-Bad:
+  **No Confirmation Step**
 
-```http 
-GET /delete/5
-```
+  Accidental clicks happen.
 
-Never perform destructive actions via GET.
+  Confirmation pages save data.
 
----
+  **Not Checking changes**
 
-## No Confirmation Step
+  Always verify:
 
-Accidental clicks happen.
+  ```javascript 
+  result.changes
+  ```
 
-Confirmation pages save data.
+  **No Recovery Strategy**
 
----
-
-## Not Checking changes
-
-Always verify:
-
-```javascript 
-result.changes
-```
-
----
-
-## No Recovery Strategy
-
-Soft deletes often provide a safer long-term solution.
-
----
-
-# Assignment
-
-## Exercise 1
-
-Create:
-
-```text 
-GET /products/delete/:id
-```
-
-confirmation page.
-
----
-
-## Exercise 2
-
-Create:
-
-```text 
-POST /products/delete/:id
-```
-
-that removes the product.
-
----
-
-## Exercise 3
-
-Handle:
-
-```text 
-Missing Product
-```
-
-correctly.
-
----
-
-## Exercise 4
-
-Add:
-
-```text 
-Delete
-```
-
-links to list and detail pages.
-
----
-
-## Exercise 5
-
-Display:
-
-```text 
-Product deleted successfully
-```
-
-after removal.
-
----
+  Soft deletes often provide a safer long-term solution.
 
 # Bonus Challenge
 
-Implement soft deletes.
+  Implement soft deletes.
 
-Add:
+  Add:
 
-```sql 
-deleted_at DATETIME
-```
+  ```sql 
+  deleted_at DATETIME
+  ```
 
-to the table.
+  to the table.
 
----
+  ---
 
-Update deletion:
+  Update deletion:
 
-```sql 
-UPDATE products
+  ```sql 
+  UPDATE products
 
-SET deleted_at =
-    CURRENT_TIMESTAMP
+  SET deleted_at = CURRENT_TIMESTAMP
 
-WHERE id = ?
-```
+  WHERE id = ?
+  ```
 
----
+  Update queries:
 
-Update queries:
+  ```sql 
+  WHERE deleted_at IS NULL
+  ```
 
-```sql 
-WHERE deleted_at IS NULL
-```
+  for all product listings.
 
-for all product listings.
+  Add:
 
----
+  ```text 
+  Recycle Bin
+  ```
 
-Add:
+  page showing deleted products.
 
-```text 
-Recycle Bin
-```
+  Add:
 
-page showing deleted products.
+  ```text 
+  Restore Product
+  ```
 
----
+  functionality.
 
-Add:
+  Congratulations.
 
-```text 
-Restore Product
-```
-
-functionality.
-
-Congratulations.
-
-You've just implemented a simplified version of what many production systems use.
-
----
+  You've just implemented a simplified version of what many production systems use.
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* SQL DELETE
-* Confirmation workflows
-* Hard deletes
-* Soft deletes
-* Recycle bin patterns
-* Validation
-* Safer destructive actions
-* RESTful delete concepts
-* Defensive programming
+  * SQL DELETE
+  * Confirmation workflows
+  * Hard deletes
+  * Soft deletes
+  * Recycle bin patterns
+  * Validation
+  * Safer destructive actions
+  * RESTful delete concepts
+  * Defensive programming
 
-Your CMS now supports the complete CRUD lifecycle:
+  Your CMS now supports the complete CRUD lifecycle:
 
-```text 
-Create
-Read
-Update
-Delete
-```
+  ```text 
+  Create
+  Read
+  Update
+  Delete
+  ```
 
-This is a major milestone. Most business applications are, at their core, sophisticated variations of CRUD systems with additional layers of validation, permissions, workflows, and automation built on top.
+  This is a major milestone. Most business applications are, at their core, sophisticated variations of CRUD systems with additional layers of validation, permissions, workflows, and automation built on top.
 
-At this stage, students should be capable of building a fully functional data management application from scratch using Express, EJS, and SQLite.
+  At this stage, students should be capable of building a fully functional data management application from scratch using Express, EJS, and SQLite.
 
 ---
 

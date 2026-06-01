@@ -644,6 +644,57 @@ load_script_js:
 
   But we're laying the foundation.
 
+  Here's what you need to know about the `Repository` Pattern:
+
+  * It's an abstraction layer between routes and the database.
+  * It encapsulates all database access logic.
+  * It provides a clean API for routes to interact with data.
+  * It promotes separation of concerns and code organization.
+  * It makes testing easier by allowing you to mock the repository.
+
+  Here's a scenario that does not use the Repository pattern:
+
+  ```javascript
+  router.get('/:id', (req, res) => {
+        const stmt = db.prepare(`
+            SELECT *
+            FROM products
+            WHERE id = ?
+        `);
+    
+        const product = stmt.get(req.params.id);
+    
+        res.render('products/single', {
+            title: product.name,
+            product
+        });
+    
+    });
+  ```
+
+  In this example, the route directly interacts with the database, which can lead to code duplication and makes it harder to maintain.
+
+  Here's how we can refactor it using the Repository pattern:
+
+  ```javascript
+  router.get("/:id", (req, res) => {
+        const product = productRepository.findById(req.params.id);
+    
+        if (!product) {
+            return res.status(404).render('404', { title: 'Not Found' });
+        }
+    
+        res.render('products/single', {
+            title: product.name,
+            product
+        });
+    });
+  ```
+
+  In this refactored version, the route calls a method from the `productRepository` to retrieve the product data. This keeps the route clean and focused on handling HTTP requests and responses, while the repository handles all database interactions.
+
+  It's a good idea to invest a few minutes to read more about the importance of the Repository Pattern in [this blog post](https://makingloops.com/why-should-you-use-the-repository-pattern/){:target="_blank"}.
+
 # Part 11 — Building Better URLs
 
   Compare:
