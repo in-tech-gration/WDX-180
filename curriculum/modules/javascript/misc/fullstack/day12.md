@@ -212,17 +212,31 @@ load_script_js:
           if (req.user.role !== role) {
               return res
                   .status(403)
-                  .render('403');
+                  .render('403', { title: "403" });
           }
           next();
       };
   }
+
+  module.exports = { requireRole }
   ```
+
+  You can store the `requireRole` middleware somewhere in an `auth` folder, export it and import it where needed: `auth/index.js`.
+
+  Make sure to create the appropriate view `views/403.ejs`:
+
+  ```html
+  <h1>403</h1>
+  <p>Forbidden</p>
+  ```
+
 
   Usage:
 
   ```javascript 
-  router.get('/admin', requireRole('admin'), (req,res) => {
+  const { requireRole } = require("./auth/index.js");
+
+  app.get('/admin', requireRole('admin'), (req,res) => {
         ...
   });
   ```
@@ -270,6 +284,8 @@ load_script_js:
 
   Important distinction.
 
+  Perhaps, it's a good time now to create a `401.ejs` file as well inside the `views` folder.
+
 # Part 6 — Protecting CRUD Operations
 
   Question:
@@ -290,19 +306,10 @@ load_script_js:
   Routes:
 
   ```javascript 
-  router.post(
-
-      '/delete/:id',
-
-      requireRole(
-          'admin'
-      ),
-
-      deleteProduct
-  );
+  router.post('/delete/:id', requireRole('admin'), ...);
   ```
 
-  Editors cannot delete.
+  Editors cannot delete products.
 
   Admins can.
 
@@ -349,37 +356,19 @@ load_script_js:
 
   ```javascript 
   const roles = {
-
       viewer: 1,
-
       editor: 2,
-
       admin: 3
-
   };
   ```
 
   Middleware:
 
   ```javascript 
-  if (
-
-      roles[
-          req.user.role
-      ]
-
-      <
-
-      roles[
-          requiredRole
-      ]
-
-  ) {
-
+  if (roles[req.user.role] < roles[requiredRole]) {
       return res
           .status(403)
-          .render('403');
-
+          .render('403', { title: "Forbidden" });
   }
   ```
 
@@ -417,6 +406,30 @@ load_script_js:
 
   Always.
 
+  You can use the [`res.locals` object](https://expressjs.com/en/5x/api/response/index#reslocals){:target="_blank"} to provide data access to your views:
+
+  ```js
+  // Through a Middleware:
+  app.use(( req, res, next )=>{
+    res.locals.userRole = "admin";
+  })
+
+  // Through a Route
+  app.get("/", (req, res )=>{
+    res.locals.customData = { value: 42 };
+  });
+  ```
+
+  And, now you can access them from the `.ejs` files:
+
+  ```html
+  <% if ( customData ) { %>
+    Custom data: <%= customData.value %>
+  <% } %>
+  ```
+
+  You can now implement a Middleware that lets the views access the userRole and conditionally display the `Delete` and `Edit` buttons throughout the Product screens.
+
 # Part 9 — Ownership-Based Permissions
 
   Roles aren't always enough.
@@ -445,7 +458,7 @@ load_script_js:
 
   Maybe not.
 
-  Add:
+  Add to the Database Schema:
 
   ```sql 
   created_by INTEGER
@@ -465,7 +478,7 @@ load_script_js:
   if ( product.created_by !== req.user.id ) {
       return res
           .status(403)
-          .render('403');
+          .render('403', { title: "Forbidden" });
   }
   ```
 
@@ -529,10 +542,10 @@ load_script_js:
 
 # Part 12 — Centralizing Permissions
 
-  Bad:
+  ❌ Bad:
 
   ```javascript 
-  if(admin)
+  if ( admin ) 
   ```
 
   everywhere.
@@ -574,8 +587,8 @@ load_script_js:
   Protected route:
 
   ```javascript 
-  router.get('/admin', requireRole('admin'),(req,res) => {
-    res.render('admin');
+  app.get('/admin', requireRole('admin'),(req,res) => {
+    res.render('admin', { title: "Admin Dashboard" });
   });
   ```
 
@@ -653,9 +666,11 @@ load_script_js:
   * Shopify
   * Countless enterprise systems
 
+  Check out [this video](https://www.youtube.com/watch?v=rvZ35YW4t5k){:target="_blank"} and [this one](https://www.youtube.com/watch?v=DT6Zy1X3ytM){:target="_blank"} to learn more about the RBAC and the more advanced (but extremely flexible and useful) ABAC. These are various ways to define permissions in a Software application.
+
 # Part 15 — Security Philosophy
 
-  Never assume:
+  ❌ Never assume:
 
   ```text 
   Hidden Button = Security
@@ -669,15 +684,11 @@ load_script_js:
 
   directly.
 
-  Always validate permissions:
+  **Always validate permissions On The Server!**
 
-  ```text 
-  On The Server
-  ```
+  **Every protected action.**
 
-  Every protected action.
-
-  Every time.
+  **Every time.**
 
   No exceptions.
 
@@ -729,9 +740,7 @@ load_script_js:
 
 # Assignment
 
-  ## Exercise 1
-
-  Add:
+  1) Add:
 
   ```text 
   role
@@ -739,21 +748,15 @@ load_script_js:
 
   column to users.
 
-  ---
+  2) Implement:
 
-  ## Exercise 2
-
-  Implement:
-
-  ```text 
+  ```js 
   requireRole()
   ```
 
   middleware.
 
-  ---
-
-  ## Exercise 3
+  3)
 
   Restrict:
 
@@ -763,9 +766,7 @@ load_script_js:
 
   to admins.
 
-  ---
-
-  ## Exercise 4
+  4)
 
   Hide:
 
@@ -775,17 +776,24 @@ load_script_js:
 
   for non-admins.
 
-  ---
+  and
 
-  ## Exercise 5
+  ```text
+  Edit Button
+  ```
+
+  for viewers and guests (non-logged-in users).
+
+  5)
 
   Create:
 
   ```text 
+  401.ejs
   403.ejs
   ```
 
-  error page.
+  error pages.
 
   ---
 
@@ -799,16 +807,11 @@ load_script_js:
 
   column to products.
 
-  ---
-
   When creating:
 
   ```javascript 
-  created_by =
-      req.user.id
+  created_by = req.user.id
   ```
-
-  ---
 
   Allow:
 
@@ -818,8 +821,6 @@ load_script_js:
 
   to edit all products.
 
-  ---
-
   Allow:
 
   ```text 
@@ -827,8 +828,6 @@ load_script_js:
   ```
 
   to edit only products they created.
-
-  ---
 
   Reject all others.
 
