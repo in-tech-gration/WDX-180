@@ -52,7 +52,7 @@ load_script_js:
   Entire Product Catalog
   ```
 
-  because they found the delete button.
+  because they found the delete button. 🙀
 
   Today we'll build a permission system that prevents that.
 
@@ -113,6 +113,8 @@ load_script_js:
   DEFAULT 'viewer';
   ```
 
+  Update your `db/setup.js` script and re-initialize the Database in order to test the new authorization rules we are about to implement.
+
   Possible values:
 
   ```text 
@@ -141,6 +143,8 @@ load_script_js:
   viewer
   ```
 
+  Update `db/setup.js` and create 2 new users with an admin and editor role, just to experiment with different permissions.
+
 # Part 3 — Loading User Information
 
   Currently:
@@ -151,10 +155,10 @@ load_script_js:
 
   stores only ID.
 
-  Load user:
+  Load user via a Middleware:
 
   ```javascript 
-  app.use(( req, res, next ) => {
+  app.use(function provideUserInfo( req, res, next ){
     if ( req.session.userId) {
         req.user = userRepository.findById(req.session.userId);
     }
@@ -179,6 +183,8 @@ load_script_js:
   ```
 
   Very useful.
+
+  This information will be available throughout our Backend so that we can check if the user is logged in and whether they have the appropriate permissions based on their role.
 
 # Part 4 — Creating Authorization Middleware
 
@@ -222,6 +228,21 @@ load_script_js:
   ```
 
   Only admins allowed.
+
+  Here's how the Authentication and Authorization architecture with Express middleware works in our application:
+
+  ```mermaid
+  flowchart LR
+      A[Client Request] --> B[Express Router]
+      B --> C[provideUserInfo middleware]
+      C --> D["requireAuth() middleware"]
+      D --> E["requireRole('admin') middleware"]
+      E --> F[Route Handler]
+      C -->|no user| G[redirect /login]
+      D -->|not authenticated| G
+      E -->|role mismatch| H[403 Forbidden]
+      E -->|role ok| F
+  ```
 
 # Part 5 — Understanding HTTP 403
 
