@@ -772,6 +772,14 @@ load_script_js:
   WHERE price >= 100
   ```
 
+# Extra Resources
+
+  Since we've touched relational databases (the SQL kind), it's probably a good time now to see some common mistakes beginners make when designing a new database.
+
+  Watch the following video to learn more about how to think and what to avoid when designing a SQL database for your project.
+
+  [7 Database Design Mistakes to Avoid (With Solutions)](https://www.youtube.com/watch?v=s6m8Aby2at8){:target="_blank"}
+
 # Key Takeaways
 
   Today you learned:

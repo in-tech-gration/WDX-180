@@ -11,1081 +11,807 @@ load_script_js:
 
 ## Deciding What Users Are Allowed To Do
 
-> Authentication answers:
->
-> "Who are you?"
->
-> Authorization answers:
->
-> "What can you do?"
+  > Authentication answers:
+  >
+  > "Who are you?"
+  >
+  > Authorization answers:
+  >
+  > "What can you do?"
 
-Yesterday we built:
+  Yesterday we built:
 
-```text 
-Login
-Logout
-Sessions
-```
+  ```text 
+  Login
+  Logout
+  Sessions
+  ```
 
-Now every user can log in.
+  Now every user can log in.
 
-That's progress.
+  That's progress.
 
-Unfortunately:
+  Unfortunately:
 
-```text 
-Every logged-in user
-can still do everything.
-```
+  ```text 
+  Every logged-in user
+  can still do everything.
+  ```
 
-That's less ideal.
+  That's less ideal.
 
-Imagine:
+  Imagine:
 
-```text 
-Intern
-```
+  ```text 
+  Intern
+  ```
 
-accidentally deleting:
+  accidentally deleting:
 
-```text 
-Entire Product Catalog
-```
+  ```text 
+  Entire Product Catalog
+  ```
 
-because they found the delete button.
+  because they found the delete button.
 
-Today we'll build a permission system that prevents that.
-
----
+  Today we'll build a permission system that prevents that.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand authorization
-* Implement user roles
-* Restrict route access
-* Build authorization middleware
-* Understand role hierarchies
-* Hide unauthorized UI elements
-* Prevent privilege escalation
-* Understand ownership-based permissions
-* Design scalable permission systems
-
----
+  * Understand authorization
+  * Implement user roles
+  * Restrict route access
+  * Build authorization middleware
+  * Understand role hierarchies
+  * Hide unauthorized UI elements
+  * Prevent privilege escalation
+  * Understand ownership-based permissions
+  * Design scalable permission systems
 
 # Part 1 — Authentication vs Authorization
 
-Yesterday:
+  Yesterday:
 
-```text 
-Are you logged in?
-```
+  ```text 
+  Are you logged in?
+  ```
 
----
+  ---
 
-Today:
+  Today:
 
-```text 
-What are you allowed to do?
-```
+  ```text 
+  What are you allowed to do?
+  ```
 
----
+  ---
 
-Example:
+  Example:
 
-| User   | Login | Delete Products |
-| ------ | ----- | --------------- |
-| Admin  | Yes   | Yes             |
-| Editor | Yes   | No              |
-| Viewer | Yes   | No              |
+  | User   | Login | Delete Products |
+  | ------ | ----- | --------------- |
+  | Admin  | Yes   | Yes             |
+  | Editor | Yes   | No              |
+  | Viewer | Yes   | No              |
 
----
+  ---
 
-Authentication alone is insufficient.
+  Authentication alone is insufficient.
 
-Authorization completes the picture.
-
----
+  Authorization completes the picture.
 
 # Part 2 — The Simplest Role System
 
-Add:
+  Add:
 
-```sql 
-ALTER TABLE users
+  ```sql 
+  ALTER TABLE users
 
-ADD COLUMN role TEXT
-DEFAULT 'viewer';
-```
+  ADD COLUMN role TEXT
+  DEFAULT 'viewer';
+  ```
 
----
+  Possible values:
 
-Possible values:
+  ```text 
+  admin
+  editor
+  viewer
+  ```
 
-```text 
-admin
-editor
-viewer
-```
+  Example:
 
----
+  ```text 
+  admin@example.com
 
-Example:
+  admin
+  ```
 
-```text 
-admin@example.com
+  ```text 
+  editor@example.com
 
-admin
-```
+  editor
+  ```
 
----
+  ```text 
+  viewer@example.com
 
-```text 
-editor@example.com
-
-editor
-```
-
----
-
-```text 
-viewer@example.com
-
-viewer
-```
-
----
+  viewer
+  ```
 
 # Part 3 — Loading User Information
 
-Currently:
+  Currently:
 
-```javascript 
-req.session.userId
-```
+  ```javascript 
+  req.session.userId
+  ```
 
-stores only ID.
+  stores only ID.
 
----
+  Load user:
 
-Load user:
-
-```javascript 
-app.use(
-    (
-        req,
-        res,
-        next
-    ) => {
-
-        if (
-            req.session.userId
-        ) {
-
-            req.user =
-                userRepository
-                    .findById(
-                        req.session.userId
-                    );
-
-        }
-
-        next();
-
+  ```javascript 
+  app.use(( req, res, next ) => {
+    if ( req.session.userId) {
+        req.user = userRepository.findById(req.session.userId);
     }
-);
-```
+    next();
+  });
+  ```
 
----
+  Now:
 
-Now:
+  ```javascript 
+  req.user
+  ```
 
-```javascript 
-req.user
-```
+  contains:
 
-contains:
+  ```javascript 
+  {
+      id: 1,
+      email: 'admin@example.com',
+      role: 'admin'
+  }
+  ```
 
-```javascript 
-{
-    id: 1,
-    email: 'admin@example.com',
-    role: 'admin'
-}
-```
-
----
-
-Very useful.
-
----
+  Very useful.
 
 # Part 4 — Creating Authorization Middleware
 
-Authentication middleware:
+  Authentication middleware:
 
-```javascript 
-requireAuth()
-```
+  ```javascript 
+  requireAuth()
+  ```
 
----
+  Authorization middleware:
 
-Authorization middleware:
+  ```javascript 
+  requireRole()
+  ```
 
-```javascript 
-requireRole()
-```
+  Example:
 
----
+  ```javascript 
+  function requireRole(role) {
+      return ( req, res, next ) => {
+          if (!req.user) {
+              return res.redirect('/login');
+          }
 
-Example:
+          if (req.user.role !== role) {
+              return res
+                  .status(403)
+                  .render('403');
+          }
+          next();
+      };
+  }
+  ```
 
-```javascript 
-function requireRole(
-    role
-) {
+  Usage:
 
-    return (
-        req,
-        res,
-        next
-    ) => {
-
-        if (
-            !req.user
-        ) {
-
-            return res.redirect(
-                '/login'
-            );
-
-        }
-
-        if (
-            req.user.role !== role
-        ) {
-
-            return res
-                .status(403)
-                .render('403');
-
-        }
-
-        next();
-
-    };
-
-}
-```
-
----
-
-Usage:
-
-```javascript 
-router.get(
-
-    '/admin',
-
-    requireRole(
-        'admin'
-    ),
-
-    (
-        req,
-        res
-    ) => {
-
+  ```javascript 
+  router.get('/admin', requireRole('admin'), (req,res) => {
         ...
+  });
+  ```
 
-    }
-
-);
-```
-
----
-
-Only admins allowed.
-
----
+  Only admins allowed.
 
 # Part 5 — Understanding HTTP 403
 
-Authentication failure:
+  Authentication failure:
 
-```http 
-401 Unauthorized
-```
+  ```http 
+  401 Unauthorized
+  ```
 
-or redirect.
+  or redirect.
 
----
+  Authorization failure:
 
-Authorization failure:
+  ```http 
+  403 Forbidden
+  ```
 
-```http 
-403 Forbidden
-```
+  Meaning:
 
----
+  ```text 
+  We know who you are.
 
-Meaning:
+  You are not allowed here.
+  ```
 
-```text 
-We know who you are.
-
-You are not allowed here.
-```
-
----
-
-Important distinction.
-
----
+  Important distinction.
 
 # Part 6 — Protecting CRUD Operations
 
-Question:
+  Question:
 
-Should viewers create products?
+  Should viewers create products?
 
-Probably not.
+  Probably not.
 
----
+  Example:
 
-Example:
+  | Action         | Admin | Editor | Viewer |
+  | -------------- | ----- | ------ | ------ |
+  | View Products  | ✓     | ✓      | ✓      |
+  | Create Product | ✓     | ✓      | ✗      |
+  | Edit Product   | ✓     | ✓      | ✗      |
+  | Delete Product | ✓     | ✗      | ✗      |
 
-| Action         | Admin | Editor | Viewer |
-| -------------- | ----- | ------ | ------ |
-| View Products  | ✓     | ✓      | ✓      |
-| Create Product | ✓     | ✓      | ✗      |
-| Edit Product   | ✓     | ✓      | ✗      |
-| Delete Product | ✓     | ✗      | ✗      |
+  Routes:
 
----
+  ```javascript 
+  router.post(
 
-Routes:
+      '/delete/:id',
 
-```javascript 
-router.post(
+      requireRole(
+          'admin'
+      ),
 
-    '/delete/:id',
+      deleteProduct
+  );
+  ```
 
-    requireRole(
-        'admin'
-    ),
+  Editors cannot delete.
 
-    deleteProduct
-);
-```
-
----
-
-Editors cannot delete.
-
-Admins can.
-
----
+  Admins can.
 
 # Part 7 — Role Hierarchies
 
-Current:
+  Current:
 
-```javascript 
-role === 'admin'
-```
+  ```javascript 
+  role === 'admin'
+  ```
 
-works.
+  works.
 
----
+  But:
 
-But:
+  ```text 
+  admin
+  ```
 
-```text 
-admin
-```
+  should automatically inherit:
 
-should automatically inherit:
+  ```text 
+  editor
+  viewer
+  ```
 
-```text 
-editor
-viewer
-```
+  permissions.
 
-permissions.
+  Hierarchy:
 
----
+  ```text 
+  admin
 
-Hierarchy:
+    ↓
 
-```text 
-admin
+  editor
 
-  ↓
+    ↓
 
-editor
+  viewer
+  ```
 
-  ↓
+  Represent numerically:
 
-viewer
-```
+  ```javascript 
+  const roles = {
 
----
+      viewer: 1,
 
-Represent numerically:
+      editor: 2,
 
-```javascript 
-const roles = {
+      admin: 3
 
-    viewer: 1,
+  };
+  ```
 
-    editor: 2,
+  Middleware:
 
-    admin: 3
+  ```javascript 
+  if (
 
-};
-```
+      roles[
+          req.user.role
+      ]
 
----
+      <
 
-Middleware:
+      roles[
+          requiredRole
+      ]
 
-```javascript 
-if (
+  ) {
 
-    roles[
-        req.user.role
-    ]
+      return res
+          .status(403)
+          .render('403');
 
-    <
+  }
+  ```
 
-    roles[
-        requiredRole
-    ]
-
-) {
-
-    return res
-        .status(403)
-        .render('403');
-
-}
-```
-
----
-
-Much more flexible.
-
----
+  Much more flexible.
 
 # Part 8 — Hiding UI Elements
 
-Bad:
+  Bad:
 
-```html 
-Delete Product
-```
+  ```html 
+  Delete Product
+  ```
 
-visible to everyone.
+  visible to everyone.
 
----
+  Even if route is protected.
 
-Even if route is protected.
+  Better:
 
----
+  ```html 
+  <% if ( user.role === 'admin') { %>
+    <a>Delete</a>
+  <% } %>
+  ```
 
-Better:
+  Users only see actions they can perform.
 
-```html 
-<% if(
-    user.role === 'admin'
-) { %>
+  Important:
 
-<a>
+  ```text 
+  UI hiding ≠ Security
+  ```
 
-Delete
+  Routes must still be protected.
 
-</a>
-
-<% } %>
-```
-
----
-
-Users only see actions they can perform.
-
----
-
-Important:
-
-```text 
-UI hiding
-≠
-Security
-```
-
----
-
-Routes must still be protected.
-
-Always.
-
----
+  Always.
 
 # Part 9 — Ownership-Based Permissions
 
-Roles aren't always enough.
+  Roles aren't always enough.
 
-Example:
+  Example:
 
-```text 
-User A
-```
+  ```text 
+  User A
+  ```
 
-creates:
+  creates:
 
-```text 
-Product A
-```
+  ```text 
+  Product A
+  ```
 
----
+  Question:
 
-Question:
+  Can:
 
-Can:
+  ```text 
+  User B
+  ```
 
-```text 
-User B
-```
+  edit it?
 
-edit it?
+  Maybe not.
 
----
+  Add:
 
-Maybe not.
+  ```sql 
+  created_by INTEGER
+  ```
 
----
+  to products.
 
-Add:
+  Create:
 
-```sql 
-created_by INTEGER
-```
+  ```javascript 
+  created_by = req.user.id
+  ```
 
-to products.
+  Check ownership:
 
----
+  ```javascript 
+  if ( product.created_by !== req.user.id ) {
+      return res
+          .status(403)
+          .render('403');
+  }
+  ```
 
-Create:
-
-```javascript 
-created_by =
-    req.user.id
-```
-
----
-
-Check ownership:
-
-```javascript 
-if (
-
-    product.created_by
-    !==
-    req.user.id
-
-) {
-
-    return res
-        .status(403)
-        .render('403');
-
-}
-```
-
----
-
-Very common pattern.
-
----
+  Very common pattern.
 
 # Part 10 — Combining Roles and Ownership
 
-Example:
+  Example:
 
-```text 
-Admins
-```
+  ```text 
+  Admins
+  ```
 
-can edit everything.
+  can edit everything.
 
----
+  ```text 
+  Editors
+  ```
 
-```text 
-Editors
-```
+  can edit their own.
 
-can edit their own.
+  Logic:
 
----
+  ```javascript 
+  const canEdit = req.user.role === 'admin' || product.created_by === req.user.id;
+  ```
 
-Logic:
-
-```javascript 
-const canEdit =
-
-    req.user.role
-    === 'admin'
-
-    ||
-
-    product.created_by
-    === req.user.id;
-```
-
----
-
-Real-world applications often combine both approaches.
-
----
+  Real-world applications often combine both approaches.
 
 # Part 11 — Avoiding Privilege Escalation
 
-Dangerous:
+  Dangerous:
 
-```html 
-<select
-    name="role"
->
+  ```html 
+  <select name="role">
+    <option>admin</option>
+  </select>
+  ```
 
-<option>
+  User submits:
 
-admin
+  ```text 
+  role=admin
+  ```
 
-</option>
+  Congratulations.
 
-</select>
-```
+  They promoted themselves.
 
----
+  Never trust:
 
-User submits:
+  ```text 
+  Client Input
+  ```
 
-```text 
-role=admin
-```
+  for permissions.
 
----
+  Server decides permissions.
 
-Congratulations.
-
-They promoted themselves.
-
----
-
-Never trust:
-
-```text 
-Client Input
-```
-
-for permissions.
-
----
-
-Server decides permissions.
-
-Always.
-
----
+  Always.
 
 # Part 12 — Centralizing Permissions
 
-Bad:
+  Bad:
 
-```javascript 
-if(admin)
-```
+  ```javascript 
+  if(admin)
+  ```
 
-everywhere.
+  everywhere.
 
----
+  Eventually:
 
-Eventually:
+  ```text 
+  100 routes
 
-```text 
-100 routes
+  50 permission checks
+  ```
 
-50 permission checks
-```
+  becomes chaos.
 
-becomes chaos.
+  Create:
 
----
+  ```javascript 
+  permissions.js
+  ```
 
-Create:
+  Example:
 
-```javascript 
-permissions.js
-```
+  ```javascript 
+  module.exports = {
+      canDeleteProduct(user) {
+          return ( user.role === 'admin');
+      }
+  };
+  ```
 
----
+  Cleaner.
 
-Example:
+  Reusable.
 
-```javascript 
-module.exports = {
-
-    canDeleteProduct(
-        user
-    ) {
-
-        return (
-            user.role
-            === 'admin'
-        );
-
-    }
-
-};
-```
-
----
-
-Cleaner.
-
-Reusable.
-
-Testable.
-
----
+  Testable.
 
 # Part 13 — Building an Admin Dashboard
 
-Protected route:
+  Protected route:
 
-```javascript 
-router.get(
+  ```javascript 
+  router.get('/admin', requireRole('admin'),(req,res) => {
+    res.render('admin');
+  });
+  ```
 
-    '/admin',
+  Only administrators see:
 
-    requireRole(
-        'admin'
-    ),
+  ```text 
+  System Settings
 
-    (
-        req,
-        res
-    ) => {
+  User Management
 
-        res.render(
-            'admin'
-        );
+  Audit Logs
+  ```
 
-    }
-
-);
-```
-
----
-
-Only administrators see:
-
-```text 
-System Settings
-
-User Management
-
-Audit Logs
-```
-
----
-
-A common application architecture.
-
----
+  A common application architecture.
 
 # Part 14 — Future Permission Models
 
-Simple roles work well.
+  Simple roles work well.
 
-Eventually systems grow.
+  Eventually systems grow.
 
----
+  Example:
 
-Example:
+  ```text 
+  Create Product
 
-```text 
-Create Product
+  Delete Product
 
-Delete Product
+  Manage Users
 
-Manage Users
+  Publish Content
 
-Publish Content
+  View Analytics
+  ```
 
-View Analytics
-```
+  Instead of:
 
----
+  ```text 
+  role
+  ```
 
-Instead of:
+  store:
 
-```text 
-role
-```
+  ```text 
+  permissions
+  ```
 
-store:
+  Schema:
 
-```text 
-permissions
-```
+  ```sql 
+  permissions
 
----
+  roles
 
-Schema:
+  role_permissions
+  ```
 
-```sql 
-permissions
+  This becomes:
 
-roles
+  ```text 
+  Role-Based Access Control
+  ```
 
-role_permissions
-```
+  commonly called:
 
----
+  ```text 
+  RBAC
+  ```
 
-This becomes:
+  Used by:
 
-```text 
-Role-Based Access Control
-```
-
-commonly called:
-
-```text 
-RBAC
-```
-
----
-
-Used by:
-
-* GitHub
-* Jira
-* Notion
-* Shopify
-* Countless enterprise systems
-
----
+  * GitHub
+  * Jira
+  * Notion
+  * Shopify
+  * Countless enterprise systems
 
 # Part 15 — Security Philosophy
 
-Never assume:
+  Never assume:
 
-```text 
-Hidden Button
-=
-Security
-```
+  ```text 
+  Hidden Button = Security
+  ```
 
----
+  Attackers can call:
 
-Attackers can call:
+  ```http 
+  POST /products/delete/5
+  ```
 
-```http 
-POST /products/delete/5
-```
+  directly.
 
-directly.
+  Always validate permissions:
 
----
+  ```text 
+  On The Server
+  ```
 
-Always validate permissions:
+  Every protected action.
 
-```text 
-On The Server
-```
+  Every time.
 
----
-
-Every protected action.
-
-Every time.
-
-No exceptions.
-
----
+  No exceptions.
 
 # Common Beginner Mistakes
 
-## Protecting UI But Not Routes
+  **Protecting UI But Not Routes**
 
-Bad:
+  Bad:
 
-```html 
-Hide Delete Button
-```
+  ```html 
+  Hide Delete Button
+  ```
 
----
+  Attackers can still call:
 
-Attackers can still call:
+  ```http 
+  POST /delete
+  ```
 
-```http 
-POST /delete
-```
+  directly.
 
-directly.
+  **Trusting Role Values From Forms**
 
----
+  Never.
 
-## Trusting Role Values From Forms
+  **Duplicating Permission Logic**
 
-Never.
+  Centralize it.
 
----
+  **Hardcoding Admin IDs**
 
-## Duplicating Permission Logic
+  Bad:
 
-Centralize it.
+  ```javascript 
+  if(user.id === 1)
+  ```
 
----
+  Use roles.
 
-## Hardcoding Admin IDs
+  **Forgetting Ownership**
 
-Bad:
+  Sometimes:
 
-```javascript 
-if(user.id === 1)
-```
+  ```text 
+  User owns content
+  ```
 
----
-
-Use roles.
-
----
-
-## Forgetting Ownership
-
-Sometimes:
-
-```text 
-User owns content
-```
-
-matters more than role.
-
----
+  matters more than role.
 
 # Assignment
 
-## Exercise 1
+  ## Exercise 1
 
-Add:
+  Add:
 
-```text 
-role
-```
+  ```text 
+  role
+  ```
 
-column to users.
+  column to users.
 
----
+  ---
 
-## Exercise 2
+  ## Exercise 2
 
-Implement:
+  Implement:
 
-```text 
-requireRole()
-```
+  ```text 
+  requireRole()
+  ```
 
-middleware.
+  middleware.
 
----
+  ---
 
-## Exercise 3
+  ## Exercise 3
 
-Restrict:
+  Restrict:
 
-```text 
-Delete Product
-```
+  ```text 
+  Delete Product
+  ```
 
-to admins.
+  to admins.
 
----
+  ---
 
-## Exercise 4
+  ## Exercise 4
 
-Hide:
+  Hide:
 
-```text 
-Delete Button
-```
+  ```text 
+  Delete Button
+  ```
 
-for non-admins.
+  for non-admins.
 
----
+  ---
 
-## Exercise 5
+  ## Exercise 5
 
-Create:
+  Create:
 
-```text 
-403.ejs
-```
+  ```text 
+  403.ejs
+  ```
 
-error page.
+  error page.
 
----
+  ---
 
 # Bonus Challenge
 
-Add:
+  Add:
 
-```sql 
-created_by
-```
+  ```sql 
+  created_by
+  ```
 
-column to products.
+  column to products.
 
----
+  ---
 
-When creating:
+  When creating:
 
-```javascript 
-created_by =
-    req.user.id
-```
+  ```javascript 
+  created_by =
+      req.user.id
+  ```
 
----
+  ---
 
-Allow:
+  Allow:
 
-```text 
-Admins
-```
+  ```text 
+  Admins
+  ```
 
-to edit all products.
+  to edit all products.
 
----
+  ---
 
-Allow:
+  Allow:
 
-```text 
-Editors
-```
+  ```text 
+  Editors
+  ```
 
-to edit only products they created.
+  to edit only products they created.
 
----
+  ---
 
-Reject all others.
+  Reject all others.
 
-You have now implemented the foundations of content ownership used by many professional CMS platforms.
-
----
+  You have now implemented the foundations of content ownership used by many professional CMS platforms.
 
 # Key Takeaways
 
