@@ -255,9 +255,9 @@ load_script_js:
   Add the following script in your `package.json`:
 
   ```json
-    "scripts": {
-      "db:seed": "node db/setup.js"
-    },
+  "scripts": {
+    "db:seed": "node db/setup.js"
+  }
   ```
 
   You can now run `npm run db:seed` to initialize and seed the database.
