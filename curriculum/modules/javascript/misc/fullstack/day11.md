@@ -214,15 +214,13 @@ load_script_js:
 
   ```sql 
   CREATE TABLE users (
-
       id INTEGER PRIMARY KEY,
-
       email TEXT UNIQUE,
-
       password_hash TEXT
-
   );
   ```
+
+  The [`UNIQUE` constraint](https://www.sqlitetutorial.net/sqlite-unique-constraint/){:target="_blank"} will ensure that no new user can be registered with an email that already exists in the database. 
 
   Example:
 
@@ -728,7 +726,9 @@ load_script_js:
   /products
   ```
 
-Warning: Make sure to stop users from registering an account with an email that already exists.
+Warning: Make sure to stop users from registering an account with an email that already exists. This is where SQL `Constraints` protect the integrity of our Database.
+
+Also, don't forget to handle the error cases where a use might try to register with an email that already exists. Gracefully handle the error and provide a good User eXperience to the user while not revealing too much sensitive information. For example, `Error registering user` might be a safer bet than `Email already exists`.
 
 Congratulations.
 
