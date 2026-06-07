@@ -381,21 +381,9 @@ load_script_js:
   }
   ```
 
-  Without:
+  Without `try/catch` application may crash.
 
-  ```javascript 
-  try/catch
-  ```
-
-  application may crash.
-
-  With:
-
-  ```javascript 
-  try/catch
-  ```
-
-  application can recover.
+  With `try/catch` application can recover.
 
 # Part 10 — Express Error Middleware
 
@@ -730,12 +718,11 @@ load_script_js:
 
   Example:
 
-  ```javascript 
+  ```
   validators/
-
-  ├── product.js
-  ├── user.js
-  ├── auth.js
+    ├── product.js
+    ├── user.js
+    ├── auth.js
   ```
 
   Usage:
