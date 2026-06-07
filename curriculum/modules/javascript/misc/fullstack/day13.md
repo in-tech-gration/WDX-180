@@ -11,1029 +11,740 @@ load_script_js:
 
 ## Building Applications That Survive Real Users
 
-> Beginners write code for ideal users.
->
-> Professionals write code for actual users.
->
-> Actual users are chaos in human form.
+  > Beginners write code for ideal users.
+  >
+  > Professionals write code for actual users.
+  >
+  > Actual users are chaos in human form.
 
-Until now we've assumed users submit:
+  Until now we've assumed users submit:
 
-```text 
-Valid Names
-Valid Prices
-Valid Emails
-```
+  ```text 
+  Valid Names
+  Valid Prices
+  Valid Emails
+  ```
 
-Reality looks more like:
+  Reality looks more like:
 
-```text 
-Price = banana
+  ```text 
+  Price = banana
 
-Email = not-an-email
+  Email = not-an-email
 
-Name = ""
-```
+  Name = ""
+  ```
 
-Or:
+  Or:
 
-```text 
-Price = -999999999
-```
+  ```text 
+  Price = -999999999
+  ```
 
-Or:
+  Or:
 
-```text 
-Name =
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
-```
+  ```text 
+  Name = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+  ```
 
-(3 million characters later)
+  (3 million characters later)
 
-Today's lesson is about building systems that don't immediately collapse when exposed to the public internet.
-
----
+  Today's lesson is about building systems that don't immediately collapse when exposed to the public internet.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand validation fundamentals
-* Validate input safely
-* Separate validation from business logic
-* Handle application errors gracefully
-* Create custom error middleware
-* Understand operational vs programmer errors
-* Build reusable validators
-* Display validation feedback
-* Understand defensive programming
-* Design more reliable systems
-
----
+  * Understand validation fundamentals
+  * Validate input safely
+  * Separate validation from business logic
+  * Handle application errors gracefully
+  * Create custom error middleware
+  * Understand operational vs programmer errors
+  * Build reusable validators
+  * Display validation feedback
+  * Understand defensive programming
+  * Design more reliable systems
 
 # Part 1 — Never Trust User Input
 
-Rule #1:
+  Rule #1:
 
-```text 
-Everything from the client
-is untrusted.
-```
+  ```text 
+  Everything from the client
+  is untrusted.
+  ```
 
-Everything.
+  EVERYTHING.
 
----
+  Including:
 
-Including:
+  ```text 
+  Forms
 
-```text 
-Forms
+  Cookies
 
-Cookies
+  Query Parameters
 
-Query Parameters
+  Route Parameters
 
-Route Parameters
+  Headers
+  ```
 
-Headers
-```
+  Assume every value is:
 
----
+  ```text 
+  Wrong
 
-Assume every value is:
+  Malicious
 
-```text 
-Wrong
+  Missing
+  ```
 
-Malicious
-
-Missing
-```
-
-until proven otherwise.
-
----
+  until proven otherwise.
 
 # Part 2 — Types of Validation
 
-Example Product:
+  Example Product:
 
-```javascript 
-{
-    name:
-        "Keyboard",
+  ```javascript 
+  {
+      name: "Keyboard",
+      price: 89.99
+  }
+  ```
 
-    price:
-        89.99
-}
-```
+  Possible checks:
 
----
+  **Required**
 
-Possible checks:
+  ```text 
+  Name required
+  ```
 
-### Required
+  **Length**
 
-```text 
-Name required
-```
+  ```text 
+  Max 255 chars
+  ```
 
----
+  **Numeric**
 
-### Length
+  ```text 
+  Price must be number
+  ```
 
-```text 
-Max 255 chars
-```
+  **Range**
 
----
+  ```text 
+  Price > 0
+  ```
 
-### Numeric
+  **Format**
 
-```text 
-Price must be number
-```
+  ```text 
+  Valid email
+  ```
 
----
-
-### Range
-
-```text 
-Price > 0
-```
-
----
-
-### Format
-
-```text 
-Valid email
-```
-
----
-
-Different validations solve different problems.
-
----
+  Different validations solve different problems.
 
 # Part 3 — The Validation Layer
 
-Bad:
+  ❌ Bad:
 
-```javascript 
-router.post(
-    '/products/create',
-    (req, res) => {
+  ```javascript 
+  router.post('/products/create',
+      (req, res) => {
 
-        if (...) {}
+          if (...) {}
 
-        if (...) {}
+          if (...) {}
 
-        if (...) {}
+          if (...) {}
 
-        if (...) {}
+          if (...) {}
 
-    }
-);
-```
+      }
+  );
+  ```
 
----
+  Route becomes:
 
-Route becomes:
+  ```text 
+  Validation
 
-```text 
-Validation
+  Database
 
-Database
+  Rendering
 
-Rendering
+  Business Logic
+  ```
 
-Business Logic
-```
+  all mixed together.
 
-all mixed together.
+  Messy.
 
----
+  Better:
 
-Messy.
+  ```javascript 
+  validateProduct(req.body);
+  ```
 
----
-
-Better:
-
-```javascript 
-validateProduct(
-    req.body
-);
-```
-
----
-
-Separation of concerns.
-
----
+  Separation of concerns.
 
 # Part 4 — Building a Validator
 
-Example:
+  Example:
 
-```javascript 
-function validateProduct(
-    data
-) {
+  ```javascript 
+  function validateProduct(data) {
+      const errors = [];
+      if ( !data.name ) {
+          errors.push('Name required');
+      }
+      return errors;
+  }
+  ```
 
-    const errors = [];
+  Usage:
 
-    if(
-        !data.name
-    ) {
+  ```javascript 
+  const errors = validateProduct(req.body);
+  ```
 
-        errors.push(
-            'Name required'
-        );
+  Check:
 
-    }
-
-    return errors;
-
-}
-```
-
----
-
-Usage:
-
-```javascript 
-const errors =
-    validateProduct(
-        req.body
-    );
-```
-
----
-
-Check:
-
-```javascript 
-if(
-    errors.length
-) {
-
-    return res.render(
-        'products/create',
-        {
+  ```javascript 
+  if ( errors.length ) {
+      return res.render('products/create',
+          {
+            title: "Create Product",
             errors
-        }
-    );
+          }
+      );
+  }
+  ```
 
-}
-```
+  Simple.
 
----
+  Predictable.
 
-Simple.
+  Testable.
 
-Predictable.
+  Your `errors` will end up as data into the template, so you can iterate over them using EJS and display them to the user:
 
-Testable.
-
----
+  ```html
+  <% if ( typeof errors !=="undefined" ) { %>
+    <% errors.forEach( error => { %>
+      <div class="error">
+        <%= error %>
+      </div>
+    <% }); %>
+  <% } %>  
+  ```
 
 # Part 5 — Validating Product Names
 
-Example:
+  Example:
 
-```javascript 
-if(
+  ```javascript 
+  if ( name.length < 3 ) {
+      errors.push('Name too short');
+  }
+  ```
 
-    name.length < 3
+  Example:
 
-) {
+  ```javascript 
+  if ( name.length > 255 ) {
+      errors.push('Name too long');
+  }
+  ```
 
-    errors.push(
-        'Name too short'
-    );
+  Protects against:
 
-}
-```
+  ```text 
+  Empty names
 
----
-
-Example:
-
-```javascript 
-if(
-
-    name.length > 255
-
-) {
-
-    errors.push(
-        'Name too long'
-    );
-
-}
-```
-
----
-
-Protects against:
-
-```text 
-Empty names
-
-Massive payloads
-```
-
----
+  Massive payloads
+  ```
 
 # Part 6 — Validating Prices
 
-Current:
+  Current:
 
-```javascript 
-price = "banana"
-```
+  ```javascript 
+  price = "banana"
+  ```
 
----
+  Convert:
 
-Convert:
+  ```javascript 
+  const numericPrice = Number(price);
+  ```
 
-```javascript 
-const numericPrice =
-    Number(price);
-```
+  Validate:
 
----
+  ```javascript 
+  if ( Number.isNaN(numericPrice) ) {
+      errors.push('Invalid price');
+  }
+  ```
 
-Validate:
+  Range:
 
-```javascript 
-if(
-
-    Number.isNaN(
-        numericPrice
-    )
-
-) {
-
-    errors.push(
-        'Invalid price'
-    );
-
-}
-```
-
----
-
-Range:
-
-```javascript 
-if(
-
-    numericPrice <= 0
-
-) {
-
-    errors.push(
-        'Price must be positive'
-    );
-
-}
-```
-
----
+  ```javascript 
+  if ( numericPrice <= 0 ) {
+      errors.push('Price must be positive');
+  }
+  ```
 
 # Part 7 — Email Validation
 
-Simple check:
+  Simple check:
 
-```javascript 
-email.includes('@')
-```
+  ```javascript 
+  email.includes('@')
+  ```
 
----
+  Works poorly.
 
-Works poorly.
+  Better:
 
----
+  ```javascript 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  ```
 
-Better:
+  Validate:
 
-```javascript 
-const emailRegex =
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-```
+  ```javascript 
+  if ( !emailRegex.test( email ) ) {
+      errors.push( 'Invalid email' );
+  }
+  ```
 
----
+  Not perfect.
 
-Validate:
-
-```javascript 
-if(
-    !emailRegex.test(
-        email
-    )
-) {
-
-    errors.push(
-        'Invalid email'
-    );
-
-}
-```
-
----
-
-Not perfect.
-
-Much better.
-
----
+  Much better.
 
 # Part 8 — Server Errors vs User Errors
 
-These are different.
+  These are different.
 
----
+  User Error:
 
-User Error:
+  ```text 
+  Invalid Email
+  ```
 
-```text 
-Invalid Email
-```
+  User can fix it.
 
-User can fix it.
+  Server Error:
 
----
+  ```text 
+  Database Offline
+  ```
 
-Server Error:
+  User cannot.
 
-```text 
-Database Offline
-```
+  Response:
 
-User cannot.
+  ```http 
+  400 Bad Request
+  ```
 
----
+  for user problems.
 
-Response:
+  Response:
 
-```http 
-400 Bad Request
-```
+  ```http 
+  500 Internal Server Error
+  ```
 
-for user problems.
+  for server problems.
 
----
+  Important distinction.
 
-Response:
+  `HTTP STATUS 4xx` -> Your mistake.
 
-```http 
-500 Internal Server Error
-```
-
-for server problems.
-
----
-
-Important distinction.
-
----
+  `HTTP STATUS 5xx` -> Our mistake.
 
 # Part 9 — Understanding try/catch
 
-Example:
+  Example:
 
-```javascript 
-try {
+  ```javascript 
+  try {
+      const product = createProduct();
+  } catch(error) {
+      console.error( error );
+  }
+  ```
 
-    const product =
-        createProduct();
+  Without:
 
-}
-catch(error) {
+  ```javascript 
+  try/catch
+  ```
 
-    console.error(
-        error
-    );
+  application may crash.
 
-}
-```
+  With:
 
----
+  ```javascript 
+  try/catch
+  ```
 
-Without:
-
-```javascript 
-try/catch
-```
-
-application may crash.
-
----
-
-With:
-
-```javascript 
-try/catch
-```
-
-application can recover.
-
----
+  application can recover.
 
 # Part 10 — Express Error Middleware
 
-Special middleware:
+  Express error handlers are special middleware with 4 parameters (not 3).
 
-```javascript 
-function errorHandler(
+  When an error is thrown or passed to `next(error)`, Express skips regular middleware and routes and jumps directly to the error handler.
 
-    err,
+  Error handler must have exactly 4 parameters:
 
-    req,
+  ```javascript 
+  function errorHandler( err, req, res, next ) {
+      console.error(err.stack);
+      res.status(500).render('500');
+  }
+  ```
 
-    res,
+  **Critical**: Register error handlers **after all other middleware and routes**:
 
-    next
+  ```javascript 
+  // Regular routes
+  app.get('/', (req, res) => {
+      res.send('Home');
+  });
 
-) {
+  // Other middleware
+  app.use(express.json());
 
-    console.error(
-        err
-    );
+  // Error handler registered LAST
+  app.use(errorHandler);
+  ```
 
-    res
-        .status(500)
-        .render(
-            '500'
-        );
+  Example with multiple error types:
 
-}
-```
+  ```javascript 
+  function errorHandler( err, req, res, next ) {
+      console.error(err.stack);
 
----
+      // Default error
+      let status = 500;
+      let message = 'Internal Server Error';
 
-Register last:
+      // Handle specific errors
+      if (err instanceof ValidationError) {
+          status = 400;
+          message = err.message;
+      } else if (err instanceof NotFoundError) {
+          status = 404;
+          message = 'Resource not found';
+      }
 
-```javascript 
-app.use(
-    errorHandler
-);
-```
+      res.status(status).render('error', { 
+          message: message,
+          error: process.env.NODE_ENV === 'development' ? err : {} 
+      });
+  }
 
----
+  app.use(errorHandler);
+  ```
 
-Every unhandled error arrives here.
+  To trigger error handler, either throw or use `next()`:
 
----
+  ```javascript 
+  app.get('/product/:id', (req, res, next) => {
+      const product = findProduct(req.params.id);
+      
+      if (!product) {
+          // Trigger error handler
+          return next(new NotFoundError('Product not found'));
+      }
+
+      res.json(product);
+  });
+  ```
+
+  Every unhandled error will arrive at the error handler.
 
 # Part 11 — Custom Error Classes
 
-Instead of:
+  Instead of:
 
-```javascript 
-throw new Error(
-    'Not Found'
-);
-```
+  ```javascript 
+  throw new Error('Not Found');
+  ```
 
----
+  Create:
 
-Create:
+  ```javascript 
+  class NotFoundError extends Error {}
+  ```
 
-```javascript 
-class NotFoundError
-extends Error {}
-```
+  Usage:
 
----
+  ```javascript 
+  throw new NotFoundError('Product Missing');
+  ```
 
-Usage:
+  Handler:
 
-```javascript 
-throw new NotFoundError(
-    'Product Missing'
-);
-```
+  ```javascript 
+  if ( err instanceof NotFoundError ) {
+      return res.status(404).render('404');
+  }
+  ```
 
----
+  Cleaner.
 
-Handler:
-
-```javascript 
-if(
-
-    err instanceof
-    NotFoundError
-
-) {
-
-    return res
-        .status(404)
-        .render('404');
-
-}
-```
-
----
-
-Cleaner.
-
-More maintainable.
-
----
+  More maintainable.
 
 # Part 12 — Operational vs Programmer Errors
 
-A critical distinction.
+  A critical distinction.
 
----
+  Operational Error:
 
-Operational Error:
+  ```text 
+  Database unavailable
 
-```text 
-Database unavailable
+  Missing file
 
-Missing file
+  Network failure
+  ```
 
-Network failure
-```
+  Expected eventually.
 
-Expected eventually.
+  Handle gracefully.
 
-Handle gracefully.
+  Programmer Error:
 
----
+  ```javascript 
+  user.name.toUpperCase()
+  ```
 
-Programmer Error:
+  when:
 
-```javascript 
-user.name.toUpperCase()
-```
+  ```javascript 
+  user === undefined
+  ```
 
-when:
+  Bug.
 
-```javascript 
-user === undefined
-```
+  Needs fixing.
 
-Bug.
-
-Needs fixing.
-
----
-
-Understanding the difference helps with debugging and monitoring.
-
----
+  Understanding the difference helps with debugging and monitoring.
 
 # Part 13 — Reusable Validation Middleware
 
-Instead of:
+  Instead of:
 
-```javascript 
-validateProduct()
-```
+  ```javascript 
+  validateProduct()
+  ```
 
-inside every route.
+  inside every route.
 
----
+  Middleware:
 
-Middleware:
+  ```javascript 
+  function validateProductMiddleware( req, res, next ) {
+      const errors = validateProduct( req.body );
+      if ( errors.length ) {
+          return res.render('form', { errors });
+      }
 
-```javascript 
-function validateProductMiddleware(
+      next();
 
-    req,
+  }
+  ```
 
-    res,
+  Route:
 
-    next
+  ```javascript 
+  router.post('/products/create',
+      validateProductMiddleware,
+      createProduct
+  );
+  ```
 
-) {
-
-    const errors =
-        validateProduct(
-            req.body
-        );
-
-    if(
-        errors.length
-    ) {
-
-        return res.render(
-            'form',
-            {
-                errors
-            }
-        );
-
-    }
-
-    next();
-
-}
-```
-
----
-
-Route:
-
-```javascript 
-router.post(
-
-    '/products/create',
-
-    validateProductMiddleware,
-
-    createProduct
-);
-```
-
----
-
-Very scalable.
-
----
+  Very scalable.
 
 # Part 14 — Preserving User Input
 
-Validation fails.
+  Validation fails.
 
----
+  ❌ Bad:
 
-Bad:
+  ```text 
+  Everything disappears
+  ```
 
-```text 
-Everything disappears
-```
+  ✅ Good:
 
----
+  ```javascript 
+  res.render('form',
+      {
+          product: req.body, // Previously submitted data are retained
+          errors
+      }
+  );
+  ```
 
-Good:
+  Input:
 
-```javascript 
-res.render(
-    'form',
-    {
-        product: req.body,
-        errors
-    }
-);
-```
+  ```html 
+  value="<%= product.name %>"
+  ```
 
----
-
-Input:
-
-```html 
-value="<%= product.name %>"
-```
-
----
-
-Professional UX.
-
----
+  Professional UX.
 
 # Part 15 — Logging Errors
 
-Never do:
+  Never do:
 
-```javascript 
-catch(error) {
+  ```javascript 
+  catch(error) {
 
-}
-```
+  }
+  ```
 
----
+  Silent failures are terrible.
 
-Silent failures are terrible.
+  Always log:
 
----
+  ```javascript 
+  console.error( error );
+  ```
 
-Always log:
+  Later you'll replace this with:
 
-```javascript 
-console.error(
-    error
-);
-```
+  * Structured logging
+  * Monitoring
+  * Alerting
 
----
-
-Later you'll replace this with:
-
-* Structured logging
-* Monitoring
-* Alerting
-
-But logging is the beginning.
-
----
+  But logging is the beginning.
 
 # Part 16 — Defensive Programming
 
-Assume:
+  Assume:
 
-```text 
-Everything fails eventually.
-```
+  ```text 
+  Everything fails eventually.
+  ```
 
----
+  Examples:
 
-Examples:
+  ```text 
+  Database
 
-```text 
-Database
+  Network
 
-Network
+  File Upload
 
-File Upload
+  User Input
 
-User Input
+  Third-party APIs
+  ```
 
-Third-party APIs
-```
+  Write code that anticipates failure.
 
----
+  Not because you're pessimistic.
 
-Write code that anticipates failure.
-
-Not because you're pessimistic.
-
-Because you're realistic.
-
----
+  Because you're realistic.
 
 # Common Beginner Mistakes
 
-## Validating Only in the Browser
+  **Validating Only in the Browser**
 
-Bad:
+  Bad:
 
-```javascript 
-required
-```
+  ```javascript 
+  required
+  ```
 
-HTML attribute only.
+  HTML attribute only.
 
----
+  Attackers bypass browsers.
 
-Attackers bypass browsers.
+  ALWAYS Validate on the server-side.
 
-Validate server-side too.
+  **Giant Route Files**
 
----
+  Separate:
 
-## Giant Route Files
+  ```text 
+  Validation
 
-Separate:
+  Database
 
-```text 
-Validation
+  Rendering
+  ```
 
-Database
+  into dedicated layers.
 
-Rendering
-```
+  **Returning Generic Errors**
 
-into dedicated layers.
+  ❌ Not helpful:
 
----
+  ```text 
+  Something went wrong
+  ```
 
-## Returning Generic Errors
+  ✅ Helpful:
 
-Helpful:
+  ```text 
+  Email required
+  ```
 
-```text 
-Email required
-```
+  **Ignoring Errors**
 
----
+  Every error should have a plan.
 
-Not helpful:
+  **Catching Everything and Hiding It**
 
-```text 
-Something went wrong
-```
+  Users need useful messages.
 
----
+  Developers need useful logs.
 
-## Ignoring Errors
+# Reading Time
 
-Every error should have a plan.
+  - Spend the next few minutes going through the official Express.js documentation page dedicated to [Error Handling](https://expressjs.com/en/5x/guide/error-handling/){:target="_blank"}
 
----
-
-## Catching Everything and Hiding It
-
-Users need useful messages.
-
-Developers need useful logs.
-
----
-
-# Assignment
-
-## Exercise 1
-
-Create:
-
-```text 
-validateProduct()
-```
-
-function.
-
----
-
-## Exercise 2
-
-Validate:
-
-```text 
-Name
-
-Description
-
-Price
-```
-
-before saving.
-
----
-
-## Exercise 3
-
-Display validation messages in forms.
-
----
-
-## Exercise 4
-
-Create:
-
-```text 
-404.ejs
-
-500.ejs
-```
-
-error pages.
-
----
-
-## Exercise 5
-
-Implement:
-
-```javascript 
-errorHandler
-```
-
-middleware.
-
----
+  - _**What's in a name?**_ Sometimes errors can happen because our assumptions about what can go wrong are just plain wrong! The following article will challenge your assumptions about data submitted through forms: [Falsehoods Programmers Believe About Names](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/){:target="_blank"}. You definitely didn't expect what can go wrong with a simple input such as a  name, did you?
 
 # Bonus Challenge
 
-Create:
+  Create:
 
-```text 
-Validation Library
-```
+  ```text 
+  Validation Library
+  ```
 
-for your project.
+  for your project.
 
-Example:
+  Example:
 
-```javascript 
-validators/
+  ```javascript 
+  validators/
 
-├── product.js
-├── user.js
-├── auth.js
-```
+  ├── product.js
+  ├── user.js
+  ├── auth.js
+  ```
 
----
+  Usage:
 
-Usage:
+  ```javascript 
+  const errors = productValidator(req.body);
+  ```
 
-```javascript 
-const errors =
-    productValidator(
-        req.body
-    );
-```
-
----
-
-You now have the beginnings of a reusable application framework.
-
----
+  You now have the beginnings of a reusable application framework.
 
 # Key Takeaways
 
@@ -1049,7 +760,7 @@ You now have the beginnings of a reusable application framework.
   * User-friendly feedback
   * Logging fundamentals
 
-  At this point, your CMS is no longer merely functional—it is becoming resilient. The difference between a hobby project and a production application is often not the happy path. It's how the system behaves when everything goes wrong.
+  At this point, your CMS is no longer merely functional—it is becoming resilient. The difference between a hobby project and a production application is often not the happy path. **It's how the system behaves when everything goes wrong**.
 
 ---
 
