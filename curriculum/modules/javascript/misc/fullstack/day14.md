@@ -11,1006 +11,765 @@ load_script_js:
 
 ## Trust, But Verify
 
-> Every developer believes their code works.
->
-> Testing is how we discover whether reality agrees.
+  > Every developer believes their code works.
+  >
+  > Testing is how we discover whether reality agrees.
 
-Up until now we've built:
+  Up until now we've built:
 
-```text 
-CRUD
+  ```text 
+  CRUD
 
-Authentication
+  Authentication
 
-Authorization
+  Authorization
 
-Validation
+  Validation
 
-File Uploads
-```
+  File Uploads
+  ```
 
-Everything appears to work.
+  Everything appears to work.
 
-Then a user discovers:
+  Then a user discovers:
 
-```text 
-Deleting a product deletes the wrong product.
-```
+  ```text 
+  Deleting a product deletes the wrong product.
+  ```
 
-Or:
+  Or:
 
-```text 
-Editors can access admin routes.
-```
+  ```text 
+  Editors can access admin routes.
+  ```
 
-Or:
+  Or:
 
-```text 
-A validation rule accidentally disappeared.
-```
+  ```text 
+  A validation rule accidentally disappeared.
+  ```
 
-Today's lesson is about building confidence in software.
+  Today's lesson is about building confidence in software.
 
-Not confidence because:
+  Not confidence because:
 
-```text 
-"It worked on my machine."
-```
+  ```text 
+  "It worked on my machine."
+  ```
 
-Confidence because:
+  Confidence because:
 
-```text 
-Tests proved it.
-```
-
----
+  ```text 
+  Tests proved it.
+  ```
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand software testing fundamentals
-* Write unit tests
-* Write integration tests
-* Test Express routes
-* Test validation logic
-* Test authentication flows
-* Mock dependencies
-* Understand test isolation
-* Build reliable applications
-* Develop a testing mindset
-
----
+  * Understand software testing fundamentals
+  * Write unit tests
+  * Write integration tests
+  * Test Express routes
+  * Test validation logic
+  * Test authentication flows
+  * Mock dependencies
+  * Understand test isolation
+  * Build reliable applications
+  * Develop a testing mindset
 
 # Part 1 — What Is Testing?
 
-A test is simply code that verifies other code.
+  A test is simply code that verifies other code.
 
-Example:
+  Example:
 
-```javascript 
-expect(
-    add(2, 3)
-).toBe(5);
-```
+  ```javascript 
+  // Call the function we want to test ->  Check the result against our expectation:
+  expect(add(2, 3)).toBe(5);
+  ```
 
----
+  Question:
 
-Question:
+  ```text 
+  Does add() work?
+  ```
 
-```text 
-Does add() work?
-```
+  Test answers:
 
-Test answers:
+  ```text 
+  Yes
+  ```
 
-```text 
-Yes
-```
+  or
 
-or
+  ```text 
+  No
+  ```
 
-```text 
-No
-```
-
-without human involvement.
-
----
+  without human involvement.
 
 # Part 2 — Why Testing Matters
 
-Without tests:
+  Without tests:
 
-```text 
-Change Code
+  ```text 
+  Change Code
 
-Hope Nothing Breaks
-```
+  Hope Nothing Breaks
+  ```
 
----
+  With tests:
 
-With tests:
+  ```text 
+  Change Code
 
-```text 
-Change Code
+  Run Tests
 
-Run Tests
+  Know What Broke
+  ```
 
-Know What Broke
-```
-
----
-
-This is a huge difference.
-
----
+  This is a **huge** difference.
 
 # Part 3 — Types of Tests
 
-Three major categories:
+  Three major categories:
 
----
+  **Unit Tests**
 
-## Unit Tests
+  Test one thing.
 
-Test one thing.
+  Example:
 
-Example:
+  ```javascript 
+  validateProduct()
+  ```
 
-```javascript 
-validateProduct()
-```
+  Our unit tests should test whether the `validateProduct` is producing the expected output given specific input and behaves appropriately when malformed input is passed into it.
 
----
+  **Integration Tests**
 
-## Integration Tests
+  Test multiple components together.
 
-Test multiple components together.
+  Example:
 
-Example:
+  ```text 
+  Route
 
-```text 
-Route
+  ↓
 
-↓
+  Database
 
-Database
+  ↓
 
-↓
+  Response
+  ```
 
-Response
-```
+  **End-to-End Tests**
 
----
+  Test the entire application.
 
-## End-to-End Tests
+  Example:
 
-Test the entire application.
+  ```text 
+  Browser
 
-Example:
+  ↓
 
-```text 
-Browser
+  Server
 
-↓
+  ↓
 
-Server
+  Database
+  ```
 
-↓
+  For this module we'll focus on:
 
-Database
-```
+  ```text 
+  Unit
 
----
-
-For this course we'll focus on:
-
-```text 
-Unit
-
-Integration
-```
-
----
+  Integration
+  ```
 
 # Part 4 — Installing a Test Framework
 
-Popular choices:
+  Popular choices:
 
-* Vitest
-* Jest
+  * Vitest
+  * Jest
 
----
+  We'll use Vitest.
 
-We'll use Vitest.
+  Install:
 
-Install:
+  ```bash 
+  npm install -D vitest
+  ```
 
-```bash 
-npm install -D vitest
-```
+  package.json:
 
----
-
-package.json:
-
-```json 
-{
-  "scripts": {
-
-    "test":
-      "vitest"
-
+  ```json 
+  {
+    "scripts": {
+      "test": "vitest"
+    }
   }
-}
-```
+  ```
 
----
+  Run:
 
-Run:
-
-```bash 
-npm test
-```
-
----
+  ```bash 
+  npm test
+  ```
 
 # Part 5 — Your First Test
 
-Function:
+  Function:
 
-```javascript 
-function add(a, b) {
+  ```javascript 
+  // utils.js
+  function add(a, b) {
+      return a + b;
+  }
+  module.exports = { add }
+  ```
 
-    return a + b;
+  Test:
 
-}
-```
+  ```javascript 
+  // utils.test.js
+  import { test, expect } from 'vitest';
+  import { add } from "./utils";
 
----
+  test( 'adds numbers', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+  ```
 
-Test:
+  Now run the tests via `npm run test`
 
-```javascript 
-import {
-    test,
-    expect
-}
-from 'vitest';
+  Result:
 
-test(
-    'adds numbers',
-    () => {
+  ```text 
+  PASS
+  ```
 
-        expect(
-            add(2, 3)
-        ).toBe(5);
+  Or:
 
-    }
-);
-```
+  ```text 
+  FAIL
+  ```
 
----
+  No ambiguity.
 
-Result:
+  ALWAYS break the tests, to test your testing logic:
 
-```text 
-PASS
-```
+  ```js
+  function add(a, b) {
+      return a - b; // Change + to -
+  }  
+  ```
 
----
-
-Or:
-
-```text 
-FAIL
-```
-
----
-
-No ambiguity.
-
----
+  Re-run the tests and make sure they break.
 
 # Part 6 — Testing Validation
 
-Validator:
+  Validator:
 
-```javascript 
-validateProduct(
-    data
-)
-```
+  ```javascript 
+  validateProduct(data)
+  ```
 
----
+  Test:
 
-Test:
+  ```javascript 
+  test('requires name', () => {
+          const errors = validateProduct({
+                  name: '',
+                  price: 10
+              });
+          expect(errors.length).toBe(1);
+          expect(errors[0]).toBe('Name is required');
+      }
+  );
+  ```
 
-```javascript 
-test(
-    'requires name',
-    () => {
+  This is a perfect unit test.
 
-        const errors =
-            validateProduct({
+  No database.
 
-                name: '',
+  No Express.
 
-                price: 10
+  No browser.
 
-            });
+  Just:
 
-        expect(
-            errors.length
-        ).toBe(1);
+  ```text 
+  Input
 
-    }
-);
-```
+  ↓
 
----
+  Output
+  ```
 
-This is a perfect unit test.
-
----
-
-No database.
-
-No Express.
-
-No browser.
-
----
-
-Just:
-
-```text 
-Input
-
-↓
-
-Output
-```
-
----
+  Now challenge yourself by adding more tests on the `validateProducts` function.
 
 # Part 7 — Testing Authorization
 
-Function:
+  Function:
 
-```javascript 
-canDeleteProduct(
-    user
-)
-```
+  ```javascript 
+  canDeleteProduct(user)
+  ```
 
----
+  Test:
 
-Test:
+  ```javascript 
+  test('admin can delete', () => {
+    expect(canDeleteProduct({role: 'admin' })).toBe(true);
+  });
+  ```
 
-```javascript 
-test(
-    'admin can delete',
-    () => {
+  Test:
 
-        expect(
+  ```javascript 
+  test('viewer cannot delete', () => {
+    expect(canDeleteProduct({ role: 'viewer' })).toBe(false);
+  });
+  ```
 
-            canDeleteProduct({
-
-                role:
-                    'admin'
-
-            })
-
-        ).toBe(true);
-
-    }
-);
-```
-
----
-
-Test:
-
-```javascript 
-test(
-    'viewer cannot delete',
-    () => {
-
-        expect(
-
-            canDeleteProduct({
-
-                role:
-                    'viewer'
-
-            })
-
-        ).toBe(false);
-
-    }
-);
-```
-
----
-
-Permissions are excellent candidates for unit tests.
-
----
+  Permissions are excellent candidates for unit tests.
 
 # Part 8 — Integration Testing Express
 
-Unit tests are great.
+  Unit tests are great.
 
-But eventually we need:
+  But eventually we need:
 
-```text 
-Real Routes
-```
+  ```text 
+  Real Routes
+  ```
 
----
+  Example:
 
-Example:
+  ```http 
+  GET /products
+  ```
 
-```http 
-GET /products
-```
+  Did it return:
 
----
+  ```http 
+  200 OK
+  ```
 
-Did it return:
+  ?
 
-```http 
-200 OK
-```
-
-?
-
----
-
-Let's test it.
-
----
+  Let's test it.
 
 # Part 9 — Introducing SuperTest
 
-Install:
+  Install:
 
-SuperTest
+  SuperTest
 
-```bash 
-npm install -D supertest
-```
+  ```bash 
+  npm install -D supertest
+  ```
 
----
+  Example:
 
-Example:
+  ```js
+  // index.js
+  // Export the app object so that we can import and use it in our integration tests:
+  const express = require('express');
+  const app = express();
 
-```javascript 
-import request
-from 'supertest';
-```
+  // ...rest of the code
 
----
+  module.exports = { app }
+  ```
 
-Test route:
+  ```javascript 
+  // http.test.js
+  import { test, expect } from 'vitest';
+  import request from 'supertest';
+  import { app } from "./index";
 
-```javascript 
-const response =
-    await request(app)
+  // Test route:
+  const response = await request(app).get( '/products');
 
-        .get(
-            '/products'
-        );
-```
+  test("Response status", ()=>{
+    expect(response.status).toBe(200);
+  })
+  ```
 
----
+  Test using `npm run test`.
 
-Check:
+  Amazing.
 
-```javascript 
-expect(
-    response.status
-).toBe(200);
-```
-
----
-
-Amazing.
-
-No browser required.
-
----
+  No browser required.
 
 # Part 10 — Testing Protected Routes
 
-Route:
+  Route:
 
-```javascript 
-GET /admin
-```
+  ```javascript 
+  GET /admin
+  ```
 
-requires login.
+  requires login.
 
----
+  Test:
 
-Test:
+  ```javascript 
+  test("Protected Routes: Admin", async ()=>{
+    const response = await request(app).get('/admin');
+    // Check:
+    expect(response.status).toBe(302);
+  });
+  ```
 
-```javascript 
-const response =
-    await request(app)
+  Meaning:
 
-        .get('/admin');
-```
+  ```text 
+  Redirect to login
+  ```
 
----
-
-Check:
-
-```javascript 
-expect(
-    response.status
-).toBe(302);
-```
-
----
-
-Meaning:
-
-```text 
-Redirect to login
-```
-
----
-
-Now we know protection works.
-
----
+  Now we know protection works.
 
 # Part 11 — Testing Error Cases
 
-Most beginners test:
+  Most beginners test:
 
-```text 
-Happy Path
-```
+  ```text 
+  Happy Path
+  ```
 
-only.
+  only.
 
----
+  Professionals test:
 
-Professionals test:
+  ```text 
+  Failure Paths
+  ```
 
-```text 
-Failure Paths
-```
+  first.
 
-first.
+  Example:
 
----
+  ```javascript 
+  GET /products/99999
+  ```
 
-Example:
+  Expected:
 
-```javascript 
-GET /products/99999
-```
+  ```javascript 
+  expect(response.status).toBe(404);
+  ```
 
----
+  Important.
 
-Expected:
-
-```javascript 
-expect(
-    response.status
-).toBe(404);
-```
-
----
-
-Important.
-
----
-
-Broken systems usually fail around edge cases.
-
----
+  Broken systems usually fail around edge cases.
 
 # Part 12 — Mocking
 
-Sometimes dependencies are expensive.
+  Sometimes dependencies are expensive.
 
-Example:
+  Example:
 
-```text 
-Database
+  ```text 
+  Database
 
-API
+  API
 
-Filesystem
-```
+  Filesystem
+  ```
 
----
+  Instead of:
 
-Instead of:
+  ```javascript 
+  realDatabase
+  ```
 
-```javascript 
-realDatabase
-```
+  use:
 
-use:
+  ```javascript 
+  fakeDatabase
+  ```
 
-```javascript 
-fakeDatabase
-```
+  Example:
 
----
+  ```javascript 
+  import sqlite from 'node:sqlite';
+  import path from 'node:path';
 
-Example:
+  const testDbPath = path.join(process.cwd(), 'test.sqlite');
 
-```javascript 
-vi.mock(
-    './repository.js'
-);
-```
+  const testDb = new sqlite.DatabaseSync(testDbPath);
 
----
+  testDb.exec(`
+    CREATE TABLE IF NOT EXISTS products (
+      id INTEGER PRIMARY KEY,
+      name TEXT
+    );
 
-Now tests run:
+    DELETE FROM products;
 
-```text 
-Fast
+    INSERT INTO products (name)
+    VALUES ('Test Product');
+  `);
 
-Predictably
-```
+  vi.mock('../db.js', () => ({
+    default: testDb,
+  }));
+  ```
 
----
+  The `vi.mock` function replaces the real database with our test database during testing.
 
-Without touching real data.
+  The syntax basically says: "When the code imports `../db.js`, give it `testDb` instead of the real database." thereby bypassing the real database and allowing us to run tests without affecting real data. We are **mocking** (i.e. **faking**) the database dependency's `default` export.
 
----
+  Now tests run:
+
+  ```text 
+  Fast
+
+  Predictably
+  ```
+
+  Without touching real data.
+
+  Read more about [mocking](https://vitest.dev/guide/mocking){:target="_blank"}.
 
 # Part 13 — Test Isolation
 
-Bad:
+  Bad:
 
-```javascript 
-Test A
+  ```javascript 
+  Test A
 
-creates data
+  creates data
 
-Test B
+  Test B
 
-depends on it
-```
+  depends on it
+  ```
 
----
+  Order matters.
 
-Order matters.
+  Chaos follows.
 
-Chaos follows.
+  Good:
 
----
+  ```text 
+  Each test independent
+  ```
 
-Good:
+  Every test should be able to run:
 
-```text 
-Each test independent
-```
+  ```text 
+  Alone
 
----
+  In Any Order
+  ```
 
-Every test should be able to run:
-
-```text 
-Alone
-
-In Any Order
-```
-
----
-
-Critical principle.
-
----
+  Critical principle.
 
 # Part 14 — Coverage
 
-Question:
+  Question:
 
-```text 
-How much code is tested?
-```
+  ```text 
+  How much code is tested?
+  ```
 
----
+  Answer:
 
-Answer:
+  ```text 
+  Coverage
+  ```
 
-```text 
-Coverage
-```
+  Install: 
 
----
+  ```bash
+  npm i -D @vitest/coverage-v8
+  ```
 
-Run:
+  Run:
 
-```bash 
-vitest --coverage
-```
+  ```bash 
+  npx vitest --coverage
+  ```
 
----
+  This will produce a report showing how much of your code is covered by tests.
 
-Example:
+  Example:
 
-```text 
-Validation
+  ```text 
+  Validation
 
-95%
-```
+  95%
+  ```
 
----
+  ```text 
+  Permissions
 
-```text 
-Permissions
+  100%
+  ```
 
-100%
-```
+  Coverage helps.
 
----
+  But:
 
-Coverage helps.
+  ```text 
+  100% coverage ≠ 100% correctness
+  ```
 
-But:
+  A terrible test still counts.
 
-```text 
-100% coverage
-≠
-100% correctness
-```
-
----
-
-A terrible test still counts.
-
----
+  Read more about [coverage](https://vitest.dev/guide/coverage.html){:target="_blank"}
 
 # Part 15 — Testing Strategy
 
-Prioritize testing:
+  Prioritize testing:
 
-```text 
-Validation
+  ```text 
+  Validation
 
-Authentication
+  Authentication
 
-Authorization
+  Authorization
 
-Business Logic
-```
+  Business Logic
+  ```
 
----
+  Lower priority:
 
-Lower priority:
+  ```text 
+  Simple Templates
 
-```text 
-Simple Templates
+  Static Pages
+  ```
 
-Static Pages
-```
+  Rule:
 
----
+  Test things that can cause expensive mistakes.
 
-Rule:
+  Test things that change often.
 
-Test things that can cause expensive mistakes.
+  Deleting products:
 
----
+  ```text 
+  High Value
+  ```
 
-Deleting products:
+  Homepage title:
 
-```text 
-High Value
-```
-
----
-
-Homepage title:
-
-```text 
-Lower Value
-```
-
----
+  ```text 
+  Lower Value
+  ```
 
 # Part 16 — Continuous Integration
 
-Imagine:
+  Imagine:
 
-```text 
-Developer pushes code
-```
+  ```text 
+  Developer pushes code
+  ```
 
----
+  Automatically:
 
-Automatically:
+  ```text 
+  Run Tests
+  ```
 
-```text 
-Run Tests
-```
+  If tests fail:
 
----
+  ```text 
+  Reject Deployment
+  ```
 
-If tests fail:
+  This is called:
 
-```text 
-Reject Deployment
-```
+  ```text 
+  Continuous Integration
+  ```
 
----
+  or:
 
-This is called:
+  ```text 
+  CI
+  ```
 
-```text 
-Continuous Integration
-```
+  Used everywhere.
 
-or:
+  Examples:
 
-```text 
-CI
-```
-
----
-
-Used everywhere.
-
----
-
-Examples:
-
-* GitHub Actions
-* GitLab CI/CD
-* Jenkins
-
----
+  * CircleCI
+  * GitHub Actions
+  * GitLab CI/CD
+  * Jenkins
 
 # Common Beginner Mistakes
 
-## Testing Only Happy Paths
+  **Testing Only Happy Paths**
 
-Always test failures.
+  Always test failures.
 
----
+  **Using Production Databases**
 
-## Using Production Databases
+  Never.
 
-Never.
+  Use test databases.
 
-Use test databases.
+  **Tests Depending on Order**
 
----
+  Each test should be independent.
 
-## Tests Depending on Order
+  **Massive Integration Tests**
 
-Each test should be independent.
+  Keep tests focused.
 
----
+  **Chasing Coverage Numbers**
 
-## Massive Integration Tests
-
-Keep tests focused.
-
----
-
-## Chasing Coverage Numbers
-
-Quality matters more than percentages.
-
----
-
-# Assignment
-
-## Exercise 1
-
-Install:
-
-```text 
-Vitest
-```
-
-and create your first test.
-
----
-
-## Exercise 2
-
-Write tests for:
-
-```text 
-validateProduct()
-```
-
----
-
-## Exercise 3
-
-Write tests for:
-
-```text 
-Authorization Rules
-```
-
----
-
-## Exercise 4
-
-Install:
-
-```text 
-SuperTest
-```
-
-and test:
-
-```text 
-GET /products
-```
-
----
-
-## Exercise 5
-
-Test:
-
-```text 
-Protected Routes
-```
-
-return correct responses.
-
----
+  Quality matters more than percentages.
 
 # Bonus Challenge
 
-Create a test suite for:
+  Create a test suite for:
 
-```text 
-Authentication
-```
+  ```text 
+  Authentication
+  ```
 
-including:
+  including:
 
-```text 
-Valid Login
+  ```text 
+  Valid Login
 
-Invalid Login
+  Invalid Login
 
-Logout
+  Logout
 
-Session Creation
-```
+  Session Creation
+  ```
 
----
+  Goal:
 
-Goal:
+  ```text 
+  100% passing tests
+  ```
 
-```text 
-100% passing tests
-```
+  for:
 
-for:
+  ```text 
+  Authentication
 
-```text 
-Authentication
+  Authorization
 
-Authorization
+  Validation
+  ```
 
-Validation
-```
-
-These are the most security-sensitive parts of your CMS.
-
----
+  These are the most security-sensitive parts of your CMS.
 
 # Key Takeaways
 
@@ -1026,7 +785,7 @@ These are the most security-sensitive parts of your CMS.
   * CI fundamentals
   * Testing strategy
 
-  A professional application is not defined by how many features it has. It is defined by how confidently those features can be changed without breaking existing behavior. Testing is the mechanism that creates that confidence.
+  A professional application is not defined by how many features it has. **It is defined by how confidently those features can be changed without breaking existing behavior.** Testing is the mechanism that creates that confidence.
 
   At this stage, your CMS is no longer just functional and secure—it is becoming maintainable. That distinction becomes increasingly important as projects grow from hundreds of lines of code to tens of thousands.
 
