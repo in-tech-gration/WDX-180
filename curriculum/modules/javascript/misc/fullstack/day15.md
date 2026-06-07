@@ -11,1115 +11,813 @@ load_script_js:
 
 ## Shipping Software To The Real World
 
-> Building software is only half the job.
->
-> Getting it into production is the other half.
->
-> And sometimes the scarier half.
+  > Building software is only half the job.
+  >
+  > Getting it into production is the other half.
+  >
+  > And sometimes the scarier half.
 
-For fourteen days we've been building:
+  During this module we've been building:
 
-```text 
-CRUD
+  ```text 
+  CRUD
 
-SQLite
+  SQLite
 
-Express
+  Express
 
-EJS
+  EJS
 
-Authentication
+  Authentication
 
-Authorization
+  Authorization
 
-Uploads
+  Uploads
 
-Validation
+  Validation
 
-Testing
-```
+  Testing
+  ```
 
-Everything works.
+  Everything works.
 
-On your laptop.
+  On your laptop.
 
-Unfortunately:
+  Unfortunately:
 
-```text 
-Your laptop
-≠
-The Internet
-```
+  ```text 
+  Your laptop ≠ The Internet
+  ```
 
-Today we solve that problem.
+  Today we solve that problem.
 
-This lesson is about turning a local project into a real application that other people can access.
-
----
+  This lesson is about turning a local project into a real application that other people can access.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Understand deployment fundamentals
-* Prepare applications for production
-* Use environment variables correctly
-* Configure production databases
-* Serve applications securely
-* Understand reverse proxies
-* Understand HTTPS
-* Implement logging strategies
-* Monitor applications
-* Deploy a complete CMS
-
----
+  * Understand deployment fundamentals
+  * Prepare applications for production
+  * Use environment variables correctly
+  * Configure production databases
+  * Serve applications securely
+  * Understand reverse proxies
+  * Understand HTTPS
+  * Implement logging strategies
+  * Monitor applications
+  * Deploy a complete CMS
 
 # Part 1 — Development vs Production
 
-Development:
+  Development:
 
-```text 
-localhost
+  ```text 
+  localhost
 
-Debugging
+  Debugging
 
-Console Logs
+  Console Logs
 
-Experimental
-```
+  Experimental
+  ```
 
----
+  Production:
 
-Production:
+  ```text 
+  Real Users
 
-```text 
-Real Users
+  Real Data
 
-Real Data
+  Real Traffic
 
-Real Traffic
+  Real Problems
+  ```
 
-Real Problems
-```
+  A surprising number of bugs only appear in production.
 
----
+  Which is software's version of:
 
-A surprising number of bugs only appear in production.
-
-Which is software's version of:
-
-```text 
-"It worked yesterday."
-```
-
----
+  ```text 
+  "It worked yesterday."
+  ```
 
 # Part 2 — Environment Variables
 
-Hardcoded:
+  Hardcoded:
 
-```javascript 
-const secret =
-    'super-secret';
-```
+  ```javascript 
+  const secret = 'super-secret';
+  ```
 
----
+  Bad.
 
-Bad.
+  Hardcoded:
 
----
+  ```javascript 
+  const database = './db.sqlite';
+  ```
 
-Hardcoded:
+  Also bad.
 
-```javascript 
-const database =
-    './db.sqlite';
-```
+  Use environment variables.
 
----
+  Example:
 
-Also bad.
+  `.env`:
 
----
+  ```env 
+  PORT=3000
 
-Use environment variables.
+  SESSION_SECRET=abc123
 
----
+  DATABASE_PATH=db.sqlite
+  ```
 
-Example:
+  Access:
 
-```env 
-PORT=3000
+  ```javascript 
+  const { loadEnvFile } = require('node:process');
+  // Loads environment variables from the default .env file
+  loadEnvFile();
 
-SESSION_SECRET=abc123
+  process.env.PORT
+  ```
 
-DATABASE_PATH=db.sqlite
-```
+  Benefits:
 
----
-
-Access:
-
-```javascript 
-process.env.PORT
-```
-
----
-
-Benefits:
-
-* Configurable
-* Safer
-* Production friendly
-
----
+  * Configurable
+  * Safer
+  * Production friendly
 
 # Part 3 — Using dotenv
 
-Install:
+  Install:
 
-dotenv
+  dotenv
 
-```bash 
-npm install dotenv
-```
+  ```bash 
+  npm install dotenv
+  ```
 
----
+  Load:
 
-Load:
+  ```javascript 
+  require('dotenv').config();
+  ```
 
-```javascript 
-require('dotenv')
-    .config();
-```
+  Now:
 
----
+  ```javascript 
+  process.env
+  ```
 
-Now:
+  contains values from:
 
-```javascript 
-process.env
-```
+  ```text 
+  .env
+  ```
 
-contains values from:
+  Never commit:
 
-```text 
-.env
-```
+  ```text 
+  .env
+  ```
 
----
+  to Git.
 
-Never commit:
+  **Ever**.
 
-```text 
-.env
-```
+  Add:
 
-to Git.
+  ```gitignore 
+  .env
+  ```
 
-Ever.
-
----
-
-Add:
-
-```gitignore 
-.env
-```
-
-immediately.
-
----
+  immediately.
 
 # Part 4 — Production Configuration
 
-Current:
+  Current:
 
-```javascript 
-app.listen(
-    3000
-);
-```
+  ```javascript 
+  app.listen(3000);
+  ```
 
----
+  Better:
 
-Better:
+  ```javascript 
+  app.listen(process.env.PORT);
+  ```
 
-```javascript 
-app.listen(
-    process.env.PORT
-);
-```
+  Hosting providers assign ports dynamically.
 
----
-
-Hosting providers assign ports dynamically.
-
-Hardcoding eventually breaks.
-
----
+  Hardcoding eventually breaks.
 
 # Part 5 — Understanding Reverse Proxies
 
-Users think:
+  Users think:
 
-```text 
-Internet
+  ```text 
+  Internet
 
-↓
+  ↓
 
-Your App
-```
+  Your App
+  ```
 
----
+  Reality:
 
-Reality:
+  ```text 
+  Internet
 
-```text 
-Internet
+  ↓
 
-↓
+  Reverse Proxy
 
-Reverse Proxy
+  ↓
 
-↓
+  Node.js
+  ```
 
-Node.js
-```
+  Common reverse proxies:
 
----
+  * Nginx
+  * HAProxy
+  * Traefik
 
-Common reverse proxies:
+  Responsibilities:
 
-* Nginx
-* HAProxy
-* Traefik
+  ```text 
+  HTTPS
 
----
+  Load Balancing
 
-Responsibilities:
+  Caching
 
-```text 
-HTTPS
+  Compression
+  ```
 
-Load Balancing
+  Node focuses on application logic.
 
-Caching
-
-Compression
-```
-
----
-
-Node focuses on application logic.
-
----
+  Learn more about [Reverse Proxies](https://www.youtube.com/watch?v=4NB0NDtOwIQ){:target="_blank"}.
 
 # Part 6 — HTTPS Matters
 
-Without HTTPS:
+  Without HTTPS:
 
-```text 
-Passwords
+  ```text 
+  Passwords
 
-Cookies
+  Cookies
 
-Sessions
-```
+  Sessions
+  ```
 
-travel unencrypted.
+  travel unencrypted.
 
----
+  Very bad.
 
-Very bad.
+  HTTPS provides:
 
----
+  ```text 
+  Encryption
+  ```
 
-HTTPS provides:
+  between browser and server.
 
-```text 
-Encryption
-```
+  Today there is little reason not to use HTTPS everywhere.
 
-between browser and server.
+  Certificates commonly come from:
 
----
-
-Today there is little reason not to use HTTPS everywhere.
-
----
-
-Certificates commonly come from:
-
-Let's Encrypt
-
----
+  `Let's Encrypt`
 
 # Part 7 — Session Security
 
-Development:
+  Development:
 
-```javascript 
-cookie: {
+  ```javascript 
+  cookie: { secure: false }
+  ```
 
-    secure: false
+  Production:
 
-}
-```
+  ```javascript 
+  cookie: {
+      secure: true,
+      httpOnly: true
+  }
+  ```
 
----
+  - The `secure` flag ensures cookies are only sent over HTTPS.
+  - The `httpOnly` flag prevents JavaScript access to cookies, mitigating XSS attacks
 
-Production:
+  Benefits:
 
-```javascript 
-cookie: {
+  ```text 
+  Better Session Protection
+  ```
 
-    secure: true,
+  A small change.
 
-    httpOnly: true
-
-}
-```
-
----
-
-Benefits:
-
-```text 
-Better Session Protection
-```
-
----
-
-A small change.
-
-A huge security improvement.
-
----
+  A huge security improvement.
 
 # Part 8 — Logging Properly
 
-Development:
+  Development:
 
-```javascript 
-console.log(
-    'User created'
-);
-```
+  ```javascript 
+  console.log('User created');
+  ```
 
----
+  Production:
 
-Production:
+  Need more.
 
-Need more.
+  Questions:
 
----
+  ```text 
+  Who logged in?
 
-Questions:
+  When?
 
-```text 
-Who logged in?
+  Which route failed?
 
-When?
+  What crashed?
+  ```
 
-Which route failed?
+  Logs answer these questions.
 
-What crashed?
-```
+  Example:
 
----
+  ```javascript 
+  logger.info('User login',
+      {
+          userId: 1
+      }
+  );
+  ```
 
-Logs answer these questions.
+  Structured logs become invaluable later.
 
----
+  Here's how you can implement logging with `Morgan`:
 
-Example:
+  Install:
 
-```javascript 
-logger.info(
+  ```bash 
+  npm install morgan
+  ```
 
-    'User login',
+  Use:
 
-    {
-        userId: 1
-    }
+  ```javascript 
+  const morgan = require('morgan');
+  app.use(morgan('combined'));
+  ```
 
-);
-```
-
----
-
-Structured logs become invaluable later.
-
----
+  Learn more about the [Morgan Middleware](https://expressjs.com/en/resources/middleware/morgan/){:target="_blank"}.
 
 # Part 9 — Monitoring
 
-Question:
+  Question:
 
-```text 
-Is the server healthy?
-```
+  ```text 
+  Is the server healthy?
+  ```
 
----
+  Question:
 
-Question:
+  ```text 
+  Is memory usage growing?
+  ```
 
-```text 
-Is memory usage growing?
-```
+  Question:
 
----
+  ```text 
+  Are users seeing errors?
+  ```
 
-Question:
+  Monitoring answers these.
 
-```text 
-Are users seeing errors?
-```
+  Without monitoring:
 
----
+  ```text 
+  You discover outages from angry users.
+  ```
 
-Monitoring answers these.
-
----
-
-Without monitoring:
-
-```text 
-You discover outages from angry users.
-```
-
----
-
-Not ideal.
-
----
+  Not ideal.
 
 # Part 10 — Handling Application Crashes
 
-Node process crashes.
+  Node process crashes.
 
----
+  Question:
 
-Question:
+  ```text 
+  What restarts it?
+  ```
 
-```text 
-What restarts it?
-```
+  Common answer:
 
----
+  PM2
 
-Common answer:
+  Install:
 
-PM2
+  ```bash 
+  npm install -g pm2
+  ```
 
----
+  Run:
 
-Install:
+  ```bash 
+  pm2 start app.js
+  ```
 
-```bash 
-npm install -g pm2
-```
+  Benefits:
 
----
+  ```text 
+  Restart
 
-Run:
+  Monitoring
 
-```bash 
-pm2 start app.js
-```
+  Logs
+  ```
 
----
-
-Benefits:
-
-```text 
-Restart
-
-Monitoring
-
-Logs
-```
-
----
-
-A production staple.
-
----
+  A production staple.
 
 # Part 11 — Database Considerations
 
-Current:
+  Current:
 
-```text 
-SQLite
-```
+  ```text 
+  SQLite
+  ```
 
----
+  SQLite is fantastic.
 
-SQLite is fantastic.
+  But eventually:
 
-But eventually:
+  ```text 
+  Multiple Servers
+  ```
 
-```text 
-Multiple Servers
-```
+  becomes difficult.
 
-becomes difficult.
+  Common upgrade path:
 
----
+  PostgreSQL
 
-Common upgrade path:
+  Benefits:
 
-PostgreSQL
+  ```text 
+  Scalability
 
----
+  Concurrency
 
-Benefits:
+  Advanced Features
+  ```
 
-```text 
-Scalability
-
-Concurrency
-
-Advanced Features
-```
-
----
-
-Many production systems use PostgreSQL.
-
----
+  Many production systems use PostgreSQL.
 
 # Part 12 — Deployment Options
 
-Small Projects:
+  Small Projects:
 
-* Render
-* Railway
+  * Render
+  * Railway
 
----
+  Container-Based:
 
-Container-Based:
+  * Docker
 
-* Docker
+  Cloud Providers:
 
----
+  * Amazon Web Services
+  * Google Cloud
+  * Microsoft Azure
 
-Cloud Providers:
+  For beginners:
 
-* Amazon Web Services
-* Google Cloud
-* Microsoft Azure
+  ```text 
+  Render
 
----
+  Railway
+  ```
 
-For beginners:
-
-```text 
-Render
-
-Railway
-```
-
-provide the fastest path to deployment.
-
----
+  provide the fastest path to deployment.
 
 # Part 13 — Deployment Checklist
 
-Before launch:
+  Before launch:
 
----
+  **Security**
 
-### Security
+  ```text 
+  HTTPS
 
-```text 
-HTTPS
+  Session Security
 
-Session Security
+  Password Hashing
+  ```
 
-Password Hashing
-```
+  **Configuration**
 
----
+  ```text 
+  Environment Variables
 
-### Configuration
+  No Hardcoded Secrets
+  ```
 
-```text 
-Environment Variables
+  **Reliability**
 
-No Hardcoded Secrets
-```
+  ```text 
+  Logging
 
----
+  Monitoring
 
-### Reliability
+  Error Handling
+  ```
 
-```text 
-Logging
+  **Data**
 
-Monitoring
+  ```text 
+  Database Backups
+  ```
 
-Error Handling
-```
+  **Testing**
 
----
+  ```text 
+  All Tests Passing
 
-### Data
+  Decent coverage
+  ```
 
-```text 
-Database Backups
-```
+  This checklist prevents many disasters.
 
----
+  Not all disasters.
 
-### Testing
-
-```text 
-All Tests Passing
-```
-
----
-
-This checklist prevents many disasters.
-
-Not all disasters.
-
-But many.
-
----
+  But many.
 
 # Part 14 — The CMS Architecture Review
 
-Let's review what students have built.
+  Let's review what we have built.
 
----
+  Presentation Layer:
 
-Presentation Layer:
+  ```text 
+  EJS
+  ```
 
-```text 
-EJS
-```
+  Application Layer:
 
----
+  ```text 
+  Express Routes
 
-Application Layer:
+  Middleware
 
-```text 
-Express Routes
+  Validation
+  ```
 
-Middleware
+  Security Layer:
 
-Validation
-```
+  ```text 
+  Authentication
 
----
+  Authorization
+  ```
 
-Security Layer:
+  Persistence Layer:
 
-```text 
-Authentication
+  ```text 
+  SQLite
+  ```
 
-Authorization
-```
+  Testing Layer:
 
----
+  ```text 
+  Vitest
 
-Persistence Layer:
+  SuperTest
+  ```
 
-```text 
-SQLite
-```
+  Infrastructure Layer:
 
----
+  ```text 
+  Deployment
 
-Testing Layer:
+  Environment Variables
 
-```text 
-Vitest
+  Monitoring
+  ```
 
-SuperTest
-```
-
----
-
-Infrastructure Layer:
-
-```text 
-Deployment
-
-Environment Variables
-
-Monitoring
-```
-
----
-
-This resembles the architecture of many professional applications.
-
----
+  This resembles the architecture of many professional applications.
 
 # Part 15 — What We Would Build Next
 
-If this were a larger course, the next topics would likely be:
+  If this were a larger course, the next topics would likely be:
 
----
+  **Search**
 
-## Search
+  Using: `SQLite FTS5`
 
-Using:
+  **Categories & Tags**
 
-SQLite FTS5
+  Content organization.
 
----
+  **Rich Text Editing**
 
-## Categories & Tags
+  Using:
 
-Content organization.
+  `TinyMCE`
 
----
+  or
 
-## Rich Text Editing
+  `CKEditor`
 
-Using:
+  **APIs**
 
-TinyMCE
+  Building:
 
-or
+  ```text 
+  JSON APIs
+  ```
 
-CKEditor
+  alongside EJS pages.
 
----
+  **Background Jobs**
 
-## APIs
+  Using:
 
-Building:
+  `BullMQ`
 
-```text 
-JSON APIs
-```
+  **Caching**
 
-alongside EJS pages.
+  Using: `Redis`
 
----
+  **Docker**
 
-## Background Jobs
+  Containerized deployment.
 
-Using:
+  **CI/CD**
 
-BullMQ
-
----
-
-## Caching
-
-Using:
-
-Redis
-
----
-
-## Docker
-
-Containerized deployment.
-
----
-
-## CI/CD
-
-Automated deployments.
-
----
+  Automated deployments.
 
 # Part 16 — The Most Important Lesson
 
-The biggest takeaway from this course isn't:
+    The biggest takeaway from this course isn't:
 
-```text 
-Express
+    ```text 
+    Express
 
-SQLite
+    SQLite
 
-EJS
-```
+    EJS
+    ```
 
----
+    Those tools will change.
 
-Those tools will change.
+    The important lesson is understanding:
 
----
+    ```text 
+    Requests
 
-The important lesson is understanding:
+    Responses
 
-```text 
-Requests
+    Routing
 
-Responses
+    Persistence
 
-Routing
+    Security
 
-Persistence
+    Testing
 
-Security
+    Deployment
+    ```
 
-Testing
+    Frameworks come and go.
 
-Deployment
-```
+    Principles endure.
 
----
+    A developer who understands these fundamentals can learn:
 
-Frameworks come and go.
+    * Express
+    * NestJS
+    * Fastify
+    * Laravel
+    * Django
+    * Spring Boot
 
-Principles endure.
-
----
-
-A developer who understands these fundamentals can learn:
-
-* Express
-* NestJS
-* Fastify
-* Laravel
-* Django
-* Spring Boot
-
-far more easily than someone who only memorized framework APIs.
-
----
+    far more easily than someone who only memorized framework APIs.
 
 # Common Beginner Mistakes
 
-## Committing Secrets
+  **Committing Secrets**
 
-Never commit:
+  Never commit:
 
-```text 
-.env
-```
+  ```text 
+  .env
+  ```
 
----
+  **No Backups**
 
-## No Backups
+  Every database eventually needs recovery.
 
-Every database eventually needs recovery.
+  **No Monitoring**
 
----
+  Problems should be discovered before users report them.
 
-## No Monitoring
+  **Running Without HTTPS**
 
-Problems should be discovered before users report them.
+  Protect user data.
 
----
+  Always.
 
-## Running Without HTTPS
+  **Deploying Untested Code**
 
-Protect user data.
-
-Always.
-
----
-
-## Deploying Untested Code
-
-Hope is not a deployment strategy.
-
----
-
-# Final Capstone Assignment
-
-Build:
-
-```text 
-Mini CMS
-```
-
-containing:
-
-### Authentication
-
-```text 
-Login
-
-Logout
-```
-
----
-
-### Authorization
-
-```text 
-Admin
-
-Editor
-```
-
-roles.
-
----
-
-### Product Management
-
-```text 
-Create
-
-Read
-
-Update
-
-Delete
-```
-
----
-
-### Uploads
-
-```text 
-Product Images
-```
-
----
-
-### Validation
-
-```text 
-Server-side Validation
-```
-
----
-
-### Testing
-
-```text 
-Validation Tests
-
-Authorization Tests
-
-Route Tests
-```
-
----
-
-### Deployment
-
-Deploy publicly.
-
-Provide URL.
-
----
-
-This project demonstrates nearly every concept taught throughout the course.
-
----
+  Hope is not a deployment strategy.
 
 # Course Retrospective
 
-Over 15 days you learned:
+  Over 15 modules you learned:
 
-### Foundations
+  **Foundations**
 
-* Express
-* Routing
-* Middleware
-* MVC Concepts
+  * Express
+  * Routing
+  * Middleware
+  * MVC Concepts
 
-### Data
+  **Data**
 
-* SQLite
-* Repository Pattern
-* CRUD
+  * SQLite
+  * Repository Pattern
+  * CRUD
 
-### Views
+  **Views**
 
-* EJS
-* Templates
-* Layouts
+  * EJS
+  * Templates
+  * Layouts
 
-### Security
+  **Security**
 
-* Authentication
-* Authorization
-* Sessions
-* Password Hashing
+  * Authentication
+  * Authorization
+  * Sessions
+  * Password Hashing
 
-### Reliability
+  **Reliability**
 
-* Validation
-* Error Handling
-* Testing
+  * Validation
+  * Error Handling
+  * Testing
 
-### Operations
+  **Operations**
 
-* Deployment
-* Monitoring
-* Configuration
-
----
+  * Deployment
+  * Monitoring
+  * Configuration
 
 # Final Key Takeaways
 
-A web application is ultimately a pipeline:
+  A web application is ultimately a pipeline:
 
-```text 
-Request
+  ```text 
+  Request
 
-↓
+  ↓
 
-Validation
+  Validation
 
-↓
+  ↓
 
-Authentication
+  Authentication
 
-↓
+  ↓
 
-Authorization
+  Authorization
 
-↓
+  ↓
 
-Business Logic
+  Business Logic
 
-↓
+  ↓
 
-Database
+  Database
 
-↓
+  ↓
 
-Response
-```
+  Response
+  ```
 
-Master this flow and you can understand nearly every modern web framework.
+  Master this flow and you can understand nearly every modern web framework.
 
-Congratulations.
+  Congratulations.
 
-You haven't just built a CMS.
+  You haven't just built a CMS.
 
-You've built a complete mental model for how server-side web applications work. And unlike frameworks, that knowledge doesn't go out of date every six months because someone renamed a configuration file and called it innovation. 🚀
-
----
-
-# Post-Course Syllabus Improvements
-
-If I were evolving this into a 30-day Harvard/CS50-style curriculum, the next 15 days would be:
-
-1. REST APIs
-2. OpenAPI / Swagger
-3. Docker Fundamentals
-4. PostgreSQL
-5. Database Migrations
-6. Advanced SQL
-7. Full-Text Search
-8. Redis
-9. Background Jobs
-10. WebSockets
-11. Caching Strategies
-12. Observability & Logging
-13. CI/CD Pipelines
-14. Cloud Deployment
-15. Final Production Project
-
-That progression would take students from "I can build a website" to "I can design, build, test, deploy, and operate a production web application." That's where professional engineering really begins.
+  You've built a complete mental model for how server-side web applications work. And unlike frameworks, that knowledge doesn't go out of date every six months because someone renamed a configuration file and called it innovation. 🚀
 
 ---
 
