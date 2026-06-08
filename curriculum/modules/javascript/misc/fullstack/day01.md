@@ -188,6 +188,26 @@ layout: v2
 
   Your future self will thank you.
 
+  **Security Considerations**
+
+  Before installing any dependencies, it's important to run some safety checks and ensure that you are not installing an infected or malicious npm module.
+
+  Here are some steps to protect you:
+
+  - Install and `npq` to install npm modules instead of `npm`. Just run `npq install` instead of `npm install`. Installation instructions can be found [here](https://github.com/lirantal/npq){:target="_blank"}.
+
+  - Go to [socket.dev](https://socket.dev){:target="_blank"} and use their `NPM Search Packages` field to check whether a particular npm module and version is safe to install.
+
+  - Always copy and paste the `npm install` command from the official documentation and ensure that you have correctly copied the full line. Typosquatting happens when you've accidentally typed `npm install expres` instead of `npm install express`
+
+# Version Control
+
+  Of course, every serious projects needs some kind of version control.
+
+  Before you start this project make sure to initialize the project folder as a git repository by running `git init`.
+
+  Now, every time you complete a step of this module or implement a feature, make sure to stage (`git add`) and commit (`git commit`) your changes.
+
 # Project Structure
 
   Professional projects rely on predictable structure.

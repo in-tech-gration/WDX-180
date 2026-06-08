@@ -41,6 +41,9 @@
     <script type="text/javascript" src="{{ js | prepend: 'assets/js/' | relative_url }}"></script>
     {% endfor %}
 
+  <!-- Highlight.js Copy Plugin -->
+  <script src="{{ '/assets/jekyll/js/highlight-copy.js' | relative_url }}"></script>
+
 </head>
 
 <body class="{{ page.url | slugify | append: '__page' }}">
