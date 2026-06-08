@@ -390,7 +390,7 @@ layout: v2
 
   Example:
 
-  ```ejs
+  ```html
   <h1><%= title %></h1>
   ```
 
@@ -427,7 +427,7 @@ layout: v2
 
   Create:
 
-  ```ejs
+  ```html
   <!-- views/index.ejs -->
 
   <h1><%= title %></h1>
@@ -458,7 +458,7 @@ layout: v2
 
   View:
 
-  ```ejs
+  ```html
   <h1><%= title %></h1>
 
   <ul>
@@ -480,7 +480,7 @@ layout: v2
 
 ## Output Escaped Data
 
-  ```ejs
+  ```html
   <%= name %>
   ```
 
@@ -490,7 +490,7 @@ layout: v2
 
 ## Execute JavaScript
 
-  ```ejs
+  ```html
   <% products.forEach(...) %>
   ```
 
@@ -500,7 +500,7 @@ layout: v2
 
 ## Output Raw HTML
 
-  ```ejs
+  ```html
   <%- html %>
   ```
 
@@ -534,7 +534,7 @@ layout: v2
 
 ## layout.ejs
 
-  ```ejs
+  ```html
   <!doctype html>
   <html>
   <head>
@@ -612,7 +612,7 @@ layout: v2
 
   **View**
 
-  ```ejs
+  ```html
   <h2>Products</h2>
 
   <ul>
@@ -676,7 +676,7 @@ layout: v2
 
   Use:
 
-  ```ejs
+  ```html
   <%= value %>
   ```
 
