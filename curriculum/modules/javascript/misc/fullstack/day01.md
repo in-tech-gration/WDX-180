@@ -697,7 +697,7 @@ layout: v2
 
 # Assignment
 
-  ### Level 1
+  **Level 1**
 
   Create a page that displays:
 
@@ -709,17 +709,13 @@ layout: v2
 
   using EJS variables.
 
-  ---
-
-  ### Level 2
+  **Level 2**
 
   Create an array of 5 products.
 
   Render them dynamically using a loop.
 
-  ---
-
-  ### Level 3
+  **Level 3**
 
   Add a navigation bar partial.
 
@@ -729,7 +725,7 @@ layout: v2
   * Products
   * About
 
-### Bonus Challenge
+# Bonus Challenge
 
   Create:
 
