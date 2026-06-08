@@ -428,8 +428,10 @@ layout: v2
 
 # Configuring EJS
 
+  `index.js`:
+
   ```javascript
-  const path = require('path');
+  const path = require('node:path');
 
   app.set('view engine', 'ejs');
   app.set('views', path.join(__dirname, 'views'));
@@ -546,6 +548,8 @@ layout: v2
 
 ## Enable Layouts
 
+  `index.js`:
+
   ```javascript
   const expressLayouts = require('express-ejs-layouts');
 
@@ -580,6 +584,8 @@ layout: v2
 
   **Header Section** 
 
+  `views/partials/header.ejs`:
+
   ```html
   <header>
     <h1>Products CMS</h1>
@@ -587,6 +593,8 @@ layout: v2
   ```
 
   **Footer Section**
+
+  `views/partials/footer.ejs`:
 
   ```html
   <footer>
