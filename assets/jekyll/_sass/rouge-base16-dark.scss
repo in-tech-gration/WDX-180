@@ -79,3 +79,11 @@
 .highlight .ss {
   color: #90a959;
 }
+
+// CUSTOMIZATION
+
+// Syntax Highlighting for EJS files
+.language-html .highlight .err {
+  background: transparent;
+  color: #f4bf75; /* functions */
+}
