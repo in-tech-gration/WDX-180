@@ -258,6 +258,8 @@ load_script_js:
       E -->|role ok| F
   ```
 
+  ![](./assets/authn.authz.middleware.jpg)
+
 # Part 5 — Understanding HTTP 403
 
   Authentication failure:
