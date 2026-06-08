@@ -7,819 +7,741 @@ layout: v2
 
 ## Building Your First Server-Rendered Web Application
 
-> "A web framework is not magic. It is simply a collection of abstractions that make common tasks easier."
->
-> Today, we'll pull back the curtain and understand what Express and EJS are actually doing.
-
----
+  > "A web framework is not magic. It is simply a collection of abstractions that make common tasks easier."
+  >
+  > Today, we'll pull back the curtain and understand what Express and EJS are actually doing.
 
 # Learning Objectives
 
-By the end of this lesson, students will be able to:
+  By the end of this lesson, students will be able to:
 
-* Explain the difference between a web server and a web application.
-* Explain what Express.js does and why it exists.
-* Create and configure an Express application.
-* Understand HTTP requests and responses.
-* Serve static files using Express middleware.
-* Configure EJS as a template engine.
-* Render dynamic HTML using data from JavaScript.
-* Create reusable layouts and partials.
-* Understand the purpose of middleware.
-* Build a small server-rendered application from scratch.
-
----
+  * Explain the difference between a web server and a web application.
+  * Explain what Express.js does and why it exists.
+  * Create and configure an Express application.
+  * Understand HTTP requests and responses.
+  * Serve static files using Express middleware.
+  * Configure EJS as a template engine.
+  * Render dynamic HTML using data from JavaScript.
+  * Create reusable layouts and partials.
+  * Understand the purpose of middleware.
+  * Build a small server-rendered application from scratch.
 
 # Before We Begin
 
 ## What Are We Building?
 
-Throughout this course we will gradually build a Product CMS.
+  Throughout this course we will gradually build a Product CMS.
 
-A CMS (Content Management System) allows users to manage data through a web interface.
+  A CMS (Content Management System) allows users to manage data through a web interface.
 
-Examples:
+  Examples:
 
-* Shopify → Products
-* WordPress → Blog Posts
-* YouTube Studio → Videos
-* Netflix Admin Dashboard → Movies & Shows
+  * Shopify → Products
+  * WordPress → Blog Posts
+  * YouTube Studio → Videos
+  * Netflix Admin Dashboard → Movies & Shows
 
-Our CMS will allow users to:
+  Our CMS will allow users to:
 
-* View products
-* Create products
-* Edit products
-* Delete products
+  * View products
+  * Create products
+  * Edit products
+  * Delete products
 
-This is known as CRUD:
+  This is known as CRUD:
 
-| Operation | Meaning     |
-| --------- | ----------- |
-| Create    | Add data    |
-| Read      | View data   |
-| Update    | Modify data |
-| Delete    | Remove data |
+  | Operation | Meaning     |
+  | --------- | ----------- |
+  | Create    | Add data    |
+  | Read      | View data   |
+  | Update    | Modify data |
+  | Delete    | Remove data |
 
-Today we are building the foundation.
+  Today we are building the foundation.
 
-No database yet.
+  No database yet.
 
-No authentication yet.
+  No authentication yet.
 
-Just Express, EJS, and understanding how web applications work.
-
----
+  Just Express, EJS, and understanding how web applications work.
 
 # What Is Express?
 
 ## The Problem
 
-Node.js can already create web servers.
+  Node.js can already create web servers.
 
-Example:
+  Example:
 
-```javascript
-const http = require('http');
+  ```javascript
+  const http = require('http');
 
-http.createServer((req, res) => {
-  res.end('Hello World');
-}).listen(3000);
-```
+  http.createServer((req, res) => {
+    res.end('Hello World');
+  }).listen(3000);
+  ```
 
-But building real applications this way becomes painful.
+  But building real applications this way becomes painful.
 
-We would need to manually:
+  We would need to manually:
 
-* Parse URLs
-* Handle routes
-* Parse forms
-* Serve files
-* Handle errors
+  * Parse URLs
+  * Handle routes
+  * Parse forms
+  * Serve files
+  * Handle errors
 
-Express solves these problems.
-
----
+  Express solves these problems.
 
 ## What Express Gives Us
 
-Express provides:
+  Express provides:
 
-### Routing
+  **Routing**
 
-```javascript
-app.get('/', () => {});
-app.post('/products', () => {});
-```
+  ```javascript
+  app.get('/', () => {});
+  app.post('/products', () => {});
+  ```
 
-### Middleware
+  **Middleware** 
 
-```javascript
-app.use(...)
-```
+  ```javascript
+  app.use(...)
+  ```
 
-### Request Helpers
+  **Request Helpers**
 
-```javascript
-req.body
-req.params
-req.query
-```
+  ```javascript
+  req.body
+  req.params
+  req.query
+  ```
 
-### Response Helpers
+  **Response Helpers**
 
-```javascript
-res.render(...)
-res.json(...)
-res.redirect(...)
-```
+  ```javascript
+  res.render(...)
+  res.json(...)
+  res.redirect(...)
+  ```
 
-Express is essentially a thin layer on top of Node's HTTP server.
-
----
+  Express is essentially a thin layer on top of Node's HTTP server.
 
 #  Project Setup
 
-## Create Project Folder
+  **Create Project Folder**
 
-```bash
-mkdir express-crud
-cd express-crud
-```
+  ```bash
+  mkdir express-crud
+  cd express-crud
+  ```
 
----
+  **Initialize Node Project**
 
-## Initialize Node Project
+  ```bash
+  npm init -y
+  ```
 
-```bash
-npm init -y
-```
+  This creates a `package.json` that looks like this:
 
-This creates a `package.json` that looks like this:
-
-```json
-{
-  "name": "express-crud",
-  "version": "1.0.0",
-  ...
-}
-```
-
----
-
-## Install Dependencies
-
-```bash
-npm install express ejs express-ejs-layouts
-```
-
-### What Did We Install?
-
-| Package             | Purpose         |
-| ------------------- | --------------- |
-| express             | Web framework   |
-| ejs                 | Template engine |
-| express-ejs-layouts | Layout support  |
-
----
-
-## Add Scripts
-
-```json
-{
-  "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+  ```json
+  {
+    "name": "express-crud",
+    "version": "1.0.0",
+    ...
   }
-}
-```
+  ```
 
-Now:
+  **Install Dependencies**
 
-```bash
-npm run dev
-```
+  ```bash
+  npm install express ejs express-ejs-layouts
+  ```
 
-automatically reloads the server whenever files change.
+  **What Did We Install?**
 
-Your future self will thank you.
+  | Package             | Purpose         |
+  | ------------------- | --------------- |
+  | express             | Web framework   |
+  | ejs                 | Template engine |
+  | express-ejs-layouts | Layout support  |
 
----
+  **Add Scripts**
+
+  ```json
+  {
+    "scripts": {
+      "start": "node index.js",
+      "dev": "node --watch index.js"
+    }
+  }
+  ```
+
+  Now:
+
+  ```bash
+  npm run dev
+  ```
+
+  automatically reloads the server whenever files change.
+
+  Your future self will thank you.
 
 # Project Structure
 
-Professional projects rely on predictable structure.
+  Professional projects rely on predictable structure.
 
-```text
-express-crud/
-├── index.js
-├── package.json
-├── views/
-│   ├── layout.ejs
-│   ├── index.ejs
-│   └── partials/
-│       ├── header.ejs
-│       └── footer.ejs
-├── public/
-│   └── css/
-│       └── style.css
-```
-
----
+  ```text
+  express-crud/
+  ├── index.js
+  ├── package.json
+  ├── views/
+  │   ├── layout.ejs
+  │   ├── index.ejs
+  │   └── partials/
+  │       ├── header.ejs
+  │       └── footer.ejs
+  ├── public/
+  │   └── css/
+  │       └── style.css
+  ```
 
 # Creating Our First Express Server
 
-Create:
+  Create:
 
-```javascript
-// index.js
+  ```javascript
+  // index.js
 
-const express = require('express');
+  const express = require('express');
 
-const app = express();
+  const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello Express!');
-});
+  app.get('/', (req, res) => {
+    res.send('Hello Express!');
+  });
 
-app.listen(3000, () => {
-  console.log('Server running at http://localhost:3000');
-});
-```
+  app.listen(3000, () => {
+    console.log('Server running at http://localhost:3000');
+  });
+  ```
 
-Run:
+  Run:
 
-```bash
-npm run dev
-```
+  ```bash
+  npm run dev
+  ```
 
-Visit:
+  Visit:
 
-```text
-http://localhost:3000
-```
+  ```text
+  http://localhost:3000
+  ```
 
-Congratulations.
+  Congratulations.
 
-You now have a working web server.
+  You now have a working web server.
 
-You're officially serving bytes to strangers.
+  You're officially serving bytes to strangers.
 
-Or at least to yourself.
-
----
+  Or at least to yourself.
 
 # Understanding Routes
 
-A route defines:
+  A route defines:
 
-```text
-HTTP METHOD + URL
-```
+  ```text
+  HTTP METHOD + URL
+  ```
 
-Examples:
+  Examples:
 
-| Method | URL         | Purpose        |
-| ------ | ----------- | -------------- |
-| GET    | /           | Homepage       |
-| GET    | /products   | List products  |
-| GET    | /products/1 | View product   |
-| POST   | /products   | Create product |
+  | Method | URL         | Purpose        |
+  | ------ | ----------- | -------------- |
+  | GET    | /           | Homepage       |
+  | GET    | /products   | List products  |
+  | GET    | /products/1 | View product   |
+  | POST   | /products   | Create product |
 
----
+  ---
 
-Example:
+  Example:
 
-```javascript
-app.get('/about', (req, res) => {
-  res.send('About Page');
-});
-```
+  ```javascript
+  app.get('/about', (req, res) => {
+    res.send('About Page');
+  });
+  ```
 
-Now:
+  Now:
 
-```text
-localhost:3000/about
-```
+  ```text
+  localhost:3000/about
+  ```
 
-returns:
+  returns:
 
-```text
-About Page
-```
-
----
+  ```text
+  About Page
+  ```
 
 # Middleware
 
-Middleware is one of the most important concepts in Express.
+  Middleware is one of the most important concepts in Express.
 
-A middleware function sits between:
+  A middleware function sits between:
 
-```text
-Request
-   ↓
-Middleware
-   ↓
-Route
-   ↓
-Response
-```
+  ```text
+  Request
+    ↓
+  Middleware
+    ↓
+  Route
+    ↓
+  Response
+  ```
 
-Example:
+  Example:
 
-```javascript
-app.use((req, res, next) => {
-  console.log(req.method, req.url);
-  next();
-});
-```
+  ```javascript
+  app.use((req, res, next) => {
+    console.log(req.method, req.url);
+    next();
+  });
+  ```
 
-Every request now gets logged.
-
----
+  Every request now gets logged.
 
 ## Why Middleware Exists
 
-Middleware can:
+  Middleware can:
 
-* Log requests
-* Parse forms
-* Parse JSON
-* Authenticate users
-* Validate data
-* Handle errors
+  * Log requests
+  * Parse forms
+  * Parse JSON
+  * Authenticate users
+  * Validate data
+  * Handle errors
 
-Most Express applications are simply chains of middleware.
-
----
+  Most Express applications are simply chains of middleware.
 
 # Serving Static Files
 
-Websites usually contain:
+  Websites usually contain:
 
-* CSS
-* Images
-* JavaScript
+  * CSS
+  * Images
+  * JavaScript
 
-These are called static assets.
+  These are called static assets.
 
-Create:
+  Create:
 
-```javascript
-app.use(express.static('public'));
-```
+  ```javascript
+  app.use(express.static('public'));
+  ```
 
-Now:
+  Now:
 
-```text
-public/css/style.css
-```
+  ```text
+  public/css/style.css
+  ```
 
-becomes accessible through:
+  becomes accessible through:
 
-```text
-/css/style.css
-```
+  ```text
+  /css/style.css
+  ```
 
----
+  ---
 
-Create:
+  Create:
 
-```css
-body {
-  font-family: sans-serif;
-}
-```
-
----
+  ```css
+  body {
+    font-family: sans-serif;
+  }
+  ```
 
 # Introducing EJS
 
-So far we have been sending strings:
+  So far we have been sending strings:
 
-```javascript
-res.send('Hello');
-```
+  ```javascript
+  res.send('Hello');
+  ```
 
-Real applications send HTML.
+  Real applications send HTML.
 
-Instead of writing HTML inside JavaScript, we use templates.
+  Instead of writing HTML inside JavaScript, we use templates.
 
-This is where EJS comes in.
-
----
+  This is where EJS comes in.
 
 ## What Is EJS?
 
-EJS means:
+  EJS means:
 
-```text
-Embedded JavaScript
-```
+  ```text
+  Embedded JavaScript
+  ```
 
-It allows JavaScript inside HTML.
+  It allows JavaScript inside HTML.
 
-Example:
+  Example:
 
-```html
-<h1><%= title %></h1>
-```
+  ```html
+  <h1><%= title %></h1>
+  ```
 
-If:
+  If:
 
-```javascript
-title = 'Products'
-```
+  ```javascript
+  title = 'Products'
+  ```
 
-Output becomes:
+  Output becomes:
 
-```html
-<h1>Products</h1>
-```
-
----
+  ```html
+  <h1>Products</h1>
+  ```
 
 # Configuring EJS
 
-```javascript
-const path = require('path');
+  ```javascript
+  const path = require('path');
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-```
+  app.set('view engine', 'ejs');
+  app.set('views', path.join(__dirname, 'views'));
+  ```
 
----
+  Create:
 
-Create:
-
-```javascript
-app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Products CMS'
+  ```javascript
+  app.get('/', (req, res) => {
+    res.render('index', {
+      title: 'Products CMS'
+    });
   });
-});
-```
+  ```
 
----
+  Create:
 
-Create:
+  ```html
+  <!-- views/index.ejs -->
 
-```html
-<!-- views/index.ejs -->
+  <h1><%= title %></h1>
+  ```
 
-<h1><%= title %></h1>
-```
-
-The page now renders dynamically.
-
----
+  The page now renders dynamically.
 
 # Passing Data to Views
 
-Let's pass an array.
+  Let's pass an array.
 
-```javascript
-const products = [
-  { name: 'Keyboard' },
-  { name: 'Mouse' },
-  { name: 'Monitor' }
-];
+  ```javascript
+  const products = [
+    { name: 'Keyboard' },
+    { name: 'Mouse' },
+    { name: 'Monitor' }
+  ];
 
-app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Products',
-    products
+  app.get('/', (req, res) => {
+    res.render('index', {
+      title: 'Products',
+      products
+    });
   });
-});
-```
+  ```
 
----
+  ---
 
-View:
+  View:
 
-```html
-<h1><%= title %></h1>
+  ```html
+  <h1><%= title %></h1>
 
-<ul>
-  <% products.forEach(product => { %>
-    <li><%= product.name %></li>
-  <% }) %>
-</ul>
-```
+  <ul>
+    <% products.forEach(product => { %>
+      <li><%= product.name %></li>
+    <% }) %>
+  </ul>
+  ```
 
-Output:
+  Output:
 
-```html
-Keyboard
-Mouse
-Monitor
-```
-
----
+  ```html
+  Keyboard
+  Mouse
+  Monitor
+  ```
 
 # EJS Syntax
 
 ## Output Escaped Data
 
-```html
-<%= name %>
-```
+  ```html
+  <%= name %>
+  ```
 
-Recommended for user data.
+  Recommended for user data.
 
-Protects against XSS attacks.
-
----
+  Protects against XSS attacks.
 
 ## Execute JavaScript
 
-```html
-<% products.forEach(...) %>
-```
+  ```html
+  <% products.forEach(...) %>
+  ```
 
-No output.
+  No output.
 
-Only logic.
-
----
+  Only logic.
 
 ## Output Raw HTML
 
-```html
-<%- html %>
-```
+  ```html
+  <%- html %>
+  ```
 
-Dangerous unless trusted.
+  Dangerous unless trusted.
 
-Avoid when possible.
-
----
+  Avoid when possible.
 
 # Layouts
 
-Imagine having:
+  Imagine having:
 
-```html
-<header>...</header>
-<footer>...</footer>
-<nav>...</nav>
-```
+  ```html
+  <header>...</header>
+  <footer>...</footer>
+  <nav>...</nav>
+  ```
 
-copied into 30 pages.
+  copied into 30 pages.
 
-That becomes a maintenance nightmare.
+  That becomes a maintenance nightmare.
 
-Layouts solve this.
-
----
+  Layouts solve this.
 
 ## Enable Layouts
 
-```javascript
-const expressLayouts = require('express-ejs-layouts');
+  ```javascript
+  const expressLayouts = require('express-ejs-layouts');
 
-app.use(expressLayouts);
-```
-
----
+  app.use(expressLayouts);
+  ```
 
 ## layout.ejs
 
-```html
-<!doctype html>
-<html>
-<head>
-  <title><%= title %></title>
-</head>
-<body>
+  ```html
+  <!doctype html>
+  <html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
 
-  <%- include('partials/header') %>
+    <%- include('partials/header') %>
 
-  <main>
-    <%- body %>
-  </main>
+    <main>
+      <%- body %>
+    </main>
 
-  <%- include('partials/footer') %>
+    <%- include('partials/footer') %>
 
-</body>
-</html>
-```
-
----
+  </body>
+  </html>
+  ```
 
 # Partials
 
-Partials are reusable pieces of UI.
+  Partials are reusable pieces of UI.
 
-## Header Section 
+  **Header Section** 
 
-```html
-<header>
-  <h1>Products CMS</h1>
-</header>
-```
+  ```html
+  <header>
+    <h1>Products CMS</h1>
+  </header>
+  ```
 
----
+  **Footer Section**
 
-## Footer Section
+  ```html
+  <footer>
+    <p>Copyright 2026</p>
+  </footer>
+  ```
 
-```html
-<footer>
-  <p>Copyright 2026</p>
-</footer>
-```
+  Benefits:
 
----
+  * Reusable
+  * Easier maintenance
+  * Consistent UI
 
-Benefits:
+  This follows the DRY principle:
 
-* Reusable
-* Easier maintenance
-* Consistent UI
-
-This follows the DRY principle:
-
-> Don't Repeat Yourself
-
----
+  > Don't Repeat Yourself
 
 # Building a Small Product List
 
-## Route
+  **Route**
 
-```javascript
-const products = [
-  {
-    id: 1,
-    name: 'Keyboard',
-    price: 49.99
-  },
-  {
-    id: 2,
-    name: 'Mouse',
-    price: 19.99
-  }
-];
+  ```javascript
+  const products = [
+    {
+      id: 1,
+      name: 'Keyboard',
+      price: 49.99
+    },
+    {
+      id: 2,
+      name: 'Mouse',
+      price: 19.99
+    }
+  ];
 
-app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Products',
-    products
+  app.get('/', (req, res) => {
+    res.render('index', {
+      title: 'Products',
+      products
+    });
   });
-});
-```
+  ```
 
----
+  **View**
 
-## View
+  ```html
+  <h2>Products</h2>
 
-```html
-<h2>Products</h2>
+  <ul>
+    <% products.forEach(product => { %>
 
-<ul>
-  <% products.forEach(product => { %>
+      <li>
+        <strong><%= product.name %></strong>
 
-    <li>
-      <strong><%= product.name %></strong>
+        -
 
-      -
+        $<%= product.price.toFixed(2) %>
+      </li>
 
-      $<%= product.price.toFixed(2) %>
-    </li>
-
-  <% }) %>
-</ul>
-```
-
----
+    <% }) %>
+  </ul>
+  ```
 
 # Common Beginner Mistakes
 
-## 1. Forgetting to Install Dependencies
+  **1. Forgetting to Install Dependencies**
 
-```bash
-npm install express ejs
-```
+  ```bash
+  npm install express ejs
+  ```
 
----
+  **2. Wrong Views Folder**
 
-## 2. Wrong Views Folder
+  ```javascript
+  app.set('views', ...)
+  ```
 
-```javascript
-app.set('views', ...)
-```
+  must point to the correct directory.
 
-must point to the correct directory.
+  **3. Forgetting Middleware**
 
----
+  ```javascript
+  app.use(express.urlencoded({ extended: true }));
+  ```
 
-## 3. Forgetting Middleware
+  Without it:
 
-```javascript
-app.use(express.urlencoded({ extended: true }));
-```
+  ```javascript
+  req.body
+  ```
 
-Without it:
+  will be empty.
 
-```javascript
-req.body
-```
+  **4. CSS Not Loading**
 
-will be empty.
+  Ensure:
 
----
+  ```javascript
+  app.use(express.static('public'));
+  ```
 
-## 4. CSS Not Loading
+  exists.
 
-Ensure:
+  **5. Using `<%- %>` Everywhere**
 
-```javascript
-app.use(express.static('public'));
-```
+  Never trust user input.
 
-exists.
+  Use:
 
----
+  ```html
+  <%= value %>
+  ```
 
-## 5. Using `<%- %>` Everywhere
-
-Never trust user input.
-
-Use:
-
-```html
-<%= value %>
-```
-
-unless you specifically need raw HTML.
-
----
+  unless you specifically need raw HTML.
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* How the Request → Response cycle works
-* What Express is and why it exists
-* How routing works
-* What middleware does
-* How static files are served
-* How EJS templates work
-* How to pass data from JavaScript into HTML
-* How layouts and partials reduce duplication
-
----
+  * How the Request → Response cycle works
+  * What Express is and why it exists
+  * How routing works
+  * What middleware does
+  * How static files are served
+  * How EJS templates work
+  * How to pass data from JavaScript into HTML
+  * How layouts and partials reduce duplication
 
 # Assignment
 
-### Level 1
+  ### Level 1
 
-Create a page that displays:
+  Create a page that displays:
 
-```text
-Your Name
-Your Favourite Programming Language
-Your Years of Experience
-```
+  ```text
+  Your Name
+  Your Favourite Programming Language
+  Your Years of Experience
+  ```
 
-using EJS variables.
+  using EJS variables.
 
----
+  ---
 
-### Level 2
+  ### Level 2
 
-Create an array of 5 products.
+  Create an array of 5 products.
 
-Render them dynamically using a loop.
+  Render them dynamically using a loop.
 
----
+  ---
 
-### Level 3
+  ### Level 3
 
-Add a navigation bar partial.
+  Add a navigation bar partial.
 
-Include:
+  Include:
 
-* Home
-* Products
-* About
-
----
+  * Home
+  * Products
+  * About
 
 ### Bonus Challenge
 
-Create:
+  Create:
 
-```text
-GET /about
-```
+  ```text
+  GET /about
+  ```
 
-Render an EJS page explaining:
+  Render an EJS page explaining:
 
-* What Express is
-* What EJS is
-* Why server-side rendering matters
+  * What Express is
+  * What EJS is
+  * Why server-side rendering matters
 
 ---
 
