@@ -199,6 +199,10 @@
   </script>
   ```
 
+## Jekyll | How to | Customize Syntax Highlighting
+
+  - Edit `/assets/jekyll/_sass/rouge-base16-dark.scss`
+
 ## Jekyll | How to | Properly add Syntax Highlighting for JSX
 
   - Put code inside {% raw %} {% endraw %}
