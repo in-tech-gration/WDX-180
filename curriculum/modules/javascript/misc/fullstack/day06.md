@@ -76,7 +76,7 @@ load_script_js:
 
 # Problems Without Pagination
 
-  ## Performance
+  **Performance**
 
   Database:
 
@@ -98,9 +98,7 @@ load_script_js:
 
   Everyone loses.
 
-  ---
-
-  ## User Experience
+  **User Experience**
 
   Imagine Amazon showing:
 
@@ -112,9 +110,7 @@ load_script_js:
 
   Users would scroll until retirement.
 
-  ---
-
-  # What Is Pagination?
+# What Is Pagination?
 
   Pagination divides data into pages.
 
@@ -137,8 +133,6 @@ load_script_js:
 
   21-30
   ```
-
-  ---
 
   Visualization:
 
@@ -176,9 +170,7 @@ load_script_js:
   Only 10 records
   ```
 
-  ---
-
-  # OFFSET
+  **OFFSET**
 
   OFFSET tells SQLite:
 
@@ -202,8 +194,6 @@ load_script_js:
 
   Return next 10 rows
   ```
-
-  ---
 
   Visualization:
 
@@ -255,8 +245,6 @@ load_script_js:
   OFFSET = 20
   ```
 
-  ---
-
   Formula:
 
   ```text
@@ -270,8 +258,6 @@ load_script_js:
 
   20
   ```
-
-  ---
 
 # Part 4 — Reading Query Parameters
 
@@ -341,9 +327,7 @@ load_script_js:
   });
   ```
 
-  ---
-
-  # What Happens?
+  **What Happens?**
 
   Page 1:
 
@@ -352,16 +336,12 @@ load_script_js:
   OFFSET 0
   ```
 
-  ---
-
   Page 2:
 
   ```sql
   LIMIT 10
   OFFSET 10
   ```
-
-  ---
 
   Page 3:
 
@@ -378,16 +358,12 @@ load_script_js:
   How many records exist?
   ```
 
-  ---
-
   Query:
 
   ```sql
   SELECT COUNT(*) AS total
   FROM products
   ```
-
-  ---
 
   Repository:
 
@@ -403,8 +379,6 @@ load_script_js:
 
   }
   ```
-
-  ---
 
   Example:
 
@@ -436,15 +410,11 @@ load_script_js:
 
   Impossible.
 
-  ---
-
   Use:
 
   ```javascript
   Math.ceil(totalRecords / limit)
   ```
-
-  ---
 
   Example:
 
@@ -464,8 +434,6 @@ load_script_js:
   const totalRecords = productRepository.count();
   const totalPages = Math.ceil(totalRecords / limit);
   ```
-
-  ---
 
   Pass:
 
@@ -494,17 +462,13 @@ load_script_js:
   </nav>
   ```
 
-  ---
-
   Result:
 
   ```text
   1 2 3 4 5 6 7
   ```
 
-  ---
-
-  # Highlight Current Page
+  **Highlight Current Page**
 
   ```html
   <% if(i === page) { %>
@@ -522,8 +486,6 @@ load_script_js:
   <% } %>
   ```
 
-  ---
-
   Result:
 
   ```text
@@ -540,8 +502,6 @@ load_script_js:
   <% } %>
   ```
 
-  ---
-
   Next:
 
   ```html
@@ -549,8 +509,6 @@ load_script_js:
     <a href="/products?page=<%= page + 1 %>">Next</a>
   <% } %>
   ```
-
-  ---
 
   Result:
 
@@ -570,15 +528,11 @@ load_script_js:
   /products?page=-999
   ```
 
-  ---
-
   Bad URL:
 
   ```text
   /products?page=banana
   ```
-
-  ---
 
   Validation:
 
@@ -593,17 +547,13 @@ load_script_js:
   }
   ```
 
-  ---
-
-  # Page Too Large
+  **Page Too Large**
 
   Example:
 
   ```text
   /products?page=999999
   ```
-
-  ---
 
   Fix:
 
@@ -637,15 +587,10 @@ load_script_js:
   }
   ```
 
-  ---
-
   Route:
 
   ```javascript
-  const products = productRepository.findPage(
-    page,
-    limit
-  );
+  const products = productRepository.findPage( page, limit );
   ```
 
   Cleaner.
@@ -661,8 +606,6 @@ load_script_js:
   ```text
   1 million rows
   ```
-
-  ---
 
   Page:
 
@@ -680,9 +623,7 @@ load_script_js:
 
   Expensive.
 
-  ---
-
-  # Cursor Pagination
+  **Cursor Pagination**
 
   Large applications often use:
 
@@ -707,8 +648,6 @@ load_script_js:
   LIMIT 10
   ```
 
-  ---
-
   Used by:
 
   * Instagram
@@ -725,19 +664,12 @@ load_script_js:
 
   ```html
   <p>
-
   Showing page
-
   <%= page %>
-
   of
-
   <%= totalPages %>
-
   </p>
   ```
-
-  ---
 
   Example:
 
@@ -745,17 +677,12 @@ load_script_js:
   Showing page 3 of 15
   ```
 
-  ---
-
   Show totals:
 
   ```html
   <p>
-
   Total Products:
-
   <%= totalRecords %>
-
   </p>
   ```
 
@@ -763,9 +690,9 @@ load_script_js:
 
 # Common Beginner Mistakes
 
-  ## Forgetting ORDER BY
+  **Forgetting ORDER BY**
 
-  Bad:
+  ❌ Bad:
 
   ```sql
   SELECT *
@@ -775,7 +702,7 @@ load_script_js:
 
   Results may appear in unexpected order.
 
-  Always:
+  ✅ Always:
 
   ```sql
   ORDER BY id DESC
@@ -783,9 +710,7 @@ load_script_js:
 
   or another explicit column.
 
-  ---
-
-  ## Trusting Query Parameters
+  **Trusting Query Parameters**
 
   Bad:
 
@@ -795,11 +720,9 @@ load_script_js:
 
   Validate everything.
 
-  ---
+  **Using OFFSET Without LIMIT**
 
-  ## Using OFFSET Without LIMIT
-
-  Bad:
+  ❌ Bad:
 
   ```sql
   OFFSET 10
@@ -807,11 +730,9 @@ load_script_js:
 
   Always pair with LIMIT.
 
-  ---
+  **Calculating Total Pages Incorrectly**
 
-  ## Calculating Total Pages Incorrectly
-
-  Bad:
+  ❌ Bad:
 
   ```javascript
   total / limit
