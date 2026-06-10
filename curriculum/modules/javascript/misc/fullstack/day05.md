@@ -756,20 +756,20 @@ load_script_js:
 
 # Key Takeaways
 
-Today you learned:
+  Today you learned:
 
-* HTML forms
-* GET vs POST
-* Request bodies
-* Form processing
-* Validation
-* SQL INSERT
-* Redirects
-* POST-Redirect-GET
-* Repository pattern basics
-* UX improvements for forms
+  * HTML forms
+  * GET vs POST
+  * Request bodies
+  * Form processing
+  * Validation
+  * SQL INSERT
+  * Redirects
+  * POST-Redirect-GET
+  * Repository pattern basics
+  * UX improvements for forms
 
-This is the first truly interactive feature in the CMS. Users can now create data through the UI, which means the application has crossed an important threshold: it is no longer a static viewer of information—it is a system for managing information.
+  This is the first truly interactive feature in the CMS. Users can now create data through the UI, which means the application has crossed an important threshold: it is no longer a static viewer of information—it is a system for managing information.
 
 ---
 
