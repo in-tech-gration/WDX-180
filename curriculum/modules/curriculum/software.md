@@ -67,7 +67,7 @@
 
   It's extremely helpful and will greatly improve your chances of retaining any new concept, to keep notes of everything that you learn (e.g. terminal commands in this case) and organize them in a manner that will help you quickly go back and find what you need. 
 
-  > At this point, it's also probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c){:target="_blank"} and follow along in order to create your SSH keys and connect them with GitHub, then follow the rest of the instructions to `clone` (download) the repository to your computer and install all the necessary dependencies.  
+  > At this point, it's also probably a good idea to spend a few minutes watching this [YouTube video walkthrough](https://youtu.be/S9Qg3Ltf__c){:target="_blank"} and follow along in order to create your [SSH keys](https://www.youtube.com/watch?v=dPAw4opzN9g){:target="_blank"} and connect them with GitHub, then follow the rest of the instructions to `clone` (download) the repository to your computer and install all the necessary dependencies.  
 
   - **Node.js:** Download the `LTS` version of the powerful and popular JavaScript running environment [here](https://nodejs.org/en){:target="_blank"}. You are going to be using `Node.js` **a lot** during this course 🙂. In order to check that `Node.js` has been installed on your system, you will need to run one of the following commands in the terminal: 
     - `node --version`
