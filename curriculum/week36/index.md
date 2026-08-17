@@ -25,7 +25,7 @@ title: Week 36 | Full Stack Project
 
   </h2>
 
-  <span>Updated: 1/6/2026</span>
+  <span>Updated: 17/8/2026</span>
 
   <h2 class="week-controls__next_week">
 
