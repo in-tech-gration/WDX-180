@@ -102,7 +102,9 @@ load_script_js:
   B --> C[Authorization]
   ```
 
-  Today focuses on:
+  What to remember: **Authentication always comes first!**
+
+  This module focuses on:
 
   ```text 
   Authentication
