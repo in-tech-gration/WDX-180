@@ -1,58 +1,58 @@
 {
   "$schema": "http://json-schema.org/schema",
   "$comment": "Understanding JSON Schema: https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf / Inspiration: https://github.com/pyvideo/data/blob/main/writethedocs-na-2018/videos/audience-market-product-bob-watson-write-the-docs-portland-2018.json",
-  "definitions": {
-    "level": {
-      "type": "string",
-      "enum": [
-        "Beginner",
-        "Intermediate",
-        "Advanced"
-      ]
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "Audio",
-        "Blog Post",
-        "Cheatsheet",
-        "Coursera Course",
-        "edX Course",
-        "Interactive Tutorial",
-        "MDN",
-        "Official Documentation",
-        "Podcast",
-        "Quora",
-        "StackOverflow",
-        "Tool",
-        "Udacity Course",
-        "Video",
-        "VSCode Extension",
-        "Web Page",
-        "YouTube Playlist",
-        "YouTube"
-      ]
-    },
-    "languages": {
-      "$comment": "TODO: Add list of 2 character ISO country codes as enum",
-      "type": "string",
-      "enum": [
-        "EN",
-        "BG",
-        "EL",
-        "FR"
-      ]
-    },
-    "terms": {
-      "$ref": "terms.json#/terms"
-    },
-    "prerequisites": {
-      "type": "string",
-      "$comment": "[WiP] Should include a referenced list of technologies or concepts that are prerequisites for the resource, e.g. React, Redux, React-Redux, Lodash, etc. Type should be an Array or Enum NOT a string"
-    }
-  },
   "type": "object",
   "properties": {
+    "definitions": {
+      "level": {
+        "type": "string",
+        "enum": [
+          "Beginner",
+          "Intermediate",
+          "Advanced"
+        ]
+      },
+      "types": {
+        "type": "string",
+        "enum": [
+          "Audio",
+          "Blog Post",
+          "Cheatsheet",
+          "Coursera Course",
+          "edX Course",
+          "Interactive Tutorial",
+          "MDN",
+          "Official Documentation",
+          "Podcast",
+          "Quora",
+          "StackOverflow",
+          "Tool",
+          "Udacity Course",
+          "Video",
+          "VSCode Extension",
+          "Web Page",
+          "YouTube Playlist",
+          "YouTube"
+        ]
+      },
+      "languages": {
+        "$comment": "TODO: Add list of 2 character ISO country codes as enum",
+        "type": "string",
+        "enum": [
+          "EN",
+          "BG",
+          "EL",
+          "FR"
+        ]
+      },
+      "terms": {
+        "$ref": "terms.json#/terms"
+      },
+      "prerequisites": {
+        "type": "string",
+        "$comment": "[WiP] Should include a referenced list of technologies or concepts that are prerequisites for the resource, e.g. React, Redux, React-Redux, Lodash, etc. Type should be an Array or Enum NOT a string"
+      }
+    },
     "resources": {
       "type": "object",
       "propertyNames": {
@@ -96,7 +96,7 @@
             "pattern": "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/\\d{4}$"
           },
           "type": {
-            "$ref": "#/definitions/type"
+            "$ref": "#/properties/definitions/types"
           },
           "format": {
             "type": "string",
@@ -183,7 +183,7 @@
             ]
           },
           "level": {
-            "$ref": "#/definitions/level"
+            "$ref": "#/properties/definitions/level"
           },
           "meta": {
             "type": "object"
@@ -197,7 +197,7 @@
           "terms": {
             "type": "array",
             "items": {
-              "$ref": "#/definitions/terms"
+              "$ref": "#/properties/definitions/terms"
             }
           },
           "tags": {
@@ -265,7 +265,7 @@
                   "type": "string"
                 },
                 "language": {
-                  "$ref": "#/definitions/languages"
+                  "$ref": "#/properties/definitions/languages"
                 }
               }
             }
@@ -280,7 +280,7 @@
               "captions": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/definitions/languages"
+                  "$ref": "#/properties/definitions/languages"
                 }
               },
               "channel_id": {
