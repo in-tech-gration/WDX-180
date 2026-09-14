@@ -6,7 +6,7 @@
 
   - Arabic:
     - **Omar Hassan**
-    - **Alaadeen Hijazi**
+    - [**Alaadeen Hijazi**](https://www.alaahijazi.com/)
   - Turkish:
     - **Çetin Çakıroğlu**: [GitHub](https://github.com/cetincakiroglu)
   - Farsi/Persian:
