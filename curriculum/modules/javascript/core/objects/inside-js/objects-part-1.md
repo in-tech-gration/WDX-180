@@ -24,7 +24,7 @@ title: Objects Part 1
 
   Now that you have a good understanding of what Javascript Objects are, you can start playing around with some code.
 
-  Make sure to follow the guides on **Setting up Study Lenses (v2) on your System**. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
+  Make sure to follow the guides on {{ SGEN:MODULE_LINK:javascript/denepo/setting-up-study-lenses/index.md }}. Once `lenses2` is properly installed on your system, you can go to your `WDX-180` folder and run `lenses2` with the material for this Module:
 
   - `cd WDX-180/`
   - `lenses2 curriculum/modules/javascript/denepo/_inside-js/9-multiple-interactions/`
