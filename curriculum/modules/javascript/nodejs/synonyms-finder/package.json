@@ -1,0 +1,16 @@
+{
+  "name": "dict",
+  "version": "1.0.0",
+  "description": "Get synonyms and antonyms for greek words",
+  "main": "dict.js",
+  "bin": "dict.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@clack/prompts": "^1.7.0",
+    "chalk": "^6.0.0"
+  }
+}
