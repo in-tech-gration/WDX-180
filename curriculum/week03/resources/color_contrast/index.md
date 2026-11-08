@@ -48,7 +48,7 @@ It is easy for a team of developers or testers to check a website for such mista
 
 ## Chrome Lighthouse
 
-Another Developer Tool that can help you detect A11y (short for A[ccessibilit.length === 11 ]y, ) issues is the [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) tool found in the Developer Toolset of Chrome Browser. 
+Another Developer Tool that can help you detect A11y (short for A[ccessibilit.length === 11 ]y, ) issues is the [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) tool found in the Developer Toolset of Chrome Browser. 
 
 ![width-100](./assets/Lighthouse.01.jpg)
 
@@ -70,21 +70,21 @@ Another way to quickly check the color contrast and pick a more appropriate colo
 
 --- 
 
-## CSS: color-contrast()
+## CSS: contrast-color()
 
-In the future, browsers will start supporting the [`color-contrast`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast()) CSS property which automatically selects the color with the highest contrast automatically.
+In the future, browsers will start supporting the [`contrast-color()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/contrast-color) CSS function (earlier drafts of the spec called it `color-contrast()`), which automatically picks black or white, whichever contrasts more with a given color.
 
-You can regularly check for its support using the [caniuse.com website](https://caniuse.com/?search=color-contrast) or the MDN `Browser Compatibility` table found at the bottom of the page.
+You can regularly check for its support using the [caniuse.com website](https://caniuse.com/?search=contrast-color) or the MDN `Browser Compatibility` table found at the bottom of the page.
 
 ## Closing Remarks
 
-If you serious about Web Development, then Web Accessibility must be priority number 1 for you. You can start by going through the `Web Accessibility` free course at `Coursera` (see Resources section below).
+If you serious about Web Development, then Web Accessibility must be priority number 1 for you. You can start by going through the `Web Accessibility` free course at `Udacity` (see Resources section below).
 
 ---
 
 ## Resources
 
-- [Web Accessibility **Free course** at Coursera](https://www.udacity.com/course/web-accessibility--ud891)
+- [Web Accessibility **Free course** at Udacity](https://www.udacity.com/course/web-accessibility--ud891)
 
 - [Web Accessibility Perspectives - Compilation of 10 Topics/Videos (YouTube video / 8 minutes)](https://www.youtube.com/watch?v=3f31oufqFSM)
 
@@ -95,6 +95,8 @@ If you serious about Web Development, then Web Accessibility must be priority nu
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 - [Coblis — Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/)
+
+- [Color Blindness Simulator by CoolColor Space](https://coolcolor.space/color-blindness-simulator) — works in any browser, also on a phone camera; the image is processed on your device and not uploaded
 
 - [Monochromacy](https://www.wikiwand.com/en/Monochromacy)
 
